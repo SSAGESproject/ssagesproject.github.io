@@ -1,0 +1,169 @@
+{% extends "base.html" %}
+{% block head %}
+<link rel="stylesheet" href="static/stylef.css">
+{% endblock %}
+
+
+
+{% block content %}
+
+<body ng-app='indexApp' ng-controller="TourDemoCtrl">
+
+
+
+<!-- HEADER -->
+<div id="Header">
+	<div id= "Heading">
+		<div class="row">
+			<div class="large-4 columns">
+				<h1 id="Mat">Materials</h1>
+			</div>
+			<div class="large-4 columns">
+				<h1 id="Gen">Genome</h1>
+			</div>
+			<div class="large-4 columns">
+				<h1 id="Pro">Project </h1>
+			</div>
+		</div>
+	</div>	
+	<table style="border:none;background-color: #42647F;"><tr><td style="text-align:center"><img src="static/img/drawing.png" style="height:100px"/></td></tr></table>
+</div>
+
+
+
+<!-- TOUR GUIDE -->
+<br/>
+	<div class="row">
+		<div class="large-3 large-centered columns">
+			<input class="button" value="Start tour." ng-click="startTour()">
+		</div>
+	</div>
+
+<br/>
+<br/>
+
+	<!-- ABOUT -->
+	<div class="row">
+		<div class = "large-12 columns">
+			<div step-index="1" step-text="This is the PPPdB">
+			<p> The Center for Hierarchical Materials Design (CHIMAD) represents a Chicago-based consortium of the University of Chicago, Northwestern University, Northwestern-Argonne Institute for Science and Engineering (NASIE) that is a partnership between Argonne National Laboratory and Northwestern, and the Computational Institute that is a partnership between the University of Chicago and Argonne.  It serves together with NIST as a national resource for the verified codes and curated databases that will enable proliferation of a materials-by-design strategy throughout US industrial partners.  Numerous materials “use cases” of industrial relevance drive purposeful method and tool development, while aiding transfer to industry of both the new principles of computational materials design. Demonstrating a broad methodology for multicomponent, multiphase materials spanning metals and polymers for structural and multifunctional applications. </p> 
+		</div>
+	</div>	
+</div>
+<br/>
+<br/>
+<br/>
+
+<!-- SEARCH DATABASE -->
+	<div class = "row">
+		<div class="large-9 large-centered columns" > 
+			<h2 style="text-align:center; padding-bottom: 0px; padding-top: 25px;"> Search the Database </h2>
+			<div step-index="2" step-text="Here, you can search for a variety of polymer-polymer blends">
+			<form action="/polymer" method="post" >
+				<h4>Polymer Name</h4>
+				<input type="text" id="search_button" name="polymer" style="height:50px"/>
+				<input class="button" style="border-radius:10px;" type="submit" value="Search" />
+			</form>
+		</div>
+	</div>
+</div>
+<br/>
+<br/>
+<br/>
+<br/>
+
+
+		<div class="row" >
+			<div class="large-8 columns" 
+				ng-init="tools = [
+				{url:'flory.html', name:'Flory-Huggins Phase Diagram'},
+				{url:'vorn.html', name:'Voorn-Overbeek Phase Diagram'},
+				{url:'slct.html', name:'SLCT Phase Diagram'},
+				{url:'structurefactor.html', name:'Random Phase Approximation Structure Factor'},
+				{url:'saftdemo.html', name:'SAFT Equation of State (Demo)' },
+				{url:'scft_enqueue', name:'Self Consistent Field Theory'}
+				]"></div>
+				<div class="large-12 columns">
+				<div step-index="3" step-text="Lastly, you can simulate">
+				</div>
+
+
+			<h2 style="text-align:left; padding-bottom: 0px; padding-top: 25px;"> Polymer Applications </h2>
+			<input type="text" placeholder="Search Apps..." ng-model="myfilteringbox">
+
+			<ul class="stack button-group">
+				{% raw %}
+				{{ tools.url }}
+				{{ tools.name }}
+				<li class="toolclass" ng-repeat="tool in tools | filter:myfilteringbox | orderBy: 'name' "><a href='{{ tool.url }}' class="button">{{tool.name}}</a></li>
+				{% endraw %}
+			</div>
+</div>
+</div>
+			<style>
+				.toolclass.ng-enter,
+				.toolclass.ng-leave,
+				.toolclass.ng-move {
+					-webkit-transition: 0.5s linear all;
+					-moz-transition: 0.5s linear all;
+					-o-transition: 0.5s linear all;
+					transition: 0.5s linear all;
+				}
+
+				.toolclass.ng-enter,
+				.toolclass.ng-move {
+					opacity: 0;
+				}
+
+				.toolclass.ng-move.ng-move-active,
+				.toolclass.ng-enter.ng-enter-active {
+					opacity: 1;
+				}
+
+				.toolclass.ng-leave {
+					opacity: 1;
+				}
+
+				.toolclass.ng-leave.ng-leave-active {
+					opacity: 0.0;
+				}
+			</style>
+
+<br>
+<script src = "static/foundation/js/vendor/jquery.js"> </script>
+<script src="../static/foundation/js/foundation.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.8/angular-animate.js"></script>
+<script src="../static/angular-foundation-gh-pages/mm-foundation-tpls-0.8.0.min.js"></script>
+<script src="../static/index_controller.js"></script>
+
+
+<link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
+<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+
+<script>
+        $( document ).ready(function() {
+                // alert('hello');
+                function listpolymers(){
+                        $.ajax({
+                                method: "GET",
+                                url: "/polymers",
+                        }).done(function( results ) {
+                                var availablePolymers = jQuery.parseJSON(results);
+                                // alert(results);
+                                $('#search_button').autocomplete({
+                                        source: availablePolymers
+                                });
+                        });
+                }
+                listpolymers();
+        });
+</script>
+
+
+<script> $(document).foundation();
+</script>
+
+
+{% endblock %}
+

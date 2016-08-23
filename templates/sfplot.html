@@ -1,0 +1,40 @@
+{% extends "base.html" %} 
+
+{% block head %}
+{% endblock %}
+
+{% block content %}
+	<div id = "Header" style="text-align: left;">
+		<h1> Results </h1>
+	</div>
+
+	<div class="row">
+		<h2> Plot </h2>
+			<div id="{{ id }}" class = "small-2 columns">
+				<script type="text/javascript">
+					mpld3.draw_figure("{{ id }}", {{json01|safe }});
+				</script>
+			</div>
+
+			<div class = "large-4 columns">
+				<h2> Data Table </h2>
+			<table>
+			  <thead>
+				<tr>
+				  <th width="50">q</th>
+				  <th width="50">S(q)</th>
+				</tr>
+			  </thead>
+			  <tbody>
+				{% for row in zipped %}
+					<tr>
+						<td> {{ row[0] }} </td>
+						<td> {{ row[1] }} </td>
+					</tr>
+				{% endfor %}
+			  </tbody>
+			</table>
+			</div>
+	</div>
+
+{% endblock %}

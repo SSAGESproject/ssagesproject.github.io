@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- Things I know I will need --!>
+		<link rel="stylesheet" href="static/foundation/css/foundation.css">
+		<link rel="stylesheet" href="static/flory.css">
+		<script src="static/d3.v3.min.js"></script>
+		<script type="text/javascript" src="//mpld3.github.io/js/mpld3.v0.2.js"></script>
+
+		{% block head %}{% endblock %}
+	</head>
+	<body>
+		<script src = "static/foundation/js/vendor/jquery.js"> </script>
+		<script src="static/foundation/js/foundation.min.js"></script>
+
+		<nav class="top-bar" data-topbar data-options="is_hover:true"> 
+		<ul class="title-area"> 
+
+			<li class="name"> 
+			<h1> <a href="/"> Materials Genome Project </a> </h1> 
+			</li>
+
+			<li class="toggle-topbar menu-icon"> 
+			<a href="#"> <span>Polymers</span></a>
+			</li> 
+
+		</ul> 
+
+		<!-- Right Nav Section --> 
+		<section class="top-bar-section">
+		<ul class="right"> 
+			<li class="active">
+			<a href="/">Database</a>
+			</li> 
+
+			<li class="has-dropdown"> 
+			<a href="#">Applications</a> 
+			<ul class="dropdown"> 
+				<li><a href="howto.html">How-To</a>
+				</li>
+				<li><a href="flory.html">Flory-Huggins</a>
+				</li> 
+				<li><a href="vorn.html">Voorn-Overbeek</a> 
+				</li> 	
+				<li><a href="slct.html">Lattice Cluster Theory</a> 
+				</li> 	
+				<li><a href="structurefactor.html">Structure Factor</a> 
+				</li> 	
+				<li><a href="saftdemo.html">SAFT EoS </a> 
+				</li> 	
+			</ul> 
+			</li> 
+
+		</ul>
+
+		<!-- Left Nav Section -->
+	   	<ul class="left"> 
+			<li>
+			<a href="/howto.html">About</a>
+			</li> 
+		</ul> 
+		</section> 
+		</nav>
+
+
+		{% block content %}{% endblock %}
+
+		<br>
+		<table style="margin:0;bottom:0;left:0;text-align:center;background-color:#42647F;">
+			<tr>
+				<td style="text-align:center">
+					<a href="http://chimad.northwestern.edu/" target="_blank">
+						<img width="75%" src="static/img/logo_ChiMaD_white@1x.png" alt="Center for Hierarchical Materials Design logo" />
+					</a>
+				</td>
+				<td style="text-align:center">
+					<a href="http://www.uchicago.edu/" target="_blank">
+						<img width="100%" src="static/img/logo_UC_white@1x.png" alt="University of Chicago logo"/>
+					</a>
+				</td>
+				<td style="text-align:center">
+					<a href="http://www.northwestern.edu/" target="_blank">
+						<img width="65%" src="static/img/logo_NU_white.png" alt="Northwestern University Design logo" />
+					</a>
+				</td>
+				<td style="text-align:center">
+					<a href="http://www.anl.gov/" target="_blank">
+						<img width="85%" src="static/img/logo_ANL_white@1x.png" alt="Argonne National Laboratory logo" />
+					</a>
+				</td>
+				<td style="text-align:center">
+					<a href="http://www.nist.gov/" target="_blank">
+						<img width="75%" src="static/img/logo_NIST_white@1x.png" alt="National Institute of Standards and Technology logo" />
+					</a>
+				</td>
+				<td style="text-align:center">
+					<a href="https://www.ci.uchicago.edu/" target="_blank">
+						<img width="40%" src="static/img/logo_CI_white@1x.png" alt="Computation Institute logo" />
+					</a>
+				</td>
+			</tr>
+		</table>
+	</div>
+
+
+
+
+	<script> $(document).foundation();
+	</script>
+
+</body>
+</html>
+

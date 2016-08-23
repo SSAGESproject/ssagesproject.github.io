@@ -1,0 +1,140 @@
+{% extends "base.html" %} 
+
+{% block head %}
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="static/app.css" />
+{% endblock %}
+
+{% block content %}
+
+	<div id = "Header" style="text-align: left;">
+		<h1> Results </h1>
+	</div>
+
+	<!-- Retrieved DB Stuff --!>
+	<div class="row">
+		<h2> From the Database... </h2>
+
+
+	</div>
+
+           <div class="row">
+  <div class="medium-6 columns end">
+    <div class="card">
+      <div class="content">
+		<hr>
+
+		{% if jsondata['0']['chi'] is defined %}
+
+		  <span class="title">Chi Value between {{polya|capitalize }} and {{polyb|capitalize }} Measured at {{jsondata['0']['temperature']}} {{jsondata['0']['temperature_unit']}}</span>
+		<a href="http://www.codecogs.com/eqnedit.php?latex=\dpi{300}&space;\huge&space;\chi" target="_blank"><img src="http://latex.codecogs.com/gif.latex?\dpi{400}&space;\huge&space;\chi= {{ jsondata['0']['chi']}} " title="\huge \chi" /></a>
+		{% elif jsondata['status'] == 'user' %}
+
+		  <span class="title">Chi Value between {{polya|capitalize }} and {{polyb|capitalize }} Not Found: User input used instead</span>
+		<a href="http://www.codecogs.com/eqnedit.php?latex=\dpi{300}&space;\huge&space;\chi" target="_blank"><img src="http://latex.codecogs.com/gif.latex?\dpi{400}&space;\huge&space;\chi= {{ jsondata['0']['userchi']}} " title="\huge \chi" /></a>
+		{% else %}
+
+		  <span class="title">Chi Value between {{polya|capitalize }} and {{polyb|capitalize }} Measured at {{jsondata['0']['temperature']}} {{jsondata['0']['temperature_unit']}}</span>
+		<a href="http://www.codecogs.com/eqnedit.php?latex=\dpi{300}&space;\huge&space;\chi" target="_blank"><img src="http://latex.codecogs.com/gif.latex?\dpi{400}&space;\huge&space;\chi= {{ jsondata['0']['chia']}} + \frac{ {{jsondata['0']['chib']|safe}} }{T}" title="\huge \chi" /></a>
+		{% endif %}
+
+      </div>
+		  <div class="action">
+			  <a href=' {{jsondata['0']['paper_link']}} '>Source</a>
+		  </div>
+    </div>
+  </div>
+  <div class="medium-4 columns end">
+    <div class="card">
+      <div class="content">
+        <span class="title">Details</span>
+	  <hr>
+	  <p><b> Component A:</b> {{ polya | capitalize}} <p>
+	  <hr>
+	  <p><b> Component B:</b> {{ polyb | capitalize}}<p>
+	  <hr>
+	  <p><b> Method Used:</b> Unknown <p>
+	  <hr>
+	  <p><b> Notes:</b> {{jsondata['0']['notes']}}<p>
+	  <hr>
+	  <p><b> Temperature:</b> {{jsondata['0']['temperature']}} {{jsondata['0']['temperature_unit']}}  <p>
+  </div>
+    </div>
+  </div>
+  </div>
+<br>
+
+	<div class="row">
+		<h2> Generated Plots... </h2>
+		{% for plot in list_of_plots %}
+			<div class= "card">
+			<div id="{{ plot['id'] }}" class = "large-8 large-centered columns"></div>
+		</div>
+			<br>
+			<br>
+		{% endfor %}
+		<script type = "text/javascript">
+			{% for plot in list_of_plots %}
+				mpld3.draw_figure("{{plot['id'] }}", {{ plot['json']|safe }});
+			{% endfor %}
+		</script>
+	</div>
+	</div>
+
+	<br>
+
+	<div class = "row">
+		<h2> Critical Point </h2>
+
+	<div class = "card">
+			<br>
+			<div class = "large-12 columns">
+				<table>
+					  <thead>
+						<tr>
+						  <th width="150">Critical Volume Fraction</th>
+						  <th width="150">Critical Temperature</th>
+						</tr>
+					  </thead>
+					  <tbody>
+							<tr>
+								<td align="center"> {{ critphi[0] }} </td>
+								<td align="center"> {{ critphi[1] }} </td>
+							</tr>
+					  </tbody>
+				</table>
+			</div>
+	</div>
+</div>
+
+
+<br>
+	<div class = "row">
+		<h2> Data Table </h2>
+		
+		<div class = "card">
+			<br>
+			<div class = "large-12 columns">
+	<table>
+	  <thead>
+		<tr>
+		  <th width="100">Volume Fraction</th>
+		  <th width="150">Spinodal</th>
+		  <th width="150">Binodal</th>
+		</tr>
+	  </thead>
+	  <tbody>
+		{% for row in zipped %}
+			<tr align="center">
+				<td align="center"> {{ row[0] }} </td>
+				<td align="center"> {{ row[1] }} </td>
+				<td align="center"> {{ row[2] }} </td>
+			</tr>
+		{% endfor %}
+	  </tbody>
+	</table>
+</div>
+</div>
+</div>
+
+	{% endblock %}

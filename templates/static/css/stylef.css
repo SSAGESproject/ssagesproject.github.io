@@ -1,0 +1,46 @@
+
+#Header {	border-bottom: solid #D0D0D0 14px;
+		padding-top: 10px;
+		padding-bottom: 10px;
+		background-color: #42647F;
+		margin-bottom:20px;
+}
+
+#Header h1 {font-family: "Helvetica Neue", "Helvetica", "Helvetica", "Arial", sans-serif;
+	     font-size: 40px;
+	     color: white; 
+}
+#Header .Mat { text-align: right;
+}
+
+
+
+#Header #tagline { text-align: center;
+		   color: #D0D0D0;
+}
+
+#Header .image { text-align: center;}
+
+.layer {background-color: black
+	height:10px;}
+
+.introduction{ font-family: "Times New Roman", Times, serif;
+}
+
+#first { border: solid #D0D0D0 3px;
+	background-color:#42647F;
+	margin-bottom: 20px;}
+
+#first p, #first li, #third p, #third li { color: #D0D0D0; }
+
+#first h2,#third h2 {text-align:center;}
+
+
+#third{ border: solid #D0D0D0 3px;
+	background-color:#42647F;
+	margin-bottom:20px;}
+
+#first a, #third a {color: white;}
+
+#howto div {color: blue;}
+

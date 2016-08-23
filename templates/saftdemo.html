@@ -1,0 +1,54 @@
+{% extends "base.html" %}
+ 
+{% block head %}
+{% endblock %}
+
+{% block content %}
+	<div id = "Header" style="text-align: center;">
+		<h1> SAFT-LLE Demo</h1>
+	</div>
+
+<div class = "introduction">
+	<div class="row">
+		<h2> SAFT</h2>
+	</div>
+	<div class = "row">
+	<p>
+	SAFT, or Statistical Associating Fluid Theory, is a semiemperical equation of state that is founded on the basis of Wertheim's first-order perturbation theory. SAFT describes the Helmholtz free energy as the sum of a segment-segment interaction term, a chain-chain term, and an association term.<sup>1</sup>
+	</p>
+	<p> In this current model, a series of approximations are implemented to provide a quick-running demo of a SAFT LLE calculation. The approximations implemented are as follows:
+ 
+		<ol>
+				<li>The molecules are not chains ie) no chain term</li>
+				<li>Approximation as hard spheres</li>
+				<li>Each association site is indistinguishable</li>
+		</ol>
+	
+</p>
+<p> The following is a live calculation for the Liquid-Liquid Equilibrium of a model component with 3 association sites.
+	</div>
+</div>
+	<form data-abide action="/saftplot" method="post">
+		<div class="row">
+
+		</div>
+
+			<div class="row">
+					<div align="center">
+						<input class="button" type="submit" name="florybutton" value="Generate SAFT LLE demo!" />
+					</div>
+			</div>
+		</form>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<hr>
+<div class="row">
+1.Chapman, W. G.; Gubbins, K. E.; Jackson, G.; Radosz, M., New reference equation of state for associating liquids. Industrial & Engineering Chemistry Research 1990, 29 (8), 1709-1721.
+</div>
+
+{% endblock %}
+

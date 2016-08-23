@@ -1,0 +1,57 @@
+ #Header {   border-bottom: solid #D0D0D0 7px;                                                   
+			padding-top: 20px;
+			padding-bottom: 50px;
+			background-color: #42647F;
+			margin-bottom:30px;
+ 		 }
+#Header h1 { color: white;
+			text-align: center;
+			}
+#fbox {border: solid black 7px;}
+
+#field1, #field2, #bending {
+ background-color: #ecf0f0;
+ -moz-border-radius:10px; 
+ border-radius: 10px;
+ -webkit-border-radius: 10px; 
+}
+form label {
+  font-size: 1.2em;
+  font-weight: bold;
+  display: block;
+  padding: 10px 0;
+}
+
+#footer{
+ bottom:0;
+ left:0;
+}
+ 
+#Header {   border-bottom: solid #D0D0D0 7px;                                                   
+			padding-top: 20px;
+			padding-bottom: 50px;
+			background-color: #42647F;
+			margin-bottom:30px;
+ 		 }
+#Header h1 { color: white;
+			text-align: center;
+			}
+#fbox {border: solid black 7px;}
+
+#field1, #field2, #bending {
+ background-color: #ecf0f0;
+ -moz-border-radius:10px; 
+ border-radius: 10px;
+ -webkit-border-radius: 10px; 
+}
+form label {
+  font-size: 1.2em;
+  font-weight: bold;
+  display: block;
+  padding: 10px 0;
+}
+
+#footer{
+ bottom:0;
+ left:0;
+}

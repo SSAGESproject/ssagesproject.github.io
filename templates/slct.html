@@ -1,0 +1,402 @@
+{% extends "base.html" %}
+ 
+{% block head %}
+	<link rel="stylesheet" href="static/hover1.css">
+	<link rel="stylesheet" href="static/hover2.css">
+{% endblock %}
+
+{% block content %}
+
+
+	<div id = "Header" style="text-align: left;">
+		<h1>Generalized-Flory Lattice Cluster Graph Generator </h1>
+	</div>
+	<div class = "introduction">
+		<div class="row">
+			<h2> About </h2>
+		</div>
+
+<div class = "introduction">
+	<div align="center" class="row">
+
+<!-- Para1 --!>
+		<h4>Lattice Cluster Theory</h4>
+	</div>
+	<div class = "row">
+		<p> Lattice Cluster Theory is based on an extended lattice model where united atom groups, rather than entire monomers, occupy a lattice site.<sup>1</sup> Because of this, lattice cluster theory takes into account short-range correlations that arise from packing constraints and different monomer-monomer interactions.<sup>2</sup> Using a set of counting indices, LCT treats various monomer structures into the thermodynamic description of polymer systems. 
+		</p> 
+		<p> The inherent model of LCT treats each component as fully flexible, and through the semiflexibility option in the LCT app, we are able to introduce chain stiffness into the model. Each component requires a bending energy, Eb, to calculate the extent of stiffness.
+
+<hr>
+<!-- Para3 --!>
+	<div class="row">
+		<h4> Using this App</h4>
+			<p> The following code generates the free energy diagram as a function of volume fraction, including separate entropic and enthalpic contributions. In addition, a phase diagram predicting the LLE for the system is generated using a numerical root-finding algorithm to determine the binodal, while the spinodal is determined analytically. The critical values are also included, and representative values from the LLE equilibrium plot are displayed at the bottom of the page. In order to generate results, all 3 parameters: degree of polymerization for both species and a chi value, are necessary. </p>
+			<p> For structures containing variable subchain lengths (those containing 'k' or 'm'), an additional input box is required to input the amount of units added to the subchain. In the pictures presented with k, the structure shown is as the number of hollow united atom groups presented. 
+			</p>
+			<p> To generate a semiflexible plot, simply check the 'Semiflexible' box and enter bending energies for *both* components. If desired, chain stiffness can be ignored from the input box by setting the bending energy, Eb, to 0.
+			</p>
+	</div>
+
+
+	</div>
+		</div>
+	</div>
+	<br>
+	<br>
+	<form autocomplete="on" action="/slctplot" method="post" class="abide-form" data-abide >
+		<div class="row">
+			<div class="large-6 columns">
+				<label>Species A
+				</label>
+					<div id = "section_a" class="cc-selector">
+						<input id="p_a" type="radio" name="polya" value="PA" />
+						<label class="drinkcard-cc p_a" for="p_a"></label>
+						
+						<input id="p_b" type="radio" name="polya" value="PB" />
+						<label class="drinkcard-cc p_b" for="p_b"></label>
+
+						<input id="p_c" type="radio" name="polya" value="PC" />
+						<label class="drinkcard-cc p_c" for="p_c"></label>
+
+						<input id="p_d" type="radio" name="polya" value="PD" />
+						<label class="drinkcard-cc p_d" for="p_d"></label>
+
+						<input id="p_e" type="radio" name="polya" value="PE" />
+						<label class="drinkcard-cc p_e" for="p_e"></label>
+
+						<input id="p_f" type="radio" name="polya" value="PF" />
+						<label class="drinkcard-cc p_f" for="p_f"></label>
+
+					</div>
+					 
+					<div id="showmore_a" align=center>Show More...</div>
+
+					<div id = "section_aplus" class="cc-selector">
+						<input id="p_g" type="radio" name="polya" value="PG" />
+						<label class="drinkcard-cc p_g" for="p_g"></label>
+
+						<input id="p_h" type="radio" name="polya" value="PH" />
+						<label class="drinkcard-cc p_h" for="p_h"></label>
+
+						<input id="p_i" type="radio" name="polya" value="PI" />
+						<label class="drinkcard-cc p_i" for="p_i"></label>
+
+						<input id="p_j" type="radio" name="polya" value="PJ" />
+						<label class="drinkcard-cc p_j" for="p_j"></label>
+
+						<input id="p_k" type="radio" name="polya" value="PK" />
+						<label class="drinkcard-cc p_k" for="p_k"></label>
+
+						<input id="p_l" type="radio" name="polya" value="PL" />
+						<label class="drinkcard-cc p_l" for="p_l"></label>
+
+						<input id="p_m" type="radio" name="polya" value="PM" />
+						<label class="drinkcard-cc p_m" for="p_m"></label>
+
+						<input id="p_n" type="radio" name="polya" value="PN" />
+						<label class="drinkcard-cc p_n" for="p_n"></label>
+
+						<input id="p_o" type="radio" name="polya" value="PO" />
+						<label class="drinkcard-cc p_o" for="p_o"></label>
+
+						<input id="p_p" type="radio" name="polya" value="PP" />
+						<label class="drinkcard-cc p_p" for="p_p"></label>
+
+						<input id="p_q" type="radio" name="polya" value="PQ" />
+						<label class="drinkcard-cc p_q" for="p_q"></label>
+
+						<input id="p_r" type="radio" name="polya" value="PR" />
+						<label class="drinkcard-cc p_r" for="p_r"></label>
+
+						<input id="p_s" type="radio" name="polya" value="PS" />
+						<label class="drinkcard-cc p_s" for="p_s"></label>
+
+						<input id="p_t" type="radio" name="polya" value="PT" />
+						<label class="drinkcard-cc p_t" for="p_t"></label>
+
+						<input id="p_u" type="radio" name="polya" value="PU" />
+						<label class="drinkcard-cc p_u" for="p_u"></label>
+
+
+
+
+
+
+					</div>
+			</div>
+			<div class="large-6 columns">
+				<label>Species B
+						<!--
+					<select name="polyb">
+						<option value="PH1">poly(hexene-1)</option>
+						<option value="PEP">poly(ethylene propylene)</option>
+						<option value="PIB">poly(isobutylene)</option>
+					</select>
+					--!>
+				</label>
+					<div id="section_b" class="cc-selector">
+						<input id="p_a1" type="radio" name="polyb" value="PA" />
+						<label class="drinkcard-cc p_a" for="p_a1"></label>
+
+						<input id="p_b1" type="radio" name="polyb" value="PB" />
+						<label class="drinkcard-cc p_b" for="p_b1"></label>
+
+						<input id="p_c1" type="radio" name="polyb" value="PC" />
+						<label class="drinkcard-cc p_c" for="p_c1"></label>
+
+						<input id="p_d1" type="radio" name="polyb" value="PD" />
+						<label class="drinkcard-cc p_d" for="p_d1"></label>
+
+						<input id="p_e1" type="radio" name="polyb" value="PE" />
+						<label class="drinkcard-cc p_e" for="p_e1"></label>
+
+						<input id="p_f1" type="radio" name="polyb" value="PF" />
+						<label class="drinkcard-cc p_f" for="p_f1"></label>
+					</div>
+					<div id="showmore_b" align=center>Show More...</div>
+
+					<div id="section_bplus" class="cc-selector">
+						<input id="p_g1" type="radio" name="polyb" value="PG" />
+						<label class="drinkcard-cc p_g" for="p_g1"></label>
+
+						<input id="p_h1" type="radio" name="polyb" value="PH" />
+						<label class="drinkcard-cc p_h" for="p_h1"></label>
+
+						<input id="p_i1" type="radio" name="polyb" value="PI" />
+						<label class="drinkcard-cc p_i" for="p_i1"></label>
+
+						<input id="p_j1" type="radio" name="polyb" value="PJ" />
+						<label class="drinkcard-cc p_j" for="p_j1"></label>
+
+						<input id="p_k1" type="radio" name="polyb" value="PK" />
+						<label class="drinkcard-cc p_k" for="p_k1"></label>
+
+						<input id="p_l1" type="radio" name="polyb" value="PL" />
+						<label class="drinkcard-cc p_l" for="p_l1"></label>
+
+						<input id="p_m1" type="radio" name="polyb" value="PM" />
+						<label class="drinkcard-cc p_m" for="p_m1"></label>
+
+						<input id="p_n1" type="radio" name="polyb" value="PN" />
+						<label class="drinkcard-cc p_n" for="p_n1"></label>
+
+						<input id="p_o1" type="radio" name="polyb" value="PO" />
+						<label class="drinkcard-cc p_o" for="p_o1"></label>
+
+						<input id="p_p1" type="radio" name="polyb" value="PP" />
+						<label class="drinkcard-cc p_p" for="p_p1"></label>
+
+						<input id="p_q1" type="radio" name="polyb" value="PQ" />
+						<label class="drinkcard-cc p_q" for="p_q1"></label>
+
+						<input id="p_r1" type="radio" name="polyb" value="PR" />
+						<label class="drinkcard-cc p_r" for="p_r1"></label>
+
+						<input id="p_s1" type="radio" name="polyb" value="PS" />
+						<label class="drinkcard-cc p_s" for="p_s1"></label>
+
+						<input id="p_t1" type="radio" name="polyb" value="PT" />
+						<label class="drinkcard-cc p_t" for="p_t1"></label>
+
+						<input id="p_u1" type="radio" name="polyb" value="PU" />
+						<label class="drinkcard-cc p_u" for="p_u1"></label>
+
+
+					</div>
+			</div>
+		</div>
+
+		<br>
+							<!-- K and M values --!>
+
+		<!-- LHS --!>
+		<div class="row">
+			<div class="large-6 columns">
+				<fieldset id= "field1">
+					<legend>Side chain length </legend>
+				<div class="large-6 columns">
+					<label for='kval1'> K
+							<input id='kval1' type="text" name="k1" placeholder="2" />
+					</label>
+				</div>
+				<div class="large-6 columns">
+					<label for='mval1'> M 
+							<input id='mval1' type="text" name="m1" placeholder="2" />
+					</label>
+				</div>
+			</div>
+
+		<!-- RHS --!>
+			<div class="large-6 columns">
+				<fieldset id = field2>
+					<legend> Side chain length </legend>
+				<div class="large-6 columns">
+					<label for='kval2'> K
+							<input id='kval2' type="text" name="k2" placeholder="2" />
+					</label>
+				</div>
+				<div class="large-6 columns">
+					<label for='mval2'> M 
+							<input id='mval2' type="text" name="m2" placeholder="2" />
+					</label>
+				</div>
+			</div>
+		</div>
+		<div align=center>
+				<input name="semicheck" value="1.0" id="checkbox_semiflex" type="checkbox"><label for="checkbox_semiflex">Semiflexible</label>
+		</div>
+		</div>
+
+		<!-- Bending Energy Forms --!>
+		<div id="bending_energies" class="row">
+			<fieldset id= "bending">
+
+				<legend> Bending Energies for Semilflexibility </legend>
+			<div class="large-6 columns">
+				<label for='bend_a'> Bending Energy, K
+						<input id='eb_a' type="text" name="eba" placeholder="250" />
+				</label>
+			</div>
+			<div class="large-6 columns">
+				<label for='bend_b'> Bending Energy, K
+						<input id='eb_b' type="text" name="ebb" placeholder="250" />
+				</label>
+			</div>
+		</div>
+
+		<!-- Input Parameters --!>
+		<div class="row">
+			<fieldset>
+				<legend> Input Parameters </legend>
+
+				<div class="large-4 columns">
+					<label>Monomers of Species A
+							<input required type="text" name="NFA" placeholder="100" />
+							<small class="error">Please input a valid number.</small>
+					</label>
+				</div>
+
+				<div class="large-4 columns">
+					<label>Monomers of Species B
+							<input required type="text" name="NFB" placeholder="100" />
+							<small class="error">Please input a valid number.</small>
+					</label>
+				</div>
+
+				<div class="large-3 columns">
+					<label> Epsilon
+							<input required type="text" name="eps" placeholder="0.2" />
+							<small class="error">Please input a valid number.</small>
+					</label>
+				</div>
+
+		</div>
+
+		<div class="row">
+			<div align="center">
+				<input class="button" type="submit" name="slctbutton" value="Generate Profile!" />
+			</div>
+		</div>
+	</form>
+
+
+		<script>
+			// jquery starts here
+			// Hides kvals until clicked
+
+			$('#bending_energies').hide();
+
+			$('#checkbox_semiflex').click(function () {
+				$('#bending_energies').slideToggle('slow');
+			});
+
+			var kvals = '#p_f,#p_g,#p_h,#p_i,#p_j'
+			var kvals1 = '#p_f1,#p_g1,#p_h1,#p_i1,#p_j1'
+
+			var nonkvals = "#p_a, #p_b, #p_c #p_d, #p_e, #p_k, #p_l, #p_m, #p_n, #p_o, #p_p, #p_q, #p_r, #p_s, #p_t, #p_u"
+			var nonkvals1 = "#p_a1, #p_b1, #p_c1 #p_d1, #p_e1, #p_k1, #p_l1, #p_m1, #p_n1, #p_o1, #p_p1, #p_q1, #p_r1, #p_s1, #p_t1, #p_u1"
+
+
+			/* HIDE ALL THIS FIRST */
+			//kval
+			$('label[for="kval1"]').hide();
+			$('#kval1').hide()
+			$('label[for="kval2"]').hide();
+			$('#kval2').hide()
+
+			//mval
+			$('label[for="mval1"]').hide();
+			$('#mval1').hide()
+			$('label[for="mval2"]').hide();
+			$('#mval2').hide()
+
+			//Showmore stuff
+			$('#section_aplus').hide();
+			$('#section_bplus').hide();
+			//k and m fields
+			$('#field1, #field2').hide();
+
+
+			//Limits the number of polymers on the page
+			$('#showmore_a').click(function() {
+					$('#section_aplus').slideDown(1400);
+					$('#showmore_a').hide();
+				});
+
+			$('#showmore_b').click(function() {
+					$('#section_bplus').slideDown(1400);
+					$('#showmore_b').hide();
+				});
+				
+
+			//Allows the kvalues to pop in/out when necessary
+
+			//LEFT SIDE
+			$( kvals ).click(function() {
+
+					$('#field1').show()
+					$('label[for="kval1"]').slideDown(600);
+					$('#kval1').slideDown(600);
+					$('label[for="mval1"]').slideDown(600);
+					$('#mval1').slideDown(600);
+				});
+
+			//RIGHT SIDE
+			$( kvals1 ).click(function() {
+
+					$('#field2').show()
+					$('label[for="kval2"]').slideDown(600);
+					$('#kval2').slideDown(600);
+					$('label[for="mval2"]').slideDown(600);
+					$('#mval2').slideDown(600);
+				});
+
+			//LEFT SIDE
+			$( nonkvals ).click(function() {
+
+					$('#field1').hide()
+					$('label[for="kval1"]').hide('slow');
+					$('#kval1').hide('slow');
+					$('label[for="mval1"]').hide('slow');
+					$('#mval1').hide('slow');
+				});
+
+			//RIGHT SIDE
+			$( nonkvals1 ).click(function() {
+					$('#field2').hide()
+					$('label[for="kval2"]').hide('slow');
+					$('#kval2').hide('slow');
+					$('label[for="mval2"]').hide('slow');
+					$('#mval2').hide('slow');
+						    });
+		</script>
+
+<div class="row">
+<hr>
+<p>Jacek Dudowicz and Karl Freed have contributed to this portion of the web site based on research supported, in part, by NSF grant CHE-1363012.</p>
+<hr>
+<p>1. Freed KF, Dudowicz J (1995) Trends Polym Sci 3:248</p>
+<p>2. Freed KF, Dudowicz J (2005) Adv Polym Sci  183: 63–126 </p>
+</div>
+{% endblock %}
