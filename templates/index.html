@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 {% block head %}
-<link rel="stylesheet" href="static/stylef.css">
+<link rel="stylesheet" href="">
 {% endblock %}
 
 
@@ -9,27 +9,52 @@
 
 <body ng-app='indexApp' ng-controller="TourDemoCtrl">
 
+<!-- HEADER --!>
+<nav class="top-bar" data-topbar role="navigation">
+  <ul class="title-area">
+    <li class="name">
+      <h1><a href="#">My Site</a></h1>
+    </li>
+     <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+    <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+  </ul>
+
+  <section class="top-bar-section">
+    <!-- Right Nav Section -->
+    <ul class="right">
+      <li class="active"><a href="#">Right Button Active</a></li>
+      <li class="has-dropdown">
+        <a href="#">Right Button Dropdown</a>
+        <ul class="dropdown">
+          <li><a href="#">First link in dropdown</a></li>
+          <li class="active"><a href="#">Active link in dropdown</a></li>
+        </ul>
+      </li>
+    </ul>
+
+    <!-- Left Nav Section -->
+    <ul class="left">
+      <li><a href="#">Left Nav Button</a></li>
+    </ul>
+  </section>
+</nav>
 
 
-<!-- HEADER -->
-<div id="Header">
-	<div id= "Heading">
-		<div class="row">
-			<div class="large-4 columns">
-				<h1 id="Mat">Materials</h1>
-			</div>
-			<div class="large-4 columns">
-				<h1 id="Gen">Genome</h1>
-			</div>
-			<div class="large-4 columns">
-				<h1 id="Pro">Project </h1>
-			</div>
-		</div>
-	</div>	
-	<table style="border:none;background-color: #42647F;"><tr><td style="text-align:center"><img src="static/img/drawing.png" style="height:100px"/></td></tr></table>
-</div>
+<header class="header">
 
+  <h1 class="headline">SSAGES</small></h1>
 
+  <ul class="header-subnav">
+
+    <li><a href="#">Take Action!</a></li>
+
+    <li><a href="#" class="is-active">Carpe Diem!</a></li>
+
+    <li><a target="_blank" href="http://zurb.com/responsive">Just do it!</a></li>
+
+  </ul>
+
+</header>
 
 <!-- TOUR GUIDE -->
 <br/>
