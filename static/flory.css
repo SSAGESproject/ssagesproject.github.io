@@ -1,11 +1,11 @@
 .header {
   text-align: center;
-  background: #4f2f2f;
+  background: #800000;
   background-size: cover;
   position: relative;
   overflow: visible;
-  padding-top: 2.5rem;
-  padding-bottom: 4.9rem;
+  padding-top: 1.5rem;
+  padding-bottom: 2.5rem;
   }
   .header .headline {
     color: #ffe;
@@ -40,7 +40,13 @@ html, body{
     background-color: #FEFDFB;
 }
 
-h2, h4{
+h2{
+    color: #2f4f4f;
+    text-align:center;
+    font-weight:bold;
+}
+
+h4{
     color: #2f4f4f;
     text-align:center;
 }
