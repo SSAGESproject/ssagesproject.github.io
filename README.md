@@ -1,3 +1,3 @@
-#Predictive Polymer Database (PPDB) Website
+#SSAGES and COPPS Website
 
 
