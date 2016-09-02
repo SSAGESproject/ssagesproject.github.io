@@ -2,72 +2,73 @@
 
 <html lang="en">
 <head>
-    <!== Things I know I will need ==!>
-        <link rel="stylesheet" href="static/foundation/css/foundation.css">
-        <link rel="stylesheet" href="static/ssages.css">
-        <link href="http://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css" rel="stylesheet">
+    <link href="static/foundation/css/foundation.css" rel="stylesheet">
+    <link href="static/ssages.css" rel="stylesheet">
+    <link href=
+    "http://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css"
+    rel="stylesheet">
 
-           {% block head %}{% endblock %}
-    </head>
-    <body>
-        <script src = "static/foundation/js/vendor/jquery.js"> </script>
-        <script src="static/foundation/js/foundation.min.js"></script>
-
-
-<!== HEADER ==!>
-<nav class="top-bar" data-topbar role="navigation">
-  <ul class="title-area">
-    <li class="name">
-      <h1><a href="/home">SSAGES</a></h1> 
-    </li>
-  </ul>
     <title>
     </title>
+</head>
 
 <body>
-    <section class="top-bar-section">
-        <!== Right Nav Section ==!>
+    {% block head %}{% endblock %} 
+    <script src="static/foundation/js/vendor/jquery.js">
+    </script> 
+    <script src="static/foundation/js/foundation.min.js">
+    </script>
 
-
-        <ul class="right">
-            <li class="has-dropdown">
-                <a href="#">Menu</a>
-
-                <ul class="dropdown">
-                    <li>
-                        <a href="/home">Home</a>
-                    </li>
-
-
-                    <li>
-                        <a href="/features">Features</a>
-                    </li>
-
-
-                    <li>
-                        <a href="/team">Team</a>
-                    </li>
-
-
-                    <li>
-                        <a href="/download">Download</a>
-                    </li>
-
-
-                    <li class="active"> 
-                        <a href=
-                        "https://github.com/WhitmerGroup/SSAGES">GitHub</a>
-                    </li>
-
-
-                    <li class="active">
-                        <a href="#">Documentation</a>
-                    </li>
-                </ul>
+    <nav class="top-bar" data-topbar="" role="navigation">
+        <ul class="title-area">
+            <li class="name">
+                <h1><a href="/home">SSAGES</a>
+                </h1>
             </li>
         </ul>
-    </section>
-</nav>
+
+
+        <section class="top-bar-section">
+            <ul class="right">
+                <li class="has-dropdown">
+                    <a href="#">Menu</a>
+
+                    <ul class="dropdown">
+                        <li>
+                            <a href="/home">Home</a>
+                        </li>
+
+
+                        <li>
+                            <a href="/features">Features</a>
+                        </li>
+
+
+                        <li>
+                            <a href="/team">Team</a>
+                        </li>
+
+
+                        <li>
+                            <a href="/download">Download</a>
+                        </li>
+
+
+                        <li class="active">
+                            <a href=
+                            "https://github.com/WhitmerGroup/SSAGES">GitHub</a>
+                        </li>
+
+
+                        <li class="active">
+                            <a href="#">Documentation</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+    </nav>
+
 
     <header class="header">
         <h1 class="headline" style="font-size:80px">SSAGES<br>
