@@ -1,4 +1,12 @@
 <!DOCTYPE html>
+<html>
+<head>
+    <title>
+    </title>
+</head>
+
+<body>
+    <!DOCTYPE html>
 
 <html lang="en">
 <head>
@@ -13,7 +21,8 @@
 </head>
 
 <body>
-    {% block head %}{% endblock %} 
+    
+    <link href="" rel="stylesheet"> 
     <script src="static/foundation/js/vendor/jquery.js">
     </script> 
     <script src="static/foundation/js/foundation.min.js">
@@ -101,7 +110,121 @@
             </li>
         </ul>
     </header>
-    {% block content %}{% endblock %}
+     
+    <!-- SSAGES Team -->
+    <br>
+    <br>
+
+
+    <div class="row">
+        <div class="large-12 columns">
+            <div>
+                <h1>Meet the Team</h1>
+                <br>
+                <br>
+                <a href="https://ime.uchicago.edu/de_pablo_lab">
+                <h2 style=
+                "text-align:center; padding-bottom: 0px; padding-top: 0px;">The
+                de Pablo Group</h2></a>
+
+                <hr>
+                <img src="static/img/dePablo_16web.png" style=
+                "display: block; margin: 0 auto;" width="20%">
+
+                <h4 style=
+                "text-align:center; padding-bottom: 0px; padding-top: 0px;">The
+                de Pablo group is led by Professor Juan Jose de Pablo and has
+                contributed to the methods of SSAGES and COPPS.</h4>
+                <br>
+                <br>
+
+                <hr>
+                <br>
+                <br>
+                <a href="https://engineering.nd.edu/profiles/jwhitmer">
+                <h2 style=
+                "text-align:center; padding-bottom: 0px; padding-top: 0px;">The
+                Whitmer Group</h2></a>
+
+                <hr>
+                <img src="static/img/whitmer.jpeg" style=
+                "display: block; margin: 0 auto;" width="20%">
+
+                <h4 style=
+                "text-align:center; padding-bottom: 0px; padding-top: 0px;">The
+                Whitmer group is led by Professor Jonathan K. Whitmer and has
+                contributed to the methods and architecture of SSAGES and
+                COPPS.</h4>
+                <br>
+                <br>
+
+                <hr>
+                <br>
+                <br>
+                <a href="http://glotzerlab.engin.umich.edu/home/">
+                <h2 style=
+                "text-align:center; padding-bottom: 0px; padding-top: 0px;">The
+                Glotzer Group</h2></a>
+
+                <hr>
+                <img src="static/img/sglotzer.jpg" style=
+                "display: block; margin: 0 auto;" width="20%">
+
+                <h4 style=
+                "text-align:center; padding-bottom: 0px; padding-top: 0px;">The
+                Glotzer Group is led by Professor Sharon C. Glotzer and</h4>
+                <br>
+                <br>
+
+                <hr>
+                <br>
+                <br>
+                <a href="http://aztec.tech.northwestern.edu/">
+                <h2 style=
+                "text-align:center; padding-bottom: 0px; padding-top: 0px;">The
+                Olvera de la Cruz Group</h2></a>
+
+                <hr>
+                <img src="static/img/delacruz.jpg" style=
+                "display: block; margin: 0 auto;" width="20%">
+
+                <h4 style=
+                "text-align:center; padding-bottom: 0px; padding-top: 0px;">The
+                Olvera de la Cruz Group is led by Professor Monica Olvera de la
+                Cruz and</h4>
+                <br>
+                <br>
+
+                <hr>
+                <br>
+                <br>
+                <a href="http://www.unalmed.edu.co/~jphernandezo/">
+                <h2 style=
+                "text-align:center; padding-bottom: 0px; padding-top: 0px;">The
+                Hernandez-Ortiz Group</h2></a>
+
+                <hr>
+                <img src="static/img/ortiz.png" style=
+                "display: block; margin: 0 auto;" width="20%">
+
+                <h4 style=
+                "text-align:center; padding-bottom: 0px; padding-top: 0px;">The
+                Hernandez-Ortiz group is led by Professor Juan Pablo
+                Hernandez-Ortiz and</h4>
+                <br>
+                <br>
+
+                <hr>
+                <br>
+                <br>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <!-- -->
+     
 
     <table style=
     "margin:0;bottom:0;left:0;text-align:center;background-color:#ffffff;border:none">
