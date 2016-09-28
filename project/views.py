@@ -8,14 +8,17 @@ def index():
     return render_template('index.html')
 
 @app.route('/SSAGES-site/features.html')
+@app.route('/features.html')
 def features():
 	return render_template("features.html")
 
 @app.route('/SSAGES-site/team.html')
+@app.route('/team.html')
 def team():
 	return render_template("team.html")
 
 @app.route('/SSAGES-site/download.html')
+@app.route('/download.html')
 def download():
     return render_template("download.html")
 
