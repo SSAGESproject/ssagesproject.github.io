@@ -7,15 +7,15 @@ from app import app, pages
 def index():
     return render_template('index.html')
 
-@app.route('/features.html')
+@app.route('/SSAGES-site/features.html')
 def features():
 	return render_template("features.html")
 
-@app.route('/team.html')
+@app.route('/SSAGES-site/team.html')
 def team():
 	return render_template("team.html")
 
-@app.route('/download.html')
+@app.route('/SSAGES-site/download.html')
 def download():
     return render_template("download.html")
 
