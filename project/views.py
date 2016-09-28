@@ -6,9 +6,6 @@ from app import app, pages
 @app.route('/index.html')
 def index():
     return render_template('index.html')
-@app.route('/home.html')
-def home():
-    return render_template('index.html')
 
 @app.route('/features.html')
 def features():
