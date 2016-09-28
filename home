@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+    </title>
+</head>
+
+<body>
+    <!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <link href="static/foundation/css/foundation.css" rel="stylesheet">
+    <link href="static/ssages.css" rel="stylesheet">
+    <link href=
+    "http://cdnjs.cloudflare.com/ajax/libs/foundicons/3.0.0/foundation-icons.css"
+    rel="stylesheet">
+
+    <title>
+    </title>
+</head>
+
+<body>
+    
+    <link href="" rel="stylesheet"> 
+    <script src="static/foundation/js/vendor/jquery.js">
+    </script> 
+    <script src="static/foundation/js/foundation.min.js">
+    </script>
+
+    <nav class="top-bar" data-topbar="" role="navigation">
+        <ul class="title-area">
+            <li class="name">
+                <h1><a href="/home">SSAGES</a>
+                </h1>
+            </li>
+        </ul>
+
+
+        <section class="top-bar-section">
+            <ul class="right">
+                <li class="has-dropdown">
+                    <a href="#">Menu</a>
+
+                    <ul class="dropdown">
+                        <li>
+                            <a href="/home">Home</a>
+                        </li>
+
+
+                        <li>
+                            <a href="/features">Features</a>
+                        </li>
+
+
+                        <li>
+                            <a href="/team">Team</a>
+                        </li>
+
+
+                        <li>
+                            <a href="/download">Download</a>
+                        </li>
+
+
+                        <li class="active">
+                            <a href=
+                            "https://github.com/WhitmerGroup/SSAGES">GitHub</a>
+                        </li>
+
+
+                        <li class="active">
+                            <a href="#">Documentation</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+    </nav>
+
+
+    <header class="header">
+        <h1 class="headline" style="font-size:80px">SSAGES<br>
+        <small>Software Suite for Advanced General Ensemble
+        Simulations</small></h1>
+
+
+        <ul class="header-subnav">
+            <li>
+                <a href="/home">Home</a>
+            </li>
+
+
+            <li>
+                <a href="/features">Features</a>
+            </li>
+
+
+            <li>
+                <a href="/team">Team</a>
+            </li>
+
+
+            <li>
+                <a href="/download">Download</a>
+            </li>
+
+
+            <li>
+            </li>
+        </ul>
+    </header>
+     
+    <!-- SSAGES INFO -->
+    <br>
+    <br>
+    <!-- ABOUT -->
+
+
+    <div class="row">
+        <div class="large-12 columns">
+            <div>
+                <h1>Welcome</h1>
+                <br>
+                <br>
+
+
+                <h2 style=
+                "text-align:center; padding-bottom: 0px; padding-top: 0px;">
+                About</h2>
+
+                <hr>
+
+
+                <h4 style=
+                "text-align:center; padding-bottom: 0px; padding-top: 0px;">
+                This website hosts the software suites <strong>SSAGES (Software
+                Suite for Advanced General Ensemble Simulations)</strong> and
+                <strong>COPSS (Continuum--Particle Simulation Suite)</strong>
+                which augment standard molecuar dynamics and Monte-Carlo codes,
+                permitting particle--field coupling (COPSS), calculation of
+                reaction coordinates and reactive pathways, and free energies
+                (SSAGES). Each presents not only a set of methods, but also
+                aims to provide a <strong>unified, extensible framework
+                adaptable to generic molecular simulations.</strong></h4>
+                <br>
+                <br>
+
+
+                <h4>IME codes SSAGES and COPSS are <strong>open-source</strong>
+                and distributed under the <strong>BSD 3-clause
+                license.</strong></h4>
+
+                <hr>
+                <br>
+                <br>
+
+
+                <h2 style=
+                "text-align:center; padding-bottom: 0px; padding-top: 0px;">
+                Seamless Integration</h2>
+
+                <hr>
+
+
+                <h4>SSAGES and COPSS are designed from the ground up to connect
+                to arbitrary molecular simulation codes through minimal
+                programming effort. Initial releases target specific
+                interoperability with open-source codes GROMACS and LAMMPS, and
+                will grow to incorporate other <strong>open-source,
+                proprietary, and bespoke codes.</strong></h4>
+
+                <hr>
+                <br>
+                <br>
+
+
+                <h2 style=
+                "text-align:center; padding-bottom: 0px; padding-top: 0px;">
+                SSAGES</h2>
+
+                <hr>
+
+
+                <h4>SSAGES implements several methods for reactive pathway
+                identification and free energy measurement, including
+                <strong>Forward Flux Sampling, Metadynamics, and Nudged Elastic
+                Band methods.</strong></h4>
+
+                <hr>
+                <br>
+                <br>
+
+
+                <h2 style=
+                "text-align:center; padding-bottom: 0px; padding-top: 0px;">
+                COPPS</h2>
+
+                <hr>
+
+
+                <h4>The <strong>continuum--particle coupling</strong> provided
+                by COPSS enables the spanning of multiple timescales in
+                simulation. The initial suite of routines is built around the
+                General-geometry Ewald-like Method (GgEM) which enables
+                simulations such as that shown below, where a discrete polymer
+                chain, modeling DNA, is embedded in a background solvent, and
+                confined to a nanoscopic channel; <strong>without coupling
+                algorithms such as GgEM, such simulations are
+                impossible.</strong></h4>
+
+                <hr>
+                <br>
+                <br>
+            </div>
+        </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <!-- -->
+     
+
+    <table style=
+    "margin:0;bottom:0;left:0;text-align:center;background-color:#ffffff;border:none">
+    <tr>
+            <td style="text-align:center">
+                <a href="http://www.uchicago.edu/" target="_blank"><img alt=
+                "University of Chicago logo" src=
+                "static/img/University_of_Chicago_logo.svg.png" width=
+                "100%"></a>
+            </td>
+
+            <td style="text-align:center">
+                <a href="http://www.anl.gov/" target="_blank"><img alt=
+                "Argonne National Laboratory logo" src=
+                "static/img/ANL_H_trans.gif" width="85%"></a>
+            </td>
+
+            <td style="text-align:center">
+                <a href="http://www.nd.edu" target="_blank"><img alt=
+                "University of Notre Dame logo" src=
+                "static/img/nd_mark_blue_m.png" width="65%"></a>
+            </td>
+        </tr>
+    </table>
+
+
+    <footer class="footer">
+        <div class="row">
+            <div class="small-12 medium-6 large-5 columns">
+                <p class="logo"><i class="fi-shield"></i>SSAGES</p>
+
+
+                <p class="footer-links"><a href="/home">Home</a> <a href=
+                "/features">Features</a> <a href="/team">Team</a> <a href=
+                "/download">Download</a></p>
+
+
+                <p class="copywrite">© 2016 SSAGES Team</p>
+            </div>
+
+
+            <div class="small-12 medium-6 large-4 columns">
+                <ul class="contact">
+                    <li>
+                        <p><i class="fi-marker"></i>Institute for Molecular
+                        Engineering<br>
+                        The University of Chicago<br>
+                        5801 South Ellis Avenue<br>
+                        Chicago, Illinois 60637</p>
+                    </li>
+
+
+                    <li>
+                        <p><i class="fi-mail"></i>mailinglist@ssages.com</p>
+                    </li>
+                </ul>
+            </div>
+
+
+            <div class="small-12 medium-12 large-3 columns">
+                <p class="about">SSAGES</p>
+
+
+                <p class="about subheader">SSAGES and COPPS are developed by
+                Argonne National Laboratory in conjunction with the University
+                of Chicago, the University of Notre Dame, and others.</p>
+
+
+                <div class="inline-list social" style="margin-left: 2em">
+                    <a href="#"><i class="fi-social-facebook"></i></a> <a href=
+                    "#"><i class="fi-social-twitter"></i></a> <a href=
+                    "#"><i class="fi-social-linkedin"></i></a> <a href=
+                    "https://github.com/WhitmerGroup/SSAGES"><i class=
+                    "fi-social-github"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+    $(document).foundation();
+    </script>
+</body>
+</html>
