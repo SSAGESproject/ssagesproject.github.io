@@ -3,6 +3,7 @@ from app import app, pages
 
 #------------------ general page routes ----------------------#
 @app.route('/')
+@app.route('/SSAGES-site/index.html')
 @app.route('/index.html')
 def index():
     return render_template('index.html')
