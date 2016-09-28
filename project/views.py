@@ -3,20 +3,23 @@ from app import app, pages
 
 #------------------ general page routes ----------------------#
 @app.route('/')
-@app.route('/index')
-@app.route('/home')
+@app.route('/SSAGES-site/index.html')
+@app.route('/index.html')
 def index():
     return render_template('index.html')
 
-@app.route('/features')
+@app.route('/SSAGES-site/features.html')
+@app.route('/features.html')
 def features():
 	return render_template("features.html")
 
-@app.route('/team')
+@app.route('/SSAGES-site/team.html')
+@app.route('/team.html')
 def team():
 	return render_template("team.html")
 
-@app.route('/download')
+@app.route('/SSAGES-site/download.html')
+@app.route('/download.html')
 def download():
     return render_template("download.html")
 
