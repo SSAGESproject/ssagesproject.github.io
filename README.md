@@ -15,4 +15,4 @@ To run locally:
 To deploy on GitHub Pages:
 
 1. Commit your changes to the `gh-pages` branch.  
-2. Navigate to https://cbezik.github.io/SSAGES-site/.  Success!
+2. Navigate to https://whitmergroup.github.io/SSAGES-site/.  Success!
