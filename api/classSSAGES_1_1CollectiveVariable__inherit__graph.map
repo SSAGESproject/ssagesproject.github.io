@@ -1,0 +1,11 @@
+<map id="SSAGES::CollectiveVariable" name="SSAGES::CollectiveVariable">
+<area shape="rect" id="node3" href="$classSSAGES_1_1AngleCV.html" title="SSAGES::AngleCV" alt="" coords="482,5,619,32"/>
+<area shape="rect" id="node4" href="$classSSAGES_1_1MockCV.html" title="SSAGES::MockCV" alt="" coords="483,56,619,83"/>
+<area shape="rect" id="node5" href="$classSSAGES_1_1ParticleCoordinateCV.html" title="Collective variable on a particle coordinate. " alt="" coords="445,107,656,133"/>
+<area shape="rect" id="node6" href="$classSSAGES_1_1ParticlePositionCV.html" title="Collective variable on an particle position. " alt="" coords="453,157,648,184"/>
+<area shape="rect" id="node7" href="$classSSAGES_1_1ParticleSeparationCV.html" title="Collective variable on the distance between two particles&#39; centers of mass. " alt="" coords="445,208,656,235"/>
+<area shape="rect" id="node8" href="$classSSAGES_1_1RadiusOfGyrationCV.html" title="Collective variable on the radius of gyration. " alt="" coords="447,259,655,285"/>
+<area shape="rect" id="node9" href="$classSSAGES_1_1RMSDCV.html" title="Collective variable to calculate root mean square displacement. " alt="" coords="479,309,623,336"/>
+<area shape="rect" id="node10" href="$classSSAGES_1_1TorsionalCV.html" title="Collective variable on the torsion angles. " alt="" coords="472,360,629,387"/>
+<area shape="rect" id="node2" href="$classSSAGES_1_1Serializable.html" title="Base class for all serializable objects. " alt="" coords="5,183,157,209"/>
+</map>
