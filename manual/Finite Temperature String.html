@@ -1,0 +1,398 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Finite Temperature String &mdash; SSAGES 0.9 documentation</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="SSAGES 0.9 documentation" href="index.html"/>
+        <link rel="up" title="Meta-Dynamics Methods" href="Meta-Dynamics Methods.html"/>
+        <link rel="next" title="Forward-Flux" href="Forward-Flux.html"/>
+        <link rel="prev" title="Elastic Band" href="Elastic Band.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> SSAGES
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="Introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Getting Started.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Tutorials.html">Tutorials</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="Meta-Dynamics Methods.html">Meta-Dynamics Methods</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="Adaptive Biasing Force Algorithm.html">Adaptive Biasing Force Algorithm</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Basis Function Sampling.html">Basis Function Sampling</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Elastic Band.html">Elastic Band</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Finite Temperature String</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#introduction">Introduction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#options-parameters">Options &amp; Parameters</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#tutorial">Tutorial</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#developers">Developers</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#references">References</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="Forward-Flux.html">Forward-Flux</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Generic Metadynamics.html">Generic Metadynamics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Image Method.html">Image Method</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Replica Exchange.html">Replica Exchange</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Swarm of Trajectories.html">Swarm of Trajectories</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Umbrella Sampling.html">Umbrella Sampling</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Write your own Methods and CVs.html">Write your own Methods and CVs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Contribute to SSAGES.html">Contribute to SSAGES</a></li>
+<li class="toctree-l1"><a class="reference internal" href="The SSAGES Cookbook.html">The SSAGES cookbook</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Acknowledgements.html">Acknowledgments</a></li>
+<li class="toctree-l1"><a class="reference internal" href="License.html">Copyright</a></li>
+<li class="toctree-l1"><a class="reference internal" href="License.html#id1">License information</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="index.html">SSAGES</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+ 
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="index.html">Docs</a> &raquo;</li>
+      
+          <li><a href="Meta-Dynamics Methods.html">Meta-Dynamics Methods</a> &raquo;</li>
+      
+    <li>Finite Temperature String</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/Finite Temperature String.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="finite-temperature-string">
+<span id="id1"></span><h1>Finite Temperature String<a class="headerlink" href="#finite-temperature-string" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="introduction">
+<h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h2>
+<p>Along with Nudged Elastic Band and Swarm of Trajectories, Finite Temperature
+String Method (FTS) is a chain-of-states method. As in other chain-of-states
+methods, multiple copies of a system are simulated, with each copy (&#8220;image&#8221;)
+corresponding to a different state of the system along some proposed transition
+pathway. In FTS, each image is associated with a node along a smooth curve
+through in collective variable space, representing a transition pathway.</p>
+<p>The goal of FTS is to evolve the path of this smooth curve or &#8220;string&#8221; until it
+approximates a transition pathway by finding the <strong>principal curve</strong>, which by
+definition intersects each of the perpendicular hyperplanes that it passes
+through at the expected value of each hyperplane. As such, a principal curve is
+often referred to as being its own expectation. Rather than sampling along each
+hyperplane belonging to each node along the string, we use the Voronoi
+approximation introduced by Vanden-Eijnden and Venturoli in 2009 <a class="footnote-reference" href="#id6" id="id2">[1]</a>. We
+associate each node along the string with a corresponding Voronoi cell,
+consisting of the region in state space where any point is closer to its origin
+node than any other node along the string. Each image is free to explore within
+the bounds of its associated Voronoi cell. To evolve the string toward its own
+expectation, the string is evolved toward the running averages in CV space for
+each image along the string.</p>
+<p>The evolution of the string can be broken down into the following steps:</p>
+<ol class="arabic simple">
+<li>Evolve the individual images with some dynamics scheme, using the location of
+the initial image as a starting point. Only keep the new update at each time
+step if it falls within the Voronoi cell of its associated image; if the
+updated position leaves the Voronoi cell, the system is returned back to the
+state at the previous timestep.</li>
+<li>Keep track of a running average of locations visited in CV space for each
+image.</li>
+<li>Update each node on the string toward the running average while keeping the
+path smooth; specific equations can be found in <a class="footnote-reference" href="#id6" id="id3">[1]</a>.</li>
+<li>Enforce parametrization (ex. interpolate a smooth curve through the new node
+locations, and redistribute the nodes to new locations along the smooth curve
+such that there is equal arc length between any two adjacent nodes).</li>
+<li>After images have been moved, their respective Voronoi cells have also
+changed. Check that each image still falls within the new Voronoi cell of its
+associated image. If the image is no longer in the correct Voronoi cell, the
+system must be returned to the Voronoi cell.</li>
+<li>Return to step 1 and repeat until convergence (ex. until change in the string
+falls below some tolerance criteria or stop iterating after a certain number
+of string method iterations)</li>
+</ol>
+</div>
+<div class="section" id="options-parameters">
+<h2>Options &amp; Parameters<a class="headerlink" href="#options-parameters" title="Permalink to this headline">¶</a></h2>
+<p>The following parameters need to be set under <cite>&#8220;method&#8221;</cite> in the JSON input file:</p>
+<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="s2">&quot;type&quot;</span> <span class="o">:</span> <span class="s2">&quot;String&quot;</span>
+<span class="s2">&quot;flavor&quot;</span> <span class="o">:</span> <span class="s2">&quot;FTS&quot;</span>
+</pre></div>
+</div>
+<p>The following options are available as FTS inputs:</p>
+<dl class="docutils">
+<dt>centers (required)</dt>
+<dd>Array containing this image&#8217;s coordinates in CV space</dd>
+<dt>ksprings (required)</dt>
+<dd>Array of spring constants corresponding to each CV
+Used to ensure that each simulation remains within its own respective Voronoi cell</dd>
+<dt>block_iterations (required)</dt>
+<dd><p class="first"><cite>(int)</cite> Number of integration steps to perform before updating the string.</p>
+<p class="last">Default value is 2000.</p>
+</dd>
+<dt>time_step (required)</dt>
+<dd><p class="first"><cite>(double)</cite> Parameter used for updating the string (<span class="math">\(\Delta\tau\)</span> in <a class="footnote-reference" href="#id6" id="id4">[1]</a> ).</p>
+<p class="last">Default value is 0.1.</p>
+</dd>
+<dt>kappa (required)</dt>
+<dd><p class="first"><cite>(double)</cite> Parameter used for smoothing the string (<span class="math">\(kappa\)</span> in <a class="footnote-reference" href="#id6" id="id5">[1]</a>).</p>
+<p class="last">Default value is 0.1.</p>
+</dd>
+<dt>frequency (required)</dt>
+<dd><p class="first"><cite>(int)</cite> Frequency to perform integration; should almost always be set to 1.</p>
+<p class="last">Default value is 1.</p>
+</dd>
+<dt>max_iterations (required)</dt>
+<dd><cite>(int)</cite> Maximum number of string method iterations to perform.</dd>
+<dt>tolerance (required)</dt>
+<dd>Array of tolerance values corresponding to each CV. Simulation will stop
+after tolerance criteria has been met for all CVs</dd>
+<dt>iteration</dt>
+<dd><p class="first"><cite>(int)</cite> Value of initial string method iterator.</p>
+<p class="last">Default value is 0 (corresponding to new FTS run).</p>
+</dd>
+</dl>
+</div>
+<div class="section" id="tutorial">
+<span id="fts-tutorial"></span><h2>Tutorial<a class="headerlink" href="#tutorial" title="Permalink to this headline">¶</a></h2>
+<p>Two examples for running FTS can be found in the <code class="docutils literal"><span class="pre">Examples/User/FTS</span></code>
+directory. This tutorial will go through running FTS on a 2D single particle
+system, using LAMMPS as the MD engine. The necessary files are found in
+<code class="docutils literal"><span class="pre">Examples/User/FTS/Langevin</span></code>, which should contain the following:</p>
+<dl class="docutils">
+<dt><code class="docutils literal"><span class="pre">in.LAMMPS_Meta_Test</span></code></dt>
+<dd>LAMMPS input file; sets up 1 particle on a 2D surface with two Gaussian
+wells of different depths (at <span class="math">\((-0.98, -0.98)\)</span> and at
+<span class="math">\((0.98, 0.98)\)</span>) and one Gaussian barrier at the origin.</dd>
+<dt><code class="docutils literal"><span class="pre">Template_Input.json</span></code></dt>
+<dd>Template JSON input containing information for one image on the string. We
+are looking at two CVs: x and y coordinate. We will use
+<code class="docutils literal"><span class="pre">Input_Generator.py</span></code> to use this template to create a JSON input file
+containing information for all string images.</dd>
+<dt><code class="docutils literal"><span class="pre">Input_Generator.py</span></code></dt>
+<dd>Python script for creating FTS JSON input file.</dd>
+</dl>
+<p>After compiling SSAGES with LAMMPS, we will use <code class="docutils literal"><span class="pre">Input_Generator.py</span></code> to
+create a JSON input file for FTS. Run this script</p>
+<div class="highlight-bash"><div class="highlight"><pre><span></span>python Input_Generator.py
+</pre></div>
+</div>
+<p>to create a file called <code class="docutils literal"><span class="pre">FTS.json</span></code>. A string with 16 images is initalized on
+the 2D surface, evenly spaced on a straight line from <span class="math">\((-0.7, -0.5)\)</span> to
+<span class="math">\((0.7, 1.0)\)</span>. If you take a look at <code class="docutils literal"><span class="pre">FTS.json</span></code>, you will see that the
+information in the template file has been replicated for each of the 16 nodes
+on the string, but with the value of &#8220;centers&#8221; changed.</p>
+<p>Once <code class="docutils literal"><span class="pre">FTS.json</span></code> has been generated, we can run the example with the following
+command:</p>
+<div class="highlight-bash"><div class="highlight"><pre><span></span>mpirun -np <span class="m">16</span> /path/to/SSAGES/build/./ssages FTS.json
+</pre></div>
+</div>
+<p>As SSAGES runs, a series of output files are generated:</p>
+<dl class="docutils">
+<dt><code class="docutils literal"><span class="pre">log-MPI_ID-x</span></code></dt>
+<dd>LAMMPS output for each of the 16 nodes on the string.</dd>
+<dt><code class="docutils literal"><span class="pre">node-00xx.log</span></code></dt>
+<dd>FTS output for each of the 16 nodes on the string. The first column contains
+the image number (0-15). The second column contains the iteration number. The
+remaining columns list the location of the image and the instantaneous value
+for each of the CVs. For this example we have two CVs (x coordinate and y
+coordinate), so the remaining columns are (from left to right): x coordinate
+of the string node, instantaneous x coordinate of the particle, y coordinate
+of the string node, instantaneous y coordinate of the particle.</dd>
+</dl>
+<p>To visualize the string, we can plot the appropriate values from the last line
+of each <code class="docutils literal"><span class="pre">node-00xx.log</span></code> file. For example, one can quickly plot the final
+string using gnuplot with the command</p>
+<div class="highlight-bash"><div class="highlight"><pre><span></span>plot <span class="s2">&quot;&lt; tail -n 1 node*&quot;</span> u 3:6+
+</pre></div>
+</div>
+<p>The following image shows the initial string in blue, compared with the final
+string plotted in green:</p>
+<div class="figure align-center">
+<img alt="_images/2dsingle.png" src="_images/2dsingle.png" />
+</div>
+<p>The two ends of the string have moved to the two energy minima (at
+<span class="math">\((-0.98, -0.98)\)</span> and <span class="math">\((0.98, 0.98)\)</span>), and the center of the string
+has curved away from the energy barrier at the origin.</p>
+</div>
+<div class="section" id="developers">
+<h2>Developers<a class="headerlink" href="#developers" title="Permalink to this headline">¶</a></h2>
+<p>Ashley Guo, Ben Sikora, Yamil Colón</p>
+</div>
+<div class="section" id="references">
+<h2>References<a class="headerlink" href="#references" title="Permalink to this headline">¶</a></h2>
+<table class="docutils footnote" frame="void" id="id6" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label">[1]</td><td><em>(<a class="fn-backref" href="#id2">1</a>, <a class="fn-backref" href="#id3">2</a>, <a class="fn-backref" href="#id4">3</a>, <a class="fn-backref" href="#id5">4</a>)</em> <ol class="last upperalpha simple" start="5">
+<li>Vanden-Eijnden and M. Venturoli, J. Chem. Phys. <strong>130</strong>, 194103 (2009).</li>
+</ol>
+</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="Forward-Flux.html" class="btn btn-neutral float-right" title="Forward-Flux" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="Elastic Band.html" class="btn btn-neutral" title="Elastic Band" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2016, the SSAGES Team.
+      Last updated on Oct 14, 2016.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'0.9',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

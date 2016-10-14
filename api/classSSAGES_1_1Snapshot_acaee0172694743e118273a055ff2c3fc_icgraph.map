@@ -1,0 +1,7 @@
+<map id="SSAGES::Snapshot::GetIteration" name="SSAGES::Snapshot::GetIteration">
+<area shape="rect" id="node2" href="$classSSAGES_1_1Hook.html#a84d70866b9ccfec3af0069339c426f6a" title="Notify observers of changes in the simulation. " alt="" coords="281,5,500,32"/>
+<area shape="rect" id="node4" href="$classSSAGES_1_1Meta.html#a223464a8c4ecbac45a678eb3425d504e" title="Post&#45;integration hook. " alt="" coords="285,56,496,83"/>
+<area shape="rect" id="node5" href="$classSSAGES_1_1Basis.html#a2dd914ae7f0c5036700a493598d845dd" title="Post&#45;integration hook. " alt="" coords="283,107,498,133"/>
+<area shape="rect" id="node6" href="$classSSAGES_1_1Hook.html#af1bef00460b9a64ac92d7f9cef57648d" title="Post&#45;integration hook. " alt="" coords="269,157,512,184"/>
+<area shape="rect" id="node3" href="$classSSAGES_1_1Hook.html#af5c1d217feb897a0ef18ecbee6c33416" title="Post&#45;step hook. " alt="" coords="561,5,770,32"/>
+</map>

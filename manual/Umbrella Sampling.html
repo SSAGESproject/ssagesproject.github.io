@@ -1,0 +1,287 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Umbrella Sampling &mdash; SSAGES 0.9 documentation</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="SSAGES 0.9 documentation" href="index.html"/>
+        <link rel="up" title="Meta-Dynamics Methods" href="Meta-Dynamics Methods.html"/>
+        <link rel="next" title="Write your own Methods and CVs" href="Write your own Methods and CVs.html"/>
+        <link rel="prev" title="Swarm of Trajectories" href="Swarm of Trajectories.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> SSAGES
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="Introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Getting Started.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Tutorials.html">Tutorials</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="Meta-Dynamics Methods.html">Meta-Dynamics Methods</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="Adaptive Biasing Force Algorithm.html">Adaptive Biasing Force Algorithm</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Basis Function Sampling.html">Basis Function Sampling</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Elastic Band.html">Elastic Band</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Finite Temperature String.html">Finite Temperature String</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Forward-Flux.html">Forward-Flux</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Generic Metadynamics.html">Generic Metadynamics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Image Method.html">Image Method</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Replica Exchange.html">Replica Exchange</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Swarm of Trajectories.html">Swarm of Trajectories</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Umbrella Sampling</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#introduction">Introduction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#options-parameters">Options &amp; Parameters</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#tutorial">Tutorial</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Write your own Methods and CVs.html">Write your own Methods and CVs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Contribute to SSAGES.html">Contribute to SSAGES</a></li>
+<li class="toctree-l1"><a class="reference internal" href="The SSAGES Cookbook.html">The SSAGES cookbook</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Acknowledgements.html">Acknowledgments</a></li>
+<li class="toctree-l1"><a class="reference internal" href="License.html">Copyright</a></li>
+<li class="toctree-l1"><a class="reference internal" href="License.html#id1">License information</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="index.html">SSAGES</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+ 
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="index.html">Docs</a> &raquo;</li>
+      
+          <li><a href="Meta-Dynamics Methods.html">Meta-Dynamics Methods</a> &raquo;</li>
+      
+    <li>Umbrella Sampling</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/Umbrella Sampling.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="umbrella-sampling">
+<span id="id1"></span><h1>Umbrella Sampling<a class="headerlink" href="#umbrella-sampling" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="introduction">
+<h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h2>
+<p>Calculations of thermodynamic data and other properties rely on proper sampling of the configurational space.
+However, the presence of energy barriers can lead to configurations not being sampled properly or sampled at
+all. Umbrella sampling is a simulation technique that helps to overcome those barriers and improve sampling
+by applying a bias along a coordinate. The bias takes the form of a harmonic potential.  Usually, a series of
+umbrella-sampled simulations are performed and analyzed together using the weighted histogram analysis method
+(WHAM).</p>
+</div>
+<div class="section" id="options-parameters">
+<h2>Options &amp; Parameters<a class="headerlink" href="#options-parameters" title="Permalink to this headline">¶</a></h2>
+<p>The following parameters need to be set under <cite>&#8220;method&#8221;</cite> in the JSON input file:</p>
+<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="s2">&quot;type&quot;</span> <span class="o">:</span> <span class="s2">&quot;Umbrella&quot;</span>
+</pre></div>
+</div>
+<p>The following options are available for Umbrella Sampling:</p>
+<dl class="docutils">
+<dt>centers (required)</dt>
+<dd>Array of target CV values</dd>
+<dt>ksprings (required)</dt>
+<dd>Array of spring constants to each CV</dd>
+</dl>
+</div>
+<div class="section" id="tutorial">
+<span id="umbrella-tutorial"></span><h2>Tutorial<a class="headerlink" href="#tutorial" title="Permalink to this headline">¶</a></h2>
+<p>This tutorial will go through running Umbrella Sampling on an atomistic model of butane using LAMMPS as the
+MD engine. Umbrella sampling will be performed on the torsional CV of the butane C atoms. The files that can
+be found in <code class="docutils literal"><span class="pre">Examples/User/Umbrella</span></code> are:</p>
+<dl class="docutils">
+<dt><code class="docutils literal"><span class="pre">Butane_SSAGES.in</span></code></dt>
+<dd>LAMMPS input file</dd>
+<dt><code class="docutils literal"><span class="pre">Butane.data</span></code></dt>
+<dd>LAMMPS data file describing butane molecule.</dd>
+<dt><code class="docutils literal"><span class="pre">Template_Input.json</span></code></dt>
+<dd>Template JSON input containing information for one Umbrella Sampling simulation.</dd>
+<dt><code class="docutils literal"><span class="pre">Umbrella_Input_Generator.py</span></code></dt>
+<dd>Python script for creating Umbrella.json input file. The total number of simulations and the &#8216;centers&#8217; values
+are controlled in this file.</dd>
+</dl>
+<p>Once in the directory, the appropriate .json file needs to be generated. A .json file is already in the directory,
+<code class="docutils literal"><span class="pre">Template_Input.json</span></code>, which contains the CV information and specifies the LAMMPS input files to be used. Using</p>
+<div class="highlight-bash"><div class="highlight"><pre><span></span>python Umbrella_Input_Generator.py
+</pre></div>
+</div>
+<p>will generate Umbrella.json. Umbrella.json contains the information from Template_Input.json duplicated 12
+times with varying values of ‘centers’. These values correspond to the target values of the torsional CV.</p>
+<p>To run SSAGES do:</p>
+<div class="highlight-bash"><div class="highlight"><pre><span></span>mpiexec -np <span class="m">12</span> /path/to/SSAGES/build/.ssages Umbrella.json
+</pre></div>
+</div>
+<p>This will run 12 different umbrella sampling simulations, one per processor. 12 different output files
+will be generated, each containing the iteration, target value of the corresponding &#8216;center&#8217; CV,
+and the value of the CV at the iteration number.</p>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="Write your own Methods and CVs.html" class="btn btn-neutral float-right" title="Write your own Methods and CVs" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="Swarm of Trajectories.html" class="btn btn-neutral" title="Swarm of Trajectories" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2016, the SSAGES Team.
+      Last updated on Oct 14, 2016.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'0.9',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

@@ -1,0 +1,41 @@
+<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
+<area shape="rect" id="node1" href="$classSSAGES_1_1EventListener.html" title="Base abstract class for listening in to events fired by &quot;Hook&quot;. " alt="" coords="195,335,360,361"/>
+<area shape="rect" id="node2" href="$classSSAGES_1_1Constraint.html" title="SSAGES::Constraint" alt="" coords="437,436,582,463"/>
+<area shape="rect" id="node5" href="$classSSAGES_1_1Method.html" title="Interface for Method implementations. " alt="" coords="445,233,573,260"/>
+<area shape="rect" id="node3" href="$classSSAGES_1_1COPSS.html" title="SSAGES::COPSS" alt="" coords="693,411,825,437"/>
+<area shape="rect" id="node4" href="$classSSAGES_1_1COPSSImage.html" title="SSAGES::COPSSImage" alt="" coords="675,461,843,488"/>
+<area shape="rect" id="node6" href="$classSSAGES_1_1ABF.html" title="Adaptive Biasing Force Algorithm. " alt="" coords="703,309,814,336"/>
+<area shape="rect" id="node7" href="$classSSAGES_1_1Basis.html" title="Basis Function Sampling Algorithm. " alt="" coords="699,360,818,387"/>
+<area shape="rect" id="node8" href="$classSSAGES_1_1ForwardFlux.html" title="ForwardFlux sampling method. " alt="" coords="680,5,837,32"/>
+<area shape="rect" id="node9" href="$classSSAGES_1_1GridTest.html" title="Test class for the Grid. " alt="" coords="691,56,826,83"/>
+<area shape="rect" id="node10" href="$classSSAGES_1_1Meta.html" title="&quot;Vanilla&quot; multi&#45;dimensional Metadynamics. " alt="" coords="701,107,816,133"/>
+<area shape="rect" id="node11" href="$classSSAGES_1_1MockMethod.html" title="Mock Sampling. " alt="" coords="679,157,839,184"/>
+<area shape="rect" id="node12" href="$classSSAGES_1_1StringMethod.html" title="String base class for FTS, Swarm, and elastic band. " alt="" coords="677,208,840,235"/>
+<area shape="rect" id="node16" href="$classSSAGES_1_1Umbrella.html" title="Umbrella sampling method. " alt="" coords="690,259,827,285"/>
+<area shape="rect" id="node13" href="$classSSAGES_1_1ElasticBand.html" title="Multi&#45;walker Elastic Band. " alt="" coords="927,157,1081,184"/>
+<area shape="rect" id="node14" href="$classSSAGES_1_1FiniteTempString.html" title="Finite Temperature Spring Method. " alt="" coords="912,208,1096,235"/>
+<area shape="rect" id="node15" href="$classSSAGES_1_1Swarm.html" title="Swarm of Trajectories String Method. " alt="" coords="941,259,1067,285"/>
+<area shape="rect" id="node17" href="$classSSAGES_1_1Serializable.html" title="Base class for all serializable objects. " alt="" coords="201,943,353,969"/>
+<area shape="rect" id="node18" href="$classSSAGES_1_1CollectiveVariable.html" title="Abstract class for a collective variable. " alt="" coords="414,715,605,741"/>
+<area shape="rect" id="node27" href="$classSSAGES_1_1Driver.html" title="Abstract driver class for creating driver objects. " alt="" coords="449,1069,569,1096"/>
+<area shape="rect" id="node30" href="$classSSAGES_1_1Grid.html" title="Generic Grid. " alt="" coords="455,943,564,969"/>
+<area shape="rect" id="node34" href="$classSSAGES_1_1SimObserver.html" title="Base class for objects observing a simulation. " alt="" coords="429,1145,590,1172"/>
+<area shape="rect" id="node36" href="$classSSAGES_1_1Snapshot.html" title="Class containing a snapshot of the current simulation in time. " alt="" coords="439,993,579,1020"/>
+<area shape="rect" id="node19" href="$classSSAGES_1_1AngleCV.html" title="SSAGES::AngleCV" alt="" coords="690,765,827,792"/>
+<area shape="rect" id="node20" href="$classSSAGES_1_1MockCV.html" title="SSAGES::MockCV" alt="" coords="691,816,827,843"/>
+<area shape="rect" id="node21" href="$classSSAGES_1_1ParticleCoordinateCV.html" title="Collective variable on a particle coordinate. " alt="" coords="653,867,864,893"/>
+<area shape="rect" id="node22" href="$classSSAGES_1_1ParticlePositionCV.html" title="Collective variable on an particle position. " alt="" coords="661,512,856,539"/>
+<area shape="rect" id="node23" href="$classSSAGES_1_1ParticleSeparationCV.html" title="Collective variable on the distance between two particles&#39; centers of mass. " alt="" coords="653,563,864,589"/>
+<area shape="rect" id="node24" href="$classSSAGES_1_1RadiusOfGyrationCV.html" title="Collective variable on the radius of gyration. " alt="" coords="655,613,863,640"/>
+<area shape="rect" id="node25" href="$classSSAGES_1_1RMSDCV.html" title="Collective variable to calculate root mean square displacement. " alt="" coords="687,664,831,691"/>
+<area shape="rect" id="node26" href="$classSSAGES_1_1TorsionalCV.html" title="Collective variable on the torsion angles. " alt="" coords="680,715,837,741"/>
+<area shape="rect" id="node28" href="$classSSAGES_1_1GromacsDriver.html" title="SSAGES::GromacsDriver" alt="" coords="672,1120,845,1147"/>
+<area shape="rect" id="node29" href="$classSSAGES_1_1LammpsDriver.html" title="Driver for LAMMPS simulations. " alt="" coords="673,1069,844,1096"/>
+<area shape="rect" id="node31" href="$classSSAGES_1_1Grid1D.html" title="1D Grid. " alt="" coords="695,968,822,995"/>
+<area shape="rect" id="node32" href="$classSSAGES_1_1Grid2D.html" title="2D Grid. " alt="" coords="695,1019,822,1045"/>
+<area shape="rect" id="node33" href="$classSSAGES_1_1Grid3D.html" title="3D Grid. " alt="" coords="695,917,822,944"/>
+<area shape="rect" id="node35" href="$classSSAGES_1_1JSONObserver.html" title="Observer with JSON output. " alt="" coords="671,1171,846,1197"/>
+<area shape="rect" id="node37" href="$classSSAGES_1_1Visitable.html" title="Base class for visitable objects. " alt="" coords="6,1069,141,1096"/>
+<area shape="rect" id="node38" href="$classSSAGES_1_1SimObservable.html" title="Base class for observable objects in a simulation. " alt="" coords="190,1069,365,1096"/>
+<area shape="rect" id="node39" href="$classSSAGES_1_1Visitor.html" title="Base class for an object that traverses visitables. " alt="" coords="216,1145,339,1172"/>
+</map>

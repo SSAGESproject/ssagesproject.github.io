@@ -1,0 +1,11 @@
+<map id="SSAGES::RadiusOfGyrationCV::Evaluate" name="SSAGES::RadiusOfGyrationCV::Evaluate">
+<area shape="rect" id="node2" href="$classSSAGES_1_1Snapshot.html#a46d2a991fd3446bfe6f6f72291ec1483" title="Apply minimum image to a vector. " alt="" coords="253,5,488,46"/>
+<area shape="rect" id="node3" href="$classSSAGES_1_1Snapshot.html#a3527cc78f7c8be1690992da44524ab19" title="SSAGES::Snapshot::Center\lOfMass" alt="" coords="277,70,464,111"/>
+<area shape="rect" id="node4" href="$classSSAGES_1_1Snapshot.html#a19de6aadba8b8eed8c96dc1e67087e62" title="Compute the total mass of a group of particles based on index. " alt="" coords="547,107,757,133"/>
+<area shape="rect" id="node5" href="$classSSAGES_1_1Snapshot.html#a127a32f56151174b6cede0c790d5fd03" title="Get communicator for group (walker). " alt="" coords="243,187,498,213"/>
+<area shape="rect" id="node6" href="$classSSAGES_1_1Snapshot.html#abeef8bea41bf9706855c59b6cde0777a" title="SSAGES::Snapshot::GetLocal\lIndices" alt="" coords="271,238,471,279"/>
+<area shape="rect" id="node8" href="$classSSAGES_1_1Snapshot.html#a035ed6fb2cd46d4f66d1614bd90ad14b" title="Const access to the particle masses. " alt="" coords="263,304,478,331"/>
+<area shape="rect" id="node9" href="$classSSAGES_1_1Snapshot.html#ae05879b78672cd4899a06ae2d6a140fd" title="Get number of atoms in this snapshot. " alt="" coords="272,355,469,397"/>
+<area shape="rect" id="node10" href="$classSSAGES_1_1Snapshot.html#aee2ceb317884bc5e0105b9824b5026d3" title="Access the particle positions. " alt="" coords="259,421,482,448"/>
+<area shape="rect" id="node7" href="$classSSAGES_1_1Snapshot.html#a3ecf272dca61538320a4d503303fa9ba" title="Gets the local atom index corresponding to an atom ID. " alt="" coords="552,238,752,279"/>
+</map>

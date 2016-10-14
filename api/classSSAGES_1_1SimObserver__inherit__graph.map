@@ -1,0 +1,5 @@
+<map id="SSAGES::SimObserver" name="SSAGES::SimObserver">
+<area shape="rect" id="node4" href="$classSSAGES_1_1JSONObserver.html" title="Observer with JSON output. " alt="" coords="59,155,233,181"/>
+<area shape="rect" id="node2" href="$classSSAGES_1_1Visitor.html" title="Base class for an object that traverses visitables. " alt="" coords="5,5,128,32"/>
+<area shape="rect" id="node3" href="$classSSAGES_1_1Serializable.html" title="Base class for all serializable objects. " alt="" coords="152,5,304,32"/>
+</map>

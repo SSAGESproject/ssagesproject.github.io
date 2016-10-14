@@ -1,0 +1,410 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Swarm of Trajectories &mdash; SSAGES 0.9 documentation</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="SSAGES 0.9 documentation" href="index.html"/>
+        <link rel="up" title="Meta-Dynamics Methods" href="Meta-Dynamics Methods.html"/>
+        <link rel="next" title="Umbrella Sampling" href="Umbrella Sampling.html"/>
+        <link rel="prev" title="Replica Exchange" href="Replica Exchange.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> SSAGES
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="Introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Getting Started.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Tutorials.html">Tutorials</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="Meta-Dynamics Methods.html">Meta-Dynamics Methods</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="Adaptive Biasing Force Algorithm.html">Adaptive Biasing Force Algorithm</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Basis Function Sampling.html">Basis Function Sampling</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Elastic Band.html">Elastic Band</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Finite Temperature String.html">Finite Temperature String</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Forward-Flux.html">Forward-Flux</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Generic Metadynamics.html">Generic Metadynamics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Image Method.html">Image Method</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Replica Exchange.html">Replica Exchange</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Swarm of Trajectories</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#introduction">Introduction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#options-parameters">Options &amp; Parameters</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#tutorial">Tutorial</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#developer">Developer</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#references">References</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="Umbrella Sampling.html">Umbrella Sampling</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Write your own Methods and CVs.html">Write your own Methods and CVs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Contribute to SSAGES.html">Contribute to SSAGES</a></li>
+<li class="toctree-l1"><a class="reference internal" href="The SSAGES Cookbook.html">The SSAGES cookbook</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Acknowledgements.html">Acknowledgments</a></li>
+<li class="toctree-l1"><a class="reference internal" href="License.html">Copyright</a></li>
+<li class="toctree-l1"><a class="reference internal" href="License.html#id1">License information</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="index.html">SSAGES</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+ 
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="index.html">Docs</a> &raquo;</li>
+      
+          <li><a href="Meta-Dynamics Methods.html">Meta-Dynamics Methods</a> &raquo;</li>
+      
+    <li>Swarm of Trajectories</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/Swarm of Trajectories.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="swarm-of-trajectories">
+<h1>Swarm of Trajectories<a class="headerlink" href="#swarm-of-trajectories" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="introduction">
+<h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h2>
+<p>Like all string methods in general, the <strong>string method with swarms of
+trajectories</strong> (often abbreviated to &#8220;swarm of trajectories&#8221; or even more simply
+&#8220;SoT&#8221;) is a method to identify a transition pathway in an arbitrarily
+high-dimensional collective variable space between two metastable states of a
+system.  This pathway (the string) is a parametrized curve discretized into a
+set of images, each of which is itself a molecular system.  The classical <em>string
+method in collective variables</em> evolves each image by estimating a mean force and
+metric tensor at each image with restrained molecular dynamics simulations.  In
+the SoT method, the string is instead evolved by launching a large number (a
+swarm) of <strong>unrestrained</strong> trajectories from each image and estimating the average
+drift of the collective variables over the swarm.</p>
+<p>The mathematical background of the method can be expressed in a few relatively
+straightforward equations, with further detail available in the original work of
+Benoit Roux and collaborators <a class="footnote-reference" href="#id2" id="id1">[1]</a>.  First, consider a path <span class="math">\(z(\alpha)\)</span>
+constructed between two metastable states, such that <span class="math">\(\alpha=0\)</span> represents
+the starting state and <span class="math">\(\alpha=1\)</span> is the final state.  The &#8220;most probable
+transition pathway&#8221; (MPTP) is defined such that a molecular system started from
+anywhere on the path will most probably evolve while staying on the path.  It is
+shown in the original work that a mathematical definition for such a path is
+given when the collective variables evolve according to:</p>
+<div class="math">
+\[z_{i}(\alpha) = z_{i}(\alpha') + \sum\limits_{j}\left(
+\beta D_{ij}\left[ z(0) \right] F_{j}\left[z(0)\right] +
+\frac{\partial}{\partial z_{j}}\left( D_{ij}\left[z(0)\right]\right)
+\right)\delta\tau\]</div>
+<p>Where the following notation is used: <span class="math">\(z_{i}\)</span> represents the collective
+variables belonging to the string, <span class="math">\(\alpha\)</span> represents the parameter
+identifying that point on the string, <span class="math">\(\beta\)</span> represents the temperature,
+<span class="math">\(D_{ij}\)</span> represents the diffusion tensor, <span class="math">\(F_{j}\)</span> represents the
+mean force, <span class="math">\(z\)</span> represents the collective variables constructed from the
+molecular system at a given moment in time, and <span class="math">\(\delta\tau\)</span> represents
+the time step of the evolution of the dynamics.  The SoT method approximates
+this equation using the average drift evaluated from a large number of unbiased
+trajectories, each of length <span class="math">\(\delta\tau\)</span>, launched from each image:</p>
+<div class="math">
+\[\bar{\Delta z_{i}(\delta\tau)} = \bar{z_{i}(\delta\tau) - z_{i}(0)} \equiv
+\sum\limits_{j} \left( \beta D_{ij}\left[z(0)\right] F_{j}\left[z(0)]\right] +
+\frac{\partial}{\partial z_{j}}\left( D_{ij}\left[ z(0)\right]\right)\right)\delta\tau\]</div>
+<p>Like all string methods, there is an additional step beyond evolving the
+collective variables - after one iteration of evolution, the images along the
+path must be reparametrized such that they lie (for example) an equal arc length
+apart.  This step is necessary to ensure that all images do not fall into one
+metastable basin or the other.</p>
+<p>Algorithmically, the SoT method is implemented as follows:</p>
+<ol class="arabic simple">
+<li>An initial string is defined between the two states of interest.  This can be
+defined however one wishes; often it is simply a linear interpolation through
+the space of the collective variables.  In fact, the ends of the string need
+not necessarily be in the basins of interest; the dynamic nature of the
+method should allow the ends to naturally fall into nearby metastable basins.</li>
+<li>For each image of the string, a molecular system with atomic coordinates that
+roughly correspond to the collective variables of that image is constructed.</li>
+<li>A set of equilibrium trajectories are generated from that system by performing
+restrained sampling around the image’s collective variables.</li>
+<li>That set of equilibrium trajectories is used as the starting point of a large
+number of short unbiased trajectories; the resulting average displacement of
+each collective variable is used to update the positions of the images.</li>
+<li>A reparameterization scheme is enforced to ensure that, for example, the
+string images are equally distant in collective variable space.</li>
+</ol>
+<p>Steps two through five are iterated upon, leading to convergence of the method
+and the MPTP.</p>
+</div>
+<div class="section" id="options-parameters">
+<h2>Options &amp; Parameters<a class="headerlink" href="#options-parameters" title="Permalink to this headline">¶</a></h2>
+<p>These are all the options that SSAGES provides for running the SoT method. In
+order to add SoT to the JSON file, the method should be labeled as &#8220;Swarm&#8221;.</p>
+<dl class="docutils">
+<dt>centers</dt>
+<dd>For each driver, the initial values of each CV should be specified as a list
+under &#8220;centers&#8221;.  In this way, the initial string is defined.</dd>
+<dt>number of nodes</dt>
+<dd>A specification of how many nodes (equivalent terminology to images) the
+string should be discretized into.  This parameter only affects
+reparameterization; the actual number of string images depends on how many
+drivers are specified.  For accurate results, these values should match.</dd>
+<dt>spring</dt>
+<dd>The spring constant to be used during instances of restrained sampling (the
+constant is part of a harmonic restraint potential).</dd>
+<dt>frequency</dt>
+<dd>The frequency of each integration step. This should almost always be set to
+1.</dd>
+<dt>initial steps</dt>
+<dd>For each iteration of the method, this is the number of steps to spend doing
+restrained sampling and not harvesting trajectories.  This time is important
+to ensure the underlying molecular system&#8217;s CV values are close to the
+string CV values.</dd>
+<dt>harvest length</dt>
+<dd>After the initial restraining is finished, a trajectory is harvested for
+later use in launching an unrestrained trajectory every so often - harvest
+length specifies how often this will be done.  Harvest length multiplied by
+number of trajectories (see below) will determine overall how many more
+steps will be taken under restrained sampling.</dd>
+<dt>number of trajectories</dt>
+<dd>The total number of unrestrained trajectories to be included in each swarm.</dd>
+<dt>swarm length</dt>
+<dd>The length of each unrestrained trajectory in the swarm.  Swarm length
+multiplied by number of trajectories specifies how many total steps will be
+spent doing unrestrained sampling.</dd>
+</dl>
+</div>
+<div class="section" id="tutorial">
+<span id="swarm-tutorial"></span><h2>Tutorial<a class="headerlink" href="#tutorial" title="Permalink to this headline">¶</a></h2>
+<p>This tutorial will walk you step by step through the user example provided with
+the SSAGES source code that runs the SoT method on the alanine dipeptide using
+LAMMPS.  First, be sure you have compiled SSAGES with LAMMPS.  Then, navigate to
+the <code class="docutils literal"><span class="pre">SSAGES/Examples/User/Swarm/ADP</span></code> subdirectory.  Now, take a moment to
+observe the <code class="docutils literal"><span class="pre">in.ADP_Test</span> <span class="pre">and</span> <span class="pre">data.input</span></code> files.  In general, these should be
+the same as what you would use for any other method, but for the SoT method, it
+is important to define a larger skin distance than one normally would in the
+neighbor command in LAMMPS.  This is because, under the hood, each unrestrained
+trajectory in the swarm is started by manually resetting the positions of each
+atom in the LAMMPS simulation to the start of a new trajectory.  From the
+perspective of LAMMPS, this is a huge amount of distance to move in a single
+time step; this move triggers neighbor list rebuilding, but LAMMPS considers it
+a &#8220;dangerous build&#8221; which threatens to crash the simulation.  Thus, we increase
+the skin distance, which forces LAMMPS to keep track of more pairs in the
+neighbor lists, and thus reduces the number of dangerous builds.  Keep this in
+mind for future runs of the SoT method.</p>
+<p>The next two files of interest are the <code class="docutils literal"><span class="pre">Template_Input.json</span></code> input file and
+the <code class="docutils literal"><span class="pre">Input_Generator.py</span></code> script.  Both of these files can be modified in your
+text editor of choice to customize the inputs, but for this tutorial, simply
+observe them and leave them be.  <code class="docutils literal"><span class="pre">Template_Input.json</span></code> contains all the
+information necessary to fully specify one driver; <code class="docutils literal"><span class="pre">Input_Generator.py</span></code> copies
+this information a number of times specified within the script (for this
+tutorial, 12 times) while also linearly interpolating through the start and end
+states defined in the script and substituting the correct values into the
+&#8220;centers&#8221; portion of the method definition.  Execute this script as follows:</p>
+<div class="highlight-bash"><div class="highlight"><pre><span></span>python Input_Generator.py
+</pre></div>
+</div>
+<p>You will produce a file called <code class="docutils literal"><span class="pre">Swarm.json</span></code>.  You can also open this file to
+verify for yourself that the script did what it was supposed to do.  Now, with
+your JSON input and your SSAGES binary, you have everything you need to perform
+a simulation.  Simply run:</p>
+<div class="highlight-bash"><div class="highlight"><pre><span></span>mpiexec -np <span class="m">12</span> ./ssages Swarm.json
+</pre></div>
+</div>
+<p>Soon, the simulation will produce a <code class="docutils literal"><span class="pre">node-X.log</span></code> file for each driver, where
+X is the number specifying the driver (in this case, 0-11 for our 12 drivers).
+Each one will report the following information, in order: the node number, the
+iteration number, and for each CV, the current value of the string CV as well as
+the current value of the CV calculated from the molecular system.</p>
+<p>Allow your system to run for the desired number of MD steps, but keep an eye on
+it - the system should exit once one driver reaches the maximum number of MD
+steps, but it is possible that instead one driver will exit and the rest will
+get stuck.  Check in on your node files and see if they’ve been updated recently - if
+not, the simulation has likely finished.  Once this is done, you can execute the
+included plotter.py function in a directory containing the node files with the
+command line argument of how many images your string had.  The script also
+accepts an argument to plot a free energy surface alongside the string, but that
+goes beyond the scope of this tutorial.  Thus, simply execute:</p>
+<div class="highlight-bash"><div class="highlight"><pre><span></span>python plotter.py <span class="m">12</span> none
+</pre></div>
+</div>
+<p>And in a moment you should have a graph of your converged string.  Thus concludes
+this tutorial.</p>
+</div>
+<div class="section" id="developer">
+<h2>Developer<a class="headerlink" href="#developer" title="Permalink to this headline">¶</a></h2>
+<p>Cody Bezik.</p>
+</div>
+<div class="section" id="references">
+<h2>References<a class="headerlink" href="#references" title="Permalink to this headline">¶</a></h2>
+<table class="docutils footnote" frame="void" id="id2" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id1">[1]</a></td><td>Pan, A. C., Sezer, D. &amp; Roux, B. <em>Finding Transition Pathways Using the
+String Method with Swarms of Trajectories</em>.
+J. Phys. Chem. B <strong>112</strong>, 3432–3440 (2008).</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="Umbrella Sampling.html" class="btn btn-neutral float-right" title="Umbrella Sampling" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="Replica Exchange.html" class="btn btn-neutral" title="Replica Exchange" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2016, the SSAGES Team.
+      Last updated on Oct 14, 2016.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'0.9',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

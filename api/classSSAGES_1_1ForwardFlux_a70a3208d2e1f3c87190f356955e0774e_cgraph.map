@@ -1,0 +1,7 @@
+<map id="SSAGES::ForwardFlux::ReadConfiguration" name="SSAGES::ForwardFlux::ReadConfiguration">
+<area shape="rect" id="node2" href="$classSSAGES_1_1Snapshot.html#aa0063a19760ed14f163c0dec36582347" title="Access the atom IDs. " alt="" coords="220,5,441,32"/>
+<area shape="rect" id="node3" href="$classSSAGES_1_1Snapshot.html#a2533f7b900bc33185424eb94d6996edf" title="Access the per&#45;particle forces. " alt="" coords="226,56,435,83"/>
+<area shape="rect" id="node4" href="$classSSAGES_1_1Snapshot.html#aee2ceb317884bc5e0105b9824b5026d3" title="Access the particle positions. " alt="" coords="219,107,442,133"/>
+<area shape="rect" id="node5" href="$classSSAGES_1_1Snapshot.html#a7ec2bd1a23c8996f8a435f4007eca3bd" title="Access the snapshot ID. " alt="" coords="211,157,450,184"/>
+<area shape="rect" id="node6" href="$classSSAGES_1_1Snapshot.html#aeadc50cebd62e3fcbdc17511f781de19" title="Access the particle velocities. " alt="" coords="217,208,444,235"/>
+</map>

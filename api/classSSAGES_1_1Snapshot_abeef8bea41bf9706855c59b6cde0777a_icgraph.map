@@ -1,0 +1,8 @@
+<map id="SSAGES::Snapshot::GetLocalIndices" name="SSAGES::Snapshot::GetLocalIndices">
+<area shape="rect" id="node2" href="$classSSAGES_1_1RadiusOfGyrationCV.html#a99c2148c2d12769abae1677ece4325ca" title="Evaluate the CV. " alt="" coords="256,5,445,46"/>
+<area shape="rect" id="node3" href="$classSSAGES_1_1ParticleCoordinateCV.html#afff49e8eb1571fe3527712be50da001e" title="Evaluate the CV. " alt="" coords="255,70,447,111"/>
+<area shape="rect" id="node4" href="$classSSAGES_1_1ParticlePositionCV.html#aa2ee9b7b3ca3133183e2d5f511251e29" title="Evaluate the CV. " alt="" coords="263,135,439,177"/>
+<area shape="rect" id="node5" href="$classSSAGES_1_1ParticleSeparationCV.html#ae6452c47bf1d849e2af60c84209a9955" title="Evaluate the CV. " alt="" coords="255,201,446,242"/>
+<area shape="rect" id="node6" href="$classSSAGES_1_1AngleCV.html#a6e2a96d605cbf6f664e57dc312d219f2" title="Initialize necessary variables. " alt="" coords="254,267,447,293"/>
+<area shape="rect" id="node7" href="$classSSAGES_1_1TorsionalCV.html#a4d33444e79408f7690d3c1e56359212b" title="Initialize necessary variables. " alt="" coords="272,318,429,359"/>
+</map>
