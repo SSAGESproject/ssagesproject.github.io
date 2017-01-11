@@ -1,0 +1,6 @@
+<map id="SSAGES::Hook::PostIntegrationHook" name="SSAGES::Hook::PostIntegrationHook">
+<area shape="rect" id="node2" href="$classSSAGES_1_1Snapshot.html#a1bc1d505100ddaebd9a7650c55d35001" title="Set the &quot;changed&quot; flag of the Snapshot. " alt="" coords="308,5,508,32"/>
+<area shape="rect" id="node3" href="$classSSAGES_1_1Snapshot.html#acaee0172694743e118273a055ff2c3fc" title="Get the current iteration. " alt="" coords="300,56,516,83"/>
+<area shape="rect" id="node4" href="$classSSAGES_1_1Snapshot.html#ac047da6094f31ab617127a4980104b5a" title="Query if Snapshot was modified. " alt="" coords="296,107,520,133"/>
+<area shape="rect" id="node5" href="$classSSAGES_1_1Hook.html#a3f2e8e7df9355515237c7548f679a893" title="Synchronization to the simulation engine. " alt="" coords="303,157,513,184"/>
+</map>

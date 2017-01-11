@@ -1,0 +1,477 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Adaptive Biasing Force Algorithm &mdash; SSAGES 0.9 documentation</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="SSAGES 0.9 documentation" href="index.html"/>
+        <link rel="up" title="Meta-Dynamics Methods" href="Meta-Dynamics Methods.html"/>
+        <link rel="next" title="Basis Function Sampling" href="Basis Function Sampling.html"/>
+        <link rel="prev" title="Meta-Dynamics Methods" href="Meta-Dynamics Methods.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> SSAGES
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="Introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Getting Started.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Tutorials.html">Tutorials</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="Meta-Dynamics Methods.html">Meta-Dynamics Methods</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Adaptive Biasing Force Algorithm</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#introduction">Introduction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#options-parameters">Options &amp; Parameters</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#example-input">Example input</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#output">Output</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#tutorial">Tutorial</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#developer">Developer</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="Basis Function Sampling.html">Basis Function Sampling</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Elastic Band.html">Elastic Band</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Finite Temperature String.html">Finite Temperature String</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Forward-Flux.html">Forward-Flux</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Generic Metadynamics.html">Generic Metadynamics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Image Method.html">Image Method</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Replica Exchange.html">Replica Exchange</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Swarm of Trajectories.html">Swarm of Trajectories</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Umbrella Sampling.html">Umbrella Sampling</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Write your own Methods and CVs.html">Write your own Methods and CVs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Contribute to SSAGES.html">Contribute to SSAGES</a></li>
+<li class="toctree-l1"><a class="reference internal" href="The SSAGES Cookbook.html">The SSAGES cookbook</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Acknowledgements.html">Acknowledgments</a></li>
+<li class="toctree-l1"><a class="reference internal" href="License.html">Copyright</a></li>
+<li class="toctree-l1"><a class="reference internal" href="License.html#id1">License information</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="index.html">SSAGES</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+ 
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="index.html">Docs</a> &raquo;</li>
+      
+          <li><a href="Meta-Dynamics Methods.html">Meta-Dynamics Methods</a> &raquo;</li>
+      
+    <li>Adaptive Biasing Force Algorithm</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/Adaptive Biasing Force Algorithm.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="adaptive-biasing-force-algorithm">
+<span id="adaptive-biasing-force"></span><h1>Adaptive Biasing Force Algorithm<a class="headerlink" href="#adaptive-biasing-force-algorithm" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="introduction">
+<h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h2>
+<p>Adaptive Biasing Force is, at its heart, a flat histogram method. Like many
+other methods that seek uniform sampling over CV space such as Metadynamics, it
+adaptively biases the simulation until such diffusive sampling is achieved.
+However, unlike metadynamics, ABF does not estimate the free energy surface.
+Rather, it directly estimates the derivative of the free energy in CV directions
+- the generalized force on that CV by the system.</p>
+<p>In practice, this translates to histogramming coordinates in CV space with an
+instantaneous estimation of the free energy derivative. This instantaneous
+estimate fluctuates around the true, global free energy derivative at that
+point, but the average quickly converges to the real value. Then, the free
+energy derivatives can be integrated much like Thermodynamic Integration to get
+the free energy surface.</p>
+<p>Thus, ABF gives a vector field and not a free energy surface.</p>
+<p>An excellent write-up on the method can be found
+<a class="reference external" href="http://pubs.acs.org/doi/abs/10.1021/jp506633n">here</a>.</p>
+<p>Details on the specific implementation used in SSAGES can be found
+<a class="reference external" href="http://mc.stanford.edu/cgi-bin/images/0/06/Darve_2008.pdf">here</a>.</p>
+</div>
+<div class="section" id="options-parameters">
+<h2>Options &amp; Parameters<a class="headerlink" href="#options-parameters" title="Permalink to this headline">¶</a></h2>
+<p>Adaptive Biasing Force Method</p>
+<ul class="simple">
+<li>Calculate the generalized force on CVs at each timestep</li>
+<li>Bias with the negative of the estimated generalized force</li>
+<li>Define a CV range. Outside of the CV range, there will be no bias, and no
+histogram hits will be collected.</li>
+<li>Can optionally define a restraint range. Outside this range, a harmonic
+restraint of user-chosen spring constant will drive the CV back into the
+range. This range should be WIDER than the CV range by at least one bin size
+in each direction. To disable restraints, enter a spring constant k equal to
+or less than zero.</li>
+<li>Currently, CV restraints cannot handle periodicity, but this feature will be
+implemented soon.</li>
+</ul>
+<p>How to define the ABF Method: <code class="docutils literal"><span class="pre">&quot;type&quot;</span> <span class="pre">:</span> <span class="pre">&quot;ABF&quot;</span></code></p>
+<dl class="docutils">
+<dt>CV_lower_bounds</dt>
+<dd><em>array of doubles (nr of CVs) long</em>.
+This array defines the minimum values for the CVs for the range in which the
+method will be used in order.</dd>
+<dt>CV_upper_bounds</dt>
+<dd><em>array of doubles (nr of CVs) long</em>.
+This array defines the minimum values for the CVs for the range in which the
+method will be used in order.</dd>
+<dt>CV_bins</dt>
+<dd><em>array of doubles (cr of CVs) long</em>.
+This array defines the number of histogram bins in each CV dimension in order.</dd>
+<dt>CV_restraint_minimums</dt>
+<dd><em>array of doubles (cr of CVs) long</em>.
+This array defines the minimum values for the CV restraints in order.</dd>
+<dt>CV_restraint_maximums</dt>
+<dd><em>array of doubles (cr of CVs) long</em>.
+This array defines the maximum values for the CV restraints in order.</dd>
+<dt>CV_restraint_spring_constants</dt>
+<dd><em>array of doubles (cr of CVs) long</em>.
+This array defines the spring constants for the CV restraints in order.
+Enter a value equal to or less than zero to turn restraints off.</dd>
+<dt>timestep</dt>
+<dd><em>double</em>.
+The timestep of the simulation. Units depend on the conversion factor that
+follows.</dd>
+<dt>minimum_count</dt>
+<dd><em>integer</em>.
+Number of hits in a histogram required before the full bias is active for
+that bin. Below this value, the bias linearly decreases to equal 0 at hits = 0.
+Default = 100, but user should provide a reasonable value for their system.</dd>
+<dt>filename</dt>
+<dd><em>string</em>.
+Name of the file to save Adaptive Force Vector Field information to - this
+is what’s useful</dd>
+<dt>backup_frequency</dt>
+<dd><em>integer</em>.
+Saves the histogram of generalized force every this many timesteps.</dd>
+<dt>unit_conversion</dt>
+<dd><em>double</em>.
+Unit conversion from d(momentum)/d(time) to force for the simulation.
+For LAMMPS using units real, this is 2390.06
+(gram.angstrom/mole.femtosecond^2 -&gt; kcal/mole.angstrom)
+For GROMACS, this is 1.</dd>
+<dt>frequency</dt>
+<dd><em>1</em>.
+OPTIONAL
+Leave at 1.</dd>
+<dt>F</dt>
+<dd><em>array of doubles bins1xbins2x...binsnCV long</em>
+OPTIONAL
+Option to provide an initial starting histogram. This is the summed force component.</dd>
+<dt>N</dt>
+<dd><em>array of integers bins1xbins2x...binsnCV long</em>
+OPTIONAL
+Option to provide an initial starting histogram. This is the number of hits component.</dd>
+</dl>
+</div>
+<div class="section" id="example-input">
+<h2>Example input<a class="headerlink" href="#example-input" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="s2">&quot;method&quot;</span> <span class="o">:</span> <span class="p">{</span>
+        <span class="s2">&quot;type&quot;</span> <span class="o">:</span> <span class="s2">&quot;ABF&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;CV_lower_bounds&quot;</span> <span class="o">:</span> <span class="p">[</span><span class="o">-</span><span class="mf">3.13</span><span class="p">,</span> <span class="o">-</span><span class="mf">3.13</span><span class="p">],</span>
+        <span class="s2">&quot;CV_upper_bounds&quot;</span> <span class="o">:</span> <span class="p">[</span><span class="mf">3.13</span><span class="p">,</span><span class="mf">3.13</span><span class="p">],</span>
+        <span class="s2">&quot;CV_bins&quot;</span> <span class="o">:</span> <span class="p">[</span><span class="mi">91</span><span class="p">,</span><span class="mi">91</span><span class="p">],</span>
+        <span class="s2">&quot;CV_restraint_minimums&quot;</span> <span class="o">:</span> <span class="p">[</span><span class="o">-</span><span class="mi">5</span><span class="p">,</span><span class="o">-</span><span class="mi">5</span><span class="p">],</span>
+        <span class="s2">&quot;CV_restraint_maximums&quot;</span> <span class="o">:</span> <span class="p">[</span><span class="mi">5</span><span class="p">,</span><span class="mi">5</span><span class="p">],</span>
+        <span class="s2">&quot;CV_restraint_spring_constants&quot;</span> <span class="o">:</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">],</span>
+        <span class="s2">&quot;timestep&quot;</span> <span class="o">:</span> <span class="mf">0.002</span><span class="p">,</span>
+        <span class="s2">&quot;minimum_count&quot;</span> <span class="o">:</span> <span class="mi">200</span><span class="p">,</span>
+        <span class="s2">&quot;filename&quot;</span> <span class="o">:</span> <span class="s2">&quot;F_out&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;backup_frequency&quot;</span> <span class="o">:</span> <span class="mi">10000</span><span class="p">,</span>
+        <span class="s2">&quot;unit_conversion&quot;</span> <span class="o">:</span> <span class="mi">1</span><span class="p">,</span>
+        <span class="s2">&quot;frequency&quot;</span> <span class="o">:</span> <span class="mi">1</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="output">
+<h2>Output<a class="headerlink" href="#output" title="Permalink to this headline">¶</a></h2>
+<p>The main output of the method is stored in a file specified in &#8216;filename&#8217;. This
+file will contain the Adaptive Force vector field printed out every
+&#8216;backup_frequency&#8217; steps and at the end of a simulation. The method outputs a vector
+field, with vectors defined on each point on a grid that goes from
+(CV_lower_bounds) to (CV_upper_bounds) of each CV in its dimension, with (CV_bins) of grid points
+in each dimension. For example, for 2 CVs defined from (-1,1) and (-1,0) with 3 and
+2 bins respectively would be a 3x2 grid (6 grid points). The printout is in the
+following format: 2*N number of columns, where N is the number of CVs. First N columns
+are coordinates in CV space, the N+1 to 2N columns are components of the Adaptive Force
+vectors. An example for N=2 is:</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="23%" />
+<col width="23%" />
+<col width="27%" />
+<col width="27%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">CV1 Coord</th>
+<th class="head">CV2 Coord</th>
+<th class="head">d(A)/d(CV1)</th>
+<th class="head">d(A)/d(CV2)</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>-1</td>
+<td>-1</td>
+<td>-1</td>
+<td>1</td>
+</tr>
+<tr class="row-odd"><td>-1</td>
+<td>0</td>
+<td>2</td>
+<td>1</td>
+</tr>
+<tr class="row-even"><td>0</td>
+<td>-1</td>
+<td>1</td>
+<td>2</td>
+</tr>
+<tr class="row-odd"><td>0</td>
+<td>0</td>
+<td>2</td>
+<td>3</td>
+</tr>
+<tr class="row-even"><td>1</td>
+<td>-1</td>
+<td>2</td>
+<td>4</td>
+</tr>
+<tr class="row-odd"><td>1</td>
+<td>0</td>
+<td>3</td>
+<td>5</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="tutorial">
+<span id="abf-tutorial"></span><h2>Tutorial<a class="headerlink" href="#tutorial" title="Permalink to this headline">¶</a></h2>
+<p>Find the following input files in Examples/User/ABF/Example_AlanineDipeptide:</p>
+<p>For LAMMPS (must be build with RIGID package):</p>
+<ul class="simple">
+<li><code class="docutils literal"><span class="pre">in.ADP_ABF_Example(0-7)</span></code> (9 files)</li>
+<li><code class="docutils literal"><span class="pre">example.input</span></code></li>
+<li><code class="docutils literal"><span class="pre">ADP_ABF_1walker.json</span></code></li>
+<li><code class="docutils literal"><span class="pre">ADP_ABF_8walkers.json</span></code></li>
+</ul>
+<ol class="arabic simple">
+<li>Put the ABF_ADP_LAMMPS_Example folder in your ssages build folder</li>
+<li>For a single walker example, do:</li>
+</ol>
+<div class="highlight-bash"><div class="highlight"><pre><span></span>mpirun -np <span class="m">1</span> ./ssages -ADP_ABF_1walker.json.json
+</pre></div>
+</div>
+<p>For 8 walkers, do:</p>
+<div class="highlight-bash"><div class="highlight"><pre><span></span>mpirun -np <span class="m">8</span> ./ssages -ADP_ABF_8walkers.json
+</pre></div>
+</div>
+<p>Multiple walkers initiated from different seeds will
+explore different regions and will all contribute to the same adaptive force.</p>
+<ol class="arabic simple" start="3">
+<li>After the run is finished open F_out and copy the last grid that defined the
+Adaptive Force vector field (all numbers in four columns after the last line
+of text)</li>
+<li>Paste into any new folder, run ABF_1D_2D_gradient_integrator.py (requires numpy, scipy and
+matplotlib)</li>
+</ol>
+<p>For GROMACS:</p>
+<p>Optional:</p>
+<ul class="simple">
+<li><code class="docutils literal"><span class="pre">adp.gro</span></code></li>
+<li><code class="docutils literal"><span class="pre">topol.top</span></code></li>
+<li><code class="docutils literal"><span class="pre">nvt.mdp</span></code></li>
+</ul>
+<p>Required:</p>
+<ul class="simple">
+<li><code class="docutils literal"><span class="pre">example_adp(0-7).tpr</span></code> (9 files)</li>
+<li><code class="docutils literal"><span class="pre">ADP_ABF_1walker.json</span></code></li>
+<li><code class="docutils literal"><span class="pre">ADP_ABF_8walkers.json</span></code></li>
+</ul>
+<ol class="arabic simple">
+<li>Put the ABF_ADP_Gromacs_Example in your ssages build folder</li>
+<li>For a single walker example, do:</li>
+</ol>
+<div class="highlight-bash"><div class="highlight"><pre><span></span>mpirun -np <span class="m">1</span> ./ssages -ABF_AlaDP_1walker.json
+</pre></div>
+</div>
+<p>For 8 walkers, do:</p>
+<div class="highlight-bash"><div class="highlight"><pre><span></span>mpirun -np <span class="m">8</span> ./ssages -ABF_AlaDP_8walkers.json
+</pre></div>
+</div>
+<p>These will run using the pre-prepared input files in .tpr format. If you wish to
+prepare input files yourself using GROMACS tools:</p>
+<div class="highlight-bash"><div class="highlight"><pre><span></span>gmx grompp -f nvt.mdp -p topol.top -c adp.gro -o example1.tpr
+</pre></div>
+</div>
+<p>Be sure to change the seed in .mdp files for random velocity generation,
+so walkers can explore different places on the free energy surface.</p>
+</div>
+<div class="section" id="developer">
+<h2>Developer<a class="headerlink" href="#developer" title="Permalink to this headline">¶</a></h2>
+<p>Emre Sevgen</p>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="Basis Function Sampling.html" class="btn btn-neutral float-right" title="Basis Function Sampling" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="Meta-Dynamics Methods.html" class="btn btn-neutral" title="Meta-Dynamics Methods" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2016, the SSAGES Team.
+      Last updated on Oct 14, 2016.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'0.9',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

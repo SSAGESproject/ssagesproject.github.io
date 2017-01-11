@@ -1,0 +1,244 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>How to run SSAGES on LAMMPS &mdash; SSAGES 0.9 documentation</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="SSAGES 0.9 documentation" href="index.html"/>
+        <link rel="up" title="Getting Started" href="Getting Started.html"/>
+        <link rel="next" title="How to use SSAGES with GROMACS" href="How to run SSAGES with GROMACS.html"/>
+        <link rel="prev" title="Build SSAGES with local copy of MD source" href="Build SSAGES with local copy of MD source.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> SSAGES
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                1.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="Introduction.html">Introduction</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="Getting Started.html">Getting Started</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="Getting Started.html#pre-reqisites">Pre-Reqisites</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Getting Started.html#get-the-source-code">Get the source code</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Getting Started.html#build-ssages">Build SSAGES</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Getting Started.html#run-ssages">Run SSAGES</a></li>
+<li class="toctree-l2 current"><a class="reference internal" href="Getting Started.html#advanced-options">Advanced options</a><ul class="current">
+<li class="toctree-l3"><a class="reference internal" href="Build SSAGES with local copy of MD source.html">Build SSAGES with local copy of MD source</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">How to run SSAGES on LAMMPS</a></li>
+<li class="toctree-l3"><a class="reference internal" href="How to run SSAGES with GROMACS.html">How to use SSAGES with GROMACS</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Tutorials.html">Tutorials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Meta-Dynamics Methods.html">Meta-Dynamics Methods</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Write your own Methods and CVs.html">Write your own Methods and CVs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Contribute to SSAGES.html">Contribute to SSAGES</a></li>
+<li class="toctree-l1"><a class="reference internal" href="The SSAGES Cookbook.html">The SSAGES cookbook</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Acknowledgements.html">Acknowledgments</a></li>
+<li class="toctree-l1"><a class="reference internal" href="License.html">Copyright</a></li>
+<li class="toctree-l1"><a class="reference internal" href="License.html#id1">License information</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="index.html">SSAGES</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+ 
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="index.html">Docs</a> &raquo;</li>
+      
+          <li><a href="Getting Started.html">Getting Started</a> &raquo;</li>
+      
+    <li>How to run SSAGES on LAMMPS</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/How to run SSAGES on LAMMPS.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="how-to-run-ssages-on-lammps">
+<span id="run-ssages-on-lammps"></span><h1>How to run SSAGES on LAMMPS<a class="headerlink" href="#how-to-run-ssages-on-lammps" title="Permalink to this headline">¶</a></h1>
+<p>Using SSAGES with LAMMPS is as simple as running LAMMPS by itself. SSAGES requires
+the same files and commands that a stand-alone LAMMPS simulation requires, with one
+exception. LAMMPS input files usually contain a ‘run’ command. Instead of a run
+command, SSAGES requires an extra ‘fix’ in the LAMMPS input file:</p>
+<div class="highlight-text"><div class="highlight"><pre><span></span>fix ssages all ssages
+</pre></div>
+</div>
+<p>Additionally, SSAGES requires a .json file which specifies the method that will
+be used, collective variables, etc. The MD Engine should also be specified</p>
+<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="s2">&quot;type&quot;</span><span class="o">:</span> <span class="s2">&quot;LAMMPS&quot;</span>
+</pre></div>
+</div>
+<p>The number of MD steps of the simulation are specified in &#8220;MDSteps&#8221; of the .json
+file. LAMMPS log files for each simulation are specified in the &#8220;logfile&#8221; of the
+.json file. If they are specified as &#8220;none&#8221;, no LAMMPS log files will be generated.</p>
+<p>All values in the .json file will be in the units specified in the LAMMPS input file.</p>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="How to run SSAGES with GROMACS.html" class="btn btn-neutral float-right" title="How to use SSAGES with GROMACS" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="Build SSAGES with local copy of MD source.html" class="btn btn-neutral" title="Build SSAGES with local copy of MD source" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2016, the SSAGES Team.
+      Last updated on Oct 14, 2016.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'0.9',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

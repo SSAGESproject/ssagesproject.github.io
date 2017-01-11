@@ -1,0 +1,7 @@
+<map id="SSAGES::COPSSImage::PostIntegration" name="SSAGES::COPSSImage::PostIntegration">
+<area shape="rect" id="node2" href="$classSSAGES_1_1Snapshot.html#a2e9cf0296916613175988bf3f894b774" title="Access the atom types. " alt="" coords="233,5,433,46"/>
+<area shape="rect" id="node3" href="$classSSAGES_1_1Snapshot.html#aae682c4701d66ffe7c42c54e7608e1b0" title="Access the atom charges. " alt="" coords="224,71,443,97"/>
+<area shape="rect" id="node4" href="$classSSAGES_1_1Snapshot.html#a2533f7b900bc33185424eb94d6996edf" title="Access the per&#45;particle forces. " alt="" coords="229,121,438,148"/>
+<area shape="rect" id="node5" href="$classSSAGES_1_1Snapshot.html#ae05879b78672cd4899a06ae2d6a140fd" title="Get number of atoms in this snapshot. " alt="" coords="235,173,432,214"/>
+<area shape="rect" id="node6" href="$classSSAGES_1_1Snapshot.html#aee2ceb317884bc5e0105b9824b5026d3" title="Access the particle positions. " alt="" coords="222,239,445,265"/>
+</map>

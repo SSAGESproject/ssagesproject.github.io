@@ -1,0 +1,4 @@
+<map id="SSAGES::Visitor" name="SSAGES::Visitor">
+<area shape="rect" id="node2" href="$classSSAGES_1_1SimObserver.html" title="Base class for objects observing a simulation. " alt="" coords="11,80,172,107"/>
+<area shape="rect" id="node3" href="$classSSAGES_1_1JSONObserver.html" title="Observer with JSON output. " alt="" coords="5,155,179,181"/>
+</map>

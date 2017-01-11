@@ -1,0 +1,8 @@
+<map id="SSAGES::ForwardFlux::SetUpNewLibrary" name="SSAGES::ForwardFlux::SetUpNewLibrary">
+<area shape="rect" id="node2" href="$classSSAGES_1_1ForwardFlux.html#ace3b43938237299d45ad17043b441682" title="Extract all indices for a given interface. " alt="" coords="211,5,376,46"/>
+<area shape="rect" id="node3" href="$classSSAGES_1_1Snapshot.html#a7ec2bd1a23c8996f8a435f4007eca3bd" title="Access the snapshot ID. " alt="" coords="425,71,663,97"/>
+<area shape="rect" id="node4" href="$classSSAGES_1_1ForwardFlux.html#a7e683fc4fca0268c2ece573441513748" title="Write out configuration file. " alt="" coords="215,122,372,163"/>
+<area shape="rect" id="node5" href="$classSSAGES_1_1Snapshot.html#aee2ceb317884bc5e0105b9824b5026d3" title="Access the particle positions. " alt="" coords="433,121,655,148"/>
+<area shape="rect" id="node6" href="$classSSAGES_1_1Snapshot.html#aeadc50cebd62e3fcbdc17511f781de19" title="Access the particle velocities. " alt="" coords="431,172,657,199"/>
+<area shape="rect" id="node7" href="$classSSAGES_1_1Snapshot.html#aa0063a19760ed14f163c0dec36582347" title="Access the atom IDs. " alt="" coords="433,223,655,249"/>
+</map>

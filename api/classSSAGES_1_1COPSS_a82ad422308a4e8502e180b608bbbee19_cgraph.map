@@ -1,0 +1,5 @@
+<map id="SSAGES::COPSS::PostIntegration" name="SSAGES::COPSS::PostIntegration">
+<area shape="rect" id="node2" href="$classSSAGES_1_1Snapshot.html#a127a32f56151174b6cede0c790d5fd03" title="Get communicator for group (walker). " alt="" coords="283,5,538,32"/>
+<area shape="rect" id="node3" href="$classSSAGES_1_1Snapshot.html#a2533f7b900bc33185424eb94d6996edf" title="Access the per&#45;particle forces. " alt="" coords="306,56,515,83"/>
+<area shape="rect" id="node4" href="$classSSAGES_1_1Snapshot.html#aacd28c6ce70534440930b7029167b3ae" title="Get walker ID. " alt="" coords="299,107,523,133"/>
+</map>

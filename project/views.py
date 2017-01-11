@@ -23,6 +23,11 @@ def team():
 def download():
     return render_template("download.html")
 
+@app.route('/', defaults={'path': ''})
+@app.route('/<path:path>')
+def catch_all(path):
+    return render_template("%s" % path)
+
 @app.errorhandler(404)
 def page_not_found(e):
     return render_template('404.html'), 404

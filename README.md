@@ -16,3 +16,11 @@ To deploy on GitHub Pages:
 
 1. Commit your changes to the `gh-pages` branch.  
 2. Navigate to https://whitmergroup.github.io/SSAGES-site/.  Success!
+
+To update the documentation:
+
+1. From a SSAGES repository, build the documentation (follow instructions there).
+2. Copy the results of building the API documentation into the api folder at the top level of this repository (for the hosted website) and in the project/templates/api directory (for running locally).  
+3. Do the same for the results of building the Sphinx manual.
+
+Unfortunately at the moment there is an unresolved bug in testing the API referance and manual for local testing; the CSS and JS will not be picked up by the flask app and thus the pages will not render properly.  However, since there is no need to test the content of these automatically generated pages, this is not considered critical; once you update the api and manual folders appropriately, the content will be served just fine on the hosted website.

@@ -1,0 +1,4 @@
+<map id="SSAGES::SimObserver::Update" name="SSAGES::SimObserver::Update">
+<area shape="rect" id="node2" href="$classSSAGES_1_1SimEvent.html#ae5ad18d665a89759f00c67a455c37d2d" title="Tell the observer that they should observe this event. " alt="" coords="216,5,448,32"/>
+<area shape="rect" id="node3" href="$classSSAGES_1_1SimEvent.html#aef80bd4e24096480a0b8e779f7bf3bb4" title="Get iteration. " alt="" coords="223,56,441,83"/>
+</map>

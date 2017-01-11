@@ -1,0 +1,7 @@
+<map id="SSAGES::Simulation::ReadJSON" name="SSAGES::Simulation::ReadJSON">
+<area shape="rect" id="node2" href="$namespaceSSAGES.html#ae241165f0e8ecb95ab93736d58610254" title="Print a list of errors. " alt="" coords="200,5,419,32"/>
+<area shape="rect" id="node3" href="$classSSAGES_1_1JSONLoader.html#a91667f61dbb463b5c9428ac4cc4931d3" title="Load file and return JSON tree. " alt="" coords="229,57,389,98"/>
+<area shape="rect" id="node6" href="$namespaceSSAGES.html#ac01f6af49fd74678e2599d8813cb7771" title="Print out Notice in bold text. " alt="" coords="221,123,397,149"/>
+<area shape="rect" id="node4" href="$namespaceSSAGES.html#aee59580ec5081b4616fe75b3b3ab91d8" title="Read contents from a file. " alt="" coords="467,39,647,65"/>
+<area shape="rect" id="node5" href="$namespaceSSAGES.html#a5c0fb0162001973d0b16fdd15d56493d" title="Gets file path from filename. " alt="" coords="480,89,635,116"/>
+</map>

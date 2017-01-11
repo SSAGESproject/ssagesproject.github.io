@@ -1,0 +1,9 @@
+<map id="Json::ObjectRequirement::Validate" name="Json::ObjectRequirement::Validate">
+<area shape="rect" id="node2" href="$classJson_1_1Requirement.html#a60bc275c366eb59f192fa2e621268480" title="Get list of error messages. " alt="" coords="225,5,365,46"/>
+<area shape="rect" id="node3" href="$classJson_1_1Requirement.html#a46a0056414100386541cd1cb899e0030" title="Get list of notices. " alt="" coords="225,70,365,111"/>
+<area shape="rect" id="node4" href="$classJson_1_1Requirement.html#adfaec336a9f051d6f6b9a6d7f1d97b75" title="Check if errors have occured. " alt="" coords="225,135,365,177"/>
+<area shape="rect" id="node5" href="$classJson_1_1Requirement.html#ad407cff3cc37295c3b2a7ebe31798548" title="Check if notices have been queued. " alt="" coords="225,201,365,242"/>
+<area shape="rect" id="node6" href="$classJson_1_1Requirement.html#adeb9efa6cf271d9cea0599ff2d458a08" title="Add error to list of error messages. " alt="" coords="225,266,365,307"/>
+<area shape="rect" id="node7" href="$classJson_1_1Requirement.html#a00feadb29fa33f4f2cca7362f12aaed4" title="Add message to list of notices. " alt="" coords="225,331,365,373"/>
+<area shape="rect" id="node8" href="$classJson_1_1Requirement.html#aa97494b642414d00482745a0d5b2c2c3" title="Validate that JSON value meets requirements. " alt="" coords="225,397,365,438"/>
+</map>
