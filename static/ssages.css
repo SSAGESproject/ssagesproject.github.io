@@ -1,5 +1,20 @@
 @charset  "UTF-8";
 
+a:hover {
+    text-decoration: underline;
+}
+
+.team-img {
+    position: relative;
+    float: right;
+    width:  200px;
+    height: 250px;
+    background-position: 50% 50%;
+    background-repeat:   no-repeat;
+    background-size:     cover;
+    padding: 1px 1px 20px 1px
+}
+
 .header {
     text-align: center;
     background: maroon;
