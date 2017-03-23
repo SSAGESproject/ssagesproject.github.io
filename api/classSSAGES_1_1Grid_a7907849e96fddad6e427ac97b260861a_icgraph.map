@@ -1,7 +1,0 @@
-<map id="SSAGES::Grid::GetUpper" name="SSAGES::Grid::GetUpper">
-<area shape="rect" id="node2" href="$classSSAGES_1_1Basis.html#ad67a47dec34db08ac78a6ae49d9211a4" title="Computes the bias force. " alt="" coords="507,5,719,32"/>
-<area shape="rect" id="node4" href="$classSSAGES_1_1GridTest.html#a5ee124714918e2bb65481fa947ddc87b" title="Post&#45;integration hook. " alt="" coords="227,43,458,69"/>
-<area shape="rect" id="node5" href="$classSSAGES_1_1Basis.html#a766c64eb256a243d510ae7835451993e" title="Prints the current bias to a defined file from the JSON. " alt="" coords="253,93,432,120"/>
-<area shape="rect" id="node3" href="$classSSAGES_1_1Basis.html#a2dd914ae7f0c5036700a493598d845dd" title="Post&#45;integration hook. " alt="" coords="769,37,983,64"/>
-<area shape="rect" id="node6" href="$classSSAGES_1_1Basis.html#a69e8fc9be06243af2bee875a0ecd54cc" title="Updates the bias projection of the PMF. " alt="" coords="516,68,711,95"/>
-</map>

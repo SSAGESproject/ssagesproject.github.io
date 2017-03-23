@@ -53,21 +53,21 @@ html,body {
 }
 
 h1 {
-    color: #2f4f4f;
+    color: #587272 !important;
     text-align: center;
     font-weight: 700;
     font-size: 60px;
 }
 
 h2 {
-    color: #2f4f4f;
+    color: #6d8383 !important;
     text-align: center;
     font-weight: 700;
 }
 
 h4 {
-    color: #2f4f4f;
-    text-align: center;
+    color: #829595 !important;
+    text-align: left;
 }
 
 .hero {

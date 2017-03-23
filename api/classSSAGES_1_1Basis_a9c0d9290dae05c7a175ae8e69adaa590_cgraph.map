@@ -1,6 +1,6 @@
 <map id="SSAGES::Basis::PreSimulation" name="SSAGES::Basis::PreSimulation">
-<area shape="rect" id="node2" href="$classSSAGES_1_1Basis.html#a1a12c18f3e91e087380e4a027c4cd85f" title="Initializes the look up tables for polynomials. " alt="" coords="285,5,462,32"/>
-<area shape="rect" id="node3" href="$classSSAGES_1_1Grid.html#ab8c90ebb0098d0c081db7461718cc65f" title="Get dimensionality of the Grid. " alt="" coords="273,56,473,83"/>
-<area shape="rect" id="node4" href="$classSSAGES_1_1Grid.html#a3bc074c7f6aa6d3d3662a1deb95aba15" title="Get number of Grid points. " alt="" coords="272,107,475,133"/>
-<area shape="rect" id="node5" href="$classSSAGES_1_1Snapshot.html#aacd28c6ce70534440930b7029167b3ae" title="Get walker ID. " alt="" coords="261,157,485,184"/>
+<area shape="rect" id="node2" href="$classSSAGES_1_1Basis.html#a1a12c18f3e91e087380e4a027c4cd85f" title="Initializes the look up tables for polynomials. " alt="" coords="289,5,466,32"/>
+<area shape="rect" id="node3" href="$classSSAGES_1_1GridBase.html#a6f11814764298d1c2c25f12ba20d9036" title="Get the dimension. " alt="" coords="262,56,493,83"/>
+<area shape="rect" id="node4" href="$classSSAGES_1_1GridBase.html#a778394582f45e7b7210e3b6a8aec3ed9" title="Get the number of points for all dimensions. " alt="" coords="279,107,475,149"/>
+<area shape="rect" id="node5" href="$classSSAGES_1_1Snapshot.html#aacd28c6ce70534440930b7029167b3ae" title="Get walker ID. " alt="" coords="265,173,489,200"/>
 </map>

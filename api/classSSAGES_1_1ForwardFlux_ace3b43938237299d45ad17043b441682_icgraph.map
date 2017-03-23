@@ -1,5 +1,0 @@
-<map id="SSAGES::ForwardFlux::ExtractInterfaceIndices" name="SSAGES::ForwardFlux::ExtractInterfaceIndices">
-<area shape="rect" id="node2" href="$classSSAGES_1_1ForwardFlux.html#a8c0c1e8b6da5ea2ac99c8a3eb3964fa8" title="Randomly picks a configuration from a given interface. " alt="" coords="219,5,376,46"/>
-<area shape="rect" id="node3" href="$classSSAGES_1_1ForwardFlux.html#a7cc072097543530dc0a0bfca98e526a9" title="Post&#45;integration hook. " alt="" coords="424,63,581,105"/>
-<area shape="rect" id="node4" href="$classSSAGES_1_1ForwardFlux.html#a9eb1c37d2647746f10ab6b76f71c128a" title="Sets up new library for a new run because previous library had no full successes. ..." alt="" coords="219,122,376,163"/>
-</map>

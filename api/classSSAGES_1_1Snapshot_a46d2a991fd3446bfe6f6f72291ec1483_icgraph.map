@@ -1,8 +1,10 @@
 <map id="SSAGES::Snapshot::ApplyMinimumImage" name="SSAGES::Snapshot::ApplyMinimumImage">
-<area shape="rect" id="node2" href="$classSSAGES_1_1Snapshot.html#aa63df4f85b0912f9e7c99b9a81c92127" title="SSAGES::Snapshot::Center\lOfMass" alt="" coords="293,5,480,46"/>
-<area shape="rect" id="node3" href="$classSSAGES_1_1AngleCV.html#afc7cddc3872aeeeeb098c69f1126b594" title="Evaluate the CV. " alt="" coords="289,71,485,97"/>
-<area shape="rect" id="node4" href="$classSSAGES_1_1RadiusOfGyrationCV.html#a99c2148c2d12769abae1677ece4325ca" title="Evaluate the CV. " alt="" coords="292,122,481,163"/>
-<area shape="rect" id="node5" href="$classSSAGES_1_1TorsionalCV.html#ae3e82fb11240eb780cfcc57b2b0112a5" title="Evaluate the CV. " alt="" coords="308,187,465,229"/>
-<area shape="rect" id="node6" href="$classSSAGES_1_1ParticlePositionCV.html#aa2ee9b7b3ca3133183e2d5f511251e29" title="Evaluate the CV. " alt="" coords="299,253,475,294"/>
-<area shape="rect" id="node7" href="$classSSAGES_1_1ParticleSeparationCV.html#ae6452c47bf1d849e2af60c84209a9955" title="Evaluate the CV. " alt="" coords="291,318,482,359"/>
+<area shape="rect" id="node2" href="$classSSAGES_1_1Snapshot.html#aa63df4f85b0912f9e7c99b9a81c92127" title="SSAGES::Snapshot::Center\lOfMass" alt="" coords="297,5,484,46"/>
+<area shape="rect" id="node3" href="$classSSAGES_1_1AngleCV.html#afc7cddc3872aeeeeb098c69f1126b594" title="Evaluate the CV. " alt="" coords="293,71,489,97"/>
+<area shape="rect" id="node4" href="$classSSAGES_1_1TorsionalCV.html#ae3e82fb11240eb780cfcc57b2b0112a5" title="Evaluate the CV. " alt="" coords="312,122,469,163"/>
+<area shape="rect" id="node5" href="$classSSAGES_1_1GyrationTensorCV.html#ac613c1659bd00b335c3d6de3d8ff0ebc" title="Evaluate the CV. " alt="" coords="294,187,487,229"/>
+<area shape="rect" id="node6" href="$classSSAGES_1_1ParticlePositionCV.html#aa2ee9b7b3ca3133183e2d5f511251e29" title="Evaluate the CV. " alt="" coords="303,253,479,294"/>
+<area shape="rect" id="node7" href="$classSSAGES_1_1RouseModeCV.html#a1468b1aabf81ceb2ef3feb3b8fc79d0d" title="Evaluate the CV. " alt="" coords="303,318,478,359"/>
+<area shape="rect" id="node8" href="$classSSAGES_1_1ParticleSeparationCV.html#ae6452c47bf1d849e2af60c84209a9955" title="Evaluate the CV. " alt="" coords="295,383,486,425"/>
+<area shape="rect" id="node9" href="$classSSAGES_1_1CoordinationNumberCV.html#a6f194016239a621176198844d060c4ac" title="Evaluate the CV. " alt="" coords="289,449,493,490"/>
 </map>

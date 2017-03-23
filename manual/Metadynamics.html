@@ -1,0 +1,420 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Metadynamics &mdash; SSAGES v0.5.0-alpha-140-gd85bb0e documentation</title>
+  
+
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+    <link rel="top" title="SSAGES v0.5.0-alpha-140-gd85bb0e documentation" href="index.html"/>
+        <link rel="up" title="Advanced Sampling Methods" href="Advanced Sampling Methods.html"/>
+        <link rel="next" title="Image Method" href="Image Method.html"/>
+        <link rel="prev" title="Forward-Flux" href="Forward-Flux.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> SSAGES
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.5.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+                <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="Introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Getting Started.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Tutorials.html">Tutorials</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="Advanced Sampling Methods.html">Advanced Sampling Methods</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="Adaptive Biasing Force Algorithm.html">Adaptive Biasing Force Algorithm</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Basis Function Sampling.html">Basis Function Sampling</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Elastic Band.html">Elastic Band</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Finite Temperature String.html">Finite Temperature String</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Forward-Flux.html">Forward-Flux</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Metadynamics</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#introduction">Introduction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#options-parameters">Options &amp; Parameters</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#example-input">Example Input</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#output">Output</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#tutorial">Tutorial</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#developer">Developer</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#references-cited">References Cited</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="Image Method.html">Image Method</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Replica Exchange.html">Replica Exchange</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Swarm of Trajectories.html">Swarm of Trajectories</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Umbrella Sampling.html">Umbrella Sampling</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Write your own Methods and CVs.html">Write your own Methods and CVs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Contribute to SSAGES.html">Contribute to SSAGES</a></li>
+<li class="toctree-l1"><a class="reference internal" href="The SSAGES Cookbook.html">The SSAGES cookbook</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Acknowledgements.html">Acknowledgments</a></li>
+<li class="toctree-l1"><a class="reference internal" href="License.html">Copyright</a></li>
+<li class="toctree-l1"><a class="reference internal" href="License.html#id1">License information</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href="index.html">SSAGES</a>
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+ 
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href="index.html">Docs</a> &raquo;</li>
+      
+          <li><a href="Advanced Sampling Methods.html">Advanced Sampling Methods</a> &raquo;</li>
+      
+    <li>Metadynamics</li>
+      <li class="wy-breadcrumbs-aside">
+        
+          
+            <a href="_sources/Metadynamics.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="metadynamics">
+<span id="id1"></span><h1>Metadynamics<a class="headerlink" href="#metadynamics" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="introduction">
+<h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h2>
+<p>Metadynamics defines a class of flat-histogram methods useful for
+molecular dynamics simulations. Within metadynamics, a
+history-dependent bias is accrued through the periodic application of
+elemental Gaussian biases to the collective variables (CVs) of
+interest. The form of the individual biases is</p>
+<div class="math">
+\[g(\vec{\xi},\vec{s}_i) = W_i
+e^{-\frac{\left[\vec{\xi}-\vec{s}_i\right]^2}{2\sigma_i^2}}\;.\]</div>
+<p>Here <span class="math">\(\vec{xi}\)</span> is the collective variable, <span class="math">\(\vec{s}_i\)</span> is
+the location of the <span class="math">\(i^{th}\)</span> hill, <span class="math">\(W_i\)</span> is the weight and
+<span class="math">\(\sigma_i\)</span> the width of the hill. This bias acts to push the
+system away from previously visited states. As this bias accrues to
+the height of nearby features in the free energy surface, the system&#8217;s
+trajectory will begin to explore an expanded area in CV space. After a
+sufficient number of biases have been applied, the total applied bias
+within a given region will begin to oscillate around the negative of
+the free energy in that region.</p>
+<p>The free energy surface (FES) at any time <span class="math">\(t\)</span> may be
+reconstructed by summing over all applied biases thusly</p>
+<div class="math">
+\[F(\xi,t) = -V(\vec{\xi}) = -\sum_{i&lt;n(t)} W_i
+e^{-\frac{\left[\vec{\xi}-\vec{s}_i\right]^2}{2\sigma_i^2}}\;.\]</div>
+<p>Here, <span class="math">\(n(t)\)</span> refers to the number of biases applied before time
+<span class="math">\(t\)</span>. The time-dependent FES can be used to determine whether or
+not a simulation has reached a converged FES by computing block
+averages of the applied bias (see <a class="reference internal" href="#singh2012" id="id2">[Singh2012]</a>).</p>
+<p>Metadynamics can be applied to unbounded regions of CV space, or to
+bounded regions. For the case of bounded, non-periodic CVs, boundary
+corrections must be applied which alter the structure of the hills
+<span class="math">\(g(\vec{\xi},\vec{s}_i)\)</span> (see <a class="reference internal" href="#mcgovern2013" id="id3">[McGovern2013]</a>)</p>
+<p>Metadynamics exists in many flavors, in which <span class="math">\(W_i\)</span> and
+<span class="math">\(\sigma_i\)</span> are altered in a time- or trajectory- dependent
+fashion. These include Well-Tempered Metadynamics, Transition-Tempered
+Metadynamics and Metadynamics with Adaptive Gaussians. Each of these
+methods has advantages and drawbacks. Currently, SSAGES includes only
+standard Metadynamics with fixed-shape hills and no tempering
+algorithm. Details on how to use these algorithms within SSAGES are
+given in the following sections.</p>
+</div>
+<div class="section" id="options-parameters">
+<h2>Options &amp; Parameters<a class="headerlink" href="#options-parameters" title="Permalink to this headline">¶</a></h2>
+<p>Metadynamics is selected by defining <code class="docutils literal"><span class="pre">type&quot;</span> <span class="pre">:</span> <span class="pre">&quot;Metadynamics&quot;</span></code> as the
+method in the JSON input file. It supports the following options:</p>
+<dl class="docutils">
+<dt>widths</dt>
+<dd><em>array of doubles (length: number of CVs)</em>.
+This array defines the width of the Gaussians being deposited over time
+in each CV dimension.</dd>
+<dt>height</dt>
+<dd><em>double</em>.
+This value defines the height of the Gaussians being deposited over time,
+in units of energy used by the MD engine.</dd>
+<dt>hill_frequency</dt>
+<dd><em>double</em>
+This value defines the frequency in iterations with which the Gaussians
+are deposited.</dd>
+</dl>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">The Metadynamics method does not yet support CV bounds.</p>
+</div>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">The Metadynamics method does not yet support restarts.</p>
+</div>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">Metadynamics will run for the duration specified in the
+input file under <code class="docutils literal"><span class="pre">MDSteps</span></code>. It is the user&#8217;s responsibility to ensure that
+enough time is given for Metadynamics to obtain an satisfactory representation
+of the free energy surface of interest. A simple way to prevent
+Metadynamics from terminating before convergence is to define a
+very large number of <code class="docutils literal"><span class="pre">MDSteps`</span></code> and to periodically
+check the output file for convergence.</p>
+</div>
+</div>
+<div class="section" id="example-input">
+<h2>Example Input<a class="headerlink" href="#example-input" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="s2">&quot;method&quot;</span> <span class="o">:</span> <span class="p">{</span>
+        <span class="s2">&quot;type&quot;</span> <span class="o">:</span> <span class="s2">&quot;Metadynamics&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;widths&quot;</span> <span class="o">:</span> <span class="p">[</span><span class="mf">0.1</span><span class="p">,</span> <span class="mf">0.1</span><span class="p">],</span>
+        <span class="s2">&quot;height&quot;</span> <span class="o">:</span> <span class="mf">0.1</span><span class="p">,</span>
+        <span class="s2">&quot;hill_frequency&quot;</span> <span class="o">:</span> <span class="mi">1</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="output">
+<h2>Output<a class="headerlink" href="#output" title="Permalink to this headline">¶</a></h2>
+<p>The output of Metadynamics is stored in a file called &#8220;hills.out&#8221;. This file
+contains the location, width and height of each Gaussian that has been deposited
+over time. Each time Gaussian is deposited, a new line is written to the file
+in the following format:</p>
+<p><em>center1 center2 ... width1 width2 ... height</em></p>
+<p>The centers denote the locations in CV space where each Gaussian has been deposited;
+these are listed in the order that the CVs appear in the SSAGES JSON input file.
+The widths denote the corresponding Gaussian widths for each CV dimension.
+The height is the Gaussian height, which should match the parameter height defined
+in the JSON input file.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Although the widths and height of the Gaussian currently do not change in
+time, future additions to the Metadynamics method will allow for adaptive
+Gaussians.</p>
+</div>
+<p>Example MATLAB scripts are provided in the Examples/User/Meta directory.
+These scripts sum the Gaussians and generate a free energy surface from the &#8220;hills.out&#8221;
+file.</p>
+</div>
+<div class="section" id="tutorial">
+<span id="metadynamics-tutorial"></span><h2>Tutorial<a class="headerlink" href="#tutorial" title="Permalink to this headline">¶</a></h2>
+<p>Two Metadynamics examples are included in the <code class="docutils literal"><span class="pre">Examples/User/Meta</span></code> directory.
+In the first example, Metadynamics is used to sample the free energy surface of
+a two-dimensional particle undergoing Langevin dynamics. This example is found in
+the <cite>Single_Atom</cite> folder and requires LAMMPS. The files included are described below:</p>
+<ul>
+<li><dl class="first docutils">
+<dt><code class="docutils literal"><span class="pre">in.LAMMPS_Meta_Test</span></code> - LAMMPS input file describing the Langevin particle</dt>
+<dd><p class="first last">and underlying free energy surface to be sampled. The free energy surface consists of two
+Gaussian wells at (0.98, 0.98) and (-0.98, -0.98) respectively, and one Gaussian
+barrier at the origin.</p>
+</dd>
+</dl>
+</li>
+<li><p class="first"><code class="docutils literal"><span class="pre">Meta.json</span></code> - SSAGES JSON input file specifying Metadynamics and CVs to be
+sampled. In this case the CVs are the <em>x</em> and <em>y</em> coordinates of the particle.</p>
+</li>
+<li><p class="first"><code class="docutils literal"><span class="pre">analysis.m</span></code> - MATLAB script that analyzes the output of the Metadynamics
+method.</p>
+</li>
+<li><p class="first"><code class="docutils literal"><span class="pre">Movie.m</span></code> - MATLAB script that generates a movie of the free energy
+surface estimate over time.</p>
+</li>
+</ul>
+<p>To run this example:</p>
+<ol class="arabic simple">
+<li>Either copy or create a symbolic link to the SSAGES executable in the
+examples directory.</li>
+</ol>
+<div class="highlight-bash"><div class="highlight"><pre><span></span>ln -s /path/to/SSAGES/build/ssages
+</pre></div>
+</div>
+<ol class="arabic simple" start="2">
+<li>Run the example by issuing the command below. Please note that in this
+example, two walkers are used to explore the system more efficiently. If
+you would like to use more walkers (1 processor per walker), simply include
+more drivers in the <code class="docutils literal"><span class="pre">Meta.json</span></code> input file.</li>
+</ol>
+<div class="highlight-bash"><div class="highlight"><pre><span></span>mpirun -np <span class="m">2</span> ./ssages Meta.json
+</pre></div>
+</div>
+<ol class="arabic simple" start="3">
+<li>After the run is complete use the provided <code class="docutils literal"><span class="pre">analysis.m</span></code> script to generate
+a representation of the underlying free energy surface.</li>
+</ol>
+</div>
+<div class="section" id="developer">
+<h2>Developer<a class="headerlink" href="#developer" title="Permalink to this headline">¶</a></h2>
+<p>Hythem Sidky.</p>
+</div>
+<div class="section" id="references-cited">
+<h2>References Cited<a class="headerlink" href="#references-cited" title="Permalink to this headline">¶</a></h2>
+<table class="docutils citation" frame="void" id="singh2012" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id2">[Singh2012]</a></td><td>Singh, Sadanand, Manan Chopra, and Juan J. de
+Pablo. &#8220;Density of states–based molecular simulations.&#8221;
+Annual review of chemical and biomolecular engineering
+3 (2012): 369-394.</td></tr>
+</tbody>
+</table>
+<table class="docutils citation" frame="void" id="mcgovern2013" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id3">[McGovern2013]</a></td><td>McGovern, Michael, and Juan de Pablo. &#8220;A boundary
+correction algorithm for metadynamics in multiple
+dimensions.&#8221; The Journal of chemical physics 139.8
+(2013): 084102.</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+
+
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="Image Method.html" class="btn btn-neutral float-right" title="Image Method" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="Forward-Flux.html" class="btn btn-neutral" title="Forward-Flux" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2016, the SSAGES Team.
+      Last updated on Mar 20, 2017.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'v0.5.0-alpha-140-gd85bb0e',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>
