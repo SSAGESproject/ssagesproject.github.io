@@ -134,7 +134,7 @@
                 <hr>
 
 
-                <h4 style=
+                <div class="large-8 columns"><h4 style=
                 "padding-bottom: 0px; padding-top: 0px;">
                 Within the elastic band method, the top level construct, a
                 string defining a path between two sites in free energy space,
@@ -153,7 +153,9 @@
                 The system in this case evolves until only minimal driving
                 forces from the underlying FES remain; extended simulation
                 would push the elastic band out to hug the bounding
-                surface.</h4>
+                surface.</h4></div>
+            
+                <img class="feature-img" src="static/img/stringmethod.png" width="20%">
 
                 <hr>
                 <br>
@@ -172,7 +174,7 @@
                 <hr>
 
 
-                <h4>The scheme provided by the General geometry Ewald-like
+                <div class="large-8 columns"><h4>The scheme provided by the General geometry Ewald-like
                 Method (GgEM) is a platform for multi-scale problems in physics
                 and chemistry. Applied to hydrodynamic equations, the method
                 solves for the proper behavior (both Brownian and Hydrodynamic)
@@ -181,8 +183,10 @@
                 using a Green's function approach for long-range interactions.
                 At right is a demonstration of GGEM methods applied to the
                 resolution of flow fields in suspensions of self-motile
-                particles.</h4>
-
+                particles.</h4></div>
+        
+                <img class="feature-img" src="static/img/generalcopps.png" width="20%">
+                
                 <hr>
                 <br>
                 <br>
@@ -195,7 +199,7 @@
                 <hr>
 
 
-                <h4>The Fast Multipole Boundary Element Method (FMBEM) is a
+                <div class="large-8 columns"><h4>The Fast Multipole Boundary Element Method (FMBEM) is a
                 code framework for various integral problems encountered in
                 scientific and engineering communities. It runs in parallel and
                 utilizes iterative solver GMRES accelerated by a
@@ -208,33 +212,39 @@
                 code is being developed using libMesh (finite-element library)
                 and ScalFMM (FMM library). At right is a demonstration of the
                 FMBEM applied to the electrostatic polarization problem among
-                interacting polarizable particles.</h4>
+                interacting polarizable particles.</h4></div>
+
+                <img class="feature-img" src="static/img/fastmultipole.png" width="20%">
 
                 <hr>
                 <br>
                 <br>
-
 
                 <h2 style=
                 "text-align:center; padding-bottom: 0px; padding-top: 0px;">
-                COPPS</h2>
+                Parallel Finite-Element General-Geometry Ewald-like Method (pFE-GgEm)
+                </h2>
 
                 <hr>
 
 
-                <h4>The <strong>continuum--particle coupling</strong> provided
-                by COPSS enables the spanning of multiple timescales in
-                simulation. The initial suite of routines is built around the
-                General-geometry Ewald-like Method (GgEM) which enables
-                simulations such as that shown below, where a discrete polymer
-                chain, modeling DNA, is embedded in a background solvent, and
-                confined to a nanoscopic channel; <strong>without coupling
-                algorithms such as GgEM, such simulations are
-                impossible.</strong></h4>
+                <div class="large-8 columns"><h4>
+				Parallel finite element general geometry Ewald-like method (pFE-GgEm) is an efficient O(N) and 
+                fully scalable computation framework to model the dynamics of Brownian particles considering 
+                long-range hydrodynamic interactions (HI) in any geometries. The framework combines a FEM Stokes’ 
+                solver with GgEm, a mid-point integration scheme, and a Chebyshev polynomial approximation based 
+                on the fluctuation-dissipation theorem. It is built on open-source scientific packages, such as 
+                LIBMESH (framework of solving PDEs), PETSC (parallel linear, non-linear equation solver) and SLEPC (eigenvalue calculations).
+
+				At right is a demonstration of the pFE-GgEm applied to study the behaviors of DNA chains under 
+                an elongational flow within a cross-channel geometry.
+                </h4></div>
+
+                <img class="feature-img" src="static/img/pfeggem.png" style="height:400px" width="20%">
 
                 <hr>
                 <br>
-                <br>
+                <br>            
             </div>
         </div>
     </div>
@@ -280,7 +290,7 @@
                 "download.html">Download</a></p>
 
 
-                <p class="copywrite">© 2016 SSAGES Team</p>
+                <p class="copywrite">© 2016-2017 SSAGES Team</p>
             </div>
 
 
@@ -311,7 +321,7 @@
                 of Chicago, the University of Notre Dame, and others.</p>
 
 
-                <div class="inline-list social" style="margin-left: 2em">
+                <div class="inline-list social" style="margin-left: 0.5em">
                     <a href="#"><i class="fi-social-facebook"></i></a> <a href=
                     "#"><i class="fi-social-twitter"></i></a> <a href=
                     "#"><i class="fi-social-linkedin"></i></a> <a href=
