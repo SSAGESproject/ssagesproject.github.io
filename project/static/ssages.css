@@ -30,6 +30,10 @@ a:hover {
     display: block;
 }
 
+.index-logo { 
+    background-color: #FEFDFB !important;    
+}
+
 .download-img {
     position: relative; 
     width:  200px;
@@ -105,7 +109,7 @@ a:hover {
 }
 
 html,body {
-    background-color: #FEFDFB;
+    background-color: #FEFDFB !important;
 }
 
 h1 {
