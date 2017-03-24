@@ -4,10 +4,36 @@ a:hover {
     text-decoration: underline;
 }
 
+.index-vid {
+    position: relative; 
+    width:  320px;
+    height: 240px;
+    background-position: 50% 50%;
+    background-repeat:   no-repeat;
+    background-size:     cover;
+    padding: 1px 1px 20px 1px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
 .team-img {
     position: relative; 
     width:  200px;
     height: 250px;
+    background-position: 50% 50%;
+    background-repeat:   no-repeat;
+    background-size:     cover;
+    padding: 1px 1px 20px 1px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.download-img {
+    position: relative; 
+    width:  200px;
+    height: 200px;
     background-position: 50% 50%;
     background-repeat:   no-repeat;
     background-size:     cover;
