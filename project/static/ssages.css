@@ -67,7 +67,7 @@ a:hover {
 }
 
 .header .headline {
-    color: #ffe;
+    color: #fefefe !important;
 }
 
 .header-subnav {
@@ -126,6 +126,9 @@ h4 {
     text-align: left;
 }
 
+small {
+    color: #ccd4d4 !important;
+}
 .hero {
     background: url(http://www.banksy-wallpaper.com/wallpapers/800x600/10-i-am-father.jpg) no-repeat center center;
     background-size: cover;
