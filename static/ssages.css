@@ -6,8 +6,8 @@ a:hover {
 
 .index-vid {
     position: relative; 
-    width:  320px;
-    height: 240px;
+    width:  400px;
+    height: auto;
     background-position: 50% 50%;
     background-repeat:   no-repeat;
     background-size:     cover;
@@ -20,7 +20,7 @@ a:hover {
 .team-img {
     position: relative; 
     width:  200px;
-    height: 250px;
+    height: auto;
     background-position: 50% 50%;
     background-repeat:   no-repeat;
     background-size:     cover;
@@ -37,7 +37,7 @@ a:hover {
 .download-img {
     position: relative; 
     width:  200px;
-    height: 200px;
+    height: auto;
     background-position: 50% 50%;
     background-repeat:   no-repeat;
     background-size:     cover;
@@ -48,9 +48,9 @@ a:hover {
 }
 
 .feature-img {
-    /*position: relative;*/ 
+    position: relative;
     width:  300px;
-    height: 300px;
+    height: auto;
     background-position: 50% 50%;
     background-repeat:   no-repeat;
     background-size:     cover;
