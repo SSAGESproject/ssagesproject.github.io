@@ -1,6 +1,6 @@
 <map id="SSAGES::SimObservable" name="SSAGES::SimObservable">
 <area shape="rect" id="node3" href="$classSSAGES_1_1Driver.html" title="Abstract driver class for creating driver objects. " alt="" coords="129,155,249,181"/>
 <area shape="rect" id="node2" href="$classSSAGES_1_1Visitable.html" title="Base class for visitable objects. " alt="" coords="122,5,256,32"/>
-<area shape="rect" id="node4" href="$classSSAGES_1_1GromacsDriver.html" title="SSAGES::GromacsDriver" alt="" coords="5,229,179,256"/>
+<area shape="rect" id="node4" href="$classSSAGES_1_1GromacsDriver.html" title="Driver for Gromacs simulations. " alt="" coords="5,229,179,256"/>
 <area shape="rect" id="node5" href="$classSSAGES_1_1LammpsDriver.html" title="Driver for LAMMPS simulations. " alt="" coords="203,229,373,256"/>
 </map>

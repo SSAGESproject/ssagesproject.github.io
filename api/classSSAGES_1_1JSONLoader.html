@@ -120,11 +120,11 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:a7524e199409e2a534ce210f055822324"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7524e199409e2a534ce210f055822324"></a>
+<tr class="memitem:a67c3a000640b95c8be0f61820c53f9dd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a67c3a000640b95c8be0f61820c53f9dd"></a>
 std::vector&lt; std::unique_ptr<br class="typebreak" />
-&lt; <a class="el" href="classSSAGES_1_1JSONLoaderPlugin.html">JSONLoaderPlugin</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSSAGES_1_1JSONLoader.html#a7524e199409e2a534ce210f055822324">_plugins</a></td></tr>
-<tr class="memdesc:a7524e199409e2a534ce210f055822324"><td class="mdescLeft">&#160;</td><td class="mdescRight">List of plugins. <br /></td></tr>
-<tr class="separator:a7524e199409e2a534ce210f055822324"><td class="memSeparator" colspan="2">&#160;</td></tr>
+&lt; <a class="el" href="classSSAGES_1_1JSONLoaderPlugin.html">JSONLoaderPlugin</a> &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSSAGES_1_1JSONLoader.html#a67c3a000640b95c8be0f61820c53f9dd">plugins_</a></td></tr>
+<tr class="memdesc:a67c3a000640b95c8be0f61820c53f9dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">List of plugins. <br /></td></tr>
+<tr class="separator:a67c3a000640b95c8be0f61820c53f9dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Class for loading JSON content from files. </p>
@@ -157,12 +157,12 @@ std::vector&lt; std::unique_ptr<br class="typebreak" />
 
 <p>Definition at line <a class="el" href="JSONLoader_8h_source.html#l00054">54</a> of file <a class="el" href="JSONLoader_8h_source.html">JSONLoader.h</a>.</p>
 
-<p>References <a class="el" href="JSONLoader_8h_source.html#l00046">_plugins</a>.</p>
-<div class="fragment"><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;                     : <a class="code" href="classSSAGES_1_1JSONLoader.html#a7524e199409e2a534ce210f055822324">_plugins</a>(0)</div>
+<p>References <a class="el" href="JSONLoader_8h_source.html#l00046">plugins_</a>.</p>
+<div class="fragment"><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;                     : <a class="code" href="classSSAGES_1_1JSONLoader.html#a67c3a000640b95c8be0f61820c53f9dd">plugins_</a>(0)</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        {</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;            <a class="code" href="classSSAGES_1_1JSONLoader.html#a7524e199409e2a534ce210f055822324">_plugins</a>.push_back(std::unique_ptr&lt;JSONLoaderPlugin&gt;(<span class="keyword">new</span> IncludePlugin()));</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;            <a class="code" href="classSSAGES_1_1JSONLoader.html#a67c3a000640b95c8be0f61820c53f9dd">plugins_</a>.push_back(std::unique_ptr&lt;JSONLoaderPlugin&gt;(<span class="keyword">new</span> IncludePlugin()));</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        }</div>
-<div class="ttc" id="classSSAGES_1_1JSONLoader_html_a7524e199409e2a534ce210f055822324"><div class="ttname"><a href="classSSAGES_1_1JSONLoader.html#a7524e199409e2a534ce210f055822324">SSAGES::JSONLoader::_plugins</a></div><div class="ttdeci">std::vector&lt; std::unique_ptr&lt; JSONLoaderPlugin &gt; &gt; _plugins</div><div class="ttdoc">List of plugins. </div><div class="ttdef"><b>Definition:</b> <a href="JSONLoader_8h_source.html#l00046">JSONLoader.h:46</a></div></div>
+<div class="ttc" id="classSSAGES_1_1JSONLoader_html_a67c3a000640b95c8be0f61820c53f9dd"><div class="ttname"><a href="classSSAGES_1_1JSONLoader.html#a67c3a000640b95c8be0f61820c53f9dd">SSAGES::JSONLoader::plugins_</a></div><div class="ttdeci">std::vector&lt; std::unique_ptr&lt; JSONLoaderPlugin &gt; &gt; plugins_</div><div class="ttdoc">List of plugins. </div><div class="ttdef"><b>Definition:</b> <a href="JSONLoader_8h_source.html#l00046">JSONLoader.h:46</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -208,13 +208,13 @@ std::vector&lt; std::unique_ptr<br class="typebreak" />
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>JSON Value containing the contents of the file.</dd></dl>
-<p>This function loads JSON content from a given file. For each plugin in <code>_plugins</code> the filter defined with this plugin will be applied to the contents loaded from the file. </p>
+<p>This function loads JSON content from a given file. For each plugin in <code>plugins_</code> the filter defined with this plugin will be applied to the contents loaded from the file. </p>
 
 <p>Definition at line <a class="el" href="JSONLoader_8h_source.html#l00069">69</a> of file <a class="el" href="JSONLoader_8h_source.html">JSONLoader.h</a>.</p>
 
-<p>References <a class="el" href="JSONLoader_8h_source.html#l00046">_plugins</a>, <a class="el" href="FileContents_8h_source.html#l00042">SSAGES::GetFileContents()</a>, and <a class="el" href="FileContents_8h_source.html#l00068">SSAGES::GetFilePath()</a>.</p>
+<p>References <a class="el" href="FileContents_8h_source.html#l00042">SSAGES::GetFileContents()</a>, <a class="el" href="FileContents_8h_source.html#l00068">SSAGES::GetFilePath()</a>, and <a class="el" href="JSONLoader_8h_source.html#l00046">plugins_</a>.</p>
 
-<p>Referenced by <a class="el" href="Simulation_8h_source.html#l00116">SSAGES::Simulation::ReadJSON()</a>.</p>
+<p>Referenced by <a class="el" href="Simulation_8h_source.html#l00115">SSAGES::Simulation::ReadJSON()</a>.</p>
 <div class="fragment"><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        {</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;            std::string contents, path;</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;            <span class="keywordflow">if</span>(world.rank() == 0)</div>
@@ -226,7 +226,7 @@ std::vector&lt; std::unique_ptr<br class="typebreak" />
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;            mpi::broadcast(world, contents, 0);</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;            mpi::broadcast(world, path, 0);</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;            <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; plugin : <a class="code" href="classSSAGES_1_1JSONLoader.html#a7524e199409e2a534ce210f055822324">_plugins</a>)</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;            <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; plugin : <a class="code" href="classSSAGES_1_1JSONLoader.html#a67c3a000640b95c8be0f61820c53f9dd">plugins_</a>)</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;                plugin-&gt;ApplyFilter(contents, path);</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;            <span class="comment">// Read JSON.</span></div>
@@ -239,8 +239,8 @@ std::vector&lt; std::unique_ptr<br class="typebreak" />
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;            <span class="keywordflow">return</span> root;</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        }</div>
 <div class="ttc" id="namespaceSSAGES_html_a5c0fb0162001973d0b16fdd15d56493d"><div class="ttname"><a href="namespaceSSAGES.html#a5c0fb0162001973d0b16fdd15d56493d">SSAGES::GetFilePath</a></div><div class="ttdeci">std::string GetFilePath(const std::string &amp;str)</div><div class="ttdoc">Gets file path from filename. </div><div class="ttdef"><b>Definition:</b> <a href="FileContents_8h_source.html#l00068">FileContents.h:68</a></div></div>
+<div class="ttc" id="classSSAGES_1_1JSONLoader_html_a67c3a000640b95c8be0f61820c53f9dd"><div class="ttname"><a href="classSSAGES_1_1JSONLoader.html#a67c3a000640b95c8be0f61820c53f9dd">SSAGES::JSONLoader::plugins_</a></div><div class="ttdeci">std::vector&lt; std::unique_ptr&lt; JSONLoaderPlugin &gt; &gt; plugins_</div><div class="ttdoc">List of plugins. </div><div class="ttdef"><b>Definition:</b> <a href="JSONLoader_8h_source.html#l00046">JSONLoader.h:46</a></div></div>
 <div class="ttc" id="namespaceSSAGES_html_aee59580ec5081b4616fe75b3b3ab91d8"><div class="ttname"><a href="namespaceSSAGES.html#aee59580ec5081b4616fe75b3b3ab91d8">SSAGES::GetFileContents</a></div><div class="ttdeci">std::string GetFileContents(const char *filename)</div><div class="ttdoc">Read contents from a file. </div><div class="ttdef"><b>Definition:</b> <a href="FileContents_8h_source.html#l00042">FileContents.h:42</a></div></div>
-<div class="ttc" id="classSSAGES_1_1JSONLoader_html_a7524e199409e2a534ce210f055822324"><div class="ttname"><a href="classSSAGES_1_1JSONLoader.html#a7524e199409e2a534ce210f055822324">SSAGES::JSONLoader::_plugins</a></div><div class="ttdeci">std::vector&lt; std::unique_ptr&lt; JSONLoaderPlugin &gt; &gt; _plugins</div><div class="ttdoc">List of plugins. </div><div class="ttdef"><b>Definition:</b> <a href="JSONLoader_8h_source.html#l00046">JSONLoader.h:46</a></div></div>
 </div><!-- fragment -->
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -268,7 +268,7 @@ Here is the caller graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Oct 14 2016 11:38:55 for SSAGES by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Mar 23 2017 13:11:12 for SSAGES by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

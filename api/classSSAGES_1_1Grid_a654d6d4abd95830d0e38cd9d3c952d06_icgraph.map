@@ -1,5 +1,0 @@
-<map id="SSAGES::Grid::GetPeriodic" name="SSAGES::Grid::GetPeriodic">
-<area shape="rect" id="node2" href="$classSSAGES_1_1Basis.html#ad67a47dec34db08ac78a6ae49d9211a4" title="Computes the bias force. " alt="" coords="250,5,462,32"/>
-<area shape="rect" id="node4" href="$classSSAGES_1_1GridTest.html#a5ee124714918e2bb65481fa947ddc87b" title="Post&#45;integration hook. " alt="" coords="241,56,471,83"/>
-<area shape="rect" id="node3" href="$classSSAGES_1_1Basis.html#a2dd914ae7f0c5036700a493598d845dd" title="Post&#45;integration hook. " alt="" coords="521,5,735,32"/>
-</map>

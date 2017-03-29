@@ -1,7 +1,8 @@
 <map id="SSAGES::Snapshot::GetMasses" name="SSAGES::Snapshot::GetMasses">
-<area shape="rect" id="node2" href="$classSSAGES_1_1RadiusOfGyrationCV.html#a99c2148c2d12769abae1677ece4325ca" title="Evaluate the CV. " alt="" coords="279,5,468,46"/>
-<area shape="rect" id="node3" href="$classSSAGES_1_1ParticleCoordinateCV.html#afff49e8eb1571fe3527712be50da001e" title="Evaluate the CV. " alt="" coords="277,70,469,111"/>
+<area shape="rect" id="node2" href="$classSSAGES_1_1ParticleCoordinateCV.html#afff49e8eb1571fe3527712be50da001e" title="Evaluate the CV. " alt="" coords="277,5,469,46"/>
+<area shape="rect" id="node3" href="$classSSAGES_1_1GyrationTensorCV.html#ac613c1659bd00b335c3d6de3d8ff0ebc" title="Evaluate the CV. " alt="" coords="277,70,470,111"/>
 <area shape="rect" id="node4" href="$classSSAGES_1_1ParticlePositionCV.html#aa2ee9b7b3ca3133183e2d5f511251e29" title="Evaluate the CV. " alt="" coords="285,135,461,177"/>
-<area shape="rect" id="node5" href="$classSSAGES_1_1ParticleSeparationCV.html#ae6452c47bf1d849e2af60c84209a9955" title="Evaluate the CV. " alt="" coords="278,201,469,242"/>
-<area shape="rect" id="node6" href="$classSSAGES_1_1ABF.html#aeb9553ca7874df2ea8adc8b26e2d4b11" title="Post&#45;integration hook. " alt="" coords="270,267,477,293"/>
+<area shape="rect" id="node5" href="$classSSAGES_1_1RouseModeCV.html#a1468b1aabf81ceb2ef3feb3b8fc79d0d" title="Evaluate the CV. " alt="" coords="286,201,461,242"/>
+<area shape="rect" id="node6" href="$classSSAGES_1_1ParticleSeparationCV.html#ae6452c47bf1d849e2af60c84209a9955" title="Evaluate the CV. " alt="" coords="278,266,469,307"/>
+<area shape="rect" id="node7" href="$classSSAGES_1_1ABF.html#aeb9553ca7874df2ea8adc8b26e2d4b11" title="Post&#45;integration hook. " alt="" coords="270,332,477,359"/>
 </map>

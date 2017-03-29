@@ -108,14 +108,14 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="classJson_1_1OneOfRequirement.html">   37</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classJson_1_1OneOfRequirement.html">OneOfRequirement</a> : <span class="keyword">public</span> <a class="code" href="classJson_1_1Requirement.html">Requirement</a></div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    {</div>
 <div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="classJson_1_1OneOfRequirement.html#a2ac64e178f4b0ad518dfce0ee3c02661">   40</a></span>&#160;        <a class="code" href="namespaceJson.html#a15a4a9a1e79ca519a5cd5e560a8b1bbb">RequireList</a> <a class="code" href="classJson_1_1OneOfRequirement.html#a2ac64e178f4b0ad518dfce0ee3c02661">_reqs</a>; </div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="classJson_1_1OneOfRequirement.html#a74e44561fcddad3003c0b070047fb46e">   40</a></span>&#160;        <a class="code" href="namespaceJson.html#a15a4a9a1e79ca519a5cd5e560a8b1bbb">RequireList</a> <a class="code" href="classJson_1_1OneOfRequirement.html#a74e44561fcddad3003c0b070047fb46e">reqs_</a>; </div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="classJson_1_1OneOfRequirement.html#ab7961256b98775d5d4305eeb7ef1420d">   44</a></span>&#160;        <a class="code" href="classJson_1_1OneOfRequirement.html#ab7961256b98775d5d4305eeb7ef1420d">OneOfRequirement</a>() : <a class="code" href="classJson_1_1OneOfRequirement.html#a2ac64e178f4b0ad518dfce0ee3c02661">_reqs</a>(0) {}</div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="classJson_1_1OneOfRequirement.html#ab7961256b98775d5d4305eeb7ef1420d">   44</a></span>&#160;        <a class="code" href="classJson_1_1OneOfRequirement.html#ab7961256b98775d5d4305eeb7ef1420d">OneOfRequirement</a>() : <a class="code" href="classJson_1_1OneOfRequirement.html#a74e44561fcddad3003c0b070047fb46e">reqs_</a>(0) {}</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
 <div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="classJson_1_1OneOfRequirement.html#a93309834275b13c28bb567f8be7fd244">   47</a></span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classJson_1_1OneOfRequirement.html#a93309834275b13c28bb567f8be7fd244">ClearErrors</a>()<span class="keyword"> override</span></div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;<span class="keyword">        </span>{</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;            <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; r : <a class="code" href="classJson_1_1OneOfRequirement.html#a2ac64e178f4b0ad518dfce0ee3c02661">_reqs</a>)</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;            <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; r : <a class="code" href="classJson_1_1OneOfRequirement.html#a74e44561fcddad3003c0b070047fb46e">reqs_</a>)</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;                r-&gt;ClearErrors();</div>
 <div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;            <a class="code" href="classJson_1_1Requirement.html#ace71ebbbcc885f0c4c391a3807c80f33">Requirement::ClearErrors</a>();</div>
@@ -123,7 +123,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div>
 <div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="classJson_1_1OneOfRequirement.html#a9fadedb70a66725ec42c7793cc2da08a">   56</a></span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classJson_1_1OneOfRequirement.html#a9fadedb70a66725ec42c7793cc2da08a">ClearNotices</a>()<span class="keyword"> override</span></div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="keyword">        </span>{</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;            <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; r : <a class="code" href="classJson_1_1OneOfRequirement.html#a2ac64e178f4b0ad518dfce0ee3c02661">_reqs</a>)</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;            <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; r : <a class="code" href="classJson_1_1OneOfRequirement.html#a74e44561fcddad3003c0b070047fb46e">reqs_</a>)</div>
 <div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;                r-&gt;ClearNotices();</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;            <a class="code" href="classJson_1_1Requirement.html#a8a8a4020e4955be56dcacf4727ae5bc3">Requirement::ClearNotices</a>();</div>
@@ -133,7 +133,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;<span class="keyword">        </span>{</div>
 <div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;            <a class="code" href="classJson_1_1OneOfRequirement.html#a93309834275b13c28bb567f8be7fd244">ClearErrors</a>();</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;            <a class="code" href="classJson_1_1OneOfRequirement.html#a9fadedb70a66725ec42c7793cc2da08a">ClearNotices</a>();</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;            <a class="code" href="classJson_1_1OneOfRequirement.html#a2ac64e178f4b0ad518dfce0ee3c02661">_reqs</a>.clear();</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;            <a class="code" href="classJson_1_1OneOfRequirement.html#a74e44561fcddad3003c0b070047fb46e">reqs_</a>.clear();</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        }</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
@@ -147,8 +147,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;            <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; val : head)</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;                <span class="keywordflow">if</span>(<span class="keyword">auto</span> req = loader.<a class="code" href="classJson_1_1RequirementLoader.html#aeb1344919deda4bd8b8aa8a00cb50390">LoadRequirement</a>(val))</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;                {</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;                    <a class="code" href="classJson_1_1OneOfRequirement.html#a2ac64e178f4b0ad518dfce0ee3c02661">_reqs</a>.push_back(std::move(req));</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;                    <a class="code" href="classJson_1_1OneOfRequirement.html#a2ac64e178f4b0ad518dfce0ee3c02661">_reqs</a>.back()-&gt;Parse(val, path);</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;                    <a class="code" href="classJson_1_1OneOfRequirement.html#a74e44561fcddad3003c0b070047fb46e">reqs_</a>.push_back(std::move(req));</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;                    <a class="code" href="classJson_1_1OneOfRequirement.html#a74e44561fcddad3003c0b070047fb46e">reqs_</a>.back()-&gt;Parse(val, path);</div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;                }</div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;</div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        }</div>
@@ -157,7 +157,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00098"></a><span class="lineno"><a class="line" href="classJson_1_1OneOfRequirement.html#ae450a6c104146cbb35e4876a78de75ae">   98</a></span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classJson_1_1OneOfRequirement.html#ae450a6c104146cbb35e4876a78de75ae">Validate</a>(<span class="keyword">const</span> Value&amp; json, <span class="keyword">const</span> std::string&amp; path)<span class="keyword"> override</span></div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="keyword">        </span>{</div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;            <span class="keywordtype">int</span> validated = 0;</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;            <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; r : <a class="code" href="classJson_1_1OneOfRequirement.html#a2ac64e178f4b0ad518dfce0ee3c02661">_reqs</a>)</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;            <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; r : <a class="code" href="classJson_1_1OneOfRequirement.html#a74e44561fcddad3003c0b070047fb46e">reqs_</a>)</div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;            {</div>
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;                r-&gt;Validate(json, path);</div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;                <span class="keywordflow">if</span>(!r-&gt;HasErrors())</div>
@@ -167,7 +167,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;            <span class="keywordflow">if</span>(validated &gt; 1)</div>
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;                <a class="code" href="classJson_1_1Requirement.html#adeb9efa6cf271d9cea0599ff2d458a08">PushError</a>(path + <span class="stringliteral">&quot;: Input must validate against only one schema&quot;</span>);</div>
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;            <span class="keywordflow">else</span> <span class="keywordflow">if</span>(validated == 0)</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;                <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; r : _reqs)</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;                <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; r : reqs_)</div>
 <div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;                {</div>
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;                    <span class="keywordflow">if</span>(r-&gt;HasErrors())</div>
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;                        <span class="keywordflow">for</span>(<span class="keyword">const</span> <span class="keyword">auto</span>&amp; error : r-&gt;GetErrors())</div>
@@ -181,9 +181,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    };</div>
 <div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;}</div>
 <div class="ttc" id="classJson_1_1Requirement_html_adeb9efa6cf271d9cea0599ff2d458a08"><div class="ttname"><a href="classJson_1_1Requirement.html#adeb9efa6cf271d9cea0599ff2d458a08">Json::Requirement::PushError</a></div><div class="ttdeci">void PushError(const std::string &amp;error)</div><div class="ttdoc">Add error to list of error messages. </div><div class="ttdef"><b>Definition:</b> <a href="Requirement_8h_source.html#l00053">Requirement.h:53</a></div></div>
-<div class="ttc" id="classJson_1_1OneOfRequirement_html_a2ac64e178f4b0ad518dfce0ee3c02661"><div class="ttname"><a href="classJson_1_1OneOfRequirement.html#a2ac64e178f4b0ad518dfce0ee3c02661">Json::OneOfRequirement::_reqs</a></div><div class="ttdeci">RequireList _reqs</div><div class="ttdoc">List of Requirements. </div><div class="ttdef"><b>Definition:</b> <a href="OneOfRequirement_8h_source.html#l00040">OneOfRequirement.h:40</a></div></div>
 <div class="ttc" id="classJson_1_1OneOfRequirement_html_a93309834275b13c28bb567f8be7fd244"><div class="ttname"><a href="classJson_1_1OneOfRequirement.html#a93309834275b13c28bb567f8be7fd244">Json::OneOfRequirement::ClearErrors</a></div><div class="ttdeci">virtual void ClearErrors() override</div><div class="ttdoc">Clear list of error messages for all Requirements. </div><div class="ttdef"><b>Definition:</b> <a href="OneOfRequirement_8h_source.html#l00047">OneOfRequirement.h:47</a></div></div>
 <div class="ttc" id="classJson_1_1OneOfRequirement_html_a6dfed67bb4b662740f67b709767fe319"><div class="ttname"><a href="classJson_1_1OneOfRequirement.html#a6dfed67bb4b662740f67b709767fe319">Json::OneOfRequirement::Reset</a></div><div class="ttdeci">virtual void Reset() override</div><div class="ttdoc">Reset requirement. </div><div class="ttdef"><b>Definition:</b> <a href="OneOfRequirement_8h_source.html#l00065">OneOfRequirement.h:65</a></div></div>
+<div class="ttc" id="classJson_1_1OneOfRequirement_html_a74e44561fcddad3003c0b070047fb46e"><div class="ttname"><a href="classJson_1_1OneOfRequirement.html#a74e44561fcddad3003c0b070047fb46e">Json::OneOfRequirement::reqs_</a></div><div class="ttdeci">RequireList reqs_</div><div class="ttdoc">List of Requirements. </div><div class="ttdef"><b>Definition:</b> <a href="OneOfRequirement_8h_source.html#l00040">OneOfRequirement.h:40</a></div></div>
 <div class="ttc" id="classJson_1_1Requirement_html_ace71ebbbcc885f0c4c391a3807c80f33"><div class="ttname"><a href="classJson_1_1Requirement.html#ace71ebbbcc885f0c4c391a3807c80f33">Json::Requirement::ClearErrors</a></div><div class="ttdeci">virtual void ClearErrors()</div><div class="ttdoc">Clear list of error messages. </div><div class="ttdef"><b>Definition:</b> <a href="Requirement_8h_source.html#l00095">Requirement.h:95</a></div></div>
 <div class="ttc" id="classJson_1_1RequirementLoader_html_aeb1344919deda4bd8b8aa8a00cb50390"><div class="ttname"><a href="classJson_1_1RequirementLoader.html#aeb1344919deda4bd8b8aa8a00cb50390">Json::RequirementLoader::LoadRequirement</a></div><div class="ttdeci">std::unique_ptr&lt; Requirement &gt; LoadRequirement(const Value &amp;json)</div><div class="ttdoc">Load specific requirement. </div><div class="ttdef"><b>Definition:</b> <a href="RequirementLoader_8cpp_source.html#l00042">RequirementLoader.cpp:42</a></div></div>
 <div class="ttc" id="classJson_1_1OneOfRequirement_html"><div class="ttname"><a href="classJson_1_1OneOfRequirement.html">Json::OneOfRequirement</a></div><div class="ttdoc">Requires exactly one of a list of Requirements to hold. </div><div class="ttdef"><b>Definition:</b> <a href="OneOfRequirement_8h_source.html#l00037">OneOfRequirement.h:37</a></div></div>
@@ -199,7 +199,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Oct 14 2016 11:38:55 for SSAGES by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Mar 23 2017 13:11:11 for SSAGES by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

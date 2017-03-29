@@ -1,6 +1,8 @@
 <map id="Json::ArrayRequirement::IsUnique" name="Json::ArrayRequirement::IsUnique">
-<area shape="rect" id="node2" href="$classJson_1_1ArrayRequirement.html#a6e334ac9cf70844544828d9dfa7246cb" title="Validate json value. " alt="" coords="216,70,379,111"/>
-<area shape="rect" id="node3" href="$classSSAGES_1_1CollectiveVariable.html#a523832b5ece7bb33af4941ecf2f626c7" title="Set up CV and add it to list of CVs. " alt="" coords="427,5,618,46"/>
-<area shape="rect" id="node4" href="$classSSAGES_1_1SimObserver.html#ab4c3c59bdca5b200e225fc921275e5eb" title="Build list of observers. " alt="" coords="442,70,603,111"/>
-<area shape="rect" id="node5" href="$classSSAGES_1_1Simulation.html#ae99e82c2555ce0ec51e3ff8ceca3cb26" title="Set up the driver for the simulation. " alt="" coords="449,135,596,177"/>
+<area shape="rect" id="node2" href="$classJson_1_1ArrayRequirement.html#a6e334ac9cf70844544828d9dfa7246cb" title="Validate json value. " alt="" coords="216,127,379,169"/>
+<area shape="rect" id="node3" href="$classSSAGES_1_1Constraint.html#aac834c9af0722aec6718ea435a641caf" title="Build constraint. " alt="" coords="450,29,595,70"/>
+<area shape="rect" id="node4" href="$classSSAGES_1_1CollectiveVariable.html#a523832b5ece7bb33af4941ecf2f626c7" title="Set up CV and add it to list of CVs. " alt="" coords="427,94,618,135"/>
+<area shape="rect" id="node5" href="$classSSAGES_1_1SimObserver.html#ab4c3c59bdca5b200e225fc921275e5eb" title="Build list of observers. " alt="" coords="442,159,603,201"/>
+<area shape="rect" id="node7" href="$classSSAGES_1_1Simulation.html#ae99e82c2555ce0ec51e3ff8ceca3cb26" title="Set up the driver for the simulation. " alt="" coords="449,225,596,266"/>
+<area shape="rect" id="node6" href="$classSSAGES_1_1Driver.html#a240881074d49355f632dcb7983fa1408" title="Build observer(s). " alt="" coords="667,167,885,193"/>
 </map>

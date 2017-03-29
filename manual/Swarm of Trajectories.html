@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Swarm of Trajectories &mdash; SSAGES 0.9 documentation</title>
+  <title>Swarm of Trajectories &mdash; SSAGES v0.5.0-alpha-140-gd85bb0e documentation</title>
   
 
   
@@ -30,8 +30,8 @@
   
 
   
-    <link rel="top" title="SSAGES 0.9 documentation" href="index.html"/>
-        <link rel="up" title="Meta-Dynamics Methods" href="Meta-Dynamics Methods.html"/>
+    <link rel="top" title="SSAGES v0.5.0-alpha-140-gd85bb0e documentation" href="index.html"/>
+        <link rel="up" title="Advanced Sampling Methods" href="Advanced Sampling Methods.html"/>
         <link rel="next" title="Umbrella Sampling" href="Umbrella Sampling.html"/>
         <link rel="prev" title="Replica Exchange" href="Replica Exchange.html"/> 
 
@@ -61,7 +61,7 @@
             
             
               <div class="version">
-                1.0
+                0.5.0
               </div>
             
           
@@ -86,13 +86,13 @@
 <li class="toctree-l1"><a class="reference internal" href="Introduction.html">Introduction</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Getting Started.html">Getting Started</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Tutorials.html">Tutorials</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="Meta-Dynamics Methods.html">Meta-Dynamics Methods</a><ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="Advanced Sampling Methods.html">Advanced Sampling Methods</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="Adaptive Biasing Force Algorithm.html">Adaptive Biasing Force Algorithm</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Basis Function Sampling.html">Basis Function Sampling</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Elastic Band.html">Elastic Band</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Finite Temperature String.html">Finite Temperature String</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Forward-Flux.html">Forward-Flux</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Generic Metadynamics.html">Generic Metadynamics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Metadynamics.html">Metadynamics</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Image Method.html">Image Method</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Replica Exchange.html">Replica Exchange</a></li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#">Swarm of Trajectories</a><ul>
@@ -142,7 +142,7 @@
   <ul class="wy-breadcrumbs">
     <li><a href="index.html">Docs</a> &raquo;</li>
       
-          <li><a href="Meta-Dynamics Methods.html">Meta-Dynamics Methods</a> &raquo;</li>
+          <li><a href="Advanced Sampling Methods.html">Advanced Sampling Methods</a> &raquo;</li>
       
     <li>Swarm of Trajectories</li>
       <li class="wy-breadcrumbs-aside">
@@ -227,41 +227,79 @@ and the MPTP.</p>
 </div>
 <div class="section" id="options-parameters">
 <h2>Options &amp; Parameters<a class="headerlink" href="#options-parameters" title="Permalink to this headline">¶</a></h2>
-<p>These are all the options that SSAGES provides for running the SoT method. In
-order to add SoT to the JSON file, the method should be labeled as &#8220;Swarm&#8221;.</p>
+<p>To construct a Swarm input file, the following options ae available. A
+complete Swarm JSON file will inherit some of its inputs from the String
+schema (for parameters common to all string methods) as well as the
+Observer schema (for restarts). The options unique to Swarm are:</p>
+<dl class="docutils">
+<dt>initial_steps</dt>
+<dd>For each iteration of the method, this is the number of steps to spend</dd>
+</dl>
+<p>doing restrained sampling and not harvesting trajectories. This time is
+important to ensure the underlying molecular system’s CV values are
+close to the string CV values.</p>
+<dl class="docutils">
+<dt>harvest_length</dt>
+<dd>After the initial restraining is finished, a trajectory is harvested for later use in launching an unrestrained trajectory every so often - harvest length specifies how often this will be done. Harvest length multiplied by number of trajectories (see below) will determine overall how many more steps will be taken under restrained sampling.</dd>
+<dt>number_of_trajectories</dt>
+<dd>The total number of unrestrained trajectories to be included in each swarm.</dd>
+<dt>swarm_length</dt>
+<dd>The length of each unrestrained trajectory in the swarm. Swarm length multiplied by number of trajectories specifies how many total steps will be spent doing unrestrained sampling.</dd>
+</dl>
+<p>From the String schema, the options are:</p>
+<dl class="docutils">
+<dt>type</dt>
+<dd>This parameter identifies that a String-type method is being used, and</dd>
+</dl>
+<p>thus should be set to “String”</p>
+<dl class="docutils">
+<dt>flavor</dt>
+<dd>This parameter identifies the specific kind of string-type method</dd>
+</dl>
+<p>being used; for swarm, it should be set to “Swarm”.</p>
 <dl class="docutils">
 <dt>centers</dt>
-<dd>For each driver, the initial values of each CV should be specified as a list
-under &#8220;centers&#8221;.  In this way, the initial string is defined.</dd>
-<dt>number of nodes</dt>
-<dd>A specification of how many nodes (equivalent terminology to images) the
-string should be discretized into.  This parameter only affects
-reparameterization; the actual number of string images depends on how many
-drivers are specified.  For accurate results, these values should match.</dd>
-<dt>spring</dt>
-<dd>The spring constant to be used during instances of restrained sampling (the
-constant is part of a harmonic restraint potential).</dd>
-<dt>frequency</dt>
-<dd>The frequency of each integration step. This should almost always be set to
-1.</dd>
-<dt>initial steps</dt>
-<dd>For each iteration of the method, this is the number of steps to spend doing
-restrained sampling and not harvesting trajectories.  This time is important
-to ensure the underlying molecular system&#8217;s CV values are close to the
-string CV values.</dd>
-<dt>harvest length</dt>
-<dd>After the initial restraining is finished, a trajectory is harvested for
-later use in launching an unrestrained trajectory every so often - harvest
-length specifies how often this will be done.  Harvest length multiplied by
-number of trajectories (see below) will determine overall how many more
-steps will be taken under restrained sampling.</dd>
-<dt>number of trajectories</dt>
-<dd>The total number of unrestrained trajectories to be included in each swarm.</dd>
-<dt>swarm length</dt>
-<dd>The length of each unrestrained trajectory in the swarm.  Swarm length
-multiplied by number of trajectories specifies how many total steps will be
-spent doing unrestrained sampling.</dd>
+<dd>For each driver, the initial values of each CV should be specified as</dd>
 </dl>
+<p>a list under “centers”. In this way, the initial string is defined.</p>
+<dl class="docutils">
+<dt>tolerance</dt>
+<dd>This is a tolerance threshold that can be set to trigger the end of</dd>
+</dl>
+<p>the method; it is a percentage by which, if no node CV changes by this
+percentage, the method will end. It must be specified as an array with
+one entry for each CV desired.</p>
+<dl class="docutils">
+<dt>max_iterations</dt>
+<dd>A complementary stopping criterion can be specified; the method will</dd>
+</dl>
+<p>stop if it undergoes this many iterations of the string method.</p>
+<dl class="docutils">
+<dt>ksprings</dt>
+<dd>A unique spring constant must be defined for each CV; its purpose is</dd>
+</dl>
+<p>described above.</p>
+<dl class="docutils">
+<dt>frequency</dt>
+<dd>The frequency of each integration step. This should almost always be</dd>
+</dl>
+<p>set to 1.</p>
+<p>From the Observer schema, the options are:</p>
+<dl class="docutils">
+<dt>type</dt>
+<dd>This can currently only be set to “JSON”; specifies to write out JSON</dd>
+</dl>
+<p>type restart files.</p>
+<dl class="docutils">
+<dt>file name</dt>
+<dd>This is a prefix which will be attached to the various restart files</dd>
+</dl>
+<p>that will be written out.</p>
+<dl class="docutils">
+<dt>frequency</dt>
+<dd>This specifies how often a restart file is written out, in terms of MD</dd>
+</dl>
+<p>steps taken.</p>
 </div>
 <div class="section" id="tutorial">
 <span id="swarm-tutorial"></span><h2>Tutorial<a class="headerlink" href="#tutorial" title="Permalink to this headline">¶</a></h2>
@@ -357,7 +395,7 @@ J. Phys. Chem. B <strong>112</strong>, 3432–3440 (2008).</td></tr>
   <div role="contentinfo">
     <p>
         &copy; Copyright 2016, the SSAGES Team.
-      Last updated on Oct 14, 2016.
+      Last updated on Mar 20, 2017.
 
     </p>
   </div>
@@ -379,7 +417,7 @@ J. Phys. Chem. B <strong>112</strong>, 3432–3440 (2008).</td></tr>
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'./',
-            VERSION:'0.9',
+            VERSION:'v0.5.0-alpha-140-gd85bb0e',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
             HAS_SOURCE:  true

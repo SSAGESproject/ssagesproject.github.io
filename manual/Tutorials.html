@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Tutorials &mdash; SSAGES 0.9 documentation</title>
+  <title>Tutorials &mdash; SSAGES v0.5.0-alpha-140-gd85bb0e documentation</title>
   
 
   
@@ -30,8 +30,8 @@
   
 
   
-    <link rel="top" title="SSAGES 0.9 documentation" href="index.html"/>
-        <link rel="next" title="Meta-Dynamics Methods" href="Meta-Dynamics Methods.html"/>
+    <link rel="top" title="SSAGES v0.5.0-alpha-140-gd85bb0e documentation" href="index.html"/>
+        <link rel="next" title="Advanced Sampling Methods" href="Advanced Sampling Methods.html"/>
         <link rel="prev" title="How to use SSAGES with GROMACS" href="How to run SSAGES with GROMACS.html"/> 
 
   
@@ -60,7 +60,7 @@
             
             
               <div class="version">
-                1.0
+                0.5.0
               </div>
             
           
@@ -85,11 +85,12 @@
 <li class="toctree-l1"><a class="reference internal" href="Introduction.html">Introduction</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Getting Started.html">Getting Started</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Tutorials</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#json">JSON</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#basic-user-tutorial">Basic User Tutorial</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#method-specific-tutorials">Method-specific tutorials</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="Meta-Dynamics Methods.html">Meta-Dynamics Methods</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Advanced Sampling Methods.html">Advanced Sampling Methods</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Write your own Methods and CVs.html">Write your own Methods and CVs</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Contribute to SSAGES.html">Contribute to SSAGES</a></li>
 <li class="toctree-l1"><a class="reference internal" href="The SSAGES Cookbook.html">The SSAGES cookbook</a></li>
@@ -142,6 +143,69 @@
             
   <div class="section" id="tutorials">
 <span id="id1"></span><h1>Tutorials<a class="headerlink" href="#tutorials" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="json">
+<h2>JSON<a class="headerlink" href="#json" title="Permalink to this headline">¶</a></h2>
+<p>SSAGES is run using input files written in the <a class="reference external" href="http://json.org">JSON</a> file format. JSON is a
+lightweight text format which is easy for humans to read and write and for
+machines to parse and generate. Almost every programming language offers some
+level of native JSON support, making it particularly convenient to script or
+automate input file generation using, say, Python. If you&#8217;ve never used JSON before,
+don&#8217;t worry. Throughout the documentation we make no assumptions about
+the user&#8217;s knowledge of JSON and provide clear easy-to-follow examples.</p>
+<p>A SSAGES input file is a valid JSON document. Here we will define a bit of
+terminology relating to JSON. Take the following JSON structure as an example,
+obtained from <a class="reference external" href="https://en.wikipedia.org/wiki/JSON#JSON_sample">Wikipedia</a>:</p>
+<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="p">{</span>
+        <span class="s2">&quot;firstName&quot;</span><span class="o">:</span> <span class="s2">&quot;John&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;lastName&quot;</span><span class="o">:</span> <span class="s2">&quot;Smith&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;age&quot;</span><span class="o">:</span> <span class="mi">25</span><span class="p">,</span>
+        <span class="s2">&quot;address&quot;</span><span class="o">:</span> <span class="p">{</span>
+                <span class="s2">&quot;streetAddress&quot;</span><span class="o">:</span> <span class="s2">&quot;21 2nd Street&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;city&quot;</span><span class="o">:</span> <span class="s2">&quot;New York&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;state&quot;</span><span class="o">:</span> <span class="s2">&quot;NY&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;postalCode&quot;</span><span class="o">:</span> <span class="s2">&quot;10021&quot;</span>
+        <span class="p">},</span>
+        <span class="s2">&quot;phoneNumber&quot;</span><span class="o">:</span> <span class="p">[</span>
+                <span class="p">{</span>
+                        <span class="s2">&quot;type&quot;</span><span class="o">:</span> <span class="s2">&quot;home&quot;</span><span class="p">,</span>
+                        <span class="s2">&quot;number&quot;</span><span class="o">:</span> <span class="s2">&quot;212 555-1234&quot;</span>
+                <span class="p">},</span>
+                <span class="p">{</span>
+                        <span class="s2">&quot;type&quot;</span><span class="o">:</span> <span class="s2">&quot;fax&quot;</span><span class="p">,</span>
+                        <span class="s2">&quot;number&quot;</span><span class="o">:</span> <span class="s2">&quot;646 555-4567&quot;</span>
+                <span class="p">}</span>
+        <span class="p">],</span>
+        <span class="s2">&quot;gender&quot;</span><span class="o">:</span> <span class="p">{</span>
+                <span class="s2">&quot;type&quot;</span><span class="o">:</span> <span class="s2">&quot;male&quot;</span>
+        <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>The first pair of curly brackets define the <em>root</em> section, we will signify this using
+<code class="docutils literal"><span class="pre">#</span></code>. An item in the hierarchy, such as the street address, can be referenced like this:
+<code class="docutils literal"><span class="pre">#/address/streetAddress</span></code>.</p>
+<p>Before moving on to SSAGES specific JSON, we&#8217;ll mention a few more things about JSON.</p>
+<ul class="simple">
+<li>Square brackets <code class="docutils literal"><span class="pre">[]</span></code> in JSON refer to <em>arrays</em>, while curly brackets refer to
+<em>objects</em>. They can be thought of as Python lists and dictionaries respectively.
+That would make <code class="docutils literal"><span class="pre">#/phoneNumber</span></code> an array of phone number objects, each containing
+a type and a number. The fax number can be referenced by <code class="docutils literal"><span class="pre">#/phoneNumber/1/number</span></code>,
+where <code class="docutils literal"><span class="pre">1</span></code> is the array index beginning from zero.</li>
+<li>Items in a JSON object (Python dictionary) are unique. In the example above,
+<code class="docutils literal"><span class="pre">#/age</span></code> can only be defined once - it is a key in the root tree.
+Defining <code class="docutils literal"><span class="pre">#/age</span></code> again will not throw an error, but instead the last definition
+will override any previous definitions. This is actually very powerful behavior.
+It means a user can import a general template JSON file and override whatever
+parameters they wish. The exact behavior of the merging process is described in
+detail in the user guide.</li>
+<li>Types matter in JSON. Notice how <code class="docutils literal"><span class="pre">#/age</span></code> is specified by a number that is not
+surrounded in quotes. This is a number, more specifically an integer.
+<code class="docutils literal"><span class="pre">#/address/postalCode</span></code> on the other hand is a string, even though the contents of
+the string are all numbers. Certain fields in a SSAGES input file may be required
+to be a string, integer, or number. The user should be aware of this and take care
+to format their input file appropriately.</li>
+</ul>
+</div>
 <div class="section" id="basic-user-tutorial">
 <h2>Basic User Tutorial<a class="headerlink" href="#basic-user-tutorial" title="Permalink to this headline">¶</a></h2>
 <p>In your SSAGES directory:</p>
@@ -185,7 +249,7 @@ at the iteration number. These values can then be used for further analysis.</p>
 <p><a class="reference internal" href="Finite Temperature String.html#fts-tutorial"><span class="std std-ref">Finite Temperature String</span></a></p>
 <p><a class="reference internal" href="Forward-Flux.html#ffs-tutorial"><span class="std std-ref">Forward Flux</span></a></p>
 <p><a class="reference internal" href="Image Method.html#im-tutorial"><span class="std std-ref">Image Method</span></a></p>
-<p><a class="reference internal" href="Generic Metadynamics.html#md-tutorial"><span class="std std-ref">Metadynamics</span></a></p>
+<p><a class="reference internal" href="Metadynamics.html#metadynamics-tutorial"><span class="std std-ref">Metadynamics</span></a></p>
 <p><a class="reference internal" href="Swarm of Trajectories.html#swarm-tutorial"><span class="std std-ref">Swarm</span></a></p>
 <p><a class="reference internal" href="Umbrella Sampling.html#umbrella-tutorial"><span class="std std-ref">Umbrella Sampling</span></a></p>
 </div>
@@ -198,7 +262,7 @@ at the iteration number. These values can then be used for further analysis.</p>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="Meta-Dynamics Methods.html" class="btn btn-neutral float-right" title="Meta-Dynamics Methods" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="Advanced Sampling Methods.html" class="btn btn-neutral float-right" title="Advanced Sampling Methods" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
         <a href="How to run SSAGES with GROMACS.html" class="btn btn-neutral" title="How to use SSAGES with GROMACS" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
@@ -211,7 +275,7 @@ at the iteration number. These values can then be used for further analysis.</p>
   <div role="contentinfo">
     <p>
         &copy; Copyright 2016, the SSAGES Team.
-      Last updated on Oct 14, 2016.
+      Last updated on Mar 20, 2017.
 
     </p>
   </div>
@@ -233,7 +297,7 @@ at the iteration number. These values can then be used for further analysis.</p>
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'./',
-            VERSION:'0.9',
+            VERSION:'v0.5.0-alpha-140-gd85bb0e',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
             HAS_SOURCE:  true

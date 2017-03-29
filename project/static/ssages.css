@@ -1,8 +1,68 @@
 @charset  "UTF-8";
 
+a:hover {
+    text-decoration: underline;
+}
+
+.index-vid {
+    position: relative; 
+    width:  400px;
+    height: auto;
+    background-position: 50% 50%;
+    background-repeat:   no-repeat;
+    background-size:     cover;
+    padding: 1px 1px 20px 1px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.team-img {
+    position: relative; 
+    width:  200px;
+    height: auto;
+    background-position: 50% 50%;
+    background-repeat:   no-repeat;
+    background-size:     cover;
+    padding: 1px 1px 20px 1px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.index-logo { 
+    background-color: #FEFDFB !important;    
+}
+
+.download-img {
+    position: relative; 
+    width:  200px;
+    height: auto;
+    background-position: 50% 50%;
+    background-repeat:   no-repeat;
+    background-size:     cover;
+    padding: 1px 1px 20px 1px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.feature-img {
+    position: relative;
+    width:  300px;
+    height: auto;
+    background-position: 50% 50%;
+    background-repeat:   no-repeat;
+    background-size:     cover;
+    padding: 1px 1px 20px 1px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
 .header {
     text-align: center;
-    background: maroon;
+    background: #800000;
     background-size: cover;
     position: relative;
     overflow: visible;
@@ -11,7 +71,7 @@
 }
 
 .header .headline {
-    color: #ffe;
+    color: #fefefe !important;
 }
 
 .header-subnav {
@@ -49,27 +109,30 @@
 }
 
 html,body {
-    background-color: #FEFDFB;
+    background-color: #FEFDFB !important;
 }
 
 h1 {
-    color: #2f4f4f;
+    color: #587272 !important;
     text-align: center;
     font-weight: 700;
     font-size: 60px;
 }
 
 h2 {
-    color: #2f4f4f;
+    color: #6d8383 !important;
     text-align: center;
     font-weight: 700;
 }
 
 h4 {
-    color: #2f4f4f;
-    text-align: center;
+    color: #829595 !important;
+    text-align: left;
 }
 
+small {
+    color: #ccd4d4 !important;
+}
 .hero {
     background: url(http://www.banksy-wallpaper.com/wallpapers/800x600/10-i-am-father.jpg) no-repeat center center;
     background-size: cover;

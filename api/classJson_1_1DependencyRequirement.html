@@ -163,11 +163,11 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="c
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:af78bea121f3c1fb96c81cfc4e3c59306"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af78bea121f3c1fb96c81cfc4e3c59306"></a>
+<tr class="memitem:ae910bde505b936d886607bb9a251b8d8"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae910bde505b936d886607bb9a251b8d8"></a>
 std::map&lt; std::string, <br class="typebreak" />
-std::vector&lt; std::string &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classJson_1_1DependencyRequirement.html#af78bea121f3c1fb96c81cfc4e3c59306">_deps</a></td></tr>
-<tr class="memdesc:af78bea121f3c1fb96c81cfc4e3c59306"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set of dependencies. <br /></td></tr>
-<tr class="separator:af78bea121f3c1fb96c81cfc4e3c59306"><td class="memSeparator" colspan="2">&#160;</td></tr>
+std::vector&lt; std::string &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classJson_1_1DependencyRequirement.html#ae910bde505b936d886607bb9a251b8d8">deps_</a></td></tr>
+<tr class="memdesc:ae910bde505b936d886607bb9a251b8d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set of dependencies. <br /></td></tr>
+<tr class="separator:ae910bde505b936d886607bb9a251b8d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -228,7 +228,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Definition at line <a class="el" href="DependencyRequirement_8h_source.html#l00061">61</a> of file <a class="el" href="DependencyRequirement_8h_source.html">DependencyRequirement.h</a>.</p>
 
-<p>References <a class="el" href="DependencyRequirement_8h_source.html#l00040">_deps</a>, and <a class="el" href="DependencyRequirement_8h_source.html#l00050">Reset()</a>.</p>
+<p>References <a class="el" href="DependencyRequirement_8h_source.html#l00040">deps_</a>, and <a class="el" href="DependencyRequirement_8h_source.html#l00050">Reset()</a>.</p>
 <div class="fragment"><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        {</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;            <a class="code" href="classJson_1_1DependencyRequirement.html#a9223929e5de6ce0d1dba645c8192e219">Reset</a>();</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
@@ -238,17 +238,17 @@ Additional Inherited Members</h2></td></tr>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;            {</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;                <span class="keywordflow">if</span>(value.isArray())</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;                {</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;                    <a class="code" href="classJson_1_1DependencyRequirement.html#af78bea121f3c1fb96c81cfc4e3c59306">_deps</a>[names[i]] = {};</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;                    <a class="code" href="classJson_1_1DependencyRequirement.html#ae910bde505b936d886607bb9a251b8d8">deps_</a>[names[i]] = {};</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;                    <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; dep : value)</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;                    {</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;                        <a class="code" href="classJson_1_1DependencyRequirement.html#af78bea121f3c1fb96c81cfc4e3c59306">_deps</a>[names[i]].push_back(dep.asString());</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;                        <a class="code" href="classJson_1_1DependencyRequirement.html#ae910bde505b936d886607bb9a251b8d8">deps_</a>[names[i]].push_back(dep.asString());</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;                    }</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;                }</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;                ++i;</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;            }</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        }</div>
 <div class="ttc" id="classJson_1_1DependencyRequirement_html_a9223929e5de6ce0d1dba645c8192e219"><div class="ttname"><a href="classJson_1_1DependencyRequirement.html#a9223929e5de6ce0d1dba645c8192e219">Json::DependencyRequirement::Reset</a></div><div class="ttdeci">virtual void Reset() override</div><div class="ttdoc">Reset Requirement. </div><div class="ttdef"><b>Definition:</b> <a href="DependencyRequirement_8h_source.html#l00050">DependencyRequirement.h:50</a></div></div>
-<div class="ttc" id="classJson_1_1DependencyRequirement_html_af78bea121f3c1fb96c81cfc4e3c59306"><div class="ttname"><a href="classJson_1_1DependencyRequirement.html#af78bea121f3c1fb96c81cfc4e3c59306">Json::DependencyRequirement::_deps</a></div><div class="ttdeci">std::map&lt; std::string, std::vector&lt; std::string &gt; &gt; _deps</div><div class="ttdoc">Set of dependencies. </div><div class="ttdef"><b>Definition:</b> <a href="DependencyRequirement_8h_source.html#l00040">DependencyRequirement.h:40</a></div></div>
+<div class="ttc" id="classJson_1_1DependencyRequirement_html_ae910bde505b936d886607bb9a251b8d8"><div class="ttname"><a href="classJson_1_1DependencyRequirement.html#ae910bde505b936d886607bb9a251b8d8">Json::DependencyRequirement::deps_</a></div><div class="ttdeci">std::map&lt; std::string, std::vector&lt; std::string &gt; &gt; deps_</div><div class="ttdoc">Set of dependencies. </div><div class="ttdef"><b>Definition:</b> <a href="DependencyRequirement_8h_source.html#l00040">DependencyRequirement.h:40</a></div></div>
 </div><!-- fragment -->
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -289,16 +289,16 @@ Here is the call graph for this function:</div>
 
 <p>Definition at line <a class="el" href="DependencyRequirement_8h_source.html#l00050">50</a> of file <a class="el" href="DependencyRequirement_8h_source.html">DependencyRequirement.h</a>.</p>
 
-<p>References <a class="el" href="DependencyRequirement_8h_source.html#l00040">_deps</a>, <a class="el" href="Requirement_8h_source.html#l00095">Json::Requirement::ClearErrors()</a>, and <a class="el" href="Requirement_8h_source.html#l00110">Json::Requirement::ClearNotices()</a>.</p>
+<p>References <a class="el" href="Requirement_8h_source.html#l00095">Json::Requirement::ClearErrors()</a>, <a class="el" href="Requirement_8h_source.html#l00110">Json::Requirement::ClearNotices()</a>, and <a class="el" href="DependencyRequirement_8h_source.html#l00040">deps_</a>.</p>
 
 <p>Referenced by <a class="el" href="DependencyRequirement_8h_source.html#l00061">Parse()</a>.</p>
 <div class="fragment"><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        {</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;            <a class="code" href="classJson_1_1DependencyRequirement.html#af78bea121f3c1fb96c81cfc4e3c59306">_deps</a>.clear();</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;            <a class="code" href="classJson_1_1DependencyRequirement.html#ae910bde505b936d886607bb9a251b8d8">deps_</a>.clear();</div>
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;            <a class="code" href="classJson_1_1Requirement.html#ace71ebbbcc885f0c4c391a3807c80f33">ClearErrors</a>();</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;            <a class="code" href="classJson_1_1Requirement.html#a8a8a4020e4955be56dcacf4727ae5bc3">ClearNotices</a>();</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        }</div>
-<div class="ttc" id="classJson_1_1DependencyRequirement_html_af78bea121f3c1fb96c81cfc4e3c59306"><div class="ttname"><a href="classJson_1_1DependencyRequirement.html#af78bea121f3c1fb96c81cfc4e3c59306">Json::DependencyRequirement::_deps</a></div><div class="ttdeci">std::map&lt; std::string, std::vector&lt; std::string &gt; &gt; _deps</div><div class="ttdoc">Set of dependencies. </div><div class="ttdef"><b>Definition:</b> <a href="DependencyRequirement_8h_source.html#l00040">DependencyRequirement.h:40</a></div></div>
 <div class="ttc" id="classJson_1_1Requirement_html_ace71ebbbcc885f0c4c391a3807c80f33"><div class="ttname"><a href="classJson_1_1Requirement.html#ace71ebbbcc885f0c4c391a3807c80f33">Json::Requirement::ClearErrors</a></div><div class="ttdeci">virtual void ClearErrors()</div><div class="ttdoc">Clear list of error messages. </div><div class="ttdef"><b>Definition:</b> <a href="Requirement_8h_source.html#l00095">Requirement.h:95</a></div></div>
+<div class="ttc" id="classJson_1_1DependencyRequirement_html_ae910bde505b936d886607bb9a251b8d8"><div class="ttname"><a href="classJson_1_1DependencyRequirement.html#ae910bde505b936d886607bb9a251b8d8">Json::DependencyRequirement::deps_</a></div><div class="ttdeci">std::map&lt; std::string, std::vector&lt; std::string &gt; &gt; deps_</div><div class="ttdoc">Set of dependencies. </div><div class="ttdef"><b>Definition:</b> <a href="DependencyRequirement_8h_source.html#l00040">DependencyRequirement.h:40</a></div></div>
 <div class="ttc" id="classJson_1_1Requirement_html_a8a8a4020e4955be56dcacf4727ae5bc3"><div class="ttname"><a href="classJson_1_1Requirement.html#a8a8a4020e4955be56dcacf4727ae5bc3">Json::Requirement::ClearNotices</a></div><div class="ttdeci">virtual void ClearNotices()</div><div class="ttdoc">Clear list of notice messages. </div><div class="ttdef"><b>Definition:</b> <a href="Requirement_8h_source.html#l00110">Requirement.h:110</a></div></div>
 </div><!-- fragment -->
 <p><div class="dynheader">
@@ -366,7 +366,7 @@ Here is the caller graph for this function:</div>
 
 <p>Definition at line <a class="el" href="DependencyRequirement_8h_source.html#l00086">86</a> of file <a class="el" href="DependencyRequirement_8h_source.html">DependencyRequirement.h</a>.</p>
 
-<p>References <a class="el" href="DependencyRequirement_8h_source.html#l00040">_deps</a>, and <a class="el" href="Requirement_8h_source.html#l00053">Json::Requirement::PushError()</a>.</p>
+<p>References <a class="el" href="DependencyRequirement_8h_source.html#l00040">deps_</a>, and <a class="el" href="Requirement_8h_source.html#l00053">Json::Requirement::PushError()</a>.</p>
 <div class="fragment"><div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        {</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;            <span class="keywordflow">if</span>(!json.isObject())</div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;            {</div>
@@ -374,7 +374,7 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;                <span class="keywordflow">return</span>;</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;            }</div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;            <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; dep : <a class="code" href="classJson_1_1DependencyRequirement.html#af78bea121f3c1fb96c81cfc4e3c59306">_deps</a>)</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;            <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; dep : <a class="code" href="classJson_1_1DependencyRequirement.html#ae910bde505b936d886607bb9a251b8d8">deps_</a>)</div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;            {</div>
 <div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;                <span class="keyword">auto</span>&amp; name = dep.first;</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;                <span class="keywordflow">if</span>(json.isMember(name))</div>
@@ -384,7 +384,7 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;            }</div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        }</div>
 <div class="ttc" id="classJson_1_1Requirement_html_adeb9efa6cf271d9cea0599ff2d458a08"><div class="ttname"><a href="classJson_1_1Requirement.html#adeb9efa6cf271d9cea0599ff2d458a08">Json::Requirement::PushError</a></div><div class="ttdeci">void PushError(const std::string &amp;error)</div><div class="ttdoc">Add error to list of error messages. </div><div class="ttdef"><b>Definition:</b> <a href="Requirement_8h_source.html#l00053">Requirement.h:53</a></div></div>
-<div class="ttc" id="classJson_1_1DependencyRequirement_html_af78bea121f3c1fb96c81cfc4e3c59306"><div class="ttname"><a href="classJson_1_1DependencyRequirement.html#af78bea121f3c1fb96c81cfc4e3c59306">Json::DependencyRequirement::_deps</a></div><div class="ttdeci">std::map&lt; std::string, std::vector&lt; std::string &gt; &gt; _deps</div><div class="ttdoc">Set of dependencies. </div><div class="ttdef"><b>Definition:</b> <a href="DependencyRequirement_8h_source.html#l00040">DependencyRequirement.h:40</a></div></div>
+<div class="ttc" id="classJson_1_1DependencyRequirement_html_ae910bde505b936d886607bb9a251b8d8"><div class="ttname"><a href="classJson_1_1DependencyRequirement.html#ae910bde505b936d886607bb9a251b8d8">Json::DependencyRequirement::deps_</a></div><div class="ttdeci">std::map&lt; std::string, std::vector&lt; std::string &gt; &gt; deps_</div><div class="ttdoc">Set of dependencies. </div><div class="ttdef"><b>Definition:</b> <a href="DependencyRequirement_8h_source.html#l00040">DependencyRequirement.h:40</a></div></div>
 </div><!-- fragment -->
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -403,7 +403,7 @@ Here is the call graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Oct 14 2016 11:38:55 for SSAGES by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Mar 23 2017 13:11:12 for SSAGES by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

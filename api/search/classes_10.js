@@ -8,5 +8,6 @@ var searchData=
   ['snapshot',['Snapshot',['../classSSAGES_1_1Snapshot.html',1,'SSAGES']]],
   ['stringmethod',['StringMethod',['../classSSAGES_1_1StringMethod.html',1,'SSAGES']]],
   ['stringrequirement',['StringRequirement',['../classJson_1_1StringRequirement.html',1,'Json']]],
-  ['swarm',['Swarm',['../classSSAGES_1_1Swarm.html',1,'SSAGES']]]
+  ['swarm',['Swarm',['../classSSAGES_1_1Swarm.html',1,'SSAGES']]],
+  ['switchingfunction',['SwitchingFunction',['../classSSAGES_1_1SwitchingFunction.html',1,'SSAGES']]]
 ];

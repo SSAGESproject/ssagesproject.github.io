@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Adaptive Biasing Force Algorithm &mdash; SSAGES 0.9 documentation</title>
+  <title>Adaptive Biasing Force Algorithm &mdash; SSAGES v0.5.0-alpha-140-gd85bb0e documentation</title>
   
 
   
@@ -30,10 +30,10 @@
   
 
   
-    <link rel="top" title="SSAGES 0.9 documentation" href="index.html"/>
-        <link rel="up" title="Meta-Dynamics Methods" href="Meta-Dynamics Methods.html"/>
+    <link rel="top" title="SSAGES v0.5.0-alpha-140-gd85bb0e documentation" href="index.html"/>
+        <link rel="up" title="Advanced Sampling Methods" href="Advanced Sampling Methods.html"/>
         <link rel="next" title="Basis Function Sampling" href="Basis Function Sampling.html"/>
-        <link rel="prev" title="Meta-Dynamics Methods" href="Meta-Dynamics Methods.html"/> 
+        <link rel="prev" title="Advanced Sampling Methods" href="Advanced Sampling Methods.html"/> 
 
   
   <script src="_static/js/modernizr.min.js"></script>
@@ -61,7 +61,7 @@
             
             
               <div class="version">
-                1.0
+                0.5.0
               </div>
             
           
@@ -86,7 +86,7 @@
 <li class="toctree-l1"><a class="reference internal" href="Introduction.html">Introduction</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Getting Started.html">Getting Started</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Tutorials.html">Tutorials</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="Meta-Dynamics Methods.html">Meta-Dynamics Methods</a><ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="Advanced Sampling Methods.html">Advanced Sampling Methods</a><ul class="current">
 <li class="toctree-l2 current"><a class="current reference internal" href="#">Adaptive Biasing Force Algorithm</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#introduction">Introduction</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#options-parameters">Options &amp; Parameters</a></li>
@@ -100,7 +100,7 @@
 <li class="toctree-l2"><a class="reference internal" href="Elastic Band.html">Elastic Band</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Finite Temperature String.html">Finite Temperature String</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Forward-Flux.html">Forward-Flux</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Generic Metadynamics.html">Generic Metadynamics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Metadynamics.html">Metadynamics</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Image Method.html">Image Method</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Replica Exchange.html">Replica Exchange</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Swarm of Trajectories.html">Swarm of Trajectories</a></li>
@@ -143,7 +143,7 @@
   <ul class="wy-breadcrumbs">
     <li><a href="index.html">Docs</a> &raquo;</li>
       
-          <li><a href="Meta-Dynamics Methods.html">Meta-Dynamics Methods</a> &raquo;</li>
+          <li><a href="Advanced Sampling Methods.html">Advanced Sampling Methods</a> &raquo;</li>
       
     <li>Adaptive Biasing Force Algorithm</li>
       <li class="wy-breadcrumbs-aside">
@@ -163,7 +163,7 @@
 <span id="adaptive-biasing-force"></span><h1>Adaptive Biasing Force Algorithm<a class="headerlink" href="#adaptive-biasing-force-algorithm" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="introduction">
 <h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h2>
-<p>Adaptive Biasing Force is, at its heart, a flat histogram method. Like many
+<p>Adaptive Biasing Force is a variant of a flat histogram method. Like many
 other methods that seek uniform sampling over CV space such as Metadynamics, it
 adaptively biases the simulation until such diffusive sampling is achieved.
 However, unlike metadynamics, ABF does not estimate the free energy surface.
@@ -193,9 +193,12 @@ histogram hits will be collected.</li>
 restraint of user-chosen spring constant will drive the CV back into the
 range. This range should be WIDER than the CV range by at least one bin size
 in each direction. To disable restraints, enter a spring constant k equal to
-or less than zero.</li>
-<li>Currently, CV restraints cannot handle periodicity, but this feature will be
-implemented soon.</li>
+or less than zero. If restraints are used on a periodic system, one can define
+the periodic boundaries, so that minimum image convention to CVs can be applied.
+(CV_periodic_boundary_upper/lower_bounds). For example, on a -pi to pi CV, if the
+CV is restrained to -3.14 to -2.36 and the CV crosses the -3.14 boundary to 3.14,
+this will ensure the restraint is applied correctly back towards -3.14 rather than
+a large force applied to bring it from 3.14 all the way to -2.36.</li>
 </ul>
 <p>How to define the ABF Method: <code class="docutils literal"><span class="pre">&quot;type&quot;</span> <span class="pre">:</span> <span class="pre">&quot;ABF&quot;</span></code></p>
 <dl class="docutils">
@@ -208,18 +211,34 @@ method will be used in order.</dd>
 This array defines the minimum values for the CVs for the range in which the
 method will be used in order.</dd>
 <dt>CV_bins</dt>
-<dd><em>array of doubles (cr of CVs) long</em>.
+<dd><em>array of doubles (nr of CVs) long</em>.
 This array defines the number of histogram bins in each CV dimension in order.</dd>
 <dt>CV_restraint_minimums</dt>
-<dd><em>array of doubles (cr of CVs) long</em>.
+<dd><em>array of doubles (nr of CVs) long</em>.
 This array defines the minimum values for the CV restraints in order.</dd>
 <dt>CV_restraint_maximums</dt>
-<dd><em>array of doubles (cr of CVs) long</em>.
+<dd><em>array of doubles (nr of CVs) long</em>.
 This array defines the maximum values for the CV restraints in order.</dd>
 <dt>CV_restraint_spring_constants</dt>
-<dd><em>array of doubles (cr of CVs) long</em>.
+<dd><em>array of doubles (nr of CVs) long</em>.
 This array defines the spring constants for the CV restraints in order.
 Enter a value equal to or less than zero to turn restraints off.</dd>
+<dt>CV_isperiodic</dt>
+<dd><em>array of booleans (nr of CVs) long</em>.
+This array defines whether a given CV is periodic for restraint purposes.
+This is only used to apply minimum image convention to CV restraints.</dd>
+<dt>CV_periodic_boundary_lower_bounds</dt>
+<dd><em>array of doubles (nr of CVs) long</em>.
+This array defines the lower end of the period.
+This only matters if CV_isperiodic is true for the CV.</dd>
+<dt>CV_periodic_boundary_upper_bounds</dt>
+<dd><em>array of doubles (nr of CVs) long</em>.
+This array defines the upper end of the period.
+This only matters if CV_isperiodic is true for the CV.</dd>
+<dt>mass_weighing</dt>
+<dd><em>boolean</em>
+Turns on/off mass weighing of the adaptive force.
+Default is off. Keep off if your system has massless sites such as in TIP4P water.</dd>
 <dt>timestep</dt>
 <dd><em>double</em>.
 The timestep of the simulation. Units depend on the conversion factor that
@@ -237,11 +256,14 @@ is what’s useful</dd>
 <dd><em>integer</em>.
 Saves the histogram of generalized force every this many timesteps.</dd>
 <dt>unit_conversion</dt>
-<dd><em>double</em>.
-Unit conversion from d(momentum)/d(time) to force for the simulation.
-For LAMMPS using units real, this is 2390.06
+<dd><dl class="first docutils">
+<dt><em>double</em>.</dt>
+<dd>Unit conversion from d(momentum)/d(time) to force for the simulation.</dd>
+</dl>
+<p class="last">For LAMMPS using units real, this is 2390.06
 (gram.angstrom/mole.femtosecond^2 -&gt; kcal/mole.angstrom)
-For GROMACS, this is 1.</dd>
+For GROMACS, this is 1.</p>
+</dd>
 <dt>frequency</dt>
 <dd><em>1</em>.
 OPTIONAL
@@ -266,6 +288,9 @@ Option to provide an initial starting histogram. This is the number of hits comp
         <span class="s2">&quot;CV_restraint_minimums&quot;</span> <span class="o">:</span> <span class="p">[</span><span class="o">-</span><span class="mi">5</span><span class="p">,</span><span class="o">-</span><span class="mi">5</span><span class="p">],</span>
         <span class="s2">&quot;CV_restraint_maximums&quot;</span> <span class="o">:</span> <span class="p">[</span><span class="mi">5</span><span class="p">,</span><span class="mi">5</span><span class="p">],</span>
         <span class="s2">&quot;CV_restraint_spring_constants&quot;</span> <span class="o">:</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">],</span>
+        <span class="s2">&quot;CV_isperiodic&quot;</span> <span class="o">:</span> <span class="p">[</span><span class="kc">true</span><span class="p">,</span><span class="kc">true</span><span class="p">],</span>
+        <span class="s2">&quot;CV_periodic_boundary_lower_bounds&quot;</span><span class="o">:</span> <span class="p">[</span><span class="o">-</span><span class="mf">3.14</span><span class="p">,</span><span class="o">-</span><span class="mf">3.14</span><span class="p">],</span>
+        <span class="s2">&quot;CV_periodic_boundary_upper_bounds&quot;</span><span class="o">:</span> <span class="p">[</span><span class="mf">3.14</span><span class="p">,</span><span class="mf">3.14</span><span class="p">],</span>
         <span class="s2">&quot;timestep&quot;</span> <span class="o">:</span> <span class="mf">0.002</span><span class="p">,</span>
         <span class="s2">&quot;minimum_count&quot;</span> <span class="o">:</span> <span class="mi">200</span><span class="p">,</span>
         <span class="s2">&quot;filename&quot;</span> <span class="o">:</span> <span class="s2">&quot;F_out&quot;</span><span class="p">,</span>
@@ -391,7 +416,7 @@ matplotlib)</li>
 </pre></div>
 </div>
 <p>These will run using the pre-prepared input files in .tpr format. If you wish to
-prepare input files yourself using GROMACS tools:</p>
+prepare the input files yourself using GROMACS tools:</p>
 <div class="highlight-bash"><div class="highlight"><pre><span></span>gmx grompp -f nvt.mdp -p topol.top -c adp.gro -o example1.tpr
 </pre></div>
 </div>
@@ -414,7 +439,7 @@ so walkers can explore different places on the free energy surface.</p>
         <a href="Basis Function Sampling.html" class="btn btn-neutral float-right" title="Basis Function Sampling" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="Meta-Dynamics Methods.html" class="btn btn-neutral" title="Meta-Dynamics Methods" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="Advanced Sampling Methods.html" class="btn btn-neutral" title="Advanced Sampling Methods" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -424,7 +449,7 @@ so walkers can explore different places on the free energy surface.</p>
   <div role="contentinfo">
     <p>
         &copy; Copyright 2016, the SSAGES Team.
-      Last updated on Oct 14, 2016.
+      Last updated on Mar 20, 2017.
 
     </p>
   </div>
@@ -446,7 +471,7 @@ so walkers can explore different places on the free energy surface.</p>
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'./',
-            VERSION:'0.9',
+            VERSION:'v0.5.0-alpha-140-gd85bb0e',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
             HAS_SOURCE:  true

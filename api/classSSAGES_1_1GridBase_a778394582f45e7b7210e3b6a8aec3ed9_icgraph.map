@@ -1,0 +1,13 @@
+<map id="SSAGES::GridBase::GetNumPoints" name="SSAGES::GridBase::GetNumPoints">
+<area shape="rect" id="node2" href="$classSSAGES_1_1Grid.html#ac4fcc9f0cd61476ce4fd880c768d9694" title="Return iterator after last valid grid point. " alt="" coords="285,5,424,32"/>
+<area shape="rect" id="node3" href="$classSSAGES_1_1Histogram.html#a5429313c7a6807e9be90506df9eedb6e" title="Return iterator after last valid bin. " alt="" coords="278,57,431,98"/>
+<area shape="rect" id="node4" href="$classSSAGES_1_1GridBase.html#a633d773c9700a4096db4899742f18f97" title="Return coordinates of the grid center points. " alt="" coords="272,122,437,163"/>
+<area shape="rect" id="node5" href="$classSSAGES_1_1GridBase.html#abe96484a8fc2454042f72ff7d941f224" title="Return the Grid indices for a given point. " alt="" coords="272,187,437,229"/>
+<area shape="rect" id="node6" href="$classSSAGES_1_1Grid.html#ab055ac24af224ae06fd812ae795e1157" title="Constructor. " alt="" coords="284,253,425,280"/>
+<area shape="rect" id="node8" href="$classSSAGES_1_1Histogram.html#a57aab07146b49c6e494b6c0d5870b94a" title="Constructor. " alt="" coords="278,305,431,346"/>
+<area shape="rect" id="node9" href="$classSSAGES_1_1Grid.html#ad60e455c3d5a58b3aa1581215988a03b" title="Map d&#45;dimensional indices to 1&#45;d data vector. " alt="" coords="269,371,440,397"/>
+<area shape="rect" id="node10" href="$classSSAGES_1_1Histogram.html#a4d425497ce8b101cfc675d9e30f8b29e" title="Map d&#45;dimensional indices to 1&#45;d data vector. " alt="" coords="278,422,431,463"/>
+<area shape="rect" id="node11" href="$classSSAGES_1_1Basis.html#a9c0d9290dae05c7a175ae8e69adaa590" title="Pre&#45;simulation hook. " alt="" coords="251,488,458,515"/>
+<area shape="rect" id="node12" href="$classSSAGES_1_1GridBase.html#a0a126a2ed3e9de4b37db9dca3162b6f1" title="Wrap the index around periodic boundaries. " alt="" coords="272,539,437,581"/>
+<area shape="rect" id="node7" href="$classSSAGES_1_1Grid.html#a9e933a2490b0d835c0578cbe7f012292" title="Set up the grid. " alt="" coords="507,253,677,280"/>
+</map>

@@ -1,6 +1,0 @@
-<map id="SSAGES::Grid::GetValue" name="SSAGES::Grid::GetValue">
-<area shape="rect" id="node2" href="$classSSAGES_1_1Grid1D.html#a0172e1bec92e27b2662a09e8ec344cb2" title="Interpolate value. " alt="" coords="243,5,437,46"/>
-<area shape="rect" id="node3" href="$classSSAGES_1_1Grid2D.html#a4476fdc83d79b70f25dc0f14de3cfcdc" title="Interpolate value. " alt="" coords="243,70,437,111"/>
-<area shape="rect" id="node4" href="$classSSAGES_1_1Grid3D.html#ad050b319c0923a36f50484bfce808c2f" title="Interpolate value. " alt="" coords="243,135,437,177"/>
-<area shape="rect" id="node5" href="$classSSAGES_1_1GridTest.html#a5ee124714918e2bb65481fa947ddc87b" title="Post&#45;integration hook. " alt="" coords="225,201,455,228"/>
-</map>

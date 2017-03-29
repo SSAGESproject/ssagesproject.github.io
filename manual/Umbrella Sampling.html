@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Umbrella Sampling &mdash; SSAGES 0.9 documentation</title>
+  <title>Umbrella Sampling &mdash; SSAGES v0.5.0-alpha-140-gd85bb0e documentation</title>
   
 
   
@@ -30,8 +30,8 @@
   
 
   
-    <link rel="top" title="SSAGES 0.9 documentation" href="index.html"/>
-        <link rel="up" title="Meta-Dynamics Methods" href="Meta-Dynamics Methods.html"/>
+    <link rel="top" title="SSAGES v0.5.0-alpha-140-gd85bb0e documentation" href="index.html"/>
+        <link rel="up" title="Advanced Sampling Methods" href="Advanced Sampling Methods.html"/>
         <link rel="next" title="Write your own Methods and CVs" href="Write your own Methods and CVs.html"/>
         <link rel="prev" title="Swarm of Trajectories" href="Swarm of Trajectories.html"/> 
 
@@ -61,7 +61,7 @@
             
             
               <div class="version">
-                1.0
+                0.5.0
               </div>
             
           
@@ -86,13 +86,13 @@
 <li class="toctree-l1"><a class="reference internal" href="Introduction.html">Introduction</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Getting Started.html">Getting Started</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Tutorials.html">Tutorials</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="Meta-Dynamics Methods.html">Meta-Dynamics Methods</a><ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="Advanced Sampling Methods.html">Advanced Sampling Methods</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="Adaptive Biasing Force Algorithm.html">Adaptive Biasing Force Algorithm</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Basis Function Sampling.html">Basis Function Sampling</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Elastic Band.html">Elastic Band</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Finite Temperature String.html">Finite Temperature String</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Forward-Flux.html">Forward-Flux</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Generic Metadynamics.html">Generic Metadynamics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Metadynamics.html">Metadynamics</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Image Method.html">Image Method</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Replica Exchange.html">Replica Exchange</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Swarm of Trajectories.html">Swarm of Trajectories</a></li>
@@ -100,6 +100,7 @@
 <li class="toctree-l3"><a class="reference internal" href="#introduction">Introduction</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#options-parameters">Options &amp; Parameters</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#tutorial">Tutorial</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#references">References</a></li>
 </ul>
 </li>
 </ul>
@@ -140,7 +141,7 @@
   <ul class="wy-breadcrumbs">
     <li><a href="index.html">Docs</a> &raquo;</li>
       
-          <li><a href="Meta-Dynamics Methods.html">Meta-Dynamics Methods</a> &raquo;</li>
+          <li><a href="Advanced Sampling Methods.html">Advanced Sampling Methods</a> &raquo;</li>
       
     <li>Umbrella Sampling</li>
       <li class="wy-breadcrumbs-aside">
@@ -161,11 +162,17 @@
 <div class="section" id="introduction">
 <h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h2>
 <p>Calculations of thermodynamic data and other properties rely on proper sampling of the configurational space.
-However, the presence of energy barriers can lead to configurations not being sampled properly or sampled at
+However, the presence of energy barriers can prevent certain configurations from being sampled properly or even sampled at
 all. Umbrella sampling is a simulation technique that helps to overcome those barriers and improve sampling
-by applying a bias along a coordinate. The bias takes the form of a harmonic potential.  Usually, a series of
-umbrella-sampled simulations are performed and analyzed together using the weighted histogram analysis method
+by applying a bias along a specified collective variable. The bias takes the form of a harmonic potential and is typically constant throughout a simulation.
+Usually, a series of umbrella-sampled simulations are performed and analyzed together using the weighted histogram analysis method
 (WHAM).</p>
+<p>The functional form of the artificial bias is</p>
+<div class="math">
+\[U_{umbrella} = \frac{1}{2} k \left(s - s_0\right)^2\]</div>
+<p>where <span class="math">\(k\)</span> is the spring constant, <span class="math">\(s\)</span> is the current value of the collective variable and <span class="math">\(s_0\)</span> is the desired value of the collective variable.
+The success of the umbrella sampling method depends on the correct choice of <span class="math">\(k\)</span> and <span class="math">\(s_0\)</span> for the different simulations. Suitable values of <span class="math">\(k\)</span> and <span class="math">\(s_0\)</span> depend on the distances between adjacent umbrellas, and the gradient of the free energy surface at <span class="math">\(s_0\)</span>.</p>
+<p>For more information about the umbrella sampling method, the interested reader is referred  to Ref. <a class="footnote-reference" href="#id5" id="id2">[1]</a>.</p>
 </div>
 <div class="section" id="options-parameters">
 <h2>Options &amp; Parameters<a class="headerlink" href="#options-parameters" title="Permalink to this headline">¶</a></h2>
@@ -176,16 +183,42 @@ umbrella-sampled simulations are performed and analyzed together using the weigh
 <p>The following options are available for Umbrella Sampling:</p>
 <dl class="docutils">
 <dt>centers (required)</dt>
-<dd>Array of target CV values</dd>
+<dd>Array of target values for each CV</dd>
 <dt>ksprings (required)</dt>
-<dd>Array of spring constants to each CV</dd>
+<dd>Array of spring constants for each CV</dd>
+<dt>file name (required)</dt>
+<dd>Output file name for umbrella sampling data</dd>
+<dt>log every (optional)</dt>
+<dd>Frequency of writing to output file (default: 1)</dd>
 </dl>
+<p>The umbrella sampling method can also be run with time dependent centers.
+This is equivalent to the &#8220;steered MD&#8221; method. To do so, omit <cite>&#8220;centers&#8221;</cite>
+and use the following options instead:</p>
+<dl class="docutils">
+<dt>centers0 (required)</dt>
+<dd>Array of initial target values for each CV</dd>
+<dt>centers1 (required)</dt>
+<dd>Array of final target values for each CV</dd>
+<dt>timesteps (required)</dt>
+<dd>The number of timesteps over which to scale the umbrella centers</dd>
+</dl>
+<p>By setting the above options, the umbrella method will linearly interpolate
+between <cite>centers0</cite> and <cite>centers1</cite> in <cite>timesteps</cite> iterations.</p>
 </div>
 <div class="section" id="tutorial">
 <span id="umbrella-tutorial"></span><h2>Tutorial<a class="headerlink" href="#tutorial" title="Permalink to this headline">¶</a></h2>
 <p>This tutorial will go through running Umbrella Sampling on an atomistic model of butane using LAMMPS as the
-MD engine. Umbrella sampling will be performed on the torsional CV of the butane C atoms. The files that can
-be found in <code class="docutils literal"><span class="pre">Examples/User/Umbrella</span></code> are:</p>
+MD engine.
+Umbrella sampling will be performed on the torsional CV of the butane C atoms.</p>
+<p>The butane implementation in LAMMPS requires several modules to be added before being linked to SSAGES.
+To do this, return to your LAMMPS <code class="docutils literal"><span class="pre">src</span></code> directory and issue the following commands</p>
+<div class="highlight-bash"><div class="highlight"><pre><span></span>make yes-MOLECULE
+make yes-KSPACE
+</pre></div>
+</div>
+<p>which add the <code class="docutils literal"><span class="pre">MOLECULE</span></code> and <code class="docutils literal"><span class="pre">KSPACE</span></code> LAMMPS packages. Additional information about building LAMMPS with optional packages can be found in the <a class="reference external" href="http://lammps.sandia.gov/doc/Section_start.html#start-3">LAMMPS documentation</a>.</p>
+<p>The files for running this example can
+be found in <code class="docutils literal"><span class="pre">Examples/User/Umbrella</span></code> and consist of the following files:</p>
 <dl class="docutils">
 <dt><code class="docutils literal"><span class="pre">Butane_SSAGES.in</span></code></dt>
 <dd>LAMMPS input file</dd>
@@ -202,15 +235,40 @@ are controlled in this file.</dd>
 <div class="highlight-bash"><div class="highlight"><pre><span></span>python Umbrella_Input_Generator.py
 </pre></div>
 </div>
-<p>will generate Umbrella.json. Umbrella.json contains the information from Template_Input.json duplicated 12
-times with varying values of ‘centers’. These values correspond to the target values of the torsional CV.</p>
-<p>To run SSAGES do:</p>
+<p>will generate <code class="docutils literal"><span class="pre">Umbrella.json</span></code>. <code class="docutils literal"><span class="pre">Umbrella.json</span></code> contains the information from <code class="docutils literal"><span class="pre">Template_Input.json</span></code> duplicated 12
+times with varying values of <code class="docutils literal"><span class="pre">centers</span></code>. These values correspond to the target values of the torsional CV.</p>
+<p>To run SSAGES issue the command:</p>
 <div class="highlight-bash"><div class="highlight"><pre><span></span>mpiexec -np <span class="m">12</span> /path/to/SSAGES/build/.ssages Umbrella.json
 </pre></div>
 </div>
-<p>This will run 12 different umbrella sampling simulations, one per processor. 12 different output files
-will be generated, each containing the iteration, target value of the corresponding &#8216;center&#8217; CV,
+<p>This will run 12 different umbrella sampling simulations simultaneously.
+Ideally, this example will be run in computing environment where each process can run on a different processor.
+Though the example will still work if run on a users local desktop or laptop machine, the runtime of the code will be very large.</p>
+<p>During the simulation 12 different output files will be generated, each containing the iteration, target value of the corresponding &#8216;center&#8217; CV,
 and the value of the CV at the iteration number.</p>
+<p>These output files can then be used to construct a complete free energy surface using the WHAM algorithm <a class="footnote-reference" href="#id6" id="id3">[2]</a>.
+Though SSAGES does not currently contain its own implementation of WHAM, there are many implementations available, such as that provided by the Grossfield Lab <a class="footnote-reference" href="#id7" id="id4">[3]</a>.</p>
+</div>
+<div class="section" id="references">
+<h2>References<a class="headerlink" href="#references" title="Permalink to this headline">¶</a></h2>
+<table class="docutils footnote" frame="void" id="id5" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id2">[1]</a></td><td>Kästner, J. (2011). <em>Umbrella sampling</em>. Wiley Interdiscip Rev Comput Mol Sci, 1(6), 932–942.</td></tr>
+</tbody>
+</table>
+<table class="docutils footnote" frame="void" id="id6" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id3">[2]</a></td><td>Kumar, S., Rosenberg, J., &amp; Bouzida, D. (1992). The weighted histogram analysis method for free‐energy calculations on biomolecules. I. The method. Journal of Computational Chemistry, 13(8), 1011–1021.</td></tr>
+</tbody>
+</table>
+<table class="docutils footnote" frame="void" id="id7" rules="none">
+<colgroup><col class="label" /><col /></colgroup>
+<tbody valign="top">
+<tr><td class="label"><a class="fn-backref" href="#id4">[3]</a></td><td>Grossfield, A. WHAM: the weighted histogram analysis method. <a class="reference external" href="http://membrane.urmc.rochester.edu/content/wham">http://membrane.urmc.rochester.edu/content/wham</a></td></tr>
+</tbody>
+</table>
 </div>
 </div>
 
@@ -234,7 +292,7 @@ and the value of the CV at the iteration number.</p>
   <div role="contentinfo">
     <p>
         &copy; Copyright 2016, the SSAGES Team.
-      Last updated on Oct 14, 2016.
+      Last updated on Mar 20, 2017.
 
     </p>
   </div>
@@ -256,7 +314,7 @@ and the value of the CV at the iteration number.</p>
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'./',
-            VERSION:'0.9',
+            VERSION:'v0.5.0-alpha-140-gd85bb0e',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
             HAS_SOURCE:  true

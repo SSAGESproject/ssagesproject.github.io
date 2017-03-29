@@ -160,10 +160,10 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="c
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:a263b939214f49fe34ee437042c075c17"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a263b939214f49fe34ee437042c075c17"></a>
-std::vector&lt; Value &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classJson_1_1EnumRequirement.html#a263b939214f49fe34ee437042c075c17">_enum</a></td></tr>
-<tr class="memdesc:a263b939214f49fe34ee437042c075c17"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enum value. <br /></td></tr>
-<tr class="separator:a263b939214f49fe34ee437042c075c17"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af5b74bbeb95d57f8f8a7507b41b84e95"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af5b74bbeb95d57f8f8a7507b41b84e95"></a>
+std::vector&lt; Value &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classJson_1_1EnumRequirement.html#af5b74bbeb95d57f8f8a7507b41b84e95">enum_</a></td></tr>
+<tr class="memdesc:af5b74bbeb95d57f8f8a7507b41b84e95"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enum value. <br /></td></tr>
+<tr class="separator:af5b74bbeb95d57f8f8a7507b41b84e95"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -224,13 +224,13 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Definition at line <a class="el" href="EnumRequirement_8h_source.html#l00055">55</a> of file <a class="el" href="EnumRequirement_8h_source.html">EnumRequirement.h</a>.</p>
 
-<p>References <a class="el" href="EnumRequirement_8h_source.html#l00039">_enum</a>.</p>
+<p>References <a class="el" href="EnumRequirement_8h_source.html#l00039">enum_</a>.</p>
 <div class="fragment"><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        {</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;            <span class="keywordflow">if</span>(json.isArray())</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;                <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; val : json)</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;                    <a class="code" href="classJson_1_1EnumRequirement.html#a263b939214f49fe34ee437042c075c17">_enum</a>.push_back(val);</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;                    <a class="code" href="classJson_1_1EnumRequirement.html#af5b74bbeb95d57f8f8a7507b41b84e95">enum_</a>.push_back(val);</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        }</div>
-<div class="ttc" id="classJson_1_1EnumRequirement_html_a263b939214f49fe34ee437042c075c17"><div class="ttname"><a href="classJson_1_1EnumRequirement.html#a263b939214f49fe34ee437042c075c17">Json::EnumRequirement::_enum</a></div><div class="ttdeci">std::vector&lt; Value &gt; _enum</div><div class="ttdoc">Enum value. </div><div class="ttdef"><b>Definition:</b> <a href="EnumRequirement_8h_source.html#l00039">EnumRequirement.h:39</a></div></div>
+<div class="ttc" id="classJson_1_1EnumRequirement_html_af5b74bbeb95d57f8f8a7507b41b84e95"><div class="ttname"><a href="classJson_1_1EnumRequirement.html#af5b74bbeb95d57f8f8a7507b41b84e95">Json::EnumRequirement::enum_</a></div><div class="ttdeci">std::vector&lt; Value &gt; enum_</div><div class="ttdoc">Enum value. </div><div class="ttdef"><b>Definition:</b> <a href="EnumRequirement_8h_source.html#l00039">EnumRequirement.h:39</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -279,11 +279,11 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Definition at line <a class="el" href="EnumRequirement_8h_source.html#l00067">67</a> of file <a class="el" href="EnumRequirement_8h_source.html">EnumRequirement.h</a>.</p>
 
-<p>References <a class="el" href="EnumRequirement_8h_source.html#l00039">_enum</a>, and <a class="el" href="Requirement_8h_source.html#l00053">Json::Requirement::PushError()</a>.</p>
+<p>References <a class="el" href="EnumRequirement_8h_source.html#l00039">enum_</a>, and <a class="el" href="Requirement_8h_source.html#l00053">Json::Requirement::PushError()</a>.</p>
 <div class="fragment"><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        {</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;            <span class="keywordtype">bool</span> found = <span class="keyword">false</span>;</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;            <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; val : <a class="code" href="classJson_1_1EnumRequirement.html#a263b939214f49fe34ee437042c075c17">_enum</a>)</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;            <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; val : <a class="code" href="classJson_1_1EnumRequirement.html#af5b74bbeb95d57f8f8a7507b41b84e95">enum_</a>)</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;                <span class="keywordflow">if</span>(json == val)</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;                    found = <span class="keyword">true</span>;</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
@@ -291,7 +291,7 @@ Additional Inherited Members</h2></td></tr>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;                <a class="code" href="classJson_1_1Requirement.html#adeb9efa6cf271d9cea0599ff2d458a08">PushError</a>(path  + <span class="stringliteral">&quot;: Value is not a valid entry.&quot;</span>);</div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;        }</div>
 <div class="ttc" id="classJson_1_1Requirement_html_adeb9efa6cf271d9cea0599ff2d458a08"><div class="ttname"><a href="classJson_1_1Requirement.html#adeb9efa6cf271d9cea0599ff2d458a08">Json::Requirement::PushError</a></div><div class="ttdeci">void PushError(const std::string &amp;error)</div><div class="ttdoc">Add error to list of error messages. </div><div class="ttdef"><b>Definition:</b> <a href="Requirement_8h_source.html#l00053">Requirement.h:53</a></div></div>
-<div class="ttc" id="classJson_1_1EnumRequirement_html_a263b939214f49fe34ee437042c075c17"><div class="ttname"><a href="classJson_1_1EnumRequirement.html#a263b939214f49fe34ee437042c075c17">Json::EnumRequirement::_enum</a></div><div class="ttdeci">std::vector&lt; Value &gt; _enum</div><div class="ttdoc">Enum value. </div><div class="ttdef"><b>Definition:</b> <a href="EnumRequirement_8h_source.html#l00039">EnumRequirement.h:39</a></div></div>
+<div class="ttc" id="classJson_1_1EnumRequirement_html_af5b74bbeb95d57f8f8a7507b41b84e95"><div class="ttname"><a href="classJson_1_1EnumRequirement.html#af5b74bbeb95d57f8f8a7507b41b84e95">Json::EnumRequirement::enum_</a></div><div class="ttdeci">std::vector&lt; Value &gt; enum_</div><div class="ttdoc">Enum value. </div><div class="ttdef"><b>Definition:</b> <a href="EnumRequirement_8h_source.html#l00039">EnumRequirement.h:39</a></div></div>
 </div><!-- fragment -->
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -310,7 +310,7 @@ Here is the call graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Oct 14 2016 11:38:55 for SSAGES by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Thu Mar 23 2017 13:11:12 for SSAGES by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>
