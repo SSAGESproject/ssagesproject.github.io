@@ -23,6 +23,11 @@ def team():
 def download():
     return render_template("download.html")
 
+@app.route('/SSAGES-site/papers.html')
+@app.route('/papers.html')
+def papers():
+    return render_template("papers.html")
+
 @app.route('/', defaults={'path': ''})
 @app.route('/<path:path>')
 def catch_all(path):
