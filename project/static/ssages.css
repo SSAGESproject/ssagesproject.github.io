@@ -75,6 +75,19 @@ a:hover {
     display: block;
 }
 
+.index-img {
+    position: relative;
+    width:  400px;
+    height: auto;
+    background-position: 50% 50%;
+    background-repeat:   no-repeat;
+    background-size:     cover;
+    padding: 1px 1px 20px 1px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
 .header {
     text-align: center;
     background: #884b4b;
@@ -126,6 +139,16 @@ a:hover {
 html,body {
     background-color: #FEFDFB !important;
 }
+
+figcaption {
+    color: #587272 !important;
+    text-align: center;
+    font-weight: 100;
+    font-size: 15px;
+    font-style: italic;
+}
+
+
 
 h1 {
     color: #587272 !important;
