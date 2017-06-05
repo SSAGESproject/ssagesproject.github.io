@@ -30,6 +30,18 @@ a:hover {
     display: block;
 }
 
+.header-logo-img {
+    /*position: relative;*/ 
+    width:  300px;
+    height: auto; 
+    display: inline-block;
+    background-position: 50% 50%;
+    background-repeat:   no-repeat;
+    background-size:     cover;
+    padding: 1px 1px 20px 1px;
+    margin-left: auto;
+    margin-right: auto; 
+}
 .index-logo { 
     background-color: #FEFDFB !important;    
 }
@@ -62,7 +74,7 @@ a:hover {
 
 .header {
     text-align: center;
-    background: #800000;
+    background: #884b4b;
     background-size: cover;
     position: relative;
     overflow: visible;
