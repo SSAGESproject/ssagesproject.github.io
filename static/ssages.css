@@ -23,11 +23,13 @@ a:hover {
     height: auto;
     background-position: 50% 50%;
     background-repeat:   no-repeat;
-    background-size:     cover;
-    padding: 1px 1px 20px 1px;
+    background-size:     cover; 
     margin-left: auto;
     margin-right: auto;
     display: block;
+    border-style: solid;
+    border-color: #4b8888;
+    border-width: 3px
 }
 
 .header-logo-img {
@@ -49,7 +51,7 @@ a:hover {
 .download-img {
     position: relative; 
     width:  200px;
-";
+    height: auto;
     background-position: 50% 50%;
     background-repeat:   no-repeat;
     background-size:     cover;
