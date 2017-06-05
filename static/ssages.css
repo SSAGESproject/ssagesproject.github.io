@@ -20,7 +20,7 @@ a:hover {
 .team-img {
     position: relative; 
     width:  200px;
-    height: auto;
+    height: 300px;
     background-position: 50% 50%;
     background-repeat:   no-repeat;
     background-size:     cover; 
@@ -29,7 +29,8 @@ a:hover {
     display: block;
     border-style: solid;
     border-color: #4b8888;
-    border-width: 3px
+    border-width: 3px;
+    object-fit: cover;
 }
 
 .header-logo-img {
