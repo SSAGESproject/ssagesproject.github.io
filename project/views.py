@@ -28,6 +28,16 @@ def download():
 def papers():
     return render_template("papers.html")
 
+@app.route('/SSAGES-site/validation.html')
+@app.route('/validation.html')
+def validation():
+    return render_template("validation.html")
+
+@app.route('/SSAGES-site/tutorials.html')
+@app.route('/tutorials.html')
+def tutorials():
+    return render_template("tutorials.html")
+
 @app.route('/', defaults={'path': ''})
 @app.route('/<path:path>')
 def catch_all(path):
