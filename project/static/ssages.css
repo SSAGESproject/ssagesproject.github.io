@@ -28,22 +28,25 @@ a:hover {
     margin-right: auto;
     display: block;
     border-style: solid;
-    border-color: #4b8888;
-    border-width: 3px;
+    border-color: #800000;
+    border-width: 4px;
     object-fit: cover;
+    border-radius: 5px;
 }
 
 .header-logo-img {
     /*position: relative;*/ 
-    width:  300px;
-    height: auto; 
+    width:  auto;
+    height: 150px; 
     display: inline-block;
+    background: #A9A9A9;
     background-position: 50% 50%;
     background-repeat:   no-repeat;
     background-size:     cover;
     padding: 1px 1px 20px 1px;
     margin-left: auto;
     margin-right: auto; 
+    border-radius: 25px;
 }
 .index-logo { 
     background-color: #FEFDFB !important;    
@@ -77,7 +80,7 @@ a:hover {
 
 .index-img {
     position: relative;
-    width:  400px;
+    width:  500px;
     height: auto;
     background-position: 50% 50%;
     background-repeat:   no-repeat;
@@ -90,7 +93,8 @@ a:hover {
 
 .header {
     text-align: center;
-    background: #884b4b;
+    /*background: #884b4b;*/
+    background: #A9A9A9;
     background-size: cover;
     position: relative;
     overflow: visible;
@@ -109,6 +113,7 @@ a:hover {
     margin: 0 auto;
     bottom: 0;
     width: 100%;
+    background: #800000;
 }
 
 .header-subnav li {
@@ -164,7 +169,7 @@ h2 {
 }
 
 h4 {
-    color: #829595 !important;
+    color: #687777 !important;
     text-align: left;
 }
 
@@ -450,5 +455,5 @@ small {
     width: auto;
     overflow: visible;
     clip: auto;
-    position: absolute !important; } }
+    position: absolute !important; } 
 
