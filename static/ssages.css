@@ -50,6 +50,8 @@ a:hover {
 }
 .index-logo { 
     background-color: #FEFDFB !important;    
+    width: 550px;
+    height: auto;
 }
 
 .download-img {
