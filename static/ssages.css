@@ -256,8 +256,7 @@ small {
 .footer .footer-links a {
     list-style: none;
     font-weight: 400;
-    color: #fff;
-    padding: 3rem 0 2rem;
+    color: #fff; 
     margin: 0;
     font-size: .875rem;
 }
