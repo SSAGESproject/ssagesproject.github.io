@@ -48,7 +48,9 @@ a:hover {
     margin-right: auto; 
     border-radius: 25px;
 }
-.index-logo {   
+.index-logo { 
+    background-color: #A9A9A9 !important;
+    background: #A9A9A9 !important; 
     width: 550px;
     height: auto;
 }
