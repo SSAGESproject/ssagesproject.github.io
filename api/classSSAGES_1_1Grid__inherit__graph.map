@@ -1,4 +1,5 @@
 <map id="SSAGES::Grid&lt; T &gt;" name="SSAGES::Grid&lt; T &gt;">
-<area shape="rect" id="node2" href="$classSSAGES_1_1GridBase.html" title="Base class for Grids. " alt="" coords="5,80,176,107"/>
+<area shape="rect" id="node4" href="$classSSAGES_1_1Grid.html" title="SSAGES::Grid\&lt; Vector \&gt;" alt="" coords="5,251,176,277"/>
+<area shape="rect" id="node2" href="$classSSAGES_1_1GridBase.html" title="Base class for Grids. " alt="" coords="5,83,176,109"/>
 <area shape="rect" id="node3" href="$classSSAGES_1_1Serializable.html" title="Base class for all serializable objects. " alt="" coords="15,5,167,32"/>
 </map>

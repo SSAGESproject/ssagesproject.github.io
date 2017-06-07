@@ -160,10 +160,10 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="c
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:a11975a5faab13d3f8687414ca845d6c2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a11975a5faab13d3f8687414ca845d6c2"></a>
-std::unique_ptr&lt; <a class="el" href="classJson_1_1Requirement.html">Requirement</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classJson_1_1NotRequirement.html#a11975a5faab13d3f8687414ca845d6c2">_req</a></td></tr>
-<tr class="memdesc:a11975a5faab13d3f8687414ca845d6c2"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classJson_1_1Requirement.html" title="Requirements on input files. ">Requirement</a> to negate. <br /></td></tr>
-<tr class="separator:a11975a5faab13d3f8687414ca845d6c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afbdf102b7ada72aec412a9ad28165637"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afbdf102b7ada72aec412a9ad28165637"></a>
+std::unique_ptr&lt; <a class="el" href="classJson_1_1Requirement.html">Requirement</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classJson_1_1NotRequirement.html#afbdf102b7ada72aec412a9ad28165637">req_</a></td></tr>
+<tr class="memdesc:afbdf102b7ada72aec412a9ad28165637"><td class="mdescLeft">&#160;</td><td class="mdescRight"><a class="el" href="classJson_1_1Requirement.html" title="Requirements on input files. ">Requirement</a> to negate. <br /></td></tr>
+<tr class="separator:afbdf102b7ada72aec412a9ad28165637"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -225,17 +225,17 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Definition at line <a class="el" href="NotRequirement_8h_source.html#l00078">78</a> of file <a class="el" href="NotRequirement_8h_source.html">NotRequirement.h</a>.</p>
 
-<p>References <a class="el" href="NotRequirement_8h_source.html#l00040">_req</a>, <a class="el" href="RequirementLoader_8cpp_source.html#l00042">Json::RequirementLoader::LoadRequirement()</a>, and <a class="el" href="NotRequirement_8h_source.html#l00065">Reset()</a>.</p>
+<p>References <a class="el" href="RequirementLoader_8cpp_source.html#l00042">Json::RequirementLoader::LoadRequirement()</a>, <a class="el" href="NotRequirement_8h_source.html#l00040">req_</a>, and <a class="el" href="NotRequirement_8h_source.html#l00065">Reset()</a>.</p>
 <div class="fragment"><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        {</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;            <a class="code" href="classJson_1_1NotRequirement.html#a639a56a0599eed6cc582614d6c2311c5">Reset</a>();</div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;            RequirementLoader loader;</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
 <div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;            <span class="keyword">auto</span>&amp; head = json.isMember(<span class="stringliteral">&quot;not&quot;</span>) ? json[<span class="stringliteral">&quot;not&quot;</span>] : json;</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;            <span class="keywordflow">if</span>((<a class="code" href="classJson_1_1NotRequirement.html#a11975a5faab13d3f8687414ca845d6c2">_req</a> = loader.LoadRequirement(head)))</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;                <a class="code" href="classJson_1_1NotRequirement.html#a11975a5faab13d3f8687414ca845d6c2">_req</a>-&gt;Parse(head, path);</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;            <span class="keywordflow">if</span>((<a class="code" href="classJson_1_1NotRequirement.html#afbdf102b7ada72aec412a9ad28165637">req_</a> = loader.LoadRequirement(head)))</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;                <a class="code" href="classJson_1_1NotRequirement.html#afbdf102b7ada72aec412a9ad28165637">req_</a>-&gt;Parse(head, path);</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        }</div>
-<div class="ttc" id="classJson_1_1NotRequirement_html_a11975a5faab13d3f8687414ca845d6c2"><div class="ttname"><a href="classJson_1_1NotRequirement.html#a11975a5faab13d3f8687414ca845d6c2">Json::NotRequirement::_req</a></div><div class="ttdeci">std::unique_ptr&lt; Requirement &gt; _req</div><div class="ttdoc">Requirement to negate. </div><div class="ttdef"><b>Definition:</b> <a href="NotRequirement_8h_source.html#l00040">NotRequirement.h:40</a></div></div>
 <div class="ttc" id="classJson_1_1NotRequirement_html_a639a56a0599eed6cc582614d6c2311c5"><div class="ttname"><a href="classJson_1_1NotRequirement.html#a639a56a0599eed6cc582614d6c2311c5">Json::NotRequirement::Reset</a></div><div class="ttdeci">virtual void Reset() override</div><div class="ttdoc">Reset Requirement. </div><div class="ttdef"><b>Definition:</b> <a href="NotRequirement_8h_source.html#l00065">NotRequirement.h:65</a></div></div>
+<div class="ttc" id="classJson_1_1NotRequirement_html_afbdf102b7ada72aec412a9ad28165637"><div class="ttname"><a href="classJson_1_1NotRequirement.html#afbdf102b7ada72aec412a9ad28165637">Json::NotRequirement::req_</a></div><div class="ttdeci">std::unique_ptr&lt; Requirement &gt; req_</div><div class="ttdoc">Requirement to negate. </div><div class="ttdef"><b>Definition:</b> <a href="NotRequirement_8h_source.html#l00040">NotRequirement.h:40</a></div></div>
 </div><!-- fragment -->
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -294,14 +294,14 @@ Here is the call graph for this function:</div>
 
 <p>Definition at line <a class="el" href="NotRequirement_8h_source.html#l00097">97</a> of file <a class="el" href="NotRequirement_8h_source.html">NotRequirement.h</a>.</p>
 
-<p>References <a class="el" href="NotRequirement_8h_source.html#l00040">_req</a>, and <a class="el" href="Requirement_8h_source.html#l00053">Json::Requirement::PushError()</a>.</p>
+<p>References <a class="el" href="Requirement_8h_source.html#l00053">Json::Requirement::PushError()</a>, and <a class="el" href="NotRequirement_8h_source.html#l00040">req_</a>.</p>
 <div class="fragment"><div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        {</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;            <a class="code" href="classJson_1_1NotRequirement.html#a11975a5faab13d3f8687414ca845d6c2">_req</a>-&gt;Validate(json, path);</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;            <span class="keywordflow">if</span>(!<a class="code" href="classJson_1_1NotRequirement.html#a11975a5faab13d3f8687414ca845d6c2">_req</a>-&gt;HasErrors())</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;            <a class="code" href="classJson_1_1NotRequirement.html#afbdf102b7ada72aec412a9ad28165637">req_</a>-&gt;Validate(json, path);</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;            <span class="keywordflow">if</span>(!<a class="code" href="classJson_1_1NotRequirement.html#afbdf102b7ada72aec412a9ad28165637">req_</a>-&gt;HasErrors())</div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;                <a class="code" href="classJson_1_1Requirement.html#adeb9efa6cf271d9cea0599ff2d458a08">PushError</a>(path + <span class="stringliteral">&quot;: Value must not validate against requirement.&quot;</span>);</div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        }</div>
-<div class="ttc" id="classJson_1_1NotRequirement_html_a11975a5faab13d3f8687414ca845d6c2"><div class="ttname"><a href="classJson_1_1NotRequirement.html#a11975a5faab13d3f8687414ca845d6c2">Json::NotRequirement::_req</a></div><div class="ttdeci">std::unique_ptr&lt; Requirement &gt; _req</div><div class="ttdoc">Requirement to negate. </div><div class="ttdef"><b>Definition:</b> <a href="NotRequirement_8h_source.html#l00040">NotRequirement.h:40</a></div></div>
 <div class="ttc" id="classJson_1_1Requirement_html_adeb9efa6cf271d9cea0599ff2d458a08"><div class="ttname"><a href="classJson_1_1Requirement.html#adeb9efa6cf271d9cea0599ff2d458a08">Json::Requirement::PushError</a></div><div class="ttdeci">void PushError(const std::string &amp;error)</div><div class="ttdoc">Add error to list of error messages. </div><div class="ttdef"><b>Definition:</b> <a href="Requirement_8h_source.html#l00053">Requirement.h:53</a></div></div>
+<div class="ttc" id="classJson_1_1NotRequirement_html_afbdf102b7ada72aec412a9ad28165637"><div class="ttname"><a href="classJson_1_1NotRequirement.html#afbdf102b7ada72aec412a9ad28165637">Json::NotRequirement::req_</a></div><div class="ttdeci">std::unique_ptr&lt; Requirement &gt; req_</div><div class="ttdoc">Requirement to negate. </div><div class="ttdef"><b>Definition:</b> <a href="NotRequirement_8h_source.html#l00040">NotRequirement.h:40</a></div></div>
 </div><!-- fragment -->
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -320,7 +320,7 @@ Here is the call graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Oct 14 2016 11:38:55 for SSAGES by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Jun 7 2017 15:46:38 for SSAGES by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

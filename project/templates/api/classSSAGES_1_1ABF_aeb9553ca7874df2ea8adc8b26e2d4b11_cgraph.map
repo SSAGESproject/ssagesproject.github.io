@@ -1,9 +1,9 @@
 <map id="SSAGES::ABF::PostIntegration" name="SSAGES::ABF::PostIntegration">
 <area shape="rect" id="node2" href="$classSSAGES_1_1ABF.html#abf6a6d7de8b1317b68280ad213f1e896" title="Computes the bias force. " alt="" coords="272,5,477,32"/>
-<area shape="rect" id="node3" href="$classSSAGES_1_1Snapshot.html#a2533f7b900bc33185424eb94d6996edf" title="Access the per&#45;particle forces. " alt="" coords="270,56,479,83"/>
-<area shape="rect" id="node4" href="$classSSAGES_1_1Snapshot.html#a035ed6fb2cd46d4f66d1614bd90ad14b" title="Const access to the particle masses. " alt="" coords="267,107,482,133"/>
-<area shape="rect" id="node5" href="$classSSAGES_1_1Snapshot.html#ae05879b78672cd4899a06ae2d6a140fd" title="Get number of atoms in this snapshot. " alt="" coords="276,158,473,199"/>
-<area shape="rect" id="node6" href="$classSSAGES_1_1Snapshot.html#aeadc50cebd62e3fcbdc17511f781de19" title="Access the particle velocities. " alt="" coords="261,224,488,251"/>
-<area shape="rect" id="node7" href="$classSSAGES_1_1ABF.html#aca2d887ed5572ab60dec5000b5262e31" title="Get coordinates of histogram bin corresponding to given list of CVs. " alt="" coords="283,275,466,301"/>
-<area shape="rect" id="node8" href="$classSSAGES_1_1ABF.html#ab63434a1cefe80372e2555e1128e39d2" title="Writes out data to file. " alt="" coords="285,325,464,352"/>
+<area shape="rect" id="node3" href="$classSSAGES_1_1Snapshot.html#ae05879b78672cd4899a06ae2d6a140fd" title="Get number of atoms in this snapshot. " alt="" coords="536,23,733,65"/>
+<area shape="rect" id="node4" href="$classSSAGES_1_1Snapshot.html#a2533f7b900bc33185424eb94d6996edf" title="Access the per&#45;particle forces. " alt="" coords="270,107,479,133"/>
+<area shape="rect" id="node5" href="$classSSAGES_1_1Snapshot.html#a035ed6fb2cd46d4f66d1614bd90ad14b" title="Const access to the particle masses. " alt="" coords="267,157,482,184"/>
+<area shape="rect" id="node6" href="$classSSAGES_1_1Snapshot.html#aeadc50cebd62e3fcbdc17511f781de19" title="Access the particle velocities. " alt="" coords="261,208,488,235"/>
+<area shape="rect" id="node7" href="$classSSAGES_1_1ABF.html#aca2d887ed5572ab60dec5000b5262e31" title="Get coordinates of histogram bin corresponding to given list of CVs. " alt="" coords="283,259,466,285"/>
+<area shape="rect" id="node8" href="$classSSAGES_1_1ABF.html#ab63434a1cefe80372e2555e1128e39d2" title="Writes out data to file. " alt="" coords="285,309,464,336"/>
 </map>

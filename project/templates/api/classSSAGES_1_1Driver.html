@@ -113,7 +113,7 @@ Inheritance diagram for SSAGES::Driver:</div>
 <div class="dyncontent">
 <div class="center"><img src="classSSAGES_1_1Driver__inherit__graph.png" border="0" usemap="#SSAGES_1_1Driver_inherit__map" alt="Inheritance graph"/></div>
 <map name="SSAGES_1_1Driver_inherit__map" id="SSAGES_1_1Driver_inherit__map">
-<area shape="rect" id="node5" href="classSSAGES_1_1GromacsDriver.html" title="SSAGES::GromacsDriver" alt="" coords="5,229,179,256"/><area shape="rect" id="node6" href="classSSAGES_1_1LammpsDriver.html" title="Driver for LAMMPS simulations. " alt="" coords="203,229,373,256"/><area shape="rect" id="node2" href="classSSAGES_1_1SimObservable.html" title="Base class for observable objects in a simulation. " alt="" coords="9,80,183,107"/><area shape="rect" id="node3" href="classSSAGES_1_1Visitable.html" title="Base class for visitable objects. " alt="" coords="29,5,163,32"/><area shape="rect" id="node4" href="classSSAGES_1_1Serializable.html" title="Base class for all serializable objects. " alt="" coords="208,80,360,107"/></map>
+<area shape="rect" id="node5" href="classSSAGES_1_1GromacsDriver.html" title="Driver for Gromacs simulations. " alt="" coords="5,229,179,256"/><area shape="rect" id="node6" href="classSSAGES_1_1LammpsDriver.html" title="Driver for LAMMPS simulations. " alt="" coords="203,229,373,256"/><area shape="rect" id="node7" href="classSSAGES_1_1OpenMDDriver.html" title="Driver for OpenMD simulations. " alt="" coords="398,229,569,256"/><area shape="rect" id="node8" href="classSSAGES_1_1QboxDriver.html" title="Driver for QBox simulation. " alt="" coords="594,229,744,256"/><area shape="rect" id="node2" href="classSSAGES_1_1SimObservable.html" title="Base class for observable objects in a simulation. " alt="" coords="205,80,379,107"/><area shape="rect" id="node3" href="classSSAGES_1_1Visitable.html" title="Base class for visitable objects. " alt="" coords="225,5,359,32"/><area shape="rect" id="node4" href="classSSAGES_1_1Serializable.html" title="Base class for all serializable objects. " alt="" coords="404,80,556,107"/></map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -144,8 +144,7 @@ virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <tr class="memitem:acfe295161fe152ecf9bef5a9440a37cb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSSAGES_1_1Driver.html#acfe295161fe152ecf9bef5a9440a37cb">BuildCVs</a> (const Json::Value &amp;json, const std::string &amp;path)</td></tr>
 <tr class="memdesc:acfe295161fe152ecf9bef5a9440a37cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Build CVs.  <a href="#acfe295161fe152ecf9bef5a9440a37cb">More...</a><br /></td></tr>
 <tr class="separator:acfe295161fe152ecf9bef5a9440a37cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a09257b29efad62dfd0abaaca1309421b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a09257b29efad62dfd0abaaca1309421b"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>BuildConstraints</b> (const Json::Value &amp;json, const std::string &amp;path)</td></tr>
+<tr class="memitem:a09257b29efad62dfd0abaaca1309421b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSSAGES_1_1Driver.html#a09257b29efad62dfd0abaaca1309421b">BuildConstraints</a> (const Json::Value &amp;json, const std::string &amp;path)</td></tr>
 <tr class="separator:a09257b29efad62dfd0abaaca1309421b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a336c56e2ac7b535172e7d596f5af30d6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSSAGES_1_1Driver.html#a336c56e2ac7b535172e7d596f5af30d6">BuildMethod</a> (const Json::Value &amp;json, const std::string &amp;path)</td></tr>
 <tr class="memdesc:a336c56e2ac7b535172e7d596f5af30d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Build method(s).  <a href="#a336c56e2ac7b535172e7d596f5af30d6">More...</a><br /></td></tr>
@@ -153,9 +152,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>BuildConstraints</b> 
 <tr class="memitem:a240881074d49355f632dcb7983fa1408"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSSAGES_1_1Driver.html#a240881074d49355f632dcb7983fa1408">BuildObservers</a> (const Json::Value &amp;json, int nwalks)</td></tr>
 <tr class="memdesc:a240881074d49355f632dcb7983fa1408"><td class="mdescLeft">&#160;</td><td class="mdescRight">Build observer(s).  <a href="#a240881074d49355f632dcb7983fa1408">More...</a><br /></td></tr>
 <tr class="separator:a240881074d49355f632dcb7983fa1408"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3a019b27bc5f49754d7f70633b274312"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSSAGES_1_1Driver.html#a3a019b27bc5f49754d7f70633b274312">BuildGrid</a> (const Json::Value &amp;json, const std::string &amp;path)</td></tr>
-<tr class="memdesc:a3a019b27bc5f49754d7f70633b274312"><td class="mdescLeft">&#160;</td><td class="mdescRight">Build the grid.  <a href="#a3a019b27bc5f49754d7f70633b274312">More...</a><br /></td></tr>
-<tr class="separator:a3a019b27bc5f49754d7f70633b274312"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6ad6342146725b51612ca8b9bb2f150e"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSSAGES_1_1Driver.html#a6ad6342146725b51612ca8b9bb2f150e">Finalize</a> ()</td></tr>
 <tr class="memdesc:a6ad6342146725b51612ca8b9bb2f150e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finalize the setup.  <a href="#a6ad6342146725b51612ca8b9bb2f150e">More...</a><br /></td></tr>
 <tr class="separator:a6ad6342146725b51612ca8b9bb2f150e"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -193,61 +189,66 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="c
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
-<tr class="memitem:ae524487495f4304ceb44e1a62178fbdc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae524487495f4304ceb44e1a62178fbdc"></a>
-boost::mpi::communicator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSSAGES_1_1Driver.html#ae524487495f4304ceb44e1a62178fbdc">_world</a></td></tr>
-<tr class="memdesc:ae524487495f4304ceb44e1a62178fbdc"><td class="mdescLeft">&#160;</td><td class="mdescRight">MPI global communicator. <br /></td></tr>
-<tr class="separator:ae524487495f4304ceb44e1a62178fbdc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab54b93056e47131e9420bfbcd1607fad"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab54b93056e47131e9420bfbcd1607fad"></a>
-boost::mpi::communicator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSSAGES_1_1Driver.html#ab54b93056e47131e9420bfbcd1607fad">_comm</a></td></tr>
-<tr class="memdesc:ab54b93056e47131e9420bfbcd1607fad"><td class="mdescLeft">&#160;</td><td class="mdescRight">MPI local communicator. <br /></td></tr>
-<tr class="separator:ab54b93056e47131e9420bfbcd1607fad"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad092889b2da84e4ad69a6fa6c0b4898d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad092889b2da84e4ad69a6fa6c0b4898d"></a>
-const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSSAGES_1_1Driver.html#ad092889b2da84e4ad69a6fa6c0b4898d">_wid</a></td></tr>
-<tr class="memdesc:ad092889b2da84e4ad69a6fa6c0b4898d"><td class="mdescLeft">&#160;</td><td class="mdescRight">The node id that this driver belongs to. <br /></td></tr>
-<tr class="separator:ad092889b2da84e4ad69a6fa6c0b4898d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9817e954adcfc686e1a346b171b23166"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9817e954adcfc686e1a346b171b23166"></a>
-<a class="el" href="classSSAGES_1_1Hook.html">Hook</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSSAGES_1_1Driver.html#a9817e954adcfc686e1a346b171b23166">_hook</a></td></tr>
-<tr class="memdesc:a9817e954adcfc686e1a346b171b23166"><td class="mdescLeft">&#160;</td><td class="mdescRight">The hook that hooks into the MD simulation engine. <br /></td></tr>
-<tr class="separator:a9817e954adcfc686e1a346b171b23166"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af97dd345f1defb7f51a5ffc05b735078"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af97dd345f1defb7f51a5ffc05b735078"></a>
-<a class="el" href="classSSAGES_1_1Snapshot.html">Snapshot</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSSAGES_1_1Driver.html#af97dd345f1defb7f51a5ffc05b735078">_snapshot</a></td></tr>
-<tr class="memdesc:af97dd345f1defb7f51a5ffc05b735078"><td class="mdescLeft">&#160;</td><td class="mdescRight">The snapshot of your system. <br /></td></tr>
-<tr class="separator:af97dd345f1defb7f51a5ffc05b735078"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad9854a40154849452fdae930b463e06e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad9854a40154849452fdae930b463e06e"></a>
-<a class="el" href="classSSAGES_1_1Method.html">Method</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSSAGES_1_1Driver.html#ad9854a40154849452fdae930b463e06e">_method</a></td></tr>
-<tr class="memdesc:ad9854a40154849452fdae930b463e06e"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="classSSAGES_1_1Method.html" title="Interface for Method implementations. ">Method</a> that will be used. <br /></td></tr>
-<tr class="separator:ad9854a40154849452fdae930b463e06e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acd1d5e3ac2b0585b6c21cf496af1d2fc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acd1d5e3ac2b0585b6c21cf496af1d2fc"></a>
-<a class="el" href="namespaceSSAGES.html#acddea47426ac0a643b048f870ddd2907">CVList</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSSAGES_1_1Driver.html#acd1d5e3ac2b0585b6c21cf496af1d2fc">_CVs</a></td></tr>
-<tr class="memdesc:acd1d5e3ac2b0585b6c21cf496af1d2fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">The CVs that will be used. <br /></td></tr>
-<tr class="separator:acd1d5e3ac2b0585b6c21cf496af1d2fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af6ba8b16842a85ddbcef2b20014eb9f0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af6ba8b16842a85ddbcef2b20014eb9f0"></a>
-<a class="el" href="namespaceSSAGES.html#a9a1166683db5722b1a6661f99307d559">ObserverList</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSSAGES_1_1Driver.html#af6ba8b16842a85ddbcef2b20014eb9f0">_observers</a></td></tr>
-<tr class="memdesc:af6ba8b16842a85ddbcef2b20014eb9f0"><td class="mdescLeft">&#160;</td><td class="mdescRight">The observers that will be used for this driver. <br /></td></tr>
-<tr class="separator:af6ba8b16842a85ddbcef2b20014eb9f0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0b623d237c340f5f7b3283017242808a"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0b623d237c340f5f7b3283017242808a"></a>
-ConstraintList&#160;</td><td class="memItemRight" valign="bottom"><b>_constraints</b></td></tr>
-<tr class="separator:a0b623d237c340f5f7b3283017242808a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a00f16572c777f98f4b71e6f050a93ebc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a00f16572c777f98f4b71e6f050a93ebc"></a>
-std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSSAGES_1_1Driver.html#a00f16572c777f98f4b71e6f050a93ebc">_inputfile</a></td></tr>
-<tr class="memdesc:a00f16572c777f98f4b71e6f050a93ebc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Local input file. <br /></td></tr>
-<tr class="separator:a00f16572c777f98f4b71e6f050a93ebc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2599cdfbe9c91aebc7eb8e36312b6ca5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2599cdfbe9c91aebc7eb8e36312b6ca5"></a>
-std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSSAGES_1_1Driver.html#a2599cdfbe9c91aebc7eb8e36312b6ca5">_restartname</a></td></tr>
-<tr class="memdesc:a2599cdfbe9c91aebc7eb8e36312b6ca5"><td class="mdescLeft">&#160;</td><td class="mdescRight">MD engine Restart file name. <br /></td></tr>
-<tr class="separator:a2599cdfbe9c91aebc7eb8e36312b6ca5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aab6559e1b2ad2e2fafe7f5c83f01226b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aab6559e1b2ad2e2fafe7f5c83f01226b"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSSAGES_1_1Driver.html#aab6559e1b2ad2e2fafe7f5c83f01226b">_readrestart</a></td></tr>
-<tr class="memdesc:aab6559e1b2ad2e2fafe7f5c83f01226b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read a restart file. <br /></td></tr>
-<tr class="separator:aab6559e1b2ad2e2fafe7f5c83f01226b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae90299b0d68c87b58dfc433836b667ad"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae90299b0d68c87b58dfc433836b667ad"></a>
-std::random_device&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSSAGES_1_1Driver.html#ae90299b0d68c87b58dfc433836b667ad">_rd</a></td></tr>
-<tr class="memdesc:ae90299b0d68c87b58dfc433836b667ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Random number generators for setting seeds. <br /></td></tr>
-<tr class="separator:ae90299b0d68c87b58dfc433836b667ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6709cc686fe5ccd780fe4b67365af22e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6709cc686fe5ccd780fe4b67365af22e"></a>
-std::mt19937&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSSAGES_1_1Driver.html#a6709cc686fe5ccd780fe4b67365af22e">_gen</a></td></tr>
-<tr class="memdesc:a6709cc686fe5ccd780fe4b67365af22e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Alternative random number generator. <br /></td></tr>
-<tr class="separator:a6709cc686fe5ccd780fe4b67365af22e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e69ad8e3c64cca6cfbf136d967bbaa5"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1e69ad8e3c64cca6cfbf136d967bbaa5"></a>
+boost::mpi::communicator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSSAGES_1_1Driver.html#a1e69ad8e3c64cca6cfbf136d967bbaa5">world_</a></td></tr>
+<tr class="memdesc:a1e69ad8e3c64cca6cfbf136d967bbaa5"><td class="mdescLeft">&#160;</td><td class="mdescRight">MPI global communicator. <br /></td></tr>
+<tr class="separator:a1e69ad8e3c64cca6cfbf136d967bbaa5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd1b7fafaf06468d4bb9580fe7f76fcf"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acd1b7fafaf06468d4bb9580fe7f76fcf"></a>
+boost::mpi::communicator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSSAGES_1_1Driver.html#acd1b7fafaf06468d4bb9580fe7f76fcf">comm_</a></td></tr>
+<tr class="memdesc:acd1b7fafaf06468d4bb9580fe7f76fcf"><td class="mdescLeft">&#160;</td><td class="mdescRight">MPI local communicator. <br /></td></tr>
+<tr class="separator:acd1b7fafaf06468d4bb9580fe7f76fcf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0cc8d32364663146b04878ac642085eb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0cc8d32364663146b04878ac642085eb"></a>
+const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSSAGES_1_1Driver.html#a0cc8d32364663146b04878ac642085eb">wid_</a></td></tr>
+<tr class="memdesc:a0cc8d32364663146b04878ac642085eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">The node id that this driver belongs to. <br /></td></tr>
+<tr class="separator:a0cc8d32364663146b04878ac642085eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae31f3e42d218451dadf5918da35c89ac"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae31f3e42d218451dadf5918da35c89ac"></a>
+<a class="el" href="classSSAGES_1_1Hook.html">Hook</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSSAGES_1_1Driver.html#ae31f3e42d218451dadf5918da35c89ac">hook_</a></td></tr>
+<tr class="memdesc:ae31f3e42d218451dadf5918da35c89ac"><td class="mdescLeft">&#160;</td><td class="mdescRight">The hook that hooks into the MD simulation engine. <br /></td></tr>
+<tr class="separator:ae31f3e42d218451dadf5918da35c89ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28fb9e405360802a3ac83d61ccf610c1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a28fb9e405360802a3ac83d61ccf610c1"></a>
+<a class="el" href="classSSAGES_1_1Snapshot.html">Snapshot</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSSAGES_1_1Driver.html#a28fb9e405360802a3ac83d61ccf610c1">snapshot_</a></td></tr>
+<tr class="memdesc:a28fb9e405360802a3ac83d61ccf610c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">The snapshot of your system. <br /></td></tr>
+<tr class="separator:a28fb9e405360802a3ac83d61ccf610c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad42c6aa3969781cce0daaa3de7276278"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad42c6aa3969781cce0daaa3de7276278"></a>
+<a class="el" href="classSSAGES_1_1Method.html">Method</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSSAGES_1_1Driver.html#ad42c6aa3969781cce0daaa3de7276278">method_</a></td></tr>
+<tr class="memdesc:ad42c6aa3969781cce0daaa3de7276278"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="classSSAGES_1_1Method.html" title="Interface for Method implementations. ">Method</a> that will be used. <br /></td></tr>
+<tr class="separator:ad42c6aa3969781cce0daaa3de7276278"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e272be9d9cb7f60355dfaf144a485cd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5e272be9d9cb7f60355dfaf144a485cd"></a>
+<a class="el" href="namespaceSSAGES.html#acddea47426ac0a643b048f870ddd2907">CVList</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSSAGES_1_1Driver.html#a5e272be9d9cb7f60355dfaf144a485cd">CVs_</a></td></tr>
+<tr class="memdesc:a5e272be9d9cb7f60355dfaf144a485cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">The CVs that will be used. <br /></td></tr>
+<tr class="separator:a5e272be9d9cb7f60355dfaf144a485cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a544add94846634a117548be3f0ff6b8d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a544add94846634a117548be3f0ff6b8d"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSSAGES_1_1Driver.html#a544add94846634a117548be3f0ff6b8d">iterations_</a></td></tr>
+<tr class="memdesc:a544add94846634a117548be3f0ff6b8d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Target number of iterations. <br /></td></tr>
+<tr class="separator:a544add94846634a117548be3f0ff6b8d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55d96ddba14b5abacd38dde4803ad460"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a55d96ddba14b5abacd38dde4803ad460"></a>
+<a class="el" href="namespaceSSAGES.html#a9a1166683db5722b1a6661f99307d559">ObserverList</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSSAGES_1_1Driver.html#a55d96ddba14b5abacd38dde4803ad460">observers_</a></td></tr>
+<tr class="memdesc:a55d96ddba14b5abacd38dde4803ad460"><td class="mdescLeft">&#160;</td><td class="mdescRight">The observers that will be used for this driver. <br /></td></tr>
+<tr class="separator:a55d96ddba14b5abacd38dde4803ad460"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afbd01ae43f60fb005580d67192aa920c"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afbd01ae43f60fb005580d67192aa920c"></a>
+<a class="el" href="namespaceSSAGES.html#aa645655f6fcffdb0554f568389146829">ConstraintList</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSSAGES_1_1Driver.html#afbd01ae43f60fb005580d67192aa920c">constraints_</a></td></tr>
+<tr class="memdesc:afbd01ae43f60fb005580d67192aa920c"><td class="mdescLeft">&#160;</td><td class="mdescRight">List of constraints to use. <br /></td></tr>
+<tr class="separator:afbd01ae43f60fb005580d67192aa920c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a669cc2a8bf73c9d0a09b4653598096f7"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a669cc2a8bf73c9d0a09b4653598096f7"></a>
+std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSSAGES_1_1Driver.html#a669cc2a8bf73c9d0a09b4653598096f7">inputfile_</a></td></tr>
+<tr class="memdesc:a669cc2a8bf73c9d0a09b4653598096f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Local input file. <br /></td></tr>
+<tr class="separator:a669cc2a8bf73c9d0a09b4653598096f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a528109852b71549f0d156606430cc106"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a528109852b71549f0d156606430cc106"></a>
+std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSSAGES_1_1Driver.html#a528109852b71549f0d156606430cc106">restartname_</a></td></tr>
+<tr class="memdesc:a528109852b71549f0d156606430cc106"><td class="mdescLeft">&#160;</td><td class="mdescRight">MD engine Restart file name. <br /></td></tr>
+<tr class="separator:a528109852b71549f0d156606430cc106"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ac4aae03e29106e1afd842ae3f5c7fc"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9ac4aae03e29106e1afd842ae3f5c7fc"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSSAGES_1_1Driver.html#a9ac4aae03e29106e1afd842ae3f5c7fc">readrestart_</a></td></tr>
+<tr class="memdesc:a9ac4aae03e29106e1afd842ae3f5c7fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read a restart file. <br /></td></tr>
+<tr class="separator:a9ac4aae03e29106e1afd842ae3f5c7fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a338ed54bdbe093714536cba4b0059bd1"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a338ed54bdbe093714536cba4b0059bd1"></a>
+std::random_device&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSSAGES_1_1Driver.html#a338ed54bdbe093714536cba4b0059bd1">rd_</a></td></tr>
+<tr class="memdesc:a338ed54bdbe093714536cba4b0059bd1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Random number generators for setting seeds. <br /></td></tr>
+<tr class="separator:a338ed54bdbe093714536cba4b0059bd1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82ec7ed4d167d6c45d1a9342b405fc91"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a82ec7ed4d167d6c45d1a9342b405fc91"></a>
+std::mt19937&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSSAGES_1_1Driver.html#a82ec7ed4d167d6c45d1a9342b405fc91">gen_</a></td></tr>
+<tr class="memdesc:a82ec7ed4d167d6c45d1a9342b405fc91"><td class="mdescLeft">&#160;</td><td class="mdescRight">Alternative random number generator. <br /></td></tr>
+<tr class="separator:a82ec7ed4d167d6c45d1a9342b405fc91"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -260,7 +261,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Abstract driver class for creating driver objects. </p>
 
-<p>Definition at line <a class="el" href="Driver_8h_source.html#l00049">49</a> of file <a class="el" href="Driver_8h_source.html">Driver.h</a>.</p>
+<p>Definition at line <a class="el" href="Driver_8h_source.html#l00047">47</a> of file <a class="el" href="Driver_8h_source.html">Driver.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="aaca8e4296e906e1ed0e090e131b1ee2a"></a>
 <div class="memitem">
@@ -310,30 +311,91 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="Driver_8h_source.html#l00099">99</a> of file <a class="el" href="Driver_8h_source.html">Driver.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;                             : </div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        <a class="code" href="classSSAGES_1_1Driver.html#ae524487495f4304ceb44e1a62178fbdc">_world</a>(world), <a class="code" href="classSSAGES_1_1Driver.html#ab54b93056e47131e9420bfbcd1607fad">_comm</a>(comm), <a class="code" href="classSSAGES_1_1Driver.html#ad092889b2da84e4ad69a6fa6c0b4898d">_wid</a>(walkerID),</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        <a class="code" href="classSSAGES_1_1Driver.html#a9817e954adcfc686e1a346b171b23166">_hook</a>(<span class="keyword">nullptr</span>), <a class="code" href="classSSAGES_1_1Driver.html#af97dd345f1defb7f51a5ffc05b735078">_snapshot</a>(<span class="keyword">nullptr</span>), <a class="code" href="classSSAGES_1_1Driver.html#ad9854a40154849452fdae930b463e06e">_method</a>(<span class="keyword">nullptr</span>), <a class="code" href="classSSAGES_1_1Driver.html#acd1d5e3ac2b0585b6c21cf496af1d2fc">_CVs</a>(),</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;        <a class="code" href="classSSAGES_1_1Driver.html#af6ba8b16842a85ddbcef2b20014eb9f0">_observers</a>(), <a class="code" href="classSSAGES_1_1Driver.html#a00f16572c777f98f4b71e6f050a93ebc">_inputfile</a>(<span class="stringliteral">&quot;none&quot;</span>), <a class="code" href="classSSAGES_1_1Driver.html#a2599cdfbe9c91aebc7eb8e36312b6ca5">_restartname</a>(),</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;        <a class="code" href="classSSAGES_1_1Driver.html#aab6559e1b2ad2e2fafe7f5c83f01226b">_readrestart</a>(), <a class="code" href="classSSAGES_1_1Driver.html#ae90299b0d68c87b58dfc433836b667ad">_rd</a>(), <a class="code" href="classSSAGES_1_1Driver.html#a6709cc686fe5ccd780fe4b67365af22e">_gen</a>(<a class="code" href="classSSAGES_1_1Driver.html#ae90299b0d68c87b58dfc433836b667ad">_rd</a>())</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;         {}</div>
-<div class="ttc" id="classSSAGES_1_1Driver_html_ae90299b0d68c87b58dfc433836b667ad"><div class="ttname"><a href="classSSAGES_1_1Driver.html#ae90299b0d68c87b58dfc433836b667ad">SSAGES::Driver::_rd</a></div><div class="ttdeci">std::random_device _rd</div><div class="ttdoc">Random number generators for setting seeds. </div><div class="ttdef"><b>Definition:</b> <a href="Driver_8h_source.html#l00087">Driver.h:87</a></div></div>
-<div class="ttc" id="classSSAGES_1_1Driver_html_aab6559e1b2ad2e2fafe7f5c83f01226b"><div class="ttname"><a href="classSSAGES_1_1Driver.html#aab6559e1b2ad2e2fafe7f5c83f01226b">SSAGES::Driver::_readrestart</a></div><div class="ttdeci">bool _readrestart</div><div class="ttdoc">Read a restart file. </div><div class="ttdef"><b>Definition:</b> <a href="Driver_8h_source.html#l00084">Driver.h:84</a></div></div>
-<div class="ttc" id="classSSAGES_1_1Driver_html_a9817e954adcfc686e1a346b171b23166"><div class="ttname"><a href="classSSAGES_1_1Driver.html#a9817e954adcfc686e1a346b171b23166">SSAGES::Driver::_hook</a></div><div class="ttdeci">Hook * _hook</div><div class="ttdoc">The hook that hooks into the MD simulation engine. </div><div class="ttdef"><b>Definition:</b> <a href="Driver_8h_source.html#l00060">Driver.h:60</a></div></div>
-<div class="ttc" id="classSSAGES_1_1Driver_html_af97dd345f1defb7f51a5ffc05b735078"><div class="ttname"><a href="classSSAGES_1_1Driver.html#af97dd345f1defb7f51a5ffc05b735078">SSAGES::Driver::_snapshot</a></div><div class="ttdeci">Snapshot * _snapshot</div><div class="ttdoc">The snapshot of your system. </div><div class="ttdef"><b>Definition:</b> <a href="Driver_8h_source.html#l00063">Driver.h:63</a></div></div>
-<div class="ttc" id="classSSAGES_1_1Driver_html_ae524487495f4304ceb44e1a62178fbdc"><div class="ttname"><a href="classSSAGES_1_1Driver.html#ae524487495f4304ceb44e1a62178fbdc">SSAGES::Driver::_world</a></div><div class="ttdeci">boost::mpi::communicator _world</div><div class="ttdoc">MPI global communicator. </div><div class="ttdef"><b>Definition:</b> <a href="Driver_8h_source.html#l00053">Driver.h:53</a></div></div>
-<div class="ttc" id="classSSAGES_1_1Driver_html_ab54b93056e47131e9420bfbcd1607fad"><div class="ttname"><a href="classSSAGES_1_1Driver.html#ab54b93056e47131e9420bfbcd1607fad">SSAGES::Driver::_comm</a></div><div class="ttdeci">boost::mpi::communicator _comm</div><div class="ttdoc">MPI local communicator. </div><div class="ttdef"><b>Definition:</b> <a href="Driver_8h_source.html#l00054">Driver.h:54</a></div></div>
-<div class="ttc" id="classSSAGES_1_1Driver_html_af6ba8b16842a85ddbcef2b20014eb9f0"><div class="ttname"><a href="classSSAGES_1_1Driver.html#af6ba8b16842a85ddbcef2b20014eb9f0">SSAGES::Driver::_observers</a></div><div class="ttdeci">ObserverList _observers</div><div class="ttdoc">The observers that will be used for this driver. </div><div class="ttdef"><b>Definition:</b> <a href="Driver_8h_source.html#l00072">Driver.h:72</a></div></div>
-<div class="ttc" id="classSSAGES_1_1Driver_html_a6709cc686fe5ccd780fe4b67365af22e"><div class="ttname"><a href="classSSAGES_1_1Driver.html#a6709cc686fe5ccd780fe4b67365af22e">SSAGES::Driver::_gen</a></div><div class="ttdeci">std::mt19937 _gen</div><div class="ttdoc">Alternative random number generator. </div><div class="ttdef"><b>Definition:</b> <a href="Driver_8h_source.html#l00090">Driver.h:90</a></div></div>
-<div class="ttc" id="classSSAGES_1_1Driver_html_a00f16572c777f98f4b71e6f050a93ebc"><div class="ttname"><a href="classSSAGES_1_1Driver.html#a00f16572c777f98f4b71e6f050a93ebc">SSAGES::Driver::_inputfile</a></div><div class="ttdeci">std::string _inputfile</div><div class="ttdoc">Local input file. </div><div class="ttdef"><b>Definition:</b> <a href="Driver_8h_source.html#l00078">Driver.h:78</a></div></div>
-<div class="ttc" id="classSSAGES_1_1Driver_html_acd1d5e3ac2b0585b6c21cf496af1d2fc"><div class="ttname"><a href="classSSAGES_1_1Driver.html#acd1d5e3ac2b0585b6c21cf496af1d2fc">SSAGES::Driver::_CVs</a></div><div class="ttdeci">CVList _CVs</div><div class="ttdoc">The CVs that will be used. </div><div class="ttdef"><b>Definition:</b> <a href="Driver_8h_source.html#l00069">Driver.h:69</a></div></div>
-<div class="ttc" id="classSSAGES_1_1Driver_html_ad092889b2da84e4ad69a6fa6c0b4898d"><div class="ttname"><a href="classSSAGES_1_1Driver.html#ad092889b2da84e4ad69a6fa6c0b4898d">SSAGES::Driver::_wid</a></div><div class="ttdeci">const int _wid</div><div class="ttdoc">The node id that this driver belongs to. </div><div class="ttdef"><b>Definition:</b> <a href="Driver_8h_source.html#l00057">Driver.h:57</a></div></div>
-<div class="ttc" id="classSSAGES_1_1Driver_html_ad9854a40154849452fdae930b463e06e"><div class="ttname"><a href="classSSAGES_1_1Driver.html#ad9854a40154849452fdae930b463e06e">SSAGES::Driver::_method</a></div><div class="ttdeci">Method * _method</div><div class="ttdoc">The Method that will be used. </div><div class="ttdef"><b>Definition:</b> <a href="Driver_8h_source.html#l00066">Driver.h:66</a></div></div>
-<div class="ttc" id="classSSAGES_1_1Driver_html_a2599cdfbe9c91aebc7eb8e36312b6ca5"><div class="ttname"><a href="classSSAGES_1_1Driver.html#a2599cdfbe9c91aebc7eb8e36312b6ca5">SSAGES::Driver::_restartname</a></div><div class="ttdeci">std::string _restartname</div><div class="ttdoc">MD engine Restart file name. </div><div class="ttdef"><b>Definition:</b> <a href="Driver_8h_source.html#l00081">Driver.h:81</a></div></div>
+<p>Definition at line <a class="el" href="Driver_8h_source.html#l00100">100</a> of file <a class="el" href="Driver_8h_source.html">Driver.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;                             : </div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        <a class="code" href="classSSAGES_1_1Driver.html#a1e69ad8e3c64cca6cfbf136d967bbaa5">world_</a>(world), <a class="code" href="classSSAGES_1_1Driver.html#acd1b7fafaf06468d4bb9580fe7f76fcf">comm_</a>(comm), <a class="code" href="classSSAGES_1_1Driver.html#a0cc8d32364663146b04878ac642085eb">wid_</a>(walkerID),</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;        <a class="code" href="classSSAGES_1_1Driver.html#ae31f3e42d218451dadf5918da35c89ac">hook_</a>(<span class="keyword">nullptr</span>), <a class="code" href="classSSAGES_1_1Driver.html#a28fb9e405360802a3ac83d61ccf610c1">snapshot_</a>(<span class="keyword">nullptr</span>), <a class="code" href="classSSAGES_1_1Driver.html#ad42c6aa3969781cce0daaa3de7276278">method_</a>(<span class="keyword">nullptr</span>), <a class="code" href="classSSAGES_1_1Driver.html#a5e272be9d9cb7f60355dfaf144a485cd">CVs_</a>(),</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;        <a class="code" href="classSSAGES_1_1Driver.html#a544add94846634a117548be3f0ff6b8d">iterations_</a>(0), <a class="code" href="classSSAGES_1_1Driver.html#a55d96ddba14b5abacd38dde4803ad460">observers_</a>(), <a class="code" href="classSSAGES_1_1Driver.html#a669cc2a8bf73c9d0a09b4653598096f7">inputfile_</a>(<span class="stringliteral">&quot;none&quot;</span>), <a class="code" href="classSSAGES_1_1Driver.html#a528109852b71549f0d156606430cc106">restartname_</a>(),</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        <a class="code" href="classSSAGES_1_1Driver.html#a9ac4aae03e29106e1afd842ae3f5c7fc">readrestart_</a>(), <a class="code" href="classSSAGES_1_1Driver.html#a338ed54bdbe093714536cba4b0059bd1">rd_</a>(), <a class="code" href="classSSAGES_1_1Driver.html#a82ec7ed4d167d6c45d1a9342b405fc91">gen_</a>(<a class="code" href="classSSAGES_1_1Driver.html#a338ed54bdbe093714536cba4b0059bd1">rd_</a>())</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;         {}</div>
+<div class="ttc" id="classSSAGES_1_1Driver_html_a55d96ddba14b5abacd38dde4803ad460"><div class="ttname"><a href="classSSAGES_1_1Driver.html#a55d96ddba14b5abacd38dde4803ad460">SSAGES::Driver::observers_</a></div><div class="ttdeci">ObserverList observers_</div><div class="ttdoc">The observers that will be used for this driver. </div><div class="ttdef"><b>Definition:</b> <a href="Driver_8h_source.html#l00073">Driver.h:73</a></div></div>
+<div class="ttc" id="classSSAGES_1_1Driver_html_a9ac4aae03e29106e1afd842ae3f5c7fc"><div class="ttname"><a href="classSSAGES_1_1Driver.html#a9ac4aae03e29106e1afd842ae3f5c7fc">SSAGES::Driver::readrestart_</a></div><div class="ttdeci">bool readrestart_</div><div class="ttdoc">Read a restart file. </div><div class="ttdef"><b>Definition:</b> <a href="Driver_8h_source.html#l00085">Driver.h:85</a></div></div>
+<div class="ttc" id="classSSAGES_1_1Driver_html_a82ec7ed4d167d6c45d1a9342b405fc91"><div class="ttname"><a href="classSSAGES_1_1Driver.html#a82ec7ed4d167d6c45d1a9342b405fc91">SSAGES::Driver::gen_</a></div><div class="ttdeci">std::mt19937 gen_</div><div class="ttdoc">Alternative random number generator. </div><div class="ttdef"><b>Definition:</b> <a href="Driver_8h_source.html#l00091">Driver.h:91</a></div></div>
+<div class="ttc" id="classSSAGES_1_1Driver_html_a0cc8d32364663146b04878ac642085eb"><div class="ttname"><a href="classSSAGES_1_1Driver.html#a0cc8d32364663146b04878ac642085eb">SSAGES::Driver::wid_</a></div><div class="ttdeci">const int wid_</div><div class="ttdoc">The node id that this driver belongs to. </div><div class="ttdef"><b>Definition:</b> <a href="Driver_8h_source.html#l00055">Driver.h:55</a></div></div>
+<div class="ttc" id="classSSAGES_1_1Driver_html_a544add94846634a117548be3f0ff6b8d"><div class="ttname"><a href="classSSAGES_1_1Driver.html#a544add94846634a117548be3f0ff6b8d">SSAGES::Driver::iterations_</a></div><div class="ttdeci">int iterations_</div><div class="ttdoc">Target number of iterations. </div><div class="ttdef"><b>Definition:</b> <a href="Driver_8h_source.html#l00070">Driver.h:70</a></div></div>
+<div class="ttc" id="classSSAGES_1_1Driver_html_a528109852b71549f0d156606430cc106"><div class="ttname"><a href="classSSAGES_1_1Driver.html#a528109852b71549f0d156606430cc106">SSAGES::Driver::restartname_</a></div><div class="ttdeci">std::string restartname_</div><div class="ttdoc">MD engine Restart file name. </div><div class="ttdef"><b>Definition:</b> <a href="Driver_8h_source.html#l00082">Driver.h:82</a></div></div>
+<div class="ttc" id="classSSAGES_1_1Driver_html_ad42c6aa3969781cce0daaa3de7276278"><div class="ttname"><a href="classSSAGES_1_1Driver.html#ad42c6aa3969781cce0daaa3de7276278">SSAGES::Driver::method_</a></div><div class="ttdeci">Method * method_</div><div class="ttdoc">The Method that will be used. </div><div class="ttdef"><b>Definition:</b> <a href="Driver_8h_source.html#l00064">Driver.h:64</a></div></div>
+<div class="ttc" id="classSSAGES_1_1Driver_html_acd1b7fafaf06468d4bb9580fe7f76fcf"><div class="ttname"><a href="classSSAGES_1_1Driver.html#acd1b7fafaf06468d4bb9580fe7f76fcf">SSAGES::Driver::comm_</a></div><div class="ttdeci">boost::mpi::communicator comm_</div><div class="ttdoc">MPI local communicator. </div><div class="ttdef"><b>Definition:</b> <a href="Driver_8h_source.html#l00052">Driver.h:52</a></div></div>
+<div class="ttc" id="classSSAGES_1_1Driver_html_a5e272be9d9cb7f60355dfaf144a485cd"><div class="ttname"><a href="classSSAGES_1_1Driver.html#a5e272be9d9cb7f60355dfaf144a485cd">SSAGES::Driver::CVs_</a></div><div class="ttdeci">CVList CVs_</div><div class="ttdoc">The CVs that will be used. </div><div class="ttdef"><b>Definition:</b> <a href="Driver_8h_source.html#l00067">Driver.h:67</a></div></div>
+<div class="ttc" id="classSSAGES_1_1Driver_html_a28fb9e405360802a3ac83d61ccf610c1"><div class="ttname"><a href="classSSAGES_1_1Driver.html#a28fb9e405360802a3ac83d61ccf610c1">SSAGES::Driver::snapshot_</a></div><div class="ttdeci">Snapshot * snapshot_</div><div class="ttdoc">The snapshot of your system. </div><div class="ttdef"><b>Definition:</b> <a href="Driver_8h_source.html#l00061">Driver.h:61</a></div></div>
+<div class="ttc" id="classSSAGES_1_1Driver_html_a338ed54bdbe093714536cba4b0059bd1"><div class="ttname"><a href="classSSAGES_1_1Driver.html#a338ed54bdbe093714536cba4b0059bd1">SSAGES::Driver::rd_</a></div><div class="ttdeci">std::random_device rd_</div><div class="ttdoc">Random number generators for setting seeds. </div><div class="ttdef"><b>Definition:</b> <a href="Driver_8h_source.html#l00088">Driver.h:88</a></div></div>
+<div class="ttc" id="classSSAGES_1_1Driver_html_a1e69ad8e3c64cca6cfbf136d967bbaa5"><div class="ttname"><a href="classSSAGES_1_1Driver.html#a1e69ad8e3c64cca6cfbf136d967bbaa5">SSAGES::Driver::world_</a></div><div class="ttdeci">boost::mpi::communicator world_</div><div class="ttdoc">MPI global communicator. </div><div class="ttdef"><b>Definition:</b> <a href="Driver_8h_source.html#l00051">Driver.h:51</a></div></div>
+<div class="ttc" id="classSSAGES_1_1Driver_html_a669cc2a8bf73c9d0a09b4653598096f7"><div class="ttname"><a href="classSSAGES_1_1Driver.html#a669cc2a8bf73c9d0a09b4653598096f7">SSAGES::Driver::inputfile_</a></div><div class="ttdeci">std::string inputfile_</div><div class="ttdoc">Local input file. </div><div class="ttdef"><b>Definition:</b> <a href="Driver_8h_source.html#l00079">Driver.h:79</a></div></div>
+<div class="ttc" id="classSSAGES_1_1Driver_html_ae31f3e42d218451dadf5918da35c89ac"><div class="ttname"><a href="classSSAGES_1_1Driver.html#ae31f3e42d218451dadf5918da35c89ac">SSAGES::Driver::hook_</a></div><div class="ttdeci">Hook * hook_</div><div class="ttdoc">The hook that hooks into the MD simulation engine. </div><div class="ttdef"><b>Definition:</b> <a href="Driver_8h_source.html#l00058">Driver.h:58</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a09257b29efad62dfd0abaaca1309421b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SSAGES::Driver::BuildConstraints </td>
+          <td>(</td>
+          <td class="paramtype">const Json::Value &amp;&#160;</td>
+          <td class="paramname"><em>json</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>path</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">json</td><td>JSON Value containing input information. </td></tr>
+    <tr><td class="paramname">path</td><td>Path for JSON path specification. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="Driver_8h_source.html#l00184">184</a> of file <a class="el" href="Driver_8h_source.html">Driver.h</a>.</p>
+
+<p>References <a class="el" href="Constraint_8cpp_source.html#l00033">SSAGES::Constraint::BuildConstraint()</a>, <a class="el" href="Driver_8h_source.html#l00052">comm_</a>, and <a class="el" href="Driver_8h_source.html#l00076">constraints_</a>.</p>
+<div class="fragment"><div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;        {</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;            <a class="code" href="classSSAGES_1_1Constraint.html#afc8cbc4286f0557ae6ad89b5e3f9ee02">Constraint::BuildConstraint</a>(json, <a class="code" href="classSSAGES_1_1Driver.html#afbd01ae43f60fb005580d67192aa920c">constraints_</a>, <a class="code" href="classSSAGES_1_1Driver.html#acd1b7fafaf06468d4bb9580fe7f76fcf">comm_</a>, path);</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;        }</div>
+<div class="ttc" id="classSSAGES_1_1Driver_html_acd1b7fafaf06468d4bb9580fe7f76fcf"><div class="ttname"><a href="classSSAGES_1_1Driver.html#acd1b7fafaf06468d4bb9580fe7f76fcf">SSAGES::Driver::comm_</a></div><div class="ttdeci">boost::mpi::communicator comm_</div><div class="ttdoc">MPI local communicator. </div><div class="ttdef"><b>Definition:</b> <a href="Driver_8h_source.html#l00052">Driver.h:52</a></div></div>
+<div class="ttc" id="classSSAGES_1_1Constraint_html_afc8cbc4286f0557ae6ad89b5e3f9ee02"><div class="ttname"><a href="classSSAGES_1_1Constraint.html#afc8cbc4286f0557ae6ad89b5e3f9ee02">SSAGES::Constraint::BuildConstraint</a></div><div class="ttdeci">static Constraint * BuildConstraint(const Json::Value &amp;json, boost::mpi::communicator &amp;comm)</div><div class="ttdoc">Build a constraint from a JSON node. </div><div class="ttdef"><b>Definition:</b> <a href="Constraint_8cpp_source.html#l00033">Constraint.cpp:33</a></div></div>
+<div class="ttc" id="classSSAGES_1_1Driver_html_afbd01ae43f60fb005580d67192aa920c"><div class="ttname"><a href="classSSAGES_1_1Driver.html#afbd01ae43f60fb005580d67192aa920c">SSAGES::Driver::constraints_</a></div><div class="ttdeci">ConstraintList constraints_</div><div class="ttdoc">List of constraints to use. </div><div class="ttdef"><b>Definition:</b> <a href="Driver_8h_source.html#l00076">Driver.h:76</a></div></div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classSSAGES_1_1Driver_a09257b29efad62dfd0abaaca1309421b_cgraph.png" border="0" usemap="#classSSAGES_1_1Driver_a09257b29efad62dfd0abaaca1309421b_cgraph" alt=""/></div>
+<map name="classSSAGES_1_1Driver_a09257b29efad62dfd0abaaca1309421b_cgraph" id="classSSAGES_1_1Driver_a09257b29efad62dfd0abaaca1309421b_cgraph">
+<area shape="rect" id="node2" href="classSSAGES_1_1Constraint.html#afc8cbc4286f0557ae6ad89b5e3f9ee02" title="Build a constraint from a JSON node. " alt="" coords="278,5,423,46"/></map>
+</div>
+</p>
+
+</div>
+</div>
 <a class="anchor" id="acfe295161fe152ecf9bef5a9440a37cb"></a>
 <div class="memitem">
 <div class="memproto">
@@ -375,13 +437,24 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="Driver_8h_source.html#l00173">173</a> of file <a class="el" href="Driver_8h_source.html">Driver.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;        {</div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;            <a class="code" href="classSSAGES_1_1CollectiveVariable.html#a6af09220d5c6d42369122e0b9f93f772">CollectiveVariable::BuildCV</a>(json, <a class="code" href="classSSAGES_1_1Driver.html#acd1d5e3ac2b0585b6c21cf496af1d2fc">_CVs</a>, path);</div>
-<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;        }</div>
-<div class="ttc" id="classSSAGES_1_1CollectiveVariable_html_a6af09220d5c6d42369122e0b9f93f772"><div class="ttname"><a href="classSSAGES_1_1CollectiveVariable.html#a6af09220d5c6d42369122e0b9f93f772">SSAGES::CollectiveVariable::BuildCV</a></div><div class="ttdeci">static CollectiveVariable * BuildCV(const Json::Value &amp;json)</div><div class="ttdoc">Set up collective variable. </div><div class="ttdef"><b>Definition:</b> <a href="CollectiveVariable_8cpp_source.html#l00041">CollectiveVariable.cpp:41</a></div></div>
-<div class="ttc" id="classSSAGES_1_1Driver_html_acd1d5e3ac2b0585b6c21cf496af1d2fc"><div class="ttname"><a href="classSSAGES_1_1Driver.html#acd1d5e3ac2b0585b6c21cf496af1d2fc">SSAGES::Driver::_CVs</a></div><div class="ttdeci">CVList _CVs</div><div class="ttdoc">The CVs that will be used. </div><div class="ttdef"><b>Definition:</b> <a href="Driver_8h_source.html#l00069">Driver.h:69</a></div></div>
+<p>Definition at line <a class="el" href="Driver_8h_source.html#l00174">174</a> of file <a class="el" href="Driver_8h_source.html">Driver.h</a>.</p>
+
+<p>References <a class="el" href="CollectiveVariable_8cpp_source.html#l00044">SSAGES::CollectiveVariable::BuildCV()</a>, and <a class="el" href="Driver_8h_source.html#l00067">CVs_</a>.</p>
+<div class="fragment"><div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;        {</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;            <a class="code" href="classSSAGES_1_1CollectiveVariable.html#a6af09220d5c6d42369122e0b9f93f772">CollectiveVariable::BuildCV</a>(json, <a class="code" href="classSSAGES_1_1Driver.html#a5e272be9d9cb7f60355dfaf144a485cd">CVs_</a>, path);</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;        }</div>
+<div class="ttc" id="classSSAGES_1_1CollectiveVariable_html_a6af09220d5c6d42369122e0b9f93f772"><div class="ttname"><a href="classSSAGES_1_1CollectiveVariable.html#a6af09220d5c6d42369122e0b9f93f772">SSAGES::CollectiveVariable::BuildCV</a></div><div class="ttdeci">static CollectiveVariable * BuildCV(const Json::Value &amp;json)</div><div class="ttdoc">Set up collective variable. </div><div class="ttdef"><b>Definition:</b> <a href="CollectiveVariable_8cpp_source.html#l00044">CollectiveVariable.cpp:44</a></div></div>
+<div class="ttc" id="classSSAGES_1_1Driver_html_a5e272be9d9cb7f60355dfaf144a485cd"><div class="ttname"><a href="classSSAGES_1_1Driver.html#a5e272be9d9cb7f60355dfaf144a485cd">SSAGES::Driver::CVs_</a></div><div class="ttdeci">CVList CVs_</div><div class="ttdoc">The CVs that will be used. </div><div class="ttdef"><b>Definition:</b> <a href="Driver_8h_source.html#l00067">Driver.h:67</a></div></div>
 </div><!-- fragment -->
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classSSAGES_1_1Driver_acfe295161fe152ecf9bef5a9440a37cb_cgraph.png" border="0" usemap="#classSSAGES_1_1Driver_acfe295161fe152ecf9bef5a9440a37cb_cgraph" alt=""/></div>
+<map name="classSSAGES_1_1Driver_acfe295161fe152ecf9bef5a9440a37cb_cgraph" id="classSSAGES_1_1Driver_acfe295161fe152ecf9bef5a9440a37cb_cgraph">
+<area shape="rect" id="node2" href="classSSAGES_1_1CollectiveVariable.html#a6af09220d5c6d42369122e0b9f93f772" title="Set up collective variable. " alt="" coords="238,5,429,46"/></map>
+</div>
+</p>
+
 </div>
 </div>
 <a class="anchor" id="a67d8106b8f9ba5d468a0ee719838b67c"></a>
@@ -425,58 +498,8 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
   </dd>
 </dl>
 
-<p>Implemented in <a class="el" href="classSSAGES_1_1LammpsDriver.html#ae589a4a73dee0ced0ca0bc63554ffffd">SSAGES::LammpsDriver</a>, and <a class="el" href="classSSAGES_1_1GromacsDriver.html#a262f215c05707fafe104785aa567f532">SSAGES::GromacsDriver</a>.</p>
+<p>Implemented in <a class="el" href="classSSAGES_1_1LammpsDriver.html#ae589a4a73dee0ced0ca0bc63554ffffd">SSAGES::LammpsDriver</a>, <a class="el" href="classSSAGES_1_1GromacsDriver.html#ae410f42f8adf47f9a8021737fed5adba">SSAGES::GromacsDriver</a>, <a class="el" href="classSSAGES_1_1OpenMDDriver.html#a083ed08db6bef1dbe26312f09f4fc588">SSAGES::OpenMDDriver</a>, and <a class="el" href="classSSAGES_1_1QboxDriver.html#a53a501391a8aa0067836751b59ba4452">SSAGES::QboxDriver</a>.</p>
 
-</div>
-</div>
-<a class="anchor" id="a3a019b27bc5f49754d7f70633b274312"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void SSAGES::Driver::BuildGrid </td>
-          <td>(</td>
-          <td class="paramtype">const Json::Value &amp;&#160;</td>
-          <td class="paramname"><em>json</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>path</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Build the grid. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">json</td><td>JSON value containing input information. </td></tr>
-    <tr><td class="paramname">path</td><td>Path for JSON path specification. </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p>Definition at line <a class="el" href="Driver_8h_source.html#l00213">213</a> of file <a class="el" href="Driver_8h_source.html">Driver.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;        {</div>
-<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;            <a class="code" href="classSSAGES_1_1Driver.html#ad9854a40154849452fdae930b463e06e">_method</a>-&gt;<a class="code" href="classSSAGES_1_1Method.html#aa4aba5b55238697fb158e92bd2b5c559">BuildGrid</a>(json, path);</div>
-<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;        }</div>
-<div class="ttc" id="classSSAGES_1_1Method_html_aa4aba5b55238697fb158e92bd2b5c559"><div class="ttname"><a href="classSSAGES_1_1Method.html#aa4aba5b55238697fb158e92bd2b5c559">SSAGES::Method::BuildGrid</a></div><div class="ttdeci">void BuildGrid(const Json::Value &amp;json, const std::string &amp;path)</div><div class="ttdoc">Set up the Grid. </div><div class="ttdef"><b>Definition:</b> <a href="Method_8h_source.html#l00106">Method.h:106</a></div></div>
-<div class="ttc" id="classSSAGES_1_1Driver_html_ad9854a40154849452fdae930b463e06e"><div class="ttname"><a href="classSSAGES_1_1Driver.html#ad9854a40154849452fdae930b463e06e">SSAGES::Driver::_method</a></div><div class="ttdeci">Method * _method</div><div class="ttdoc">The Method that will be used. </div><div class="ttdef"><b>Definition:</b> <a href="Driver_8h_source.html#l00066">Driver.h:66</a></div></div>
-</div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="a336c56e2ac7b535172e7d596f5af30d6"></a>
@@ -520,15 +543,26 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="Driver_8h_source.html#l00189">189</a> of file <a class="el" href="Driver_8h_source.html">Driver.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;        {</div>
-<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;            <a class="code" href="classSSAGES_1_1Driver.html#ad9854a40154849452fdae930b463e06e">_method</a> = <a class="code" href="classSSAGES_1_1Method.html#a4440bebe9b649e17e83d1959362091c3">Method::BuildMethod</a>(json, <a class="code" href="classSSAGES_1_1Driver.html#ae524487495f4304ceb44e1a62178fbdc">_world</a>, <a class="code" href="classSSAGES_1_1Driver.html#ab54b93056e47131e9420bfbcd1607fad">_comm</a>, path);</div>
-<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;        }</div>
-<div class="ttc" id="classSSAGES_1_1Method_html_a4440bebe9b649e17e83d1959362091c3"><div class="ttname"><a href="classSSAGES_1_1Method.html#a4440bebe9b649e17e83d1959362091c3">SSAGES::Method::BuildMethod</a></div><div class="ttdeci">static Method * BuildMethod(const Json::Value &amp;json, boost::mpi::communicator &amp;world, boost::mpi::communicator &amp;comm, const std::string &amp;path)</div><div class="ttdoc">Set up the Method. </div><div class="ttdef"><b>Definition:</b> <a href="Method_8cpp_source.html#l00045">Method.cpp:45</a></div></div>
-<div class="ttc" id="classSSAGES_1_1Driver_html_ae524487495f4304ceb44e1a62178fbdc"><div class="ttname"><a href="classSSAGES_1_1Driver.html#ae524487495f4304ceb44e1a62178fbdc">SSAGES::Driver::_world</a></div><div class="ttdeci">boost::mpi::communicator _world</div><div class="ttdoc">MPI global communicator. </div><div class="ttdef"><b>Definition:</b> <a href="Driver_8h_source.html#l00053">Driver.h:53</a></div></div>
-<div class="ttc" id="classSSAGES_1_1Driver_html_ab54b93056e47131e9420bfbcd1607fad"><div class="ttname"><a href="classSSAGES_1_1Driver.html#ab54b93056e47131e9420bfbcd1607fad">SSAGES::Driver::_comm</a></div><div class="ttdeci">boost::mpi::communicator _comm</div><div class="ttdoc">MPI local communicator. </div><div class="ttdef"><b>Definition:</b> <a href="Driver_8h_source.html#l00054">Driver.h:54</a></div></div>
-<div class="ttc" id="classSSAGES_1_1Driver_html_ad9854a40154849452fdae930b463e06e"><div class="ttname"><a href="classSSAGES_1_1Driver.html#ad9854a40154849452fdae930b463e06e">SSAGES::Driver::_method</a></div><div class="ttdeci">Method * _method</div><div class="ttdoc">The Method that will be used. </div><div class="ttdef"><b>Definition:</b> <a href="Driver_8h_source.html#l00066">Driver.h:66</a></div></div>
+<p>Definition at line <a class="el" href="Driver_8h_source.html#l00194">194</a> of file <a class="el" href="Driver_8h_source.html">Driver.h</a>.</p>
+
+<p>References <a class="el" href="Method_8cpp_source.html#l00044">SSAGES::Method::BuildMethod()</a>, <a class="el" href="Driver_8h_source.html#l00052">comm_</a>, <a class="el" href="Driver_8h_source.html#l00064">method_</a>, and <a class="el" href="Driver_8h_source.html#l00051">world_</a>.</p>
+<div class="fragment"><div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;        {</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;            <a class="code" href="classSSAGES_1_1Driver.html#ad42c6aa3969781cce0daaa3de7276278">method_</a> = <a class="code" href="classSSAGES_1_1Method.html#a4440bebe9b649e17e83d1959362091c3">Method::BuildMethod</a>(json, <a class="code" href="classSSAGES_1_1Driver.html#a1e69ad8e3c64cca6cfbf136d967bbaa5">world_</a>, <a class="code" href="classSSAGES_1_1Driver.html#acd1b7fafaf06468d4bb9580fe7f76fcf">comm_</a>, path);</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;        }</div>
+<div class="ttc" id="classSSAGES_1_1Driver_html_ad42c6aa3969781cce0daaa3de7276278"><div class="ttname"><a href="classSSAGES_1_1Driver.html#ad42c6aa3969781cce0daaa3de7276278">SSAGES::Driver::method_</a></div><div class="ttdeci">Method * method_</div><div class="ttdoc">The Method that will be used. </div><div class="ttdef"><b>Definition:</b> <a href="Driver_8h_source.html#l00064">Driver.h:64</a></div></div>
+<div class="ttc" id="classSSAGES_1_1Driver_html_acd1b7fafaf06468d4bb9580fe7f76fcf"><div class="ttname"><a href="classSSAGES_1_1Driver.html#acd1b7fafaf06468d4bb9580fe7f76fcf">SSAGES::Driver::comm_</a></div><div class="ttdeci">boost::mpi::communicator comm_</div><div class="ttdoc">MPI local communicator. </div><div class="ttdef"><b>Definition:</b> <a href="Driver_8h_source.html#l00052">Driver.h:52</a></div></div>
+<div class="ttc" id="classSSAGES_1_1Method_html_a4440bebe9b649e17e83d1959362091c3"><div class="ttname"><a href="classSSAGES_1_1Method.html#a4440bebe9b649e17e83d1959362091c3">SSAGES::Method::BuildMethod</a></div><div class="ttdeci">static Method * BuildMethod(const Json::Value &amp;json, boost::mpi::communicator &amp;world, boost::mpi::communicator &amp;comm, const std::string &amp;path)</div><div class="ttdoc">Set up the Method. </div><div class="ttdef"><b>Definition:</b> <a href="Method_8cpp_source.html#l00044">Method.cpp:44</a></div></div>
+<div class="ttc" id="classSSAGES_1_1Driver_html_a1e69ad8e3c64cca6cfbf136d967bbaa5"><div class="ttname"><a href="classSSAGES_1_1Driver.html#a1e69ad8e3c64cca6cfbf136d967bbaa5">SSAGES::Driver::world_</a></div><div class="ttdeci">boost::mpi::communicator world_</div><div class="ttdoc">MPI global communicator. </div><div class="ttdef"><b>Definition:</b> <a href="Driver_8h_source.html#l00051">Driver.h:51</a></div></div>
 </div><!-- fragment -->
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classSSAGES_1_1Driver_a336c56e2ac7b535172e7d596f5af30d6_cgraph.png" border="0" usemap="#classSSAGES_1_1Driver_a336c56e2ac7b535172e7d596f5af30d6_cgraph" alt=""/></div>
+<map name="classSSAGES_1_1Driver_a336c56e2ac7b535172e7d596f5af30d6_cgraph" id="classSSAGES_1_1Driver_a336c56e2ac7b535172e7d596f5af30d6_cgraph">
+<area shape="rect" id="node2" href="classSSAGES_1_1Method.html#a4440bebe9b649e17e83d1959362091c3" title="Set up the Method. " alt="" coords="253,400,461,427"/><area shape="rect" id="node3" href="classJson_1_1ObjectRequirement.html#a4ed02ae1d612a5efba1688fcdd2df092" title="Parse JSON value to generate Requirement(s). " alt="" coords="531,102,701,143"/><area shape="rect" id="node11" href="classJson_1_1ObjectRequirement.html#a9ac3b920001a35bc70580035d8d802b7" title="Validate JSON value. " alt="" coords="531,363,701,405"/><area shape="rect" id="node12" href="classJson_1_1Requirement.html#a60bc275c366eb59f192fa2e621268480" title="Get list of error messages. " alt="" coords="786,201,926,242"/><area shape="rect" id="node14" href="classJson_1_1Requirement.html#adfaec336a9f051d6f6b9a6d7f1d97b75" title="Check if errors have occured. " alt="" coords="786,593,926,634"/><area shape="rect" id="node19" href="classSSAGES_1_1Method.html#aa13579541a8c5946b825ee1617258571" title="Set Method&#39;s iteration. " alt="" coords="515,480,717,507"/><area shape="rect" id="node20" href="classSSAGES_1_1Umbrella.html#a4bfa24cabffe1b0526acd9c5c2ea6922" title="Set how often to log. " alt="" coords="509,531,723,557"/><area shape="rect" id="node4" href="classJson_1_1RequirementLoader.html#a82857d029b7ebfeb315f5b1b32401291" title="Extended Requirement loader. " alt="" coords="771,5,941,46"/><area shape="rect" id="node5" href="classJson_1_1RequirementLoader.html#aeb1344919deda4bd8b8aa8a00cb50390" title="Load specific requirement. " alt="" coords="771,70,941,111"/><area shape="rect" id="node6" href="classJson_1_1ObjectRequirement.html#a4f2e76636df4f7b153aaac02a1b05e4f" title="Reset Requirement. " alt="" coords="771,135,941,177"/><area shape="rect" id="node7" href="classJson_1_1ObjectRequirement.html#aa8181c37cbe67db098bc2b82cdea71ef" title="Clear errors on all Requirements. " alt="" coords="989,102,1160,143"/><area shape="rect" id="node9" href="classJson_1_1ObjectRequirement.html#a4fc797684496f4f0381d1388877c133d" title="Clear notices on all Requirements. " alt="" coords="989,167,1160,209"/><area shape="rect" id="node8" href="classJson_1_1Requirement.html#ace71ebbbcc885f0c4c391a3807c80f33" title="Clear list of error messages. " alt="" coords="1209,102,1349,143"/><area shape="rect" id="node10" href="classJson_1_1Requirement.html#a8a8a4020e4955be56dcacf4727ae5bc3" title="Clear list of notice messages. " alt="" coords="1209,167,1349,209"/><area shape="rect" id="node13" href="classJson_1_1Requirement.html#a46a0056414100386541cd1cb899e0030" title="Get list of notices. " alt="" coords="786,266,926,307"/><area shape="rect" id="node15" href="classJson_1_1Requirement.html#ad407cff3cc37295c3b2a7ebe31798548" title="Check if notices have been queued. " alt="" coords="786,331,926,373"/><area shape="rect" id="node16" href="classJson_1_1Requirement.html#adeb9efa6cf271d9cea0599ff2d458a08" title="Add error to list of error messages. " alt="" coords="786,397,926,438"/><area shape="rect" id="node17" href="classJson_1_1Requirement.html#a00feadb29fa33f4f2cca7362f12aaed4" title="Add message to list of notices. " alt="" coords="786,462,926,503"/><area shape="rect" id="node18" href="classJson_1_1Requirement.html#aa97494b642414d00482745a0d5b2c2c3" title="Validate that JSON value meets requirements. " alt="" coords="786,527,926,569"/></map>
+</div>
+</p>
+
 </div>
 </div>
 <a class="anchor" id="a240881074d49355f632dcb7983fa1408"></a>
@@ -572,20 +606,31 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="Driver_8h_source.html#l00199">199</a> of file <a class="el" href="Driver_8h_source.html">Driver.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;        {</div>
-<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;            <a class="code" href="classSSAGES_1_1SimObserver.html#ab4c3c59bdca5b200e225fc921275e5eb">SimObserver::BuildObservers</a>(json, <a class="code" href="classSSAGES_1_1Driver.html#ae524487495f4304ceb44e1a62178fbdc">_world</a>, <a class="code" href="classSSAGES_1_1Driver.html#ab54b93056e47131e9420bfbcd1607fad">_comm</a>, nwalks, <a class="code" href="classSSAGES_1_1Driver.html#ad092889b2da84e4ad69a6fa6c0b4898d">_wid</a>, <a class="code" href="classSSAGES_1_1Driver.html#af6ba8b16842a85ddbcef2b20014eb9f0">_observers</a>);</div>
-<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;</div>
-<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;            <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; o : <a class="code" href="classSSAGES_1_1Driver.html#af6ba8b16842a85ddbcef2b20014eb9f0">_observers</a>)</div>
-<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;                this-&gt;<a class="code" href="classSSAGES_1_1SimObservable.html#a1977a595a500d0077293c33e14173b51">AddObserver</a>(o);</div>
-<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;        }</div>
+<p>Definition at line <a class="el" href="Driver_8h_source.html#l00204">204</a> of file <a class="el" href="Driver_8h_source.html">Driver.h</a>.</p>
+
+<p>References <a class="el" href="SimObservable_8cpp_source.html#l00032">SSAGES::SimObservable::AddObserver()</a>, <a class="el" href="SimObserver_8cpp_source.html#l00100">SSAGES::SimObserver::BuildObservers()</a>, <a class="el" href="Driver_8h_source.html#l00052">comm_</a>, <a class="el" href="Driver_8h_source.html#l00073">observers_</a>, <a class="el" href="Driver_8h_source.html#l00055">wid_</a>, and <a class="el" href="Driver_8h_source.html#l00051">world_</a>.</p>
+<div class="fragment"><div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;        {</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;            <a class="code" href="classSSAGES_1_1SimObserver.html#ab4c3c59bdca5b200e225fc921275e5eb">SimObserver::BuildObservers</a>(json, <a class="code" href="classSSAGES_1_1Driver.html#a1e69ad8e3c64cca6cfbf136d967bbaa5">world_</a>, <a class="code" href="classSSAGES_1_1Driver.html#acd1b7fafaf06468d4bb9580fe7f76fcf">comm_</a>, nwalks, <a class="code" href="classSSAGES_1_1Driver.html#a0cc8d32364663146b04878ac642085eb">wid_</a>, <a class="code" href="classSSAGES_1_1Driver.html#a55d96ddba14b5abacd38dde4803ad460">observers_</a>);</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;</div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;            <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; o : <a class="code" href="classSSAGES_1_1Driver.html#a55d96ddba14b5abacd38dde4803ad460">observers_</a>)</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;                this-&gt;<a class="code" href="classSSAGES_1_1SimObservable.html#a1977a595a500d0077293c33e14173b51">AddObserver</a>(o);</div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;        }</div>
+<div class="ttc" id="classSSAGES_1_1Driver_html_a55d96ddba14b5abacd38dde4803ad460"><div class="ttname"><a href="classSSAGES_1_1Driver.html#a55d96ddba14b5abacd38dde4803ad460">SSAGES::Driver::observers_</a></div><div class="ttdeci">ObserverList observers_</div><div class="ttdoc">The observers that will be used for this driver. </div><div class="ttdef"><b>Definition:</b> <a href="Driver_8h_source.html#l00073">Driver.h:73</a></div></div>
+<div class="ttc" id="classSSAGES_1_1Driver_html_a0cc8d32364663146b04878ac642085eb"><div class="ttname"><a href="classSSAGES_1_1Driver.html#a0cc8d32364663146b04878ac642085eb">SSAGES::Driver::wid_</a></div><div class="ttdeci">const int wid_</div><div class="ttdoc">The node id that this driver belongs to. </div><div class="ttdef"><b>Definition:</b> <a href="Driver_8h_source.html#l00055">Driver.h:55</a></div></div>
+<div class="ttc" id="classSSAGES_1_1Driver_html_acd1b7fafaf06468d4bb9580fe7f76fcf"><div class="ttname"><a href="classSSAGES_1_1Driver.html#acd1b7fafaf06468d4bb9580fe7f76fcf">SSAGES::Driver::comm_</a></div><div class="ttdeci">boost::mpi::communicator comm_</div><div class="ttdoc">MPI local communicator. </div><div class="ttdef"><b>Definition:</b> <a href="Driver_8h_source.html#l00052">Driver.h:52</a></div></div>
 <div class="ttc" id="classSSAGES_1_1SimObservable_html_a1977a595a500d0077293c33e14173b51"><div class="ttname"><a href="classSSAGES_1_1SimObservable.html#a1977a595a500d0077293c33e14173b51">SSAGES::SimObservable::AddObserver</a></div><div class="ttdeci">virtual void AddObserver(SimObserver *observer)</div><div class="ttdoc">Add simulation observer. </div><div class="ttdef"><b>Definition:</b> <a href="SimObservable_8cpp_source.html#l00032">SimObservable.cpp:32</a></div></div>
-<div class="ttc" id="classSSAGES_1_1Driver_html_ae524487495f4304ceb44e1a62178fbdc"><div class="ttname"><a href="classSSAGES_1_1Driver.html#ae524487495f4304ceb44e1a62178fbdc">SSAGES::Driver::_world</a></div><div class="ttdeci">boost::mpi::communicator _world</div><div class="ttdoc">MPI global communicator. </div><div class="ttdef"><b>Definition:</b> <a href="Driver_8h_source.html#l00053">Driver.h:53</a></div></div>
 <div class="ttc" id="classSSAGES_1_1SimObserver_html_ab4c3c59bdca5b200e225fc921275e5eb"><div class="ttname"><a href="classSSAGES_1_1SimObserver.html#ab4c3c59bdca5b200e225fc921275e5eb">SSAGES::SimObserver::BuildObservers</a></div><div class="ttdeci">static void BuildObservers(const Json::Value &amp;json, boost::mpi::communicator world, boost::mpi::communicator comm, int numwalkers, int wid, ObserverList &amp;ol)</div><div class="ttdoc">Build list of observers. </div><div class="ttdef"><b>Definition:</b> <a href="SimObserver_8cpp_source.html#l00100">SimObserver.cpp:100</a></div></div>
-<div class="ttc" id="classSSAGES_1_1Driver_html_ab54b93056e47131e9420bfbcd1607fad"><div class="ttname"><a href="classSSAGES_1_1Driver.html#ab54b93056e47131e9420bfbcd1607fad">SSAGES::Driver::_comm</a></div><div class="ttdeci">boost::mpi::communicator _comm</div><div class="ttdoc">MPI local communicator. </div><div class="ttdef"><b>Definition:</b> <a href="Driver_8h_source.html#l00054">Driver.h:54</a></div></div>
-<div class="ttc" id="classSSAGES_1_1Driver_html_af6ba8b16842a85ddbcef2b20014eb9f0"><div class="ttname"><a href="classSSAGES_1_1Driver.html#af6ba8b16842a85ddbcef2b20014eb9f0">SSAGES::Driver::_observers</a></div><div class="ttdeci">ObserverList _observers</div><div class="ttdoc">The observers that will be used for this driver. </div><div class="ttdef"><b>Definition:</b> <a href="Driver_8h_source.html#l00072">Driver.h:72</a></div></div>
-<div class="ttc" id="classSSAGES_1_1Driver_html_ad092889b2da84e4ad69a6fa6c0b4898d"><div class="ttname"><a href="classSSAGES_1_1Driver.html#ad092889b2da84e4ad69a6fa6c0b4898d">SSAGES::Driver::_wid</a></div><div class="ttdeci">const int _wid</div><div class="ttdoc">The node id that this driver belongs to. </div><div class="ttdef"><b>Definition:</b> <a href="Driver_8h_source.html#l00057">Driver.h:57</a></div></div>
+<div class="ttc" id="classSSAGES_1_1Driver_html_a1e69ad8e3c64cca6cfbf136d967bbaa5"><div class="ttname"><a href="classSSAGES_1_1Driver.html#a1e69ad8e3c64cca6cfbf136d967bbaa5">SSAGES::Driver::world_</a></div><div class="ttdeci">boost::mpi::communicator world_</div><div class="ttdoc">MPI global communicator. </div><div class="ttdef"><b>Definition:</b> <a href="Driver_8h_source.html#l00051">Driver.h:51</a></div></div>
 </div><!-- fragment -->
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classSSAGES_1_1Driver_a240881074d49355f632dcb7983fa1408_cgraph.png" border="0" usemap="#classSSAGES_1_1Driver_a240881074d49355f632dcb7983fa1408_cgraph" alt=""/></div>
+<map name="classSSAGES_1_1Driver_a240881074d49355f632dcb7983fa1408_cgraph" id="classSSAGES_1_1Driver_a240881074d49355f632dcb7983fa1408_cgraph">
+<area shape="rect" id="node2" href="classSSAGES_1_1SimObservable.html#a1977a595a500d0077293c33e14173b51" title="Add simulation observer. " alt="" coords="273,105,447,146"/><area shape="rect" id="node3" href="classSSAGES_1_1SimObserver.html#ab4c3c59bdca5b200e225fc921275e5eb" title="Build list of observers. " alt="" coords="279,170,441,211"/><area shape="rect" id="node4" href="classJson_1_1ArrayRequirement.html#a216670b8136ad8d4ce0b428b669244f9" title="Parse JSON value and fill array. " alt="" coords="496,70,659,111"/><area shape="rect" id="node7" href="classJson_1_1ArrayRequirement.html#a6e334ac9cf70844544828d9dfa7246cb" title="Validate json value. " alt="" coords="496,201,659,242"/><area shape="rect" id="node8" href="classJson_1_1Requirement.html#a60bc275c366eb59f192fa2e621268480" title="Get list of error messages. " alt="" coords="722,135,862,177"/><area shape="rect" id="node13" href="classJson_1_1Requirement.html#adfaec336a9f051d6f6b9a6d7f1d97b75" title="Check if errors have occured. " alt="" coords="507,266,647,307"/><area shape="rect" id="node5" href="classJson_1_1RequirementLoader.html#aeb1344919deda4bd8b8aa8a00cb50390" title="Load specific requirement. " alt="" coords="707,5,877,46"/><area shape="rect" id="node6" href="classJson_1_1ArrayRequirement.html#a85750912e3853550a035a23a92f9875b" title="Reset array. " alt="" coords="711,70,873,111"/><area shape="rect" id="node9" href="classJson_1_1Requirement.html#a46a0056414100386541cd1cb899e0030" title="Get list of notices. " alt="" coords="722,201,862,242"/><area shape="rect" id="node10" href="classJson_1_1ArrayRequirement.html#a0e9cc07af4276f975231533fecbfc3d2" title="Test if set is unique. " alt="" coords="711,266,873,307"/><area shape="rect" id="node11" href="classJson_1_1Requirement.html#adeb9efa6cf271d9cea0599ff2d458a08" title="Add error to list of error messages. " alt="" coords="722,331,862,373"/><area shape="rect" id="node12" href="classJson_1_1Requirement.html#a00feadb29fa33f4f2cca7362f12aaed4" title="Add message to list of notices. " alt="" coords="722,397,862,438"/></map>
+</div>
+</p>
+
 </div>
 </div>
 <a class="anchor" id="a48a62ad102a81167c81e950297ba20cc"></a>
@@ -619,7 +664,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 </dl>
 <p>Execute the contents of an input file. The input file should be loaded with <a class="el" href="namespaceSSAGES.html#aee59580ec5081b4616fe75b3b3ab91d8" title="Read contents from a file. ">SSAGES::GetFileContents()</a> first. </p>
 
-<p>Implemented in <a class="el" href="classSSAGES_1_1LammpsDriver.html#ab61d98494408408736b28f11c35cd033">SSAGES::LammpsDriver</a>, and <a class="el" href="classSSAGES_1_1GromacsDriver.html#a0dcdd44795581a7d77ab82cdcfe5cc0d">SSAGES::GromacsDriver</a>.</p>
+<p>Implemented in <a class="el" href="classSSAGES_1_1GromacsDriver.html#a0dcdd44795581a7d77ab82cdcfe5cc0d">SSAGES::GromacsDriver</a>, <a class="el" href="classSSAGES_1_1OpenMDDriver.html#ab797d67c43cd833e120dd04c03be8db5">SSAGES::OpenMDDriver</a>, <a class="el" href="classSSAGES_1_1LammpsDriver.html#ab61d98494408408736b28f11c35cd033">SSAGES::LammpsDriver</a>, and <a class="el" href="classSSAGES_1_1QboxDriver.html#a9be6eb3fb0b650ea28e55f5a8ab87437">SSAGES::QboxDriver</a>.</p>
 
 </div>
 </div>
@@ -647,48 +692,63 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <p>Finalize the setup. </p>
 <p>Create the snapshot and put all gathered values into the local hook. Set up listeners as well. </p>
 
-<p>Definition at line <a class="el" href="Driver_8h_source.html#l00223">223</a> of file <a class="el" href="Driver_8h_source.html">Driver.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;        {</div>
-<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;            <span class="comment">// Check that Hook is not a Null pointer</span></div>
-<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;            <span class="keywordflow">if</span> (!<a class="code" href="classSSAGES_1_1Driver.html#a9817e954adcfc686e1a346b171b23166">_hook</a>) {</div>
-<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;                <span class="keywordflow">throw</span> std::runtime_error(</div>
-<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;                    <span class="stringliteral">&quot;Trying to finalize simulation with invalid Hook.&quot;</span></div>
-<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;                );</div>
-<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;            }</div>
-<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;</div>
-<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;            <span class="comment">// Initialize snapshot. </span></div>
-<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;            <a class="code" href="classSSAGES_1_1Driver.html#af97dd345f1defb7f51a5ffc05b735078">_snapshot</a> = <span class="keyword">new</span> Snapshot(<a class="code" href="classSSAGES_1_1Driver.html#ab54b93056e47131e9420bfbcd1607fad">_comm</a>, <a class="code" href="classSSAGES_1_1Driver.html#ad092889b2da84e4ad69a6fa6c0b4898d">_wid</a>);</div>
-<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;</div>
-<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;            <span class="comment">/* Remove this later? */</span></div>
-<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;            <span class="keywordflow">if</span>(<a class="code" href="classSSAGES_1_1Driver.html#a9817e954adcfc686e1a346b171b23166">_hook</a> != <span class="keyword">nullptr</span>)</div>
-<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;            {</div>
-<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;                <span class="comment">// Set the hook to snapshot</span></div>
-<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;                <a class="code" href="classSSAGES_1_1Driver.html#a9817e954adcfc686e1a346b171b23166">_hook</a>-&gt;<a class="code" href="classSSAGES_1_1Hook.html#a7b365c5617cad0b6f5674f316e89ed73">SetSnapshot</a>(<a class="code" href="classSSAGES_1_1Driver.html#af97dd345f1defb7f51a5ffc05b735078">_snapshot</a>);</div>
-<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;</div>
-<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;                <span class="comment">//Set the driver in the hook</span></div>
-<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;                <a class="code" href="classSSAGES_1_1Driver.html#a9817e954adcfc686e1a346b171b23166">_hook</a>-&gt;<a class="code" href="classSSAGES_1_1Hook.html#a33035a51cc7fe6b43f7f557346266649">SetMDDriver</a>(<span class="keyword">this</span>);</div>
-<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;</div>
-<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;                <span class="keywordflow">if</span>(<a class="code" href="classSSAGES_1_1Driver.html#ad9854a40154849452fdae930b463e06e">_method</a>)</div>
-<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;                    <a class="code" href="classSSAGES_1_1Driver.html#a9817e954adcfc686e1a346b171b23166">_hook</a>-&gt;<a class="code" href="classSSAGES_1_1Hook.html#ad86adfdc8e7e04d268306a7d61c6f20c">AddListener</a>(<a class="code" href="classSSAGES_1_1Driver.html#ad9854a40154849452fdae930b463e06e">_method</a>);</div>
-<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;</div>
-<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;                <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp;c : _constraints)</div>
-<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;                    <a class="code" href="classSSAGES_1_1Driver.html#a9817e954adcfc686e1a346b171b23166">_hook</a>-&gt;<a class="code" href="classSSAGES_1_1Hook.html#ad86adfdc8e7e04d268306a7d61c6f20c">AddListener</a>(c);</div>
-<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;</div>
-<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;                <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp;cv : <a class="code" href="classSSAGES_1_1Driver.html#acd1d5e3ac2b0585b6c21cf496af1d2fc">_CVs</a>)</div>
-<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;                    <a class="code" href="classSSAGES_1_1Driver.html#a9817e954adcfc686e1a346b171b23166">_hook</a>-&gt;<a class="code" href="classSSAGES_1_1Hook.html#a17c05357627bc757d1385bccf1e89018">AddCV</a>(cv);</div>
-<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;            }</div>
-<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;        }</div>
-<div class="ttc" id="classSSAGES_1_1Hook_html_a33035a51cc7fe6b43f7f557346266649"><div class="ttname"><a href="classSSAGES_1_1Hook.html#a33035a51cc7fe6b43f7f557346266649">SSAGES::Hook::SetMDDriver</a></div><div class="ttdeci">void SetMDDriver(Driver *MDDriver)</div><div class="ttdoc">Sets the active Driver. </div><div class="ttdef"><b>Definition:</b> <a href="Hook_8cpp_source.html#l00035">Hook.cpp:35</a></div></div>
-<div class="ttc" id="classSSAGES_1_1Driver_html_a9817e954adcfc686e1a346b171b23166"><div class="ttname"><a href="classSSAGES_1_1Driver.html#a9817e954adcfc686e1a346b171b23166">SSAGES::Driver::_hook</a></div><div class="ttdeci">Hook * _hook</div><div class="ttdoc">The hook that hooks into the MD simulation engine. </div><div class="ttdef"><b>Definition:</b> <a href="Driver_8h_source.html#l00060">Driver.h:60</a></div></div>
-<div class="ttc" id="classSSAGES_1_1Driver_html_af97dd345f1defb7f51a5ffc05b735078"><div class="ttname"><a href="classSSAGES_1_1Driver.html#af97dd345f1defb7f51a5ffc05b735078">SSAGES::Driver::_snapshot</a></div><div class="ttdeci">Snapshot * _snapshot</div><div class="ttdoc">The snapshot of your system. </div><div class="ttdef"><b>Definition:</b> <a href="Driver_8h_source.html#l00063">Driver.h:63</a></div></div>
-<div class="ttc" id="classSSAGES_1_1Hook_html_a17c05357627bc757d1385bccf1e89018"><div class="ttname"><a href="classSSAGES_1_1Hook.html#a17c05357627bc757d1385bccf1e89018">SSAGES::Hook::AddCV</a></div><div class="ttdeci">void AddCV(CollectiveVariable *cv)</div><div class="ttdoc">Add a CollectiveVariable to the hook. </div><div class="ttdef"><b>Definition:</b> <a href="Hook_8cpp_source.html#l00058">Hook.cpp:58</a></div></div>
-<div class="ttc" id="classSSAGES_1_1Hook_html_a7b365c5617cad0b6f5674f316e89ed73"><div class="ttname"><a href="classSSAGES_1_1Hook.html#a7b365c5617cad0b6f5674f316e89ed73">SSAGES::Hook::SetSnapshot</a></div><div class="ttdeci">void SetSnapshot(Snapshot *snapshot)</div><div class="ttdoc">Sets the active snapshot. </div><div class="ttdef"><b>Definition:</b> <a href="Hook_8cpp_source.html#l00029">Hook.cpp:29</a></div></div>
-<div class="ttc" id="classSSAGES_1_1Driver_html_ab54b93056e47131e9420bfbcd1607fad"><div class="ttname"><a href="classSSAGES_1_1Driver.html#ab54b93056e47131e9420bfbcd1607fad">SSAGES::Driver::_comm</a></div><div class="ttdeci">boost::mpi::communicator _comm</div><div class="ttdoc">MPI local communicator. </div><div class="ttdef"><b>Definition:</b> <a href="Driver_8h_source.html#l00054">Driver.h:54</a></div></div>
-<div class="ttc" id="classSSAGES_1_1Driver_html_acd1d5e3ac2b0585b6c21cf496af1d2fc"><div class="ttname"><a href="classSSAGES_1_1Driver.html#acd1d5e3ac2b0585b6c21cf496af1d2fc">SSAGES::Driver::_CVs</a></div><div class="ttdeci">CVList _CVs</div><div class="ttdoc">The CVs that will be used. </div><div class="ttdef"><b>Definition:</b> <a href="Driver_8h_source.html#l00069">Driver.h:69</a></div></div>
-<div class="ttc" id="classSSAGES_1_1Hook_html_ad86adfdc8e7e04d268306a7d61c6f20c"><div class="ttname"><a href="classSSAGES_1_1Hook.html#ad86adfdc8e7e04d268306a7d61c6f20c">SSAGES::Hook::AddListener</a></div><div class="ttdeci">void AddListener(EventListener *listener)</div><div class="ttdoc">Add a listener to the hook. </div><div class="ttdef"><b>Definition:</b> <a href="Hook_8cpp_source.html#l00046">Hook.cpp:46</a></div></div>
-<div class="ttc" id="classSSAGES_1_1Driver_html_ad092889b2da84e4ad69a6fa6c0b4898d"><div class="ttname"><a href="classSSAGES_1_1Driver.html#ad092889b2da84e4ad69a6fa6c0b4898d">SSAGES::Driver::_wid</a></div><div class="ttdeci">const int _wid</div><div class="ttdoc">The node id that this driver belongs to. </div><div class="ttdef"><b>Definition:</b> <a href="Driver_8h_source.html#l00057">Driver.h:57</a></div></div>
-<div class="ttc" id="classSSAGES_1_1Driver_html_ad9854a40154849452fdae930b463e06e"><div class="ttname"><a href="classSSAGES_1_1Driver.html#ad9854a40154849452fdae930b463e06e">SSAGES::Driver::_method</a></div><div class="ttdeci">Method * _method</div><div class="ttdoc">The Method that will be used. </div><div class="ttdef"><b>Definition:</b> <a href="Driver_8h_source.html#l00066">Driver.h:66</a></div></div>
+<p>Definition at line <a class="el" href="Driver_8h_source.html#l00218">218</a> of file <a class="el" href="Driver_8h_source.html">Driver.h</a>.</p>
+
+<p>References <a class="el" href="Hook_8cpp_source.html#l00114">SSAGES::Hook::AddCV()</a>, <a class="el" href="Hook_8cpp_source.html#l00102">SSAGES::Hook::AddListener()</a>, <a class="el" href="Driver_8h_source.html#l00052">comm_</a>, <a class="el" href="Driver_8h_source.html#l00076">constraints_</a>, <a class="el" href="Driver_8h_source.html#l00067">CVs_</a>, <a class="el" href="Driver_8h_source.html#l00058">hook_</a>, <a class="el" href="Driver_8h_source.html#l00070">iterations_</a>, <a class="el" href="Driver_8h_source.html#l00064">method_</a>, <a class="el" href="Hook_8cpp_source.html#l00091">SSAGES::Hook::SetMDDriver()</a>, <a class="el" href="Hook_8cpp_source.html#l00085">SSAGES::Hook::SetSnapshot()</a>, <a class="el" href="Snapshot_8h_source.html#l00218">SSAGES::Snapshot::SetTargetIterations()</a>, <a class="el" href="Driver_8h_source.html#l00061">snapshot_</a>, and <a class="el" href="Driver_8h_source.html#l00055">wid_</a>.</p>
+<div class="fragment"><div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;        {</div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;            <span class="comment">// Check that Hook is not a Null pointer</span></div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;            <span class="keywordflow">if</span> (!<a class="code" href="classSSAGES_1_1Driver.html#ae31f3e42d218451dadf5918da35c89ac">hook_</a>) {</div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;                <span class="keywordflow">throw</span> std::runtime_error(</div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;                    <span class="stringliteral">&quot;Trying to finalize simulation with invalid Hook.&quot;</span></div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;                );</div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;            }</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;</div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;            <span class="comment">// Initialize snapshot. </span></div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;            <a class="code" href="classSSAGES_1_1Driver.html#a28fb9e405360802a3ac83d61ccf610c1">snapshot_</a> = <span class="keyword">new</span> Snapshot(<a class="code" href="classSSAGES_1_1Driver.html#acd1b7fafaf06468d4bb9580fe7f76fcf">comm_</a>, <a class="code" href="classSSAGES_1_1Driver.html#a0cc8d32364663146b04878ac642085eb">wid_</a>);</div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;            <a class="code" href="classSSAGES_1_1Driver.html#a28fb9e405360802a3ac83d61ccf610c1">snapshot_</a>-&gt;<a class="code" href="classSSAGES_1_1Snapshot.html#a5fe83686ceb0193c0b6bb3fc99c953e0">SetTargetIterations</a>(<a class="code" href="classSSAGES_1_1Driver.html#a544add94846634a117548be3f0ff6b8d">iterations_</a>);</div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;</div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;            <span class="comment">/* Remove this later? */</span></div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;            <span class="keywordflow">if</span>(<a class="code" href="classSSAGES_1_1Driver.html#ae31f3e42d218451dadf5918da35c89ac">hook_</a> != <span class="keyword">nullptr</span>)</div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;            {</div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;                <span class="comment">// Set the hook to snapshot</span></div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;                <a class="code" href="classSSAGES_1_1Driver.html#ae31f3e42d218451dadf5918da35c89ac">hook_</a>-&gt;<a class="code" href="classSSAGES_1_1Hook.html#a7b365c5617cad0b6f5674f316e89ed73">SetSnapshot</a>(<a class="code" href="classSSAGES_1_1Driver.html#a28fb9e405360802a3ac83d61ccf610c1">snapshot_</a>);</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;</div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;                <span class="comment">//Set the driver in the hook</span></div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;                <a class="code" href="classSSAGES_1_1Driver.html#ae31f3e42d218451dadf5918da35c89ac">hook_</a>-&gt;<a class="code" href="classSSAGES_1_1Hook.html#a33035a51cc7fe6b43f7f557346266649">SetMDDriver</a>(<span class="keyword">this</span>);</div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;</div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;                <span class="keywordflow">if</span>(<a class="code" href="classSSAGES_1_1Driver.html#ad42c6aa3969781cce0daaa3de7276278">method_</a>)</div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;                    <a class="code" href="classSSAGES_1_1Driver.html#ae31f3e42d218451dadf5918da35c89ac">hook_</a>-&gt;<a class="code" href="classSSAGES_1_1Hook.html#ad86adfdc8e7e04d268306a7d61c6f20c">AddListener</a>(<a class="code" href="classSSAGES_1_1Driver.html#ad42c6aa3969781cce0daaa3de7276278">method_</a>);</div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;</div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;                <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp;c : <a class="code" href="classSSAGES_1_1Driver.html#afbd01ae43f60fb005580d67192aa920c">constraints_</a>)</div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;                    <a class="code" href="classSSAGES_1_1Driver.html#ae31f3e42d218451dadf5918da35c89ac">hook_</a>-&gt;<a class="code" href="classSSAGES_1_1Hook.html#ad86adfdc8e7e04d268306a7d61c6f20c">AddListener</a>(c);</div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;</div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;                <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp;cv : <a class="code" href="classSSAGES_1_1Driver.html#a5e272be9d9cb7f60355dfaf144a485cd">CVs_</a>)</div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;                    <a class="code" href="classSSAGES_1_1Driver.html#ae31f3e42d218451dadf5918da35c89ac">hook_</a>-&gt;<a class="code" href="classSSAGES_1_1Hook.html#a17c05357627bc757d1385bccf1e89018">AddCV</a>(cv);</div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;            }</div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;        }</div>
+<div class="ttc" id="classSSAGES_1_1Driver_html_a0cc8d32364663146b04878ac642085eb"><div class="ttname"><a href="classSSAGES_1_1Driver.html#a0cc8d32364663146b04878ac642085eb">SSAGES::Driver::wid_</a></div><div class="ttdeci">const int wid_</div><div class="ttdoc">The node id that this driver belongs to. </div><div class="ttdef"><b>Definition:</b> <a href="Driver_8h_source.html#l00055">Driver.h:55</a></div></div>
+<div class="ttc" id="classSSAGES_1_1Driver_html_a544add94846634a117548be3f0ff6b8d"><div class="ttname"><a href="classSSAGES_1_1Driver.html#a544add94846634a117548be3f0ff6b8d">SSAGES::Driver::iterations_</a></div><div class="ttdeci">int iterations_</div><div class="ttdoc">Target number of iterations. </div><div class="ttdef"><b>Definition:</b> <a href="Driver_8h_source.html#l00070">Driver.h:70</a></div></div>
+<div class="ttc" id="classSSAGES_1_1Snapshot_html_a5fe83686ceb0193c0b6bb3fc99c953e0"><div class="ttname"><a href="classSSAGES_1_1Snapshot.html#a5fe83686ceb0193c0b6bb3fc99c953e0">SSAGES::Snapshot::SetTargetIterations</a></div><div class="ttdeci">void SetTargetIterations(int target)</div><div class="ttdoc">Set target iterations. </div><div class="ttdef"><b>Definition:</b> <a href="Snapshot_8h_source.html#l00218">Snapshot.h:218</a></div></div>
+<div class="ttc" id="classSSAGES_1_1Driver_html_ad42c6aa3969781cce0daaa3de7276278"><div class="ttname"><a href="classSSAGES_1_1Driver.html#ad42c6aa3969781cce0daaa3de7276278">SSAGES::Driver::method_</a></div><div class="ttdeci">Method * method_</div><div class="ttdoc">The Method that will be used. </div><div class="ttdef"><b>Definition:</b> <a href="Driver_8h_source.html#l00064">Driver.h:64</a></div></div>
+<div class="ttc" id="classSSAGES_1_1Driver_html_acd1b7fafaf06468d4bb9580fe7f76fcf"><div class="ttname"><a href="classSSAGES_1_1Driver.html#acd1b7fafaf06468d4bb9580fe7f76fcf">SSAGES::Driver::comm_</a></div><div class="ttdeci">boost::mpi::communicator comm_</div><div class="ttdoc">MPI local communicator. </div><div class="ttdef"><b>Definition:</b> <a href="Driver_8h_source.html#l00052">Driver.h:52</a></div></div>
+<div class="ttc" id="classSSAGES_1_1Hook_html_a33035a51cc7fe6b43f7f557346266649"><div class="ttname"><a href="classSSAGES_1_1Hook.html#a33035a51cc7fe6b43f7f557346266649">SSAGES::Hook::SetMDDriver</a></div><div class="ttdeci">void SetMDDriver(Driver *MDDriver)</div><div class="ttdoc">Sets the active Driver. </div><div class="ttdef"><b>Definition:</b> <a href="Hook_8cpp_source.html#l00091">Hook.cpp:91</a></div></div>
+<div class="ttc" id="classSSAGES_1_1Driver_html_a5e272be9d9cb7f60355dfaf144a485cd"><div class="ttname"><a href="classSSAGES_1_1Driver.html#a5e272be9d9cb7f60355dfaf144a485cd">SSAGES::Driver::CVs_</a></div><div class="ttdeci">CVList CVs_</div><div class="ttdoc">The CVs that will be used. </div><div class="ttdef"><b>Definition:</b> <a href="Driver_8h_source.html#l00067">Driver.h:67</a></div></div>
+<div class="ttc" id="classSSAGES_1_1Driver_html_a28fb9e405360802a3ac83d61ccf610c1"><div class="ttname"><a href="classSSAGES_1_1Driver.html#a28fb9e405360802a3ac83d61ccf610c1">SSAGES::Driver::snapshot_</a></div><div class="ttdeci">Snapshot * snapshot_</div><div class="ttdoc">The snapshot of your system. </div><div class="ttdef"><b>Definition:</b> <a href="Driver_8h_source.html#l00061">Driver.h:61</a></div></div>
+<div class="ttc" id="classSSAGES_1_1Hook_html_a17c05357627bc757d1385bccf1e89018"><div class="ttname"><a href="classSSAGES_1_1Hook.html#a17c05357627bc757d1385bccf1e89018">SSAGES::Hook::AddCV</a></div><div class="ttdeci">void AddCV(CollectiveVariable *cv)</div><div class="ttdoc">Add a CollectiveVariable to the hook. </div><div class="ttdef"><b>Definition:</b> <a href="Hook_8cpp_source.html#l00114">Hook.cpp:114</a></div></div>
+<div class="ttc" id="classSSAGES_1_1Hook_html_a7b365c5617cad0b6f5674f316e89ed73"><div class="ttname"><a href="classSSAGES_1_1Hook.html#a7b365c5617cad0b6f5674f316e89ed73">SSAGES::Hook::SetSnapshot</a></div><div class="ttdeci">void SetSnapshot(Snapshot *snapshot)</div><div class="ttdoc">Sets the active snapshot. </div><div class="ttdef"><b>Definition:</b> <a href="Hook_8cpp_source.html#l00085">Hook.cpp:85</a></div></div>
+<div class="ttc" id="classSSAGES_1_1Driver_html_afbd01ae43f60fb005580d67192aa920c"><div class="ttname"><a href="classSSAGES_1_1Driver.html#afbd01ae43f60fb005580d67192aa920c">SSAGES::Driver::constraints_</a></div><div class="ttdeci">ConstraintList constraints_</div><div class="ttdoc">List of constraints to use. </div><div class="ttdef"><b>Definition:</b> <a href="Driver_8h_source.html#l00076">Driver.h:76</a></div></div>
+<div class="ttc" id="classSSAGES_1_1Hook_html_ad86adfdc8e7e04d268306a7d61c6f20c"><div class="ttname"><a href="classSSAGES_1_1Hook.html#ad86adfdc8e7e04d268306a7d61c6f20c">SSAGES::Hook::AddListener</a></div><div class="ttdeci">void AddListener(EventListener *listener)</div><div class="ttdoc">Add a listener to the hook. </div><div class="ttdef"><b>Definition:</b> <a href="Hook_8cpp_source.html#l00102">Hook.cpp:102</a></div></div>
+<div class="ttc" id="classSSAGES_1_1Driver_html_ae31f3e42d218451dadf5918da35c89ac"><div class="ttname"><a href="classSSAGES_1_1Driver.html#ae31f3e42d218451dadf5918da35c89ac">SSAGES::Driver::hook_</a></div><div class="ttdeci">Hook * hook_</div><div class="ttdoc">The hook that hooks into the MD simulation engine. </div><div class="ttdef"><b>Definition:</b> <a href="Driver_8h_source.html#l00058">Driver.h:58</a></div></div>
 </div><!-- fragment -->
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classSSAGES_1_1Driver_a6ad6342146725b51612ca8b9bb2f150e_cgraph.png" border="0" usemap="#classSSAGES_1_1Driver_a6ad6342146725b51612ca8b9bb2f150e_cgraph" alt=""/></div>
+<map name="classSSAGES_1_1Driver_a6ad6342146725b51612ca8b9bb2f150e_cgraph" id="classSSAGES_1_1Driver_a6ad6342146725b51612ca8b9bb2f150e_cgraph">
+<area shape="rect" id="node2" href="classSSAGES_1_1Hook.html#a17c05357627bc757d1385bccf1e89018" title="Add a CollectiveVariable to the hook. " alt="" coords="246,5,413,32"/><area shape="rect" id="node3" href="classSSAGES_1_1Hook.html#ad86adfdc8e7e04d268306a7d61c6f20c" title="Add a listener to the hook. " alt="" coords="233,56,426,83"/><area shape="rect" id="node4" href="classSSAGES_1_1Hook.html#a33035a51cc7fe6b43f7f557346266649" title="Sets the active Driver. " alt="" coords="229,107,429,133"/><area shape="rect" id="node5" href="classSSAGES_1_1Hook.html#a7b365c5617cad0b6f5674f316e89ed73" title="Sets the active snapshot. " alt="" coords="230,157,429,184"/><area shape="rect" id="node6" href="classSSAGES_1_1Snapshot.html#a5fe83686ceb0193c0b6bb3fc99c953e0" title="Set target iterations. " alt="" coords="227,209,432,250"/></map>
+</div>
+</p>
+
 </div>
 </div>
 <a class="anchor" id="ab30a7e25e72e9ad93cd44912a6178d41"></a>
@@ -713,13 +773,15 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 </div><div class="memdoc">
 
 <p>Get the input file contents. </p>
-<dl class="section return"><dt>Returns</dt><dd>The contents of <code>_inputfile</code>.</dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The contents of <code>inputfile_</code>.</dd></dl>
 <p>This function returns the contents of the input file.</p>
 <dl class="section note"><dt>Note</dt><dd>This function does not load the input file. If the input file has not been loaded before, an empty string will be returned. </dd></dl>
 
-<p>Definition at line <a class="el" href="Driver_8h_source.html#l00158">158</a> of file <a class="el" href="Driver_8h_source.html">Driver.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;{<span class="keywordflow">return</span> <a class="code" href="classSSAGES_1_1Driver.html#a00f16572c777f98f4b71e6f050a93ebc">_inputfile</a>;}</div>
-<div class="ttc" id="classSSAGES_1_1Driver_html_a00f16572c777f98f4b71e6f050a93ebc"><div class="ttname"><a href="classSSAGES_1_1Driver.html#a00f16572c777f98f4b71e6f050a93ebc">SSAGES::Driver::_inputfile</a></div><div class="ttdeci">std::string _inputfile</div><div class="ttdoc">Local input file. </div><div class="ttdef"><b>Definition:</b> <a href="Driver_8h_source.html#l00078">Driver.h:78</a></div></div>
+<p>Definition at line <a class="el" href="Driver_8h_source.html#l00159">159</a> of file <a class="el" href="Driver_8h_source.html">Driver.h</a>.</p>
+
+<p>References <a class="el" href="Driver_8h_source.html#l00079">inputfile_</a>.</p>
+<div class="fragment"><div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;{<span class="keywordflow">return</span> <a class="code" href="classSSAGES_1_1Driver.html#a669cc2a8bf73c9d0a09b4653598096f7">inputfile_</a>;}</div>
+<div class="ttc" id="classSSAGES_1_1Driver_html_a669cc2a8bf73c9d0a09b4653598096f7"><div class="ttname"><a href="classSSAGES_1_1Driver.html#a669cc2a8bf73c9d0a09b4653598096f7">SSAGES::Driver::inputfile_</a></div><div class="ttdeci">std::string inputfile_</div><div class="ttdoc">Local input file. </div><div class="ttdef"><b>Definition:</b> <a href="Driver_8h_source.html#l00079">Driver.h:79</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -756,50 +818,43 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 
 <p>Implements <a class="el" href="classSSAGES_1_1Serializable.html#aa4bc8d0ce033a025b0baa7cedccd8ebd">SSAGES::Serializable</a>.</p>
 
-<p>Reimplemented in <a class="el" href="classSSAGES_1_1LammpsDriver.html#aedae171ce2fbff603790a2c389d04a80">SSAGES::LammpsDriver</a>, and <a class="el" href="classSSAGES_1_1GromacsDriver.html#a8655eb778160661894e67631454ee43d">SSAGES::GromacsDriver</a>.</p>
+<p>Reimplemented in <a class="el" href="classSSAGES_1_1LammpsDriver.html#aedae171ce2fbff603790a2c389d04a80">SSAGES::LammpsDriver</a>, <a class="el" href="classSSAGES_1_1GromacsDriver.html#a8655eb778160661894e67631454ee43d">SSAGES::GromacsDriver</a>, and <a class="el" href="classSSAGES_1_1OpenMDDriver.html#a794cd15983a7761c5fea6639ae81137e">SSAGES::OpenMDDriver</a>.</p>
 
-<p>Definition at line <a class="el" href="Driver_8h_source.html#l00256">256</a> of file <a class="el" href="Driver_8h_source.html">Driver.h</a>.</p>
+<p>Definition at line <a class="el" href="Driver_8h_source.html#l00252">252</a> of file <a class="el" href="Driver_8h_source.html">Driver.h</a>.</p>
 
-<p>References <a class="el" href="Grid_8h_source.html#l00347">SSAGES::Grid::Serialize()</a>.</p>
+<p>References <a class="el" href="Driver_8h_source.html#l00052">comm_</a>, <a class="el" href="Driver_8h_source.html#l00067">CVs_</a>, <a class="el" href="Driver_8h_source.html#l00079">inputfile_</a>, <a class="el" href="Driver_8h_source.html#l00064">method_</a>, <a class="el" href="Driver_8h_source.html#l00085">readrestart_</a>, <a class="el" href="Driver_8h_source.html#l00082">restartname_</a>, <a class="el" href="classSSAGES_1_1Serializable.html#aa4bc8d0ce033a025b0baa7cedccd8ebd">SSAGES::Serializable::Serialize()</a>, and <a class="el" href="SimObservable_8h_source.html#l00046">SSAGES::SimObservable::SerializeObservers()</a>.</p>
 
-<p>Referenced by <a class="el" href="GromacsDriver_8h_source.html#l00091">SSAGES::GromacsDriver::Serialize()</a>, and <a class="el" href="JSONObserver_8cpp_source.html#l00149">SSAGES::JSONObserver::Visit()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;        {</div>
-<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;            <a class="code" href="classSSAGES_1_1SimObservable.html#ad343f4a158eb7402b68e09cbd14a97e7">SerializeObservers</a>(json[<span class="stringliteral">&quot;observers&quot;</span>]);</div>
-<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;</div>
-<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;            <a class="code" href="classSSAGES_1_1Driver.html#ad9854a40154849452fdae930b463e06e">_method</a>-&gt;<a class="code" href="classSSAGES_1_1Serializable.html#aa4bc8d0ce033a025b0baa7cedccd8ebd">Serialize</a>(json[<span class="stringliteral">&quot;method&quot;</span>]);</div>
+<p>Referenced by <a class="el" href="OpenMDDriver_8h_source.html#l00115">SSAGES::OpenMDDriver::Serialize()</a>, <a class="el" href="GromacsDriver_8h_source.html#l00128">SSAGES::GromacsDriver::Serialize()</a>, <a class="el" href="LammpsDriver_8h_source.html#l00174">SSAGES::LammpsDriver::Serialize()</a>, and <a class="el" href="JSONObserver_8cpp_source.html#l00149">SSAGES::JSONObserver::Visit()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;        {</div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;            <a class="code" href="classSSAGES_1_1SimObservable.html#ad343f4a158eb7402b68e09cbd14a97e7">SerializeObservers</a>(json[<span class="stringliteral">&quot;observers&quot;</span>]);</div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;</div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;            <a class="code" href="classSSAGES_1_1Driver.html#ad42c6aa3969781cce0daaa3de7276278">method_</a>-&gt;<a class="code" href="classSSAGES_1_1Serializable.html#aa4bc8d0ce033a025b0baa7cedccd8ebd">Serialize</a>(json[<span class="stringliteral">&quot;method&quot;</span>]);</div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;</div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;            <span class="keyword">auto</span>&amp; tmp = json[<span class="stringliteral">&quot;CVs&quot;</span>];</div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;            <span class="keywordflow">for</span>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i = 0; i &lt; <a class="code" href="classSSAGES_1_1Driver.html#a5e272be9d9cb7f60355dfaf144a485cd">CVs_</a>.size();i++)</div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;                <a class="code" href="classSSAGES_1_1Driver.html#a5e272be9d9cb7f60355dfaf144a485cd">CVs_</a>[i]-&gt;<a class="code" href="classSSAGES_1_1Driver.html#a1eed2dd5491b7688ea5e3cb7e5f4c8c7">Serialize</a>(tmp[i]);</div>
 <div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;</div>
-<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;            <span class="keyword">auto</span>* Grid = <a class="code" href="classSSAGES_1_1Driver.html#ad9854a40154849452fdae930b463e06e">_method</a>-&gt;<a class="code" href="classSSAGES_1_1Method.html#a5ba32ac160a7b058c964a7e81448f1d5">GetGrid</a>();</div>
-<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;</div>
-<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;            <span class="keywordflow">if</span>(Grid)</div>
-<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;                Grid-&gt;<a class="code" href="classSSAGES_1_1Grid.html#a5d7601c0639c07ed7917d7f94561b366">Serialize</a>(json[<span class="stringliteral">&quot;grid&quot;</span>]);</div>
-<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;</div>
-<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;            <span class="keyword">auto</span>&amp; tmp = json[<span class="stringliteral">&quot;CVs&quot;</span>];</div>
-<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;            <span class="keywordflow">for</span>(<span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> i = 0; i &lt; <a class="code" href="classSSAGES_1_1Driver.html#acd1d5e3ac2b0585b6c21cf496af1d2fc">_CVs</a>.size();i++)</div>
-<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;                <a class="code" href="classSSAGES_1_1Driver.html#acd1d5e3ac2b0585b6c21cf496af1d2fc">_CVs</a>[i]-&gt;<a class="code" href="classSSAGES_1_1Driver.html#a1eed2dd5491b7688ea5e3cb7e5f4c8c7">Serialize</a>(tmp[i]);</div>
-<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;</div>
-<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;            json[<span class="stringliteral">&quot;inputfile&quot;</span>] = <a class="code" href="classSSAGES_1_1Driver.html#a00f16572c777f98f4b71e6f050a93ebc">_inputfile</a>;</div>
-<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;            json[<span class="stringliteral">&quot;number processors&quot;</span>] = <a class="code" href="classSSAGES_1_1Driver.html#ab54b93056e47131e9420bfbcd1607fad">_comm</a>.size();</div>
-<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;            json[<span class="stringliteral">&quot;restart file&quot;</span>] = <a class="code" href="classSSAGES_1_1Driver.html#a2599cdfbe9c91aebc7eb8e36312b6ca5">_restartname</a>;</div>
-<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;            json[<span class="stringliteral">&quot;read restart&quot;</span>] = <a class="code" href="classSSAGES_1_1Driver.html#aab6559e1b2ad2e2fafe7f5c83f01226b">_readrestart</a>;</div>
-<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;        }</div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;            json[<span class="stringliteral">&quot;inputfile&quot;</span>] = <a class="code" href="classSSAGES_1_1Driver.html#a669cc2a8bf73c9d0a09b4653598096f7">inputfile_</a>;</div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;            json[<span class="stringliteral">&quot;number processors&quot;</span>] = <a class="code" href="classSSAGES_1_1Driver.html#acd1b7fafaf06468d4bb9580fe7f76fcf">comm_</a>.size();</div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;            json[<span class="stringliteral">&quot;restart file&quot;</span>] = <a class="code" href="classSSAGES_1_1Driver.html#a528109852b71549f0d156606430cc106">restartname_</a>;</div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;            json[<span class="stringliteral">&quot;read restart&quot;</span>] = <a class="code" href="classSSAGES_1_1Driver.html#a9ac4aae03e29106e1afd842ae3f5c7fc">readrestart_</a>;</div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;        }</div>
+<div class="ttc" id="classSSAGES_1_1Driver_html_a9ac4aae03e29106e1afd842ae3f5c7fc"><div class="ttname"><a href="classSSAGES_1_1Driver.html#a9ac4aae03e29106e1afd842ae3f5c7fc">SSAGES::Driver::readrestart_</a></div><div class="ttdeci">bool readrestart_</div><div class="ttdoc">Read a restart file. </div><div class="ttdef"><b>Definition:</b> <a href="Driver_8h_source.html#l00085">Driver.h:85</a></div></div>
+<div class="ttc" id="classSSAGES_1_1Driver_html_a528109852b71549f0d156606430cc106"><div class="ttname"><a href="classSSAGES_1_1Driver.html#a528109852b71549f0d156606430cc106">SSAGES::Driver::restartname_</a></div><div class="ttdeci">std::string restartname_</div><div class="ttdoc">MD engine Restart file name. </div><div class="ttdef"><b>Definition:</b> <a href="Driver_8h_source.html#l00082">Driver.h:82</a></div></div>
+<div class="ttc" id="classSSAGES_1_1Driver_html_ad42c6aa3969781cce0daaa3de7276278"><div class="ttname"><a href="classSSAGES_1_1Driver.html#ad42c6aa3969781cce0daaa3de7276278">SSAGES::Driver::method_</a></div><div class="ttdeci">Method * method_</div><div class="ttdoc">The Method that will be used. </div><div class="ttdef"><b>Definition:</b> <a href="Driver_8h_source.html#l00064">Driver.h:64</a></div></div>
 <div class="ttc" id="classSSAGES_1_1SimObservable_html_ad343f4a158eb7402b68e09cbd14a97e7"><div class="ttname"><a href="classSSAGES_1_1SimObservable.html#ad343f4a158eb7402b68e09cbd14a97e7">SSAGES::SimObservable::SerializeObservers</a></div><div class="ttdeci">void SerializeObservers(Json::Value &amp;json) const </div><div class="ttdoc">Serialize observers. </div><div class="ttdef"><b>Definition:</b> <a href="SimObservable_8h_source.html#l00046">SimObservable.h:46</a></div></div>
-<div class="ttc" id="classSSAGES_1_1Driver_html_aab6559e1b2ad2e2fafe7f5c83f01226b"><div class="ttname"><a href="classSSAGES_1_1Driver.html#aab6559e1b2ad2e2fafe7f5c83f01226b">SSAGES::Driver::_readrestart</a></div><div class="ttdeci">bool _readrestart</div><div class="ttdoc">Read a restart file. </div><div class="ttdef"><b>Definition:</b> <a href="Driver_8h_source.html#l00084">Driver.h:84</a></div></div>
-<div class="ttc" id="classSSAGES_1_1Driver_html_a1eed2dd5491b7688ea5e3cb7e5f4c8c7"><div class="ttname"><a href="classSSAGES_1_1Driver.html#a1eed2dd5491b7688ea5e3cb7e5f4c8c7">SSAGES::Driver::Serialize</a></div><div class="ttdeci">virtual void Serialize(Json::Value &amp;json) const override</div><div class="ttdoc">Serialize the class. </div><div class="ttdef"><b>Definition:</b> <a href="Driver_8h_source.html#l00256">Driver.h:256</a></div></div>
-<div class="ttc" id="classSSAGES_1_1Grid_html_a5d7601c0639c07ed7917d7f94561b366"><div class="ttname"><a href="classSSAGES_1_1Grid.html#a5d7601c0639c07ed7917d7f94561b366">SSAGES::Grid::Serialize</a></div><div class="ttdeci">virtual void Serialize(Json::Value &amp;json) const override</div><div class="ttdoc">Serialize the class. </div><div class="ttdef"><b>Definition:</b> <a href="Grid_8h_source.html#l00347">Grid.h:347</a></div></div>
-<div class="ttc" id="classSSAGES_1_1Method_html_a5ba32ac160a7b058c964a7e81448f1d5"><div class="ttname"><a href="classSSAGES_1_1Method.html#a5ba32ac160a7b058c964a7e81448f1d5">SSAGES::Method::GetGrid</a></div><div class="ttdeci">Grid * GetGrid() const </div><div class="ttdoc">Get the Grid. </div><div class="ttdef"><b>Definition:</b> <a href="Method_8h_source.html#l00112">Method.h:112</a></div></div>
-<div class="ttc" id="classSSAGES_1_1Driver_html_ab54b93056e47131e9420bfbcd1607fad"><div class="ttname"><a href="classSSAGES_1_1Driver.html#ab54b93056e47131e9420bfbcd1607fad">SSAGES::Driver::_comm</a></div><div class="ttdeci">boost::mpi::communicator _comm</div><div class="ttdoc">MPI local communicator. </div><div class="ttdef"><b>Definition:</b> <a href="Driver_8h_source.html#l00054">Driver.h:54</a></div></div>
+<div class="ttc" id="classSSAGES_1_1Driver_html_acd1b7fafaf06468d4bb9580fe7f76fcf"><div class="ttname"><a href="classSSAGES_1_1Driver.html#acd1b7fafaf06468d4bb9580fe7f76fcf">SSAGES::Driver::comm_</a></div><div class="ttdeci">boost::mpi::communicator comm_</div><div class="ttdoc">MPI local communicator. </div><div class="ttdef"><b>Definition:</b> <a href="Driver_8h_source.html#l00052">Driver.h:52</a></div></div>
+<div class="ttc" id="classSSAGES_1_1Driver_html_a1eed2dd5491b7688ea5e3cb7e5f4c8c7"><div class="ttname"><a href="classSSAGES_1_1Driver.html#a1eed2dd5491b7688ea5e3cb7e5f4c8c7">SSAGES::Driver::Serialize</a></div><div class="ttdeci">virtual void Serialize(Json::Value &amp;json) const override</div><div class="ttdoc">Serialize the class. </div><div class="ttdef"><b>Definition:</b> <a href="Driver_8h_source.html#l00252">Driver.h:252</a></div></div>
+<div class="ttc" id="classSSAGES_1_1Driver_html_a5e272be9d9cb7f60355dfaf144a485cd"><div class="ttname"><a href="classSSAGES_1_1Driver.html#a5e272be9d9cb7f60355dfaf144a485cd">SSAGES::Driver::CVs_</a></div><div class="ttdeci">CVList CVs_</div><div class="ttdoc">The CVs that will be used. </div><div class="ttdef"><b>Definition:</b> <a href="Driver_8h_source.html#l00067">Driver.h:67</a></div></div>
 <div class="ttc" id="classSSAGES_1_1Serializable_html_aa4bc8d0ce033a025b0baa7cedccd8ebd"><div class="ttname"><a href="classSSAGES_1_1Serializable.html#aa4bc8d0ce033a025b0baa7cedccd8ebd">SSAGES::Serializable::Serialize</a></div><div class="ttdeci">virtual void Serialize(Json::Value &amp;json) const =0</div><div class="ttdoc">Serialize the class. </div></div>
-<div class="ttc" id="classSSAGES_1_1Driver_html_a00f16572c777f98f4b71e6f050a93ebc"><div class="ttname"><a href="classSSAGES_1_1Driver.html#a00f16572c777f98f4b71e6f050a93ebc">SSAGES::Driver::_inputfile</a></div><div class="ttdeci">std::string _inputfile</div><div class="ttdoc">Local input file. </div><div class="ttdef"><b>Definition:</b> <a href="Driver_8h_source.html#l00078">Driver.h:78</a></div></div>
-<div class="ttc" id="classSSAGES_1_1Driver_html_acd1d5e3ac2b0585b6c21cf496af1d2fc"><div class="ttname"><a href="classSSAGES_1_1Driver.html#acd1d5e3ac2b0585b6c21cf496af1d2fc">SSAGES::Driver::_CVs</a></div><div class="ttdeci">CVList _CVs</div><div class="ttdoc">The CVs that will be used. </div><div class="ttdef"><b>Definition:</b> <a href="Driver_8h_source.html#l00069">Driver.h:69</a></div></div>
-<div class="ttc" id="classSSAGES_1_1Driver_html_ad9854a40154849452fdae930b463e06e"><div class="ttname"><a href="classSSAGES_1_1Driver.html#ad9854a40154849452fdae930b463e06e">SSAGES::Driver::_method</a></div><div class="ttdeci">Method * _method</div><div class="ttdoc">The Method that will be used. </div><div class="ttdef"><b>Definition:</b> <a href="Driver_8h_source.html#l00066">Driver.h:66</a></div></div>
-<div class="ttc" id="classSSAGES_1_1Driver_html_a2599cdfbe9c91aebc7eb8e36312b6ca5"><div class="ttname"><a href="classSSAGES_1_1Driver.html#a2599cdfbe9c91aebc7eb8e36312b6ca5">SSAGES::Driver::_restartname</a></div><div class="ttdeci">std::string _restartname</div><div class="ttdoc">MD engine Restart file name. </div><div class="ttdef"><b>Definition:</b> <a href="Driver_8h_source.html#l00081">Driver.h:81</a></div></div>
+<div class="ttc" id="classSSAGES_1_1Driver_html_a669cc2a8bf73c9d0a09b4653598096f7"><div class="ttname"><a href="classSSAGES_1_1Driver.html#a669cc2a8bf73c9d0a09b4653598096f7">SSAGES::Driver::inputfile_</a></div><div class="ttdeci">std::string inputfile_</div><div class="ttdoc">Local input file. </div><div class="ttdef"><b>Definition:</b> <a href="Driver_8h_source.html#l00079">Driver.h:79</a></div></div>
 </div><!-- fragment -->
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classSSAGES_1_1Driver_a1eed2dd5491b7688ea5e3cb7e5f4c8c7_cgraph.png" border="0" usemap="#classSSAGES_1_1Driver_a1eed2dd5491b7688ea5e3cb7e5f4c8c7_cgraph" alt=""/></div>
 <map name="classSSAGES_1_1Driver_a1eed2dd5491b7688ea5e3cb7e5f4c8c7_cgraph" id="classSSAGES_1_1Driver_a1eed2dd5491b7688ea5e3cb7e5f4c8c7_cgraph">
-<area shape="rect" id="node2" href="classSSAGES_1_1Grid.html#a5d7601c0639c07ed7917d7f94561b366" title="Serialize the class. " alt="" coords="233,5,399,32"/></map>
+<area shape="rect" id="node2" href="classSSAGES_1_1Serializable.html#aa4bc8d0ce033a025b0baa7cedccd8ebd" title="Serialize the class. " alt="" coords="244,5,396,46"/><area shape="rect" id="node3" href="classSSAGES_1_1SimObservable.html#ad343f4a158eb7402b68e09cbd14a97e7" title="Serialize observers. " alt="" coords="233,70,407,111"/></map>
 </div>
 </p>
 
@@ -808,7 +863,7 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classSSAGES_1_1Driver_a1eed2dd5491b7688ea5e3cb7e5f4c8c7_icgraph.png" border="0" usemap="#classSSAGES_1_1Driver_a1eed2dd5491b7688ea5e3cb7e5f4c8c7_icgraph" alt=""/></div>
 <map name="classSSAGES_1_1Driver_a1eed2dd5491b7688ea5e3cb7e5f4c8c7_icgraph" id="classSSAGES_1_1Driver_a1eed2dd5491b7688ea5e3cb7e5f4c8c7_icgraph">
-<area shape="rect" id="node2" href="classSSAGES_1_1GromacsDriver.html#a8655eb778160661894e67631454ee43d" title="Serialize the class. " alt="" coords="233,5,407,46"/><area shape="rect" id="node3" href="classSSAGES_1_1JSONObserver.html#a1c6bb7634a7b84bfc34291a67001213b" title="Visit driver. " alt="" coords="233,70,407,111"/></map>
+<area shape="rect" id="node2" href="classSSAGES_1_1OpenMDDriver.html#a794cd15983a7761c5fea6639ae81137e" title="Serialize the class. " alt="" coords="234,5,406,46"/><area shape="rect" id="node3" href="classSSAGES_1_1GromacsDriver.html#a8655eb778160661894e67631454ee43d" title="Serialize the class. " alt="" coords="233,70,407,111"/><area shape="rect" id="node4" href="classSSAGES_1_1LammpsDriver.html#aedae171ce2fbff603790a2c389d04a80" title="Serialize the class. " alt="" coords="235,135,405,177"/><area shape="rect" id="node5" href="classSSAGES_1_1JSONObserver.html#a1c6bb7634a7b84bfc34291a67001213b" title="Visit driver. " alt="" coords="233,201,407,242"/></map>
 </div>
 </p>
 
@@ -845,9 +900,11 @@ Here is the caller graph for this function:</div>
 </dl>
 <p>This function sets the name of the input file for the driver. </p>
 
-<p>Definition at line <a class="el" href="Driver_8h_source.html#l00166">166</a> of file <a class="el" href="Driver_8h_source.html">Driver.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;{ <a class="code" href="classSSAGES_1_1Driver.html#a00f16572c777f98f4b71e6f050a93ebc">_inputfile</a> = filename;}</div>
-<div class="ttc" id="classSSAGES_1_1Driver_html_a00f16572c777f98f4b71e6f050a93ebc"><div class="ttname"><a href="classSSAGES_1_1Driver.html#a00f16572c777f98f4b71e6f050a93ebc">SSAGES::Driver::_inputfile</a></div><div class="ttdeci">std::string _inputfile</div><div class="ttdoc">Local input file. </div><div class="ttdef"><b>Definition:</b> <a href="Driver_8h_source.html#l00078">Driver.h:78</a></div></div>
+<p>Definition at line <a class="el" href="Driver_8h_source.html#l00167">167</a> of file <a class="el" href="Driver_8h_source.html">Driver.h</a>.</p>
+
+<p>References <a class="el" href="Driver_8h_source.html#l00079">inputfile_</a>.</p>
+<div class="fragment"><div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;{ <a class="code" href="classSSAGES_1_1Driver.html#a669cc2a8bf73c9d0a09b4653598096f7">inputfile_</a> = filename;}</div>
+<div class="ttc" id="classSSAGES_1_1Driver_html_a669cc2a8bf73c9d0a09b4653598096f7"><div class="ttname"><a href="classSSAGES_1_1Driver.html#a669cc2a8bf73c9d0a09b4653598096f7">SSAGES::Driver::inputfile_</a></div><div class="ttdeci">std::string inputfile_</div><div class="ttdoc">Local input file. </div><div class="ttdef"><b>Definition:</b> <a href="Driver_8h_source.html#l00079">Driver.h:79</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -857,7 +914,7 @@ Here is the caller graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Oct 14 2016 11:38:55 for SSAGES by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Jun 7 2017 15:46:39 for SSAGES by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

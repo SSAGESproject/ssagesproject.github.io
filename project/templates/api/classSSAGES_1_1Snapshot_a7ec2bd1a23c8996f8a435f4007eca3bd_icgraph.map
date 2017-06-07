@@ -1,6 +1,0 @@
-<map id="SSAGES::Snapshot::GetSnapshotID" name="SSAGES::Snapshot::GetSnapshotID">
-<area shape="rect" id="node2" href="$classSSAGES_1_1ForwardFlux.html#a7cc072097543530dc0a0bfca98e526a9" title="Post&#45;integration hook. " alt="" coords="704,66,861,107"/>
-<area shape="rect" id="node3" href="$classSSAGES_1_1ForwardFlux.html#a70a3208d2e1f3c87190f356955e0774e" title="Read a given configuration from file and update snapshot. " alt="" coords="499,33,656,74"/>
-<area shape="rect" id="node4" href="$classSSAGES_1_1ForwardFlux.html#a9eb1c37d2647746f10ab6b76f71c128a" title="Sets up new library for a new run because previous library had no full successes. ..." alt="" coords="499,98,656,139"/>
-<area shape="rect" id="node5" href="$classSSAGES_1_1ForwardFlux.html#a7e683fc4fca0268c2ece573441513748" title="Write out configuration file. " alt="" coords="293,142,451,183"/>
-</map>

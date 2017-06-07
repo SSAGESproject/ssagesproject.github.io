@@ -114,7 +114,7 @@ Inheritance diagram for SSAGES::SimObservable:</div>
 <div class="dyncontent">
 <div class="center"><img src="classSSAGES_1_1SimObservable__inherit__graph.png" border="0" usemap="#SSAGES_1_1SimObservable_inherit__map" alt="Inheritance graph"/></div>
 <map name="SSAGES_1_1SimObservable_inherit__map" id="SSAGES_1_1SimObservable_inherit__map">
-<area shape="rect" id="node3" href="classSSAGES_1_1Driver.html" title="Abstract driver class for creating driver objects. " alt="" coords="129,155,249,181"/><area shape="rect" id="node2" href="classSSAGES_1_1Visitable.html" title="Base class for visitable objects. " alt="" coords="122,5,256,32"/><area shape="rect" id="node4" href="classSSAGES_1_1GromacsDriver.html" title="Driver for Gromacs simulations. " alt="" coords="5,229,179,256"/><area shape="rect" id="node5" href="classSSAGES_1_1LammpsDriver.html" title="Driver for LAMMPS simulations. " alt="" coords="203,229,373,256"/></map>
+<area shape="rect" id="node3" href="classSSAGES_1_1Driver.html" title="Abstract driver class for creating driver objects. " alt="" coords="325,155,445,181"/><area shape="rect" id="node2" href="classSSAGES_1_1Visitable.html" title="Base class for visitable objects. " alt="" coords="318,5,452,32"/><area shape="rect" id="node4" href="classSSAGES_1_1GromacsDriver.html" title="Driver for Gromacs simulations. " alt="" coords="5,229,179,256"/><area shape="rect" id="node5" href="classSSAGES_1_1LammpsDriver.html" title="Driver for LAMMPS simulations. " alt="" coords="203,229,373,256"/><area shape="rect" id="node6" href="classSSAGES_1_1OpenMDDriver.html" title="Driver for OpenMD simulations. " alt="" coords="398,229,569,256"/><area shape="rect" id="node7" href="classSSAGES_1_1QboxDriver.html" title="Driver for QBox simulation. " alt="" coords="594,229,744,256"/></map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -195,7 +195,7 @@ std::vector&lt; <a class="el" href="classSSAGES_1_1SimObserver.html">SimObserver
 
 <p>References <a class="el" href="SimObservable_8h_source.html#l00039">observers_</a>.</p>
 
-<p>Referenced by <a class="el" href="Driver_8h_source.html#l00203">SSAGES::Driver::BuildObservers()</a>.</p>
+<p>Referenced by <a class="el" href="Driver_8h_source.html#l00204">SSAGES::Driver::BuildObservers()</a>.</p>
 <div class="fragment"><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    {</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        <a class="code" href="classSSAGES_1_1SimObservable.html#a2462bab03779ab304a68d413cb5a97f2">observers_</a>.push_back(observer);</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    }</div>
@@ -238,7 +238,7 @@ Here is the caller graph for this function:</div>
 
 <p>References <a class="el" href="SimObservable_8h_source.html#l00039">observers_</a>.</p>
 
-<p>Referenced by <a class="el" href="Hook_8cpp_source.html#l00064">SSAGES::Hook::NotifyObservers()</a>.</p>
+<p>Referenced by <a class="el" href="Hook_8cpp_source.html#l00120">SSAGES::Hook::NotifyObservers()</a>.</p>
 <div class="fragment"><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    {</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; observer : <a class="code" href="classSSAGES_1_1SimObservable.html#a2462bab03779ab304a68d413cb5a97f2">observers_</a>)</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;            observer-&gt;Update(event);</div>
@@ -306,7 +306,7 @@ Here is the caller graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Mar 23 2017 13:11:12 for SSAGES by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Jun 7 2017 15:46:39 for SSAGES by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

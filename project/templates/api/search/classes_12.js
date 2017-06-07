@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['umbrella',['Umbrella',['../classSSAGES_1_1Umbrella.html',1,'SSAGES']]]
+  ['torsionalcv',['TorsionalCV',['../classSSAGES_1_1TorsionalCV.html',1,'SSAGES']]]
 ];

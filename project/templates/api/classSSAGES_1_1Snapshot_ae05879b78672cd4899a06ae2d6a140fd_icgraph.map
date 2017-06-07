@@ -1,10 +1,14 @@
 <map id="SSAGES::Snapshot::GetNumAtoms" name="SSAGES::Snapshot::GetNumAtoms">
-<area shape="rect" id="node2" href="$classSSAGES_1_1AngleCV.html#afc7cddc3872aeeeeb098c69f1126b594" title="Evaluate the CV. " alt="" coords="257,5,453,32"/>
-<area shape="rect" id="node3" href="$classSSAGES_1_1RadiusOfGyrationCV.html#a99c2148c2d12769abae1677ece4325ca" title="Evaluate the CV. " alt="" coords="260,57,449,98"/>
-<area shape="rect" id="node4" href="$classSSAGES_1_1ParticleCoordinateCV.html#afff49e8eb1571fe3527712be50da001e" title="Evaluate the CV. " alt="" coords="259,122,451,163"/>
-<area shape="rect" id="node5" href="$classSSAGES_1_1TorsionalCV.html#ae3e82fb11240eb780cfcc57b2b0112a5" title="Evaluate the CV. " alt="" coords="276,187,433,229"/>
-<area shape="rect" id="node6" href="$classSSAGES_1_1ParticlePositionCV.html#aa2ee9b7b3ca3133183e2d5f511251e29" title="Evaluate the CV. " alt="" coords="267,253,443,294"/>
-<area shape="rect" id="node7" href="$classSSAGES_1_1ParticleSeparationCV.html#ae6452c47bf1d849e2af60c84209a9955" title="Evaluate the CV. " alt="" coords="259,318,450,359"/>
-<area shape="rect" id="node8" href="$classSSAGES_1_1COPSSImage.html#a8e5feed1d4e4fd0b655cfd1447e7620e" title="Method call post integration. " alt="" coords="271,383,439,425"/>
-<area shape="rect" id="node9" href="$classSSAGES_1_1ABF.html#aeb9553ca7874df2ea8adc8b26e2d4b11" title="Post&#45;integration hook. " alt="" coords="251,449,458,476"/>
+<area shape="rect" id="node2" href="$classSSAGES_1_1ABF.html#abf6a6d7de8b1317b68280ad213f1e896" title="Computes the bias force. " alt="" coords="251,5,456,32"/>
+<area shape="rect" id="node3" href="$classSSAGES_1_1ABF.html#aeb9553ca7874df2ea8adc8b26e2d4b11" title="Post&#45;integration hook. " alt="" coords="505,31,711,57"/>
+<area shape="rect" id="node4" href="$classSSAGES_1_1BoxVolumeCV.html#a52f2b0c68a755e8b239fc40dbc2a7100" title="Evaluate the CV. " alt="" coords="268,107,439,149"/>
+<area shape="rect" id="node5" href="$classSSAGES_1_1AngleCV.html#afc7cddc3872aeeeeb098c69f1126b594" title="Evaluate the CV. " alt="" coords="255,173,451,200"/>
+<area shape="rect" id="node6" href="$classSSAGES_1_1TorsionalCV.html#ae3e82fb11240eb780cfcc57b2b0112a5" title="Evaluate the CV. " alt="" coords="275,225,432,266"/>
+<area shape="rect" id="node7" href="$classSSAGES_1_1ParticleCoordinateCV.html#afff49e8eb1571fe3527712be50da001e" title="Evaluate the CV. " alt="" coords="257,290,449,331"/>
+<area shape="rect" id="node8" href="$classSSAGES_1_1GyrationTensorCV.html#ac613c1659bd00b335c3d6de3d8ff0ebc" title="Evaluate the CV. " alt="" coords="257,355,450,397"/>
+<area shape="rect" id="node9" href="$classSSAGES_1_1ParticlePositionCV.html#aa2ee9b7b3ca3133183e2d5f511251e29" title="Evaluate the CV. " alt="" coords="265,421,441,462"/>
+<area shape="rect" id="node10" href="$classSSAGES_1_1RouseModeCV.html#a1468b1aabf81ceb2ef3feb3b8fc79d0d" title="Evaluate the CV. " alt="" coords="266,486,441,527"/>
+<area shape="rect" id="node11" href="$classSSAGES_1_1ParticleSeparationCV.html#ae6452c47bf1d849e2af60c84209a9955" title="Evaluate the CV. " alt="" coords="258,551,449,593"/>
+<area shape="rect" id="node12" href="$classSSAGES_1_1CoordinationNumberCV.html#a6f194016239a621176198844d060c4ac" title="Evaluate the CV. " alt="" coords="251,617,455,658"/>
+<area shape="rect" id="node13" href="$classSSAGES_1_1COPSSImage.html#a8e5feed1d4e4fd0b655cfd1447e7620e" title="Post&#45;integration hook. " alt="" coords="269,682,437,723"/>
 </map>
