@@ -113,7 +113,7 @@ a:hover {
     margin: 0 auto;
     bottom: 0;
     width: 100%;
-    background: #800000;
+    background: #8b0000;
 }
 
 .header-subnav li {
@@ -355,9 +355,9 @@ small {
       padding: 0 15px;
       line-height: 45px;
       color: white;
-      background: #000080; }
+      background: #008b8b !important; } /*Dropdown menu no hober*/
       .top-bar-section li.active:not(.has-form) a:not(.button):hover {
-        background: #0078a0;
+        background: #006f6f !important; /*Dropdown menu with hover*/
         color: white; }
     .top-bar-section .has-dropdown > a {
       padding-right: 35px !important; }
