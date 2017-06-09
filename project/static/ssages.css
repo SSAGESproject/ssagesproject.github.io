@@ -20,24 +20,45 @@ a:hover {
 .team-img {
     position: relative; 
     width:  200px;
-    height: auto;
+    height: 300px;
+    background-position: 50% 50%;
+    background-repeat:   no-repeat;
+    background-size:     cover; 
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    border-style: solid;
+    border-color: #800000;
+    border-width: 4px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.header-logo-img {
+    /*position: relative;*/ 
+    width:  auto;
+    height: 150px; 
+    display: inline-block;
+    background: #A9A9A9;
     background-position: 50% 50%;
     background-repeat:   no-repeat;
     background-size:     cover;
     padding: 1px 1px 20px 1px;
     margin-left: auto;
-    margin-right: auto;
-    display: block;
+    margin-right: auto; 
+    border-radius: 25px;
 }
-
 .index-logo { 
-    background-color: #FEFDFB !important;    
+    background-color: #A9A9A9 !important;
+    background: #A9A9A9 !important; 
+    width: 550px;
+    height: auto;
 }
 
 .download-img {
     position: relative; 
     width:  200px;
-";
+    height: auto;
     background-position: 50% 50%;
     background-repeat:   no-repeat;
     background-size:     cover;
@@ -60,9 +81,23 @@ a:hover {
     display: block;
 }
 
+.index-img {
+    position: relative;
+    width:  500px;
+    height: auto;
+    background-position: 50% 50%;
+    background-repeat:   no-repeat;
+    background-size:     cover;
+    padding: 1px 1px 20px 1px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
 .header {
     text-align: center;
-    background: #800000;
+    /*background: #884b4b;*/
+    background: #A9A9A9;
     background-size: cover;
     position: relative;
     overflow: visible;
@@ -81,6 +116,7 @@ a:hover {
     margin: 0 auto;
     bottom: 0;
     width: 100%;
+    background: #8b0000;
 }
 
 .header-subnav li {
@@ -112,6 +148,16 @@ html,body {
     background-color: #FEFDFB !important;
 }
 
+figcaption {
+    color: #587272 !important;
+    text-align: center;
+    font-weight: 100;
+    font-size: 15px;
+    font-style: italic;
+}
+
+
+
 h1 {
     color: #587272 !important;
     text-align: center;
@@ -126,7 +172,7 @@ h2 {
 }
 
 h4 {
-    color: #829595 !important;
+    color: #687777 !important;
     text-align: left;
 }
 
@@ -213,8 +259,7 @@ small {
 .footer .footer-links a {
     list-style: none;
     font-weight: 400;
-    color: #fff;
-    padding: 3rem 0 2rem;
+    color: #fff; 
     margin: 0;
     font-size: .875rem;
 }
@@ -312,9 +357,9 @@ small {
       padding: 0 15px;
       line-height: 45px;
       color: white;
-      background: #000080; }
+      background: #008b8b !important; } /*Dropdown menu no hober*/
       .top-bar-section li.active:not(.has-form) a:not(.button):hover {
-        background: #0078a0;
+        background: #006f6f !important; /*Dropdown menu with hover*/
         color: white; }
     .top-bar-section .has-dropdown > a {
       padding-right: 35px !important; }
@@ -412,5 +457,5 @@ small {
     width: auto;
     overflow: visible;
     clip: auto;
-    position: absolute !important; } }
+    position: absolute !important; } 
 

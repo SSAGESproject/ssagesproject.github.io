@@ -267,7 +267,7 @@ std::vector&lt; std::vector<br class="typebreak" />
 <tr class="separator:a882f74a324641a449216d0edbc5fdb5d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad3ff83869b7ef597d3641f0eb1649c82"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad3ff83869b7ef597d3641f0eb1649c82"></a>
 std::vector&lt; std::vector&lt; int &gt; &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSSAGES_1_1StringMethod.html#ad3ff83869b7ef597d3641f0eb1649c82">prev_IDs_</a></td></tr>
-<tr class="memdesc:ad3ff83869b7ef597d3641f0eb1649c82"><td class="mdescLeft">&#160;</td><td class="mdescRight">Store velocities for starting trajectories. <br /></td></tr>
+<tr class="memdesc:ad3ff83869b7ef597d3641f0eb1649c82"><td class="mdescLeft">&#160;</td><td class="mdescRight">Store atom IDs for starting trajectories. <br /></td></tr>
 <tr class="separator:ad3ff83869b7ef597d3641f0eb1649c82"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_classSSAGES_1_1Method"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classSSAGES_1_1Method')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classSSAGES_1_1Method.html">SSAGES::Method</a></td></tr>
 <tr class="memitem:a9bbdc5a2592ff76cfe71364ad4d2ce68 inherit pro_attribs_classSSAGES_1_1Method"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9bbdc5a2592ff76cfe71364ad4d2ce68"></a>
@@ -294,7 +294,7 @@ Additional Inherited Members</h2></td></tr>
 <div class="textblock"><p>String base class for FTS, <a class="el" href="classSSAGES_1_1Swarm.html" title="Swarm of Trajectories String Method. ">Swarm</a>, and elastic band. </p>
 <p>Implementation of a multi-walker finite string method with hard wall voronoi cells and running block averages. </p>
 
-<p>Definition at line <a class="el" href="StringMethod_8h_source.html#l00038">38</a> of file <a class="el" href="StringMethod_8h_source.html">StringMethod.h</a>.</p>
+<p>Definition at line <a class="el" href="StringMethod_8h_source.html#l00040">40</a> of file <a class="el" href="StringMethod_8h_source.html">StringMethod.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a089b2be2f90555e46ae7e146f484c155"></a>
 <div class="memitem">
@@ -365,23 +365,23 @@ Additional Inherited Members</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="StringMethod_8h_source.html#l00274">274</a> of file <a class="el" href="StringMethod_8h_source.html">StringMethod.h</a>.</p>
+<p>Definition at line <a class="el" href="StringMethod_8h_source.html#l00275">275</a> of file <a class="el" href="StringMethod_8h_source.html">StringMethod.h</a>.</p>
 
-<p>References <a class="el" href="StringMethod_8h_source.html#l00045">centers_</a>, and <a class="el" href="StringMethod_8h_source.html#l00048">newcenters_</a>.</p>
-<div class="fragment"><div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;                                            : </div>
-<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;                        <a class="code" href="classSSAGES_1_1Method.html#a7b4995b0fde5ed802f6a3a9b371fe9ad">Method</a>(frequency, world, comm), <a class="code" href="classSSAGES_1_1StringMethod.html#a8f5e8ddc90a86dc363d3323c31f8e3b7">centers_</a>(centers), </div>
-<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;                        <a class="code" href="classSSAGES_1_1StringMethod.html#ae356401c09835d8c2c10b5f38e86bf92">maxiterator_</a>(maxiterations), </div>
-<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;                        <a class="code" href="classSSAGES_1_1StringMethod.html#a51f68bc9e02055a96375617626240a79">cvspring_</a>(cvspring), <a class="code" href="classSSAGES_1_1StringMethod.html#ae1214f174d34de4481f639f7aab4b8c5">iterator_</a>(1) </div>
-<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160; </div>
-<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;        {</div>
-<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;            <a class="code" href="classSSAGES_1_1StringMethod.html#af62b2619c59a5b505d46ee861b034744">newcenters_</a>.resize(<a class="code" href="classSSAGES_1_1StringMethod.html#a8f5e8ddc90a86dc363d3323c31f8e3b7">centers_</a>.size(), 0);</div>
-<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;        }</div>
-<div class="ttc" id="classSSAGES_1_1StringMethod_html_a8f5e8ddc90a86dc363d3323c31f8e3b7"><div class="ttname"><a href="classSSAGES_1_1StringMethod.html#a8f5e8ddc90a86dc363d3323c31f8e3b7">SSAGES::StringMethod::centers_</a></div><div class="ttdeci">std::vector&lt; double &gt; centers_</div><div class="ttdoc">CV starting location values. </div><div class="ttdef"><b>Definition:</b> <a href="StringMethod_8h_source.html#l00045">StringMethod.h:45</a></div></div>
-<div class="ttc" id="classSSAGES_1_1StringMethod_html_af62b2619c59a5b505d46ee861b034744"><div class="ttname"><a href="classSSAGES_1_1StringMethod.html#af62b2619c59a5b505d46ee861b034744">SSAGES::StringMethod::newcenters_</a></div><div class="ttdeci">std::vector&lt; double &gt; newcenters_</div><div class="ttdoc">CV starting location values. </div><div class="ttdef"><b>Definition:</b> <a href="StringMethod_8h_source.html#l00048">StringMethod.h:48</a></div></div>
+<p>References <a class="el" href="StringMethod_8h_source.html#l00047">centers_</a>, and <a class="el" href="StringMethod_8h_source.html#l00050">newcenters_</a>.</p>
+<div class="fragment"><div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;                                            : </div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;                        <a class="code" href="classSSAGES_1_1Method.html#a7b4995b0fde5ed802f6a3a9b371fe9ad">Method</a>(frequency, world, comm), <a class="code" href="classSSAGES_1_1StringMethod.html#a8f5e8ddc90a86dc363d3323c31f8e3b7">centers_</a>(centers), </div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;                        <a class="code" href="classSSAGES_1_1StringMethod.html#ae356401c09835d8c2c10b5f38e86bf92">maxiterator_</a>(maxiterations), </div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;                        <a class="code" href="classSSAGES_1_1StringMethod.html#a51f68bc9e02055a96375617626240a79">cvspring_</a>(cvspring), <a class="code" href="classSSAGES_1_1StringMethod.html#ae1214f174d34de4481f639f7aab4b8c5">iterator_</a>(1) </div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160; </div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;        {</div>
+<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;            <a class="code" href="classSSAGES_1_1StringMethod.html#af62b2619c59a5b505d46ee861b034744">newcenters_</a>.resize(<a class="code" href="classSSAGES_1_1StringMethod.html#a8f5e8ddc90a86dc363d3323c31f8e3b7">centers_</a>.size(), 0);</div>
+<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;        }</div>
+<div class="ttc" id="classSSAGES_1_1StringMethod_html_a8f5e8ddc90a86dc363d3323c31f8e3b7"><div class="ttname"><a href="classSSAGES_1_1StringMethod.html#a8f5e8ddc90a86dc363d3323c31f8e3b7">SSAGES::StringMethod::centers_</a></div><div class="ttdeci">std::vector&lt; double &gt; centers_</div><div class="ttdoc">CV starting location values. </div><div class="ttdef"><b>Definition:</b> <a href="StringMethod_8h_source.html#l00047">StringMethod.h:47</a></div></div>
+<div class="ttc" id="classSSAGES_1_1StringMethod_html_af62b2619c59a5b505d46ee861b034744"><div class="ttname"><a href="classSSAGES_1_1StringMethod.html#af62b2619c59a5b505d46ee861b034744">SSAGES::StringMethod::newcenters_</a></div><div class="ttdeci">std::vector&lt; double &gt; newcenters_</div><div class="ttdoc">CV starting location values. </div><div class="ttdef"><b>Definition:</b> <a href="StringMethod_8h_source.html#l00050">StringMethod.h:50</a></div></div>
 <div class="ttc" id="classSSAGES_1_1Method_html_a7b4995b0fde5ed802f6a3a9b371fe9ad"><div class="ttname"><a href="classSSAGES_1_1Method.html#a7b4995b0fde5ed802f6a3a9b371fe9ad">SSAGES::Method::Method</a></div><div class="ttdeci">Method(unsigned int frequency, boost::mpi::communicator &amp;world, boost::mpi::communicator &amp;comm)</div><div class="ttdoc">Constructor. </div><div class="ttdef"><b>Definition:</b> <a href="Method_8h_source.html#l00059">Method.h:59</a></div></div>
-<div class="ttc" id="classSSAGES_1_1StringMethod_html_ae356401c09835d8c2c10b5f38e86bf92"><div class="ttname"><a href="classSSAGES_1_1StringMethod.html#ae356401c09835d8c2c10b5f38e86bf92">SSAGES::StringMethod::maxiterator_</a></div><div class="ttdeci">unsigned int maxiterator_</div><div class="ttdoc">Maximum cap on number of string method iterations performed. </div><div class="ttdef"><b>Definition:</b> <a href="StringMethod_8h_source.html#l00066">StringMethod.h:66</a></div></div>
-<div class="ttc" id="classSSAGES_1_1StringMethod_html_ae1214f174d34de4481f639f7aab4b8c5"><div class="ttname"><a href="classSSAGES_1_1StringMethod.html#ae1214f174d34de4481f639f7aab4b8c5">SSAGES::StringMethod::iterator_</a></div><div class="ttdeci">unsigned int iterator_</div><div class="ttdoc">The local method iterator. </div><div class="ttdef"><b>Definition:</b> <a href="StringMethod_8h_source.html#l00072">StringMethod.h:72</a></div></div>
-<div class="ttc" id="classSSAGES_1_1StringMethod_html_a51f68bc9e02055a96375617626240a79"><div class="ttname"><a href="classSSAGES_1_1StringMethod.html#a51f68bc9e02055a96375617626240a79">SSAGES::StringMethod::cvspring_</a></div><div class="ttdeci">std::vector&lt; double &gt; cvspring_</div><div class="ttdoc">Vector of spring constants. </div><div class="ttdef"><b>Definition:</b> <a href="StringMethod_8h_source.html#l00069">StringMethod.h:69</a></div></div>
+<div class="ttc" id="classSSAGES_1_1StringMethod_html_ae356401c09835d8c2c10b5f38e86bf92"><div class="ttname"><a href="classSSAGES_1_1StringMethod.html#ae356401c09835d8c2c10b5f38e86bf92">SSAGES::StringMethod::maxiterator_</a></div><div class="ttdeci">unsigned int maxiterator_</div><div class="ttdoc">Maximum cap on number of string method iterations performed. </div><div class="ttdef"><b>Definition:</b> <a href="StringMethod_8h_source.html#l00068">StringMethod.h:68</a></div></div>
+<div class="ttc" id="classSSAGES_1_1StringMethod_html_ae1214f174d34de4481f639f7aab4b8c5"><div class="ttname"><a href="classSSAGES_1_1StringMethod.html#ae1214f174d34de4481f639f7aab4b8c5">SSAGES::StringMethod::iterator_</a></div><div class="ttdeci">unsigned int iterator_</div><div class="ttdoc">The local method iterator. </div><div class="ttdef"><b>Definition:</b> <a href="StringMethod_8h_source.html#l00074">StringMethod.h:74</a></div></div>
+<div class="ttc" id="classSSAGES_1_1StringMethod_html_a51f68bc9e02055a96375617626240a79"><div class="ttname"><a href="classSSAGES_1_1StringMethod.html#a51f68bc9e02055a96375617626240a79">SSAGES::StringMethod::cvspring_</a></div><div class="ttdeci">std::vector&lt; double &gt; cvspring_</div><div class="ttdoc">Vector of spring constants. </div><div class="ttdef"><b>Definition:</b> <a href="StringMethod_8h_source.html#l00071">StringMethod.h:71</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -418,37 +418,37 @@ Additional Inherited Members</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>True if one of the exit criteria is met.</dd></dl>
 <p>The string method exits if either the maximum number of iteration has been reached or if all CVs are within the given tolerance thresholds. </p>
 
-<p>Definition at line <a class="el" href="StringMethod_8h_source.html#l00240">240</a> of file <a class="el" href="StringMethod_8h_source.html">StringMethod.h</a>.</p>
+<p>Definition at line <a class="el" href="StringMethod_8h_source.html#l00241">241</a> of file <a class="el" href="StringMethod_8h_source.html">StringMethod.h</a>.</p>
 
-<p>References <a class="el" href="Method_8h_source.html#l00048">SSAGES::Method::iteration_</a>, <a class="el" href="StringMethod_8h_source.html#l00066">maxiterator_</a>, <a class="el" href="StringMethod_8h_source.html#l00111">PrintString()</a>, <a class="el" href="StringMethod_8h_source.html#l00216">TolCheck()</a>, and <a class="el" href="Method_8h_source.html#l00044">SSAGES::Method::world_</a>.</p>
+<p>References <a class="el" href="Method_8h_source.html#l00048">SSAGES::Method::iteration_</a>, <a class="el" href="StringMethod_8h_source.html#l00068">maxiterator_</a>, <a class="el" href="StringMethod_8h_source.html#l00113">PrintString()</a>, <a class="el" href="StringMethod_8h_source.html#l00217">TolCheck()</a>, and <a class="el" href="Method_8h_source.html#l00044">SSAGES::Method::world_</a>.</p>
 
 <p>Referenced by <a class="el" href="ElasticBand_8cpp_source.html#l00029">SSAGES::ElasticBand::PostIntegration()</a>, <a class="el" href="FiniteTempString_8cpp_source.html#l00047">SSAGES::FiniteTempString::PostIntegration()</a>, and <a class="el" href="Swarm_8cpp_source.html#l00059">SSAGES::Swarm::PostIntegration()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;        {</div>
-<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;            <span class="keywordflow">if</span>(<a class="code" href="classSSAGES_1_1StringMethod.html#ae356401c09835d8c2c10b5f38e86bf92">maxiterator_</a> &amp;&amp; <a class="code" href="classSSAGES_1_1Method.html#a1b83499833edfa7a5ecf5bb4f2de9a62">iteration_</a> &gt; <a class="code" href="classSSAGES_1_1StringMethod.html#ae356401c09835d8c2c10b5f38e86bf92">maxiterator_</a>)</div>
-<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;            {</div>
-<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;                std::cout &lt;&lt; <span class="stringliteral">&quot;System has reached max string method iterations (&quot;</span> &lt;&lt; <a class="code" href="classSSAGES_1_1StringMethod.html#ae356401c09835d8c2c10b5f38e86bf92">maxiterator_</a> &lt;&lt; <span class="stringliteral">&quot;) as specified in the input file(s).&quot;</span> &lt;&lt; std::endl; </div>
-<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;                std::cout &lt;&lt; <span class="stringliteral">&quot;Exiting now&quot;</span> &lt;&lt; std::endl; </div>
-<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;                <a class="code" href="classSSAGES_1_1StringMethod.html#aaac8b878af3574e7da1c109e5d2bfaf0">PrintString</a>(CV); <span class="comment">//Ensure that the system prints out if it&#39;s about to exit</span></div>
-<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;                <a class="code" href="classSSAGES_1_1Method.html#a9bbdc5a2592ff76cfe71364ad4d2ce68">world_</a>.abort(-1);</div>
-<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;            }</div>
-<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;</div>
-<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;            <span class="keywordtype">bool</span> local_tolvalue = <a class="code" href="classSSAGES_1_1StringMethod.html#abe34b4fa1d6da8f6f04b13b389c7f0de">TolCheck</a>();</div>
-<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;</div>
-<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;            MPI_Allreduce(MPI::IN_PLACE, &amp;local_tolvalue, 1, MPI::BOOL, MPI::LAND, <a class="code" href="classSSAGES_1_1Method.html#a9bbdc5a2592ff76cfe71364ad4d2ce68">world_</a>);</div>
-<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;</div>
-<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;            <span class="keywordflow">if</span>(local_tolvalue)</div>
-<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;            {</div>
-<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;                std::cout &lt;&lt; <span class="stringliteral">&quot;System has converged within tolerance criteria. Exiting now&quot;</span> &lt;&lt; std::endl;</div>
-<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;                <a class="code" href="classSSAGES_1_1StringMethod.html#aaac8b878af3574e7da1c109e5d2bfaf0">PrintString</a>(CV); <span class="comment">//Ensure that the system prints out if it&#39;s about to exit</span></div>
-<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;                <a class="code" href="classSSAGES_1_1Method.html#a9bbdc5a2592ff76cfe71364ad4d2ce68">world_</a>.abort(-1);</div>
-<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;            }</div>
-<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;</div>
-<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;        }</div>
-<div class="ttc" id="classSSAGES_1_1StringMethod_html_abe34b4fa1d6da8f6f04b13b389c7f0de"><div class="ttname"><a href="classSSAGES_1_1StringMethod.html#abe34b4fa1d6da8f6f04b13b389c7f0de">SSAGES::StringMethod::TolCheck</a></div><div class="ttdeci">bool TolCheck() const </div><div class="ttdoc">Check whether tolerance criteria has been met. </div><div class="ttdef"><b>Definition:</b> <a href="StringMethod_8h_source.html#l00216">StringMethod.h:216</a></div></div>
+<div class="fragment"><div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;        {</div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;            <span class="keywordflow">if</span>(<a class="code" href="classSSAGES_1_1StringMethod.html#ae356401c09835d8c2c10b5f38e86bf92">maxiterator_</a> &amp;&amp; <a class="code" href="classSSAGES_1_1Method.html#a1b83499833edfa7a5ecf5bb4f2de9a62">iteration_</a> &gt; <a class="code" href="classSSAGES_1_1StringMethod.html#ae356401c09835d8c2c10b5f38e86bf92">maxiterator_</a>)</div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;            {</div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;                std::cout &lt;&lt; <span class="stringliteral">&quot;System has reached max string method iterations (&quot;</span> &lt;&lt; <a class="code" href="classSSAGES_1_1StringMethod.html#ae356401c09835d8c2c10b5f38e86bf92">maxiterator_</a> &lt;&lt; <span class="stringliteral">&quot;) as specified in the input file(s).&quot;</span> &lt;&lt; std::endl; </div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;                std::cout &lt;&lt; <span class="stringliteral">&quot;Exiting now&quot;</span> &lt;&lt; std::endl; </div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;                <a class="code" href="classSSAGES_1_1StringMethod.html#aaac8b878af3574e7da1c109e5d2bfaf0">PrintString</a>(CV); <span class="comment">//Ensure that the system prints out if it&#39;s about to exit</span></div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;                <a class="code" href="classSSAGES_1_1Method.html#a9bbdc5a2592ff76cfe71364ad4d2ce68">world_</a>.abort(-1);</div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;            }</div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;</div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;            <span class="keywordtype">int</span> local_tolvalue = <a class="code" href="classSSAGES_1_1StringMethod.html#abe34b4fa1d6da8f6f04b13b389c7f0de">TolCheck</a>();</div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;</div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;            MPI_Allreduce(MPI_IN_PLACE, &amp;local_tolvalue, 1, MPI_INT, MPI_LAND, <a class="code" href="classSSAGES_1_1Method.html#a9bbdc5a2592ff76cfe71364ad4d2ce68">world_</a>);</div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;</div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;            <span class="keywordflow">if</span>(local_tolvalue)</div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;            {</div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;                std::cout &lt;&lt; <span class="stringliteral">&quot;System has converged within tolerance criteria. Exiting now&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;                <a class="code" href="classSSAGES_1_1StringMethod.html#aaac8b878af3574e7da1c109e5d2bfaf0">PrintString</a>(CV); <span class="comment">//Ensure that the system prints out if it&#39;s about to exit</span></div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;                <a class="code" href="classSSAGES_1_1Method.html#a9bbdc5a2592ff76cfe71364ad4d2ce68">world_</a>.abort(-1);</div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;            }</div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;</div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;            <span class="keywordflow">return</span> <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;        }</div>
+<div class="ttc" id="classSSAGES_1_1StringMethod_html_abe34b4fa1d6da8f6f04b13b389c7f0de"><div class="ttname"><a href="classSSAGES_1_1StringMethod.html#abe34b4fa1d6da8f6f04b13b389c7f0de">SSAGES::StringMethod::TolCheck</a></div><div class="ttdeci">bool TolCheck() const </div><div class="ttdoc">Check whether tolerance criteria has been met. </div><div class="ttdef"><b>Definition:</b> <a href="StringMethod_8h_source.html#l00217">StringMethod.h:217</a></div></div>
 <div class="ttc" id="classSSAGES_1_1Method_html_a1b83499833edfa7a5ecf5bb4f2de9a62"><div class="ttname"><a href="classSSAGES_1_1Method.html#a1b83499833edfa7a5ecf5bb4f2de9a62">SSAGES::Method::iteration_</a></div><div class="ttdeci">unsigned int iteration_</div><div class="ttdoc">Number of the method iteration. </div><div class="ttdef"><b>Definition:</b> <a href="Method_8h_source.html#l00048">Method.h:48</a></div></div>
-<div class="ttc" id="classSSAGES_1_1StringMethod_html_ae356401c09835d8c2c10b5f38e86bf92"><div class="ttname"><a href="classSSAGES_1_1StringMethod.html#ae356401c09835d8c2c10b5f38e86bf92">SSAGES::StringMethod::maxiterator_</a></div><div class="ttdeci">unsigned int maxiterator_</div><div class="ttdoc">Maximum cap on number of string method iterations performed. </div><div class="ttdef"><b>Definition:</b> <a href="StringMethod_8h_source.html#l00066">StringMethod.h:66</a></div></div>
-<div class="ttc" id="classSSAGES_1_1StringMethod_html_aaac8b878af3574e7da1c109e5d2bfaf0"><div class="ttname"><a href="classSSAGES_1_1StringMethod.html#aaac8b878af3574e7da1c109e5d2bfaf0">SSAGES::StringMethod::PrintString</a></div><div class="ttdeci">void PrintString(const CVList &amp;CV)</div><div class="ttdoc">Prints the CV positions to file. </div><div class="ttdef"><b>Definition:</b> <a href="StringMethod_8h_source.html#l00111">StringMethod.h:111</a></div></div>
+<div class="ttc" id="classSSAGES_1_1StringMethod_html_ae356401c09835d8c2c10b5f38e86bf92"><div class="ttname"><a href="classSSAGES_1_1StringMethod.html#ae356401c09835d8c2c10b5f38e86bf92">SSAGES::StringMethod::maxiterator_</a></div><div class="ttdeci">unsigned int maxiterator_</div><div class="ttdoc">Maximum cap on number of string method iterations performed. </div><div class="ttdef"><b>Definition:</b> <a href="StringMethod_8h_source.html#l00068">StringMethod.h:68</a></div></div>
+<div class="ttc" id="classSSAGES_1_1StringMethod_html_aaac8b878af3574e7da1c109e5d2bfaf0"><div class="ttname"><a href="classSSAGES_1_1StringMethod.html#aaac8b878af3574e7da1c109e5d2bfaf0">SSAGES::StringMethod::PrintString</a></div><div class="ttdeci">void PrintString(const CVList &amp;CV)</div><div class="ttdoc">Prints the CV positions to file. </div><div class="ttdef"><b>Definition:</b> <a href="StringMethod_8h_source.html#l00113">StringMethod.h:113</a></div></div>
 <div class="ttc" id="classSSAGES_1_1Method_html_a9bbdc5a2592ff76cfe71364ad4d2ce68"><div class="ttname"><a href="classSSAGES_1_1Method.html#a9bbdc5a2592ff76cfe71364ad4d2ce68">SSAGES::Method::world_</a></div><div class="ttdeci">boost::mpi::communicator world_</div><div class="ttdoc">Global MPI communicator. </div><div class="ttdef"><b>Definition:</b> <a href="Method_8h_source.html#l00044">Method.h:44</a></div></div>
 </div><!-- fragment -->
 <p><div class="dynheader">
@@ -513,24 +513,24 @@ Here is the caller graph for this function:</div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Sum of distances between the x-values and y-values. </dd></dl>
 
-<p>Definition at line <a class="el" href="StringMethod_8h_source.html#l00101">101</a> of file <a class="el" href="StringMethod_8h_source.html">StringMethod.h</a>.</p>
+<p>Definition at line <a class="el" href="StringMethod_8h_source.html#l00103">103</a> of file <a class="el" href="StringMethod_8h_source.html">StringMethod.h</a>.</p>
 
-<p>Referenced by <a class="el" href="Swarm_8cpp_source.html#l00264">SSAGES::Swarm::StringUpdate()</a>, and <a class="el" href="FiniteTempString_8cpp_source.html#l00196">SSAGES::FiniteTempString::StringUpdate()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        {</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;            <span class="keywordtype">double</span> <a class="code" href="classSSAGES_1_1StringMethod.html#a7c26e585db0cb798a1b64f41f913726b">distance</a> = 0;</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;            <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; x.size(); i++)</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;                distance += pow((x[i] - y[i]),2);</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;            <span class="keywordflow">return</span> sqrt(distance);</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;        }</div>
-<div class="ttc" id="classSSAGES_1_1StringMethod_html_a7c26e585db0cb798a1b64f41f913726b"><div class="ttname"><a href="classSSAGES_1_1StringMethod.html#a7c26e585db0cb798a1b64f41f913726b">SSAGES::StringMethod::distance</a></div><div class="ttdeci">double distance(const std::vector&lt; double &gt; &amp;x, const std::vector&lt; double &gt; &amp;y) const </div><div class="ttdoc">Helper function for calculating distances. </div><div class="ttdef"><b>Definition:</b> <a href="StringMethod_8h_source.html#l00101">StringMethod.h:101</a></div></div>
+<p>Referenced by <a class="el" href="FiniteTempString_8cpp_source.html#l00197">SSAGES::FiniteTempString::StringUpdate()</a>, and <a class="el" href="Swarm_8cpp_source.html#l00264">SSAGES::Swarm::StringUpdate()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;        {</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;            <span class="keywordtype">double</span> <a class="code" href="classSSAGES_1_1StringMethod.html#a7c26e585db0cb798a1b64f41f913726b">distance</a> = 0;</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;            <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> i = 0; i &lt; x.size(); i++)</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;                distance += pow((x[i] - y[i]),2);</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;            <span class="keywordflow">return</span> sqrt(distance);</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;        }</div>
+<div class="ttc" id="classSSAGES_1_1StringMethod_html_a7c26e585db0cb798a1b64f41f913726b"><div class="ttname"><a href="classSSAGES_1_1StringMethod.html#a7c26e585db0cb798a1b64f41f913726b">SSAGES::StringMethod::distance</a></div><div class="ttdeci">double distance(const std::vector&lt; double &gt; &amp;x, const std::vector&lt; double &gt; &amp;y) const </div><div class="ttdoc">Helper function for calculating distances. </div><div class="ttdef"><b>Definition:</b> <a href="StringMethod_8h_source.html#l00103">StringMethod.h:103</a></div></div>
 </div><!-- fragment -->
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classSSAGES_1_1StringMethod_a7c26e585db0cb798a1b64f41f913726b_icgraph.png" border="0" usemap="#classSSAGES_1_1StringMethod_a7c26e585db0cb798a1b64f41f913726b_icgraph" alt=""/></div>
 <map name="classSSAGES_1_1StringMethod_a7c26e585db0cb798a1b64f41f913726b_icgraph" id="classSSAGES_1_1StringMethod_a7c26e585db0cb798a1b64f41f913726b_icgraph">
-<area shape="rect" id="node2" href="classSSAGES_1_1Swarm.html#aa585121e2046df1f1c911e9214e15b8b" title="Updates the positions of the string. " alt="" coords="216,5,427,32"/><area shape="rect" id="node4" href="classSSAGES_1_1FiniteTempString.html#a7d621d15dd9a188ba2457573d4c9271d" title="Updates the string according to the FTS method. " alt="" coords="229,57,413,98"/><area shape="rect" id="node3" href="classSSAGES_1_1Swarm.html#a96f0c22548efac1fda6a9ec5e8241bc8" title="Post&#45;integration hook. " alt="" coords="475,5,698,32"/><area shape="rect" id="node5" href="classSSAGES_1_1FiniteTempString.html#a25386bea8ac1e8723f019999b8438efc" title="Post&#45;integration hook. " alt="" coords="495,57,679,98"/></map>
+<area shape="rect" id="node2" href="classSSAGES_1_1FiniteTempString.html#a7d621d15dd9a188ba2457573d4c9271d" title="Updates the string according to the FTS method. " alt="" coords="229,5,413,46"/><area shape="rect" id="node4" href="classSSAGES_1_1Swarm.html#aa585121e2046df1f1c911e9214e15b8b" title="Updates the positions of the string. " alt="" coords="216,71,427,97"/><area shape="rect" id="node3" href="classSSAGES_1_1FiniteTempString.html#a25386bea8ac1e8723f019999b8438efc" title="Post&#45;integration hook. " alt="" coords="495,5,679,46"/><area shape="rect" id="node5" href="classSSAGES_1_1Swarm.html#a96f0c22548efac1fda6a9ec5e8241bc8" title="Post&#45;integration hook. " alt="" coords="475,71,698,97"/></map>
 </div>
 </p>
 
@@ -577,31 +577,31 @@ Here is the caller graph for this function:</div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="StringMethod_8h_source.html#l00131">131</a> of file <a class="el" href="StringMethod_8h_source.html">StringMethod.h</a>.</p>
+<p>Definition at line <a class="el" href="StringMethod_8h_source.html#l00133">133</a> of file <a class="el" href="StringMethod_8h_source.html">StringMethod.h</a>.</p>
 
-<p>References <a class="el" href="StringMethod_8h_source.html#l00045">centers_</a>, <a class="el" href="Method_8h_source.html#l00045">SSAGES::Method::comm_</a>, <a class="el" href="StringMethod_8h_source.html#l00081">recneigh_</a>, <a class="el" href="StringMethod_8h_source.html#l00078">sendneigh_</a>, and <a class="el" href="Method_8h_source.html#l00044">SSAGES::Method::world_</a>.</p>
+<p>References <a class="el" href="StringMethod_8h_source.html#l00047">centers_</a>, <a class="el" href="Method_8h_source.html#l00045">SSAGES::Method::comm_</a>, <a class="el" href="StringMethod_8h_source.html#l00083">recneigh_</a>, <a class="el" href="StringMethod_8h_source.html#l00080">sendneigh_</a>, and <a class="el" href="Method_8h_source.html#l00044">SSAGES::Method::world_</a>.</p>
 
-<p>Referenced by <a class="el" href="ElasticBand_8cpp_source.html#l00080">SSAGES::ElasticBand::StringUpdate()</a>, <a class="el" href="Swarm_8cpp_source.html#l00264">SSAGES::Swarm::StringUpdate()</a>, and <a class="el" href="FiniteTempString_8cpp_source.html#l00196">SSAGES::FiniteTempString::StringUpdate()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;        {</div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;            MPI_Status status;</div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;</div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;            <span class="keywordflow">if</span>(<a class="code" href="classSSAGES_1_1Method.html#ae497980d1720c38b65d47fd4e65897b0">comm_</a>.rank() == 0)</div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;            {</div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;                MPI_Sendrecv(&amp;<a class="code" href="classSSAGES_1_1StringMethod.html#a8f5e8ddc90a86dc363d3323c31f8e3b7">centers_</a>[0], <a class="code" href="classSSAGES_1_1StringMethod.html#a8f5e8ddc90a86dc363d3323c31f8e3b7">centers_</a>.size(), MPI_DOUBLE, <a class="code" href="classSSAGES_1_1StringMethod.html#aae37586257c1fce3f2c57eba0a67407e">sendneigh_</a>, 1234,</div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;                    &amp;(*lcv0)[0], <a class="code" href="classSSAGES_1_1StringMethod.html#a8f5e8ddc90a86dc363d3323c31f8e3b7">centers_</a>.size(), MPI_DOUBLE, <a class="code" href="classSSAGES_1_1StringMethod.html#a18120cac8164b8e2f3de4079e4bc6fa8">recneigh_</a>, 1234, </div>
-<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;                    <a class="code" href="classSSAGES_1_1Method.html#a9bbdc5a2592ff76cfe71364ad4d2ce68">world_</a>, &amp;status);</div>
-<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;</div>
-<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;                MPI_Sendrecv(&amp;<a class="code" href="classSSAGES_1_1StringMethod.html#a8f5e8ddc90a86dc363d3323c31f8e3b7">centers_</a>[0], <a class="code" href="classSSAGES_1_1StringMethod.html#a8f5e8ddc90a86dc363d3323c31f8e3b7">centers_</a>.size(), MPI_DOUBLE, <a class="code" href="classSSAGES_1_1StringMethod.html#a18120cac8164b8e2f3de4079e4bc6fa8">recneigh_</a>, 4321,</div>
-<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;                   &amp;(*ucv0)[0], <a class="code" href="classSSAGES_1_1StringMethod.html#a8f5e8ddc90a86dc363d3323c31f8e3b7">centers_</a>.size(), MPI_DOUBLE, <a class="code" href="classSSAGES_1_1StringMethod.html#aae37586257c1fce3f2c57eba0a67407e">sendneigh_</a>, 4321, </div>
-<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;                   <a class="code" href="classSSAGES_1_1Method.html#a9bbdc5a2592ff76cfe71364ad4d2ce68">world_</a>, &amp;status);</div>
-<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;            }</div>
-<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;</div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;            MPI_Bcast(&amp;(*lcv0)[0],<a class="code" href="classSSAGES_1_1StringMethod.html#a8f5e8ddc90a86dc363d3323c31f8e3b7">centers_</a>.size(),MPI::DOUBLE,0,<a class="code" href="classSSAGES_1_1Method.html#ae497980d1720c38b65d47fd4e65897b0">comm_</a>);</div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;            MPI_Bcast(&amp;(*ucv0)[0],<a class="code" href="classSSAGES_1_1StringMethod.html#a8f5e8ddc90a86dc363d3323c31f8e3b7">centers_</a>.size(),MPI::DOUBLE,0,<a class="code" href="classSSAGES_1_1Method.html#ae497980d1720c38b65d47fd4e65897b0">comm_</a>);</div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;        }</div>
-<div class="ttc" id="classSSAGES_1_1StringMethod_html_aae37586257c1fce3f2c57eba0a67407e"><div class="ttname"><a href="classSSAGES_1_1StringMethod.html#aae37586257c1fce3f2c57eba0a67407e">SSAGES::StringMethod::sendneigh_</a></div><div class="ttdeci">int sendneigh_</div><div class="ttdoc">Neighbor to send info to. </div><div class="ttdef"><b>Definition:</b> <a href="StringMethod_8h_source.html#l00078">StringMethod.h:78</a></div></div>
-<div class="ttc" id="classSSAGES_1_1StringMethod_html_a8f5e8ddc90a86dc363d3323c31f8e3b7"><div class="ttname"><a href="classSSAGES_1_1StringMethod.html#a8f5e8ddc90a86dc363d3323c31f8e3b7">SSAGES::StringMethod::centers_</a></div><div class="ttdeci">std::vector&lt; double &gt; centers_</div><div class="ttdoc">CV starting location values. </div><div class="ttdef"><b>Definition:</b> <a href="StringMethod_8h_source.html#l00045">StringMethod.h:45</a></div></div>
-<div class="ttc" id="classSSAGES_1_1StringMethod_html_a18120cac8164b8e2f3de4079e4bc6fa8"><div class="ttname"><a href="classSSAGES_1_1StringMethod.html#a18120cac8164b8e2f3de4079e4bc6fa8">SSAGES::StringMethod::recneigh_</a></div><div class="ttdeci">int recneigh_</div><div class="ttdoc">Neighbor to gain info from. </div><div class="ttdef"><b>Definition:</b> <a href="StringMethod_8h_source.html#l00081">StringMethod.h:81</a></div></div>
+<p>Referenced by <a class="el" href="ElasticBand_8cpp_source.html#l00080">SSAGES::ElasticBand::StringUpdate()</a>, <a class="el" href="Swarm_8cpp_source.html#l00264">SSAGES::Swarm::StringUpdate()</a>, and <a class="el" href="FiniteTempString_8cpp_source.html#l00197">SSAGES::FiniteTempString::StringUpdate()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;        {</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;            MPI_Status status;</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;            <span class="keywordflow">if</span>(<a class="code" href="classSSAGES_1_1Method.html#ae497980d1720c38b65d47fd4e65897b0">comm_</a>.rank() == 0)</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;            {</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;                MPI_Sendrecv(&amp;<a class="code" href="classSSAGES_1_1StringMethod.html#a8f5e8ddc90a86dc363d3323c31f8e3b7">centers_</a>[0], <a class="code" href="classSSAGES_1_1StringMethod.html#a8f5e8ddc90a86dc363d3323c31f8e3b7">centers_</a>.size(), MPI_DOUBLE, <a class="code" href="classSSAGES_1_1StringMethod.html#aae37586257c1fce3f2c57eba0a67407e">sendneigh_</a>, 1234,</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;                    &amp;(*lcv0)[0], <a class="code" href="classSSAGES_1_1StringMethod.html#a8f5e8ddc90a86dc363d3323c31f8e3b7">centers_</a>.size(), MPI_DOUBLE, <a class="code" href="classSSAGES_1_1StringMethod.html#a18120cac8164b8e2f3de4079e4bc6fa8">recneigh_</a>, 1234, </div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;                    <a class="code" href="classSSAGES_1_1Method.html#a9bbdc5a2592ff76cfe71364ad4d2ce68">world_</a>, &amp;status);</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;                MPI_Sendrecv(&amp;<a class="code" href="classSSAGES_1_1StringMethod.html#a8f5e8ddc90a86dc363d3323c31f8e3b7">centers_</a>[0], <a class="code" href="classSSAGES_1_1StringMethod.html#a8f5e8ddc90a86dc363d3323c31f8e3b7">centers_</a>.size(), MPI_DOUBLE, <a class="code" href="classSSAGES_1_1StringMethod.html#a18120cac8164b8e2f3de4079e4bc6fa8">recneigh_</a>, 4321,</div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;                   &amp;(*ucv0)[0], <a class="code" href="classSSAGES_1_1StringMethod.html#a8f5e8ddc90a86dc363d3323c31f8e3b7">centers_</a>.size(), MPI_DOUBLE, <a class="code" href="classSSAGES_1_1StringMethod.html#aae37586257c1fce3f2c57eba0a67407e">sendneigh_</a>, 4321, </div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;                   <a class="code" href="classSSAGES_1_1Method.html#a9bbdc5a2592ff76cfe71364ad4d2ce68">world_</a>, &amp;status);</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;            }</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;            MPI_Bcast(&amp;(*lcv0)[0],<a class="code" href="classSSAGES_1_1StringMethod.html#a8f5e8ddc90a86dc363d3323c31f8e3b7">centers_</a>.size(),MPI_DOUBLE,0,<a class="code" href="classSSAGES_1_1Method.html#ae497980d1720c38b65d47fd4e65897b0">comm_</a>);</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;            MPI_Bcast(&amp;(*ucv0)[0],<a class="code" href="classSSAGES_1_1StringMethod.html#a8f5e8ddc90a86dc363d3323c31f8e3b7">centers_</a>.size(),MPI_DOUBLE,0,<a class="code" href="classSSAGES_1_1Method.html#ae497980d1720c38b65d47fd4e65897b0">comm_</a>);</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;        }</div>
+<div class="ttc" id="classSSAGES_1_1StringMethod_html_aae37586257c1fce3f2c57eba0a67407e"><div class="ttname"><a href="classSSAGES_1_1StringMethod.html#aae37586257c1fce3f2c57eba0a67407e">SSAGES::StringMethod::sendneigh_</a></div><div class="ttdeci">int sendneigh_</div><div class="ttdoc">Neighbor to send info to. </div><div class="ttdef"><b>Definition:</b> <a href="StringMethod_8h_source.html#l00080">StringMethod.h:80</a></div></div>
+<div class="ttc" id="classSSAGES_1_1StringMethod_html_a8f5e8ddc90a86dc363d3323c31f8e3b7"><div class="ttname"><a href="classSSAGES_1_1StringMethod.html#a8f5e8ddc90a86dc363d3323c31f8e3b7">SSAGES::StringMethod::centers_</a></div><div class="ttdeci">std::vector&lt; double &gt; centers_</div><div class="ttdoc">CV starting location values. </div><div class="ttdef"><b>Definition:</b> <a href="StringMethod_8h_source.html#l00047">StringMethod.h:47</a></div></div>
+<div class="ttc" id="classSSAGES_1_1StringMethod_html_a18120cac8164b8e2f3de4079e4bc6fa8"><div class="ttname"><a href="classSSAGES_1_1StringMethod.html#a18120cac8164b8e2f3de4079e4bc6fa8">SSAGES::StringMethod::recneigh_</a></div><div class="ttdeci">int recneigh_</div><div class="ttdoc">Neighbor to gain info from. </div><div class="ttdef"><b>Definition:</b> <a href="StringMethod_8h_source.html#l00083">StringMethod.h:83</a></div></div>
 <div class="ttc" id="classSSAGES_1_1Method_html_ae497980d1720c38b65d47fd4e65897b0"><div class="ttname"><a href="classSSAGES_1_1Method.html#ae497980d1720c38b65d47fd4e65897b0">SSAGES::Method::comm_</a></div><div class="ttdeci">boost::mpi::communicator comm_</div><div class="ttdoc">Local MPI communicator. </div><div class="ttdef"><b>Definition:</b> <a href="Method_8h_source.html#l00045">Method.h:45</a></div></div>
 <div class="ttc" id="classSSAGES_1_1Method_html_a9bbdc5a2592ff76cfe71364ad4d2ce68"><div class="ttname"><a href="classSSAGES_1_1Method.html#a9bbdc5a2592ff76cfe71364ad4d2ce68">SSAGES::Method::world_</a></div><div class="ttdeci">boost::mpi::communicator world_</div><div class="ttdoc">Global MPI communicator. </div><div class="ttdef"><b>Definition:</b> <a href="Method_8h_source.html#l00044">Method.h:44</a></div></div>
 </div><!-- fragment -->
@@ -660,13 +660,13 @@ Here is the caller graph for this function:</div>
 
 <p>Implements <a class="el" href="classSSAGES_1_1Method.html#a6e0aab2ac9e7d737e03f0be942292ba6">SSAGES::Method</a>.</p>
 
-<p>Definition at line <a class="el" href="StringMethod_8h_source.html#l00310">310</a> of file <a class="el" href="StringMethod_8h_source.html">StringMethod.h</a>.</p>
+<p>Definition at line <a class="el" href="StringMethod_8h_source.html#l00311">311</a> of file <a class="el" href="StringMethod_8h_source.html">StringMethod.h</a>.</p>
 
-<p>References <a class="el" href="StringMethod_8h_source.html#l00075">stringout_</a>.</p>
-<div class="fragment"><div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;        {</div>
-<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;            <a class="code" href="classSSAGES_1_1StringMethod.html#a1637a3997f7286f074864b99d3f3780c">stringout_</a>.close();</div>
-<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;        }</div>
-<div class="ttc" id="classSSAGES_1_1StringMethod_html_a1637a3997f7286f074864b99d3f3780c"><div class="ttname"><a href="classSSAGES_1_1StringMethod.html#a1637a3997f7286f074864b99d3f3780c">SSAGES::StringMethod::stringout_</a></div><div class="ttdeci">std::ofstream stringout_</div><div class="ttdoc">Output stream for string data. </div><div class="ttdef"><b>Definition:</b> <a href="StringMethod_8h_source.html#l00075">StringMethod.h:75</a></div></div>
+<p>References <a class="el" href="StringMethod_8h_source.html#l00077">stringout_</a>.</p>
+<div class="fragment"><div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;        {</div>
+<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;            <a class="code" href="classSSAGES_1_1StringMethod.html#a1637a3997f7286f074864b99d3f3780c">stringout_</a>.close();</div>
+<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;        }</div>
+<div class="ttc" id="classSSAGES_1_1StringMethod_html_a1637a3997f7286f074864b99d3f3780c"><div class="ttname"><a href="classSSAGES_1_1StringMethod.html#a1637a3997f7286f074864b99d3f3780c">SSAGES::StringMethod::stringout_</a></div><div class="ttdeci">std::ofstream stringout_</div><div class="ttdoc">Output stream for string data. </div><div class="ttdef"><b>Definition:</b> <a href="StringMethod_8h_source.html#l00077">StringMethod.h:77</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -705,32 +705,32 @@ Here is the caller graph for this function:</div>
 
 <p>Reimplemented in <a class="el" href="classSSAGES_1_1Swarm.html#abc4a80111c3fd05ed8ec74df7f9430ff">SSAGES::Swarm</a>.</p>
 
-<p>Definition at line <a class="el" href="StringMethod_8h_source.html#l00375">375</a> of file <a class="el" href="StringMethod_8h_source.html">StringMethod.h</a>.</p>
+<p>Definition at line <a class="el" href="StringMethod_8h_source.html#l00376">376</a> of file <a class="el" href="StringMethod_8h_source.html">StringMethod.h</a>.</p>
 
-<p>References <a class="el" href="StringMethod_8h_source.html#l00045">centers_</a>, <a class="el" href="StringMethod_8h_source.html#l00069">cvspring_</a>, <a class="el" href="Method_8h_source.html#l00048">SSAGES::Method::iteration_</a>, <a class="el" href="StringMethod_8h_source.html#l00066">maxiterator_</a>, and <a class="el" href="StringMethod_8h_source.html#l00060">tol_</a>.</p>
+<p>References <a class="el" href="StringMethod_8h_source.html#l00047">centers_</a>, <a class="el" href="StringMethod_8h_source.html#l00071">cvspring_</a>, <a class="el" href="Method_8h_source.html#l00048">SSAGES::Method::iteration_</a>, <a class="el" href="StringMethod_8h_source.html#l00068">maxiterator_</a>, and <a class="el" href="StringMethod_8h_source.html#l00062">tol_</a>.</p>
 
-<p>Referenced by <a class="el" href="FiniteTempString_8h_source.html#l00117">SSAGES::FiniteTempString::Serialize()</a>, and <a class="el" href="Swarm_8h_source.html#l00134">SSAGES::Swarm::Serialize()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00376"></a><span class="lineno">  376</span>&#160;        {</div>
-<div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;            json[<span class="stringliteral">&quot;type&quot;</span>] = <span class="stringliteral">&quot;String&quot;</span>;</div>
-<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;</div>
-<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;            <span class="keywordflow">for</span>(<span class="keywordtype">size_t</span> i = 0; i &lt; <a class="code" href="classSSAGES_1_1StringMethod.html#a8f5e8ddc90a86dc363d3323c31f8e3b7">centers_</a>.size(); i++)</div>
-<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;                json[<span class="stringliteral">&quot;centers&quot;</span>].append(<a class="code" href="classSSAGES_1_1StringMethod.html#a8f5e8ddc90a86dc363d3323c31f8e3b7">centers_</a>[i]);</div>
-<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;</div>
-<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;            <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; t : <a class="code" href="classSSAGES_1_1StringMethod.html#a58d2f93b02deaef7470b78d19dea3a5f">tol_</a>)</div>
-<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;                json[<span class="stringliteral">&quot;tolerance&quot;</span>].append(t);</div>
-<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;</div>
-<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;            json[<span class="stringliteral">&quot;max_iterations&quot;</span>] = <a class="code" href="classSSAGES_1_1StringMethod.html#ae356401c09835d8c2c10b5f38e86bf92">maxiterator_</a>;</div>
-<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;</div>
-<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;            <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; s : <a class="code" href="classSSAGES_1_1StringMethod.html#a51f68bc9e02055a96375617626240a79">cvspring_</a>)</div>
-<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;                json[<span class="stringliteral">&quot;ksprings&quot;</span>].append(s);</div>
-<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;</div>
-<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;           json[<span class="stringliteral">&quot;iteration&quot;</span>] = <a class="code" href="classSSAGES_1_1Method.html#a1b83499833edfa7a5ecf5bb4f2de9a62">iteration_</a>; </div>
-<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;        }</div>
-<div class="ttc" id="classSSAGES_1_1StringMethod_html_a58d2f93b02deaef7470b78d19dea3a5f"><div class="ttname"><a href="classSSAGES_1_1StringMethod.html#a58d2f93b02deaef7470b78d19dea3a5f">SSAGES::StringMethod::tol_</a></div><div class="ttdeci">std::vector&lt; double &gt; tol_</div><div class="ttdoc">Tolerance criteria for determining when to stop string (default 0 if no tolerance criteria) ...</div><div class="ttdef"><b>Definition:</b> <a href="StringMethod_8h_source.html#l00060">StringMethod.h:60</a></div></div>
+<p>Referenced by <a class="el" href="FiniteTempString_8h_source.html#l00114">SSAGES::FiniteTempString::Serialize()</a>, and <a class="el" href="Swarm_8h_source.html#l00134">SSAGES::Swarm::Serialize()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00377"></a><span class="lineno">  377</span>&#160;        {</div>
+<div class="line"><a name="l00378"></a><span class="lineno">  378</span>&#160;            json[<span class="stringliteral">&quot;type&quot;</span>] = <span class="stringliteral">&quot;String&quot;</span>;</div>
+<div class="line"><a name="l00379"></a><span class="lineno">  379</span>&#160;</div>
+<div class="line"><a name="l00380"></a><span class="lineno">  380</span>&#160;            <span class="keywordflow">for</span>(<span class="keywordtype">size_t</span> i = 0; i &lt; <a class="code" href="classSSAGES_1_1StringMethod.html#a8f5e8ddc90a86dc363d3323c31f8e3b7">centers_</a>.size(); i++)</div>
+<div class="line"><a name="l00381"></a><span class="lineno">  381</span>&#160;                json[<span class="stringliteral">&quot;centers&quot;</span>].append(<a class="code" href="classSSAGES_1_1StringMethod.html#a8f5e8ddc90a86dc363d3323c31f8e3b7">centers_</a>[i]);</div>
+<div class="line"><a name="l00382"></a><span class="lineno">  382</span>&#160;</div>
+<div class="line"><a name="l00383"></a><span class="lineno">  383</span>&#160;            <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; t : <a class="code" href="classSSAGES_1_1StringMethod.html#a58d2f93b02deaef7470b78d19dea3a5f">tol_</a>)</div>
+<div class="line"><a name="l00384"></a><span class="lineno">  384</span>&#160;                json[<span class="stringliteral">&quot;tolerance&quot;</span>].append(t);</div>
+<div class="line"><a name="l00385"></a><span class="lineno">  385</span>&#160;</div>
+<div class="line"><a name="l00386"></a><span class="lineno">  386</span>&#160;            json[<span class="stringliteral">&quot;max_iterations&quot;</span>] = <a class="code" href="classSSAGES_1_1StringMethod.html#ae356401c09835d8c2c10b5f38e86bf92">maxiterator_</a>;</div>
+<div class="line"><a name="l00387"></a><span class="lineno">  387</span>&#160;</div>
+<div class="line"><a name="l00388"></a><span class="lineno">  388</span>&#160;            <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; s : <a class="code" href="classSSAGES_1_1StringMethod.html#a51f68bc9e02055a96375617626240a79">cvspring_</a>)</div>
+<div class="line"><a name="l00389"></a><span class="lineno">  389</span>&#160;                json[<span class="stringliteral">&quot;ksprings&quot;</span>].append(s);</div>
+<div class="line"><a name="l00390"></a><span class="lineno">  390</span>&#160;</div>
+<div class="line"><a name="l00391"></a><span class="lineno">  391</span>&#160;           json[<span class="stringliteral">&quot;iteration&quot;</span>] = <a class="code" href="classSSAGES_1_1Method.html#a1b83499833edfa7a5ecf5bb4f2de9a62">iteration_</a>; </div>
+<div class="line"><a name="l00392"></a><span class="lineno">  392</span>&#160;        }</div>
+<div class="ttc" id="classSSAGES_1_1StringMethod_html_a58d2f93b02deaef7470b78d19dea3a5f"><div class="ttname"><a href="classSSAGES_1_1StringMethod.html#a58d2f93b02deaef7470b78d19dea3a5f">SSAGES::StringMethod::tol_</a></div><div class="ttdeci">std::vector&lt; double &gt; tol_</div><div class="ttdoc">Tolerance criteria for determining when to stop string (default 0 if no tolerance criteria) ...</div><div class="ttdef"><b>Definition:</b> <a href="StringMethod_8h_source.html#l00062">StringMethod.h:62</a></div></div>
 <div class="ttc" id="classSSAGES_1_1Method_html_a1b83499833edfa7a5ecf5bb4f2de9a62"><div class="ttname"><a href="classSSAGES_1_1Method.html#a1b83499833edfa7a5ecf5bb4f2de9a62">SSAGES::Method::iteration_</a></div><div class="ttdeci">unsigned int iteration_</div><div class="ttdoc">Number of the method iteration. </div><div class="ttdef"><b>Definition:</b> <a href="Method_8h_source.html#l00048">Method.h:48</a></div></div>
-<div class="ttc" id="classSSAGES_1_1StringMethod_html_a8f5e8ddc90a86dc363d3323c31f8e3b7"><div class="ttname"><a href="classSSAGES_1_1StringMethod.html#a8f5e8ddc90a86dc363d3323c31f8e3b7">SSAGES::StringMethod::centers_</a></div><div class="ttdeci">std::vector&lt; double &gt; centers_</div><div class="ttdoc">CV starting location values. </div><div class="ttdef"><b>Definition:</b> <a href="StringMethod_8h_source.html#l00045">StringMethod.h:45</a></div></div>
-<div class="ttc" id="classSSAGES_1_1StringMethod_html_ae356401c09835d8c2c10b5f38e86bf92"><div class="ttname"><a href="classSSAGES_1_1StringMethod.html#ae356401c09835d8c2c10b5f38e86bf92">SSAGES::StringMethod::maxiterator_</a></div><div class="ttdeci">unsigned int maxiterator_</div><div class="ttdoc">Maximum cap on number of string method iterations performed. </div><div class="ttdef"><b>Definition:</b> <a href="StringMethod_8h_source.html#l00066">StringMethod.h:66</a></div></div>
-<div class="ttc" id="classSSAGES_1_1StringMethod_html_a51f68bc9e02055a96375617626240a79"><div class="ttname"><a href="classSSAGES_1_1StringMethod.html#a51f68bc9e02055a96375617626240a79">SSAGES::StringMethod::cvspring_</a></div><div class="ttdeci">std::vector&lt; double &gt; cvspring_</div><div class="ttdoc">Vector of spring constants. </div><div class="ttdef"><b>Definition:</b> <a href="StringMethod_8h_source.html#l00069">StringMethod.h:69</a></div></div>
+<div class="ttc" id="classSSAGES_1_1StringMethod_html_a8f5e8ddc90a86dc363d3323c31f8e3b7"><div class="ttname"><a href="classSSAGES_1_1StringMethod.html#a8f5e8ddc90a86dc363d3323c31f8e3b7">SSAGES::StringMethod::centers_</a></div><div class="ttdeci">std::vector&lt; double &gt; centers_</div><div class="ttdoc">CV starting location values. </div><div class="ttdef"><b>Definition:</b> <a href="StringMethod_8h_source.html#l00047">StringMethod.h:47</a></div></div>
+<div class="ttc" id="classSSAGES_1_1StringMethod_html_ae356401c09835d8c2c10b5f38e86bf92"><div class="ttname"><a href="classSSAGES_1_1StringMethod.html#ae356401c09835d8c2c10b5f38e86bf92">SSAGES::StringMethod::maxiterator_</a></div><div class="ttdeci">unsigned int maxiterator_</div><div class="ttdoc">Maximum cap on number of string method iterations performed. </div><div class="ttdef"><b>Definition:</b> <a href="StringMethod_8h_source.html#l00068">StringMethod.h:68</a></div></div>
+<div class="ttc" id="classSSAGES_1_1StringMethod_html_a51f68bc9e02055a96375617626240a79"><div class="ttname"><a href="classSSAGES_1_1StringMethod.html#a51f68bc9e02055a96375617626240a79">SSAGES::StringMethod::cvspring_</a></div><div class="ttdeci">std::vector&lt; double &gt; cvspring_</div><div class="ttdoc">Vector of spring constants. </div><div class="ttdef"><b>Definition:</b> <a href="StringMethod_8h_source.html#l00071">StringMethod.h:71</a></div></div>
 </div><!-- fragment -->
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -774,14 +774,14 @@ Here is the caller graph for this function:</div>
 </dl>
 <p>Set the tolerance levels until which the method should run. The method quit, when the tolerance level is reached for all CVs. </p>
 
-<p>Definition at line <a class="el" href="StringMethod_8h_source.html#l00322">322</a> of file <a class="el" href="StringMethod_8h_source.html">StringMethod.h</a>.</p>
+<p>Definition at line <a class="el" href="StringMethod_8h_source.html#l00323">323</a> of file <a class="el" href="StringMethod_8h_source.html">StringMethod.h</a>.</p>
 
-<p>References <a class="el" href="StringMethod_8h_source.html#l00060">tol_</a>.</p>
-<div class="fragment"><div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;        {</div>
-<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;            <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; t : tol)</div>
-<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;                <a class="code" href="classSSAGES_1_1StringMethod.html#a58d2f93b02deaef7470b78d19dea3a5f">tol_</a>.push_back(t);</div>
-<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;        }</div>
-<div class="ttc" id="classSSAGES_1_1StringMethod_html_a58d2f93b02deaef7470b78d19dea3a5f"><div class="ttname"><a href="classSSAGES_1_1StringMethod.html#a58d2f93b02deaef7470b78d19dea3a5f">SSAGES::StringMethod::tol_</a></div><div class="ttdeci">std::vector&lt; double &gt; tol_</div><div class="ttdoc">Tolerance criteria for determining when to stop string (default 0 if no tolerance criteria) ...</div><div class="ttdef"><b>Definition:</b> <a href="StringMethod_8h_source.html#l00060">StringMethod.h:60</a></div></div>
+<p>References <a class="el" href="StringMethod_8h_source.html#l00062">tol_</a>.</p>
+<div class="fragment"><div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;        {</div>
+<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;            <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; t : tol)</div>
+<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;                <a class="code" href="classSSAGES_1_1StringMethod.html#a58d2f93b02deaef7470b78d19dea3a5f">tol_</a>.push_back(t);</div>
+<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;        }</div>
+<div class="ttc" id="classSSAGES_1_1StringMethod_html_a58d2f93b02deaef7470b78d19dea3a5f"><div class="ttname"><a href="classSSAGES_1_1StringMethod.html#a58d2f93b02deaef7470b78d19dea3a5f">SSAGES::StringMethod::tol_</a></div><div class="ttdeci">std::vector&lt; double &gt; tol_</div><div class="ttdoc">Tolerance criteria for determining when to stop string (default 0 if no tolerance criteria) ...</div><div class="ttdef"><b>Definition:</b> <a href="StringMethod_8h_source.html#l00062">StringMethod.h:62</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -815,46 +815,46 @@ Here is the caller graph for this function:</div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="StringMethod_8h_source.html#l00154">154</a> of file <a class="el" href="StringMethod_8h_source.html">StringMethod.h</a>.</p>
+<p>Definition at line <a class="el" href="StringMethod_8h_source.html#l00156">156</a> of file <a class="el" href="StringMethod_8h_source.html">StringMethod.h</a>.</p>
 
-<p>References <a class="el" href="StringMethod_8h_source.html#l00045">centers_</a>, <a class="el" href="Method_8h_source.html#l00045">SSAGES::Method::comm_</a>, <a class="el" href="StringMethod_8h_source.html#l00057">mpiid_</a>, <a class="el" href="StringMethod_8h_source.html#l00063">numnodes_</a>, and <a class="el" href="Method_8h_source.html#l00044">SSAGES::Method::world_</a>.</p>
+<p>References <a class="el" href="StringMethod_8h_source.html#l00047">centers_</a>, <a class="el" href="Method_8h_source.html#l00045">SSAGES::Method::comm_</a>, <a class="el" href="StringMethod_8h_source.html#l00059">mpiid_</a>, <a class="el" href="StringMethod_8h_source.html#l00065">numnodes_</a>, and <a class="el" href="Method_8h_source.html#l00044">SSAGES::Method::world_</a>.</p>
 
-<p>Referenced by <a class="el" href="Swarm_8cpp_source.html#l00264">SSAGES::Swarm::StringUpdate()</a>, and <a class="el" href="FiniteTempString_8cpp_source.html#l00196">SSAGES::FiniteTempString::StringUpdate()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;        {</div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;            std::vector&lt;double&gt; alpha_star_vector(<a class="code" href="classSSAGES_1_1StringMethod.html#ade5506229ab6dad8209ca2853480b2ea">numnodes_</a>,0.0);</div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;</div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;            <span class="comment">//Reparameterization</span></div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;            <span class="comment">//Alpha star is the uneven mesh, approximated as linear distance between points</span></div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;            <span class="keywordflow">if</span>(<a class="code" href="classSSAGES_1_1Method.html#ae497980d1720c38b65d47fd4e65897b0">comm_</a>.rank()==0)</div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;                alpha_star_vector[<a class="code" href="classSSAGES_1_1StringMethod.html#a2d6c46aa7c2c85975621add18a55a9e4">mpiid_</a>] = <a class="code" href="classSSAGES_1_1StringMethod.html#a2d6c46aa7c2c85975621add18a55a9e4">mpiid_</a> == 0 ? 0 : alpha_star;</div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;</div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;            <span class="comment">//Gather each alpha_star into a vector </span></div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;            MPI_Allreduce(MPI::IN_PLACE, &amp;alpha_star_vector[0], <a class="code" href="classSSAGES_1_1StringMethod.html#ade5506229ab6dad8209ca2853480b2ea">numnodes_</a>, MPI::DOUBLE, MPI::SUM, <a class="code" href="classSSAGES_1_1Method.html#a9bbdc5a2592ff76cfe71364ad4d2ce68">world_</a>);</div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;</div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;            <span class="keywordflow">for</span>(<span class="keywordtype">size_t</span> i = 1; i &lt; alpha_star_vector.size(); i++)</div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;                alpha_star_vector[i] += alpha_star_vector[i-1];</div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;            </div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;            <span class="keywordflow">for</span>(<span class="keywordtype">size_t</span> i = 1; i &lt; alpha_star_vector.size(); i++)</div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;                alpha_star_vector[i] /= alpha_star_vector[<a class="code" href="classSSAGES_1_1StringMethod.html#ade5506229ab6dad8209ca2853480b2ea">numnodes_</a> - 1];</div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;</div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;            tk::spline spl; <span class="comment">//Cubic spline interpolation</span></div>
+<p>Referenced by <a class="el" href="FiniteTempString_8cpp_source.html#l00197">SSAGES::FiniteTempString::StringUpdate()</a>, and <a class="el" href="Swarm_8cpp_source.html#l00264">SSAGES::Swarm::StringUpdate()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;        {</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;            std::vector&lt;double&gt; alpha_star_vector(<a class="code" href="classSSAGES_1_1StringMethod.html#ade5506229ab6dad8209ca2853480b2ea">numnodes_</a>,0.0);</div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;            <span class="comment">//Reparameterization</span></div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;            <span class="comment">//Alpha star is the uneven mesh, approximated as linear distance between points</span></div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;            <span class="keywordflow">if</span>(<a class="code" href="classSSAGES_1_1Method.html#ae497980d1720c38b65d47fd4e65897b0">comm_</a>.rank()==0)</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;                alpha_star_vector[<a class="code" href="classSSAGES_1_1StringMethod.html#a2d6c46aa7c2c85975621add18a55a9e4">mpiid_</a>] = <a class="code" href="classSSAGES_1_1StringMethod.html#a2d6c46aa7c2c85975621add18a55a9e4">mpiid_</a> == 0 ? 0 : alpha_star;</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;            <span class="comment">//Gather each alpha_star into a vector </span></div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;            MPI_Allreduce(MPI_IN_PLACE, &amp;alpha_star_vector[0], <a class="code" href="classSSAGES_1_1StringMethod.html#ade5506229ab6dad8209ca2853480b2ea">numnodes_</a>, MPI_DOUBLE, MPI_SUM, <a class="code" href="classSSAGES_1_1Method.html#a9bbdc5a2592ff76cfe71364ad4d2ce68">world_</a>);</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;</div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;            <span class="keywordflow">for</span>(<span class="keywordtype">size_t</span> i = 1; i &lt; alpha_star_vector.size(); i++)</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;                alpha_star_vector[i] += alpha_star_vector[i-1];</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;            </div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;            <span class="keywordflow">for</span>(<span class="keywordtype">size_t</span> i = 1; i &lt; alpha_star_vector.size(); i++)</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;                alpha_star_vector[i] /= alpha_star_vector[<a class="code" href="classSSAGES_1_1StringMethod.html#ade5506229ab6dad8209ca2853480b2ea">numnodes_</a> - 1];</div>
 <div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;</div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;            <span class="keywordflow">for</span>(<span class="keywordtype">size_t</span> i = 0; i &lt; <a class="code" href="classSSAGES_1_1StringMethod.html#a8f5e8ddc90a86dc363d3323c31f8e3b7">centers_</a>.size(); i++)</div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;            {</div>
-<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;                std::vector&lt;double&gt; cvs_new(<a class="code" href="classSSAGES_1_1StringMethod.html#ade5506229ab6dad8209ca2853480b2ea">numnodes_</a>, 0.0);</div>
-<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;</div>
-<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;                <span class="keywordflow">if</span>(<a class="code" href="classSSAGES_1_1Method.html#ae497980d1720c38b65d47fd4e65897b0">comm_</a>.rank() == 0)</div>
-<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;                    cvs_new[<a class="code" href="classSSAGES_1_1StringMethod.html#a2d6c46aa7c2c85975621add18a55a9e4">mpiid_</a>] = <a class="code" href="classSSAGES_1_1StringMethod.html#a8f5e8ddc90a86dc363d3323c31f8e3b7">centers_</a>[i];</div>
-<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;</div>
-<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;                MPI_Allreduce(MPI::IN_PLACE, &amp;cvs_new[0], <a class="code" href="classSSAGES_1_1StringMethod.html#ade5506229ab6dad8209ca2853480b2ea">numnodes_</a>, MPI::DOUBLE, MPI::SUM, <a class="code" href="classSSAGES_1_1Method.html#a9bbdc5a2592ff76cfe71364ad4d2ce68">world_</a>);</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;            tk::spline spl; <span class="comment">//Cubic spline interpolation</span></div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;            <span class="keywordflow">for</span>(<span class="keywordtype">size_t</span> i = 0; i &lt; <a class="code" href="classSSAGES_1_1StringMethod.html#a8f5e8ddc90a86dc363d3323c31f8e3b7">centers_</a>.size(); i++)</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;            {</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;                std::vector&lt;double&gt; cvs_new(<a class="code" href="classSSAGES_1_1StringMethod.html#ade5506229ab6dad8209ca2853480b2ea">numnodes_</a>, 0.0);</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;                <span class="keywordflow">if</span>(<a class="code" href="classSSAGES_1_1Method.html#ae497980d1720c38b65d47fd4e65897b0">comm_</a>.rank() == 0)</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;                    cvs_new[<a class="code" href="classSSAGES_1_1StringMethod.html#a2d6c46aa7c2c85975621add18a55a9e4">mpiid_</a>] = <a class="code" href="classSSAGES_1_1StringMethod.html#a8f5e8ddc90a86dc363d3323c31f8e3b7">centers_</a>[i];</div>
 <div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;</div>
-<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;                spl.set_points(alpha_star_vector, cvs_new);</div>
-<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;                <a class="code" href="classSSAGES_1_1StringMethod.html#a8f5e8ddc90a86dc363d3323c31f8e3b7">centers_</a>[i] = spl(<a class="code" href="classSSAGES_1_1StringMethod.html#a2d6c46aa7c2c85975621add18a55a9e4">mpiid_</a>/(<a class="code" href="classSSAGES_1_1StringMethod.html#ade5506229ab6dad8209ca2853480b2ea">numnodes_</a> - 1.0)); </div>
-<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;            }</div>
-<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;        }</div>
-<div class="ttc" id="classSSAGES_1_1StringMethod_html_a8f5e8ddc90a86dc363d3323c31f8e3b7"><div class="ttname"><a href="classSSAGES_1_1StringMethod.html#a8f5e8ddc90a86dc363d3323c31f8e3b7">SSAGES::StringMethod::centers_</a></div><div class="ttdeci">std::vector&lt; double &gt; centers_</div><div class="ttdoc">CV starting location values. </div><div class="ttdef"><b>Definition:</b> <a href="StringMethod_8h_source.html#l00045">StringMethod.h:45</a></div></div>
-<div class="ttc" id="classSSAGES_1_1StringMethod_html_ade5506229ab6dad8209ca2853480b2ea"><div class="ttname"><a href="classSSAGES_1_1StringMethod.html#ade5506229ab6dad8209ca2853480b2ea">SSAGES::StringMethod::numnodes_</a></div><div class="ttdeci">int numnodes_</div><div class="ttdoc">Number of nodes on a string. </div><div class="ttdef"><b>Definition:</b> <a href="StringMethod_8h_source.html#l00063">StringMethod.h:63</a></div></div>
-<div class="ttc" id="classSSAGES_1_1StringMethod_html_a2d6c46aa7c2c85975621add18a55a9e4"><div class="ttname"><a href="classSSAGES_1_1StringMethod.html#a2d6c46aa7c2c85975621add18a55a9e4">SSAGES::StringMethod::mpiid_</a></div><div class="ttdeci">int mpiid_</div><div class="ttdoc">The node this belongs to. </div><div class="ttdef"><b>Definition:</b> <a href="StringMethod_8h_source.html#l00057">StringMethod.h:57</a></div></div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;                MPI_Allreduce(MPI_IN_PLACE, &amp;cvs_new[0], <a class="code" href="classSSAGES_1_1StringMethod.html#ade5506229ab6dad8209ca2853480b2ea">numnodes_</a>, MPI_DOUBLE, MPI_SUM, <a class="code" href="classSSAGES_1_1Method.html#a9bbdc5a2592ff76cfe71364ad4d2ce68">world_</a>);</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;</div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;                spl.set_points(alpha_star_vector, cvs_new);</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;                <a class="code" href="classSSAGES_1_1StringMethod.html#a8f5e8ddc90a86dc363d3323c31f8e3b7">centers_</a>[i] = spl(<a class="code" href="classSSAGES_1_1StringMethod.html#a2d6c46aa7c2c85975621add18a55a9e4">mpiid_</a>/(<a class="code" href="classSSAGES_1_1StringMethod.html#ade5506229ab6dad8209ca2853480b2ea">numnodes_</a> - 1.0)); </div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;            }</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;        }</div>
+<div class="ttc" id="classSSAGES_1_1StringMethod_html_a8f5e8ddc90a86dc363d3323c31f8e3b7"><div class="ttname"><a href="classSSAGES_1_1StringMethod.html#a8f5e8ddc90a86dc363d3323c31f8e3b7">SSAGES::StringMethod::centers_</a></div><div class="ttdeci">std::vector&lt; double &gt; centers_</div><div class="ttdoc">CV starting location values. </div><div class="ttdef"><b>Definition:</b> <a href="StringMethod_8h_source.html#l00047">StringMethod.h:47</a></div></div>
+<div class="ttc" id="classSSAGES_1_1StringMethod_html_ade5506229ab6dad8209ca2853480b2ea"><div class="ttname"><a href="classSSAGES_1_1StringMethod.html#ade5506229ab6dad8209ca2853480b2ea">SSAGES::StringMethod::numnodes_</a></div><div class="ttdeci">int numnodes_</div><div class="ttdoc">Number of nodes on a string. </div><div class="ttdef"><b>Definition:</b> <a href="StringMethod_8h_source.html#l00065">StringMethod.h:65</a></div></div>
+<div class="ttc" id="classSSAGES_1_1StringMethod_html_a2d6c46aa7c2c85975621add18a55a9e4"><div class="ttname"><a href="classSSAGES_1_1StringMethod.html#a2d6c46aa7c2c85975621add18a55a9e4">SSAGES::StringMethod::mpiid_</a></div><div class="ttdeci">int mpiid_</div><div class="ttdoc">The node this belongs to. </div><div class="ttdef"><b>Definition:</b> <a href="StringMethod_8h_source.html#l00059">StringMethod.h:59</a></div></div>
 <div class="ttc" id="classSSAGES_1_1Method_html_ae497980d1720c38b65d47fd4e65897b0"><div class="ttname"><a href="classSSAGES_1_1Method.html#ae497980d1720c38b65d47fd4e65897b0">SSAGES::Method::comm_</a></div><div class="ttdeci">boost::mpi::communicator comm_</div><div class="ttdoc">Local MPI communicator. </div><div class="ttdef"><b>Definition:</b> <a href="Method_8h_source.html#l00045">Method.h:45</a></div></div>
 <div class="ttc" id="classSSAGES_1_1Method_html_a9bbdc5a2592ff76cfe71364ad4d2ce68"><div class="ttname"><a href="classSSAGES_1_1Method.html#a9bbdc5a2592ff76cfe71364ad4d2ce68">SSAGES::Method::world_</a></div><div class="ttdeci">boost::mpi::communicator world_</div><div class="ttdoc">Global MPI communicator. </div><div class="ttdef"><b>Definition:</b> <a href="Method_8h_source.html#l00044">Method.h:44</a></div></div>
 </div><!-- fragment -->
@@ -863,7 +863,7 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classSSAGES_1_1StringMethod_afbcff89f61a27e55a5a3c6323a61d147_icgraph.png" border="0" usemap="#classSSAGES_1_1StringMethod_afbcff89f61a27e55a5a3c6323a61d147_icgraph" alt=""/></div>
 <map name="classSSAGES_1_1StringMethod_afbcff89f61a27e55a5a3c6323a61d147_icgraph" id="classSSAGES_1_1StringMethod_afbcff89f61a27e55a5a3c6323a61d147_icgraph">
-<area shape="rect" id="node2" href="classSSAGES_1_1Swarm.html#aa585121e2046df1f1c911e9214e15b8b" title="Updates the positions of the string. " alt="" coords="216,5,427,32"/><area shape="rect" id="node4" href="classSSAGES_1_1FiniteTempString.html#a7d621d15dd9a188ba2457573d4c9271d" title="Updates the string according to the FTS method. " alt="" coords="229,57,413,98"/><area shape="rect" id="node3" href="classSSAGES_1_1Swarm.html#a96f0c22548efac1fda6a9ec5e8241bc8" title="Post&#45;integration hook. " alt="" coords="475,5,698,32"/><area shape="rect" id="node5" href="classSSAGES_1_1FiniteTempString.html#a25386bea8ac1e8723f019999b8438efc" title="Post&#45;integration hook. " alt="" coords="495,57,679,98"/></map>
+<area shape="rect" id="node2" href="classSSAGES_1_1FiniteTempString.html#a7d621d15dd9a188ba2457573d4c9271d" title="Updates the string according to the FTS method. " alt="" coords="229,5,413,46"/><area shape="rect" id="node4" href="classSSAGES_1_1Swarm.html#aa585121e2046df1f1c911e9214e15b8b" title="Updates the positions of the string. " alt="" coords="216,71,427,97"/><area shape="rect" id="node3" href="classSSAGES_1_1FiniteTempString.html#a25386bea8ac1e8723f019999b8438efc" title="Post&#45;integration hook. " alt="" coords="495,5,679,46"/><area shape="rect" id="node5" href="classSSAGES_1_1Swarm.html#a96f0c22548efac1fda6a9ec5e8241bc8" title="Post&#45;integration hook. " alt="" coords="475,71,698,97"/></map>
 </div>
 </p>
 
@@ -899,36 +899,35 @@ Here is the caller graph for this function:</div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="StringMethod_8h_source.html#l00192">192</a> of file <a class="el" href="StringMethod_8h_source.html">StringMethod.h</a>.</p>
+<p>Definition at line <a class="el" href="StringMethod_8h_source.html#l00194">194</a> of file <a class="el" href="StringMethod_8h_source.html">StringMethod.h</a>.</p>
 
-<p>References <a class="el" href="StringMethod_8h_source.html#l00045">centers_</a>, <a class="el" href="Method_8h_source.html#l00045">SSAGES::Method::comm_</a>, <a class="el" href="StringMethod_8h_source.html#l00057">mpiid_</a>, <a class="el" href="StringMethod_8h_source.html#l00063">numnodes_</a>, <a class="el" href="Method_8h_source.html#l00044">SSAGES::Method::world_</a>, and <a class="el" href="StringMethod_8h_source.html#l00054">worldstring_</a>.</p>
+<p>References <a class="el" href="StringMethod_8h_source.html#l00047">centers_</a>, <a class="el" href="Method_8h_source.html#l00045">SSAGES::Method::comm_</a>, <a class="el" href="StringMethod_8h_source.html#l00059">mpiid_</a>, <a class="el" href="StringMethod_8h_source.html#l00065">numnodes_</a>, <a class="el" href="Method_8h_source.html#l00044">SSAGES::Method::world_</a>, and <a class="el" href="StringMethod_8h_source.html#l00056">worldstring_</a>.</p>
 
-<p>Referenced by <a class="el" href="ElasticBand_8cpp_source.html#l00029">SSAGES::ElasticBand::PostIntegration()</a>, <a class="el" href="FiniteTempString_8cpp_source.html#l00047">SSAGES::FiniteTempString::PostIntegration()</a>, <a class="el" href="Swarm_8cpp_source.html#l00059">SSAGES::Swarm::PostIntegration()</a>, and <a class="el" href="StringMethod_8h_source.html#l00289">PreSimulation()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;        {</div>
-<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;            <span class="keywordflow">for</span>(<span class="keywordtype">size_t</span> i = 0; i &lt; <a class="code" href="classSSAGES_1_1StringMethod.html#a8f5e8ddc90a86dc363d3323c31f8e3b7">centers_</a>.size(); i++)</div>
-<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;            {</div>
-<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;                std::vector&lt;double&gt; cvs_new(<a class="code" href="classSSAGES_1_1StringMethod.html#ade5506229ab6dad8209ca2853480b2ea">numnodes_</a>, 0.0);</div>
-<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;</div>
-<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;                <span class="keywordflow">if</span>(<a class="code" href="classSSAGES_1_1Method.html#ae497980d1720c38b65d47fd4e65897b0">comm_</a>.rank() == 0)</div>
-<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;                {</div>
-<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;                    cvs_new[<a class="code" href="classSSAGES_1_1StringMethod.html#a2d6c46aa7c2c85975621add18a55a9e4">mpiid_</a>] = <a class="code" href="classSSAGES_1_1StringMethod.html#a8f5e8ddc90a86dc363d3323c31f8e3b7">centers_</a>[i];</div>
-<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;                }</div>
-<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;</div>
-<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;</div>
-<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;                MPI_Allreduce(MPI::IN_PLACE, &amp;cvs_new[0], <a class="code" href="classSSAGES_1_1StringMethod.html#ade5506229ab6dad8209ca2853480b2ea">numnodes_</a>, MPI::DOUBLE, MPI::SUM, <a class="code" href="classSSAGES_1_1Method.html#a9bbdc5a2592ff76cfe71364ad4d2ce68">world_</a>);</div>
-<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;</div>
-<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;                <span class="keywordflow">for</span>(<span class="keywordtype">int</span> j = 0; j &lt; <a class="code" href="classSSAGES_1_1StringMethod.html#ade5506229ab6dad8209ca2853480b2ea">numnodes_</a>; j++)</div>
-<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;                {</div>
-<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;                    <a class="code" href="classSSAGES_1_1StringMethod.html#a10a3e2fc3c55b98e32a9bd41c6da1b63">worldstring_</a>[j][i] = cvs_new[j];</div>
-<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;                    <span class="comment">//Represent worldstring in periodic space</span></div>
-<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;                    <a class="code" href="classSSAGES_1_1StringMethod.html#a10a3e2fc3c55b98e32a9bd41c6da1b63">worldstring_</a>[j][i] = cvs[i]-&gt;GetPeriodicValue(<a class="code" href="classSSAGES_1_1StringMethod.html#a10a3e2fc3c55b98e32a9bd41c6da1b63">worldstring_</a>[j][i]); </div>
-<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;                }</div>
-<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;            }</div>
-<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;        }</div>
-<div class="ttc" id="classSSAGES_1_1StringMethod_html_a8f5e8ddc90a86dc363d3323c31f8e3b7"><div class="ttname"><a href="classSSAGES_1_1StringMethod.html#a8f5e8ddc90a86dc363d3323c31f8e3b7">SSAGES::StringMethod::centers_</a></div><div class="ttdeci">std::vector&lt; double &gt; centers_</div><div class="ttdoc">CV starting location values. </div><div class="ttdef"><b>Definition:</b> <a href="StringMethod_8h_source.html#l00045">StringMethod.h:45</a></div></div>
-<div class="ttc" id="classSSAGES_1_1StringMethod_html_ade5506229ab6dad8209ca2853480b2ea"><div class="ttname"><a href="classSSAGES_1_1StringMethod.html#ade5506229ab6dad8209ca2853480b2ea">SSAGES::StringMethod::numnodes_</a></div><div class="ttdeci">int numnodes_</div><div class="ttdoc">Number of nodes on a string. </div><div class="ttdef"><b>Definition:</b> <a href="StringMethod_8h_source.html#l00063">StringMethod.h:63</a></div></div>
-<div class="ttc" id="classSSAGES_1_1StringMethod_html_a2d6c46aa7c2c85975621add18a55a9e4"><div class="ttname"><a href="classSSAGES_1_1StringMethod.html#a2d6c46aa7c2c85975621add18a55a9e4">SSAGES::StringMethod::mpiid_</a></div><div class="ttdeci">int mpiid_</div><div class="ttdoc">The node this belongs to. </div><div class="ttdef"><b>Definition:</b> <a href="StringMethod_8h_source.html#l00057">StringMethod.h:57</a></div></div>
-<div class="ttc" id="classSSAGES_1_1StringMethod_html_a10a3e2fc3c55b98e32a9bd41c6da1b63"><div class="ttname"><a href="classSSAGES_1_1StringMethod.html#a10a3e2fc3c55b98e32a9bd41c6da1b63">SSAGES::StringMethod::worldstring_</a></div><div class="ttdeci">std::vector&lt; std::vector&lt; double &gt; &gt; worldstring_</div><div class="ttdoc">The world&#39;s strings centers for each CV. </div><div class="ttdef"><b>Definition:</b> <a href="StringMethod_8h_source.html#l00054">StringMethod.h:54</a></div></div>
+<p>Referenced by <a class="el" href="ElasticBand_8cpp_source.html#l00029">SSAGES::ElasticBand::PostIntegration()</a>, <a class="el" href="FiniteTempString_8cpp_source.html#l00047">SSAGES::FiniteTempString::PostIntegration()</a>, <a class="el" href="Swarm_8cpp_source.html#l00059">SSAGES::Swarm::PostIntegration()</a>, and <a class="el" href="StringMethod_8h_source.html#l00290">PreSimulation()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;        {</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;            <span class="keywordflow">for</span>(<span class="keywordtype">size_t</span> i = 0; i &lt; <a class="code" href="classSSAGES_1_1StringMethod.html#a8f5e8ddc90a86dc363d3323c31f8e3b7">centers_</a>.size(); i++)</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;            {</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;                std::vector&lt;double&gt; cvs_new(<a class="code" href="classSSAGES_1_1StringMethod.html#ade5506229ab6dad8209ca2853480b2ea">numnodes_</a>, 0.0);</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;                <span class="keywordflow">if</span>(<a class="code" href="classSSAGES_1_1Method.html#ae497980d1720c38b65d47fd4e65897b0">comm_</a>.rank() == 0)</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;                {</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;                    cvs_new[<a class="code" href="classSSAGES_1_1StringMethod.html#a2d6c46aa7c2c85975621add18a55a9e4">mpiid_</a>] = <a class="code" href="classSSAGES_1_1StringMethod.html#a8f5e8ddc90a86dc363d3323c31f8e3b7">centers_</a>[i];</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;                }</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;</div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;                MPI_Allreduce(MPI_IN_PLACE, &amp;cvs_new[0], <a class="code" href="classSSAGES_1_1StringMethod.html#ade5506229ab6dad8209ca2853480b2ea">numnodes_</a>, MPI_DOUBLE, MPI_SUM, <a class="code" href="classSSAGES_1_1Method.html#a9bbdc5a2592ff76cfe71364ad4d2ce68">world_</a>);</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;                <span class="keywordflow">for</span>(<span class="keywordtype">int</span> j = 0; j &lt; <a class="code" href="classSSAGES_1_1StringMethod.html#ade5506229ab6dad8209ca2853480b2ea">numnodes_</a>; j++)</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;                {</div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;                    <a class="code" href="classSSAGES_1_1StringMethod.html#a10a3e2fc3c55b98e32a9bd41c6da1b63">worldstring_</a>[j][i] = cvs_new[j];</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;                    <span class="comment">//Represent worldstring in periodic space</span></div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;                    <a class="code" href="classSSAGES_1_1StringMethod.html#a10a3e2fc3c55b98e32a9bd41c6da1b63">worldstring_</a>[j][i] = cvs[i]-&gt;GetPeriodicValue(<a class="code" href="classSSAGES_1_1StringMethod.html#a10a3e2fc3c55b98e32a9bd41c6da1b63">worldstring_</a>[j][i]); </div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;                }</div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;            }</div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;        }</div>
+<div class="ttc" id="classSSAGES_1_1StringMethod_html_a8f5e8ddc90a86dc363d3323c31f8e3b7"><div class="ttname"><a href="classSSAGES_1_1StringMethod.html#a8f5e8ddc90a86dc363d3323c31f8e3b7">SSAGES::StringMethod::centers_</a></div><div class="ttdeci">std::vector&lt; double &gt; centers_</div><div class="ttdoc">CV starting location values. </div><div class="ttdef"><b>Definition:</b> <a href="StringMethod_8h_source.html#l00047">StringMethod.h:47</a></div></div>
+<div class="ttc" id="classSSAGES_1_1StringMethod_html_ade5506229ab6dad8209ca2853480b2ea"><div class="ttname"><a href="classSSAGES_1_1StringMethod.html#ade5506229ab6dad8209ca2853480b2ea">SSAGES::StringMethod::numnodes_</a></div><div class="ttdeci">int numnodes_</div><div class="ttdoc">Number of nodes on a string. </div><div class="ttdef"><b>Definition:</b> <a href="StringMethod_8h_source.html#l00065">StringMethod.h:65</a></div></div>
+<div class="ttc" id="classSSAGES_1_1StringMethod_html_a2d6c46aa7c2c85975621add18a55a9e4"><div class="ttname"><a href="classSSAGES_1_1StringMethod.html#a2d6c46aa7c2c85975621add18a55a9e4">SSAGES::StringMethod::mpiid_</a></div><div class="ttdeci">int mpiid_</div><div class="ttdoc">The node this belongs to. </div><div class="ttdef"><b>Definition:</b> <a href="StringMethod_8h_source.html#l00059">StringMethod.h:59</a></div></div>
+<div class="ttc" id="classSSAGES_1_1StringMethod_html_a10a3e2fc3c55b98e32a9bd41c6da1b63"><div class="ttname"><a href="classSSAGES_1_1StringMethod.html#a10a3e2fc3c55b98e32a9bd41c6da1b63">SSAGES::StringMethod::worldstring_</a></div><div class="ttdeci">std::vector&lt; std::vector&lt; double &gt; &gt; worldstring_</div><div class="ttdoc">The world&#39;s strings centers for each CV. </div><div class="ttdef"><b>Definition:</b> <a href="StringMethod_8h_source.html#l00056">StringMethod.h:56</a></div></div>
 <div class="ttc" id="classSSAGES_1_1Method_html_ae497980d1720c38b65d47fd4e65897b0"><div class="ttname"><a href="classSSAGES_1_1Method.html#ae497980d1720c38b65d47fd4e65897b0">SSAGES::Method::comm_</a></div><div class="ttdeci">boost::mpi::communicator comm_</div><div class="ttdoc">Local MPI communicator. </div><div class="ttdef"><b>Definition:</b> <a href="Method_8h_source.html#l00045">Method.h:45</a></div></div>
 <div class="ttc" id="classSSAGES_1_1Method_html_a9bbdc5a2592ff76cfe71364ad4d2ce68"><div class="ttname"><a href="classSSAGES_1_1Method.html#a9bbdc5a2592ff76cfe71364ad4d2ce68">SSAGES::Method::world_</a></div><div class="ttdeci">boost::mpi::communicator world_</div><div class="ttdoc">Global MPI communicator. </div><div class="ttdef"><b>Definition:</b> <a href="Method_8h_source.html#l00044">Method.h:44</a></div></div>
 </div><!-- fragment -->
@@ -965,9 +964,9 @@ Here is the caller graph for this function:</div>
 <p>The world's strings centers for each CV. </p>
 <p>worldstring_[node#][cv#] </p>
 
-<p>Definition at line <a class="el" href="StringMethod_8h_source.html#l00054">54</a> of file <a class="el" href="StringMethod_8h_source.html">StringMethod.h</a>.</p>
+<p>Definition at line <a class="el" href="StringMethod_8h_source.html#l00056">56</a> of file <a class="el" href="StringMethod_8h_source.html">StringMethod.h</a>.</p>
 
-<p>Referenced by <a class="el" href="FiniteTempString_8cpp_source.html#l00031">SSAGES::FiniteTempString::InCell()</a>, <a class="el" href="StringMethod_8h_source.html#l00289">PreSimulation()</a>, <a class="el" href="StringMethod_8h_source.html#l00111">PrintString()</a>, <a class="el" href="StringMethod_8h_source.html#l00216">TolCheck()</a>, and <a class="el" href="StringMethod_8h_source.html#l00192">UpdateWorldString()</a>.</p>
+<p>Referenced by <a class="el" href="FiniteTempString_8cpp_source.html#l00031">SSAGES::FiniteTempString::InCell()</a>, <a class="el" href="StringMethod_8h_source.html#l00290">PreSimulation()</a>, <a class="el" href="StringMethod_8h_source.html#l00113">PrintString()</a>, <a class="el" href="StringMethod_8h_source.html#l00217">TolCheck()</a>, and <a class="el" href="StringMethod_8h_source.html#l00194">UpdateWorldString()</a>.</p>
 
 </div>
 </div>
@@ -977,7 +976,7 @@ Here is the caller graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Mar 23 2017 13:11:12 for SSAGES by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Jun 7 2017 15:46:39 for SSAGES by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

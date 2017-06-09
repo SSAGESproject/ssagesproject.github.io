@@ -8,9 +8,11 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Elastic Band &mdash; SSAGES 0.9 documentation</title>
+  <title>Elastic Band &mdash; SSAGES v0.5.0-alpha-217-g4053fbf documentation</title>
   
 
+  
+  
   
   
 
@@ -30,8 +32,11 @@
   
 
   
-    <link rel="top" title="SSAGES 0.9 documentation" href="index.html"/>
-        <link rel="up" title="Meta-Dynamics Methods" href="Meta-Dynamics Methods.html"/>
+        <link rel="index" title="Index"
+              href="genindex.html"/>
+        <link rel="search" title="Search" href="search.html"/>
+    <link rel="top" title="SSAGES v0.5.0-alpha-217-g4053fbf documentation" href="index.html"/>
+        <link rel="up" title="Advanced Sampling Methods" href="Advanced Sampling Methods.html"/>
         <link rel="next" title="Finite Temperature String" href="Finite Temperature String.html"/>
         <link rel="prev" title="Basis Function Sampling" href="Basis Function Sampling.html"/> 
 
@@ -42,6 +47,7 @@
 
 <body class="wy-body-for-nav" role="document">
 
+   
   <div class="wy-grid-for-nav">
 
     
@@ -61,7 +67,7 @@
             
             
               <div class="version">
-                1.0
+                0.6.0
               </div>
             
           
@@ -82,11 +88,14 @@
           
             
             
-                <ul class="current">
+              
+            
+            
+              <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="Introduction.html">Introduction</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Getting Started.html">Getting Started</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Tutorials.html">Tutorials</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="Meta-Dynamics Methods.html">Meta-Dynamics Methods</a><ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="Advanced Sampling Methods.html">Advanced Sampling Methods</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="Adaptive Biasing Force Algorithm.html">Adaptive Biasing Force Algorithm</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Basis Function Sampling.html">Basis Function Sampling</a></li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#">Elastic Band</a><ul>
@@ -99,7 +108,7 @@
 </li>
 <li class="toctree-l2"><a class="reference internal" href="Finite Temperature String.html">Finite Temperature String</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Forward-Flux.html">Forward-Flux</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Generic Metadynamics.html">Generic Metadynamics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Metadynamics.html">Metadynamics</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Image Method.html">Image Method</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Replica Exchange.html">Replica Exchange</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Swarm of Trajectories.html">Swarm of Trajectories</a></li>
@@ -124,8 +133,10 @@
 
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
-        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="index.html">SSAGES</a>
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">SSAGES</a>
+        
       </nav>
 
 
@@ -134,32 +145,49 @@
         <div class="rst-content">
           
 
- 
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 <div role="navigation" aria-label="breadcrumbs navigation">
+
   <ul class="wy-breadcrumbs">
-    <li><a href="index.html">Docs</a> &raquo;</li>
-      
-          <li><a href="Meta-Dynamics Methods.html">Meta-Dynamics Methods</a> &raquo;</li>
-      
-    <li>Elastic Band</li>
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="Advanced Sampling Methods.html">Advanced Sampling Methods</a> &raquo;</li>
+        
+      <li>Elastic Band</li>
+    
+    
       <li class="wy-breadcrumbs-aside">
         
-          
-            <a href="_sources/Elastic Band.txt" rel="nofollow"> View page source</a>
+            
+            <a href="_sources/Elastic Band.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
+    
   </ul>
+
+  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
             
-  <div class="section" id="elastic-band">
-<span id="id1"></span><h1>Elastic Band<a class="headerlink" href="#elastic-band" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="id1">
+<h1>Elastic Band<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="introduction">
 <h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h2>
 <p>There are many methods, several of which are included in SSAGES, to calculate
@@ -230,42 +258,84 @@ and the MEP.</p>
 </div>
 <div class="section" id="options-parameters">
 <h2>Options &amp; Parameters<a class="headerlink" href="#options-parameters" title="Permalink to this headline">¶</a></h2>
-<p>These are all the options that SSAGES provides for running the NEB method. In
-order to add NEB to the JSON file, the method should be labeled as &#8220;ElasticBand&#8221;.</p>
+<p>To construct an EB input file, the following options ae available. A
+complete EB JSON file will inherit some of its inputs from the String
+schema (for parameters common to all string methods) as well as the
+Observer schema (for restarts). The options unique to EB are:</p>
+<dl class="docutils">
+<dt>equilibration_steps</dt>
+<dd>The number of MD steps to simply perform umbrella sampling without</dd>
+</dl>
+<p>invoking the NEB method. A sufficiently long number of steps ensures
+that the underlying molecular systems have CVs close to the CVs of their
+associated image on the band.</p>
+<dl class="docutils">
+<dt>evolution_steps</dt>
+<dd>The number of steps to perform the NEB over; the band is updated after</dd>
+</dl>
+<p>evolution steps times the number of samples total MD steps. A new value
+of the gradient is harvested every time the number of MD steps taken is
+an integer multiple of evolution steps.</p>
+<dl class="docutils">
+<dt>kstring</dt>
+<dd>The constant used in calculating the spring force at each image. It</dd>
+</dl>
+<p>can be specified uniquely for each image. Please notice its difference
+from kpsrings.</p>
+<p>From the String schema, the options are:</p>
+<dl class="docutils">
+<dt>type</dt>
+<dd>This parameter identifies that a String-type method is being used, and</dd>
+</dl>
+<p>thus should be set to “String”</p>
+<dl class="docutils">
+<dt>flavor</dt>
+<dd>This parameter identifies the specific kind of string-type method</dd>
+</dl>
+<p>being used; for EB, it should be set to “ElasticBand”.</p>
 <dl class="docutils">
 <dt>centers</dt>
-<dd>For each driver, the initial values of each CV should be specified as a list
-under &#8220;centers&#8221;.  In this way, the initial band is defined.</dd>
-<dt>number samples</dt>
-<dd>A specification of how many times to sample the gradient during the umbrella
-sampling portion of the method.</dd>
-<dt>time step</dt>
-<dd>The time step used in the Verlet integration of the force to update the
-images of the band.</dd>
-<dt>ksprings</dt>
-<dd>The constant used in performing umbrella sampling for the simulation; it can
-be specified uniquely for each image and for each CV.  Please notice its
-difference from kstring.</dd>
-<dt>kstring</dt>
-<dd>The constant used in calculating the spring force at each image.  It can be
-specified uniquely for each image.  Please notice its difference from
-kpsrings.</dd>
-<dt>frequency</dt>
-<dd>The frequency of each integration step. This should almost always be set to
-1.</dd>
-<dt>equilibration steps</dt>
-<dd>The number of MD steps to simply perform umbrella sampling without invoking
-the NEB method.  A sufficiently long number of steps ensures that the
-underlying molecular systems have CVs close to the CVs of their associated
-image on the band.</dd>
-<dt>max iterations</dt>
-<dd>The simulation will terminate after the specified number of iterations.</dd>
-<dt>evolution steps</dt>
-<dd>The number of steps to perform the NEB over; the band is updated after
-evolution steps times the number of samples total MD steps.  A new value of
-the gradient is harvested every time the number of MD steps taken is an
-integer multiple of evolution steps.</dd>
+<dd>For each driver, the initial values of each CV should be specified as</dd>
 </dl>
+<p>a list under “centers”. In this way, the initial band is defined.</p>
+<dl class="docutils">
+<dt>tolerance</dt>
+<dd>This is a tolerance threshold that can be set to trigger the end of</dd>
+</dl>
+<p>the method; it is a percentage by which, if no node CV changes by this
+percentage, the method will end. It must be specified as an array with
+one entry for each CV desired.</p>
+<dl class="docutils">
+<dt>max_iterations</dt>
+<dd>A complementary stopping criterion can be specified; the method will</dd>
+</dl>
+<p>stop if it undergoes this many iterations of the string method.</p>
+<dl class="docutils">
+<dt>ksprings</dt>
+<dd>A unique spring constant must be defined for each CV; its purpose is</dd>
+</dl>
+<p>described above.</p>
+<dl class="docutils">
+<dt>frequency</dt>
+<dd>The frequency of each integration step. This should almost always be</dd>
+</dl>
+<p>set to 1.</p>
+<p>From the Observer schema, the options are:</p>
+<dl class="docutils">
+<dt>type</dt>
+<dd>This can currently only be set to “JSON”; specifies to write out JSON</dd>
+</dl>
+<p>type restart files.</p>
+<dl class="docutils">
+<dt>file name</dt>
+<dd>This is a prefix which will be attached to the various restart files</dd>
+</dl>
+<p>that will be written out.</p>
+<dl class="docutils">
+<dt>frequency</dt>
+<dd>This specifies how often a restart file is written out, in terms of MD</dd>
+</dl>
+<p>steps taken.</p>
 </div>
 <div class="section" id="tutorial">
 <span id="eb-tutorial"></span><h2>Tutorial<a class="headerlink" href="#tutorial" title="Permalink to this headline">¶</a></h2>
@@ -330,15 +400,18 @@ J. Chem. Phys. <strong>113</strong>, 9978 (2000).</td></tr>
 
 
            </div>
+           <div class="articleComments">
+            
+           </div>
           </div>
           <footer>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="Finite Temperature String.html" class="btn btn-neutral float-right" title="Finite Temperature String" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="Finite Temperature String.html" class="btn btn-neutral float-right" title="Finite Temperature String" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="Basis Function Sampling.html" class="btn btn-neutral" title="Basis Function Sampling" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="Basis Function Sampling.html" class="btn btn-neutral" title="Basis Function Sampling" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -348,7 +421,7 @@ J. Chem. Phys. <strong>113</strong>, 9978 (2000).</td></tr>
   <div role="contentinfo">
     <p>
         &copy; Copyright 2016, the SSAGES Team.
-      Last updated on Oct 14, 2016.
+      Last updated on Jun 07, 2017.
 
     </p>
   </div>
@@ -370,16 +443,17 @@ J. Chem. Phys. <strong>113</strong>, 9978 (2000).</td></tr>
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'./',
-            VERSION:'0.9',
+            VERSION:'v0.5.0-alpha-217-g4053fbf',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
-            HAS_SOURCE:  true
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
         };
     </script>
       <script type="text/javascript" src="_static/jquery.js"></script>
       <script type="text/javascript" src="_static/underscore.js"></script>
       <script type="text/javascript" src="_static/doctools.js"></script>
-      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
   
 

@@ -1,9 +1,14 @@
 <map id="SSAGES::Meta::PostIntegration" name="SSAGES::Meta::PostIntegration">
-<area shape="rect" id="node2" href="$classSSAGES_1_1Meta.html#a63e57827c50fdf17b188dcf08bbf8081" title="Adds a new hill. " alt="" coords="290,5,454,32"/>
-<area shape="rect" id="node4" href="$classSSAGES_1_1Meta.html#a9cd073ee3c04a98e5131e96ffcb11df8" title="Computes the bias force. " alt="" coords="268,56,476,83"/>
-<area shape="rect" id="node7" href="$classSSAGES_1_1Snapshot.html#a2533f7b900bc33185424eb94d6996edf" title="Access the per&#45;particle forces. " alt="" coords="267,107,477,133"/>
-<area shape="rect" id="node8" href="$classSSAGES_1_1Snapshot.html#acaee0172694743e118273a055ff2c3fc" title="Get the current iteration. " alt="" coords="264,157,480,184"/>
-<area shape="rect" id="node3" href="$classSSAGES_1_1Meta.html#a0ae5acb14c1bf68e158d23074cee86f8" title="Prints the new hill to file. " alt="" coords="528,5,696,32"/>
-<area shape="rect" id="node5" href="$namespaceSSAGES.html#a9bb4c0d6df4a5148519c0c72ccba45a2" title="Evlauate Gaussian. Helper function. " alt="" coords="543,56,681,83"/>
-<area shape="rect" id="node6" href="$namespaceSSAGES.html#a5f352371649672a16fac4c194b31625e" title="Evaluate Gaussian derivative. Helper function. " alt="" coords="529,107,695,133"/>
+<area shape="rect" id="node2" href="$classSSAGES_1_1Meta.html#afc8e23308641672a8e0363e2d40b19c2" title="Adds a new hill. " alt="" coords="290,132,454,159"/>
+<area shape="rect" id="node8" href="$classSSAGES_1_1Meta.html#a9cd073ee3c04a98e5131e96ffcb11df8" title="Computes the bias force. " alt="" coords="268,208,476,235"/>
+<area shape="rect" id="node11" href="$classSSAGES_1_1Snapshot.html#a2533f7b900bc33185424eb94d6996edf" title="Access the per&#45;particle forces. " alt="" coords="267,259,477,285"/>
+<area shape="rect" id="node12" href="$classSSAGES_1_1Snapshot.html#acaee0172694743e118273a055ff2c3fc" title="Get the current iteration. " alt="" coords="264,309,480,336"/>
+<area shape="rect" id="node13" href="$classSSAGES_1_1Snapshot.html#a00de82748940b4a7982b19fa8abe1c30" title="Get box virial. " alt="" coords="273,360,471,387"/>
+<area shape="rect" id="node3" href="$classSSAGES_1_1Grid.html#a709374b3cadf320347604077a2e45e5b" title="Return iterator at first grid point. " alt="" coords="555,5,703,32"/>
+<area shape="rect" id="node4" href="$classSSAGES_1_1Grid.html#ac4fcc9f0cd61476ce4fd880c768d9694" title="Return iterator after last valid grid point. " alt="" coords="560,56,699,83"/>
+<area shape="rect" id="node5" href="$namespaceSSAGES.html#a9bb4c0d6df4a5148519c0c72ccba45a2" title="Evlauate Gaussian. Helper function. " alt="" coords="561,208,698,235"/>
+<area shape="rect" id="node6" href="$namespaceSSAGES.html#a5f352371649672a16fac4c194b31625e" title="Evaluate Gaussian derivative. Helper function. " alt="" coords="547,157,712,184"/>
+<area shape="rect" id="node7" href="$classSSAGES_1_1Meta.html#a68ee814b40f643203949535625645c03" title="Prints the new hill to file. " alt="" coords="545,107,713,133"/>
+<area shape="rect" id="node9" href="$classSSAGES_1_1GridBase.html#a1d73d329cfc609d30a9c0bd7e844467c" title="Return the lower edges of the Grid. " alt="" coords="528,309,731,336"/>
+<area shape="rect" id="node10" href="$classSSAGES_1_1GridBase.html#a1c0410f0b34b5eb00112ca11c7a912ed" title="Return the upper edges of the Grid. " alt="" coords="528,259,731,285"/>
 </map>

@@ -130,10 +130,10 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:a778999fe72e82d9044a206fe6782011f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a778999fe72e82d9044a206fe6782011f"></a>
-std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSSAGES_1_1BuildException.html#a778999fe72e82d9044a206fe6782011f">_errors</a></td></tr>
-<tr class="memdesc:a778999fe72e82d9044a206fe6782011f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Error message. <br /></td></tr>
-<tr class="separator:a778999fe72e82d9044a206fe6782011f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70e41d120fdf719a3fb28ae93ad99bda"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a70e41d120fdf719a3fb28ae93ad99bda"></a>
+std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSSAGES_1_1BuildException.html#a70e41d120fdf719a3fb28ae93ad99bda">errors_</a></td></tr>
+<tr class="memdesc:a70e41d120fdf719a3fb28ae93ad99bda"><td class="mdescLeft">&#160;</td><td class="mdescRight">Error message. <br /></td></tr>
+<tr class="separator:a70e41d120fdf719a3fb28ae93ad99bda"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Exception to be thrown when building the <a class="el" href="classSSAGES_1_1Driver.html" title="Abstract driver class for creating driver objects. ">Driver</a> fails. </p>
@@ -172,10 +172,10 @@ std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bott
 
 <p>Definition at line <a class="el" href="DriverException_8h_source.html#l00043">43</a> of file <a class="el" href="DriverException_8h_source.html">DriverException.h</a>.</p>
 <div class="fragment"><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;                                                    : </div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;            std::runtime_error(<span class="stringliteral">&quot;Object build error&quot;</span>), <a class="code" href="classSSAGES_1_1BuildException.html#a778999fe72e82d9044a206fe6782011f">_errors</a>(errors)</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;            std::runtime_error(<span class="stringliteral">&quot;Object build error&quot;</span>), <a class="code" href="classSSAGES_1_1BuildException.html#a70e41d120fdf719a3fb28ae93ad99bda">errors_</a>(errors)</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        {</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        }</div>
-<div class="ttc" id="classSSAGES_1_1BuildException_html_a778999fe72e82d9044a206fe6782011f"><div class="ttname"><a href="classSSAGES_1_1BuildException.html#a778999fe72e82d9044a206fe6782011f">SSAGES::BuildException::_errors</a></div><div class="ttdeci">std::vector&lt; std::string &gt; _errors</div><div class="ttdoc">Error message. </div><div class="ttdef"><b>Definition:</b> <a href="DriverException_8h_source.html#l00037">DriverException.h:37</a></div></div>
+<div class="ttc" id="classSSAGES_1_1BuildException_html_a70e41d120fdf719a3fb28ae93ad99bda"><div class="ttname"><a href="classSSAGES_1_1BuildException.html#a70e41d120fdf719a3fb28ae93ad99bda">SSAGES::BuildException::errors_</a></div><div class="ttdeci">std::vector&lt; std::string &gt; errors_</div><div class="ttdoc">Error message. </div><div class="ttdef"><b>Definition:</b> <a href="DriverException_8h_source.html#l00037">DriverException.h:37</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -206,20 +206,20 @@ std::vector&lt; std::string &gt;&#160;</td><td class="memItemRight" valign="bott
 
 <p>Definition at line <a class="el" href="DriverException_8h_source.html#l00066">66</a> of file <a class="el" href="DriverException_8h_source.html">DriverException.h</a>.</p>
 
-<p>References <a class="el" href="DriverException_8h_source.html#l00037">_errors</a>.</p>
+<p>References <a class="el" href="DriverException_8h_source.html#l00037">errors_</a>.</p>
 
-<p>Referenced by <a class="el" href="Simulation_8h_source.html#l00396">SSAGES::Simulation::BuildCVs()</a>, <a class="el" href="Simulation_8h_source.html#l00192">SSAGES::Simulation::BuildDriver()</a>, <a class="el" href="Simulation_8h_source.html#l00501">SSAGES::Simulation::BuildGrid()</a>, <a class="el" href="Simulation_8h_source.html#l00441">SSAGES::Simulation::BuildMethod()</a>, <a class="el" href="Simulation_8h_source.html#l00470">SSAGES::Simulation::BuildObservers()</a>, and <a class="el" href="Simulation_8h_source.html#l00152">SSAGES::Simulation::BuildSimulation()</a>.</p>
+<p>Referenced by <a class="el" href="Simulation_8h_source.html#l00431">SSAGES::Simulation::BuildConstraints()</a>, <a class="el" href="Simulation_8h_source.html#l00403">SSAGES::Simulation::BuildCVs()</a>, <a class="el" href="Simulation_8h_source.html#l00199">SSAGES::Simulation::BuildDriver()</a>, <a class="el" href="Simulation_8h_source.html#l00455">SSAGES::Simulation::BuildMethod()</a>, <a class="el" href="Simulation_8h_source.html#l00484">SSAGES::Simulation::BuildObservers()</a>, and <a class="el" href="Simulation_8h_source.html#l00159">SSAGES::Simulation::BuildSimulation()</a>.</p>
 <div class="fragment"><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        {</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="classSSAGES_1_1BuildException.html#a778999fe72e82d9044a206fe6782011f">_errors</a>;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="classSSAGES_1_1BuildException.html#a70e41d120fdf719a3fb28ae93ad99bda">errors_</a>;</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        }</div>
-<div class="ttc" id="classSSAGES_1_1BuildException_html_a778999fe72e82d9044a206fe6782011f"><div class="ttname"><a href="classSSAGES_1_1BuildException.html#a778999fe72e82d9044a206fe6782011f">SSAGES::BuildException::_errors</a></div><div class="ttdeci">std::vector&lt; std::string &gt; _errors</div><div class="ttdoc">Error message. </div><div class="ttdef"><b>Definition:</b> <a href="DriverException_8h_source.html#l00037">DriverException.h:37</a></div></div>
+<div class="ttc" id="classSSAGES_1_1BuildException_html_a70e41d120fdf719a3fb28ae93ad99bda"><div class="ttname"><a href="classSSAGES_1_1BuildException.html#a70e41d120fdf719a3fb28ae93ad99bda">SSAGES::BuildException::errors_</a></div><div class="ttdeci">std::vector&lt; std::string &gt; errors_</div><div class="ttdoc">Error message. </div><div class="ttdef"><b>Definition:</b> <a href="DriverException_8h_source.html#l00037">DriverException.h:37</a></div></div>
 </div><!-- fragment -->
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classSSAGES_1_1BuildException_a51e329a9d93ecffb5ba284e0eb4cdc26_icgraph.png" border="0" usemap="#classSSAGES_1_1BuildException_a51e329a9d93ecffb5ba284e0eb4cdc26_icgraph" alt=""/></div>
 <map name="classSSAGES_1_1BuildException_a51e329a9d93ecffb5ba284e0eb4cdc26_icgraph" id="classSSAGES_1_1BuildException_a51e329a9d93ecffb5ba284e0eb4cdc26_icgraph">
-<area shape="rect" id="node2" href="classSSAGES_1_1Simulation.html#abe7555c48d986df953ac6e4f9f62cb59" title="Set up CVs. " alt="" coords="227,5,373,46"/><area shape="rect" id="node3" href="classSSAGES_1_1Simulation.html#ae99e82c2555ce0ec51e3ff8ceca3cb26" title="Set up the driver for the simulation. " alt="" coords="227,70,373,111"/><area shape="rect" id="node4" href="classSSAGES_1_1Simulation.html#a29aab85ead4a586cbeb1513ce71c1a3b" title="Set up grid. " alt="" coords="227,135,373,177"/><area shape="rect" id="node5" href="classSSAGES_1_1Simulation.html#a0fcce9ce874a54fa3da1cf7361586940" title="Set up Method. " alt="" coords="227,201,373,242"/><area shape="rect" id="node6" href="classSSAGES_1_1Simulation.html#a14429b62021365dd2473231b1cd3eeb7" title="Set up observers. " alt="" coords="227,266,373,307"/><area shape="rect" id="node7" href="classSSAGES_1_1Simulation.html#a0916181226c5caa3629af051593a6c82" title="Set up the simulation. " alt="" coords="227,331,373,373"/></map>
+<area shape="rect" id="node2" href="classSSAGES_1_1Simulation.html#afb3d229609773ebb0923559b496f42d5" title="Set up Constraints. " alt="" coords="227,5,373,46"/><area shape="rect" id="node3" href="classSSAGES_1_1Simulation.html#abe7555c48d986df953ac6e4f9f62cb59" title="Set up CVs. " alt="" coords="227,70,373,111"/><area shape="rect" id="node4" href="classSSAGES_1_1Simulation.html#ae99e82c2555ce0ec51e3ff8ceca3cb26" title="Set up the driver for the simulation. " alt="" coords="227,135,373,177"/><area shape="rect" id="node5" href="classSSAGES_1_1Simulation.html#a0fcce9ce874a54fa3da1cf7361586940" title="Set up Method. " alt="" coords="227,201,373,242"/><area shape="rect" id="node6" href="classSSAGES_1_1Simulation.html#a14429b62021365dd2473231b1cd3eeb7" title="Set up observers. " alt="" coords="227,266,373,307"/><area shape="rect" id="node7" href="classSSAGES_1_1Simulation.html#a0916181226c5caa3629af051593a6c82" title="Set up the simulation. " alt="" coords="227,331,373,373"/></map>
 </div>
 </p>
 
@@ -273,7 +273,7 @@ Here is the caller graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Oct 14 2016 11:38:55 for SSAGES by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Jun 7 2017 15:46:39 for SSAGES by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>
