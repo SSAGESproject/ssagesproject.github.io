@@ -1,7 +1,9 @@
 <map id="SSAGES::Driver" name="SSAGES::Driver">
 <area shape="rect" id="node5" href="$classSSAGES_1_1GromacsDriver.html" title="Driver for Gromacs simulations. " alt="" coords="5,229,179,256"/>
 <area shape="rect" id="node6" href="$classSSAGES_1_1LammpsDriver.html" title="Driver for LAMMPS simulations. " alt="" coords="203,229,373,256"/>
-<area shape="rect" id="node2" href="$classSSAGES_1_1SimObservable.html" title="Base class for observable objects in a simulation. " alt="" coords="9,80,183,107"/>
-<area shape="rect" id="node3" href="$classSSAGES_1_1Visitable.html" title="Base class for visitable objects. " alt="" coords="29,5,163,32"/>
-<area shape="rect" id="node4" href="$classSSAGES_1_1Serializable.html" title="Base class for all serializable objects. " alt="" coords="208,80,360,107"/>
+<area shape="rect" id="node7" href="$classSSAGES_1_1OpenMDDriver.html" title="Driver for OpenMD simulations. " alt="" coords="398,229,569,256"/>
+<area shape="rect" id="node8" href="$classSSAGES_1_1QboxDriver.html" title="Driver for QBox simulation. " alt="" coords="594,229,744,256"/>
+<area shape="rect" id="node2" href="$classSSAGES_1_1SimObservable.html" title="Base class for observable objects in a simulation. " alt="" coords="205,80,379,107"/>
+<area shape="rect" id="node3" href="$classSSAGES_1_1Visitable.html" title="Base class for visitable objects. " alt="" coords="225,5,359,32"/>
+<area shape="rect" id="node4" href="$classSSAGES_1_1Serializable.html" title="Base class for all serializable objects. " alt="" coords="404,80,556,107"/>
 </map>

@@ -1,5 +1,7 @@
+import os
 from flask import render_template
 from app import app, pages
+from flask import send_from_directory
 
 #------------------ general page routes ----------------------#
 @app.route('/')
@@ -27,6 +29,20 @@ def download():
 @app.route('/papers.html')
 def papers():
     return render_template("papers.html")
+
+@app.route('/SSAGES-site/validation.html')
+@app.route('/validation.html')
+def validation():
+    return render_template("validation.html")
+
+@app.route('/SSAGES-site/tutorials.html')
+@app.route('/tutorials.html')
+def tutorials():
+    return render_template("tutorials.html")
+
+@app.route('/favicon.ico')
+def favicon():
+    return send_from_directory(os.path.join(app.root_path, 'static'),'favicon.ico')
 
 @app.route('/', defaults={'path': ''})
 @app.route('/<path:path>')

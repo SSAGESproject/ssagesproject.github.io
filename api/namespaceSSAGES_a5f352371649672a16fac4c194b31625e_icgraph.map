@@ -1,4 +1,5 @@
 <map id="SSAGES::gaussianDerv" name="SSAGES::gaussianDerv">
-<area shape="rect" id="node2" href="$classSSAGES_1_1Meta.html#a9cd073ee3c04a98e5131e96ffcb11df8" title="Computes the bias force. " alt="" coords="219,5,427,32"/>
-<area shape="rect" id="node3" href="$classSSAGES_1_1Meta.html#a223464a8c4ecbac45a678eb3425d504e" title="Post&#45;integration hook. " alt="" coords="475,5,685,32"/>
+<area shape="rect" id="node2" href="$classSSAGES_1_1Meta.html#afc8e23308641672a8e0363e2d40b19c2" title="Adds a new hill. " alt="" coords="241,5,405,32"/>
+<area shape="rect" id="node4" href="$classSSAGES_1_1Meta.html#a9cd073ee3c04a98e5131e96ffcb11df8" title="Computes the bias force. " alt="" coords="219,56,427,83"/>
+<area shape="rect" id="node3" href="$classSSAGES_1_1Meta.html#a223464a8c4ecbac45a678eb3425d504e" title="Post&#45;integration hook. " alt="" coords="475,31,685,57"/>
 </map>

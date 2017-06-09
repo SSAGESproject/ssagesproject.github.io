@@ -2,14 +2,14 @@
 <area shape="rect" id="node2" href="$classSSAGES_1_1Constraint.html#afc2298be994364d322e862dadda1c8b5" title="Overloaded function allowing JSON path specification. " alt="" coords="450,5,595,46"/>
 <area shape="rect" id="node3" href="$classSSAGES_1_1CollectiveVariable.html#ab56eae0d888f3d5125566bfb9b5e21aa" title="Set up collective variable. " alt="" coords="427,70,618,111"/>
 <area shape="rect" id="node4" href="$classSSAGES_1_1LammpsDriver.html#ae589a4a73dee0ced0ca0bc63554ffffd" title="Set up the driver. " alt="" coords="437,135,608,177"/>
-<area shape="rect" id="node5" href="$classSSAGES_1_1Simulation.html#ae99e82c2555ce0ec51e3ff8ceca3cb26" title="Set up the driver for the simulation. " alt="" coords="207,491,353,533"/>
-<area shape="rect" id="node6" href="$classSSAGES_1_1Grid.html#a9e933a2490b0d835c0578cbe7f012292" title="Set up the grid. " alt="" coords="437,201,608,228"/>
-<area shape="rect" id="node7" href="$classSSAGES_1_1Histogram.html#a502ac115a7c5f95599e1cef20ce37c56" title="Set up the histogram. " alt="" coords="446,253,599,294"/>
-<area shape="rect" id="node8" href="$classSSAGES_1_1Method.html#a4440bebe9b649e17e83d1959362091c3" title="Set up the Method. " alt="" coords="419,319,627,345"/>
-<area shape="rect" id="node10" href="$classSSAGES_1_1SimObserver.html#a5c1cb9f3264af96ac951af2d63bd835f" title="Build the simulation observer. " alt="" coords="442,370,603,411"/>
-<area shape="rect" id="node11" href="$classSSAGES_1_1SimObserver.html#ab4c3c59bdca5b200e225fc921275e5eb" title="Build list of observers. " alt="" coords="199,557,361,598"/>
-<area shape="rect" id="node13" href="$classSSAGES_1_1Simulation.html#a0916181226c5caa3629af051593a6c82" title="Set up the simulation. " alt="" coords="449,435,596,477"/>
-<area shape="rect" id="node14" href="$classJson_1_1ObjectRequirement.html#a9ac3b920001a35bc70580035d8d802b7" title="Validate JSON value. " alt="" coords="195,222,365,263"/>
-<area shape="rect" id="node9" href="$classSSAGES_1_1Driver.html#a336c56e2ac7b535172e7d596f5af30d6" title="Build method(s). " alt="" coords="680,319,880,345"/>
-<area shape="rect" id="node12" href="$classSSAGES_1_1Driver.html#a240881074d49355f632dcb7983fa1408" title="Build observer(s). " alt="" coords="414,564,631,591"/>
+<area shape="rect" id="node5" href="$classSSAGES_1_1Simulation.html#ae99e82c2555ce0ec51e3ff8ceca3cb26" title="Set up the driver for the simulation. " alt="" coords="207,495,353,537"/>
+<area shape="rect" id="node6" href="$classSSAGES_1_1Grid.html#a9e933a2490b0d835c0578cbe7f012292" title="Set up the grid. " alt="" coords="443,201,602,242"/>
+<area shape="rect" id="node7" href="$classSSAGES_1_1Histogram.html#a502ac115a7c5f95599e1cef20ce37c56" title="Set up the histogram. " alt="" coords="446,266,599,307"/>
+<area shape="rect" id="node8" href="$classSSAGES_1_1Method.html#a4440bebe9b649e17e83d1959362091c3" title="Set up the Method. " alt="" coords="419,332,627,359"/>
+<area shape="rect" id="node10" href="$classSSAGES_1_1SimObserver.html#a5c1cb9f3264af96ac951af2d63bd835f" title="Build the simulation observer. " alt="" coords="442,383,603,425"/>
+<area shape="rect" id="node11" href="$classSSAGES_1_1SimObserver.html#ab4c3c59bdca5b200e225fc921275e5eb" title="Build list of observers. " alt="" coords="199,561,361,602"/>
+<area shape="rect" id="node13" href="$classSSAGES_1_1Simulation.html#a0916181226c5caa3629af051593a6c82" title="Set up the simulation. " alt="" coords="449,449,596,490"/>
+<area shape="rect" id="node14" href="$classJson_1_1ObjectRequirement.html#a9ac3b920001a35bc70580035d8d802b7" title="Validate JSON value. " alt="" coords="195,226,365,267"/>
+<area shape="rect" id="node9" href="$classSSAGES_1_1Driver.html#a336c56e2ac7b535172e7d596f5af30d6" title="Build method(s). " alt="" coords="680,332,880,359"/>
+<area shape="rect" id="node12" href="$classSSAGES_1_1Driver.html#a240881074d49355f632dcb7983fa1408" title="Build observer(s). " alt="" coords="414,568,631,595"/>
 </map>

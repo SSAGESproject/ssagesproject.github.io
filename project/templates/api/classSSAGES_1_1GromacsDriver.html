@@ -103,6 +103,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">SSAGES::GromacsDriver Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p><a class="el" href="classSSAGES_1_1Driver.html" title="Abstract driver class for creating driver objects. ">Driver</a> for Gromacs simulations.  
+ <a href="classSSAGES_1_1GromacsDriver.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="GromacsDriver_8h_source.html">GromacsDriver.h</a>&gt;</code></p>
 <div class="dynheader">
 Inheritance diagram for SSAGES::GromacsDriver:</div>
 <div class="dyncontent">
@@ -113,19 +118,19 @@ Inheritance diagram for SSAGES::GromacsDriver:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ad8c922b7c8471ce1bac9d51b8da03d13"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad8c922b7c8471ce1bac9d51b8da03d13"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><b>GromacsDriver</b> (mpi::communicator &amp;world_comm, mpi::communicator &amp;local_comm, int walkerID)</td></tr>
+<tr class="memitem:ad8c922b7c8471ce1bac9d51b8da03d13"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSSAGES_1_1GromacsDriver.html#ad8c922b7c8471ce1bac9d51b8da03d13">GromacsDriver</a> (mpi::communicator &amp;world_comm, mpi::communicator &amp;local_comm, int walkerID)</td></tr>
+<tr class="memdesc:ad8c922b7c8471ce1bac9d51b8da03d13"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="#ad8c922b7c8471ce1bac9d51b8da03d13">More...</a><br /></td></tr>
 <tr class="separator:ad8c922b7c8471ce1bac9d51b8da03d13"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2c747b9d9b49b4ce34b2ab5cceb4c5cd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2c747b9d9b49b4ce34b2ab5cceb4c5cd"></a>
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSSAGES_1_1GromacsDriver.html#a2c747b9d9b49b4ce34b2ab5cceb4c5cd">Run</a> () override</td></tr>
 <tr class="memdesc:a2c747b9d9b49b4ce34b2ab5cceb4c5cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Run simulation. <br /></td></tr>
 <tr class="separator:a2c747b9d9b49b4ce34b2ab5cceb4c5cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0dcdd44795581a7d77ab82cdcfe5cc0d"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSSAGES_1_1GromacsDriver.html#a0dcdd44795581a7d77ab82cdcfe5cc0d">ExecuteInputFile</a> (std::string) override</td></tr>
-<tr class="memdesc:a0dcdd44795581a7d77ab82cdcfe5cc0d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read in driver specific input file (e.g. Lammps.in)  <a href="#a0dcdd44795581a7d77ab82cdcfe5cc0d">More...</a><br /></td></tr>
+<tr class="memdesc:a0dcdd44795581a7d77ab82cdcfe5cc0d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Run Input file.  <a href="#a0dcdd44795581a7d77ab82cdcfe5cc0d">More...</a><br /></td></tr>
 <tr class="separator:a0dcdd44795581a7d77ab82cdcfe5cc0d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a262f215c05707fafe104785aa567f532"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSSAGES_1_1GromacsDriver.html#a262f215c05707fafe104785aa567f532">BuildDriver</a> (const Json::Value &amp;json, const std::string &amp;) override</td></tr>
-<tr class="memdesc:a262f215c05707fafe104785aa567f532"><td class="mdescLeft">&#160;</td><td class="mdescRight">Build the driver, which will create the hook and so forth.  <a href="#a262f215c05707fafe104785aa567f532">More...</a><br /></td></tr>
-<tr class="separator:a262f215c05707fafe104785aa567f532"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae410f42f8adf47f9a8021737fed5adba"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSSAGES_1_1GromacsDriver.html#ae410f42f8adf47f9a8021737fed5adba">BuildDriver</a> (const Json::Value &amp;json, const std::string &amp;path) override</td></tr>
+<tr class="memdesc:ae410f42f8adf47f9a8021737fed5adba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set up the driver.  <a href="#ae410f42f8adf47f9a8021737fed5adba">More...</a><br /></td></tr>
+<tr class="separator:ae410f42f8adf47f9a8021737fed5adba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8655eb778160661894e67631454ee43d"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSSAGES_1_1GromacsDriver.html#a8655eb778160661894e67631454ee43d">Serialize</a> (Json::Value &amp;json) const override</td></tr>
 <tr class="memdesc:a8655eb778160661894e67631454ee43d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Serialize the class.  <a href="#a8655eb778160661894e67631454ee43d">More...</a><br /></td></tr>
 <tr class="separator:a8655eb778160661894e67631454ee43d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -146,8 +151,7 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="c
 <tr class="memitem:acfe295161fe152ecf9bef5a9440a37cb inherit pub_methods_classSSAGES_1_1Driver"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSSAGES_1_1Driver.html#acfe295161fe152ecf9bef5a9440a37cb">BuildCVs</a> (const Json::Value &amp;json, const std::string &amp;path)</td></tr>
 <tr class="memdesc:acfe295161fe152ecf9bef5a9440a37cb inherit pub_methods_classSSAGES_1_1Driver"><td class="mdescLeft">&#160;</td><td class="mdescRight">Build CVs.  <a href="#acfe295161fe152ecf9bef5a9440a37cb">More...</a><br /></td></tr>
 <tr class="separator:acfe295161fe152ecf9bef5a9440a37cb inherit pub_methods_classSSAGES_1_1Driver"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a09257b29efad62dfd0abaaca1309421b inherit pub_methods_classSSAGES_1_1Driver"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a09257b29efad62dfd0abaaca1309421b"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>BuildConstraints</b> (const Json::Value &amp;json, const std::string &amp;path)</td></tr>
+<tr class="memitem:a09257b29efad62dfd0abaaca1309421b inherit pub_methods_classSSAGES_1_1Driver"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSSAGES_1_1Driver.html#a09257b29efad62dfd0abaaca1309421b">BuildConstraints</a> (const Json::Value &amp;json, const std::string &amp;path)</td></tr>
 <tr class="separator:a09257b29efad62dfd0abaaca1309421b inherit pub_methods_classSSAGES_1_1Driver"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a336c56e2ac7b535172e7d596f5af30d6 inherit pub_methods_classSSAGES_1_1Driver"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSSAGES_1_1Driver.html#a336c56e2ac7b535172e7d596f5af30d6">BuildMethod</a> (const Json::Value &amp;json, const std::string &amp;path)</td></tr>
 <tr class="memdesc:a336c56e2ac7b535172e7d596f5af30d6 inherit pub_methods_classSSAGES_1_1Driver"><td class="mdescLeft">&#160;</td><td class="mdescRight">Build method(s).  <a href="#a336c56e2ac7b535172e7d596f5af30d6">More...</a><br /></td></tr>
@@ -155,9 +159,6 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>BuildConstraints</b> 
 <tr class="memitem:a240881074d49355f632dcb7983fa1408 inherit pub_methods_classSSAGES_1_1Driver"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSSAGES_1_1Driver.html#a240881074d49355f632dcb7983fa1408">BuildObservers</a> (const Json::Value &amp;json, int nwalks)</td></tr>
 <tr class="memdesc:a240881074d49355f632dcb7983fa1408 inherit pub_methods_classSSAGES_1_1Driver"><td class="mdescLeft">&#160;</td><td class="mdescRight">Build observer(s).  <a href="#a240881074d49355f632dcb7983fa1408">More...</a><br /></td></tr>
 <tr class="separator:a240881074d49355f632dcb7983fa1408 inherit pub_methods_classSSAGES_1_1Driver"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3a019b27bc5f49754d7f70633b274312 inherit pub_methods_classSSAGES_1_1Driver"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSSAGES_1_1Driver.html#a3a019b27bc5f49754d7f70633b274312">BuildGrid</a> (const Json::Value &amp;json, const std::string &amp;path)</td></tr>
-<tr class="memdesc:a3a019b27bc5f49754d7f70633b274312 inherit pub_methods_classSSAGES_1_1Driver"><td class="mdescLeft">&#160;</td><td class="mdescRight">Build the grid.  <a href="#a3a019b27bc5f49754d7f70633b274312">More...</a><br /></td></tr>
-<tr class="separator:a3a019b27bc5f49754d7f70633b274312 inherit pub_methods_classSSAGES_1_1Driver"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6ad6342146725b51612ca8b9bb2f150e inherit pub_methods_classSSAGES_1_1Driver"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSSAGES_1_1Driver.html#a6ad6342146725b51612ca8b9bb2f150e">Finalize</a> ()</td></tr>
 <tr class="memdesc:a6ad6342146725b51612ca8b9bb2f150e inherit pub_methods_classSSAGES_1_1Driver"><td class="mdescLeft">&#160;</td><td class="mdescRight">Finalize the setup.  <a href="#a6ad6342146725b51612ca8b9bb2f150e">More...</a><br /></td></tr>
 <tr class="separator:a6ad6342146725b51612ca8b9bb2f150e inherit pub_methods_classSSAGES_1_1Driver"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -193,11 +194,13 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="c
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
 <tr class="memitem:a2d260309b91f72ccdc947ee644d34ca0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2d260309b91f72ccdc947ee644d34ca0"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>nwalkers_</b></td></tr>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSSAGES_1_1GromacsDriver.html#a2d260309b91f72ccdc947ee644d34ca0">nwalkers_</a></td></tr>
+<tr class="memdesc:a2d260309b91f72ccdc947ee644d34ca0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of walkers. <br /></td></tr>
 <tr class="separator:a2d260309b91f72ccdc947ee644d34ca0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a52c0b51d9f82f1e0c4763288cf1d8088"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a52c0b51d9f82f1e0c4763288cf1d8088"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><b>MDSteps_</b></td></tr>
-<tr class="separator:a52c0b51d9f82f1e0c4763288cf1d8088"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e1a13c5832fc54e08aebb883e76febf"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8e1a13c5832fc54e08aebb883e76febf"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSSAGES_1_1GromacsDriver.html#a8e1a13c5832fc54e08aebb883e76febf">restart_</a></td></tr>
+<tr class="memdesc:a8e1a13c5832fc54e08aebb883e76febf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Is the simulation a restart? <br /></td></tr>
+<tr class="separator:a8e1a13c5832fc54e08aebb883e76febf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -207,67 +210,132 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memdesc:ad343f4a158eb7402b68e09cbd14a97e7 inherit pro_methods_classSSAGES_1_1SimObservable"><td class="mdescLeft">&#160;</td><td class="mdescRight">Serialize observers. <br /></td></tr>
 <tr class="separator:ad343f4a158eb7402b68e09cbd14a97e7 inherit pro_methods_classSSAGES_1_1SimObservable"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_classSSAGES_1_1Driver"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classSSAGES_1_1Driver')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classSSAGES_1_1Driver.html">SSAGES::Driver</a></td></tr>
-<tr class="memitem:ae524487495f4304ceb44e1a62178fbdc inherit pro_attribs_classSSAGES_1_1Driver"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae524487495f4304ceb44e1a62178fbdc"></a>
-boost::mpi::communicator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSSAGES_1_1Driver.html#ae524487495f4304ceb44e1a62178fbdc">_world</a></td></tr>
-<tr class="memdesc:ae524487495f4304ceb44e1a62178fbdc inherit pro_attribs_classSSAGES_1_1Driver"><td class="mdescLeft">&#160;</td><td class="mdescRight">MPI global communicator. <br /></td></tr>
-<tr class="separator:ae524487495f4304ceb44e1a62178fbdc inherit pro_attribs_classSSAGES_1_1Driver"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab54b93056e47131e9420bfbcd1607fad inherit pro_attribs_classSSAGES_1_1Driver"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab54b93056e47131e9420bfbcd1607fad"></a>
-boost::mpi::communicator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSSAGES_1_1Driver.html#ab54b93056e47131e9420bfbcd1607fad">_comm</a></td></tr>
-<tr class="memdesc:ab54b93056e47131e9420bfbcd1607fad inherit pro_attribs_classSSAGES_1_1Driver"><td class="mdescLeft">&#160;</td><td class="mdescRight">MPI local communicator. <br /></td></tr>
-<tr class="separator:ab54b93056e47131e9420bfbcd1607fad inherit pro_attribs_classSSAGES_1_1Driver"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad092889b2da84e4ad69a6fa6c0b4898d inherit pro_attribs_classSSAGES_1_1Driver"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad092889b2da84e4ad69a6fa6c0b4898d"></a>
-const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSSAGES_1_1Driver.html#ad092889b2da84e4ad69a6fa6c0b4898d">_wid</a></td></tr>
-<tr class="memdesc:ad092889b2da84e4ad69a6fa6c0b4898d inherit pro_attribs_classSSAGES_1_1Driver"><td class="mdescLeft">&#160;</td><td class="mdescRight">The node id that this driver belongs to. <br /></td></tr>
-<tr class="separator:ad092889b2da84e4ad69a6fa6c0b4898d inherit pro_attribs_classSSAGES_1_1Driver"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9817e954adcfc686e1a346b171b23166 inherit pro_attribs_classSSAGES_1_1Driver"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9817e954adcfc686e1a346b171b23166"></a>
-<a class="el" href="classSSAGES_1_1Hook.html">Hook</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSSAGES_1_1Driver.html#a9817e954adcfc686e1a346b171b23166">_hook</a></td></tr>
-<tr class="memdesc:a9817e954adcfc686e1a346b171b23166 inherit pro_attribs_classSSAGES_1_1Driver"><td class="mdescLeft">&#160;</td><td class="mdescRight">The hook that hooks into the MD simulation engine. <br /></td></tr>
-<tr class="separator:a9817e954adcfc686e1a346b171b23166 inherit pro_attribs_classSSAGES_1_1Driver"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af97dd345f1defb7f51a5ffc05b735078 inherit pro_attribs_classSSAGES_1_1Driver"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af97dd345f1defb7f51a5ffc05b735078"></a>
-<a class="el" href="classSSAGES_1_1Snapshot.html">Snapshot</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSSAGES_1_1Driver.html#af97dd345f1defb7f51a5ffc05b735078">_snapshot</a></td></tr>
-<tr class="memdesc:af97dd345f1defb7f51a5ffc05b735078 inherit pro_attribs_classSSAGES_1_1Driver"><td class="mdescLeft">&#160;</td><td class="mdescRight">The snapshot of your system. <br /></td></tr>
-<tr class="separator:af97dd345f1defb7f51a5ffc05b735078 inherit pro_attribs_classSSAGES_1_1Driver"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad9854a40154849452fdae930b463e06e inherit pro_attribs_classSSAGES_1_1Driver"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad9854a40154849452fdae930b463e06e"></a>
-<a class="el" href="classSSAGES_1_1Method.html">Method</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSSAGES_1_1Driver.html#ad9854a40154849452fdae930b463e06e">_method</a></td></tr>
-<tr class="memdesc:ad9854a40154849452fdae930b463e06e inherit pro_attribs_classSSAGES_1_1Driver"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="classSSAGES_1_1Method.html" title="Interface for Method implementations. ">Method</a> that will be used. <br /></td></tr>
-<tr class="separator:ad9854a40154849452fdae930b463e06e inherit pro_attribs_classSSAGES_1_1Driver"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acd1d5e3ac2b0585b6c21cf496af1d2fc inherit pro_attribs_classSSAGES_1_1Driver"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acd1d5e3ac2b0585b6c21cf496af1d2fc"></a>
-<a class="el" href="namespaceSSAGES.html#acddea47426ac0a643b048f870ddd2907">CVList</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSSAGES_1_1Driver.html#acd1d5e3ac2b0585b6c21cf496af1d2fc">_CVs</a></td></tr>
-<tr class="memdesc:acd1d5e3ac2b0585b6c21cf496af1d2fc inherit pro_attribs_classSSAGES_1_1Driver"><td class="mdescLeft">&#160;</td><td class="mdescRight">The CVs that will be used. <br /></td></tr>
-<tr class="separator:acd1d5e3ac2b0585b6c21cf496af1d2fc inherit pro_attribs_classSSAGES_1_1Driver"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af6ba8b16842a85ddbcef2b20014eb9f0 inherit pro_attribs_classSSAGES_1_1Driver"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="af6ba8b16842a85ddbcef2b20014eb9f0"></a>
-<a class="el" href="namespaceSSAGES.html#a9a1166683db5722b1a6661f99307d559">ObserverList</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSSAGES_1_1Driver.html#af6ba8b16842a85ddbcef2b20014eb9f0">_observers</a></td></tr>
-<tr class="memdesc:af6ba8b16842a85ddbcef2b20014eb9f0 inherit pro_attribs_classSSAGES_1_1Driver"><td class="mdescLeft">&#160;</td><td class="mdescRight">The observers that will be used for this driver. <br /></td></tr>
-<tr class="separator:af6ba8b16842a85ddbcef2b20014eb9f0 inherit pro_attribs_classSSAGES_1_1Driver"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0b623d237c340f5f7b3283017242808a inherit pro_attribs_classSSAGES_1_1Driver"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0b623d237c340f5f7b3283017242808a"></a>
-ConstraintList&#160;</td><td class="memItemRight" valign="bottom"><b>_constraints</b></td></tr>
-<tr class="separator:a0b623d237c340f5f7b3283017242808a inherit pro_attribs_classSSAGES_1_1Driver"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a00f16572c777f98f4b71e6f050a93ebc inherit pro_attribs_classSSAGES_1_1Driver"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a00f16572c777f98f4b71e6f050a93ebc"></a>
-std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSSAGES_1_1Driver.html#a00f16572c777f98f4b71e6f050a93ebc">_inputfile</a></td></tr>
-<tr class="memdesc:a00f16572c777f98f4b71e6f050a93ebc inherit pro_attribs_classSSAGES_1_1Driver"><td class="mdescLeft">&#160;</td><td class="mdescRight">Local input file. <br /></td></tr>
-<tr class="separator:a00f16572c777f98f4b71e6f050a93ebc inherit pro_attribs_classSSAGES_1_1Driver"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2599cdfbe9c91aebc7eb8e36312b6ca5 inherit pro_attribs_classSSAGES_1_1Driver"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2599cdfbe9c91aebc7eb8e36312b6ca5"></a>
-std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSSAGES_1_1Driver.html#a2599cdfbe9c91aebc7eb8e36312b6ca5">_restartname</a></td></tr>
-<tr class="memdesc:a2599cdfbe9c91aebc7eb8e36312b6ca5 inherit pro_attribs_classSSAGES_1_1Driver"><td class="mdescLeft">&#160;</td><td class="mdescRight">MD engine Restart file name. <br /></td></tr>
-<tr class="separator:a2599cdfbe9c91aebc7eb8e36312b6ca5 inherit pro_attribs_classSSAGES_1_1Driver"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aab6559e1b2ad2e2fafe7f5c83f01226b inherit pro_attribs_classSSAGES_1_1Driver"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aab6559e1b2ad2e2fafe7f5c83f01226b"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSSAGES_1_1Driver.html#aab6559e1b2ad2e2fafe7f5c83f01226b">_readrestart</a></td></tr>
-<tr class="memdesc:aab6559e1b2ad2e2fafe7f5c83f01226b inherit pro_attribs_classSSAGES_1_1Driver"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read a restart file. <br /></td></tr>
-<tr class="separator:aab6559e1b2ad2e2fafe7f5c83f01226b inherit pro_attribs_classSSAGES_1_1Driver"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae90299b0d68c87b58dfc433836b667ad inherit pro_attribs_classSSAGES_1_1Driver"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae90299b0d68c87b58dfc433836b667ad"></a>
-std::random_device&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSSAGES_1_1Driver.html#ae90299b0d68c87b58dfc433836b667ad">_rd</a></td></tr>
-<tr class="memdesc:ae90299b0d68c87b58dfc433836b667ad inherit pro_attribs_classSSAGES_1_1Driver"><td class="mdescLeft">&#160;</td><td class="mdescRight">Random number generators for setting seeds. <br /></td></tr>
-<tr class="separator:ae90299b0d68c87b58dfc433836b667ad inherit pro_attribs_classSSAGES_1_1Driver"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6709cc686fe5ccd780fe4b67365af22e inherit pro_attribs_classSSAGES_1_1Driver"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a6709cc686fe5ccd780fe4b67365af22e"></a>
-std::mt19937&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSSAGES_1_1Driver.html#a6709cc686fe5ccd780fe4b67365af22e">_gen</a></td></tr>
-<tr class="memdesc:a6709cc686fe5ccd780fe4b67365af22e inherit pro_attribs_classSSAGES_1_1Driver"><td class="mdescLeft">&#160;</td><td class="mdescRight">Alternative random number generator. <br /></td></tr>
-<tr class="separator:a6709cc686fe5ccd780fe4b67365af22e inherit pro_attribs_classSSAGES_1_1Driver"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1e69ad8e3c64cca6cfbf136d967bbaa5 inherit pro_attribs_classSSAGES_1_1Driver"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1e69ad8e3c64cca6cfbf136d967bbaa5"></a>
+boost::mpi::communicator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSSAGES_1_1Driver.html#a1e69ad8e3c64cca6cfbf136d967bbaa5">world_</a></td></tr>
+<tr class="memdesc:a1e69ad8e3c64cca6cfbf136d967bbaa5 inherit pro_attribs_classSSAGES_1_1Driver"><td class="mdescLeft">&#160;</td><td class="mdescRight">MPI global communicator. <br /></td></tr>
+<tr class="separator:a1e69ad8e3c64cca6cfbf136d967bbaa5 inherit pro_attribs_classSSAGES_1_1Driver"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acd1b7fafaf06468d4bb9580fe7f76fcf inherit pro_attribs_classSSAGES_1_1Driver"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acd1b7fafaf06468d4bb9580fe7f76fcf"></a>
+boost::mpi::communicator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSSAGES_1_1Driver.html#acd1b7fafaf06468d4bb9580fe7f76fcf">comm_</a></td></tr>
+<tr class="memdesc:acd1b7fafaf06468d4bb9580fe7f76fcf inherit pro_attribs_classSSAGES_1_1Driver"><td class="mdescLeft">&#160;</td><td class="mdescRight">MPI local communicator. <br /></td></tr>
+<tr class="separator:acd1b7fafaf06468d4bb9580fe7f76fcf inherit pro_attribs_classSSAGES_1_1Driver"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0cc8d32364663146b04878ac642085eb inherit pro_attribs_classSSAGES_1_1Driver"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a0cc8d32364663146b04878ac642085eb"></a>
+const int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSSAGES_1_1Driver.html#a0cc8d32364663146b04878ac642085eb">wid_</a></td></tr>
+<tr class="memdesc:a0cc8d32364663146b04878ac642085eb inherit pro_attribs_classSSAGES_1_1Driver"><td class="mdescLeft">&#160;</td><td class="mdescRight">The node id that this driver belongs to. <br /></td></tr>
+<tr class="separator:a0cc8d32364663146b04878ac642085eb inherit pro_attribs_classSSAGES_1_1Driver"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae31f3e42d218451dadf5918da35c89ac inherit pro_attribs_classSSAGES_1_1Driver"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae31f3e42d218451dadf5918da35c89ac"></a>
+<a class="el" href="classSSAGES_1_1Hook.html">Hook</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSSAGES_1_1Driver.html#ae31f3e42d218451dadf5918da35c89ac">hook_</a></td></tr>
+<tr class="memdesc:ae31f3e42d218451dadf5918da35c89ac inherit pro_attribs_classSSAGES_1_1Driver"><td class="mdescLeft">&#160;</td><td class="mdescRight">The hook that hooks into the MD simulation engine. <br /></td></tr>
+<tr class="separator:ae31f3e42d218451dadf5918da35c89ac inherit pro_attribs_classSSAGES_1_1Driver"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a28fb9e405360802a3ac83d61ccf610c1 inherit pro_attribs_classSSAGES_1_1Driver"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a28fb9e405360802a3ac83d61ccf610c1"></a>
+<a class="el" href="classSSAGES_1_1Snapshot.html">Snapshot</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSSAGES_1_1Driver.html#a28fb9e405360802a3ac83d61ccf610c1">snapshot_</a></td></tr>
+<tr class="memdesc:a28fb9e405360802a3ac83d61ccf610c1 inherit pro_attribs_classSSAGES_1_1Driver"><td class="mdescLeft">&#160;</td><td class="mdescRight">The snapshot of your system. <br /></td></tr>
+<tr class="separator:a28fb9e405360802a3ac83d61ccf610c1 inherit pro_attribs_classSSAGES_1_1Driver"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad42c6aa3969781cce0daaa3de7276278 inherit pro_attribs_classSSAGES_1_1Driver"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ad42c6aa3969781cce0daaa3de7276278"></a>
+<a class="el" href="classSSAGES_1_1Method.html">Method</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSSAGES_1_1Driver.html#ad42c6aa3969781cce0daaa3de7276278">method_</a></td></tr>
+<tr class="memdesc:ad42c6aa3969781cce0daaa3de7276278 inherit pro_attribs_classSSAGES_1_1Driver"><td class="mdescLeft">&#160;</td><td class="mdescRight">The <a class="el" href="classSSAGES_1_1Method.html" title="Interface for Method implementations. ">Method</a> that will be used. <br /></td></tr>
+<tr class="separator:ad42c6aa3969781cce0daaa3de7276278 inherit pro_attribs_classSSAGES_1_1Driver"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e272be9d9cb7f60355dfaf144a485cd inherit pro_attribs_classSSAGES_1_1Driver"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5e272be9d9cb7f60355dfaf144a485cd"></a>
+<a class="el" href="namespaceSSAGES.html#acddea47426ac0a643b048f870ddd2907">CVList</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSSAGES_1_1Driver.html#a5e272be9d9cb7f60355dfaf144a485cd">CVs_</a></td></tr>
+<tr class="memdesc:a5e272be9d9cb7f60355dfaf144a485cd inherit pro_attribs_classSSAGES_1_1Driver"><td class="mdescLeft">&#160;</td><td class="mdescRight">The CVs that will be used. <br /></td></tr>
+<tr class="separator:a5e272be9d9cb7f60355dfaf144a485cd inherit pro_attribs_classSSAGES_1_1Driver"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a544add94846634a117548be3f0ff6b8d inherit pro_attribs_classSSAGES_1_1Driver"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a544add94846634a117548be3f0ff6b8d"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSSAGES_1_1Driver.html#a544add94846634a117548be3f0ff6b8d">iterations_</a></td></tr>
+<tr class="memdesc:a544add94846634a117548be3f0ff6b8d inherit pro_attribs_classSSAGES_1_1Driver"><td class="mdescLeft">&#160;</td><td class="mdescRight">Target number of iterations. <br /></td></tr>
+<tr class="separator:a544add94846634a117548be3f0ff6b8d inherit pro_attribs_classSSAGES_1_1Driver"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a55d96ddba14b5abacd38dde4803ad460 inherit pro_attribs_classSSAGES_1_1Driver"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a55d96ddba14b5abacd38dde4803ad460"></a>
+<a class="el" href="namespaceSSAGES.html#a9a1166683db5722b1a6661f99307d559">ObserverList</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSSAGES_1_1Driver.html#a55d96ddba14b5abacd38dde4803ad460">observers_</a></td></tr>
+<tr class="memdesc:a55d96ddba14b5abacd38dde4803ad460 inherit pro_attribs_classSSAGES_1_1Driver"><td class="mdescLeft">&#160;</td><td class="mdescRight">The observers that will be used for this driver. <br /></td></tr>
+<tr class="separator:a55d96ddba14b5abacd38dde4803ad460 inherit pro_attribs_classSSAGES_1_1Driver"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afbd01ae43f60fb005580d67192aa920c inherit pro_attribs_classSSAGES_1_1Driver"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afbd01ae43f60fb005580d67192aa920c"></a>
+<a class="el" href="namespaceSSAGES.html#aa645655f6fcffdb0554f568389146829">ConstraintList</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSSAGES_1_1Driver.html#afbd01ae43f60fb005580d67192aa920c">constraints_</a></td></tr>
+<tr class="memdesc:afbd01ae43f60fb005580d67192aa920c inherit pro_attribs_classSSAGES_1_1Driver"><td class="mdescLeft">&#160;</td><td class="mdescRight">List of constraints to use. <br /></td></tr>
+<tr class="separator:afbd01ae43f60fb005580d67192aa920c inherit pro_attribs_classSSAGES_1_1Driver"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a669cc2a8bf73c9d0a09b4653598096f7 inherit pro_attribs_classSSAGES_1_1Driver"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a669cc2a8bf73c9d0a09b4653598096f7"></a>
+std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSSAGES_1_1Driver.html#a669cc2a8bf73c9d0a09b4653598096f7">inputfile_</a></td></tr>
+<tr class="memdesc:a669cc2a8bf73c9d0a09b4653598096f7 inherit pro_attribs_classSSAGES_1_1Driver"><td class="mdescLeft">&#160;</td><td class="mdescRight">Local input file. <br /></td></tr>
+<tr class="separator:a669cc2a8bf73c9d0a09b4653598096f7 inherit pro_attribs_classSSAGES_1_1Driver"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a528109852b71549f0d156606430cc106 inherit pro_attribs_classSSAGES_1_1Driver"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a528109852b71549f0d156606430cc106"></a>
+std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSSAGES_1_1Driver.html#a528109852b71549f0d156606430cc106">restartname_</a></td></tr>
+<tr class="memdesc:a528109852b71549f0d156606430cc106 inherit pro_attribs_classSSAGES_1_1Driver"><td class="mdescLeft">&#160;</td><td class="mdescRight">MD engine Restart file name. <br /></td></tr>
+<tr class="separator:a528109852b71549f0d156606430cc106 inherit pro_attribs_classSSAGES_1_1Driver"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ac4aae03e29106e1afd842ae3f5c7fc inherit pro_attribs_classSSAGES_1_1Driver"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9ac4aae03e29106e1afd842ae3f5c7fc"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSSAGES_1_1Driver.html#a9ac4aae03e29106e1afd842ae3f5c7fc">readrestart_</a></td></tr>
+<tr class="memdesc:a9ac4aae03e29106e1afd842ae3f5c7fc inherit pro_attribs_classSSAGES_1_1Driver"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read a restart file. <br /></td></tr>
+<tr class="separator:a9ac4aae03e29106e1afd842ae3f5c7fc inherit pro_attribs_classSSAGES_1_1Driver"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a338ed54bdbe093714536cba4b0059bd1 inherit pro_attribs_classSSAGES_1_1Driver"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a338ed54bdbe093714536cba4b0059bd1"></a>
+std::random_device&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSSAGES_1_1Driver.html#a338ed54bdbe093714536cba4b0059bd1">rd_</a></td></tr>
+<tr class="memdesc:a338ed54bdbe093714536cba4b0059bd1 inherit pro_attribs_classSSAGES_1_1Driver"><td class="mdescLeft">&#160;</td><td class="mdescRight">Random number generators for setting seeds. <br /></td></tr>
+<tr class="separator:a338ed54bdbe093714536cba4b0059bd1 inherit pro_attribs_classSSAGES_1_1Driver"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a82ec7ed4d167d6c45d1a9342b405fc91 inherit pro_attribs_classSSAGES_1_1Driver"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a82ec7ed4d167d6c45d1a9342b405fc91"></a>
+std::mt19937&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSSAGES_1_1Driver.html#a82ec7ed4d167d6c45d1a9342b405fc91">gen_</a></td></tr>
+<tr class="memdesc:a82ec7ed4d167d6c45d1a9342b405fc91 inherit pro_attribs_classSSAGES_1_1Driver"><td class="mdescLeft">&#160;</td><td class="mdescRight">Alternative random number generator. <br /></td></tr>
+<tr class="separator:a82ec7ed4d167d6c45d1a9342b405fc91 inherit pro_attribs_classSSAGES_1_1Driver"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p>Definition at line <a class="el" href="GromacsDriver_8h_source.html#l00031">31</a> of file <a class="el" href="GromacsDriver_8h_source.html">GromacsDriver.h</a>.</p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a262f215c05707fafe104785aa567f532"></a>
+<div class="textblock"><p><a class="el" href="classSSAGES_1_1Driver.html" title="Abstract driver class for creating driver objects. ">Driver</a> for Gromacs simulations. </p>
+
+<p>Definition at line <a class="el" href="GromacsDriver_8h_source.html#l00032">32</a> of file <a class="el" href="GromacsDriver_8h_source.html">GromacsDriver.h</a>.</p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="ad8c922b7c8471ce1bac9d51b8da03d13"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">SSAGES::GromacsDriver::GromacsDriver </td>
+          <td>(</td>
+          <td class="paramtype">mpi::communicator &amp;&#160;</td>
+          <td class="paramname"><em>world_comm</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">mpi::communicator &amp;&#160;</td>
+          <td class="paramname"><em>local_comm</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>walkerID</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Constructor. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">world_comm</td><td>MPI global communicator. </td></tr>
+    <tr><td class="paramname">local_comm</td><td>MPI local communicator. </td></tr>
+    <tr><td class="paramname">walkerID</td><td>ID of the walker assigned to this driver. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="GromacsDriver_8h_source.html#l00050">50</a> of file <a class="el" href="GromacsDriver_8h_source.html">GromacsDriver.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;                                    : </div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        <a class="code" href="classSSAGES_1_1Driver.html#aaca8e4296e906e1ed0e090e131b1ee2a">Driver</a>(world_comm, local_comm, walkerID),</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        <a class="code" href="classSSAGES_1_1GromacsDriver.html#a2d260309b91f72ccdc947ee644d34ca0">nwalkers_</a>(world_comm.size()/local_comm.size())</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        {}</div>
+<div class="ttc" id="classSSAGES_1_1Driver_html_aaca8e4296e906e1ed0e090e131b1ee2a"><div class="ttname"><a href="classSSAGES_1_1Driver.html#aaca8e4296e906e1ed0e090e131b1ee2a">SSAGES::Driver::Driver</a></div><div class="ttdeci">Driver(boost::mpi::communicator &amp;world, boost::mpi::communicator &amp;comm, int walkerID)</div><div class="ttdoc">Constructor. </div><div class="ttdef"><b>Definition:</b> <a href="Driver_8h_source.html#l00100">Driver.h:100</a></div></div>
+<div class="ttc" id="classSSAGES_1_1GromacsDriver_html_a2d260309b91f72ccdc947ee644d34ca0"><div class="ttname"><a href="classSSAGES_1_1GromacsDriver.html#a2d260309b91f72ccdc947ee644d34ca0">SSAGES::GromacsDriver::nwalkers_</a></div><div class="ttdeci">int nwalkers_</div><div class="ttdoc">Number of walkers. </div><div class="ttdef"><b>Definition:</b> <a href="GromacsDriver_8h_source.html#l00037">GromacsDriver.h:37</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="ae410f42f8adf47f9a8021737fed5adba"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -299,7 +367,7 @@ std::mt19937&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 </table>
 </div><div class="memdoc">
 
-<p>Build the driver, which will create the hook and so forth. </p>
+<p>Set up the driver. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">json</td><td>JSON value containing input information. </td></tr>
@@ -310,20 +378,25 @@ std::mt19937&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 
 <p>Implements <a class="el" href="classSSAGES_1_1Driver.html#a67d8106b8f9ba5d468a0ee719838b67c">SSAGES::Driver</a>.</p>
 
-<p>Definition at line <a class="el" href="GromacsDriver_8h_source.html#l00080">80</a> of file <a class="el" href="GromacsDriver_8h_source.html">GromacsDriver.h</a>.</p>
+<p>Definition at line <a class="el" href="GromacsDriver_8h_source.html#l00113">113</a> of file <a class="el" href="GromacsDriver_8h_source.html">GromacsDriver.h</a>.</p>
 
-<p>References <a class="el" href="Driver_8h_source.html#l00060">SSAGES::Driver::_hook</a>, and <a class="el" href="Driver_8h_source.html#l00078">SSAGES::Driver::_inputfile</a>.</p>
-<div class="fragment"><div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        {</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;            <a class="code" href="classSSAGES_1_1Driver.html#a00f16572c777f98f4b71e6f050a93ebc">_inputfile</a> = json.get(<span class="stringliteral">&quot;inputfile&quot;</span>,<span class="stringliteral">&quot;none&quot;</span>).asString();</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;            MDSteps_ = json.get(<span class="stringliteral">&quot;MDSteps&quot;</span>, 1).asInt();</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;            <span class="comment">// Set hook. </span></div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;            <span class="keyword">auto</span>&amp; hook = GromacsHook::Instance();</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;            hook.SetIterationTarget(MDSteps_);</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;            <a class="code" href="classSSAGES_1_1Driver.html#a9817e954adcfc686e1a346b171b23166">_hook</a> = <span class="keyword">dynamic_cast&lt;</span>Hook*<span class="keyword">&gt;</span>(&amp;hook);</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        }</div>
-<div class="ttc" id="classSSAGES_1_1Driver_html_a9817e954adcfc686e1a346b171b23166"><div class="ttname"><a href="classSSAGES_1_1Driver.html#a9817e954adcfc686e1a346b171b23166">SSAGES::Driver::_hook</a></div><div class="ttdeci">Hook * _hook</div><div class="ttdoc">The hook that hooks into the MD simulation engine. </div><div class="ttdef"><b>Definition:</b> <a href="Driver_8h_source.html#l00060">Driver.h:60</a></div></div>
-<div class="ttc" id="classSSAGES_1_1Driver_html_a00f16572c777f98f4b71e6f050a93ebc"><div class="ttname"><a href="classSSAGES_1_1Driver.html#a00f16572c777f98f4b71e6f050a93ebc">SSAGES::Driver::_inputfile</a></div><div class="ttdeci">std::string _inputfile</div><div class="ttdoc">Local input file. </div><div class="ttdef"><b>Definition:</b> <a href="Driver_8h_source.html#l00078">Driver.h:78</a></div></div>
+<p>References <a class="el" href="Driver_8h_source.html#l00058">SSAGES::Driver::hook_</a>, <a class="el" href="Driver_8h_source.html#l00079">SSAGES::Driver::inputfile_</a>, <a class="el" href="Driver_8h_source.html#l00070">SSAGES::Driver::iterations_</a>, and <a class="el" href="GromacsDriver_8h_source.html#l00040">restart_</a>.</p>
+<div class="fragment"><div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;        {</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;            <a class="code" href="classSSAGES_1_1Driver.html#a669cc2a8bf73c9d0a09b4653598096f7">inputfile_</a> = json.get(<span class="stringliteral">&quot;inputfile&quot;</span>,<span class="stringliteral">&quot;none&quot;</span>).asString();</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;            <a class="code" href="classSSAGES_1_1Driver.html#a544add94846634a117548be3f0ff6b8d">iterations_</a> = json.get(<span class="stringliteral">&quot;MDSteps&quot;</span>, 1).asInt();</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;            <span class="comment">// Set hook. </span></div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;            <span class="keyword">auto</span>&amp; hook = GromacsHook::Instance();</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;            hook.SetIterationTarget(<a class="code" href="classSSAGES_1_1Driver.html#a544add94846634a117548be3f0ff6b8d">iterations_</a>);</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;            <a class="code" href="classSSAGES_1_1Driver.html#ae31f3e42d218451dadf5918da35c89ac">hook_</a> = <span class="keyword">dynamic_cast&lt;</span>Hook*<span class="keyword">&gt;</span>(&amp;hook);</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;            <span class="comment">// Restart?</span></div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;            <a class="code" href="classSSAGES_1_1GromacsDriver.html#a8e1a13c5832fc54e08aebb883e76febf">restart_</a> = json.get(<span class="stringliteral">&quot;restart&quot;</span>, <span class="keyword">false</span>).asBool();</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;        }</div>
+<div class="ttc" id="classSSAGES_1_1Driver_html_a544add94846634a117548be3f0ff6b8d"><div class="ttname"><a href="classSSAGES_1_1Driver.html#a544add94846634a117548be3f0ff6b8d">SSAGES::Driver::iterations_</a></div><div class="ttdeci">int iterations_</div><div class="ttdoc">Target number of iterations. </div><div class="ttdef"><b>Definition:</b> <a href="Driver_8h_source.html#l00070">Driver.h:70</a></div></div>
+<div class="ttc" id="classSSAGES_1_1GromacsDriver_html_a8e1a13c5832fc54e08aebb883e76febf"><div class="ttname"><a href="classSSAGES_1_1GromacsDriver.html#a8e1a13c5832fc54e08aebb883e76febf">SSAGES::GromacsDriver::restart_</a></div><div class="ttdeci">bool restart_</div><div class="ttdoc">Is the simulation a restart? </div><div class="ttdef"><b>Definition:</b> <a href="GromacsDriver_8h_source.html#l00040">GromacsDriver.h:40</a></div></div>
+<div class="ttc" id="classSSAGES_1_1Driver_html_a669cc2a8bf73c9d0a09b4653598096f7"><div class="ttname"><a href="classSSAGES_1_1Driver.html#a669cc2a8bf73c9d0a09b4653598096f7">SSAGES::Driver::inputfile_</a></div><div class="ttdeci">std::string inputfile_</div><div class="ttdoc">Local input file. </div><div class="ttdef"><b>Definition:</b> <a href="Driver_8h_source.html#l00079">Driver.h:79</a></div></div>
+<div class="ttc" id="classSSAGES_1_1Driver_html_ae31f3e42d218451dadf5918da35c89ac"><div class="ttname"><a href="classSSAGES_1_1Driver.html#ae31f3e42d218451dadf5918da35c89ac">SSAGES::Driver::hook_</a></div><div class="ttdeci">Hook * hook_</div><div class="ttdoc">The hook that hooks into the MD simulation engine. </div><div class="ttdef"><b>Definition:</b> <a href="Driver_8h_source.html#l00058">Driver.h:58</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -338,7 +411,7 @@ std::mt19937&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
           <td class="memname">virtual void SSAGES::GromacsDriver::ExecuteInputFile </td>
           <td>(</td>
           <td class="paramtype">std::string&#160;</td>
-          <td class="paramname"><em>contents</em></td><td>)</td>
+          <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -349,21 +422,14 @@ std::mt19937&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 </table>
 </div><div class="memdoc">
 
-<p>Read in driver specific input file (e.g. Lammps.in) </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">contents</td><td>The contents of the input file.</td></tr>
-  </table>
-  </dd>
-</dl>
-<p>Execute the contents of an input file. The input file should be loaded with <a class="el" href="namespaceSSAGES.html#aee59580ec5081b4616fe75b3b3ab91d8" title="Read contents from a file. ">SSAGES::GetFileContents()</a> first. </p>
+<p>Run Input file. </p>
+<p>In the case of Gromacs, the input file does not need to be parsed for special information. </p>
 
 <p>Implements <a class="el" href="classSSAGES_1_1Driver.html#a48a62ad102a81167c81e950297ba20cc">SSAGES::Driver</a>.</p>
 
-<p>Definition at line <a class="el" href="GromacsDriver_8h_source.html#l00075">75</a> of file <a class="el" href="GromacsDriver_8h_source.html">GromacsDriver.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        {</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        }</div>
+<p>Definition at line <a class="el" href="GromacsDriver_8h_source.html#l00104">104</a> of file <a class="el" href="GromacsDriver_8h_source.html">GromacsDriver.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;        {</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -400,24 +466,25 @@ std::mt19937&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 
 <p>Reimplemented from <a class="el" href="classSSAGES_1_1Driver.html#a1eed2dd5491b7688ea5e3cb7e5f4c8c7">SSAGES::Driver</a>.</p>
 
-<p>Definition at line <a class="el" href="GromacsDriver_8h_source.html#l00091">91</a> of file <a class="el" href="GromacsDriver_8h_source.html">GromacsDriver.h</a>.</p>
+<p>Definition at line <a class="el" href="GromacsDriver_8h_source.html#l00128">128</a> of file <a class="el" href="GromacsDriver_8h_source.html">GromacsDriver.h</a>.</p>
 
-<p>References <a class="el" href="Driver_8h_source.html#l00256">SSAGES::Driver::Serialize()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        {</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;            <span class="comment">// Call parent first.</span></div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;            <a class="code" href="classSSAGES_1_1Driver.html#a1eed2dd5491b7688ea5e3cb7e5f4c8c7">Driver::Serialize</a>(json);</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;            json[<span class="stringliteral">&quot;MDSteps&quot;</span>] = MDSteps_;</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;            json[<span class="stringliteral">&quot;type&quot;</span>] = <span class="stringliteral">&quot;Gromacs&quot;</span>;</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        }</div>
-<div class="ttc" id="classSSAGES_1_1Driver_html_a1eed2dd5491b7688ea5e3cb7e5f4c8c7"><div class="ttname"><a href="classSSAGES_1_1Driver.html#a1eed2dd5491b7688ea5e3cb7e5f4c8c7">SSAGES::Driver::Serialize</a></div><div class="ttdeci">virtual void Serialize(Json::Value &amp;json) const override</div><div class="ttdoc">Serialize the class. </div><div class="ttdef"><b>Definition:</b> <a href="Driver_8h_source.html#l00256">Driver.h:256</a></div></div>
+<p>References <a class="el" href="Driver_8h_source.html#l00070">SSAGES::Driver::iterations_</a>, and <a class="el" href="Driver_8h_source.html#l00252">SSAGES::Driver::Serialize()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;        {</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;            <span class="comment">// Call parent first.</span></div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;            <a class="code" href="classSSAGES_1_1Driver.html#a1eed2dd5491b7688ea5e3cb7e5f4c8c7">Driver::Serialize</a>(json);</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;            json[<span class="stringliteral">&quot;MDSteps&quot;</span>] = <a class="code" href="classSSAGES_1_1Driver.html#a544add94846634a117548be3f0ff6b8d">iterations_</a>;</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;            json[<span class="stringliteral">&quot;type&quot;</span>] = <span class="stringliteral">&quot;Gromacs&quot;</span>;</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;        }</div>
+<div class="ttc" id="classSSAGES_1_1Driver_html_a544add94846634a117548be3f0ff6b8d"><div class="ttname"><a href="classSSAGES_1_1Driver.html#a544add94846634a117548be3f0ff6b8d">SSAGES::Driver::iterations_</a></div><div class="ttdeci">int iterations_</div><div class="ttdoc">Target number of iterations. </div><div class="ttdef"><b>Definition:</b> <a href="Driver_8h_source.html#l00070">Driver.h:70</a></div></div>
+<div class="ttc" id="classSSAGES_1_1Driver_html_a1eed2dd5491b7688ea5e3cb7e5f4c8c7"><div class="ttname"><a href="classSSAGES_1_1Driver.html#a1eed2dd5491b7688ea5e3cb7e5f4c8c7">SSAGES::Driver::Serialize</a></div><div class="ttdeci">virtual void Serialize(Json::Value &amp;json) const override</div><div class="ttdoc">Serialize the class. </div><div class="ttdef"><b>Definition:</b> <a href="Driver_8h_source.html#l00252">Driver.h:252</a></div></div>
 </div><!-- fragment -->
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classSSAGES_1_1GromacsDriver_a8655eb778160661894e67631454ee43d_cgraph.png" border="0" usemap="#classSSAGES_1_1GromacsDriver_a8655eb778160661894e67631454ee43d_cgraph" alt=""/></div>
 <map name="classSSAGES_1_1GromacsDriver_a8655eb778160661894e67631454ee43d_cgraph" id="classSSAGES_1_1GromacsDriver_a8655eb778160661894e67631454ee43d_cgraph">
-<area shape="rect" id="node2" href="classSSAGES_1_1Driver.html#a1eed2dd5491b7688ea5e3cb7e5f4c8c7" title="Serialize the class. " alt="" coords="227,12,405,39"/><area shape="rect" id="node3" href="classSSAGES_1_1Grid.html#a5d7601c0639c07ed7917d7f94561b366" title="Serialize the class. " alt="" coords="454,12,621,39"/></map>
+<area shape="rect" id="node2" href="classSSAGES_1_1Driver.html#a1eed2dd5491b7688ea5e3cb7e5f4c8c7" title="Serialize the class. " alt="" coords="227,45,405,72"/><area shape="rect" id="node3" href="classSSAGES_1_1Serializable.html#aa4bc8d0ce033a025b0baa7cedccd8ebd" title="Serialize the class. " alt="" coords="465,5,617,46"/><area shape="rect" id="node4" href="classSSAGES_1_1SimObservable.html#ad343f4a158eb7402b68e09cbd14a97e7" title="Serialize observers. " alt="" coords="454,70,629,111"/></map>
 </div>
 </p>
 
@@ -429,7 +496,7 @@ Here is the call graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Oct 14 2016 11:38:55 for SSAGES by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Jun 7 2017 15:46:39 for SSAGES by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

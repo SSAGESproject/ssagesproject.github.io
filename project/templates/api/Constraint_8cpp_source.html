@@ -109,13 +109,13 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
 <div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">namespace </span>SSAGES</div>
 <div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;{</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    Constraint* Constraint::BuildConstraint(<span class="keyword">const</span> Json::Value &amp;json,</div>
+<div class="line"><a name="l00033"></a><span class="lineno"><a class="line" href="classSSAGES_1_1Constraint.html#afc8cbc4286f0557ae6ad89b5e3f9ee02">   33</a></span>&#160;    <a class="code" href="classSSAGES_1_1Constraint.html">Constraint</a>* Constraint::BuildConstraint(<span class="keyword">const</span> Json::Value &amp;json,</div>
 <div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;                        boost::mpi::communicator&amp; comm)</div>
 <div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    {</div>
 <div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        <span class="keywordflow">return</span> BuildConstraint(json, comm, <span class="stringliteral">&quot;#/Constraints&quot;</span>);</div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    }</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    Constraint* Constraint::BuildConstraint(<span class="keyword">const</span> Value &amp;json,</div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="classSSAGES_1_1Constraint.html#afc2298be994364d322e862dadda1c8b5">   39</a></span>&#160;    <a class="code" href="classSSAGES_1_1Constraint.html">Constraint</a>* Constraint::BuildConstraint(<span class="keyword">const</span> Json::Value &amp;json,</div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;                        boost::mpi::communicator&amp; comm, </div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;                        <span class="keyword">const</span> std::string&amp; path)</div>
 <div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    {</div>
@@ -123,7 +123,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        Value schema;</div>
 <div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        Reader reader;</div>
 <div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        Constraint* constraint = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        <a class="code" href="classSSAGES_1_1Constraint.html">Constraint</a>* constraint = <span class="keyword">nullptr</span>;</div>
 <div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        <span class="comment">// Random device for seed generation. </span></div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        <span class="comment">// std::random_device rd;</span></div>
@@ -141,11 +141,11 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;            <span class="comment">// Validate inputs.</span></div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;            validator.<a class="code" href="classJson_1_1ObjectRequirement.html#a9ac3b920001a35bc70580035d8d802b7">Validate</a>(json, path);</div>
 <div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;            <span class="keywordflow">if</span>(validator.<a class="code" href="classJson_1_1Requirement.html#adfaec336a9f051d6f6b9a6d7f1d97b75">HasErrors</a>())</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;                <span class="keywordflow">throw</span> BuildException(validator.<a class="code" href="classJson_1_1Requirement.html#a60bc275c366eb59f192fa2e621268480">GetErrors</a>());</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;                <span class="keywordflow">throw</span> <a class="code" href="classSSAGES_1_1BuildException.html">BuildException</a>(validator.<a class="code" href="classJson_1_1Requirement.html#a60bc275c366eb59f192fa2e621268480">GetErrors</a>());</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;            <span class="keyword">auto</span>* c = <span class="keyword">new</span> COPSS(comm, 1);</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;            <span class="keyword">auto</span>* c = <span class="keyword">new</span> <a class="code" href="classSSAGES_1_1COPSS.html">COPSS</a>(comm, 1);</div>
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;            constraint = <span class="keyword">static_cast&lt;</span>Constraint*<span class="keyword">&gt;</span>(c);</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;            constraint = <span class="keyword">static_cast&lt;</span><a class="code" href="classSSAGES_1_1Constraint.html">Constraint</a>*<span class="keyword">&gt;</span>(c);</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        }</div>
 <div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        <span class="keywordflow">else</span> <span class="keywordflow">if</span>(type == <span class="stringliteral">&quot;COPSSImage&quot;</span>)</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        {</div>
@@ -155,7 +155,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;            <span class="comment">// Validate inputs.</span></div>
 <div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;            validator.<a class="code" href="classJson_1_1ObjectRequirement.html#a9ac3b920001a35bc70580035d8d802b7">Validate</a>(json, path);</div>
 <div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;            <span class="keywordflow">if</span>(validator.<a class="code" href="classJson_1_1Requirement.html#adfaec336a9f051d6f6b9a6d7f1d97b75">HasErrors</a>())</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;                <span class="keywordflow">throw</span> BuildException(validator.<a class="code" href="classJson_1_1Requirement.html#a60bc275c366eb59f192fa2e621268480">GetErrors</a>());</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;                <span class="keywordflow">throw</span> <a class="code" href="classSSAGES_1_1BuildException.html">BuildException</a>(validator.<a class="code" href="classJson_1_1Requirement.html#a60bc275c366eb59f192fa2e621268480">GetErrors</a>());</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;            </div>
 <div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;            <span class="keywordtype">double</span> einner = json.get(<span class="stringliteral">&quot;einner&quot;</span>,1).asDouble();</div>
 <div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
@@ -165,21 +165,21 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;            <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; atomType : json[<span class="stringliteral">&quot;atom type radius&quot;</span>])</div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;                atomTypeRadius.push_back(atomType.asDouble());</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    </div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;            <span class="keyword">auto</span>* c = <span class="keyword">new</span> COPSSImage(comm, 1, einner, ion_type_start, atomTypeRadius);</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;            <span class="keyword">auto</span>* c = <span class="keyword">new</span> <a class="code" href="classSSAGES_1_1COPSSImage.html">COPSSImage</a>(comm, 1, einner, ion_type_start, atomTypeRadius);</div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;            constraint = <span class="keyword">static_cast&lt;</span>Constraint*<span class="keyword">&gt;</span>(c);</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;            constraint = <span class="keyword">static_cast&lt;</span><a class="code" href="classSSAGES_1_1Constraint.html">Constraint</a>*<span class="keyword">&gt;</span>(c);</div>
 <div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;</div>
 <div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        }</div>
 <div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        <span class="keywordflow">else</span></div>
 <div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        {</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;            <span class="keywordflow">throw</span> BuildException({path + <span class="stringliteral">&quot;: Unknown constraint type specified.&quot;</span>+type+<span class="stringliteral">&quot; is not a valid type!&quot;</span>});</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;            <span class="keywordflow">throw</span> <a class="code" href="classSSAGES_1_1BuildException.html">BuildException</a>({path + <span class="stringliteral">&quot;: Unknown constraint type specified.&quot;</span>+type+<span class="stringliteral">&quot; is not a valid type!&quot;</span>});</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        }</div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;</div>
 <div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        <span class="keywordflow">return</span> constraint;</div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    }</div>
 <div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;    <span class="keywordtype">void</span> Constraint::BuildConstraint(<span class="keyword">const</span> Json::Value &amp;json, </div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;                          ConstraintList &amp;clist,</div>
+<div class="line"><a name="l00102"></a><span class="lineno"><a class="line" href="classSSAGES_1_1Constraint.html#aac834c9af0722aec6718ea435a641caf">  102</a></span>&#160;    <span class="keywordtype">void</span> Constraint::BuildConstraint(<span class="keyword">const</span> Json::Value &amp;json, </div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;                          <a class="code" href="namespaceSSAGES.html#aa645655f6fcffdb0554f568389146829">ConstraintList</a> &amp;clist,</div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;                          boost::mpi::communicator&amp; comm,</div>
 <div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;                          <span class="keyword">const</span> std::string &amp;path)</div>
 <div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    {</div>
@@ -193,29 +193,35 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;        <span class="comment">// Validate high level schema.</span></div>
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;        validator.<a class="code" href="classJson_1_1ArrayRequirement.html#a6e334ac9cf70844544828d9dfa7246cb">Validate</a>(json, path);</div>
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;        <span class="keywordflow">if</span>(validator.<a class="code" href="classJson_1_1Requirement.html#adfaec336a9f051d6f6b9a6d7f1d97b75">HasErrors</a>())</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;            <span class="keywordflow">throw</span> BuildException(validator.<a class="code" href="classJson_1_1Requirement.html#a60bc275c366eb59f192fa2e621268480">GetErrors</a>());</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;            <span class="keywordflow">throw</span> <a class="code" href="classSSAGES_1_1BuildException.html">BuildException</a>(validator.<a class="code" href="classJson_1_1Requirement.html#a60bc275c366eb59f192fa2e621268480">GetErrors</a>());</div>
 <div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;</div>
 <div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;        <span class="comment">// Loop through CVs.</span></div>
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;        <span class="keywordtype">int</span> i = 0;</div>
 <div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;        <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; m : json)</div>
 <div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;        {</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;            clist.push_back(BuildConstraint(m, comm, path + <span class="stringliteral">&quot;/&quot;</span> + std::to_string(i)));</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;            clist.push_back(<a class="code" href="classSSAGES_1_1Constraint.html#aac834c9af0722aec6718ea435a641caf">BuildConstraint</a>(m, comm, path + <span class="stringliteral">&quot;/&quot;</span> + std::to_string(i)));</div>
 <div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;            ++i;</div>
 <div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;        }</div>
 <div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;    }</div>
 <div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;}</div>
 <div class="ttc" id="classJson_1_1Requirement_html_adfaec336a9f051d6f6b9a6d7f1d97b75"><div class="ttname"><a href="classJson_1_1Requirement.html#adfaec336a9f051d6f6b9a6d7f1d97b75">Json::Requirement::HasErrors</a></div><div class="ttdeci">bool HasErrors()</div><div class="ttdoc">Check if errors have occured. </div><div class="ttdef"><b>Definition:</b> <a href="Requirement_8h_source.html#l00086">Requirement.h:86</a></div></div>
 <div class="ttc" id="classJson_1_1ArrayRequirement_html"><div class="ttname"><a href="classJson_1_1ArrayRequirement.html">Json::ArrayRequirement</a></div><div class="ttdoc">Array of Requirements. </div><div class="ttdef"><b>Definition:</b> <a href="ArrayRequirement_8h_source.html#l00043">ArrayRequirement.h:43</a></div></div>
+<div class="ttc" id="classSSAGES_1_1Constraint_html_aac834c9af0722aec6718ea435a641caf"><div class="ttname"><a href="classSSAGES_1_1Constraint.html#aac834c9af0722aec6718ea435a641caf">SSAGES::Constraint::BuildConstraint</a></div><div class="ttdeci">static void BuildConstraint(const Json::Value &amp;json, ConstraintList &amp;clist, boost::mpi::communicator &amp;comm, const std::string &amp;path)</div><div class="ttdoc">Build constraint. </div><div class="ttdef"><b>Definition:</b> <a href="Constraint_8cpp_source.html#l00102">Constraint.cpp:102</a></div></div>
+<div class="ttc" id="classSSAGES_1_1COPSS_html"><div class="ttname"><a href="classSSAGES_1_1COPSS.html">SSAGES::COPSS</a></div><div class="ttdoc">Wrapper class for COPSS simulations. </div><div class="ttdef"><b>Definition:</b> <a href="COPSS_8h_source.html#l00032">COPSS.h:32</a></div></div>
 <div class="ttc" id="classJson_1_1ObjectRequirement_html_a4ed02ae1d612a5efba1688fcdd2df092"><div class="ttname"><a href="classJson_1_1ObjectRequirement.html#a4ed02ae1d612a5efba1688fcdd2df092">Json::ObjectRequirement::Parse</a></div><div class="ttdeci">virtual void Parse(Value json, const std::string &amp;path) override</div><div class="ttdoc">Parse JSON value to generate Requirement(s). </div><div class="ttdef"><b>Definition:</b> <a href="ObjectRequirement_8h_source.html#l00142">ObjectRequirement.h:142</a></div></div>
+<div class="ttc" id="classSSAGES_1_1BuildException_html"><div class="ttname"><a href="classSSAGES_1_1BuildException.html">SSAGES::BuildException</a></div><div class="ttdoc">Exception to be thrown when building the Driver fails. </div><div class="ttdef"><b>Definition:</b> <a href="DriverException_8h_source.html#l00034">DriverException.h:34</a></div></div>
 <div class="ttc" id="classJson_1_1Requirement_html_a60bc275c366eb59f192fa2e621268480"><div class="ttname"><a href="classJson_1_1Requirement.html#a60bc275c366eb59f192fa2e621268480">Json::Requirement::GetErrors</a></div><div class="ttdeci">std::vector&lt; std::string &gt; GetErrors()</div><div class="ttdoc">Get list of error messages. </div><div class="ttdef"><b>Definition:</b> <a href="Requirement_8h_source.html#l00092">Requirement.h:92</a></div></div>
 <div class="ttc" id="classJson_1_1ObjectRequirement_html"><div class="ttname"><a href="classJson_1_1ObjectRequirement.html">Json::ObjectRequirement</a></div><div class="ttdoc">Requirements on an object. </div><div class="ttdef"><b>Definition:</b> <a href="ObjectRequirement_8h_source.html#l00046">ObjectRequirement.h:46</a></div></div>
+<div class="ttc" id="namespaceSSAGES_html_aa645655f6fcffdb0554f568389146829"><div class="ttname"><a href="namespaceSSAGES.html#aa645655f6fcffdb0554f568389146829">SSAGES::ConstraintList</a></div><div class="ttdeci">std::vector&lt; Constraint * &gt; ConstraintList</div><div class="ttdoc">List of Constraints. </div><div class="ttdef"><b>Definition:</b> <a href="Constraint_8h_source.html#l00038">Constraint.h:38</a></div></div>
 <div class="ttc" id="classJson_1_1ArrayRequirement_html_a6e334ac9cf70844544828d9dfa7246cb"><div class="ttname"><a href="classJson_1_1ArrayRequirement.html#a6e334ac9cf70844544828d9dfa7246cb">Json::ArrayRequirement::Validate</a></div><div class="ttdeci">virtual void Validate(const Value &amp;json, const std::string &amp;path) override</div><div class="ttdoc">Validate json value. </div><div class="ttdef"><b>Definition:</b> <a href="ArrayRequirement_8h_source.html#l00171">ArrayRequirement.h:171</a></div></div>
 <div class="ttc" id="classJson_1_1ArrayRequirement_html_a216670b8136ad8d4ce0b428b669244f9"><div class="ttname"><a href="classJson_1_1ArrayRequirement.html#a216670b8136ad8d4ce0b428b669244f9">Json::ArrayRequirement::Parse</a></div><div class="ttdeci">virtual void Parse(Value json, const std::string &amp;path) override</div><div class="ttdoc">Parse JSON value and fill array. </div><div class="ttdef"><b>Definition:</b> <a href="ArrayRequirement_8h_source.html#l00125">ArrayRequirement.h:125</a></div></div>
+<div class="ttc" id="classSSAGES_1_1Constraint_html"><div class="ttname"><a href="classSSAGES_1_1Constraint.html">SSAGES::Constraint</a></div><div class="ttdoc">Interface for Constraint implementations. </div><div class="ttdef"><b>Definition:</b> <a href="Constraint_8h_source.html#l00041">Constraint.h:41</a></div></div>
+<div class="ttc" id="classSSAGES_1_1COPSSImage_html"><div class="ttname"><a href="classSSAGES_1_1COPSSImage.html">SSAGES::COPSSImage</a></div><div class="ttdoc">Image method. </div><div class="ttdef"><b>Definition:</b> <a href="COPSSImage_8h_source.html#l00039">COPSSImage.h:39</a></div></div>
 <div class="ttc" id="classJson_1_1ObjectRequirement_html_a9ac3b920001a35bc70580035d8d802b7"><div class="ttname"><a href="classJson_1_1ObjectRequirement.html#a9ac3b920001a35bc70580035d8d802b7">Json::ObjectRequirement::Validate</a></div><div class="ttdeci">virtual void Validate(const Value &amp;json, const std::string &amp;path) override</div><div class="ttdoc">Validate JSON value. </div><div class="ttdef"><b>Definition:</b> <a href="ObjectRequirement_8h_source.html#l00239">ObjectRequirement.h:239</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Oct 14 2016 11:38:55 for SSAGES by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Jun 7 2017 15:46:38 for SSAGES by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

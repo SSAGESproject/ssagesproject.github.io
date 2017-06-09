@@ -160,10 +160,10 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="c
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:a2ac64e178f4b0ad518dfce0ee3c02661"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a2ac64e178f4b0ad518dfce0ee3c02661"></a>
-<a class="el" href="namespaceJson.html#a15a4a9a1e79ca519a5cd5e560a8b1bbb">RequireList</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classJson_1_1OneOfRequirement.html#a2ac64e178f4b0ad518dfce0ee3c02661">_reqs</a></td></tr>
-<tr class="memdesc:a2ac64e178f4b0ad518dfce0ee3c02661"><td class="mdescLeft">&#160;</td><td class="mdescRight">List of Requirements. <br /></td></tr>
-<tr class="separator:a2ac64e178f4b0ad518dfce0ee3c02661"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a74e44561fcddad3003c0b070047fb46e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a74e44561fcddad3003c0b070047fb46e"></a>
+<a class="el" href="namespaceJson.html#a15a4a9a1e79ca519a5cd5e560a8b1bbb">RequireList</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classJson_1_1OneOfRequirement.html#a74e44561fcddad3003c0b070047fb46e">reqs_</a></td></tr>
+<tr class="memdesc:a74e44561fcddad3003c0b070047fb46e"><td class="mdescLeft">&#160;</td><td class="mdescRight">List of Requirements. <br /></td></tr>
+<tr class="separator:a74e44561fcddad3003c0b070047fb46e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
@@ -225,7 +225,7 @@ Additional Inherited Members</h2></td></tr>
 
 <p>Definition at line <a class="el" href="OneOfRequirement_8h_source.html#l00077">77</a> of file <a class="el" href="OneOfRequirement_8h_source.html">OneOfRequirement.h</a>.</p>
 
-<p>References <a class="el" href="OneOfRequirement_8h_source.html#l00040">_reqs</a>, <a class="el" href="RequirementLoader_8cpp_source.html#l00042">Json::RequirementLoader::LoadRequirement()</a>, and <a class="el" href="OneOfRequirement_8h_source.html#l00065">Reset()</a>.</p>
+<p>References <a class="el" href="RequirementLoader_8cpp_source.html#l00042">Json::RequirementLoader::LoadRequirement()</a>, <a class="el" href="OneOfRequirement_8h_source.html#l00040">reqs_</a>, and <a class="el" href="OneOfRequirement_8h_source.html#l00065">Reset()</a>.</p>
 <div class="fragment"><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        {</div>
 <div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;            <a class="code" href="classJson_1_1OneOfRequirement.html#a6dfed67bb4b662740f67b709767fe319">Reset</a>();</div>
 <div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;            RequirementLoader loader;</div>
@@ -235,13 +235,13 @@ Additional Inherited Members</h2></td></tr>
 <div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;            <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; val : head)</div>
 <div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;                <span class="keywordflow">if</span>(<span class="keyword">auto</span> req = loader.LoadRequirement(val))</div>
 <div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;                {</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;                    <a class="code" href="classJson_1_1OneOfRequirement.html#a2ac64e178f4b0ad518dfce0ee3c02661">_reqs</a>.push_back(std::move(req));</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;                    <a class="code" href="classJson_1_1OneOfRequirement.html#a2ac64e178f4b0ad518dfce0ee3c02661">_reqs</a>.back()-&gt;Parse(val, path);</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;                    <a class="code" href="classJson_1_1OneOfRequirement.html#a74e44561fcddad3003c0b070047fb46e">reqs_</a>.push_back(std::move(req));</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;                    <a class="code" href="classJson_1_1OneOfRequirement.html#a74e44561fcddad3003c0b070047fb46e">reqs_</a>.back()-&gt;Parse(val, path);</div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;                }</div>
 <div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;</div>
 <div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        }</div>
-<div class="ttc" id="classJson_1_1OneOfRequirement_html_a2ac64e178f4b0ad518dfce0ee3c02661"><div class="ttname"><a href="classJson_1_1OneOfRequirement.html#a2ac64e178f4b0ad518dfce0ee3c02661">Json::OneOfRequirement::_reqs</a></div><div class="ttdeci">RequireList _reqs</div><div class="ttdoc">List of Requirements. </div><div class="ttdef"><b>Definition:</b> <a href="OneOfRequirement_8h_source.html#l00040">OneOfRequirement.h:40</a></div></div>
 <div class="ttc" id="classJson_1_1OneOfRequirement_html_a6dfed67bb4b662740f67b709767fe319"><div class="ttname"><a href="classJson_1_1OneOfRequirement.html#a6dfed67bb4b662740f67b709767fe319">Json::OneOfRequirement::Reset</a></div><div class="ttdeci">virtual void Reset() override</div><div class="ttdoc">Reset requirement. </div><div class="ttdef"><b>Definition:</b> <a href="OneOfRequirement_8h_source.html#l00065">OneOfRequirement.h:65</a></div></div>
+<div class="ttc" id="classJson_1_1OneOfRequirement_html_a74e44561fcddad3003c0b070047fb46e"><div class="ttname"><a href="classJson_1_1OneOfRequirement.html#a74e44561fcddad3003c0b070047fb46e">Json::OneOfRequirement::reqs_</a></div><div class="ttdeci">RequireList reqs_</div><div class="ttdoc">List of Requirements. </div><div class="ttdef"><b>Definition:</b> <a href="OneOfRequirement_8h_source.html#l00040">OneOfRequirement.h:40</a></div></div>
 </div><!-- fragment -->
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -299,10 +299,10 @@ Here is the call graph for this function:</div>
 
 <p>Definition at line <a class="el" href="OneOfRequirement_8h_source.html#l00098">98</a> of file <a class="el" href="OneOfRequirement_8h_source.html">OneOfRequirement.h</a>.</p>
 
-<p>References <a class="el" href="OneOfRequirement_8h_source.html#l00040">_reqs</a>, <a class="el" href="Requirement_8h_source.html#l00053">Json::Requirement::PushError()</a>, and <a class="el" href="Requirement_8h_source.html#l00062">Json::Requirement::PushNotice()</a>.</p>
+<p>References <a class="el" href="Requirement_8h_source.html#l00053">Json::Requirement::PushError()</a>, <a class="el" href="Requirement_8h_source.html#l00062">Json::Requirement::PushNotice()</a>, and <a class="el" href="OneOfRequirement_8h_source.html#l00040">reqs_</a>.</p>
 <div class="fragment"><div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        {</div>
 <div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;            <span class="keywordtype">int</span> validated = 0;</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;            <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; r : <a class="code" href="classJson_1_1OneOfRequirement.html#a2ac64e178f4b0ad518dfce0ee3c02661">_reqs</a>)</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;            <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; r : <a class="code" href="classJson_1_1OneOfRequirement.html#a74e44561fcddad3003c0b070047fb46e">reqs_</a>)</div>
 <div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;            {</div>
 <div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;                r-&gt;Validate(json, path);</div>
 <div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;                <span class="keywordflow">if</span>(!r-&gt;HasErrors())</div>
@@ -312,7 +312,7 @@ Here is the call graph for this function:</div>
 <div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;            <span class="keywordflow">if</span>(validated &gt; 1)</div>
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;                <a class="code" href="classJson_1_1Requirement.html#adeb9efa6cf271d9cea0599ff2d458a08">PushError</a>(path + <span class="stringliteral">&quot;: Input must validate against only one schema&quot;</span>);</div>
 <div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;            <span class="keywordflow">else</span> <span class="keywordflow">if</span>(validated == 0)</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;                <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; r : _reqs)</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;                <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; r : reqs_)</div>
 <div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;                {</div>
 <div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;                    <span class="keywordflow">if</span>(r-&gt;HasErrors())</div>
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;                        <span class="keywordflow">for</span>(<span class="keyword">const</span> <span class="keyword">auto</span>&amp; error : r-&gt;GetErrors())</div>
@@ -324,7 +324,7 @@ Here is the call graph for this function:</div>
 <div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;                }</div>
 <div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;        }</div>
 <div class="ttc" id="classJson_1_1Requirement_html_adeb9efa6cf271d9cea0599ff2d458a08"><div class="ttname"><a href="classJson_1_1Requirement.html#adeb9efa6cf271d9cea0599ff2d458a08">Json::Requirement::PushError</a></div><div class="ttdeci">void PushError(const std::string &amp;error)</div><div class="ttdoc">Add error to list of error messages. </div><div class="ttdef"><b>Definition:</b> <a href="Requirement_8h_source.html#l00053">Requirement.h:53</a></div></div>
-<div class="ttc" id="classJson_1_1OneOfRequirement_html_a2ac64e178f4b0ad518dfce0ee3c02661"><div class="ttname"><a href="classJson_1_1OneOfRequirement.html#a2ac64e178f4b0ad518dfce0ee3c02661">Json::OneOfRequirement::_reqs</a></div><div class="ttdeci">RequireList _reqs</div><div class="ttdoc">List of Requirements. </div><div class="ttdef"><b>Definition:</b> <a href="OneOfRequirement_8h_source.html#l00040">OneOfRequirement.h:40</a></div></div>
+<div class="ttc" id="classJson_1_1OneOfRequirement_html_a74e44561fcddad3003c0b070047fb46e"><div class="ttname"><a href="classJson_1_1OneOfRequirement.html#a74e44561fcddad3003c0b070047fb46e">Json::OneOfRequirement::reqs_</a></div><div class="ttdeci">RequireList reqs_</div><div class="ttdoc">List of Requirements. </div><div class="ttdef"><b>Definition:</b> <a href="OneOfRequirement_8h_source.html#l00040">OneOfRequirement.h:40</a></div></div>
 <div class="ttc" id="classJson_1_1Requirement_html_a00feadb29fa33f4f2cca7362f12aaed4"><div class="ttname"><a href="classJson_1_1Requirement.html#a00feadb29fa33f4f2cca7362f12aaed4">Json::Requirement::PushNotice</a></div><div class="ttdeci">void PushNotice(const std::string &amp;notice)</div><div class="ttdoc">Add message to list of notices. </div><div class="ttdef"><b>Definition:</b> <a href="Requirement_8h_source.html#l00062">Requirement.h:62</a></div></div>
 </div><!-- fragment -->
 <p><div class="dynheader">
@@ -344,7 +344,7 @@ Here is the call graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Oct 14 2016 11:38:55 for SSAGES by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Jun 7 2017 15:46:38 for SSAGES by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

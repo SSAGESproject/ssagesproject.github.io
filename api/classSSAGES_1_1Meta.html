@@ -119,9 +119,9 @@ Inheritance diagram for SSAGES::Meta:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a23d1bfdc1e2f47b1152fc0740971798e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSSAGES_1_1Meta.html#a23d1bfdc1e2f47b1152fc0740971798e">Meta</a> (boost::mpi::communicator &amp;world, boost::mpi::communicator &amp;comm, double height, const std::vector&lt; double &gt; &amp;widths, unsigned int hillfreq, unsigned int frequency)</td></tr>
-<tr class="memdesc:a23d1bfdc1e2f47b1152fc0740971798e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="#a23d1bfdc1e2f47b1152fc0740971798e">More...</a><br /></td></tr>
-<tr class="separator:a23d1bfdc1e2f47b1152fc0740971798e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a32fd36ceceb8725a64d0fb100290fb2e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSSAGES_1_1Meta.html#a32fd36ceceb8725a64d0fb100290fb2e">Meta</a> (boost::mpi::communicator &amp;world, boost::mpi::communicator &amp;comm, double height, const std::vector&lt; double &gt; &amp;widths, const std::vector&lt; double &gt; &amp;lowerb, const std::vector&lt; double &gt; &amp;upperb, const std::vector&lt; double &gt; &amp;lowerk, const std::vector&lt; double &gt; &amp;upperk, <a class="el" href="classSSAGES_1_1Grid.html">Grid</a>&lt; <a class="el" href="namespaceSSAGES.html#a3a489a370adbddfb160942e834c1b0c7">Vector</a> &gt; *grid, unsigned int hillfreq, unsigned int frequency)</td></tr>
+<tr class="memdesc:a32fd36ceceb8725a64d0fb100290fb2e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="#a32fd36ceceb8725a64d0fb100290fb2e">More...</a><br /></td></tr>
+<tr class="separator:a32fd36ceceb8725a64d0fb100290fb2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2e6c1232ea7fa9dd0bc7c62b7cffabc8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSSAGES_1_1Meta.html#a2e6c1232ea7fa9dd0bc7c62b7cffabc8">PreSimulation</a> (<a class="el" href="classSSAGES_1_1Snapshot.html">Snapshot</a> *snapshot, const <a class="el" href="namespaceSSAGES.html#acddea47426ac0a643b048f870ddd2907">CVList</a> &amp;cvs) override</td></tr>
 <tr class="memdesc:a2e6c1232ea7fa9dd0bc7c62b7cffabc8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pre-simulation hook.  <a href="#a2e6c1232ea7fa9dd0bc7c62b7cffabc8">More...</a><br /></td></tr>
 <tr class="separator:a2e6c1232ea7fa9dd0bc7c62b7cffabc8"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -131,6 +131,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ac55398c6d71d83686b8d6d761ff7f60d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSSAGES_1_1Meta.html#ac55398c6d71d83686b8d6d761ff7f60d">PostSimulation</a> (<a class="el" href="classSSAGES_1_1Snapshot.html">Snapshot</a> *snapshot, const <a class="el" href="namespaceSSAGES.html#acddea47426ac0a643b048f870ddd2907">CVList</a> &amp;cvs) override</td></tr>
 <tr class="memdesc:ac55398c6d71d83686b8d6d761ff7f60d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Post-simulation hook.  <a href="#ac55398c6d71d83686b8d6d761ff7f60d">More...</a><br /></td></tr>
 <tr class="separator:ac55398c6d71d83686b8d6d761ff7f60d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9c53debbdcc91a5a5f54958dd67ae51f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSSAGES_1_1Meta.html#a9c53debbdcc91a5a5f54958dd67ae51f">LoadHills</a> (const std::string &amp;filename)</td></tr>
+<tr class="memdesc:a9c53debbdcc91a5a5f54958dd67ae51f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load hills from file.  <a href="#a9c53debbdcc91a5a5f54958dd67ae51f">More...</a><br /></td></tr>
+<tr class="separator:a9c53debbdcc91a5a5f54958dd67ae51f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab75a534dc8ba1011c1b9cbdc2d851f31"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSSAGES_1_1Meta.html#ab75a534dc8ba1011c1b9cbdc2d851f31">Serialize</a> (Json::Value &amp;json) const override</td></tr>
 <tr class="memdesc:ab75a534dc8ba1011c1b9cbdc2d851f31"><td class="mdescLeft">&#160;</td><td class="mdescRight">Serialize the class.  <a href="#ab75a534dc8ba1011c1b9cbdc2d851f31">More...</a><br /></td></tr>
 <tr class="separator:ab75a534dc8ba1011c1b9cbdc2d851f31"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -168,15 +171,15 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="c
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
-<tr class="memitem:a63e57827c50fdf17b188dcf08bbf8081"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSSAGES_1_1Meta.html#a63e57827c50fdf17b188dcf08bbf8081">AddHill</a> (const <a class="el" href="namespaceSSAGES.html#acddea47426ac0a643b048f870ddd2907">CVList</a> &amp;cvs)</td></tr>
-<tr class="memdesc:a63e57827c50fdf17b188dcf08bbf8081"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a new hill.  <a href="#a63e57827c50fdf17b188dcf08bbf8081">More...</a><br /></td></tr>
-<tr class="separator:a63e57827c50fdf17b188dcf08bbf8081"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afc8e23308641672a8e0363e2d40b19c2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSSAGES_1_1Meta.html#afc8e23308641672a8e0363e2d40b19c2">AddHill</a> (const <a class="el" href="namespaceSSAGES.html#acddea47426ac0a643b048f870ddd2907">CVList</a> &amp;cvs, int iteration)</td></tr>
+<tr class="memdesc:afc8e23308641672a8e0363e2d40b19c2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a new hill.  <a href="#afc8e23308641672a8e0363e2d40b19c2">More...</a><br /></td></tr>
+<tr class="separator:afc8e23308641672a8e0363e2d40b19c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a9cd073ee3c04a98e5131e96ffcb11df8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSSAGES_1_1Meta.html#a9cd073ee3c04a98e5131e96ffcb11df8">CalcBiasForce</a> (const <a class="el" href="namespaceSSAGES.html#acddea47426ac0a643b048f870ddd2907">CVList</a> &amp;cvs)</td></tr>
 <tr class="memdesc:a9cd073ee3c04a98e5131e96ffcb11df8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Computes the bias force.  <a href="#a9cd073ee3c04a98e5131e96ffcb11df8">More...</a><br /></td></tr>
 <tr class="separator:a9cd073ee3c04a98e5131e96ffcb11df8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0ae5acb14c1bf68e158d23074cee86f8"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSSAGES_1_1Meta.html#a0ae5acb14c1bf68e158d23074cee86f8">PrintHill</a> (const <a class="el" href="structSSAGES_1_1Hill.html">Hill</a> &amp;hill)</td></tr>
-<tr class="memdesc:a0ae5acb14c1bf68e158d23074cee86f8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prints the new hill to file.  <a href="#a0ae5acb14c1bf68e158d23074cee86f8">More...</a><br /></td></tr>
-<tr class="separator:a0ae5acb14c1bf68e158d23074cee86f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a68ee814b40f643203949535625645c03"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSSAGES_1_1Meta.html#a68ee814b40f643203949535625645c03">PrintHill</a> (const <a class="el" href="structSSAGES_1_1Hill.html">Hill</a> &amp;hill, int interation)</td></tr>
+<tr class="memdesc:a68ee814b40f643203949535625645c03"><td class="mdescLeft">&#160;</td><td class="mdescRight">Prints the new hill to file.  <a href="#a68ee814b40f643203949535625645c03">More...</a><br /></td></tr>
+<tr class="separator:a68ee814b40f643203949535625645c03"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -206,6 +209,24 @@ std::vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><
 unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSSAGES_1_1Meta.html#a588f0dfffb71410b59caf12b7ad0cc50">hillfreq_</a></td></tr>
 <tr class="memdesc:a588f0dfffb71410b59caf12b7ad0cc50"><td class="mdescLeft">&#160;</td><td class="mdescRight">Frequency of new hills. <br /></td></tr>
 <tr class="separator:a588f0dfffb71410b59caf12b7ad0cc50"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa6dfcaf45887ff30bfe28c65055a0494"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aa6dfcaf45887ff30bfe28c65055a0494"></a>
+<a class="el" href="classSSAGES_1_1Grid.html">Grid</a>&lt; <a class="el" href="namespaceSSAGES.html#a3a489a370adbddfb160942e834c1b0c7">Vector</a> &gt; *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSSAGES_1_1Meta.html#aa6dfcaf45887ff30bfe28c65055a0494">grid_</a></td></tr>
+<tr class="memdesc:aa6dfcaf45887ff30bfe28c65055a0494"><td class="mdescLeft">&#160;</td><td class="mdescRight">CV <a class="el" href="classSSAGES_1_1Grid.html" title="Basic Grid. ">Grid</a>. <br /></td></tr>
+<tr class="separator:aa6dfcaf45887ff30bfe28c65055a0494"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f6d45e420b5795563de6f891908e807"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a3f6d45e420b5795563de6f891908e807"></a>
+std::vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSSAGES_1_1Meta.html#a3f6d45e420b5795563de6f891908e807">upperb_</a></td></tr>
+<tr class="memdesc:a3f6d45e420b5795563de6f891908e807"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bounds. <br /></td></tr>
+<tr class="separator:a3f6d45e420b5795563de6f891908e807"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb05aaf4f0e71403c19c9d1fdefe54eb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afb05aaf4f0e71403c19c9d1fdefe54eb"></a>
+std::vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>lowerb_</b></td></tr>
+<tr class="separator:afb05aaf4f0e71403c19c9d1fdefe54eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a33e2f67c058c3178af21631fe9777b4e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a33e2f67c058c3178af21631fe9777b4e"></a>
+std::vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSSAGES_1_1Meta.html#a33e2f67c058c3178af21631fe9777b4e">upperk_</a></td></tr>
+<tr class="memdesc:a33e2f67c058c3178af21631fe9777b4e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Bound restraints. <br /></td></tr>
+<tr class="separator:a33e2f67c058c3178af21631fe9777b4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a00482d06440d31c835cdf47bd185aa0f"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a00482d06440d31c835cdf47bd185aa0f"></a>
+std::vector&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>lowerk_</b></td></tr>
+<tr class="separator:a00482d06440d31c835cdf47bd185aa0f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac2f065cf13305f71d5e86e78b9a4854b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac2f065cf13305f71d5e86e78b9a4854b"></a>
 std::ofstream&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSSAGES_1_1Meta.html#ac2f065cf13305f71d5e86e78b9a4854b">hillsout_</a></td></tr>
 <tr class="memdesc:ac2f065cf13305f71d5e86e78b9a4854b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Output stream for hill data. <br /></td></tr>
@@ -237,7 +258,7 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 
 <p>Definition at line <a class="el" href="Meta_8h_source.html#l00069">69</a> of file <a class="el" href="Meta_8h_source.html">Meta.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a23d1bfdc1e2f47b1152fc0740971798e"></a>
+<a class="anchor" id="a32fd36ceceb8725a64d0fb100290fb2e"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -267,6 +288,36 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
           <td></td>
           <td class="paramtype">const std::vector&lt; double &gt; &amp;&#160;</td>
           <td class="paramname"><em>widths</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; double &gt; &amp;&#160;</td>
+          <td class="paramname"><em>lowerb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; double &gt; &amp;&#160;</td>
+          <td class="paramname"><em>upperb</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; double &gt; &amp;&#160;</td>
+          <td class="paramname"><em>lowerk</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::vector&lt; double &gt; &amp;&#160;</td>
+          <td class="paramname"><em>upperk</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="classSSAGES_1_1Grid.html">Grid</a>&lt; <a class="el" href="namespaceSSAGES.html#a3a489a370adbddfb160942e834c1b0c7">Vector</a> &gt; *&#160;</td>
+          <td class="paramname"><em>grid</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -307,23 +358,27 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 </dl>
 <p>Constructs an instance of Metadynamics method. </p><dl class="section note"><dt>Note</dt><dd>The size of "widths" should be commensurate with the number of CV's expected. </dd></dl>
 
-<p>Definition at line <a class="el" href="Meta_8h_source.html#l00122">122</a> of file <a class="el" href="Meta_8h_source.html">Meta.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;                                     : </div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;        <a class="code" href="classSSAGES_1_1Method.html#a7b4995b0fde5ed802f6a3a9b371fe9ad">Method</a>(frequency, world, comm), <a class="code" href="classSSAGES_1_1Meta.html#a83a72749ecba4e0c248a191566689d63">hills_</a>(), <a class="code" href="classSSAGES_1_1Meta.html#adfad422c777be811ccb5a47729992a4e">height_</a>(height), <a class="code" href="classSSAGES_1_1Meta.html#aad9cf755f8fd35f3d7fed60b981c1497">widths_</a>(widths), </div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;        <a class="code" href="classSSAGES_1_1Meta.html#a96930633275f22009adb899c9f39d635">derivatives_</a>(0), tder_(0), dx_(0), <a class="code" href="classSSAGES_1_1Meta.html#a588f0dfffb71410b59caf12b7ad0cc50">hillfreq_</a>(hillfreq)</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;        {</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;        }</div>
+<p>Definition at line <a class="el" href="Meta_8h_source.html#l00133">133</a> of file <a class="el" href="Meta_8h_source.html">Meta.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;                                     : </div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;        <a class="code" href="classSSAGES_1_1Method.html#a7b4995b0fde5ed802f6a3a9b371fe9ad">Method</a>(frequency, world, comm), <a class="code" href="classSSAGES_1_1Meta.html#a83a72749ecba4e0c248a191566689d63">hills_</a>(), <a class="code" href="classSSAGES_1_1Meta.html#adfad422c777be811ccb5a47729992a4e">height_</a>(height), <a class="code" href="classSSAGES_1_1Meta.html#aad9cf755f8fd35f3d7fed60b981c1497">widths_</a>(widths), </div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;        <a class="code" href="classSSAGES_1_1Meta.html#a96930633275f22009adb899c9f39d635">derivatives_</a>(0), tder_(0), dx_(0), <a class="code" href="classSSAGES_1_1Meta.html#a588f0dfffb71410b59caf12b7ad0cc50">hillfreq_</a>(hillfreq), <a class="code" href="classSSAGES_1_1Meta.html#aa6dfcaf45887ff30bfe28c65055a0494">grid_</a>(grid),</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;        <a class="code" href="classSSAGES_1_1Meta.html#a3f6d45e420b5795563de6f891908e807">upperb_</a>(upperb), lowerb_(lowerb), <a class="code" href="classSSAGES_1_1Meta.html#a33e2f67c058c3178af21631fe9777b4e">upperk_</a>(upperk), lowerk_(lowerk)</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;        {</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;        }</div>
 <div class="ttc" id="classSSAGES_1_1Meta_html_a588f0dfffb71410b59caf12b7ad0cc50"><div class="ttname"><a href="classSSAGES_1_1Meta.html#a588f0dfffb71410b59caf12b7ad0cc50">SSAGES::Meta::hillfreq_</a></div><div class="ttdeci">unsigned int hillfreq_</div><div class="ttdoc">Frequency of new hills. </div><div class="ttdef"><b>Definition:</b> <a href="Meta_8h_source.html#l00085">Meta.h:85</a></div></div>
 <div class="ttc" id="classSSAGES_1_1Method_html_a7b4995b0fde5ed802f6a3a9b371fe9ad"><div class="ttname"><a href="classSSAGES_1_1Method.html#a7b4995b0fde5ed802f6a3a9b371fe9ad">SSAGES::Method::Method</a></div><div class="ttdeci">Method(unsigned int frequency, boost::mpi::communicator &amp;world, boost::mpi::communicator &amp;comm)</div><div class="ttdoc">Constructor. </div><div class="ttdef"><b>Definition:</b> <a href="Method_8h_source.html#l00059">Method.h:59</a></div></div>
+<div class="ttc" id="classSSAGES_1_1Meta_html_a3f6d45e420b5795563de6f891908e807"><div class="ttname"><a href="classSSAGES_1_1Meta.html#a3f6d45e420b5795563de6f891908e807">SSAGES::Meta::upperb_</a></div><div class="ttdeci">std::vector&lt; double &gt; upperb_</div><div class="ttdoc">Bounds. </div><div class="ttdef"><b>Definition:</b> <a href="Meta_8h_source.html#l00091">Meta.h:91</a></div></div>
 <div class="ttc" id="classSSAGES_1_1Meta_html_a83a72749ecba4e0c248a191566689d63"><div class="ttname"><a href="classSSAGES_1_1Meta.html#a83a72749ecba4e0c248a191566689d63">SSAGES::Meta::hills_</a></div><div class="ttdeci">std::vector&lt; Hill &gt; hills_</div><div class="ttdoc">Hills. </div><div class="ttdef"><b>Definition:</b> <a href="Meta_8h_source.html#l00073">Meta.h:73</a></div></div>
+<div class="ttc" id="classSSAGES_1_1Meta_html_a33e2f67c058c3178af21631fe9777b4e"><div class="ttname"><a href="classSSAGES_1_1Meta.html#a33e2f67c058c3178af21631fe9777b4e">SSAGES::Meta::upperk_</a></div><div class="ttdeci">std::vector&lt; double &gt; upperk_</div><div class="ttdoc">Bound restraints. </div><div class="ttdef"><b>Definition:</b> <a href="Meta_8h_source.html#l00094">Meta.h:94</a></div></div>
 <div class="ttc" id="classSSAGES_1_1Meta_html_a96930633275f22009adb899c9f39d635"><div class="ttname"><a href="classSSAGES_1_1Meta.html#a96930633275f22009adb899c9f39d635">SSAGES::Meta::derivatives_</a></div><div class="ttdeci">std::vector&lt; double &gt; derivatives_</div><div class="ttdoc">Derivatives and temporary storage vectors. </div><div class="ttdef"><b>Definition:</b> <a href="Meta_8h_source.html#l00082">Meta.h:82</a></div></div>
+<div class="ttc" id="classSSAGES_1_1Meta_html_aa6dfcaf45887ff30bfe28c65055a0494"><div class="ttname"><a href="classSSAGES_1_1Meta.html#aa6dfcaf45887ff30bfe28c65055a0494">SSAGES::Meta::grid_</a></div><div class="ttdeci">Grid&lt; Vector &gt; * grid_</div><div class="ttdoc">CV Grid. </div><div class="ttdef"><b>Definition:</b> <a href="Meta_8h_source.html#l00088">Meta.h:88</a></div></div>
 <div class="ttc" id="classSSAGES_1_1Meta_html_aad9cf755f8fd35f3d7fed60b981c1497"><div class="ttname"><a href="classSSAGES_1_1Meta.html#aad9cf755f8fd35f3d7fed60b981c1497">SSAGES::Meta::widths_</a></div><div class="ttdeci">std::vector&lt; double &gt; widths_</div><div class="ttdoc">Hill widths. </div><div class="ttdef"><b>Definition:</b> <a href="Meta_8h_source.html#l00079">Meta.h:79</a></div></div>
 <div class="ttc" id="classSSAGES_1_1Meta_html_adfad422c777be811ccb5a47729992a4e"><div class="ttname"><a href="classSSAGES_1_1Meta.html#adfad422c777be811ccb5a47729992a4e">SSAGES::Meta::height_</a></div><div class="ttdeci">double height_</div><div class="ttdoc">Hill height. </div><div class="ttdef"><b>Definition:</b> <a href="Meta_8h_source.html#l00076">Meta.h:76</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a63e57827c50fdf17b188dcf08bbf8081"></a>
+<a class="anchor" id="afc8e23308641672a8e0363e2d40b19c2"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -334,8 +389,18 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
           <td class="memname">void SSAGES::Meta::AddHill </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="namespaceSSAGES.html#acddea47426ac0a643b048f870ddd2907">CVList</a> &amp;&#160;</td>
-          <td class="paramname"><em>cvs</em></td><td>)</td>
+          <td class="paramname"><em>cvs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>iteration</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -349,65 +414,106 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">cvs</td><td>List of CVs. </td></tr>
+    <tr><td class="paramname">iteration</td><td>Current iteration. </td></tr>
   </table>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="Meta_8cpp_source.html#l00111">111</a> of file <a class="el" href="Meta_8cpp_source.html">Meta.cpp</a>.</p>
+<p>Definition at line <a class="el" href="Meta_8cpp_source.html#l00159">159</a> of file <a class="el" href="Meta_8cpp_source.html">Meta.cpp</a>.</p>
 
-<p>References <a class="el" href="Method_8h_source.html#l00045">SSAGES::Method::comm_</a>, <a class="el" href="Meta_8h_source.html#l00076">height_</a>, <a class="el" href="Meta_8h_source.html#l00073">hills_</a>, <a class="el" href="Meta_8cpp_source.html#l00143">PrintHill()</a>, <a class="el" href="Meta_8h_source.html#l00079">widths_</a>, and <a class="el" href="Method_8h_source.html#l00044">SSAGES::Method::world_</a>.</p>
+<p>References <a class="el" href="Grid_8h_source.html#l00526">SSAGES::Grid&lt; T &gt;::begin()</a>, <a class="el" href="Method_8h_source.html#l00045">SSAGES::Method::comm_</a>, <a class="el" href="Grid_8h_source.html#l00539">SSAGES::Grid&lt; T &gt;::end()</a>, <a class="el" href="Meta_8cpp_source.html#l00035">SSAGES::gaussian()</a>, <a class="el" href="Meta_8cpp_source.html#l00047">SSAGES::gaussianDerv()</a>, <a class="el" href="Meta_8h_source.html#l00088">grid_</a>, <a class="el" href="Meta_8h_source.html#l00076">height_</a>, <a class="el" href="Meta_8h_source.html#l00073">hills_</a>, <a class="el" href="Meta_8cpp_source.html#l00227">PrintHill()</a>, <a class="el" href="Meta_8h_source.html#l00079">widths_</a>, and <a class="el" href="Method_8h_source.html#l00044">SSAGES::Method::world_</a>.</p>
 
-<p>Referenced by <a class="el" href="Meta_8cpp_source.html#l00072">PostIntegration()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;    {</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;        <span class="keywordtype">int</span> n = cvs.size();</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;        <span class="comment">// Assume we have the same number of procs per walker.</span></div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;        <span class="keywordtype">int</span> nwalkers = <a class="code" href="classSSAGES_1_1Method.html#a9bbdc5a2592ff76cfe71364ad4d2ce68">world_</a>.size()/<a class="code" href="classSSAGES_1_1Method.html#ae497980d1720c38b65d47fd4e65897b0">comm_</a>.size();</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;        <span class="comment">// We need to exchange CV values across the walkers </span></div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;        <span class="comment">// and to each proc on a walker.    </span></div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;        std::vector&lt;double&gt; cvals(n*nwalkers, 0);</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;        <span class="keywordflow">if</span>(<a class="code" href="classSSAGES_1_1Method.html#ae497980d1720c38b65d47fd4e65897b0">comm_</a>.rank() == 0)</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;        {</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;            <span class="keywordflow">for</span>(<span class="keyword">auto</span> i = 0, j = <a class="code" href="classSSAGES_1_1Method.html#a9bbdc5a2592ff76cfe71364ad4d2ce68">world_</a>.rank()/<a class="code" href="classSSAGES_1_1Method.html#ae497980d1720c38b65d47fd4e65897b0">comm_</a>.size()*n; i &lt; n; ++i,++j)</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;                cvals[j] = cvs[i]-&gt;GetValue();</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;        }</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;        <span class="comment">// Reduce across all processors and add hills.</span></div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;        MPI_Allreduce(MPI_IN_PLACE, cvals.data(), n*nwalkers, MPI_DOUBLE, MPI_SUM, <a class="code" href="classSSAGES_1_1Method.html#a9bbdc5a2592ff76cfe71364ad4d2ce68">world_</a>);</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;        </div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;        <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; n*nwalkers; i += n)</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;        {</div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;            std::vector&lt;double&gt; cval(cvals.begin() + i, cvals.begin() + i + n);</div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;            <a class="code" href="classSSAGES_1_1Meta.html#a83a72749ecba4e0c248a191566689d63">hills_</a>.emplace_back(cval, <a class="code" href="classSSAGES_1_1Meta.html#aad9cf755f8fd35f3d7fed60b981c1497">widths_</a>, <a class="code" href="classSSAGES_1_1Meta.html#adfad422c777be811ccb5a47729992a4e">height_</a>);</div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;            </div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;            <span class="comment">// Write hill to file.</span></div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;            <span class="keywordflow">if</span>(<a class="code" href="classSSAGES_1_1Method.html#a9bbdc5a2592ff76cfe71364ad4d2ce68">world_</a>.rank() == 0)</div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;                <a class="code" href="classSSAGES_1_1Meta.html#a0ae5acb14c1bf68e158d23074cee86f8">PrintHill</a>(<a class="code" href="classSSAGES_1_1Meta.html#a83a72749ecba4e0c248a191566689d63">hills_</a>.back());</div>
-<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;        }</div>
-<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;    }</div>
+<p>Referenced by <a class="el" href="Meta_8cpp_source.html#l00092">PostIntegration()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;    {</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;        <span class="keywordtype">int</span> n = cvs.size();</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;        <span class="comment">// Assume we have the same number of procs per walker.</span></div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;        <span class="keywordtype">int</span> nwalkers = <a class="code" href="classSSAGES_1_1Method.html#a9bbdc5a2592ff76cfe71364ad4d2ce68">world_</a>.size()/<a class="code" href="classSSAGES_1_1Method.html#ae497980d1720c38b65d47fd4e65897b0">comm_</a>.size();</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;        <span class="comment">// We need to exchange CV values across the walkers </span></div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;        <span class="comment">// and to each proc on a walker.    </span></div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;        std::vector&lt;double&gt; cvals(n*nwalkers, 0);</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;        <span class="keywordflow">if</span>(<a class="code" href="classSSAGES_1_1Method.html#ae497980d1720c38b65d47fd4e65897b0">comm_</a>.rank() == 0)</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;        {</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;            <span class="keywordflow">for</span>(<span class="keyword">auto</span> i = 0, j = <a class="code" href="classSSAGES_1_1Method.html#a9bbdc5a2592ff76cfe71364ad4d2ce68">world_</a>.rank()/<a class="code" href="classSSAGES_1_1Method.html#ae497980d1720c38b65d47fd4e65897b0">comm_</a>.size()*n; i &lt; n; ++i,++j)</div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;                cvals[j] = cvs[i]-&gt;GetValue();</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;        }</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;        <span class="comment">// Reduce across all processors and add hills.</span></div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;        MPI_Allreduce(MPI_IN_PLACE, cvals.data(), n*nwalkers, MPI_DOUBLE, MPI_SUM, <a class="code" href="classSSAGES_1_1Method.html#a9bbdc5a2592ff76cfe71364ad4d2ce68">world_</a>);</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;        </div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;        <span class="keywordflow">for</span>(<span class="keywordtype">int</span> i = 0; i &lt; n*nwalkers; i += n)</div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;        {</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;            std::vector&lt;double&gt; cval(cvals.begin() + i, cvals.begin() + i + n);</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;            <a class="code" href="classSSAGES_1_1Meta.html#a83a72749ecba4e0c248a191566689d63">hills_</a>.emplace_back(cval, <a class="code" href="classSSAGES_1_1Meta.html#aad9cf755f8fd35f3d7fed60b981c1497">widths_</a>, <a class="code" href="classSSAGES_1_1Meta.html#adfad422c777be811ccb5a47729992a4e">height_</a>);</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;            </div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;            <span class="comment">// Write hill to file.</span></div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;            <span class="keywordflow">if</span>(<a class="code" href="classSSAGES_1_1Method.html#a9bbdc5a2592ff76cfe71364ad4d2ce68">world_</a>.rank() == 0)</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;                <a class="code" href="classSSAGES_1_1Meta.html#a68ee814b40f643203949535625645c03">PrintHill</a>(<a class="code" href="classSSAGES_1_1Meta.html#a83a72749ecba4e0c248a191566689d63">hills_</a>.back(), iteration);</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;        }</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;        <span class="comment">// If grid is defined, add bias onto grid. </span></div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;        <span class="keywordflow">if</span>(<a class="code" href="classSSAGES_1_1Meta.html#aa6dfcaf45887ff30bfe28c65055a0494">grid_</a> != <span class="keyword">nullptr</span>)</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;        {</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;            std::vector&lt;double&gt; dx(n, 0.0), df(n, 1.0);</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;            <span class="keyword">auto</span>&amp; hill = <a class="code" href="classSSAGES_1_1Meta.html#a83a72749ecba4e0c248a191566689d63">hills_</a>.back();</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;            <span class="keywordflow">for</span>(<span class="keyword">auto</span> it = <a class="code" href="classSSAGES_1_1Meta.html#aa6dfcaf45887ff30bfe28c65055a0494">grid_</a>-&gt;<a class="code" href="classSSAGES_1_1Grid.html#a709374b3cadf320347604077a2e45e5b">begin</a>(); it != <a class="code" href="classSSAGES_1_1Meta.html#aa6dfcaf45887ff30bfe28c65055a0494">grid_</a>-&gt;<a class="code" href="classSSAGES_1_1Grid.html#ac4fcc9f0cd61476ce4fd880c768d9694">end</a>(); ++it)</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;            {</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;                <span class="keyword">auto</span>&amp; val = *it;</div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;                <span class="keyword">auto</span> coord = it.coordinates();</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;                <span class="comment">// Compute difference between grid point and current val. </span></div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;                <span class="keywordflow">for</span>(<span class="keywordtype">size_t</span> i = 0; i &lt; n; ++i)</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;                {</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;                    dx[i] = -cvs[i]-&gt;GetDifference(coord[i]);</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;                    df[i] = 1.;</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;                }</div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;                <span class="comment">// Compute derivative.</span></div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;                <span class="keywordflow">for</span>(<span class="keywordtype">size_t</span> i = 0; i &lt; n; ++i)</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;                {</div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;                    <span class="keywordflow">for</span>(<span class="keywordtype">size_t</span> j = 0; j &lt; n; ++j)</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;                    {</div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;                        <span class="keywordflow">if</span>(j != i) </div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;                            df[i] *= <a class="code" href="namespaceSSAGES.html#a9bb4c0d6df4a5148519c0c72ccba45a2">gaussian</a>(dx[j], hill.width[j]);</div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;                        <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;                            df[i] *= <a class="code" href="namespaceSSAGES.html#a5f352371649672a16fac4c194b31625e">gaussianDerv</a>(dx[j], hill.width[j]);</div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;                    }</div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;                }</div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;</div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;                <span class="comment">// Add to grid. </span></div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;                <span class="keywordflow">for</span>(<span class="keywordtype">size_t</span> i = 0; i &lt; n; ++i)</div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;                    val[i] += <a class="code" href="classSSAGES_1_1Meta.html#adfad422c777be811ccb5a47729992a4e">height_</a>*df[i];</div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;            }</div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;        }</div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;    }</div>
+<div class="ttc" id="namespaceSSAGES_html_a9bb4c0d6df4a5148519c0c72ccba45a2"><div class="ttname"><a href="namespaceSSAGES.html#a9bb4c0d6df4a5148519c0c72ccba45a2">SSAGES::gaussian</a></div><div class="ttdeci">double gaussian(double dx, double sigma)</div><div class="ttdoc">Evlauate Gaussian. Helper function. </div><div class="ttdef"><b>Definition:</b> <a href="Meta_8cpp_source.html#l00035">Meta.cpp:35</a></div></div>
+<div class="ttc" id="namespaceSSAGES_html_a5f352371649672a16fac4c194b31625e"><div class="ttname"><a href="namespaceSSAGES.html#a5f352371649672a16fac4c194b31625e">SSAGES::gaussianDerv</a></div><div class="ttdeci">double gaussianDerv(double dx, double sigma)</div><div class="ttdoc">Evaluate Gaussian derivative. Helper function. </div><div class="ttdef"><b>Definition:</b> <a href="Meta_8cpp_source.html#l00047">Meta.cpp:47</a></div></div>
+<div class="ttc" id="classSSAGES_1_1Meta_html_a68ee814b40f643203949535625645c03"><div class="ttname"><a href="classSSAGES_1_1Meta.html#a68ee814b40f643203949535625645c03">SSAGES::Meta::PrintHill</a></div><div class="ttdeci">void PrintHill(const Hill &amp;hill, int interation)</div><div class="ttdoc">Prints the new hill to file. </div><div class="ttdef"><b>Definition:</b> <a href="Meta_8cpp_source.html#l00227">Meta.cpp:227</a></div></div>
+<div class="ttc" id="classSSAGES_1_1Grid_html_a709374b3cadf320347604077a2e45e5b"><div class="ttname"><a href="classSSAGES_1_1Grid.html#a709374b3cadf320347604077a2e45e5b">SSAGES::Grid::begin</a></div><div class="ttdeci">iterator begin()</div><div class="ttdoc">Return iterator at first grid point. </div><div class="ttdef"><b>Definition:</b> <a href="Grid_8h_source.html#l00526">Grid.h:526</a></div></div>
 <div class="ttc" id="classSSAGES_1_1Meta_html_a83a72749ecba4e0c248a191566689d63"><div class="ttname"><a href="classSSAGES_1_1Meta.html#a83a72749ecba4e0c248a191566689d63">SSAGES::Meta::hills_</a></div><div class="ttdeci">std::vector&lt; Hill &gt; hills_</div><div class="ttdoc">Hills. </div><div class="ttdef"><b>Definition:</b> <a href="Meta_8h_source.html#l00073">Meta.h:73</a></div></div>
-<div class="ttc" id="classSSAGES_1_1Meta_html_a0ae5acb14c1bf68e158d23074cee86f8"><div class="ttname"><a href="classSSAGES_1_1Meta.html#a0ae5acb14c1bf68e158d23074cee86f8">SSAGES::Meta::PrintHill</a></div><div class="ttdeci">void PrintHill(const Hill &amp;hill)</div><div class="ttdoc">Prints the new hill to file. </div><div class="ttdef"><b>Definition:</b> <a href="Meta_8cpp_source.html#l00143">Meta.cpp:143</a></div></div>
 <div class="ttc" id="classSSAGES_1_1Method_html_ae497980d1720c38b65d47fd4e65897b0"><div class="ttname"><a href="classSSAGES_1_1Method.html#ae497980d1720c38b65d47fd4e65897b0">SSAGES::Method::comm_</a></div><div class="ttdeci">boost::mpi::communicator comm_</div><div class="ttdoc">Local MPI communicator. </div><div class="ttdef"><b>Definition:</b> <a href="Method_8h_source.html#l00045">Method.h:45</a></div></div>
 <div class="ttc" id="classSSAGES_1_1Method_html_a9bbdc5a2592ff76cfe71364ad4d2ce68"><div class="ttname"><a href="classSSAGES_1_1Method.html#a9bbdc5a2592ff76cfe71364ad4d2ce68">SSAGES::Method::world_</a></div><div class="ttdeci">boost::mpi::communicator world_</div><div class="ttdoc">Global MPI communicator. </div><div class="ttdef"><b>Definition:</b> <a href="Method_8h_source.html#l00044">Method.h:44</a></div></div>
+<div class="ttc" id="classSSAGES_1_1Meta_html_aa6dfcaf45887ff30bfe28c65055a0494"><div class="ttname"><a href="classSSAGES_1_1Meta.html#aa6dfcaf45887ff30bfe28c65055a0494">SSAGES::Meta::grid_</a></div><div class="ttdeci">Grid&lt; Vector &gt; * grid_</div><div class="ttdoc">CV Grid. </div><div class="ttdef"><b>Definition:</b> <a href="Meta_8h_source.html#l00088">Meta.h:88</a></div></div>
 <div class="ttc" id="classSSAGES_1_1Meta_html_aad9cf755f8fd35f3d7fed60b981c1497"><div class="ttname"><a href="classSSAGES_1_1Meta.html#aad9cf755f8fd35f3d7fed60b981c1497">SSAGES::Meta::widths_</a></div><div class="ttdeci">std::vector&lt; double &gt; widths_</div><div class="ttdoc">Hill widths. </div><div class="ttdef"><b>Definition:</b> <a href="Meta_8h_source.html#l00079">Meta.h:79</a></div></div>
 <div class="ttc" id="classSSAGES_1_1Meta_html_adfad422c777be811ccb5a47729992a4e"><div class="ttname"><a href="classSSAGES_1_1Meta.html#adfad422c777be811ccb5a47729992a4e">SSAGES::Meta::height_</a></div><div class="ttdeci">double height_</div><div class="ttdoc">Hill height. </div><div class="ttdef"><b>Definition:</b> <a href="Meta_8h_source.html#l00076">Meta.h:76</a></div></div>
+<div class="ttc" id="classSSAGES_1_1Grid_html_ac4fcc9f0cd61476ce4fd880c768d9694"><div class="ttname"><a href="classSSAGES_1_1Grid.html#ac4fcc9f0cd61476ce4fd880c768d9694">SSAGES::Grid::end</a></div><div class="ttdeci">iterator end()</div><div class="ttdoc">Return iterator after last valid grid point. </div><div class="ttdef"><b>Definition:</b> <a href="Grid_8h_source.html#l00539">Grid.h:539</a></div></div>
 </div><!-- fragment -->
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classSSAGES_1_1Meta_a63e57827c50fdf17b188dcf08bbf8081_cgraph.png" border="0" usemap="#classSSAGES_1_1Meta_a63e57827c50fdf17b188dcf08bbf8081_cgraph" alt=""/></div>
-<map name="classSSAGES_1_1Meta_a63e57827c50fdf17b188dcf08bbf8081_cgraph" id="classSSAGES_1_1Meta_a63e57827c50fdf17b188dcf08bbf8081_cgraph">
-<area shape="rect" id="node2" href="classSSAGES_1_1Meta.html#a0ae5acb14c1bf68e158d23074cee86f8" title="Prints the new hill to file. " alt="" coords="219,5,387,32"/></map>
+<div class="center"><img src="classSSAGES_1_1Meta_afc8e23308641672a8e0363e2d40b19c2_cgraph.png" border="0" usemap="#classSSAGES_1_1Meta_afc8e23308641672a8e0363e2d40b19c2_cgraph" alt=""/></div>
+<map name="classSSAGES_1_1Meta_afc8e23308641672a8e0363e2d40b19c2_cgraph" id="classSSAGES_1_1Meta_afc8e23308641672a8e0363e2d40b19c2_cgraph">
+<area shape="rect" id="node2" href="classSSAGES_1_1Grid.html#a709374b3cadf320347604077a2e45e5b" title="Return iterator at first grid point. " alt="" coords="229,5,377,32"/><area shape="rect" id="node3" href="classSSAGES_1_1Grid.html#ac4fcc9f0cd61476ce4fd880c768d9694" title="Return iterator after last valid grid point. " alt="" coords="233,56,372,83"/><area shape="rect" id="node4" href="namespaceSSAGES.html#a9bb4c0d6df4a5148519c0c72ccba45a2" title="Evlauate Gaussian. Helper function. " alt="" coords="234,107,371,133"/><area shape="rect" id="node5" href="namespaceSSAGES.html#a5f352371649672a16fac4c194b31625e" title="Evaluate Gaussian derivative. Helper function. " alt="" coords="220,157,385,184"/><area shape="rect" id="node6" href="classSSAGES_1_1Meta.html#a68ee814b40f643203949535625645c03" title="Prints the new hill to file. " alt="" coords="219,208,387,235"/></map>
 </div>
 </p>
 
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classSSAGES_1_1Meta_a63e57827c50fdf17b188dcf08bbf8081_icgraph.png" border="0" usemap="#classSSAGES_1_1Meta_a63e57827c50fdf17b188dcf08bbf8081_icgraph" alt=""/></div>
-<map name="classSSAGES_1_1Meta_a63e57827c50fdf17b188dcf08bbf8081_icgraph" id="classSSAGES_1_1Meta_a63e57827c50fdf17b188dcf08bbf8081_icgraph">
+<div class="center"><img src="classSSAGES_1_1Meta_afc8e23308641672a8e0363e2d40b19c2_icgraph.png" border="0" usemap="#classSSAGES_1_1Meta_afc8e23308641672a8e0363e2d40b19c2_icgraph" alt=""/></div>
+<map name="classSSAGES_1_1Meta_afc8e23308641672a8e0363e2d40b19c2_icgraph" id="classSSAGES_1_1Meta_afc8e23308641672a8e0363e2d40b19c2_icgraph">
 <area shape="rect" id="node2" href="classSSAGES_1_1Meta.html#a223464a8c4ecbac45a678eb3425d504e" title="Post&#45;integration hook. " alt="" coords="219,5,429,32"/></map>
 </div>
 </p>
@@ -444,50 +550,98 @@ Here is the caller graph for this function:</div>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="Meta_8cpp_source.html#l00155">155</a> of file <a class="el" href="Meta_8cpp_source.html">Meta.cpp</a>.</p>
+<p>Definition at line <a class="el" href="Meta_8cpp_source.html#l00244">244</a> of file <a class="el" href="Meta_8cpp_source.html">Meta.cpp</a>.</p>
 
-<p>References <a class="el" href="Meta_8h_source.html#l00082">derivatives_</a>, <a class="el" href="Meta_8cpp_source.html#l00035">SSAGES::gaussian()</a>, <a class="el" href="Meta_8cpp_source.html#l00047">SSAGES::gaussianDerv()</a>, <a class="el" href="Meta_8h_source.html#l00076">height_</a>, and <a class="el" href="Meta_8h_source.html#l00073">hills_</a>.</p>
+<p>References <a class="el" href="Method_8h_source.html#l00045">SSAGES::Method::comm_</a>, <a class="el" href="Meta_8h_source.html#l00082">derivatives_</a>, <a class="el" href="Meta_8cpp_source.html#l00035">SSAGES::gaussian()</a>, <a class="el" href="Meta_8cpp_source.html#l00047">SSAGES::gaussianDerv()</a>, <a class="el" href="GridBase_8h_source.html#l00164">SSAGES::GridBase&lt; T &gt;::GetLower()</a>, <a class="el" href="GridBase_8h_source.html#l00190">SSAGES::GridBase&lt; T &gt;::GetUpper()</a>, <a class="el" href="Meta_8h_source.html#l00088">grid_</a>, <a class="el" href="Meta_8h_source.html#l00076">height_</a>, <a class="el" href="Meta_8h_source.html#l00073">hills_</a>, <a class="el" href="Meta_8h_source.html#l00091">upperb_</a>, and <a class="el" href="Meta_8h_source.html#l00094">upperk_</a>.</p>
 
-<p>Referenced by <a class="el" href="Meta_8cpp_source.html#l00072">PostIntegration()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;    {   </div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;        <span class="comment">// Reset bias and derivatives.</span></div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;        <span class="keywordtype">double</span> bias = 0.;</div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;        <span class="keyword">auto</span> n = cvs.size();</div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;</div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;        <span class="comment">// Reset vectors.</span></div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;        std::fill(<a class="code" href="classSSAGES_1_1Meta.html#a96930633275f22009adb899c9f39d635">derivatives_</a>.begin(), <a class="code" href="classSSAGES_1_1Meta.html#a96930633275f22009adb899c9f39d635">derivatives_</a>.end(), 0);</div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;</div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;        <span class="comment">// Loop through hills and calculate the bias force.</span></div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;        <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; hill : <a class="code" href="classSSAGES_1_1Meta.html#a83a72749ecba4e0c248a191566689d63">hills_</a>)</div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;        {       </div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;            <span class="keyword">auto</span> tbias = 1.;</div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;            std::fill(tder_.begin(), tder_.end(), 1.0);</div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;            std::fill(dx_.begin(), dx_.end(), 1.0);</div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;            </div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;            <span class="keywordflow">for</span>(<span class="keywordtype">size_t</span> i = 0; i &lt; n; ++i)</div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;            {</div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;                dx_[i] = cvs[i]-&gt;GetDifference(hill.center[i]);</div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;                tbias *= <a class="code" href="namespaceSSAGES.html#a9bb4c0d6df4a5148519c0c72ccba45a2">gaussian</a>(dx_[i], hill.width[i]);</div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;            }</div>
-<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;</div>
-<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;            <span class="keywordflow">for</span>(<span class="keywordtype">size_t</span> i = 0; i &lt; n; ++i)</div>
-<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;                <span class="keywordflow">for</span>(<span class="keywordtype">size_t</span> j = 0; j &lt; n; ++j)</div>
-<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;                {</div>
-<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;                    <span class="keywordflow">if</span>(j != i) </div>
-<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;                        tder_[i] *= <a class="code" href="namespaceSSAGES.html#a9bb4c0d6df4a5148519c0c72ccba45a2">gaussian</a>(dx_[j], hill.width[j]);</div>
-<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;                    <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;                        tder_[i] *= <a class="code" href="namespaceSSAGES.html#a5f352371649672a16fac4c194b31625e">gaussianDerv</a>(dx_[j], hill.width[j]);</div>
-<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;                }</div>
-<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;</div>
-<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;            bias += <a class="code" href="classSSAGES_1_1Meta.html#adfad422c777be811ccb5a47729992a4e">height_</a> * tbias;</div>
-<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;            <span class="keywordflow">for</span>(<span class="keywordtype">size_t</span> i = 0; i &lt; n; ++i)</div>
-<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;                <a class="code" href="classSSAGES_1_1Meta.html#a96930633275f22009adb899c9f39d635">derivatives_</a>[i] += <a class="code" href="classSSAGES_1_1Meta.html#adfad422c777be811ccb5a47729992a4e">height_</a>*tder_[i];</div>
-<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;        }</div>
-<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;    }</div>
+<p>Referenced by <a class="el" href="Meta_8cpp_source.html#l00092">PostIntegration()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;    {   </div>
+<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;        <span class="comment">// Reset bias and derivatives.</span></div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;        <span class="keywordtype">double</span> bias = 0.;</div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;        <span class="keyword">auto</span> n = cvs.size();</div>
+<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;</div>
+<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;        <span class="comment">// Reset vectors.</span></div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;        std::fill(<a class="code" href="classSSAGES_1_1Meta.html#a96930633275f22009adb899c9f39d635">derivatives_</a>.begin(), <a class="code" href="classSSAGES_1_1Meta.html#a96930633275f22009adb899c9f39d635">derivatives_</a>.end(), 0);</div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;        </div>
+<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;        <span class="comment">// Look up and apply grid bias. </span></div>
+<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;        <span class="keywordflow">if</span>(<a class="code" href="classSSAGES_1_1Meta.html#aa6dfcaf45887ff30bfe28c65055a0494">grid_</a> != <span class="keyword">nullptr</span>)</div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;        {</div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;            <span class="keywordtype">bool</span> inbounds = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;            std::vector&lt;double&gt; val(n, 0.);</div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;            <span class="keywordflow">for</span>(<span class="keywordtype">size_t</span> i = 0; i &lt; n; ++i)</div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;            {</div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;                val[i] = cvs[i]-&gt;GetValue();</div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;                <span class="keywordflow">if</span>(val[i] &lt; <a class="code" href="classSSAGES_1_1Meta.html#aa6dfcaf45887ff30bfe28c65055a0494">grid_</a>-&gt;<a class="code" href="classSSAGES_1_1GridBase.html#a1d73d329cfc609d30a9c0bd7e844467c">GetLower</a>(i) || val[i]  &gt; <a class="code" href="classSSAGES_1_1Meta.html#aa6dfcaf45887ff30bfe28c65055a0494">grid_</a>-&gt;<a class="code" href="classSSAGES_1_1GridBase.html#a1c0410f0b34b5eb00112ca11c7a912ed">GetUpper</a>(i))</div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;                    inbounds = <span class="keyword">false</span>;</div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;            }</div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;</div>
+<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;            <span class="keywordflow">if</span>(inbounds)</div>
+<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;            {</div>
+<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;                <span class="keyword">auto</span> frc = (*grid_)[val];</div>
+<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;                <span class="keywordflow">for</span>(<span class="keywordtype">size_t</span> i = 0; i &lt; n; ++i)</div>
+<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;                    <a class="code" href="classSSAGES_1_1Meta.html#a96930633275f22009adb899c9f39d635">derivatives_</a>[i] = frc[i];</div>
+<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;            }</div>
+<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;            <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;            {</div>
+<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;                <span class="keywordflow">if</span>(<a class="code" href="classSSAGES_1_1Method.html#ae497980d1720c38b65d47fd4e65897b0">comm_</a>.rank() == 0)</div>
+<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;                {</div>
+<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;                    std::cerr &lt;&lt; <span class="stringliteral">&quot;Metadynamics: out of bounds ( &quot;</span>;</div>
+<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;                    <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; v : val)</div>
+<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;                        std::cerr &lt;&lt; v &lt;&lt; <span class="stringliteral">&quot; &quot;</span>; </div>
+<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;                    std::cerr &lt;&lt; <span class="stringliteral">&quot;)&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;                }</div>
+<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;            }</div>
+<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;        }</div>
+<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;        <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;        {</div>
+<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;            <span class="comment">// Loop through hills and calculate the bias force.</span></div>
+<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;            <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; hill : <a class="code" href="classSSAGES_1_1Meta.html#a83a72749ecba4e0c248a191566689d63">hills_</a>)</div>
+<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;            {       </div>
+<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;                <span class="keyword">auto</span> tbias = 1.;</div>
+<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;                std::fill(tder_.begin(), tder_.end(), 1.0);</div>
+<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;                std::fill(dx_.begin(), dx_.end(), 1.0);</div>
+<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;                </div>
+<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;                <span class="keywordflow">for</span>(<span class="keywordtype">size_t</span> i = 0; i &lt; n; ++i)</div>
+<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;                {</div>
+<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;                    dx_[i] = cvs[i]-&gt;GetDifference(hill.center[i]);</div>
+<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;                    tbias *= <a class="code" href="namespaceSSAGES.html#a9bb4c0d6df4a5148519c0c72ccba45a2">gaussian</a>(dx_[i], hill.width[i]);</div>
+<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;                }</div>
+<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;</div>
+<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;                <span class="keywordflow">for</span>(<span class="keywordtype">size_t</span> i = 0; i &lt; n; ++i)</div>
+<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;                    <span class="keywordflow">for</span>(<span class="keywordtype">size_t</span> j = 0; j &lt; n; ++j)</div>
+<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;                    {</div>
+<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;                        <span class="keywordflow">if</span>(j != i) </div>
+<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;                            tder_[i] *= <a class="code" href="namespaceSSAGES.html#a9bb4c0d6df4a5148519c0c72ccba45a2">gaussian</a>(dx_[j], hill.width[j]);</div>
+<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;                        <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;                            tder_[i] *= <a class="code" href="namespaceSSAGES.html#a5f352371649672a16fac4c194b31625e">gaussianDerv</a>(dx_[j], hill.width[j]);</div>
+<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;                    }</div>
+<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;</div>
+<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;                bias += <a class="code" href="classSSAGES_1_1Meta.html#adfad422c777be811ccb5a47729992a4e">height_</a> * tbias;</div>
+<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;                <span class="keywordflow">for</span>(<span class="keywordtype">size_t</span> i = 0; i &lt; n; ++i)</div>
+<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;                    <a class="code" href="classSSAGES_1_1Meta.html#a96930633275f22009adb899c9f39d635">derivatives_</a>[i] += <a class="code" href="classSSAGES_1_1Meta.html#adfad422c777be811ccb5a47729992a4e">height_</a>*tder_[i];</div>
+<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;            }</div>
+<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;        }</div>
+<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;</div>
+<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;        <span class="comment">// Restraints.</span></div>
+<div class="line"><a name="l00313"></a><span class="lineno">  313</span>&#160;        <span class="keywordflow">for</span>(<span class="keywordtype">size_t</span> i = 0; i &lt; n; ++i)</div>
+<div class="line"><a name="l00314"></a><span class="lineno">  314</span>&#160;        {</div>
+<div class="line"><a name="l00315"></a><span class="lineno">  315</span>&#160;            <span class="keyword">auto</span> cval = cvs[i]-&gt;GetValue();</div>
+<div class="line"><a name="l00316"></a><span class="lineno">  316</span>&#160;            <span class="keywordflow">if</span>(cval &lt; lowerb_[i])</div>
+<div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;                <a class="code" href="classSSAGES_1_1Meta.html#a96930633275f22009adb899c9f39d635">derivatives_</a>[i] += lowerk_[i]*(cval - lowerb_[i]);</div>
+<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;            <span class="keywordflow">else</span> <span class="keywordflow">if</span>(cval &gt; <a class="code" href="classSSAGES_1_1Meta.html#a3f6d45e420b5795563de6f891908e807">upperb_</a>[i])</div>
+<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;                <a class="code" href="classSSAGES_1_1Meta.html#a96930633275f22009adb899c9f39d635">derivatives_</a>[i] += <a class="code" href="classSSAGES_1_1Meta.html#a33e2f67c058c3178af21631fe9777b4e">upperk_</a>[i]*(cval - <a class="code" href="classSSAGES_1_1Meta.html#a3f6d45e420b5795563de6f891908e807">upperb_</a>[i]);</div>
+<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;        }</div>
+<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;    }</div>
 <div class="ttc" id="namespaceSSAGES_html_a9bb4c0d6df4a5148519c0c72ccba45a2"><div class="ttname"><a href="namespaceSSAGES.html#a9bb4c0d6df4a5148519c0c72ccba45a2">SSAGES::gaussian</a></div><div class="ttdeci">double gaussian(double dx, double sigma)</div><div class="ttdoc">Evlauate Gaussian. Helper function. </div><div class="ttdef"><b>Definition:</b> <a href="Meta_8cpp_source.html#l00035">Meta.cpp:35</a></div></div>
 <div class="ttc" id="namespaceSSAGES_html_a5f352371649672a16fac4c194b31625e"><div class="ttname"><a href="namespaceSSAGES.html#a5f352371649672a16fac4c194b31625e">SSAGES::gaussianDerv</a></div><div class="ttdeci">double gaussianDerv(double dx, double sigma)</div><div class="ttdoc">Evaluate Gaussian derivative. Helper function. </div><div class="ttdef"><b>Definition:</b> <a href="Meta_8cpp_source.html#l00047">Meta.cpp:47</a></div></div>
+<div class="ttc" id="classSSAGES_1_1Meta_html_a3f6d45e420b5795563de6f891908e807"><div class="ttname"><a href="classSSAGES_1_1Meta.html#a3f6d45e420b5795563de6f891908e807">SSAGES::Meta::upperb_</a></div><div class="ttdeci">std::vector&lt; double &gt; upperb_</div><div class="ttdoc">Bounds. </div><div class="ttdef"><b>Definition:</b> <a href="Meta_8h_source.html#l00091">Meta.h:91</a></div></div>
 <div class="ttc" id="classSSAGES_1_1Meta_html_a83a72749ecba4e0c248a191566689d63"><div class="ttname"><a href="classSSAGES_1_1Meta.html#a83a72749ecba4e0c248a191566689d63">SSAGES::Meta::hills_</a></div><div class="ttdeci">std::vector&lt; Hill &gt; hills_</div><div class="ttdoc">Hills. </div><div class="ttdef"><b>Definition:</b> <a href="Meta_8h_source.html#l00073">Meta.h:73</a></div></div>
+<div class="ttc" id="classSSAGES_1_1Meta_html_a33e2f67c058c3178af21631fe9777b4e"><div class="ttname"><a href="classSSAGES_1_1Meta.html#a33e2f67c058c3178af21631fe9777b4e">SSAGES::Meta::upperk_</a></div><div class="ttdeci">std::vector&lt; double &gt; upperk_</div><div class="ttdoc">Bound restraints. </div><div class="ttdef"><b>Definition:</b> <a href="Meta_8h_source.html#l00094">Meta.h:94</a></div></div>
+<div class="ttc" id="classSSAGES_1_1GridBase_html_a1d73d329cfc609d30a9c0bd7e844467c"><div class="ttname"><a href="classSSAGES_1_1GridBase.html#a1d73d329cfc609d30a9c0bd7e844467c">SSAGES::GridBase::GetLower</a></div><div class="ttdeci">const std::vector&lt; double &gt; &amp; GetLower() const </div><div class="ttdoc">Return the lower edges of the Grid. </div><div class="ttdef"><b>Definition:</b> <a href="GridBase_8h_source.html#l00164">GridBase.h:164</a></div></div>
+<div class="ttc" id="classSSAGES_1_1GridBase_html_a1c0410f0b34b5eb00112ca11c7a912ed"><div class="ttname"><a href="classSSAGES_1_1GridBase.html#a1c0410f0b34b5eb00112ca11c7a912ed">SSAGES::GridBase::GetUpper</a></div><div class="ttdeci">const std::vector&lt; double &gt; &amp; GetUpper() const </div><div class="ttdoc">Return the upper edges of the Grid. </div><div class="ttdef"><b>Definition:</b> <a href="GridBase_8h_source.html#l00190">GridBase.h:190</a></div></div>
+<div class="ttc" id="classSSAGES_1_1Method_html_ae497980d1720c38b65d47fd4e65897b0"><div class="ttname"><a href="classSSAGES_1_1Method.html#ae497980d1720c38b65d47fd4e65897b0">SSAGES::Method::comm_</a></div><div class="ttdeci">boost::mpi::communicator comm_</div><div class="ttdoc">Local MPI communicator. </div><div class="ttdef"><b>Definition:</b> <a href="Method_8h_source.html#l00045">Method.h:45</a></div></div>
 <div class="ttc" id="classSSAGES_1_1Meta_html_a96930633275f22009adb899c9f39d635"><div class="ttname"><a href="classSSAGES_1_1Meta.html#a96930633275f22009adb899c9f39d635">SSAGES::Meta::derivatives_</a></div><div class="ttdeci">std::vector&lt; double &gt; derivatives_</div><div class="ttdoc">Derivatives and temporary storage vectors. </div><div class="ttdef"><b>Definition:</b> <a href="Meta_8h_source.html#l00082">Meta.h:82</a></div></div>
+<div class="ttc" id="classSSAGES_1_1Meta_html_aa6dfcaf45887ff30bfe28c65055a0494"><div class="ttname"><a href="classSSAGES_1_1Meta.html#aa6dfcaf45887ff30bfe28c65055a0494">SSAGES::Meta::grid_</a></div><div class="ttdeci">Grid&lt; Vector &gt; * grid_</div><div class="ttdoc">CV Grid. </div><div class="ttdef"><b>Definition:</b> <a href="Meta_8h_source.html#l00088">Meta.h:88</a></div></div>
 <div class="ttc" id="classSSAGES_1_1Meta_html_adfad422c777be811ccb5a47729992a4e"><div class="ttname"><a href="classSSAGES_1_1Meta.html#adfad422c777be811ccb5a47729992a4e">SSAGES::Meta::height_</a></div><div class="ttdeci">double height_</div><div class="ttdoc">Hill height. </div><div class="ttdef"><b>Definition:</b> <a href="Meta_8h_source.html#l00076">Meta.h:76</a></div></div>
 </div><!-- fragment -->
 <p><div class="dynheader">
@@ -495,7 +649,7 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classSSAGES_1_1Meta_a9cd073ee3c04a98e5131e96ffcb11df8_cgraph.png" border="0" usemap="#classSSAGES_1_1Meta_a9cd073ee3c04a98e5131e96ffcb11df8_cgraph" alt=""/></div>
 <map name="classSSAGES_1_1Meta_a9cd073ee3c04a98e5131e96ffcb11df8_cgraph" id="classSSAGES_1_1Meta_a9cd073ee3c04a98e5131e96ffcb11df8_cgraph">
-<area shape="rect" id="node2" href="namespaceSSAGES.html#a9bb4c0d6df4a5148519c0c72ccba45a2" title="Evlauate Gaussian. Helper function. " alt="" coords="275,5,413,32"/><area shape="rect" id="node3" href="namespaceSSAGES.html#a5f352371649672a16fac4c194b31625e" title="Evaluate Gaussian derivative. Helper function. " alt="" coords="261,56,427,83"/></map>
+<area shape="rect" id="node2" href="namespaceSSAGES.html#a9bb4c0d6df4a5148519c0c72ccba45a2" title="Evlauate Gaussian. Helper function. " alt="" coords="294,5,431,32"/><area shape="rect" id="node3" href="namespaceSSAGES.html#a5f352371649672a16fac4c194b31625e" title="Evaluate Gaussian derivative. Helper function. " alt="" coords="280,56,445,83"/><area shape="rect" id="node4" href="classSSAGES_1_1GridBase.html#a1d73d329cfc609d30a9c0bd7e844467c" title="Return the lower edges of the Grid. " alt="" coords="261,107,464,133"/><area shape="rect" id="node5" href="classSSAGES_1_1GridBase.html#a1c0410f0b34b5eb00112ca11c7a912ed" title="Return the upper edges of the Grid. " alt="" coords="261,157,464,184"/></map>
 </div>
 </p>
 
@@ -508,6 +662,66 @@ Here is the caller graph for this function:</div>
 </div>
 </p>
 
+</div>
+</div>
+<a class="anchor" id="a9c53debbdcc91a5a5f54958dd67ae51f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SSAGES::Meta::LoadHills </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>filename</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Load hills from file. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">filename</td><td>File name containing hills.</td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section note"><dt>Note</dt><dd>File format must match the output written by this method and the dimensionality of the hills must match the initialized <a class="el" href="classSSAGES_1_1Meta.html" title="&quot;Vanilla&quot; multi-dimensional Metadynamics. ">Meta</a> class. </dd></dl>
+
+<p>Definition at line <a class="el" href="Meta_8cpp_source.html#l00127">127</a> of file <a class="el" href="Meta_8cpp_source.html">Meta.cpp</a>.</p>
+
+<p>References <a class="el" href="Meta_8h_source.html#l00073">hills_</a>, and <a class="el" href="Meta_8h_source.html#l00079">widths_</a>.</p>
+<div class="fragment"><div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;    {</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;        std::ifstream file(filename);</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;        std::string line; </div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;        <span class="keyword">auto</span> dim = <a class="code" href="classSSAGES_1_1Meta.html#aad9cf755f8fd35f3d7fed60b981c1497">widths_</a>.size();</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;        <span class="keywordtype">double</span> iteration = 0, height = 0;</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;        std::vector&lt;double&gt; width(dim, 0.), center(dim, 0);</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;        <span class="comment">// First line is a comment. </span></div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;        std::getline(file, line);</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;        <span class="keywordflow">while</span>(std::getline(file, line))</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;        {</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;            std::istringstream iss(line);</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;            iss &gt;&gt; iteration; <span class="comment">// Not really using this. </span></div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;            </div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;            <span class="comment">// Load centers.</span></div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;            <span class="keywordflow">for</span>(<span class="keywordtype">size_t</span> i = 0; i &lt; dim; ++i)</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;                iss &gt;&gt; center[i];</div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;            </div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;            <span class="comment">// Load widths.</span></div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;            <span class="keywordflow">for</span>(<span class="keywordtype">size_t</span> i = 0; i &lt; dim; ++i)</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;                iss &gt;&gt; width[i];</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;            </div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;            <span class="comment">// Load height. </span></div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;            iss &gt;&gt; height;</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;            <a class="code" href="classSSAGES_1_1Meta.html#a83a72749ecba4e0c248a191566689d63">hills_</a>.emplace_back(center, width, height);</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;        }</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;    }</div>
+<div class="ttc" id="classSSAGES_1_1Meta_html_a83a72749ecba4e0c248a191566689d63"><div class="ttname"><a href="classSSAGES_1_1Meta.html#a83a72749ecba4e0c248a191566689d63">SSAGES::Meta::hills_</a></div><div class="ttdeci">std::vector&lt; Hill &gt; hills_</div><div class="ttdoc">Hills. </div><div class="ttdef"><b>Definition:</b> <a href="Meta_8h_source.html#l00073">Meta.h:73</a></div></div>
+<div class="ttc" id="classSSAGES_1_1Meta_html_aad9cf755f8fd35f3d7fed60b981c1497"><div class="ttname"><a href="classSSAGES_1_1Meta.html#aad9cf755f8fd35f3d7fed60b981c1497">SSAGES::Meta::widths_</a></div><div class="ttdeci">std::vector&lt; double &gt; widths_</div><div class="ttdoc">Hill widths. </div><div class="ttdef"><b>Definition:</b> <a href="Meta_8h_source.html#l00079">Meta.h:79</a></div></div>
+</div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="a223464a8c4ecbac45a678eb3425d504e"></a>
@@ -553,49 +767,47 @@ Here is the caller graph for this function:</div>
 
 <p>Implements <a class="el" href="classSSAGES_1_1Method.html#a4da2e92262fe76a086cbf8d282e9b396">SSAGES::Method</a>.</p>
 
-<p>Definition at line <a class="el" href="Meta_8cpp_source.html#l00072">72</a> of file <a class="el" href="Meta_8cpp_source.html">Meta.cpp</a>.</p>
+<p>Definition at line <a class="el" href="Meta_8cpp_source.html#l00092">92</a> of file <a class="el" href="Meta_8cpp_source.html">Meta.cpp</a>.</p>
 
-<p>References <a class="el" href="Meta_8cpp_source.html#l00111">AddHill()</a>, <a class="el" href="Meta_8cpp_source.html#l00155">CalcBiasForce()</a>, <a class="el" href="Meta_8h_source.html#l00082">derivatives_</a>, <a class="el" href="Snapshot_8h_source.html#l00364">SSAGES::Snapshot::GetForces()</a>, <a class="el" href="Snapshot_8h_source.html#l00105">SSAGES::Snapshot::GetIteration()</a>, <a class="el" href="Snapshot_8h_source.html#l00135">SSAGES::Snapshot::GetVirial()</a>, and <a class="el" href="Meta_8h_source.html#l00085">hillfreq_</a>.</p>
-<div class="fragment"><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    {</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        <span class="comment">// Add hills when needed.</span></div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        <span class="keywordflow">if</span>(snapshot-&gt;GetIteration() % <a class="code" href="classSSAGES_1_1Meta.html#a588f0dfffb71410b59caf12b7ad0cc50">hillfreq_</a> == 0)</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;            <a class="code" href="classSSAGES_1_1Meta.html#a63e57827c50fdf17b188dcf08bbf8081">AddHill</a>(cvs);</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        <span class="comment">// Always calculate the current bias.</span></div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        <a class="code" href="classSSAGES_1_1Meta.html#a9cd073ee3c04a98e5131e96ffcb11df8">CalcBiasForce</a>(cvs);</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        <span class="comment">// TODO: Bounds check needs to go in somewhere.</span></div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        <span class="comment">// Take each CV and add its biased forces to the atoms</span></div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        <span class="comment">// using the chain rule.</span></div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        <span class="keyword">auto</span>&amp; forces = snapshot-&gt;GetForces();</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        <span class="keyword">auto</span>&amp; virial = snapshot-&gt;GetVirial();</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        <span class="keywordflow">for</span>(<span class="keywordtype">size_t</span> i = 0; i &lt; cvs.size(); ++i)</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        {</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;            <span class="keyword">auto</span>&amp; grad = cvs[i]-&gt;GetGradient();</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;            <span class="keyword">auto</span>&amp; boxgrad = cvs[i]-&gt;GetBoxGradient();</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;            </div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;            <span class="comment">// Update the forces in snapshot by adding in the force bias from each</span></div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;            <span class="comment">// CV to each atom based on the gradient of the CV.</span></div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;            <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> j = 0; j &lt; forces.size(); ++j)</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;                <span class="keywordflow">for</span>(<span class="keywordtype">size_t</span> k = 0; k &lt; 3; ++k)</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;                    forces[j][k] -= <a class="code" href="classSSAGES_1_1Meta.html#a96930633275f22009adb899c9f39d635">derivatives_</a>[i]*grad[j][k];</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;            </div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;            virial += <a class="code" href="classSSAGES_1_1Meta.html#a96930633275f22009adb899c9f39d635">derivatives_</a>[i]*boxgrad;</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        }</div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    }</div>
-<div class="ttc" id="classSSAGES_1_1Meta_html_a63e57827c50fdf17b188dcf08bbf8081"><div class="ttname"><a href="classSSAGES_1_1Meta.html#a63e57827c50fdf17b188dcf08bbf8081">SSAGES::Meta::AddHill</a></div><div class="ttdeci">void AddHill(const CVList &amp;cvs)</div><div class="ttdoc">Adds a new hill. </div><div class="ttdef"><b>Definition:</b> <a href="Meta_8cpp_source.html#l00111">Meta.cpp:111</a></div></div>
+<p>References <a class="el" href="Meta_8cpp_source.html#l00159">AddHill()</a>, <a class="el" href="Meta_8cpp_source.html#l00244">CalcBiasForce()</a>, <a class="el" href="Meta_8h_source.html#l00082">derivatives_</a>, <a class="el" href="Snapshot_8h_source.html#l00364">SSAGES::Snapshot::GetForces()</a>, <a class="el" href="Snapshot_8h_source.html#l00105">SSAGES::Snapshot::GetIteration()</a>, <a class="el" href="Snapshot_8h_source.html#l00135">SSAGES::Snapshot::GetVirial()</a>, and <a class="el" href="Meta_8h_source.html#l00085">hillfreq_</a>.</p>
+<div class="fragment"><div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    {</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        <span class="comment">// Add hills when needed.</span></div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        <span class="keywordflow">if</span>(snapshot-&gt;GetIteration() % <a class="code" href="classSSAGES_1_1Meta.html#a588f0dfffb71410b59caf12b7ad0cc50">hillfreq_</a> == 0)</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;            <a class="code" href="classSSAGES_1_1Meta.html#afc8e23308641672a8e0363e2d40b19c2">AddHill</a>(cvs, snapshot-&gt;GetIteration());</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        <span class="comment">// Always calculate the current bias.</span></div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        <a class="code" href="classSSAGES_1_1Meta.html#a9cd073ee3c04a98e5131e96ffcb11df8">CalcBiasForce</a>(cvs);</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;        <span class="comment">// Take each CV and add its biased forces to the atoms</span></div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        <span class="comment">// using the chain rule.</span></div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        <span class="keyword">auto</span>&amp; forces = snapshot-&gt;GetForces();</div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;        <span class="keyword">auto</span>&amp; virial = snapshot-&gt;GetVirial();</div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        <span class="keywordflow">for</span>(<span class="keywordtype">size_t</span> i = 0; i &lt; cvs.size(); ++i)</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;        {</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;            <span class="keyword">auto</span>&amp; grad = cvs[i]-&gt;GetGradient();</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;            <span class="keyword">auto</span>&amp; boxgrad = cvs[i]-&gt;GetBoxGradient();</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;            </div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;            <span class="comment">// Update the forces in snapshot by adding in the force bias from each</span></div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;            <span class="comment">// CV to each atom based on the gradient of the CV.</span></div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;            <span class="keywordflow">for</span> (<span class="keywordtype">size_t</span> j = 0; j &lt; forces.size(); ++j)</div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;                <span class="keywordflow">for</span>(<span class="keywordtype">size_t</span> k = 0; k &lt; 3; ++k)</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;                    forces[j][k] -= <a class="code" href="classSSAGES_1_1Meta.html#a96930633275f22009adb899c9f39d635">derivatives_</a>[i]*grad[j][k];</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;            </div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;            virial += <a class="code" href="classSSAGES_1_1Meta.html#a96930633275f22009adb899c9f39d635">derivatives_</a>[i]*boxgrad;</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;        }</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    }</div>
 <div class="ttc" id="classSSAGES_1_1Meta_html_a588f0dfffb71410b59caf12b7ad0cc50"><div class="ttname"><a href="classSSAGES_1_1Meta.html#a588f0dfffb71410b59caf12b7ad0cc50">SSAGES::Meta::hillfreq_</a></div><div class="ttdeci">unsigned int hillfreq_</div><div class="ttdoc">Frequency of new hills. </div><div class="ttdef"><b>Definition:</b> <a href="Meta_8h_source.html#l00085">Meta.h:85</a></div></div>
-<div class="ttc" id="classSSAGES_1_1Meta_html_a9cd073ee3c04a98e5131e96ffcb11df8"><div class="ttname"><a href="classSSAGES_1_1Meta.html#a9cd073ee3c04a98e5131e96ffcb11df8">SSAGES::Meta::CalcBiasForce</a></div><div class="ttdeci">void CalcBiasForce(const CVList &amp;cvs)</div><div class="ttdoc">Computes the bias force. </div><div class="ttdef"><b>Definition:</b> <a href="Meta_8cpp_source.html#l00155">Meta.cpp:155</a></div></div>
+<div class="ttc" id="classSSAGES_1_1Meta_html_a9cd073ee3c04a98e5131e96ffcb11df8"><div class="ttname"><a href="classSSAGES_1_1Meta.html#a9cd073ee3c04a98e5131e96ffcb11df8">SSAGES::Meta::CalcBiasForce</a></div><div class="ttdeci">void CalcBiasForce(const CVList &amp;cvs)</div><div class="ttdoc">Computes the bias force. </div><div class="ttdef"><b>Definition:</b> <a href="Meta_8cpp_source.html#l00244">Meta.cpp:244</a></div></div>
 <div class="ttc" id="classSSAGES_1_1Meta_html_a96930633275f22009adb899c9f39d635"><div class="ttname"><a href="classSSAGES_1_1Meta.html#a96930633275f22009adb899c9f39d635">SSAGES::Meta::derivatives_</a></div><div class="ttdeci">std::vector&lt; double &gt; derivatives_</div><div class="ttdoc">Derivatives and temporary storage vectors. </div><div class="ttdef"><b>Definition:</b> <a href="Meta_8h_source.html#l00082">Meta.h:82</a></div></div>
+<div class="ttc" id="classSSAGES_1_1Meta_html_afc8e23308641672a8e0363e2d40b19c2"><div class="ttname"><a href="classSSAGES_1_1Meta.html#afc8e23308641672a8e0363e2d40b19c2">SSAGES::Meta::AddHill</a></div><div class="ttdeci">void AddHill(const CVList &amp;cvs, int iteration)</div><div class="ttdoc">Adds a new hill. </div><div class="ttdef"><b>Definition:</b> <a href="Meta_8cpp_source.html#l00159">Meta.cpp:159</a></div></div>
 </div><!-- fragment -->
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classSSAGES_1_1Meta_a223464a8c4ecbac45a678eb3425d504e_cgraph.png" border="0" usemap="#classSSAGES_1_1Meta_a223464a8c4ecbac45a678eb3425d504e_cgraph" alt=""/></div>
 <map name="classSSAGES_1_1Meta_a223464a8c4ecbac45a678eb3425d504e_cgraph" id="classSSAGES_1_1Meta_a223464a8c4ecbac45a678eb3425d504e_cgraph">
-<area shape="rect" id="node2" href="classSSAGES_1_1Meta.html#a63e57827c50fdf17b188dcf08bbf8081" title="Adds a new hill. " alt="" coords="290,5,454,32"/><area shape="rect" id="node4" href="classSSAGES_1_1Meta.html#a9cd073ee3c04a98e5131e96ffcb11df8" title="Computes the bias force. " alt="" coords="268,56,476,83"/><area shape="rect" id="node7" href="classSSAGES_1_1Snapshot.html#a2533f7b900bc33185424eb94d6996edf" title="Access the per&#45;particle forces. " alt="" coords="267,107,477,133"/><area shape="rect" id="node8" href="classSSAGES_1_1Snapshot.html#acaee0172694743e118273a055ff2c3fc" title="Get the current iteration. " alt="" coords="264,157,480,184"/><area shape="rect" id="node9" href="classSSAGES_1_1Snapshot.html#a00de82748940b4a7982b19fa8abe1c30" title="Get box virial. " alt="" coords="273,208,471,235"/><area shape="rect" id="node3" href="classSSAGES_1_1Meta.html#a0ae5acb14c1bf68e158d23074cee86f8" title="Prints the new hill to file. " alt="" coords="528,5,696,32"/><area shape="rect" id="node5" href="namespaceSSAGES.html#a9bb4c0d6df4a5148519c0c72ccba45a2" title="Evlauate Gaussian. Helper function. " alt="" coords="543,56,681,83"/><area shape="rect" id="node6" href="namespaceSSAGES.html#a5f352371649672a16fac4c194b31625e" title="Evaluate Gaussian derivative. Helper function. " alt="" coords="529,107,695,133"/></map>
+<area shape="rect" id="node2" href="classSSAGES_1_1Meta.html#afc8e23308641672a8e0363e2d40b19c2" title="Adds a new hill. " alt="" coords="290,132,454,159"/><area shape="rect" id="node8" href="classSSAGES_1_1Meta.html#a9cd073ee3c04a98e5131e96ffcb11df8" title="Computes the bias force. " alt="" coords="268,208,476,235"/><area shape="rect" id="node11" href="classSSAGES_1_1Snapshot.html#a2533f7b900bc33185424eb94d6996edf" title="Access the per&#45;particle forces. " alt="" coords="267,259,477,285"/><area shape="rect" id="node12" href="classSSAGES_1_1Snapshot.html#acaee0172694743e118273a055ff2c3fc" title="Get the current iteration. " alt="" coords="264,309,480,336"/><area shape="rect" id="node13" href="classSSAGES_1_1Snapshot.html#a00de82748940b4a7982b19fa8abe1c30" title="Get box virial. " alt="" coords="273,360,471,387"/><area shape="rect" id="node3" href="classSSAGES_1_1Grid.html#a709374b3cadf320347604077a2e45e5b" title="Return iterator at first grid point. " alt="" coords="555,5,703,32"/><area shape="rect" id="node4" href="classSSAGES_1_1Grid.html#ac4fcc9f0cd61476ce4fd880c768d9694" title="Return iterator after last valid grid point. " alt="" coords="560,56,699,83"/><area shape="rect" id="node5" href="namespaceSSAGES.html#a9bb4c0d6df4a5148519c0c72ccba45a2" title="Evlauate Gaussian. Helper function. " alt="" coords="561,208,698,235"/><area shape="rect" id="node6" href="namespaceSSAGES.html#a5f352371649672a16fac4c194b31625e" title="Evaluate Gaussian derivative. Helper function. " alt="" coords="547,157,712,184"/><area shape="rect" id="node7" href="classSSAGES_1_1Meta.html#a68ee814b40f643203949535625645c03" title="Prints the new hill to file. " alt="" coords="545,107,713,133"/><area shape="rect" id="node9" href="classSSAGES_1_1GridBase.html#a1d73d329cfc609d30a9c0bd7e844467c" title="Return the lower edges of the Grid. " alt="" coords="528,309,731,336"/><area shape="rect" id="node10" href="classSSAGES_1_1GridBase.html#a1c0410f0b34b5eb00112ca11c7a912ed" title="Return the upper edges of the Grid. " alt="" coords="528,259,731,285"/></map>
 </div>
 </p>
 
@@ -644,15 +856,9 @@ Here is the call graph for this function:</div>
 
 <p>Implements <a class="el" href="classSSAGES_1_1Method.html#a6e0aab2ac9e7d737e03f0be942292ba6">SSAGES::Method</a>.</p>
 
-<p>Definition at line <a class="el" href="Meta_8cpp_source.html#l00104">104</a> of file <a class="el" href="Meta_8cpp_source.html">Meta.cpp</a>.</p>
-
-<p>References <a class="el" href="Meta_8h_source.html#l00106">hillsout_</a>, and <a class="el" href="Method_8h_source.html#l00044">SSAGES::Method::world_</a>.</p>
-<div class="fragment"><div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    {</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        <span class="keywordflow">if</span>(<a class="code" href="classSSAGES_1_1Method.html#a9bbdc5a2592ff76cfe71364ad4d2ce68">world_</a>.rank() == 0)</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;            <a class="code" href="classSSAGES_1_1Meta.html#ac2f065cf13305f71d5e86e78b9a4854b">hillsout_</a>.close();  </div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    }</div>
-<div class="ttc" id="classSSAGES_1_1Method_html_a9bbdc5a2592ff76cfe71364ad4d2ce68"><div class="ttname"><a href="classSSAGES_1_1Method.html#a9bbdc5a2592ff76cfe71364ad4d2ce68">SSAGES::Method::world_</a></div><div class="ttdeci">boost::mpi::communicator world_</div><div class="ttdoc">Global MPI communicator. </div><div class="ttdef"><b>Definition:</b> <a href="Method_8h_source.html#l00044">Method.h:44</a></div></div>
-<div class="ttc" id="classSSAGES_1_1Meta_html_ac2f065cf13305f71d5e86e78b9a4854b"><div class="ttname"><a href="classSSAGES_1_1Meta.html#ac2f065cf13305f71d5e86e78b9a4854b">SSAGES::Meta::hillsout_</a></div><div class="ttdeci">std::ofstream hillsout_</div><div class="ttdoc">Output stream for hill data. </div><div class="ttdef"><b>Definition:</b> <a href="Meta_8h_source.html#l00106">Meta.h:106</a></div></div>
+<p>Definition at line <a class="el" href="Meta_8cpp_source.html#l00122">122</a> of file <a class="el" href="Meta_8cpp_source.html">Meta.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    {</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;    }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -701,39 +907,63 @@ Here is the call graph for this function:</div>
 
 <p>Definition at line <a class="el" href="Meta_8cpp_source.html#l00055">55</a> of file <a class="el" href="Meta_8cpp_source.html">Meta.cpp</a>.</p>
 
-<p>References <a class="el" href="Meta_8h_source.html#l00082">derivatives_</a>, <a class="el" href="Snapshot_8h_source.html#l00111">SSAGES::Snapshot::GetTargetIterations()</a>, <a class="el" href="Meta_8h_source.html#l00073">hills_</a>, <a class="el" href="Meta_8h_source.html#l00106">hillsout_</a>, <a class="el" href="Meta_8h_source.html#l00079">widths_</a>, and <a class="el" href="Method_8h_source.html#l00044">SSAGES::Method::world_</a>.</p>
+<p>References <a class="el" href="Grid_8h_source.html#l00526">SSAGES::Grid&lt; T &gt;::begin()</a>, <a class="el" href="Meta_8h_source.html#l00082">derivatives_</a>, <a class="el" href="Grid_8h_source.html#l00539">SSAGES::Grid&lt; T &gt;::end()</a>, <a class="el" href="Snapshot_8h_source.html#l00111">SSAGES::Snapshot::GetTargetIterations()</a>, <a class="el" href="Meta_8h_source.html#l00088">grid_</a>, <a class="el" href="Meta_8h_source.html#l00073">hills_</a>, <a class="el" href="Meta_8h_source.html#l00117">hillsout_</a>, <a class="el" href="Meta_8h_source.html#l00079">widths_</a>, and <a class="el" href="Method_8h_source.html#l00044">SSAGES::Method::world_</a>.</p>
 <div class="fragment"><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    {</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        <span class="comment">// Open file for writing and allocate derivatives vector.</span></div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        <span class="comment">// Write ouput file header.</span></div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        <span class="keywordflow">if</span>(<a class="code" href="classSSAGES_1_1Method.html#a9bbdc5a2592ff76cfe71364ad4d2ce68">world_</a>.rank() == 0)</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;            <a class="code" href="classSSAGES_1_1Meta.html#ac2f065cf13305f71d5e86e78b9a4854b">hillsout_</a>.open(<span class="stringliteral">&quot;hills.out&quot;</span>);</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        <span class="keyword">auto</span> n = snapshot-&gt;GetTargetIterations();</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        n = n ? n : 1e5; <span class="comment">// Pre-allocate at least something.</span></div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    </div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        <a class="code" href="classSSAGES_1_1Meta.html#a83a72749ecba4e0c248a191566689d63">hills_</a>.reserve(n+1);</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        <a class="code" href="classSSAGES_1_1Meta.html#aad9cf755f8fd35f3d7fed60b981c1497">widths_</a>.reserve(n+1);</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        <a class="code" href="classSSAGES_1_1Meta.html#a96930633275f22009adb899c9f39d635">derivatives_</a>.resize(cvs.size());</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        tder_.resize(cvs.size());</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        dx_.resize(cvs.size());</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    }</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        {</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;            <a class="code" href="classSSAGES_1_1Meta.html#ac2f065cf13305f71d5e86e78b9a4854b">hillsout_</a>.open(<span class="stringliteral">&quot;hills.out&quot;</span>);</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;            <a class="code" href="classSSAGES_1_1Meta.html#ac2f065cf13305f71d5e86e78b9a4854b">hillsout_</a> &lt;&lt; <span class="stringliteral">&quot;#Iteration &quot;</span>; </div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;            <span class="keywordflow">for</span>(<span class="keywordtype">size_t</span> i = 0; i &lt; cvs.size(); ++i)</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;                <a class="code" href="classSSAGES_1_1Meta.html#ac2f065cf13305f71d5e86e78b9a4854b">hillsout_</a> &lt;&lt; <span class="stringliteral">&quot;center.&quot;</span> &lt;&lt; i &lt;&lt; <span class="stringliteral">&quot; &quot;</span>;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    </div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;            <span class="keywordflow">for</span>(<span class="keywordtype">size_t</span> i = 0; i &lt; cvs.size(); ++i)</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;                <a class="code" href="classSSAGES_1_1Meta.html#ac2f065cf13305f71d5e86e78b9a4854b">hillsout_</a> &lt;&lt; <span class="stringliteral">&quot;sigma.&quot;</span> &lt;&lt; i &lt;&lt; <span class="stringliteral">&quot; &quot;</span>;</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;            </div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;            <a class="code" href="classSSAGES_1_1Meta.html#ac2f065cf13305f71d5e86e78b9a4854b">hillsout_</a> &lt;&lt; <span class="stringliteral">&quot;height&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;                </div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;            <a class="code" href="classSSAGES_1_1Meta.html#ac2f065cf13305f71d5e86e78b9a4854b">hillsout_</a>.close();</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        }</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        <span class="comment">// Initialize grid to zero. </span></div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;        <span class="keywordflow">if</span>(<a class="code" href="classSSAGES_1_1Meta.html#aa6dfcaf45887ff30bfe28c65055a0494">grid_</a> != <span class="keyword">nullptr</span>)</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        {</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;            <a class="code" href="namespaceSSAGES.html#a3a489a370adbddfb160942e834c1b0c7">Vector</a> vec = Vector::Zero(cvs.size());</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;            std::fill(<a class="code" href="classSSAGES_1_1Meta.html#aa6dfcaf45887ff30bfe28c65055a0494">grid_</a>-&gt;<a class="code" href="classSSAGES_1_1Grid.html#a709374b3cadf320347604077a2e45e5b">begin</a>(), <a class="code" href="classSSAGES_1_1Meta.html#aa6dfcaf45887ff30bfe28c65055a0494">grid_</a>-&gt;<a class="code" href="classSSAGES_1_1Grid.html#ac4fcc9f0cd61476ce4fd880c768d9694">end</a>(), vec);</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        } </div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        <span class="keyword">auto</span> n = snapshot-&gt;GetTargetIterations();</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        n = n ? n : 1e5; <span class="comment">// Pre-allocate at least something.</span></div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    </div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;        <a class="code" href="classSSAGES_1_1Meta.html#a83a72749ecba4e0c248a191566689d63">hills_</a>.reserve(n+1);</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;        <a class="code" href="classSSAGES_1_1Meta.html#aad9cf755f8fd35f3d7fed60b981c1497">widths_</a>.reserve(n+1);</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;        <a class="code" href="classSSAGES_1_1Meta.html#a96930633275f22009adb899c9f39d635">derivatives_</a>.resize(cvs.size());</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        tder_.resize(cvs.size());</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        dx_.resize(cvs.size());</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    }</div>
+<div class="ttc" id="namespaceSSAGES_html_a3a489a370adbddfb160942e834c1b0c7"><div class="ttname"><a href="namespaceSSAGES.html#a3a489a370adbddfb160942e834c1b0c7">SSAGES::Vector</a></div><div class="ttdeci">Eigen::VectorXd Vector</div><div class="ttdoc">Arbitrary length vector. </div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00030">types.h:30</a></div></div>
+<div class="ttc" id="classSSAGES_1_1Grid_html_a709374b3cadf320347604077a2e45e5b"><div class="ttname"><a href="classSSAGES_1_1Grid.html#a709374b3cadf320347604077a2e45e5b">SSAGES::Grid::begin</a></div><div class="ttdeci">iterator begin()</div><div class="ttdoc">Return iterator at first grid point. </div><div class="ttdef"><b>Definition:</b> <a href="Grid_8h_source.html#l00526">Grid.h:526</a></div></div>
 <div class="ttc" id="classSSAGES_1_1Meta_html_a83a72749ecba4e0c248a191566689d63"><div class="ttname"><a href="classSSAGES_1_1Meta.html#a83a72749ecba4e0c248a191566689d63">SSAGES::Meta::hills_</a></div><div class="ttdeci">std::vector&lt; Hill &gt; hills_</div><div class="ttdoc">Hills. </div><div class="ttdef"><b>Definition:</b> <a href="Meta_8h_source.html#l00073">Meta.h:73</a></div></div>
 <div class="ttc" id="classSSAGES_1_1Method_html_a9bbdc5a2592ff76cfe71364ad4d2ce68"><div class="ttname"><a href="classSSAGES_1_1Method.html#a9bbdc5a2592ff76cfe71364ad4d2ce68">SSAGES::Method::world_</a></div><div class="ttdeci">boost::mpi::communicator world_</div><div class="ttdoc">Global MPI communicator. </div><div class="ttdef"><b>Definition:</b> <a href="Method_8h_source.html#l00044">Method.h:44</a></div></div>
 <div class="ttc" id="classSSAGES_1_1Meta_html_a96930633275f22009adb899c9f39d635"><div class="ttname"><a href="classSSAGES_1_1Meta.html#a96930633275f22009adb899c9f39d635">SSAGES::Meta::derivatives_</a></div><div class="ttdeci">std::vector&lt; double &gt; derivatives_</div><div class="ttdoc">Derivatives and temporary storage vectors. </div><div class="ttdef"><b>Definition:</b> <a href="Meta_8h_source.html#l00082">Meta.h:82</a></div></div>
+<div class="ttc" id="classSSAGES_1_1Meta_html_aa6dfcaf45887ff30bfe28c65055a0494"><div class="ttname"><a href="classSSAGES_1_1Meta.html#aa6dfcaf45887ff30bfe28c65055a0494">SSAGES::Meta::grid_</a></div><div class="ttdeci">Grid&lt; Vector &gt; * grid_</div><div class="ttdoc">CV Grid. </div><div class="ttdef"><b>Definition:</b> <a href="Meta_8h_source.html#l00088">Meta.h:88</a></div></div>
 <div class="ttc" id="classSSAGES_1_1Meta_html_aad9cf755f8fd35f3d7fed60b981c1497"><div class="ttname"><a href="classSSAGES_1_1Meta.html#aad9cf755f8fd35f3d7fed60b981c1497">SSAGES::Meta::widths_</a></div><div class="ttdeci">std::vector&lt; double &gt; widths_</div><div class="ttdoc">Hill widths. </div><div class="ttdef"><b>Definition:</b> <a href="Meta_8h_source.html#l00079">Meta.h:79</a></div></div>
-<div class="ttc" id="classSSAGES_1_1Meta_html_ac2f065cf13305f71d5e86e78b9a4854b"><div class="ttname"><a href="classSSAGES_1_1Meta.html#ac2f065cf13305f71d5e86e78b9a4854b">SSAGES::Meta::hillsout_</a></div><div class="ttdeci">std::ofstream hillsout_</div><div class="ttdoc">Output stream for hill data. </div><div class="ttdef"><b>Definition:</b> <a href="Meta_8h_source.html#l00106">Meta.h:106</a></div></div>
+<div class="ttc" id="classSSAGES_1_1Meta_html_ac2f065cf13305f71d5e86e78b9a4854b"><div class="ttname"><a href="classSSAGES_1_1Meta.html#ac2f065cf13305f71d5e86e78b9a4854b">SSAGES::Meta::hillsout_</a></div><div class="ttdeci">std::ofstream hillsout_</div><div class="ttdoc">Output stream for hill data. </div><div class="ttdef"><b>Definition:</b> <a href="Meta_8h_source.html#l00117">Meta.h:117</a></div></div>
+<div class="ttc" id="classSSAGES_1_1Grid_html_ac4fcc9f0cd61476ce4fd880c768d9694"><div class="ttname"><a href="classSSAGES_1_1Grid.html#ac4fcc9f0cd61476ce4fd880c768d9694">SSAGES::Grid::end</a></div><div class="ttdeci">iterator end()</div><div class="ttdoc">Return iterator after last valid grid point. </div><div class="ttdef"><b>Definition:</b> <a href="Grid_8h_source.html#l00539">Grid.h:539</a></div></div>
 </div><!-- fragment -->
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classSSAGES_1_1Meta_a2e6c1232ea7fa9dd0bc7c62b7cffabc8_cgraph.png" border="0" usemap="#classSSAGES_1_1Meta_a2e6c1232ea7fa9dd0bc7c62b7cffabc8_cgraph" alt=""/></div>
 <map name="classSSAGES_1_1Meta_a2e6c1232ea7fa9dd0bc7c62b7cffabc8_cgraph" id="classSSAGES_1_1Meta_a2e6c1232ea7fa9dd0bc7c62b7cffabc8_cgraph">
-<area shape="rect" id="node2" href="classSSAGES_1_1Snapshot.html#a098c025745e03ac514b1dcb6169a71b8" title="Get target iterations. " alt="" coords="257,5,463,46"/></map>
+<area shape="rect" id="node2" href="classSSAGES_1_1Grid.html#a709374b3cadf320347604077a2e45e5b" title="Return iterator at first grid point. " alt="" coords="286,5,434,32"/><area shape="rect" id="node3" href="classSSAGES_1_1Grid.html#ac4fcc9f0cd61476ce4fd880c768d9694" title="Return iterator after last valid grid point. " alt="" coords="291,56,429,83"/><area shape="rect" id="node4" href="classSSAGES_1_1Snapshot.html#a098c025745e03ac514b1dcb6169a71b8" title="Get target iterations. " alt="" coords="257,107,463,149"/></map>
 </div>
 </p>
 
 </div>
 </div>
-<a class="anchor" id="a0ae5acb14c1bf68e158d23074cee86f8"></a>
+<a class="anchor" id="a68ee814b40f643203949535625645c03"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -744,8 +974,18 @@ Here is the call graph for this function:</div>
           <td class="memname">void SSAGES::Meta::PrintHill </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="structSSAGES_1_1Hill.html">Hill</a> &amp;&#160;</td>
-          <td class="paramname"><em>hill</em></td><td>)</td>
+          <td class="paramname"><em>hill</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>interation</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -759,34 +999,40 @@ Here is the call graph for this function:</div>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">hill</td><td><a class="el" href="structSSAGES_1_1Hill.html" title="Multidimensional hill. ">Hill</a> to be printed. </td></tr>
+    <tr><td class="paramname">iteration</td><td>Current iteration. </td></tr>
   </table>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="Meta_8cpp_source.html#l00143">143</a> of file <a class="el" href="Meta_8cpp_source.html">Meta.cpp</a>.</p>
+<p>Definition at line <a class="el" href="Meta_8cpp_source.html#l00227">227</a> of file <a class="el" href="Meta_8cpp_source.html">Meta.cpp</a>.</p>
 
-<p>References <a class="el" href="Meta_8h_source.html#l00041">SSAGES::Hill::center</a>, <a class="el" href="Meta_8h_source.html#l00076">height_</a>, <a class="el" href="Meta_8h_source.html#l00106">hillsout_</a>, and <a class="el" href="Meta_8h_source.html#l00044">SSAGES::Hill::width</a>.</p>
+<p>References <a class="el" href="Meta_8h_source.html#l00041">SSAGES::Hill::center</a>, <a class="el" href="Meta_8h_source.html#l00076">height_</a>, <a class="el" href="Meta_8h_source.html#l00117">hillsout_</a>, and <a class="el" href="Meta_8h_source.html#l00044">SSAGES::Hill::width</a>.</p>
 
-<p>Referenced by <a class="el" href="Meta_8cpp_source.html#l00111">AddHill()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;    {</div>
-<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;        <a class="code" href="classSSAGES_1_1Meta.html#ac2f065cf13305f71d5e86e78b9a4854b">hillsout_</a>.precision(8);</div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;        <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; cv : hill.center)</div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;            <a class="code" href="classSSAGES_1_1Meta.html#ac2f065cf13305f71d5e86e78b9a4854b">hillsout_</a> &lt;&lt; cv &lt;&lt; <span class="stringliteral">&quot; &quot;</span>;</div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;        </div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;        <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; w : hill.width)</div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;            <a class="code" href="classSSAGES_1_1Meta.html#ac2f065cf13305f71d5e86e78b9a4854b">hillsout_</a> &lt;&lt; w &lt;&lt; <span class="stringliteral">&quot; &quot;</span>;</div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;</div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;        <a class="code" href="classSSAGES_1_1Meta.html#ac2f065cf13305f71d5e86e78b9a4854b">hillsout_</a> &lt;&lt; <a class="code" href="classSSAGES_1_1Meta.html#adfad422c777be811ccb5a47729992a4e">height_</a> &lt;&lt; std::endl;</div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;    }</div>
-<div class="ttc" id="classSSAGES_1_1Meta_html_ac2f065cf13305f71d5e86e78b9a4854b"><div class="ttname"><a href="classSSAGES_1_1Meta.html#ac2f065cf13305f71d5e86e78b9a4854b">SSAGES::Meta::hillsout_</a></div><div class="ttdeci">std::ofstream hillsout_</div><div class="ttdoc">Output stream for hill data. </div><div class="ttdef"><b>Definition:</b> <a href="Meta_8h_source.html#l00106">Meta.h:106</a></div></div>
+<p>Referenced by <a class="el" href="Meta_8cpp_source.html#l00159">AddHill()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;    {</div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;        <a class="code" href="classSSAGES_1_1Meta.html#ac2f065cf13305f71d5e86e78b9a4854b">hillsout_</a>.open(<span class="stringliteral">&quot;hills.out&quot;</span>, std::fstream::app);</div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;        </div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;        <a class="code" href="classSSAGES_1_1Meta.html#ac2f065cf13305f71d5e86e78b9a4854b">hillsout_</a> &lt;&lt; iteration &lt;&lt; <span class="stringliteral">&quot; &quot;</span>;</div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;        <a class="code" href="classSSAGES_1_1Meta.html#ac2f065cf13305f71d5e86e78b9a4854b">hillsout_</a>.precision(8);</div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;        </div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;        <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; cv : hill.center)</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;            <a class="code" href="classSSAGES_1_1Meta.html#ac2f065cf13305f71d5e86e78b9a4854b">hillsout_</a> &lt;&lt; cv &lt;&lt; <span class="stringliteral">&quot; &quot;</span>;</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;        </div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;        <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; w : hill.width)</div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;            <a class="code" href="classSSAGES_1_1Meta.html#ac2f065cf13305f71d5e86e78b9a4854b">hillsout_</a> &lt;&lt; w &lt;&lt; <span class="stringliteral">&quot; &quot;</span>;</div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;</div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;        <a class="code" href="classSSAGES_1_1Meta.html#ac2f065cf13305f71d5e86e78b9a4854b">hillsout_</a> &lt;&lt; <a class="code" href="classSSAGES_1_1Meta.html#adfad422c777be811ccb5a47729992a4e">height_</a> &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;        <a class="code" href="classSSAGES_1_1Meta.html#ac2f065cf13305f71d5e86e78b9a4854b">hillsout_</a>.close();</div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;    }</div>
+<div class="ttc" id="classSSAGES_1_1Meta_html_ac2f065cf13305f71d5e86e78b9a4854b"><div class="ttname"><a href="classSSAGES_1_1Meta.html#ac2f065cf13305f71d5e86e78b9a4854b">SSAGES::Meta::hillsout_</a></div><div class="ttdeci">std::ofstream hillsout_</div><div class="ttdoc">Output stream for hill data. </div><div class="ttdef"><b>Definition:</b> <a href="Meta_8h_source.html#l00117">Meta.h:117</a></div></div>
 <div class="ttc" id="classSSAGES_1_1Meta_html_adfad422c777be811ccb5a47729992a4e"><div class="ttname"><a href="classSSAGES_1_1Meta.html#adfad422c777be811ccb5a47729992a4e">SSAGES::Meta::height_</a></div><div class="ttdeci">double height_</div><div class="ttdoc">Hill height. </div><div class="ttdef"><b>Definition:</b> <a href="Meta_8h_source.html#l00076">Meta.h:76</a></div></div>
 </div><!-- fragment -->
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classSSAGES_1_1Meta_a0ae5acb14c1bf68e158d23074cee86f8_icgraph.png" border="0" usemap="#classSSAGES_1_1Meta_a0ae5acb14c1bf68e158d23074cee86f8_icgraph" alt=""/></div>
-<map name="classSSAGES_1_1Meta_a0ae5acb14c1bf68e158d23074cee86f8_icgraph" id="classSSAGES_1_1Meta_a0ae5acb14c1bf68e158d23074cee86f8_icgraph">
-<area shape="rect" id="node2" href="classSSAGES_1_1Meta.html#a63e57827c50fdf17b188dcf08bbf8081" title="Adds a new hill. " alt="" coords="222,5,386,32"/><area shape="rect" id="node3" href="classSSAGES_1_1Meta.html#a223464a8c4ecbac45a678eb3425d504e" title="Post&#45;integration hook. " alt="" coords="435,5,645,32"/></map>
+<div class="center"><img src="classSSAGES_1_1Meta_a68ee814b40f643203949535625645c03_icgraph.png" border="0" usemap="#classSSAGES_1_1Meta_a68ee814b40f643203949535625645c03_icgraph" alt=""/></div>
+<map name="classSSAGES_1_1Meta_a68ee814b40f643203949535625645c03_icgraph" id="classSSAGES_1_1Meta_a68ee814b40f643203949535625645c03_icgraph">
+<area shape="rect" id="node2" href="classSSAGES_1_1Meta.html#afc8e23308641672a8e0363e2d40b19c2" title="Adds a new hill. " alt="" coords="222,5,386,32"/><area shape="rect" id="node3" href="classSSAGES_1_1Meta.html#a223464a8c4ecbac45a678eb3425d504e" title="Post&#45;integration hook. " alt="" coords="435,5,645,32"/></map>
 </div>
 </p>
 
@@ -826,16 +1072,16 @@ Here is the caller graph for this function:</div>
 
 <p>Implements <a class="el" href="classSSAGES_1_1Serializable.html#aa4bc8d0ce033a025b0baa7cedccd8ebd">SSAGES::Serializable</a>.</p>
 
-<p>Definition at line <a class="el" href="Meta_8h_source.html#l00158">158</a> of file <a class="el" href="Meta_8h_source.html">Meta.h</a>.</p>
+<p>Definition at line <a class="el" href="Meta_8h_source.html#l00185">185</a> of file <a class="el" href="Meta_8h_source.html">Meta.h</a>.</p>
 
 <p>References <a class="el" href="Meta_8h_source.html#l00076">height_</a>, <a class="el" href="Meta_8h_source.html#l00085">hillfreq_</a>, and <a class="el" href="Meta_8h_source.html#l00079">widths_</a>.</p>
-<div class="fragment"><div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;        {</div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;            json[<span class="stringliteral">&quot;type&quot;</span>] = <span class="stringliteral">&quot;Metadynamics&quot;</span>; </div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;            <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; w : <a class="code" href="classSSAGES_1_1Meta.html#aad9cf755f8fd35f3d7fed60b981c1497">widths_</a>)</div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;                json[<span class="stringliteral">&quot;widths&quot;</span>].append(w);</div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;            json[<span class="stringliteral">&quot;height&quot;</span>] = <a class="code" href="classSSAGES_1_1Meta.html#adfad422c777be811ccb5a47729992a4e">height_</a>;</div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;            json[<span class="stringliteral">&quot;hill_frequency&quot;</span>] = <a class="code" href="classSSAGES_1_1Meta.html#a588f0dfffb71410b59caf12b7ad0cc50">hillfreq_</a>;</div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;        }</div>
+<div class="fragment"><div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;        {</div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;            json[<span class="stringliteral">&quot;type&quot;</span>] = <span class="stringliteral">&quot;Metadynamics&quot;</span>; </div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;            <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; w : <a class="code" href="classSSAGES_1_1Meta.html#aad9cf755f8fd35f3d7fed60b981c1497">widths_</a>)</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;                json[<span class="stringliteral">&quot;widths&quot;</span>].append(w);</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;            json[<span class="stringliteral">&quot;height&quot;</span>] = <a class="code" href="classSSAGES_1_1Meta.html#adfad422c777be811ccb5a47729992a4e">height_</a>;</div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;            json[<span class="stringliteral">&quot;hill_frequency&quot;</span>] = <a class="code" href="classSSAGES_1_1Meta.html#a588f0dfffb71410b59caf12b7ad0cc50">hillfreq_</a>;</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;        }</div>
 <div class="ttc" id="classSSAGES_1_1Meta_html_a588f0dfffb71410b59caf12b7ad0cc50"><div class="ttname"><a href="classSSAGES_1_1Meta.html#a588f0dfffb71410b59caf12b7ad0cc50">SSAGES::Meta::hillfreq_</a></div><div class="ttdeci">unsigned int hillfreq_</div><div class="ttdoc">Frequency of new hills. </div><div class="ttdef"><b>Definition:</b> <a href="Meta_8h_source.html#l00085">Meta.h:85</a></div></div>
 <div class="ttc" id="classSSAGES_1_1Meta_html_aad9cf755f8fd35f3d7fed60b981c1497"><div class="ttname"><a href="classSSAGES_1_1Meta.html#aad9cf755f8fd35f3d7fed60b981c1497">SSAGES::Meta::widths_</a></div><div class="ttdeci">std::vector&lt; double &gt; widths_</div><div class="ttdoc">Hill widths. </div><div class="ttdef"><b>Definition:</b> <a href="Meta_8h_source.html#l00079">Meta.h:79</a></div></div>
 <div class="ttc" id="classSSAGES_1_1Meta_html_adfad422c777be811ccb5a47729992a4e"><div class="ttname"><a href="classSSAGES_1_1Meta.html#adfad422c777be811ccb5a47729992a4e">SSAGES::Meta::height_</a></div><div class="ttdeci">double height_</div><div class="ttdoc">Hill height. </div><div class="ttdef"><b>Definition:</b> <a href="Meta_8h_source.html#l00076">Meta.h:76</a></div></div>
@@ -849,7 +1095,7 @@ Here is the caller graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Mar 23 2017 13:11:12 for SSAGES by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Jun 7 2017 15:46:39 for SSAGES by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

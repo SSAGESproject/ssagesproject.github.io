@@ -8,9 +8,11 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Introduction &mdash; SSAGES 0.9 documentation</title>
+  <title>Introduction &mdash; SSAGES v0.5.0-alpha-217-g4053fbf documentation</title>
   
 
+  
+  
   
   
 
@@ -30,7 +32,10 @@
   
 
   
-    <link rel="top" title="SSAGES 0.9 documentation" href="index.html"/>
+        <link rel="index" title="Index"
+              href="genindex.html"/>
+        <link rel="search" title="Search" href="search.html"/>
+    <link rel="top" title="SSAGES v0.5.0-alpha-217-g4053fbf documentation" href="index.html"/>
         <link rel="next" title="Getting Started" href="Getting Started.html"/>
         <link rel="prev" title="Welcome to SSAGES!" href="index.html"/> 
 
@@ -41,6 +46,7 @@
 
 <body class="wy-body-for-nav" role="document">
 
+   
   <div class="wy-grid-for-nav">
 
     
@@ -60,7 +66,7 @@
             
             
               <div class="version">
-                1.0
+                0.6.0
               </div>
             
           
@@ -81,11 +87,14 @@
           
             
             
-                <ul class="current">
+              
+            
+            
+              <ul class="current">
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Introduction</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Getting Started.html">Getting Started</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Tutorials.html">Tutorials</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Meta-Dynamics Methods.html">Meta-Dynamics Methods</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Advanced Sampling Methods.html">Advanced Sampling Methods</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Write your own Methods and CVs.html">Write your own Methods and CVs</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Contribute to SSAGES.html">Contribute to SSAGES</a></li>
 <li class="toctree-l1"><a class="reference internal" href="The SSAGES Cookbook.html">The SSAGES cookbook</a></li>
@@ -104,8 +113,10 @@
 
       
       <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
-        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-        <a href="index.html">SSAGES</a>
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">SSAGES</a>
+        
       </nav>
 
 
@@ -114,23 +125,40 @@
         <div class="rst-content">
           
 
- 
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 <div role="navigation" aria-label="breadcrumbs navigation">
+
   <ul class="wy-breadcrumbs">
-    <li><a href="index.html">Docs</a> &raquo;</li>
-      
-    <li>Introduction</li>
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>Introduction</li>
+    
+    
       <li class="wy-breadcrumbs-aside">
         
-          
-            <a href="_sources/Introduction.txt" rel="nofollow"> View page source</a>
+            
+            <a href="_sources/Introduction.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
+    
   </ul>
+
+  
   <hr/>
 </div>
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
@@ -138,7 +166,7 @@
             
   <div class="section" id="introduction">
 <h1>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h1>
-<p>Welcome to SSAGES, our new and shiny Meta-Dynamics package.</p>
+<p>Welcome to SSAGES, our new and shiny advanced sampling package.</p>
 <p>Over the past several decades, molecular simulation has emerged as a powerful
 tool for investigating a wide range of physical phenomena. Molecular simulation
 is, in essence, a computational &#8220;microscope&#8221; whereby computers are used to &#8220;look
@@ -213,15 +241,18 @@ just that for your research.</p>
 
 
            </div>
+           <div class="articleComments">
+            
+           </div>
           </div>
           <footer>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="Getting Started.html" class="btn btn-neutral float-right" title="Getting Started" accesskey="n">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="Getting Started.html" class="btn btn-neutral float-right" title="Getting Started" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="index.html" class="btn btn-neutral" title="Welcome to SSAGES!" accesskey="p"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="index.html" class="btn btn-neutral" title="Welcome to SSAGES!" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -231,7 +262,7 @@ just that for your research.</p>
   <div role="contentinfo">
     <p>
         &copy; Copyright 2016, the SSAGES Team.
-      Last updated on Oct 14, 2016.
+      Last updated on Jun 07, 2017.
 
     </p>
   </div>
@@ -253,16 +284,17 @@ just that for your research.</p>
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'./',
-            VERSION:'0.9',
+            VERSION:'v0.5.0-alpha-217-g4053fbf',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
-            HAS_SOURCE:  true
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
         };
     </script>
       <script type="text/javascript" src="_static/jquery.js"></script>
       <script type="text/javascript" src="_static/underscore.js"></script>
       <script type="text/javascript" src="_static/doctools.js"></script>
-      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
   
 
