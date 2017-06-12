@@ -107,91 +107,113 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div>
 <div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="keyword">namespace </span>SSAGES</div>
 <div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;{</div>
-<div class="line"><a name="l00031"></a><span class="lineno"><a class="line" href="classSSAGES_1_1GromacsDriver.html">   31</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classSSAGES_1_1GromacsDriver.html">GromacsDriver</a> : <span class="keyword">public</span> <a class="code" href="classSSAGES_1_1Driver.html">Driver</a></div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    {</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;        <span class="keywordtype">int</span> nwalkers_;</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        <span class="keywordtype">int</span> MDSteps_;</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        <a class="code" href="classSSAGES_1_1GromacsDriver.html">GromacsDriver</a>(mpi::communicator&amp; world_comm, </div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;                      mpi::communicator&amp; local_comm,</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;                      <span class="keywordtype">int</span> walkerID) : </div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        <a class="code" href="classSSAGES_1_1Driver.html#aaca8e4296e906e1ed0e090e131b1ee2a">Driver</a>(world_comm, local_comm, walkerID),</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        nwalkers_(world_comm.size()/local_comm.size())</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        {}</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
-<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="classSSAGES_1_1GromacsDriver.html#a2c747b9d9b49b4ce34b2ab5cceb4c5cd">   45</a></span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classSSAGES_1_1GromacsDriver.html#a2c747b9d9b49b4ce34b2ab5cceb4c5cd">Run</a>()<span class="keyword"> override</span></div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;<span class="keyword">        </span>{</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;            <span class="keywordtype">int</span> argc = (nwalkers_ &gt; 1) ? 5 : 3; </div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;            <span class="keywordtype">char</span> **largs = <span class="keyword">new</span> <span class="keywordtype">char</span>*[argc];</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;            largs[0] = <span class="keyword">new</span> <span class="keywordtype">char</span>[128];</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;            largs[1] = <span class="keyword">new</span> <span class="keywordtype">char</span>[128];</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;            largs[2] = <span class="keyword">new</span> <span class="keywordtype">char</span>[128];</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;            <span class="keywordflow">if</span>(nwalkers_ &gt; 1)</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;            {</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;                largs[3] = <span class="keyword">new</span> <span class="keywordtype">char</span>[128];</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;                largs[4] = <span class="keyword">new</span> <span class="keywordtype">char</span>[128];</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;            }</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;            <span class="comment">// Trim input file extension.</span></div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;            <span class="keyword">auto</span> s = <a class="code" href="classSSAGES_1_1Driver.html#a00f16572c777f98f4b71e6f050a93ebc">_inputfile</a>.substr(0, <a class="code" href="classSSAGES_1_1Driver.html#a00f16572c777f98f4b71e6f050a93ebc">_inputfile</a>.find_last_of(<span class="stringliteral">&quot;.&quot;</span>));</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;            sprintf(largs[0], <span class="stringliteral">&quot;ssages&quot;</span>);</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;            sprintf(largs[1], <span class="stringliteral">&quot;-deffnm&quot;</span>);</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;            sprintf(largs[2], <span class="stringliteral">&quot;%s&quot;</span>, s.c_str());</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;            <span class="keywordflow">if</span>(nwalkers_ &gt; 1)</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;            {</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;                sprintf(largs[3], <span class="stringliteral">&quot;-multi&quot;</span>);</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;                sprintf(largs[4], <span class="stringliteral">&quot;%i&quot;</span>, nwalkers_);</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;            }</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;                </div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;            <span class="comment">// For prettyness.</span></div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;            std::cout &lt;&lt; std::endl;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;            gmx::CommandLineModuleManager::runAsMainCMain(argc, largs, &amp;gmx_mdrun);</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        }</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
-<div class="line"><a name="l00075"></a><span class="lineno"><a class="line" href="classSSAGES_1_1GromacsDriver.html#a0dcdd44795581a7d77ab82cdcfe5cc0d">   75</a></span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classSSAGES_1_1GromacsDriver.html#a0dcdd44795581a7d77ab82cdcfe5cc0d">ExecuteInputFile</a>(std::string)<span class="keyword"> override</span></div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;<span class="keyword">        </span>{</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;        }</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
-<div class="line"><a name="l00080"></a><span class="lineno"><a class="line" href="classSSAGES_1_1GromacsDriver.html#a262f215c05707fafe104785aa567f532">   80</a></span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classSSAGES_1_1GromacsDriver.html#a262f215c05707fafe104785aa567f532">BuildDriver</a>(<span class="keyword">const</span> Json::Value&amp; json, <span class="keyword">const</span> std::string&amp;)<span class="keyword"> override</span></div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;<span class="keyword">        </span>{</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;            <a class="code" href="classSSAGES_1_1Driver.html#a00f16572c777f98f4b71e6f050a93ebc">_inputfile</a> = json.get(<span class="stringliteral">&quot;inputfile&quot;</span>,<span class="stringliteral">&quot;none&quot;</span>).asString();</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;            MDSteps_ = json.get(<span class="stringliteral">&quot;MDSteps&quot;</span>, 1).asInt();</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;            <span class="comment">// Set hook. </span></div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;            <span class="keyword">auto</span>&amp; hook = GromacsHook::Instance();</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;            hook.SetIterationTarget(MDSteps_);</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;            <a class="code" href="classSSAGES_1_1Driver.html#a9817e954adcfc686e1a346b171b23166">_hook</a> = <span class="keyword">dynamic_cast&lt;</span><a class="code" href="classSSAGES_1_1Hook.html">Hook</a>*<span class="keyword">&gt;</span>(&amp;hook);</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        }</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;</div>
-<div class="line"><a name="l00091"></a><span class="lineno"><a class="line" href="classSSAGES_1_1GromacsDriver.html#a8655eb778160661894e67631454ee43d">   91</a></span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classSSAGES_1_1GromacsDriver.html#a8655eb778160661894e67631454ee43d">Serialize</a>(Json::Value&amp; json)<span class="keyword"> const override</span></div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="keyword">        </span>{</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;            <span class="comment">// Call parent first.</span></div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;            <a class="code" href="classSSAGES_1_1Driver.html#a1eed2dd5491b7688ea5e3cb7e5f4c8c7">Driver::Serialize</a>(json);</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;            json[<span class="stringliteral">&quot;MDSteps&quot;</span>] = MDSteps_;</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;            json[<span class="stringliteral">&quot;type&quot;</span>] = <span class="stringliteral">&quot;Gromacs&quot;</span>;</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        }</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    };</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;}</div>
-<div class="ttc" id="classSSAGES_1_1GromacsDriver_html"><div class="ttname"><a href="classSSAGES_1_1GromacsDriver.html">SSAGES::GromacsDriver</a></div><div class="ttdef"><b>Definition:</b> <a href="GromacsDriver_8h_source.html#l00031">GromacsDriver.h:31</a></div></div>
-<div class="ttc" id="classSSAGES_1_1Driver_html_aaca8e4296e906e1ed0e090e131b1ee2a"><div class="ttname"><a href="classSSAGES_1_1Driver.html#aaca8e4296e906e1ed0e090e131b1ee2a">SSAGES::Driver::Driver</a></div><div class="ttdeci">Driver(boost::mpi::communicator &amp;world, boost::mpi::communicator &amp;comm, int walkerID)</div><div class="ttdoc">Constructor. </div><div class="ttdef"><b>Definition:</b> <a href="Driver_8h_source.html#l00099">Driver.h:99</a></div></div>
-<div class="ttc" id="classSSAGES_1_1GromacsDriver_html_a2c747b9d9b49b4ce34b2ab5cceb4c5cd"><div class="ttname"><a href="classSSAGES_1_1GromacsDriver.html#a2c747b9d9b49b4ce34b2ab5cceb4c5cd">SSAGES::GromacsDriver::Run</a></div><div class="ttdeci">virtual void Run() override</div><div class="ttdoc">Run simulation. </div><div class="ttdef"><b>Definition:</b> <a href="GromacsDriver_8h_source.html#l00045">GromacsDriver.h:45</a></div></div>
-<div class="ttc" id="classSSAGES_1_1Driver_html_a1eed2dd5491b7688ea5e3cb7e5f4c8c7"><div class="ttname"><a href="classSSAGES_1_1Driver.html#a1eed2dd5491b7688ea5e3cb7e5f4c8c7">SSAGES::Driver::Serialize</a></div><div class="ttdeci">virtual void Serialize(Json::Value &amp;json) const override</div><div class="ttdoc">Serialize the class. </div><div class="ttdef"><b>Definition:</b> <a href="Driver_8h_source.html#l00256">Driver.h:256</a></div></div>
-<div class="ttc" id="classSSAGES_1_1Driver_html_a9817e954adcfc686e1a346b171b23166"><div class="ttname"><a href="classSSAGES_1_1Driver.html#a9817e954adcfc686e1a346b171b23166">SSAGES::Driver::_hook</a></div><div class="ttdeci">Hook * _hook</div><div class="ttdoc">The hook that hooks into the MD simulation engine. </div><div class="ttdef"><b>Definition:</b> <a href="Driver_8h_source.html#l00060">Driver.h:60</a></div></div>
-<div class="ttc" id="classSSAGES_1_1Driver_html"><div class="ttname"><a href="classSSAGES_1_1Driver.html">SSAGES::Driver</a></div><div class="ttdoc">Abstract driver class for creating driver objects. </div><div class="ttdef"><b>Definition:</b> <a href="Driver_8h_source.html#l00049">Driver.h:49</a></div></div>
-<div class="ttc" id="classSSAGES_1_1Hook_html"><div class="ttname"><a href="classSSAGES_1_1Hook.html">SSAGES::Hook</a></div><div class="ttdoc">Base class for hooks into the simultion engines. </div><div class="ttdef"><b>Definition:</b> <a href="Hook_8h_source.html#l00038">Hook.h:38</a></div></div>
-<div class="ttc" id="classSSAGES_1_1GromacsDriver_html_a0dcdd44795581a7d77ab82cdcfe5cc0d"><div class="ttname"><a href="classSSAGES_1_1GromacsDriver.html#a0dcdd44795581a7d77ab82cdcfe5cc0d">SSAGES::GromacsDriver::ExecuteInputFile</a></div><div class="ttdeci">virtual void ExecuteInputFile(std::string) override</div><div class="ttdoc">Read in driver specific input file (e.g. Lammps.in) </div><div class="ttdef"><b>Definition:</b> <a href="GromacsDriver_8h_source.html#l00075">GromacsDriver.h:75</a></div></div>
-<div class="ttc" id="classSSAGES_1_1GromacsDriver_html_a262f215c05707fafe104785aa567f532"><div class="ttname"><a href="classSSAGES_1_1GromacsDriver.html#a262f215c05707fafe104785aa567f532">SSAGES::GromacsDriver::BuildDriver</a></div><div class="ttdeci">virtual void BuildDriver(const Json::Value &amp;json, const std::string &amp;) override</div><div class="ttdoc">Build the driver, which will create the hook and so forth. </div><div class="ttdef"><b>Definition:</b> <a href="GromacsDriver_8h_source.html#l00080">GromacsDriver.h:80</a></div></div>
-<div class="ttc" id="classSSAGES_1_1Driver_html_a00f16572c777f98f4b71e6f050a93ebc"><div class="ttname"><a href="classSSAGES_1_1Driver.html#a00f16572c777f98f4b71e6f050a93ebc">SSAGES::Driver::_inputfile</a></div><div class="ttdeci">std::string _inputfile</div><div class="ttdoc">Local input file. </div><div class="ttdef"><b>Definition:</b> <a href="Driver_8h_source.html#l00078">Driver.h:78</a></div></div>
-<div class="ttc" id="classSSAGES_1_1GromacsDriver_html_a8655eb778160661894e67631454ee43d"><div class="ttname"><a href="classSSAGES_1_1GromacsDriver.html#a8655eb778160661894e67631454ee43d">SSAGES::GromacsDriver::Serialize</a></div><div class="ttdeci">virtual void Serialize(Json::Value &amp;json) const override</div><div class="ttdoc">Serialize the class. </div><div class="ttdef"><b>Definition:</b> <a href="GromacsDriver_8h_source.html#l00091">GromacsDriver.h:91</a></div></div>
+<div class="line"><a name="l00032"></a><span class="lineno"><a class="line" href="classSSAGES_1_1GromacsDriver.html">   32</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classSSAGES_1_1GromacsDriver.html">GromacsDriver</a> : <span class="keyword">public</span> <a class="code" href="classSSAGES_1_1Driver.html">Driver</a></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    {</div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="classSSAGES_1_1GromacsDriver.html#a2d260309b91f72ccdc947ee644d34ca0">   37</a></span>&#160;        <span class="keywordtype">int</span> <a class="code" href="classSSAGES_1_1GromacsDriver.html#a2d260309b91f72ccdc947ee644d34ca0">nwalkers_</a>;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;</div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="classSSAGES_1_1GromacsDriver.html#a8e1a13c5832fc54e08aebb883e76febf">   40</a></span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="classSSAGES_1_1GromacsDriver.html#a8e1a13c5832fc54e08aebb883e76febf">restart_</a>;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
+<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="classSSAGES_1_1GromacsDriver.html#ad8c922b7c8471ce1bac9d51b8da03d13">   50</a></span>&#160;        <a class="code" href="classSSAGES_1_1GromacsDriver.html#ad8c922b7c8471ce1bac9d51b8da03d13">GromacsDriver</a>(mpi::communicator&amp; world_comm, </div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;                      mpi::communicator&amp; local_comm,</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;                      <span class="keywordtype">int</span> walkerID) : </div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        <a class="code" href="classSSAGES_1_1Driver.html">Driver</a>(world_comm, local_comm, walkerID),</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        <a class="code" href="classSSAGES_1_1GromacsDriver.html#a2d260309b91f72ccdc947ee644d34ca0">nwalkers_</a>(world_comm.size()/local_comm.size())</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        {}</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div>
+<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="classSSAGES_1_1GromacsDriver.html#a2c747b9d9b49b4ce34b2ab5cceb4c5cd">   58</a></span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classSSAGES_1_1GromacsDriver.html#a2c747b9d9b49b4ce34b2ab5cceb4c5cd">Run</a>()<span class="keyword"> override</span></div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;<span class="keyword">        </span>{</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;            <span class="keywordtype">int</span> argc = 3; </div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;            <span class="keywordtype">char</span> **largs = <span class="keyword">new</span> <span class="keywordtype">char</span>*[64];</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;            largs[0] = <span class="keyword">new</span> <span class="keywordtype">char</span>[128];</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;            largs[1] = <span class="keyword">new</span> <span class="keywordtype">char</span>[128];</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;            largs[2] = <span class="keyword">new</span> <span class="keywordtype">char</span>[128];</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;            <span class="comment">// Trim input file extension.</span></div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;            <span class="keyword">auto</span> s = <a class="code" href="classSSAGES_1_1Driver.html#a669cc2a8bf73c9d0a09b4653598096f7">inputfile_</a>.substr(0, <a class="code" href="classSSAGES_1_1Driver.html#a669cc2a8bf73c9d0a09b4653598096f7">inputfile_</a>.find_last_of(<span class="stringliteral">&quot;.&quot;</span>));</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;            sprintf(largs[0], <span class="stringliteral">&quot;ssages&quot;</span>);</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;            sprintf(largs[1], <span class="stringliteral">&quot;-deffnm&quot;</span>);</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;            sprintf(largs[2], <span class="stringliteral">&quot;%s&quot;</span>, s.c_str());</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;            <span class="keywordflow">if</span>(<a class="code" href="classSSAGES_1_1GromacsDriver.html#a2d260309b91f72ccdc947ee644d34ca0">nwalkers_</a> &gt; 1)</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;            {</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;                largs[argc] = <span class="keyword">new</span> <span class="keywordtype">char</span>[128];</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;                sprintf(largs[argc], <span class="stringliteral">&quot;-multi&quot;</span>);</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;                ++argc;</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;                largs[argc] = <span class="keyword">new</span> <span class="keywordtype">char</span>[128];</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;                sprintf(largs[argc], <span class="stringliteral">&quot;%i&quot;</span>, <a class="code" href="classSSAGES_1_1GromacsDriver.html#a2d260309b91f72ccdc947ee644d34ca0">nwalkers_</a>);</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;                ++argc;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;            }</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;            <span class="keywordflow">if</span>(<a class="code" href="classSSAGES_1_1GromacsDriver.html#a8e1a13c5832fc54e08aebb883e76febf">restart_</a>)</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;            {</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;                largs[argc] = <span class="keyword">new</span> <span class="keywordtype">char</span>[128];</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;                sprintf(largs[argc], <span class="stringliteral">&quot;-cpi&quot;</span>);</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;                ++argc;</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;                largs[argc] = <span class="keyword">new</span> <span class="keywordtype">char</span>[128];</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;                sprintf(largs[argc], <span class="stringliteral">&quot;-noappend&quot;</span>);</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;                ++argc;</div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;            }</div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;            <span class="comment">// For prettyness.</span></div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;            std::cout &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;            gmx::CommandLineModuleManager::runAsMainCMain(argc, largs, &amp;gmx_mdrun);</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        }</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;</div>
+<div class="line"><a name="l00104"></a><span class="lineno"><a class="line" href="classSSAGES_1_1GromacsDriver.html#a0dcdd44795581a7d77ab82cdcfe5cc0d">  104</a></span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classSSAGES_1_1GromacsDriver.html#a0dcdd44795581a7d77ab82cdcfe5cc0d">ExecuteInputFile</a>(std::string)<span class="keyword"> override</span></div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;<span class="keyword">        </span>{</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;        }</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;</div>
+<div class="line"><a name="l00113"></a><span class="lineno"><a class="line" href="classSSAGES_1_1GromacsDriver.html#ae410f42f8adf47f9a8021737fed5adba">  113</a></span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classSSAGES_1_1GromacsDriver.html#ae410f42f8adf47f9a8021737fed5adba">BuildDriver</a>(<span class="keyword">const</span> Json::Value&amp; json, <span class="keyword">const</span> std::string&amp; path)<span class="keyword"> override</span></div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;<span class="keyword">        </span>{</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;            <a class="code" href="classSSAGES_1_1Driver.html#a669cc2a8bf73c9d0a09b4653598096f7">inputfile_</a> = json.get(<span class="stringliteral">&quot;inputfile&quot;</span>,<span class="stringliteral">&quot;none&quot;</span>).asString();</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;            <a class="code" href="classSSAGES_1_1Driver.html#a544add94846634a117548be3f0ff6b8d">iterations_</a> = json.get(<span class="stringliteral">&quot;MDSteps&quot;</span>, 1).asInt();</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;            <span class="comment">// Set hook. </span></div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;            <span class="keyword">auto</span>&amp; hook = GromacsHook::Instance();</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;            hook.SetIterationTarget(<a class="code" href="classSSAGES_1_1Driver.html#a544add94846634a117548be3f0ff6b8d">iterations_</a>);</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;            <a class="code" href="classSSAGES_1_1Driver.html#ae31f3e42d218451dadf5918da35c89ac">hook_</a> = <span class="keyword">dynamic_cast&lt;</span><a class="code" href="classSSAGES_1_1Hook.html">Hook</a>*<span class="keyword">&gt;</span>(&amp;hook);</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;            <span class="comment">// Restart?</span></div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;            <a class="code" href="classSSAGES_1_1GromacsDriver.html#a8e1a13c5832fc54e08aebb883e76febf">restart_</a> = json.get(<span class="stringliteral">&quot;restart&quot;</span>, <span class="keyword">false</span>).asBool();</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;        }</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;</div>
+<div class="line"><a name="l00128"></a><span class="lineno"><a class="line" href="classSSAGES_1_1GromacsDriver.html#a8655eb778160661894e67631454ee43d">  128</a></span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classSSAGES_1_1GromacsDriver.html#a8655eb778160661894e67631454ee43d">Serialize</a>(Json::Value&amp; json)<span class="keyword"> const override</span></div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;<span class="keyword">        </span>{</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;            <span class="comment">// Call parent first.</span></div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;            <a class="code" href="classSSAGES_1_1Driver.html#a1eed2dd5491b7688ea5e3cb7e5f4c8c7">Driver::Serialize</a>(json);</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;</div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;            json[<span class="stringliteral">&quot;MDSteps&quot;</span>] = <a class="code" href="classSSAGES_1_1Driver.html#a544add94846634a117548be3f0ff6b8d">iterations_</a>;</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;            json[<span class="stringliteral">&quot;type&quot;</span>] = <span class="stringliteral">&quot;Gromacs&quot;</span>;</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;        }</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;    };</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;}</div>
+<div class="ttc" id="classSSAGES_1_1GromacsDriver_html"><div class="ttname"><a href="classSSAGES_1_1GromacsDriver.html">SSAGES::GromacsDriver</a></div><div class="ttdoc">Driver for Gromacs simulations. </div><div class="ttdef"><b>Definition:</b> <a href="GromacsDriver_8h_source.html#l00032">GromacsDriver.h:32</a></div></div>
+<div class="ttc" id="classSSAGES_1_1GromacsDriver_html_a2c747b9d9b49b4ce34b2ab5cceb4c5cd"><div class="ttname"><a href="classSSAGES_1_1GromacsDriver.html#a2c747b9d9b49b4ce34b2ab5cceb4c5cd">SSAGES::GromacsDriver::Run</a></div><div class="ttdeci">virtual void Run() override</div><div class="ttdoc">Run simulation. </div><div class="ttdef"><b>Definition:</b> <a href="GromacsDriver_8h_source.html#l00058">GromacsDriver.h:58</a></div></div>
+<div class="ttc" id="classSSAGES_1_1GromacsDriver_html_ae410f42f8adf47f9a8021737fed5adba"><div class="ttname"><a href="classSSAGES_1_1GromacsDriver.html#ae410f42f8adf47f9a8021737fed5adba">SSAGES::GromacsDriver::BuildDriver</a></div><div class="ttdeci">virtual void BuildDriver(const Json::Value &amp;json, const std::string &amp;path) override</div><div class="ttdoc">Set up the driver. </div><div class="ttdef"><b>Definition:</b> <a href="GromacsDriver_8h_source.html#l00113">GromacsDriver.h:113</a></div></div>
+<div class="ttc" id="classSSAGES_1_1Driver_html_a544add94846634a117548be3f0ff6b8d"><div class="ttname"><a href="classSSAGES_1_1Driver.html#a544add94846634a117548be3f0ff6b8d">SSAGES::Driver::iterations_</a></div><div class="ttdeci">int iterations_</div><div class="ttdoc">Target number of iterations. </div><div class="ttdef"><b>Definition:</b> <a href="Driver_8h_source.html#l00070">Driver.h:70</a></div></div>
+<div class="ttc" id="classSSAGES_1_1Driver_html_a1eed2dd5491b7688ea5e3cb7e5f4c8c7"><div class="ttname"><a href="classSSAGES_1_1Driver.html#a1eed2dd5491b7688ea5e3cb7e5f4c8c7">SSAGES::Driver::Serialize</a></div><div class="ttdeci">virtual void Serialize(Json::Value &amp;json) const override</div><div class="ttdoc">Serialize the class. </div><div class="ttdef"><b>Definition:</b> <a href="Driver_8h_source.html#l00252">Driver.h:252</a></div></div>
+<div class="ttc" id="classSSAGES_1_1Driver_html"><div class="ttname"><a href="classSSAGES_1_1Driver.html">SSAGES::Driver</a></div><div class="ttdoc">Abstract driver class for creating driver objects. </div><div class="ttdef"><b>Definition:</b> <a href="Driver_8h_source.html#l00047">Driver.h:47</a></div></div>
+<div class="ttc" id="classSSAGES_1_1Hook_html"><div class="ttname"><a href="classSSAGES_1_1Hook.html">SSAGES::Hook</a></div><div class="ttdoc">Base class for hooks into the simultion engines. </div><div class="ttdef"><b>Definition:</b> <a href="Hook_8h_source.html#l00040">Hook.h:40</a></div></div>
+<div class="ttc" id="classSSAGES_1_1GromacsDriver_html_a2d260309b91f72ccdc947ee644d34ca0"><div class="ttname"><a href="classSSAGES_1_1GromacsDriver.html#a2d260309b91f72ccdc947ee644d34ca0">SSAGES::GromacsDriver::nwalkers_</a></div><div class="ttdeci">int nwalkers_</div><div class="ttdoc">Number of walkers. </div><div class="ttdef"><b>Definition:</b> <a href="GromacsDriver_8h_source.html#l00037">GromacsDriver.h:37</a></div></div>
+<div class="ttc" id="classSSAGES_1_1GromacsDriver_html_a0dcdd44795581a7d77ab82cdcfe5cc0d"><div class="ttname"><a href="classSSAGES_1_1GromacsDriver.html#a0dcdd44795581a7d77ab82cdcfe5cc0d">SSAGES::GromacsDriver::ExecuteInputFile</a></div><div class="ttdeci">virtual void ExecuteInputFile(std::string) override</div><div class="ttdoc">Run Input file. </div><div class="ttdef"><b>Definition:</b> <a href="GromacsDriver_8h_source.html#l00104">GromacsDriver.h:104</a></div></div>
+<div class="ttc" id="classSSAGES_1_1GromacsDriver_html_a8e1a13c5832fc54e08aebb883e76febf"><div class="ttname"><a href="classSSAGES_1_1GromacsDriver.html#a8e1a13c5832fc54e08aebb883e76febf">SSAGES::GromacsDriver::restart_</a></div><div class="ttdeci">bool restart_</div><div class="ttdoc">Is the simulation a restart? </div><div class="ttdef"><b>Definition:</b> <a href="GromacsDriver_8h_source.html#l00040">GromacsDriver.h:40</a></div></div>
+<div class="ttc" id="classSSAGES_1_1GromacsDriver_html_ad8c922b7c8471ce1bac9d51b8da03d13"><div class="ttname"><a href="classSSAGES_1_1GromacsDriver.html#ad8c922b7c8471ce1bac9d51b8da03d13">SSAGES::GromacsDriver::GromacsDriver</a></div><div class="ttdeci">GromacsDriver(mpi::communicator &amp;world_comm, mpi::communicator &amp;local_comm, int walkerID)</div><div class="ttdoc">Constructor. </div><div class="ttdef"><b>Definition:</b> <a href="GromacsDriver_8h_source.html#l00050">GromacsDriver.h:50</a></div></div>
+<div class="ttc" id="classSSAGES_1_1GromacsDriver_html_a8655eb778160661894e67631454ee43d"><div class="ttname"><a href="classSSAGES_1_1GromacsDriver.html#a8655eb778160661894e67631454ee43d">SSAGES::GromacsDriver::Serialize</a></div><div class="ttdeci">virtual void Serialize(Json::Value &amp;json) const override</div><div class="ttdoc">Serialize the class. </div><div class="ttdef"><b>Definition:</b> <a href="GromacsDriver_8h_source.html#l00128">GromacsDriver.h:128</a></div></div>
+<div class="ttc" id="classSSAGES_1_1Driver_html_a669cc2a8bf73c9d0a09b4653598096f7"><div class="ttname"><a href="classSSAGES_1_1Driver.html#a669cc2a8bf73c9d0a09b4653598096f7">SSAGES::Driver::inputfile_</a></div><div class="ttdeci">std::string inputfile_</div><div class="ttdoc">Local input file. </div><div class="ttdef"><b>Definition:</b> <a href="Driver_8h_source.html#l00079">Driver.h:79</a></div></div>
+<div class="ttc" id="classSSAGES_1_1Driver_html_ae31f3e42d218451dadf5918da35c89ac"><div class="ttname"><a href="classSSAGES_1_1Driver.html#ae31f3e42d218451dadf5918da35c89ac">SSAGES::Driver::hook_</a></div><div class="ttdeci">Hook * hook_</div><div class="ttdoc">The hook that hooks into the MD simulation engine. </div><div class="ttdef"><b>Definition:</b> <a href="Driver_8h_source.html#l00058">Driver.h:58</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Oct 14 2016 11:38:55 for SSAGES by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Jun 7 2017 15:46:38 for SSAGES by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

@@ -13,7 +13,7 @@ var searchData=
   ['difference_5ftype',['difference_type',['../classSSAGES_1_1Grid_1_1GridIterator.html#ae9322c732585d71fbfae0119b8b9cd7a',1,'SSAGES::Grid::GridIterator::difference_type()'],['../classSSAGES_1_1Histogram_1_1HistIterator.html#ac272a3cf654ff9eecbeb64b2f53be45e',1,'SSAGES::Histogram::HistIterator::difference_type()']]],
   ['dim_5f',['dim_',['../classSSAGES_1_1ParticleCoordinateCV.html#a60d9503c7b671db609c997c9aceb92df',1,'SSAGES::ParticleCoordinateCV::dim_()'],['../classSSAGES_1_1ParticleSeparationCV.html#a13363bcb0b004946c5d0753ef54eab99',1,'SSAGES::ParticleSeparationCV::dim_()'],['../classSSAGES_1_1ABF.html#a9f9514efb13e9a86b4557ae081274ce1',1,'SSAGES::ABF::dim_()']]],
   ['dimension',['Dimension',['../namespaceSSAGES.html#abea9456e00cb5995a3a8291ca21612ff',1,'SSAGES']]],
-  ['dimension_5f',['dimension_',['../classSSAGES_1_1GridBase.html#ae2cc05c3b9717047467a9ac8f277b6d2',1,'SSAGES::GridBase']]],
+  ['dimension_5f',['dimension_',['../classSSAGES_1_1GridBase.html#a6d18033eedc00af670876b5927ac9402',1,'SSAGES::GridBase']]],
   ['directforwardflux',['DirectForwardFlux',['../classSSAGES_1_1DirectForwardFlux.html',1,'SSAGES']]],
   ['directforwardflux',['DirectForwardFlux',['../classSSAGES_1_1DirectForwardFlux.html#a5938714b919dce5f6142a898827ec039',1,'SSAGES::DirectForwardFlux']]],
   ['distance',['distance',['../classSSAGES_1_1StringMethod.html#a7c26e585db0cb798a1b64f41f913726b',1,'SSAGES::StringMethod']]],

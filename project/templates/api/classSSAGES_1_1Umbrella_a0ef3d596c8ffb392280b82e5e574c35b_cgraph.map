@@ -1,4 +1,7 @@
 <map id="SSAGES::Umbrella::PostIntegration" name="SSAGES::Umbrella::PostIntegration">
 <area shape="rect" id="node2" href="$classSSAGES_1_1Snapshot.html#a2533f7b900bc33185424eb94d6996edf" title="Access the per&#45;particle forces. " alt="" coords="295,5,505,32"/>
-<area shape="rect" id="node3" href="$classSSAGES_1_1Umbrella.html#acbae1908834df3cf59c9f80e7b70be05" title="Print umbrella values. " alt="" coords="288,56,512,83"/>
+<area shape="rect" id="node3" href="$classSSAGES_1_1Snapshot.html#a9c76ac680c1b1f2ab584be28bb273eb0" title="Get system H&#45;matrix. " alt="" coords="293,56,507,83"/>
+<area shape="rect" id="node4" href="$classSSAGES_1_1Snapshot.html#acaee0172694743e118273a055ff2c3fc" title="Get the current iteration. " alt="" coords="292,107,508,133"/>
+<area shape="rect" id="node5" href="$classSSAGES_1_1Snapshot.html#a00de82748940b4a7982b19fa8abe1c30" title="Get box virial. " alt="" coords="301,157,499,184"/>
+<area shape="rect" id="node6" href="$classSSAGES_1_1Umbrella.html#acbae1908834df3cf59c9f80e7b70be05" title="Print umbrella values. " alt="" coords="288,208,512,235"/>
 </map>

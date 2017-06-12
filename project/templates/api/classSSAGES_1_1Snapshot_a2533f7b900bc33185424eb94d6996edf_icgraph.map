@@ -1,14 +1,21 @@
 <map id="SSAGES::Snapshot::GetForces" name="SSAGES::Snapshot::GetForces">
-<area shape="rect" id="node2" href="$classSSAGES_1_1COPSS.html#a82ad422308a4e8502e180b608bbbee19" title="Method call post integration. " alt="" coords="267,5,495,32"/>
-<area shape="rect" id="node3" href="$classSSAGES_1_1MockMethod.html#a20f8bae34d1cfcfd77ddfda5235e7ad0" title="Post&#45;integration hook. " alt="" coords="301,57,461,98"/>
-<area shape="rect" id="node4" href="$classSSAGES_1_1Umbrella.html#a0ef3d596c8ffb392280b82e5e574c35b" title="Post&#45;integration hook. " alt="" coords="265,123,498,149"/>
-<area shape="rect" id="node5" href="$classSSAGES_1_1COPSSImage.html#a8e5feed1d4e4fd0b655cfd1447e7620e" title="Method call post integration. " alt="" coords="297,174,465,215"/>
-<area shape="rect" id="node6" href="$classSSAGES_1_1ElasticBand.html#ae4816e651f90ae562880847ea9482bf3" title="Post&#45;integration hook. " alt="" coords="304,239,459,281"/>
-<area shape="rect" id="node7" href="$classSSAGES_1_1FiniteTempString.html#a25386bea8ac1e8723f019999b8438efc" title="Post&#45;integration hook. " alt="" coords="289,305,473,346"/>
-<area shape="rect" id="node8" href="$classSSAGES_1_1Swarm.html#a96f0c22548efac1fda6a9ec5e8241bc8" title="Post&#45;integration hook. " alt="" coords="270,371,493,397"/>
-<area shape="rect" id="node9" href="$classSSAGES_1_1Meta.html#a223464a8c4ecbac45a678eb3425d504e" title="Post&#45;integration hook. " alt="" coords="276,421,487,448"/>
-<area shape="rect" id="node10" href="$classSSAGES_1_1ABF.html#aeb9553ca7874df2ea8adc8b26e2d4b11" title="Post&#45;integration hook. " alt="" coords="278,472,485,499"/>
-<area shape="rect" id="node11" href="$classSSAGES_1_1Basis.html#a2dd914ae7f0c5036700a493598d845dd" title="Post&#45;integration hook. " alt="" coords="274,523,489,549"/>
-<area shape="rect" id="node12" href="$classSSAGES_1_1ForwardFlux.html#a70a3208d2e1f3c87190f356955e0774e" title="Read a given configuration from file and update snapshot. " alt="" coords="303,574,460,615"/>
-<area shape="rect" id="node13" href="$classSSAGES_1_1ForwardFlux.html#a7cc072097543530dc0a0bfca98e526a9" title="Post&#45;integration hook. " alt="" coords="547,574,704,615"/>
+<area shape="rect" id="node2" href="$classSSAGES_1_1COPSSImage.html#aaf127791d4fe082dbb026a39aac866f8" title="Image method kernel function, 1st order currently. " alt="" coords="297,5,465,46"/>
+<area shape="rect" id="node3" href="$classSSAGES_1_1COPSSImage.html#a8e5feed1d4e4fd0b655cfd1447e7620e" title="Post&#45;integration hook. " alt="" coords="565,34,733,75"/>
+<area shape="rect" id="node4" href="$classSSAGES_1_1COPSS.html#a82ad422308a4e8502e180b608bbbee19" title="Post&#45;Integration Hook. " alt="" coords="267,121,495,148"/>
+<area shape="rect" id="node5" href="$classSSAGES_1_1MockMethod.html#a20f8bae34d1cfcfd77ddfda5235e7ad0" title="Post&#45;integration hook. " alt="" coords="301,173,461,214"/>
+<area shape="rect" id="node6" href="$classSSAGES_1_1ElasticBand.html#ae4816e651f90ae562880847ea9482bf3" title="Post&#45;integration hook. " alt="" coords="304,238,459,279"/>
+<area shape="rect" id="node7" href="$classSSAGES_1_1FiniteTempString.html#a25386bea8ac1e8723f019999b8438efc" title="Post&#45;integration hook. " alt="" coords="289,303,473,345"/>
+<area shape="rect" id="node8" href="$classSSAGES_1_1Swarm.html#a96f0c22548efac1fda6a9ec5e8241bc8" title="Post&#45;integration hook. " alt="" coords="270,369,493,396"/>
+<area shape="rect" id="node9" href="$classSSAGES_1_1Umbrella.html#a0ef3d596c8ffb392280b82e5e574c35b" title="Post&#45;integration hook. " alt="" coords="265,420,498,447"/>
+<area shape="rect" id="node10" href="$classSSAGES_1_1Meta.html#a223464a8c4ecbac45a678eb3425d504e" title="Post&#45;integration hook. " alt="" coords="276,471,487,497"/>
+<area shape="rect" id="node11" href="$classSSAGES_1_1ABF.html#aeb9553ca7874df2ea8adc8b26e2d4b11" title="Post&#45;integration hook. " alt="" coords="278,521,485,548"/>
+<area shape="rect" id="node12" href="$classSSAGES_1_1Basis.html#a2dd914ae7f0c5036700a493598d845dd" title="Post&#45;integration hook. " alt="" coords="274,572,489,599"/>
+<area shape="rect" id="node13" href="$classSSAGES_1_1ForwardFlux.html#a3d147dfd890a92fb85e73c99bd70df93" title="Read a file corresponding to a FFSConfigID into current snapshot. " alt="" coords="300,623,463,665"/>
+<area shape="rect" id="node14" href="$classSSAGES_1_1ForwardFlux.html#ac5227afa53bf05d387b480850ef4bb77" title="Pop the queue, do MPI so that all procs maintain the same queue. " alt="" coords="800,565,957,606"/>
+<area shape="rect" id="node18" href="$classSSAGES_1_1ForwardFlux.html#ad4e486e6d257797cd8ed504f6303aaa4" title="When simulation is finished, recursively parse through the trajectories that reached B or failed back..." alt="" coords="547,623,752,665"/>
+<area shape="rect" id="node20" href="$classSSAGES_1_1ForwardFlux.html#af43aaa9c60e7bc90556b70ef17f033f3" title="When simulation is finished, parse through the trajectories that reached B, and reconstruct the compl..." alt="" coords="565,689,734,730"/>
+<area shape="rect" id="node15" href="$classSSAGES_1_1DirectForwardFlux.html#a2a23c0bf26deb4ae6d9b84847793f4ec" title="Function that checks if interfaces have been crossed (different for each FFS flavor) ..." alt="" coords="1005,630,1203,671"/>
+<area shape="rect" id="node17" href="$classSSAGES_1_1DirectForwardFlux.html#af14a27e7176c4cd6fca5479dfef17358" title="Initialize the Queue. " alt="" coords="1008,565,1200,606"/>
+<area shape="rect" id="node16" href="$classSSAGES_1_1DirectForwardFlux.html#aa0685636ad46fb8e36efe1ac775c6f34" title="Post&#45;integration hook. " alt="" coords="1251,598,1443,639"/>
+<area shape="rect" id="node19" href="$classSSAGES_1_1ForwardFlux.html#aeca03554cf220f15593525a3f07fd207" title="Post&#45;simulation hook. " alt="" coords="800,630,957,671"/>
 </map>

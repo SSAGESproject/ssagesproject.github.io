@@ -107,14 +107,14 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00036"></a><span class="lineno"><a class="line" href="classJson_1_1EnumRequirement.html">   36</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classJson_1_1EnumRequirement.html">EnumRequirement</a> : <span class="keyword">public</span> <a class="code" href="classJson_1_1Requirement.html">Requirement</a></div>
 <div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    {</div>
 <div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="classJson_1_1EnumRequirement.html#a263b939214f49fe34ee437042c075c17">   39</a></span>&#160;        std::vector&lt;Value&gt; <a class="code" href="classJson_1_1EnumRequirement.html#a263b939214f49fe34ee437042c075c17">_enum</a>; </div>
+<div class="line"><a name="l00039"></a><span class="lineno"><a class="line" href="classJson_1_1EnumRequirement.html#af5b74bbeb95d57f8f8a7507b41b84e95">   39</a></span>&#160;        std::vector&lt;Value&gt; <a class="code" href="classJson_1_1EnumRequirement.html#af5b74bbeb95d57f8f8a7507b41b84e95">enum_</a>; </div>
 <div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    </div>
 <div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="classJson_1_1EnumRequirement.html#aa1e6d2ded3e9d9f05c10ceb102daf8fc">   43</a></span>&#160;        <a class="code" href="classJson_1_1EnumRequirement.html#aa1e6d2ded3e9d9f05c10ceb102daf8fc">EnumRequirement</a>() : <a class="code" href="classJson_1_1EnumRequirement.html#a263b939214f49fe34ee437042c075c17">_enum</a>(0) {}</div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="classJson_1_1EnumRequirement.html#aa1e6d2ded3e9d9f05c10ceb102daf8fc">   43</a></span>&#160;        <a class="code" href="classJson_1_1EnumRequirement.html#aa1e6d2ded3e9d9f05c10ceb102daf8fc">EnumRequirement</a>() : <a class="code" href="classJson_1_1EnumRequirement.html#af5b74bbeb95d57f8f8a7507b41b84e95">enum_</a>(0) {}</div>
 <div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
 <div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="classJson_1_1EnumRequirement.html#a89e91732e96681854b5298bba1a411bb">   46</a></span>&#160;        <span class="keyword">virtual</span> <span class="keywordtype">void</span> <a class="code" href="classJson_1_1EnumRequirement.html#a89e91732e96681854b5298bba1a411bb">Reset</a>() </div>
 <div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        {</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;            <a class="code" href="classJson_1_1EnumRequirement.html#a263b939214f49fe34ee437042c075c17">_enum</a>.clear();</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;            <a class="code" href="classJson_1_1EnumRequirement.html#af5b74bbeb95d57f8f8a7507b41b84e95">enum_</a>.clear();</div>
 <div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        }</div>
 <div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
@@ -122,7 +122,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        {</div>
 <div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;            <span class="keywordflow">if</span>(json.isArray())</div>
 <div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;                <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; val : json)</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;                    <a class="code" href="classJson_1_1EnumRequirement.html#a263b939214f49fe34ee437042c075c17">_enum</a>.push_back(val);</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;                    <a class="code" href="classJson_1_1EnumRequirement.html#af5b74bbeb95d57f8f8a7507b41b84e95">enum_</a>.push_back(val);</div>
 <div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        }</div>
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
@@ -130,7 +130,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        {</div>
 <div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;            <span class="keywordtype">bool</span> found = <span class="keyword">false</span>;</div>
 <div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;            <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; val : <a class="code" href="classJson_1_1EnumRequirement.html#a263b939214f49fe34ee437042c075c17">_enum</a>)</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;            <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; val : <a class="code" href="classJson_1_1EnumRequirement.html#af5b74bbeb95d57f8f8a7507b41b84e95">enum_</a>)</div>
 <div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;                <span class="keywordflow">if</span>(json == val)</div>
 <div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;                    found = <span class="keyword">true</span>;</div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
@@ -142,15 +142,15 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="ttc" id="classJson_1_1EnumRequirement_html_aa1e6d2ded3e9d9f05c10ceb102daf8fc"><div class="ttname"><a href="classJson_1_1EnumRequirement.html#aa1e6d2ded3e9d9f05c10ceb102daf8fc">Json::EnumRequirement::EnumRequirement</a></div><div class="ttdeci">EnumRequirement()</div><div class="ttdoc">Constructor. </div><div class="ttdef"><b>Definition:</b> <a href="EnumRequirement_8h_source.html#l00043">EnumRequirement.h:43</a></div></div>
 <div class="ttc" id="classJson_1_1EnumRequirement_html_a89e91732e96681854b5298bba1a411bb"><div class="ttname"><a href="classJson_1_1EnumRequirement.html#a89e91732e96681854b5298bba1a411bb">Json::EnumRequirement::Reset</a></div><div class="ttdeci">virtual void Reset()</div><div class="ttdoc">Clear enum value. </div><div class="ttdef"><b>Definition:</b> <a href="EnumRequirement_8h_source.html#l00046">EnumRequirement.h:46</a></div></div>
 <div class="ttc" id="classJson_1_1Requirement_html_adeb9efa6cf271d9cea0599ff2d458a08"><div class="ttname"><a href="classJson_1_1Requirement.html#adeb9efa6cf271d9cea0599ff2d458a08">Json::Requirement::PushError</a></div><div class="ttdeci">void PushError(const std::string &amp;error)</div><div class="ttdoc">Add error to list of error messages. </div><div class="ttdef"><b>Definition:</b> <a href="Requirement_8h_source.html#l00053">Requirement.h:53</a></div></div>
+<div class="ttc" id="classJson_1_1EnumRequirement_html_af5b74bbeb95d57f8f8a7507b41b84e95"><div class="ttname"><a href="classJson_1_1EnumRequirement.html#af5b74bbeb95d57f8f8a7507b41b84e95">Json::EnumRequirement::enum_</a></div><div class="ttdeci">std::vector&lt; Value &gt; enum_</div><div class="ttdoc">Enum value. </div><div class="ttdef"><b>Definition:</b> <a href="EnumRequirement_8h_source.html#l00039">EnumRequirement.h:39</a></div></div>
 <div class="ttc" id="classJson_1_1EnumRequirement_html_a9b2534a30234feee0aa0f2fe4ecb73bd"><div class="ttname"><a href="classJson_1_1EnumRequirement.html#a9b2534a30234feee0aa0f2fe4ecb73bd">Json::EnumRequirement::Parse</a></div><div class="ttdeci">virtual void Parse(Value json, const std::string &amp;)</div><div class="ttdoc">Parse JSON input value to generate enum. </div><div class="ttdef"><b>Definition:</b> <a href="EnumRequirement_8h_source.html#l00055">EnumRequirement.h:55</a></div></div>
 <div class="ttc" id="classJson_1_1EnumRequirement_html_ac3edcf50fcc0845ea912c73779835814"><div class="ttname"><a href="classJson_1_1EnumRequirement.html#ac3edcf50fcc0845ea912c73779835814">Json::EnumRequirement::Validate</a></div><div class="ttdeci">virtual void Validate(const Value &amp;json, const std::string &amp;path)</div><div class="ttdoc">Validate that JSON value is member of the parsed enum. </div><div class="ttdef"><b>Definition:</b> <a href="EnumRequirement_8h_source.html#l00067">EnumRequirement.h:67</a></div></div>
-<div class="ttc" id="classJson_1_1EnumRequirement_html_a263b939214f49fe34ee437042c075c17"><div class="ttname"><a href="classJson_1_1EnumRequirement.html#a263b939214f49fe34ee437042c075c17">Json::EnumRequirement::_enum</a></div><div class="ttdeci">std::vector&lt; Value &gt; _enum</div><div class="ttdoc">Enum value. </div><div class="ttdef"><b>Definition:</b> <a href="EnumRequirement_8h_source.html#l00039">EnumRequirement.h:39</a></div></div>
 <div class="ttc" id="classJson_1_1EnumRequirement_html"><div class="ttname"><a href="classJson_1_1EnumRequirement.html">Json::EnumRequirement</a></div><div class="ttdoc">Requires entry to be member of an enum. </div><div class="ttdef"><b>Definition:</b> <a href="EnumRequirement_8h_source.html#l00036">EnumRequirement.h:36</a></div></div>
 <div class="ttc" id="classJson_1_1Requirement_html"><div class="ttname"><a href="classJson_1_1Requirement.html">Json::Requirement</a></div><div class="ttdoc">Requirements on input files. </div><div class="ttdef"><b>Definition:</b> <a href="Requirement_8h_source.html#l00039">Requirement.h:39</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Oct 14 2016 11:38:55 for SSAGES by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Jun 7 2017 15:46:38 for SSAGES by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

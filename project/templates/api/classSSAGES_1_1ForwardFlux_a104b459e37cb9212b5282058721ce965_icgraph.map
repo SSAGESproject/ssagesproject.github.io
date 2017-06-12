@@ -1,0 +1,5 @@
+<map id="SSAGES::ForwardFlux::HasCrossedInterface" name="SSAGES::ForwardFlux::HasCrossedInterface">
+<area shape="rect" id="node2" href="$classSSAGES_1_1DirectForwardFlux.html#a2a23c0bf26deb4ae6d9b84847793f4ec" title="Function that checks if interfaces have been crossed (different for each FFS flavor) ..." alt="" coords="211,5,408,46"/>
+<area shape="rect" id="node4" href="$classSSAGES_1_1ForwardFlux.html#a7406bdfbded69fca48c675d69949626d" title="Compute Initial Flux. " alt="" coords="231,70,388,111"/>
+<area shape="rect" id="node3" href="$classSSAGES_1_1DirectForwardFlux.html#aa0685636ad46fb8e36efe1ac775c6f34" title="Post&#45;integration hook. " alt="" coords="456,38,648,79"/>
+</map>

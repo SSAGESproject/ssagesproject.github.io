@@ -329,7 +329,7 @@ std::mt19937&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        <a class="code" href="classSSAGES_1_1Driver.html#aaca8e4296e906e1ed0e090e131b1ee2a">Driver</a>(world_comm, local_comm, walkerID),</div>
 <div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        <a class="code" href="classSSAGES_1_1GromacsDriver.html#a2d260309b91f72ccdc947ee644d34ca0">nwalkers_</a>(world_comm.size()/local_comm.size())</div>
 <div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        {}</div>
-<div class="ttc" id="classSSAGES_1_1Driver_html_aaca8e4296e906e1ed0e090e131b1ee2a"><div class="ttname"><a href="classSSAGES_1_1Driver.html#aaca8e4296e906e1ed0e090e131b1ee2a">SSAGES::Driver::Driver</a></div><div class="ttdeci">Driver(boost::mpi::communicator &amp;world, boost::mpi::communicator &amp;comm, int walkerID)</div><div class="ttdoc">Constructor. </div><div class="ttdef"><b>Definition:</b> <a href="Driver_8h_source.html#l00099">Driver.h:99</a></div></div>
+<div class="ttc" id="classSSAGES_1_1Driver_html_aaca8e4296e906e1ed0e090e131b1ee2a"><div class="ttname"><a href="classSSAGES_1_1Driver.html#aaca8e4296e906e1ed0e090e131b1ee2a">SSAGES::Driver::Driver</a></div><div class="ttdeci">Driver(boost::mpi::communicator &amp;world, boost::mpi::communicator &amp;comm, int walkerID)</div><div class="ttdoc">Constructor. </div><div class="ttdef"><b>Definition:</b> <a href="Driver_8h_source.html#l00100">Driver.h:100</a></div></div>
 <div class="ttc" id="classSSAGES_1_1GromacsDriver_html_a2d260309b91f72ccdc947ee644d34ca0"><div class="ttname"><a href="classSSAGES_1_1GromacsDriver.html#a2d260309b91f72ccdc947ee644d34ca0">SSAGES::GromacsDriver::nwalkers_</a></div><div class="ttdeci">int nwalkers_</div><div class="ttdoc">Number of walkers. </div><div class="ttdef"><b>Definition:</b> <a href="GromacsDriver_8h_source.html#l00037">GromacsDriver.h:37</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -380,7 +380,7 @@ std::mt19937&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 
 <p>Definition at line <a class="el" href="GromacsDriver_8h_source.html#l00113">113</a> of file <a class="el" href="GromacsDriver_8h_source.html">GromacsDriver.h</a>.</p>
 
-<p>References <a class="el" href="Driver_8h_source.html#l00057">SSAGES::Driver::hook_</a>, <a class="el" href="Driver_8h_source.html#l00078">SSAGES::Driver::inputfile_</a>, <a class="el" href="Driver_8h_source.html#l00069">SSAGES::Driver::iterations_</a>, and <a class="el" href="GromacsDriver_8h_source.html#l00040">restart_</a>.</p>
+<p>References <a class="el" href="Driver_8h_source.html#l00058">SSAGES::Driver::hook_</a>, <a class="el" href="Driver_8h_source.html#l00079">SSAGES::Driver::inputfile_</a>, <a class="el" href="Driver_8h_source.html#l00070">SSAGES::Driver::iterations_</a>, and <a class="el" href="GromacsDriver_8h_source.html#l00040">restart_</a>.</p>
 <div class="fragment"><div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;        {</div>
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;            <a class="code" href="classSSAGES_1_1Driver.html#a669cc2a8bf73c9d0a09b4653598096f7">inputfile_</a> = json.get(<span class="stringliteral">&quot;inputfile&quot;</span>,<span class="stringliteral">&quot;none&quot;</span>).asString();</div>
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;            <a class="code" href="classSSAGES_1_1Driver.html#a544add94846634a117548be3f0ff6b8d">iterations_</a> = json.get(<span class="stringliteral">&quot;MDSteps&quot;</span>, 1).asInt();</div>
@@ -393,10 +393,10 @@ std::mt19937&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;            <span class="comment">// Restart?</span></div>
 <div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;            <a class="code" href="classSSAGES_1_1GromacsDriver.html#a8e1a13c5832fc54e08aebb883e76febf">restart_</a> = json.get(<span class="stringliteral">&quot;restart&quot;</span>, <span class="keyword">false</span>).asBool();</div>
 <div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;        }</div>
-<div class="ttc" id="classSSAGES_1_1Driver_html_a544add94846634a117548be3f0ff6b8d"><div class="ttname"><a href="classSSAGES_1_1Driver.html#a544add94846634a117548be3f0ff6b8d">SSAGES::Driver::iterations_</a></div><div class="ttdeci">int iterations_</div><div class="ttdoc">Target number of iterations. </div><div class="ttdef"><b>Definition:</b> <a href="Driver_8h_source.html#l00069">Driver.h:69</a></div></div>
+<div class="ttc" id="classSSAGES_1_1Driver_html_a544add94846634a117548be3f0ff6b8d"><div class="ttname"><a href="classSSAGES_1_1Driver.html#a544add94846634a117548be3f0ff6b8d">SSAGES::Driver::iterations_</a></div><div class="ttdeci">int iterations_</div><div class="ttdoc">Target number of iterations. </div><div class="ttdef"><b>Definition:</b> <a href="Driver_8h_source.html#l00070">Driver.h:70</a></div></div>
 <div class="ttc" id="classSSAGES_1_1GromacsDriver_html_a8e1a13c5832fc54e08aebb883e76febf"><div class="ttname"><a href="classSSAGES_1_1GromacsDriver.html#a8e1a13c5832fc54e08aebb883e76febf">SSAGES::GromacsDriver::restart_</a></div><div class="ttdeci">bool restart_</div><div class="ttdoc">Is the simulation a restart? </div><div class="ttdef"><b>Definition:</b> <a href="GromacsDriver_8h_source.html#l00040">GromacsDriver.h:40</a></div></div>
-<div class="ttc" id="classSSAGES_1_1Driver_html_a669cc2a8bf73c9d0a09b4653598096f7"><div class="ttname"><a href="classSSAGES_1_1Driver.html#a669cc2a8bf73c9d0a09b4653598096f7">SSAGES::Driver::inputfile_</a></div><div class="ttdeci">std::string inputfile_</div><div class="ttdoc">Local input file. </div><div class="ttdef"><b>Definition:</b> <a href="Driver_8h_source.html#l00078">Driver.h:78</a></div></div>
-<div class="ttc" id="classSSAGES_1_1Driver_html_ae31f3e42d218451dadf5918da35c89ac"><div class="ttname"><a href="classSSAGES_1_1Driver.html#ae31f3e42d218451dadf5918da35c89ac">SSAGES::Driver::hook_</a></div><div class="ttdeci">Hook * hook_</div><div class="ttdoc">The hook that hooks into the MD simulation engine. </div><div class="ttdef"><b>Definition:</b> <a href="Driver_8h_source.html#l00057">Driver.h:57</a></div></div>
+<div class="ttc" id="classSSAGES_1_1Driver_html_a669cc2a8bf73c9d0a09b4653598096f7"><div class="ttname"><a href="classSSAGES_1_1Driver.html#a669cc2a8bf73c9d0a09b4653598096f7">SSAGES::Driver::inputfile_</a></div><div class="ttdeci">std::string inputfile_</div><div class="ttdoc">Local input file. </div><div class="ttdef"><b>Definition:</b> <a href="Driver_8h_source.html#l00079">Driver.h:79</a></div></div>
+<div class="ttc" id="classSSAGES_1_1Driver_html_ae31f3e42d218451dadf5918da35c89ac"><div class="ttname"><a href="classSSAGES_1_1Driver.html#ae31f3e42d218451dadf5918da35c89ac">SSAGES::Driver::hook_</a></div><div class="ttdeci">Hook * hook_</div><div class="ttdoc">The hook that hooks into the MD simulation engine. </div><div class="ttdef"><b>Definition:</b> <a href="Driver_8h_source.html#l00058">Driver.h:58</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -468,7 +468,7 @@ std::mt19937&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 
 <p>Definition at line <a class="el" href="GromacsDriver_8h_source.html#l00128">128</a> of file <a class="el" href="GromacsDriver_8h_source.html">GromacsDriver.h</a>.</p>
 
-<p>References <a class="el" href="Driver_8h_source.html#l00069">SSAGES::Driver::iterations_</a>, and <a class="el" href="Driver_8h_source.html#l00251">SSAGES::Driver::Serialize()</a>.</p>
+<p>References <a class="el" href="Driver_8h_source.html#l00070">SSAGES::Driver::iterations_</a>, and <a class="el" href="Driver_8h_source.html#l00252">SSAGES::Driver::Serialize()</a>.</p>
 <div class="fragment"><div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;        {</div>
 <div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;            <span class="comment">// Call parent first.</span></div>
 <div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;            <a class="code" href="classSSAGES_1_1Driver.html#a1eed2dd5491b7688ea5e3cb7e5f4c8c7">Driver::Serialize</a>(json);</div>
@@ -476,8 +476,8 @@ std::mt19937&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;            json[<span class="stringliteral">&quot;MDSteps&quot;</span>] = <a class="code" href="classSSAGES_1_1Driver.html#a544add94846634a117548be3f0ff6b8d">iterations_</a>;</div>
 <div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;            json[<span class="stringliteral">&quot;type&quot;</span>] = <span class="stringliteral">&quot;Gromacs&quot;</span>;</div>
 <div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;        }</div>
-<div class="ttc" id="classSSAGES_1_1Driver_html_a544add94846634a117548be3f0ff6b8d"><div class="ttname"><a href="classSSAGES_1_1Driver.html#a544add94846634a117548be3f0ff6b8d">SSAGES::Driver::iterations_</a></div><div class="ttdeci">int iterations_</div><div class="ttdoc">Target number of iterations. </div><div class="ttdef"><b>Definition:</b> <a href="Driver_8h_source.html#l00069">Driver.h:69</a></div></div>
-<div class="ttc" id="classSSAGES_1_1Driver_html_a1eed2dd5491b7688ea5e3cb7e5f4c8c7"><div class="ttname"><a href="classSSAGES_1_1Driver.html#a1eed2dd5491b7688ea5e3cb7e5f4c8c7">SSAGES::Driver::Serialize</a></div><div class="ttdeci">virtual void Serialize(Json::Value &amp;json) const override</div><div class="ttdoc">Serialize the class. </div><div class="ttdef"><b>Definition:</b> <a href="Driver_8h_source.html#l00251">Driver.h:251</a></div></div>
+<div class="ttc" id="classSSAGES_1_1Driver_html_a544add94846634a117548be3f0ff6b8d"><div class="ttname"><a href="classSSAGES_1_1Driver.html#a544add94846634a117548be3f0ff6b8d">SSAGES::Driver::iterations_</a></div><div class="ttdeci">int iterations_</div><div class="ttdoc">Target number of iterations. </div><div class="ttdef"><b>Definition:</b> <a href="Driver_8h_source.html#l00070">Driver.h:70</a></div></div>
+<div class="ttc" id="classSSAGES_1_1Driver_html_a1eed2dd5491b7688ea5e3cb7e5f4c8c7"><div class="ttname"><a href="classSSAGES_1_1Driver.html#a1eed2dd5491b7688ea5e3cb7e5f4c8c7">SSAGES::Driver::Serialize</a></div><div class="ttdeci">virtual void Serialize(Json::Value &amp;json) const override</div><div class="ttdoc">Serialize the class. </div><div class="ttdef"><b>Definition:</b> <a href="Driver_8h_source.html#l00252">Driver.h:252</a></div></div>
 </div><!-- fragment -->
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -496,7 +496,7 @@ Here is the call graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Thu Mar 23 2017 13:11:12 for SSAGES by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Jun 7 2017 15:46:39 for SSAGES by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

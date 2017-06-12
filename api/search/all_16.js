@@ -5,6 +5,7 @@ var searchData=
   ['value',['value',['../structSSAGES_1_1Map.html#ac1c7b17ce0150b5e8a122f6c8cae8440',1,'SSAGES::Map']]],
   ['value_5ftype',['value_type',['../classSSAGES_1_1Grid_1_1GridIterator.html#ab38f2ddbdf9f85c02fb9fde5f8e4c03c',1,'SSAGES::Grid::GridIterator::value_type()'],['../classSSAGES_1_1Histogram_1_1HistIterator.html#a0616bf77c2bb506362e8f916d21015e6',1,'SSAGES::Histogram::HistIterator::value_type()']]],
   ['values',['values',['../structSSAGES_1_1BasisLUT.html#a3d1cede5e1639c01e7cc3ff9538db9ac',1,'SSAGES::BasisLUT']]],
+  ['vector',['Vector',['../namespaceSSAGES.html#a3a489a370adbddfb160942e834c1b0c7',1,'SSAGES']]],
   ['vector3',['Vector3',['../namespaceSSAGES.html#a630084a0a5e185e89e21b3735f8f8b2e',1,'SSAGES']]],
   ['velocities_5f',['velocities_',['../classSSAGES_1_1Snapshot.html#a4b5eba5f7e1c1d34f31c86f6b74f72fe',1,'SSAGES::Snapshot']]],
   ['visit',['Visit',['../classSSAGES_1_1JSONObserver.html#a1c6bb7634a7b84bfc34291a67001213b',1,'SSAGES::JSONObserver::Visit()'],['../classSSAGES_1_1Visitor.html#a52072bd0fbf3ccb194bf2dce6b8e76db',1,'SSAGES::Visitor::Visit()']]],

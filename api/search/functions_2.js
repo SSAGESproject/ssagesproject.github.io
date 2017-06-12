@@ -13,6 +13,7 @@ var searchData=
   ['computeinitialflux',['ComputeInitialFlux',['../classSSAGES_1_1ForwardFlux.html#a7406bdfbded69fca48c675d69949626d',1,'SSAGES::ForwardFlux']]],
   ['computetransitionprobabilities',['ComputeTransitionProbabilities',['../classSSAGES_1_1ForwardFlux.html#a40ea4795340f509536b8276a8c1cc92a',1,'SSAGES::ForwardFlux']]],
   ['constraint',['Constraint',['../classSSAGES_1_1Constraint.html#a7ff9763cbce03027c0248fbb623d77da',1,'SSAGES::Constraint']]],
+  ['coordinate',['coordinate',['../classSSAGES_1_1Grid_1_1GridIterator.html#ac3c4659465cb145a820b1319fec8fb14',1,'SSAGES::Grid::GridIterator::coordinate()'],['../classSSAGES_1_1Histogram_1_1HistIterator.html#a835396cd854326dbf08c527ce747914b',1,'SSAGES::Histogram::HistIterator::coordinate()']]],
   ['coordinates',['coordinates',['../classSSAGES_1_1Grid_1_1GridIterator.html#a4f5896e23f81d4416f5810a13e35f547',1,'SSAGES::Grid::GridIterator::coordinates()'],['../classSSAGES_1_1Histogram_1_1HistIterator.html#a051df12adb376ed3b957eec630944203',1,'SSAGES::Histogram::HistIterator::coordinates()']]],
   ['coordinationnumbercv',['CoordinationNumberCV',['../classSSAGES_1_1CoordinationNumberCV.html#a4999fb4c8922f3489e5f9d8fd72c5dee',1,'SSAGES::CoordinationNumberCV']]],
   ['copss',['COPSS',['../classSSAGES_1_1COPSS.html#a5d4f40d971a70b9886f7bf6ff4ef793a',1,'SSAGES::COPSS']]],

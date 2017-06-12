@@ -130,18 +130,18 @@ virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="c
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:ac77f1d79fdc00c0cd55b8a239a091f7d"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ac77f1d79fdc00c0cd55b8a239a091f7d"></a>
-<a class="el" href="classSSAGES_1_1SimObservable.html">SimObservable</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSSAGES_1_1SimEvent.html#ac77f1d79fdc00c0cd55b8a239a091f7d">_observable</a></td></tr>
-<tr class="memdesc:ac77f1d79fdc00c0cd55b8a239a091f7d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to the observable object from which the Event is originating. <br /></td></tr>
-<tr class="separator:ac77f1d79fdc00c0cd55b8a239a091f7d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a574531363691ba6d45dc06ea59b4feb2"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a574531363691ba6d45dc06ea59b4feb2"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSSAGES_1_1SimEvent.html#a574531363691ba6d45dc06ea59b4feb2">_iteration</a></td></tr>
-<tr class="memdesc:a574531363691ba6d45dc06ea59b4feb2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Iteration of the simulation. <br /></td></tr>
-<tr class="separator:a574531363691ba6d45dc06ea59b4feb2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a858084a544aae1cc55d1b80ed7a112d0"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a858084a544aae1cc55d1b80ed7a112d0"></a>
-bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSSAGES_1_1SimEvent.html#a858084a544aae1cc55d1b80ed7a112d0">_forceObserve</a> = false</td></tr>
-<tr class="memdesc:a858084a544aae1cc55d1b80ed7a112d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Force the observation of this event. <br /></td></tr>
-<tr class="separator:a858084a544aae1cc55d1b80ed7a112d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab240389fe3b6f341dfc60e77f16f4a70"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ab240389fe3b6f341dfc60e77f16f4a70"></a>
+<a class="el" href="classSSAGES_1_1SimObservable.html">SimObservable</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSSAGES_1_1SimEvent.html#ab240389fe3b6f341dfc60e77f16f4a70">observable_</a></td></tr>
+<tr class="memdesc:ab240389fe3b6f341dfc60e77f16f4a70"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pointer to the observable object from which the Event is originating. <br /></td></tr>
+<tr class="separator:ab240389fe3b6f341dfc60e77f16f4a70"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a664a88454ad9da8d7c15ceb9c5c9139b"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a664a88454ad9da8d7c15ceb9c5c9139b"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSSAGES_1_1SimEvent.html#a664a88454ad9da8d7c15ceb9c5c9139b">iteration_</a></td></tr>
+<tr class="memdesc:a664a88454ad9da8d7c15ceb9c5c9139b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Iteration of the simulation. <br /></td></tr>
+<tr class="separator:a664a88454ad9da8d7c15ceb9c5c9139b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a62faf0d84bf506f6ce15c4c2c291ec94"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a62faf0d84bf506f6ce15c4c2c291ec94"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSSAGES_1_1SimEvent.html#a62faf0d84bf506f6ce15c4c2c291ec94">forceObserve_</a> = false</td></tr>
+<tr class="memdesc:a62faf0d84bf506f6ce15c4c2c291ec94"><td class="mdescLeft">&#160;</td><td class="mdescRight">Force the observation of this event. <br /></td></tr>
+<tr class="separator:a62faf0d84bf506f6ce15c4c2c291ec94"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="classSSAGES_1_1Simulation.html" title="Simulation class for creating simulation and a driver object. ">Simulation</a> event. </p>
@@ -197,10 +197,10 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 </dl>
 
 <p>Definition at line <a class="el" href="SimEvent_8h_source.html#l00059">59</a> of file <a class="el" href="SimEvent_8h_source.html">SimEvent.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;                : <a class="code" href="classSSAGES_1_1SimEvent.html#ac77f1d79fdc00c0cd55b8a239a091f7d">_observable</a>(observable), <a class="code" href="classSSAGES_1_1SimEvent.html#a574531363691ba6d45dc06ea59b4feb2">_iteration</a>(iteration), <a class="code" href="classSSAGES_1_1SimEvent.html#a858084a544aae1cc55d1b80ed7a112d0">_forceObserve</a>(forceObserve){}</div>
-<div class="ttc" id="classSSAGES_1_1SimEvent_html_ac77f1d79fdc00c0cd55b8a239a091f7d"><div class="ttname"><a href="classSSAGES_1_1SimEvent.html#ac77f1d79fdc00c0cd55b8a239a091f7d">SSAGES::SimEvent::_observable</a></div><div class="ttdeci">SimObservable * _observable</div><div class="ttdoc">Pointer to the observable object from which the Event is originating. </div><div class="ttdef"><b>Definition:</b> <a href="SimEvent_8h_source.html#l00044">SimEvent.h:44</a></div></div>
-<div class="ttc" id="classSSAGES_1_1SimEvent_html_a574531363691ba6d45dc06ea59b4feb2"><div class="ttname"><a href="classSSAGES_1_1SimEvent.html#a574531363691ba6d45dc06ea59b4feb2">SSAGES::SimEvent::_iteration</a></div><div class="ttdeci">int _iteration</div><div class="ttdoc">Iteration of the simulation. </div><div class="ttdef"><b>Definition:</b> <a href="SimEvent_8h_source.html#l00047">SimEvent.h:47</a></div></div>
-<div class="ttc" id="classSSAGES_1_1SimEvent_html_a858084a544aae1cc55d1b80ed7a112d0"><div class="ttname"><a href="classSSAGES_1_1SimEvent.html#a858084a544aae1cc55d1b80ed7a112d0">SSAGES::SimEvent::_forceObserve</a></div><div class="ttdeci">bool _forceObserve</div><div class="ttdoc">Force the observation of this event. </div><div class="ttdef"><b>Definition:</b> <a href="SimEvent_8h_source.html#l00050">SimEvent.h:50</a></div></div>
+<div class="fragment"><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;                : <a class="code" href="classSSAGES_1_1SimEvent.html#ab240389fe3b6f341dfc60e77f16f4a70">observable_</a>(observable), <a class="code" href="classSSAGES_1_1SimEvent.html#a664a88454ad9da8d7c15ceb9c5c9139b">iteration_</a>(iteration), <a class="code" href="classSSAGES_1_1SimEvent.html#a62faf0d84bf506f6ce15c4c2c291ec94">forceObserve_</a>(forceObserve){}</div>
+<div class="ttc" id="classSSAGES_1_1SimEvent_html_a664a88454ad9da8d7c15ceb9c5c9139b"><div class="ttname"><a href="classSSAGES_1_1SimEvent.html#a664a88454ad9da8d7c15ceb9c5c9139b">SSAGES::SimEvent::iteration_</a></div><div class="ttdeci">int iteration_</div><div class="ttdoc">Iteration of the simulation. </div><div class="ttdef"><b>Definition:</b> <a href="SimEvent_8h_source.html#l00047">SimEvent.h:47</a></div></div>
+<div class="ttc" id="classSSAGES_1_1SimEvent_html_a62faf0d84bf506f6ce15c4c2c291ec94"><div class="ttname"><a href="classSSAGES_1_1SimEvent.html#a62faf0d84bf506f6ce15c4c2c291ec94">SSAGES::SimEvent::forceObserve_</a></div><div class="ttdeci">bool forceObserve_</div><div class="ttdoc">Force the observation of this event. </div><div class="ttdef"><b>Definition:</b> <a href="SimEvent_8h_source.html#l00050">SimEvent.h:50</a></div></div>
+<div class="ttc" id="classSSAGES_1_1SimEvent_html_ab240389fe3b6f341dfc60e77f16f4a70"><div class="ttname"><a href="classSSAGES_1_1SimEvent.html#ab240389fe3b6f341dfc60e77f16f4a70">SSAGES::SimEvent::observable_</a></div><div class="ttdeci">SimObservable * observable_</div><div class="ttdoc">Pointer to the observable object from which the Event is originating. </div><div class="ttdef"><b>Definition:</b> <a href="SimEvent_8h_source.html#l00044">SimEvent.h:44</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -231,11 +231,11 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 
 <p>Definition at line <a class="el" href="SimEvent_8h_source.html#l00078">78</a> of file <a class="el" href="SimEvent_8h_source.html">SimEvent.h</a>.</p>
 
-<p>References <a class="el" href="SimEvent_8h_source.html#l00050">_forceObserve</a>.</p>
+<p>References <a class="el" href="SimEvent_8h_source.html#l00050">forceObserve_</a>.</p>
 
 <p>Referenced by <a class="el" href="SimObserver_8cpp_source.html#l00039">SSAGES::SimObserver::Update()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;{ <span class="keywordflow">return</span> <a class="code" href="classSSAGES_1_1SimEvent.html#a858084a544aae1cc55d1b80ed7a112d0">_forceObserve</a>; }</div>
-<div class="ttc" id="classSSAGES_1_1SimEvent_html_a858084a544aae1cc55d1b80ed7a112d0"><div class="ttname"><a href="classSSAGES_1_1SimEvent.html#a858084a544aae1cc55d1b80ed7a112d0">SSAGES::SimEvent::_forceObserve</a></div><div class="ttdeci">bool _forceObserve</div><div class="ttdoc">Force the observation of this event. </div><div class="ttdef"><b>Definition:</b> <a href="SimEvent_8h_source.html#l00050">SimEvent.h:50</a></div></div>
+<div class="fragment"><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;{ <span class="keywordflow">return</span> <a class="code" href="classSSAGES_1_1SimEvent.html#a62faf0d84bf506f6ce15c4c2c291ec94">forceObserve_</a>; }</div>
+<div class="ttc" id="classSSAGES_1_1SimEvent_html_a62faf0d84bf506f6ce15c4c2c291ec94"><div class="ttname"><a href="classSSAGES_1_1SimEvent.html#a62faf0d84bf506f6ce15c4c2c291ec94">SSAGES::SimEvent::forceObserve_</a></div><div class="ttdeci">bool forceObserve_</div><div class="ttdoc">Force the observation of this event. </div><div class="ttdef"><b>Definition:</b> <a href="SimEvent_8h_source.html#l00050">SimEvent.h:50</a></div></div>
 </div><!-- fragment -->
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -274,11 +274,11 @@ Here is the caller graph for this function:</div>
 
 <p>Definition at line <a class="el" href="SimEvent_8h_source.html#l00072">72</a> of file <a class="el" href="SimEvent_8h_source.html">SimEvent.h</a>.</p>
 
-<p>References <a class="el" href="SimEvent_8h_source.html#l00047">_iteration</a>.</p>
+<p>References <a class="el" href="SimEvent_8h_source.html#l00047">iteration_</a>.</p>
 
 <p>Referenced by <a class="el" href="SimObserver_8h_source.html#l00084">SSAGES::SimObserver::GetIteration()</a>, and <a class="el" href="SimObserver_8cpp_source.html#l00039">SSAGES::SimObserver::Update()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;{ <span class="keywordflow">return</span> <a class="code" href="classSSAGES_1_1SimEvent.html#a574531363691ba6d45dc06ea59b4feb2">_iteration</a>; }</div>
-<div class="ttc" id="classSSAGES_1_1SimEvent_html_a574531363691ba6d45dc06ea59b4feb2"><div class="ttname"><a href="classSSAGES_1_1SimEvent.html#a574531363691ba6d45dc06ea59b4feb2">SSAGES::SimEvent::_iteration</a></div><div class="ttdeci">int _iteration</div><div class="ttdoc">Iteration of the simulation. </div><div class="ttdef"><b>Definition:</b> <a href="SimEvent_8h_source.html#l00047">SimEvent.h:47</a></div></div>
+<div class="fragment"><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;{ <span class="keywordflow">return</span> <a class="code" href="classSSAGES_1_1SimEvent.html#a664a88454ad9da8d7c15ceb9c5c9139b">iteration_</a>; }</div>
+<div class="ttc" id="classSSAGES_1_1SimEvent_html_a664a88454ad9da8d7c15ceb9c5c9139b"><div class="ttname"><a href="classSSAGES_1_1SimEvent.html#a664a88454ad9da8d7c15ceb9c5c9139b">SSAGES::SimEvent::iteration_</a></div><div class="ttdeci">int iteration_</div><div class="ttdoc">Iteration of the simulation. </div><div class="ttdef"><b>Definition:</b> <a href="SimEvent_8h_source.html#l00047">SimEvent.h:47</a></div></div>
 </div><!-- fragment -->
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -317,9 +317,9 @@ Here is the caller graph for this function:</div>
 
 <p>Definition at line <a class="el" href="SimEvent_8h_source.html#l00066">66</a> of file <a class="el" href="SimEvent_8h_source.html">SimEvent.h</a>.</p>
 
-<p>References <a class="el" href="SimEvent_8h_source.html#l00044">_observable</a>.</p>
-<div class="fragment"><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;{ <span class="keywordflow">return</span> <a class="code" href="classSSAGES_1_1SimEvent.html#ac77f1d79fdc00c0cd55b8a239a091f7d">_observable</a>; }</div>
-<div class="ttc" id="classSSAGES_1_1SimEvent_html_ac77f1d79fdc00c0cd55b8a239a091f7d"><div class="ttname"><a href="classSSAGES_1_1SimEvent.html#ac77f1d79fdc00c0cd55b8a239a091f7d">SSAGES::SimEvent::_observable</a></div><div class="ttdeci">SimObservable * _observable</div><div class="ttdoc">Pointer to the observable object from which the Event is originating. </div><div class="ttdef"><b>Definition:</b> <a href="SimEvent_8h_source.html#l00044">SimEvent.h:44</a></div></div>
+<p>References <a class="el" href="SimEvent_8h_source.html#l00044">observable_</a>.</p>
+<div class="fragment"><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;{ <span class="keywordflow">return</span> <a class="code" href="classSSAGES_1_1SimEvent.html#ab240389fe3b6f341dfc60e77f16f4a70">observable_</a>; }</div>
+<div class="ttc" id="classSSAGES_1_1SimEvent_html_ab240389fe3b6f341dfc60e77f16f4a70"><div class="ttname"><a href="classSSAGES_1_1SimEvent.html#ab240389fe3b6f341dfc60e77f16f4a70">SSAGES::SimEvent::observable_</a></div><div class="ttdeci">SimObservable * observable_</div><div class="ttdoc">Pointer to the observable object from which the Event is originating. </div><div class="ttdef"><b>Definition:</b> <a href="SimEvent_8h_source.html#l00044">SimEvent.h:44</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -329,7 +329,7 @@ Here is the caller graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Oct 14 2016 11:38:55 for SSAGES by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Jun 7 2017 15:46:39 for SSAGES by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

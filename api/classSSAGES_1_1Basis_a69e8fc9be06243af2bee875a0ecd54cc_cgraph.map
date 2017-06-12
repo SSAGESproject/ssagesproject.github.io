@@ -1,9 +1,8 @@
 <map id="SSAGES::Basis::UpdateBias" name="SSAGES::Basis::UpdateBias">
-<area shape="rect" id="node2" href="$classSSAGES_1_1Histogram.html#a8393d6ed7ce051813249ab1b81cf1d83" title="Return iterator at first bin of histogram. " alt="" coords="261,5,414,46"/>
-<area shape="rect" id="node3" href="$classSSAGES_1_1GridBase.html#a52e519b13f9b53c0767957d86015b0a1" title="Get pointer to the internal data storage vector. " alt="" coords="251,71,423,97"/>
-<area shape="rect" id="node4" href="$classSSAGES_1_1Histogram.html#a5429313c7a6807e9be90506df9eedb6e" title="Return iterator after last valid bin. " alt="" coords="250,121,425,148"/>
-<area shape="rect" id="node5" href="$classSSAGES_1_1Basis.html#ab7747cd226308f61dfb04a574af0ebf2" title="Prints the current bias to a defined file from the JSON. " alt="" coords="248,172,427,199"/>
-<area shape="rect" id="node8" href="$classSSAGES_1_1GridBase.html#a7bde73c54b11d8841bc7710a5fc604bd" title="Get the size of the internal storage vector. " alt="" coords="252,223,423,249"/>
-<area shape="rect" id="node6" href="$classSSAGES_1_1GridBase.html#a1d73d329cfc609d30a9c0bd7e844467c" title="Return the lower edges of the Grid. " alt="" coords="475,147,677,173"/>
-<area shape="rect" id="node7" href="$classSSAGES_1_1GridBase.html#a1c0410f0b34b5eb00112ca11c7a912ed" title="Return the upper edges of the Grid. " alt="" coords="475,197,677,224"/>
+<area shape="rect" id="node2" href="$classSSAGES_1_1Histogram.html#a8393d6ed7ce051813249ab1b81cf1d83" title="Return iterator at first bin of histogram. " alt="" coords="497,5,650,46"/>
+<area shape="rect" id="node3" href="$classSSAGES_1_1GridBase.html#a52e519b13f9b53c0767957d86015b0a1" title="Get pointer to the internal data storage vector. " alt="" coords="251,263,423,289"/>
+<area shape="rect" id="node4" href="$classSSAGES_1_1Histogram.html#a5429313c7a6807e9be90506df9eedb6e" title="Return iterator after last valid bin. " alt="" coords="486,72,661,99"/>
+<area shape="rect" id="node5" href="$classSSAGES_1_1GridBase.html#a778394582f45e7b7210e3b6a8aec3ed9" title="Get the number of points for all dimensions. " alt="" coords="475,126,671,167"/>
+<area shape="rect" id="node6" href="$classSSAGES_1_1Basis.html#ab7747cd226308f61dfb04a574af0ebf2" title="Prints the current bias to a defined file from the JSON. " alt="" coords="248,111,427,137"/>
+<area shape="rect" id="node7" href="$classSSAGES_1_1GridBase.html#a7bde73c54b11d8841bc7710a5fc604bd" title="Get the size of the internal storage vector. " alt="" coords="488,199,659,225"/>
 </map>
