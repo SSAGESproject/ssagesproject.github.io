@@ -12,6 +12,10 @@ build_ssages_path = ssages_path + "/build"
 api_path = ssages_path + "/build/doc/API-doc/html/"
 manual_path = ssages_path + "/build/doc/Manual"
 
+#Path to DASH
+dash_path = "/home/cody/DASH-public"
+dash_manual_path = dash_path + "/doc/documentation"
+
 #Switch to build directory, build SSAGES and docs
 os.chdir(build_ssages_path)
 print("Making SSAGES...")
@@ -38,3 +42,14 @@ print("Copying Manual...")
 if os.path.isdir(ssages_site_path + "/manual"):
     rmtree(ssages_site_path + "/manual")
 copytree(manual_path, ssages_site_path + "/manual")
+
+#Copy DASH docs
+print("Copying DASH Manual to project...")
+if os.path.isdir(ssages_site_project_path + "/dash-manual"):
+    rmtree(ssages_site_project_path + "/dash-manual")
+copytree(dash_manual_path, ssages_site_project_path + "/dash-manual")
+print("Copying DASH Manual...")
+if os.path.isdir(ssages_site_path + "/dash-manual"):
+    rmtree(ssages_site_path + "/dash-manual")
+copytree(dash_manual_path, ssages_site_path + "/dash-manual")
+
