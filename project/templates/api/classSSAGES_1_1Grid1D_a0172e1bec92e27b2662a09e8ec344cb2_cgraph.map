@@ -1,6 +1,0 @@
-<map id="SSAGES::Grid1D::InterpolateValue" name="SSAGES::Grid1D::InterpolateValue">
-<area shape="rect" id="node2" href="$classSSAGES_1_1Grid.html#a9733cf52edb782b5d249c39325cb98d2" title="Get the location at the current indices. " alt="" coords="249,5,436,32"/>
-<area shape="rect" id="node4" href="$classSSAGES_1_1Grid.html#af9f651ed46e711a65f37988c712f0870" title="Get the value at the current indices. " alt="" coords="257,56,428,83"/>
-<area shape="rect" id="node5" href="$classSSAGES_1_1Grid1D.html#a255c226a1bf09057b878bcd6a2ae48fc" title="Get a voxel from the Grid. " alt="" coords="249,107,437,133"/>
-<area shape="rect" id="node3" href="$namespaceSSAGES.html#abfa91ee48ad3b0323f8dd9b09bd1e97e" title="Calculate array index from n&#45;Dimensional Grid indices. " alt="" coords="486,31,653,57"/>
-</map>
