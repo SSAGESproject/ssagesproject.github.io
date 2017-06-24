@@ -71,7 +71,7 @@ a:hover {
     padding: 1px 1px 20px 1px;
     margin-left: 1px;
     margin-right: 1px; 
-    border-radius: 25px;
+    /*border-radius: 25px;*/
 }
 .index-logo { 
     background-color: #e5e5e5 !important;
