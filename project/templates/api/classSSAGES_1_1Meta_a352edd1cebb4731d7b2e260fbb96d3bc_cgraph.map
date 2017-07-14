@@ -1,0 +1,6 @@
+<map id="SSAGES::Meta::PostIntegration" name="SSAGES::Meta::PostIntegration">
+<area shape="rect" id="node2" href="$classSSAGES_1_1CVManager.html#a7317d7a4400d1c6ece08559f146dc049" title="Get CV iterator. " alt="" coords="291,5,453,46"/>
+<area shape="rect" id="node3" href="$classSSAGES_1_1Snapshot.html#a2533f7b900bc33185424eb94d6996edf" title="Access the per&#45;particle forces. " alt="" coords="267,71,477,97"/>
+<area shape="rect" id="node4" href="$classSSAGES_1_1Snapshot.html#acaee0172694743e118273a055ff2c3fc" title="Get the current iteration. " alt="" coords="264,121,480,148"/>
+<area shape="rect" id="node5" href="$classSSAGES_1_1Snapshot.html#a00de82748940b4a7982b19fa8abe1c30" title="Get box virial. " alt="" coords="273,172,471,199"/>
+</map>

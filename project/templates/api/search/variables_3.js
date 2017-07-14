@@ -9,13 +9,15 @@ var searchData=
   ['coeff_5f',['coeff_',['../classSSAGES_1_1Basis.html#afbaf9b77927fc548c43216d2b4f7b3b9',1,'SSAGES::Basis']]],
   ['coeff_5farr_5f',['coeff_arr_',['../classSSAGES_1_1Basis.html#ac36cb05f644c145608e0c5d50d883020',1,'SSAGES::Basis']]],
   ['coeffout_5f',['coeffout_',['../classSSAGES_1_1Basis.html#aee0d289866f62fe1ff3de054a669ab14',1,'SSAGES::Basis']]],
-  ['comm_5f',['comm_',['../classSSAGES_1_1Constraint.html#a4b3eba46dd6ff7594275046325b80446',1,'SSAGES::Constraint::comm_()'],['../classSSAGES_1_1Driver.html#acd1b7fafaf06468d4bb9580fe7f76fcf',1,'SSAGES::Driver::comm_()'],['../classSSAGES_1_1Method.html#ae497980d1720c38b65d47fd4e65897b0',1,'SSAGES::Method::comm_()'],['../classSSAGES_1_1SimObserver.html#a7b88d68a68ca0d938eea3bdb84e1a3b0',1,'SSAGES::SimObserver::comm_()'],['../classSSAGES_1_1Simulation.html#a2484e01cb3bc528118baf57bf19cadfe',1,'SSAGES::Simulation::comm_()'],['../classSSAGES_1_1Snapshot.html#a96c16799e88e871c64119c5f1cd4b539',1,'SSAGES::Snapshot::comm_()']]],
+  ['comm_5f',['comm_',['../classSSAGES_1_1Constraint.html#a4b3eba46dd6ff7594275046325b80446',1,'SSAGES::Constraint::comm_()'],['../classSSAGES_1_1Logger.html#a02cf19fc4fb86c0bb347ee081e619ea9',1,'SSAGES::Logger::comm_()'],['../classSSAGES_1_1Method.html#a1118666d61dbf3bc7606e3b61aa3a460',1,'SSAGES::Method::comm_()'],['../classSSAGES_1_1ResourceHandler.html#a6751d2a4a906f906af46952ab367d9c4',1,'SSAGES::ResourceHandler::comm_()'],['../classSSAGES_1_1Snapshot.html#a318172ccddbc82d73d5c2fdd327f92c6',1,'SSAGES::Snapshot::comm_()']]],
   ['component_5f',['component_',['../classSSAGES_1_1GyrationTensorCV.html#a0204db1d939bda7405d66cbb6a56dfcb',1,'SSAGES::GyrationTensorCV']]],
   ['comref_5f',['COMref_',['../classSSAGES_1_1RMSDCV.html#afb37312a2c477a231a1ef748171b87af',1,'SSAGES::RMSDCV']]],
-  ['constraints_5f',['constraints_',['../classSSAGES_1_1Driver.html#afbd01ae43f60fb005580d67192aa920c',1,'SSAGES::Driver']]],
   ['converge_5fexit_5f',['converge_exit_',['../classSSAGES_1_1Basis.html#a1ec9d2e798abfc8ce45ebff0c37a4c8a',1,'SSAGES::Basis']]],
   ['cv_5fdrift_5f',['cv_drift_',['../classSSAGES_1_1Swarm.html#af28af23d7954d79b7c8820763315ca7e',1,'SSAGES::Swarm']]],
-  ['cvs_5f',['CVs_',['../classSSAGES_1_1Driver.html#a5e272be9d9cb7f60355dfaf144a485cd',1,'SSAGES::Driver::CVs_()'],['../classSSAGES_1_1Hook.html#a37e73710f57286155fc0cbeb203c4a12',1,'SSAGES::Hook::cvs_()']]],
+  ['cvmanager_5f',['cvmanager_',['../classSSAGES_1_1Hook.html#abb190885a8ea57c73855d77cc4df81bb',1,'SSAGES::Hook::cvmanager_()'],['../classSSAGES_1_1ResourceHandler.html#a23d8d943b04503d2d521b6cb5749e3fb',1,'SSAGES::ResourceHandler::cvmanager_()']]],
+  ['cvmap_5f',['cvmap_',['../classSSAGES_1_1CVManager.html#a390661cf20277180faf7abf84474e02d',1,'SSAGES::CVManager']]],
+  ['cvmask_5f',['cvmask_',['../classSSAGES_1_1Logger.html#a261f6ebf26a3acb37ad5a3db938f7115',1,'SSAGES::Logger::cvmask_()'],['../classSSAGES_1_1Method.html#a04e4b8b9ea8d154ae88f6cccf6c91700',1,'SSAGES::Method::cvmask_()']]],
+  ['cvs_5f',['cvs_',['../classSSAGES_1_1CVManager.html#ac61df57f7b4bd480a18d26f9bc15370f',1,'SSAGES::CVManager']]],
   ['cvspring_5f',['cvspring_',['../classSSAGES_1_1StringMethod.html#a51f68bc9e02055a96375617626240a79',1,'SSAGES::StringMethod']]],
   ['cyclefreq_5f',['cyclefreq_',['../classSSAGES_1_1Basis.html#a85f5ee93e5c7383c7a700900fd89b28f',1,'SSAGES::Basis']]]
 ];

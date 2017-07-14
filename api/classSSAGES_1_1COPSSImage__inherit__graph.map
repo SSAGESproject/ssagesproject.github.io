@@ -1,5 +1,5 @@
 <map id="SSAGES::COPSSImage" name="SSAGES::COPSSImage">
-<area shape="rect" id="node2" href="$classSSAGES_1_1Constraint.html" title="Interface for Constraint implementations. " alt="" coords="106,80,251,107"/>
+<area shape="rect" id="node2" href="$classSSAGES_1_1Constraint.html" title="Interface for Constraint implementations. " alt="" coords="91,80,236,107"/>
 <area shape="rect" id="node3" href="$classSSAGES_1_1EventListener.html" title="Base abstract class for listening in to events fired by &quot;Hook&quot;. " alt="" coords="5,5,169,32"/>
-<area shape="rect" id="node4" href="$classSSAGES_1_1Serializable.html" title="Base class for all serializable objects. " alt="" coords="195,5,347,32"/>
+<area shape="rect" id="node4" href="$classSerializable.html" title="Serializable" alt="" coords="195,5,284,32"/>
 </map>

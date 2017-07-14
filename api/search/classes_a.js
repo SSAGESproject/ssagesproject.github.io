@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['lammpsdriver',['LammpsDriver',['../classSSAGES_1_1LammpsDriver.html',1,'SSAGES']]]
+  ['logger',['Logger',['../classSSAGES_1_1Logger.html',1,'SSAGES']]]
 ];

@@ -1,9 +1,11 @@
 <map id="SSAGES::GridBase&lt; T &gt;" name="SSAGES::GridBase&lt; T &gt;">
-<area shape="rect" id="node3" href="$classSSAGES_1_1Grid.html" title="Basic Grid. " alt="" coords="524,5,665,32"/>
-<area shape="rect" id="node5" href="$classSSAGES_1_1Histogram.html" title="Basic Histogram. " alt="" coords="506,157,683,184"/>
-<area shape="rect" id="node7" href="$classSSAGES_1_1GridBase.html" title="SSAGES::GridBase\&lt; Vector \&gt;" alt="" coords="494,56,695,83"/>
-<area shape="rect" id="node8" href="$classSSAGES_1_1GridBase.html" title="SSAGES::GridBase\&lt; int \&gt;" alt="" coords="506,107,683,133"/>
-<area shape="rect" id="node2" href="$classSSAGES_1_1Serializable.html" title="Base class for all serializable objects. " alt="" coords="5,81,157,108"/>
-<area shape="rect" id="node4" href="$classSSAGES_1_1Grid.html" title="SSAGES::Grid\&lt; Vector \&gt;" alt="" coords="811,44,981,71"/>
-<area shape="rect" id="node6" href="$classSSAGES_1_1Histogram.html" title="SSAGES::Histogram\&lt;\l int \&gt;" alt="" coords="819,114,973,155"/>
+<area shape="rect" id="node2" href="$classSSAGES_1_1Grid.html" title="Basic Grid. " alt="" coords="321,115,463,141"/>
+<area shape="rect" id="node6" href="$classSSAGES_1_1Histogram.html" title="Basic Histogram. " alt="" coords="303,263,481,289"/>
+<area shape="rect" id="node8" href="$classSSAGES_1_1GridBase.html" title="SSAGES::GridBase\&lt; double \&gt;" alt="" coords="291,59,493,85"/>
+<area shape="rect" id="node9" href="$classSSAGES_1_1GridBase.html" title="SSAGES::GridBase\&lt; Vector \&gt;" alt="" coords="291,5,493,32"/>
+<area shape="rect" id="node10" href="$classSSAGES_1_1GridBase.html" title="SSAGES::GridBase\&lt; int \&gt;" alt="" coords="303,204,481,231"/>
+<area shape="rect" id="node3" href="$classSSAGES_1_1Grid.html" title="SSAGES::Grid\&lt; double \&gt;" alt="" coords="608,99,779,125"/>
+<area shape="rect" id="node4" href="$classSSAGES_1_1Grid.html" title="SSAGES::Grid\&lt; Vector \&gt;" alt="" coords="608,17,779,44"/>
+<area shape="rect" id="node5" href="$classSSAGES_1_1Grid.html" title="SSAGES::Grid\&lt; int \&gt;" alt="" coords="620,189,767,216"/>
+<area shape="rect" id="node7" href="$classSSAGES_1_1Histogram.html" title="SSAGES::Histogram\&lt;\l int \&gt;" alt="" coords="617,245,770,286"/>
 </map>

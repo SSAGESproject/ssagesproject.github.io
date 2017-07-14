@@ -1,6 +1,4 @@
 <map id="SSAGES::ForwardFlux::AppendTrajectoryFile" name="SSAGES::ForwardFlux::AppendTrajectoryFile">
-<area shape="rect" id="node2" href="$classSSAGES_1_1DirectForwardFlux.html#a2a23c0bf26deb4ae6d9b84847793f4ec" title="Function that checks if interfaces have been crossed (different for each FFS flavor) ..." alt="" coords="416,5,613,46"/>
-<area shape="rect" id="node4" href="$classSSAGES_1_1ForwardFlux.html#ac5227afa53bf05d387b480850ef4bb77" title="Pop the queue, do MPI so that all procs maintain the same queue. " alt="" coords="211,63,368,105"/>
-<area shape="rect" id="node3" href="$classSSAGES_1_1DirectForwardFlux.html#aa0685636ad46fb8e36efe1ac775c6f34" title="Post&#45;integration hook. " alt="" coords="661,38,853,79"/>
-<area shape="rect" id="node5" href="$classSSAGES_1_1DirectForwardFlux.html#af14a27e7176c4cd6fca5479dfef17358" title="Initialize the Queue. " alt="" coords="419,70,611,111"/>
+<area shape="rect" id="node2" href="$classSSAGES_1_1DirectForwardFlux.html#a2be13ab9b33d4cb90aa22ca9d71077e9" title="Function that checks if interfaces have been crossed (different for each FFS flavor) ..." alt="" coords="211,5,408,46"/>
+<area shape="rect" id="node3" href="$classSSAGES_1_1DirectForwardFlux.html#a5491cd537f737524f5fc295236eefb85" title="Post&#45;integration hook. " alt="" coords="456,5,648,46"/>
 </map>

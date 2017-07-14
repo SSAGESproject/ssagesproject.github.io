@@ -1,4 +1,5 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classSSAGES_1_1JSONLoaderPlugin.html" title="Abstract class for JSON loader plugins. " alt="" coords="6,5,202,32"/>
-<area shape="rect" id="node2" href="$classSSAGES_1_1IncludePlugin.html" title="Class for JSON loader include plugin. " alt="" coords="251,5,413,32"/>
+<area shape="rect" id="node1" href="$classSSAGES_1_1GridBase.html" title="SSAGES::GridBase\&lt; int \&gt;" alt="" coords="6,35,183,61"/>
+<area shape="rect" id="node2" href="$classSSAGES_1_1Grid.html" title="SSAGES::Grid\&lt; int \&gt;" alt="" coords="236,5,383,32"/>
+<area shape="rect" id="node3" href="$classSSAGES_1_1Histogram.html" title="SSAGES::Histogram\&lt;\l int \&gt;" alt="" coords="233,57,386,98"/>
 </map>

@@ -1,8 +1,7 @@
 <map id="SSAGES::StringMethod" name="SSAGES::StringMethod">
-<area shape="rect" id="node5" href="$classSSAGES_1_1ElasticBand.html" title="Multi&#45;walker Elastic Band. " alt="" coords="5,229,159,256"/>
-<area shape="rect" id="node6" href="$classSSAGES_1_1FiniteTempString.html" title="Finite Temperature Spring Method. " alt="" coords="184,229,368,256"/>
-<area shape="rect" id="node7" href="$classSSAGES_1_1Swarm.html" title="Swarm of Trajectories String Method. " alt="" coords="393,229,519,256"/>
+<area shape="rect" id="node4" href="$classSSAGES_1_1ElasticBand.html" title="Multi&#45;walker Elastic Band. " alt="" coords="5,229,159,256"/>
+<area shape="rect" id="node5" href="$classSSAGES_1_1FiniteTempString.html" title="Finite Temperature Spring Method. " alt="" coords="184,229,368,256"/>
+<area shape="rect" id="node6" href="$classSSAGES_1_1Swarm.html" title="Swarm of Trajectories String Method. " alt="" coords="393,229,519,256"/>
 <area shape="rect" id="node2" href="$classSSAGES_1_1Method.html" title="Interface for Method implementations. " alt="" coords="212,80,340,107"/>
-<area shape="rect" id="node3" href="$classSSAGES_1_1EventListener.html" title="Base abstract class for listening in to events fired by &quot;Hook&quot;. " alt="" coords="103,5,267,32"/>
-<area shape="rect" id="node4" href="$classSSAGES_1_1Serializable.html" title="Base class for all serializable objects. " alt="" coords="292,5,444,32"/>
+<area shape="rect" id="node3" href="$classSSAGES_1_1EventListener.html" title="Base abstract class for listening in to events fired by &quot;Hook&quot;. " alt="" coords="193,5,357,32"/>
 </map>

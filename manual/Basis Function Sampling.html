@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Basis Function Sampling &mdash; SSAGES v0.5.0-alpha-217-g4053fbf documentation</title>
+  <title>Basis Function Sampling &mdash; SSAGES v0.7.5-alpha documentation</title>
   
 
   
@@ -35,7 +35,7 @@
         <link rel="index" title="Index"
               href="genindex.html"/>
         <link rel="search" title="Search" href="search.html"/>
-    <link rel="top" title="SSAGES v0.5.0-alpha-217-g4053fbf documentation" href="index.html"/>
+    <link rel="top" title="SSAGES v0.7.5-alpha documentation" href="index.html"/>
         <link rel="up" title="Advanced Sampling Methods" href="Advanced Sampling Methods.html"/>
         <link rel="next" title="Elastic Band" href="Elastic Band.html"/>
         <link rel="prev" title="Adaptive Biasing Force Algorithm" href="Adaptive Biasing Force Algorithm.html"/> 
@@ -67,7 +67,7 @@
             
             
               <div class="version">
-                0.6.0
+                0.7.5
               </div>
             
           
@@ -94,13 +94,16 @@
               <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="Introduction.html">Introduction</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Getting Started.html">Getting Started</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Tutorials.html">Tutorials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Input Files.html">Input Files</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Engines.html">Engines</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Collective Variables.html">Collective Variables</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="Advanced Sampling Methods.html">Advanced Sampling Methods</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="Adaptive Biasing Force Algorithm.html">Adaptive Biasing Force Algorithm</a></li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#">Basis Function Sampling</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#introduction">Introduction</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#options-parameters">Options &amp; Parameters</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#required-to-run-bfs">Required to Run BFS</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#example-input">Example Input</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#guidelines-for-running-bfs">Guidelines for running BFS</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#tutorial">Tutorial</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#basis-out">basis.out</a></li>
@@ -231,18 +234,18 @@ of the coefficients.</p>
 Sampling. In order to add BFS to the JSON file, the method should be labeled as
 &#8220;Basis&#8221;.</p>
 <dl class="docutils">
-<dt>CV coefficients</dt>
+<dt>CV_coefficients</dt>
 <dd>The order of the polynomial to be projected for each collective variable. If
 the order of this array doesn&#8217;t match the number of CVs, the system assumes
 the first number for all of the CVs</dd>
-<dt>CV restraint spring constants</dt>
+<dt>CV_restraint_spring_constants</dt>
 <dd>The strength of the springs keeping the system in bounds in a non-periodic
 system.</dd>
-<dt>CV restraint maximums</dt>
+<dt>CV_restraint_maximums</dt>
 <dd>The upper bounds of each CV in a non-periodic system.</dd>
-<dt>CV restraint minimums</dt>
+<dt>CV_restraint_minimums</dt>
 <dd>The lower bounds of each CV in a non-periodic system.</dd>
-<dt>cycle frequency</dt>
+<dt>cycle_frequency</dt>
 <dd>The frequency of updating the projection bias.</dd>
 <dt>frequency</dt>
 <dd>The frequency of each integration step. This should almost always be set to 1.</dd>
@@ -250,10 +253,10 @@ system.</dd>
 <dd>The weight of each visited histogram step. Should be kept at 1.0, but the
 option is available to make it slightly greater. The system has a higher
 chance of exploding at higher weight values.</dd>
-<dt>basis filename</dt>
+<dt>basis_filename</dt>
 <dd>A suffix to name the output file. If not specified the output will be
 &#8220;basis.out&#8221;</dd>
-<dt>coeff filename</dt>
+<dt>coeff_filename</dt>
 <dd>A suffix to name the coefficient file.</dd>
 <dt>temperature</dt>
 <dd>Only should be used if the MD engine cannot produce a good temperature
@@ -261,7 +264,7 @@ value. (ie: LAMMPS with 1 particle)</dd>
 <dt>tolerance</dt>
 <dd>Convergence criteria. The sum of the difference in subsequent updates of the
 coefficients squared must be less than this for convergence to work.</dd>
-<dt>convergence exit</dt>
+<dt>convergence_exit</dt>
 <dd>A boolean option to let the user choose if the system should exit once the
 convergence is met.</dd>
 </dl>
@@ -277,6 +280,37 @@ The only inputs required to run the method:</p>
 <li>frequency</li>
 <li>CV coefficients</li>
 </ul>
+</div>
+<div class="section" id="example-input">
+<h2>Example Input<a class="headerlink" href="#example-input" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-javascript"><div class="highlight"><pre><span></span>
+</pre></div>
+</div>
+<dl class="docutils">
+<dt>&#8220;methods&#8221; <span class="classifier-delimiter">:</span> <span class="classifier">[{</span></dt>
+<dd><blockquote class="first">
+<div><p>&#8220;type&#8221; : &#8220;Basis&#8221;,
+&#8220;cvs&#8221; : [0],
+&#8220;cycle_frequency&#8221; : 10000,
+&#8220;frequency&#8221; : 1,
+&#8220;weight&#8221; : 1.0,
+&#8220;basis_filename&#8221; : &#8220;nacl_example&#8221;,
+&#8220;coeff_filename&#8221; : &#8220;nacl_example&#8221;,
+&#8220;CV_coefficients&#8221; : [ 50 ],
+&#8220;CV_restraint_spring_constants&#8221; : [ 30 ],
+&#8220;CV_restraint_maximums&#8221; : [ 10.3 ],
+&#8220;CV_restraint_minimums&#8221; : [ 1.7 ],
+&#8220;grid&#8221; : {</p>
+<blockquote>
+<div>&#8220;lower&#8221; : [2.0],
+&#8220;upper&#8221; : [15.0],
+&#8220;number_points&#8221; : [500],
+&#8220;periodic&#8221; : [false]</div></blockquote>
+<p>}</p>
+</div></blockquote>
+<p class="last">}]</p>
+</dd>
+</dl>
 </div>
 <div class="section" id="guidelines-for-running-bfs">
 <h2>Guidelines for running BFS<a class="headerlink" href="#guidelines-for-running-bfs" title="Permalink to this headline">¶</a></h2>
@@ -300,24 +334,29 @@ past convergence, but a good heuristic for tolerance is around
 multiple examples provided in the Examples/User directory of SSAGES, but this
 tutorial will cover the Alanine Dipeptide example.
 In the ADP subdirectory of the <code class="docutils literal"><span class="pre">Examples/User</span> <span class="pre">section</span></code> there should be a
-LAMMPS input file (titled <code class="docutils literal"><span class="pre">in.BFS_ADP_shake</span></code>) and two JSON input files.
-Both of these files will work for SSAGES, but the one titled <code class="docutils literal"><span class="pre">BFS_AdP_rst.json</span></code>
-makes use of the restart capability in SSAGES.</p>
-<p>After compiling SSAGES with the user&#8217;s version of LAMMPS with the
-<code class="docutils literal"><span class="pre">make</span> <span class="pre">rigid=yes</span></code> option chosen, the user can elect to run the example.</p>
-<p>(NOTE: if the user did not compile lammps with the rigid option, then the other
-lammps file can be used. Just change the input file variable in the json file to
-<code class="docutils literal"><span class="pre">in.BFS_ADP</span></code>)
-Use the following command to run the example:</p>
-<div class="highlight-bash"><div class="highlight"><pre><span></span>mpiexec -np <span class="m">1</span> /path/to/SSAGES/build/dir/ssages BFS_AdP_rst.json
+LAMMPS input file (titled <code class="docutils literal"><span class="pre">in.ADP_BFS_example(0-1)</span></code>) and two JSON input files.
+Both of these files will work for SSAGES, but the one titled <code class="docutils literal"><span class="pre">ADP_BFS_2walkers.json</span></code>
+makes use of multiple walkers.</p>
+<p>For LAMMPS to run the example it must be made with RIGID and MOLECULE options.
+In order to do so,</p>
+<ol class="arabic simple">
+<li>Go to LAMMPS src folder (/build/hooks/lammps/lammps-download-prefix/src/lammps-download/src/ for -DLAMMPS=YES)</li>
+<li>Do:</li>
+</ol>
+<div class="highlight-bash"><div class="highlight"><pre><span></span>make yes-RIGID
+make yes-MOLECULE
+</pre></div>
+</div>
+<ol class="arabic simple" start="3">
+<li>Go to your build folder and make.</li>
+</ol>
+<p>Use the following command to run the example:</p>
+<div class="highlight-bash"><div class="highlight"><pre><span></span>mpiexec -np <span class="m">1</span> ./ssages ADP_BFS_2walkers.json
 </pre></div>
 </div>
 <p>This should prompt SSAGES to begin an alanine dipeptide run. If the run is
 successful, the console will output the current sweep number on each node.
-At this point the user can elect to read the output information after each sweep.
-If at any point during the run, the user elects to stop running and then pickup
-where the simulation was left off, simply execute SSAGES with the newly generated
-restart file (<code class="docutils literal"><span class="pre">BFS_AdP_restart.json</span></code>).</p>
+At this point the user can elect to read the output information after each sweep.</p>
 <div class="section" id="basis-out">
 <h3>basis.out<a class="headerlink" href="#basis-out" title="Permalink to this headline">¶</a></h3>
 <p>The <code class="docutils literal"><span class="pre">basis.out</span></code> file outputs in at least 4 columns. These columns refer to the
@@ -343,7 +382,8 @@ file is entirely used for restart runs.</p>
 </div>
 <div class="section" id="developer">
 <h2>Developer<a class="headerlink" href="#developer" title="Permalink to this headline">¶</a></h2>
-<p>Joshua Moller.</p>
+<p>Joshua Moller
+Julian Helfferich</p>
 </div>
 </div>
 
@@ -370,7 +410,7 @@ file is entirely used for restart runs.</p>
   <div role="contentinfo">
     <p>
         &copy; Copyright 2016, the SSAGES Team.
-      Last updated on Jun 07, 2017.
+      Last updated on Jul 14, 2017.
 
     </p>
   </div>
@@ -392,7 +432,7 @@ file is entirely used for restart runs.</p>
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'./',
-            VERSION:'v0.5.0-alpha-217-g4053fbf',
+            VERSION:'v0.7.5-alpha',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
             HAS_SOURCE:  true,

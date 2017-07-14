@@ -8,7 +8,6 @@ var searchData=
   ['eouter_5f',['eouter_',['../classSSAGES_1_1COPSSImage.html#a5812db4a360904e66d99467966e4e77b',1,'SSAGES::COPSSImage']]],
   ['equilibrate_5f',['equilibrate_',['../classSSAGES_1_1ElasticBand.html#a22f5657825ca797d6a99a96b8948bd7a',1,'SSAGES::ElasticBand']]],
   ['errors_5f',['errors_',['../classSSAGES_1_1BuildException.html#a70e41d120fdf719a3fb28ae93ad99bda',1,'SSAGES::BuildException::errors_()'],['../classJson_1_1Requirement.html#a585f6404d071d7a9b6f265ea6aacfa5f',1,'Json::Requirement::errors_()']]],
-  ['event_5f',['event_',['../classSSAGES_1_1SimObserver.html#a45708eecc079c613660a3f91b0bf773d',1,'SSAGES::SimObserver']]],
   ['evolution_5f',['evolution_',['../classSSAGES_1_1ElasticBand.html#abb6609949340c8607070d7a0fcd57f57',1,'SSAGES::ElasticBand']]],
   ['exclmax_5f',['exclMax_',['../classJson_1_1IntegerRequirement.html#a2da4f0bd343b04e4ffb99eaacc9a295a',1,'Json::IntegerRequirement::exclMax_()'],['../classJson_1_1NumberRequirement.html#a2d89ae3e4a7a96ff6ebd7f991ed1d134',1,'Json::NumberRequirement::exclMax_()']]],
   ['exclmin_5f',['exclMin_',['../classJson_1_1IntegerRequirement.html#a00a6b9a8f6d65fc2b27a1302834b252d',1,'Json::IntegerRequirement::exclMin_()'],['../classJson_1_1NumberRequirement.html#a3763738a6effeb821ed6e7007288d9e6',1,'Json::NumberRequirement::exclMin_()']]],

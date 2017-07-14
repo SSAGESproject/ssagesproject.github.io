@@ -1,5 +1,0 @@
-<map id="SSAGES::Meta::PreSimulation" name="SSAGES::Meta::PreSimulation">
-<area shape="rect" id="node2" href="$classSSAGES_1_1Grid.html#a709374b3cadf320347604077a2e45e5b" title="Return iterator at first grid point. " alt="" coords="286,5,434,32"/>
-<area shape="rect" id="node3" href="$classSSAGES_1_1Grid.html#ac4fcc9f0cd61476ce4fd880c768d9694" title="Return iterator after last valid grid point. " alt="" coords="291,56,429,83"/>
-<area shape="rect" id="node4" href="$classSSAGES_1_1Snapshot.html#a098c025745e03ac514b1dcb6169a71b8" title="Get target iterations. " alt="" coords="257,107,463,149"/>
-</map>

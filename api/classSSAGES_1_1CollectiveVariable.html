@@ -114,7 +114,7 @@ Inheritance diagram for SSAGES::CollectiveVariable:</div>
 <div class="dyncontent">
 <div class="center"><img src="classSSAGES_1_1CollectiveVariable__inherit__graph.png" border="0" usemap="#SSAGES_1_1CollectiveVariable_inherit__map" alt="Inheritance graph"/></div>
 <map name="SSAGES_1_1CollectiveVariable_inherit__map" id="SSAGES_1_1CollectiveVariable_inherit__map">
-<area shape="rect" id="node3" href="classSSAGES_1_1AngleCV.html" title="Collective variable to calculate angle. " alt="" coords="489,5,626,32"/><area shape="rect" id="node4" href="classSSAGES_1_1BoxVolumeCV.html" title="Collective variable on the volume of a box. " alt="" coords="472,56,643,83"/><area shape="rect" id="node5" href="classSSAGES_1_1CoordinationNumberCV.html" title="Collective variable on coordination number between two groups of atoms. " alt="" coords="446,107,669,133"/><area shape="rect" id="node6" href="classSSAGES_1_1GyrationTensorCV.html" title="Collective variable on components of the gyration tensor. " alt="" coords="461,157,654,184"/><area shape="rect" id="node7" href="classSSAGES_1_1MockCV.html" title="Mock collective variable for testing purposes. " alt="" coords="489,208,625,235"/><area shape="rect" id="node8" href="classSSAGES_1_1ParticleCoordinateCV.html" title="Collective variable on a particle coordinate. " alt="" coords="452,259,663,285"/><area shape="rect" id="node9" href="classSSAGES_1_1ParticlePositionCV.html" title="Collective variable on an particle position. " alt="" coords="460,309,655,336"/><area shape="rect" id="node10" href="classSSAGES_1_1ParticleSeparationCV.html" title="Collective variable on the distance between two particles&#39; centers of mass. " alt="" coords="452,360,663,387"/><area shape="rect" id="node11" href="classSSAGES_1_1RMSDCV.html" title="Collective variable to calculate root mean square displacement. " alt="" coords="485,411,629,437"/><area shape="rect" id="node12" href="classSSAGES_1_1RouseModeCV.html" title="Collective variable is a Rouse mode for a polymer chain comprised of N particle groups. " alt="" coords="470,461,645,488"/><area shape="rect" id="node13" href="classSSAGES_1_1TorsionalCV.html" title="Collective variable on the torsion angles. " alt="" coords="479,512,636,539"/><area shape="rect" id="node2" href="classSSAGES_1_1Serializable.html" title="Base class for all serializable objects. " alt="" coords="5,259,157,285"/></map>
+<area shape="rect" id="node2" href="classSSAGES_1_1AlphaRMSDCV.html" title="Collective variable to measure alpha helix secondary structure. " alt="" coords="265,5,442,32"/><area shape="rect" id="node3" href="classSSAGES_1_1AngleCV.html" title="Collective variable to calculate angle. " alt="" coords="285,56,422,83"/><area shape="rect" id="node4" href="classSSAGES_1_1AntiBetaRMSDCV.html" title="Collective variable to measure antiparallel beta secondary structure. " alt="" coords="256,107,451,133"/><area shape="rect" id="node5" href="classSSAGES_1_1BoxVolumeCV.html" title="Collective variable on the volume of a box. " alt="" coords="268,157,439,184"/><area shape="rect" id="node6" href="classSSAGES_1_1GyrationTensorCV.html" title="Collective variable on components of the gyration tensor. " alt="" coords="257,208,450,235"/><area shape="rect" id="node7" href="classSSAGES_1_1MockCV.html" title="Mock collective variable for testing purposes. " alt="" coords="285,259,421,285"/><area shape="rect" id="node8" href="classSSAGES_1_1PairwiseCV.html" title="Generalized collective variable based on pairwise properties of atoms. " alt="" coords="276,309,431,336"/><area shape="rect" id="node9" href="classSSAGES_1_1ParallelBetaRMSDCV.html" title="Collective variable to measure parallel beta sheet secondary structure. " alt="" coords="246,360,461,387"/><area shape="rect" id="node10" href="classSSAGES_1_1ParticleCoordinateCV.html" title="Collective variable on a particle coordinate. " alt="" coords="248,411,459,437"/><area shape="rect" id="node11" href="classSSAGES_1_1ParticlePositionCV.html" title="Collective variable on an particle position. " alt="" coords="256,461,451,488"/><area shape="rect" id="node12" href="classSSAGES_1_1ParticleSeparationCV.html" title="Collective variable on the distance between two particles&#39; centers of mass. " alt="" coords="248,512,459,539"/><area shape="rect" id="node13" href="classSSAGES_1_1RMSDCV.html" title="Collective variable to calculate root mean square displacement. " alt="" coords="281,563,425,589"/><area shape="rect" id="node14" href="classSSAGES_1_1RouseModeCV.html" title="Collective variable is a Rouse mode for a polymer chain comprised of N particle groups. " alt="" coords="266,613,441,640"/><area shape="rect" id="node15" href="classSSAGES_1_1TorsionalCV.html" title="Collective variable on the torsion angles. " alt="" coords="275,664,432,691"/></map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -144,26 +144,12 @@ const <a class="el" href="namespaceSSAGES.html#a306e635f4b20f86fbc726fbf9a5d11a8
 <tr class="separator:a1e1f4a80b2a275b9791a1ee4d430c1d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0689335f3df69126b55c037bce0555ac"><td class="memItemLeft" align="right" valign="top">virtual double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSSAGES_1_1CollectiveVariable.html#a0689335f3df69126b55c037bce0555ac">GetDifference</a> (double location) const </td></tr>
 <tr class="separator:a0689335f3df69126b55c037bce0555ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_methods_classSSAGES_1_1Serializable"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classSSAGES_1_1Serializable')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classSSAGES_1_1Serializable.html">SSAGES::Serializable</a></td></tr>
-<tr class="memitem:aa4bc8d0ce033a025b0baa7cedccd8ebd inherit pub_methods_classSSAGES_1_1Serializable"><td class="memItemLeft" align="right" valign="top">virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSSAGES_1_1Serializable.html#aa4bc8d0ce033a025b0baa7cedccd8ebd">Serialize</a> (Json::Value &amp;json) const =0</td></tr>
-<tr class="memdesc:aa4bc8d0ce033a025b0baa7cedccd8ebd inherit pub_methods_classSSAGES_1_1Serializable"><td class="mdescLeft">&#160;</td><td class="mdescRight">Serialize the class.  <a href="#aa4bc8d0ce033a025b0baa7cedccd8ebd">More...</a><br /></td></tr>
-<tr class="separator:aa4bc8d0ce033a025b0baa7cedccd8ebd inherit pub_methods_classSSAGES_1_1Serializable"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a29df19339b8f94609477e76b6081e075 inherit pub_methods_classSSAGES_1_1Serializable"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a29df19339b8f94609477e76b6081e075"></a>
-virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSSAGES_1_1Serializable.html#a29df19339b8f94609477e76b6081e075">~Serializable</a> ()</td></tr>
-<tr class="memdesc:a29df19339b8f94609477e76b6081e075 inherit pub_methods_classSSAGES_1_1Serializable"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor. <br /></td></tr>
-<tr class="separator:a29df19339b8f94609477e76b6081e075 inherit pub_methods_classSSAGES_1_1Serializable"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a6af09220d5c6d42369122e0b9f93f772"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classSSAGES_1_1CollectiveVariable.html">CollectiveVariable</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSSAGES_1_1CollectiveVariable.html#a6af09220d5c6d42369122e0b9f93f772">BuildCV</a> (const Json::Value &amp;json)</td></tr>
-<tr class="memdesc:a6af09220d5c6d42369122e0b9f93f772"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set up collective variable.  <a href="#a6af09220d5c6d42369122e0b9f93f772">More...</a><br /></td></tr>
-<tr class="separator:a6af09220d5c6d42369122e0b9f93f772"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab56eae0d888f3d5125566bfb9b5e21aa"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classSSAGES_1_1CollectiveVariable.html">CollectiveVariable</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSSAGES_1_1CollectiveVariable.html#ab56eae0d888f3d5125566bfb9b5e21aa">BuildCV</a> (const Json::Value &amp;json, const std::string &amp;path)</td></tr>
 <tr class="memdesc:ab56eae0d888f3d5125566bfb9b5e21aa"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set up collective variable.  <a href="#ab56eae0d888f3d5125566bfb9b5e21aa">More...</a><br /></td></tr>
 <tr class="separator:ab56eae0d888f3d5125566bfb9b5e21aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a523832b5ece7bb33af4941ecf2f626c7"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSSAGES_1_1CollectiveVariable.html#a523832b5ece7bb33af4941ecf2f626c7">BuildCV</a> (const Json::Value &amp;json, <a class="el" href="namespaceSSAGES.html#acddea47426ac0a643b048f870ddd2907">CVList</a> &amp;cvlist, const std::string &amp;path)</td></tr>
-<tr class="memdesc:a523832b5ece7bb33af4941ecf2f626c7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set up CV and add it to list of CVs.  <a href="#a523832b5ece7bb33af4941ecf2f626c7">More...</a><br /></td></tr>
-<tr class="separator:a523832b5ece7bb33af4941ecf2f626c7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
@@ -187,59 +173,8 @@ std::array&lt; double, 2 &gt;&#160;</td><td class="memItemRight" valign="bottom"
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Abstract class for a collective variable. </p>
 
-<p>Definition at line <a class="el" href="CollectiveVariable_8h_source.html#l00040">40</a> of file <a class="el" href="CollectiveVariable_8h_source.html">CollectiveVariable.h</a>.</p>
+<p>Definition at line <a class="el" href="CollectiveVariable_8h_source.html#l00039">39</a> of file <a class="el" href="CollectiveVariable_8h_source.html">CollectiveVariable.h</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a6af09220d5c6d42369122e0b9f93f772"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="classSSAGES_1_1CollectiveVariable.html">CollectiveVariable</a> * SSAGES::CollectiveVariable::BuildCV </td>
-          <td>(</td>
-          <td class="paramtype">const Json::Value &amp;&#160;</td>
-          <td class="paramname"><em>json</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Set up collective variable. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">json</td><td>JSON input value. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Pointer to the CV built by this function. <code>nullptr</code> in case of unknown error.</dd></dl>
-<p>Builds a CV from a JSON node. Returns a pointer to the built cv. If an unknown error is encountered, this function will return a <code>nullptr</code>, but generally it will throw a <a class="el" href="classSSAGES_1_1BuildException.html" title="Exception to be thrown when building the Driver fails. ">BuildException</a> on failure. </p><dl class="section warning"><dt>Warning</dt><dd>Object lifetime is the caller's responsibility. </dd></dl>
-
-<p>Definition at line <a class="el" href="CollectiveVariable_8cpp_source.html#l00044">44</a> of file <a class="el" href="CollectiveVariable_8cpp_source.html">CollectiveVariable.cpp</a>.</p>
-
-<p>Referenced by <a class="el" href="Driver_8h_source.html#l00174">SSAGES::Driver::BuildCVs()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    {</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="classSSAGES_1_1CollectiveVariable.html#a6af09220d5c6d42369122e0b9f93f772">BuildCV</a>(json, <span class="stringliteral">&quot;#/CVs&quot;</span>);</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    }</div>
-<div class="ttc" id="classSSAGES_1_1CollectiveVariable_html_a6af09220d5c6d42369122e0b9f93f772"><div class="ttname"><a href="classSSAGES_1_1CollectiveVariable.html#a6af09220d5c6d42369122e0b9f93f772">SSAGES::CollectiveVariable::BuildCV</a></div><div class="ttdeci">static CollectiveVariable * BuildCV(const Json::Value &amp;json)</div><div class="ttdoc">Set up collective variable. </div><div class="ttdef"><b>Definition:</b> <a href="CollectiveVariable_8cpp_source.html#l00044">CollectiveVariable.cpp:44</a></div></div>
-</div><!-- fragment -->
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classSSAGES_1_1CollectiveVariable_a6af09220d5c6d42369122e0b9f93f772_icgraph.png" border="0" usemap="#classSSAGES_1_1CollectiveVariable_a6af09220d5c6d42369122e0b9f93f772_icgraph" alt=""/></div>
-<map name="classSSAGES_1_1CollectiveVariable_a6af09220d5c6d42369122e0b9f93f772_icgraph" id="classSSAGES_1_1CollectiveVariable_a6af09220d5c6d42369122e0b9f93f772_icgraph">
-<area shape="rect" id="node2" href="classSSAGES_1_1Driver.html#acfe295161fe152ecf9bef5a9440a37cb" title="Build CVs. " alt="" coords="246,12,429,39"/></map>
-</div>
-</p>
-
-</div>
-</div>
 <a class="anchor" id="ab56eae0d888f3d5125566bfb9b5e21aa"></a>
 <div class="memitem">
 <div class="memproto">
@@ -281,381 +216,63 @@ Here is the caller graph for this function:</div>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Pointer to the CV built by this function. <code>nullptr</code> in case of unknown error.</dd></dl>
-<p>This function overloads <a class="el" href="classSSAGES_1_1CollectiveVariable.html#a6af09220d5c6d42369122e0b9f93f772" title="Set up collective variable. ">CollectiveVariable::BuildCV(const Json::Value&amp;)</a>. </p>
+<p>Builds a CV from a JSON node. Returns a pointer to the built cv. If an unknown error is encountered, this function will return a <code>nullptr</code>, but generally it will throw a <a class="el" href="classSSAGES_1_1BuildException.html" title="Exception to be thrown when building the Driver fails. ">BuildException</a> on failure. </p><dl class="section warning"><dt>Warning</dt><dd>Object lifetime is the caller's responsibility. </dd></dl>
 
-<p>Definition at line <a class="el" href="CollectiveVariable_8cpp_source.html#l00049">49</a> of file <a class="el" href="CollectiveVariable_8cpp_source.html">CollectiveVariable.cpp</a>.</p>
+<p>Definition at line <a class="el" href="CollectiveVariable_8cpp_source.html#l00041">41</a> of file <a class="el" href="CollectiveVariable_8cpp_source.html">CollectiveVariable.cpp</a>.</p>
 
-<p>References <a class="el" href="Requirement_8h_source.html#l00092">Json::Requirement::GetErrors()</a>, <a class="el" href="Requirement_8h_source.html#l00086">Json::Requirement::HasErrors()</a>, <a class="el" href="ObjectRequirement_8h_source.html#l00142">Json::ObjectRequirement::Parse()</a>, and <a class="el" href="ObjectRequirement_8h_source.html#l00239">Json::ObjectRequirement::Validate()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    {</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        <a class="code" href="classJson_1_1ObjectRequirement.html">ObjectRequirement</a> validator;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        Value schema;</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        Reader reader;</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        <a class="code" href="classSSAGES_1_1CollectiveVariable.html#a9e5f5006cfa10a9679ef1826393ea889">CollectiveVariable</a>* cv = <span class="keyword">nullptr</span>;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        <span class="comment">// Random device for seed generation. </span></div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        <span class="comment">// std::random_device rd;</span></div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        <span class="comment">// auto maxi = std::numeric_limits&lt;int&gt;::max();</span></div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        <span class="comment">// auto seed = json.get(&quot;seed&quot;, rd() % maxi).asUInt();</span></div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        <span class="comment">// Get move type. </span></div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        std::string type = json.get(<span class="stringliteral">&quot;type&quot;</span>, <span class="stringliteral">&quot;none&quot;</span>).asString();</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        <span class="keywordflow">if</span>(type == <span class="stringliteral">&quot;ParticleCoordinate&quot;</span>)</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        {</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;            reader.parse(JsonSchema::ParticleCoordinateCV, schema);</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;            validator.<a class="code" href="classJson_1_1ObjectRequirement.html#a4ed02ae1d612a5efba1688fcdd2df092">Parse</a>(schema, path);</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;            <span class="comment">// Validate inputs.</span></div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;            validator.<a class="code" href="classJson_1_1ObjectRequirement.html#a9ac3b920001a35bc70580035d8d802b7">Validate</a>(json, path);</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;            <span class="keywordflow">if</span>(validator.<a class="code" href="classJson_1_1Requirement.html#adfaec336a9f051d6f6b9a6d7f1d97b75">HasErrors</a>())</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;                <span class="keywordflow">throw</span> BuildException(validator.<a class="code" href="classJson_1_1Requirement.html#a60bc275c366eb59f192fa2e621268480">GetErrors</a>());</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;            <a class="code" href="namespaceSSAGES.html#afbb26053e292f94ea83b1c441ce6df74">Label</a> atomids;</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;            <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; <span class="keywordtype">id</span> : json[<span class="stringliteral">&quot;atom_ids&quot;</span>])</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;                atomids.push_back(<span class="keywordtype">id</span>.asInt());</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;            <span class="keyword">auto</span> indextype = json.get(<span class="stringliteral">&quot;dimension&quot;</span>,<span class="stringliteral">&quot;x&quot;</span>).asString();</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;            <a class="code" href="namespaceSSAGES.html#abea9456e00cb5995a3a8291ca21612ff">Dimension</a> index;</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;            <span class="keywordflow">if</span>(indextype == <span class="stringliteral">&quot;x&quot;</span>)</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;                index = Dimension::x;</div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;            <span class="keywordflow">else</span> <span class="keywordflow">if</span>(indextype == <span class="stringliteral">&quot;y&quot;</span>)</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;                index = Dimension::y;</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;            <span class="keywordflow">else</span> <span class="keywordflow">if</span>(indextype == <span class="stringliteral">&quot;z&quot;</span>)</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;                index = Dimension::z;</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;            <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;                <span class="keywordflow">throw</span> BuildException({<span class="stringliteral">&quot;Could not obtain ParticleCoordinate dimension specified.&quot;</span>});</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;            <span class="keyword">auto</span>* c = <span class="keyword">new</span> ParticleCoordinateCV(atomids, index);</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;            cv = <span class="keyword">static_cast&lt;</span><a class="code" href="classSSAGES_1_1CollectiveVariable.html#a9e5f5006cfa10a9679ef1826393ea889">CollectiveVariable</a>*<span class="keyword">&gt;</span>(c);</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        }</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        <span class="keywordflow">else</span> <span class="keywordflow">if</span>(type == <span class="stringliteral">&quot;ParticlePosition&quot;</span>)</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        {</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;            reader.parse(JsonSchema::ParticlePositionCV, schema);</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;            validator.<a class="code" href="classJson_1_1ObjectRequirement.html#a4ed02ae1d612a5efba1688fcdd2df092">Parse</a>(schema, path);</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;            <span class="comment">// Validate inputs.</span></div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;            validator.<a class="code" href="classJson_1_1ObjectRequirement.html#a9ac3b920001a35bc70580035d8d802b7">Validate</a>(json, path);</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;            <span class="keywordflow">if</span>(validator.<a class="code" href="classJson_1_1Requirement.html#adfaec336a9f051d6f6b9a6d7f1d97b75">HasErrors</a>())</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;                <span class="keywordflow">throw</span> BuildException(validator.<a class="code" href="classJson_1_1Requirement.html#a60bc275c366eb59f192fa2e621268480">GetErrors</a>());</div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;            </div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;            <a class="code" href="namespaceSSAGES.html#afbb26053e292f94ea83b1c441ce6df74">Label</a> atomids;</div>
-<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;            <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; <span class="keywordtype">id</span> : json[<span class="stringliteral">&quot;atom_ids&quot;</span>])</div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;                atomids.push_back(<span class="keywordtype">id</span>.asInt());</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;            </div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;            <a class="code" href="namespaceSSAGES.html#a630084a0a5e185e89e21b3735f8f8b2e">Vector3</a> position;</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;            position[0] = json[<span class="stringliteral">&quot;position&quot;</span>][0].asDouble();</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;            position[1] = json[<span class="stringliteral">&quot;position&quot;</span>][1].asDouble();</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;            position[2] = json[<span class="stringliteral">&quot;position&quot;</span>][2].asDouble();</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;            <span class="keyword">auto</span> fixx = json[<span class="stringliteral">&quot;fix&quot;</span>][0].asBool();</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;            <span class="keyword">auto</span> fixy = json[<span class="stringliteral">&quot;fix&quot;</span>][1].asBool();</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;            <span class="keyword">auto</span> fixz = json[<span class="stringliteral">&quot;fix&quot;</span>][2].asBool();</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;            <span class="keyword">auto</span>* c = <span class="keyword">new</span> ParticlePositionCV(atomids, position, fixx, fixy, fixz);</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;            cv = <span class="keyword">static_cast&lt;</span><a class="code" href="classSSAGES_1_1CollectiveVariable.html#a9e5f5006cfa10a9679ef1826393ea889">CollectiveVariable</a>*<span class="keyword">&gt;</span>(c);</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;        }</div>
-<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;        <span class="keywordflow">else</span> <span class="keywordflow">if</span>(type == <span class="stringliteral">&quot;Torsional&quot;</span>)</div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;        {</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;            reader.parse(JsonSchema::TorsionalCV, schema);</div>
-<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;            validator.<a class="code" href="classJson_1_1ObjectRequirement.html#a4ed02ae1d612a5efba1688fcdd2df092">Parse</a>(schema, path);</div>
-<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;</div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;            <span class="comment">// Validate inputs.</span></div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;            validator.<a class="code" href="classJson_1_1ObjectRequirement.html#a9ac3b920001a35bc70580035d8d802b7">Validate</a>(json, path);</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;            <span class="keywordflow">if</span>(validator.<a class="code" href="classJson_1_1Requirement.html#adfaec336a9f051d6f6b9a6d7f1d97b75">HasErrors</a>())</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;                <span class="keywordflow">throw</span> BuildException(validator.<a class="code" href="classJson_1_1Requirement.html#a60bc275c366eb59f192fa2e621268480">GetErrors</a>());</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;            std::vector&lt;int&gt; atomids;</div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;            <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; s : json[<span class="stringliteral">&quot;atom_ids&quot;</span>])</div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;                atomids.push_back(s.asInt());</div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;</div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;            <span class="keyword">auto</span> periodic = json.get(<span class="stringliteral">&quot;periodic&quot;</span>, <span class="keyword">true</span>).asBool();</div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;</div>
-<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;            <span class="keyword">auto</span>* c = <span class="keyword">new</span> TorsionalCV(atomids[0], atomids[1], atomids[2], atomids[3], periodic);</div>
-<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;</div>
-<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;            cv = <span class="keyword">static_cast&lt;</span><a class="code" href="classSSAGES_1_1CollectiveVariable.html#a9e5f5006cfa10a9679ef1826393ea889">CollectiveVariable</a>*<span class="keyword">&gt;</span>(c);</div>
-<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;        }</div>
-<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;        <span class="keywordflow">else</span> <span class="keywordflow">if</span>(type == <span class="stringliteral">&quot;ParticleSeparation&quot;</span>)</div>
-<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;        {</div>
-<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;            reader.parse(JsonSchema::ParticleSeparationCV, schema);</div>
-<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;            validator.<a class="code" href="classJson_1_1ObjectRequirement.html#a4ed02ae1d612a5efba1688fcdd2df092">Parse</a>(schema, path);</div>
-<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;</div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;            <span class="comment">// Validate inputs.</span></div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;            validator.<a class="code" href="classJson_1_1ObjectRequirement.html#a9ac3b920001a35bc70580035d8d802b7">Validate</a>(json, path);</div>
-<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;            <span class="keywordflow">if</span>(validator.<a class="code" href="classJson_1_1Requirement.html#adfaec336a9f051d6f6b9a6d7f1d97b75">HasErrors</a>())</div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;                <span class="keywordflow">throw</span> BuildException(validator.<a class="code" href="classJson_1_1Requirement.html#a60bc275c366eb59f192fa2e621268480">GetErrors</a>());</div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;            </div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;            std::vector&lt;int&gt; group1, group2;</div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;            </div>
-<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;            <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; s : json[<span class="stringliteral">&quot;group1&quot;</span>])</div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;                group1.push_back(s.asInt());</div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;</div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;            <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; s : json[<span class="stringliteral">&quot;group2&quot;</span>])</div>
-<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;                group2.push_back(s.asInt());</div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;</div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;            ParticleSeparationCV* c;</div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;            <span class="keywordflow">if</span>(json.isMember(<span class="stringliteral">&quot;dimension&quot;</span>))</div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;            {</div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;                <span class="keyword">auto</span> fixx = json[<span class="stringliteral">&quot;dimension&quot;</span>][0].asBool();</div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;                <span class="keyword">auto</span> fixy = json[<span class="stringliteral">&quot;dimension&quot;</span>][1].asBool();</div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;                <span class="keyword">auto</span> fixz = json[<span class="stringliteral">&quot;dimension&quot;</span>][2].asBool();</div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;</div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;                c = <span class="keyword">new</span> ParticleSeparationCV(group1, group2, fixx, fixy, fixz);</div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;</div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;            }</div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;            <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;            {</div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;                c = <span class="keyword">new</span> ParticleSeparationCV(group1, group2);</div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;            }</div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;</div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;            cv = <span class="keyword">static_cast&lt;</span><a class="code" href="classSSAGES_1_1CollectiveVariable.html#a9e5f5006cfa10a9679ef1826393ea889">CollectiveVariable</a>*<span class="keyword">&gt;</span>(c);</div>
-<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;        }</div>
-<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;        <span class="keywordflow">else</span> <span class="keywordflow">if</span>(type == <span class="stringliteral">&quot;Angle&quot;</span>)</div>
-<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;        {</div>
-<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;            reader.parse(JsonSchema::AngleCV, schema);</div>
-<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;            validator.<a class="code" href="classJson_1_1ObjectRequirement.html#a4ed02ae1d612a5efba1688fcdd2df092">Parse</a>(schema, path);</div>
-<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;</div>
-<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;            <span class="comment">// Validate inputs.</span></div>
-<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;            validator.<a class="code" href="classJson_1_1ObjectRequirement.html#a9ac3b920001a35bc70580035d8d802b7">Validate</a>(json, path);</div>
-<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;            <span class="keywordflow">if</span>(validator.<a class="code" href="classJson_1_1Requirement.html#adfaec336a9f051d6f6b9a6d7f1d97b75">HasErrors</a>())</div>
-<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;                <span class="keywordflow">throw</span> BuildException(validator.<a class="code" href="classJson_1_1Requirement.html#a60bc275c366eb59f192fa2e621268480">GetErrors</a>());</div>
-<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;            </div>
-<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;            std::vector&lt;int&gt; atomids;</div>
-<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;            <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; s : json[<span class="stringliteral">&quot;atom_ids&quot;</span>])</div>
-<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;                atomids.push_back(s.asInt());</div>
-<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;</div>
-<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;            <span class="keyword">auto</span>* c = <span class="keyword">new</span> AngleCV(atomids[0], atomids[1], atomids[2]);</div>
-<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;</div>
-<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;            cv = <span class="keyword">static_cast&lt;</span><a class="code" href="classSSAGES_1_1CollectiveVariable.html#a9e5f5006cfa10a9679ef1826393ea889">CollectiveVariable</a>*<span class="keyword">&gt;</span>(c);</div>
-<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;        }</div>
-<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;        <span class="keywordflow">else</span> <span class="keywordflow">if</span>(type == <span class="stringliteral">&quot;GyrationTensor&quot;</span>)</div>
-<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;        {</div>
-<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;            reader.parse(JsonSchema::GyrationTensorCV, schema); </div>
-<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;            validator.<a class="code" href="classJson_1_1ObjectRequirement.html#a4ed02ae1d612a5efba1688fcdd2df092">Parse</a>(schema, path); </div>
-<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;</div>
-<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;            <span class="comment">// Validate inputs. </span></div>
-<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;            validator.<a class="code" href="classJson_1_1ObjectRequirement.html#a9ac3b920001a35bc70580035d8d802b7">Validate</a>(json, path); </div>
-<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;            <span class="keywordflow">if</span>(validator.<a class="code" href="classJson_1_1Requirement.html#adfaec336a9f051d6f6b9a6d7f1d97b75">HasErrors</a>())</div>
-<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;                <span class="keywordflow">throw</span> BuildException(validator.<a class="code" href="classJson_1_1Requirement.html#a60bc275c366eb59f192fa2e621268480">GetErrors</a>());</div>
-<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;</div>
-<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;            std::vector&lt;int&gt; atomids; </div>
-<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;            <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; s : json[<span class="stringliteral">&quot;atom_ids&quot;</span>])</div>
-<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;                atomids.push_back(s.asInt());</div>
-<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;</div>
-<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;            GyrationTensor component = Rg;</div>
-<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;            <span class="keyword">auto</span> comp = json[<span class="stringliteral">&quot;component&quot;</span>].asString();</div>
-<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;            </div>
-<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;            <span class="keywordflow">if</span>(comp == <span class="stringliteral">&quot;Rg&quot;</span>)</div>
-<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;                component = Rg; </div>
-<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;            <span class="keywordflow">else</span> <span class="keywordflow">if</span>(comp == <span class="stringliteral">&quot;principal1&quot;</span>)</div>
-<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;                component = principal1;</div>
-<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;            <span class="keywordflow">else</span> <span class="keywordflow">if</span>(comp == <span class="stringliteral">&quot;principal2&quot;</span>)</div>
-<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;                component = principal2;</div>
-<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;            <span class="keywordflow">else</span> <span class="keywordflow">if</span>(comp == <span class="stringliteral">&quot;principal3&quot;</span>)</div>
-<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;                component = principal3;</div>
-<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;            <span class="keywordflow">else</span> <span class="keywordflow">if</span>(comp == <span class="stringliteral">&quot;asphericity&quot;</span>)</div>
-<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;                component = asphericity;</div>
-<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;            <span class="keywordflow">else</span> <span class="keywordflow">if</span>(comp == <span class="stringliteral">&quot;acylindricity&quot;</span>)</div>
-<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;                component = acylindricity;</div>
-<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;            <span class="keywordflow">else</span> <span class="keywordflow">if</span>(comp == <span class="stringliteral">&quot;shapeaniso&quot;</span>)</div>
-<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;                component = shapeaniso;</div>
-<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;</div>
-<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;            <span class="keyword">auto</span>* c = <span class="keyword">new</span> GyrationTensorCV(atomids, component);</div>
-<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;            cv = <span class="keyword">static_cast&lt;</span><a class="code" href="classSSAGES_1_1CollectiveVariable.html#a9e5f5006cfa10a9679ef1826393ea889">CollectiveVariable</a>*<span class="keyword">&gt;</span>(c);</div>
-<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;        }</div>
-<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;        <span class="keywordflow">else</span> <span class="keywordflow">if</span>(type == <span class="stringliteral">&quot;RMSD&quot;</span>)</div>
-<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;        {</div>
-<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;            reader.parse(JsonSchema::RMSDCV, schema);</div>
-<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;            validator.<a class="code" href="classJson_1_1ObjectRequirement.html#a4ed02ae1d612a5efba1688fcdd2df092">Parse</a>(schema, path);</div>
-<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;</div>
-<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;            <span class="comment">// Validate inputs.</span></div>
-<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;            validator.<a class="code" href="classJson_1_1ObjectRequirement.html#a9ac3b920001a35bc70580035d8d802b7">Validate</a>(json, path);</div>
-<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;            <span class="keywordflow">if</span>(validator.<a class="code" href="classJson_1_1Requirement.html#adfaec336a9f051d6f6b9a6d7f1d97b75">HasErrors</a>())</div>
-<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;                <span class="keywordflow">throw</span> BuildException(validator.<a class="code" href="classJson_1_1Requirement.html#a60bc275c366eb59f192fa2e621268480">GetErrors</a>());</div>
-<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;            </div>
-<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;            std::vector&lt;int&gt; atomids;</div>
-<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;            <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; s : json[<span class="stringliteral">&quot;atom ids&quot;</span>])</div>
-<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;                atomids.push_back(s.asInt());</div>
-<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;            <span class="keyword">auto</span> reference = json.get(<span class="stringliteral">&quot;reference&quot;</span>,<span class="stringliteral">&quot; &quot;</span>).asString(); </div>
-<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;</div>
-<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;            <span class="keyword">auto</span>* c = <span class="keyword">new</span> RMSDCV(atomids, reference, json.get(<span class="stringliteral">&quot;use_range&quot;</span>, <span class="keyword">false</span>).asBool());</div>
-<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;            </div>
-<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;            cv = <span class="keyword">static_cast&lt;</span><a class="code" href="classSSAGES_1_1CollectiveVariable.html#a9e5f5006cfa10a9679ef1826393ea889">CollectiveVariable</a>*<span class="keyword">&gt;</span>(c);</div>
-<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160;        }</div>
-<div class="line"><a name="l00249"></a><span class="lineno">  249</span>&#160;        <span class="keywordflow">else</span> <span class="keywordflow">if</span>(type == <span class="stringliteral">&quot;RouseMode&quot;</span>)</div>
-<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;        {</div>
-<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;            reader.parse(JsonSchema::RouseModeCV, schema);</div>
-<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;            validator.<a class="code" href="classJson_1_1ObjectRequirement.html#a4ed02ae1d612a5efba1688fcdd2df092">Parse</a>(schema, path);</div>
-<div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;</div>
-<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;            <span class="comment">// Validate inputs.</span></div>
-<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;            validator.<a class="code" href="classJson_1_1ObjectRequirement.html#a9ac3b920001a35bc70580035d8d802b7">Validate</a>(json, path);</div>
-<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;            <span class="keywordflow">if</span>(validator.<a class="code" href="classJson_1_1Requirement.html#adfaec336a9f051d6f6b9a6d7f1d97b75">HasErrors</a>())</div>
-<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;                <span class="keywordflow">throw</span> BuildException(validator.<a class="code" href="classJson_1_1Requirement.html#a60bc275c366eb59f192fa2e621268480">GetErrors</a>());</div>
-<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;            </div>
-<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;            std::vector&lt;Label&gt; groups;</div>
-<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;            <span class="keywordflow">for</span> (<span class="keyword">auto</span>&amp; group : json[<span class="stringliteral">&quot;groups&quot;</span>]) {</div>
-<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;                groups.push_back({});</div>
-<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;                <span class="keywordflow">for</span> (<span class="keyword">auto</span>&amp; <span class="keywordtype">id</span> : group) {</div>
-<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;                    groups.back().push_back(<span class="keywordtype">id</span>.asInt());</div>
-<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;                }</div>
-<div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;            }</div>
-<div class="line"><a name="l00266"></a><span class="lineno">  266</span>&#160;            <span class="keyword">auto</span> mode = json.get(<span class="stringliteral">&quot;mode&quot;</span>,0).asInt();</div>
-<div class="line"><a name="l00267"></a><span class="lineno">  267</span>&#160;</div>
-<div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;            <span class="keyword">auto</span>* c = <span class="keyword">new</span> RouseModeCV( groups, mode);</div>
-<div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;            </div>
-<div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;            cv = <span class="keyword">static_cast&lt;</span><a class="code" href="classSSAGES_1_1CollectiveVariable.html#a9e5f5006cfa10a9679ef1826393ea889">CollectiveVariable</a>*<span class="keyword">&gt;</span>(c);</div>
-<div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;        }</div>
-<div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;        <span class="keywordflow">else</span> <span class="keywordflow">if</span>(type == <span class="stringliteral">&quot;CoordinationNumber&quot;</span>)</div>
-<div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;        {</div>
-<div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;            reader.parse(JsonSchema::CoordinationNumberCV, schema);</div>
-<div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;            validator.<a class="code" href="classJson_1_1ObjectRequirement.html#a4ed02ae1d612a5efba1688fcdd2df092">Parse</a>(schema, path);</div>
-<div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;</div>
-<div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;            <span class="comment">// Validate inputs.</span></div>
-<div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;            validator.<a class="code" href="classJson_1_1ObjectRequirement.html#a9ac3b920001a35bc70580035d8d802b7">Validate</a>(json, path);</div>
-<div class="line"><a name="l00279"></a><span class="lineno">  279</span>&#160;            <span class="keywordflow">if</span>(validator.<a class="code" href="classJson_1_1Requirement.html#adfaec336a9f051d6f6b9a6d7f1d97b75">HasErrors</a>())</div>
-<div class="line"><a name="l00280"></a><span class="lineno">  280</span>&#160;                <span class="keywordflow">throw</span> BuildException(validator.<a class="code" href="classJson_1_1Requirement.html#a60bc275c366eb59f192fa2e621268480">GetErrors</a>());</div>
-<div class="line"><a name="l00281"></a><span class="lineno">  281</span>&#160;            </div>
-<div class="line"><a name="l00282"></a><span class="lineno">  282</span>&#160;            std::vector&lt;int&gt; group1, group2;</div>
-<div class="line"><a name="l00283"></a><span class="lineno">  283</span>&#160;            </div>
-<div class="line"><a name="l00284"></a><span class="lineno">  284</span>&#160;            <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; s : json[<span class="stringliteral">&quot;group1&quot;</span>])</div>
-<div class="line"><a name="l00285"></a><span class="lineno">  285</span>&#160;                group1.push_back(s.asInt());</div>
-<div class="line"><a name="l00286"></a><span class="lineno">  286</span>&#160;</div>
-<div class="line"><a name="l00287"></a><span class="lineno">  287</span>&#160;            <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; s : json[<span class="stringliteral">&quot;group2&quot;</span>])</div>
-<div class="line"><a name="l00288"></a><span class="lineno">  288</span>&#160;                group2.push_back(s.asInt());</div>
-<div class="line"><a name="l00289"></a><span class="lineno">  289</span>&#160;            </div>
-<div class="line"><a name="l00290"></a><span class="lineno">  290</span>&#160;            <span class="keyword">auto</span>* c = <span class="keyword">new</span> CoordinationNumberCV(group1, group2, <a class="code" href="classSSAGES_1_1SwitchingFunction.html#a5104b20aa59353fc7eda7256176cef62">SwitchingFunction::Build</a>(json[<span class="stringliteral">&quot;switching&quot;</span>]));</div>
-<div class="line"><a name="l00291"></a><span class="lineno">  291</span>&#160;            cv = <span class="keyword">static_cast&lt;</span><a class="code" href="classSSAGES_1_1CollectiveVariable.html#a9e5f5006cfa10a9679ef1826393ea889">CollectiveVariable</a>*<span class="keyword">&gt;</span>(c);</div>
-<div class="line"><a name="l00292"></a><span class="lineno">  292</span>&#160;        }</div>
-<div class="line"><a name="l00293"></a><span class="lineno">  293</span>&#160;        <span class="keywordflow">else</span> <span class="keywordflow">if</span>(type == <span class="stringliteral">&quot;BoxVolume&quot;</span>)</div>
-<div class="line"><a name="l00294"></a><span class="lineno">  294</span>&#160;        {</div>
-<div class="line"><a name="l00295"></a><span class="lineno">  295</span>&#160;            reader.parse(JsonSchema::BoxVolumeCV, schema);</div>
-<div class="line"><a name="l00296"></a><span class="lineno">  296</span>&#160;            validator.<a class="code" href="classJson_1_1ObjectRequirement.html#a4ed02ae1d612a5efba1688fcdd2df092">Parse</a>(schema, path);</div>
-<div class="line"><a name="l00297"></a><span class="lineno">  297</span>&#160;</div>
-<div class="line"><a name="l00298"></a><span class="lineno">  298</span>&#160;            <span class="comment">// Validate inputs.</span></div>
-<div class="line"><a name="l00299"></a><span class="lineno">  299</span>&#160;            validator.<a class="code" href="classJson_1_1ObjectRequirement.html#a9ac3b920001a35bc70580035d8d802b7">Validate</a>(json, path);</div>
-<div class="line"><a name="l00300"></a><span class="lineno">  300</span>&#160;            <span class="keywordflow">if</span>(validator.<a class="code" href="classJson_1_1Requirement.html#adfaec336a9f051d6f6b9a6d7f1d97b75">HasErrors</a>())</div>
-<div class="line"><a name="l00301"></a><span class="lineno">  301</span>&#160;                <span class="keywordflow">throw</span> BuildException(validator.<a class="code" href="classJson_1_1Requirement.html#a60bc275c366eb59f192fa2e621268480">GetErrors</a>());</div>
-<div class="line"><a name="l00302"></a><span class="lineno">  302</span>&#160;</div>
-<div class="line"><a name="l00303"></a><span class="lineno">  303</span>&#160;            <span class="keyword">auto</span>* c = <span class="keyword">new</span> BoxVolumeCV();</div>
-<div class="line"><a name="l00304"></a><span class="lineno">  304</span>&#160;            cv = <span class="keyword">static_cast&lt;</span><a class="code" href="classSSAGES_1_1CollectiveVariable.html#a9e5f5006cfa10a9679ef1826393ea889">CollectiveVariable</a>*<span class="keyword">&gt;</span>(c);</div>
-<div class="line"><a name="l00305"></a><span class="lineno">  305</span>&#160;        }</div>
-<div class="line"><a name="l00306"></a><span class="lineno">  306</span>&#160;        <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00307"></a><span class="lineno">  307</span>&#160;        {</div>
-<div class="line"><a name="l00308"></a><span class="lineno">  308</span>&#160;            <span class="keywordflow">throw</span> BuildException({path + <span class="stringliteral">&quot;: Unknown CV type specified.&quot;</span>+type+<span class="stringliteral">&quot; is not a valid type!&quot;</span>});</div>
-<div class="line"><a name="l00309"></a><span class="lineno">  309</span>&#160;        }</div>
-<div class="line"><a name="l00310"></a><span class="lineno">  310</span>&#160;</div>
-<div class="line"><a name="l00311"></a><span class="lineno">  311</span>&#160;        <span class="keywordflow">return</span> cv;</div>
-<div class="line"><a name="l00312"></a><span class="lineno">  312</span>&#160;    }</div>
-<div class="ttc" id="namespaceSSAGES_html_afbb26053e292f94ea83b1c441ce6df74"><div class="ttname"><a href="namespaceSSAGES.html#afbb26053e292f94ea83b1c441ce6df74">SSAGES::Label</a></div><div class="ttdeci">std::vector&lt; int &gt; Label</div><div class="ttdoc">List of integers. </div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00048">types.h:48</a></div></div>
-<div class="ttc" id="classJson_1_1Requirement_html_adfaec336a9f051d6f6b9a6d7f1d97b75"><div class="ttname"><a href="classJson_1_1Requirement.html#adfaec336a9f051d6f6b9a6d7f1d97b75">Json::Requirement::HasErrors</a></div><div class="ttdeci">bool HasErrors()</div><div class="ttdoc">Check if errors have occured. </div><div class="ttdef"><b>Definition:</b> <a href="Requirement_8h_source.html#l00086">Requirement.h:86</a></div></div>
-<div class="ttc" id="classSSAGES_1_1SwitchingFunction_html_a5104b20aa59353fc7eda7256176cef62"><div class="ttname"><a href="classSSAGES_1_1SwitchingFunction.html#a5104b20aa59353fc7eda7256176cef62">SSAGES::SwitchingFunction::Build</a></div><div class="ttdeci">static SwitchingFunction Build(const Json::Value &amp;json)</div><div class="ttdoc">Build SwitchingFunction from JSON value. </div><div class="ttdef"><b>Definition:</b> <a href="CoordinationNumberCV_8h_source.html#l00062">CoordinationNumberCV.h:62</a></div></div>
-<div class="ttc" id="classJson_1_1ObjectRequirement_html_a4ed02ae1d612a5efba1688fcdd2df092"><div class="ttname"><a href="classJson_1_1ObjectRequirement.html#a4ed02ae1d612a5efba1688fcdd2df092">Json::ObjectRequirement::Parse</a></div><div class="ttdeci">virtual void Parse(Value json, const std::string &amp;path) override</div><div class="ttdoc">Parse JSON value to generate Requirement(s). </div><div class="ttdef"><b>Definition:</b> <a href="ObjectRequirement_8h_source.html#l00142">ObjectRequirement.h:142</a></div></div>
-<div class="ttc" id="namespaceSSAGES_html_abea9456e00cb5995a3a8291ca21612ff"><div class="ttname"><a href="namespaceSSAGES.html#abea9456e00cb5995a3a8291ca21612ff">SSAGES::Dimension</a></div><div class="ttdeci">Dimension</div><div class="ttdoc">Enum for dimension. </div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00054">types.h:54</a></div></div>
-<div class="ttc" id="classJson_1_1Requirement_html_a60bc275c366eb59f192fa2e621268480"><div class="ttname"><a href="classJson_1_1Requirement.html#a60bc275c366eb59f192fa2e621268480">Json::Requirement::GetErrors</a></div><div class="ttdeci">std::vector&lt; std::string &gt; GetErrors()</div><div class="ttdoc">Get list of error messages. </div><div class="ttdef"><b>Definition:</b> <a href="Requirement_8h_source.html#l00092">Requirement.h:92</a></div></div>
-<div class="ttc" id="classJson_1_1ObjectRequirement_html"><div class="ttname"><a href="classJson_1_1ObjectRequirement.html">Json::ObjectRequirement</a></div><div class="ttdoc">Requirements on an object. </div><div class="ttdef"><b>Definition:</b> <a href="ObjectRequirement_8h_source.html#l00046">ObjectRequirement.h:46</a></div></div>
-<div class="ttc" id="namespaceSSAGES_html_a630084a0a5e185e89e21b3735f8f8b2e"><div class="ttname"><a href="namespaceSSAGES.html#a630084a0a5e185e89e21b3735f8f8b2e">SSAGES::Vector3</a></div><div class="ttdeci">Eigen::Vector3d Vector3</div><div class="ttdoc">Three-dimensional vector. </div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00033">types.h:33</a></div></div>
-<div class="ttc" id="classSSAGES_1_1CollectiveVariable_html_a9e5f5006cfa10a9679ef1826393ea889"><div class="ttname"><a href="classSSAGES_1_1CollectiveVariable.html#a9e5f5006cfa10a9679ef1826393ea889">SSAGES::CollectiveVariable::CollectiveVariable</a></div><div class="ttdeci">CollectiveVariable()</div><div class="ttdoc">Constructor. </div><div class="ttdef"><b>Definition:</b> <a href="CollectiveVariable_8h_source.html#l00056">CollectiveVariable.h:56</a></div></div>
-<div class="ttc" id="classJson_1_1ObjectRequirement_html_a9ac3b920001a35bc70580035d8d802b7"><div class="ttname"><a href="classJson_1_1ObjectRequirement.html#a9ac3b920001a35bc70580035d8d802b7">Json::ObjectRequirement::Validate</a></div><div class="ttdeci">virtual void Validate(const Value &amp;json, const std::string &amp;path) override</div><div class="ttdoc">Validate JSON value. </div><div class="ttdef"><b>Definition:</b> <a href="ObjectRequirement_8h_source.html#l00239">ObjectRequirement.h:239</a></div></div>
+<p>References <a class="el" href="AlphaRMSDCV_8h_source.html#l00205">SSAGES::AlphaRMSDCV::Build()</a>, <a class="el" href="AntiBetaRMSDCV_8h_source.html#l00220">SSAGES::AntiBetaRMSDCV::Build()</a>, and <a class="el" href="ParallelBetaRMSDCV_8h_source.html#l00221">SSAGES::ParallelBetaRMSDCV::Build()</a>.</p>
+
+<p>Referenced by <a class="el" href="ResourceHandler_8cpp_source.html#l00054">SSAGES::ResourceHandler::Build()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    {</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;        <span class="comment">// Get CV type. </span></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        <span class="keyword">auto</span> type = json.get(<span class="stringliteral">&quot;type&quot;</span>, <span class="stringliteral">&quot;none&quot;</span>).asString();</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        <span class="keywordflow">if</span>(type == <span class="stringliteral">&quot;Angle&quot;</span>)</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;            <span class="keywordflow">return</span> AngleCV::Build(json, path);</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        <span class="keywordflow">else</span> <span class="keywordflow">if</span>(type == <span class="stringliteral">&quot;BoxVolume&quot;</span>)</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;            <span class="keywordflow">return</span> BoxVolumeCV::Build(json, path);</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        <span class="keywordflow">else</span> <span class="keywordflow">if</span>(type == <span class="stringliteral">&quot;GyrationTensor&quot;</span>)</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;            <span class="keywordflow">return</span> GyrationTensorCV::Build(json, path);</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;        <span class="keywordflow">else</span> <span class="keywordflow">if</span>(type == <span class="stringliteral">&quot;Pairwise&quot;</span>)</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;            <span class="keywordflow">return</span> PairwiseCV::Build(json, path);</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        <span class="keywordflow">else</span> <span class="keywordflow">if</span>(type == <span class="stringliteral">&quot;ParticleCoordinate&quot;</span>)</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;            <span class="keywordflow">return</span> ParticleCoordinateCV::Build(json, path);</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        <span class="keywordflow">else</span> <span class="keywordflow">if</span>(type == <span class="stringliteral">&quot;ParticlePosition&quot;</span>)</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;            <span class="keywordflow">return</span> ParticlePositionCV::Build(json, path);</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        <span class="keywordflow">else</span> <span class="keywordflow">if</span>(type == <span class="stringliteral">&quot;ParticleSeparation&quot;</span>)</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;            <span class="keywordflow">return</span> ParticleSeparationCV::Build(json, path);</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        <span class="keywordflow">else</span> <span class="keywordflow">if</span>(type == <span class="stringliteral">&quot;RouseMode&quot;</span>)</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;            <span class="keywordflow">return</span> RouseModeCV::Build(json, path);</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        <span class="keywordflow">else</span> <span class="keywordflow">if</span>(type == <span class="stringliteral">&quot;Torsional&quot;</span>)</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;            <span class="keywordflow">return</span> TorsionalCV::Build(json, path);</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        <span class="keywordflow">else</span> <span class="keywordflow">if</span> (type == <span class="stringliteral">&quot;AlphaRMSD&quot;</span>)</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="classSSAGES_1_1AlphaRMSDCV.html#a927dbccb0136c844a5b1cc8b2e74ecbd">AlphaRMSDCV::Build</a>(json, path);</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        <span class="keywordflow">else</span> <span class="keywordflow">if</span> (type == <span class="stringliteral">&quot;ParallelBetaRMSD&quot;</span>)</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="classSSAGES_1_1ParallelBetaRMSDCV.html#ad4c42c1bddc74fc312517ad13526c5cc">ParallelBetaRMSDCV::Build</a>(json, path);</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;        <span class="keywordflow">else</span> <span class="keywordflow">if</span> (type == <span class="stringliteral">&quot;AntiBetaRMSD&quot;</span>)</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="classSSAGES_1_1AntiBetaRMSDCV.html#a4153e7b2aa827ac6367ec6374f986370">AntiBetaRMSDCV::Build</a>(json, path);</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;            <span class="keywordflow">throw</span> std::invalid_argument(path + <span class="stringliteral">&quot;: Unknown CV type specified.&quot;</span>);</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    }</div>
+<div class="ttc" id="classSSAGES_1_1AntiBetaRMSDCV_html_a4153e7b2aa827ac6367ec6374f986370"><div class="ttname"><a href="classSSAGES_1_1AntiBetaRMSDCV.html#a4153e7b2aa827ac6367ec6374f986370">SSAGES::AntiBetaRMSDCV::Build</a></div><div class="ttdeci">static AntiBetaRMSDCV * Build(const Json::Value &amp;json, const std::string &amp;path)</div><div class="ttdoc">Set up collective variable. </div><div class="ttdef"><b>Definition:</b> <a href="AntiBetaRMSDCV_8h_source.html#l00220">AntiBetaRMSDCV.h:220</a></div></div>
+<div class="ttc" id="classSSAGES_1_1AlphaRMSDCV_html_a927dbccb0136c844a5b1cc8b2e74ecbd"><div class="ttname"><a href="classSSAGES_1_1AlphaRMSDCV.html#a927dbccb0136c844a5b1cc8b2e74ecbd">SSAGES::AlphaRMSDCV::Build</a></div><div class="ttdeci">static AlphaRMSDCV * Build(const Json::Value &amp;json, const std::string &amp;path)</div><div class="ttdoc">Set up collective variable. </div><div class="ttdef"><b>Definition:</b> <a href="AlphaRMSDCV_8h_source.html#l00205">AlphaRMSDCV.h:205</a></div></div>
+<div class="ttc" id="classSSAGES_1_1ParallelBetaRMSDCV_html_ad4c42c1bddc74fc312517ad13526c5cc"><div class="ttname"><a href="classSSAGES_1_1ParallelBetaRMSDCV.html#ad4c42c1bddc74fc312517ad13526c5cc">SSAGES::ParallelBetaRMSDCV::Build</a></div><div class="ttdeci">static ParallelBetaRMSDCV * Build(const Json::Value &amp;json, const std::string &amp;path)</div><div class="ttdoc">Set up collective variable. </div><div class="ttdef"><b>Definition:</b> <a href="ParallelBetaRMSDCV_8h_source.html#l00221">ParallelBetaRMSDCV.h:221</a></div></div>
 </div><!-- fragment -->
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classSSAGES_1_1CollectiveVariable_ab56eae0d888f3d5125566bfb9b5e21aa_cgraph.png" border="0" usemap="#classSSAGES_1_1CollectiveVariable_ab56eae0d888f3d5125566bfb9b5e21aa_cgraph" alt=""/></div>
 <map name="classSSAGES_1_1CollectiveVariable_ab56eae0d888f3d5125566bfb9b5e21aa_cgraph" id="classSSAGES_1_1CollectiveVariable_ab56eae0d888f3d5125566bfb9b5e21aa_cgraph">
-<area shape="rect" id="node2" href="classJson_1_1Requirement.html#a60bc275c366eb59f192fa2e621268480" title="Get list of error messages. " alt="" coords="479,5,619,46"/><area shape="rect" id="node3" href="classJson_1_1Requirement.html#adfaec336a9f051d6f6b9a6d7f1d97b75" title="Check if errors have occured. " alt="" coords="479,70,619,111"/><area shape="rect" id="node4" href="classJson_1_1ObjectRequirement.html#a4ed02ae1d612a5efba1688fcdd2df092" title="Parse JSON value to generate Requirement(s). " alt="" coords="245,494,416,535"/><area shape="rect" id="node12" href="classJson_1_1ObjectRequirement.html#a9ac3b920001a35bc70580035d8d802b7" title="Validate JSON value. " alt="" coords="245,189,416,230"/><area shape="rect" id="node5" href="classJson_1_1RequirementLoader.html#a82857d029b7ebfeb315f5b1b32401291" title="Extended Requirement loader. " alt="" coords="464,462,635,503"/><area shape="rect" id="node6" href="classJson_1_1RequirementLoader.html#aeb1344919deda4bd8b8aa8a00cb50390" title="Load specific requirement. " alt="" coords="464,527,635,569"/><area shape="rect" id="node7" href="classJson_1_1ObjectRequirement.html#a4f2e76636df4f7b153aaac02a1b05e4f" title="Reset Requirement. " alt="" coords="464,593,635,634"/><area shape="rect" id="node8" href="classJson_1_1ObjectRequirement.html#aa8181c37cbe67db098bc2b82cdea71ef" title="Clear errors on all Requirements. " alt="" coords="683,559,853,601"/><area shape="rect" id="node10" href="classJson_1_1ObjectRequirement.html#a4fc797684496f4f0381d1388877c133d" title="Clear notices on all Requirements. " alt="" coords="683,625,853,666"/><area shape="rect" id="node9" href="classJson_1_1Requirement.html#ace71ebbbcc885f0c4c391a3807c80f33" title="Clear list of error messages. " alt="" coords="902,559,1042,601"/><area shape="rect" id="node11" href="classJson_1_1Requirement.html#a8a8a4020e4955be56dcacf4727ae5bc3" title="Clear list of notice messages. " alt="" coords="902,625,1042,666"/><area shape="rect" id="node13" href="classJson_1_1Requirement.html#a46a0056414100386541cd1cb899e0030" title="Get list of notices. " alt="" coords="479,135,619,177"/><area shape="rect" id="node14" href="classJson_1_1Requirement.html#ad407cff3cc37295c3b2a7ebe31798548" title="Check if notices have been queued. " alt="" coords="479,201,619,242"/><area shape="rect" id="node15" href="classJson_1_1Requirement.html#adeb9efa6cf271d9cea0599ff2d458a08" title="Add error to list of error messages. " alt="" coords="479,266,619,307"/><area shape="rect" id="node16" href="classJson_1_1Requirement.html#a00feadb29fa33f4f2cca7362f12aaed4" title="Add message to list of notices. " alt="" coords="479,331,619,373"/><area shape="rect" id="node17" href="classJson_1_1Requirement.html#aa97494b642414d00482745a0d5b2c2c3" title="Validate that JSON value meets requirements. " alt="" coords="479,397,619,438"/></map>
+<area shape="rect" id="node2" href="classSSAGES_1_1AlphaRMSDCV.html#a927dbccb0136c844a5b1cc8b2e74ecbd" title="Set up collective variable. " alt="" coords="265,250,442,291"/><area shape="rect" id="node20" href="classSSAGES_1_1AntiBetaRMSDCV.html#a4153e7b2aa827ac6367ec6374f986370" title="Set up collective variable. " alt="" coords="256,341,451,382"/><area shape="rect" id="node22" href="classSSAGES_1_1ParallelBetaRMSDCV.html#ad4c42c1bddc74fc312517ad13526c5cc" title="Set up collective variable. " alt="" coords="246,427,461,469"/><area shape="rect" id="node3" href="classSSAGES_1_1AlphaRMSDCV.html#a85a0ad9aaa232668fe3f8430d3c868f3" title="Constructor. " alt="" coords="529,5,706,46"/><area shape="rect" id="node4" href="classJson_1_1Requirement.html#a60bc275c366eb59f192fa2e621268480" title="Get list of error messages. " alt="" coords="789,39,929,81"/><area shape="rect" id="node5" href="classJson_1_1Requirement.html#adfaec336a9f051d6f6b9a6d7f1d97b75" title="Check if errors have occured. " alt="" coords="789,431,929,473"/><area shape="rect" id="node6" href="classJson_1_1ObjectRequirement.html#a4ed02ae1d612a5efba1688fcdd2df092" title="Parse JSON value to generate Requirement(s). " alt="" coords="532,509,703,550"/><area shape="rect" id="node14" href="classJson_1_1ObjectRequirement.html#a9ac3b920001a35bc70580035d8d802b7" title="Validate JSON value. " alt="" coords="532,223,703,265"/><area shape="rect" id="node7" href="classJson_1_1RequirementLoader.html#a82857d029b7ebfeb315f5b1b32401291" title="Extended Requirement loader. " alt="" coords="773,497,944,538"/><area shape="rect" id="node8" href="classJson_1_1RequirementLoader.html#aeb1344919deda4bd8b8aa8a00cb50390" title="Load specific requirement. " alt="" coords="773,562,944,603"/><area shape="rect" id="node9" href="classJson_1_1ObjectRequirement.html#a4f2e76636df4f7b153aaac02a1b05e4f" title="Reset Requirement. " alt="" coords="773,627,944,669"/><area shape="rect" id="node10" href="classJson_1_1ObjectRequirement.html#aa8181c37cbe67db098bc2b82cdea71ef" title="Clear errors on all Requirements. " alt="" coords="992,594,1163,635"/><area shape="rect" id="node12" href="classJson_1_1ObjectRequirement.html#a4fc797684496f4f0381d1388877c133d" title="Clear notices on all Requirements. " alt="" coords="992,659,1163,701"/><area shape="rect" id="node11" href="classJson_1_1Requirement.html#ace71ebbbcc885f0c4c391a3807c80f33" title="Clear list of error messages. " alt="" coords="1211,594,1351,635"/><area shape="rect" id="node13" href="classJson_1_1Requirement.html#a8a8a4020e4955be56dcacf4727ae5bc3" title="Clear list of notice messages. " alt="" coords="1211,659,1351,701"/><area shape="rect" id="node15" href="classJson_1_1Requirement.html#a46a0056414100386541cd1cb899e0030" title="Get list of notices. " alt="" coords="789,105,929,146"/><area shape="rect" id="node16" href="classJson_1_1Requirement.html#ad407cff3cc37295c3b2a7ebe31798548" title="Check if notices have been queued. " alt="" coords="789,170,929,211"/><area shape="rect" id="node17" href="classJson_1_1Requirement.html#adeb9efa6cf271d9cea0599ff2d458a08" title="Add error to list of error messages. " alt="" coords="789,235,929,277"/><area shape="rect" id="node18" href="classJson_1_1Requirement.html#a00feadb29fa33f4f2cca7362f12aaed4" title="Add message to list of notices. " alt="" coords="789,301,929,342"/><area shape="rect" id="node19" href="classJson_1_1Requirement.html#aa97494b642414d00482745a0d5b2c2c3" title="Validate that JSON value meets requirements. " alt="" coords="789,366,929,407"/><area shape="rect" id="node21" href="classSSAGES_1_1AntiBetaRMSDCV.html#af96db83beb2e9985a36894ca3ff172b9" title="Constructor. " alt="" coords="520,341,715,382"/><area shape="rect" id="node23" href="classSSAGES_1_1ParallelBetaRMSDCV.html#a24ef880045794b0fae9f3ac5a2ca9be1" title="Constructor. " alt="" coords="510,574,725,615"/></map>
 </div>
 </p>
 
-</div>
-</div>
-<a class="anchor" id="a523832b5ece7bb33af4941ecf2f626c7"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void SSAGES::CollectiveVariable::BuildCV </td>
-          <td>(</td>
-          <td class="paramtype">const Json::Value &amp;&#160;</td>
-          <td class="paramname"><em>json</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="namespaceSSAGES.html#acddea47426ac0a643b048f870ddd2907">CVList</a> &amp;&#160;</td>
-          <td class="paramname"><em>cvlist</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>path</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Set up CV and add it to list of CVs. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">json</td><td>JSON input value. </td></tr>
-    <tr><td class="paramname">cvlist</td><td>List of CVs to which the new CV will added. </td></tr>
-    <tr><td class="paramname">path</td><td>Path for JSON path specification.</td></tr>
-  </table>
-  </dd>
-</dl>
-<p>Builds CVs and adds them to the List of CV. </p>
-
-<p>Definition at line <a class="el" href="CollectiveVariable_8cpp_source.html#l00314">314</a> of file <a class="el" href="CollectiveVariable_8cpp_source.html">CollectiveVariable.cpp</a>.</p>
-
-<p>References <a class="el" href="Requirement_8h_source.html#l00092">Json::Requirement::GetErrors()</a>, <a class="el" href="Requirement_8h_source.html#l00086">Json::Requirement::HasErrors()</a>, <a class="el" href="ArrayRequirement_8h_source.html#l00125">Json::ArrayRequirement::Parse()</a>, and <a class="el" href="ArrayRequirement_8h_source.html#l00171">Json::ArrayRequirement::Validate()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00317"></a><span class="lineno">  317</span>&#160;    {</div>
-<div class="line"><a name="l00318"></a><span class="lineno">  318</span>&#160;        <a class="code" href="classJson_1_1ArrayRequirement.html">ArrayRequirement</a> validator;</div>
-<div class="line"><a name="l00319"></a><span class="lineno">  319</span>&#160;        Value schema;</div>
-<div class="line"><a name="l00320"></a><span class="lineno">  320</span>&#160;        Reader reader;</div>
-<div class="line"><a name="l00321"></a><span class="lineno">  321</span>&#160;</div>
-<div class="line"><a name="l00322"></a><span class="lineno">  322</span>&#160;        reader.parse(JsonSchema::CVs, schema);</div>
-<div class="line"><a name="l00323"></a><span class="lineno">  323</span>&#160;        validator.<a class="code" href="classJson_1_1ArrayRequirement.html#a216670b8136ad8d4ce0b428b669244f9">Parse</a>(schema, path);</div>
-<div class="line"><a name="l00324"></a><span class="lineno">  324</span>&#160;</div>
-<div class="line"><a name="l00325"></a><span class="lineno">  325</span>&#160;        <span class="comment">// Validate high level schema.</span></div>
-<div class="line"><a name="l00326"></a><span class="lineno">  326</span>&#160;        validator.<a class="code" href="classJson_1_1ArrayRequirement.html#a6e334ac9cf70844544828d9dfa7246cb">Validate</a>(json, path);</div>
-<div class="line"><a name="l00327"></a><span class="lineno">  327</span>&#160;        <span class="keywordflow">if</span>(validator.<a class="code" href="classJson_1_1Requirement.html#adfaec336a9f051d6f6b9a6d7f1d97b75">HasErrors</a>())</div>
-<div class="line"><a name="l00328"></a><span class="lineno">  328</span>&#160;            <span class="keywordflow">throw</span> BuildException(validator.<a class="code" href="classJson_1_1Requirement.html#a60bc275c366eb59f192fa2e621268480">GetErrors</a>());</div>
-<div class="line"><a name="l00329"></a><span class="lineno">  329</span>&#160;</div>
-<div class="line"><a name="l00330"></a><span class="lineno">  330</span>&#160;        <span class="comment">// Loop through CVs.</span></div>
-<div class="line"><a name="l00331"></a><span class="lineno">  331</span>&#160;        <span class="keywordtype">int</span> i = 0;</div>
-<div class="line"><a name="l00332"></a><span class="lineno">  332</span>&#160;        <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; m : json)</div>
-<div class="line"><a name="l00333"></a><span class="lineno">  333</span>&#160;        {</div>
-<div class="line"><a name="l00334"></a><span class="lineno">  334</span>&#160;            cvlist.push_back(<a class="code" href="classSSAGES_1_1CollectiveVariable.html#a6af09220d5c6d42369122e0b9f93f772">BuildCV</a>(m, path + <span class="stringliteral">&quot;/&quot;</span> + std::to_string(i)));</div>
-<div class="line"><a name="l00335"></a><span class="lineno">  335</span>&#160;            ++i;</div>
-<div class="line"><a name="l00336"></a><span class="lineno">  336</span>&#160;        }</div>
-<div class="line"><a name="l00337"></a><span class="lineno">  337</span>&#160;    }</div>
-<div class="ttc" id="classJson_1_1Requirement_html_adfaec336a9f051d6f6b9a6d7f1d97b75"><div class="ttname"><a href="classJson_1_1Requirement.html#adfaec336a9f051d6f6b9a6d7f1d97b75">Json::Requirement::HasErrors</a></div><div class="ttdeci">bool HasErrors()</div><div class="ttdoc">Check if errors have occured. </div><div class="ttdef"><b>Definition:</b> <a href="Requirement_8h_source.html#l00086">Requirement.h:86</a></div></div>
-<div class="ttc" id="classJson_1_1ArrayRequirement_html"><div class="ttname"><a href="classJson_1_1ArrayRequirement.html">Json::ArrayRequirement</a></div><div class="ttdoc">Array of Requirements. </div><div class="ttdef"><b>Definition:</b> <a href="ArrayRequirement_8h_source.html#l00043">ArrayRequirement.h:43</a></div></div>
-<div class="ttc" id="classSSAGES_1_1CollectiveVariable_html_a6af09220d5c6d42369122e0b9f93f772"><div class="ttname"><a href="classSSAGES_1_1CollectiveVariable.html#a6af09220d5c6d42369122e0b9f93f772">SSAGES::CollectiveVariable::BuildCV</a></div><div class="ttdeci">static CollectiveVariable * BuildCV(const Json::Value &amp;json)</div><div class="ttdoc">Set up collective variable. </div><div class="ttdef"><b>Definition:</b> <a href="CollectiveVariable_8cpp_source.html#l00044">CollectiveVariable.cpp:44</a></div></div>
-<div class="ttc" id="classJson_1_1Requirement_html_a60bc275c366eb59f192fa2e621268480"><div class="ttname"><a href="classJson_1_1Requirement.html#a60bc275c366eb59f192fa2e621268480">Json::Requirement::GetErrors</a></div><div class="ttdeci">std::vector&lt; std::string &gt; GetErrors()</div><div class="ttdoc">Get list of error messages. </div><div class="ttdef"><b>Definition:</b> <a href="Requirement_8h_source.html#l00092">Requirement.h:92</a></div></div>
-<div class="ttc" id="classJson_1_1ArrayRequirement_html_a6e334ac9cf70844544828d9dfa7246cb"><div class="ttname"><a href="classJson_1_1ArrayRequirement.html#a6e334ac9cf70844544828d9dfa7246cb">Json::ArrayRequirement::Validate</a></div><div class="ttdeci">virtual void Validate(const Value &amp;json, const std::string &amp;path) override</div><div class="ttdoc">Validate json value. </div><div class="ttdef"><b>Definition:</b> <a href="ArrayRequirement_8h_source.html#l00171">ArrayRequirement.h:171</a></div></div>
-<div class="ttc" id="classJson_1_1ArrayRequirement_html_a216670b8136ad8d4ce0b428b669244f9"><div class="ttname"><a href="classJson_1_1ArrayRequirement.html#a216670b8136ad8d4ce0b428b669244f9">Json::ArrayRequirement::Parse</a></div><div class="ttdeci">virtual void Parse(Value json, const std::string &amp;path) override</div><div class="ttdoc">Parse JSON value and fill array. </div><div class="ttdef"><b>Definition:</b> <a href="ArrayRequirement_8h_source.html#l00125">ArrayRequirement.h:125</a></div></div>
-</div><!-- fragment -->
 <p><div class="dynheader">
-Here is the call graph for this function:</div>
+Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classSSAGES_1_1CollectiveVariable_a523832b5ece7bb33af4941ecf2f626c7_cgraph.png" border="0" usemap="#classSSAGES_1_1CollectiveVariable_a523832b5ece7bb33af4941ecf2f626c7_cgraph" alt=""/></div>
-<map name="classSSAGES_1_1CollectiveVariable_a523832b5ece7bb33af4941ecf2f626c7_cgraph" id="classSSAGES_1_1CollectiveVariable_a523832b5ece7bb33af4941ecf2f626c7_cgraph">
-<area shape="rect" id="node2" href="classJson_1_1Requirement.html#a60bc275c366eb59f192fa2e621268480" title="Get list of error messages. " alt="" coords="471,5,611,46"/><area shape="rect" id="node3" href="classJson_1_1Requirement.html#adfaec336a9f051d6f6b9a6d7f1d97b75" title="Check if errors have occured. " alt="" coords="257,201,397,242"/><area shape="rect" id="node4" href="classJson_1_1ArrayRequirement.html#a216670b8136ad8d4ce0b428b669244f9" title="Parse JSON value and fill array. " alt="" coords="245,331,408,373"/><area shape="rect" id="node7" href="classJson_1_1ArrayRequirement.html#a6e334ac9cf70844544828d9dfa7246cb" title="Validate json value. " alt="" coords="245,135,408,177"/><area shape="rect" id="node5" href="classJson_1_1RequirementLoader.html#aeb1344919deda4bd8b8aa8a00cb50390" title="Load specific requirement. " alt="" coords="456,331,627,373"/><area shape="rect" id="node6" href="classJson_1_1ArrayRequirement.html#a85750912e3853550a035a23a92f9875b" title="Reset array. " alt="" coords="460,397,623,438"/><area shape="rect" id="node8" href="classJson_1_1Requirement.html#a46a0056414100386541cd1cb899e0030" title="Get list of notices. " alt="" coords="471,70,611,111"/><area shape="rect" id="node9" href="classJson_1_1ArrayRequirement.html#a0e9cc07af4276f975231533fecbfc3d2" title="Test if set is unique. " alt="" coords="460,135,623,177"/><area shape="rect" id="node10" href="classJson_1_1Requirement.html#adeb9efa6cf271d9cea0599ff2d458a08" title="Add error to list of error messages. " alt="" coords="471,201,611,242"/><area shape="rect" id="node11" href="classJson_1_1Requirement.html#a00feadb29fa33f4f2cca7362f12aaed4" title="Add message to list of notices. " alt="" coords="471,266,611,307"/></map>
+<div class="center"><img src="classSSAGES_1_1CollectiveVariable_ab56eae0d888f3d5125566bfb9b5e21aa_icgraph.png" border="0" usemap="#classSSAGES_1_1CollectiveVariable_ab56eae0d888f3d5125566bfb9b5e21aa_icgraph" alt=""/></div>
+<map name="classSSAGES_1_1CollectiveVariable_ab56eae0d888f3d5125566bfb9b5e21aa_icgraph" id="classSSAGES_1_1CollectiveVariable_ab56eae0d888f3d5125566bfb9b5e21aa_icgraph">
+<area shape="rect" id="node2" href="classSSAGES_1_1ResourceHandler.html#ac026ad9aa098fa1508a78b0b5a91e8a2" title="Build a new ResourceHandler from JSON. " alt="" coords="245,5,432,46"/></map>
 </div>
 </p>
 
@@ -686,13 +303,13 @@ Here is the call graph for this function:</div>
 <dl class="section return"><dt>Returns</dt><dd>List of lower and upper boundaries of the CV.</dd></dl>
 <p>Returns the boundaries of the CV. These represent the bounds within which the CV is expected to be constrained. There is no requirement on the method to respect the values returned here. </p>
 
-<p>Definition at line <a class="el" href="CollectiveVariable_8h_source.html#l00153">153</a> of file <a class="el" href="CollectiveVariable_8h_source.html">CollectiveVariable.h</a>.</p>
+<p>Definition at line <a class="el" href="CollectiveVariable_8h_source.html#l00152">152</a> of file <a class="el" href="CollectiveVariable_8h_source.html">CollectiveVariable.h</a>.</p>
 
-<p>References <a class="el" href="CollectiveVariable_8h_source.html#l00053">bounds_</a>.</p>
-<div class="fragment"><div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;        {</div>
-<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="classSSAGES_1_1CollectiveVariable.html#abc60e9b019d4b61354faf60a76d3530e">bounds_</a>;</div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;        }</div>
-<div class="ttc" id="classSSAGES_1_1CollectiveVariable_html_abc60e9b019d4b61354faf60a76d3530e"><div class="ttname"><a href="classSSAGES_1_1CollectiveVariable.html#abc60e9b019d4b61354faf60a76d3530e">SSAGES::CollectiveVariable::bounds_</a></div><div class="ttdeci">std::array&lt; double, 2 &gt; bounds_</div><div class="ttdoc">Bounds on CV. </div><div class="ttdef"><b>Definition:</b> <a href="CollectiveVariable_8h_source.html#l00053">CollectiveVariable.h:53</a></div></div>
+<p>References <a class="el" href="CollectiveVariable_8h_source.html#l00052">bounds_</a>.</p>
+<div class="fragment"><div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;        {</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="classSSAGES_1_1CollectiveVariable.html#abc60e9b019d4b61354faf60a76d3530e">bounds_</a>;</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;        }</div>
+<div class="ttc" id="classSSAGES_1_1CollectiveVariable_html_abc60e9b019d4b61354faf60a76d3530e"><div class="ttname"><a href="classSSAGES_1_1CollectiveVariable.html#abc60e9b019d4b61354faf60a76d3530e">SSAGES::CollectiveVariable::bounds_</a></div><div class="ttdeci">std::array&lt; double, 2 &gt; bounds_</div><div class="ttdoc">Bounds on CV. </div><div class="ttdef"><b>Definition:</b> <a href="CollectiveVariable_8h_source.html#l00052">CollectiveVariable.h:52</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -729,13 +346,13 @@ Here is the call graph for this function:</div>
 
 <p>Reimplemented in <a class="el" href="classSSAGES_1_1TorsionalCV.html#acaa9bd494f8116b38b76b80261c6ce7b">SSAGES::TorsionalCV</a>, and <a class="el" href="classSSAGES_1_1ParticleCoordinateCV.html#a5ce37330c0e9654a5977afc8c6bdeed1">SSAGES::ParticleCoordinateCV</a>.</p>
 
-<p>Definition at line <a class="el" href="CollectiveVariable_8h_source.html#l00170">170</a> of file <a class="el" href="CollectiveVariable_8h_source.html">CollectiveVariable.h</a>.</p>
+<p>Definition at line <a class="el" href="CollectiveVariable_8h_source.html#l00169">169</a> of file <a class="el" href="CollectiveVariable_8h_source.html">CollectiveVariable.h</a>.</p>
 
-<p>References <a class="el" href="CollectiveVariable_8h_source.html#l00050">val_</a>.</p>
-<div class="fragment"><div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;        {</div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="classSSAGES_1_1CollectiveVariable.html#a65b17f3e9b3c967ad42814c3eec88bb2">val_</a> - location;</div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;        }</div>
-<div class="ttc" id="classSSAGES_1_1CollectiveVariable_html_a65b17f3e9b3c967ad42814c3eec88bb2"><div class="ttname"><a href="classSSAGES_1_1CollectiveVariable.html#a65b17f3e9b3c967ad42814c3eec88bb2">SSAGES::CollectiveVariable::val_</a></div><div class="ttdeci">double val_</div><div class="ttdoc">Current value of CV. </div><div class="ttdef"><b>Definition:</b> <a href="CollectiveVariable_8h_source.html#l00050">CollectiveVariable.h:50</a></div></div>
+<p>References <a class="el" href="CollectiveVariable_8h_source.html#l00049">val_</a>.</p>
+<div class="fragment"><div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;        {</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="classSSAGES_1_1CollectiveVariable.html#a65b17f3e9b3c967ad42814c3eec88bb2">val_</a> - location;</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;        }</div>
+<div class="ttc" id="classSSAGES_1_1CollectiveVariable_html_a65b17f3e9b3c967ad42814c3eec88bb2"><div class="ttname"><a href="classSSAGES_1_1CollectiveVariable.html#a65b17f3e9b3c967ad42814c3eec88bb2">SSAGES::CollectiveVariable::val_</a></div><div class="ttdeci">double val_</div><div class="ttdoc">Current value of CV. </div><div class="ttdef"><b>Definition:</b> <a href="CollectiveVariable_8h_source.html#l00049">CollectiveVariable.h:49</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -764,13 +381,13 @@ Here is the call graph for this function:</div>
 <dl class="section return"><dt>Returns</dt><dd>Per-atom gradient of the CV.</dd></dl>
 <p>Returns the current value of the CV gradient. This should be an n length vector, where n is the number of atoms in the snapshot. Each element in the vector is the derivative of the CV with respect to the atom's coordinate (dCV/dxi). </p>
 
-<p>Definition at line <a class="el" href="CollectiveVariable_8h_source.html#l00129">129</a> of file <a class="el" href="CollectiveVariable_8h_source.html">CollectiveVariable.h</a>.</p>
+<p>Definition at line <a class="el" href="CollectiveVariable_8h_source.html#l00128">128</a> of file <a class="el" href="CollectiveVariable_8h_source.html">CollectiveVariable.h</a>.</p>
 
-<p>References <a class="el" href="CollectiveVariable_8h_source.html#l00044">grad_</a>.</p>
-<div class="fragment"><div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;        {</div>
-<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="classSSAGES_1_1CollectiveVariable.html#a390202f6e541da879f1cfcde22c49489">grad_</a>;</div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;        }</div>
-<div class="ttc" id="classSSAGES_1_1CollectiveVariable_html_a390202f6e541da879f1cfcde22c49489"><div class="ttname"><a href="classSSAGES_1_1CollectiveVariable.html#a390202f6e541da879f1cfcde22c49489">SSAGES::CollectiveVariable::grad_</a></div><div class="ttdeci">std::vector&lt; Vector3 &gt; grad_</div><div class="ttdoc">Gradient vector dCv/dxi. </div><div class="ttdef"><b>Definition:</b> <a href="CollectiveVariable_8h_source.html#l00044">CollectiveVariable.h:44</a></div></div>
+<p>References <a class="el" href="CollectiveVariable_8h_source.html#l00043">grad_</a>.</p>
+<div class="fragment"><div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;        {</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="classSSAGES_1_1CollectiveVariable.html#a390202f6e541da879f1cfcde22c49489">grad_</a>;</div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;        }</div>
+<div class="ttc" id="classSSAGES_1_1CollectiveVariable_html_a390202f6e541da879f1cfcde22c49489"><div class="ttname"><a href="classSSAGES_1_1CollectiveVariable.html#a390202f6e541da879f1cfcde22c49489">SSAGES::CollectiveVariable::grad_</a></div><div class="ttdeci">std::vector&lt; Vector3 &gt; grad_</div><div class="ttdoc">Gradient vector dCv/dxi. </div><div class="ttdef"><b>Definition:</b> <a href="CollectiveVariable_8h_source.html#l00043">CollectiveVariable.h:43</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -802,13 +419,13 @@ Here is the call graph for this function:</div>
 
 <p>Reimplemented in <a class="el" href="classSSAGES_1_1TorsionalCV.html#af442beb9f397716e4906b4fcf5a67edd">SSAGES::TorsionalCV</a>.</p>
 
-<p>Definition at line <a class="el" href="CollectiveVariable_8h_source.html#l00100">100</a> of file <a class="el" href="CollectiveVariable_8h_source.html">CollectiveVariable.h</a>.</p>
+<p>Definition at line <a class="el" href="CollectiveVariable_8h_source.html#l00099">99</a> of file <a class="el" href="CollectiveVariable_8h_source.html">CollectiveVariable.h</a>.</p>
 
-<p>References <a class="el" href="CollectiveVariable_8h_source.html#l00050">val_</a>.</p>
-<div class="fragment"><div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;        {</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="classSSAGES_1_1CollectiveVariable.html#a65b17f3e9b3c967ad42814c3eec88bb2">val_</a>;</div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;        }</div>
-<div class="ttc" id="classSSAGES_1_1CollectiveVariable_html_a65b17f3e9b3c967ad42814c3eec88bb2"><div class="ttname"><a href="classSSAGES_1_1CollectiveVariable.html#a65b17f3e9b3c967ad42814c3eec88bb2">SSAGES::CollectiveVariable::val_</a></div><div class="ttdeci">double val_</div><div class="ttdoc">Current value of CV. </div><div class="ttdef"><b>Definition:</b> <a href="CollectiveVariable_8h_source.html#l00050">CollectiveVariable.h:50</a></div></div>
+<p>References <a class="el" href="CollectiveVariable_8h_source.html#l00049">val_</a>.</p>
+<div class="fragment"><div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;        {</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="classSSAGES_1_1CollectiveVariable.html#a65b17f3e9b3c967ad42814c3eec88bb2">val_</a>;</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;        }</div>
+<div class="ttc" id="classSSAGES_1_1CollectiveVariable_html_a65b17f3e9b3c967ad42814c3eec88bb2"><div class="ttname"><a href="classSSAGES_1_1CollectiveVariable.html#a65b17f3e9b3c967ad42814c3eec88bb2">SSAGES::CollectiveVariable::val_</a></div><div class="ttdeci">double val_</div><div class="ttdoc">Current value of CV. </div><div class="ttdef"><b>Definition:</b> <a href="CollectiveVariable_8h_source.html#l00049">CollectiveVariable.h:49</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -846,10 +463,10 @@ Here is the call graph for this function:</div>
 
 <p>Reimplemented in <a class="el" href="classSSAGES_1_1TorsionalCV.html#a82eedc6924ce1739f445f9f0da9e288d">SSAGES::TorsionalCV</a>, and <a class="el" href="classSSAGES_1_1ParticleCoordinateCV.html#a629b3653807f3af52c818adf6b12687c">SSAGES::ParticleCoordinateCV</a>.</p>
 
-<p>Definition at line <a class="el" href="CollectiveVariable_8h_source.html#l00115">115</a> of file <a class="el" href="CollectiveVariable_8h_source.html">CollectiveVariable.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;        {</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;            <span class="keywordflow">return</span> location;</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;        }</div>
+<p>Definition at line <a class="el" href="CollectiveVariable_8h_source.html#l00114">114</a> of file <a class="el" href="CollectiveVariable_8h_source.html">CollectiveVariable.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;        {</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;            <span class="keywordflow">return</span> location;</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;        }</div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -878,13 +495,13 @@ Here is the call graph for this function:</div>
 <dl class="section return"><dt>Returns</dt><dd>Current value of the CV.</dd></dl>
 <p>Returns the current value of the CV which has been computed before via the call to CollectiveVariable::Evaluate(). </p>
 
-<p>Definition at line <a class="el" href="CollectiveVariable_8h_source.html#l00088">88</a> of file <a class="el" href="CollectiveVariable_8h_source.html">CollectiveVariable.h</a>.</p>
+<p>Definition at line <a class="el" href="CollectiveVariable_8h_source.html#l00087">87</a> of file <a class="el" href="CollectiveVariable_8h_source.html">CollectiveVariable.h</a>.</p>
 
-<p>References <a class="el" href="CollectiveVariable_8h_source.html#l00050">val_</a>.</p>
-<div class="fragment"><div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        {</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="classSSAGES_1_1CollectiveVariable.html#a65b17f3e9b3c967ad42814c3eec88bb2">val_</a>;</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        }</div>
-<div class="ttc" id="classSSAGES_1_1CollectiveVariable_html_a65b17f3e9b3c967ad42814c3eec88bb2"><div class="ttname"><a href="classSSAGES_1_1CollectiveVariable.html#a65b17f3e9b3c967ad42814c3eec88bb2">SSAGES::CollectiveVariable::val_</a></div><div class="ttdeci">double val_</div><div class="ttdoc">Current value of CV. </div><div class="ttdef"><b>Definition:</b> <a href="CollectiveVariable_8h_source.html#l00050">CollectiveVariable.h:50</a></div></div>
+<p>References <a class="el" href="CollectiveVariable_8h_source.html#l00049">val_</a>.</p>
+<div class="fragment"><div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        {</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="classSSAGES_1_1CollectiveVariable.html#a65b17f3e9b3c967ad42814c3eec88bb2">val_</a>;</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;        }</div>
+<div class="ttc" id="classSSAGES_1_1CollectiveVariable_html_a65b17f3e9b3c967ad42814c3eec88bb2"><div class="ttname"><a href="classSSAGES_1_1CollectiveVariable.html#a65b17f3e9b3c967ad42814c3eec88bb2">SSAGES::CollectiveVariable::val_</a></div><div class="ttdeci">double val_</div><div class="ttdoc">Current value of CV. </div><div class="ttdef"><b>Definition:</b> <a href="CollectiveVariable_8h_source.html#l00049">CollectiveVariable.h:49</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -895,7 +512,7 @@ Here is the call graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Jun 23 2017 15:44:19 for SSAGES by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Jul 14 2017 15:33:31 for SSAGES by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

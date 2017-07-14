@@ -1,0 +1,12 @@
+<map id="SSAGES::DirectForwardFlux::CheckForInterfaceCrossings" name="SSAGES::DirectForwardFlux::CheckForInterfaceCrossings">
+<area shape="rect" id="node2" href="$classSSAGES_1_1ForwardFlux.html#a28017e532afacbc0c2bee398a5aeabd1" title="SSAGES::ForwardFlux\l::AppendTrajectoryFile" alt="" coords="253,81,411,122"/>
+<area shape="rect" id="node6" href="$classSSAGES_1_1CVManager.html#a7317d7a4400d1c6ece08559f146dc049" title="Get CV iterator. " alt="" coords="251,146,413,187"/>
+<area shape="rect" id="node7" href="$classSSAGES_1_1ForwardFlux.html#a104b459e37cb9212b5282058721ce965" title="Function checks if configuration has crossed interface specified since the last check. " alt="" coords="253,211,411,253"/>
+<area shape="rect" id="node8" href="$classSSAGES_1_1ForwardFlux.html#aa4625f8fda36d3bb904946d62b0836f9" title="Function checks if configuration has returned to A. " alt="" coords="253,277,411,318"/>
+<area shape="rect" id="node9" href="$classSSAGES_1_1ForwardFlux.html#ac5227afa53bf05d387b480850ef4bb77" title="Pop the queue, do MPI so that all procs maintain the same queue. " alt="" coords="253,342,411,383"/>
+<area shape="rect" id="node10" href="$classSSAGES_1_1ForwardFlux.html#a36b935ebdb93f80be3cd8f43684662f1" title="Post&#45;simulation hook. " alt="" coords="253,407,411,449"/>
+<area shape="rect" id="node11" href="$classSSAGES_1_1ForwardFlux.html#a8f3da6706283040f7adf33399bdb2376" title="Write a file corresponding to FFSConfigID from current snapshot. " alt="" coords="251,15,413,57"/>
+<area shape="rect" id="node3" href="$classSSAGES_1_1Snapshot.html#aee2ceb317884bc5e0105b9824b5026d3" title="Access the particle positions. " alt="" coords="463,5,686,32"/>
+<area shape="rect" id="node4" href="$classSSAGES_1_1Snapshot.html#aeadc50cebd62e3fcbdc17511f781de19" title="Access the particle velocities. " alt="" coords="461,56,688,83"/>
+<area shape="rect" id="node5" href="$classSSAGES_1_1Snapshot.html#aa0063a19760ed14f163c0dec36582347" title="Access the atom IDs. " alt="" coords="464,107,685,133"/>
+</map>

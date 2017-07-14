@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['reference',['reference',['../classSSAGES_1_1Grid_1_1GridIterator.html#adf211a897dc268656c25c32c15876c00',1,'SSAGES::Grid::GridIterator::reference()'],['../classSSAGES_1_1Histogram_1_1HistIterator.html#a2ac5b0e5f6e7b65b988684e28b51d58f',1,'SSAGES::Histogram::HistIterator::reference()']]],
-  ['requirelist',['RequireList',['../namespaceJson.html#a15a4a9a1e79ca519a5cd5e560a8b1bbb',1,'Json']]]
+  ['self_5ftype',['self_type',['../classSSAGES_1_1Grid_1_1GridIterator.html#ae1d6b0c7886a9abcdb9bc456ea9061dc',1,'SSAGES::Grid::GridIterator::self_type()'],['../classSSAGES_1_1Histogram_1_1HistIterator.html#a227a8c71c24ec430efa262c4c7852b23',1,'SSAGES::Histogram::HistIterator::self_type()']]]
 ];

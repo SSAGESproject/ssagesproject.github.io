@@ -1,4 +1,0 @@
-<map id="SSAGES::SimObservable::NotifyObservers" name="SSAGES::SimObservable::NotifyObservers">
-<area shape="rect" id="node2" href="$classSSAGES_1_1Hook.html#a84d70866b9ccfec3af0069339c426f6a" title="Notify observers of changes in the simulation. " alt="" coords="229,12,448,39"/>
-<area shape="rect" id="node3" href="$classSSAGES_1_1Hook.html#af5c1d217feb897a0ef18ecbee6c33416" title="Post&#45;step hook. " alt="" coords="497,12,706,39"/>
-</map>

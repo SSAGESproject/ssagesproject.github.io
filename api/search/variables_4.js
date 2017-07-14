@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['d0_5f',['d0_',['../classSSAGES_1_1SwitchingFunction.html#a22ddca0e79a31d38ab07d94966c633da',1,'SSAGES::SwitchingFunction']]],
+  ['d0_5f',['d0_',['../classSSAGES_1_1RationalSwitchPK.html#a42f1bb1756c775f18ba1174a156db8f2',1,'SSAGES::RationalSwitchPK']]],
   ['data_5f',['data_',['../classSSAGES_1_1GridBase.html#a9d6d80ceee94abc2ca70512f230fd2eb',1,'SSAGES::GridBase']]],
   ['dependency_5f',['dependency_',['../classJson_1_1ObjectRequirement.html#aae8e0149137c83a5904627173c6eb42c',1,'Json::ObjectRequirement']]],
   ['deps_5f',['deps_',['../classJson_1_1DependencyRequirement.html#ae910bde505b936d886607bb9a251b8d8',1,'Json::DependencyRequirement']]],

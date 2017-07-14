@@ -1,0 +1,17 @@
+<map id="SSAGES::DirectForwardFlux::PostIntegration" name="SSAGES::DirectForwardFlux::PostIntegration">
+<area shape="rect" id="node2" href="$classSSAGES_1_1DirectForwardFlux.html#a2be13ab9b33d4cb90aa22ca9d71077e9" title="Function that checks if interfaces have been crossed (different for each FFS flavor) ..." alt="" coords="245,201,443,242"/>
+<area shape="rect" id="node7" href="$classSSAGES_1_1CVManager.html#a7317d7a4400d1c6ece08559f146dc049" title="Get CV iterator. " alt="" coords="491,5,653,46"/>
+<area shape="rect" id="node13" href="$classSSAGES_1_1ForwardFlux.html#aa0c07d4738ea73ed1d3589c3eb42c258" title="Function that checks the initial structure that user provides. " alt="" coords="265,331,423,373"/>
+<area shape="rect" id="node14" href="$classSSAGES_1_1ForwardFlux.html#a7406bdfbded69fca48c675d69949626d" title="Compute Initial Flux. " alt="" coords="265,397,423,438"/>
+<area shape="rect" id="node15" href="$classSSAGES_1_1DirectForwardFlux.html#af14a27e7176c4cd6fca5479dfef17358" title="Initialize the Queue. " alt="" coords="248,266,440,307"/>
+<area shape="rect" id="node16" href="$classSSAGES_1_1ForwardFlux.html#a7f814e3f300b0567e8b134364f882d58" title="Print the queue, useful for debugging. " alt="" coords="265,462,423,503"/>
+<area shape="rect" id="node3" href="$classSSAGES_1_1ForwardFlux.html#a28017e532afacbc0c2bee398a5aeabd1" title="SSAGES::ForwardFlux\l::AppendTrajectoryFile" alt="" coords="493,201,651,242"/>
+<area shape="rect" id="node8" href="$classSSAGES_1_1ForwardFlux.html#a104b459e37cb9212b5282058721ce965" title="Function checks if configuration has crossed interface specified since the last check. " alt="" coords="493,266,651,307"/>
+<area shape="rect" id="node9" href="$classSSAGES_1_1ForwardFlux.html#aa4625f8fda36d3bb904946d62b0836f9" title="Function checks if configuration has returned to A. " alt="" coords="493,331,651,373"/>
+<area shape="rect" id="node10" href="$classSSAGES_1_1ForwardFlux.html#ac5227afa53bf05d387b480850ef4bb77" title="Pop the queue, do MPI so that all procs maintain the same queue. " alt="" coords="493,397,651,438"/>
+<area shape="rect" id="node11" href="$classSSAGES_1_1ForwardFlux.html#a36b935ebdb93f80be3cd8f43684662f1" title="Post&#45;simulation hook. " alt="" coords="493,70,651,111"/>
+<area shape="rect" id="node12" href="$classSSAGES_1_1ForwardFlux.html#a8f3da6706283040f7adf33399bdb2376" title="Write a file corresponding to FFSConfigID from current snapshot. " alt="" coords="491,135,653,177"/>
+<area shape="rect" id="node4" href="$classSSAGES_1_1Snapshot.html#aee2ceb317884bc5e0105b9824b5026d3" title="Access the particle positions. " alt="" coords="703,124,926,151"/>
+<area shape="rect" id="node5" href="$classSSAGES_1_1Snapshot.html#aeadc50cebd62e3fcbdc17511f781de19" title="Access the particle velocities. " alt="" coords="701,175,928,201"/>
+<area shape="rect" id="node6" href="$classSSAGES_1_1Snapshot.html#aa0063a19760ed14f163c0dec36582347" title="Access the atom IDs. " alt="" coords="704,225,925,252"/>
+</map>

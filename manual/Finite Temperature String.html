@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Finite Temperature String &mdash; SSAGES v0.5.0-alpha-217-g4053fbf documentation</title>
+  <title>Finite Temperature String &mdash; SSAGES v0.7.5-alpha documentation</title>
   
 
   
@@ -35,7 +35,7 @@
         <link rel="index" title="Index"
               href="genindex.html"/>
         <link rel="search" title="Search" href="search.html"/>
-    <link rel="top" title="SSAGES v0.5.0-alpha-217-g4053fbf documentation" href="index.html"/>
+    <link rel="top" title="SSAGES v0.7.5-alpha documentation" href="index.html"/>
         <link rel="up" title="Advanced Sampling Methods" href="Advanced Sampling Methods.html"/>
         <link rel="next" title="Forward-Flux" href="Forward-Flux.html"/>
         <link rel="prev" title="Elastic Band" href="Elastic Band.html"/> 
@@ -67,7 +67,7 @@
             
             
               <div class="version">
-                0.6.0
+                0.7.5
               </div>
             
           
@@ -94,7 +94,9 @@
               <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="Introduction.html">Introduction</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Getting Started.html">Getting Started</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Tutorials.html">Tutorials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Input Files.html">Input Files</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Engines.html">Engines</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Collective Variables.html">Collective Variables</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="Advanced Sampling Methods.html">Advanced Sampling Methods</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="Adaptive Biasing Force Algorithm.html">Adaptive Biasing Force Algorithm</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Basis Function Sampling.html">Basis Function Sampling</a></li>
@@ -241,6 +243,9 @@ of string method iterations)</li>
 </div>
 <p>The following options are available as FTS inputs:</p>
 <dl class="docutils">
+<dt>cvs</dt>
+<dd>Array of integers, selecting which CVs this method will operate on. Index
+starts from 0.</dd>
 <dt>centers (required)</dt>
 <dd>Array containing this image&#8217;s coordinates in CV space</dd>
 <dt>ksprings (required)</dt>
@@ -278,9 +283,9 @@ after tolerance criteria has been met for all CVs</dd>
 <p>Two examples for running FTS can be found in the <code class="docutils literal"><span class="pre">Examples/User/FTS</span></code>
 directory. This tutorial will go through running FTS on a 2D single particle
 system, using LAMMPS as the MD engine. The necessary files are found in
-<code class="docutils literal"><span class="pre">Examples/User/FTS/Langevin</span></code>, which should contain the following:</p>
+<code class="docutils literal"><span class="pre">Examples/User/FTS/2D_Particle</span></code>, which should contain the following:</p>
 <dl class="docutils">
-<dt><code class="docutils literal"><span class="pre">in.LAMMPS_Meta_Test</span></code></dt>
+<dt><code class="docutils literal"><span class="pre">in.LAMMPS_2DParticle</span></code></dt>
 <dd>LAMMPS input file; sets up 1 particle on a 2D surface with two Gaussian
 wells of different depths (at <span class="math">\((-0.98, -0.98)\)</span> and at
 <span class="math">\((0.98, 0.98)\)</span>) and one Gaussian barrier at the origin.</dd>
@@ -298,10 +303,12 @@ create a JSON input file for FTS. Run this script</p>
 </pre></div>
 </div>
 <p>to create a file called <code class="docutils literal"><span class="pre">FTS.json</span></code>. A string with 16 images is initalized on
-the 2D surface, evenly spaced on a straight line from <span class="math">\((-0.7, -0.5)\)</span> to
-<span class="math">\((0.7, 1.0)\)</span>. If you take a look at <code class="docutils literal"><span class="pre">FTS.json</span></code>, you will see that the
-information in the template file has been replicated for each of the 16 nodes
-on the string, but with the value of &#8220;centers&#8221; changed.</p>
+the 2D surface, evenly spaced on a straight line from <span class="math">\((-0.98, -0.68)\)</span> to
+<span class="math">\((0.98, 1.28)\)</span>. If you take a look at <code class="docutils literal"><span class="pre">FTS.json</span></code>, you will see that the
+location of each image along the string has been appended to the &#8220;centers&#8221;
+field. These center locations are listed from one end of the string to the
+other; the first center listed corresponds to one end of the string, and the
+final center listed corresponds to the opposite end of the string.</p>
 <p>Once <code class="docutils literal"><span class="pre">FTS.json</span></code> has been generated, we can run the example with the following
 command:</p>
 <div class="highlight-bash"><div class="highlight"><pre><span></span>mpirun -np <span class="m">16</span> /path/to/SSAGES/build/./ssages FTS.json
@@ -309,8 +316,8 @@ command:</p>
 </div>
 <p>As SSAGES runs, a series of output files are generated:</p>
 <dl class="docutils">
-<dt><code class="docutils literal"><span class="pre">log-MPI_ID-x</span></code></dt>
-<dd>LAMMPS output for each of the 16 nodes on the string.</dd>
+<dt><code class="docutils literal"><span class="pre">log.lammps</span></code></dt>
+<dd>Output from LAMMPS.</dd>
 <dt><code class="docutils literal"><span class="pre">node-00xx.log</span></code></dt>
 <dd>FTS output for each of the 16 nodes on the string. The first column contains
 the image number (0-15). The second column contains the iteration number. The
@@ -323,7 +330,7 @@ of the string node, instantaneous y coordinate of the particle.</dd>
 <p>To visualize the string, we can plot the appropriate values from the last line
 of each <code class="docutils literal"><span class="pre">node-00xx.log</span></code> file. For example, one can quickly plot the final
 string using gnuplot with the command</p>
-<div class="highlight-bash"><div class="highlight"><pre><span></span>plot <span class="s2">&quot;&lt; tail -n 1 node*&quot;</span> u <span class="m">3</span>:6+
+<div class="highlight-bash"><div class="highlight"><pre><span></span>plot <span class="s2">&quot;&lt; tail -n 1 node*&quot;</span> u <span class="m">3</span>:5
 </pre></div>
 </div>
 <p>The following image shows the initial string in blue, compared with the final
@@ -376,7 +383,7 @@ has curved away from the energy barrier at the origin.</p>
   <div role="contentinfo">
     <p>
         &copy; Copyright 2016, the SSAGES Team.
-      Last updated on Jun 07, 2017.
+      Last updated on Jul 14, 2017.
 
     </p>
   </div>
@@ -398,7 +405,7 @@ has curved away from the energy barrier at the origin.</p>
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'./',
-            VERSION:'v0.5.0-alpha-217-g4053fbf',
+            VERSION:'v0.7.5-alpha',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
             HAS_SOURCE:  true,

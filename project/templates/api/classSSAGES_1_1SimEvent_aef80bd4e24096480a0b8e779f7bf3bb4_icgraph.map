@@ -1,4 +1,0 @@
-<map id="SSAGES::SimEvent::GetIteration" name="SSAGES::SimEvent::GetIteration">
-<area shape="rect" id="node2" href="$classSSAGES_1_1SimObserver.html#ad695e3e064e747fb01532a63ec6e29e5" title="Get current event iteration. " alt="" coords="273,5,434,46"/>
-<area shape="rect" id="node3" href="$classSSAGES_1_1SimObserver.html#a511382ae92846030154e02430afca1f0" title="Update observer when simulation has changed. " alt="" coords="273,70,434,111"/>
-</map>
