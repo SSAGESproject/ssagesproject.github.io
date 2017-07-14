@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Swarm of Trajectories &mdash; SSAGES v0.5.0-alpha-217-g4053fbf documentation</title>
+  <title>Swarm of Trajectories &mdash; SSAGES v0.7.5-alpha documentation</title>
   
 
   
@@ -35,7 +35,7 @@
         <link rel="index" title="Index"
               href="genindex.html"/>
         <link rel="search" title="Search" href="search.html"/>
-    <link rel="top" title="SSAGES v0.5.0-alpha-217-g4053fbf documentation" href="index.html"/>
+    <link rel="top" title="SSAGES v0.7.5-alpha documentation" href="index.html"/>
         <link rel="up" title="Advanced Sampling Methods" href="Advanced Sampling Methods.html"/>
         <link rel="next" title="Umbrella Sampling" href="Umbrella Sampling.html"/>
         <link rel="prev" title="Replica Exchange" href="Replica Exchange.html"/> 
@@ -67,7 +67,7 @@
             
             
               <div class="version">
-                0.6.0
+                0.7.5
               </div>
             
           
@@ -94,7 +94,9 @@
               <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="Introduction.html">Introduction</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Getting Started.html">Getting Started</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Tutorials.html">Tutorials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Input Files.html">Input Files</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Engines.html">Engines</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Collective Variables.html">Collective Variables</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="Advanced Sampling Methods.html">Advanced Sampling Methods</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="Adaptive Biasing Force Algorithm.html">Adaptive Biasing Force Algorithm</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Basis Function Sampling.html">Basis Function Sampling</a></li>
@@ -261,12 +263,10 @@ schema (for parameters common to all string methods) as well as the
 Observer schema (for restarts). The options unique to Swarm are:</p>
 <dl class="docutils">
 <dt>initial_steps</dt>
-<dd>For each iteration of the method, this is the number of steps to spend</dd>
-</dl>
-<p>doing restrained sampling and not harvesting trajectories. This time is
+<dd>For each iteration of the method, this is the number of steps to spend
+doing restrained sampling and not harvesting trajectories. This time is
 important to ensure the underlying molecular system’s CV values are
-close to the string CV values.</p>
-<dl class="docutils">
+close to the string CV values.</dd>
 <dt>harvest_length</dt>
 <dd>After the initial restraining is finished, a trajectory is harvested for later use in launching an unrestrained trajectory every so often - harvest length specifies how often this will be done. Harvest length multiplied by number of trajectories (see below) will determine overall how many more steps will be taken under restrained sampling.</dd>
 <dt>number_of_trajectories</dt>
@@ -277,57 +277,32 @@ close to the string CV values.</p>
 <p>From the String schema, the options are:</p>
 <dl class="docutils">
 <dt>type</dt>
-<dd>This parameter identifies that a String-type method is being used, and</dd>
-</dl>
-<p>thus should be set to “String”</p>
-<dl class="docutils">
+<dd>This parameter identifies that a String-type method is being used, and
+thus should be set to “String”</dd>
 <dt>flavor</dt>
-<dd>This parameter identifies the specific kind of string-type method</dd>
-</dl>
-<p>being used; for swarm, it should be set to “Swarm”.</p>
-<dl class="docutils">
+<dd>This parameter identifies the specific kind of string-type method
+being used; for swarm, it should be set to “Swarm”.</dd>
 <dt>centers</dt>
-<dd>For each driver, the initial values of each CV should be specified as</dd>
-</dl>
-<p>a list under “centers”. In this way, the initial string is defined.</p>
-<dl class="docutils">
+<dd>The initial values of each CV for each image on the string are specified
+under &#8220;centers&#8221;, which is an array of size equal to the total number of
+images, with each entry consisting of an array with size equal to the
+number of CVs used for the string method. In this way, the initial string
+is defined.</dd>
 <dt>tolerance</dt>
-<dd>This is a tolerance threshold that can be set to trigger the end of</dd>
-</dl>
-<p>the method; it is a percentage by which, if no node CV changes by this
+<dd>This is a tolerance threshold that can be set to trigger the end of
+the method; it is a percentage by which, if no node CV changes by this
 percentage, the method will end. It must be specified as an array with
-one entry for each CV desired.</p>
-<dl class="docutils">
+one entry for each CV desired.</dd>
 <dt>max_iterations</dt>
-<dd>A complementary stopping criterion can be specified; the method will</dd>
-</dl>
-<p>stop if it undergoes this many iterations of the string method.</p>
-<dl class="docutils">
+<dd>A complementary stopping criterion can be specified; the method will
+stop if it undergoes this many iterations of the string method.</dd>
 <dt>ksprings</dt>
-<dd>A unique spring constant must be defined for each CV; its purpose is</dd>
-</dl>
-<p>described above.</p>
-<dl class="docutils">
+<dd>A unique spring constant must be defined for each CV; its purpose is
+described above.</dd>
 <dt>frequency</dt>
-<dd>The frequency of each integration step. This should almost always be</dd>
+<dd>The frequency of each integration step. This should almost always be
+set to 1.</dd>
 </dl>
-<p>set to 1.</p>
-<p>From the Observer schema, the options are:</p>
-<dl class="docutils">
-<dt>type</dt>
-<dd>This can currently only be set to “JSON”; specifies to write out JSON</dd>
-</dl>
-<p>type restart files.</p>
-<dl class="docutils">
-<dt>file name</dt>
-<dd>This is a prefix which will be attached to the various restart files</dd>
-</dl>
-<p>that will be written out.</p>
-<dl class="docutils">
-<dt>frequency</dt>
-<dd>This specifies how often a restart file is written out, in terms of MD</dd>
-</dl>
-<p>steps taken.</p>
 </div>
 <div class="section" id="tutorial">
 <span id="swarm-tutorial"></span><h2>Tutorial<a class="headerlink" href="#tutorial" title="Permalink to this headline">¶</a></h2>
@@ -353,7 +328,7 @@ text editor of choice to customize the inputs, but for this tutorial, simply
 observe them and leave them be.  <code class="docutils literal"><span class="pre">Template_Input.json</span></code> contains all the
 information necessary to fully specify one driver; <code class="docutils literal"><span class="pre">Input_Generator.py</span></code> copies
 this information a number of times specified within the script (for this
-tutorial, 12 times) while also linearly interpolating through the start and end
+tutorial, 22 times) while also linearly interpolating through the start and end
 states defined in the script and substituting the correct values into the
 &#8220;centers&#8221; portion of the method definition.  Execute this script as follows:</p>
 <div class="highlight-bash"><div class="highlight"><pre><span></span>python Input_Generator.py
@@ -363,11 +338,11 @@ states defined in the script and substituting the correct values into the
 verify for yourself that the script did what it was supposed to do.  Now, with
 your JSON input and your SSAGES binary, you have everything you need to perform
 a simulation.  Simply run:</p>
-<div class="highlight-bash"><div class="highlight"><pre><span></span>mpiexec -np <span class="m">12</span> ./ssages Swarm.json
+<div class="highlight-bash"><div class="highlight"><pre><span></span>mpiexec -np <span class="m">22</span> ./ssages Swarm.json
 </pre></div>
 </div>
 <p>Soon, the simulation will produce a <code class="docutils literal"><span class="pre">node-X.log</span></code> file for each driver, where
-X is the number specifying the driver (in this case, 0-11 for our 12 drivers).
+X is the number specifying the driver (in this case, 0-21 for our 22 drivers).
 Each one will report the following information, in order: the node number, the
 iteration number, and for each CV, the current value of the string CV as well as
 the current value of the CV calculated from the molecular system.</p>
@@ -380,7 +355,7 @@ included plotter.py function in a directory containing the node files with the
 command line argument of how many images your string had.  The script also
 accepts an argument to plot a free energy surface alongside the string, but that
 goes beyond the scope of this tutorial.  Thus, simply execute:</p>
-<div class="highlight-bash"><div class="highlight"><pre><span></span>python plotter.py <span class="m">12</span> none
+<div class="highlight-bash"><div class="highlight"><pre><span></span>python plotter.py <span class="m">22</span> none
 </pre></div>
 </div>
 <p>And in a moment you should have a graph of your converged string.  Thus concludes
@@ -426,7 +401,7 @@ J. Phys. Chem. B <strong>112</strong>, 3432–3440 (2008).</td></tr>
   <div role="contentinfo">
     <p>
         &copy; Copyright 2016, the SSAGES Team.
-      Last updated on Jun 07, 2017.
+      Last updated on Jul 14, 2017.
 
     </p>
   </div>
@@ -448,7 +423,7 @@ J. Phys. Chem. B <strong>112</strong>, 3432–3440 (2008).</td></tr>
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'./',
-            VERSION:'v0.5.0-alpha-217-g4053fbf',
+            VERSION:'v0.7.5-alpha',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
             HAS_SOURCE:  true,

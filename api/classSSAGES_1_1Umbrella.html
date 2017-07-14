@@ -97,6 +97,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classSSAGES_1_1Umbrella-members.html">List of all members</a>  </div>
@@ -114,68 +115,73 @@ Inheritance diagram for SSAGES::Umbrella:</div>
 <div class="dyncontent">
 <div class="center"><img src="classSSAGES_1_1Umbrella__inherit__graph.png" border="0" usemap="#SSAGES_1_1Umbrella_inherit__map" alt="Inheritance graph"/></div>
 <map name="SSAGES_1_1Umbrella_inherit__map" id="SSAGES_1_1Umbrella_inherit__map">
-<area shape="rect" id="node2" href="classSSAGES_1_1Method.html" title="Interface for Method implementations. " alt="" coords="115,80,243,107"/><area shape="rect" id="node3" href="classSSAGES_1_1EventListener.html" title="Base abstract class for listening in to events fired by &quot;Hook&quot;. " alt="" coords="5,5,169,32"/><area shape="rect" id="node4" href="classSSAGES_1_1Serializable.html" title="Base class for all serializable objects. " alt="" coords="195,5,347,32"/></map>
+<area shape="rect" id="node2" href="classSSAGES_1_1Method.html" title="Interface for Method implementations. " alt="" coords="23,80,151,107"/><area shape="rect" id="node3" href="classSSAGES_1_1EventListener.html" title="Base abstract class for listening in to events fired by &quot;Hook&quot;. " alt="" coords="4,5,168,32"/></map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a85b2fd03e55eae4861f8f59197b076ee"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSSAGES_1_1Umbrella.html#a85b2fd03e55eae4861f8f59197b076ee">Umbrella</a> (boost::mpi::communicator &amp;world, boost::mpi::communicator &amp;comm, const std::vector&lt; double &gt; &amp;kspring, const std::vector&lt; double &gt; &amp;centers, std::string name, unsigned int frequency)</td></tr>
-<tr class="memdesc:a85b2fd03e55eae4861f8f59197b076ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="#a85b2fd03e55eae4861f8f59197b076ee">More...</a><br /></td></tr>
-<tr class="separator:a85b2fd03e55eae4861f8f59197b076ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a28f3bee3cd35606ba9d6aea8c8d92a81"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSSAGES_1_1Umbrella.html#a28f3bee3cd35606ba9d6aea8c8d92a81">Umbrella</a> (boost::mpi::communicator &amp;world, boost::mpi::communicator &amp;comm, const std::vector&lt; double &gt; &amp;kspring, const std::vector&lt; double &gt; &amp;centers0, const std::vector&lt; double &gt; &amp;centers1, int timesteps, std::string name, unsigned int frequency)</td></tr>
-<tr class="memdesc:a28f3bee3cd35606ba9d6aea8c8d92a81"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="#a28f3bee3cd35606ba9d6aea8c8d92a81">More...</a><br /></td></tr>
-<tr class="separator:a28f3bee3cd35606ba9d6aea8c8d92a81"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1d34d232a178871048831e5dc22606d6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSSAGES_1_1Umbrella.html#a1d34d232a178871048831e5dc22606d6">PreSimulation</a> (<a class="el" href="classSSAGES_1_1Snapshot.html">Snapshot</a> *snapshot, const <a class="el" href="namespaceSSAGES.html#acddea47426ac0a643b048f870ddd2907">CVList</a> &amp;cvs) override</td></tr>
-<tr class="memdesc:a1d34d232a178871048831e5dc22606d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pre-simulation hook.  <a href="#a1d34d232a178871048831e5dc22606d6">More...</a><br /></td></tr>
-<tr class="separator:a1d34d232a178871048831e5dc22606d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0ef3d596c8ffb392280b82e5e574c35b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSSAGES_1_1Umbrella.html#a0ef3d596c8ffb392280b82e5e574c35b">PostIntegration</a> (<a class="el" href="classSSAGES_1_1Snapshot.html">Snapshot</a> *snapshot, const <a class="el" href="namespaceSSAGES.html#acddea47426ac0a643b048f870ddd2907">CVList</a> &amp;cvs) override</td></tr>
-<tr class="memdesc:a0ef3d596c8ffb392280b82e5e574c35b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Post-integration hook.  <a href="#a0ef3d596c8ffb392280b82e5e574c35b">More...</a><br /></td></tr>
-<tr class="separator:a0ef3d596c8ffb392280b82e5e574c35b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acda9666e4d13efe0191395fe7afb028d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSSAGES_1_1Umbrella.html#acda9666e4d13efe0191395fe7afb028d">PostSimulation</a> (<a class="el" href="classSSAGES_1_1Snapshot.html">Snapshot</a> *snapshot, const <a class="el" href="namespaceSSAGES.html#acddea47426ac0a643b048f870ddd2907">CVList</a> &amp;cvs) override</td></tr>
-<tr class="memdesc:acda9666e4d13efe0191395fe7afb028d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Post-simulation hook.  <a href="#acda9666e4d13efe0191395fe7afb028d">More...</a><br /></td></tr>
-<tr class="separator:acda9666e4d13efe0191395fe7afb028d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4bfa24cabffe1b0526acd9c5c2ea6922"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSSAGES_1_1Umbrella.html#a4bfa24cabffe1b0526acd9c5c2ea6922">SetLogStep</a> (const int iter)</td></tr>
-<tr class="memdesc:a4bfa24cabffe1b0526acd9c5c2ea6922"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set how often to log.  <a href="#a4bfa24cabffe1b0526acd9c5c2ea6922">More...</a><br /></td></tr>
-<tr class="separator:a4bfa24cabffe1b0526acd9c5c2ea6922"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa70c88a12c2e8d5fc70d221d5cc7aefd"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSSAGES_1_1Umbrella.html#aa70c88a12c2e8d5fc70d221d5cc7aefd">Serialize</a> (Json::Value &amp;json) const override</td></tr>
-<tr class="memdesc:aa70c88a12c2e8d5fc70d221d5cc7aefd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Serialize the class.  <a href="#aa70c88a12c2e8d5fc70d221d5cc7aefd">More...</a><br /></td></tr>
-<tr class="separator:aa70c88a12c2e8d5fc70d221d5cc7aefd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4fd856b18492fc79afd4ac4fc3cf5922"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSSAGES_1_1Umbrella.html#a4fd856b18492fc79afd4ac4fc3cf5922">Umbrella</a> (const MPI_Comm &amp;world, const MPI_Comm &amp;comm, const std::vector&lt; double &gt; &amp;kspring, const std::vector&lt; double &gt; &amp;centers, std::string name, unsigned int frequency)</td></tr>
+<tr class="memdesc:a4fd856b18492fc79afd4ac4fc3cf5922"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="#a4fd856b18492fc79afd4ac4fc3cf5922">More...</a><br /></td></tr>
+<tr class="separator:a4fd856b18492fc79afd4ac4fc3cf5922"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a158309895422834db414d9f50a24345a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSSAGES_1_1Umbrella.html#a158309895422834db414d9f50a24345a">Umbrella</a> (const MPI_Comm &amp;world, const MPI_Comm &amp;comm, const std::vector&lt; double &gt; &amp;kspring, const std::vector&lt; double &gt; &amp;centers0, const std::vector&lt; double &gt; &amp;centers1, int timesteps, std::string name, unsigned int frequency)</td></tr>
+<tr class="memdesc:a158309895422834db414d9f50a24345a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="#a158309895422834db414d9f50a24345a">More...</a><br /></td></tr>
+<tr class="separator:a158309895422834db414d9f50a24345a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63da6a639c5f7aa819c53e8bcc63e5e7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSSAGES_1_1Umbrella.html#a63da6a639c5f7aa819c53e8bcc63e5e7">PreSimulation</a> (<a class="el" href="classSSAGES_1_1Snapshot.html">Snapshot</a> *snapshot, const class <a class="el" href="classSSAGES_1_1CVManager.html">CVManager</a> &amp;cvmanager) override</td></tr>
+<tr class="memdesc:a63da6a639c5f7aa819c53e8bcc63e5e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Pre-simulation hook.  <a href="#a63da6a639c5f7aa819c53e8bcc63e5e7">More...</a><br /></td></tr>
+<tr class="separator:a63da6a639c5f7aa819c53e8bcc63e5e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a034d7e5266790eeb7a9faaa4aa8520a3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSSAGES_1_1Umbrella.html#a034d7e5266790eeb7a9faaa4aa8520a3">PostIntegration</a> (<a class="el" href="classSSAGES_1_1Snapshot.html">Snapshot</a> *snapshot, const class <a class="el" href="classSSAGES_1_1CVManager.html">CVManager</a> &amp;cvmanager) override</td></tr>
+<tr class="memdesc:a034d7e5266790eeb7a9faaa4aa8520a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Post-integration hook.  <a href="#a034d7e5266790eeb7a9faaa4aa8520a3">More...</a><br /></td></tr>
+<tr class="separator:a034d7e5266790eeb7a9faaa4aa8520a3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2a4409838cca36d7d93686dceecf8d23"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSSAGES_1_1Umbrella.html#a2a4409838cca36d7d93686dceecf8d23">PostSimulation</a> (<a class="el" href="classSSAGES_1_1Snapshot.html">Snapshot</a> *snapshot, const class <a class="el" href="classSSAGES_1_1CVManager.html">CVManager</a> &amp;cvmanager) override</td></tr>
+<tr class="memdesc:a2a4409838cca36d7d93686dceecf8d23"><td class="mdescLeft">&#160;</td><td class="mdescRight">Post-simulation hook.  <a href="#a2a4409838cca36d7d93686dceecf8d23">More...</a><br /></td></tr>
+<tr class="separator:a2a4409838cca36d7d93686dceecf8d23"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6d7781c559c876c99b368638f70786f3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSSAGES_1_1Umbrella.html#a6d7781c559c876c99b368638f70786f3">SetOutputFrequency</a> (int outfreq)</td></tr>
+<tr class="memdesc:a6d7781c559c876c99b368638f70786f3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set output frequency.  <a href="#a6d7781c559c876c99b368638f70786f3">More...</a><br /></td></tr>
+<tr class="separator:a6d7781c559c876c99b368638f70786f3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a86c1b11227fd169e94f8da0bb589359b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSSAGES_1_1Umbrella.html#a86c1b11227fd169e94f8da0bb589359b">SetAppend</a> (bool append)</td></tr>
+<tr class="memdesc:a86c1b11227fd169e94f8da0bb589359b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set append mode.  <a href="#a86c1b11227fd169e94f8da0bb589359b">More...</a><br /></td></tr>
+<tr class="separator:a86c1b11227fd169e94f8da0bb589359b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classSSAGES_1_1Method"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classSSAGES_1_1Method')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classSSAGES_1_1Method.html">SSAGES::Method</a></td></tr>
-<tr class="memitem:a7b4995b0fde5ed802f6a3a9b371fe9ad inherit pub_methods_classSSAGES_1_1Method"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSSAGES_1_1Method.html#a7b4995b0fde5ed802f6a3a9b371fe9ad">Method</a> (unsigned int frequency, boost::mpi::communicator &amp;world, boost::mpi::communicator &amp;comm)</td></tr>
-<tr class="memdesc:a7b4995b0fde5ed802f6a3a9b371fe9ad inherit pub_methods_classSSAGES_1_1Method"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="#a7b4995b0fde5ed802f6a3a9b371fe9ad">More...</a><br /></td></tr>
-<tr class="separator:a7b4995b0fde5ed802f6a3a9b371fe9ad inherit pub_methods_classSSAGES_1_1Method"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa13579541a8c5946b825ee1617258571 inherit pub_methods_classSSAGES_1_1Method"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSSAGES_1_1Method.html#aa13579541a8c5946b825ee1617258571">SetIteration</a> (int iter)</td></tr>
-<tr class="memdesc:aa13579541a8c5946b825ee1617258571 inherit pub_methods_classSSAGES_1_1Method"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set <a class="el" href="classSSAGES_1_1Method.html" title="Interface for Method implementations. ">Method</a>'s iteration.  <a href="#aa13579541a8c5946b825ee1617258571">More...</a><br /></td></tr>
-<tr class="separator:aa13579541a8c5946b825ee1617258571 inherit pub_methods_classSSAGES_1_1Method"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a05bb6ea0244814c1290c46bb3a059be9 inherit pub_methods_classSSAGES_1_1Method"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSSAGES_1_1Method.html#a05bb6ea0244814c1290c46bb3a059be9">Method</a> (uint frequency, const MPI_Comm &amp;world, const MPI_Comm &amp;comm)</td></tr>
+<tr class="memdesc:a05bb6ea0244814c1290c46bb3a059be9 inherit pub_methods_classSSAGES_1_1Method"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="#a05bb6ea0244814c1290c46bb3a059be9">More...</a><br /></td></tr>
+<tr class="separator:a05bb6ea0244814c1290c46bb3a059be9 inherit pub_methods_classSSAGES_1_1Method"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5438a9b6cd41bcc86b9662b1af2313a0 inherit pub_methods_classSSAGES_1_1Method"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a5438a9b6cd41bcc86b9662b1af2313a0"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSSAGES_1_1Method.html#a5438a9b6cd41bcc86b9662b1af2313a0">SetCVMask</a> (const std::vector&lt; uint &gt; &amp;mask)</td></tr>
+<tr class="memdesc:a5438a9b6cd41bcc86b9662b1af2313a0 inherit pub_methods_classSSAGES_1_1Method"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the collective variable mask. <br /></td></tr>
+<tr class="separator:a5438a9b6cd41bcc86b9662b1af2313a0 inherit pub_methods_classSSAGES_1_1Method"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a86b979a552970f63a8edf160387f6ff9 inherit pub_methods_classSSAGES_1_1Method"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a86b979a552970f63a8edf160387f6ff9"></a>
 virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSSAGES_1_1Method.html#a86b979a552970f63a8edf160387f6ff9">~Method</a> ()</td></tr>
 <tr class="memdesc:a86b979a552970f63a8edf160387f6ff9 inherit pub_methods_classSSAGES_1_1Method"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor. <br /></td></tr>
 <tr class="separator:a86b979a552970f63a8edf160387f6ff9 inherit pub_methods_classSSAGES_1_1Method"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classSSAGES_1_1EventListener"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classSSAGES_1_1EventListener')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classSSAGES_1_1EventListener.html">SSAGES::EventListener</a></td></tr>
-<tr class="memitem:a4a4d51653806e0348e9d1c99890bb87b inherit pub_methods_classSSAGES_1_1EventListener"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSSAGES_1_1EventListener.html#a4a4d51653806e0348e9d1c99890bb87b">EventListener</a> (unsigned int frequency)</td></tr>
-<tr class="memdesc:a4a4d51653806e0348e9d1c99890bb87b inherit pub_methods_classSSAGES_1_1EventListener"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="#a4a4d51653806e0348e9d1c99890bb87b">More...</a><br /></td></tr>
-<tr class="separator:a4a4d51653806e0348e9d1c99890bb87b inherit pub_methods_classSSAGES_1_1EventListener"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a2dcfbba4a4f23ca1a3ad9671a40d3221 inherit pub_methods_classSSAGES_1_1EventListener"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSSAGES_1_1EventListener.html#a2dcfbba4a4f23ca1a3ad9671a40d3221">GetFrequency</a> () const </td></tr>
-<tr class="memdesc:a2dcfbba4a4f23ca1a3ad9671a40d3221 inherit pub_methods_classSSAGES_1_1EventListener"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get frequency of event listener.  <a href="#a2dcfbba4a4f23ca1a3ad9671a40d3221">More...</a><br /></td></tr>
-<tr class="separator:a2dcfbba4a4f23ca1a3ad9671a40d3221 inherit pub_methods_classSSAGES_1_1EventListener"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9e65b79ad13d30014481a3efd26d654c inherit pub_methods_classSSAGES_1_1EventListener"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSSAGES_1_1EventListener.html#a9e65b79ad13d30014481a3efd26d654c">EventListener</a> (uint frequency)</td></tr>
+<tr class="memdesc:a9e65b79ad13d30014481a3efd26d654c inherit pub_methods_classSSAGES_1_1EventListener"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="#a9e65b79ad13d30014481a3efd26d654c">More...</a><br /></td></tr>
+<tr class="separator:a9e65b79ad13d30014481a3efd26d654c inherit pub_methods_classSSAGES_1_1EventListener"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9f36ffb7052dad44fe24df6c8fb50e75 inherit pub_methods_classSSAGES_1_1EventListener"><td class="memItemLeft" align="right" valign="top">uint&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSSAGES_1_1EventListener.html#a9f36ffb7052dad44fe24df6c8fb50e75">GetFrequency</a> () const </td></tr>
+<tr class="memdesc:a9f36ffb7052dad44fe24df6c8fb50e75 inherit pub_methods_classSSAGES_1_1EventListener"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get frequency of event listener.  <a href="#a9f36ffb7052dad44fe24df6c8fb50e75">More...</a><br /></td></tr>
+<tr class="separator:a9f36ffb7052dad44fe24df6c8fb50e75 inherit pub_methods_classSSAGES_1_1EventListener"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7cadffb0e82186a12023dd5963c3c5b1 inherit pub_methods_classSSAGES_1_1EventListener"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a7cadffb0e82186a12023dd5963c3c5b1"></a>
 virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSSAGES_1_1EventListener.html#a7cadffb0e82186a12023dd5963c3c5b1">~EventListener</a> ()</td></tr>
 <tr class="memdesc:a7cadffb0e82186a12023dd5963c3c5b1 inherit pub_methods_classSSAGES_1_1EventListener"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor. <br /></td></tr>
 <tr class="separator:a7cadffb0e82186a12023dd5963c3c5b1 inherit pub_methods_classSSAGES_1_1EventListener"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_methods_classSSAGES_1_1Serializable"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classSSAGES_1_1Serializable')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classSSAGES_1_1Serializable.html">SSAGES::Serializable</a></td></tr>
-<tr class="memitem:a29df19339b8f94609477e76b6081e075 inherit pub_methods_classSSAGES_1_1Serializable"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a29df19339b8f94609477e76b6081e075"></a>
-virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSSAGES_1_1Serializable.html#a29df19339b8f94609477e76b6081e075">~Serializable</a> ()</td></tr>
-<tr class="memdesc:a29df19339b8f94609477e76b6081e075 inherit pub_methods_classSSAGES_1_1Serializable"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor. <br /></td></tr>
-<tr class="separator:a29df19339b8f94609477e76b6081e075 inherit pub_methods_classSSAGES_1_1Serializable"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:a0f8f31f884c4f2fb1551897e25401eb1"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classSSAGES_1_1Umbrella.html">Umbrella</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSSAGES_1_1Umbrella.html#a0f8f31f884c4f2fb1551897e25401eb1">Build</a> (const Json::Value &amp;json, const MPI_Comm &amp;world, const MPI_Comm &amp;comm, const std::string &amp;path)</td></tr>
+<tr class="separator:a0f8f31f884c4f2fb1551897e25401eb1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_static_methods_classSSAGES_1_1Method"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_classSSAGES_1_1Method')"><img src="closed.png" alt="-"/>&#160;Static Public Member Functions inherited from <a class="el" href="classSSAGES_1_1Method.html">SSAGES::Method</a></td></tr>
+<tr class="memitem:a1464579bb8b15653ccd0ffa834e15e93 inherit pub_static_methods_classSSAGES_1_1Method"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classSSAGES_1_1Method.html">Method</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSSAGES_1_1Method.html#a1464579bb8b15653ccd0ffa834e15e93">BuildMethod</a> (const Json::Value &amp;json, const MPI_Comm &amp;world, const MPI_Comm &amp;comm, const std::string &amp;path)</td></tr>
+<tr class="memdesc:a1464579bb8b15653ccd0ffa834e15e93 inherit pub_static_methods_classSSAGES_1_1Method"><td class="mdescLeft">&#160;</td><td class="mdescRight">Build a derived method from JSON node.  <a href="#a1464579bb8b15653ccd0ffa834e15e93">More...</a><br /></td></tr>
+<tr class="separator:a1464579bb8b15653ccd0ffa834e15e93 inherit pub_static_methods_classSSAGES_1_1Method"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
 <tr class="memitem:aada29c97797c98df237917c6272eb8aa"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aada29c97797c98df237917c6272eb8aa"></a>
 double&#160;</td><td class="memItemRight" valign="bottom"><b>GetCurrentCenter</b> (int iteration, unsigned i)</td></tr>
 <tr class="separator:aada29c97797c98df237917c6272eb8aa"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:acbae1908834df3cf59c9f80e7b70be05"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSSAGES_1_1Umbrella.html#acbae1908834df3cf59c9f80e7b70be05">PrintUmbrella</a> (const <a class="el" href="namespaceSSAGES.html#acddea47426ac0a643b048f870ddd2907">CVList</a> &amp;cvs)</td></tr>
-<tr class="memdesc:acbae1908834df3cf59c9f80e7b70be05"><td class="mdescLeft">&#160;</td><td class="mdescRight">Print umbrella values.  <a href="#acbae1908834df3cf59c9f80e7b70be05">More...</a><br /></td></tr>
-<tr class="separator:acbae1908834df3cf59c9f80e7b70be05"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a79fb610f613c0e686ba8d7218cd8c837"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSSAGES_1_1Umbrella.html#a79fb610f613c0e686ba8d7218cd8c837">PrintUmbrella</a> (const <a class="el" href="namespaceSSAGES.html#acddea47426ac0a643b048f870ddd2907">CVList</a> &amp;cvs, uint iteration)</td></tr>
+<tr class="memdesc:a79fb610f613c0e686ba8d7218cd8c837"><td class="mdescLeft">&#160;</td><td class="mdescRight">Print umbrella values.  <a href="#a79fb610f613c0e686ba8d7218cd8c837">More...</a><br /></td></tr>
+<tr class="separator:a79fb610f613c0e686ba8d7218cd8c837"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -196,44 +202,44 @@ int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class
 <tr class="separator:a79197ecad0a946de0ece62707937403d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaca62f9ca39b04b7a188d45cf89ab2cd"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="aaca62f9ca39b04b7a188d45cf89ab2cd"></a>
 std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSSAGES_1_1Umbrella.html#aaca62f9ca39b04b7a188d45cf89ab2cd">filename_</a></td></tr>
-<tr class="memdesc:aaca62f9ca39b04b7a188d45cf89ab2cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">File name. <br /></td></tr>
+<tr class="memdesc:aaca62f9ca39b04b7a188d45cf89ab2cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Output filename. <br /></td></tr>
 <tr class="separator:aaca62f9ca39b04b7a188d45cf89ab2cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:afe1477f81bb9d55a2e8d8212f99d8c06"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="afe1477f81bb9d55a2e8d8212f99d8c06"></a>
-int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSSAGES_1_1Umbrella.html#afe1477f81bb9d55a2e8d8212f99d8c06">logevery_</a></td></tr>
-<tr class="memdesc:afe1477f81bb9d55a2e8d8212f99d8c06"><td class="mdescLeft">&#160;</td><td class="mdescRight">Log every n time steps. <br /></td></tr>
-<tr class="separator:afe1477f81bb9d55a2e8d8212f99d8c06"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a118bc974d7cb44facf3ca1af62eb8c99"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a118bc974d7cb44facf3ca1af62eb8c99"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSSAGES_1_1Umbrella.html#a118bc974d7cb44facf3ca1af62eb8c99">outfreq_</a></td></tr>
+<tr class="memdesc:a118bc974d7cb44facf3ca1af62eb8c99"><td class="mdescLeft">&#160;</td><td class="mdescRight">Frequency of outputting data. <br /></td></tr>
+<tr class="separator:a118bc974d7cb44facf3ca1af62eb8c99"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a25313c59d7bf8fbc842228626fbbdd8e"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a25313c59d7bf8fbc842228626fbbdd8e"></a>
 std::ofstream&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSSAGES_1_1Umbrella.html#a25313c59d7bf8fbc842228626fbbdd8e">umbrella_</a></td></tr>
 <tr class="memdesc:a25313c59d7bf8fbc842228626fbbdd8e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Output stream for umbrella data. <br /></td></tr>
 <tr class="separator:a25313c59d7bf8fbc842228626fbbdd8e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a36cf3ea70cffc5608dce3554636f86cb"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a36cf3ea70cffc5608dce3554636f86cb"></a>
+bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSSAGES_1_1Umbrella.html#a36cf3ea70cffc5608dce3554636f86cb">append_</a></td></tr>
+<tr class="memdesc:a36cf3ea70cffc5608dce3554636f86cb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Append to output files? <br /></td></tr>
+<tr class="separator:a36cf3ea70cffc5608dce3554636f86cb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
-<tr class="inherit_header pub_static_methods_classSSAGES_1_1Method"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_classSSAGES_1_1Method')"><img src="closed.png" alt="-"/>&#160;Static Public Member Functions inherited from <a class="el" href="classSSAGES_1_1Method.html">SSAGES::Method</a></td></tr>
-<tr class="memitem:a4440bebe9b649e17e83d1959362091c3 inherit pub_static_methods_classSSAGES_1_1Method"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classSSAGES_1_1Method.html">Method</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSSAGES_1_1Method.html#a4440bebe9b649e17e83d1959362091c3">BuildMethod</a> (const Json::Value &amp;json, boost::mpi::communicator &amp;world, boost::mpi::communicator &amp;comm, const std::string &amp;path)</td></tr>
-<tr class="memdesc:a4440bebe9b649e17e83d1959362091c3 inherit pub_static_methods_classSSAGES_1_1Method"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set up the <a class="el" href="classSSAGES_1_1Method.html" title="Interface for Method implementations. ">Method</a>.  <a href="#a4440bebe9b649e17e83d1959362091c3">More...</a><br /></td></tr>
-<tr class="separator:a4440bebe9b649e17e83d1959362091c3 inherit pub_static_methods_classSSAGES_1_1Method"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_classSSAGES_1_1Method"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classSSAGES_1_1Method')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classSSAGES_1_1Method.html">SSAGES::Method</a></td></tr>
-<tr class="memitem:a9bbdc5a2592ff76cfe71364ad4d2ce68 inherit pro_attribs_classSSAGES_1_1Method"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9bbdc5a2592ff76cfe71364ad4d2ce68"></a>
-boost::mpi::communicator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSSAGES_1_1Method.html#a9bbdc5a2592ff76cfe71364ad4d2ce68">world_</a></td></tr>
-<tr class="memdesc:a9bbdc5a2592ff76cfe71364ad4d2ce68 inherit pro_attribs_classSSAGES_1_1Method"><td class="mdescLeft">&#160;</td><td class="mdescRight">Global MPI communicator. <br /></td></tr>
-<tr class="separator:a9bbdc5a2592ff76cfe71364ad4d2ce68 inherit pro_attribs_classSSAGES_1_1Method"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae497980d1720c38b65d47fd4e65897b0 inherit pro_attribs_classSSAGES_1_1Method"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="ae497980d1720c38b65d47fd4e65897b0"></a>
-boost::mpi::communicator&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSSAGES_1_1Method.html#ae497980d1720c38b65d47fd4e65897b0">comm_</a></td></tr>
-<tr class="memdesc:ae497980d1720c38b65d47fd4e65897b0 inherit pro_attribs_classSSAGES_1_1Method"><td class="mdescLeft">&#160;</td><td class="mdescRight">Local MPI communicator. <br /></td></tr>
-<tr class="separator:ae497980d1720c38b65d47fd4e65897b0 inherit pro_attribs_classSSAGES_1_1Method"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1b83499833edfa7a5ecf5bb4f2de9a62 inherit pro_attribs_classSSAGES_1_1Method"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1b83499833edfa7a5ecf5bb4f2de9a62"></a>
-unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSSAGES_1_1Method.html#a1b83499833edfa7a5ecf5bb4f2de9a62">iteration_</a></td></tr>
-<tr class="memdesc:a1b83499833edfa7a5ecf5bb4f2de9a62 inherit pro_attribs_classSSAGES_1_1Method"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of the method iteration. <br /></td></tr>
-<tr class="separator:a1b83499833edfa7a5ecf5bb4f2de9a62 inherit pro_attribs_classSSAGES_1_1Method"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8471b11097a1018a9635bc578bf22f61 inherit pro_attribs_classSSAGES_1_1Method"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a8471b11097a1018a9635bc578bf22f61"></a>
+mxx::comm&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSSAGES_1_1Method.html#a8471b11097a1018a9635bc578bf22f61">world_</a></td></tr>
+<tr class="memdesc:a8471b11097a1018a9635bc578bf22f61 inherit pro_attribs_classSSAGES_1_1Method"><td class="mdescLeft">&#160;</td><td class="mdescRight">Global MPI communicator. <br /></td></tr>
+<tr class="separator:a8471b11097a1018a9635bc578bf22f61 inherit pro_attribs_classSSAGES_1_1Method"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1118666d61dbf3bc7606e3b61aa3a460 inherit pro_attribs_classSSAGES_1_1Method"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a1118666d61dbf3bc7606e3b61aa3a460"></a>
+mxx::comm&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSSAGES_1_1Method.html#a1118666d61dbf3bc7606e3b61aa3a460">comm_</a></td></tr>
+<tr class="memdesc:a1118666d61dbf3bc7606e3b61aa3a460 inherit pro_attribs_classSSAGES_1_1Method"><td class="mdescLeft">&#160;</td><td class="mdescRight">Local MPI communicator. <br /></td></tr>
+<tr class="separator:a1118666d61dbf3bc7606e3b61aa3a460 inherit pro_attribs_classSSAGES_1_1Method"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a04e4b8b9ea8d154ae88f6cccf6c91700 inherit pro_attribs_classSSAGES_1_1Method"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a04e4b8b9ea8d154ae88f6cccf6c91700"></a>
+std::vector&lt; uint &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSSAGES_1_1Method.html#a04e4b8b9ea8d154ae88f6cccf6c91700">cvmask_</a></td></tr>
+<tr class="memdesc:a04e4b8b9ea8d154ae88f6cccf6c91700 inherit pro_attribs_classSSAGES_1_1Method"><td class="mdescLeft">&#160;</td><td class="mdescRight">Mask which identifies which CVs to act on. <br /></td></tr>
+<tr class="separator:a04e4b8b9ea8d154ae88f6cccf6c91700 inherit pro_attribs_classSSAGES_1_1Method"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p><a class="el" href="classSSAGES_1_1Umbrella.html" title="Umbrella sampling method. ">Umbrella</a> sampling method. </p>
 <p><a class="el" href="classSSAGES_1_1Umbrella.html" title="Umbrella sampling method. ">Umbrella</a> sampling method to constrain an arbitrary number of CVs at specified equilibrium distances. </p>
 
-<p>Definition at line <a class="el" href="Umbrella_8h_source.html#l00036">36</a> of file <a class="el" href="Umbrella_8h_source.html">Umbrella.h</a>.</p>
+<p>Definition at line <a class="el" href="Umbrella_8h_source.html#l00035">35</a> of file <a class="el" href="Umbrella_8h_source.html">Umbrella.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="a85b2fd03e55eae4861f8f59197b076ee"></a>
+<a class="anchor" id="a4fd856b18492fc79afd4ac4fc3cf5922"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -243,13 +249,13 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
         <tr>
           <td class="memname">SSAGES::Umbrella::Umbrella </td>
           <td>(</td>
-          <td class="paramtype">boost::mpi::communicator &amp;&#160;</td>
+          <td class="paramtype">const MPI_Comm &amp;&#160;</td>
           <td class="paramname"><em>world</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">boost::mpi::communicator &amp;&#160;</td>
+          <td class="paramtype">const MPI_Comm &amp;&#160;</td>
           <td class="paramname"><em>comm</em>, </td>
         </tr>
         <tr>
@@ -303,21 +309,23 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 </dl>
 <p>Create instance of umbrella with spring constants "kspring", and centers "centers". Note the sizes of the vectors should be commensurate with the number of CVs. </p>
 
-<p>Definition at line <a class="el" href="Umbrella_8h_source.html#l00086">86</a> of file <a class="el" href="Umbrella_8h_source.html">Umbrella.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;                                         : </div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        <a class="code" href="classSSAGES_1_1Method.html#a7b4995b0fde5ed802f6a3a9b371fe9ad">Method</a>(frequency, world, comm), <a class="code" href="classSSAGES_1_1Umbrella.html#af2d3ba08bef877fada41148b87ef9a59">kspring_</a>(kspring), <a class="code" href="classSSAGES_1_1Umbrella.html#a25acb900eff541471d1cf6f0cf95b0b4">centers0_</a>(centers),</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;        centers1_(centers), <a class="code" href="classSSAGES_1_1Umbrella.html#a79197ecad0a946de0ece62707937403d">time_</a>(0), <a class="code" href="classSSAGES_1_1Umbrella.html#aaca62f9ca39b04b7a188d45cf89ab2cd">filename_</a>(name), <a class="code" href="classSSAGES_1_1Umbrella.html#afe1477f81bb9d55a2e8d8212f99d8c06">logevery_</a>(1)</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        {}</div>
-<div class="ttc" id="classSSAGES_1_1Umbrella_html_a25acb900eff541471d1cf6f0cf95b0b4"><div class="ttname"><a href="classSSAGES_1_1Umbrella.html#a25acb900eff541471d1cf6f0cf95b0b4">SSAGES::Umbrella::centers0_</a></div><div class="ttdeci">std::vector&lt; double &gt; centers0_</div><div class="ttdoc">Vector of equilibrium distances. </div><div class="ttdef"><b>Definition:</b> <a href="Umbrella_8h_source.html#l00043">Umbrella.h:43</a></div></div>
-<div class="ttc" id="classSSAGES_1_1Method_html_a7b4995b0fde5ed802f6a3a9b371fe9ad"><div class="ttname"><a href="classSSAGES_1_1Method.html#a7b4995b0fde5ed802f6a3a9b371fe9ad">SSAGES::Method::Method</a></div><div class="ttdeci">Method(unsigned int frequency, boost::mpi::communicator &amp;world, boost::mpi::communicator &amp;comm)</div><div class="ttdoc">Constructor. </div><div class="ttdef"><b>Definition:</b> <a href="Method_8h_source.html#l00059">Method.h:59</a></div></div>
-<div class="ttc" id="classSSAGES_1_1Umbrella_html_afe1477f81bb9d55a2e8d8212f99d8c06"><div class="ttname"><a href="classSSAGES_1_1Umbrella.html#afe1477f81bb9d55a2e8d8212f99d8c06">SSAGES::Umbrella::logevery_</a></div><div class="ttdeci">int logevery_</div><div class="ttdoc">Log every n time steps. </div><div class="ttdef"><b>Definition:</b> <a href="Umbrella_8h_source.html#l00052">Umbrella.h:52</a></div></div>
-<div class="ttc" id="classSSAGES_1_1Umbrella_html_af2d3ba08bef877fada41148b87ef9a59"><div class="ttname"><a href="classSSAGES_1_1Umbrella.html#af2d3ba08bef877fada41148b87ef9a59">SSAGES::Umbrella::kspring_</a></div><div class="ttdeci">std::vector&lt; double &gt; kspring_</div><div class="ttdoc">Vector of spring constants. </div><div class="ttdef"><b>Definition:</b> <a href="Umbrella_8h_source.html#l00040">Umbrella.h:40</a></div></div>
-<div class="ttc" id="classSSAGES_1_1Umbrella_html_a79197ecad0a946de0ece62707937403d"><div class="ttname"><a href="classSSAGES_1_1Umbrella.html#a79197ecad0a946de0ece62707937403d">SSAGES::Umbrella::time_</a></div><div class="ttdeci">int time_</div><div class="ttdoc">Amount of time over which to scale centers. </div><div class="ttdef"><b>Definition:</b> <a href="Umbrella_8h_source.html#l00046">Umbrella.h:46</a></div></div>
-<div class="ttc" id="classSSAGES_1_1Umbrella_html_aaca62f9ca39b04b7a188d45cf89ab2cd"><div class="ttname"><a href="classSSAGES_1_1Umbrella.html#aaca62f9ca39b04b7a188d45cf89ab2cd">SSAGES::Umbrella::filename_</a></div><div class="ttdeci">std::string filename_</div><div class="ttdoc">File name. </div><div class="ttdef"><b>Definition:</b> <a href="Umbrella_8h_source.html#l00049">Umbrella.h:49</a></div></div>
+<p>Definition at line <a class="el" href="Umbrella_8h_source.html#l00089">89</a> of file <a class="el" href="Umbrella_8h_source.html">Umbrella.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;                                         : </div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        <a class="code" href="classSSAGES_1_1Method.html#a05bb6ea0244814c1290c46bb3a059be9">Method</a>(frequency, world, comm), <a class="code" href="classSSAGES_1_1Umbrella.html#af2d3ba08bef877fada41148b87ef9a59">kspring_</a>(kspring), <a class="code" href="classSSAGES_1_1Umbrella.html#a25acb900eff541471d1cf6f0cf95b0b4">centers0_</a>(centers),</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        centers1_(centers), <a class="code" href="classSSAGES_1_1Umbrella.html#a79197ecad0a946de0ece62707937403d">time_</a>(0), <a class="code" href="classSSAGES_1_1Umbrella.html#aaca62f9ca39b04b7a188d45cf89ab2cd">filename_</a>(name), <a class="code" href="classSSAGES_1_1Umbrella.html#a118bc974d7cb44facf3ca1af62eb8c99">outfreq_</a>(1), <a class="code" href="classSSAGES_1_1Umbrella.html#a36cf3ea70cffc5608dce3554636f86cb">append_</a>(<span class="keyword">false</span>)</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        {</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        }</div>
+<div class="ttc" id="classSSAGES_1_1Umbrella_html_a25acb900eff541471d1cf6f0cf95b0b4"><div class="ttname"><a href="classSSAGES_1_1Umbrella.html#a25acb900eff541471d1cf6f0cf95b0b4">SSAGES::Umbrella::centers0_</a></div><div class="ttdeci">std::vector&lt; double &gt; centers0_</div><div class="ttdoc">Vector of equilibrium distances. </div><div class="ttdef"><b>Definition:</b> <a href="Umbrella_8h_source.html#l00042">Umbrella.h:42</a></div></div>
+<div class="ttc" id="classSSAGES_1_1Method_html_a05bb6ea0244814c1290c46bb3a059be9"><div class="ttname"><a href="classSSAGES_1_1Method.html#a05bb6ea0244814c1290c46bb3a059be9">SSAGES::Method::Method</a></div><div class="ttdeci">Method(uint frequency, const MPI_Comm &amp;world, const MPI_Comm &amp;comm)</div><div class="ttdoc">Constructor. </div><div class="ttdef"><b>Definition:</b> <a href="Method_8h_source.html#l00061">Method.h:61</a></div></div>
+<div class="ttc" id="classSSAGES_1_1Umbrella_html_af2d3ba08bef877fada41148b87ef9a59"><div class="ttname"><a href="classSSAGES_1_1Umbrella.html#af2d3ba08bef877fada41148b87ef9a59">SSAGES::Umbrella::kspring_</a></div><div class="ttdeci">std::vector&lt; double &gt; kspring_</div><div class="ttdoc">Vector of spring constants. </div><div class="ttdef"><b>Definition:</b> <a href="Umbrella_8h_source.html#l00039">Umbrella.h:39</a></div></div>
+<div class="ttc" id="classSSAGES_1_1Umbrella_html_a36cf3ea70cffc5608dce3554636f86cb"><div class="ttname"><a href="classSSAGES_1_1Umbrella.html#a36cf3ea70cffc5608dce3554636f86cb">SSAGES::Umbrella::append_</a></div><div class="ttdeci">bool append_</div><div class="ttdoc">Append to output files? </div><div class="ttdef"><b>Definition:</b> <a href="Umbrella_8h_source.html#l00057">Umbrella.h:57</a></div></div>
+<div class="ttc" id="classSSAGES_1_1Umbrella_html_a79197ecad0a946de0ece62707937403d"><div class="ttname"><a href="classSSAGES_1_1Umbrella.html#a79197ecad0a946de0ece62707937403d">SSAGES::Umbrella::time_</a></div><div class="ttdeci">int time_</div><div class="ttdoc">Amount of time over which to scale centers. </div><div class="ttdef"><b>Definition:</b> <a href="Umbrella_8h_source.html#l00045">Umbrella.h:45</a></div></div>
+<div class="ttc" id="classSSAGES_1_1Umbrella_html_a118bc974d7cb44facf3ca1af62eb8c99"><div class="ttname"><a href="classSSAGES_1_1Umbrella.html#a118bc974d7cb44facf3ca1af62eb8c99">SSAGES::Umbrella::outfreq_</a></div><div class="ttdeci">int outfreq_</div><div class="ttdoc">Frequency of outputting data. </div><div class="ttdef"><b>Definition:</b> <a href="Umbrella_8h_source.html#l00051">Umbrella.h:51</a></div></div>
+<div class="ttc" id="classSSAGES_1_1Umbrella_html_aaca62f9ca39b04b7a188d45cf89ab2cd"><div class="ttname"><a href="classSSAGES_1_1Umbrella.html#aaca62f9ca39b04b7a188d45cf89ab2cd">SSAGES::Umbrella::filename_</a></div><div class="ttdeci">std::string filename_</div><div class="ttdoc">Output filename. </div><div class="ttdef"><b>Definition:</b> <a href="Umbrella_8h_source.html#l00048">Umbrella.h:48</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
-<a class="anchor" id="a28f3bee3cd35606ba9d6aea8c8d92a81"></a>
+<a class="anchor" id="a158309895422834db414d9f50a24345a"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -327,13 +335,13 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
         <tr>
           <td class="memname">SSAGES::Umbrella::Umbrella </td>
           <td>(</td>
-          <td class="paramtype">boost::mpi::communicator &amp;&#160;</td>
+          <td class="paramtype">const MPI_Comm &amp;&#160;</td>
           <td class="paramname"><em>world</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">boost::mpi::communicator &amp;&#160;</td>
+          <td class="paramtype">const MPI_Comm &amp;&#160;</td>
           <td class="paramname"><em>comm</em>, </td>
         </tr>
         <tr>
@@ -401,22 +409,219 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 </dl>
 <p>Create instance of umbrella with spring constants "kspring", and centers "centers". Note the sizes of the vectors should be commensurate with the number of CVs. </p>
 
-<p>Definition at line <a class="el" href="Umbrella_8h_source.html#l00111">111</a> of file <a class="el" href="Umbrella_8h_source.html">Umbrella.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;                                         : </div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;        <a class="code" href="classSSAGES_1_1Method.html#a7b4995b0fde5ed802f6a3a9b371fe9ad">Method</a>(frequency, world, comm), <a class="code" href="classSSAGES_1_1Umbrella.html#af2d3ba08bef877fada41148b87ef9a59">kspring_</a>(kspring), <a class="code" href="classSSAGES_1_1Umbrella.html#a25acb900eff541471d1cf6f0cf95b0b4">centers0_</a>(centers0),</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;        centers1_(centers1), <a class="code" href="classSSAGES_1_1Umbrella.html#a79197ecad0a946de0ece62707937403d">time_</a>(timesteps), <a class="code" href="classSSAGES_1_1Umbrella.html#aaca62f9ca39b04b7a188d45cf89ab2cd">filename_</a>(name), <a class="code" href="classSSAGES_1_1Umbrella.html#afe1477f81bb9d55a2e8d8212f99d8c06">logevery_</a>(1)</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;        {}</div>
-<div class="ttc" id="classSSAGES_1_1Umbrella_html_a25acb900eff541471d1cf6f0cf95b0b4"><div class="ttname"><a href="classSSAGES_1_1Umbrella.html#a25acb900eff541471d1cf6f0cf95b0b4">SSAGES::Umbrella::centers0_</a></div><div class="ttdeci">std::vector&lt; double &gt; centers0_</div><div class="ttdoc">Vector of equilibrium distances. </div><div class="ttdef"><b>Definition:</b> <a href="Umbrella_8h_source.html#l00043">Umbrella.h:43</a></div></div>
-<div class="ttc" id="classSSAGES_1_1Method_html_a7b4995b0fde5ed802f6a3a9b371fe9ad"><div class="ttname"><a href="classSSAGES_1_1Method.html#a7b4995b0fde5ed802f6a3a9b371fe9ad">SSAGES::Method::Method</a></div><div class="ttdeci">Method(unsigned int frequency, boost::mpi::communicator &amp;world, boost::mpi::communicator &amp;comm)</div><div class="ttdoc">Constructor. </div><div class="ttdef"><b>Definition:</b> <a href="Method_8h_source.html#l00059">Method.h:59</a></div></div>
-<div class="ttc" id="classSSAGES_1_1Umbrella_html_afe1477f81bb9d55a2e8d8212f99d8c06"><div class="ttname"><a href="classSSAGES_1_1Umbrella.html#afe1477f81bb9d55a2e8d8212f99d8c06">SSAGES::Umbrella::logevery_</a></div><div class="ttdeci">int logevery_</div><div class="ttdoc">Log every n time steps. </div><div class="ttdef"><b>Definition:</b> <a href="Umbrella_8h_source.html#l00052">Umbrella.h:52</a></div></div>
-<div class="ttc" id="classSSAGES_1_1Umbrella_html_af2d3ba08bef877fada41148b87ef9a59"><div class="ttname"><a href="classSSAGES_1_1Umbrella.html#af2d3ba08bef877fada41148b87ef9a59">SSAGES::Umbrella::kspring_</a></div><div class="ttdeci">std::vector&lt; double &gt; kspring_</div><div class="ttdoc">Vector of spring constants. </div><div class="ttdef"><b>Definition:</b> <a href="Umbrella_8h_source.html#l00040">Umbrella.h:40</a></div></div>
-<div class="ttc" id="classSSAGES_1_1Umbrella_html_a79197ecad0a946de0ece62707937403d"><div class="ttname"><a href="classSSAGES_1_1Umbrella.html#a79197ecad0a946de0ece62707937403d">SSAGES::Umbrella::time_</a></div><div class="ttdeci">int time_</div><div class="ttdoc">Amount of time over which to scale centers. </div><div class="ttdef"><b>Definition:</b> <a href="Umbrella_8h_source.html#l00046">Umbrella.h:46</a></div></div>
-<div class="ttc" id="classSSAGES_1_1Umbrella_html_aaca62f9ca39b04b7a188d45cf89ab2cd"><div class="ttname"><a href="classSSAGES_1_1Umbrella.html#aaca62f9ca39b04b7a188d45cf89ab2cd">SSAGES::Umbrella::filename_</a></div><div class="ttdeci">std::string filename_</div><div class="ttdoc">File name. </div><div class="ttdef"><b>Definition:</b> <a href="Umbrella_8h_source.html#l00049">Umbrella.h:49</a></div></div>
+<p>Definition at line <a class="el" href="Umbrella_8h_source.html#l00115">115</a> of file <a class="el" href="Umbrella_8h_source.html">Umbrella.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;                                         : </div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;        <a class="code" href="classSSAGES_1_1Method.html#a05bb6ea0244814c1290c46bb3a059be9">Method</a>(frequency, world, comm), <a class="code" href="classSSAGES_1_1Umbrella.html#af2d3ba08bef877fada41148b87ef9a59">kspring_</a>(kspring), <a class="code" href="classSSAGES_1_1Umbrella.html#a25acb900eff541471d1cf6f0cf95b0b4">centers0_</a>(centers0),</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;        centers1_(centers1), <a class="code" href="classSSAGES_1_1Umbrella.html#a79197ecad0a946de0ece62707937403d">time_</a>(timesteps), <a class="code" href="classSSAGES_1_1Umbrella.html#aaca62f9ca39b04b7a188d45cf89ab2cd">filename_</a>(name), <a class="code" href="classSSAGES_1_1Umbrella.html#a118bc974d7cb44facf3ca1af62eb8c99">outfreq_</a>(1)</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;        {</div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;        }</div>
+<div class="ttc" id="classSSAGES_1_1Umbrella_html_a25acb900eff541471d1cf6f0cf95b0b4"><div class="ttname"><a href="classSSAGES_1_1Umbrella.html#a25acb900eff541471d1cf6f0cf95b0b4">SSAGES::Umbrella::centers0_</a></div><div class="ttdeci">std::vector&lt; double &gt; centers0_</div><div class="ttdoc">Vector of equilibrium distances. </div><div class="ttdef"><b>Definition:</b> <a href="Umbrella_8h_source.html#l00042">Umbrella.h:42</a></div></div>
+<div class="ttc" id="classSSAGES_1_1Method_html_a05bb6ea0244814c1290c46bb3a059be9"><div class="ttname"><a href="classSSAGES_1_1Method.html#a05bb6ea0244814c1290c46bb3a059be9">SSAGES::Method::Method</a></div><div class="ttdeci">Method(uint frequency, const MPI_Comm &amp;world, const MPI_Comm &amp;comm)</div><div class="ttdoc">Constructor. </div><div class="ttdef"><b>Definition:</b> <a href="Method_8h_source.html#l00061">Method.h:61</a></div></div>
+<div class="ttc" id="classSSAGES_1_1Umbrella_html_af2d3ba08bef877fada41148b87ef9a59"><div class="ttname"><a href="classSSAGES_1_1Umbrella.html#af2d3ba08bef877fada41148b87ef9a59">SSAGES::Umbrella::kspring_</a></div><div class="ttdeci">std::vector&lt; double &gt; kspring_</div><div class="ttdoc">Vector of spring constants. </div><div class="ttdef"><b>Definition:</b> <a href="Umbrella_8h_source.html#l00039">Umbrella.h:39</a></div></div>
+<div class="ttc" id="classSSAGES_1_1Umbrella_html_a79197ecad0a946de0ece62707937403d"><div class="ttname"><a href="classSSAGES_1_1Umbrella.html#a79197ecad0a946de0ece62707937403d">SSAGES::Umbrella::time_</a></div><div class="ttdeci">int time_</div><div class="ttdoc">Amount of time over which to scale centers. </div><div class="ttdef"><b>Definition:</b> <a href="Umbrella_8h_source.html#l00045">Umbrella.h:45</a></div></div>
+<div class="ttc" id="classSSAGES_1_1Umbrella_html_a118bc974d7cb44facf3ca1af62eb8c99"><div class="ttname"><a href="classSSAGES_1_1Umbrella.html#a118bc974d7cb44facf3ca1af62eb8c99">SSAGES::Umbrella::outfreq_</a></div><div class="ttdeci">int outfreq_</div><div class="ttdoc">Frequency of outputting data. </div><div class="ttdef"><b>Definition:</b> <a href="Umbrella_8h_source.html#l00051">Umbrella.h:51</a></div></div>
+<div class="ttc" id="classSSAGES_1_1Umbrella_html_aaca62f9ca39b04b7a188d45cf89ab2cd"><div class="ttname"><a href="classSSAGES_1_1Umbrella.html#aaca62f9ca39b04b7a188d45cf89ab2cd">SSAGES::Umbrella::filename_</a></div><div class="ttdeci">std::string filename_</div><div class="ttdoc">Output filename. </div><div class="ttdef"><b>Definition:</b> <a href="Umbrella_8h_source.html#l00048">Umbrella.h:48</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a0ef3d596c8ffb392280b82e5e574c35b"></a>
+<a class="anchor" id="a0f8f31f884c4f2fb1551897e25401eb1"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classSSAGES_1_1Umbrella.html">Umbrella</a> * SSAGES::Umbrella::Build </td>
+          <td>(</td>
+          <td class="paramtype">const Json::Value &amp;&#160;</td>
+          <td class="paramname"><em>json</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const MPI_Comm &amp;&#160;</td>
+          <td class="paramname"><em>world</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const MPI_Comm &amp;&#160;</td>
+          <td class="paramname"><em>comm</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>path</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p></p>
+
+<p>Definition at line <a class="el" href="Umbrella_8cpp_source.html#l00113">113</a> of file <a class="el" href="Umbrella_8cpp_source.html">Umbrella.cpp</a>.</p>
+
+<p>References <a class="el" href="Requirement_8h_source.html#l00092">Json::Requirement::GetErrors()</a>, <a class="el" href="Requirement_8h_source.html#l00086">Json::Requirement::HasErrors()</a>, <a class="el" href="ObjectRequirement_8h_source.html#l00142">Json::ObjectRequirement::Parse()</a>, <a class="el" href="Umbrella_8h_source.html#l00162">SetAppend()</a>, <a class="el" href="Umbrella_8h_source.html#l00153">SetOutputFrequency()</a>, and <a class="el" href="ObjectRequirement_8h_source.html#l00239">Json::ObjectRequirement::Validate()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;    {</div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;        <a class="code" href="classJson_1_1ObjectRequirement.html">ObjectRequirement</a> validator;</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;        Value schema;</div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;        Reader reader;</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;        reader.parse(JsonSchema::UmbrellaMethod, schema);</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;        validator.<a class="code" href="classJson_1_1ObjectRequirement.html#a4ed02ae1d612a5efba1688fcdd2df092">Parse</a>(schema, path);</div>
+<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;</div>
+<div class="line"><a name="l00125"></a><span class="lineno">  125</span>&#160;        <span class="comment">// Validate inputs.</span></div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;        validator.<a class="code" href="classJson_1_1ObjectRequirement.html#a9ac3b920001a35bc70580035d8d802b7">Validate</a>(json, path);</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;        <span class="keywordflow">if</span>(validator.<a class="code" href="classJson_1_1Requirement.html#adfaec336a9f051d6f6b9a6d7f1d97b75">HasErrors</a>())</div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;            <span class="keywordflow">throw</span> BuildException(validator.<a class="code" href="classJson_1_1Requirement.html#a60bc275c366eb59f192fa2e621268480">GetErrors</a>());</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;        </div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;        <span class="comment">//TODO walker id should be obtainable in method as</span></div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;        <span class="comment">//     opposed to calculated like this. </span></div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;        uint wid = mxx::comm(world).rank()/mxx::comm(comm).size(); </div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;        <span class="keywordtype">bool</span> ismulti = mxx::comm(world).size() &gt; mxx::comm(comm).size();</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;        uint wcount = mxx::comm(world).size() / mxx::comm(comm).size();</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;</div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;        std::vector&lt;std::vector&lt;double&gt;&gt; ksprings;</div>
+<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;        <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; s : json[<span class="stringliteral">&quot;ksprings&quot;</span>])</div>
+<div class="line"><a name="l00138"></a><span class="lineno">  138</span>&#160;        {</div>
+<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;            std::vector&lt;double&gt; kspring;</div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;            <span class="keywordflow">if</span>(s.isArray())</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160;                <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; k : s)</div>
+<div class="line"><a name="l00142"></a><span class="lineno">  142</span>&#160;                    kspring.push_back(k.asDouble());</div>
+<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;            <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;                kspring.push_back(s.asDouble());</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;            </div>
+<div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;            ksprings.push_back(kspring);</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;        }</div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;        std::vector&lt;std::vector&lt;double&gt;&gt; centers0, centers1;</div>
+<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;        <span class="keywordflow">if</span>(json.isMember(<span class="stringliteral">&quot;centers&quot;</span>))</div>
+<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;        {</div>
+<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;            <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; s : json[<span class="stringliteral">&quot;centers&quot;</span>])</div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;            {</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;                std::vector&lt;double&gt; center;</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;                <span class="keywordflow">if</span>(s.isArray())</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;                    <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; k : s)</div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;                        center.push_back(k.asDouble());</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;                <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;                    center.push_back(s.asDouble());</div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;                </div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;                centers0.push_back(center);</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;            }</div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;        }</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;        <span class="keywordflow">else</span> <span class="keywordflow">if</span>(json.isMember(<span class="stringliteral">&quot;centers0&quot;</span>) &amp;&amp; json.isMember(<span class="stringliteral">&quot;centers1&quot;</span>) &amp;&amp; json.isMember(<span class="stringliteral">&quot;timesteps&quot;</span>))</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;        {</div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;            <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; s : json[<span class="stringliteral">&quot;centers0&quot;</span>])</div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;            {           </div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;                std::vector&lt;double&gt; center;</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;                <span class="keywordflow">if</span>(s.isArray())</div>
+<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;                    <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; k : s)</div>
+<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;                        center.push_back(k.asDouble());</div>
+<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;                <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;                    center.push_back(s.asDouble());</div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;                </div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;                centers0.push_back(center);</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;            }</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;</div>
+<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;            <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; s : json[<span class="stringliteral">&quot;centers1&quot;</span>])</div>
+<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;            {           </div>
+<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;                std::vector&lt;double&gt; center;</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;                <span class="keywordflow">if</span>(s.isArray())</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;                    <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; k : s)</div>
+<div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;                        center.push_back(k.asDouble());</div>
+<div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;                <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;                    center.push_back(s.asDouble());</div>
+<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;                </div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;                centers1.push_back(center);</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;            }</div>
+<div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;        }</div>
+<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;        <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;            <span class="keywordflow">throw</span> BuildException({<span class="stringliteral">&quot;Either \&quot;centers\&quot; or \&quot;timesteps\&quot;, \&quot;centers0\&quot; and \&quot;centers1\&quot; must be defined for umbrella.&quot;</span>});</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;</div>
+<div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;        <span class="keywordflow">if</span>(ksprings[0].size() != centers0[0].size())</div>
+<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;            <span class="keywordflow">throw</span> BuildException({<span class="stringliteral">&quot;Need to define a spring for every center or a center for every spring!&quot;</span>});</div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;        </div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160;        <span class="comment">// If only one set of center/ksprings are specified. Fill it up for multi.</span></div>
+<div class="line"><a name="l00197"></a><span class="lineno">  197</span>&#160;        <span class="keywordflow">if</span>(ismulti)</div>
+<div class="line"><a name="l00198"></a><span class="lineno">  198</span>&#160;        {</div>
+<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;            <span class="keywordflow">if</span>(ksprings.size() == 1)</div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;                <span class="keywordflow">for</span>(<span class="keywordtype">size_t</span> i = 1; i &lt; wcount; ++i)</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;                    ksprings.push_back(ksprings[0]);</div>
+<div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;            <span class="keywordflow">else</span> <span class="keywordflow">if</span>(ksprings.size() != wcount)</div>
+<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;                <span class="keywordflow">throw</span> std::invalid_argument(path + <span class="stringliteral">&quot;: Multi-walker simulations requires that the number of \&quot;ksprings\&quot; match the number of walkers.&quot;</span>);</div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;            <span class="keywordflow">if</span>(centers0.size() == 1)</div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;                <span class="keywordflow">for</span>(<span class="keywordtype">size_t</span> i = 1; i &lt; wcount; ++i)</div>
+<div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;                    centers0.push_back(centers0[0]);</div>
+<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;            <span class="keywordflow">else</span> <span class="keywordflow">if</span>(centers0.size() != wcount)</div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;                <span class="keywordflow">throw</span> std::invalid_argument(path + <span class="stringliteral">&quot;: Multi-walker simulations requires that the number of \&quot;centers\&quot;/\&quot;centers0\&quot; match the number of walkers.&quot;</span>);</div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;            <span class="keywordflow">if</span>(centers1.size() == 1)</div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;                <span class="keywordflow">for</span>(<span class="keywordtype">size_t</span> i = 1; i &lt; wcount; ++i)</div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;                    centers1.push_back(centers1[0]);</div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;            <span class="keywordflow">else</span> <span class="keywordflow">if</span>(centers1.size()) <span class="comment">// centers1 is optional.</span></div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;                <span class="keywordflow">throw</span> std::invalid_argument(path + <span class="stringliteral">&quot;: Multi-walker simulations requires that the number of \&quot;centers1\&quot; match the number of walkers.&quot;</span>);</div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;        }</div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;</div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;        <span class="keyword">auto</span> freq = json.get(<span class="stringliteral">&quot;frequency&quot;</span>, 1).asInt();</div>
+<div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;</div>
+<div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;        uint timesteps = 0; </div>
+<div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;        <span class="keywordflow">if</span>(json.isMember(<span class="stringliteral">&quot;timesteps&quot;</span>))</div>
+<div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;        {</div>
+<div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;            <span class="keywordflow">if</span>(json[<span class="stringliteral">&quot;timesteps&quot;</span>].isArray())</div>
+<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;                timesteps = json[<span class="stringliteral">&quot;timesteps&quot;</span>][wid].asUInt();</div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;            <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;                timesteps = json[<span class="stringliteral">&quot;timesteps&quot;</span>].asUInt();</div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;        }</div>
+<div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;</div>
+<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;        std::string name = <span class="stringliteral">&quot;umbrella.dat&quot;</span>; </div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;        <span class="keywordflow">if</span>(json[<span class="stringliteral">&quot;output_file&quot;</span>].isArray())</div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;            name = json[<span class="stringliteral">&quot;output_file&quot;</span>][wid].asString(); </div>
+<div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;        <span class="keywordflow">else</span> <span class="keywordflow">if</span>(ismulti)</div>
+<div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;            <span class="keywordflow">throw</span> std::invalid_argument(path + <span class="stringliteral">&quot;: Multi-walker simulations require a separate output file for each.&quot;</span>);</div>
+<div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;        <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;            name = json[<span class="stringliteral">&quot;output_file&quot;</span>].asString();</div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;</div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;        <a class="code" href="classSSAGES_1_1Umbrella.html#a4fd856b18492fc79afd4ac4fc3cf5922">Umbrella</a>* m = <span class="keyword">nullptr</span>;</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;        <span class="keywordflow">if</span>(timesteps == 0)</div>
+<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;            m = <span class="keyword">new</span> <a class="code" href="classSSAGES_1_1Umbrella.html#a4fd856b18492fc79afd4ac4fc3cf5922">Umbrella</a>(world, comm, ksprings[wid], centers0[wid], name, freq);</div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;        <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;            m = <span class="keyword">new</span> <a class="code" href="classSSAGES_1_1Umbrella.html#a4fd856b18492fc79afd4ac4fc3cf5922">Umbrella</a>(world, comm, ksprings[wid], centers0[wid], centers1[wid], timesteps, name, freq);</div>
+<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;</div>
+<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;        m-&gt;SetOutputFrequency(json.get(<span class="stringliteral">&quot;output_frequency&quot;</span>,0).asInt());</div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;        m-&gt;SetAppend(json.get(<span class="stringliteral">&quot;append&quot;</span>, <span class="keyword">false</span>).asBool());</div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;        </div>
+<div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;        <span class="keywordflow">return</span> m;</div>
+<div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;    }</div>
+<div class="ttc" id="classJson_1_1Requirement_html_adfaec336a9f051d6f6b9a6d7f1d97b75"><div class="ttname"><a href="classJson_1_1Requirement.html#adfaec336a9f051d6f6b9a6d7f1d97b75">Json::Requirement::HasErrors</a></div><div class="ttdeci">bool HasErrors()</div><div class="ttdoc">Check if errors have occured. </div><div class="ttdef"><b>Definition:</b> <a href="Requirement_8h_source.html#l00086">Requirement.h:86</a></div></div>
+<div class="ttc" id="classSSAGES_1_1Umbrella_html_a4fd856b18492fc79afd4ac4fc3cf5922"><div class="ttname"><a href="classSSAGES_1_1Umbrella.html#a4fd856b18492fc79afd4ac4fc3cf5922">SSAGES::Umbrella::Umbrella</a></div><div class="ttdeci">Umbrella(const MPI_Comm &amp;world, const MPI_Comm &amp;comm, const std::vector&lt; double &gt; &amp;kspring, const std::vector&lt; double &gt; &amp;centers, std::string name, unsigned int frequency)</div><div class="ttdoc">Constructor. </div><div class="ttdef"><b>Definition:</b> <a href="Umbrella_8h_source.html#l00089">Umbrella.h:89</a></div></div>
+<div class="ttc" id="classJson_1_1ObjectRequirement_html_a4ed02ae1d612a5efba1688fcdd2df092"><div class="ttname"><a href="classJson_1_1ObjectRequirement.html#a4ed02ae1d612a5efba1688fcdd2df092">Json::ObjectRequirement::Parse</a></div><div class="ttdeci">virtual void Parse(Value json, const std::string &amp;path) override</div><div class="ttdoc">Parse JSON value to generate Requirement(s). </div><div class="ttdef"><b>Definition:</b> <a href="ObjectRequirement_8h_source.html#l00142">ObjectRequirement.h:142</a></div></div>
+<div class="ttc" id="classJson_1_1Requirement_html_a60bc275c366eb59f192fa2e621268480"><div class="ttname"><a href="classJson_1_1Requirement.html#a60bc275c366eb59f192fa2e621268480">Json::Requirement::GetErrors</a></div><div class="ttdeci">std::vector&lt; std::string &gt; GetErrors()</div><div class="ttdoc">Get list of error messages. </div><div class="ttdef"><b>Definition:</b> <a href="Requirement_8h_source.html#l00092">Requirement.h:92</a></div></div>
+<div class="ttc" id="classJson_1_1ObjectRequirement_html"><div class="ttname"><a href="classJson_1_1ObjectRequirement.html">Json::ObjectRequirement</a></div><div class="ttdoc">Requirements on an object. </div><div class="ttdef"><b>Definition:</b> <a href="ObjectRequirement_8h_source.html#l00046">ObjectRequirement.h:46</a></div></div>
+<div class="ttc" id="classJson_1_1ObjectRequirement_html_a9ac3b920001a35bc70580035d8d802b7"><div class="ttname"><a href="classJson_1_1ObjectRequirement.html#a9ac3b920001a35bc70580035d8d802b7">Json::ObjectRequirement::Validate</a></div><div class="ttdeci">virtual void Validate(const Value &amp;json, const std::string &amp;path) override</div><div class="ttdoc">Validate JSON value. </div><div class="ttdef"><b>Definition:</b> <a href="ObjectRequirement_8h_source.html#l00239">ObjectRequirement.h:239</a></div></div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classSSAGES_1_1Umbrella_a0f8f31f884c4f2fb1551897e25401eb1_cgraph.png" border="0" usemap="#classSSAGES_1_1Umbrella_a0f8f31f884c4f2fb1551897e25401eb1_cgraph" alt=""/></div>
+<map name="classSSAGES_1_1Umbrella_a0f8f31f884c4f2fb1551897e25401eb1_cgraph" id="classSSAGES_1_1Umbrella_a0f8f31f884c4f2fb1551897e25401eb1_cgraph">
+<area shape="rect" id="node2" href="classJson_1_1Requirement.html#a60bc275c366eb59f192fa2e621268480" title="Get list of error messages. " alt="" coords="503,5,643,46"/><area shape="rect" id="node3" href="classJson_1_1Requirement.html#adfaec336a9f051d6f6b9a6d7f1d97b75" title="Check if errors have occured. " alt="" coords="503,70,643,111"/><area shape="rect" id="node4" href="classJson_1_1ObjectRequirement.html#a4ed02ae1d612a5efba1688fcdd2df092" title="Parse JSON value to generate Requirement(s). " alt="" coords="249,395,420,437"/><area shape="rect" id="node12" href="classSSAGES_1_1Umbrella.html#a86c1b11227fd169e94f8da0bb589359b" title="Set append mode. " alt="" coords="230,461,439,488"/><area shape="rect" id="node13" href="classSSAGES_1_1Umbrella.html#a6d7781c559c876c99b368638f70786f3" title="Set output frequency. " alt="" coords="233,513,437,554"/><area shape="rect" id="node14" href="classJson_1_1ObjectRequirement.html#a9ac3b920001a35bc70580035d8d802b7" title="Validate JSON value. " alt="" coords="249,233,420,274"/><area shape="rect" id="node5" href="classJson_1_1RequirementLoader.html#a82857d029b7ebfeb315f5b1b32401291" title="Extended Requirement loader. " alt="" coords="488,462,659,503"/><area shape="rect" id="node6" href="classJson_1_1RequirementLoader.html#aeb1344919deda4bd8b8aa8a00cb50390" title="Load specific requirement. " alt="" coords="488,527,659,569"/><area shape="rect" id="node7" href="classJson_1_1ObjectRequirement.html#a4f2e76636df4f7b153aaac02a1b05e4f" title="Reset Requirement. " alt="" coords="488,593,659,634"/><area shape="rect" id="node8" href="classJson_1_1ObjectRequirement.html#aa8181c37cbe67db098bc2b82cdea71ef" title="Clear errors on all Requirements. " alt="" coords="707,559,877,601"/><area shape="rect" id="node10" href="classJson_1_1ObjectRequirement.html#a4fc797684496f4f0381d1388877c133d" title="Clear notices on all Requirements. " alt="" coords="707,625,877,666"/><area shape="rect" id="node9" href="classJson_1_1Requirement.html#ace71ebbbcc885f0c4c391a3807c80f33" title="Clear list of error messages. " alt="" coords="926,559,1066,601"/><area shape="rect" id="node11" href="classJson_1_1Requirement.html#a8a8a4020e4955be56dcacf4727ae5bc3" title="Clear list of notice messages. " alt="" coords="926,625,1066,666"/><area shape="rect" id="node15" href="classJson_1_1Requirement.html#a46a0056414100386541cd1cb899e0030" title="Get list of notices. " alt="" coords="503,135,643,177"/><area shape="rect" id="node16" href="classJson_1_1Requirement.html#ad407cff3cc37295c3b2a7ebe31798548" title="Check if notices have been queued. " alt="" coords="503,201,643,242"/><area shape="rect" id="node17" href="classJson_1_1Requirement.html#adeb9efa6cf271d9cea0599ff2d458a08" title="Add error to list of error messages. " alt="" coords="503,266,643,307"/><area shape="rect" id="node18" href="classJson_1_1Requirement.html#a00feadb29fa33f4f2cca7362f12aaed4" title="Add message to list of notices. " alt="" coords="503,331,643,373"/><area shape="rect" id="node19" href="classJson_1_1Requirement.html#aa97494b642414d00482745a0d5b2c2c3" title="Validate that JSON value meets requirements. " alt="" coords="503,397,643,438"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a034d7e5266790eeb7a9faaa4aa8520a3"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -432,8 +637,8 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="namespaceSSAGES.html#acddea47426ac0a643b048f870ddd2907">CVList</a> &amp;&#160;</td>
-          <td class="paramname"><em>cvs</em>&#160;</td>
+          <td class="paramtype">const class <a class="el" href="classSSAGES_1_1CVManager.html">CVManager</a> &amp;&#160;</td>
+          <td class="paramname"><em>cvmanager</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -451,63 +656,62 @@ unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" hr
 <p>Post-integration hook. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">snapshot</td><td><a class="el" href="classSSAGES_1_1Simulation.html" title="Simulation class for creating simulation and a driver object. ">Simulation</a> snapshot. </td></tr>
-    <tr><td class="paramname">cvs</td><td>List of CVs. </td></tr>
+    <tr><td class="paramname">snapshot</td><td>Simulation snapshot. </td></tr>
+    <tr><td class="paramname">cvmanager</td><td>Collective variable manager. </td></tr>
   </table>
   </dd>
 </dl>
 
-<p>Implements <a class="el" href="classSSAGES_1_1Method.html#a4da2e92262fe76a086cbf8d282e9b396">SSAGES::Method</a>.</p>
+<p>Implements <a class="el" href="classSSAGES_1_1Method.html#af2f33dfaa758c5cd505477f4767fb339">SSAGES::Method</a>.</p>
 
-<p>Definition at line <a class="el" href="Umbrella_8cpp_source.html#l00033">33</a> of file <a class="el" href="Umbrella_8cpp_source.html">Umbrella.cpp</a>.</p>
+<p>Definition at line <a class="el" href="Umbrella_8cpp_source.html#l00057">57</a> of file <a class="el" href="Umbrella_8cpp_source.html">Umbrella.cpp</a>.</p>
 
-<p>References <a class="el" href="Snapshot_8h_source.html#l00364">SSAGES::Snapshot::GetForces()</a>, <a class="el" href="Snapshot_8h_source.html#l00129">SSAGES::Snapshot::GetHMatrix()</a>, <a class="el" href="Snapshot_8h_source.html#l00105">SSAGES::Snapshot::GetIteration()</a>, <a class="el" href="Snapshot_8h_source.html#l00135">SSAGES::Snapshot::GetVirial()</a>, <a class="el" href="Method_8h_source.html#l00048">SSAGES::Method::iteration_</a>, <a class="el" href="Umbrella_8h_source.html#l00040">kspring_</a>, <a class="el" href="Umbrella_8h_source.html#l00052">logevery_</a>, and <a class="el" href="Umbrella_8cpp_source.html#l00070">PrintUmbrella()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    {</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        <span class="comment">// Compute the forces on the atoms from the CV&#39;s using the chain </span></div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        <span class="comment">// rule.</span></div>
-<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;        <span class="keyword">auto</span>&amp; forces = snapshot-&gt;GetForces();</div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        <span class="keyword">auto</span>&amp; virial = snapshot-&gt;GetVirial();</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        <span class="keyword">auto</span>&amp; H = snapshot-&gt;GetHMatrix();</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
-<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;        <span class="keywordflow">for</span>(<span class="keywordtype">size_t</span> i = 0; i &lt; cvs.size(); ++i)</div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;        {</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;            <span class="comment">// Get current CV and gradient.</span></div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;            <span class="keyword">auto</span>&amp; cv = cvs[i];</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;            <span class="keyword">auto</span>&amp; grad = cv-&gt;GetGradient();</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;            <span class="keyword">auto</span>&amp; boxgrad = cv-&gt;GetBoxGradient();</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;            <span class="comment">// Compute dV/dCV.</span></div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;            <span class="keyword">auto</span> center = GetCurrentCenter(snapshot-&gt;GetIteration(), i);</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;            <span class="keyword">auto</span> D = <a class="code" href="classSSAGES_1_1Umbrella.html#af2d3ba08bef877fada41148b87ef9a59">kspring_</a>[i]*(cv-&gt;GetDifference(center));</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;            <span class="comment">// Update forces.</span></div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;            <span class="keywordflow">for</span>(<span class="keywordtype">size_t</span> j = 0; j &lt; forces.size(); ++j)</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;                forces[j] -= D*grad[j];</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;            </div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;            <span class="comment">// Update virial. </span></div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;            virial += D*boxgrad;</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        }</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        <a class="code" href="classSSAGES_1_1Method.html#a1b83499833edfa7a5ecf5bb4f2de9a62">iteration_</a>++;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        <span class="keywordflow">if</span>(<a class="code" href="classSSAGES_1_1Method.html#a1b83499833edfa7a5ecf5bb4f2de9a62">iteration_</a> % <a class="code" href="classSSAGES_1_1Umbrella.html#afe1477f81bb9d55a2e8d8212f99d8c06">logevery_</a> == 0)</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;            <a class="code" href="classSSAGES_1_1Umbrella.html#acbae1908834df3cf59c9f80e7b70be05">PrintUmbrella</a>(cvs);</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    }</div>
-<div class="ttc" id="classSSAGES_1_1Umbrella_html_acbae1908834df3cf59c9f80e7b70be05"><div class="ttname"><a href="classSSAGES_1_1Umbrella.html#acbae1908834df3cf59c9f80e7b70be05">SSAGES::Umbrella::PrintUmbrella</a></div><div class="ttdeci">void PrintUmbrella(const CVList &amp;cvs)</div><div class="ttdoc">Print umbrella values. </div><div class="ttdef"><b>Definition:</b> <a href="Umbrella_8cpp_source.html#l00070">Umbrella.cpp:70</a></div></div>
-<div class="ttc" id="classSSAGES_1_1Method_html_a1b83499833edfa7a5ecf5bb4f2de9a62"><div class="ttname"><a href="classSSAGES_1_1Method.html#a1b83499833edfa7a5ecf5bb4f2de9a62">SSAGES::Method::iteration_</a></div><div class="ttdeci">unsigned int iteration_</div><div class="ttdoc">Number of the method iteration. </div><div class="ttdef"><b>Definition:</b> <a href="Method_8h_source.html#l00048">Method.h:48</a></div></div>
-<div class="ttc" id="classSSAGES_1_1Umbrella_html_afe1477f81bb9d55a2e8d8212f99d8c06"><div class="ttname"><a href="classSSAGES_1_1Umbrella.html#afe1477f81bb9d55a2e8d8212f99d8c06">SSAGES::Umbrella::logevery_</a></div><div class="ttdeci">int logevery_</div><div class="ttdoc">Log every n time steps. </div><div class="ttdef"><b>Definition:</b> <a href="Umbrella_8h_source.html#l00052">Umbrella.h:52</a></div></div>
-<div class="ttc" id="classSSAGES_1_1Umbrella_html_af2d3ba08bef877fada41148b87ef9a59"><div class="ttname"><a href="classSSAGES_1_1Umbrella.html#af2d3ba08bef877fada41148b87ef9a59">SSAGES::Umbrella::kspring_</a></div><div class="ttdeci">std::vector&lt; double &gt; kspring_</div><div class="ttdoc">Vector of spring constants. </div><div class="ttdef"><b>Definition:</b> <a href="Umbrella_8h_source.html#l00040">Umbrella.h:40</a></div></div>
+<p>References <a class="el" href="CVManager_8h_source.html#l00080">SSAGES::CVManager::GetCVs()</a>, <a class="el" href="Snapshot_8h_source.html#l00362">SSAGES::Snapshot::GetForces()</a>, <a class="el" href="Snapshot_8h_source.html#l00127">SSAGES::Snapshot::GetHMatrix()</a>, <a class="el" href="Snapshot_8h_source.html#l00103">SSAGES::Snapshot::GetIteration()</a>, and <a class="el" href="Snapshot_8h_source.html#l00133">SSAGES::Snapshot::GetVirial()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    {</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        <span class="comment">// Get necessary info. </span></div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        <span class="keyword">auto</span> cvs = cvmanager.GetCVs(<a class="code" href="classSSAGES_1_1Method.html#a04e4b8b9ea8d154ae88f6cccf6c91700">cvmask_</a>);</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;        <span class="keyword">auto</span>&amp; forces = snapshot-&gt;GetForces();</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        <span class="keyword">auto</span>&amp; virial = snapshot-&gt;GetVirial();</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;        <span class="keyword">auto</span>&amp; H = snapshot-&gt;GetHMatrix();</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        <span class="keywordflow">for</span>(<span class="keywordtype">size_t</span> i = 0; i &lt; cvs.size(); ++i)</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        {</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;            <span class="comment">// Get current CV and gradient.</span></div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;            <span class="keyword">auto</span>&amp; cv = cvs[i];</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;            <span class="keyword">auto</span>&amp; grad = cv-&gt;GetGradient();</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;            <span class="keyword">auto</span>&amp; boxgrad = cv-&gt;GetBoxGradient();</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;            <span class="comment">// Compute dV/dCV.</span></div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;            <span class="keyword">auto</span> center = GetCurrentCenter(snapshot-&gt;GetIteration(), i);</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;            <span class="keyword">auto</span> D = <a class="code" href="classSSAGES_1_1Umbrella.html#af2d3ba08bef877fada41148b87ef9a59">kspring_</a>[i]*cv-&gt;GetDifference(center);</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;            <span class="comment">// Update forces.</span></div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;            <span class="keywordflow">for</span>(<span class="keywordtype">size_t</span> j = 0; j &lt; forces.size(); ++j)</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;                forces[j] -= D*grad[j];</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;            </div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;            <span class="comment">// Update virial. </span></div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;            virial += D*boxgrad;</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        }</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        <span class="keywordflow">if</span>(snapshot-&gt;GetIteration() % <a class="code" href="classSSAGES_1_1Umbrella.html#a118bc974d7cb44facf3ca1af62eb8c99">outfreq_</a> == 0)</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;            <a class="code" href="classSSAGES_1_1Umbrella.html#a79fb610f613c0e686ba8d7218cd8c837">PrintUmbrella</a>(cvs, snapshot-&gt;GetIteration());</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    }</div>
+<div class="ttc" id="classSSAGES_1_1Umbrella_html_af2d3ba08bef877fada41148b87ef9a59"><div class="ttname"><a href="classSSAGES_1_1Umbrella.html#af2d3ba08bef877fada41148b87ef9a59">SSAGES::Umbrella::kspring_</a></div><div class="ttdeci">std::vector&lt; double &gt; kspring_</div><div class="ttdoc">Vector of spring constants. </div><div class="ttdef"><b>Definition:</b> <a href="Umbrella_8h_source.html#l00039">Umbrella.h:39</a></div></div>
+<div class="ttc" id="classSSAGES_1_1Umbrella_html_a118bc974d7cb44facf3ca1af62eb8c99"><div class="ttname"><a href="classSSAGES_1_1Umbrella.html#a118bc974d7cb44facf3ca1af62eb8c99">SSAGES::Umbrella::outfreq_</a></div><div class="ttdeci">int outfreq_</div><div class="ttdoc">Frequency of outputting data. </div><div class="ttdef"><b>Definition:</b> <a href="Umbrella_8h_source.html#l00051">Umbrella.h:51</a></div></div>
+<div class="ttc" id="classSSAGES_1_1Method_html_a04e4b8b9ea8d154ae88f6cccf6c91700"><div class="ttname"><a href="classSSAGES_1_1Method.html#a04e4b8b9ea8d154ae88f6cccf6c91700">SSAGES::Method::cvmask_</a></div><div class="ttdeci">std::vector&lt; uint &gt; cvmask_</div><div class="ttdoc">Mask which identifies which CVs to act on. </div><div class="ttdef"><b>Definition:</b> <a href="Method_8h_source.html#l00050">Method.h:50</a></div></div>
+<div class="ttc" id="classSSAGES_1_1Umbrella_html_a79fb610f613c0e686ba8d7218cd8c837"><div class="ttname"><a href="classSSAGES_1_1Umbrella.html#a79fb610f613c0e686ba8d7218cd8c837">SSAGES::Umbrella::PrintUmbrella</a></div><div class="ttdeci">void PrintUmbrella(const CVList &amp;cvs, uint iteration)</div><div class="ttdoc">Print umbrella values. </div><div class="ttdef"><b>Definition:</b> <a href="Umbrella_8cpp_source.html#l00093">Umbrella.cpp:93</a></div></div>
 </div><!-- fragment -->
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classSSAGES_1_1Umbrella_a0ef3d596c8ffb392280b82e5e574c35b_cgraph.png" border="0" usemap="#classSSAGES_1_1Umbrella_a0ef3d596c8ffb392280b82e5e574c35b_cgraph" alt=""/></div>
-<map name="classSSAGES_1_1Umbrella_a0ef3d596c8ffb392280b82e5e574c35b_cgraph" id="classSSAGES_1_1Umbrella_a0ef3d596c8ffb392280b82e5e574c35b_cgraph">
-<area shape="rect" id="node2" href="classSSAGES_1_1Snapshot.html#a2533f7b900bc33185424eb94d6996edf" title="Access the per&#45;particle forces. " alt="" coords="295,5,505,32"/><area shape="rect" id="node3" href="classSSAGES_1_1Snapshot.html#a9c76ac680c1b1f2ab584be28bb273eb0" title="Get system H&#45;matrix. " alt="" coords="293,56,507,83"/><area shape="rect" id="node4" href="classSSAGES_1_1Snapshot.html#acaee0172694743e118273a055ff2c3fc" title="Get the current iteration. " alt="" coords="292,107,508,133"/><area shape="rect" id="node5" href="classSSAGES_1_1Snapshot.html#a00de82748940b4a7982b19fa8abe1c30" title="Get box virial. " alt="" coords="301,157,499,184"/><area shape="rect" id="node6" href="classSSAGES_1_1Umbrella.html#acbae1908834df3cf59c9f80e7b70be05" title="Print umbrella values. " alt="" coords="288,208,512,235"/></map>
+<div class="center"><img src="classSSAGES_1_1Umbrella_a034d7e5266790eeb7a9faaa4aa8520a3_cgraph.png" border="0" usemap="#classSSAGES_1_1Umbrella_a034d7e5266790eeb7a9faaa4aa8520a3_cgraph" alt=""/></div>
+<map name="classSSAGES_1_1Umbrella_a034d7e5266790eeb7a9faaa4aa8520a3_cgraph" id="classSSAGES_1_1Umbrella_a034d7e5266790eeb7a9faaa4aa8520a3_cgraph">
+<area shape="rect" id="node2" href="classSSAGES_1_1CVManager.html#a7317d7a4400d1c6ece08559f146dc049" title="Get CV iterator. " alt="" coords="315,5,477,46"/><area shape="rect" id="node3" href="classSSAGES_1_1Snapshot.html#a2533f7b900bc33185424eb94d6996edf" title="Access the per&#45;particle forces. " alt="" coords="291,71,501,97"/><area shape="rect" id="node4" href="classSSAGES_1_1Snapshot.html#a9c76ac680c1b1f2ab584be28bb273eb0" title="Get system H&#45;matrix. " alt="" coords="289,121,503,148"/><area shape="rect" id="node5" href="classSSAGES_1_1Snapshot.html#acaee0172694743e118273a055ff2c3fc" title="Get the current iteration. " alt="" coords="288,172,504,199"/><area shape="rect" id="node6" href="classSSAGES_1_1Snapshot.html#a00de82748940b4a7982b19fa8abe1c30" title="Get box virial. " alt="" coords="297,223,495,249"/></map>
 </div>
 </p>
 
 </div>
 </div>
-<a class="anchor" id="acda9666e4d13efe0191395fe7afb028d"></a>
+<a class="anchor" id="a2a4409838cca36d7d93686dceecf8d23"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -523,8 +727,8 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="namespaceSSAGES.html#acddea47426ac0a643b048f870ddd2907">CVList</a> &amp;&#160;</td>
-          <td class="paramname"><em>cvs</em>&#160;</td>
+          <td class="paramtype">const class <a class="el" href="classSSAGES_1_1CVManager.html">CVManager</a> &amp;&#160;</td>
+          <td class="paramname"><em>cvmanager</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -542,27 +746,25 @@ Here is the call graph for this function:</div>
 <p>Post-simulation hook. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">snapshot</td><td><a class="el" href="classSSAGES_1_1Simulation.html" title="Simulation class for creating simulation and a driver object. ">Simulation</a> snapshot. </td></tr>
-    <tr><td class="paramname">cvs</td><td>List of CVs. </td></tr>
+    <tr><td class="paramname">snapshot</td><td>Simulation snapshot. </td></tr>
+    <tr><td class="paramname">cvmanager</td><td>Collective variable manager. </td></tr>
   </table>
   </dd>
 </dl>
 
-<p>Implements <a class="el" href="classSSAGES_1_1Method.html#a6e0aab2ac9e7d737e03f0be942292ba6">SSAGES::Method</a>.</p>
+<p>Implements <a class="el" href="classSSAGES_1_1Method.html#a7d18226669c88bc76b9b758f2d29e3c9">SSAGES::Method</a>.</p>
 
-<p>Definition at line <a class="el" href="Umbrella_8cpp_source.html#l00064">64</a> of file <a class="el" href="Umbrella_8cpp_source.html">Umbrella.cpp</a>.</p>
-
-<p>References <a class="el" href="Method_8h_source.html#l00045">SSAGES::Method::comm_</a>, and <a class="el" href="Umbrella_8h_source.html#l00055">umbrella_</a>.</p>
-<div class="fragment"><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    {</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;        <span class="keywordflow">if</span>(<a class="code" href="classSSAGES_1_1Method.html#ae497980d1720c38b65d47fd4e65897b0">comm_</a>.rank() ==0)</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;            <a class="code" href="classSSAGES_1_1Umbrella.html#a25313c59d7bf8fbc842228626fbbdd8e">umbrella_</a>.close();</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    }</div>
-<div class="ttc" id="classSSAGES_1_1Method_html_ae497980d1720c38b65d47fd4e65897b0"><div class="ttname"><a href="classSSAGES_1_1Method.html#ae497980d1720c38b65d47fd4e65897b0">SSAGES::Method::comm_</a></div><div class="ttdeci">boost::mpi::communicator comm_</div><div class="ttdoc">Local MPI communicator. </div><div class="ttdef"><b>Definition:</b> <a href="Method_8h_source.html#l00045">Method.h:45</a></div></div>
-<div class="ttc" id="classSSAGES_1_1Umbrella_html_a25313c59d7bf8fbc842228626fbbdd8e"><div class="ttname"><a href="classSSAGES_1_1Umbrella.html#a25313c59d7bf8fbc842228626fbbdd8e">SSAGES::Umbrella::umbrella_</a></div><div class="ttdeci">std::ofstream umbrella_</div><div class="ttdoc">Output stream for umbrella data. </div><div class="ttdef"><b>Definition:</b> <a href="Umbrella_8h_source.html#l00055">Umbrella.h:55</a></div></div>
+<p>Definition at line <a class="el" href="Umbrella_8cpp_source.html#l00087">87</a> of file <a class="el" href="Umbrella_8cpp_source.html">Umbrella.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    {</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;        <span class="keywordflow">if</span>(<a class="code" href="classSSAGES_1_1Method.html#a1118666d61dbf3bc7606e3b61aa3a460">comm_</a>.rank() ==0)</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;            <a class="code" href="classSSAGES_1_1Umbrella.html#a25313c59d7bf8fbc842228626fbbdd8e">umbrella_</a>.close();</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    }</div>
+<div class="ttc" id="classSSAGES_1_1Method_html_a1118666d61dbf3bc7606e3b61aa3a460"><div class="ttname"><a href="classSSAGES_1_1Method.html#a1118666d61dbf3bc7606e3b61aa3a460">SSAGES::Method::comm_</a></div><div class="ttdeci">mxx::comm comm_</div><div class="ttdoc">Local MPI communicator. </div><div class="ttdef"><b>Definition:</b> <a href="Method_8h_source.html#l00047">Method.h:47</a></div></div>
+<div class="ttc" id="classSSAGES_1_1Umbrella_html_a25313c59d7bf8fbc842228626fbbdd8e"><div class="ttname"><a href="classSSAGES_1_1Umbrella.html#a25313c59d7bf8fbc842228626fbbdd8e">SSAGES::Umbrella::umbrella_</a></div><div class="ttdeci">std::ofstream umbrella_</div><div class="ttdoc">Output stream for umbrella data. </div><div class="ttdef"><b>Definition:</b> <a href="Umbrella_8h_source.html#l00054">Umbrella.h:54</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
-<a class="anchor" id="a1d34d232a178871048831e5dc22606d6"></a>
+<a class="anchor" id="a63da6a639c5f7aa819c53e8bcc63e5e7"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -578,8 +780,8 @@ Here is the call graph for this function:</div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">const <a class="el" href="namespaceSSAGES.html#acddea47426ac0a643b048f870ddd2907">CVList</a> &amp;&#160;</td>
-          <td class="paramname"><em>cvs</em>&#160;</td>
+          <td class="paramtype">const class <a class="el" href="classSSAGES_1_1CVManager.html">CVManager</a> &amp;&#160;</td>
+          <td class="paramname"><em>cvmanager</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -597,28 +799,57 @@ Here is the call graph for this function:</div>
 <p>Pre-simulation hook. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">snapshot</td><td><a class="el" href="classSSAGES_1_1Simulation.html" title="Simulation class for creating simulation and a driver object. ">Simulation</a> snapshot. </td></tr>
-    <tr><td class="paramname">cvs</td><td>List of CVs. </td></tr>
+    <tr><td class="paramname">snapshot</td><td>Simulation snapshot. </td></tr>
+    <tr><td class="paramname">cvmanager</td><td>Collective variable manager. </td></tr>
   </table>
   </dd>
 </dl>
 
-<p>Implements <a class="el" href="classSSAGES_1_1Method.html#abd585b587de1aba4870840820e6ca4fd">SSAGES::Method</a>.</p>
+<p>Implements <a class="el" href="classSSAGES_1_1Method.html#a7d840d2b5f6dbf9ec75a7909ccf13ef7">SSAGES::Method</a>.</p>
 
-<p>Definition at line <a class="el" href="Umbrella_8cpp_source.html#l00027">27</a> of file <a class="el" href="Umbrella_8cpp_source.html">Umbrella.cpp</a>.</p>
+<p>Definition at line <a class="el" href="Umbrella_8cpp_source.html#l00033">33</a> of file <a class="el" href="Umbrella_8cpp_source.html">Umbrella.cpp</a>.</p>
 
-<p>References <a class="el" href="Method_8h_source.html#l00045">SSAGES::Method::comm_</a>, <a class="el" href="Umbrella_8h_source.html#l00049">filename_</a>, and <a class="el" href="Umbrella_8h_source.html#l00055">umbrella_</a>.</p>
-<div class="fragment"><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    {</div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;        <span class="keywordflow">if</span>(<a class="code" href="classSSAGES_1_1Method.html#ae497980d1720c38b65d47fd4e65897b0">comm_</a>.rank() == 0)</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;            <a class="code" href="classSSAGES_1_1Umbrella.html#a25313c59d7bf8fbc842228626fbbdd8e">umbrella_</a>.open(<a class="code" href="classSSAGES_1_1Umbrella.html#aaca62f9ca39b04b7a188d45cf89ab2cd">filename_</a>.c_str(), std::ofstream::out | std::ofstream::app);</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    }</div>
-<div class="ttc" id="classSSAGES_1_1Method_html_ae497980d1720c38b65d47fd4e65897b0"><div class="ttname"><a href="classSSAGES_1_1Method.html#ae497980d1720c38b65d47fd4e65897b0">SSAGES::Method::comm_</a></div><div class="ttdeci">boost::mpi::communicator comm_</div><div class="ttdoc">Local MPI communicator. </div><div class="ttdef"><b>Definition:</b> <a href="Method_8h_source.html#l00045">Method.h:45</a></div></div>
-<div class="ttc" id="classSSAGES_1_1Umbrella_html_aaca62f9ca39b04b7a188d45cf89ab2cd"><div class="ttname"><a href="classSSAGES_1_1Umbrella.html#aaca62f9ca39b04b7a188d45cf89ab2cd">SSAGES::Umbrella::filename_</a></div><div class="ttdeci">std::string filename_</div><div class="ttdoc">File name. </div><div class="ttdef"><b>Definition:</b> <a href="Umbrella_8h_source.html#l00049">Umbrella.h:49</a></div></div>
-<div class="ttc" id="classSSAGES_1_1Umbrella_html_a25313c59d7bf8fbc842228626fbbdd8e"><div class="ttname"><a href="classSSAGES_1_1Umbrella.html#a25313c59d7bf8fbc842228626fbbdd8e">SSAGES::Umbrella::umbrella_</a></div><div class="ttdeci">std::ofstream umbrella_</div><div class="ttdoc">Output stream for umbrella data. </div><div class="ttdef"><b>Definition:</b> <a href="Umbrella_8h_source.html#l00055">Umbrella.h:55</a></div></div>
+<p>References <a class="el" href="CVManager_8h_source.html#l00080">SSAGES::CVManager::GetCVs()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    {</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;        <span class="keywordflow">if</span>(<a class="code" href="classSSAGES_1_1Method.html#a1118666d61dbf3bc7606e3b61aa3a460">comm_</a>.rank() == 0)</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;        {</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;            <span class="keywordflow">if</span>(<a class="code" href="classSSAGES_1_1Umbrella.html#a36cf3ea70cffc5608dce3554636f86cb">append_</a>)</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;                <a class="code" href="classSSAGES_1_1Umbrella.html#a25313c59d7bf8fbc842228626fbbdd8e">umbrella_</a>.open(<a class="code" href="classSSAGES_1_1Umbrella.html#aaca62f9ca39b04b7a188d45cf89ab2cd">filename_</a>.c_str(), std::ofstream::out | std::ofstream::app);</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;            <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;            {</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;                <span class="comment">// Write out header.</span></div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;                <a class="code" href="classSSAGES_1_1Umbrella.html#a25313c59d7bf8fbc842228626fbbdd8e">umbrella_</a>.open(<a class="code" href="classSSAGES_1_1Umbrella.html#aaca62f9ca39b04b7a188d45cf89ab2cd">filename_</a>.c_str(), std::ofstream::out);</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;                <a class="code" href="classSSAGES_1_1Umbrella.html#a25313c59d7bf8fbc842228626fbbdd8e">umbrella_</a> &lt;&lt; <span class="stringliteral">&quot;#&quot;</span>; </div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;                <a class="code" href="classSSAGES_1_1Umbrella.html#a25313c59d7bf8fbc842228626fbbdd8e">umbrella_</a> &lt;&lt; <span class="stringliteral">&quot;Iteration &quot;</span>; </div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;                <span class="keyword">auto</span> cvs = cvmanager.GetCVs(<a class="code" href="classSSAGES_1_1Method.html#a04e4b8b9ea8d154ae88f6cccf6c91700">cvmask_</a>); </div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;                <span class="keywordflow">for</span>(<span class="keywordtype">size_t</span> i = 0; i &lt; cvs.size(); ++i)</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;                    <a class="code" href="classSSAGES_1_1Umbrella.html#a25313c59d7bf8fbc842228626fbbdd8e">umbrella_</a> &lt;&lt; <span class="stringliteral">&quot;cv_&quot;</span> + std::to_string(i) &lt;&lt; <span class="stringliteral">&quot; &quot;</span>;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;                <span class="keywordflow">for</span>(<span class="keywordtype">size_t</span> i = 0; i &lt; cvs.size() - 1; ++i)</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;                    <a class="code" href="classSSAGES_1_1Umbrella.html#a25313c59d7bf8fbc842228626fbbdd8e">umbrella_</a> &lt;&lt; <span class="stringliteral">&quot;center_&quot;</span> + std::to_string(i) &lt;&lt; <span class="stringliteral">&quot; &quot;</span>;  </div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;                <a class="code" href="classSSAGES_1_1Umbrella.html#a25313c59d7bf8fbc842228626fbbdd8e">umbrella_</a> &lt;&lt; <span class="stringliteral">&quot;center_&quot;</span> + std::to_string(cvs.size() - 1) &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;            }</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        }</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    }</div>
+<div class="ttc" id="classSSAGES_1_1Method_html_a1118666d61dbf3bc7606e3b61aa3a460"><div class="ttname"><a href="classSSAGES_1_1Method.html#a1118666d61dbf3bc7606e3b61aa3a460">SSAGES::Method::comm_</a></div><div class="ttdeci">mxx::comm comm_</div><div class="ttdoc">Local MPI communicator. </div><div class="ttdef"><b>Definition:</b> <a href="Method_8h_source.html#l00047">Method.h:47</a></div></div>
+<div class="ttc" id="classSSAGES_1_1Umbrella_html_a36cf3ea70cffc5608dce3554636f86cb"><div class="ttname"><a href="classSSAGES_1_1Umbrella.html#a36cf3ea70cffc5608dce3554636f86cb">SSAGES::Umbrella::append_</a></div><div class="ttdeci">bool append_</div><div class="ttdoc">Append to output files? </div><div class="ttdef"><b>Definition:</b> <a href="Umbrella_8h_source.html#l00057">Umbrella.h:57</a></div></div>
+<div class="ttc" id="classSSAGES_1_1Method_html_a04e4b8b9ea8d154ae88f6cccf6c91700"><div class="ttname"><a href="classSSAGES_1_1Method.html#a04e4b8b9ea8d154ae88f6cccf6c91700">SSAGES::Method::cvmask_</a></div><div class="ttdeci">std::vector&lt; uint &gt; cvmask_</div><div class="ttdoc">Mask which identifies which CVs to act on. </div><div class="ttdef"><b>Definition:</b> <a href="Method_8h_source.html#l00050">Method.h:50</a></div></div>
+<div class="ttc" id="classSSAGES_1_1Umbrella_html_aaca62f9ca39b04b7a188d45cf89ab2cd"><div class="ttname"><a href="classSSAGES_1_1Umbrella.html#aaca62f9ca39b04b7a188d45cf89ab2cd">SSAGES::Umbrella::filename_</a></div><div class="ttdeci">std::string filename_</div><div class="ttdoc">Output filename. </div><div class="ttdef"><b>Definition:</b> <a href="Umbrella_8h_source.html#l00048">Umbrella.h:48</a></div></div>
+<div class="ttc" id="classSSAGES_1_1Umbrella_html_a25313c59d7bf8fbc842228626fbbdd8e"><div class="ttname"><a href="classSSAGES_1_1Umbrella.html#a25313c59d7bf8fbc842228626fbbdd8e">SSAGES::Umbrella::umbrella_</a></div><div class="ttdeci">std::ofstream umbrella_</div><div class="ttdoc">Output stream for umbrella data. </div><div class="ttdef"><b>Definition:</b> <a href="Umbrella_8h_source.html#l00054">Umbrella.h:54</a></div></div>
 </div><!-- fragment -->
+<p><div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classSSAGES_1_1Umbrella_a63da6a639c5f7aa819c53e8bcc63e5e7_cgraph.png" border="0" usemap="#classSSAGES_1_1Umbrella_a63da6a639c5f7aa819c53e8bcc63e5e7_cgraph" alt=""/></div>
+<map name="classSSAGES_1_1Umbrella_a63da6a639c5f7aa819c53e8bcc63e5e7_cgraph" id="classSSAGES_1_1Umbrella_a63da6a639c5f7aa819c53e8bcc63e5e7_cgraph">
+<area shape="rect" id="node2" href="classSSAGES_1_1CVManager.html#a7317d7a4400d1c6ece08559f146dc049" title="Get CV iterator. " alt="" coords="280,5,443,46"/></map>
+</div>
+</p>
+
 </div>
 </div>
-<a class="anchor" id="acbae1908834df3cf59c9f80e7b70be05"></a>
+<a class="anchor" id="a79fb610f613c0e686ba8d7218cd8c837"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -629,8 +860,18 @@ Here is the call graph for this function:</div>
           <td class="memname">void SSAGES::Umbrella::PrintUmbrella </td>
           <td>(</td>
           <td class="paramtype">const <a class="el" href="namespaceSSAGES.html#acddea47426ac0a643b048f870ddd2907">CVList</a> &amp;&#160;</td>
-          <td class="paramname"><em>cvs</em></td><td>)</td>
+          <td class="paramname"><em>cvs</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">uint&#160;</td>
+          <td class="paramname"><em>iteration</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
   </td>
@@ -644,43 +885,36 @@ Here is the call graph for this function:</div>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">cvs</td><td>List of CVs. </td></tr>
+    <tr><td class="paramname">iteration</td><td>Current iteration. </td></tr>
   </table>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="Umbrella_8cpp_source.html#l00070">70</a> of file <a class="el" href="Umbrella_8cpp_source.html">Umbrella.cpp</a>.</p>
-
-<p>References <a class="el" href="Method_8h_source.html#l00045">SSAGES::Method::comm_</a>, <a class="el" href="Method_8h_source.html#l00048">SSAGES::Method::iteration_</a>, and <a class="el" href="Umbrella_8h_source.html#l00055">umbrella_</a>.</p>
-
-<p>Referenced by <a class="el" href="Umbrella_8cpp_source.html#l00033">PostIntegration()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    {</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;        <span class="keywordflow">if</span>(<a class="code" href="classSSAGES_1_1Method.html#ae497980d1720c38b65d47fd4e65897b0">comm_</a>.rank() ==0)</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        {</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;            <a class="code" href="classSSAGES_1_1Umbrella.html#a25313c59d7bf8fbc842228626fbbdd8e">umbrella_</a>.precision(8);</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;            <a class="code" href="classSSAGES_1_1Umbrella.html#a25313c59d7bf8fbc842228626fbbdd8e">umbrella_</a> &lt;&lt; <a class="code" href="classSSAGES_1_1Method.html#a1b83499833edfa7a5ecf5bb4f2de9a62">iteration_</a> &lt;&lt; <span class="stringliteral">&quot; &quot;</span>;</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;            <span class="keywordflow">for</span>(<span class="keywordtype">size_t</span> i = 0; i &lt; cvs.size(); i++)</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;                <a class="code" href="classSSAGES_1_1Umbrella.html#a25313c59d7bf8fbc842228626fbbdd8e">umbrella_</a> &lt;&lt; GetCurrentCenter(iteration_, i) &lt;&lt; <span class="stringliteral">&quot; &quot;</span> &lt;&lt; cvs[i]-&gt;GetValue() &lt;&lt; <span class="stringliteral">&quot; &quot;</span>; </div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;            <a class="code" href="classSSAGES_1_1Umbrella.html#a25313c59d7bf8fbc842228626fbbdd8e">umbrella_</a> &lt;&lt; std::endl;</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        }</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    }</div>
-<div class="ttc" id="classSSAGES_1_1Method_html_a1b83499833edfa7a5ecf5bb4f2de9a62"><div class="ttname"><a href="classSSAGES_1_1Method.html#a1b83499833edfa7a5ecf5bb4f2de9a62">SSAGES::Method::iteration_</a></div><div class="ttdeci">unsigned int iteration_</div><div class="ttdoc">Number of the method iteration. </div><div class="ttdef"><b>Definition:</b> <a href="Method_8h_source.html#l00048">Method.h:48</a></div></div>
-<div class="ttc" id="classSSAGES_1_1Method_html_ae497980d1720c38b65d47fd4e65897b0"><div class="ttname"><a href="classSSAGES_1_1Method.html#ae497980d1720c38b65d47fd4e65897b0">SSAGES::Method::comm_</a></div><div class="ttdeci">boost::mpi::communicator comm_</div><div class="ttdoc">Local MPI communicator. </div><div class="ttdef"><b>Definition:</b> <a href="Method_8h_source.html#l00045">Method.h:45</a></div></div>
-<div class="ttc" id="classSSAGES_1_1Umbrella_html_a25313c59d7bf8fbc842228626fbbdd8e"><div class="ttname"><a href="classSSAGES_1_1Umbrella.html#a25313c59d7bf8fbc842228626fbbdd8e">SSAGES::Umbrella::umbrella_</a></div><div class="ttdeci">std::ofstream umbrella_</div><div class="ttdoc">Output stream for umbrella data. </div><div class="ttdef"><b>Definition:</b> <a href="Umbrella_8h_source.html#l00055">Umbrella.h:55</a></div></div>
+<p>Definition at line <a class="el" href="Umbrella_8cpp_source.html#l00093">93</a> of file <a class="el" href="Umbrella_8cpp_source.html">Umbrella.cpp</a>.</p>
+<div class="fragment"><div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    {</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        <span class="keywordflow">if</span>(<a class="code" href="classSSAGES_1_1Method.html#a1118666d61dbf3bc7606e3b61aa3a460">comm_</a>.rank() ==0)</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        {</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;            <a class="code" href="classSSAGES_1_1Umbrella.html#a25313c59d7bf8fbc842228626fbbdd8e">umbrella_</a>.precision(8);</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;            <a class="code" href="classSSAGES_1_1Umbrella.html#a25313c59d7bf8fbc842228626fbbdd8e">umbrella_</a> &lt;&lt; iteration &lt;&lt; <span class="stringliteral">&quot; &quot;</span>;</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;            <span class="comment">// Print out CV values first.</span></div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;            <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; cv : cvs)</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;                <a class="code" href="classSSAGES_1_1Umbrella.html#a25313c59d7bf8fbc842228626fbbdd8e">umbrella_</a> &lt;&lt; cv-&gt;GetValue() &lt;&lt; <span class="stringliteral">&quot; &quot;</span>;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;            </div>
+<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;            <span class="comment">// Print out target (center) of each CV. </span></div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;            <span class="keywordflow">for</span>(<span class="keywordtype">size_t</span> i = 0; i &lt; cvs.size() - 1; ++i)</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;                <a class="code" href="classSSAGES_1_1Umbrella.html#a25313c59d7bf8fbc842228626fbbdd8e">umbrella_</a> &lt;&lt; GetCurrentCenter(iteration, i) &lt;&lt; <span class="stringliteral">&quot; &quot;</span>; </div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;            <a class="code" href="classSSAGES_1_1Umbrella.html#a25313c59d7bf8fbc842228626fbbdd8e">umbrella_</a> &lt;&lt; GetCurrentCenter(iteration, cvs.size() - 1);</div>
+<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;</div>
+<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;            <a class="code" href="classSSAGES_1_1Umbrella.html#a25313c59d7bf8fbc842228626fbbdd8e">umbrella_</a> &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;        }</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    }</div>
+<div class="ttc" id="classSSAGES_1_1Method_html_a1118666d61dbf3bc7606e3b61aa3a460"><div class="ttname"><a href="classSSAGES_1_1Method.html#a1118666d61dbf3bc7606e3b61aa3a460">SSAGES::Method::comm_</a></div><div class="ttdeci">mxx::comm comm_</div><div class="ttdoc">Local MPI communicator. </div><div class="ttdef"><b>Definition:</b> <a href="Method_8h_source.html#l00047">Method.h:47</a></div></div>
+<div class="ttc" id="classSSAGES_1_1Umbrella_html_a25313c59d7bf8fbc842228626fbbdd8e"><div class="ttname"><a href="classSSAGES_1_1Umbrella.html#a25313c59d7bf8fbc842228626fbbdd8e">SSAGES::Umbrella::umbrella_</a></div><div class="ttdeci">std::ofstream umbrella_</div><div class="ttdoc">Output stream for umbrella data. </div><div class="ttdef"><b>Definition:</b> <a href="Umbrella_8h_source.html#l00054">Umbrella.h:54</a></div></div>
 </div><!-- fragment -->
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classSSAGES_1_1Umbrella_acbae1908834df3cf59c9f80e7b70be05_icgraph.png" border="0" usemap="#classSSAGES_1_1Umbrella_acbae1908834df3cf59c9f80e7b70be05_icgraph" alt=""/></div>
-<map name="classSSAGES_1_1Umbrella_acbae1908834df3cf59c9f80e7b70be05_icgraph" id="classSSAGES_1_1Umbrella_acbae1908834df3cf59c9f80e7b70be05_icgraph">
-<area shape="rect" id="node2" href="classSSAGES_1_1Umbrella.html#a0ef3d596c8ffb392280b82e5e574c35b" title="Post&#45;integration hook. " alt="" coords="278,5,511,32"/></map>
-</div>
-</p>
-
 </div>
 </div>
-<a class="anchor" id="aa70c88a12c2e8d5fc70d221d5cc7aefd"></a>
+<a class="anchor" id="a86c1b11227fd169e94f8da0bb589359b"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -688,81 +922,10 @@ Here is the caller graph for this function:</div>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void SSAGES::Umbrella::Serialize </td>
+          <td class="memname">void SSAGES::Umbrella::SetAppend </td>
           <td>(</td>
-          <td class="paramtype">Json::Value &amp;&#160;</td>
-          <td class="paramname"><em>json</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Serialize the class. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">json</td><td>JSON value to which the information is stored</td></tr>
-  </table>
-  </dd>
-</dl>
-<p>Store all information pertaining to this class in the given JSON value. The information can then be used to restart or analyze the simulation</p>
-<dl class="section warning"><dt>Warning</dt><dd>The serialization is not implemented yet. </dd></dl>
-
-<p>Implements <a class="el" href="classSSAGES_1_1Serializable.html#aa4bc8d0ce033a025b0baa7cedccd8ebd">SSAGES::Serializable</a>.</p>
-
-<p>Definition at line <a class="el" href="Umbrella_8h_source.html#l00157">157</a> of file <a class="el" href="Umbrella_8h_source.html">Umbrella.h</a>.</p>
-
-<p>References <a class="el" href="Umbrella_8h_source.html#l00043">centers0_</a>, <a class="el" href="Umbrella_8h_source.html#l00049">filename_</a>, <a class="el" href="Method_8h_source.html#l00048">SSAGES::Method::iteration_</a>, <a class="el" href="Umbrella_8h_source.html#l00040">kspring_</a>, <a class="el" href="Umbrella_8h_source.html#l00052">logevery_</a>, and <a class="el" href="Umbrella_8h_source.html#l00046">time_</a>.</p>
-<div class="fragment"><div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160;        {</div>
-<div class="line"><a name="l00159"></a><span class="lineno">  159</span>&#160;            json[<span class="stringliteral">&quot;type&quot;</span>] = <span class="stringliteral">&quot;Umbrella&quot;</span>;</div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;            <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; k : <a class="code" href="classSSAGES_1_1Umbrella.html#af2d3ba08bef877fada41148b87ef9a59">kspring_</a>)</div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;                json[<span class="stringliteral">&quot;ksprings&quot;</span>].append(k);</div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;</div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;            <span class="keywordflow">if</span>(<a class="code" href="classSSAGES_1_1Umbrella.html#a79197ecad0a946de0ece62707937403d">time_</a> != 0 )</div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;            {</div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;                <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; c : <a class="code" href="classSSAGES_1_1Umbrella.html#a25acb900eff541471d1cf6f0cf95b0b4">centers0_</a>)</div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;                    json[<span class="stringliteral">&quot;centers0&quot;</span>].append(c);</div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;                </div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;                <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; c : centers1_)</div>
-<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160;                    json[<span class="stringliteral">&quot;centers1&quot;</span>].append(c);</div>
-<div class="line"><a name="l00170"></a><span class="lineno">  170</span>&#160;</div>
-<div class="line"><a name="l00171"></a><span class="lineno">  171</span>&#160;                json[<span class="stringliteral">&quot;timesteps&quot;</span>] = <a class="code" href="classSSAGES_1_1Umbrella.html#a79197ecad0a946de0ece62707937403d">time_</a>;</div>
-<div class="line"><a name="l00172"></a><span class="lineno">  172</span>&#160;            }</div>
-<div class="line"><a name="l00173"></a><span class="lineno">  173</span>&#160;            <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;            {           </div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;                <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; c : centers0_)</div>
-<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;                    json[<span class="stringliteral">&quot;centers&quot;</span>].append(c);</div>
-<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;            }</div>
-<div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;</div>
-<div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;            json[<span class="stringliteral">&quot;file name&quot;</span>] = <a class="code" href="classSSAGES_1_1Umbrella.html#aaca62f9ca39b04b7a188d45cf89ab2cd">filename_</a>;</div>
-<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;            json[<span class="stringliteral">&quot;iteration&quot;</span>] = <a class="code" href="classSSAGES_1_1Method.html#a1b83499833edfa7a5ecf5bb4f2de9a62">iteration_</a>;</div>
-<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;            json[<span class="stringliteral">&quot;log every&quot;</span>] = <a class="code" href="classSSAGES_1_1Umbrella.html#afe1477f81bb9d55a2e8d8212f99d8c06">logevery_</a>;</div>
-<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;        }</div>
-<div class="ttc" id="classSSAGES_1_1Umbrella_html_a25acb900eff541471d1cf6f0cf95b0b4"><div class="ttname"><a href="classSSAGES_1_1Umbrella.html#a25acb900eff541471d1cf6f0cf95b0b4">SSAGES::Umbrella::centers0_</a></div><div class="ttdeci">std::vector&lt; double &gt; centers0_</div><div class="ttdoc">Vector of equilibrium distances. </div><div class="ttdef"><b>Definition:</b> <a href="Umbrella_8h_source.html#l00043">Umbrella.h:43</a></div></div>
-<div class="ttc" id="classSSAGES_1_1Method_html_a1b83499833edfa7a5ecf5bb4f2de9a62"><div class="ttname"><a href="classSSAGES_1_1Method.html#a1b83499833edfa7a5ecf5bb4f2de9a62">SSAGES::Method::iteration_</a></div><div class="ttdeci">unsigned int iteration_</div><div class="ttdoc">Number of the method iteration. </div><div class="ttdef"><b>Definition:</b> <a href="Method_8h_source.html#l00048">Method.h:48</a></div></div>
-<div class="ttc" id="classSSAGES_1_1Umbrella_html_afe1477f81bb9d55a2e8d8212f99d8c06"><div class="ttname"><a href="classSSAGES_1_1Umbrella.html#afe1477f81bb9d55a2e8d8212f99d8c06">SSAGES::Umbrella::logevery_</a></div><div class="ttdeci">int logevery_</div><div class="ttdoc">Log every n time steps. </div><div class="ttdef"><b>Definition:</b> <a href="Umbrella_8h_source.html#l00052">Umbrella.h:52</a></div></div>
-<div class="ttc" id="classSSAGES_1_1Umbrella_html_af2d3ba08bef877fada41148b87ef9a59"><div class="ttname"><a href="classSSAGES_1_1Umbrella.html#af2d3ba08bef877fada41148b87ef9a59">SSAGES::Umbrella::kspring_</a></div><div class="ttdeci">std::vector&lt; double &gt; kspring_</div><div class="ttdoc">Vector of spring constants. </div><div class="ttdef"><b>Definition:</b> <a href="Umbrella_8h_source.html#l00040">Umbrella.h:40</a></div></div>
-<div class="ttc" id="classSSAGES_1_1Umbrella_html_a79197ecad0a946de0ece62707937403d"><div class="ttname"><a href="classSSAGES_1_1Umbrella.html#a79197ecad0a946de0ece62707937403d">SSAGES::Umbrella::time_</a></div><div class="ttdeci">int time_</div><div class="ttdoc">Amount of time over which to scale centers. </div><div class="ttdef"><b>Definition:</b> <a href="Umbrella_8h_source.html#l00046">Umbrella.h:46</a></div></div>
-<div class="ttc" id="classSSAGES_1_1Umbrella_html_aaca62f9ca39b04b7a188d45cf89ab2cd"><div class="ttname"><a href="classSSAGES_1_1Umbrella.html#aaca62f9ca39b04b7a188d45cf89ab2cd">SSAGES::Umbrella::filename_</a></div><div class="ttdeci">std::string filename_</div><div class="ttdoc">File name. </div><div class="ttdef"><b>Definition:</b> <a href="Umbrella_8h_source.html#l00049">Umbrella.h:49</a></div></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a class="anchor" id="a4bfa24cabffe1b0526acd9c5c2ea6922"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void SSAGES::Umbrella::SetLogStep </td>
-          <td>(</td>
-          <td class="paramtype">const int&#160;</td>
-          <td class="paramname"><em>iter</em></td><td>)</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>append</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -773,30 +936,81 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p>Set how often to log. </p>
+<p>Set append mode. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">iter</td><td>New value for logging interval. </td></tr>
+    <tr><td class="paramname">append</td><td>Whether to enable or disable append mode. </td></tr>
   </table>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="Umbrella_8h_source.html#l00148">148</a> of file <a class="el" href="Umbrella_8h_source.html">Umbrella.h</a>.</p>
+<p>Definition at line <a class="el" href="Umbrella_8h_source.html#l00162">162</a> of file <a class="el" href="Umbrella_8h_source.html">Umbrella.h</a>.</p>
 
-<p>References <a class="el" href="Umbrella_8h_source.html#l00052">logevery_</a>.</p>
+<p>References <a class="el" href="Umbrella_8h_source.html#l00057">append_</a>.</p>
 
-<p>Referenced by <a class="el" href="Method_8cpp_source.html#l00044">SSAGES::Method::BuildMethod()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;        {</div>
-<div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;            <a class="code" href="classSSAGES_1_1Umbrella.html#afe1477f81bb9d55a2e8d8212f99d8c06">logevery_</a> = iter;</div>
-<div class="line"><a name="l00151"></a><span class="lineno">  151</span>&#160;        }</div>
-<div class="ttc" id="classSSAGES_1_1Umbrella_html_afe1477f81bb9d55a2e8d8212f99d8c06"><div class="ttname"><a href="classSSAGES_1_1Umbrella.html#afe1477f81bb9d55a2e8d8212f99d8c06">SSAGES::Umbrella::logevery_</a></div><div class="ttdeci">int logevery_</div><div class="ttdoc">Log every n time steps. </div><div class="ttdef"><b>Definition:</b> <a href="Umbrella_8h_source.html#l00052">Umbrella.h:52</a></div></div>
+<p>Referenced by <a class="el" href="Umbrella_8cpp_source.html#l00113">Build()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;        {</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;            <a class="code" href="classSSAGES_1_1Umbrella.html#a36cf3ea70cffc5608dce3554636f86cb">append_</a> = append;</div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;        }</div>
+<div class="ttc" id="classSSAGES_1_1Umbrella_html_a36cf3ea70cffc5608dce3554636f86cb"><div class="ttname"><a href="classSSAGES_1_1Umbrella.html#a36cf3ea70cffc5608dce3554636f86cb">SSAGES::Umbrella::append_</a></div><div class="ttdeci">bool append_</div><div class="ttdoc">Append to output files? </div><div class="ttdef"><b>Definition:</b> <a href="Umbrella_8h_source.html#l00057">Umbrella.h:57</a></div></div>
 </div><!-- fragment -->
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classSSAGES_1_1Umbrella_a4bfa24cabffe1b0526acd9c5c2ea6922_icgraph.png" border="0" usemap="#classSSAGES_1_1Umbrella_a4bfa24cabffe1b0526acd9c5c2ea6922_icgraph" alt=""/></div>
-<map name="classSSAGES_1_1Umbrella_a4bfa24cabffe1b0526acd9c5c2ea6922_icgraph" id="classSSAGES_1_1Umbrella_a4bfa24cabffe1b0526acd9c5c2ea6922_icgraph">
-<area shape="rect" id="node2" href="classSSAGES_1_1Method.html#a4440bebe9b649e17e83d1959362091c3" title="Set up the Method. " alt="" coords="267,5,475,32"/><area shape="rect" id="node3" href="classSSAGES_1_1Driver.html#a336c56e2ac7b535172e7d596f5af30d6" title="Build method(s). " alt="" coords="523,5,723,32"/></map>
+<div class="center"><img src="classSSAGES_1_1Umbrella_a86c1b11227fd169e94f8da0bb589359b_icgraph.png" border="0" usemap="#classSSAGES_1_1Umbrella_a86c1b11227fd169e94f8da0bb589359b_icgraph" alt=""/></div>
+<map name="classSSAGES_1_1Umbrella_a86c1b11227fd169e94f8da0bb589359b_icgraph" id="classSSAGES_1_1Umbrella_a86c1b11227fd169e94f8da0bb589359b_icgraph">
+<area shape="rect" id="node2" href="classSSAGES_1_1Umbrella.html#a0f8f31f884c4f2fb1551897e25401eb1" title="SSAGES::Umbrella::Build" alt="" coords="265,5,439,32"/></map>
+</div>
+</p>
+
+</div>
+</div>
+<a class="anchor" id="a6d7781c559c876c99b368638f70786f3"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void SSAGES::Umbrella::SetOutputFrequency </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>outfreq</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Set output frequency. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">iter</td><td>New value for output frequency. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="Umbrella_8h_source.html#l00153">153</a> of file <a class="el" href="Umbrella_8h_source.html">Umbrella.h</a>.</p>
+
+<p>References <a class="el" href="Umbrella_8h_source.html#l00051">outfreq_</a>.</p>
+
+<p>Referenced by <a class="el" href="Umbrella_8cpp_source.html#l00113">Build()</a>.</p>
+<div class="fragment"><div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;        {</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160;            <a class="code" href="classSSAGES_1_1Umbrella.html#a118bc974d7cb44facf3ca1af62eb8c99">outfreq_</a> = outfreq;</div>
+<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;        }</div>
+<div class="ttc" id="classSSAGES_1_1Umbrella_html_a118bc974d7cb44facf3ca1af62eb8c99"><div class="ttname"><a href="classSSAGES_1_1Umbrella.html#a118bc974d7cb44facf3ca1af62eb8c99">SSAGES::Umbrella::outfreq_</a></div><div class="ttdeci">int outfreq_</div><div class="ttdoc">Frequency of outputting data. </div><div class="ttdef"><b>Definition:</b> <a href="Umbrella_8h_source.html#l00051">Umbrella.h:51</a></div></div>
+</div><!-- fragment -->
+<p><div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classSSAGES_1_1Umbrella_a6d7781c559c876c99b368638f70786f3_icgraph.png" border="0" usemap="#classSSAGES_1_1Umbrella_a6d7781c559c876c99b368638f70786f3_icgraph" alt=""/></div>
+<map name="classSSAGES_1_1Umbrella_a6d7781c559c876c99b368638f70786f3_icgraph" id="classSSAGES_1_1Umbrella_a6d7781c559c876c99b368638f70786f3_icgraph">
+<area shape="rect" id="node2" href="classSSAGES_1_1Umbrella.html#a0f8f31f884c4f2fb1551897e25401eb1" title="SSAGES::Umbrella::Build" alt="" coords="259,12,434,39"/></map>
 </div>
 </p>
 
@@ -809,7 +1023,7 @@ Here is the caller graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Jun 23 2017 15:44:19 for SSAGES by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Jul 14 2017 15:33:31 for SSAGES by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

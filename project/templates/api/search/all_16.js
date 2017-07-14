@@ -8,8 +8,5 @@ var searchData=
   ['vector',['Vector',['../namespaceSSAGES.html#a3a489a370adbddfb160942e834c1b0c7',1,'SSAGES']]],
   ['vector3',['Vector3',['../namespaceSSAGES.html#a630084a0a5e185e89e21b3735f8f8b2e',1,'SSAGES']]],
   ['velocities_5f',['velocities_',['../classSSAGES_1_1Snapshot.html#a4b5eba5f7e1c1d34f31c86f6b74f72fe',1,'SSAGES::Snapshot']]],
-  ['visit',['Visit',['../classSSAGES_1_1JSONObserver.html#a1c6bb7634a7b84bfc34291a67001213b',1,'SSAGES::JSONObserver::Visit()'],['../classSSAGES_1_1Visitor.html#a52072bd0fbf3ccb194bf2dce6b8e76db',1,'SSAGES::Visitor::Visit()']]],
-  ['visitable',['Visitable',['../classSSAGES_1_1Visitable.html',1,'SSAGES']]],
-  ['visitor',['Visitor',['../classSSAGES_1_1Visitor.html',1,'SSAGES']]],
   ['vkj',['vkj',['../classSSAGES_1_1COPSSImage.html#a62926e065dc0b1cbc542c1959506f234',1,'SSAGES::COPSSImage']]]
 ];

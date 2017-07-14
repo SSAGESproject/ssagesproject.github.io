@@ -1,8 +1,7 @@
 <map id="SSAGES::GridBase::GetDimension" name="SSAGES::GridBase::GetDimension">
-<area shape="rect" id="node2" href="$classSSAGES_1_1GridBase.html#a896d88442ef110a3afb58944e5107b53" title="Access Grid element read&#45;only. " alt="" coords="307,5,472,46"/>
-<area shape="rect" id="node3" href="$classSSAGES_1_1GridBase.html#a9ed5bbba129eaa3ef36f387d524ed422" title="Get the lower edge for a specific dimension. " alt="" coords="307,70,472,111"/>
-<area shape="rect" id="node4" href="$classSSAGES_1_1GridBase.html#aa504df2cdd42e7aaf39302a322c45593" title="Get the number of points for a specific dimension. " alt="" coords="307,135,472,177"/>
-<area shape="rect" id="node5" href="$classSSAGES_1_1GridBase.html#a8fbfe7b2fc7caf0eef4f0543c384b95d" title="Get the periodicity in a specific dimension. " alt="" coords="307,201,472,242"/>
-<area shape="rect" id="node6" href="$classSSAGES_1_1GridBase.html#a1901a4f8f1893b72a3f972041e06c028" title="Get the upper edge for a specific dimension. " alt="" coords="307,266,472,307"/>
-<area shape="rect" id="node7" href="$classSSAGES_1_1Basis.html#a9c0d9290dae05c7a175ae8e69adaa590" title="Pre&#45;simulation hook. " alt="" coords="286,332,493,359"/>
+<area shape="rect" id="node2" href="$classSSAGES_1_1GridBase.html#a896d88442ef110a3afb58944e5107b53" title="Access Grid element read&#45;only. " alt="" coords="285,5,451,46"/>
+<area shape="rect" id="node3" href="$classSSAGES_1_1GridBase.html#a9ed5bbba129eaa3ef36f387d524ed422" title="Get the lower edge for a specific dimension. " alt="" coords="285,70,451,111"/>
+<area shape="rect" id="node4" href="$classSSAGES_1_1GridBase.html#aa504df2cdd42e7aaf39302a322c45593" title="Get the number of points for a specific dimension. " alt="" coords="285,135,451,177"/>
+<area shape="rect" id="node5" href="$classSSAGES_1_1GridBase.html#a8fbfe7b2fc7caf0eef4f0543c384b95d" title="Get the periodicity in a specific dimension. " alt="" coords="285,201,451,242"/>
+<area shape="rect" id="node6" href="$classSSAGES_1_1GridBase.html#a1901a4f8f1893b72a3f972041e06c028" title="Get the upper edge for a specific dimension. " alt="" coords="285,266,451,307"/>
 </map>

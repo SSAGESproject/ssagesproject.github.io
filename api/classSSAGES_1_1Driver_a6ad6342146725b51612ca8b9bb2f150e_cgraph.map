@@ -1,7 +1,0 @@
-<map id="SSAGES::Driver::Finalize" name="SSAGES::Driver::Finalize">
-<area shape="rect" id="node2" href="$classSSAGES_1_1Hook.html#a17c05357627bc757d1385bccf1e89018" title="Add a CollectiveVariable to the hook. " alt="" coords="246,5,413,32"/>
-<area shape="rect" id="node3" href="$classSSAGES_1_1Hook.html#ad86adfdc8e7e04d268306a7d61c6f20c" title="Add a listener to the hook. " alt="" coords="233,56,426,83"/>
-<area shape="rect" id="node4" href="$classSSAGES_1_1Hook.html#a33035a51cc7fe6b43f7f557346266649" title="Sets the active Driver. " alt="" coords="229,107,429,133"/>
-<area shape="rect" id="node5" href="$classSSAGES_1_1Hook.html#a7b365c5617cad0b6f5674f316e89ed73" title="Sets the active snapshot. " alt="" coords="230,157,429,184"/>
-<area shape="rect" id="node6" href="$classSSAGES_1_1Snapshot.html#a5fe83686ceb0193c0b6bb3fc99c953e0" title="Set target iterations. " alt="" coords="227,209,432,250"/>
-</map>

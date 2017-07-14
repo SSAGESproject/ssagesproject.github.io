@@ -2,13 +2,8 @@ var searchData=
 [
   ['objectrequirement',['ObjectRequirement',['../classJson_1_1ObjectRequirement.html',1,'Json']]],
   ['objectrequirement',['ObjectRequirement',['../classJson_1_1ObjectRequirement.html#a727a602ef225ffddc1936835908e24f2',1,'Json::ObjectRequirement']]],
-  ['observable_5f',['observable_',['../classSSAGES_1_1SimEvent.html#ab240389fe3b6f341dfc60e77f16f4a70',1,'SSAGES::SimEvent']]],
-  ['observerlist',['ObserverList',['../namespaceSSAGES.html#a9a1166683db5722b1a6661f99307d559',1,'SSAGES']]],
-  ['observers_5f',['observers_',['../classSSAGES_1_1Driver.html#a55d96ddba14b5abacd38dde4803ad460',1,'SSAGES::Driver::observers_()'],['../classSSAGES_1_1SimObservable.html#a2462bab03779ab304a68d413cb5a97f2',1,'SSAGES::SimObservable::observers_()']]],
   ['oneofrequirement',['OneOfRequirement',['../classJson_1_1OneOfRequirement.html',1,'Json']]],
   ['oneofrequirement',['OneOfRequirement',['../classJson_1_1OneOfRequirement.html#ab7961256b98775d5d4305eeb7ef1420d',1,'Json::OneOfRequirement']]],
-  ['openmddriver',['OpenMDDriver',['../classSSAGES_1_1OpenMDDriver.html#aff0486ba5d4e749b8a2d3b2f20cdf290',1,'SSAGES::OpenMDDriver']]],
-  ['openmddriver',['OpenMDDriver',['../classSSAGES_1_1OpenMDDriver.html',1,'SSAGES']]],
   ['opentrajectoryfile',['OpenTrajectoryFile',['../classSSAGES_1_1ForwardFlux.html#a63a23043983fcf2e6a2cc5956b215fb6',1,'SSAGES::ForwardFlux']]],
   ['operator_21_3d',['operator!=',['../classSSAGES_1_1Grid_1_1GridIterator.html#a2d0075c2bdb541cc0a108c37534a432a',1,'SSAGES::Grid::GridIterator::operator!=()'],['../classSSAGES_1_1Histogram_1_1HistIterator.html#ad670645b8866aed8aa7cb2e32f010806',1,'SSAGES::Histogram::HistIterator::operator!=()']]],
   ['operator_2a',['operator*',['../classSSAGES_1_1Grid_1_1GridIterator.html#ac055605bc0b3b2f69c470c1844f54b91',1,'SSAGES::Grid::GridIterator::operator*()'],['../classSSAGES_1_1Histogram_1_1HistIterator.html#a7558ab9a14e1e33331115498b2772b49',1,'SSAGES::Histogram::HistIterator::operator*()']]],
@@ -21,5 +16,6 @@ var searchData=
   ['operator_3d_3d',['operator==',['../classSSAGES_1_1Grid_1_1GridIterator.html#aa358731eed380d184529f23080ab8701',1,'SSAGES::Grid::GridIterator::operator==()'],['../classSSAGES_1_1Histogram_1_1HistIterator.html#a03221de4c61b7a1bd5f876e42a349ddd',1,'SSAGES::Histogram::HistIterator::operator==()']]],
   ['operator_5b_5d',['operator[]',['../classSSAGES_1_1GridBase.html#ab774b3a17797fc3c3c216a517fe00dbb',1,'SSAGES::GridBase::operator[](const std::vector&lt; int &gt; &amp;indices) const '],['../classSSAGES_1_1GridBase.html#a1e7751d90e2c9be2c5921d1f47e89632',1,'SSAGES::GridBase::operator[](const std::vector&lt; int &gt; &amp;indices)'],['../classSSAGES_1_1GridBase.html#a11abcc58ddb8eeccf5557244229b618d',1,'SSAGES::GridBase::operator[](std::initializer_list&lt; R &gt; &amp;&amp;x) const '],['../classSSAGES_1_1GridBase.html#a914a2f8abcf173d1ddf7d4a362cdd2fc',1,'SSAGES::GridBase::operator[](std::initializer_list&lt; R &gt; &amp;&amp;x)'],['../classSSAGES_1_1GridBase.html#a173b23eced1f6123b40c158860f634fa',1,'SSAGES::GridBase::operator[](int index) const '],['../classSSAGES_1_1GridBase.html#a1e5e78a4586e183e595d7e1e091274fa',1,'SSAGES::GridBase::operator[](int index)'],['../classSSAGES_1_1GridBase.html#a7d8e45c777bd563412355ec825d3855b',1,'SSAGES::GridBase::operator[](const std::vector&lt; double &gt; &amp;x) const '],['../classSSAGES_1_1GridBase.html#a27ac3ad338cea1dae2c3e65f727896fd',1,'SSAGES::GridBase::operator[](const std::vector&lt; double &gt; &amp;x)'],['../classSSAGES_1_1GridBase.html#a879a382ffd51721d6508f8f9ebe82bbe',1,'SSAGES::GridBase::operator[](double x) const '],['../classSSAGES_1_1GridBase.html#ad81e4349173e7381ce3e7f4722d995a0',1,'SSAGES::GridBase::operator[](double x)']]],
   ['origin_5f',['origin_',['../classSSAGES_1_1Snapshot.html#a0c2a27a543f30f138630bb9d21b786a9',1,'SSAGES::Snapshot']]],
-  ['original_5finitialized',['original_initialized',['../classSSAGES_1_1Swarm.html#a65b8782f926da3c5dfc4ae4c45523ce1',1,'SSAGES::Swarm']]]
+  ['original_5finitialized',['original_initialized',['../classSSAGES_1_1Swarm.html#a65b8782f926da3c5dfc4ae4c45523ce1',1,'SSAGES::Swarm']]],
+  ['outfreq_5f',['outfreq_',['../classSSAGES_1_1Umbrella.html#a118bc974d7cb44facf3ca1af62eb8c99',1,'SSAGES::Umbrella']]]
 ];

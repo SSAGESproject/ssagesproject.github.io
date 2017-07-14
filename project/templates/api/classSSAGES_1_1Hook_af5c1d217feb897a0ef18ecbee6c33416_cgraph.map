@@ -1,6 +1,0 @@
-<map id="SSAGES::Hook::PostStepHook" name="SSAGES::Hook::PostStepHook">
-<area shape="rect" id="node2" href="$classSSAGES_1_1Hook.html#a84d70866b9ccfec3af0069339c426f6a" title="Notify observers of changes in the simulation. " alt="" coords="264,64,483,91"/>
-<area shape="rect" id="node3" href="$classSSAGES_1_1Snapshot.html#a127a32f56151174b6cede0c790d5fd03" title="Get communicator for group (walker). " alt="" coords="531,5,786,32"/>
-<area shape="rect" id="node4" href="$classSSAGES_1_1SimObservable.html#a5415a127c5494481bdd8a222c48979dc" title="Notify registered observers of a change. " alt="" coords="571,57,746,98"/>
-<area shape="rect" id="node5" href="$classSSAGES_1_1Snapshot.html#acaee0172694743e118273a055ff2c3fc" title="Get the current iteration. " alt="" coords="551,123,767,149"/>
-</map>

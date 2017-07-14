@@ -10,5 +10,5 @@ var searchData=
   ['hinv_5f',['Hinv_',['../classSSAGES_1_1Snapshot.html#aab240259a68d2247e4dd2dd836a5bea5',1,'SSAGES::Snapshot']]],
   ['hist_5f',['hist_',['../classSSAGES_1_1Histogram_1_1HistIterator.html#a6178ba0466b13c6b212f3f22d7b11283',1,'SSAGES::Histogram::HistIterator::hist_()'],['../classSSAGES_1_1Basis.html#adddfdf996d1e81db3d7966776b6025af',1,'SSAGES::Basis::hist_()']]],
   ['histdetails_5f',['histdetails_',['../classSSAGES_1_1ABF.html#a060acb9e57d66e702de14ff8a5d36ee6',1,'SSAGES::ABF']]],
-  ['hook_5f',['hook_',['../classSSAGES_1_1Driver.html#ae31f3e42d218451dadf5918da35c89ac',1,'SSAGES::Driver']]]
+  ['hook_5f',['hook_',['../classSSAGES_1_1ResourceHandler.html#a65c7638fab96e7f3e092fe1448ee05dd',1,'SSAGES::ResourceHandler']]]
 ];

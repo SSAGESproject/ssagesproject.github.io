@@ -1,9 +1,5 @@
 <map id="SSAGES::GridBase::GetLower" name="SSAGES::GridBase::GetLower">
-<area shape="rect" id="node2" href="$classSSAGES_1_1Meta.html#a9cd073ee3c04a98e5131e96ffcb11df8" title="Computes the bias force. " alt="" coords="259,5,467,32"/>
-<area shape="rect" id="node4" href="$classSSAGES_1_1Basis.html#ad67a47dec34db08ac78a6ae49d9211a4" title="Computes the bias force. " alt="" coords="257,56,469,83"/>
-<area shape="rect" id="node6" href="$classSSAGES_1_1GridBase.html#a633d773c9700a4096db4899742f18f97" title="Return coordinates of the grid center points. " alt="" coords="280,107,445,149"/>
-<area shape="rect" id="node7" href="$classSSAGES_1_1GridBase.html#abe96484a8fc2454042f72ff7d941f224" title="Return the Grid indices for a given point. " alt="" coords="280,173,445,214"/>
-<area shape="rect" id="node8" href="$classSSAGES_1_1GridBase.html#a9ed5bbba129eaa3ef36f387d524ed422" title="Get the lower edge for a specific dimension. " alt="" coords="280,238,445,279"/>
-<area shape="rect" id="node3" href="$classSSAGES_1_1Meta.html#a223464a8c4ecbac45a678eb3425d504e" title="Post&#45;integration hook. " alt="" coords="520,5,731,32"/>
-<area shape="rect" id="node5" href="$classSSAGES_1_1Basis.html#a2dd914ae7f0c5036700a493598d845dd" title="Post&#45;integration hook. " alt="" coords="518,56,733,83"/>
+<area shape="rect" id="node2" href="$classSSAGES_1_1GridBase.html#a633d773c9700a4096db4899742f18f97" title="Return coordinates of the grid center points. " alt="" coords="256,5,421,46"/>
+<area shape="rect" id="node3" href="$classSSAGES_1_1GridBase.html#abe96484a8fc2454042f72ff7d941f224" title="Return the Grid indices for a given point. " alt="" coords="256,70,421,111"/>
+<area shape="rect" id="node4" href="$classSSAGES_1_1GridBase.html#a9ed5bbba129eaa3ef36f387d524ed422" title="Get the lower edge for a specific dimension. " alt="" coords="256,135,421,177"/>
 </map>

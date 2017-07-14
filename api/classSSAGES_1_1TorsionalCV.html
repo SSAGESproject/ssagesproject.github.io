@@ -97,6 +97,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pub-static-methods">Static Public Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classSSAGES_1_1TorsionalCV-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -113,7 +114,7 @@ Inheritance diagram for SSAGES::TorsionalCV:</div>
 <div class="dyncontent">
 <div class="center"><img src="classSSAGES_1_1TorsionalCV__inherit__graph.png" border="0" usemap="#SSAGES_1_1TorsionalCV_inherit__map" alt="Inheritance graph"/></div>
 <map name="SSAGES_1_1TorsionalCV_inherit__map" id="SSAGES_1_1TorsionalCV_inherit__map">
-<area shape="rect" id="node2" href="classSSAGES_1_1CollectiveVariable.html" title="Abstract class for a collective variable. " alt="" coords="5,80,195,107"/><area shape="rect" id="node3" href="classSSAGES_1_1Serializable.html" title="Base class for all serializable objects. " alt="" coords="24,5,176,32"/></map>
+<area shape="rect" id="node2" href="classSSAGES_1_1CollectiveVariable.html" title="Abstract class for a collective variable. " alt="" coords="5,5,195,32"/></map>
 <center><span class="legend">[<a href="graph_legend.html">legend</a>]</span></center></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
@@ -136,9 +137,6 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:af442beb9f397716e4906b4fcf5a67edd"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSSAGES_1_1TorsionalCV.html#af442beb9f397716e4906b4fcf5a67edd">GetMinimumImage</a> (const double Location) const override</td></tr>
 <tr class="memdesc:af442beb9f397716e4906b4fcf5a67edd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the minimum image of a CV based on the input location.  <a href="#af442beb9f397716e4906b4fcf5a67edd">More...</a><br /></td></tr>
 <tr class="separator:af442beb9f397716e4906b4fcf5a67edd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a39305e8d4e8e606a402aaa016f8da9b9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSSAGES_1_1TorsionalCV.html#a39305e8d4e8e606a402aaa016f8da9b9">Serialize</a> (Json::Value &amp;json) const override</td></tr>
-<tr class="memdesc:a39305e8d4e8e606a402aaa016f8da9b9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Serialize this CV for restart purposes.  <a href="#a39305e8d4e8e606a402aaa016f8da9b9">More...</a><br /></td></tr>
-<tr class="separator:a39305e8d4e8e606a402aaa016f8da9b9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_classSSAGES_1_1CollectiveVariable"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classSSAGES_1_1CollectiveVariable')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classSSAGES_1_1CollectiveVariable.html">SSAGES::CollectiveVariable</a></td></tr>
 <tr class="memitem:a9e5f5006cfa10a9679ef1826393ea889 inherit pub_methods_classSSAGES_1_1CollectiveVariable"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a9e5f5006cfa10a9679ef1826393ea889"></a>
 &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSSAGES_1_1CollectiveVariable.html#a9e5f5006cfa10a9679ef1826393ea889">CollectiveVariable</a> ()</td></tr>
@@ -157,11 +155,16 @@ const <a class="el" href="namespaceSSAGES.html#a306e635f4b20f86fbc726fbf9a5d11a8
 <tr class="memitem:a1e1f4a80b2a275b9791a1ee4d430c1d4 inherit pub_methods_classSSAGES_1_1CollectiveVariable"><td class="memItemLeft" align="right" valign="top">const std::array&lt; double, 2 &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSSAGES_1_1CollectiveVariable.html#a1e1f4a80b2a275b9791a1ee4d430c1d4">GetBoundaries</a> ()</td></tr>
 <tr class="memdesc:a1e1f4a80b2a275b9791a1ee4d430c1d4 inherit pub_methods_classSSAGES_1_1CollectiveVariable"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get CV boundaries.  <a href="#a1e1f4a80b2a275b9791a1ee4d430c1d4">More...</a><br /></td></tr>
 <tr class="separator:a1e1f4a80b2a275b9791a1ee4d430c1d4 inherit pub_methods_classSSAGES_1_1CollectiveVariable"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="inherit_header pub_methods_classSSAGES_1_1Serializable"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_classSSAGES_1_1Serializable')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="classSSAGES_1_1Serializable.html">SSAGES::Serializable</a></td></tr>
-<tr class="memitem:a29df19339b8f94609477e76b6081e075 inherit pub_methods_classSSAGES_1_1Serializable"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a29df19339b8f94609477e76b6081e075"></a>
-virtual&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSSAGES_1_1Serializable.html#a29df19339b8f94609477e76b6081e075">~Serializable</a> ()</td></tr>
-<tr class="memdesc:a29df19339b8f94609477e76b6081e075 inherit pub_methods_classSSAGES_1_1Serializable"><td class="mdescLeft">&#160;</td><td class="mdescRight">Destructor. <br /></td></tr>
-<tr class="separator:a29df19339b8f94609477e76b6081e075 inherit pub_methods_classSSAGES_1_1Serializable"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
+Static Public Member Functions</h2></td></tr>
+<tr class="memitem:acfa27d84d60248c363d111a82f175749"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="acfa27d84d60248c363d111a82f175749"></a>
+static <a class="el" href="classSSAGES_1_1TorsionalCV.html">TorsionalCV</a> *&#160;</td><td class="memItemRight" valign="bottom"><b>Build</b> (const Json::Value &amp;json, const std::string &amp;path)</td></tr>
+<tr class="separator:acfa27d84d60248c363d111a82f175749"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="inherit_header pub_static_methods_classSSAGES_1_1CollectiveVariable"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_classSSAGES_1_1CollectiveVariable')"><img src="closed.png" alt="-"/>&#160;Static Public Member Functions inherited from <a class="el" href="classSSAGES_1_1CollectiveVariable.html">SSAGES::CollectiveVariable</a></td></tr>
+<tr class="memitem:ab56eae0d888f3d5125566bfb9b5e21aa inherit pub_static_methods_classSSAGES_1_1CollectiveVariable"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classSSAGES_1_1CollectiveVariable.html">CollectiveVariable</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSSAGES_1_1CollectiveVariable.html#ab56eae0d888f3d5125566bfb9b5e21aa">BuildCV</a> (const Json::Value &amp;json, const std::string &amp;path)</td></tr>
+<tr class="memdesc:ab56eae0d888f3d5125566bfb9b5e21aa inherit pub_static_methods_classSSAGES_1_1CollectiveVariable"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set up collective variable.  <a href="#ab56eae0d888f3d5125566bfb9b5e21aa">More...</a><br /></td></tr>
+<tr class="separator:ab56eae0d888f3d5125566bfb9b5e21aa inherit pub_static_methods_classSSAGES_1_1CollectiveVariable"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -176,16 +179,6 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="inherited"></a>
 Additional Inherited Members</h2></td></tr>
-<tr class="inherit_header pub_static_methods_classSSAGES_1_1CollectiveVariable"><td colspan="2" onclick="javascript:toggleInherit('pub_static_methods_classSSAGES_1_1CollectiveVariable')"><img src="closed.png" alt="-"/>&#160;Static Public Member Functions inherited from <a class="el" href="classSSAGES_1_1CollectiveVariable.html">SSAGES::CollectiveVariable</a></td></tr>
-<tr class="memitem:a6af09220d5c6d42369122e0b9f93f772 inherit pub_static_methods_classSSAGES_1_1CollectiveVariable"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classSSAGES_1_1CollectiveVariable.html">CollectiveVariable</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSSAGES_1_1CollectiveVariable.html#a6af09220d5c6d42369122e0b9f93f772">BuildCV</a> (const Json::Value &amp;json)</td></tr>
-<tr class="memdesc:a6af09220d5c6d42369122e0b9f93f772 inherit pub_static_methods_classSSAGES_1_1CollectiveVariable"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set up collective variable.  <a href="#a6af09220d5c6d42369122e0b9f93f772">More...</a><br /></td></tr>
-<tr class="separator:a6af09220d5c6d42369122e0b9f93f772 inherit pub_static_methods_classSSAGES_1_1CollectiveVariable"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab56eae0d888f3d5125566bfb9b5e21aa inherit pub_static_methods_classSSAGES_1_1CollectiveVariable"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classSSAGES_1_1CollectiveVariable.html">CollectiveVariable</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSSAGES_1_1CollectiveVariable.html#ab56eae0d888f3d5125566bfb9b5e21aa">BuildCV</a> (const Json::Value &amp;json, const std::string &amp;path)</td></tr>
-<tr class="memdesc:ab56eae0d888f3d5125566bfb9b5e21aa inherit pub_static_methods_classSSAGES_1_1CollectiveVariable"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set up collective variable.  <a href="#ab56eae0d888f3d5125566bfb9b5e21aa">More...</a><br /></td></tr>
-<tr class="separator:ab56eae0d888f3d5125566bfb9b5e21aa inherit pub_static_methods_classSSAGES_1_1CollectiveVariable"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a523832b5ece7bb33af4941ecf2f626c7 inherit pub_static_methods_classSSAGES_1_1CollectiveVariable"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSSAGES_1_1CollectiveVariable.html#a523832b5ece7bb33af4941ecf2f626c7">BuildCV</a> (const Json::Value &amp;json, <a class="el" href="namespaceSSAGES.html#acddea47426ac0a643b048f870ddd2907">CVList</a> &amp;cvlist, const std::string &amp;path)</td></tr>
-<tr class="memdesc:a523832b5ece7bb33af4941ecf2f626c7 inherit pub_static_methods_classSSAGES_1_1CollectiveVariable"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set up CV and add it to list of CVs.  <a href="#a523832b5ece7bb33af4941ecf2f626c7">More...</a><br /></td></tr>
-<tr class="separator:a523832b5ece7bb33af4941ecf2f626c7 inherit pub_static_methods_classSSAGES_1_1CollectiveVariable"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pro_attribs_classSSAGES_1_1CollectiveVariable"><td colspan="2" onclick="javascript:toggleInherit('pro_attribs_classSSAGES_1_1CollectiveVariable')"><img src="closed.png" alt="-"/>&#160;Protected Attributes inherited from <a class="el" href="classSSAGES_1_1CollectiveVariable.html">SSAGES::CollectiveVariable</a></td></tr>
 <tr class="memitem:a390202f6e541da879f1cfcde22c49489 inherit pro_attribs_classSSAGES_1_1CollectiveVariable"><td class="memItemLeft" align="right" valign="top"><a class="anchor" id="a390202f6e541da879f1cfcde22c49489"></a>
 std::vector&lt; <a class="el" href="namespaceSSAGES.html#a630084a0a5e185e89e21b3735f8f8b2e">Vector3</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSSAGES_1_1CollectiveVariable.html#a390202f6e541da879f1cfcde22c49489">grad_</a></td></tr>
@@ -317,7 +310,7 @@ std::array&lt; double, 2 &gt;&#160;</td><td class="memItemRight" valign="bottom"
 
 <p>Definition at line <a class="el" href="TorsionalCV_8h_source.html#l00095">95</a> of file <a class="el" href="TorsionalCV_8h_source.html">TorsionalCV.h</a>.</p>
 
-<p>References <a class="el" href="Snapshot_8h_source.html#l00420">SSAGES::Snapshot::ApplyMinimumImage()</a>, <a class="el" href="TorsionalCV_8h_source.html#l00046">atomids_</a>, <a class="el" href="Snapshot_8h_source.html#l00186">SSAGES::Snapshot::GetCommunicator()</a>, <a class="el" href="Snapshot_8h_source.html#l00557">SSAGES::Snapshot::GetLocalIndex()</a>, <a class="el" href="Snapshot_8h_source.html#l00202">SSAGES::Snapshot::GetNumAtoms()</a>, <a class="el" href="Snapshot_8h_source.html#l00325">SSAGES::Snapshot::GetPositions()</a>, <a class="el" href="CollectiveVariable_8h_source.html#l00044">SSAGES::CollectiveVariable::grad_</a>, and <a class="el" href="CollectiveVariable_8h_source.html#l00050">SSAGES::CollectiveVariable::val_</a>.</p>
+<p>References <a class="el" href="Snapshot_8h_source.html#l00418">SSAGES::Snapshot::ApplyMinimumImage()</a>, <a class="el" href="TorsionalCV_8h_source.html#l00046">atomids_</a>, <a class="el" href="Snapshot_8h_source.html#l00184">SSAGES::Snapshot::GetCommunicator()</a>, <a class="el" href="Snapshot_8h_source.html#l00555">SSAGES::Snapshot::GetLocalIndex()</a>, <a class="el" href="Snapshot_8h_source.html#l00200">SSAGES::Snapshot::GetNumAtoms()</a>, <a class="el" href="Snapshot_8h_source.html#l00323">SSAGES::Snapshot::GetPositions()</a>, <a class="el" href="CollectiveVariable_8h_source.html#l00043">SSAGES::CollectiveVariable::grad_</a>, and <a class="el" href="CollectiveVariable_8h_source.html#l00049">SSAGES::CollectiveVariable::val_</a>.</p>
 <div class="fragment"><div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        {</div>
 <div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;            <span class="comment">// Get data from snapshot. </span></div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;            <span class="keyword">auto</span> n = snapshot.GetNumAtoms();</div>
@@ -373,16 +366,16 @@ std::array&lt; double, 2 &gt;&#160;</td><td class="memItemRight" valign="bottom"
 <div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;            <span class="keywordflow">if</span>(kindex != -1) <a class="code" href="classSSAGES_1_1CollectiveVariable.html#a390202f6e541da879f1cfcde22c49489">grad_</a>[kindex] = Ned*B  - Zed*A - gradl;</div>
 <div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;        }</div>
 <div class="ttc" id="classSSAGES_1_1TorsionalCV_html_a21f9dc3365cdbf318e8be75483873285"><div class="ttname"><a href="classSSAGES_1_1TorsionalCV.html#a21f9dc3365cdbf318e8be75483873285">SSAGES::TorsionalCV::atomids_</a></div><div class="ttdeci">Label atomids_</div><div class="ttdoc">Vector of 4 atom ID&#39;s of interest. </div><div class="ttdef"><b>Definition:</b> <a href="TorsionalCV_8h_source.html#l00046">TorsionalCV.h:46</a></div></div>
-<div class="ttc" id="classSSAGES_1_1CollectiveVariable_html_a390202f6e541da879f1cfcde22c49489"><div class="ttname"><a href="classSSAGES_1_1CollectiveVariable.html#a390202f6e541da879f1cfcde22c49489">SSAGES::CollectiveVariable::grad_</a></div><div class="ttdeci">std::vector&lt; Vector3 &gt; grad_</div><div class="ttdoc">Gradient vector dCv/dxi. </div><div class="ttdef"><b>Definition:</b> <a href="CollectiveVariable_8h_source.html#l00044">CollectiveVariable.h:44</a></div></div>
+<div class="ttc" id="classSSAGES_1_1CollectiveVariable_html_a390202f6e541da879f1cfcde22c49489"><div class="ttname"><a href="classSSAGES_1_1CollectiveVariable.html#a390202f6e541da879f1cfcde22c49489">SSAGES::CollectiveVariable::grad_</a></div><div class="ttdeci">std::vector&lt; Vector3 &gt; grad_</div><div class="ttdoc">Gradient vector dCv/dxi. </div><div class="ttdef"><b>Definition:</b> <a href="CollectiveVariable_8h_source.html#l00043">CollectiveVariable.h:43</a></div></div>
 <div class="ttc" id="namespaceSSAGES_html_a630084a0a5e185e89e21b3735f8f8b2e"><div class="ttname"><a href="namespaceSSAGES.html#a630084a0a5e185e89e21b3735f8f8b2e">SSAGES::Vector3</a></div><div class="ttdeci">Eigen::Vector3d Vector3</div><div class="ttdoc">Three-dimensional vector. </div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00033">types.h:33</a></div></div>
-<div class="ttc" id="classSSAGES_1_1CollectiveVariable_html_a65b17f3e9b3c967ad42814c3eec88bb2"><div class="ttname"><a href="classSSAGES_1_1CollectiveVariable.html#a65b17f3e9b3c967ad42814c3eec88bb2">SSAGES::CollectiveVariable::val_</a></div><div class="ttdeci">double val_</div><div class="ttdoc">Current value of CV. </div><div class="ttdef"><b>Definition:</b> <a href="CollectiveVariable_8h_source.html#l00050">CollectiveVariable.h:50</a></div></div>
+<div class="ttc" id="classSSAGES_1_1CollectiveVariable_html_a65b17f3e9b3c967ad42814c3eec88bb2"><div class="ttname"><a href="classSSAGES_1_1CollectiveVariable.html#a65b17f3e9b3c967ad42814c3eec88bb2">SSAGES::CollectiveVariable::val_</a></div><div class="ttdeci">double val_</div><div class="ttdoc">Current value of CV. </div><div class="ttdef"><b>Definition:</b> <a href="CollectiveVariable_8h_source.html#l00049">CollectiveVariable.h:49</a></div></div>
 </div><!-- fragment -->
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classSSAGES_1_1TorsionalCV_ae3e82fb11240eb780cfcc57b2b0112a5_cgraph.png" border="0" usemap="#classSSAGES_1_1TorsionalCV_ae3e82fb11240eb780cfcc57b2b0112a5_cgraph" alt=""/></div>
 <map name="classSSAGES_1_1TorsionalCV_ae3e82fb11240eb780cfcc57b2b0112a5_cgraph" id="classSSAGES_1_1TorsionalCV_ae3e82fb11240eb780cfcc57b2b0112a5_cgraph">
-<area shape="rect" id="node2" href="classSSAGES_1_1Snapshot.html#a46d2a991fd3446bfe6f6f72291ec1483" title="Apply minimum image to a vector. " alt="" coords="221,5,456,46"/><area shape="rect" id="node4" href="classSSAGES_1_1Snapshot.html#a127a32f56151174b6cede0c790d5fd03" title="Get communicator for group (walker). " alt="" coords="211,71,466,97"/><area shape="rect" id="node5" href="classSSAGES_1_1Snapshot.html#a3ecf272dca61538320a4d503303fa9ba" title="Gets the local atom index corresponding to an atom ID. " alt="" coords="239,122,439,163"/><area shape="rect" id="node6" href="classSSAGES_1_1Snapshot.html#ae05879b78672cd4899a06ae2d6a140fd" title="Get number of atoms in this snapshot. " alt="" coords="240,187,437,229"/><area shape="rect" id="node7" href="classSSAGES_1_1Snapshot.html#aee2ceb317884bc5e0105b9824b5026d3" title="Access the particle positions. " alt="" coords="227,253,450,280"/><area shape="rect" id="node3" href="namespaceSSAGES.html#a49bb77a1b5822888753c96c70780ab47" title="Quick helper function to round a double. " alt="" coords="515,12,637,39"/></map>
+<area shape="rect" id="node2" href="classSSAGES_1_1Snapshot.html#a46d2a991fd3446bfe6f6f72291ec1483" title="Apply minimum image to a vector. " alt="" coords="221,5,456,46"/><area shape="rect" id="node4" href="classSSAGES_1_1Snapshot.html#a9079d14677b94ff2c88c1f35c867c303" title="Get communicator for walker. " alt="" coords="211,71,466,97"/><area shape="rect" id="node5" href="classSSAGES_1_1Snapshot.html#a3ecf272dca61538320a4d503303fa9ba" title="Gets the local atom index corresponding to an atom ID. " alt="" coords="239,122,439,163"/><area shape="rect" id="node6" href="classSSAGES_1_1Snapshot.html#ae05879b78672cd4899a06ae2d6a140fd" title="Get number of atoms in this snapshot. " alt="" coords="240,187,437,229"/><area shape="rect" id="node7" href="classSSAGES_1_1Snapshot.html#aee2ceb317884bc5e0105b9824b5026d3" title="Access the particle positions. " alt="" coords="227,253,450,280"/><area shape="rect" id="node3" href="namespaceSSAGES.html#a49bb77a1b5822888753c96c70780ab47" title="Quick helper function to round a double. " alt="" coords="515,12,637,39"/></map>
 </div>
 </p>
 
@@ -424,7 +417,7 @@ Here is the call graph for this function:</div>
 
 <p>Definition at line <a class="el" href="TorsionalCV_8h_source.html#l00188">188</a> of file <a class="el" href="TorsionalCV_8h_source.html">TorsionalCV.h</a>.</p>
 
-<p>References <a class="el" href="TorsionalCV_8h_source.html#l00161">GetPeriodicValue()</a>, <a class="el" href="TorsionalCV_8h_source.html#l00049">periodic_</a>, and <a class="el" href="CollectiveVariable_8h_source.html#l00050">SSAGES::CollectiveVariable::val_</a>.</p>
+<p>References <a class="el" href="TorsionalCV_8h_source.html#l00161">GetPeriodicValue()</a>, <a class="el" href="TorsionalCV_8h_source.html#l00049">periodic_</a>, and <a class="el" href="CollectiveVariable_8h_source.html#l00049">SSAGES::CollectiveVariable::val_</a>.</p>
 <div class="fragment"><div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;        {</div>
 <div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;            <span class="keywordtype">double</span> PeriodicDiff = <a class="code" href="classSSAGES_1_1CollectiveVariable.html#a65b17f3e9b3c967ad42814c3eec88bb2">val_</a> - Location;</div>
 <div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;</div>
@@ -442,7 +435,7 @@ Here is the call graph for this function:</div>
 <div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;        }</div>
 <div class="ttc" id="classSSAGES_1_1TorsionalCV_html_a43ce3e5ede135ac9dd8c06a0b79eff98"><div class="ttname"><a href="classSSAGES_1_1TorsionalCV.html#a43ce3e5ede135ac9dd8c06a0b79eff98">SSAGES::TorsionalCV::periodic_</a></div><div class="ttdeci">bool periodic_</div><div class="ttdoc">If True, use periodic boundary conditions. </div><div class="ttdef"><b>Definition:</b> <a href="TorsionalCV_8h_source.html#l00049">TorsionalCV.h:49</a></div></div>
 <div class="ttc" id="classSSAGES_1_1TorsionalCV_html_a82eedc6924ce1739f445f9f0da9e288d"><div class="ttname"><a href="classSSAGES_1_1TorsionalCV.html#a82eedc6924ce1739f445f9f0da9e288d">SSAGES::TorsionalCV::GetPeriodicValue</a></div><div class="ttdeci">double GetPeriodicValue(double Location) const override</div><div class="ttdoc">Return value taking periodic boundary conditions into account. </div><div class="ttdef"><b>Definition:</b> <a href="TorsionalCV_8h_source.html#l00161">TorsionalCV.h:161</a></div></div>
-<div class="ttc" id="classSSAGES_1_1CollectiveVariable_html_a65b17f3e9b3c967ad42814c3eec88bb2"><div class="ttname"><a href="classSSAGES_1_1CollectiveVariable.html#a65b17f3e9b3c967ad42814c3eec88bb2">SSAGES::CollectiveVariable::val_</a></div><div class="ttdeci">double val_</div><div class="ttdoc">Current value of CV. </div><div class="ttdef"><b>Definition:</b> <a href="CollectiveVariable_8h_source.html#l00050">CollectiveVariable.h:50</a></div></div>
+<div class="ttc" id="classSSAGES_1_1CollectiveVariable_html_a65b17f3e9b3c967ad42814c3eec88bb2"><div class="ttname"><a href="classSSAGES_1_1CollectiveVariable.html#a65b17f3e9b3c967ad42814c3eec88bb2">SSAGES::CollectiveVariable::val_</a></div><div class="ttdeci">double val_</div><div class="ttdoc">Current value of CV. </div><div class="ttdef"><b>Definition:</b> <a href="CollectiveVariable_8h_source.html#l00049">CollectiveVariable.h:49</a></div></div>
 </div><!-- fragment -->
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
@@ -491,7 +484,7 @@ Here is the call graph for this function:</div>
 
 <p>Definition at line <a class="el" href="TorsionalCV_8h_source.html#l00213">213</a> of file <a class="el" href="TorsionalCV_8h_source.html">TorsionalCV.h</a>.</p>
 
-<p>References <a class="el" href="TorsionalCV_8h_source.html#l00049">periodic_</a>, and <a class="el" href="CollectiveVariable_8h_source.html#l00050">SSAGES::CollectiveVariable::val_</a>.</p>
+<p>References <a class="el" href="TorsionalCV_8h_source.html#l00049">periodic_</a>, and <a class="el" href="CollectiveVariable_8h_source.html#l00049">SSAGES::CollectiveVariable::val_</a>.</p>
 <div class="fragment"><div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;        {</div>
 <div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;            <span class="keywordtype">double</span> PeriodicDiff = <a class="code" href="classSSAGES_1_1CollectiveVariable.html#a65b17f3e9b3c967ad42814c3eec88bb2">val_</a> - Location;</div>
 <div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;</div>
@@ -506,7 +499,7 @@ Here is the call graph for this function:</div>
 <div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="classSSAGES_1_1CollectiveVariable.html#a65b17f3e9b3c967ad42814c3eec88bb2">val_</a>;</div>
 <div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;        }</div>
 <div class="ttc" id="classSSAGES_1_1TorsionalCV_html_a43ce3e5ede135ac9dd8c06a0b79eff98"><div class="ttname"><a href="classSSAGES_1_1TorsionalCV.html#a43ce3e5ede135ac9dd8c06a0b79eff98">SSAGES::TorsionalCV::periodic_</a></div><div class="ttdeci">bool periodic_</div><div class="ttdoc">If True, use periodic boundary conditions. </div><div class="ttdef"><b>Definition:</b> <a href="TorsionalCV_8h_source.html#l00049">TorsionalCV.h:49</a></div></div>
-<div class="ttc" id="classSSAGES_1_1CollectiveVariable_html_a65b17f3e9b3c967ad42814c3eec88bb2"><div class="ttname"><a href="classSSAGES_1_1CollectiveVariable.html#a65b17f3e9b3c967ad42814c3eec88bb2">SSAGES::CollectiveVariable::val_</a></div><div class="ttdeci">double val_</div><div class="ttdoc">Current value of CV. </div><div class="ttdef"><b>Definition:</b> <a href="CollectiveVariable_8h_source.html#l00050">CollectiveVariable.h:50</a></div></div>
+<div class="ttc" id="classSSAGES_1_1CollectiveVariable_html_a65b17f3e9b3c967ad42814c3eec88bb2"><div class="ttname"><a href="classSSAGES_1_1CollectiveVariable.html#a65b17f3e9b3c967ad42814c3eec88bb2">SSAGES::CollectiveVariable::val_</a></div><div class="ttdeci">double val_</div><div class="ttdoc">Current value of CV. </div><div class="ttdef"><b>Definition:</b> <a href="CollectiveVariable_8h_source.html#l00049">CollectiveVariable.h:49</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -609,7 +602,7 @@ Here is the caller graph for this function:</div>
 
 <p>Definition at line <a class="el" href="TorsionalCV_8h_source.html#l00073">73</a> of file <a class="el" href="TorsionalCV_8h_source.html">TorsionalCV.h</a>.</p>
 
-<p>References <a class="el" href="TorsionalCV_8h_source.html#l00046">atomids_</a>, <a class="el" href="Snapshot_8h_source.html#l00186">SSAGES::Snapshot::GetCommunicator()</a>, and <a class="el" href="Snapshot_8h_source.html#l00575">SSAGES::Snapshot::GetLocalIndices()</a>.</p>
+<p>References <a class="el" href="TorsionalCV_8h_source.html#l00046">atomids_</a>, <a class="el" href="Snapshot_8h_source.html#l00184">SSAGES::Snapshot::GetCommunicator()</a>, and <a class="el" href="Snapshot_8h_source.html#l00573">SSAGES::Snapshot::GetLocalIndices()</a>.</p>
 <div class="fragment"><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        {</div>
 <div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;            <span class="keyword">using</span> std::to_string;</div>
 <div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;            </div>
@@ -633,61 +626,10 @@ Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classSSAGES_1_1TorsionalCV_a4d33444e79408f7690d3c1e56359212b_cgraph.png" border="0" usemap="#classSSAGES_1_1TorsionalCV_a4d33444e79408f7690d3c1e56359212b_cgraph" alt=""/></div>
 <map name="classSSAGES_1_1TorsionalCV_a4d33444e79408f7690d3c1e56359212b_cgraph" id="classSSAGES_1_1TorsionalCV_a4d33444e79408f7690d3c1e56359212b_cgraph">
-<area shape="rect" id="node2" href="classSSAGES_1_1Snapshot.html#a127a32f56151174b6cede0c790d5fd03" title="Get communicator for group (walker). " alt="" coords="211,5,466,32"/><area shape="rect" id="node3" href="classSSAGES_1_1Snapshot.html#abeef8bea41bf9706855c59b6cde0777a" title="SSAGES::Snapshot::GetLocal\lIndices" alt="" coords="239,57,439,98"/><area shape="rect" id="node4" href="classSSAGES_1_1Snapshot.html#a3ecf272dca61538320a4d503303fa9ba" title="Gets the local atom index corresponding to an atom ID. " alt="" coords="515,57,715,98"/></map>
+<area shape="rect" id="node2" href="classSSAGES_1_1Snapshot.html#a9079d14677b94ff2c88c1f35c867c303" title="Get communicator for walker. " alt="" coords="211,5,466,32"/><area shape="rect" id="node3" href="classSSAGES_1_1Snapshot.html#abeef8bea41bf9706855c59b6cde0777a" title="SSAGES::Snapshot::GetLocal\lIndices" alt="" coords="239,57,439,98"/><area shape="rect" id="node4" href="classSSAGES_1_1Snapshot.html#a3ecf272dca61538320a4d503303fa9ba" title="Gets the local atom index corresponding to an atom ID. " alt="" coords="515,57,715,98"/></map>
 </div>
 </p>
 
-</div>
-</div>
-<a class="anchor" id="a39305e8d4e8e606a402aaa016f8da9b9"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">void SSAGES::TorsionalCV::Serialize </td>
-          <td>(</td>
-          <td class="paramtype">Json::Value &amp;&#160;</td>
-          <td class="paramname"><em>json</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Serialize this CV for restart purposes. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">json</td><td>JSON value </td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p>Implements <a class="el" href="classSSAGES_1_1Serializable.html#aa4bc8d0ce033a025b0baa7cedccd8ebd">SSAGES::Serializable</a>.</p>
-
-<p>Definition at line <a class="el" href="TorsionalCV_8h_source.html#l00232">232</a> of file <a class="el" href="TorsionalCV_8h_source.html">TorsionalCV.h</a>.</p>
-
-<p>References <a class="el" href="TorsionalCV_8h_source.html#l00046">atomids_</a>, <a class="el" href="CollectiveVariable_8h_source.html#l00053">SSAGES::CollectiveVariable::bounds_</a>, and <a class="el" href="TorsionalCV_8h_source.html#l00049">periodic_</a>.</p>
-<div class="fragment"><div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;        {</div>
-<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;            json[<span class="stringliteral">&quot;type&quot;</span>] = <span class="stringliteral">&quot;Torsional&quot;</span>;</div>
-<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;            json[<span class="stringliteral">&quot;periodic&quot;</span>] = <a class="code" href="classSSAGES_1_1TorsionalCV.html#a43ce3e5ede135ac9dd8c06a0b79eff98">periodic_</a>;</div>
-<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;            </div>
-<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;            <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; <span class="keywordtype">id</span> : <a class="code" href="classSSAGES_1_1TorsionalCV.html#a21f9dc3365cdbf318e8be75483873285">atomids_</a>)</div>
-<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;                json[<span class="stringliteral">&quot;atom_ids&quot;</span>].append(<span class="keywordtype">id</span>);</div>
-<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;</div>
-<div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;            <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; bound : <a class="code" href="classSSAGES_1_1CollectiveVariable.html#abc60e9b019d4b61354faf60a76d3530e">bounds_</a>)</div>
-<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;                json[<span class="stringliteral">&quot;bounds&quot;</span>].append(bound);   </div>
-<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;        }</div>
-<div class="ttc" id="classSSAGES_1_1TorsionalCV_html_a43ce3e5ede135ac9dd8c06a0b79eff98"><div class="ttname"><a href="classSSAGES_1_1TorsionalCV.html#a43ce3e5ede135ac9dd8c06a0b79eff98">SSAGES::TorsionalCV::periodic_</a></div><div class="ttdeci">bool periodic_</div><div class="ttdoc">If True, use periodic boundary conditions. </div><div class="ttdef"><b>Definition:</b> <a href="TorsionalCV_8h_source.html#l00049">TorsionalCV.h:49</a></div></div>
-<div class="ttc" id="classSSAGES_1_1CollectiveVariable_html_abc60e9b019d4b61354faf60a76d3530e"><div class="ttname"><a href="classSSAGES_1_1CollectiveVariable.html#abc60e9b019d4b61354faf60a76d3530e">SSAGES::CollectiveVariable::bounds_</a></div><div class="ttdeci">std::array&lt; double, 2 &gt; bounds_</div><div class="ttdoc">Bounds on CV. </div><div class="ttdef"><b>Definition:</b> <a href="CollectiveVariable_8h_source.html#l00053">CollectiveVariable.h:53</a></div></div>
-<div class="ttc" id="classSSAGES_1_1TorsionalCV_html_a21f9dc3365cdbf318e8be75483873285"><div class="ttname"><a href="classSSAGES_1_1TorsionalCV.html#a21f9dc3365cdbf318e8be75483873285">SSAGES::TorsionalCV::atomids_</a></div><div class="ttdeci">Label atomids_</div><div class="ttdoc">Vector of 4 atom ID&#39;s of interest. </div><div class="ttdef"><b>Definition:</b> <a href="TorsionalCV_8h_source.html#l00046">TorsionalCV.h:46</a></div></div>
-</div><!-- fragment -->
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
@@ -696,7 +638,7 @@ Here is the call graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Jun 23 2017 15:44:19 for SSAGES by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Jul 14 2017 15:33:31 for SSAGES by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

@@ -1,6 +1,4 @@
 <map id="SSAGES::Meta::CalcBiasForce" name="SSAGES::Meta::CalcBiasForce">
-<area shape="rect" id="node2" href="$namespaceSSAGES.html#a9bb4c0d6df4a5148519c0c72ccba45a2" title="Evlauate Gaussian. Helper function. " alt="" coords="294,5,431,32"/>
-<area shape="rect" id="node3" href="$namespaceSSAGES.html#a5f352371649672a16fac4c194b31625e" title="Evaluate Gaussian derivative. Helper function. " alt="" coords="280,56,445,83"/>
-<area shape="rect" id="node4" href="$classSSAGES_1_1GridBase.html#a1d73d329cfc609d30a9c0bd7e844467c" title="Return the lower edges of the Grid. " alt="" coords="261,107,464,133"/>
-<area shape="rect" id="node5" href="$classSSAGES_1_1GridBase.html#a1c0410f0b34b5eb00112ca11c7a912ed" title="Return the upper edges of the Grid. " alt="" coords="261,157,464,184"/>
+<area shape="rect" id="node2" href="$namespaceSSAGES.html#a9bb4c0d6df4a5148519c0c72ccba45a2" title="Evlauate Gaussian. Helper function. " alt="" coords="275,29,413,56"/>
+<area shape="rect" id="node3" href="$namespaceSSAGES.html#a5f352371649672a16fac4c194b31625e" title="Evaluate Gaussian derivative. Helper function. " alt="" coords="261,104,427,131"/>
 </map>

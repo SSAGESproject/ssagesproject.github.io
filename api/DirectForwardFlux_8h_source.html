@@ -101,76 +101,73 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;</div>
 <div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &quot;Method.h&quot;</span></div>
 <div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#include &quot;ForwardFlux.h&quot;</span></div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#include &quot;../CVs/CollectiveVariable.h&quot;</span></div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#include &lt;fstream&gt;</span></div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include &lt;random&gt;</span></div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#include &lt;deque&gt;</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#include &quot;../FileContents.h&quot;</span></div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &quot;../Drivers/DriverException.h&quot;</span></div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keyword">namespace </span>SSAGES</div>
-<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;{</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div>
-<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="classSSAGES_1_1DirectForwardFlux.html">   41</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classSSAGES_1_1DirectForwardFlux.html">DirectForwardFlux</a> : <span class="keyword">public</span> <a class="code" href="classSSAGES_1_1ForwardFlux.html">ForwardFlux</a></div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    {</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        <span class="comment">//-----------------------------------------------------------------</span></div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        <span class="comment">// Private Variables</span></div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        <span class="comment">//-----------------------------------------------------------------</span></div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        <span class="comment">//std::vector&lt;unsigned int&gt; _M;</span></div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="keyword">namespace </span>SSAGES</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;{</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
+<div class="line"><a name="l00035"></a><span class="lineno"><a class="line" href="classSSAGES_1_1DirectForwardFlux.html">   35</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classSSAGES_1_1DirectForwardFlux.html">DirectForwardFlux</a> : <span class="keyword">public</span> <a class="code" href="classSSAGES_1_1ForwardFlux.html">ForwardFlux</a></div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    {</div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;        <span class="comment">//-----------------------------------------------------------------</span></div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;        <span class="comment">// Private Variables</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;        <span class="comment">//-----------------------------------------------------------------</span></div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        <span class="comment">//std::vector&lt;unsigned int&gt; _M;</span></div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        <span class="comment">//-----------------------------------------------------------------</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;        <span class="comment">// Private Functions</span></div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;        <span class="comment">//-----------------------------------------------------------------</span></div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        </div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classSSAGES_1_1DirectForwardFlux.html#a2be13ab9b33d4cb90aa22ca9d71077e9">CheckForInterfaceCrossings</a>(<a class="code" href="classSSAGES_1_1Snapshot.html">Snapshot</a>*, <span class="keyword">const</span> <span class="keyword">class</span> <a class="code" href="classSSAGES_1_1CVManager.html">CVManager</a>&amp;) <span class="keyword">override</span>;</div>
 <div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        <span class="comment">//-----------------------------------------------------------------</span></div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        <span class="comment">// Private Functions</span></div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        <span class="comment">//-----------------------------------------------------------------</span></div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        </div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classSSAGES_1_1DirectForwardFlux.html#a2a23c0bf26deb4ae6d9b84847793f4ec">CheckForInterfaceCrossings</a>(<a class="code" href="classSSAGES_1_1Snapshot.html">Snapshot</a>*, <span class="keyword">const</span> <a class="code" href="namespaceSSAGES.html#acddea47426ac0a643b048f870ddd2907">CVList</a>&amp;) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classSSAGES_1_1DirectForwardFlux.html#af14a27e7176c4cd6fca5479dfef17358">InitializeQueue</a>(<a class="code" href="classSSAGES_1_1Snapshot.html">Snapshot</a>*, <span class="keyword">const</span> <a class="code" href="namespaceSSAGES.html#acddea47426ac0a643b048f870ddd2907">CVList</a>&amp;) <span class="keyword">override</span>;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div>
-<div class="line"><a name="l00073"></a><span class="lineno"><a class="line" href="classSSAGES_1_1DirectForwardFlux.html#a5938714b919dce5f6142a898827ec039">   73</a></span>&#160;        <a class="code" href="classSSAGES_1_1DirectForwardFlux.html#a5938714b919dce5f6142a898827ec039">DirectForwardFlux</a>(boost::mpi::communicator&amp; world,</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;                    boost::mpi::communicator&amp; comm, </div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;                    <span class="keywordtype">double</span> ninterfaces, std::vector&lt;double&gt; interfaces,</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;                    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> N0Target, std::vector&lt;unsigned int&gt; M,</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;                    <span class="keywordtype">bool</span> initialFluxFlag, <span class="keywordtype">bool</span> saveTrajectories, </div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;                    <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> currentInterface, std::string output_directory, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> frequency)</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        : <a class="code" href="classSSAGES_1_1ForwardFlux.html">ForwardFlux</a>(world, comm, ninterfaces, interfaces, N0Target, M, </div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;                    initialFluxFlag, saveTrajectories, currentInterface, output_directory, frequency) {}</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classSSAGES_1_1DirectForwardFlux.html#aa0685636ad46fb8e36efe1ac775c6f34">PostIntegration</a>(<a class="code" href="classSSAGES_1_1Snapshot.html">Snapshot</a>* snapshot, <span class="keyword">const</span> <a class="code" href="namespaceSSAGES.html#acddea47426ac0a643b048f870ddd2907">CVList</a>&amp; cvs) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classSSAGES_1_1DirectForwardFlux.html#af14a27e7176c4cd6fca5479dfef17358">InitializeQueue</a>(<a class="code" href="classSSAGES_1_1Snapshot.html">Snapshot</a>*, <span class="keyword">const</span> <a class="code" href="namespaceSSAGES.html#acddea47426ac0a643b048f870ddd2907">CVList</a>&amp;) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
+<div class="line"><a name="l00065"></a><span class="lineno"><a class="line" href="classSSAGES_1_1DirectForwardFlux.html#a8620d21463fe4ac3bf778a3e4ee588aa">   65</a></span>&#160;        <a class="code" href="classSSAGES_1_1DirectForwardFlux.html#a8620d21463fe4ac3bf778a3e4ee588aa">DirectForwardFlux</a>(<span class="keyword">const</span> MPI_Comm&amp; world,</div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;                          <span class="keyword">const</span> MPI_Comm&amp; comm, </div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;                          <span class="keywordtype">double</span> ninterfaces, std::vector&lt;double&gt; interfaces,</div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;                          <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> N0Target, std::vector&lt;unsigned int&gt; M,</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;                          <span class="keywordtype">bool</span> initialFluxFlag, <span class="keywordtype">bool</span> saveTrajectories, </div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;                          <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> currentInterface, std::string output_directory, <span class="keywordtype">unsigned</span> <span class="keywordtype">int</span> frequency)</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        : <a class="code" href="classSSAGES_1_1ForwardFlux.html">ForwardFlux</a>(world, comm, ninterfaces, interfaces, N0Target, M, </div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;                    initialFluxFlag, saveTrajectories, currentInterface, output_directory, frequency) {}</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        <span class="keywordtype">void</span> <a class="code" href="classSSAGES_1_1DirectForwardFlux.html#a5491cd537f737524f5fc295236eefb85">PostIntegration</a>(<a class="code" href="classSSAGES_1_1Snapshot.html">Snapshot</a>* snapshot, <span class="keyword">const</span> <span class="keyword">class</span> <a class="code" href="classSSAGES_1_1CVManager.html">CVManager</a>&amp; cvmanager) <span class="keyword">override</span>;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;        </div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        <span class="keyword">static</span> <a class="code" href="classSSAGES_1_1DirectForwardFlux.html">DirectForwardFlux</a>* <a class="code" href="classSSAGES_1_1DirectForwardFlux.html#a6310efe6e04619f0d0a1fecdd8642aed">Build</a>(<span class="keyword">const</span> Json::Value&amp; json, </div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;                                            <span class="keyword">const</span> MPI_Comm&amp; world,</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;                                            <span class="keyword">const</span> MPI_Comm&amp; comm,</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;                                            <span class="keyword">const</span> std::string&amp; path);</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    };</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;}</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    };</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;}</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;</div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="comment">/*</span></div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="comment">File Formats:</span></div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="comment">_indexfile</span></div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="comment">interface(some integer) dump_file_name(a string that contains interface and trial number)</span></div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="comment">example: 1 dump_1_10.xyz</span></div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;<span class="comment">/*</span></div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;<span class="comment">File Formats:</span></div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;<span class="comment">_indexfile</span></div>
+<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;<span class="comment">interface(some integer) dump_file_name(a string that contains interface and trial number)</span></div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;<span class="comment">example: 1 dump_1_10.xyz</span></div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;<span class="comment"></span></div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;<span class="comment">dumpfile</span></div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;<span class="comment">atomid posx posy posz vx vy vz</span></div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;<span class="comment"></span></div>
 <div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="comment">dumpfile</span></div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;<span class="comment">atomid posx posy posz vx vy vz</span></div>
-<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;<span class="comment"></span></div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;<span class="comment">*/</span></div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;<span class="comment">*/</span></div>
+<div class="ttc" id="classSSAGES_1_1CVManager_html"><div class="ttname"><a href="classSSAGES_1_1CVManager.html">SSAGES::CVManager</a></div><div class="ttdoc">Collective variable manager. </div><div class="ttdef"><b>Definition:</b> <a href="CVManager_8h_source.html#l00040">CVManager.h:40</a></div></div>
 <div class="ttc" id="namespaceSSAGES_html_acddea47426ac0a643b048f870ddd2907"><div class="ttname"><a href="namespaceSSAGES.html#acddea47426ac0a643b048f870ddd2907">SSAGES::CVList</a></div><div class="ttdeci">std::vector&lt; CollectiveVariable * &gt; CVList</div><div class="ttdoc">List of Collective Variables. </div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00051">types.h:51</a></div></div>
-<div class="ttc" id="classSSAGES_1_1DirectForwardFlux_html_a2a23c0bf26deb4ae6d9b84847793f4ec"><div class="ttname"><a href="classSSAGES_1_1DirectForwardFlux.html#a2a23c0bf26deb4ae6d9b84847793f4ec">SSAGES::DirectForwardFlux::CheckForInterfaceCrossings</a></div><div class="ttdeci">void CheckForInterfaceCrossings(Snapshot *, const CVList &amp;) override</div><div class="ttdoc">Function that checks if interfaces have been crossed (different for each FFS flavor) ...</div><div class="ttdef"><b>Definition:</b> <a href="DirectForwardFlux_8cpp_source.html#l00067">DirectForwardFlux.cpp:67</a></div></div>
-<div class="ttc" id="classSSAGES_1_1Snapshot_html"><div class="ttname"><a href="classSSAGES_1_1Snapshot.html">SSAGES::Snapshot</a></div><div class="ttdoc">Class containing a snapshot of the current simulation in time. </div><div class="ttdef"><b>Definition:</b> <a href="Snapshot_8h_source.html#l00045">Snapshot.h:45</a></div></div>
-<div class="ttc" id="classSSAGES_1_1ForwardFlux_html"><div class="ttname"><a href="classSSAGES_1_1ForwardFlux.html">SSAGES::ForwardFlux</a></div><div class="ttdoc">ForwardFlux sampling method. </div><div class="ttdef"><b>Definition:</b> <a href="ForwardFlux_8h_source.html#l00041">ForwardFlux.h:41</a></div></div>
-<div class="ttc" id="classSSAGES_1_1DirectForwardFlux_html_aa0685636ad46fb8e36efe1ac775c6f34"><div class="ttname"><a href="classSSAGES_1_1DirectForwardFlux.html#aa0685636ad46fb8e36efe1ac775c6f34">SSAGES::DirectForwardFlux::PostIntegration</a></div><div class="ttdeci">void PostIntegration(Snapshot *snapshot, const CVList &amp;cvs) override</div><div class="ttdoc">Post-integration hook. </div><div class="ttdef"><b>Definition:</b> <a href="DirectForwardFlux_8cpp_source.html#l00032">DirectForwardFlux.cpp:32</a></div></div>
-<div class="ttc" id="classSSAGES_1_1DirectForwardFlux_html_a5938714b919dce5f6142a898827ec039"><div class="ttname"><a href="classSSAGES_1_1DirectForwardFlux.html#a5938714b919dce5f6142a898827ec039">SSAGES::DirectForwardFlux::DirectForwardFlux</a></div><div class="ttdeci">DirectForwardFlux(boost::mpi::communicator &amp;world, boost::mpi::communicator &amp;comm, double ninterfaces, std::vector&lt; double &gt; interfaces, unsigned int N0Target, std::vector&lt; unsigned int &gt; M, bool initialFluxFlag, bool saveTrajectories, unsigned int currentInterface, std::string output_directory, unsigned int frequency)</div><div class="ttdoc">Constructor. </div><div class="ttdef"><b>Definition:</b> <a href="DirectForwardFlux_8h_source.html#l00073">DirectForwardFlux.h:73</a></div></div>
-<div class="ttc" id="classSSAGES_1_1DirectForwardFlux_html_af14a27e7176c4cd6fca5479dfef17358"><div class="ttname"><a href="classSSAGES_1_1DirectForwardFlux.html#af14a27e7176c4cd6fca5479dfef17358">SSAGES::DirectForwardFlux::InitializeQueue</a></div><div class="ttdeci">void InitializeQueue(Snapshot *, const CVList &amp;) override</div><div class="ttdoc">Initialize the Queue. </div><div class="ttdef"><b>Definition:</b> <a href="DirectForwardFlux_8cpp_source.html#l00274">DirectForwardFlux.cpp:274</a></div></div>
-<div class="ttc" id="classSSAGES_1_1DirectForwardFlux_html"><div class="ttname"><a href="classSSAGES_1_1DirectForwardFlux.html">SSAGES::DirectForwardFlux</a></div><div class="ttdoc">ForwardFlux sampling method. </div><div class="ttdef"><b>Definition:</b> <a href="DirectForwardFlux_8h_source.html#l00041">DirectForwardFlux.h:41</a></div></div>
+<div class="ttc" id="classSSAGES_1_1Snapshot_html"><div class="ttname"><a href="classSSAGES_1_1Snapshot.html">SSAGES::Snapshot</a></div><div class="ttdoc">Class containing a snapshot of the current simulation in time. </div><div class="ttdef"><b>Definition:</b> <a href="Snapshot_8h_source.html#l00043">Snapshot.h:43</a></div></div>
+<div class="ttc" id="classSSAGES_1_1DirectForwardFlux_html_a8620d21463fe4ac3bf778a3e4ee588aa"><div class="ttname"><a href="classSSAGES_1_1DirectForwardFlux.html#a8620d21463fe4ac3bf778a3e4ee588aa">SSAGES::DirectForwardFlux::DirectForwardFlux</a></div><div class="ttdeci">DirectForwardFlux(const MPI_Comm &amp;world, const MPI_Comm &amp;comm, double ninterfaces, std::vector&lt; double &gt; interfaces, unsigned int N0Target, std::vector&lt; unsigned int &gt; M, bool initialFluxFlag, bool saveTrajectories, unsigned int currentInterface, std::string output_directory, unsigned int frequency)</div><div class="ttdoc">Constructor. </div><div class="ttdef"><b>Definition:</b> <a href="DirectForwardFlux_8h_source.html#l00065">DirectForwardFlux.h:65</a></div></div>
+<div class="ttc" id="classSSAGES_1_1ForwardFlux_html"><div class="ttname"><a href="classSSAGES_1_1ForwardFlux.html">SSAGES::ForwardFlux</a></div><div class="ttdoc">ForwardFlux sampling method. </div><div class="ttdef"><b>Definition:</b> <a href="ForwardFlux_8h_source.html#l00038">ForwardFlux.h:38</a></div></div>
+<div class="ttc" id="classSSAGES_1_1DirectForwardFlux_html_a2be13ab9b33d4cb90aa22ca9d71077e9"><div class="ttname"><a href="classSSAGES_1_1DirectForwardFlux.html#a2be13ab9b33d4cb90aa22ca9d71077e9">SSAGES::DirectForwardFlux::CheckForInterfaceCrossings</a></div><div class="ttdeci">void CheckForInterfaceCrossings(Snapshot *, const class CVManager &amp;) override</div><div class="ttdoc">Function that checks if interfaces have been crossed (different for each FFS flavor) ...</div><div class="ttdef"><b>Definition:</b> <a href="DirectForwardFlux_8cpp_source.html#l00067">DirectForwardFlux.cpp:67</a></div></div>
+<div class="ttc" id="classSSAGES_1_1DirectForwardFlux_html_a6310efe6e04619f0d0a1fecdd8642aed"><div class="ttname"><a href="classSSAGES_1_1DirectForwardFlux.html#a6310efe6e04619f0d0a1fecdd8642aed">SSAGES::DirectForwardFlux::Build</a></div><div class="ttdeci">static DirectForwardFlux * Build(const Json::Value &amp;json, const MPI_Comm &amp;world, const MPI_Comm &amp;comm, const std::string &amp;path)</div></div>
+<div class="ttc" id="classSSAGES_1_1DirectForwardFlux_html_a5491cd537f737524f5fc295236eefb85"><div class="ttname"><a href="classSSAGES_1_1DirectForwardFlux.html#a5491cd537f737524f5fc295236eefb85">SSAGES::DirectForwardFlux::PostIntegration</a></div><div class="ttdeci">void PostIntegration(Snapshot *snapshot, const class CVManager &amp;cvmanager) override</div><div class="ttdoc">Post-integration hook. </div><div class="ttdef"><b>Definition:</b> <a href="DirectForwardFlux_8cpp_source.html#l00032">DirectForwardFlux.cpp:32</a></div></div>
+<div class="ttc" id="classSSAGES_1_1DirectForwardFlux_html_af14a27e7176c4cd6fca5479dfef17358"><div class="ttname"><a href="classSSAGES_1_1DirectForwardFlux.html#af14a27e7176c4cd6fca5479dfef17358">SSAGES::DirectForwardFlux::InitializeQueue</a></div><div class="ttdeci">void InitializeQueue(Snapshot *, const CVList &amp;) override</div><div class="ttdoc">Initialize the Queue. </div><div class="ttdef"><b>Definition:</b> <a href="DirectForwardFlux_8cpp_source.html#l00285">DirectForwardFlux.cpp:285</a></div></div>
+<div class="ttc" id="classSSAGES_1_1DirectForwardFlux_html"><div class="ttname"><a href="classSSAGES_1_1DirectForwardFlux.html">SSAGES::DirectForwardFlux</a></div><div class="ttdoc">ForwardFlux sampling method. </div><div class="ttdef"><b>Definition:</b> <a href="DirectForwardFlux_8h_source.html#l00035">DirectForwardFlux.h:35</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Jun 23 2017 15:44:19 for SSAGES by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Jul 14 2017 15:33:30 for SSAGES by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

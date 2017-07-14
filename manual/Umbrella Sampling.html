@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Umbrella Sampling &mdash; SSAGES v0.5.0-alpha-217-g4053fbf documentation</title>
+  <title>Umbrella Sampling &mdash; SSAGES v0.7.5-alpha documentation</title>
   
 
   
@@ -35,7 +35,7 @@
         <link rel="index" title="Index"
               href="genindex.html"/>
         <link rel="search" title="Search" href="search.html"/>
-    <link rel="top" title="SSAGES v0.5.0-alpha-217-g4053fbf documentation" href="index.html"/>
+    <link rel="top" title="SSAGES v0.7.5-alpha documentation" href="index.html"/>
         <link rel="up" title="Advanced Sampling Methods" href="Advanced Sampling Methods.html"/>
         <link rel="next" title="Write your own Methods and CVs" href="Write your own Methods and CVs.html"/>
         <link rel="prev" title="Swarm of Trajectories" href="Swarm of Trajectories.html"/> 
@@ -67,7 +67,7 @@
             
             
               <div class="version">
-                0.6.0
+                0.7.5
               </div>
             
           
@@ -94,7 +94,9 @@
               <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="Introduction.html">Introduction</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Getting Started.html">Getting Started</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Tutorials.html">Tutorials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Input Files.html">Input Files</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Engines.html">Engines</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Collective Variables.html">Collective Variables</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="Advanced Sampling Methods.html">Advanced Sampling Methods</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="Adaptive Biasing Force Algorithm.html">Adaptive Biasing Force Algorithm</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Basis Function Sampling.html">Basis Function Sampling</a></li>
@@ -211,22 +213,34 @@ The success of the umbrella sampling method depends on the correct choice of <sp
 <p>The following options are available for Umbrella Sampling:</p>
 <dl class="docutils">
 <dt>centers (required)</dt>
-<dd>Array of target values for each CV</dd>
+<dd>Array of target values for each CV. This can either be an array of numbers, or
+an array of an array of numbers, for multiple walkers. If only a single array is
+defined, it is used across all walkers.</dd>
 <dt>ksprings (required)</dt>
-<dd>Array of spring constants for each CV</dd>
-<dt>file name (required)</dt>
-<dd>Output file name for umbrella sampling data</dd>
-<dt>log every (optional)</dt>
+<dd>Array of spring constants for each CV. This can either be an array of numbers, or
+an array of an array of numbers, for multiple walkers. If only a single array is
+defined, it is used across all walkers.</dd>
+<dt>output_file (required)</dt>
+<dd>Output file name for umbrella sampling data. This can be a string or
+an array of strings for multiple walkers.</dd>
+<dt>output_frequency (optional)</dt>
 <dd>Frequency of writing to output file (default: 1)</dd>
+<dt>append (optional)</dt>
+<dd>Boolean value which will cause umbrella sampling to either append to
+an existing file or override it entirely.</dd>
 </dl>
 <p>The umbrella sampling method can also be run with time dependent centers.
 This is equivalent to the &#8220;steered MD&#8221; method. To do so, omit <cite>&#8220;centers&#8221;</cite>
 and use the following options instead:</p>
 <dl class="docutils">
 <dt>centers0 (required)</dt>
-<dd>Array of initial target values for each CV</dd>
+<dd>Array of initial target values for each CV. This can either be an array of numbers, or
+an array of an array of numbers, for multiple walkers. If only a single array is
+defined, it is used across all walkers.</dd>
 <dt>centers1 (required)</dt>
-<dd>Array of final target values for each CV</dd>
+<dd>Array of final target values for each CV. This can either be an array of numbers, or
+an array of an array of numbers, for multiple walkers. If only a single array is
+defined, it is used across all walkers.</dd>
 <dt>timesteps (required)</dt>
 <dd>The number of timesteps over which to scale the umbrella centers</dd>
 </dl>
@@ -323,7 +337,7 @@ Though SSAGES does not currently contain its own implementation of WHAM, there a
   <div role="contentinfo">
     <p>
         &copy; Copyright 2016, the SSAGES Team.
-      Last updated on Jun 07, 2017.
+      Last updated on Jul 14, 2017.
 
     </p>
   </div>
@@ -345,7 +359,7 @@ Though SSAGES does not currently contain its own implementation of WHAM, there a
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'./',
-            VERSION:'v0.5.0-alpha-217-g4053fbf',
+            VERSION:'v0.7.5-alpha',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
             HAS_SOURCE:  true,

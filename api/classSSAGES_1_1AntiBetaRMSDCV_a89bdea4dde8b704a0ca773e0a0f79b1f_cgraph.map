@@ -1,0 +1,6 @@
+<map id="SSAGES::AntiBetaRMSDCV::Evaluate" name="SSAGES::AntiBetaRMSDCV::Evaluate">
+<area shape="rect" id="node2" href="$classSSAGES_1_1Snapshot.html#abeef8bea41bf9706855c59b6cde0777a" title="SSAGES::Snapshot::GetLocal\lIndices" alt="" coords="260,5,460,46"/>
+<area shape="rect" id="node4" href="$classSSAGES_1_1Snapshot.html#ae05879b78672cd4899a06ae2d6a140fd" title="Get number of atoms in this snapshot. " alt="" coords="261,70,459,111"/>
+<area shape="rect" id="node5" href="$classSSAGES_1_1Snapshot.html#aee2ceb317884bc5e0105b9824b5026d3" title="Access the particle positions. " alt="" coords="249,136,471,163"/>
+<area shape="rect" id="node3" href="$classSSAGES_1_1Snapshot.html#a3ecf272dca61538320a4d503303fa9ba" title="Gets the local atom index corresponding to an atom ID. " alt="" coords="520,5,720,46"/>
+</map>

@@ -1,0 +1,513 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Input Files &mdash; SSAGES v0.7.5-alpha documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="Index"
+              href="genindex.html"/>
+        <link rel="search" title="Search" href="search.html"/>
+    <link rel="top" title="SSAGES v0.7.5-alpha documentation" href="index.html"/>
+        <link rel="next" title="Engines" href="Engines.html"/>
+        <link rel="prev" title="How to use SSAGES with GROMACS" href="How to run SSAGES with GROMACS.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> SSAGES
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.7.5
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="Introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Getting Started.html">Getting Started</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Input Files</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#json">JSON</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#simulation-properties">Simulation Properties</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#walkers">Walkers</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#input">Input</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#args">Args</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#collective-variables">Collective Variables</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#methods">Methods</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#logger">Logger</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#putting-it-all-together">Putting It All Together</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Engines.html">Engines</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Collective Variables.html">Collective Variables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Advanced Sampling Methods.html">Advanced Sampling Methods</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Write your own Methods and CVs.html">Write your own Methods and CVs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Contribute to SSAGES.html">Contribute to SSAGES</a></li>
+<li class="toctree-l1"><a class="reference internal" href="The SSAGES Cookbook.html">The SSAGES cookbook</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Acknowledgements.html">Acknowledgments</a></li>
+<li class="toctree-l1"><a class="reference internal" href="License.html">Copyright</a></li>
+<li class="toctree-l1"><a class="reference internal" href="License.html#id1">License information</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">SSAGES</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>Input Files</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/Input Files.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="input-files">
+<span id="inputfiles"></span><h1>Input Files<a class="headerlink" href="#input-files" title="Permalink to this headline">¶</a></h1>
+<p>A SSAGES input file contains multiple sections that define the collective variables,
+methods and various other components that go into an advanced sampling simulation.
+There is a brief primer below on JSON, the format used by SSAGES for input files.
+The remaining topics describe the basic syntax and requirements for each section
+of an input file. Detailed information for particular methodds or collective variables
+can be found in their respective locations in this manual.</p>
+<div class="section" id="json">
+<h2>JSON<a class="headerlink" href="#json" title="Permalink to this headline">¶</a></h2>
+<p>SSAGES is run using input files written in the <a class="reference external" href="http://json.org">JSON</a> file format. JSON is a
+lightweight text format which is easy for humans to read and write and for
+machines to parse and generate. Almost every programming language offers some
+level of native JSON support, making it particularly convenient to script or
+automate input file generation using, say, Python. If you&#8217;ve never used JSON before,
+don&#8217;t worry. Throughout the documentation we make no assumptions about
+the user&#8217;s knowledge of JSON and provide clear easy-to-follow examples.</p>
+<p>A SSAGES input file is a valid JSON document. Here we will define a bit of
+terminology relating to JSON. Take the following JSON structure as an example,
+obtained from <a class="reference external" href="https://en.wikipedia.org/wiki/JSON#JSON_sample">Wikipedia</a>:</p>
+<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="p">{</span>
+        <span class="s2">&quot;firstName&quot;</span><span class="o">:</span> <span class="s2">&quot;John&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;lastName&quot;</span><span class="o">:</span> <span class="s2">&quot;Smith&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;age&quot;</span><span class="o">:</span> <span class="mi">25</span><span class="p">,</span>
+        <span class="s2">&quot;address&quot;</span><span class="o">:</span> <span class="p">{</span>
+                <span class="s2">&quot;streetAddress&quot;</span><span class="o">:</span> <span class="s2">&quot;21 2nd Street&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;city&quot;</span><span class="o">:</span> <span class="s2">&quot;New York&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;state&quot;</span><span class="o">:</span> <span class="s2">&quot;NY&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;postalCode&quot;</span><span class="o">:</span> <span class="s2">&quot;10021&quot;</span>
+        <span class="p">},</span>
+        <span class="s2">&quot;phoneNumber&quot;</span><span class="o">:</span> <span class="p">[</span>
+                <span class="p">{</span>
+                        <span class="s2">&quot;type&quot;</span><span class="o">:</span> <span class="s2">&quot;home&quot;</span><span class="p">,</span>
+                        <span class="s2">&quot;number&quot;</span><span class="o">:</span> <span class="s2">&quot;212 555-1234&quot;</span>
+                <span class="p">},</span>
+                <span class="p">{</span>
+                        <span class="s2">&quot;type&quot;</span><span class="o">:</span> <span class="s2">&quot;fax&quot;</span><span class="p">,</span>
+                        <span class="s2">&quot;number&quot;</span><span class="o">:</span> <span class="s2">&quot;646 555-4567&quot;</span>
+                <span class="p">}</span>
+        <span class="p">],</span>
+        <span class="s2">&quot;gender&quot;</span><span class="o">:</span> <span class="p">{</span>
+                <span class="s2">&quot;type&quot;</span><span class="o">:</span> <span class="s2">&quot;male&quot;</span>
+        <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>The first pair of curly brackets define the <em>root</em> section, we will signify this using
+<code class="docutils literal"><span class="pre">#</span></code>. An item in the hierarchy, such as the street address, can be referenced like this:
+<code class="docutils literal"><span class="pre">#/address/streetAddress</span></code>.</p>
+<p>Before moving on to SSAGES specific JSON, we&#8217;ll mention a few more things about JSON.</p>
+<ul class="simple">
+<li>Square brackets <code class="docutils literal"><span class="pre">[]</span></code> in JSON refer to <em>arrays</em>, while curly brackets refer to
+<em>objects</em>. They can be thought of as Python lists and dictionaries respectively.
+That would make <code class="docutils literal"><span class="pre">#/phoneNumber</span></code> an array of phone number objects, each containing
+a type and a number. The fax number can be referenced by <code class="docutils literal"><span class="pre">#/phoneNumber/1/number</span></code>,
+where <code class="docutils literal"><span class="pre">1</span></code> is the array index beginning from zero.</li>
+<li>Items in a JSON object (Python dictionary) are unique. In the example above,
+<code class="docutils literal"><span class="pre">#/age</span></code> can only be defined once - it is a key in the root tree.
+Defining <code class="docutils literal"><span class="pre">#/age</span></code> again will not throw an error, but instead the last definition
+will override any previous definitions. This is actually very powerful behavior.
+It means a user can import a general template JSON file and override whatever
+parameters they wish. The exact behavior of the merging process is described in
+detail in the user guide.</li>
+<li>Types matter in JSON. Notice how <code class="docutils literal"><span class="pre">#/age</span></code> is specified by a number that is not
+surrounded in quotes. This is a number, more specifically an integer.
+<code class="docutils literal"><span class="pre">#/address/postalCode</span></code> on the other hand is a string, even though the contents of
+the string are all numbers. Certain fields in a SSAGES input file may be required
+to be a string, integer, or number. The user should be aware of this and take care
+to format their input file appropriately.</li>
+</ul>
+</div>
+<div class="section" id="simulation-properties">
+<h2>Simulation Properties<a class="headerlink" href="#simulation-properties" title="Permalink to this headline">¶</a></h2>
+<p>A SSAGES build is compiled with support for a particular MD engine, and the requirements
+for each engine vary slightly. For detailed information on specific engines and their
+options check the <a class="reference internal" href="Engines.html#engines"><span class="std std-ref">engines</span></a> section. The following parameters are needed to define a simulation
+in the JSON root.</p>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">The properties specified below are case-sensitive. Please be sure to check that you
+have defined it according to the documentation.</p>
+</div>
+<div class="section" id="walkers">
+<h3>Walkers<a class="headerlink" href="#walkers" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="s2">&quot;walkers&quot;</span> <span class="o">:</span> <span class="mi">5</span>
+</pre></div>
+</div>
+<p>This specifies the number of walkers (independent instances of the simulation engine)
+that will be running. Many advanced sampling methods support multi-walker simulations
+which improve the convergence of many algorithms. Typically, each walker has an independent
+system configuration in a separate input file (see input property for details).
+It is important to note that when specifying more than a single walker, the number of
+processors passed to <code class="docutils literal"><span class="pre">mpirun</span></code> must be divisble by the number of walkers requested.
+Otherwise, SSAGES will terminate with an error.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">It is not possible to allocate a different number of processors to each walker at this time.</p>
+</div>
+</div>
+<div class="section" id="input">
+<h3>Input<a class="headerlink" href="#input" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="s2">&quot;input&quot;</span> <span class="o">:</span> <span class="s2">&quot;in.system&quot;</span>
+</pre></div>
+</div>
+<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="s2">&quot;input&quot;</span> <span class="o">:</span> <span class="p">[</span><span class="s2">&quot;in.system1&quot;</span><span class="p">,</span><span class="s2">&quot;in.system2&quot;</span><span class="p">,</span><span class="s2">&quot;in.system3&quot;</span><span class="p">]</span>
+</pre></div>
+</div>
+<p>The input property specifies the name of the input file used by the simulation engine.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">This property not used by Gromacs (see <code class="docutils literal"><span class="pre">args</span></code> property).</p>
+</div>
+<p>The first syntax is used if there is a single input file. For multi-walker simulations,
+it is possible to use a single file for all walkers (though this may not be recommended
+depending on the method) or specify a separate input file for each walker.</p>
+</div>
+<div class="section" id="args">
+<h3>Args<a class="headerlink" href="#args" title="Permalink to this headline">¶</a></h3>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">This property is <em>exclusively</em> for Gromacs.</p>
+</div>
+<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="s2">&quot;args&quot;</span> <span class="o">:</span> <span class="p">[</span><span class="s2">&quot;-v&quot;</span><span class="p">,</span> <span class="s2">&quot;-deffnm&quot;</span><span class="p">,</span> <span class="s2">&quot;runfile&quot;</span><span class="p">]</span>
+</pre></div>
+</div>
+<p>SSAGES invokes the <strong>mdrun</strong> library within Gromacs. Similar to how a standard simulation
+is invoked with Gromacs using <code class="docutils literal"><span class="pre">gmx</span> <span class="pre">mdrun</span> <span class="pre">-deffnm</span> <span class="pre">runfile</span></code> to execute a <code class="docutils literal"><span class="pre">runfile.tpr</span></code>
+binary, the equivalent arguments must be specified in the <code class="docutils literal"><span class="pre">args</span></code> property. This provides
+the user with the flexibility of calling command-line arguments in the same fashion as the
+<strong>mdrun</strong> utility. The only exception is in the case of multi-walker simulations. If a user
+wishes to use the multi-walker capabilities, then <code class="docutils literal"><span class="pre">args</span></code> is invoked in the same fashion
+as a single-walker simulation. <strong>Do not specify the -multi option. This will be done
+automatically.</strong> If <code class="docutils literal"><span class="pre">-deffnm</span></code> is called, Gromacs expects the tpr files for each walker to
+be named according to the walker ID starting from zero. In the example above, if there were
+three walkers, then Gromacs will look for the files &#8220;runfile0.tpr&#8221;, &#8220;runfile1.tpr&#8221;, and
+&#8220;runfile2.tpr&#8221;.</p>
+</div>
+<div class="section" id="collective-variables">
+<h3>Collective Variables<a class="headerlink" href="#collective-variables" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="s2">&quot;CVs&quot;</span> <span class="o">:</span>
+<span class="p">[</span>
+        <span class="p">{</span>
+                <span class="s2">&quot;type&quot;</span> <span class="o">:</span> <span class="s2">&quot;Torsional&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;name&quot;</span> <span class="o">:</span> <span class="s2">&quot;mytorsion_1&quot;</span>
+                <span class="s2">&quot;atom_ids&quot;</span> <span class="o">:</span> <span class="p">[</span><span class="mi">5</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">9</span><span class="p">,</span><span class="mi">15</span><span class="p">],</span>
+        <span class="p">},</span>
+        <span class="p">{</span>
+                <span class="s2">&quot;type&quot;</span> <span class="o">:</span> <span class="s2">&quot;ParticleCoordinate&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;atom_ids&quot;</span> <span class="o">:</span> <span class="p">[</span><span class="mi">1</span><span class="p">],</span>
+                <span class="s2">&quot;dimension&quot;</span> <span class="o">:</span> <span class="s2">&quot;x&quot;</span>
+        <span class="p">}</span>
+<span class="p">]</span>
+</pre></div>
+</div>
+<p>Collective variables are specified in an array, where each element is a CV object.
+Note that collective variables can be assigned names or referenced by index beginning
+with zero.</p>
+</div>
+<div class="section" id="methods">
+<h3>Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="s2">&quot;methods&quot;</span> <span class="o">:</span>
+<span class="p">[</span>
+        <span class="p">{</span>
+                <span class="s2">&quot;type&quot;</span> <span class="o">:</span> <span class="s2">&quot;Umbrella&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;ksprings&quot;</span> <span class="o">:</span> <span class="p">[</span><span class="mi">100</span><span class="p">],</span>
+                <span class="s2">&quot;output_file&quot;</span> <span class="o">:</span> <span class="s2">&quot;ulog.dat&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;output_frequency&quot;</span> <span class="o">:</span> <span class="mi">10</span><span class="p">,</span>
+                <span class="s2">&quot;centers&quot;</span> <span class="o">:</span> <span class="p">[</span><span class="mf">1.0</span><span class="p">],</span>
+                <span class="s2">&quot;cvs&quot;</span> <span class="o">:</span> <span class="p">[</span><span class="s2">&quot;mytorsion_1&quot;</span><span class="p">]</span>
+        <span class="p">},</span>
+        <span class="p">{</span>
+                <span class="s2">&quot;type&quot;</span> <span class="o">:</span> <span class="s2">&quot;Metadynamics&quot;</span><span class="p">,</span>
+                <span class="s2">&quot;widths&quot;</span> <span class="o">:</span> <span class="p">[</span><span class="mf">0.3</span><span class="p">],</span>
+                <span class="s2">&quot;height&quot;</span> <span class="o">:</span> <span class="mf">1.0</span><span class="p">,</span>
+                <span class="s2">&quot;hill_frequency&quot;</span> <span class="o">:</span> <span class="mi">500</span><span class="p">,</span>
+                <span class="s2">&quot;lower_bounds&quot;</span> <span class="o">:</span> <span class="p">[</span><span class="mf">0.2</span><span class="p">],</span>
+                <span class="s2">&quot;upper_bounds&quot;</span> <span class="o">:</span> <span class="p">[</span><span class="mf">1.4</span><span class="p">],</span>
+                <span class="s2">&quot;lower_bound_restraints&quot;</span> <span class="o">:</span> <span class="p">[</span><span class="mi">100</span><span class="p">],</span>
+                <span class="s2">&quot;upper_bound_restraints&quot;</span> <span class="o">:</span> <span class="p">[</span><span class="mi">100</span><span class="p">],</span>
+                <span class="s2">&quot;cvs&quot;</span> <span class="o">:</span> <span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+        <span class="p">}</span>
+<span class="p">]</span>
+</pre></div>
+</div>
+<p>Methods are specified in an array, since it is possible to run multiple methods simultaneously.
+This is useful if a user is interested in performing advanced sampling on a system subject to
+some restraint, typically applied via an umbrella. Each method can selectively operate on a
+subset of CVs by referencing them either by name or index as shown above.</p>
+</div>
+<div class="section" id="logger">
+<h3>Logger<a class="headerlink" href="#logger" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="s2">&quot;logger&quot;</span> <span class="o">:</span> <span class="p">{</span>
+        <span class="s2">&quot;frequency&quot;</span> <span class="o">:</span> <span class="mi">100</span><span class="p">,</span>
+        <span class="s2">&quot;output_file&quot;</span> <span class="o">:</span> <span class="s2">&quot;cvs.dat&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;cvs&quot;</span> <span class="o">:</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>The logger is useful in tracking the evolution of the CVs over the course of an advanced
+sampling calculation. Logging CVs can allow for post-simulation reweighting, or indicate
+if there are sampling problems in the system being studied. The frequency of logging the
+CVs can be specified and each walker in a multi-walker simulation will have a separate output
+file. A user can choose to selectively log individual CVs as well.</p>
+</div>
+<div class="section" id="putting-it-all-together">
+<h3>Putting It All Together<a class="headerlink" href="#putting-it-all-together" title="Permalink to this headline">¶</a></h3>
+<p>Combining the previous sections into a single input file yield the following (purely hypothetical)
+example.</p>
+<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="p">{</span>
+        <span class="s2">&quot;walkers&quot;</span> <span class="o">:</span> <span class="mi">2</span>
+        <span class="s2">&quot;input&quot;</span> <span class="o">:</span> <span class="p">[</span><span class="s2">&quot;in.first&quot;</span><span class="p">,</span> <span class="s2">&quot;in.second&quot;</span><span class="p">],</span>
+        <span class="s2">&quot;CVs&quot;</span> <span class="o">:</span>
+        <span class="p">[</span>
+                <span class="p">{</span>
+                        <span class="s2">&quot;type&quot;</span> <span class="o">:</span> <span class="s2">&quot;Torsional&quot;</span><span class="p">,</span>
+                        <span class="s2">&quot;name&quot;</span> <span class="o">:</span> <span class="s2">&quot;mytorsion_1&quot;</span>
+                        <span class="s2">&quot;atom_ids&quot;</span> <span class="o">:</span> <span class="p">[</span><span class="mi">5</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">9</span><span class="p">,</span><span class="mi">15</span><span class="p">],</span>
+                <span class="p">},</span>
+                <span class="p">{</span>
+                        <span class="s2">&quot;type&quot;</span> <span class="o">:</span> <span class="s2">&quot;ParticleCoordinate&quot;</span><span class="p">,</span>
+                        <span class="s2">&quot;atom_ids&quot;</span> <span class="o">:</span> <span class="p">[</span><span class="mi">1</span><span class="p">],</span>
+                        <span class="s2">&quot;dimension&quot;</span> <span class="o">:</span> <span class="s2">&quot;x&quot;</span>
+                <span class="p">}</span>
+        <span class="p">],</span>
+        <span class="s2">&quot;methods&quot;</span> <span class="o">:</span>
+        <span class="p">[</span>
+                <span class="p">{</span>
+                        <span class="s2">&quot;type&quot;</span> <span class="o">:</span> <span class="s2">&quot;Umbrella&quot;</span><span class="p">,</span>
+                        <span class="s2">&quot;ksprings&quot;</span> <span class="o">:</span> <span class="p">[</span><span class="mi">100</span><span class="p">],</span>
+                        <span class="s2">&quot;output_file&quot;</span> <span class="o">:</span> <span class="p">[</span><span class="s2">&quot;walker1.dat&quot;</span><span class="p">,</span> <span class="s2">&quot;walker2.dat&quot;</span><span class="p">]</span>
+                        <span class="s2">&quot;output_frequency&quot;</span> <span class="o">:</span> <span class="mi">10</span><span class="p">,</span>
+                        <span class="s2">&quot;centers&quot;</span> <span class="o">:</span> <span class="p">[</span><span class="mf">1.0</span><span class="p">],</span>
+                        <span class="s2">&quot;cvs&quot;</span> <span class="o">:</span> <span class="p">[</span><span class="s2">&quot;mytorsion_1&quot;</span><span class="p">]</span>
+                <span class="p">},</span>
+                <span class="p">{</span>
+                        <span class="s2">&quot;type&quot;</span> <span class="o">:</span> <span class="s2">&quot;Metadynamics&quot;</span><span class="p">,</span>
+                        <span class="s2">&quot;widths&quot;</span> <span class="o">:</span> <span class="p">[</span><span class="mf">0.3</span><span class="p">],</span>
+                        <span class="s2">&quot;height&quot;</span> <span class="o">:</span> <span class="mf">1.0</span><span class="p">,</span>
+                        <span class="s2">&quot;hill_frequency&quot;</span> <span class="o">:</span> <span class="mi">500</span><span class="p">,</span>
+                        <span class="s2">&quot;lower_bounds&quot;</span> <span class="o">:</span> <span class="p">[</span><span class="mf">0.2</span><span class="p">],</span>
+                        <span class="s2">&quot;upper_bounds&quot;</span> <span class="o">:</span> <span class="p">[</span><span class="mf">1.4</span><span class="p">],</span>
+                        <span class="s2">&quot;lower_bound_restraints&quot;</span> <span class="o">:</span> <span class="p">[</span><span class="mi">100</span><span class="p">],</span>
+                        <span class="s2">&quot;upper_bound_restraints&quot;</span> <span class="o">:</span> <span class="p">[</span><span class="mi">100</span><span class="p">],</span>
+                        <span class="s2">&quot;cvs&quot;</span> <span class="o">:</span> <span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+                <span class="p">}</span>
+        <span class="p">]</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>To execute this input file, assigning two processors per walker, one would call the command below.</p>
+<div class="highlight-bash"><div class="highlight"><pre><span></span>mpirun -np <span class="m">4</span> ./ssages inputfile.json
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="Engines.html" class="btn btn-neutral float-right" title="Engines" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="How to run SSAGES with GROMACS.html" class="btn btn-neutral" title="How to use SSAGES with GROMACS" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2016, the SSAGES Team.
+      Last updated on Jul 14, 2017.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'v0.7.5-alpha',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

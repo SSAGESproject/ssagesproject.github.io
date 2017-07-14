@@ -1,6 +1,0 @@
-<map id="SSAGES::GridBase::size" name="SSAGES::GridBase::size">
-<area shape="rect" id="node2" href="$classSSAGES_1_1Basis.html#a9c0d9290dae05c7a175ae8e69adaa590" title="Pre&#45;simulation hook. " alt="" coords="225,5,431,32"/>
-<area shape="rect" id="node3" href="$classSSAGES_1_1Basis.html#ab7747cd226308f61dfb04a574af0ebf2" title="Prints the current bias to a defined file from the JSON. " alt="" coords="239,56,417,83"/>
-<area shape="rect" id="node4" href="$classSSAGES_1_1Basis.html#a69e8fc9be06243af2bee875a0ecd54cc" title="Updates the bias projection of the PMF. " alt="" coords="480,81,675,108"/>
-<area shape="rect" id="node5" href="$classSSAGES_1_1Basis.html#a2dd914ae7f0c5036700a493598d845dd" title="Post&#45;integration hook. " alt="" coords="723,81,938,108"/>
-</map>

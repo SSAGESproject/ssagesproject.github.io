@@ -1,7 +1,5 @@
 <map id="SSAGES::Snapshot::GetWalkerID" name="SSAGES::Snapshot::GetWalkerID">
 <area shape="rect" id="node2" href="$classSSAGES_1_1COPSS.html#a82ad422308a4e8502e180b608bbbee19" title="Post&#45;Integration Hook. " alt="" coords="278,5,506,32"/>
-<area shape="rect" id="node3" href="$classSSAGES_1_1MockMethod.html#a20f8bae34d1cfcfd77ddfda5235e7ad0" title="Post&#45;integration hook. " alt="" coords="312,57,472,98"/>
-<area shape="rect" id="node4" href="$classSSAGES_1_1ABF.html#a323024ab4c9c5d186b35af35f00bb5fb" title="Pre&#45;simulation hook. " alt="" coords="292,123,492,149"/>
-<area shape="rect" id="node5" href="$classSSAGES_1_1Basis.html#a9c0d9290dae05c7a175ae8e69adaa590" title="Pre&#45;simulation hook. " alt="" coords="289,173,495,200"/>
-<area shape="rect" id="node6" href="$classSSAGES_1_1StringMethod.html#a58f791d2f573f09ecf8ec3731c1ee38b" title="Pre&#45;simulation hook. " alt="" coords="311,225,473,266"/>
+<area shape="rect" id="node3" href="$classSSAGES_1_1StringMethod.html#ab3a248ca3236ac6b068b3f97074e4218" title="Pre&#45;simulation hook. " alt="" coords="311,57,473,98"/>
+<area shape="rect" id="node4" href="$classSSAGES_1_1Basis.html#a95c5b46e67b935ea1969b9c556f32461" title="Pre&#45;simulation hook. " alt="" coords="289,123,495,149"/>
 </map>

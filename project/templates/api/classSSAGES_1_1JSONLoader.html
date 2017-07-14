@@ -114,9 +114,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a1faa70c95b22b220278b6765b2abd5f7"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSSAGES_1_1JSONLoader.html#a1faa70c95b22b220278b6765b2abd5f7">JSONLoader</a> ()</td></tr>
 <tr class="memdesc:a1faa70c95b22b220278b6765b2abd5f7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructor.  <a href="#a1faa70c95b22b220278b6765b2abd5f7">More...</a><br /></td></tr>
 <tr class="separator:a1faa70c95b22b220278b6765b2abd5f7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a91667f61dbb463b5c9428ac4cc4931d3"><td class="memItemLeft" align="right" valign="top">Json::Value&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSSAGES_1_1JSONLoader.html#a91667f61dbb463b5c9428ac4cc4931d3">LoadFile</a> (const std::string &amp;filename, boost::mpi::communicator &amp;world)</td></tr>
-<tr class="memdesc:a91667f61dbb463b5c9428ac4cc4931d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load file and return JSON tree.  <a href="#a91667f61dbb463b5c9428ac4cc4931d3">More...</a><br /></td></tr>
-<tr class="separator:a91667f61dbb463b5c9428ac4cc4931d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8f04f2c6fc77c96b66af26a3a5b92c8f"><td class="memItemLeft" align="right" valign="top">Json::Value&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSSAGES_1_1JSONLoader.html#a8f04f2c6fc77c96b66af26a3a5b92c8f">LoadFile</a> (const std::string &amp;filename, const mxx::comm &amp;world)</td></tr>
+<tr class="memdesc:a8f04f2c6fc77c96b66af26a3a5b92c8f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Load file and return JSON tree.  <a href="#a8f04f2c6fc77c96b66af26a3a5b92c8f">More...</a><br /></td></tr>
+<tr class="separator:a8f04f2c6fc77c96b66af26a3a5b92c8f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -129,7 +129,7 @@ std::vector&lt; std::unique_ptr<br class="typebreak" />
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Class for loading JSON content from files. </p>
 
-<p>Definition at line <a class="el" href="JSONLoader_8h_source.html#l00042">42</a> of file <a class="el" href="JSONLoader_8h_source.html">JSONLoader.h</a>.</p>
+<p>Definition at line <a class="el" href="JSONLoader_8h_source.html#l00041">41</a> of file <a class="el" href="JSONLoader_8h_source.html">JSONLoader.h</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a1faa70c95b22b220278b6765b2abd5f7"></a>
 <div class="memitem">
@@ -155,19 +155,19 @@ std::vector&lt; std::unique_ptr<br class="typebreak" />
 <p>Constructor. </p>
 <p>The constructer automatically inserts the <a class="el" href="classSSAGES_1_1IncludePlugin.html" title="Class for JSON loader include plugin. ">IncludePlugin</a> into the list of plugins. </p>
 
-<p>Definition at line <a class="el" href="JSONLoader_8h_source.html#l00054">54</a> of file <a class="el" href="JSONLoader_8h_source.html">JSONLoader.h</a>.</p>
+<p>Definition at line <a class="el" href="JSONLoader_8h_source.html#l00053">53</a> of file <a class="el" href="JSONLoader_8h_source.html">JSONLoader.h</a>.</p>
 
-<p>References <a class="el" href="JSONLoader_8h_source.html#l00046">plugins_</a>.</p>
-<div class="fragment"><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;                     : <a class="code" href="classSSAGES_1_1JSONLoader.html#a67c3a000640b95c8be0f61820c53f9dd">plugins_</a>(0)</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;        {</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;            <a class="code" href="classSSAGES_1_1JSONLoader.html#a67c3a000640b95c8be0f61820c53f9dd">plugins_</a>.push_back(std::unique_ptr&lt;JSONLoaderPlugin&gt;(<span class="keyword">new</span> IncludePlugin()));</div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        }</div>
-<div class="ttc" id="classSSAGES_1_1JSONLoader_html_a67c3a000640b95c8be0f61820c53f9dd"><div class="ttname"><a href="classSSAGES_1_1JSONLoader.html#a67c3a000640b95c8be0f61820c53f9dd">SSAGES::JSONLoader::plugins_</a></div><div class="ttdeci">std::vector&lt; std::unique_ptr&lt; JSONLoaderPlugin &gt; &gt; plugins_</div><div class="ttdoc">List of plugins. </div><div class="ttdef"><b>Definition:</b> <a href="JSONLoader_8h_source.html#l00046">JSONLoader.h:46</a></div></div>
+<p>References <a class="el" href="JSONLoader_8h_source.html#l00045">plugins_</a>.</p>
+<div class="fragment"><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;                     : <a class="code" href="classSSAGES_1_1JSONLoader.html#a67c3a000640b95c8be0f61820c53f9dd">plugins_</a>(0)</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        {</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;            <a class="code" href="classSSAGES_1_1JSONLoader.html#a67c3a000640b95c8be0f61820c53f9dd">plugins_</a>.push_back(std::unique_ptr&lt;JSONLoaderPlugin&gt;(<span class="keyword">new</span> IncludePlugin()));</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;        }</div>
+<div class="ttc" id="classSSAGES_1_1JSONLoader_html_a67c3a000640b95c8be0f61820c53f9dd"><div class="ttname"><a href="classSSAGES_1_1JSONLoader.html#a67c3a000640b95c8be0f61820c53f9dd">SSAGES::JSONLoader::plugins_</a></div><div class="ttdeci">std::vector&lt; std::unique_ptr&lt; JSONLoaderPlugin &gt; &gt; plugins_</div><div class="ttdoc">List of plugins. </div><div class="ttdef"><b>Definition:</b> <a href="JSONLoader_8h_source.html#l00045">JSONLoader.h:45</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a91667f61dbb463b5c9428ac4cc4931d3"></a>
+<a class="anchor" id="a8f04f2c6fc77c96b66af26a3a5b92c8f"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -183,7 +183,7 @@ std::vector&lt; std::unique_ptr<br class="typebreak" />
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">boost::mpi::communicator &amp;&#160;</td>
+          <td class="paramtype">const mxx::comm &amp;&#160;</td>
           <td class="paramname"><em>world</em>&#160;</td>
         </tr>
         <tr>
@@ -210,53 +210,42 @@ std::vector&lt; std::unique_ptr<br class="typebreak" />
 <dl class="section return"><dt>Returns</dt><dd>JSON Value containing the contents of the file.</dd></dl>
 <p>This function loads JSON content from a given file. For each plugin in <code>plugins_</code> the filter defined with this plugin will be applied to the contents loaded from the file. </p>
 
-<p>Definition at line <a class="el" href="JSONLoader_8h_source.html#l00069">69</a> of file <a class="el" href="JSONLoader_8h_source.html">JSONLoader.h</a>.</p>
+<p>Definition at line <a class="el" href="JSONLoader_8h_source.html#l00068">68</a> of file <a class="el" href="JSONLoader_8h_source.html">JSONLoader.h</a>.</p>
 
-<p>References <a class="el" href="FileContents_8h_source.html#l00042">SSAGES::GetFileContents()</a>, <a class="el" href="FileContents_8h_source.html#l00068">SSAGES::GetFilePath()</a>, and <a class="el" href="JSONLoader_8h_source.html#l00046">plugins_</a>.</p>
-
-<p>Referenced by <a class="el" href="Simulation_8h_source.html#l00123">SSAGES::Simulation::ReadJSON()</a>.</p>
-<div class="fragment"><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        {</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;            std::string contents, path;</div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;            <span class="keywordflow">if</span>(world.rank() == 0)</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;            {</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;                contents = <a class="code" href="namespaceSSAGES.html#aee59580ec5081b4616fe75b3b3ab91d8">GetFileContents</a>(filename.c_str());</div>
-<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;                path = <a class="code" href="namespaceSSAGES.html#a5c0fb0162001973d0b16fdd15d56493d">GetFilePath</a>(filename);</div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;            }</div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;            mpi::broadcast(world, contents, 0);</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;            mpi::broadcast(world, path, 0);</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;            <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; plugin : <a class="code" href="classSSAGES_1_1JSONLoader.html#a67c3a000640b95c8be0f61820c53f9dd">plugins_</a>)</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;                plugin-&gt;ApplyFilter(contents, path);</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;            <span class="comment">// Read JSON.</span></div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;            Json::Reader reader;</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;            Json::Value root;</div>
-<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;            <span class="keywordflow">if</span>(!reader.parse(contents, root))</div>
-<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;                <span class="keywordflow">throw</span> std::invalid_argument(</div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;                    filename + <span class="stringliteral">&quot;: &quot;</span> + reader.getFormattedErrorMessages()</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;                );</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;            <span class="keywordflow">return</span> root;</div>
-<div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;        }</div>
-<div class="ttc" id="namespaceSSAGES_html_a5c0fb0162001973d0b16fdd15d56493d"><div class="ttname"><a href="namespaceSSAGES.html#a5c0fb0162001973d0b16fdd15d56493d">SSAGES::GetFilePath</a></div><div class="ttdeci">std::string GetFilePath(const std::string &amp;str)</div><div class="ttdoc">Gets file path from filename. </div><div class="ttdef"><b>Definition:</b> <a href="FileContents_8h_source.html#l00068">FileContents.h:68</a></div></div>
-<div class="ttc" id="classSSAGES_1_1JSONLoader_html_a67c3a000640b95c8be0f61820c53f9dd"><div class="ttname"><a href="classSSAGES_1_1JSONLoader.html#a67c3a000640b95c8be0f61820c53f9dd">SSAGES::JSONLoader::plugins_</a></div><div class="ttdeci">std::vector&lt; std::unique_ptr&lt; JSONLoaderPlugin &gt; &gt; plugins_</div><div class="ttdoc">List of plugins. </div><div class="ttdef"><b>Definition:</b> <a href="JSONLoader_8h_source.html#l00046">JSONLoader.h:46</a></div></div>
-<div class="ttc" id="namespaceSSAGES_html_aee59580ec5081b4616fe75b3b3ab91d8"><div class="ttname"><a href="namespaceSSAGES.html#aee59580ec5081b4616fe75b3b3ab91d8">SSAGES::GetFileContents</a></div><div class="ttdeci">std::string GetFileContents(const char *filename)</div><div class="ttdoc">Read contents from a file. </div><div class="ttdef"><b>Definition:</b> <a href="FileContents_8h_source.html#l00042">FileContents.h:42</a></div></div>
+<p>References <a class="el" href="FileContents_8h_source.html#l00047">SSAGES::GetFileContents()</a>, <a class="el" href="FileContents_8h_source.html#l00073">SSAGES::GetFilePath()</a>, and <a class="el" href="JSONLoader_8h_source.html#l00045">plugins_</a>.</p>
+<div class="fragment"><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        {</div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;            std::string contents, path;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;            <span class="keywordflow">if</span>(world.rank() == 0)</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;            {</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;                contents = <a class="code" href="namespaceSSAGES.html#aee59580ec5081b4616fe75b3b3ab91d8">GetFileContents</a>(filename.c_str());</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;                path = <a class="code" href="namespaceSSAGES.html#a5c0fb0162001973d0b16fdd15d56493d">GetFilePath</a>(filename);</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;            }</div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;            </div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;            mxx::bcast(contents, 0, world);</div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;            mxx::bcast(path, 0, world);</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;</div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;            <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; plugin : <a class="code" href="classSSAGES_1_1JSONLoader.html#a67c3a000640b95c8be0f61820c53f9dd">plugins_</a>)</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;                plugin-&gt;ApplyFilter(contents, path);</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;            <span class="comment">// Read JSON.</span></div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;            Json::Reader reader;</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;            Json::Value root;</div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;            <span class="keywordflow">if</span>(!reader.parse(contents, root))</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;                <span class="keywordflow">throw</span> std::invalid_argument(</div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;                    filename + <span class="stringliteral">&quot;: &quot;</span> + reader.getFormattedErrorMessages()</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;                );</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;            <span class="keywordflow">return</span> root;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;        }</div>
+<div class="ttc" id="namespaceSSAGES_html_a5c0fb0162001973d0b16fdd15d56493d"><div class="ttname"><a href="namespaceSSAGES.html#a5c0fb0162001973d0b16fdd15d56493d">SSAGES::GetFilePath</a></div><div class="ttdeci">std::string GetFilePath(const std::string &amp;str)</div><div class="ttdoc">Gets file path from filename. </div><div class="ttdef"><b>Definition:</b> <a href="FileContents_8h_source.html#l00073">FileContents.h:73</a></div></div>
+<div class="ttc" id="classSSAGES_1_1JSONLoader_html_a67c3a000640b95c8be0f61820c53f9dd"><div class="ttname"><a href="classSSAGES_1_1JSONLoader.html#a67c3a000640b95c8be0f61820c53f9dd">SSAGES::JSONLoader::plugins_</a></div><div class="ttdeci">std::vector&lt; std::unique_ptr&lt; JSONLoaderPlugin &gt; &gt; plugins_</div><div class="ttdoc">List of plugins. </div><div class="ttdef"><b>Definition:</b> <a href="JSONLoader_8h_source.html#l00045">JSONLoader.h:45</a></div></div>
+<div class="ttc" id="namespaceSSAGES_html_aee59580ec5081b4616fe75b3b3ab91d8"><div class="ttname"><a href="namespaceSSAGES.html#aee59580ec5081b4616fe75b3b3ab91d8">SSAGES::GetFileContents</a></div><div class="ttdeci">std::string GetFileContents(const char *filename)</div><div class="ttdoc">Read contents from a file. </div><div class="ttdef"><b>Definition:</b> <a href="FileContents_8h_source.html#l00047">FileContents.h:47</a></div></div>
 </div><!-- fragment -->
 <p><div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classSSAGES_1_1JSONLoader_a91667f61dbb463b5c9428ac4cc4931d3_cgraph.png" border="0" usemap="#classSSAGES_1_1JSONLoader_a91667f61dbb463b5c9428ac4cc4931d3_cgraph" alt=""/></div>
-<map name="classSSAGES_1_1JSONLoader_a91667f61dbb463b5c9428ac4cc4931d3_cgraph" id="classSSAGES_1_1JSONLoader_a91667f61dbb463b5c9428ac4cc4931d3_cgraph">
+<div class="center"><img src="classSSAGES_1_1JSONLoader_a8f04f2c6fc77c96b66af26a3a5b92c8f_cgraph.png" border="0" usemap="#classSSAGES_1_1JSONLoader_a8f04f2c6fc77c96b66af26a3a5b92c8f_cgraph" alt=""/></div>
+<map name="classSSAGES_1_1JSONLoader_a8f04f2c6fc77c96b66af26a3a5b92c8f_cgraph" id="classSSAGES_1_1JSONLoader_a8f04f2c6fc77c96b66af26a3a5b92c8f_cgraph">
 <area shape="rect" id="node2" href="namespaceSSAGES.html#aee59580ec5081b4616fe75b3b3ab91d8" title="Read contents from a file. " alt="" coords="214,5,394,32"/><area shape="rect" id="node3" href="namespaceSSAGES.html#a5c0fb0162001973d0b16fdd15d56493d" title="Gets file path from filename. " alt="" coords="227,56,381,83"/></map>
-</div>
-</p>
-
-<p><div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classSSAGES_1_1JSONLoader_a91667f61dbb463b5c9428ac4cc4931d3_icgraph.png" border="0" usemap="#classSSAGES_1_1JSONLoader_a91667f61dbb463b5c9428ac4cc4931d3_icgraph" alt=""/></div>
-<map name="classSSAGES_1_1JSONLoader_a91667f61dbb463b5c9428ac4cc4931d3_icgraph" id="classSSAGES_1_1JSONLoader_a91667f61dbb463b5c9428ac4cc4931d3_icgraph">
-<area shape="rect" id="node2" href="classSSAGES_1_1Simulation.html#ab4e9f2811b531de409149dd474790b9c" title="Read the JSON file. " alt="" coords="213,5,360,46"/></map>
 </div>
 </p>
 
@@ -268,7 +257,7 @@ Here is the caller graph for this function:</div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Jun 23 2017 15:44:19 for SSAGES by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Jul 14 2017 15:33:31 for SSAGES by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

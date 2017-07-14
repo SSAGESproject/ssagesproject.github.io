@@ -1,4 +1,4 @@
 <map id="SSAGES::ParticleCoordinateCV::Initialize" name="SSAGES::ParticleCoordinateCV::Initialize">
-<area shape="rect" id="node2" href="$classSSAGES_1_1Snapshot.html#a127a32f56151174b6cede0c790d5fd03" title="Get communicator for group (walker). " alt="" coords="246,5,501,32"/>
+<area shape="rect" id="node2" href="$classSSAGES_1_1Snapshot.html#a9079d14677b94ff2c88c1f35c867c303" title="Get communicator for walker. " alt="" coords="246,5,501,32"/>
 <area shape="rect" id="node3" href="$classSSAGES_1_1Snapshot.html#a3ecf272dca61538320a4d503303fa9ba" title="Gets the local atom index corresponding to an atom ID. " alt="" coords="273,57,473,98"/>
 </map>

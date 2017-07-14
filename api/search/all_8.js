@@ -16,7 +16,6 @@ var searchData=
   ['hillsout_5f',['hillsout_',['../classSSAGES_1_1Meta.html#ac2f065cf13305f71d5e86e78b9a4854b',1,'SSAGES::Meta']]],
   ['hinv_5f',['Hinv_',['../classSSAGES_1_1Snapshot.html#aab240259a68d2247e4dd2dd836a5bea5',1,'SSAGES::Snapshot']]],
   ['hist_5f',['hist_',['../classSSAGES_1_1Histogram_1_1HistIterator.html#a6178ba0466b13c6b212f3f22d7b11283',1,'SSAGES::Histogram::HistIterator::hist_()'],['../classSSAGES_1_1Basis.html#adddfdf996d1e81db3d7966776b6025af',1,'SSAGES::Basis::hist_()']]],
-  ['histcoords',['histCoords',['../classSSAGES_1_1ABF.html#aca2d887ed5572ab60dec5000b5262e31',1,'SSAGES::ABF']]],
   ['histdetails_5f',['histdetails_',['../classSSAGES_1_1ABF.html#a060acb9e57d66e702de14ff8a5d36ee6',1,'SSAGES::ABF']]],
   ['histiterator',['HistIterator',['../classSSAGES_1_1Histogram_1_1HistIterator.html#aea4f197f8ab46fa698007f195ba9670e',1,'SSAGES::Histogram::HistIterator::HistIterator()=default'],['../classSSAGES_1_1Histogram_1_1HistIterator.html#a40d6147e53def15b7ff9de963e6e0727',1,'SSAGES::Histogram::HistIterator::HistIterator(const std::vector&lt; int &gt; &amp;indices, Histogram&lt; T &gt; *hist)'],['../classSSAGES_1_1Histogram_1_1HistIterator.html#ab085d5378ff444f9543de62bdb35b667',1,'SSAGES::Histogram::HistIterator::HistIterator(const HistIterator &amp;other)']]],
   ['histiterator',['HistIterator',['../classSSAGES_1_1Histogram_1_1HistIterator.html',1,'SSAGES::Histogram']]],
@@ -25,5 +24,5 @@ var searchData=
   ['histogram_3c_20int_20_3e',['Histogram&lt; int &gt;',['../classSSAGES_1_1Histogram.html',1,'SSAGES']]],
   ['hook',['Hook',['../classSSAGES_1_1Hook.html',1,'SSAGES']]],
   ['hook',['Hook',['../classSSAGES_1_1Hook.html#ad0bf76d04f65739090db6d0fadfdc748',1,'SSAGES::Hook']]],
-  ['hook_5f',['hook_',['../classSSAGES_1_1Driver.html#ae31f3e42d218451dadf5918da35c89ac',1,'SSAGES::Driver']]]
+  ['hook_5f',['hook_',['../classSSAGES_1_1ResourceHandler.html#a65c7638fab96e7f3e092fe1448ee05dd',1,'SSAGES::ResourceHandler']]]
 ];

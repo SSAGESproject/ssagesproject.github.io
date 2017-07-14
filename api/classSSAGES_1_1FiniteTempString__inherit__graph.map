@@ -1,6 +1,5 @@
 <map id="SSAGES::FiniteTempString" name="SSAGES::FiniteTempString">
-<area shape="rect" id="node2" href="$classSSAGES_1_1StringMethod.html" title="String base class for FTS, Swarm, and elastic band. " alt="" coords="97,155,260,181"/>
-<area shape="rect" id="node3" href="$classSSAGES_1_1Method.html" title="Interface for Method implementations. " alt="" coords="115,80,243,107"/>
-<area shape="rect" id="node4" href="$classSSAGES_1_1EventListener.html" title="Base abstract class for listening in to events fired by &quot;Hook&quot;. " alt="" coords="5,5,169,32"/>
-<area shape="rect" id="node5" href="$classSSAGES_1_1Serializable.html" title="Base class for all serializable objects. " alt="" coords="195,5,347,32"/>
+<area shape="rect" id="node2" href="$classSSAGES_1_1StringMethod.html" title="String base class for FTS, Swarm, and elastic band. " alt="" coords="16,155,179,181"/>
+<area shape="rect" id="node3" href="$classSSAGES_1_1Method.html" title="Interface for Method implementations. " alt="" coords="33,80,161,107"/>
+<area shape="rect" id="node4" href="$classSSAGES_1_1EventListener.html" title="Base abstract class for listening in to events fired by &quot;Hook&quot;. " alt="" coords="15,5,179,32"/>
 </map>

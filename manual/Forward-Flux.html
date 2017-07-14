@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Forward-Flux &mdash; SSAGES v0.5.0-alpha-217-g4053fbf documentation</title>
+  <title>Forward-Flux &mdash; SSAGES v0.7.5-alpha documentation</title>
   
 
   
@@ -35,7 +35,7 @@
         <link rel="index" title="Index"
               href="genindex.html"/>
         <link rel="search" title="Search" href="search.html"/>
-    <link rel="top" title="SSAGES v0.5.0-alpha-217-g4053fbf documentation" href="index.html"/>
+    <link rel="top" title="SSAGES v0.7.5-alpha documentation" href="index.html"/>
         <link rel="up" title="Advanced Sampling Methods" href="Advanced Sampling Methods.html"/>
         <link rel="next" title="Metadynamics" href="Metadynamics.html"/>
         <link rel="prev" title="Finite Temperature String" href="Finite Temperature String.html"/> 
@@ -67,7 +67,7 @@
             
             
               <div class="version">
-                0.6.0
+                0.7.5
               </div>
             
           
@@ -94,7 +94,9 @@
               <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="Introduction.html">Introduction</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Getting Started.html">Getting Started</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Tutorials.html">Tutorials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Input Files.html">Input Files</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Engines.html">Engines</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Collective Variables.html">Collective Variables</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="Advanced Sampling Methods.html">Advanced Sampling Methods</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="Adaptive Biasing Force Algorithm.html">Adaptive Biasing Force Algorithm</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Basis Function Sampling.html">Basis Function Sampling</a></li>
@@ -105,7 +107,7 @@
 <li class="toctree-l3"><a class="reference internal" href="#rate-constant-and-initial-flux">Rate Constant and Initial Flux</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#rosenbluth-like-forward-flux-sampling-rbffs">Rosenbluth-like Forward Flux Sampling (RBFFS)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#options-parameters">Options &amp; Parameters</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#input-and-parameters-related-to-driver">Input and parameters related to &#8220;driver&#8221;</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#input-and-parameters-related-to-walkers">Input and parameters related to &#8220;walkers&#8221;</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#input-and-parameters-related-to-method">Input and parameters related to &#8220;method&#8221;</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#other-required-input-parameters">Other required input parameters</a></li>
 </ul>
@@ -250,7 +252,7 @@ state A, <span class="math">\(P(\lambda_{B} = \lambda_{n} | \lambda_{A} = \lambd
 variants of forward flux sampling method:</li>
 </ol>
 <ul class="simple">
-<li>Direct FFS (DFFS)</li>
+<li>Direct FFS (DFFS) (currently implemented in SSAGES)</li>
 <li>Branched Growth FFS (BGFFS)</li>
 <li>Rosenbluth-like FFS (RBFFS)</li>
 <li>Restricted Branched Growth FFS (RBGFFS)</li>
@@ -366,46 +368,18 @@ engine (MD engine). For your convenience, two files <code class="docutils litera
 file. Here we describe the parameters and the options that should be set in
 <code class="docutils literal"><span class="pre">Template_Input.json</span></code> file in order to successfully generate an input file and
 run a DFFS simulation.</p>
-<div class="section" id="input-and-parameters-related-to-driver">
-<h3>Input and parameters related to &#8220;driver&#8221;<a class="headerlink" href="#input-and-parameters-related-to-driver" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="input-and-parameters-related-to-walkers">
+<h3>Input and parameters related to &#8220;walkers&#8221;<a class="headerlink" href="#input-and-parameters-related-to-walkers" title="Permalink to this headline">¶</a></h3>
 <dl class="docutils">
-<dt>type</dt>
+<dt>input</dt>
 <dd><ul class="first last simple">
-<li>Type: string</li>
-<li>Default:  “LAMMPS”</li>
-<li>Functionality:  Defines the preferred MD engine to run the actual
-simulation. You are encouraged to read the documentation page of the
-corresponding MD package to learn about the input files and different options
-available to that package.</li>
-</ul>
-</dd>
-<dt>number processors</dt>
-<dd><ul class="first last simple">
-<li>Type: integer</li>
-<li>Default: 1</li>
-<li>Functionality:  Sets the number of processors that individual walkers
-use to run the simulation. In the current version of SSAGES, this should be set
-to 1.</li>
-</ul>
-</dd>
-<dt>inputfile</dt>
-<dd><ul class="first last simple">
-<li>Type: string</li>
-<li>Default: &#8220;&#8221;</li>
-<li>Functionality: Specifies the name of the engine-specific input file. The
+<li>Type: array of strings</li>
+<li>Default: []</li>
+<li>Functionality: Specifies the name of the engine-specific input files. The
 user is encouraged to refer to the documentation page of the corresponding
 MD package to learn about various input options as well as the structure
-and format of the input files suitable for their MD engine.</li>
-</ul>
-</dd>
-<dt>MDSteps</dt>
-<dd><ul class="first last simple">
-<li>Type: integer</li>
-<li>Default: 10000000</li>
-<li>Functionality:  Sets the maximum number of MD steps allowed for a FFS
-simulation on a given walker. We recommend defining a large number here to
-ensure that the simulation is completed before reaching that many steps.
-SSAGES will exit upon completion of the FFS simulation.</li>
+and format of the input files suitable for their MD engine.
+NOTE: For GROMACS, you won&#8217;t need to specify this parameter; instead you&#8217;ll need to pass the base name of your .tpr files to &#8220;args&#8221; (please see the examples folder for details)</li>
 </ul>
 </dd>
 <dt>logfile</dt>
@@ -524,25 +498,21 @@ variable.</li>
 <span id="ffs-tutorial"></span><h2>Tutorial<a class="headerlink" href="#tutorial" title="Permalink to this headline">¶</a></h2>
 <p>This tutorial will walk you step by step through the user example provided with
 the SSAGES source code that runs the forward flux method on a Langevin particle
-in a two-dimensional potential energy surface using LAMMPS. First, be sure you
-have compiled SSAGES with LAMMPS. Then, navigate to the <code class="docutils literal"><span class="pre">SSAGES/Examples/User/ForwardFlux</span></code>
+in a two-dimensional potential energy surface using LAMMPS. This example shows how to prepare a multi-walker simulation (here we use 2 walkers). First, be sure you have compiled SSAGES with LAMMPS. Then, navigate to the <code class="docutils literal"><span class="pre">SSAGES/Examples/User/ForwardFlux/LAMMPS/Langevin</span></code>
 subdirectory.  Now, take a moment to observe the <code class="docutils literal"><span class="pre">in.LAMMPS_FF_Test_1d</span></code> file to familiarize
 yourself with the system being simulated.</p>
 <p>The next two files of interest are the <code class="docutils literal"><span class="pre">Template_Input.json</span></code> input file and the
-<code class="docutils literal"><span class="pre">FF_Input_Generator.py</span></code> script.  Both of these files can be modified in your
-text editor of choice to customize the inputs, but for this tutorial, simply
-observe them and leave them be. FF_Template.json contains all the information
-necessary to fully specify one driver; FF_Input_Generator.py copies this
-information a number of times specified within the FF_Input_Generator.py script (for this tutorial,
-2 times). Issue the following command to generate the JSON input file:</p>
+<code class="docutils literal"><span class="pre">FF_Input_Generator.py</span></code> script.  These files are provided to help you setup sophisticated simulations. Both of these files can be modified in your
+text editor of choice to customize your input files, but for this tutorial, simply
+observe them and leave them be. FF_Template.json contains all information necessary to fully specify a walker; FF_Input_Generator.py uses the information in this file and generates a new JSON along with necessary lammps input files. Issue the following command to generate the files:</p>
 <div class="highlight-bash"><div class="highlight"><pre><span></span>python FF_Input_Generator.py
 </pre></div>
 </div>
-<p>You will produce a file called <code class="docutils literal"><span class="pre">Input-2proc.json</span></code> along with &#8220;in.LAMMPS_FF_Test_1d-0&#8221;
-and &#8220;in.LAMMPS_FF_Test_1d-1&#8221;. You can also open this file to verify for yourself that
+<p>You will produce a file called <code class="docutils literal"><span class="pre">Input-2walkers.json</span></code> along with &#8220;in.LAMMPS_FF_Test_1d-0&#8221;
+and &#8220;in.LAMMPS_FF_Test_1d-1&#8221;. You can also open these files to verify for yourself that
 the script did what it was supposed to do.  Now, with your JSON input and your SSAGES binary,
 you have everything you need to perform a simulation.  Simply run:</p>
-<div class="highlight-bash"><div class="highlight"><pre><span></span>mpiexec -np <span class="m">2</span> ./ssages Input-2proc.json
+<div class="highlight-bash"><div class="highlight"><pre><span></span>mpiexec -np <span class="m">2</span> ./ssages Input-2walkers.json
 </pre></div>
 </div>
 <p>This should run a quick FFS calculation and generate the necessary output.</p>
@@ -610,7 +580,7 @@ J. Chem. Phys. 1955, 23 (2), 356-359.</td></tr>
   <div role="contentinfo">
     <p>
         &copy; Copyright 2016, the SSAGES Team.
-      Last updated on Jun 07, 2017.
+      Last updated on Jul 14, 2017.
 
     </p>
   </div>
@@ -632,7 +602,7 @@ J. Chem. Phys. 1955, 23 (2), 356-359.</td></tr>
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'./',
-            VERSION:'v0.5.0-alpha-217-g4053fbf',
+            VERSION:'v0.7.5-alpha',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
             HAS_SOURCE:  true,

@@ -1,13 +1,8 @@
 var searchData=
 [
-  ['ukj',['ukj',['../classSSAGES_1_1COPSSImage.html#adc2dfa9b5cda5c26a98d4b4b23a726b3',1,'SSAGES::COPSSImage']]],
-  ['umbrella_5f',['umbrella_',['../classSSAGES_1_1Umbrella.html#a25313c59d7bf8fbc842228626fbbdd8e',1,'SSAGES::Umbrella']]],
-  ['umbrella_5fiter_5f',['umbrella_iter_',['../classSSAGES_1_1FiniteTempString.html#aed5757522f4c2e60199f483a8067e4b9',1,'SSAGES::FiniteTempString']]],
-  ['unbias_5f',['unbias_',['../classSSAGES_1_1Basis.html#a70459b6ea675e7740e18b4b83594a7f1',1,'SSAGES::Basis']]],
-  ['unique_5f',['unique_',['../classJson_1_1ArrayRequirement.html#ac5f4339154fc5f1f3dc655a891330d36',1,'Json::ArrayRequirement']]],
-  ['unitconv_5f',['unitconv_',['../classSSAGES_1_1ABF.html#a012104abf51fd7fe050a31fddc3c7180',1,'SSAGES::ABF']]],
-  ['unrestrained_5fsteps_5f',['unrestrained_steps_',['../classSSAGES_1_1Swarm.html#a87d05b081f563d506ced1ad7779b5194',1,'SSAGES::Swarm']]],
-  ['upperb_5f',['upperb_',['../classSSAGES_1_1Meta.html#a3f6d45e420b5795563de6f891908e807',1,'SSAGES::Meta']]],
-  ['upperk_5f',['upperk_',['../classSSAGES_1_1Meta.html#a33e2f67c058c3178af21631fe9777b4e',1,'SSAGES::Meta']]],
-  ['usergrad_5f',['usergrad_',['../classSSAGES_1_1MockCV.html#a57425788c61870ca51e3b5d16c62e84e',1,'SSAGES::MockCV']]]
+  ['val_5f',['val_',['../classSSAGES_1_1CollectiveVariable.html#a65b17f3e9b3c967ad42814c3eec88bb2',1,'SSAGES::CollectiveVariable']]],
+  ['value',['value',['../structSSAGES_1_1Map.html#ac1c7b17ce0150b5e8a122f6c8cae8440',1,'SSAGES::Map']]],
+  ['values',['values',['../structSSAGES_1_1BasisLUT.html#a3d1cede5e1639c01e7cc3ff9538db9ac',1,'SSAGES::BasisLUT']]],
+  ['velocities_5f',['velocities_',['../classSSAGES_1_1Snapshot.html#a4b5eba5f7e1c1d34f31c86f6b74f72fe',1,'SSAGES::Snapshot']]],
+  ['vkj',['vkj',['../classSSAGES_1_1COPSSImage.html#a62926e065dc0b1cbc542c1959506f234',1,'SSAGES::COPSSImage']]]
 ];

@@ -1,0 +1,413 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Engines &mdash; SSAGES v0.7.5-alpha documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+
+  
+  
+    
+
+  
+
+  
+  
+    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  
+
+  
+
+  
+        <link rel="index" title="Index"
+              href="genindex.html"/>
+        <link rel="search" title="Search" href="search.html"/>
+    <link rel="top" title="SSAGES v0.7.5-alpha documentation" href="index.html"/>
+        <link rel="next" title="Collective Variables" href="Collective Variables.html"/>
+        <link rel="prev" title="Input Files" href="Input Files.html"/> 
+
+  
+  <script src="_static/js/modernizr.min.js"></script>
+
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+   
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search">
+          
+
+          
+            <a href="index.html" class="icon icon-home"> SSAGES
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.7.5
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="Introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Getting Started.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Input Files.html">Input Files</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Engines</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#lammps">LAMMPS</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#building">Building</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#running">Running</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#gromacs">Gromacs</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id2">Building</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id3">Running</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#openmd">OpenMD</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#qbox">Qbox</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Collective Variables.html">Collective Variables</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Advanced Sampling Methods.html">Advanced Sampling Methods</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Write your own Methods and CVs.html">Write your own Methods and CVs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Contribute to SSAGES.html">Contribute to SSAGES</a></li>
+<li class="toctree-l1"><a class="reference internal" href="The SSAGES Cookbook.html">The SSAGES cookbook</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Acknowledgements.html">Acknowledgments</a></li>
+<li class="toctree-l1"><a class="reference internal" href="License.html">Copyright</a></li>
+<li class="toctree-l1"><a class="reference internal" href="License.html#id1">License information</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">SSAGES</a>
+        
+      </nav>
+
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+      <li>Engines</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/Engines.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="engines">
+<span id="id1"></span><h1>Engines<a class="headerlink" href="#engines" title="Permalink to this headline">¶</a></h1>
+<p>SSAGES supports multiple molecular dynamics engines. However, supported
+features between MD engines. This may be the result of engine limitations
+or work in progress. The table below summarizes the main features that
+vary between supported engines.</p>
+<table border="1" class="docutils">
+<colgroup>
+<col width="16%" />
+<col width="34%" />
+<col width="23%" />
+<col width="26%" />
+</colgroup>
+<thead valign="bottom">
+<tr class="row-odd"><th class="head">Engine</th>
+<th class="head">Supported versions</th>
+<th class="head">Multi-walker</th>
+<th class="head">NPT virial</th>
+</tr>
+</thead>
+<tbody valign="top">
+<tr class="row-even"><td>LAMMPS</td>
+<td>2010 or newer</td>
+<td>yes</td>
+<td>yes</td>
+</tr>
+<tr class="row-odd"><td>Gromacs</td>
+<td>5.1.x, 2016.3</td>
+<td>yes</td>
+<td>yes</td>
+</tr>
+<tr class="row-even"><td>OpenMD</td>
+<td>2.4, 2.5</td>
+<td>no</td>
+<td>no</td>
+</tr>
+<tr class="row-odd"><td>Qbox</td>
+<td>1.60 or newer</td>
+<td>yes</td>
+<td>no</td>
+</tr>
+</tbody>
+</table>
+<p>Special instructions on how to use SSAGES with a particular engine are
+listed under the appropriate section.</p>
+<div class="section" id="lammps">
+<h2>LAMMPS<a class="headerlink" href="#lammps" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="building">
+<h3>Building<a class="headerlink" href="#building" title="Permalink to this headline">¶</a></h3>
+<p>SSAGES supports most recent versions of LAMMPS. To compile SSAGES with a
+compatible version of LAMMPS, either <code class="docutils literal"><span class="pre">-DLAMMPS=YES</span></code> or
+<code class="docutils literal"><span class="pre">-DLAMMPS_SRC=/path/to/LAMMPS</span></code> must be specified in the cmake command.
+For example,</p>
+<div class="code bash highlight-default"><div class="highlight"><pre><span></span><span class="n">cmake</span> <span class="o">-</span><span class="n">DLAMMPS</span><span class="o">=</span><span class="n">YES</span> <span class="o">..</span>
+<span class="n">make</span>
+</pre></div>
+</div>
+<p>will automatically download a recent version of LAMMPS (tagged <code class="docutils literal"><span class="pre">r15407</span></code>)
+and compile SSAGES. Because many users may take advantage of optional LAMMPS
+packages, SSAGES forwards the make commands necessary to do so, such
+as</p>
+<div class="code bash highlight-default"><div class="highlight"><pre><span></span><span class="n">make</span> <span class="n">yes</span><span class="o">-</span><span class="n">molecule</span>
+<span class="n">make</span> <span class="n">yes</span><span class="o">-</span><span class="n">user</span><span class="o">-</span><span class="n">drude</span>
+</pre></div>
+</div>
+<p>If a user is interested in using a different version of LAMMPS or one with
+personal modifications, then SSAGES can be pointed to that particular source
+repository.</p>
+<div class="code bash highlight-default"><div class="highlight"><pre><span></span><span class="n">cmake</span> <span class="o">-</span><span class="n">DLAMMPS_SRC</span><span class="o">=/</span><span class="n">path</span><span class="o">/</span><span class="n">to</span><span class="o">/</span><span class="n">lammps</span> <span class="o">..</span>
+</pre></div>
+</div>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">Once you link SSAGES to a particular LAMMPS source, you will be
+<strong>unable</strong> to compile that LAMMPS source outside of SSAGES because of
+SSAGES dependencies which are introduced. Be sure to backup your
+repository accordingly.</p>
+</div>
+</div>
+<div class="section" id="running">
+<h3>Running<a class="headerlink" href="#running" title="Permalink to this headline">¶</a></h3>
+<p>SSAGES integrates with LAMMPS though the flexible <em>fix</em> API offered
+by LAMMPS. It is therefore necessary to define a SSAGES fix within
+the LAMMPS input file as follows.</p>
+<div class="code highlight-default"><div class="highlight"><pre><span></span><span class="n">fix</span> <span class="n">ssages</span> <span class="nb">all</span> <span class="n">ssages</span>
+</pre></div>
+</div>
+<p>This directive ensures that SSAGES is able to locate the appropriate
+adapter and interface with the LAMMPS library. <strong>It is very important to
+name the fix &#8220;ssages&#8221; as shown above. Otherwise, SSAGES will not work
+properly</strong>. It is highly recommended that the SSAGES fix command be placed
+after all integrator fixes. Also, make sure tht the fix is specified before
+the run command, which will begin the advanced sampling simulation.</p>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Due to the nature of how SSAGES forwards commands to LAMMPS, the use
+of <code class="docutils literal"><span class="pre">include</span></code> within a LAMMPS input script is currently not supported.</p>
+</div>
+<p>SSAGES is compatible with typical LAMMPS workflows that include equilibration
+or energy minimzation steps before production. So long as the SSAGES fix is not
+declared, LAMMPS will run without any modification.</p>
+<p>The only LAMMPS-specific property required in a SSAGES input file is the <code class="docutils literal"><span class="pre">input</span></code>
+property which points to the LAMMPS input script. Details can be found on the
+<a class="reference internal" href="Input Files.html#inputfiles"><span class="std std-ref">input files page</span></a>.</p>
+</div>
+</div>
+<div class="section" id="gromacs">
+<h2>Gromacs<a class="headerlink" href="#gromacs" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id2">
+<h3>Building<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h3>
+<p>SSAGES supports Gromacs versions 5.1.x and 2016.3. To compile SSAGES with a
+compatible version of Gromacs, either <code class="docutils literal"><span class="pre">-DGROMACS=YES</span></code> or
+<code class="docutils literal"><span class="pre">-DGROMACS_SRC=/path/to/Gromacs</span></code> must be specified in the cmake command.
+For example,</p>
+<div class="code bash highlight-default"><div class="highlight"><pre><span></span><span class="n">cmake</span> <span class="o">-</span><span class="n">DGROMACS</span><span class="o">=</span><span class="n">YES</span> <span class="o">..</span>
+<span class="n">make</span>
+</pre></div>
+</div>
+<p>will automatically download Gromacs 5.1.3 and compile SSAGES.
+If a user is interested in using a different version of Gromacs or one with
+personal modifications, then SSAGES can be pointed to that particular source
+repository.</p>
+<div class="code bash highlight-default"><div class="highlight"><pre><span></span><span class="n">cmake</span> <span class="o">-</span><span class="n">DGROMACS_SRC</span><span class="o">=/</span><span class="n">path</span><span class="o">/</span><span class="n">to</span><span class="o">/</span><span class="n">gromacs</span> <span class="o">..</span>
+</pre></div>
+</div>
+<div class="admonition warning">
+<p class="first admonition-title">Warning</p>
+<p class="last">Once you link SSAGES to a particular Gromacs source, you will be
+<strong>unable</strong> to compile that Gromacs source outside of SSAGES because of
+SSAGES dependencies which are introduced. Be sure to backup your
+repository accordingly.</p>
+</div>
+</div>
+<div class="section" id="id3">
+<h3>Running<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h3>
+<p>SSAGES forwards arguments to the Gromacs <strong>mdrun</strong> library. The
+<code class="docutils literal"><span class="pre">args</span></code> property must specified in the SSAGES input file as
+described on the <a class="reference internal" href="Input Files.html#inputfiles"><span class="std std-ref">input files page</span></a>.</p>
+</div>
+</div>
+<div class="section" id="openmd">
+<h2>OpenMD<a class="headerlink" href="#openmd" title="Permalink to this headline">¶</a></h2>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Coming soon.</p>
+</div>
+</div>
+<div class="section" id="qbox">
+<h2>Qbox<a class="headerlink" href="#qbox" title="Permalink to this headline">¶</a></h2>
+<div class="admonition note">
+<p class="first admonition-title">Note</p>
+<p class="last">Coming soon.</p>
+</div>
+</div>
+</div>
+
+
+           </div>
+           <div class="articleComments">
+            
+           </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="Collective Variables.html" class="btn btn-neutral float-right" title="Collective Variables" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="Input Files.html" class="btn btn-neutral" title="Input Files" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2016, the SSAGES Team.
+      Last updated on Jul 14, 2017.
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  
+
+    <script type="text/javascript">
+        var DOCUMENTATION_OPTIONS = {
+            URL_ROOT:'./',
+            VERSION:'v0.7.5-alpha',
+            COLLAPSE_INDEX:false,
+            FILE_SUFFIX:'.html',
+            HAS_SOURCE:  true,
+            SOURCELINK_SUFFIX: '.txt'
+        };
+    </script>
+      <script type="text/javascript" src="_static/jquery.js"></script>
+      <script type="text/javascript" src="_static/underscore.js"></script>
+      <script type="text/javascript" src="_static/doctools.js"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+  
+
+  
+  
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+  
+
+  
+  
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.StickyNav.enable();
+      });
+  </script>
+   
+
+</body>
+</html>

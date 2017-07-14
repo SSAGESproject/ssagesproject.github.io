@@ -97,90 +97,84 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 <div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;</div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="preprocessor">#pragma once </span></div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;</div>
-<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;<span class="preprocessor">#include &lt;exception&gt;</span></div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#include &lt;stdexcept&gt;</span></div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;<span class="preprocessor">#include &lt;sstream&gt;</span></div>
-<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include &lt;iomanip&gt;</span></div>
-<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#include &lt;boost/mpi.hpp&gt;</span></div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="keyword">namespace </span>SSAGES</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;{</div>
-<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="classSSAGES_1_1BuildException.html">   34</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classSSAGES_1_1BuildException.html">BuildException</a> : <span class="keyword">public</span> std::runtime_error</div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    {</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keyword">private</span>:</div>
-<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="classSSAGES_1_1BuildException.html#a70e41d120fdf719a3fb28ae93ad99bda">   37</a></span>&#160;        std::vector&lt;std::string&gt; <a class="code" href="classSSAGES_1_1BuildException.html#a70e41d120fdf719a3fb28ae93ad99bda">errors_</a>; </div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keyword">public</span>:</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div>
-<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="classSSAGES_1_1BuildException.html#ae056ca005ebeb794d5739075b815c573">   43</a></span>&#160;        <a class="code" href="classSSAGES_1_1BuildException.html#ae056ca005ebeb794d5739075b815c573">BuildException</a>(std::vector&lt;std::string&gt; errors) : </div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;            std::runtime_error(<span class="stringliteral">&quot;Object build error&quot;</span>), <a class="code" href="classSSAGES_1_1BuildException.html#a70e41d120fdf719a3fb28ae93ad99bda">errors_</a>(errors)</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;        {</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;        }</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div>
-<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="classSSAGES_1_1BuildException.html#a7a7d4b8a6e109a01c1489d7a591559b9">   52</a></span>&#160;        <span class="keyword">virtual</span> <span class="keyword">const</span> <span class="keywordtype">char</span>* <a class="code" href="classSSAGES_1_1BuildException.html#a7a7d4b8a6e109a01c1489d7a591559b9">what</a>() <span class="keyword">const</span> throw()</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;        {</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;            std::ostringstream msg(<span class="stringliteral">&quot;&quot;</span>); </div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;            msg &lt;&lt; runtime_error::what() &lt;&lt; <span class="stringliteral">&quot;: &quot;</span></div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;                &lt;&lt; <span class="stringliteral">&quot;See errors for details.&quot;</span>;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;</div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;            <span class="keywordflow">return</span> msg.str().c_str();</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;        }</div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;</div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div>
-<div class="line"><a name="l00066"></a><span class="lineno"><a class="line" href="classSSAGES_1_1BuildException.html#a51e329a9d93ecffb5ba284e0eb4cdc26">   66</a></span>&#160;        std::vector&lt;std::string&gt; <a class="code" href="classSSAGES_1_1BuildException.html#a51e329a9d93ecffb5ba284e0eb4cdc26">GetErrors</a>()</div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        {</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="classSSAGES_1_1BuildException.html#a70e41d120fdf719a3fb28ae93ad99bda">errors_</a>;</div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;        }</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    };</div>
-<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div>
-<div class="line"><a name="l00078"></a><span class="lineno"><a class="line" href="namespaceSSAGES.html#ac01f6af49fd74678e2599d8813cb7771">   78</a></span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="namespaceSSAGES.html#ac01f6af49fd74678e2599d8813cb7771">PrintBoldNotice</a>(<span class="keyword">const</span> std::string&amp; notice, <span class="keywordtype">int</span> msgw, <span class="keyword">const</span> boost::mpi::communicator&amp; world)</div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;    {</div>
-<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        <span class="keywordflow">if</span>(world.rank() == 0)</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;            std::cout &lt;&lt; std::setw(msgw + 8) &lt;&lt; std::left &lt;&lt; <span class="stringliteral">&quot;\033[1m&quot;</span> + notice + <span class="stringliteral">&quot;\033[0m&quot;</span>;</div>
-<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    }</div>
-<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;</div>
-<div class="line"><a name="l00093"></a><span class="lineno"><a class="line" href="namespaceSSAGES.html#ae241165f0e8ecb95ab93736d58610254">   93</a></span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">int</span> <a class="code" href="namespaceSSAGES.html#ae241165f0e8ecb95ab93736d58610254">DumpErrorsToConsole</a>(<span class="keyword">const</span> std::vector&lt;std::string&gt;&amp; msgs, <span class="keywordtype">int</span> notw)</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    {</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;        std::cout &lt;&lt; std::setw(notw) &lt;&lt; std::right &lt;&lt; <span class="stringliteral">&quot;\033[1;31mError(s)! See below.\033[0m\n&quot;</span>;</div>
-<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; msg : msgs)</div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;                std::cout &lt;&lt; <span class="stringliteral">&quot; * &quot;</span> &lt;&lt; msg &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;        <span class="keywordflow">return</span> -1;</div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    }</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;</div>
-<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;</div>
-<div class="line"><a name="l00108"></a><span class="lineno"><a class="line" href="namespaceSSAGES.html#ae4c118fc13c0a8dbf90cb1998960f99a">  108</a></span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="namespaceSSAGES.html#ae4c118fc13c0a8dbf90cb1998960f99a">DumpNoticesToConsole</a>(<span class="keyword">const</span> std::vector&lt;std::string&gt;&amp; msgs, std::string prefix, <span class="keywordtype">int</span> notw, <span class="keyword">const</span> boost::mpi::communicator&amp; world)</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;<span class="preprocessor">#pragma once </span></div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;<span class="preprocessor">#include &lt;exception&gt;</span></div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;<span class="preprocessor">#include &lt;stdexcept&gt;</span></div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;<span class="preprocessor">#include &lt;sstream&gt;</span></div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="preprocessor">#include &lt;iomanip&gt;</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;<span class="keyword">namespace </span>SSAGES</div>
+<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;{</div>
+<div class="line"><a name="l00038"></a><span class="lineno"><a class="line" href="classSSAGES_1_1BuildException.html">   38</a></span>&#160;    <span class="keyword">class </span><a class="code" href="classSSAGES_1_1BuildException.html">BuildException</a> : <span class="keyword">public</span> std::runtime_error</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    {</div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00041"></a><span class="lineno"><a class="line" href="classSSAGES_1_1BuildException.html#a70e41d120fdf719a3fb28ae93ad99bda">   41</a></span>&#160;        std::vector&lt;std::string&gt; <a class="code" href="classSSAGES_1_1BuildException.html#a70e41d120fdf719a3fb28ae93ad99bda">errors_</a>; </div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;</div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="classSSAGES_1_1BuildException.html#ae056ca005ebeb794d5739075b815c573">   47</a></span>&#160;        <a class="code" href="classSSAGES_1_1BuildException.html#ae056ca005ebeb794d5739075b815c573">BuildException</a>(std::vector&lt;std::string&gt; errors) : </div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;            std::runtime_error(<span class="stringliteral">&quot;Object build error&quot;</span>), <a class="code" href="classSSAGES_1_1BuildException.html#a70e41d120fdf719a3fb28ae93ad99bda">errors_</a>(errors)</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        {</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;        }</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div>
+<div class="line"><a name="l00056"></a><span class="lineno"><a class="line" href="classSSAGES_1_1BuildException.html#a7a7d4b8a6e109a01c1489d7a591559b9">   56</a></span>&#160;        <span class="keyword">virtual</span> <span class="keyword">const</span> <span class="keywordtype">char</span>* <a class="code" href="classSSAGES_1_1BuildException.html#a7a7d4b8a6e109a01c1489d7a591559b9">what</a>() <span class="keyword">const</span> throw()</div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        {</div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;            std::ostringstream msg(<span class="stringliteral">&quot;&quot;</span>); </div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;</div>
+<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;            msg &lt;&lt; runtime_error::what() &lt;&lt; <span class="stringliteral">&quot;: &quot;</span></div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;                &lt;&lt; <span class="stringliteral">&quot;See errors for details.&quot;</span>;</div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;            <span class="keywordflow">return</span> msg.str().c_str();</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        }</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;</div>
+<div class="line"><a name="l00070"></a><span class="lineno"><a class="line" href="classSSAGES_1_1BuildException.html#a51e329a9d93ecffb5ba284e0eb4cdc26">   70</a></span>&#160;        std::vector&lt;std::string&gt; <a class="code" href="classSSAGES_1_1BuildException.html#a51e329a9d93ecffb5ba284e0eb4cdc26">GetErrors</a>()</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;        {</div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="classSSAGES_1_1BuildException.html#a70e41d120fdf719a3fb28ae93ad99bda">errors_</a>;</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        }</div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    };</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div>
+<div class="line"><a name="l00081"></a><span class="lineno"><a class="line" href="namespaceSSAGES.html#ab854bc902965969c3aabab167e78446f">   81</a></span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="namespaceSSAGES.html#ab854bc902965969c3aabab167e78446f">PrintBoldNotice</a>(<span class="keyword">const</span> std::string&amp; notice, <span class="keywordtype">int</span> msgw)</div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    {</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        std::cout &lt;&lt; std::setw(msgw + 8) &lt;&lt; std::left &lt;&lt; <span class="stringliteral">&quot;\033[1m&quot;</span> + notice + <span class="stringliteral">&quot;\033[0m&quot;</span>;</div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    }</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;</div>
+<div class="line"><a name="l00094"></a><span class="lineno"><a class="line" href="namespaceSSAGES.html#ae241165f0e8ecb95ab93736d58610254">   94</a></span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">int</span> <a class="code" href="namespaceSSAGES.html#ae241165f0e8ecb95ab93736d58610254">DumpErrorsToConsole</a>(<span class="keyword">const</span> std::vector&lt;std::string&gt;&amp; msgs, <span class="keywordtype">int</span> notw)</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;    {</div>
+<div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;        std::cout &lt;&lt; std::setw(notw) &lt;&lt; std::right &lt;&lt; <span class="stringliteral">&quot;\033[1;31mError(s)! See below.\033[0m\n&quot;</span>;</div>
+<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;        <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; msg : msgs)</div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;                std::cout &lt;&lt; <span class="stringliteral">&quot; * &quot;</span> &lt;&lt; msg &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;        <span class="keywordflow">return</span> -1;</div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    }</div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;</div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;</div>
+<div class="line"><a name="l00108"></a><span class="lineno"><a class="line" href="namespaceSSAGES.html#ac9bc1affc1bcf9c2ec43710a01b9d778">  108</a></span>&#160;    <span class="keyword">inline</span> <span class="keywordtype">void</span> <a class="code" href="namespaceSSAGES.html#ac9bc1affc1bcf9c2ec43710a01b9d778">DumpNoticesToConsole</a>(<span class="keyword">const</span> std::vector&lt;std::string&gt;&amp; msgs, std::string prefix, <span class="keywordtype">int</span> notw)</div>
 <div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    {</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;        <span class="keywordflow">if</span>(world.rank() == 0)</div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;        {</div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;            std::cout &lt;&lt; std::setw(notw) &lt;&lt; std::right &lt;&lt; <span class="stringliteral">&quot;\033[32mOK!\033[0m\n&quot;</span>;</div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;            <span class="keywordflow">if</span>(msgs.size() == 0)</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;                <span class="keywordflow">return</span>;</div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;            </div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;            <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; msg : msgs)</div>
-<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;                std::cout &lt;&lt; prefix &lt;&lt; <span class="stringliteral">&quot; * &quot;</span> &lt;&lt; msg &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
-<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;        }</div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;    }</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;}</div>
-<div class="ttc" id="classSSAGES_1_1BuildException_html_a70e41d120fdf719a3fb28ae93ad99bda"><div class="ttname"><a href="classSSAGES_1_1BuildException.html#a70e41d120fdf719a3fb28ae93ad99bda">SSAGES::BuildException::errors_</a></div><div class="ttdeci">std::vector&lt; std::string &gt; errors_</div><div class="ttdoc">Error message. </div><div class="ttdef"><b>Definition:</b> <a href="DriverException_8h_source.html#l00037">DriverException.h:37</a></div></div>
-<div class="ttc" id="classSSAGES_1_1BuildException_html_ae056ca005ebeb794d5739075b815c573"><div class="ttname"><a href="classSSAGES_1_1BuildException.html#ae056ca005ebeb794d5739075b815c573">SSAGES::BuildException::BuildException</a></div><div class="ttdeci">BuildException(std::vector&lt; std::string &gt; errors)</div><div class="ttdoc">Constructor. </div><div class="ttdef"><b>Definition:</b> <a href="DriverException_8h_source.html#l00043">DriverException.h:43</a></div></div>
-<div class="ttc" id="classSSAGES_1_1BuildException_html"><div class="ttname"><a href="classSSAGES_1_1BuildException.html">SSAGES::BuildException</a></div><div class="ttdoc">Exception to be thrown when building the Driver fails. </div><div class="ttdef"><b>Definition:</b> <a href="DriverException_8h_source.html#l00034">DriverException.h:34</a></div></div>
-<div class="ttc" id="classSSAGES_1_1BuildException_html_a51e329a9d93ecffb5ba284e0eb4cdc26"><div class="ttname"><a href="classSSAGES_1_1BuildException.html#a51e329a9d93ecffb5ba284e0eb4cdc26">SSAGES::BuildException::GetErrors</a></div><div class="ttdeci">std::vector&lt; std::string &gt; GetErrors()</div><div class="ttdoc">Get specific error message. </div><div class="ttdef"><b>Definition:</b> <a href="DriverException_8h_source.html#l00066">DriverException.h:66</a></div></div>
-<div class="ttc" id="namespaceSSAGES_html_ae241165f0e8ecb95ab93736d58610254"><div class="ttname"><a href="namespaceSSAGES.html#ae241165f0e8ecb95ab93736d58610254">SSAGES::DumpErrorsToConsole</a></div><div class="ttdeci">int DumpErrorsToConsole(const std::vector&lt; std::string &gt; &amp;msgs, int notw)</div><div class="ttdoc">Print a list of errors. </div><div class="ttdef"><b>Definition:</b> <a href="DriverException_8h_source.html#l00093">DriverException.h:93</a></div></div>
-<div class="ttc" id="namespaceSSAGES_html_ac01f6af49fd74678e2599d8813cb7771"><div class="ttname"><a href="namespaceSSAGES.html#ac01f6af49fd74678e2599d8813cb7771">SSAGES::PrintBoldNotice</a></div><div class="ttdeci">void PrintBoldNotice(const std::string &amp;notice, int msgw, const boost::mpi::communicator &amp;world)</div><div class="ttdoc">Print out Notice in bold text. </div><div class="ttdef"><b>Definition:</b> <a href="DriverException_8h_source.html#l00078">DriverException.h:78</a></div></div>
-<div class="ttc" id="classSSAGES_1_1BuildException_html_a7a7d4b8a6e109a01c1489d7a591559b9"><div class="ttname"><a href="classSSAGES_1_1BuildException.html#a7a7d4b8a6e109a01c1489d7a591559b9">SSAGES::BuildException::what</a></div><div class="ttdeci">virtual const char * what() const </div><div class="ttdoc">Get generic error message. </div><div class="ttdef"><b>Definition:</b> <a href="DriverException_8h_source.html#l00052">DriverException.h:52</a></div></div>
-<div class="ttc" id="namespaceSSAGES_html_ae4c118fc13c0a8dbf90cb1998960f99a"><div class="ttname"><a href="namespaceSSAGES.html#ae4c118fc13c0a8dbf90cb1998960f99a">SSAGES::DumpNoticesToConsole</a></div><div class="ttdeci">void DumpNoticesToConsole(const std::vector&lt; std::string &gt; &amp;msgs, std::string prefix, int notw, const boost::mpi::communicator &amp;world)</div><div class="ttdoc">Print a list of notices. </div><div class="ttdef"><b>Definition:</b> <a href="DriverException_8h_source.html#l00108">DriverException.h:108</a></div></div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;        std::cout &lt;&lt; std::setw(notw) &lt;&lt; std::right &lt;&lt; <span class="stringliteral">&quot;\033[32mOK!\033[0m\n&quot;</span>;</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;        <span class="keywordflow">if</span>(msgs.size() == 0)</div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;            <span class="keywordflow">return</span>;</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;        </div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;        <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; msg : msgs)</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;            std::cout &lt;&lt; prefix &lt;&lt; <span class="stringliteral">&quot; * &quot;</span> &lt;&lt; msg &lt;&lt; <span class="stringliteral">&quot;\n&quot;</span>;</div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    }</div>
+<div class="line"><a name="l00117"></a><span class="lineno">  117</span>&#160;}</div>
+<div class="ttc" id="classSSAGES_1_1BuildException_html_a70e41d120fdf719a3fb28ae93ad99bda"><div class="ttname"><a href="classSSAGES_1_1BuildException.html#a70e41d120fdf719a3fb28ae93ad99bda">SSAGES::BuildException::errors_</a></div><div class="ttdeci">std::vector&lt; std::string &gt; errors_</div><div class="ttdoc">Error message. </div><div class="ttdef"><b>Definition:</b> <a href="DriverException_8h_source.html#l00041">DriverException.h:41</a></div></div>
+<div class="ttc" id="classSSAGES_1_1BuildException_html_ae056ca005ebeb794d5739075b815c573"><div class="ttname"><a href="classSSAGES_1_1BuildException.html#ae056ca005ebeb794d5739075b815c573">SSAGES::BuildException::BuildException</a></div><div class="ttdeci">BuildException(std::vector&lt; std::string &gt; errors)</div><div class="ttdoc">Constructor. </div><div class="ttdef"><b>Definition:</b> <a href="DriverException_8h_source.html#l00047">DriverException.h:47</a></div></div>
+<div class="ttc" id="classSSAGES_1_1BuildException_html"><div class="ttname"><a href="classSSAGES_1_1BuildException.html">SSAGES::BuildException</a></div><div class="ttdoc">Exception to be thrown when building the Driver fails. </div><div class="ttdef"><b>Definition:</b> <a href="DriverException_8h_source.html#l00038">DriverException.h:38</a></div></div>
+<div class="ttc" id="classSSAGES_1_1BuildException_html_a51e329a9d93ecffb5ba284e0eb4cdc26"><div class="ttname"><a href="classSSAGES_1_1BuildException.html#a51e329a9d93ecffb5ba284e0eb4cdc26">SSAGES::BuildException::GetErrors</a></div><div class="ttdeci">std::vector&lt; std::string &gt; GetErrors()</div><div class="ttdoc">Get specific error message. </div><div class="ttdef"><b>Definition:</b> <a href="DriverException_8h_source.html#l00070">DriverException.h:70</a></div></div>
+<div class="ttc" id="namespaceSSAGES_html_ae241165f0e8ecb95ab93736d58610254"><div class="ttname"><a href="namespaceSSAGES.html#ae241165f0e8ecb95ab93736d58610254">SSAGES::DumpErrorsToConsole</a></div><div class="ttdeci">int DumpErrorsToConsole(const std::vector&lt; std::string &gt; &amp;msgs, int notw)</div><div class="ttdoc">Print a list of errors. </div><div class="ttdef"><b>Definition:</b> <a href="DriverException_8h_source.html#l00094">DriverException.h:94</a></div></div>
+<div class="ttc" id="namespaceSSAGES_html_ac9bc1affc1bcf9c2ec43710a01b9d778"><div class="ttname"><a href="namespaceSSAGES.html#ac9bc1affc1bcf9c2ec43710a01b9d778">SSAGES::DumpNoticesToConsole</a></div><div class="ttdeci">void DumpNoticesToConsole(const std::vector&lt; std::string &gt; &amp;msgs, std::string prefix, int notw)</div><div class="ttdoc">Print a list of notices. </div><div class="ttdef"><b>Definition:</b> <a href="DriverException_8h_source.html#l00108">DriverException.h:108</a></div></div>
+<div class="ttc" id="namespaceSSAGES_html_ab854bc902965969c3aabab167e78446f"><div class="ttname"><a href="namespaceSSAGES.html#ab854bc902965969c3aabab167e78446f">SSAGES::PrintBoldNotice</a></div><div class="ttdeci">void PrintBoldNotice(const std::string &amp;notice, int msgw)</div><div class="ttdoc">Print out Notice in bold text. </div><div class="ttdef"><b>Definition:</b> <a href="DriverException_8h_source.html#l00081">DriverException.h:81</a></div></div>
+<div class="ttc" id="classSSAGES_1_1BuildException_html_a7a7d4b8a6e109a01c1489d7a591559b9"><div class="ttname"><a href="classSSAGES_1_1BuildException.html#a7a7d4b8a6e109a01c1489d7a591559b9">SSAGES::BuildException::what</a></div><div class="ttdeci">virtual const char * what() const </div><div class="ttdoc">Get generic error message. </div><div class="ttdef"><b>Definition:</b> <a href="DriverException_8h_source.html#l00056">DriverException.h:56</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Fri Jun 23 2017 15:44:19 for SSAGES by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Fri Jul 14 2017 15:33:30 for SSAGES by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>
