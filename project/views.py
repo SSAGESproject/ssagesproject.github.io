@@ -40,6 +40,11 @@ def validation():
 def tutorials():
     return render_template("tutorials.html")
 
+@app.route('/SSAGES-site/docs.html')
+@app.route('/docs.html')
+def docs():
+	return render_template("docs.html")
+
 @app.route('/favicon.ico')
 def favicon():
     return send_from_directory(os.path.join(app.root_path, 'static'),'favicon.ico')
