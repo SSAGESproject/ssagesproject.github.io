@@ -2,7 +2,7 @@ var searchData=
 [
   ['m_5f',['m_',['../classSSAGES_1_1RationalSwitchPK.html#aa0d75f0c888b9fd915afc80332048c0d',1,'SSAGES::RationalSwitchPK']]],
   ['map',['Map',['../structSSAGES_1_1Map.html',1,'SSAGES']]],
-  ['map',['map',['../structSSAGES_1_1Map.html#afe83ef07abce6e3768164eed0b13808c',1,'SSAGES::Map::map()'],['../structSSAGES_1_1Map.html#a53de4c278f5b5543f3a2fa0571e45218',1,'SSAGES::Map::Map(const std::vector&lt; int &gt; &amp;map, double value)']]],
+  ['map',['Map',['../structSSAGES_1_1Map.html#a53de4c278f5b5543f3a2fa0571e45218',1,'SSAGES::Map::Map(const std::vector&lt; int &gt; &amp;map, double value)'],['../structSSAGES_1_1Map.html#afe83ef07abce6e3768164eed0b13808c',1,'SSAGES::Map::map()']]],
   ['mapto1d',['mapTo1d',['../classSSAGES_1_1Grid.html#ad60e455c3d5a58b3aa1581215988a03b',1,'SSAGES::Grid::mapTo1d()'],['../classSSAGES_1_1GridBase.html#a1f7bae14a777239968ae9445d19af823',1,'SSAGES::GridBase::mapTo1d()'],['../classSSAGES_1_1Histogram.html#a4d425497ce8b101cfc675d9e30f8b29e',1,'SSAGES::Histogram::mapTo1d()']]],
   ['mass_5f',['mass_',['../classSSAGES_1_1ABF.html#ac4ad4bbc8a1796f32a93987c5879a695',1,'SSAGES::ABF']]],
   ['masses_5f',['masses_',['../classSSAGES_1_1Snapshot.html#a02d6d1d1a25a651f34ec2679c1690f90',1,'SSAGES::Snapshot']]],

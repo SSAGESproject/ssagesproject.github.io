@@ -199,6 +199,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:abe96484a8fc2454042f72ff7d941f224 inherit pub_methods_classSSAGES_1_1GridBase"><td class="memItemLeft" align="right" valign="top">std::vector&lt; int &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSSAGES_1_1GridBase.html#abe96484a8fc2454042f72ff7d941f224">GetIndices</a> (const std::vector&lt; double &gt; &amp;x) const </td></tr>
 <tr class="memdesc:abe96484a8fc2454042f72ff7d941f224 inherit pub_methods_classSSAGES_1_1GridBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the <a class="el" href="classSSAGES_1_1Grid.html" title="Basic Grid. ">Grid</a> indices for a given point.  <a href="#abe96484a8fc2454042f72ff7d941f224">More...</a><br /></td></tr>
 <tr class="separator:abe96484a8fc2454042f72ff7d941f224 inherit pub_methods_classSSAGES_1_1GridBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa517604d41423a32f87045abd6506c06 inherit pub_methods_classSSAGES_1_1GridBase"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSSAGES_1_1GridBase.html#aa517604d41423a32f87045abd6506c06">GetInterpolated</a> (const std::vector&lt; double &gt; &amp;x)</td></tr>
+<tr class="memdesc:aa517604d41423a32f87045abd6506c06 inherit pub_methods_classSSAGES_1_1GridBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return linear interpolation on a coordinate.  <a href="#aa517604d41423a32f87045abd6506c06">More...</a><br /></td></tr>
+<tr class="separator:aa517604d41423a32f87045abd6506c06 inherit pub_methods_classSSAGES_1_1GridBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a672860b92f798eb2534e43dffdb43e98 inherit pub_methods_classSSAGES_1_1GridBase"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSSAGES_1_1GridBase.html#a672860b92f798eb2534e43dffdb43e98">GetIndex</a> (double x) const </td></tr>
 <tr class="memdesc:a672860b92f798eb2534e43dffdb43e98 inherit pub_methods_classSSAGES_1_1GridBase"><td class="mdescLeft">&#160;</td><td class="mdescRight">Return the <a class="el" href="classSSAGES_1_1Grid.html" title="Basic Grid. ">Grid</a> index for a one-dimensional grid.  <a href="#a672860b92f798eb2534e43dffdb43e98">More...</a><br /></td></tr>
 <tr class="separator:a672860b92f798eb2534e43dffdb43e98 inherit pub_methods_classSSAGES_1_1GridBase"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -409,7 +412,7 @@ template&lt;typename T&gt; </div>
 <div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;</div>
 <div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;        GridBase&lt;T&gt;::data_.resize(data_size);</div>
 <div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;    }</div>
-<div class="ttc" id="classSSAGES_1_1GridBase_html_a778394582f45e7b7210e3b6a8aec3ed9"><div class="ttname"><a href="classSSAGES_1_1GridBase.html#a778394582f45e7b7210e3b6a8aec3ed9">SSAGES::GridBase::GetNumPoints</a></div><div class="ttdeci">const std::vector&lt; int &gt; &amp; GetNumPoints() const </div><div class="ttdoc">Get the number of points for all dimensions. </div><div class="ttdef"><b>Definition:</b> <a href="GridBase_8h_source.html#l00137">GridBase.h:137</a></div></div>
+<div class="ttc" id="classSSAGES_1_1GridBase_html_a778394582f45e7b7210e3b6a8aec3ed9"><div class="ttname"><a href="classSSAGES_1_1GridBase.html#a778394582f45e7b7210e3b6a8aec3ed9">SSAGES::GridBase::GetNumPoints</a></div><div class="ttdeci">const std::vector&lt; int &gt; &amp; GetNumPoints() const </div><div class="ttdoc">Get the number of points for all dimensions. </div><div class="ttdef"><b>Definition:</b> <a href="GridBase_8h_source.html#l00138">GridBase.h:138</a></div></div>
 </div><!-- fragment -->
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -718,7 +721,7 @@ template&lt;typename T&gt; </div>
 <div class="line"><a name="l00545"></a><span class="lineno">  545</span>&#160;        <span class="keywordflow">return</span> ++it;</div>
 <div class="line"><a name="l00546"></a><span class="lineno">  546</span>&#160;    }</div>
 <div class="ttc" id="classSSAGES_1_1Grid_html_a7c8ea83ff2ad6a18ea2eee5f0d8b2e49"><div class="ttname"><a href="classSSAGES_1_1Grid.html#a7c8ea83ff2ad6a18ea2eee5f0d8b2e49">SSAGES::Grid::iterator</a></div><div class="ttdeci">GridIterator&lt; T &gt; iterator</div><div class="ttdoc">Custom iterator over a grid. </div><div class="ttdef"><b>Definition:</b> <a href="Grid_8h_source.html#l00512">Grid.h:512</a></div></div>
-<div class="ttc" id="classSSAGES_1_1GridBase_html_a778394582f45e7b7210e3b6a8aec3ed9"><div class="ttname"><a href="classSSAGES_1_1GridBase.html#a778394582f45e7b7210e3b6a8aec3ed9">SSAGES::GridBase::GetNumPoints</a></div><div class="ttdeci">const std::vector&lt; int &gt; &amp; GetNumPoints() const </div><div class="ttdoc">Get the number of points for all dimensions. </div><div class="ttdef"><b>Definition:</b> <a href="GridBase_8h_source.html#l00137">GridBase.h:137</a></div></div>
+<div class="ttc" id="classSSAGES_1_1GridBase_html_a778394582f45e7b7210e3b6a8aec3ed9"><div class="ttname"><a href="classSSAGES_1_1GridBase.html#a778394582f45e7b7210e3b6a8aec3ed9">SSAGES::GridBase::GetNumPoints</a></div><div class="ttdeci">const std::vector&lt; int &gt; &amp; GetNumPoints() const </div><div class="ttdoc">Get the number of points for all dimensions. </div><div class="ttdef"><b>Definition:</b> <a href="GridBase_8h_source.html#l00138">GridBase.h:138</a></div></div>
 </div><!-- fragment -->
 <p><div class="dynheader">
 Here is the caller graph for this function:</div>
@@ -769,7 +772,7 @@ template&lt;typename T&gt; </div>
 <div class="line"><a name="l00576"></a><span class="lineno">  576</span>&#160;        <span class="keywordflow">return</span> ++it;</div>
 <div class="line"><a name="l00577"></a><span class="lineno">  577</span>&#160;    }</div>
 <div class="ttc" id="classSSAGES_1_1Grid_html_a7c8ea83ff2ad6a18ea2eee5f0d8b2e49"><div class="ttname"><a href="classSSAGES_1_1Grid.html#a7c8ea83ff2ad6a18ea2eee5f0d8b2e49">SSAGES::Grid::iterator</a></div><div class="ttdeci">GridIterator&lt; T &gt; iterator</div><div class="ttdoc">Custom iterator over a grid. </div><div class="ttdef"><b>Definition:</b> <a href="Grid_8h_source.html#l00512">Grid.h:512</a></div></div>
-<div class="ttc" id="classSSAGES_1_1GridBase_html_a778394582f45e7b7210e3b6a8aec3ed9"><div class="ttname"><a href="classSSAGES_1_1GridBase.html#a778394582f45e7b7210e3b6a8aec3ed9">SSAGES::GridBase::GetNumPoints</a></div><div class="ttdeci">const std::vector&lt; int &gt; &amp; GetNumPoints() const </div><div class="ttdoc">Get the number of points for all dimensions. </div><div class="ttdef"><b>Definition:</b> <a href="GridBase_8h_source.html#l00137">GridBase.h:137</a></div></div>
+<div class="ttc" id="classSSAGES_1_1GridBase_html_a778394582f45e7b7210e3b6a8aec3ed9"><div class="ttname"><a href="classSSAGES_1_1GridBase.html#a778394582f45e7b7210e3b6a8aec3ed9">SSAGES::GridBase::GetNumPoints</a></div><div class="ttdeci">const std::vector&lt; int &gt; &amp; GetNumPoints() const </div><div class="ttdoc">Get the number of points for all dimensions. </div><div class="ttdef"><b>Definition:</b> <a href="GridBase_8h_source.html#l00138">GridBase.h:138</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -978,7 +981,7 @@ template&lt;typename T&gt; </div>
 <div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;        }</div>
 <div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        <span class="keywordflow">return</span> idx;</div>
 <div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    }</div>
-<div class="ttc" id="classSSAGES_1_1GridBase_html_a778394582f45e7b7210e3b6a8aec3ed9"><div class="ttname"><a href="classSSAGES_1_1GridBase.html#a778394582f45e7b7210e3b6a8aec3ed9">SSAGES::GridBase::GetNumPoints</a></div><div class="ttdeci">const std::vector&lt; int &gt; &amp; GetNumPoints() const </div><div class="ttdoc">Get the number of points for all dimensions. </div><div class="ttdef"><b>Definition:</b> <a href="GridBase_8h_source.html#l00137">GridBase.h:137</a></div></div>
+<div class="ttc" id="classSSAGES_1_1GridBase_html_a778394582f45e7b7210e3b6a8aec3ed9"><div class="ttname"><a href="classSSAGES_1_1GridBase.html#a778394582f45e7b7210e3b6a8aec3ed9">SSAGES::GridBase::GetNumPoints</a></div><div class="ttdeci">const std::vector&lt; int &gt; &amp; GetNumPoints() const </div><div class="ttdoc">Get the number of points for all dimensions. </div><div class="ttdef"><b>Definition:</b> <a href="GridBase_8h_source.html#l00138">GridBase.h:138</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -1060,7 +1063,7 @@ template&lt;typename T&gt; </div>
 </div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Aug 1 2017 13:08:23 for SSAGES by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Aug 30 2017 13:03:39 for SSAGES by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

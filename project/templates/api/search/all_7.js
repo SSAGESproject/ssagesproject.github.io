@@ -28,6 +28,7 @@ var searchData=
   ['getimageflags',['GetImageFlags',['../classSSAGES_1_1Snapshot.html#aee700ad3c3b9c466ad3f52b8d2ede6d6',1,'SSAGES::Snapshot::GetImageFlags() const '],['../classSSAGES_1_1Snapshot.html#a240d2785a048131daca28554641802d1',1,'SSAGES::Snapshot::GetImageFlags()']]],
   ['getindex',['GetIndex',['../classSSAGES_1_1GridBase.html#a672860b92f798eb2534e43dffdb43e98',1,'SSAGES::GridBase']]],
   ['getindices',['GetIndices',['../classSSAGES_1_1GridBase.html#abe96484a8fc2454042f72ff7d941f224',1,'SSAGES::GridBase']]],
+  ['getinterpolated',['GetInterpolated',['../classSSAGES_1_1GridBase.html#aa517604d41423a32f87045abd6506c06',1,'SSAGES::GridBase']]],
   ['getiteration',['GetIteration',['../classSSAGES_1_1Snapshot.html#acaee0172694743e118273a055ff2c3fc',1,'SSAGES::Snapshot']]],
   ['getkb',['GetKb',['../classSSAGES_1_1Snapshot.html#a078eb0a99f2c66eccdb2c16c771533e9',1,'SSAGES::Snapshot']]],
   ['getlocalindex',['GetLocalIndex',['../classSSAGES_1_1Snapshot.html#a3ecf272dca61538320a4d503303fa9ba',1,'SSAGES::Snapshot']]],
@@ -56,8 +57,8 @@ var searchData=
   ['getwalkerid',['GetWalkerID',['../classSSAGES_1_1Snapshot.html#aacd28c6ce70534440930b7029167b3ae',1,'SSAGES::Snapshot']]],
   ['ginv_5f',['ginv_',['../classSSAGES_1_1COPSSImage.html#a625717ab8ff65d0c10af19bfe845aaee',1,'SSAGES::COPSSImage']]],
   ['grad_5f',['grad_',['../classSSAGES_1_1CollectiveVariable.html#a390202f6e541da879f1cfcde22c49489',1,'SSAGES::CollectiveVariable']]],
-  ['grid',['Grid',['../classSSAGES_1_1Grid.html',1,'SSAGES']]],
   ['grid',['Grid',['../classSSAGES_1_1Grid.html#ab055ac24af224ae06fd812ae795e1157',1,'SSAGES::Grid']]],
+  ['grid',['Grid',['../classSSAGES_1_1Grid.html',1,'SSAGES']]],
   ['grid_3c_20double_20_3e',['Grid&lt; double &gt;',['../classSSAGES_1_1Grid.html',1,'SSAGES']]],
   ['grid_3c_20int_20_3e',['Grid&lt; int &gt;',['../classSSAGES_1_1Grid.html',1,'SSAGES']]],
   ['grid_3c_20vector_20_3e',['Grid&lt; Vector &gt;',['../classSSAGES_1_1Grid.html',1,'SSAGES']]],
@@ -67,10 +68,10 @@ var searchData=
   ['gridbase_3c_20double_20_3e',['GridBase&lt; double &gt;',['../classSSAGES_1_1GridBase.html',1,'SSAGES']]],
   ['gridbase_3c_20int_20_3e',['GridBase&lt; int &gt;',['../classSSAGES_1_1GridBase.html',1,'SSAGES']]],
   ['gridbase_3c_20vector_20_3e',['GridBase&lt; Vector &gt;',['../classSSAGES_1_1GridBase.html',1,'SSAGES']]],
-  ['griditerator',['GridIterator',['../classSSAGES_1_1Grid_1_1GridIterator.html',1,'SSAGES::Grid']]],
   ['griditerator',['GridIterator',['../classSSAGES_1_1Grid_1_1GridIterator.html#a14943c309ccf3848e3676d48b19de324',1,'SSAGES::Grid::GridIterator::GridIterator()=default'],['../classSSAGES_1_1Grid_1_1GridIterator.html#ad33e60715335031665f3db28c8e9fc92',1,'SSAGES::Grid::GridIterator::GridIterator(const std::vector&lt; int &gt; &amp;indices, Grid&lt; T &gt; *grid)'],['../classSSAGES_1_1Grid_1_1GridIterator.html#a0d98cbda0b7a47fcbcc82b5742999fd7',1,'SSAGES::Grid::GridIterator::GridIterator(const std::vector&lt; int &gt; &amp;indices, const Grid&lt; T &gt; *grid)'],['../classSSAGES_1_1Grid_1_1GridIterator.html#a2c94ac34e1faeeffa1a48f43f63657e0',1,'SSAGES::Grid::GridIterator::GridIterator(const GridIterator &amp;other)']]],
+  ['griditerator',['GridIterator',['../classSSAGES_1_1Grid_1_1GridIterator.html',1,'SSAGES::Grid']]],
   ['group1_5f',['group1_',['../classSSAGES_1_1PairwiseCV.html#a0cd20f16a2efe8f80350e8e822c1300b',1,'SSAGES::PairwiseCV::group1_()'],['../classSSAGES_1_1ParticleSeparationCV.html#a8707456bef8e851e8328813e48d7b8b6',1,'SSAGES::ParticleSeparationCV::group1_()']]],
   ['group2_5f',['group2_',['../classSSAGES_1_1PairwiseCV.html#a490ab92a63322695d8be2a93ef5121d6',1,'SSAGES::PairwiseCV::group2_()'],['../classSSAGES_1_1ParticleSeparationCV.html#a9509b436f0e02e3737c31751541baeb2',1,'SSAGES::ParticleSeparationCV::group2_()']]],
-  ['gyrationtensorcv',['GyrationTensorCV',['../classSSAGES_1_1GyrationTensorCV.html',1,'SSAGES']]],
-  ['gyrationtensorcv',['GyrationTensorCV',['../classSSAGES_1_1GyrationTensorCV.html#a54a008fdec13d9fc23b9adfb41172717',1,'SSAGES::GyrationTensorCV']]]
+  ['gyrationtensorcv',['GyrationTensorCV',['../classSSAGES_1_1GyrationTensorCV.html#a54a008fdec13d9fc23b9adfb41172717',1,'SSAGES::GyrationTensorCV']]],
+  ['gyrationtensorcv',['GyrationTensorCV',['../classSSAGES_1_1GyrationTensorCV.html',1,'SSAGES']]]
 ];
