@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Collective Variables &mdash; SSAGES v0.7.5-alpha-9-ga57d798 documentation</title>
+  <title>Collective Variables &mdash; SSAGES v0.7.5-alpha-18-ga65a265 documentation</title>
   
 
   
@@ -35,7 +35,7 @@
         <link rel="index" title="Index"
               href="genindex.html"/>
         <link rel="search" title="Search" href="search.html"/>
-    <link rel="top" title="SSAGES v0.7.5-alpha-9-ga57d798 documentation" href="index.html"/>
+    <link rel="top" title="SSAGES v0.7.5-alpha-18-ga65a265 documentation" href="index.html"/>
         <link rel="next" title="Advanced Sampling Methods" href="Advanced Sampling Methods.html"/>
         <link rel="prev" title="Engines" href="Engines.html"/> 
 
@@ -158,33 +158,33 @@
 </li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#polymer-rouse-modes">Polymer Rouse Modes</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#particle-separation">Particle Separation</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#id22">Example</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#id23">Description</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id24">Options &amp; Parameters</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id25">Required</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="#torsional-angle">Torsional Angle</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#id26">Example</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id27">Description</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id28">Options &amp; Parameters</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#id29">Required</a></li>
-</ul>
-</li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="#alpha-helix-rmsd">Alpha Helix RMSD</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#id30">Example</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id31">Description</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id32">Options &amp; Parameters</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#id33">Required</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id24">Options &amp; Parameters</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id25">Required</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#optional">Optional</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#anti-beta-rmsd">Anti Beta RMSD</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#polymer-rouse-modes">Polymer Rouse Modes</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id26">Example</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id27">Description</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id28">Options &amp; Parameters</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id29">Required</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#torsional-angle">Torsional Angle</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id30">Example</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id31">Description</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id32">Options &amp; Parameters</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id33">Required</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#alpha-helix-rmsd">Alpha Helix RMSD</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#id34">Example</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#id35">Description</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#id36">Options &amp; Parameters</a><ul>
@@ -194,12 +194,22 @@
 </li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#parallel-beta-rmsd">Parallel Beta RMSD</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#anti-beta-rmsd">Anti Beta RMSD</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#id39">Example</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#id40">Description</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#id41">Options &amp; Parameters</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#id42">Required</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#id43">Optional</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#parallel-beta-rmsd">Parallel Beta RMSD</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id44">Example</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id45">Description</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id46">Options &amp; Parameters</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#id47">Required</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id48">Optional</a></li>
 </ul>
 </li>
 </ul>
@@ -604,10 +614,59 @@ of the distance vector to include in the calculation.</p>
 </div>
 </div>
 </div>
-<div class="section" id="polymer-rouse-modes">
-<h2>Polymer Rouse Modes<a class="headerlink" href="#polymer-rouse-modes" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="particle-separation">
+<h2>Particle Separation<a class="headerlink" href="#particle-separation" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="id22">
 <h3>Example<a class="headerlink" href="#id22" title="Permalink to this headline">¶</a></h3>
+<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="p">{</span>
+    <span class="s2">&quot;type&quot;</span> <span class="o">:</span> <span class="s2">&quot;ParticleSeparation&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;group1&quot;</span> <span class="o">:</span> <span class="p">[</span><span class="mi">1</span><span class="p">],</span>
+    <span class="s2">&quot;group2&quot;</span> <span class="o">:</span> <span class="p">[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">10</span><span class="p">]</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="id23">
+<h3>Description<a class="headerlink" href="#id23" title="Permalink to this headline">¶</a></h3>
+<p>This CV calculates the distance between the centers of mass of two groups of
+atoms.</p>
+</div>
+<div class="section" id="id24">
+<h3>Options &amp; Parameters<a class="headerlink" href="#id24" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id25">
+<h4>Required<a class="headerlink" href="#id25" title="Permalink to this headline">¶</a></h4>
+<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="s2">&quot;type&quot;</span>
+</pre></div>
+</div>
+<p>Property <code class="docutils literal"><span class="pre">type</span></code> must be set to string <code class="docutils literal"><span class="pre">&quot;ParticleSeparation&quot;</span></code>.</p>
+<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="s2">&quot;group1&quot;</span>
+</pre></div>
+</div>
+<p>Property <code class="docutils literal"><span class="pre">group1</span></code> must be an array of integers containing the atom ID(s) which
+make up the first group of atoms. The CV will calculate the distance between
+the center of mass of this group and the group defined by property <code class="docutils literal"><span class="pre">group2</span></code>.</p>
+<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="s2">&quot;group2&quot;</span>
+</pre></div>
+</div>
+<p>Property <code class="docutils literal"><span class="pre">group2</span></code> must be an array of integers containing the atom ID(s) which
+make up the second group of atoms. The CV will calculate the distance between
+the center of mass of this group and the group defined by property <code class="docutils literal"><span class="pre">group1</span></code>.</p>
+</div>
+<div class="section" id="optional">
+<h4>Optional<a class="headerlink" href="#optional" title="Permalink to this headline">¶</a></h4>
+<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="s2">&quot;dimension&quot;</span>
+</pre></div>
+</div>
+<p>Property <code class="docutils literal"><span class="pre">dimension</span></code> is a 3-dimensional array of booleans specifying which
+Cartesian components to include in the calculation. If left unspecified, all
+three xyz components will be used.</p>
+</div>
+</div>
+</div>
+<div class="section" id="polymer-rouse-modes">
+<h2>Polymer Rouse Modes<a class="headerlink" href="#polymer-rouse-modes" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id26">
+<h3>Example<a class="headerlink" href="#id26" title="Permalink to this headline">¶</a></h3>
 <div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="p">{</span>
     <span class="s2">&quot;type&quot;</span><span class="o">:</span> <span class="s2">&quot;RouseMode&quot;</span><span class="p">,</span>
     <span class="s2">&quot;mode&quot;</span><span class="o">:</span> <span class="mi">1</span><span class="p">,</span>
@@ -627,8 +686,8 @@ of the distance vector to include in the calculation.</p>
 </pre></div>
 </div>
 </div>
-<div class="section" id="id23">
-<h3>Description<a class="headerlink" href="#id23" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id27">
+<h3>Description<a class="headerlink" href="#id27" title="Permalink to this headline">¶</a></h3>
 <p>This CV calculates the magnitude of a given Rouse mode for a set of atoms as</p>
 <div class="math">
 \[X_p = \sqrt{\mathbf{X}_p\cdot\mathbf{X}_p},\]</div>
@@ -637,11 +696,11 @@ of the distance vector to include in the calculation.</p>
 \[\mathbf{X}_p = \sqrt{\frac{c_p}{N}}\sum_{i=1}^N \mathbf{R}_i \cos \Bigl[\frac{p\pi}{N}\bigl(i-\frac{1}{2}\bigr) \Bigr],\]</div>
 <p>where :math: <cite>N</cite> is the number of groups or beads comprising the polymer, :math: <cite>mathbf{R}_i</cite> is the center-of-mass of the :math: <cite>i</cite> th bead, and :math: <cite>c_p</cite> is a constant equal to 1 for :math: <cite>p=0</cite> and equal to 2 for :math: <cite>p=1,cdots,N-1</cite>.</p>
 </div>
-<div class="section" id="id24">
-<h3>Options &amp; Parameters<a class="headerlink" href="#id24" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id28">
+<h3>Options &amp; Parameters<a class="headerlink" href="#id28" title="Permalink to this headline">¶</a></h3>
 </div>
-<div class="section" id="id25">
-<h3>Required<a class="headerlink" href="#id25" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id29">
+<h3>Required<a class="headerlink" href="#id29" title="Permalink to this headline">¶</a></h3>
 <div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="s2">&quot;type&quot;</span>
 </pre></div>
 </div>
@@ -658,8 +717,8 @@ of the distance vector to include in the calculation.</p>
 </div>
 <div class="section" id="torsional-angle">
 <h2>Torsional Angle<a class="headerlink" href="#torsional-angle" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="id26">
-<h3>Example<a class="headerlink" href="#id26" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id30">
+<h3>Example<a class="headerlink" href="#id30" title="Permalink to this headline">¶</a></h3>
 <div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="p">{</span>
         <span class="s2">&quot;type&quot;</span> <span class="o">:</span> <span class="s2">&quot;Torsional&quot;</span><span class="p">,</span>
         <span class="s2">&quot;atom_ids&quot;</span> <span class="o">:</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">10</span><span class="p">]</span>
@@ -667,18 +726,18 @@ of the distance vector to include in the calculation.</p>
 </pre></div>
 </div>
 </div>
-<div class="section" id="id27">
-<h3>Description<a class="headerlink" href="#id27" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id31">
+<h3>Description<a class="headerlink" href="#id31" title="Permalink to this headline">¶</a></h3>
 <p>This CV calculates the dihedral angle, in radians, formed by four atoms <span class="math">\(i,j,k,l\)</span>.
 It is computed as,</p>
 <div class="math">
 \[\xi = \tan^{-1}\left( \frac{\left[(r_{lk} \times r_{jk}) \times (r_{ij} \times r_{jk}) \right] \cdot \frac{r_{jk}}{\Vert r_{jk}\Vert}}{(r_{lk} \times r_{jk}) \cdot (r_{ij} \times r_{jk}) } \right).\]</div>
 <p>Specifically, the function <code class="docutils literal"><span class="pre">atan2</span></code> is used for the inverse tangent calculation to yield a four-quadrant angle.</p>
 </div>
-<div class="section" id="id28">
-<h3>Options &amp; Parameters<a class="headerlink" href="#id28" title="Permalink to this headline">¶</a></h3>
-<div class="section" id="id29">
-<h4>Required<a class="headerlink" href="#id29" title="Permalink to this headline">¶</a></h4>
+<div class="section" id="id32">
+<h3>Options &amp; Parameters<a class="headerlink" href="#id32" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id33">
+<h4>Required<a class="headerlink" href="#id33" title="Permalink to this headline">¶</a></h4>
 <div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="s2">&quot;type&quot;</span>
 </pre></div>
 </div>
@@ -693,8 +752,8 @@ form the dihedral.</p>
 </div>
 <div class="section" id="alpha-helix-rmsd">
 <h2>Alpha Helix RMSD<a class="headerlink" href="#alpha-helix-rmsd" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="id30">
-<h3>Example<a class="headerlink" href="#id30" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id34">
+<h3>Example<a class="headerlink" href="#id34" title="Permalink to this headline">¶</a></h3>
 <div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="p">{</span>
     <span class="s2">&quot;type&quot;</span> <span class="o">:</span> <span class="s2">&quot;AlphaRMSD&quot;</span><span class="p">,</span>
     <span class="s2">&quot;residue_ids&quot;</span> <span class="o">:</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">21</span><span class="p">],</span>
@@ -704,8 +763,8 @@ form the dihedral.</p>
 </pre></div>
 </div>
 </div>
-<div class="section" id="id31">
-<h3>Description<a class="headerlink" href="#id31" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id35">
+<h3>Description<a class="headerlink" href="#id35" title="Permalink to this headline">¶</a></h3>
 <p>This CV calculates alpha helix character by comparision to an &#8220;ideal&#8221; alpha
 helix structure composed of 6 amino acids. This is computed by performing a
 summation over all possible sequences of 6 consecutive amino acids in the
@@ -724,10 +783,10 @@ future the user will be able to choose custom parameters for the switching
 function.</p>
 </div>
 </div>
-<div class="section" id="id32">
-<h3>Options &amp; Parameters<a class="headerlink" href="#id32" title="Permalink to this headline">¶</a></h3>
-<div class="section" id="id33">
-<h4>Required<a class="headerlink" href="#id33" title="Permalink to this headline">¶</a></h4>
+<div class="section" id="id36">
+<h3>Options &amp; Parameters<a class="headerlink" href="#id36" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id37">
+<h4>Required<a class="headerlink" href="#id37" title="Permalink to this headline">¶</a></h4>
 <div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="s2">&quot;type&quot;</span>
 </pre></div>
 </div>
@@ -750,8 +809,8 @@ residues in the system must be numbered in increasing order, even if they belong
 to separate chains. For example, if your system has two chains of 20 amino acids
 each, the first amino acid in the second chain should be numbered 21.</p>
 </div>
-<div class="section" id="optional">
-<h4>Optional<a class="headerlink" href="#optional" title="Permalink to this headline">¶</a></h4>
+<div class="section" id="id38">
+<h4>Optional<a class="headerlink" href="#id38" title="Permalink to this headline">¶</a></h4>
 <div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="s2">&quot;unitconv&quot;</span>
 </pre></div>
 </div>
@@ -766,8 +825,8 @@ length is in angstroms, <code class="docutils literal"><span class="pre">unitcon
 </div>
 <div class="section" id="anti-beta-rmsd">
 <h2>Anti Beta RMSD<a class="headerlink" href="#anti-beta-rmsd" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="id34">
-<h3>Example<a class="headerlink" href="#id34" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id39">
+<h3>Example<a class="headerlink" href="#id39" title="Permalink to this headline">¶</a></h3>
 <div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="p">{</span>
     <span class="s2">&quot;type&quot;</span> <span class="o">:</span> <span class="s2">&quot;AntiBetaRMSD&quot;</span><span class="p">,</span>
     <span class="s2">&quot;residue_ids&quot;</span> <span class="o">:</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">21</span><span class="p">],</span>
@@ -778,8 +837,8 @@ length is in angstroms, <code class="docutils literal"><span class="pre">unitcon
 </pre></div>
 </div>
 </div>
-<div class="section" id="id35">
-<h3>Description<a class="headerlink" href="#id35" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id40">
+<h3>Description<a class="headerlink" href="#id40" title="Permalink to this headline">¶</a></h3>
 <p>This CV calculates anti beta-sheet character by comparision to an &#8220;ideal&#8221; anti
 beta-sheet structure composed of 6 amino acids. This is computed by performing a
 summation over all possible sequences of 6 amino acids, consisting of two
@@ -798,10 +857,10 @@ future the user will be able to choose custom parameters for the switching
 function.</p>
 </div>
 </div>
-<div class="section" id="id36">
-<h3>Options &amp; Parameters<a class="headerlink" href="#id36" title="Permalink to this headline">¶</a></h3>
-<div class="section" id="id37">
-<h4>Required<a class="headerlink" href="#id37" title="Permalink to this headline">¶</a></h4>
+<div class="section" id="id41">
+<h3>Options &amp; Parameters<a class="headerlink" href="#id41" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id42">
+<h4>Required<a class="headerlink" href="#id42" title="Permalink to this headline">¶</a></h4>
 <div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="s2">&quot;type&quot;</span>
 </pre></div>
 </div>
@@ -824,8 +883,8 @@ residues in the system must be numbered in increasing order, even if they belong
 to separate chains. For example, if your system has two chains of 20 amino acids
 each, the first amino acid in the second chain should be numbered 21.</p>
 </div>
-<div class="section" id="id38">
-<h4>Optional<a class="headerlink" href="#id38" title="Permalink to this headline">¶</a></h4>
+<div class="section" id="id43">
+<h4>Optional<a class="headerlink" href="#id43" title="Permalink to this headline">¶</a></h4>
 <div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="s2">&quot;unitconv&quot;</span>
 </pre></div>
 </div>
@@ -847,8 +906,8 @@ A value of 1 selects for the intra mode; a value of 2 selects for inter mode.</p
 </div>
 <div class="section" id="parallel-beta-rmsd">
 <h2>Parallel Beta RMSD<a class="headerlink" href="#parallel-beta-rmsd" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="id39">
-<h3>Example<a class="headerlink" href="#id39" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id44">
+<h3>Example<a class="headerlink" href="#id44" title="Permalink to this headline">¶</a></h3>
 <div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="p">{</span>
     <span class="s2">&quot;type&quot;</span> <span class="o">:</span> <span class="s2">&quot;ParallelBetaRMSD&quot;</span><span class="p">,</span>
     <span class="s2">&quot;residue_ids&quot;</span> <span class="o">:</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">21</span><span class="p">],</span>
@@ -859,8 +918,8 @@ A value of 1 selects for the intra mode; a value of 2 selects for inter mode.</p
 </pre></div>
 </div>
 </div>
-<div class="section" id="id40">
-<h3>Description<a class="headerlink" href="#id40" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id45">
+<h3>Description<a class="headerlink" href="#id45" title="Permalink to this headline">¶</a></h3>
 <p>This CV calculates anti beta-sheet character by comparision to an &#8220;ideal&#8221;
 parallel beta-sheet structure composed of 6 amino acids. This is computed by
 performing a summation over all possible sequences of 6 amino acids, consisting
@@ -879,10 +938,10 @@ future the user will be able to choose custom parameters for the switching
 function.</p>
 </div>
 </div>
-<div class="section" id="id41">
-<h3>Options &amp; Parameters<a class="headerlink" href="#id41" title="Permalink to this headline">¶</a></h3>
-<div class="section" id="id42">
-<h4>Required<a class="headerlink" href="#id42" title="Permalink to this headline">¶</a></h4>
+<div class="section" id="id46">
+<h3>Options &amp; Parameters<a class="headerlink" href="#id46" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id47">
+<h4>Required<a class="headerlink" href="#id47" title="Permalink to this headline">¶</a></h4>
 <div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="s2">&quot;type&quot;</span>
 </pre></div>
 </div>
@@ -906,8 +965,8 @@ belong to separate chains. For example, if your system has two chains of 20
 amino acids each, the first amino acid in the second chain should be numbered
 21.</p>
 </div>
-<div class="section" id="id43">
-<h4>Optional<a class="headerlink" href="#id43" title="Permalink to this headline">¶</a></h4>
+<div class="section" id="id48">
+<h4>Optional<a class="headerlink" href="#id48" title="Permalink to this headline">¶</a></h4>
 <div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="s2">&quot;unitconv&quot;</span>
 </pre></div>
 </div>
@@ -974,7 +1033,7 @@ A value of 1 selects for the intra mode; a value of 2 selects for inter mode.</p
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'./',
-            VERSION:'v0.7.5-alpha-9-ga57d798',
+            VERSION:'v0.7.5-alpha-18-ga65a265',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
             HAS_SOURCE:  true,
