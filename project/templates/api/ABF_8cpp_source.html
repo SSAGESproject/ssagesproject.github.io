@@ -553,58 +553,58 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00485"></a><span class="lineno">  485</span>&#160;        <span class="comment">//{</span></div>
 <div class="line"><a name="l00486"></a><span class="lineno">  486</span>&#160;        </div>
 <div class="line"><a name="l00487"></a><span class="lineno">  487</span>&#160;        <span class="comment">// Appropriately size the grids.</span></div>
-<div class="line"><a name="l00488"></a><span class="lineno">  488</span>&#160;            <span class="keywordflow">for</span>(<span class="keywordtype">size_t</span> i=0; i&lt;dim; ++i) </div>
-<div class="line"><a name="l00489"></a><span class="lineno">  489</span>&#160;        </div>
-<div class="line"><a name="l00490"></a><span class="lineno">  490</span>&#160;            N= <span class="keyword">new</span> <a class="code" href="classSSAGES_1_1Grid.html">Grid&lt;int&gt;</a>(binsCV, minsCV, maxsCV, isperiodic);</div>
-<div class="line"><a name="l00491"></a><span class="lineno">  491</span>&#160;            Nworld= <span class="keyword">new</span> <a class="code" href="classSSAGES_1_1Grid.html">Grid&lt;int&gt;</a>(binsCV, minsCV, maxsCV, isperiodic);</div>
-<div class="line"><a name="l00492"></a><span class="lineno">  492</span>&#160;            </div>
-<div class="line"><a name="l00493"></a><span class="lineno">  493</span>&#160;            <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; grid : F)</div>
-<div class="line"><a name="l00494"></a><span class="lineno">  494</span>&#160;            {</div>
-<div class="line"><a name="l00495"></a><span class="lineno">  495</span>&#160;                grid= <span class="keyword">new</span> <a class="code" href="classSSAGES_1_1Grid.html">Grid&lt;double&gt;</a>(binsCV, minsCV, maxsCV, isperiodic);</div>
-<div class="line"><a name="l00496"></a><span class="lineno">  496</span>&#160;            }</div>
-<div class="line"><a name="l00497"></a><span class="lineno">  497</span>&#160;            <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; grid : Fworld)</div>
-<div class="line"><a name="l00498"></a><span class="lineno">  498</span>&#160;            {</div>
-<div class="line"><a name="l00499"></a><span class="lineno">  499</span>&#160;                grid= <span class="keyword">new</span> <a class="code" href="classSSAGES_1_1Grid.html">Grid&lt;double&gt;</a>(binsCV, minsCV, maxsCV, isperiodic);</div>
-<div class="line"><a name="l00500"></a><span class="lineno">  500</span>&#160;            }</div>
-<div class="line"><a name="l00501"></a><span class="lineno">  501</span>&#160;</div>
-<div class="line"><a name="l00502"></a><span class="lineno">  502</span>&#160;            <span class="keywordflow">for</span>(<span class="keywordtype">size_t</span> i=0; i&lt;dim; ++i)</div>
-<div class="line"><a name="l00503"></a><span class="lineno">  503</span>&#160;            {</div>
-<div class="line"><a name="l00504"></a><span class="lineno">  504</span>&#160;                temp1 = {minsCV[i], maxsCV[i], binsCV[i]};</div>
-<div class="line"><a name="l00505"></a><span class="lineno">  505</span>&#160;                temp2 = {minsrestCV[i], maxsrestCV[i], springkrestCV[i]};</div>
-<div class="line"><a name="l00506"></a><span class="lineno">  506</span>&#160;                histdetails.push_back(temp1);</div>
-<div class="line"><a name="l00507"></a><span class="lineno">  507</span>&#160;                restraint.push_back(temp2);</div>
-<div class="line"><a name="l00508"></a><span class="lineno">  508</span>&#160;                <span class="keywordflow">if</span>(anyperiodic)</div>
-<div class="line"><a name="l00509"></a><span class="lineno">  509</span>&#160;                {</div>
-<div class="line"><a name="l00510"></a><span class="lineno">  510</span>&#160;                    temp3 = {minperboundaryCV[i], maxperboundaryCV[i]};</div>
-<div class="line"><a name="l00511"></a><span class="lineno">  511</span>&#160;                    periodicboundaries.push_back(temp3);</div>
-<div class="line"><a name="l00512"></a><span class="lineno">  512</span>&#160;                }</div>
-<div class="line"><a name="l00513"></a><span class="lineno">  513</span>&#160;            }</div>
-<div class="line"><a name="l00514"></a><span class="lineno">  514</span>&#160;        <span class="comment">//}</span></div>
-<div class="line"><a name="l00515"></a><span class="lineno">  515</span>&#160;</div>
-<div class="line"><a name="l00516"></a><span class="lineno">  516</span>&#160;        <span class="comment">// Check if previously saved grids exist. If so, check that data match and load grids.</span></div>
-<div class="line"><a name="l00517"></a><span class="lineno">  517</span>&#160;        <span class="keywordflow">if</span>(std::ifstream(Nworld_filename) &amp;&amp; std::ifstream(Fworld_filename+std::to_string(0)) &amp;&amp; wid == 0)</div>
-<div class="line"><a name="l00518"></a><span class="lineno">  518</span>&#160;        {</div>
-<div class="line"><a name="l00519"></a><span class="lineno">  519</span>&#160;            std::cout &lt;&lt; <span class="stringliteral">&quot;Attempting to load data from a previous run of ABF.&quot;</span> &lt;&lt; std::endl;</div>
-<div class="line"><a name="l00520"></a><span class="lineno">  520</span>&#160;            N-&gt;<a class="code" href="classSSAGES_1_1Grid.html#a279c1e9005fdf4c6fc23358d51b75b86">LoadFromFile</a>(Nworld_filename);</div>
-<div class="line"><a name="l00521"></a><span class="lineno">  521</span>&#160;            <span class="keywordflow">for</span>(<span class="keywordtype">size_t</span> i=0; i&lt;dim; ++i)</div>
-<div class="line"><a name="l00522"></a><span class="lineno">  522</span>&#160;                <span class="keywordflow">if</span>(std::ifstream(Fworld_filename+std::to_string(i)))</div>
-<div class="line"><a name="l00523"></a><span class="lineno">  523</span>&#160;                    F[i]-&gt;LoadFromFile(Fworld_filename+std::to_string(i));</div>
-<div class="line"><a name="l00524"></a><span class="lineno">  524</span>&#160;                <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00525"></a><span class="lineno">  525</span>&#160;                    <span class="keywordflow">throw</span> <a class="code" href="classSSAGES_1_1BuildException.html">BuildException</a>({<span class="stringliteral">&quot;Some, but not all Fworld outputs were found. Please check that these are appropriate inputs, or clean the working directory of other Fworld and Nworld inputs.&quot;</span>});</div>
-<div class="line"><a name="l00526"></a><span class="lineno">  526</span>&#160;        }</div>
-<div class="line"><a name="l00527"></a><span class="lineno">  527</span>&#160;     </div>
-<div class="line"><a name="l00528"></a><span class="lineno">  528</span>&#160;        </div>
-<div class="line"><a name="l00529"></a><span class="lineno">  529</span>&#160;        <span class="keyword">auto</span>* m = <span class="keyword">new</span> <a class="code" href="classSSAGES_1_1ABF.html">ABF</a>(world, comm, N, Nworld, F, Fworld, restraint, isperiodic, periodicboundaries, min, massweigh, filename, Nworld_filename, Fworld_filename, histdetails, FBackupInterv, unitconv, timestep, freq);</div>
+<div class="line"><a name="l00488"></a><span class="lineno">  488</span>&#160;        </div>
+<div class="line"><a name="l00489"></a><span class="lineno">  489</span>&#160;            N= <span class="keyword">new</span> <a class="code" href="classSSAGES_1_1Grid.html">Grid&lt;int&gt;</a>(binsCV, minsCV, maxsCV, isperiodic);</div>
+<div class="line"><a name="l00490"></a><span class="lineno">  490</span>&#160;            Nworld= <span class="keyword">new</span> <a class="code" href="classSSAGES_1_1Grid.html">Grid&lt;int&gt;</a>(binsCV, minsCV, maxsCV, isperiodic);</div>
+<div class="line"><a name="l00491"></a><span class="lineno">  491</span>&#160;            </div>
+<div class="line"><a name="l00492"></a><span class="lineno">  492</span>&#160;            <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; grid : F)</div>
+<div class="line"><a name="l00493"></a><span class="lineno">  493</span>&#160;            {</div>
+<div class="line"><a name="l00494"></a><span class="lineno">  494</span>&#160;                grid= <span class="keyword">new</span> <a class="code" href="classSSAGES_1_1Grid.html">Grid&lt;double&gt;</a>(binsCV, minsCV, maxsCV, isperiodic);</div>
+<div class="line"><a name="l00495"></a><span class="lineno">  495</span>&#160;            }</div>
+<div class="line"><a name="l00496"></a><span class="lineno">  496</span>&#160;            <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; grid : Fworld)</div>
+<div class="line"><a name="l00497"></a><span class="lineno">  497</span>&#160;            {</div>
+<div class="line"><a name="l00498"></a><span class="lineno">  498</span>&#160;                grid= <span class="keyword">new</span> <a class="code" href="classSSAGES_1_1Grid.html">Grid&lt;double&gt;</a>(binsCV, minsCV, maxsCV, isperiodic);</div>
+<div class="line"><a name="l00499"></a><span class="lineno">  499</span>&#160;            }</div>
+<div class="line"><a name="l00500"></a><span class="lineno">  500</span>&#160;</div>
+<div class="line"><a name="l00501"></a><span class="lineno">  501</span>&#160;            <span class="keywordflow">for</span>(<span class="keywordtype">size_t</span> i=0; i&lt;dim; ++i)</div>
+<div class="line"><a name="l00502"></a><span class="lineno">  502</span>&#160;            {</div>
+<div class="line"><a name="l00503"></a><span class="lineno">  503</span>&#160;                temp1 = {minsCV[i], maxsCV[i], binsCV[i]};</div>
+<div class="line"><a name="l00504"></a><span class="lineno">  504</span>&#160;                temp2 = {minsrestCV[i], maxsrestCV[i], springkrestCV[i]};</div>
+<div class="line"><a name="l00505"></a><span class="lineno">  505</span>&#160;                histdetails.push_back(temp1);</div>
+<div class="line"><a name="l00506"></a><span class="lineno">  506</span>&#160;                restraint.push_back(temp2);</div>
+<div class="line"><a name="l00507"></a><span class="lineno">  507</span>&#160;                <span class="keywordflow">if</span>(anyperiodic)</div>
+<div class="line"><a name="l00508"></a><span class="lineno">  508</span>&#160;                {</div>
+<div class="line"><a name="l00509"></a><span class="lineno">  509</span>&#160;                    temp3 = {minperboundaryCV[i], maxperboundaryCV[i]};</div>
+<div class="line"><a name="l00510"></a><span class="lineno">  510</span>&#160;                    periodicboundaries.push_back(temp3);</div>
+<div class="line"><a name="l00511"></a><span class="lineno">  511</span>&#160;                }</div>
+<div class="line"><a name="l00512"></a><span class="lineno">  512</span>&#160;            }</div>
+<div class="line"><a name="l00513"></a><span class="lineno">  513</span>&#160;        <span class="comment">//}</span></div>
+<div class="line"><a name="l00514"></a><span class="lineno">  514</span>&#160;</div>
+<div class="line"><a name="l00515"></a><span class="lineno">  515</span>&#160;        <span class="comment">// Check if previously saved grids exist. If so, check that data match and load grids.</span></div>
+<div class="line"><a name="l00516"></a><span class="lineno">  516</span>&#160;        <span class="keywordflow">if</span>(std::ifstream(Nworld_filename) &amp;&amp; std::ifstream(Fworld_filename+std::to_string(0)) &amp;&amp; wid == 0)</div>
+<div class="line"><a name="l00517"></a><span class="lineno">  517</span>&#160;        {</div>
+<div class="line"><a name="l00518"></a><span class="lineno">  518</span>&#160;            std::cout &lt;&lt; <span class="stringliteral">&quot;Attempting to load data from a previous run of ABF.&quot;</span> &lt;&lt; std::endl;</div>
+<div class="line"><a name="l00519"></a><span class="lineno">  519</span>&#160;            N-&gt;<a class="code" href="classSSAGES_1_1Grid.html#a279c1e9005fdf4c6fc23358d51b75b86">LoadFromFile</a>(Nworld_filename);</div>
+<div class="line"><a name="l00520"></a><span class="lineno">  520</span>&#160;            <span class="keywordflow">for</span>(<span class="keywordtype">size_t</span> i=0; i&lt;dim; ++i)</div>
+<div class="line"><a name="l00521"></a><span class="lineno">  521</span>&#160;                <span class="keywordflow">if</span>(std::ifstream(Fworld_filename+std::to_string(i)))</div>
+<div class="line"><a name="l00522"></a><span class="lineno">  522</span>&#160;                    F[i]-&gt;LoadFromFile(Fworld_filename+std::to_string(i));</div>
+<div class="line"><a name="l00523"></a><span class="lineno">  523</span>&#160;                <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00524"></a><span class="lineno">  524</span>&#160;                    <span class="keywordflow">throw</span> <a class="code" href="classSSAGES_1_1BuildException.html">BuildException</a>({<span class="stringliteral">&quot;Some, but not all Fworld outputs were found. Please check that these are appropriate inputs, or clean the working directory of other Fworld and Nworld inputs.&quot;</span>});</div>
+<div class="line"><a name="l00525"></a><span class="lineno">  525</span>&#160;        }</div>
+<div class="line"><a name="l00526"></a><span class="lineno">  526</span>&#160;     </div>
+<div class="line"><a name="l00527"></a><span class="lineno">  527</span>&#160;        </div>
+<div class="line"><a name="l00528"></a><span class="lineno">  528</span>&#160;        <span class="keyword">auto</span>* m = <span class="keyword">new</span> <a class="code" href="classSSAGES_1_1ABF.html">ABF</a>(world, comm, N, Nworld, F, Fworld, restraint, isperiodic, periodicboundaries, min, massweigh, filename, Nworld_filename, Fworld_filename, histdetails, FBackupInterv, unitconv, timestep, freq);</div>
+<div class="line"><a name="l00529"></a><span class="lineno">  529</span>&#160;</div>
 <div class="line"><a name="l00530"></a><span class="lineno">  530</span>&#160;</div>
-<div class="line"><a name="l00531"></a><span class="lineno">  531</span>&#160;</div>
-<div class="line"><a name="l00532"></a><span class="lineno">  532</span>&#160;        <span class="keywordflow">if</span>(json.isMember(<span class="stringliteral">&quot;iteration&quot;</span>))</div>
-<div class="line"><a name="l00533"></a><span class="lineno">  533</span>&#160;            m-&gt;SetIteration(json.get(<span class="stringliteral">&quot;iteration&quot;</span>,0).asInt());</div>
-<div class="line"><a name="l00534"></a><span class="lineno">  534</span>&#160;</div>
-<div class="line"><a name="l00535"></a><span class="lineno">  535</span>&#160;        <span class="keywordflow">return</span> m;</div>
-<div class="line"><a name="l00536"></a><span class="lineno">  536</span>&#160;        </div>
-<div class="line"><a name="l00537"></a><span class="lineno">  537</span>&#160;    }</div>
-<div class="line"><a name="l00538"></a><span class="lineno">  538</span>&#160;</div>
-<div class="line"><a name="l00539"></a><span class="lineno">  539</span>&#160;}</div>
+<div class="line"><a name="l00531"></a><span class="lineno">  531</span>&#160;        <span class="keywordflow">if</span>(json.isMember(<span class="stringliteral">&quot;iteration&quot;</span>))</div>
+<div class="line"><a name="l00532"></a><span class="lineno">  532</span>&#160;            m-&gt;SetIteration(json.get(<span class="stringliteral">&quot;iteration&quot;</span>,0).asInt());</div>
+<div class="line"><a name="l00533"></a><span class="lineno">  533</span>&#160;</div>
+<div class="line"><a name="l00534"></a><span class="lineno">  534</span>&#160;        <span class="keywordflow">return</span> m;</div>
+<div class="line"><a name="l00535"></a><span class="lineno">  535</span>&#160;        </div>
+<div class="line"><a name="l00536"></a><span class="lineno">  536</span>&#160;    }</div>
+<div class="line"><a name="l00537"></a><span class="lineno">  537</span>&#160;</div>
+<div class="line"><a name="l00538"></a><span class="lineno">  538</span>&#160;}</div>
+<div class="line"><a name="l00539"></a><span class="lineno">  539</span>&#160;</div>
 <div class="line"><a name="l00540"></a><span class="lineno">  540</span>&#160;</div>
 <div class="line"><a name="l00541"></a><span class="lineno">  541</span>&#160;</div>
 <div class="line"><a name="l00542"></a><span class="lineno">  542</span>&#160;</div>
@@ -639,7 +639,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="line"><a name="l00571"></a><span class="lineno">  571</span>&#160;</div>
 <div class="line"><a name="l00572"></a><span class="lineno">  572</span>&#160;</div>
 <div class="line"><a name="l00573"></a><span class="lineno">  573</span>&#160;</div>
-<div class="line"><a name="l00574"></a><span class="lineno">  574</span>&#160;</div>
 <div class="ttc" id="classJson_1_1Requirement_html_adfaec336a9f051d6f6b9a6d7f1d97b75"><div class="ttname"><a href="classJson_1_1Requirement.html#adfaec336a9f051d6f6b9a6d7f1d97b75">Json::Requirement::HasErrors</a></div><div class="ttdeci">bool HasErrors()</div><div class="ttdoc">Check if errors have occured. </div><div class="ttdef"><b>Definition:</b> <a href="Requirement_8h_source.html#l00086">Requirement.h:86</a></div></div>
 <div class="ttc" id="classSSAGES_1_1CVManager_html"><div class="ttname"><a href="classSSAGES_1_1CVManager.html">SSAGES::CVManager</a></div><div class="ttdoc">Collective variable manager. </div><div class="ttdef"><b>Definition:</b> <a href="CVManager_8h_source.html#l00040">CVManager.h:40</a></div></div>
 <div class="ttc" id="classSSAGES_1_1Snapshot_html_ae05879b78672cd4899a06ae2d6a140fd"><div class="ttname"><a href="classSSAGES_1_1Snapshot.html#ae05879b78672cd4899a06ae2d6a140fd">SSAGES::Snapshot::GetNumAtoms</a></div><div class="ttdeci">unsigned GetNumAtoms() const </div><div class="ttdoc">Get number of atoms in this snapshot. </div><div class="ttdef"><b>Definition:</b> <a href="Snapshot_8h_source.html#l00200">Snapshot.h:200</a></div></div>
@@ -662,7 +661,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- fragment --></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Tue Aug 1 2017 13:08:23 for SSAGES by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Wed Aug 30 2017 13:03:38 for SSAGES by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.7
 </small></address>

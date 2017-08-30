@@ -27,6 +27,7 @@ var searchData=
   ['getimageflags',['GetImageFlags',['../classSSAGES_1_1Snapshot.html#aee700ad3c3b9c466ad3f52b8d2ede6d6',1,'SSAGES::Snapshot::GetImageFlags() const '],['../classSSAGES_1_1Snapshot.html#a240d2785a048131daca28554641802d1',1,'SSAGES::Snapshot::GetImageFlags()']]],
   ['getindex',['GetIndex',['../classSSAGES_1_1GridBase.html#a672860b92f798eb2534e43dffdb43e98',1,'SSAGES::GridBase']]],
   ['getindices',['GetIndices',['../classSSAGES_1_1GridBase.html#abe96484a8fc2454042f72ff7d941f224',1,'SSAGES::GridBase']]],
+  ['getinterpolated',['GetInterpolated',['../classSSAGES_1_1GridBase.html#aa517604d41423a32f87045abd6506c06',1,'SSAGES::GridBase']]],
   ['getiteration',['GetIteration',['../classSSAGES_1_1Snapshot.html#acaee0172694743e118273a055ff2c3fc',1,'SSAGES::Snapshot']]],
   ['getkb',['GetKb',['../classSSAGES_1_1Snapshot.html#a078eb0a99f2c66eccdb2c16c771533e9',1,'SSAGES::Snapshot']]],
   ['getlocalindex',['GetLocalIndex',['../classSSAGES_1_1Snapshot.html#a3ecf272dca61538320a4d503303fa9ba',1,'SSAGES::Snapshot']]],

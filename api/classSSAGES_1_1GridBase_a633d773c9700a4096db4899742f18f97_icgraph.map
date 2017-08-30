@@ -1,3 +1,4 @@
 <map id="SSAGES::GridBase::GetCoordinates" name="SSAGES::GridBase::GetCoordinates">
 <area shape="rect" id="node2" href="$classSSAGES_1_1GridBase.html#a32ae57c8d754f4b41fcbe13b3e1dcc75" title="Return center point of 1d&#45;grid. " alt="" coords="293,5,459,46"/>
+<area shape="rect" id="node3" href="$classSSAGES_1_1GridBase.html#aa517604d41423a32f87045abd6506c06" title="Return linear interpolation on a coordinate. " alt="" coords="293,70,459,111"/>
 </map>
