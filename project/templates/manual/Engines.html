@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Engines &mdash; SSAGES v0.7.5-alpha-18-ga65a265 documentation</title>
+  <title>Engines &mdash; SSAGES v0.8.0-alpha documentation</title>
   
 
   
@@ -32,10 +32,7 @@
   
 
   
-        <link rel="index" title="Index"
-              href="genindex.html"/>
-        <link rel="search" title="Search" href="search.html"/>
-    <link rel="top" title="SSAGES v0.7.5-alpha-18-ga65a265 documentation" href="index.html"/>
+    <link rel="top" title="SSAGES v0.8.0-alpha documentation" href="index.html"/>
         <link rel="next" title="Collective Variables" href="Collective Variables.html"/>
         <link rel="prev" title="Input Files" href="Input Files.html"/> 
 
@@ -66,7 +63,7 @@
             
             
               <div class="version">
-                0.7.5
+                0.8.0
               </div>
             
           
@@ -94,7 +91,7 @@
 <li class="toctree-l1"><a class="reference internal" href="Introduction.html">Introduction</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Getting Started.html">Getting Started</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Input Files.html">Input Files</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Engines</a><ul>
+<li class="toctree-l1 current"><a class="current reference internal" href="">Engines</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#lammps">LAMMPS</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#building">Building</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#running">Running</a></li>
@@ -106,7 +103,13 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#openmd">OpenMD</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#qbox">Qbox</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#qbox">Qbox</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#id4">Building</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#set-up">Set-up</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id5">Running</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#running-on-clusters">Running on clusters</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="Collective Variables.html">Collective Variables</a></li>
@@ -167,7 +170,7 @@
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="_sources/Engines.rst.txt" rel="nofollow"> View page source</a>
+            <a href="_sources/Engines.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -233,22 +236,22 @@ listed under the appropriate section.</p>
 compatible version of LAMMPS, either <code class="docutils literal"><span class="pre">-DLAMMPS=YES</span></code> or
 <code class="docutils literal"><span class="pre">-DLAMMPS_SRC=/path/to/LAMMPS</span></code> must be specified in the cmake command.
 For example,</p>
-<div class="code bash highlight-default"><div class="highlight"><pre><span></span><span class="n">cmake</span> <span class="o">-</span><span class="n">DLAMMPS</span><span class="o">=</span><span class="n">YES</span> <span class="o">..</span>
-<span class="n">make</span>
+<div class="code bash highlight-python"><div class="highlight"><pre>cmake -DLAMMPS=YES ..
+make
 </pre></div>
 </div>
 <p>will automatically download a recent version of LAMMPS (tagged <code class="docutils literal"><span class="pre">r15407</span></code>)
 and compile SSAGES. Because many users may take advantage of optional LAMMPS
 packages, SSAGES forwards the make commands necessary to do so, such
 as</p>
-<div class="code bash highlight-default"><div class="highlight"><pre><span></span><span class="n">make</span> <span class="n">yes</span><span class="o">-</span><span class="n">molecule</span>
-<span class="n">make</span> <span class="n">yes</span><span class="o">-</span><span class="n">user</span><span class="o">-</span><span class="n">drude</span>
+<div class="code bash highlight-python"><div class="highlight"><pre>make yes-molecule
+make yes-user-drude
 </pre></div>
 </div>
 <p>If a user is interested in using a different version of LAMMPS or one with
 personal modifications, then SSAGES can be pointed to that particular source
 repository.</p>
-<div class="code bash highlight-default"><div class="highlight"><pre><span></span><span class="n">cmake</span> <span class="o">-</span><span class="n">DLAMMPS_SRC</span><span class="o">=/</span><span class="n">path</span><span class="o">/</span><span class="n">to</span><span class="o">/</span><span class="n">lammps</span> <span class="o">..</span>
+<div class="code bash highlight-python"><div class="highlight"><pre>cmake -DLAMMPS_SRC=/path/to/lammps ..
 </pre></div>
 </div>
 <div class="admonition warning">
@@ -264,7 +267,7 @@ repository accordingly.</p>
 <p>SSAGES integrates with LAMMPS though the flexible <em>fix</em> API offered
 by LAMMPS. It is therefore necessary to define a SSAGES fix within
 the LAMMPS input file as follows.</p>
-<div class="code highlight-default"><div class="highlight"><pre><span></span><span class="n">fix</span> <span class="n">ssages</span> <span class="nb">all</span> <span class="n">ssages</span>
+<div class="code highlight-python"><div class="highlight"><pre>fix ssages all ssages
 </pre></div>
 </div>
 <p>This directive ensures that SSAGES is able to locate the appropriate
@@ -283,7 +286,7 @@ or energy minimzation steps before production. So long as the SSAGES fix is not
 declared, LAMMPS will run without any modification.</p>
 <p>The only LAMMPS-specific property required in a SSAGES input file is the <code class="docutils literal"><span class="pre">input</span></code>
 property which points to the LAMMPS input script. Details can be found on the
-<a class="reference internal" href="Input Files.html#inputfiles"><span class="std std-ref">input files page</span></a>.</p>
+<a class="reference internal" href="Input Files.html#inputfiles"><span>input files page</span></a>.</p>
 </div>
 </div>
 <div class="section" id="gromacs">
@@ -294,15 +297,15 @@ property which points to the LAMMPS input script. Details can be found on the
 compatible version of Gromacs, either <code class="docutils literal"><span class="pre">-DGROMACS=YES</span></code> or
 <code class="docutils literal"><span class="pre">-DGROMACS_SRC=/path/to/Gromacs</span></code> must be specified in the cmake command.
 For example,</p>
-<div class="code bash highlight-default"><div class="highlight"><pre><span></span><span class="n">cmake</span> <span class="o">-</span><span class="n">DGROMACS</span><span class="o">=</span><span class="n">YES</span> <span class="o">..</span>
-<span class="n">make</span>
+<div class="code bash highlight-python"><div class="highlight"><pre>cmake -DGROMACS=YES ..
+make
 </pre></div>
 </div>
 <p>will automatically download Gromacs 5.1.3 and compile SSAGES.
 If a user is interested in using a different version of Gromacs or one with
 personal modifications, then SSAGES can be pointed to that particular source
 repository.</p>
-<div class="code bash highlight-default"><div class="highlight"><pre><span></span><span class="n">cmake</span> <span class="o">-</span><span class="n">DGROMACS_SRC</span><span class="o">=/</span><span class="n">path</span><span class="o">/</span><span class="n">to</span><span class="o">/</span><span class="n">gromacs</span> <span class="o">..</span>
+<div class="code bash highlight-python"><div class="highlight"><pre>cmake -DGROMACS_SRC=/path/to/gromacs ..
 </pre></div>
 </div>
 <div class="admonition warning">
@@ -317,7 +320,7 @@ repository accordingly.</p>
 <h3>Running<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h3>
 <p>SSAGES forwards arguments to the Gromacs <strong>mdrun</strong> library. The
 <code class="docutils literal"><span class="pre">args</span></code> property must specified in the SSAGES input file as
-described on the <a class="reference internal" href="Input Files.html#inputfiles"><span class="std std-ref">input files page</span></a>.</p>
+described on the <a class="reference internal" href="Input Files.html#inputfiles"><span>input files page</span></a>.</p>
 </div>
 </div>
 <div class="section" id="openmd">
@@ -329,9 +332,92 @@ described on the <a class="reference internal" href="Input Files.html#inputfiles
 </div>
 <div class="section" id="qbox">
 <h2>Qbox<a class="headerlink" href="#qbox" title="Permalink to this headline">¶</a></h2>
-<div class="admonition note">
-<p class="first admonition-title">Note</p>
-<p class="last">Coming soon.</p>
+<div class="section" id="id4">
+<h3>Building<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h3>
+<p>Qbox and SSAGES can be used together to use enhanced sampling methods in <em>ab initio</em> molecular dynamics simulations. The coupling with Qbox is performed in a server-driver mode, with SSAGES acting as the driver and Qbox as the server. This means that if you have access to a version of Qbox (minimum 1.60) you do not need to recompile SSAGES and Qbox together. However, it is necessary to configure SSAGES to be used with Qbox, so that it will compile the correct Hook and Driver. To do so, add the following flag during the configuration of SSAGES</p>
+<div class="code bash highlight-python"><div class="highlight"><pre>cmake -DQBOX=YES ..
+</pre></div>
+</div>
+<p>It is important to remark that in this case, <strong>SSAGES will not automatically download Qbox</strong>, it will be simply configured so to communicate with it. You are required to have access to a Qbox executable. If you do not have access to a precompiled version, then you will need to download and compile it yourself (<a class="reference external" href="http://qboxcode.org/build/">http://qboxcode.org/build/</a>)</p>
+</div>
+<div class="section" id="set-up">
+<h3>Set-up<a class="headerlink" href="#set-up" title="Permalink to this headline">¶</a></h3>
+<p>As for other engines, there are two input scripts necessary to run a Qbox-SSAGES calculation composed of <cite>N</cite> walkers:</p>
+<ol class="arabic simple">
+<li>A JSON input file, specifying the methods and CVs that you want to use. Also, it specifies the qbox input file names and the number of MD, density, and wavefunction steps that you want to use.</li>
+<li>A number N of Qbox input files, that will be used in the first step of the calculation to obtain the ground state density in the first step.</li>
+</ol>
+<p>The JSON file contains the same field that would usually have (CVs, methods, logger, etc..) with three more options:</p>
+<div class="code javascript highlight-python"><div class="highlight"><pre><span class="p">{</span>
+    <span class="s2">&quot;walkers&quot;</span><span class="p">:</span> <span class="n">N</span><span class="p">,</span>
+    <span class="s2">&quot;input&quot;</span><span class="p">:</span> <span class="s2">&quot;[md.1,md.2,..md.N]&quot;</span><span class="p">,</span>
+    <span class="s2">&quot;md_iterations&quot;</span> <span class="p">:</span> <span class="mi">10</span><span class="p">,</span>
+    <span class="s2">&quot;qm_iterations&quot;</span> <span class="p">:</span> <span class="mi">30</span><span class="p">,</span>
+    <span class="s2">&quot;wf_iterations&quot;</span> <span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p>The keywords <code class="docutils literal"><span class="pre">walkers</span></code> and <code class="docutils literal"><span class="pre">input</span></code> are the standard SSAGES keywords to declare the number of walkers and the starting input file of each walker. The keywords <code class="docutils literal"><span class="pre">md_iterations</span></code>, <code class="docutils literal"><span class="pre">qm_iterations</span></code> and <code class="docutils literal"><span class="pre">wf_iterations</span></code>  are the respectively the number of MD steps to perform, the number of <cite>scf</cite> to perform per MD step, and the number of wave-function optimization per <cite>scf</cite> steps. These parameters correspond to the first, second and third number in the command <cite>run 20 10 0</cite>  (<a class="reference external" href="http://eslab.ucdavis.edu/software/qbox/QboxUserGuide.pdf">http://eslab.ucdavis.edu/software/qbox/QboxUserGuide.pdf</a>).</p>
+<p>The Qbox input file of each walker, specifies the parameters to be used in the DFT calculations (<cite>xc</cite>,`ecut`, T etc..). This file will be parsed by Qbox <strong>at the first timestep of the simulations</strong> to set up the calculations. If the file contains a command such as <cite>run 200 10</cite> the 200 MD steps that Qbox will perform <strong>will be unbiased</strong>. If wanted, this feature can be used to equilibrate the system. After this first step, the command <cite>run 1 qm_iterations wf_iterations</cite> will be repeated for <cite>md_iterations</cite>.</p>
+<p>An example of <cite>input.json</cite> and <cite>md.i</cite> is present in the <cite>/Examples/User/ABF/NaCl-Qbox</cite> folder.</p>
+</div>
+<div class="section" id="id5">
+<h3>Running<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h3>
+<p>As previously reported, Qbox and SSAGES communicate in a server-driver mode. To launch Qbox in a server mode is sufficient to use the proper keyword and specify its input and output file:</p>
+<div class="code bash highlight-python"><div class="highlight"><pre>mpirun -n X qb -server ssages_in_0 ssages_out_0
+</pre></div>
+</div>
+<p>for a single walker or</p>
+<div class="code bash highlight-python"><div class="highlight"><pre>mpirun -n X qb -server ssages_in_0 ssages_out_0
+mpirun -n X qb -server ssages_in_1 ssages_out_1
+....
+mpirun -n X qb -server ssages_in_N ssages_out_N
+</pre></div>
+</div>
+<p>for multiple walkers. At the moment, the name <cite>ssages_in_</cite> and <cite>ssages_out_</cite> are <strong>mandatory</strong> and cannot be changed. When launched in this way, Qbox creates N files called <cite>ssages_in_N.lock</cite>, and then wait for input. When the files <cite>ssages_in_N.lock</cite> are deleted from disk, Qbox will execute the commands contained in the files <cite>ssages_in_N</cite>, write the result of the calculation in <cite>ssages_out_N</cite>, and create N <cite>ssages_in_N.lock</cite> files. Without the deletion of the <cite>.lock</cite> files, Qbox will not execute any command and will remain idle.</p>
+<p><em>After</em> that Qbox has <em>started</em> the server mode run (so it is idling and the file <cite>.lock</cite> are present on disk) we can launch SSAGES to drive the calculations:</p>
+<div class="code highlight-python"><div class="highlight"><pre>mpirun -n N ssages input.json
+</pre></div>
+</div>
+<p>After that SSAGES started, the two codes will alternate each other in the following way:</p>
+<ol class="arabic simple">
+<li>SSAGES will write on file <cite>ssages_in_i</cite> the script <cite>md.i</cite>, that will initialize the DFT parameters of the calculations. Then, it will trigger Qbox execution by deleting the .lock files.</li>
+<li>Qbox will perform the DFT calculation specified in <cite>ssages_in_i</cite>, write the output in <cite>ssages_out_i</cite> and will recreate the <cite>.lock</cite> file.</li>
+<li>SSAGES will read the Qbox output, calculate the CVs values and the bias, and write the files <cite>ssages_in_i</cite> containing the external forces and the position of the atoms, as well as the command <cite>run 1 qm_iterations wf_iterations</cite>. It will then delete the .lock file, triggering another MD step calculation in Qbox.</li>
+<li>Step 2 and 3 will be repeated for <cite>md_iterations</cite> number of time.</li>
+<li>After the last iterations, SSAGES will write an input file that will instruct Qbox to save a <cite>restart_i.xml</cite> file that can be used to restart the calculations, and <cite>quit</cite> to terminate the Qbox instance.</li>
+<li>Qbox and SSAGES will then finish the execution.</li>
+</ol>
+<p>Normally, Qbox overwrites the output <cite>ssages_out_i</cite> in server mode. To preserve the trajectory and avoid the loss of data, SSAGES will append the <cite>ssages_out_i</cite> file to a <cite>ssages_out_i_run_j.xml</cite> file. In the latter, the <cite>i</cite> index identify the walker, while the <cite>j</cite> index identifies the number of runs (So if you restarted two times, you would have _run1.xml, _run2.xml, and _run3.xml). We suggest using the <cite>restart_i.xml</cite> files to avoid discontinuities in the trajectories: when restarting, create a <cite>md.i</cite> file that contains the <cite>load restart_i.xml</cite> instruction.</p>
+</div>
+<div class="section" id="running-on-clusters">
+<h3>Running on clusters<a class="headerlink" href="#running-on-clusters" title="Permalink to this headline">¶</a></h3>
+<p>Most likely, you are going to launch this calculation on a cluster or a supercomputer, where you will need to prepare a submission scripts and then launch it through a job scheduler. Given the fact that SSAGES need to start <em>after</em> Qbox, it is better to either separate the scripts that submit the two different calculations, or use a syntax that ensure that the submission occurs in the right order. For example on <em>slurm</em> we can either use one script</p>
+<div class="code bash highlight-python"><div class="highlight"><pre>srun -n X  -N 1 qb -server ssages_in0 ssages_out0  &amp;
+srun -n X  -N 1 qb -server ssages_in1 ssages_out1  &amp;
+srun -n 2  -N 1 ssages input.json &amp;
+wait
+</pre></div>
+</div>
+<p>which ensure that the script are executed in the right way. If you want to have different scripts for Qbox and SSAGES:</p>
+<p>In the qbox scripts, <cite>qb.sh</cite></p>
+<div class="code bash highlight-python"><div class="highlight"><pre>srun -n X  -N 1 qb -server ssages_in0 ssages_out0
+srun -n X  -N 1 qb -server ssages_in1 ssages_out1
+</pre></div>
+</div>
+<p>In the SSAGES script, <cite>ssages.sh</cite></p>
+<div class="code bash highlight-python"><div class="highlight"><pre>srun -n 2  -N 1 ssages input.json
+</pre></div>
+</div>
+<p>Then you will need to submit both of them with a third script, <cite>launch.sh</cite></p>
+<div class="code bash highlight-python"><div class="highlight"><pre>#!/bin/bash
+
+j_qb=`sbatch qb.sh | awk &#39;{print $4}&#39;`
+
+sbatch --dependency=after:${j_qb} ssages.sh
+</pre></div>
+</div>
+<p>The advantage of the latter method, with three scripts, is that it will avoid conflict between modules, which may be present in the first example, depending on how you have compiled Qbox and SSAGES.</p>
 </div>
 </div>
 </div>
@@ -359,7 +445,7 @@ described on the <a class="reference internal" href="Input Files.html#inputfiles
   <div role="contentinfo">
     <p>
         &copy; Copyright 2016, the SSAGES Team.
-      Last updated on Aug 30, 2017.
+      Last updated on Feb 27, 2018.
 
     </p>
   </div>
@@ -381,17 +467,17 @@ described on the <a class="reference internal" href="Input Files.html#inputfiles
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'./',
-            VERSION:'v0.7.5-alpha-18-ga65a265',
+            VERSION:'v0.8.0-alpha',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
             HAS_SOURCE:  true,
-            SOURCELINK_SUFFIX: '.txt'
+            SOURCELINK_SUFFIX: ''
         };
     </script>
       <script type="text/javascript" src="_static/jquery.js"></script>
       <script type="text/javascript" src="_static/underscore.js"></script>
       <script type="text/javascript" src="_static/doctools.js"></script>
-      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
   
 

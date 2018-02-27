@@ -1,7 +1,7 @@
 <map id="SSAGES::RouseModeCV::Initialize" name="SSAGES::RouseModeCV::Initialize">
-<area shape="rect" id="node2" href="$classSSAGES_1_1Snapshot.html#a9079d14677b94ff2c88c1f35c867c303" title="Get communicator for walker. " alt="" coords="230,5,485,32"/>
-<area shape="rect" id="node3" href="$classSSAGES_1_1Snapshot.html#a3ecf272dca61538320a4d503303fa9ba" title="Gets the local atom index corresponding to an atom ID. " alt="" coords="792,78,992,119"/>
-<area shape="rect" id="node4" href="$classSSAGES_1_1RouseModeCV.html#a5842a8b7e54d435af5465aea2c85e924" title="Helper function to determine masses of each group. " alt="" coords="270,107,445,149"/>
-<area shape="rect" id="node5" href="$classSSAGES_1_1Snapshot.html#abeef8bea41bf9706855c59b6cde0777a" title="SSAGES::Snapshot::GetLocal\lIndices" alt="" coords="539,107,739,149"/>
-<area shape="rect" id="node6" href="$classSSAGES_1_1Snapshot.html#a19de6aadba8b8eed8c96dc1e67087e62" title="Compute the total mass of a group of particles based on index. " alt="" coords="534,173,743,200"/>
+<area shape="rect" id="node2" href="$classSSAGES_1_1Snapshot.html#a9079d14677b94ff2c88c1f35c867c303" title="Get communicator for walker. " alt="" coords="228,5,483,32"/>
+<area shape="rect" id="node3" href="$classSSAGES_1_1Snapshot.html#a3ecf272dca61538320a4d503303fa9ba" title="Gets the local atom index corresponding to an atom ID. " alt="" coords="788,78,988,119"/>
+<area shape="rect" id="node4" href="$classSSAGES_1_1RouseModeCV.html#a5842a8b7e54d435af5465aea2c85e924" title="Helper function to determine masses of each group. " alt="" coords="268,107,443,149"/>
+<area shape="rect" id="node5" href="$classSSAGES_1_1Snapshot.html#abeef8bea41bf9706855c59b6cde0777a" title="SSAGES::Snapshot::GetLocal\lIndices" alt="" coords="535,107,735,149"/>
+<area shape="rect" id="node6" href="$classSSAGES_1_1Snapshot.html#a19de6aadba8b8eed8c96dc1e67087e62" title="Compute the total mass of a group of particles based on index. " alt="" coords="531,173,740,200"/>
 </map>

@@ -1,7 +1,8 @@
 <map id="SSAGES::GridBase::GetDimension" name="SSAGES::GridBase::GetDimension">
-<area shape="rect" id="node2" href="$classSSAGES_1_1GridBase.html#a896d88442ef110a3afb58944e5107b53" title="Access Grid element read&#45;only. " alt="" coords="285,5,451,46"/>
-<area shape="rect" id="node3" href="$classSSAGES_1_1GridBase.html#a9ed5bbba129eaa3ef36f387d524ed422" title="Get the lower edge for a specific dimension. " alt="" coords="285,70,451,111"/>
-<area shape="rect" id="node4" href="$classSSAGES_1_1GridBase.html#aa504df2cdd42e7aaf39302a322c45593" title="Get the number of points for a specific dimension. " alt="" coords="285,135,451,177"/>
-<area shape="rect" id="node5" href="$classSSAGES_1_1GridBase.html#a8fbfe7b2fc7caf0eef4f0543c384b95d" title="Get the periodicity in a specific dimension. " alt="" coords="285,201,451,242"/>
-<area shape="rect" id="node6" href="$classSSAGES_1_1GridBase.html#a1901a4f8f1893b72a3f972041e06c028" title="Get the upper edge for a specific dimension. " alt="" coords="285,266,451,307"/>
+<area shape="rect" id="node2" href="$classSSAGES_1_1GridBase.html#a896d88442ef110a3afb58944e5107b53" title="Access Grid element read&#45;only. " alt="" coords="284,5,456,47"/>
+<area shape="rect" id="node3" href="$classSSAGES_1_1GridBase.html#a9ed5bbba129eaa3ef36f387d524ed422" title="Get the lower edge for a specific dimension. " alt="" coords="284,71,456,112"/>
+<area shape="rect" id="node4" href="$classSSAGES_1_1GridBase.html#aa504df2cdd42e7aaf39302a322c45593" title="Get the number of points for a specific dimension. " alt="" coords="284,136,456,177"/>
+<area shape="rect" id="node5" href="$classSSAGES_1_1GridBase.html#a8fbfe7b2fc7caf0eef4f0543c384b95d" title="Get the periodicity in a specific dimension. " alt="" coords="284,201,456,243"/>
+<area shape="rect" id="node6" href="$classSSAGES_1_1GridBase.html#a1901a4f8f1893b72a3f972041e06c028" title="Get the upper edge for a specific dimension. " alt="" coords="284,267,456,308"/>
+<area shape="rect" id="node7" href="$classSSAGES_1_1GridBase.html#a9a4d027f2b6e39b845f0bb19eef3cdbb" title="Constructor. " alt="" coords="284,332,456,373"/>
 </map>

@@ -1,17 +1,18 @@
 <map id="SSAGES::EventListener" name="SSAGES::EventListener">
-<area shape="rect" id="node2" href="$classSSAGES_1_1Constraint.html" title="Interface for Constraint implementations. " alt="" coords="219,56,365,83"/>
-<area shape="rect" id="node5" href="$classSSAGES_1_1Logger.html" title="Base class for logging SSAGES data. " alt="" coords="230,132,354,159"/>
-<area shape="rect" id="node6" href="$classSSAGES_1_1Method.html" title="Interface for Method implementations. " alt="" coords="228,208,356,235"/>
-<area shape="rect" id="node3" href="$classSSAGES_1_1COPSS.html" title="Wrapper class for COPSS simulations. " alt="" coords="431,5,563,32"/>
-<area shape="rect" id="node4" href="$classSSAGES_1_1COPSSImage.html" title="Image method. " alt="" coords="413,56,581,83"/>
-<area shape="rect" id="node7" href="$classSSAGES_1_1ABF.html" title="Adaptive Biasing Force Algorithm. " alt="" coords="442,107,553,133"/>
-<area shape="rect" id="node8" href="$classSSAGES_1_1Basis.html" title="Basis Function Sampling Algorithm. " alt="" coords="438,157,557,184"/>
-<area shape="rect" id="node9" href="$classSSAGES_1_1ForwardFlux.html" title="ForwardFlux sampling method. " alt="" coords="419,208,576,235"/>
-<area shape="rect" id="node11" href="$classSSAGES_1_1Meta.html" title="&quot;Vanilla&quot; multi&#45;dimensional Metadynamics. " alt="" coords="440,259,555,285"/>
-<area shape="rect" id="node12" href="$classSSAGES_1_1StringMethod.html" title="String base class for FTS, Swarm, and elastic band. " alt="" coords="416,309,579,336"/>
-<area shape="rect" id="node16" href="$classSSAGES_1_1Umbrella.html" title="Umbrella sampling method. " alt="" coords="429,360,566,387"/>
-<area shape="rect" id="node10" href="$classSSAGES_1_1DirectForwardFlux.html" title="ForwardFlux sampling method. " alt="" coords="629,208,821,235"/>
-<area shape="rect" id="node13" href="$classSSAGES_1_1ElasticBand.html" title="Multi&#45;walker Elastic Band. " alt="" coords="648,259,803,285"/>
-<area shape="rect" id="node14" href="$classSSAGES_1_1FiniteTempString.html" title="Finite Temperature Spring Method. " alt="" coords="633,309,817,336"/>
-<area shape="rect" id="node15" href="$classSSAGES_1_1Swarm.html" title="Swarm of Trajectories String Method. " alt="" coords="662,360,789,387"/>
+<area shape="rect" id="node2" href="$classSSAGES_1_1Constraint.html" title="Interface for Constraint implementations. " alt="" coords="219,56,364,83"/>
+<area shape="rect" id="node5" href="$classSSAGES_1_1Logger.html" title="Base class for logging SSAGES data. " alt="" coords="229,132,353,159"/>
+<area shape="rect" id="node6" href="$classSSAGES_1_1Method.html" title="Interface for Method implementations. " alt="" coords="227,233,355,260"/>
+<area shape="rect" id="node3" href="$classSSAGES_1_1COPSS.html" title="Wrapper class for COPSS simulations. " alt="" coords="430,5,562,32"/>
+<area shape="rect" id="node4" href="$classSSAGES_1_1COPSSImage.html" title="Image method. " alt="" coords="412,56,580,83"/>
+<area shape="rect" id="node7" href="$classSSAGES_1_1ABF.html" title="Adaptive Biasing Force Algorithm. " alt="" coords="441,107,551,133"/>
+<area shape="rect" id="node8" href="$classSSAGES_1_1ANN.html" title="SSAGES::ANN" alt="" coords="439,157,553,184"/>
+<area shape="rect" id="node9" href="$classSSAGES_1_1BFS.html" title="Basis Function Sampling Algorithm. " alt="" coords="441,208,551,235"/>
+<area shape="rect" id="node10" href="$classSSAGES_1_1ForwardFlux.html" title="ForwardFlux sampling method. " alt="" coords="417,259,575,285"/>
+<area shape="rect" id="node12" href="$classSSAGES_1_1Meta.html" title="&quot;Vanilla&quot; multi&#45;dimensional Metadynamics. " alt="" coords="439,309,553,336"/>
+<area shape="rect" id="node13" href="$classSSAGES_1_1StringMethod.html" title="String base class for FTS, Swarm, and elastic band. " alt="" coords="415,360,577,387"/>
+<area shape="rect" id="node17" href="$classSSAGES_1_1Umbrella.html" title="Umbrella sampling method. " alt="" coords="427,411,565,437"/>
+<area shape="rect" id="node11" href="$classSSAGES_1_1DirectForwardFlux.html" title="ForwardFlux sampling method. " alt="" coords="628,259,820,285"/>
+<area shape="rect" id="node14" href="$classSSAGES_1_1ElasticBand.html" title="Multi&#45;walker Elastic Band. " alt="" coords="647,309,801,336"/>
+<area shape="rect" id="node15" href="$classSSAGES_1_1FiniteTempString.html" title="Finite Temperature Spring Method. " alt="" coords="632,360,816,387"/>
+<area shape="rect" id="node16" href="$classSSAGES_1_1Swarm.html" title="Swarm of Trajectories String Method. " alt="" coords="661,411,787,437"/>
 </map>

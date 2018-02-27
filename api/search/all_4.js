@@ -7,7 +7,7 @@ var searchData=
   ['dependencyrequirement',['DependencyRequirement',['../classJson_1_1DependencyRequirement.html',1,'Json']]],
   ['dependencyrequirement',['DependencyRequirement',['../classJson_1_1DependencyRequirement.html#aa4135e949e6148720dc82a8af35d3543',1,'Json::DependencyRequirement']]],
   ['deps_5f',['deps_',['../classJson_1_1DependencyRequirement.html#ae910bde505b936d886607bb9a251b8d8',1,'Json::DependencyRequirement']]],
-  ['derivatives_5f',['derivatives_',['../classSSAGES_1_1Basis.html#a6bcf7c09112788076aac69e3c7ce3cc6',1,'SSAGES::Basis::derivatives_()'],['../classSSAGES_1_1Meta.html#a96930633275f22009adb899c9f39d635',1,'SSAGES::Meta::derivatives_()']]],
+  ['derivatives_5f',['derivatives_',['../classSSAGES_1_1Meta.html#a96930633275f22009adb899c9f39d635',1,'SSAGES::Meta']]],
   ['derivs',['derivs',['../structSSAGES_1_1BasisLUT.html#a8580833e7a62f4179b8683dd2ffd6ca3',1,'SSAGES::BasisLUT']]],
   ['dielectric_5f',['dielectric_',['../classSSAGES_1_1Snapshot.html#a16595f10bf4755f2a30d95f54d4512de',1,'SSAGES::Snapshot']]],
   ['difference_5ftype',['difference_type',['../classSSAGES_1_1Grid_1_1GridIterator.html#ae9322c732585d71fbfae0119b8b9cd7a',1,'SSAGES::Grid::GridIterator::difference_type()'],['../classSSAGES_1_1Histogram_1_1HistIterator.html#ac272a3cf654ff9eecbeb64b2f53be45e',1,'SSAGES::Histogram::HistIterator::difference_type()']]],

@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Collective Variables &mdash; SSAGES v0.7.5-alpha-18-ga65a265 documentation</title>
+  <title>Collective Variables &mdash; SSAGES v0.8.0-alpha documentation</title>
   
 
   
@@ -32,10 +32,7 @@
   
 
   
-        <link rel="index" title="Index"
-              href="genindex.html"/>
-        <link rel="search" title="Search" href="search.html"/>
-    <link rel="top" title="SSAGES v0.7.5-alpha-18-ga65a265 documentation" href="index.html"/>
+    <link rel="top" title="SSAGES v0.8.0-alpha documentation" href="index.html"/>
         <link rel="next" title="Advanced Sampling Methods" href="Advanced Sampling Methods.html"/>
         <link rel="prev" title="Engines" href="Engines.html"/> 
 
@@ -66,7 +63,7 @@
             
             
               <div class="version">
-                0.7.5
+                0.8.0
               </div>
             
           
@@ -95,7 +92,7 @@
 <li class="toctree-l1"><a class="reference internal" href="Getting Started.html">Getting Started</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Input Files.html">Input Files</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Engines.html">Engines</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Collective Variables</a><ul>
+<li class="toctree-l1 current"><a class="current reference internal" href="">Collective Variables</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#angle">Angle</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#example">Example</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#description">Description</a></li>
@@ -273,7 +270,7 @@
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="_sources/Collective Variables.rst.txt" rel="nofollow"> View page source</a>
+            <a href="_sources/Collective Variables.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -294,7 +291,7 @@ meaningful pathway along which advanced sampling can be performed. Listed below
 are the collective variables currently supported in SSAGES. In addition to
 specific properties for each CV, a name property can be defined for any CV
 which can be used to reference the CV from a method or other supported location.</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="s2">&quot;name&quot;</span> <span class="o">:</span> <span class="s2">&quot;mycvname&quot;</span>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="s2">&quot;name&quot;</span> <span class="o">:</span> <span class="s2">&quot;mycvname&quot;</span>
 </pre></div>
 </div>
 <p>Specified names for CVs must be unique. It is possible to omit a name and reference
@@ -303,7 +300,7 @@ a CV by its index as well.</p>
 <h2>Angle<a class="headerlink" href="#angle" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="example">
 <h3>Example<a class="headerlink" href="#example" title="Permalink to this headline">¶</a></h3>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="p">{</span>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="p">{</span>
         <span class="s2">&quot;type&quot;</span> <span class="o">:</span> <span class="s2">&quot;Angle&quot;</span><span class="p">,</span>
         <span class="s2">&quot;atom_ids&quot;</span> <span class="o">:</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">]</span>
 <span class="p">}</span>
@@ -320,11 +317,11 @@ a CV by its index as well.</p>
 <h3>Options &amp; Parameters<a class="headerlink" href="#options-parameters" title="Permalink to this headline">¶</a></h3>
 <div class="section" id="required">
 <h4>Required<a class="headerlink" href="#required" title="Permalink to this headline">¶</a></h4>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="s2">&quot;type&quot;</span>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="s2">&quot;type&quot;</span>
 </pre></div>
 </div>
 <p>Property <code class="docutils literal"><span class="pre">type</span></code> must be set to string <code class="docutils literal"><span class="pre">&quot;Angle&quot;</span></code>.</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="s2">&quot;atom_ids&quot;</span>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="s2">&quot;atom_ids&quot;</span>
 </pre></div>
 </div>
 <p>Property <code class="docutils literal"><span class="pre">atom_ids</span></code> must contain three integers consisting of the atom ID forming the angle of interest.</p>
@@ -343,7 +340,7 @@ a CV by its index as well.</p>
 </div>
 <div class="section" id="id1">
 <h3>Example<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="p">{</span>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="p">{</span>
         <span class="s2">&quot;type&quot;</span> <span class="o">:</span> <span class="s2">&quot;BoxVolume&quot;</span>
 <span class="p">}</span>
 </pre></div>
@@ -359,7 +356,7 @@ a CV by its index as well.</p>
 <h3>Options &amp; Parameters<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h3>
 <div class="section" id="id4">
 <h4>Required<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h4>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="s2">&quot;type&quot;</span>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="s2">&quot;type&quot;</span>
 </pre></div>
 </div>
 <p>Property <code class="docutils literal"><span class="pre">type</span></code> must be set to string <code class="docutils literal"><span class="pre">&quot;BoxVolume&quot;</span></code>.</p>
@@ -370,7 +367,7 @@ a CV by its index as well.</p>
 <h2>Gyration Tensor<a class="headerlink" href="#gyration-tensor" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="id5">
 <h3>Example<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h3>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="s2">&quot;type&quot;</span> <span class="o">:</span> <span class="s2">&quot;GyrationTensor&quot;</span><span class="p">,</span>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="s2">&quot;type&quot;</span> <span class="o">:</span> <span class="s2">&quot;GyrationTensor&quot;</span><span class="p">,</span>
 <span class="s2">&quot;atom_ids&quot;</span> <span class="o">:</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="mi">9</span><span class="p">,</span> <span class="mi">10</span><span class="p">],</span>
 <span class="s2">&quot;component&quot;</span> <span class="o">:</span> <span class="s2">&quot;shapeaniso&quot;</span>
 </pre></div>
@@ -414,15 +411,15 @@ use as a CV include:</p>
 <h3>Options &amp; Parameters<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h3>
 <div class="section" id="id8">
 <h4>Required<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h4>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="s2">&quot;type&quot;</span>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="s2">&quot;type&quot;</span>
 </pre></div>
 </div>
 <p>Property <code class="docutils literal"><span class="pre">type</span></code> must be set to string <code class="docutils literal"><span class="pre">&quot;GyrationTensor&quot;</span></code>.</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="s2">&quot;atom_ids&quot;</span>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="s2">&quot;atom_ids&quot;</span>
 </pre></div>
 </div>
 <p>Property <code class="docutils literal"><span class="pre">atom_ids</span></code> must be an array of integers containing the atom IDs which will enter the calculation.</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="s2">&quot;component&quot;</span>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="s2">&quot;component&quot;</span>
 </pre></div>
 </div>
 <p>Property <code class="docutils literal"><span class="pre">component</span></code> must be a string defining the gyration tensor component of interest.
@@ -435,7 +432,7 @@ Valid options are <code class="docutils literal"><span class="pre">&quot;Rg&quot
 <h2>Particle Coordinate<a class="headerlink" href="#particle-coordinate" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="id9">
 <h3>Example<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h3>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="p">{</span>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="p">{</span>
         <span class="s2">&quot;type&quot;</span> <span class="o">:</span> <span class="s2">&quot;ParticleCoordinate&quot;</span><span class="p">,</span>
         <span class="s2">&quot;atom_ids&quot;</span> <span class="o">:</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">10</span><span class="p">],</span>
         <span class="s2">&quot;dimension&quot;</span> <span class="o">:</span> <span class="s2">&quot;x&quot;</span>
@@ -454,15 +451,15 @@ group of atoms.</p>
 <h3>Options &amp; Parameters<a class="headerlink" href="#id11" title="Permalink to this headline">¶</a></h3>
 <div class="section" id="id12">
 <h4>Required<a class="headerlink" href="#id12" title="Permalink to this headline">¶</a></h4>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="s2">&quot;type&quot;</span>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="s2">&quot;type&quot;</span>
 </pre></div>
 </div>
 <p>Property <code class="docutils literal"><span class="pre">type</span></code> must be set to string <code class="docutils literal"><span class="pre">&quot;ParticleCoordinate&quot;</span></code>.</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="s2">&quot;atom_ids&quot;</span>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="s2">&quot;atom_ids&quot;</span>
 </pre></div>
 </div>
 <p>Property <code class="docutils literal"><span class="pre">atom_ids</span></code> must be an array of integers containing the atom IDs which will enter the calculation.</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="s2">&quot;dimension&quot;</span>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="s2">&quot;dimension&quot;</span>
 </pre></div>
 </div>
 <p>Property <code class="docutils literal"><span class="pre">dimension</span></code> must be a string defining the Cartesian component of interest <code class="docutils literal"><span class="pre">&quot;x&quot;</span></code>, <code class="docutils literal"><span class="pre">&quot;y&quot;</span></code>, or <code class="docutils literal"><span class="pre">&quot;z&quot;</span></code>.</p>
@@ -473,10 +470,10 @@ group of atoms.</p>
 <h2>Pairwise<a class="headerlink" href="#pairwise" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="id13">
 <h3>Example<a class="headerlink" href="#id13" title="Permalink to this headline">¶</a></h3>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="p">{</span>
-        <span class="s2">&quot;type&quot;</span> <span class="o">:</span> <span class="s2">&quot;PairwiseCV&quot;</span><span class="p">,</span>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="p">{</span>
+        <span class="s2">&quot;type&quot;</span> <span class="o">:</span> <span class="s2">&quot;Pairwise&quot;</span><span class="p">,</span>
         <span class="s2">&quot;group1&quot;</span> <span class="o">:</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">5</span><span class="p">],</span>
-        <span class="s2">&quot;group1&quot;</span> <span class="o">:</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">],</span>
+        <span class="s2">&quot;group2&quot;</span> <span class="o">:</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">8</span><span class="p">],</span>
         <span class="s2">&quot;kernel&quot;</span> <span class="o">:</span> <span class="p">{</span>
                 <span class="s2">&quot;type&quot;</span> <span class="o">:</span> <span class="s2">&quot;gaussian&quot;</span><span class="p">,</span>
                 <span class="s2">&quot;mu&quot;</span> <span class="o">:</span> <span class="mf">1.0</span><span class="p">,</span>
@@ -497,15 +494,15 @@ group of atoms.</p>
 <h3>Options &amp; Parameters<a class="headerlink" href="#id15" title="Permalink to this headline">¶</a></h3>
 <div class="section" id="id16">
 <h4>Required<a class="headerlink" href="#id16" title="Permalink to this headline">¶</a></h4>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="s2">&quot;type&quot;</span>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="s2">&quot;type&quot;</span>
 </pre></div>
 </div>
 <p>Property <code class="docutils literal"><span class="pre">type</span></code> must be set to string <code class="docutils literal"><span class="pre">&quot;Pairwise&quot;</span></code>.</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="s2">&quot;group1&quot;</span>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="s2">&quot;group1&quot;</span>
 </pre></div>
 </div>
 <p>Property <code class="docutils literal"><span class="pre">group1</span></code> must be an array of integers containing the atom IDs in the first set.</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="s2">&quot;group2&quot;</span>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="s2">&quot;group2&quot;</span>
 </pre></div>
 </div>
 <p>Property <code class="docutils literal"><span class="pre">group2</span></code> must be an array of integers containing the atom IDs in the second set.</p>
@@ -514,7 +511,7 @@ group of atoms.</p>
 <p class="last">Atoms can exist in both <code class="docutils literal"><span class="pre">group1</span></code> and <code class="docutils literal"><span class="pre">group2</span></code> simultaneously. Contacts are automatically
 skipped if <span class="math">\(i = j\)</span>.</p>
 </div>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="s2">&quot;kernel&quot;</span>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="s2">&quot;kernel&quot;</span>
 </pre></div>
 </div>
 <p>Property <code class="docutils literal"><span class="pre">kernel</span></code> must be an object defining the properties of the pairwise kernel function and its associated properties.</p>
@@ -525,14 +522,14 @@ skipped if <span class="math">\(i = j\)</span>.</p>
 <h5>Gaussian Function<a class="headerlink" href="#gaussian-function" title="Permalink to this headline">¶</a></h5>
 <p>The Gaussian function is defined as:</p>
 <div class="math">
-\[g_{ij} = e^{\frac{\left(r_{ij} - \mu\right)^2}{2 sigma^2}}.\]</div>
+\[g_{ij} = e^{-\frac{\left(r_{ij} - \mu\right)^2}{2 sigma^2}}.\]</div>
 <div class="section" id="properties">
 <h6>Properties<a class="headerlink" href="#properties" title="Permalink to this headline">¶</a></h6>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="s2">&quot;mu&quot;</span>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="s2">&quot;mu&quot;</span>
 </pre></div>
 </div>
 <p>Property <code class="docutils literal"><span class="pre">mu</span></code> is required and must be numeric.</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="s2">&quot;sigma&quot;</span>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="s2">&quot;sigma&quot;</span>
 </pre></div>
 </div>
 <p>Property <code class="docutils literal"><span class="pre">sigma</span></code> is required and must be numeric.</p>
@@ -545,23 +542,23 @@ skipped if <span class="math">\(i = j\)</span>.</p>
 \[s_{ij} = \frac{1-\left(\frac{r_{ij} - d_0}{r_0}\right)^n}{1-\left(\frac{r_{ij} - d_0}{r_0}\right)^m}.\]</div>
 <div class="section" id="id17">
 <h6>Properties<a class="headerlink" href="#id17" title="Permalink to this headline">¶</a></h6>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="s2">&quot;type&quot;</span>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="s2">&quot;type&quot;</span>
 </pre></div>
 </div>
-<p>Property <code class="docutils literal"><span class="pre">type</span></code> must be set to string <code class="docutils literal"><span class="pre">&quot;rational&quot;</span></code>.</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="s2">&quot;d0&quot;</span>
+<p>Property <code class="docutils literal"><span class="pre">type</span></code> must be set to string <code class="docutils literal"><span class="pre">&quot;rationalswitch&quot;</span></code>.</p>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="s2">&quot;d0&quot;</span>
 </pre></div>
 </div>
 <p>Property <code class="docutils literal"><span class="pre">d0</span></code> is required and must be numeric.</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="s2">&quot;r0&quot;</span>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="s2">&quot;r0&quot;</span>
 </pre></div>
 </div>
 <p>Property <code class="docutils literal"><span class="pre">r0</span></code> is required and must be numeric.</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="s2">&quot;n&quot;</span>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="s2">&quot;n&quot;</span>
 </pre></div>
 </div>
 <p>Property <code class="docutils literal"><span class="pre">n</span></code> is required and must be an integer.</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="s2">&quot;m&quot;</span>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="s2">&quot;m&quot;</span>
 </pre></div>
 </div>
 <p>Property <code class="docutils literal"><span class="pre">m</span></code> is required and must be an integer.</p>
@@ -574,7 +571,7 @@ skipped if <span class="math">\(i = j\)</span>.</p>
 <h2>Particle Position<a class="headerlink" href="#particle-position" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="id18">
 <h3>Example<a class="headerlink" href="#id18" title="Permalink to this headline">¶</a></h3>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="p">{</span>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="p">{</span>
         <span class="s2">&quot;type&quot;</span> <span class="o">:</span> <span class="s2">&quot;ParticlePosition&quot;</span><span class="p">,</span>
         <span class="s2">&quot;atom_ids&quot;</span> <span class="o">:</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">10</span><span class="p">],</span>
         <span class="s2">&quot;fix&quot;</span> <span class="o">:</span> <span class="p">[</span><span class="kc">true</span><span class="p">,</span> <span class="kc">false</span><span class="p">,</span> <span class="kc">true</span><span class="p">],</span>
@@ -592,21 +589,21 @@ from a particular point in Cartesian space.</p>
 <h3>Options &amp; Parameters<a class="headerlink" href="#id20" title="Permalink to this headline">¶</a></h3>
 <div class="section" id="id21">
 <h4>Required<a class="headerlink" href="#id21" title="Permalink to this headline">¶</a></h4>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="s2">&quot;type&quot;</span>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="s2">&quot;type&quot;</span>
 </pre></div>
 </div>
 <p>Property <code class="docutils literal"><span class="pre">type</span></code> must be set to string <code class="docutils literal"><span class="pre">&quot;ParticlePosition&quot;</span></code>.</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="s2">&quot;atom_ids&quot;</span>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="s2">&quot;atom_ids&quot;</span>
 </pre></div>
 </div>
 <p>Property <code class="docutils literal"><span class="pre">atom_ids</span></code> must be an array of integers containing the atom IDs which
 will enter the calculation.</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="s2">&quot;position&quot;</span>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="s2">&quot;position&quot;</span>
 </pre></div>
 </div>
 <p>Property <code class="docutils literal"><span class="pre">position</span></code> must be a 3-dimensional array of numbers defining the reference
 point in the simulation box.</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="s2">&quot;fix&quot;</span>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="s2">&quot;fix&quot;</span>
 </pre></div>
 </div>
 <p>Property <code class="docutils literal"><span class="pre">fix</span></code> must be a 3-dimensional array of booleans specifying the components
@@ -618,7 +615,7 @@ of the distance vector to include in the calculation.</p>
 <h2>Particle Separation<a class="headerlink" href="#particle-separation" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="id22">
 <h3>Example<a class="headerlink" href="#id22" title="Permalink to this headline">¶</a></h3>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="p">{</span>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="p">{</span>
     <span class="s2">&quot;type&quot;</span> <span class="o">:</span> <span class="s2">&quot;ParticleSeparation&quot;</span><span class="p">,</span>
     <span class="s2">&quot;group1&quot;</span> <span class="o">:</span> <span class="p">[</span><span class="mi">1</span><span class="p">],</span>
     <span class="s2">&quot;group2&quot;</span> <span class="o">:</span> <span class="p">[</span><span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">10</span><span class="p">]</span>
@@ -635,17 +632,17 @@ atoms.</p>
 <h3>Options &amp; Parameters<a class="headerlink" href="#id24" title="Permalink to this headline">¶</a></h3>
 <div class="section" id="id25">
 <h4>Required<a class="headerlink" href="#id25" title="Permalink to this headline">¶</a></h4>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="s2">&quot;type&quot;</span>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="s2">&quot;type&quot;</span>
 </pre></div>
 </div>
 <p>Property <code class="docutils literal"><span class="pre">type</span></code> must be set to string <code class="docutils literal"><span class="pre">&quot;ParticleSeparation&quot;</span></code>.</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="s2">&quot;group1&quot;</span>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="s2">&quot;group1&quot;</span>
 </pre></div>
 </div>
 <p>Property <code class="docutils literal"><span class="pre">group1</span></code> must be an array of integers containing the atom ID(s) which
 make up the first group of atoms. The CV will calculate the distance between
 the center of mass of this group and the group defined by property <code class="docutils literal"><span class="pre">group2</span></code>.</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="s2">&quot;group2&quot;</span>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="s2">&quot;group2&quot;</span>
 </pre></div>
 </div>
 <p>Property <code class="docutils literal"><span class="pre">group2</span></code> must be an array of integers containing the atom ID(s) which
@@ -654,7 +651,7 @@ the center of mass of this group and the group defined by property <code class="
 </div>
 <div class="section" id="optional">
 <h4>Optional<a class="headerlink" href="#optional" title="Permalink to this headline">¶</a></h4>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="s2">&quot;dimension&quot;</span>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="s2">&quot;dimension&quot;</span>
 </pre></div>
 </div>
 <p>Property <code class="docutils literal"><span class="pre">dimension</span></code> is a 3-dimensional array of booleans specifying which
@@ -667,7 +664,7 @@ three xyz components will be used.</p>
 <h2>Polymer Rouse Modes<a class="headerlink" href="#polymer-rouse-modes" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="id26">
 <h3>Example<a class="headerlink" href="#id26" title="Permalink to this headline">¶</a></h3>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="p">{</span>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="p">{</span>
     <span class="s2">&quot;type&quot;</span><span class="o">:</span> <span class="s2">&quot;RouseMode&quot;</span><span class="p">,</span>
     <span class="s2">&quot;mode&quot;</span><span class="o">:</span> <span class="mi">1</span><span class="p">,</span>
     <span class="s2">&quot;groups&quot;</span><span class="o">:</span>  <span class="p">[</span>
@@ -701,15 +698,15 @@ three xyz components will be used.</p>
 </div>
 <div class="section" id="id29">
 <h3>Required<a class="headerlink" href="#id29" title="Permalink to this headline">¶</a></h3>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="s2">&quot;type&quot;</span>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="s2">&quot;type&quot;</span>
 </pre></div>
 </div>
 <p>Property <code class="docutils literal"><span class="pre">mode</span></code> must be set to string <code class="docutils literal"><span class="pre">&quot;RouseMode&quot;</span></code>.</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="s2">&quot;groups&quot;</span>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="s2">&quot;groups&quot;</span>
 </pre></div>
 </div>
 <p>Property <code class="docutils literal"><span class="pre">groups</span></code> is an array of arrays containing the atom IDs (as integers) that comprise the discretized polymer beads. The number of groups provided implicitly defines :math: <cite>N</cite>, the number of polymer beads.</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="s2">&quot;mode&quot;</span>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="s2">&quot;mode&quot;</span>
 </pre></div>
 </div>
 <p>Property <code class="docutils literal"><span class="pre">mode</span></code> is an integer indicating the index of the desired Rouse mode. Valid values range from 0 up to one less than the number of groups, or <cite>0,cdots, N-1</cite>.</p>
@@ -719,7 +716,7 @@ three xyz components will be used.</p>
 <h2>Torsional Angle<a class="headerlink" href="#torsional-angle" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="id30">
 <h3>Example<a class="headerlink" href="#id30" title="Permalink to this headline">¶</a></h3>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="p">{</span>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="p">{</span>
         <span class="s2">&quot;type&quot;</span> <span class="o">:</span> <span class="s2">&quot;Torsional&quot;</span><span class="p">,</span>
         <span class="s2">&quot;atom_ids&quot;</span> <span class="o">:</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">6</span><span class="p">,</span> <span class="mi">10</span><span class="p">]</span>
 <span class="p">}</span>
@@ -738,11 +735,11 @@ It is computed as,</p>
 <h3>Options &amp; Parameters<a class="headerlink" href="#id32" title="Permalink to this headline">¶</a></h3>
 <div class="section" id="id33">
 <h4>Required<a class="headerlink" href="#id33" title="Permalink to this headline">¶</a></h4>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="s2">&quot;type&quot;</span>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="s2">&quot;type&quot;</span>
 </pre></div>
 </div>
 <p>Property <code class="docutils literal"><span class="pre">type</span></code> must be set to string <code class="docutils literal"><span class="pre">&quot;Torsional&quot;</span></code>.</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="s2">&quot;atom_ids&quot;</span>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="s2">&quot;atom_ids&quot;</span>
 </pre></div>
 </div>
 <p>Property <code class="docutils literal"><span class="pre">atom_ids</span></code> must be an array of 4 integers containing the atom IDs which
@@ -754,7 +751,7 @@ form the dihedral.</p>
 <h2>Alpha Helix RMSD<a class="headerlink" href="#alpha-helix-rmsd" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="id34">
 <h3>Example<a class="headerlink" href="#id34" title="Permalink to this headline">¶</a></h3>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="p">{</span>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="p">{</span>
     <span class="s2">&quot;type&quot;</span> <span class="o">:</span> <span class="s2">&quot;AlphaRMSD&quot;</span><span class="p">,</span>
     <span class="s2">&quot;residue_ids&quot;</span> <span class="o">:</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">21</span><span class="p">],</span>
     <span class="s2">&quot;reference&quot;</span> <span class="o">:</span> <span class="s2">&quot;reference_structure.pdb&quot;</span><span class="p">,</span>
@@ -787,11 +784,11 @@ function.</p>
 <h3>Options &amp; Parameters<a class="headerlink" href="#id36" title="Permalink to this headline">¶</a></h3>
 <div class="section" id="id37">
 <h4>Required<a class="headerlink" href="#id37" title="Permalink to this headline">¶</a></h4>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="s2">&quot;type&quot;</span>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="s2">&quot;type&quot;</span>
 </pre></div>
 </div>
 <p>Property <code class="docutils literal"><span class="pre">type</span></code> must be set to string <code class="docutils literal"><span class="pre">&quot;AlphaRMSD&quot;</span></code>.</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="s2">&quot;residue_ids&quot;</span>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="s2">&quot;residue_ids&quot;</span>
 </pre></div>
 </div>
 <p>Property <code class="docutils literal"><span class="pre">residue_ids</span></code> must be an array of two integers designating the range
@@ -799,7 +796,7 @@ of amino acids for which to calculate the CV. The indices of the amino acids
 must match those from the reference structure provided in the property
 <code class="docutils literal"><span class="pre">reference</span></code>. The smaller index must be listed first, and the range must span
 at least 6 amino acids.</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="s2">&quot;reference&quot;</span>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="s2">&quot;reference&quot;</span>
 </pre></div>
 </div>
 <p>Property <code class="docutils literal"><span class="pre">reference</span></code> must be a string containing the name of a reference pdb
@@ -811,7 +808,7 @@ each, the first amino acid in the second chain should be numbered 21.</p>
 </div>
 <div class="section" id="id38">
 <h4>Optional<a class="headerlink" href="#id38" title="Permalink to this headline">¶</a></h4>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="s2">&quot;unitconv&quot;</span>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="s2">&quot;unitconv&quot;</span>
 </pre></div>
 </div>
 <p>Property <code class="docutils literal"><span class="pre">unitconv</span></code> must be numeric. This factor is used to reconcile the
@@ -827,7 +824,7 @@ length is in angstroms, <code class="docutils literal"><span class="pre">unitcon
 <h2>Anti Beta RMSD<a class="headerlink" href="#anti-beta-rmsd" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="id39">
 <h3>Example<a class="headerlink" href="#id39" title="Permalink to this headline">¶</a></h3>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="p">{</span>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="p">{</span>
     <span class="s2">&quot;type&quot;</span> <span class="o">:</span> <span class="s2">&quot;AntiBetaRMSD&quot;</span><span class="p">,</span>
     <span class="s2">&quot;residue_ids&quot;</span> <span class="o">:</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">21</span><span class="p">],</span>
     <span class="s2">&quot;reference&quot;</span> <span class="o">:</span> <span class="s2">&quot;reference_structure.pdb&quot;</span><span class="p">,</span>
@@ -861,11 +858,11 @@ function.</p>
 <h3>Options &amp; Parameters<a class="headerlink" href="#id41" title="Permalink to this headline">¶</a></h3>
 <div class="section" id="id42">
 <h4>Required<a class="headerlink" href="#id42" title="Permalink to this headline">¶</a></h4>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="s2">&quot;type&quot;</span>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="s2">&quot;type&quot;</span>
 </pre></div>
 </div>
 <p>Property <code class="docutils literal"><span class="pre">type</span></code> must be set to string <code class="docutils literal"><span class="pre">&quot;AntiBetaRMSD&quot;</span></code>.</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="s2">&quot;residue_ids&quot;</span>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="s2">&quot;residue_ids&quot;</span>
 </pre></div>
 </div>
 <p>Property <code class="docutils literal"><span class="pre">residue_ids</span></code> must be an array of two integers designating the range
@@ -873,7 +870,7 @@ of amino acids for which to calculate the CV. The indices of the amino acids
 must match those from the reference structure provided in the property
 <code class="docutils literal"><span class="pre">reference</span></code>. The smaller index must be listed first, and the range must span
 at least 6 amino acids.</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="s2">&quot;reference&quot;</span>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="s2">&quot;reference&quot;</span>
 </pre></div>
 </div>
 <p>Property <code class="docutils literal"><span class="pre">reference</span></code> must be a string containing the name of a reference pdb
@@ -885,7 +882,7 @@ each, the first amino acid in the second chain should be numbered 21.</p>
 </div>
 <div class="section" id="id43">
 <h4>Optional<a class="headerlink" href="#id43" title="Permalink to this headline">¶</a></h4>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="s2">&quot;unitconv&quot;</span>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="s2">&quot;unitconv&quot;</span>
 </pre></div>
 </div>
 <p>Property <code class="docutils literal"><span class="pre">unitconv</span></code> must be numeric. This factor is used to reconcile the
@@ -894,7 +891,7 @@ beta-sheet reference structure. If your engine uses units of nanometers, this
 can be ignored. Otherwise, <code class="docutils literal"><span class="pre">unitconv</span></code> must be set to the equivalent number of
 length units in your MD engine equal to 1 nm. For example, if your default unit
 length is in angstroms, <code class="docutils literal"><span class="pre">unitconv</span></code> will be set to 10.</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="s2">&quot;mode&quot;</span>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="s2">&quot;mode&quot;</span>
 </pre></div>
 </div>
 <p>Property <code class="docutils literal"><span class="pre">mode</span></code> is an integer specifying whether to calculate beta-sheets
@@ -908,7 +905,7 @@ A value of 1 selects for the intra mode; a value of 2 selects for inter mode.</p
 <h2>Parallel Beta RMSD<a class="headerlink" href="#parallel-beta-rmsd" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="id44">
 <h3>Example<a class="headerlink" href="#id44" title="Permalink to this headline">¶</a></h3>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="p">{</span>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="p">{</span>
     <span class="s2">&quot;type&quot;</span> <span class="o">:</span> <span class="s2">&quot;ParallelBetaRMSD&quot;</span><span class="p">,</span>
     <span class="s2">&quot;residue_ids&quot;</span> <span class="o">:</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span> <span class="mi">21</span><span class="p">],</span>
     <span class="s2">&quot;reference&quot;</span> <span class="o">:</span> <span class="s2">&quot;reference_structure.pdb&quot;</span><span class="p">,</span>
@@ -942,11 +939,11 @@ function.</p>
 <h3>Options &amp; Parameters<a class="headerlink" href="#id46" title="Permalink to this headline">¶</a></h3>
 <div class="section" id="id47">
 <h4>Required<a class="headerlink" href="#id47" title="Permalink to this headline">¶</a></h4>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="s2">&quot;type&quot;</span>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="s2">&quot;type&quot;</span>
 </pre></div>
 </div>
 <p>Property <code class="docutils literal"><span class="pre">type</span></code> must be set to string <code class="docutils literal"><span class="pre">&quot;ParallelBetaRMSD&quot;</span></code>.</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="s2">&quot;residue_ids&quot;</span>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="s2">&quot;residue_ids&quot;</span>
 </pre></div>
 </div>
 <p>Property <code class="docutils literal"><span class="pre">residue_ids</span></code> must be an array of two integers designating the range
@@ -954,7 +951,7 @@ of amino acids for which to calculate the CV. The indices of the amino acids
 must match those from the reference structure provided in the property
 <code class="docutils literal"><span class="pre">reference</span></code>. The smaller index must be listed first, and the range must span
 at least 6 amino acids.</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="s2">&quot;reference&quot;</span>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="s2">&quot;reference&quot;</span>
 </pre></div>
 </div>
 <p>Property <code class="docutils literal"><span class="pre">reference</span></code> must be a string containing the name of a reference pdb
@@ -967,7 +964,7 @@ amino acids each, the first amino acid in the second chain should be numbered
 </div>
 <div class="section" id="id48">
 <h4>Optional<a class="headerlink" href="#id48" title="Permalink to this headline">¶</a></h4>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="s2">&quot;unitconv&quot;</span>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="s2">&quot;unitconv&quot;</span>
 </pre></div>
 </div>
 <p>Property <code class="docutils literal"><span class="pre">unitconv</span></code> must be numeric. This factor is used to reconcile the
@@ -976,7 +973,7 @@ beta-sheet reference structure. If your engine uses units of nanometers, this
 can be ignored. Otherwise, <code class="docutils literal"><span class="pre">unitconv</span></code> must be set to the equivalent number of
 length units in your MD engine equal to 1 nm. For example, if your default unit
 length is in angstroms, <code class="docutils literal"><span class="pre">unitconv</span></code> will be set to 10.</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="s2">&quot;mode&quot;</span>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="s2">&quot;mode&quot;</span>
 </pre></div>
 </div>
 <p>Property <code class="docutils literal"><span class="pre">mode</span></code> is an integer specifying whether to calculate beta-sheets
@@ -1011,7 +1008,7 @@ A value of 1 selects for the intra mode; a value of 2 selects for inter mode.</p
   <div role="contentinfo">
     <p>
         &copy; Copyright 2016, the SSAGES Team.
-      Last updated on Aug 30, 2017.
+      Last updated on Feb 27, 2018.
 
     </p>
   </div>
@@ -1033,17 +1030,17 @@ A value of 1 selects for the intra mode; a value of 2 selects for inter mode.</p
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'./',
-            VERSION:'v0.7.5-alpha-18-ga65a265',
+            VERSION:'v0.8.0-alpha',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
             HAS_SOURCE:  true,
-            SOURCELINK_SUFFIX: '.txt'
+            SOURCELINK_SUFFIX: ''
         };
     </script>
       <script type="text/javascript" src="_static/jquery.js"></script>
       <script type="text/javascript" src="_static/underscore.js"></script>
       <script type="text/javascript" src="_static/doctools.js"></script>
-      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
   
 

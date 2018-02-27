@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Contribute to SSAGES &mdash; SSAGES v0.7.5-alpha-18-ga65a265 documentation</title>
+  <title>Contribute to SSAGES &mdash; SSAGES v0.8.0-alpha documentation</title>
   
 
   
@@ -32,10 +32,7 @@
   
 
   
-        <link rel="index" title="Index"
-              href="genindex.html"/>
-        <link rel="search" title="Search" href="search.html"/>
-    <link rel="top" title="SSAGES v0.7.5-alpha-18-ga65a265 documentation" href="index.html"/>
+    <link rel="top" title="SSAGES v0.8.0-alpha documentation" href="index.html"/>
         <link rel="next" title="The SSAGES cookbook" href="The SSAGES Cookbook.html"/>
         <link rel="prev" title="Write your own Methods and CVs" href="Write your own Methods and CVs.html"/> 
 
@@ -66,7 +63,7 @@
             
             
               <div class="version">
-                0.7.5
+                0.8.0
               </div>
             
           
@@ -98,7 +95,7 @@
 <li class="toctree-l1"><a class="reference internal" href="Collective Variables.html">Collective Variables</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Advanced Sampling Methods.html">Advanced Sampling Methods</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Write your own Methods and CVs.html">Write your own Methods and CVs</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Contribute to SSAGES</a><ul>
+<li class="toctree-l1 current"><a class="current reference internal" href="">Contribute to SSAGES</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#reporting-bugs-and-wishes">Reporting bugs and wishes</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#improving-the-documentation">Improving the Documentation</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#building-the-documentation">Building the documentation</a></li>
@@ -168,7 +165,7 @@
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="_sources/Contribute to SSAGES.rst.txt" rel="nofollow"> View page source</a>
+            <a href="_sources/Contribute to SSAGES.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -200,7 +197,7 @@ as an inclusive community welcoming new ideas and contributions.</p>
 <dt>Reporting, Triaging, and Fixing Bugs</dt>
 <dd>No software is without errors, inconsistencies, and strange behaviors. Even
 with zero programming knowledge, you can help tremendously by reporting bugs or confirming issued bugs.
-<a class="reference internal" href="#report-bugs"><span class="std std-ref">Read more...</span></a></dd>
+<a class="reference internal" href="#report-bugs"><span>Read more...</span></a></dd>
 <dt>Improving the SSAGES documentation</dt>
 <dd>SSAGES would like to have a detailed yet comprehensive documentation on what it
 does and how it does it. This should include concise introductions to the
@@ -208,14 +205,14 @@ methods, quick to learn tutorials, complete coverage of the nooks and
 crannies of each method, and of course helpful pointers in
 case you run into errors. And while the documentation is already expansive,
 improvements on it never go unappreciated.
-<a class="reference internal" href="#improve-documentation"><span class="std std-ref">Read more...</span></a></dd>
+<a class="reference internal" href="#improve-documentation"><span>Read more...</span></a></dd>
 <dt>Including your Method and CV in SSAGES</dt>
 <dd>You have developed a new Metadynamics scheme or a Collective Variable and
 want to make it available to the community via SSAGES? Great!
-<a class="reference internal" href="#add-your-method"><span class="std std-ref">Read more...</span></a></dd>
+<a class="reference internal" href="#add-your-method"><span>Read more...</span></a></dd>
 <dt>Working on the core SSAGES system</dt>
 <dd>If you would like to climb into the heart of SSAGES and get your hands
-dirty, this task is for you. <a class="reference internal" href="#work-on-core-ssages"><span class="std std-ref">Read more...</span></a></dd>
+dirty, this task is for you. <a class="reference internal" href="#work-on-core-ssages"><span>Read more...</span></a></dd>
 </dl>
 <div class="section" id="reporting-bugs-and-wishes">
 <span id="report-bugs"></span><h2>Reporting bugs and wishes<a class="headerlink" href="#reporting-bugs-and-wishes" title="Permalink to this headline">¶</a></h2>
@@ -251,7 +248,7 @@ are more helpful than a hundred pages of dry descriptions.</li>
 <p>Before you can work on the documentation, you first have to build it. The
 documentation is part of the SSAGES source code. It is assumed that you have already
 downloaded and built the source code as described in the
-<a class="reference internal" href="Getting Started.html#getting-started"><span class="std std-ref">Getting Started</span></a> section. You will find a
+<a class="reference internal" href="Getting Started.html#getting-started"><span>Getting Started</span></a> section. You will find a
 collection of rst files comprising the User Manual under <code class="docutils literal"><span class="pre">doc/source/</span></code> where
 the file ending <code class="docutils literal"><span class="pre">rst</span></code> stands for ReStructured Text. The API documentation on
 the other hand resides directly in the header files right next to the classes
@@ -374,7 +371,7 @@ be found at</p>
 <p>The basic rule is that Doxygen comments start with <code class="docutils literal"><span class="pre">//!</span></code> or <code class="docutils literal"><span class="pre">/*!</span></code> and
 document the class, namespace or function that directly follows it. Let&#8217;s start
 with a short example:</p>
-<div class="highlight-cpp"><div class="highlight"><pre><span></span><span class="c1">//! Function taking the square of a value</span>
+<div class="highlight-cpp"><div class="highlight"><pre><span class="c1">//! Function taking the square of a value</span>
 <span class="cm">/*!</span>
 <span class="cm"> * \param val Input value</span>
 <span class="cm"> * \returns Square of the input value</span>
@@ -475,7 +472,7 @@ requirements, etc.</li>
 <span id="add-your-method"></span><h2>Adding your method to SSAGES<a class="headerlink" href="#adding-your-method-to-ssages" title="Permalink to this headline">¶</a></h2>
 <div class="admonition seealso">
 <p class="first admonition-title">See also</p>
-<p class="last">See <a class="reference internal" href="Write your own Methods and CVs.html#write-your-own-method"><span class="std std-ref">here</span></a> for an introduction to how to
+<p class="last">See <a class="reference internal" href="Write your own Methods and CVs.html#write-your-own-method"><span>here</span></a> for an introduction to how to
 develop your own method.</p>
 </div>
 <p>So, you have developed a new Metadynamics method or a new collective variable (CV)?
@@ -489,7 +486,7 @@ please give a small example of usage. In which case(s) does the new CV come in
 handy?</li>
 <li>Your method needs to come with the necessary documentation. For others to
 be able to use your method, you will have to explain how it works. You can
-take a look at the section <a class="reference internal" href="#improve-documentation"><span class="std std-ref">&#8220;How to improve the documentation&#8221;</span></a> for a starter on how to write good documentation.</li>
+take a look at the section <a class="reference internal" href="#improve-documentation"><span>&#8220;How to improve the documentation&#8221;</span></a> for a starter on how to write good documentation.</li>
 <li>Please provide an example system. This could be the folding of an
 Alanine Dipeptide molecule, a NaCl system or just a toy model with a simple
 energy landscape. As long as the system is small and the method can easily
@@ -531,7 +528,7 @@ SSAGES code.</p>
   <div role="contentinfo">
     <p>
         &copy; Copyright 2016, the SSAGES Team.
-      Last updated on Aug 30, 2017.
+      Last updated on Feb 27, 2018.
 
     </p>
   </div>
@@ -553,17 +550,17 @@ SSAGES code.</p>
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'./',
-            VERSION:'v0.7.5-alpha-18-ga65a265',
+            VERSION:'v0.8.0-alpha',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
             HAS_SOURCE:  true,
-            SOURCELINK_SUFFIX: '.txt'
+            SOURCELINK_SUFFIX: ''
         };
     </script>
       <script type="text/javascript" src="_static/jquery.js"></script>
       <script type="text/javascript" src="_static/underscore.js"></script>
       <script type="text/javascript" src="_static/doctools.js"></script>
-      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
   
 

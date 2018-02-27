@@ -2,6 +2,7 @@ var searchData=
 [
   ['n',['n',['../classSSAGES_1_1ForwardFlux_1_1FFSConfigID.html#abdf33a2779455d7ab7cffbe791145739',1,'SSAGES::ForwardFlux::FFSConfigID']]],
   ['n_5f',['N_',['../classSSAGES_1_1ABF.html#a45daad9b41bac9009f1c2f09da10f58e',1,'SSAGES::ABF']]],
+  ['net_5f',['net_',['../classSSAGES_1_1ANN.html#a8df5bc974f48135e0add44d77b91182a',1,'SSAGES::ANN']]],
   ['newcenters_5f',['newcenters_',['../classSSAGES_1_1StringMethod.html#af62b2619c59a5b505d46ee861b034744',1,'SSAGES::StringMethod']]],
   ['ngauss',['ngauss',['../classSSAGES_1_1COPSSImage.html#aeffc8a57e1d3b9b614a3208aab216e56',1,'SSAGES::COPSSImage']]],
   ['nlocal_5f',['nlocal_',['../classSSAGES_1_1Snapshot.html#a6725fa102ff8ba1337d7fbf158f225ac',1,'SSAGES::Snapshot']]],

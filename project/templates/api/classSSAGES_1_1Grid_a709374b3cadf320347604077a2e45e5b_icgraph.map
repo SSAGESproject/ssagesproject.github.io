@@ -1,3 +1,5 @@
 <map id="SSAGES::Grid::begin" name="SSAGES::Grid::begin">
-<area shape="rect" id="node2" href="$classSSAGES_1_1Grid.html#abb3356d220a8aef367ac8f2946e3bce2" title="Write grid out to file. " alt="" coords="203,5,349,46"/>
+<area shape="rect" id="node2" href="$classSSAGES_1_1BFS.html#ab32a7fe0fa2d38cd95576e3102d51f06" title="Prints the current bias to a defined file from the JSON. " alt="" coords="209,5,381,32"/>
+<area shape="rect" id="node3" href="$classSSAGES_1_1BFS.html#a417bd522d0ec956394e0ee0d5a154f73" title="The functions which calculates the updated bias and coefficients and then stores them. " alt="" coords="201,56,388,83"/>
+<area shape="rect" id="node4" href="$classSSAGES_1_1Grid.html#abb3356d220a8aef367ac8f2946e3bce2" title="Write grid out to file. " alt="" coords="223,107,366,149"/>
 </map>

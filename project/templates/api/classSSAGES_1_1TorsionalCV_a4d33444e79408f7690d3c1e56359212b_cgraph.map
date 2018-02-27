@@ -1,5 +1,5 @@
 <map id="SSAGES::TorsionalCV::Initialize" name="SSAGES::TorsionalCV::Initialize">
-<area shape="rect" id="node2" href="$classSSAGES_1_1Snapshot.html#a9079d14677b94ff2c88c1f35c867c303" title="Get communicator for walker. " alt="" coords="211,5,466,32"/>
-<area shape="rect" id="node3" href="$classSSAGES_1_1Snapshot.html#abeef8bea41bf9706855c59b6cde0777a" title="SSAGES::Snapshot::GetLocal\lIndices" alt="" coords="239,57,439,98"/>
-<area shape="rect" id="node4" href="$classSSAGES_1_1Snapshot.html#a3ecf272dca61538320a4d503303fa9ba" title="Gets the local atom index corresponding to an atom ID. " alt="" coords="515,57,715,98"/>
+<area shape="rect" id="node2" href="$classSSAGES_1_1Snapshot.html#a9079d14677b94ff2c88c1f35c867c303" title="Get communicator for walker. " alt="" coords="211,5,465,32"/>
+<area shape="rect" id="node3" href="$classSSAGES_1_1Snapshot.html#abeef8bea41bf9706855c59b6cde0777a" title="SSAGES::Snapshot::GetLocal\lIndices" alt="" coords="238,57,438,98"/>
+<area shape="rect" id="node4" href="$classSSAGES_1_1Snapshot.html#a3ecf272dca61538320a4d503303fa9ba" title="Gets the local atom index corresponding to an atom ID. " alt="" coords="513,57,713,98"/>
 </map>

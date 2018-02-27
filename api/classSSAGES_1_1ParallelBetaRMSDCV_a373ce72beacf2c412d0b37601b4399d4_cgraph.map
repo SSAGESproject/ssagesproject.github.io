@@ -1,3 +1,6 @@
 <map id="SSAGES::ParallelBetaRMSDCV::Initialize" name="SSAGES::ParallelBetaRMSDCV::Initialize">
-<area shape="rect" id="node2" href="$classSSAGES_1_1ReadBackbone.html#a2ac2a3c64129511572a47ec0913080ce" title="Read protein backbone atoms from reference PDB file. " alt="" coords="270,5,445,46"/>
+<area shape="rect" id="node2" href="$classSSAGES_1_1Snapshot.html#a9079d14677b94ff2c88c1f35c867c303" title="Get communicator for walker. " alt="" coords="268,5,523,32"/>
+<area shape="rect" id="node3" href="$classSSAGES_1_1Snapshot.html#abeef8bea41bf9706855c59b6cde0777a" title="SSAGES::Snapshot::GetLocal\lIndices" alt="" coords="295,57,495,98"/>
+<area shape="rect" id="node5" href="$classSSAGES_1_1ReadBackbone.html#a2ac2a3c64129511572a47ec0913080ce" title="Read protein backbone atoms from reference PDB file. " alt="" coords="308,122,483,163"/>
+<area shape="rect" id="node4" href="$classSSAGES_1_1Snapshot.html#a3ecf272dca61538320a4d503303fa9ba" title="Gets the local atom index corresponding to an atom ID. " alt="" coords="571,57,771,98"/>
 </map>

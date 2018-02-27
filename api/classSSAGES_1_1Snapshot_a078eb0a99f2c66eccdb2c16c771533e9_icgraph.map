@@ -1,3 +1,5 @@
 <map id="SSAGES::Snapshot::GetKb" name="SSAGES::Snapshot::GetKb">
-<area shape="rect" id="node2" href="$classSSAGES_1_1Basis.html#a80a42d9e00564fea2284939e26c09340" title="Post&#45;integration hook. " alt="" coords="241,5,455,32"/>
+<area shape="rect" id="node2" href="$classSSAGES_1_1BFS.html#a6b4639e309cbaffa82113f2577c065c4" title="Post&#45;integration hook. " alt="" coords="239,5,445,32"/>
+<area shape="rect" id="node4" href="$classSSAGES_1_1ANN.html#a3d285bcd721e9129d0629a03d08398d0" title="Pre&#45;simulation hook. " alt="" coords="241,56,443,83"/>
+<area shape="rect" id="node3" href="$classSSAGES_1_1BFS.html#acb56b06d2bcbfc6e91b3cf995e18e699" title="Constructor. " alt="" coords="493,5,639,32"/>
 </map>

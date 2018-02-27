@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Adaptive Biasing Force Algorithm &mdash; SSAGES v0.7.5-alpha-18-ga65a265 documentation</title>
+  <title>Adaptive Biasing Force Algorithm &mdash; SSAGES v0.8.0-alpha documentation</title>
   
 
   
@@ -32,12 +32,9 @@
   
 
   
-        <link rel="index" title="Index"
-              href="genindex.html"/>
-        <link rel="search" title="Search" href="search.html"/>
-    <link rel="top" title="SSAGES v0.7.5-alpha-18-ga65a265 documentation" href="index.html"/>
+    <link rel="top" title="SSAGES v0.8.0-alpha documentation" href="index.html"/>
         <link rel="up" title="Advanced Sampling Methods" href="Advanced Sampling Methods.html"/>
-        <link rel="next" title="Basis Function Sampling" href="Basis Function Sampling.html"/>
+        <link rel="next" title="Artificial Neural Network Sampling" href="Artificial Neural Network Sampling.html"/>
         <link rel="prev" title="Advanced Sampling Methods" href="Advanced Sampling Methods.html"/> 
 
   
@@ -67,7 +64,7 @@
             
             
               <div class="version">
-                0.7.5
+                0.8.0
               </div>
             
           
@@ -98,7 +95,7 @@
 <li class="toctree-l1"><a class="reference internal" href="Engines.html">Engines</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Collective Variables.html">Collective Variables</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="Advanced Sampling Methods.html">Advanced Sampling Methods</a><ul class="current">
-<li class="toctree-l2 current"><a class="current reference internal" href="#">Adaptive Biasing Force Algorithm</a><ul>
+<li class="toctree-l2 current"><a class="current reference internal" href="">Adaptive Biasing Force Algorithm</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#introduction">Introduction</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#options-parameters">Options &amp; Parameters</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#example-input">Example input</a></li>
@@ -107,6 +104,7 @@
 <li class="toctree-l3"><a class="reference internal" href="#developers">Developers</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="Artificial Neural Network Sampling.html">Artificial Neural Network Sampling</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Basis Function Sampling.html">Basis Function Sampling</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Elastic Band.html">Elastic Band</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Finite Temperature String.html">Finite Temperature String</a></li>
@@ -176,7 +174,7 @@
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="_sources/Adaptive Biasing Force Algorithm.rst.txt" rel="nofollow"> View page source</a>
+            <a href="_sources/Adaptive Biasing Force Algorithm.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -324,30 +322,27 @@ Leave at 1.</dd>
 </div>
 <div class="section" id="example-input">
 <h2>Example input<a class="headerlink" href="#example-input" title="Permalink to this headline">¶</a></h2>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="s2">&quot;methods&quot;</span> <span class="o">:</span> <span class="p">[</span>
+    <span class="p">{</span>
+        <span class="s2">&quot;type&quot;</span> <span class="o">:</span> <span class="s2">&quot;ABF&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;cvs&quot;</span> <span class="o">:</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">],</span>
+        <span class="s2">&quot;CV_lower_bounds&quot;</span> <span class="o">:</span> <span class="p">[</span><span class="o">-</span><span class="mf">3.14</span><span class="p">,</span> <span class="o">-</span><span class="mf">3.14</span><span class="p">],</span>
+        <span class="s2">&quot;CV_upper_bounds&quot;</span> <span class="o">:</span> <span class="p">[</span><span class="mf">3.14</span><span class="p">,</span><span class="mf">3.14</span><span class="p">],</span>
+        <span class="s2">&quot;CV_bins&quot;</span> <span class="o">:</span> <span class="p">[</span><span class="mi">21</span><span class="p">,</span><span class="mi">21</span><span class="p">],</span>
+        <span class="s2">&quot;CV_restraint_minimums&quot;</span> <span class="o">:</span> <span class="p">[</span><span class="o">-</span><span class="mi">5</span><span class="p">,</span><span class="o">-</span><span class="mi">5</span><span class="p">],</span>
+        <span class="s2">&quot;CV_restraint_maximums&quot;</span> <span class="o">:</span> <span class="p">[</span><span class="mi">5</span><span class="p">,</span><span class="mi">5</span><span class="p">],</span>
+        <span class="s2">&quot;CV_restraint_spring_constants&quot;</span> <span class="o">:</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">],</span>
+        <span class="s2">&quot;CV_isperiodic&quot;</span> <span class="o">:</span> <span class="p">[</span><span class="kc">false</span><span class="p">,</span><span class="kc">false</span><span class="p">],</span>
+        <span class="s2">&quot;timestep&quot;</span> <span class="o">:</span> <span class="mf">0.002</span><span class="p">,</span>
+        <span class="s2">&quot;minimum_count&quot;</span> <span class="o">:</span> <span class="mi">50</span><span class="p">,</span>
+        <span class="s2">&quot;output_file&quot;</span> <span class="o">:</span> <span class="s2">&quot;F_out&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;output_frequency&quot;</span> <span class="o">:</span> <span class="mi">1000</span><span class="p">,</span>
+        <span class="s2">&quot;unit_conversion&quot;</span> <span class="o">:</span> <span class="mi">1</span><span class="p">,</span>
+        <span class="s2">&quot;frequency&quot;</span> <span class="o">:</span> <span class="mi">1</span>
+    <span class="p">}</span>
+<span class="p">]</span>
 </pre></div>
 </div>
-<dl class="docutils">
-<dt>&#8220;methods&#8221; <span class="classifier-delimiter">:</span> <span class="classifier">[{</span></dt>
-<dd><blockquote class="first">
-<div>&#8220;type&#8221; : &#8220;ABF&#8221;,
-&#8220;cvs&#8221; : [0,1],
-&#8220;CV_lower_bounds&#8221; : [-3.14, -3.14],
-&#8220;CV_upper_bounds&#8221; : [3.14,3.14],
-&#8220;CV_bins&#8221; : [21,21],
-&#8220;CV_restraint_minimums&#8221; : [-5,-5],
-&#8220;CV_restraint_maximums&#8221; : [5,5],
-&#8220;CV_restraint_spring_constants&#8221; : [0,0],
-&#8220;CV_isperiodic&#8221; : [false,false],
-&#8220;timestep&#8221; : 0.002,
-&#8220;minimum_count&#8221; : 50,
-&#8220;filename&#8221; : &#8220;F_out&#8221;,
-&#8220;backup_frequency&#8221; : 1000,
-&#8220;unit_conversion&#8221; : 1,
-&#8220;frequency&#8221; : 1</div></blockquote>
-<p class="last">}]</p>
-</dd>
-</dl>
 </div>
 <div class="section" id="output">
 <h2>Output<a class="headerlink" href="#output" title="Permalink to this headline">¶</a></h2>
@@ -418,7 +413,7 @@ To build RIGID and MOLECULE:</p>
 <li>Go to LAMMPS src folder (/build/hooks/lammps/lammps-download-prefix/src/lammps-download/src/ for -DLAMMPS=YES)</li>
 <li>Do:</li>
 </ol>
-<div class="highlight-bash"><div class="highlight"><pre><span></span>make yes-RIGID
+<div class="highlight-bash"><div class="highlight"><pre>make yes-RIGID
 make yes-MOLECULE
 </pre></div>
 </div>
@@ -436,11 +431,11 @@ make yes-MOLECULE
 <li>Put the contents of ABF_ADP_LAMMPS_Example folder in your ssages build folder</li>
 <li>For a single walker example, do:</li>
 </ol>
-<div class="highlight-bash"><div class="highlight"><pre><span></span>./ssages ADP_ABF_1walker.json.json
+<div class="highlight-bash"><div class="highlight"><pre>./ssages ADP_ABF_1walker.json.json
 </pre></div>
 </div>
 <p>For 2 walkers, do:</p>
-<div class="highlight-bash"><div class="highlight"><pre><span></span>mpirun -np <span class="m">2</span> ./ssages ADP_ABF_2walkers.json
+<div class="highlight-bash"><div class="highlight"><pre>mpirun -np <span class="m">2</span> ./ssages ADP_ABF_2walkers.json
 </pre></div>
 </div>
 <p>For GROMACS:</p>
@@ -460,16 +455,16 @@ make yes-MOLECULE
 <li>Put the contents of ABF_ADP_Gromacs_Example in your ssages build folder</li>
 <li>For a single walker example, do:</li>
 </ol>
-<div class="highlight-bash"><div class="highlight"><pre><span></span>./ssages ABF_ADP_1walker.json
+<div class="highlight-bash"><div class="highlight"><pre>./ssages ABF_ADP_1walker.json
 </pre></div>
 </div>
 <p>For 2 walkers, do:</p>
-<div class="highlight-bash"><div class="highlight"><pre><span></span>mpirun -np <span class="m">2</span> ./ssages ABF_ADP_2walkers.json
+<div class="highlight-bash"><div class="highlight"><pre>mpirun -np <span class="m">2</span> ./ssages ABF_ADP_2walkers.json
 </pre></div>
 </div>
 <p>These will run using the pre-prepared input files in .tpr format. If you wish to
 prepare the input files yourself using GROMACS tools (if compiled with -DGROMACS=YES):</p>
-<div class="highlight-bash"><div class="highlight"><pre><span></span>/build/hooks/gromacs/gromacs/bin/gmx_mpi grompp -f nvt.mdp -p topol.top -c adp.gro -o example_adp0.tpr
+<div class="highlight-bash"><div class="highlight"><pre>/build/hooks/gromacs/gromacs/bin/gmx_mpi grompp -f nvt.mdp -p topol.top -c adp.gro -o example_adp0.tpr
 /build/hooks/gromacs/gromacs/bin/gmx_mpi grompp -f nvt.mdp -p topol.top -c adp.gro -o example_adp1.tpr
 </pre></div>
 </div>
@@ -483,7 +478,7 @@ outputs given in the examples folders:</p>
 <li>Copy ABF_integrator.py (requires numpy, scipy and matplotlib) into your build folder.</li>
 <li>Run the integrator:</li>
 </ol>
-<div class="highlight-bash"><div class="highlight"><pre><span></span>python ABF_integrator.py --periodic1 True --periodic2 True --interpolate <span class="m">200</span>
+<div class="highlight-bash"><div class="highlight"><pre>python ABF_integrator.py --periodic1 True --periodic2 True --interpolate 200
 </pre></div>
 </div>
 <ol class="arabic simple" start="3">
@@ -496,7 +491,7 @@ To build RIGID and MOLECULE:</p>
 <li>Go to LAMMPS src folder (/build/hooks/lammps/lammps-download-prefix/src/lammps-download/src/ for -DLAMMPS=YES)</li>
 <li>Do:</li>
 </ol>
-<div class="highlight-bash"><div class="highlight"><pre><span></span>make yes-KSPACE
+<div class="highlight-bash"><div class="highlight"><pre>make yes-KSPACE
 make yes-MOLECULE
 </pre></div>
 </div>
@@ -514,11 +509,11 @@ make yes-MOLECULE
 <li>Put the contents of ABF_NaCl_LAMMPS_Example folder in your ssages build folder</li>
 <li>For a single walker example, do:</li>
 </ol>
-<div class="highlight-bash"><div class="highlight"><pre><span></span>./ssages ADP_NaCl_1walker.json.json
+<div class="highlight-bash"><div class="highlight"><pre>./ssages ADP_NaCl_1walker.json.json
 </pre></div>
 </div>
 <p>For 2 walkers, do:</p>
-<div class="highlight-bash"><div class="highlight"><pre><span></span>mpirun -np <span class="m">2</span> ./ssages ADP_NaCl_2walkers.json
+<div class="highlight-bash"><div class="highlight"><pre>mpirun -np <span class="m">2</span> ./ssages ADP_NaCl_2walkers.json
 </pre></div>
 </div>
 <p>For GROMACS:</p>
@@ -538,16 +533,16 @@ make yes-MOLECULE
 <li>Put the contents of ABF_NaCl_Gromacs_Example in your ssages build folder</li>
 <li>For a single walker example, do:</li>
 </ol>
-<div class="highlight-bash"><div class="highlight"><pre><span></span>./ssages ABF_NaCl_1walker.json
+<div class="highlight-bash"><div class="highlight"><pre>./ssages ABF_NaCl_1walker.json
 </pre></div>
 </div>
 <p>For 2 walkers, do:</p>
-<div class="highlight-bash"><div class="highlight"><pre><span></span>mpirun -np <span class="m">2</span> ./ssages ABF_NaCl_2walkers.json
+<div class="highlight-bash"><div class="highlight"><pre>mpirun -np <span class="m">2</span> ./ssages ABF_NaCl_2walkers.json
 </pre></div>
 </div>
 <p>These will run using the pre-prepared input files in .tpr format. If you wish to
 prepare the input files yourself using GROMACS tools (if compiled with -DGROMACS=YES):</p>
-<div class="highlight-bash"><div class="highlight"><pre><span></span>/build/hooks/gromacs/gromacs/bin/gmx_mpi grompp -f npt.mdp -p topol.top -c NaCl.gro -o example_NaCl0.tpr
+<div class="highlight-bash"><div class="highlight"><pre>/build/hooks/gromacs/gromacs/bin/gmx_mpi grompp -f npt.mdp -p topol.top -c NaCl.gro -o example_NaCl0.tpr
 /build/hooks/gromacs/gromacs/bin/gmx_mpi grompp -f npt.mdp -p topol.top -c NaCl.gro -o example_NaCl1.tpr
 </pre></div>
 </div>
@@ -561,7 +556,7 @@ outputs given in the examples folders:</p>
 <li>Copy ABF_integrator.py (requires numpy, scipy and matplotlib) into your build folder.</li>
 <li>Run the integrator:</li>
 </ol>
-<div class="highlight-bash"><div class="highlight"><pre><span></span>python ABF_integrator.py
+<div class="highlight-bash"><div class="highlight"><pre>python ABF_integrator.py
 </pre></div>
 </div>
 <ol class="arabic simple" start="3">
@@ -585,7 +580,7 @@ Hythem Sidky</p>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="Basis Function Sampling.html" class="btn btn-neutral float-right" title="Basis Function Sampling" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="Artificial Neural Network Sampling.html" class="btn btn-neutral float-right" title="Artificial Neural Network Sampling" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
         <a href="Advanced Sampling Methods.html" class="btn btn-neutral" title="Advanced Sampling Methods" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
@@ -598,7 +593,7 @@ Hythem Sidky</p>
   <div role="contentinfo">
     <p>
         &copy; Copyright 2016, the SSAGES Team.
-      Last updated on Aug 30, 2017.
+      Last updated on Feb 27, 2018.
 
     </p>
   </div>
@@ -620,17 +615,17 @@ Hythem Sidky</p>
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'./',
-            VERSION:'v0.7.5-alpha-18-ga65a265',
+            VERSION:'v0.8.0-alpha',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
             HAS_SOURCE:  true,
-            SOURCELINK_SUFFIX: '.txt'
+            SOURCELINK_SUFFIX: ''
         };
     </script>
       <script type="text/javascript" src="_static/jquery.js"></script>
       <script type="text/javascript" src="_static/underscore.js"></script>
       <script type="text/javascript" src="_static/doctools.js"></script>
-      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
   
 

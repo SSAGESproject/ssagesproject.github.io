@@ -1,5 +1,5 @@
 <map id="SSAGES::DirectForwardFlux" name="SSAGES::DirectForwardFlux">
 <area shape="rect" id="node2" href="$classSSAGES_1_1ForwardFlux.html" title="ForwardFlux sampling method. " alt="" coords="23,155,180,181"/>
 <area shape="rect" id="node3" href="$classSSAGES_1_1Method.html" title="Interface for Method implementations. " alt="" coords="37,80,165,107"/>
-<area shape="rect" id="node4" href="$classSSAGES_1_1EventListener.html" title="Base abstract class for listening in to events fired by &quot;Hook&quot;. " alt="" coords="19,5,183,32"/>
+<area shape="rect" id="node4" href="$classSSAGES_1_1EventListener.html" title="Base abstract class for listening in to events fired by &quot;Hook&quot;. " alt="" coords="19,5,184,32"/>
 </map>

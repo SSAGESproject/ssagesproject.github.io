@@ -1,6 +1,6 @@
 <map id="SSAGES::ParallelBetaRMSDCV::Evaluate" name="SSAGES::ParallelBetaRMSDCV::Evaluate">
-<area shape="rect" id="node2" href="$classSSAGES_1_1Snapshot.html#abeef8bea41bf9706855c59b6cde0777a" title="SSAGES::Snapshot::GetLocal\lIndices" alt="" coords="281,5,481,46"/>
-<area shape="rect" id="node4" href="$classSSAGES_1_1Snapshot.html#ae05879b78672cd4899a06ae2d6a140fd" title="Get number of atoms in this snapshot. " alt="" coords="283,70,480,111"/>
-<area shape="rect" id="node5" href="$classSSAGES_1_1Snapshot.html#aee2ceb317884bc5e0105b9824b5026d3" title="Access the particle positions. " alt="" coords="270,136,493,163"/>
-<area shape="rect" id="node3" href="$classSSAGES_1_1Snapshot.html#a3ecf272dca61538320a4d503303fa9ba" title="Gets the local atom index corresponding to an atom ID. " alt="" coords="541,5,741,46"/>
+<area shape="rect" id="node2" href="$classSSAGES_1_1Snapshot.html#a9079d14677b94ff2c88c1f35c867c303" title="Get communicator for walker. " alt="" coords="268,5,523,32"/>
+<area shape="rect" id="node3" href="$classSSAGES_1_1Snapshot.html#a3ecf272dca61538320a4d503303fa9ba" title="Gets the local atom index corresponding to an atom ID. " alt="" coords="295,57,495,98"/>
+<area shape="rect" id="node4" href="$classSSAGES_1_1Snapshot.html#ae05879b78672cd4899a06ae2d6a140fd" title="Get number of atoms in this snapshot. " alt="" coords="297,122,494,163"/>
+<area shape="rect" id="node5" href="$classSSAGES_1_1Snapshot.html#aee2ceb317884bc5e0105b9824b5026d3" title="Access the particle positions. " alt="" coords="284,188,507,215"/>
 </map>

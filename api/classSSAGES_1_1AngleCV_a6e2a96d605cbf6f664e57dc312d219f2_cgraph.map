@@ -1,5 +1,5 @@
 <map id="SSAGES::AngleCV::Initialize" name="SSAGES::AngleCV::Initialize">
-<area shape="rect" id="node2" href="$classSSAGES_1_1Snapshot.html#a9079d14677b94ff2c88c1f35c867c303" title="Get communicator for walker. " alt="" coords="249,5,503,32"/>
-<area shape="rect" id="node3" href="$classSSAGES_1_1Snapshot.html#abeef8bea41bf9706855c59b6cde0777a" title="SSAGES::Snapshot::GetLocal\lIndices" alt="" coords="276,57,476,98"/>
-<area shape="rect" id="node4" href="$classSSAGES_1_1Snapshot.html#a3ecf272dca61538320a4d503303fa9ba" title="Gets the local atom index corresponding to an atom ID. " alt="" coords="552,57,752,98"/>
+<area shape="rect" id="node2" href="$classSSAGES_1_1Snapshot.html#a9079d14677b94ff2c88c1f35c867c303" title="Get communicator for walker. " alt="" coords="247,5,501,32"/>
+<area shape="rect" id="node3" href="$classSSAGES_1_1Snapshot.html#abeef8bea41bf9706855c59b6cde0777a" title="SSAGES::Snapshot::GetLocal\lIndices" alt="" coords="274,57,474,98"/>
+<area shape="rect" id="node4" href="$classSSAGES_1_1Snapshot.html#a3ecf272dca61538320a4d503303fa9ba" title="Gets the local atom index corresponding to an atom ID. " alt="" coords="549,57,749,98"/>
 </map>

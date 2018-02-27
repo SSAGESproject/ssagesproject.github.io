@@ -1,6 +1,6 @@
 <map id="SSAGES::Constraint" name="SSAGES::Constraint">
 <area shape="rect" id="node4" href="$classSSAGES_1_1COPSS.html" title="Wrapper class for COPSS simulations. " alt="" coords="11,155,143,181"/>
 <area shape="rect" id="node5" href="$classSSAGES_1_1COPSSImage.html" title="Image method. " alt="" coords="168,155,336,181"/>
-<area shape="rect" id="node2" href="$classSSAGES_1_1EventListener.html" title="Base abstract class for listening in to events fired by &quot;Hook&quot;. " alt="" coords="5,5,169,32"/>
-<area shape="rect" id="node3" href="$classSerializable.html" title="Serializable" alt="" coords="195,5,284,32"/>
+<area shape="rect" id="node2" href="$classSSAGES_1_1EventListener.html" title="Base abstract class for listening in to events fired by &quot;Hook&quot;. " alt="" coords="5,5,171,32"/>
+<area shape="rect" id="node3" href="$classSerializable.html" title="Serializable" alt="" coords="195,5,285,32"/>
 </map>

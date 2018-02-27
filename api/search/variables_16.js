@@ -3,7 +3,7 @@ var searchData=
   ['walkerid_5f',['walkerid_',['../classSSAGES_1_1ResourceHandler.html#acf24d4787aaf9ad17b0df644525e3e6f',1,'SSAGES::ResourceHandler']]],
   ['wdotp1_5f',['wdotp1_',['../classSSAGES_1_1ABF.html#a7c882e37a3676cb3e33776621929c3b7',1,'SSAGES::ABF']]],
   ['wdotp2_5f',['wdotp2_',['../classSSAGES_1_1ABF.html#a1a0082f17ab10382191cbf39046e7052',1,'SSAGES::ABF']]],
-  ['weight_5f',['weight_',['../classSSAGES_1_1Basis.html#a6fe3ab6b884506cdba6b5782e8775898',1,'SSAGES::Basis']]],
+  ['weight_5f',['weight_',['../classSSAGES_1_1BFS.html#a0790f5dfa981809fb3f2aa468fd26326',1,'SSAGES::BFS']]],
   ['wg0_5f',['wg0_',['../classSSAGES_1_1COPSSImage.html#af90a6179d48b0d2850d69dfb2d0b0da7',1,'SSAGES::COPSSImage']]],
   ['wid_5f',['wid_',['../classSSAGES_1_1Snapshot.html#aa3b84c17b9f617080e81c86c156ec7fe',1,'SSAGES::Snapshot']]],
   ['width',['width',['../structSSAGES_1_1Hill.html#a67e7bf2431fea5d9befac14c4c5e7228',1,'SSAGES::Hill']]],

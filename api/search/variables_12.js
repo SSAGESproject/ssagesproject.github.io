@@ -9,5 +9,6 @@ var searchData=
   ['snapshot_5fstored',['snapshot_stored',['../classSSAGES_1_1Swarm.html#aa3e1dbbf5f37d6a3d90b9939be9629af',1,'SSAGES::Swarm']]],
   ['stringout_5f',['stringout_',['../classSSAGES_1_1StringMethod.html#a1637a3997f7286f074864b99d3f3780c',1,'SSAGES::StringMethod']]],
   ['stringspring_5f',['stringspring_',['../classSSAGES_1_1ElasticBand.html#a4ee8cb591566fa5b3b95e629f3fc35ea',1,'SSAGES::ElasticBand']]],
-  ['swarm_5flength_5f',['swarm_length_',['../classSSAGES_1_1Swarm.html#a151b6b95dc5795326d90e09122741752',1,'SSAGES::Swarm']]]
+  ['swarm_5flength_5f',['swarm_length_',['../classSSAGES_1_1Swarm.html#a151b6b95dc5795326d90e09122741752',1,'SSAGES::Swarm']]],
+  ['sweep_5f',['sweep_',['../classSSAGES_1_1ANN.html#aae9197fd0b817769727ac412126db8a4',1,'SSAGES::ANN']]]
 ];

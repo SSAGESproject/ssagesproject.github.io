@@ -1,3 +1,4 @@
 <map id="SSAGES::GridBase::mapTo1d" name="SSAGES::GridBase::mapTo1d">
-<area shape="rect" id="node2" href="$classSSAGES_1_1GridBase.html#a896d88442ef110a3afb58944e5107b53" title="Access Grid element read&#45;only. " alt="" coords="256,5,421,46"/>
+<area shape="rect" id="node2" href="$classSSAGES_1_1GridBase.html#a896d88442ef110a3afb58944e5107b53" title="Access Grid element read&#45;only. " alt="" coords="255,5,427,47"/>
+<area shape="rect" id="node3" href="$classSSAGES_1_1GridBase.html#a0a126a2ed3e9de4b37db9dca3162b6f1" title="Wrap the index around periodic boundaries. " alt="" coords="255,71,427,112"/>
 </map>

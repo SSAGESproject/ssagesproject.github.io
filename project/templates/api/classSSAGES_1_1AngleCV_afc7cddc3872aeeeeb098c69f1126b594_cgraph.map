@@ -1,8 +1,27 @@
 <map id="SSAGES::AngleCV::Evaluate" name="SSAGES::AngleCV::Evaluate">
-<area shape="rect" id="node2" href="$classSSAGES_1_1Snapshot.html#a46d2a991fd3446bfe6f6f72291ec1483" title="Apply minimum image to a vector. " alt="" coords="261,5,496,46"/>
-<area shape="rect" id="node4" href="$classSSAGES_1_1Snapshot.html#a9079d14677b94ff2c88c1f35c867c303" title="Get communicator for walker. " alt="" coords="251,71,506,97"/>
-<area shape="rect" id="node5" href="$classSSAGES_1_1Snapshot.html#a3ecf272dca61538320a4d503303fa9ba" title="Gets the local atom index corresponding to an atom ID. " alt="" coords="279,122,479,163"/>
-<area shape="rect" id="node6" href="$classSSAGES_1_1Snapshot.html#ae05879b78672cd4899a06ae2d6a140fd" title="Get number of atoms in this snapshot. " alt="" coords="280,187,477,229"/>
-<area shape="rect" id="node7" href="$classSSAGES_1_1Snapshot.html#aee2ceb317884bc5e0105b9824b5026d3" title="Access the particle positions. " alt="" coords="267,253,490,280"/>
-<area shape="rect" id="node3" href="$namespaceSSAGES.html#a49bb77a1b5822888753c96c70780ab47" title="Quick helper function to round a double. " alt="" coords="555,12,677,39"/>
+<area shape="rect" id="node2" href="$classSSAGES_1_1AngleCV.html#a34ffc931d859a502a8f8c5f61561c896" title="Constructor. " alt="" coords="278,5,475,32"/>
+<area shape="rect" id="node3" href="$classSSAGES_1_1Snapshot.html#a46d2a991fd3446bfe6f6f72291ec1483" title="Apply minimum image to a vector. " alt="" coords="259,57,494,98"/>
+<area shape="rect" id="node5" href="$classSSAGES_1_1Snapshot.html#a9079d14677b94ff2c88c1f35c867c303" title="Get communicator for walker. " alt="" coords="249,123,504,149"/>
+<area shape="rect" id="node6" href="$classJson_1_1Requirement.html#a60bc275c366eb59f192fa2e621268480" title="Get list of error messages. " alt="" coords="567,130,707,171"/>
+<area shape="rect" id="node7" href="$classSSAGES_1_1Snapshot.html#a3ecf272dca61538320a4d503303fa9ba" title="Gets the local atom index corresponding to an atom ID. " alt="" coords="277,341,477,382"/>
+<area shape="rect" id="node8" href="$classSSAGES_1_1Snapshot.html#ae05879b78672cd4899a06ae2d6a140fd" title="Get number of atoms in this snapshot. " alt="" coords="278,406,475,447"/>
+<area shape="rect" id="node9" href="$classSSAGES_1_1Snapshot.html#aee2ceb317884bc5e0105b9824b5026d3" title="Access the particle positions. " alt="" coords="265,472,488,499"/>
+<area shape="rect" id="node10" href="$classJson_1_1Requirement.html#adfaec336a9f051d6f6b9a6d7f1d97b75" title="Check if errors have occured. " alt="" coords="567,195,707,237"/>
+<area shape="rect" id="node11" href="$classJson_1_1ObjectRequirement.html#a4ed02ae1d612a5efba1688fcdd2df092" title="Parse JSON value to generate Requirement(s). " alt="" coords="291,607,462,649"/>
+<area shape="rect" id="node19" href="$classJson_1_1ObjectRequirement.html#a9ac3b920001a35bc70580035d8d802b7" title="Validate JSON value. " alt="" coords="291,275,462,317"/>
+<area shape="rect" id="node4" href="$namespaceSSAGES.html#a49bb77a1b5822888753c96c70780ab47" title="Quick helper function to round a double. " alt="" coords="577,64,698,91"/>
+<area shape="rect" id="node12" href="$classJson_1_1RequirementLoader.html#a82857d029b7ebfeb315f5b1b32401291" title="Extended Requirement loader. " alt="" coords="552,574,723,615"/>
+<area shape="rect" id="node13" href="$classJson_1_1RequirementLoader.html#aeb1344919deda4bd8b8aa8a00cb50390" title="Load specific requirement. " alt="" coords="552,639,723,681"/>
+<area shape="rect" id="node14" href="$classJson_1_1ObjectRequirement.html#a4f2e76636df4f7b153aaac02a1b05e4f" title="Reset Requirement. " alt="" coords="552,705,723,746"/>
+<area shape="rect" id="node15" href="$classJson_1_1ObjectRequirement.html#aa8181c37cbe67db098bc2b82cdea71ef" title="Clear errors on all Requirements. " alt="" coords="771,737,941,778"/>
+<area shape="rect" id="node17" href="$classJson_1_1ObjectRequirement.html#a4fc797684496f4f0381d1388877c133d" title="Clear notices on all Requirements. " alt="" coords="771,671,941,713"/>
+<area shape="rect" id="node16" href="$classJson_1_1Requirement.html#ace71ebbbcc885f0c4c391a3807c80f33" title="Clear list of error messages. " alt="" coords="989,737,1129,778"/>
+<area shape="rect" id="node18" href="$classJson_1_1Requirement.html#a8a8a4020e4955be56dcacf4727ae5bc3" title="Clear list of notice messages. " alt="" coords="989,671,1129,713"/>
+<area shape="rect" id="node20" href="$classJson_1_1Requirement.html#a46a0056414100386541cd1cb899e0030" title="Get list of notices. " alt="" coords="567,443,707,485"/>
+<area shape="rect" id="node21" href="$classJson_1_1Requirement.html#ad407cff3cc37295c3b2a7ebe31798548" title="Check if notices have been queued. " alt="" coords="567,509,707,550"/>
+<area shape="rect" id="node22" href="$classJson_1_1Requirement.html#adeb9efa6cf271d9cea0599ff2d458a08" title="Add error to list of error messages. " alt="" coords="567,261,707,302"/>
+<area shape="rect" id="node23" href="$classJson_1_1Requirement.html#a00feadb29fa33f4f2cca7362f12aaed4" title="Add message to list of notices. " alt="" coords="567,326,707,367"/>
+<area shape="rect" id="node26" href="$classJson_1_1Requirement.html#aa97494b642414d00482745a0d5b2c2c3" title="Validate that JSON value meets requirements. " alt="" coords="786,389,926,430"/>
+<area shape="rect" id="node24" href="$classJson_1_1Requirement.html#af13c20497e7ad6c332c57fa80a266e27" title="Parse JSON value. " alt="" coords="786,258,926,299"/>
+<area shape="rect" id="node25" href="$classJson_1_1Requirement.html#a34bda791587973d7e5b5c222936b2d4e" title="Reset validator. " alt="" coords="786,323,926,365"/>
 </map>

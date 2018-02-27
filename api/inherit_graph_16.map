@@ -1,3 +1,4 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classSSAGES_1_1JSONLoader.html" title="Class for loading JSON content from files. " alt="" coords="5,5,165,32"/>
+<area shape="rect" id="node1" href="$classSSAGES_1_1GridBase.html" title="SSAGES::GridBase\&lt; uint \&gt;" alt="" coords="5,5,189,32"/>
+<area shape="rect" id="node2" href="$classSSAGES_1_1Grid.html" title="SSAGES::Grid\&lt; uint \&gt;" alt="" coords="237,5,392,32"/>
 </map>

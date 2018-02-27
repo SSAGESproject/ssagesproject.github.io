@@ -1,8 +1,0 @@
-<map id="SSAGES::Basis::PostIntegration" name="SSAGES::Basis::PostIntegration">
-<area shape="rect" id="node2" href="$classSSAGES_1_1CVManager.html#a7317d7a4400d1c6ece08559f146dc049" title="Get CV iterator. " alt="" coords="309,5,472,46"/>
-<area shape="rect" id="node3" href="$classSSAGES_1_1Snapshot.html#a2533f7b900bc33185424eb94d6996edf" title="Access the per&#45;particle forces. " alt="" coords="286,71,495,97"/>
-<area shape="rect" id="node4" href="$classSSAGES_1_1Snapshot.html#acaee0172694743e118273a055ff2c3fc" title="Get the current iteration. " alt="" coords="283,121,499,148"/>
-<area shape="rect" id="node5" href="$classSSAGES_1_1Snapshot.html#a078eb0a99f2c66eccdb2c16c771533e9" title="Get system Kb. " alt="" coords="298,172,483,199"/>
-<area shape="rect" id="node6" href="$classSSAGES_1_1Snapshot.html#ac47c70eea412fa72c543755959f6516a" title="Get current temperature. " alt="" coords="269,223,512,249"/>
-<area shape="rect" id="node7" href="$classSSAGES_1_1Snapshot.html#a00de82748940b4a7982b19fa8abe1c30" title="Get box virial. " alt="" coords="291,273,490,300"/>
-</map>

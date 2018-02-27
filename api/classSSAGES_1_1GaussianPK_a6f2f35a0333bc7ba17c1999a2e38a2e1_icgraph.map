@@ -1,3 +1,6 @@
 <map id="SSAGES::GaussianPK::Build" name="SSAGES::GaussianPK::Build">
-<area shape="rect" id="node2" href="$classSSAGES_1_1PairwiseKernel.html#a86c0b897d04fe123892e6c2040bfb93c" title="Build PairwiseKernel from JSON value. " alt="" coords="214,5,386,46"/>
+<area shape="rect" id="node2" href="$classSSAGES_1_1PairwiseKernel.html#a86c0b897d04fe123892e6c2040bfb93c" title="Build PairwiseKernel from JSON value. " alt="" coords="212,71,384,112"/>
+<area shape="rect" id="node3" href="$classSSAGES_1_1PairwiseCV.html#a807d3a560a3a187c7648da5a282027df" title="Evaluate the CV. " alt="" coords="450,5,605,47"/>
+<area shape="rect" id="node4" href="$classSSAGES_1_1GaussianPK.html#abbee93e1a5cc3a5714fdf463671c7356" title="Evaluate the Gaussian function. " alt="" coords="448,71,607,112"/>
+<area shape="rect" id="node5" href="$classSSAGES_1_1RationalSwitchPK.html#ae75076780bcc7d3d0e19c3fc2a69b9a7" title="Evaluate the switching function. " alt="" coords="432,136,623,177"/>
 </map>

@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>How to use SSAGES with GROMACS &mdash; SSAGES v0.7.5-alpha-18-ga65a265 documentation</title>
+  <title>How to use SSAGES with GROMACS &mdash; SSAGES v0.8.0-alpha documentation</title>
   
 
   
@@ -32,10 +32,7 @@
   
 
   
-        <link rel="index" title="Index"
-              href="genindex.html"/>
-        <link rel="search" title="Search" href="search.html"/>
-    <link rel="top" title="SSAGES v0.7.5-alpha-18-ga65a265 documentation" href="index.html"/>
+    <link rel="top" title="SSAGES v0.8.0-alpha documentation" href="index.html"/>
         <link rel="up" title="Getting Started" href="Getting Started.html"/>
         <link rel="next" title="Input Files" href="Input Files.html"/>
         <link rel="prev" title="How to run SSAGES on LAMMPS" href="How to run SSAGES on LAMMPS.html"/> 
@@ -67,7 +64,7 @@
             
             
               <div class="version">
-                0.7.5
+                0.8.0
               </div>
             
           
@@ -101,7 +98,7 @@
 <li class="toctree-l2 current"><a class="reference internal" href="Getting Started.html#advanced-options">Advanced options</a><ul class="current">
 <li class="toctree-l3"><a class="reference internal" href="Build SSAGES with local copy of MD source.html">Build SSAGES with local copy of MD source</a></li>
 <li class="toctree-l3"><a class="reference internal" href="How to run SSAGES on LAMMPS.html">How to run SSAGES on LAMMPS</a></li>
-<li class="toctree-l3 current"><a class="current reference internal" href="#">How to use SSAGES with GROMACS</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="">How to use SSAGES with GROMACS</a></li>
 </ul>
 </li>
 </ul>
@@ -168,7 +165,7 @@
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="_sources/How to run SSAGES with GROMACS.rst.txt" rel="nofollow"> View page source</a>
+            <a href="_sources/How to run SSAGES with GROMACS.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -204,7 +201,7 @@ more (<code class="docutils literal"><span class="pre">.mdp</span></code> file)<
 <p>For example, one can convert a protein <code class="docutils literal"><span class="pre">.pdb</span></code> file from an online database using
 GROMACS tools to generate a <code class="docutils literal"><span class="pre">.gro</span></code> and a <code class="docutils literal"><span class="pre">.top</span></code> file. To generate an input
 file, use the <code class="docutils literal"><span class="pre">gmx_mpi</span> <span class="pre">grompp</span></code> command:</p>
-<div class="highlight-bash"><div class="highlight"><pre><span></span>gmx_mpi grompp -f npt.mdp -p topol.top -c conf.gro -o input.tpr
+<div class="highlight-bash"><div class="highlight"><pre>gmx_mpi grompp -f npt.mdp -p topol.top -c conf.gro -o input.tpr
 </pre></div>
 </div>
 <div class="admonition note">
@@ -231,7 +228,7 @@ your “inputfile” to <code class="docutils literal"><span class="pre">input.t
 to “Gromacs”, and define the number of MPI walkers to use for each walker with
 “number processors”. Finally, define your CV(s) and Methods, either generally or
 for each walker. You can start your simulation by calling the ssages executable:</p>
-<div class="highlight-bash"><div class="highlight"><pre><span></span>mpirun -np X ./ssages input.json
+<div class="highlight-bash"><div class="highlight"><pre>mpirun -np X ./ssages input.json
 </pre></div>
 </div>
 <p>where <cite>X</cite> is the total number of MPI processes. For example, for three walkers with
@@ -266,7 +263,7 @@ available in the Examples folder.</p>
   <div role="contentinfo">
     <p>
         &copy; Copyright 2016, the SSAGES Team.
-      Last updated on Aug 30, 2017.
+      Last updated on Feb 27, 2018.
 
     </p>
   </div>
@@ -288,17 +285,17 @@ available in the Examples folder.</p>
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'./',
-            VERSION:'v0.7.5-alpha-18-ga65a265',
+            VERSION:'v0.8.0-alpha',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
             HAS_SOURCE:  true,
-            SOURCELINK_SUFFIX: '.txt'
+            SOURCELINK_SUFFIX: ''
         };
     </script>
       <script type="text/javascript" src="_static/jquery.js"></script>
       <script type="text/javascript" src="_static/underscore.js"></script>
       <script type="text/javascript" src="_static/doctools.js"></script>
-      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
   
 

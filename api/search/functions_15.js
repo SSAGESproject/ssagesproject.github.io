@@ -1,7 +1,9 @@
 var searchData=
 [
   ['_7eabf',['~ABF',['../classSSAGES_1_1ABF.html#aa683e1d8a8df3522bc64529ea5e80a78',1,'SSAGES::ABF']]],
-  ['_7ebasis',['~Basis',['../classSSAGES_1_1Basis.html#a74dce4622207eb68087ab5246339b3b5',1,'SSAGES::Basis']]],
+  ['_7ebasisfunction',['~BasisFunction',['../classSSAGES_1_1BasisFunction.html#a605db4ad24337ffecc6178d5a6c1a5c7',1,'SSAGES::BasisFunction']]],
+  ['_7ebfs',['~BFS',['../classSSAGES_1_1BFS.html#ae7e85e21f589b6478a6bf6236bb39120',1,'SSAGES::BFS']]],
+  ['_7ecollectivevariable',['~CollectiveVariable',['../classSSAGES_1_1CollectiveVariable.html#a39a517ed26b0c9e943cdc09ac3f37010',1,'SSAGES::CollectiveVariable']]],
   ['_7econstraint',['~Constraint',['../classSSAGES_1_1Constraint.html#a279e8362860ee348a4c945edde376a83',1,'SSAGES::Constraint']]],
   ['_7ecopss',['~COPSS',['../classSSAGES_1_1COPSS.html#af04ca5f849d9c80023a26c3d57682af6',1,'SSAGES::COPSS']]],
   ['_7ecopssimage',['~COPSSImage',['../classSSAGES_1_1COPSSImage.html#a18039f939679d370760f34713440a82b',1,'SSAGES::COPSSImage']]],

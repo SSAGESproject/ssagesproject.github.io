@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Metadynamics &mdash; SSAGES v0.7.5-alpha-18-ga65a265 documentation</title>
+  <title>Metadynamics &mdash; SSAGES v0.8.0-alpha documentation</title>
   
 
   
@@ -32,10 +32,7 @@
   
 
   
-        <link rel="index" title="Index"
-              href="genindex.html"/>
-        <link rel="search" title="Search" href="search.html"/>
-    <link rel="top" title="SSAGES v0.7.5-alpha-18-ga65a265 documentation" href="index.html"/>
+    <link rel="top" title="SSAGES v0.8.0-alpha documentation" href="index.html"/>
         <link rel="up" title="Advanced Sampling Methods" href="Advanced Sampling Methods.html"/>
         <link rel="next" title="Image Method" href="Image Method.html"/>
         <link rel="prev" title="Forward-Flux" href="Forward-Flux.html"/> 
@@ -67,7 +64,7 @@
             
             
               <div class="version">
-                0.7.5
+                0.8.0
               </div>
             
           
@@ -99,11 +96,12 @@
 <li class="toctree-l1"><a class="reference internal" href="Collective Variables.html">Collective Variables</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="Advanced Sampling Methods.html">Advanced Sampling Methods</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="Adaptive Biasing Force Algorithm.html">Adaptive Biasing Force Algorithm</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Artificial Neural Network Sampling.html">Artificial Neural Network Sampling</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Basis Function Sampling.html">Basis Function Sampling</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Elastic Band.html">Elastic Band</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Finite Temperature String.html">Finite Temperature String</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Forward-Flux.html">Forward-Flux</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">Metadynamics</a><ul>
+<li class="toctree-l2 current"><a class="current reference internal" href="">Metadynamics</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#introduction">Introduction</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#options-parameters">Options &amp; Parameters</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#example-input">Example Input</a></li>
@@ -177,7 +175,7 @@
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="_sources/Metadynamics.rst.txt" rel="nofollow"> View page source</a>
+            <a href="_sources/Metadynamics.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -214,8 +212,8 @@ the free energy in that region.</p>
 <p>The free energy surface (FES) at any time <span class="math">\(t\)</span> may be
 reconstructed by summing over all applied biases thusly</p>
 <div class="math">
-\[F(\xi,t) = -V(\vec{\xi}) = -\sum_{i&lt;n(t)} W_i
-e^{-\frac{\left[\vec{\xi}-\vec{s}_i\right]^2}{2\sigma_i^2}}\;.\]</div>
+\[\begin{split}F(\xi,t) = -V(\vec{\xi}) = -\sum_{i&lt;n(t)} W_i
+e^{-\frac{\left[\vec{\xi}-\vec{s}_i\right]^2}{2\sigma_i^2}}\;.\end{split}\]</div>
 <p>Here, <span class="math">\(n(t)\)</span> refers to the number of biases applied before time
 <span class="math">\(t\)</span>. The time-dependent FES can be used to determine whether or
 not a simulation has reached a converged FES by computing block
@@ -272,7 +270,7 @@ check the output file for convergence.</p>
 </div>
 <div class="section" id="example-input">
 <h2>Example Input<a class="headerlink" href="#example-input" title="Permalink to this headline">¶</a></h2>
-<div class="highlight-javascript"><div class="highlight"><pre><span></span><span class="s2">&quot;method&quot;</span> <span class="o">:</span> <span class="p">{</span>
+<div class="highlight-javascript"><div class="highlight"><pre><span class="s2">&quot;method&quot;</span> <span class="o">:</span> <span class="p">{</span>
         <span class="s2">&quot;type&quot;</span> <span class="o">:</span> <span class="s2">&quot;Metadynamics&quot;</span><span class="p">,</span>
         <span class="s2">&quot;widths&quot;</span> <span class="o">:</span> <span class="p">[</span><span class="mf">0.1</span><span class="p">,</span> <span class="mf">0.1</span><span class="p">],</span>
         <span class="s2">&quot;height&quot;</span> <span class="o">:</span> <span class="mf">0.1</span><span class="p">,</span>
@@ -333,7 +331,7 @@ surface estimate over time.</p>
 <li>Either copy or create a symbolic link to the SSAGES executable in the
 examples directory.</li>
 </ol>
-<div class="highlight-bash"><div class="highlight"><pre><span></span>ln -s /path/to/SSAGES/build/ssages
+<div class="highlight-bash"><div class="highlight"><pre>ln -s /path/to/SSAGES/build/ssages
 </pre></div>
 </div>
 <ol class="arabic simple" start="2">
@@ -342,7 +340,7 @@ example, two walkers are used to explore the system more efficiently. If
 you would like to use more walkers (1 processor per walker), simply include
 more drivers in the <code class="docutils literal"><span class="pre">Meta.json</span></code> input file.</li>
 </ol>
-<div class="highlight-bash"><div class="highlight"><pre><span></span>mpirun -np <span class="m">2</span> ./ssages Meta.json
+<div class="highlight-bash"><div class="highlight"><pre>mpirun -np <span class="m">2</span> ./ssages Meta.json
 </pre></div>
 </div>
 <ol class="arabic simple" start="3">
@@ -400,7 +398,7 @@ dimensions.&#8221; The Journal of chemical physics 139.8
   <div role="contentinfo">
     <p>
         &copy; Copyright 2016, the SSAGES Team.
-      Last updated on Aug 30, 2017.
+      Last updated on Feb 27, 2018.
 
     </p>
   </div>
@@ -422,17 +420,17 @@ dimensions.&#8221; The Journal of chemical physics 139.8
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'./',
-            VERSION:'v0.7.5-alpha-18-ga65a265',
+            VERSION:'v0.8.0-alpha',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
             HAS_SOURCE:  true,
-            SOURCELINK_SUFFIX: '.txt'
+            SOURCELINK_SUFFIX: ''
         };
     </script>
       <script type="text/javascript" src="_static/jquery.js"></script>
       <script type="text/javascript" src="_static/underscore.js"></script>
       <script type="text/javascript" src="_static/doctools.js"></script>
-      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
   
 

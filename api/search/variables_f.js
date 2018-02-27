@@ -8,11 +8,11 @@ var searchData=
   ['pk_5f',['pk_',['../classSSAGES_1_1PairwiseCV.html#ad9a650d491217bde6c9f31d41244aeba',1,'SSAGES::PairwiseCV']]],
   ['plugins_5f',['plugins_',['../classSSAGES_1_1JSONLoader.html#a67c3a000640b95c8be0f61820c53f9dd',1,'SSAGES::JSONLoader']]],
   ['point_5f',['point_',['../classSSAGES_1_1ParticlePositionCV.html#abf2ac519239a59f30901898b5dbc82e9',1,'SSAGES::ParticlePositionCV']]],
-  ['polyords_5f',['polyords_',['../classSSAGES_1_1Basis.html#a782b6a2eaf0dcc48f3bcefd7cb7e700d',1,'SSAGES::Basis']]],
   ['positions_5f',['positions_',['../classSSAGES_1_1Snapshot.html#a47cac5746857da7ddf86353658a231cc',1,'SSAGES::Snapshot']]],
   ['prev_5fcvs_5f',['prev_CVs_',['../classSSAGES_1_1FiniteTempString.html#a83a94533675a08bc7d6b73a460af2aa7',1,'SSAGES::FiniteTempString']]],
   ['prev_5fids_5f',['prev_IDs_',['../classSSAGES_1_1StringMethod.html#ad3ff83869b7ef597d3641f0eb1649c82',1,'SSAGES::StringMethod']]],
   ['prev_5fpositions_5f',['prev_positions_',['../classSSAGES_1_1StringMethod.html#ad0f30a4bda9ab52fbf1a2fd6d82898e6',1,'SSAGES::StringMethod']]],
   ['prev_5fvelocities_5f',['prev_velocities_',['../classSSAGES_1_1StringMethod.html#a882f74a324641a449216d0edbc5fdb5d',1,'SSAGES::StringMethod']]],
-  ['properties_5f',['properties_',['../classJson_1_1ObjectRequirement.html#a7ad84d77b57e91bed2d80d2482bab03b',1,'Json::ObjectRequirement']]]
+  ['properties_5f',['properties_',['../classJson_1_1ObjectRequirement.html#a7ad84d77b57e91bed2d80d2482bab03b',1,'Json::ObjectRequirement']]],
+  ['pweight_5f',['pweight_',['../classSSAGES_1_1ANN.html#aa46e3420f46726cfa7766eaba5d53246',1,'SSAGES::ANN']]]
 ];

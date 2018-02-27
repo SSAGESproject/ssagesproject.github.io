@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Build SSAGES with local copy of MD source &mdash; SSAGES v0.7.5-alpha-18-ga65a265 documentation</title>
+  <title>Build SSAGES with local copy of MD source &mdash; SSAGES v0.8.0-alpha documentation</title>
   
 
   
@@ -32,10 +32,7 @@
   
 
   
-        <link rel="index" title="Index"
-              href="genindex.html"/>
-        <link rel="search" title="Search" href="search.html"/>
-    <link rel="top" title="SSAGES v0.7.5-alpha-18-ga65a265 documentation" href="index.html"/>
+    <link rel="top" title="SSAGES v0.8.0-alpha documentation" href="index.html"/>
         <link rel="up" title="Getting Started" href="Getting Started.html"/>
         <link rel="next" title="How to run SSAGES on LAMMPS" href="How to run SSAGES on LAMMPS.html"/>
         <link rel="prev" title="Getting Started" href="Getting Started.html"/> 
@@ -67,7 +64,7 @@
             
             
               <div class="version">
-                0.7.5
+                0.8.0
               </div>
             
           
@@ -99,7 +96,7 @@
 <li class="toctree-l2"><a class="reference internal" href="Getting Started.html#build-ssages">Build SSAGES</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Getting Started.html#run-ssages">Run SSAGES</a></li>
 <li class="toctree-l2 current"><a class="reference internal" href="Getting Started.html#advanced-options">Advanced options</a><ul class="current">
-<li class="toctree-l3 current"><a class="current reference internal" href="#">Build SSAGES with local copy of MD source</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="">Build SSAGES with local copy of MD source</a></li>
 <li class="toctree-l3"><a class="reference internal" href="How to run SSAGES on LAMMPS.html">How to run SSAGES on LAMMPS</a></li>
 <li class="toctree-l3"><a class="reference internal" href="How to run SSAGES with GROMACS.html">How to use SSAGES with GROMACS</a></li>
 </ul>
@@ -168,7 +165,7 @@
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="_sources/Build SSAGES with local copy of MD source.rst.txt" rel="nofollow"> View page source</a>
+            <a href="_sources/Build SSAGES with local copy of MD source.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -191,11 +188,11 @@ the MD engine source code. For example, if you have modified it to fit a special
 need LAMMPS or Gromacs does not support natively.</p>
 <p>If you want to build SSAGES using a local copy of the MD engine source code, modify
 the cmake call to</p>
-<div class="highlight-bash"><div class="highlight"><pre><span></span>cmake .. -DLAMMPS_SRC<span class="o">=</span>/path/to/LAMMPS/src
+<div class="highlight-bash"><div class="highlight"><pre>cmake .. -DLAMMPS_SRC<span class="o">=</span>/path/to/LAMMPS/src
 </pre></div>
 </div>
 <p>if you are using LAMMPS and to</p>
-<div class="highlight-bash"><div class="highlight"><pre><span></span>cmake .. -DGROMACS_SRC<span class="o">=</span>/path/to/gromacs
+<div class="highlight-bash"><div class="highlight"><pre>cmake .. -DGROMACS_SRC<span class="o">=</span>/path/to/gromacs
 </pre></div>
 </div>
 <p>if you are using Gromacs.</p>
@@ -247,7 +244,7 @@ more versions of Gromacs, especially with the new version 6.</p>
   <div role="contentinfo">
     <p>
         &copy; Copyright 2016, the SSAGES Team.
-      Last updated on Aug 30, 2017.
+      Last updated on Feb 27, 2018.
 
     </p>
   </div>
@@ -269,17 +266,17 @@ more versions of Gromacs, especially with the new version 6.</p>
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'./',
-            VERSION:'v0.7.5-alpha-18-ga65a265',
+            VERSION:'v0.8.0-alpha',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
             HAS_SOURCE:  true,
-            SOURCELINK_SUFFIX: '.txt'
+            SOURCELINK_SUFFIX: ''
         };
     </script>
       <script type="text/javascript" src="_static/jquery.js"></script>
       <script type="text/javascript" src="_static/underscore.js"></script>
       <script type="text/javascript" src="_static/doctools.js"></script>
-      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
   
 

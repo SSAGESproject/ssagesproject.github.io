@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Swarm of Trajectories &mdash; SSAGES v0.7.5-alpha-18-ga65a265 documentation</title>
+  <title>Swarm of Trajectories &mdash; SSAGES v0.8.0-alpha documentation</title>
   
 
   
@@ -32,10 +32,7 @@
   
 
   
-        <link rel="index" title="Index"
-              href="genindex.html"/>
-        <link rel="search" title="Search" href="search.html"/>
-    <link rel="top" title="SSAGES v0.7.5-alpha-18-ga65a265 documentation" href="index.html"/>
+    <link rel="top" title="SSAGES v0.8.0-alpha documentation" href="index.html"/>
         <link rel="up" title="Advanced Sampling Methods" href="Advanced Sampling Methods.html"/>
         <link rel="next" title="Umbrella Sampling" href="Umbrella Sampling.html"/>
         <link rel="prev" title="Replica Exchange" href="Replica Exchange.html"/> 
@@ -67,7 +64,7 @@
             
             
               <div class="version">
-                0.7.5
+                0.8.0
               </div>
             
           
@@ -99,6 +96,7 @@
 <li class="toctree-l1"><a class="reference internal" href="Collective Variables.html">Collective Variables</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="Advanced Sampling Methods.html">Advanced Sampling Methods</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="Adaptive Biasing Force Algorithm.html">Adaptive Biasing Force Algorithm</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Artificial Neural Network Sampling.html">Artificial Neural Network Sampling</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Basis Function Sampling.html">Basis Function Sampling</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Elastic Band.html">Elastic Band</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Finite Temperature String.html">Finite Temperature String</a></li>
@@ -106,7 +104,7 @@
 <li class="toctree-l2"><a class="reference internal" href="Metadynamics.html">Metadynamics</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Image Method.html">Image Method</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Replica Exchange.html">Replica Exchange</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">Swarm of Trajectories</a><ul>
+<li class="toctree-l2 current"><a class="current reference internal" href="">Swarm of Trajectories</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#introduction">Introduction</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#options-parameters">Options &amp; Parameters</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#tutorial">Tutorial</a></li>
@@ -175,7 +173,7 @@
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="_sources/Swarm of Trajectories.rst.txt" rel="nofollow"> View page source</a>
+            <a href="_sources/Swarm of Trajectories.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -331,14 +329,14 @@ this information a number of times specified within the script (for this
 tutorial, 22 times) while also linearly interpolating through the start and end
 states defined in the script and substituting the correct values into the
 &#8220;centers&#8221; portion of the method definition.  Execute this script as follows:</p>
-<div class="highlight-bash"><div class="highlight"><pre><span></span>python Input_Generator.py
+<div class="highlight-bash"><div class="highlight"><pre>python Input_Generator.py
 </pre></div>
 </div>
 <p>You will produce a file called <code class="docutils literal"><span class="pre">Swarm.json</span></code>.  You can also open this file to
 verify for yourself that the script did what it was supposed to do.  Now, with
 your JSON input and your SSAGES binary, you have everything you need to perform
 a simulation.  Simply run:</p>
-<div class="highlight-bash"><div class="highlight"><pre><span></span>mpiexec -np <span class="m">22</span> ./ssages Swarm.json
+<div class="highlight-bash"><div class="highlight"><pre>mpiexec -np <span class="m">22</span> ./ssages Swarm.json
 </pre></div>
 </div>
 <p>Soon, the simulation will produce a <code class="docutils literal"><span class="pre">node-X.log</span></code> file for each driver, where
@@ -355,7 +353,7 @@ included plotter.py function in a directory containing the node files with the
 command line argument of how many images your string had.  The script also
 accepts an argument to plot a free energy surface alongside the string, but that
 goes beyond the scope of this tutorial.  Thus, simply execute:</p>
-<div class="highlight-bash"><div class="highlight"><pre><span></span>python plotter.py <span class="m">22</span> none
+<div class="highlight-bash"><div class="highlight"><pre>python plotter.py <span class="m">22</span> none
 </pre></div>
 </div>
 <p>And in a moment you should have a graph of your converged string.  Thus concludes
@@ -401,7 +399,7 @@ J. Phys. Chem. B <strong>112</strong>, 3432–3440 (2008).</td></tr>
   <div role="contentinfo">
     <p>
         &copy; Copyright 2016, the SSAGES Team.
-      Last updated on Aug 30, 2017.
+      Last updated on Feb 27, 2018.
 
     </p>
   </div>
@@ -423,17 +421,17 @@ J. Phys. Chem. B <strong>112</strong>, 3432–3440 (2008).</td></tr>
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'./',
-            VERSION:'v0.7.5-alpha-18-ga65a265',
+            VERSION:'v0.8.0-alpha',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
             HAS_SOURCE:  true,
-            SOURCELINK_SUFFIX: '.txt'
+            SOURCELINK_SUFFIX: ''
         };
     </script>
       <script type="text/javascript" src="_static/jquery.js"></script>
       <script type="text/javascript" src="_static/underscore.js"></script>
       <script type="text/javascript" src="_static/doctools.js"></script>
-      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
   
 

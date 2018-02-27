@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['calcbiasforce',['CalcBiasForce',['../classSSAGES_1_1ABF.html#aa2200677359f582d73f095c42ec5ad83',1,'SSAGES::ABF::CalcBiasForce()'],['../classSSAGES_1_1Basis.html#ad67a47dec34db08ac78a6ae49d9211a4',1,'SSAGES::Basis::CalcBiasForce()'],['../classSSAGES_1_1Meta.html#a9cd073ee3c04a98e5131e96ffcb11df8',1,'SSAGES::Meta::CalcBiasForce()']]],
+  ['calcbiasforce',['CalcBiasForce',['../classSSAGES_1_1ABF.html#aa2200677359f582d73f095c42ec5ad83',1,'SSAGES::ABF::CalcBiasForce()'],['../classSSAGES_1_1Meta.html#a9cd073ee3c04a98e5131e96ffcb11df8',1,'SSAGES::Meta::CalcBiasForce()']]],
   ['centerofmass',['CenterOfMass',['../classSSAGES_1_1Snapshot.html#a3527cc78f7c8be1690992da44524ab19',1,'SSAGES::Snapshot::CenterOfMass(const Label &amp;indices) const '],['../classSSAGES_1_1Snapshot.html#aa63df4f85b0912f9e7c99b9a81c92127',1,'SSAGES::Snapshot::CenterOfMass(const Label &amp;indices, double mtot) const ']]],
   ['changed',['Changed',['../classSSAGES_1_1Snapshot.html#a1bc1d505100ddaebd9a7650c55d35001',1,'SSAGES::Snapshot']]],
   ['checkend',['CheckEnd',['../classSSAGES_1_1StringMethod.html#a98d6840cc33ad30c2e9a4311e57ea2de',1,'SSAGES::StringMethod']]],

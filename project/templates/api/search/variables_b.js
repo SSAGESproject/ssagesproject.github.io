@@ -5,6 +5,7 @@ var searchData=
   ['listeners_5f',['listeners_',['../classSSAGES_1_1Hook.html#a5bd486b624a535e51f8c9b2bbfbcb3cb',1,'SSAGES::Hook']]],
   ['log_5f',['log_',['../classSSAGES_1_1Logger.html#a6e0e64e2d59ff1540458006b58971187',1,'SSAGES::Logger']]],
   ['logger_5f',['logger_',['../classSSAGES_1_1ResourceHandler.html#a97a765e87be295459564f2c6dba82832',1,'SSAGES::ResourceHandler']]],
-  ['lprev',['lprev',['../classSSAGES_1_1ForwardFlux_1_1FFSConfigID.html#a15959e04c540ccee473b7587f2fd9818',1,'SSAGES::ForwardFlux::FFSConfigID']]],
-  ['lut_5f',['LUT_',['../classSSAGES_1_1Basis.html#ad3ae5e855d2261ada019ccfcf3a8098c',1,'SSAGES::Basis']]]
+  ['lowerb_5f',['lowerb_',['../classSSAGES_1_1ANN.html#a022a5d90efc1c7d77f243bc6a30c2757',1,'SSAGES::ANN']]],
+  ['lowerk_5f',['lowerk_',['../classSSAGES_1_1ANN.html#a2d8da6902233c66212aecfe108aa08f7',1,'SSAGES::ANN']]],
+  ['lprev',['lprev',['../classSSAGES_1_1ForwardFlux_1_1FFSConfigID.html#a15959e04c540ccee473b7587f2fd9818',1,'SSAGES::ForwardFlux::FFSConfigID']]]
 ];

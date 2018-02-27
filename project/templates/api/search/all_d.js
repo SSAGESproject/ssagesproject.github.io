@@ -28,7 +28,7 @@ var searchData=
   ['mode_5f',['mode_',['../classSSAGES_1_1AntiBetaRMSDCV.html#a3fa5f9f58e564ec684ff60976f005c4c',1,'SSAGES::AntiBetaRMSDCV::mode_()'],['../classSSAGES_1_1ParallelBetaRMSDCV.html#a25c414420629f79ca896221ca11dc378',1,'SSAGES::ParallelBetaRMSDCV::mode_()']]],
   ['molecule_5f',['molecule_',['../classSSAGES_1_1RMSDCV.html#a1ec02f86f71c3a7a14bcf1782f2fe235',1,'SSAGES::RMSDCV']]],
   ['moreprops_5f',['moreProps_',['../classJson_1_1ObjectRequirement.html#adf5d8110a3bd7b10a4ee3973bd68422b',1,'Json::ObjectRequirement']]],
-  ['mpiid_5f',['mpiid_',['../classSSAGES_1_1Basis.html#a8c1affd157186cab09b9a592ab9e0769',1,'SSAGES::Basis::mpiid_()'],['../classSSAGES_1_1StringMethod.html#a2d6c46aa7c2c85975621add18a55a9e4',1,'SSAGES::StringMethod::mpiid_()']]],
+  ['mpiid_5f',['mpiid_',['../classSSAGES_1_1BFS.html#ae98abc80a22b09a73f284b2e3f77e250',1,'SSAGES::BFS::mpiid_()'],['../classSSAGES_1_1StringMethod.html#a2d6c46aa7c2c85975621add18a55a9e4',1,'SSAGES::StringMethod::mpiid_()']]],
   ['mu_5f',['mu_',['../classSSAGES_1_1GaussianPK.html#a8908e97aa93c2acd105a5ae365e4e7f7',1,'SSAGES::GaussianPK']]],
   ['multipleof_5f',['multipleOf_',['../classJson_1_1IntegerRequirement.html#af7b2dd53eb2851f1caad0d55b869d87f',1,'Json::IntegerRequirement::multipleOf_()'],['../classJson_1_1NumberRequirement.html#a9f2996f47e1ae2cf048aac2144cb0c88',1,'Json::NumberRequirement::multipleOf_()']]],
   ['multset_5f',['multSet_',['../classJson_1_1IntegerRequirement.html#a87d7d0435c45bebce4501a4df831d0c6',1,'Json::IntegerRequirement::multSet_()'],['../classJson_1_1NumberRequirement.html#a553cf0fafa24b40fcf51ba106fb5d2c7',1,'Json::NumberRequirement::multSet_()']]],
