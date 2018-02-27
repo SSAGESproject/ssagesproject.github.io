@@ -1,0 +1,4 @@
+<map id="SSAGES::Histogram::mapTo1d" name="SSAGES::Histogram::mapTo1d">
+<area shape="rect" id="node2" href="$classSSAGES_1_1GridBase.html#a2e91c7b650b26630be53f089884fff8a" title="Get the number of points for all dimensions. " alt="" coords="216,5,412,47"/>
+<area shape="rect" id="node3" href="$classSSAGES_1_1GridBase.html#a848761b751479ed661bf1fc689278aea" title="Return the periodicity of the Grid. " alt="" coords="207,71,421,98"/>
+</map>
