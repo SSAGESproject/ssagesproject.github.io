@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Write your own Methods and CVs &mdash; SSAGES v0.8.0-alpha documentation</title>
+  <title>Write your own Methods and CVs &mdash; SSAGES v0.8.3-alpha documentation</title>
   
 
   
@@ -25,23 +25,19 @@
   
 
   
-  
     <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
-  
-
-  
-
-  
-    <link rel="top" title="SSAGES v0.8.0-alpha documentation" href="index.html"/>
-        <link rel="next" title="Contribute to SSAGES" href="Contribute to SSAGES.html"/>
-        <link rel="prev" title="Umbrella Sampling" href="Umbrella Sampling.html"/> 
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Contribute to SSAGES" href="Contribute to SSAGES.html" />
+    <link rel="prev" title="Umbrella Sampling" href="Umbrella Sampling.html" /> 
 
   
   <script src="_static/js/modernizr.min.js"></script>
 
 </head>
 
-<body class="wy-body-for-nav" role="document">
+<body class="wy-body-for-nav">
 
    
   <div class="wy-grid-for-nav">
@@ -63,7 +59,7 @@
             
             
               <div class="version">
-                0.8.0
+                0.8.3
               </div>
             
           
@@ -94,7 +90,7 @@
 <li class="toctree-l1"><a class="reference internal" href="Engines.html">Engines</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Collective Variables.html">Collective Variables</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Advanced Sampling Methods.html">Advanced Sampling Methods</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="">Write your own Methods and CVs</a><ul>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Write your own Methods and CVs</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#how-to-write-a-new-cv">How to write a new CV</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#the-cv-header-file">The CV header file</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#the-cv-schema-file">The CV schema file</a></li>
@@ -125,7 +121,7 @@
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
 
       
-      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+      <nav class="wy-nav-top" aria-label="top navigation">
         
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="index.html">SSAGES</a>
@@ -133,9 +129,10 @@
       </nav>
 
 
-      
       <div class="wy-nav-content">
+        
         <div class="rst-content">
+        
           
 
 
@@ -164,7 +161,7 @@
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="_sources/Write your own Methods and CVs.txt" rel="nofollow"> View page source</a>
+            <a href="_sources/Write your own Methods and CVs.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -184,7 +181,7 @@ To this end, it provides intuitive and simple tools to implement new collective
 variables (CVs) and new metadynamic methods. This section covers the basic steps
 to implement a new CV and a new Method. Let us start first with the
 implementation of a new CV. The techniques to implement a new Method are
-covered <a class="reference internal" href="#write-new-method"><span>below</span></a>.</p>
+covered <a class="reference internal" href="#write-new-method"><span class="std std-ref">below</span></a>.</p>
 <div class="section" id="how-to-write-a-new-cv">
 <span id="write-new-cv"></span><h2>How to write a new CV<a class="headerlink" href="#how-to-write-a-new-cv" title="Permalink to this headline">¶</a></h2>
 <p>Each CV consists of two components: A header file and a schema file. The header
@@ -193,51 +190,51 @@ describes the properties of the CV in a simple JSON format. Finally, you will
 have to make SSAGES aware of the new CV.</p>
 <div class="section" id="the-cv-header-file">
 <h3>The CV header file<a class="headerlink" href="#the-cv-header-file" title="Permalink to this headline">¶</a></h3>
-<p>Each CV in SSAGES is implemented as a child of the class <code class="docutils literal"><span class="pre">CollectiveVariable</span></code>.
-The header file should be placed in the directory <code class="docutils literal"><span class="pre">src/CVs</span></code> and has to
+<p>Each CV in SSAGES is implemented as a child of the class <code class="docutils literal notranslate"><span class="pre">CollectiveVariable</span></code>.
+The header file should be placed in the directory <code class="docutils literal notranslate"><span class="pre">src/CVs</span></code> and has to
 (re)implement the following functions:</p>
 <dl class="docutils">
-<dt><code class="code docutils literal"><span class="pre">void</span> <span class="pre">Initialize(const</span> <span class="pre">Snapshot&amp;)</span></code> (optional)</dt>
+<dt><code class="code docutils literal notranslate"><span class="pre">void</span> <span class="pre">Initialize(const</span> <span class="pre">Snapshot&amp;)</span></code> (optional)</dt>
 <dd>This method is called during the pre-simulation phase. It is typically used
 to allocate or reserve memory.</dd>
-<dt><code class="code docutils literal"><span class="pre">void</span> <span class="pre">Evaluate(const</span> <span class="pre">Snapshot&amp;)</span></code></dt>
+<dt><code class="code docutils literal notranslate"><span class="pre">void</span> <span class="pre">Evaluate(const</span> <span class="pre">Snapshot&amp;)</span></code></dt>
 <dd>Evaluation of the CV based on a simulation snapshot. Together with the
 value, this function should also calculate the gradient of the CV. The
 gradient should be a vector of length <cite>n</cite>, where <cite>n</cite> is the number of atoms
 in the Snapshot. Each element in the vector is the derivative of the CV with
-respect to the corresponding atom&#8217;s coordinates. This method is called
+respect to the corresponding atom’s coordinates. This method is called
 in the post-integration phase of every iteration.</dd>
-<dt><code class="code docutils literal"><span class="pre">double</span> <span class="pre">GetValue()</span> <span class="pre">const</span></code></dt>
+<dt><code class="code docutils literal notranslate"><span class="pre">double</span> <span class="pre">GetValue()</span> <span class="pre">const</span></code></dt>
 <dd>Return the current value of the CV.</dd>
-<dt><code class="code docutils literal"><span class="pre">double</span> <span class="pre">GetPeriodicValue()</span> <span class="pre">const</span></code></dt>
+<dt><code class="code docutils literal notranslate"><span class="pre">double</span> <span class="pre">GetPeriodicValue()</span> <span class="pre">const</span></code></dt>
 <dd>Return the current value of the CV, taking periodic boundary conditions into
 account. An example would be an angular CV which is bound to the region
-<span class="math">\((-\pi,\pi]\)</span>. In this case, <code class="docutils literal"><span class="pre">GetValue()</span></code> could return any angle,
-while <code class="docutils literal"><span class="pre">GetPeriodicValue()</span></code> should return the angle mapped back into the
-region <span class="math">\((-\pi,\pi]\)</span>. If the CV does not use periodic boundaries, this
-function should return the same value as <code class="docutils literal"><span class="pre">GetValue()</span></code>.</dd>
-<dt><code class="code docutils literal"><span class="pre">const</span> <span class="pre">std::vector&lt;Vector33&gt;&amp;</span> <span class="pre">GetGradient()</span> <span class="pre">const</span></code></dt>
-<dd>Return the gradient of the CV (see <code class="docutils literal"><span class="pre">Evaluate(const</span> <span class="pre">Snapshot&amp;)</span></code> for how the
+<span class="math notranslate nohighlight">\((-\pi,\pi]\)</span>. In this case, <code class="docutils literal notranslate"><span class="pre">GetValue()</span></code> could return any angle,
+while <code class="docutils literal notranslate"><span class="pre">GetPeriodicValue()</span></code> should return the angle mapped back into the
+region <span class="math notranslate nohighlight">\((-\pi,\pi]\)</span>. If the CV does not use periodic boundaries, this
+function should return the same value as <code class="docutils literal notranslate"><span class="pre">GetValue()</span></code>.</dd>
+<dt><code class="code docutils literal notranslate"><span class="pre">const</span> <span class="pre">std::vector&lt;Vector33&gt;&amp;</span> <span class="pre">GetGradient()</span> <span class="pre">const</span></code></dt>
+<dd>Return the gradient of the CV (see <code class="docutils literal notranslate"><span class="pre">Evaluate(const</span> <span class="pre">Snapshot&amp;)</span></code> for how the
 gradient is defined).</dd>
-<dt><code class="code docutils literal"><span class="pre">const</span> <span class="pre">std::array&lt;double,</span> <span class="pre">2&gt;&amp;</span> <span class="pre">GetBoundaries()</span> <span class="pre">const</span></code></dt>
+<dt><code class="code docutils literal notranslate"><span class="pre">const</span> <span class="pre">std::array&lt;double,</span> <span class="pre">2&gt;&amp;</span> <span class="pre">GetBoundaries()</span> <span class="pre">const</span></code></dt>
 <dd>Return a two-element array containing the lower and the upper boundary for
 the CV.</dd>
-<dt><code class="code docutils literal"><span class="pre">double</span> <span class="pre">GetDifference(const</span> <span class="pre">double</span> <span class="pre">Location)</span> <span class="pre">const</span></code></dt>
+<dt><code class="code docutils literal notranslate"><span class="pre">double</span> <span class="pre">GetDifference(const</span> <span class="pre">double</span> <span class="pre">Location)</span> <span class="pre">const</span></code></dt>
 <dd>Return the distance of the current value of the CV from a specified
 location, taking periodic boundary conditions into account. If the CV does
 not use periodic boundary conditions, the return value should simply be
-<code class="docutils literal"><span class="pre">GetValue()</span> <span class="pre">-</span> <span class="pre">Location</span></code>.</dd>
+<code class="docutils literal notranslate"><span class="pre">GetValue()</span> <span class="pre">-</span> <span class="pre">Location</span></code>.</dd>
 </dl>
 </div>
 <div class="section" id="the-cv-schema-file">
 <h3>The CV schema file<a class="headerlink" href="#the-cv-schema-file" title="Permalink to this headline">¶</a></h3>
 <p>Together with the header file that contains the source code of the CV, you will
 have to provide a schema file to make the CV accessible to the SSAGES input
-files. The schema file should be placed in the directory <code class="docutils literal"><span class="pre">schema/CVs/</span></code>. It
+files. The schema file should be placed in the directory <code class="docutils literal notranslate"><span class="pre">schema/CVs/</span></code>. It
 has to be written in the JSON format and should contain the following items:</p>
 <dl class="docutils">
 <dt>type</dt>
-<dd>The value of <em>type</em> should be set to <code class="docutils literal"><span class="pre">object</span></code>.</dd>
+<dd>The value of <em>type</em> should be set to <code class="docutils literal notranslate"><span class="pre">object</span></code>.</dd>
 <dt>varname</dt>
 <dd>The name of your new CV.</dd>
 <dt>properties</dt>
@@ -262,14 +259,14 @@ section in future releases. Chances are, that you no longer have to worry
 about this step.</p>
 </div>
 <p>To include your new CV, you have to edit the file
-<code class="docutils literal"><span class="pre">src/CVs/CollectiveVariable.cpp</span></code>, and</p>
+<code class="docutils literal notranslate"><span class="pre">src/CVs/CollectiveVariable.cpp</span></code>, and</p>
 <ol class="arabic simple">
-<li><code class="docutils literal"><span class="pre">#include</span></code> your CV header file at the top of the file.</li>
-<li>Add a new <code class="docutils literal"><span class="pre">else</span> <span class="pre">if</span></code> clause in <code class="docutils literal"><span class="pre">BuildCV()</span></code>. The if-test checks for the
+<li><code class="docutils literal notranslate"><span class="pre">#include</span></code> your CV header file at the top of the file.</li>
+<li>Add a new <code class="docutils literal notranslate"><span class="pre">else</span> <span class="pre">if</span></code> clause in <code class="docutils literal notranslate"><span class="pre">BuildCV()</span></code>. The if-test checks for the
 CV type set as an enum in the list of properties. Within the if-clause you
 should parse and validate the JSON schema, read the required properties and
 create the CollectiveVariable. A pointer to the newly created object should
-be stored in the variable named <code class="docutils literal"><span class="pre">cv</span></code>.</li>
+be stored in the variable named <code class="docutils literal notranslate"><span class="pre">cv</span></code>.</li>
 </ol>
 </div>
 </div>
@@ -281,14 +278,14 @@ describes the properties of the method in a simple JSON format. Finally, you wil
 have to make SSAGES aware of the new method.</p>
 <div class="section" id="the-method-header-file">
 <h3>The method header file<a class="headerlink" href="#the-method-header-file" title="Permalink to this headline">¶</a></h3>
-<p>Each method in SSAGES is implemented as a child of the class <code class="docutils literal"><span class="pre">Methods</span></code>.
-The header file should be placed in the directory <code class="docutils literal"><span class="pre">src/methods</span></code> and has to
+<p>Each method in SSAGES is implemented as a child of the class <code class="docutils literal notranslate"><span class="pre">Methods</span></code>.
+The header file should be placed in the directory <code class="docutils literal notranslate"><span class="pre">src/methods</span></code> and has to
 (re)implement the following functions:</p>
 <dl class="docutils">
-<dt><code class="code docutils literal"><span class="pre">void</span> <span class="pre">PreSimulation(Snapshot*</span> <span class="pre">snapshot,</span> <span class="pre">const</span> <span class="pre">CVList&amp;</span> <span class="pre">cvs)</span></code></dt>
+<dt><code class="code docutils literal notranslate"><span class="pre">void</span> <span class="pre">PreSimulation(Snapshot*</span> <span class="pre">snapshot,</span> <span class="pre">const</span> <span class="pre">CVList&amp;</span> <span class="pre">cvs)</span></code></dt>
 <dd>Setup done before the method actually runs. This function will be called
 vefore the simulation is started.</dd>
-<dt><code class="code docutils literal"><span class="pre">void</span> <span class="pre">PostIntegration(Snapshot*</span> <span class="pre">snapshot,</span> <span class="pre">const</span> <span class="pre">CVList&amp;</span> <span class="pre">cvs)</span></code></dt>
+<dt><code class="code docutils literal notranslate"><span class="pre">void</span> <span class="pre">PostIntegration(Snapshot*</span> <span class="pre">snapshot,</span> <span class="pre">const</span> <span class="pre">CVList&amp;</span> <span class="pre">cvs)</span></code></dt>
 <dd>This is where the heart of your method should go. By using snapshot and
 the cvs, modify the forces, positions, velocities, etc. appropriated by
 the new method. This function will be called after each integration MD step.</dd>
@@ -308,11 +305,11 @@ your method opened, to write out data that you have been storing, etc.</td>
 <h3>The method schema file<a class="headerlink" href="#the-method-schema-file" title="Permalink to this headline">¶</a></h3>
 <p>Together with the source code of the method, you will
 have to provide a schema file to make the CV accessible to the SSAGES input
-files. The schema file should be placed in the directory <code class="docutils literal"><span class="pre">schema/methods/</span></code>. It
+files. The schema file should be placed in the directory <code class="docutils literal notranslate"><span class="pre">schema/methods/</span></code>. It
 has to be written in the JSON format and should contain the following items:</p>
 <dl class="docutils">
 <dt>type</dt>
-<dd>The value of <em>type</em> should be set to <code class="docutils literal"><span class="pre">object</span></code>.</dd>
+<dd>The value of <em>type</em> should be set to <code class="docutils literal notranslate"><span class="pre">object</span></code>.</dd>
 <dt>varname</dt>
 <dd>The name of your new method.</dd>
 <dt>properties</dt>
@@ -337,24 +334,23 @@ section in future releases. Chances are, that you no longer have to worry
 about this step.</p>
 </div>
 <p>To include your new method, you have to edit the file
-<code class="docutils literal"><span class="pre">src/methods/Methods.cpp</span></code>, and</p>
+<code class="docutils literal notranslate"><span class="pre">src/methods/Methods.cpp</span></code>, and</p>
 <ol class="arabic simple">
-<li><code class="docutils literal"><span class="pre">#include</span></code> your method header file at the top of the file.</li>
-<li>Add a new <code class="docutils literal"><span class="pre">else</span> <span class="pre">if</span></code> clause in <code class="docutils literal"><span class="pre">BuildMethod()</span></code>. The if-test checks for the
+<li><code class="docutils literal notranslate"><span class="pre">#include</span></code> your method header file at the top of the file.</li>
+<li>Add a new <code class="docutils literal notranslate"><span class="pre">else</span> <span class="pre">if</span></code> clause in <code class="docutils literal notranslate"><span class="pre">BuildMethod()</span></code>. The if-test checks for the
 method type set as an enum in the list of properties. Within the if-clause you
 should parse and validate the JSON schema, read the required properties and
 create the method. A pointer to the newly created object should
-be stored in the variable named <code class="docutils literal"><span class="pre">method</span></code>.</li>
+be stored in the variable named <code class="docutils literal notranslate"><span class="pre">method</span></code>.</li>
 </ol>
+<p>Finally, add the method .cpp to CMakeLists.txt as a source.</p>
 </div>
 </div>
 </div>
 
 
            </div>
-           <div class="articleComments">
-            
-           </div>
+           
           </div>
           <footer>
   
@@ -373,11 +369,11 @@ be stored in the variable named <code class="docutils literal"><span class="pre"
   <div role="contentinfo">
     <p>
         &copy; Copyright 2016, the SSAGES Team.
-      Last updated on Feb 27, 2018.
+      Last updated on Dec 14, 2018.
 
     </p>
   </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
 
 </footer>
 
@@ -395,17 +391,18 @@ be stored in the variable named <code class="docutils literal"><span class="pre"
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'./',
-            VERSION:'v0.8.0-alpha',
+            VERSION:'v0.8.3-alpha',
+            LANGUAGE:'None',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
             HAS_SOURCE:  true,
-            SOURCELINK_SUFFIX: ''
+            SOURCELINK_SUFFIX: '.txt'
         };
     </script>
       <script type="text/javascript" src="_static/jquery.js"></script>
       <script type="text/javascript" src="_static/underscore.js"></script>
       <script type="text/javascript" src="_static/doctools.js"></script>
-      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
   
 
@@ -414,14 +411,11 @@ be stored in the variable named <code class="docutils literal"><span class="pre"
     <script type="text/javascript" src="_static/js/theme.js"></script>
   
 
-  
-  
   <script type="text/javascript">
       jQuery(function () {
-          SphinxRtdTheme.StickyNav.enable();
+          SphinxRtdTheme.Navigation.enable(true);
       });
-  </script>
-   
+  </script> 
 
 </body>
 </html>

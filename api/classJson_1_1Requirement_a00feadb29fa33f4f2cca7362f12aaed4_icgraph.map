@@ -1,45 +1,48 @@
 <map id="Json::Requirement::PushNotice" name="Json::Requirement::PushNotice">
-<area shape="rect" id="node2" href="$classJson_1_1OneOfRequirement.html#ae450a6c104146cbb35e4876a78de75ae" title="Validate that only one of the Requirements hold. " alt="" coords="193,179,364,220"/>
-<area shape="rect" id="node3" href="$classJson_1_1AnyOfRequirement.html#a3f52414023e6c2bdf13855c483431237" title="Validate that at least one Requirement holds. " alt="" coords="194,244,363,285"/>
-<area shape="rect" id="node4" href="$classJson_1_1AllOfRequirement.html#ad90f82432cfb46d5da9809e3bb4639b2" title="Validate that all Requirements are met. " alt="" coords="198,309,359,351"/>
-<area shape="rect" id="node5" href="$classJson_1_1ArrayRequirement.html#a6e334ac9cf70844544828d9dfa7246cb" title="Validate json value. " alt="" coords="197,375,360,416"/>
-<area shape="rect" id="node7" href="$classJson_1_1ObjectRequirement.html#a9ac3b920001a35bc70580035d8d802b7" title="Validate JSON value. " alt="" coords="193,811,364,852"/>
-<area shape="rect" id="node6" href="$classSSAGES_1_1Constraint.html#aac834c9af0722aec6718ea435a641caf" title="Build constraint. " alt="" coords="447,29,592,71"/>
-<area shape="rect" id="node8" href="$classSSAGES_1_1GaussianPK.html#a6f2f35a0333bc7ba17c1999a2e38a2e1" title="Build GaussianPK from JSON value. " alt="" coords="440,95,599,136"/>
-<area shape="rect" id="node10" href="$classSSAGES_1_1PairwiseCV.html#a807d3a560a3a187c7648da5a282027df" title="Evaluate the CV. " alt="" coords="978,219,1133,260"/>
-<area shape="rect" id="node13" href="$classSSAGES_1_1Logger.html#aedc5a4c03ad023b895fb3247e67c9341" title="Build a Logger from JSON node. " alt="" coords="713,277,874,303"/>
-<area shape="rect" id="node14" href="$classSSAGES_1_1ResourceHandler.html#ac026ad9aa098fa1508a78b0b5a91e8a2" title="Build a new ResourceHandler from JSON. " alt="" coords="962,475,1149,516"/>
-<area shape="rect" id="node15" href="$classSSAGES_1_1ANN.html#a44c8469ee6fc94c4c2be239684a9bf14" title="SSAGES::ANN::Build" alt="" coords="444,378,595,405"/>
-<area shape="rect" id="node17" href="$classSSAGES_1_1RationalSwitchPK.html#aaba99dea2481b50341bd1ab50c991c6c" title="Build RationalSwitchPK from JSON value. " alt="" coords="424,160,615,201"/>
-<area shape="rect" id="node18" href="$classSSAGES_1_1Umbrella.html#a0f8f31f884c4f2fb1551897e25401eb1" title="SSAGES::Umbrella::Build" alt="" coords="432,429,607,455"/>
-<area shape="rect" id="node20" href="$classSSAGES_1_1Meta.html#a51bd46425cf7d5aad4205ea17e2ac3e9" title="SSAGES::Meta::Build" alt="" coords="444,479,595,506"/>
-<area shape="rect" id="node21" href="$classSSAGES_1_1StringMethod.html#a78c2c3093a4341556b281314d5b7008b" title="Build a derived method from JSON node. " alt="" coords="438,531,601,572"/>
-<area shape="rect" id="node23" href="$classSSAGES_1_1AlphaRMSDCV.html#a927dbccb0136c844a5b1cc8b2e74ecbd" title="Set up collective variable. " alt="" coords="431,596,608,637"/>
-<area shape="rect" id="node25" href="$classSSAGES_1_1BFS.html#aae30a5592035f756e0290fd2b044cf5e" title="SSAGES::BFS::Build" alt="" coords="445,793,593,819"/>
-<area shape="rect" id="node27" href="$classSSAGES_1_1AntiBetaRMSDCV.html#a4153e7b2aa827ac6367ec6374f986370" title="Set up collective variable. " alt="" coords="422,661,617,703"/>
-<area shape="rect" id="node28" href="$classSSAGES_1_1ParallelBetaRMSDCV.html#ad4c42c1bddc74fc312517ad13526c5cc" title="Set up collective variable. " alt="" coords="412,727,627,768"/>
-<area shape="rect" id="node29" href="$classSSAGES_1_1ABF.html#aa131b026ddb40941889c8bde7840ac6a" title="SSAGES::ABF::Build" alt="" coords="445,843,593,870"/>
-<area shape="rect" id="node31" href="$classSSAGES_1_1ForwardFlux.html#a2fa0e637c261108c34cd14d7e8855cab" title="SSAGES::ForwardFlux\l::Build" alt="" coords="441,895,598,936"/>
-<area shape="rect" id="node33" href="$classSSAGES_1_1Constraint.html#afc2298be994364d322e862dadda1c8b5" title="Overloaded function allowing JSON path specification. " alt="" coords="447,960,592,1001"/>
-<area shape="rect" id="node34" href="$classSSAGES_1_1Grid.html#a9e933a2490b0d835c0578cbe7f012292" title="Set up the grid. " alt="" coords="448,1025,591,1067"/>
-<area shape="rect" id="node35" href="$classSSAGES_1_1Histogram.html#a502ac115a7c5f95599e1cef20ce37c56" title="Set up the histogram. " alt="" coords="443,1091,596,1132"/>
-<area shape="rect" id="node36" href="$classSSAGES_1_1Method.html#a1464579bb8b15653ccd0ffa834e15e93" title="Build a derived method from JSON node. " alt="" coords="689,1058,897,1085"/>
-<area shape="rect" id="node37" href="$classSSAGES_1_1BoxVolumeCV.html#a52f2b0c68a755e8b239fc40dbc2a7100" title="Evaluate the CV. " alt="" coords="434,1208,605,1249"/>
-<area shape="rect" id="node38" href="$classSSAGES_1_1AngleCV.html#afc7cddc3872aeeeeb098c69f1126b594" title="Evaluate the CV. " alt="" coords="421,1274,617,1301"/>
-<area shape="rect" id="node39" href="$classSSAGES_1_1GyrationTensorCV.html#ac613c1659bd00b335c3d6de3d8ff0ebc" title="Evaluate the CV. " alt="" coords="423,1325,616,1367"/>
-<area shape="rect" id="node40" href="$classSSAGES_1_1ParticlePositionCV.html#aa2ee9b7b3ca3133183e2d5f511251e29" title="Evaluate the CV. " alt="" coords="431,1391,607,1432"/>
-<area shape="rect" id="node41" href="$classSSAGES_1_1RouseModeCV.html#a1468b1aabf81ceb2ef3feb3b8fc79d0d" title="Evaluate the CV. " alt="" coords="432,1456,607,1497"/>
-<area shape="rect" id="node42" href="$classSSAGES_1_1ParticleSeparationCV.html#ae6452c47bf1d849e2af60c84209a9955" title="Evaluate the CV. " alt="" coords="424,1521,615,1563"/>
-<area shape="rect" id="node43" href="$classSSAGES_1_1ParticleCoordinateCV.html#a5ce37330c0e9654a5977afc8c6bdeed1" title="Return difference considering periodic boundaries. " alt="" coords="423,1587,615,1628"/>
-<area shape="rect" id="node44" href="$classSSAGES_1_1TorsionalCV.html#af442beb9f397716e4906b4fcf5a67edd" title="Returns the minimum image of a CV based on the input location. " alt="" coords="441,1652,598,1693"/>
-<area shape="rect" id="node9" href="$classSSAGES_1_1PairwiseKernel.html#a86c0b897d04fe123892e6c2040bfb93c" title="Build PairwiseKernel from JSON value. " alt="" coords="707,153,879,195"/>
-<area shape="rect" id="node11" href="$classSSAGES_1_1GaussianPK.html#abbee93e1a5cc3a5714fdf463671c7356" title="Evaluate the Gaussian function. " alt="" coords="976,88,1135,129"/>
-<area shape="rect" id="node12" href="$classSSAGES_1_1RationalSwitchPK.html#ae75076780bcc7d3d0e19c3fc2a69b9a7" title="Evaluate the switching function. " alt="" coords="960,153,1151,195"/>
-<area shape="rect" id="node16" href="$classSSAGES_1_1ANN.html#af48fa9793d0b1df77f0f2681072e76d2" title="Set overwrite flag on output file. " alt="" coords="675,378,912,405"/>
-<area shape="rect" id="node19" href="$classSSAGES_1_1Umbrella.html#a86c1b11227fd169e94f8da0bb589359b" title="Set append mode. " alt="" coords="689,429,898,455"/>
-<area shape="rect" id="node22" href="$classSSAGES_1_1StringMethod.html#a1bebfc3c0fe92fca8aa77fa7e4ef3aa1" title="Set the tolerance for quitting method. " alt="" coords="712,531,875,572"/>
-<area shape="rect" id="node24" href="$classSSAGES_1_1CollectiveVariable.html#ab56eae0d888f3d5125566bfb9b5e21aa" title="Set up collective variable. " alt="" coords="698,628,889,669"/>
-<area shape="rect" id="node26" href="$classSSAGES_1_1BFS.html#ae7a1e5c49a98296b2451e6127ef8f425" title="Set the values for the basis. " alt="" coords="707,793,879,819"/>
-<area shape="rect" id="node30" href="$classSSAGES_1_1ABF.html#ac206ccf90c29d11d6abdebeae44b033f" title="Set iteration of the method. " alt="" coords="700,843,887,870"/>
-<area shape="rect" id="node32" href="$classSSAGES_1_1ForwardFlux.html#a77060dea307348f3df6b9dfb4069dfdb" title="Constructor. " alt="" coords="715,895,872,936"/>
+<area shape="rect" id="node2" href="$classJson_1_1OneOfRequirement.html#ae450a6c104146cbb35e4876a78de75ae" title="Validate that only one of the Requirements hold. " alt="" coords="193,188,364,229"/>
+<area shape="rect" id="node3" href="$classJson_1_1AnyOfRequirement.html#a3f52414023e6c2bdf13855c483431237" title="Validate that at least one Requirement holds. " alt="" coords="194,253,363,295"/>
+<area shape="rect" id="node4" href="$classJson_1_1AllOfRequirement.html#ad90f82432cfb46d5da9809e3bb4639b2" title="Validate that all Requirements are met. " alt="" coords="198,319,359,360"/>
+<area shape="rect" id="node5" href="$classJson_1_1ArrayRequirement.html#a6e334ac9cf70844544828d9dfa7246cb" title="Validate json value. " alt="" coords="197,384,360,425"/>
+<area shape="rect" id="node7" href="$classJson_1_1ObjectRequirement.html#a9ac3b920001a35bc70580035d8d802b7" title="Validate JSON value. " alt="" coords="193,803,364,844"/>
+<area shape="rect" id="node6" href="$classSSAGES_1_1Constraint.html#aac834c9af0722aec6718ea435a641caf" title="Build constraint. " alt="" coords="435,29,580,71"/>
+<area shape="rect" id="node8" href="$classSSAGES_1_1BoxVolumeCV.html#a75675bb4e1bdcb198b7201ed0ea6cc24" title="Set up collective variable. " alt="" coords="930,627,1101,668"/>
+<area shape="rect" id="node10" href="$classSSAGES_1_1ResourceHandler.html#ac026ad9aa098fa1508a78b0b5a91e8a2" title="Build a new ResourceHandler from JSON. " alt="" coords="1427,164,1613,205"/>
+<area shape="rect" id="node11" href="$classSSAGES_1_1GaussianPK.html#a6f2f35a0333bc7ba17c1999a2e38a2e1" title="Build GaussianPK from JSON value. " alt="" coords="428,313,587,355"/>
+<area shape="rect" id="node13" href="$classSSAGES_1_1PairwiseCV.html#ad07080b9c899d5a31f233a2103994931" title="Set up collective variable. " alt="" coords="938,379,1093,420"/>
+<area shape="rect" id="node16" href="$classSSAGES_1_1Logger.html#aedc5a4c03ad023b895fb3247e67c9341" title="Build a Logger from JSON node. " alt="" coords="1194,197,1355,223"/>
+<area shape="rect" id="node17" href="$classSSAGES_1_1AngleCV.html#abb07c513c9eb73a0b4b44f2eb602096d" title="Set up collective variable. " alt="" coords="928,826,1103,853"/>
+<area shape="rect" id="node18" href="$classSSAGES_1_1ParticlePositionCV.html#aba39d6128e00ab299f41c12b46c45b8b" title="Set up collective variable. " alt="" coords="927,897,1103,939"/>
+<area shape="rect" id="node19" href="$classSSAGES_1_1RationalSwitchPK.html#aaba99dea2481b50341bd1ab50c991c6c" title="Build RationalSwitchPK from JSON value. " alt="" coords="412,248,603,289"/>
+<area shape="rect" id="node20" href="$classSSAGES_1_1ParticleSeparationCV.html#a1e8c2b87b91bdf8722e37feb109576fd" title="Set up collective variable. " alt="" coords="920,1003,1111,1044"/>
+<area shape="rect" id="node21" href="$classSSAGES_1_1ParticleCoordinateCV.html#ad21a72b2fe3e34c16c985fb13de32d58" title="Set up collective variable. " alt="" coords="919,1149,1111,1191"/>
+<area shape="rect" id="node22" href="$classSSAGES_1_1Umbrella.html#a0f8f31f884c4f2fb1551897e25401eb1" title="Build a derived method from JSON node. " alt="" coords="420,683,595,710"/>
+<area shape="rect" id="node24" href="$classSSAGES_1_1Meta.html#a51bd46425cf7d5aad4205ea17e2ac3e9" title="Build a derived method from JSON node. " alt="" coords="432,734,583,761"/>
+<area shape="rect" id="node25" href="$classSSAGES_1_1RouseModeCV.html#a369dd6839f82c595844881f3db88a956" title="Set up collective variable. " alt="" coords="668,1375,843,1416"/>
+<area shape="rect" id="node26" href="$classSSAGES_1_1ANN.html#a44c8469ee6fc94c4c2be239684a9bf14" title="Build a derived method from JSON node. " alt="" coords="432,835,583,862"/>
+<area shape="rect" id="node28" href="$classSSAGES_1_1StringMethod.html#a78c2c3093a4341556b281314d5b7008b" title="Build a derived method from JSON node. " alt="" coords="426,887,589,928"/>
+<area shape="rect" id="node30" href="$classSSAGES_1_1TorsionalCV.html#acfa27d84d60248c363d111a82f175749" title="Set up collective variable. " alt="" coords="937,444,1094,485"/>
+<area shape="rect" id="node31" href="$classSSAGES_1_1AlphaRMSDCV.html#a927dbccb0136c844a5b1cc8b2e74ecbd" title="Set up collective variable. " alt="" coords="667,481,844,523"/>
+<area shape="rect" id="node32" href="$classSSAGES_1_1Chebyshev.html#af559eb52a138ce6dae0cd53f9d9be6ff" title="Build the Chebyshev polynomial. " alt="" coords="428,1055,587,1096"/>
+<area shape="rect" id="node34" href="$classSSAGES_1_1GyrationTensorCV.html#a68cd7731a77e1a4e4ba2835a6fe65467" title="Set up collective variable. " alt="" coords="919,561,1112,603"/>
+<area shape="rect" id="node35" href="$classSSAGES_1_1BFS.html#aae30a5592035f756e0290fd2b044cf5e" title="Build a derived method from JSON node. " alt="" coords="433,1273,581,1299"/>
+<area shape="rect" id="node37" href="$classSSAGES_1_1AntiBetaRMSDCV.html#a4153e7b2aa827ac6367ec6374f986370" title="Set up collective variable. " alt="" coords="658,649,853,691"/>
+<area shape="rect" id="node38" href="$classSSAGES_1_1ParallelBetaRMSDCV.html#ad4c42c1bddc74fc312517ad13526c5cc" title="Set up collective variable. " alt="" coords="908,749,1123,791"/>
+<area shape="rect" id="node39" href="$classSSAGES_1_1ABF.html#aa131b026ddb40941889c8bde7840ac6a" title="Build a derived method from JSON node. " alt="" coords="433,1425,581,1451"/>
+<area shape="rect" id="node41" href="$classSSAGES_1_1Legendre.html#a4ee7c2d19068e883e11b9440b52af5e8" title="Build the Legendre polynomial. " alt="" coords="420,1121,595,1147"/>
+<area shape="rect" id="node42" href="$classSSAGES_1_1Fourier.html#a70564d65be5f9a3fd2ce6ee37f814761" title="Build the Fourier polynomial. " alt="" coords="426,1171,589,1198"/>
+<area shape="rect" id="node43" href="$classSSAGES_1_1ForwardFlux.html#a2fa0e637c261108c34cd14d7e8855cab" title="Build a derived method from JSON node. " alt="" coords="429,1476,586,1517"/>
+<area shape="rect" id="node45" href="$classSSAGES_1_1Constraint.html#afc2298be994364d322e862dadda1c8b5" title="Overloaded function allowing JSON path specification. " alt="" coords="435,1541,580,1583"/>
+<area shape="rect" id="node46" href="$classSSAGES_1_1Grid.html#a9e933a2490b0d835c0578cbe7f012292" title="Set up the grid. " alt="" coords="429,1607,586,1648"/>
+<area shape="rect" id="node47" href="$classSSAGES_1_1Method.html#a1464579bb8b15653ccd0ffa834e15e93" title="Build a derived method from JSON node. " alt="" coords="1171,95,1379,122"/>
+<area shape="rect" id="node9" href="$classSSAGES_1_1CollectiveVariable.html#ab56eae0d888f3d5125566bfb9b5e21aa" title="Set up collective variable. " alt="" coords="1179,685,1370,727"/>
+<area shape="rect" id="node12" href="$classSSAGES_1_1PairwiseKernel.html#a86c0b897d04fe123892e6c2040bfb93c" title="Build PairwiseKernel from JSON value. " alt="" coords="669,313,841,355"/>
+<area shape="rect" id="node14" href="$classSSAGES_1_1GaussianPK.html#a33e84e1db04cc6c9125fa56cf2c63f07" title="Evaluate the pairwise kernel function. " alt="" coords="936,248,1095,289"/>
+<area shape="rect" id="node15" href="$classSSAGES_1_1RationalSwitchPK.html#ae75076780bcc7d3d0e19c3fc2a69b9a7" title="Evaluate the pairwise kernel function. " alt="" coords="920,313,1111,355"/>
+<area shape="rect" id="node23" href="$classSSAGES_1_1Umbrella.html#a86c1b11227fd169e94f8da0bb589359b" title="Set append mode. " alt="" coords="651,715,860,742"/>
+<area shape="rect" id="node27" href="$classSSAGES_1_1ANN.html#a05554b5f5f718f20d772fabf814e3e4c" title="Set minimum loss function value (should be zero for production). " alt="" coords="660,835,851,862"/>
+<area shape="rect" id="node29" href="$classSSAGES_1_1StringMethod.html#a1bebfc3c0fe92fca8aa77fa7e4ef3aa1" title="Set the tolerance for quitting method. " alt="" coords="674,887,837,928"/>
+<area shape="rect" id="node33" href="$classSSAGES_1_1BasisFunction.html#a25b1e4f6b8655529bb4b68268dfdcdb5" title="Build BasisFunction from JSON value. " alt="" coords="671,1113,839,1155"/>
+<area shape="rect" id="node36" href="$classSSAGES_1_1BFS.html#ae7a1e5c49a98296b2451e6127ef8f425" title="Set the values for the basis. " alt="" coords="669,1273,841,1299"/>
+<area shape="rect" id="node40" href="$classSSAGES_1_1ABF.html#ac206ccf90c29d11d6abdebeae44b033f" title="Set iteration of the method. " alt="" coords="662,1441,849,1467"/>
+<area shape="rect" id="node44" href="$classSSAGES_1_1ForwardFlux.html#a77060dea307348f3df6b9dfb4069dfdb" title="Constructor. " alt="" coords="677,1492,834,1533"/>
 </map>

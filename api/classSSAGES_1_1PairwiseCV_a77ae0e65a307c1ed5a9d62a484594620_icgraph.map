@@ -1,3 +1,5 @@
 <map id="SSAGES::PairwiseCV::PairwiseCV" name="SSAGES::PairwiseCV::PairwiseCV">
-<area shape="rect" id="node2" href="$classSSAGES_1_1PairwiseCV.html#a807d3a560a3a187c7648da5a282027df" title="Evaluate the CV. " alt="" coords="208,5,363,47"/>
+<area shape="rect" id="node2" href="$classSSAGES_1_1PairwiseCV.html#ad07080b9c899d5a31f233a2103994931" title="Set up collective variable. " alt="" coords="208,5,363,47"/>
+<area shape="rect" id="node3" href="$classSSAGES_1_1CollectiveVariable.html#ab56eae0d888f3d5125566bfb9b5e21aa" title="Set up collective variable. " alt="" coords="411,5,601,47"/>
+<area shape="rect" id="node4" href="$classSSAGES_1_1ResourceHandler.html#ac026ad9aa098fa1508a78b0b5a91e8a2" title="Build a new ResourceHandler from JSON. " alt="" coords="649,5,836,47"/>
 </map>

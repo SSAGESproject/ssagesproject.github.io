@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Adaptive Biasing Force Algorithm &mdash; SSAGES v0.8.0-alpha documentation</title>
+  <title>Adaptive Biasing Force Algorithm &mdash; SSAGES v0.8.3-alpha documentation</title>
   
 
   
@@ -25,24 +25,19 @@
   
 
   
-  
     <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
-  
-
-  
-
-  
-    <link rel="top" title="SSAGES v0.8.0-alpha documentation" href="index.html"/>
-        <link rel="up" title="Advanced Sampling Methods" href="Advanced Sampling Methods.html"/>
-        <link rel="next" title="Artificial Neural Network Sampling" href="Artificial Neural Network Sampling.html"/>
-        <link rel="prev" title="Advanced Sampling Methods" href="Advanced Sampling Methods.html"/> 
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Artificial Neural Network Sampling" href="Artificial Neural Network Sampling.html" />
+    <link rel="prev" title="Advanced Sampling Methods" href="Advanced Sampling Methods.html" /> 
 
   
   <script src="_static/js/modernizr.min.js"></script>
 
 </head>
 
-<body class="wy-body-for-nav" role="document">
+<body class="wy-body-for-nav">
 
    
   <div class="wy-grid-for-nav">
@@ -64,7 +59,7 @@
             
             
               <div class="version">
-                0.8.0
+                0.8.3
               </div>
             
           
@@ -95,7 +90,7 @@
 <li class="toctree-l1"><a class="reference internal" href="Engines.html">Engines</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Collective Variables.html">Collective Variables</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="Advanced Sampling Methods.html">Advanced Sampling Methods</a><ul class="current">
-<li class="toctree-l2 current"><a class="current reference internal" href="">Adaptive Biasing Force Algorithm</a><ul>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Adaptive Biasing Force Algorithm</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#introduction">Introduction</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#options-parameters">Options &amp; Parameters</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#example-input">Example input</a></li>
@@ -133,7 +128,7 @@
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
 
       
-      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+      <nav class="wy-nav-top" aria-label="top navigation">
         
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="index.html">SSAGES</a>
@@ -141,9 +136,10 @@
       </nav>
 
 
-      
       <div class="wy-nav-content">
+        
         <div class="rst-content">
+        
           
 
 
@@ -174,7 +170,7 @@
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="_sources/Adaptive Biasing Force Algorithm.txt" rel="nofollow"> View page source</a>
+            <a href="_sources/Adaptive Biasing Force Algorithm.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -208,8 +204,8 @@ the free energy surface.</p>
 <a class="reference external" href="http://pubs.acs.org/doi/abs/10.1021/jp506633n">here</a>.</p>
 <p>Details on the specific implementation used in SSAGES can be found
 <a class="reference external" href="http://mc.stanford.edu/cgi-bin/images/0/06/Darve_2008.pdf">here</a>.</p>
-<p>An integrator for 1D and 2D surfaces are provided in SSAGES/Tools/ABF_integrator (requires numpy, scipy and matplotlib).
-ABF_integrator.py -i &lt;inputfile&gt; -o &lt;outputname&gt; &#8211;periodic1 &lt;True/False&gt; &#8211;periodic2 &lt;True/False&gt; &#8211;interpolate &lt;integer&gt; &#8211;scale &lt;float&gt;</p>
+<p>An integrator for 1D, 2D and 3D surfaces are provided in SSAGES/Tools/ABF_integrator (requires numpy, scipy and matplotlib).
+ABF_integrator.py -i &lt;inputfile&gt; -o &lt;outputname&gt; -p &lt;bool&gt; (&lt;bool&gt; &lt;bool&gt;) –interpolate &lt;integer&gt; (&lt;integer&gt; &lt;integer&gt;) –scale &lt;float&gt;</p>
 </div>
 <div class="section" id="options-parameters">
 <h2>Options &amp; Parameters<a class="headerlink" href="#options-parameters" title="Permalink to this headline">¶</a></h2>
@@ -220,10 +216,12 @@ ABF_integrator.py -i &lt;inputfile&gt; -o &lt;outputname&gt; &#8211;periodic1 &l
 <li>Define a CV range. Outside of the CV range, there will be no bias, and no
 histogram hits will be collected.</li>
 <li>Can restart from a previous run. Simply include Fworld_cvX and Nworld outputs
-in your working directory at runtime. IMPORTANT! If you want to start a clean run,
-or if you&#8217;ve made changes to the grid, these files must NOT BE PRESENT in the working
-directory, otherwise SSAGES will give you a warning, or worse, you will merge your
-histogram into another one on accident.</li>
+in your working directory at runtime, and set ‘restart’ to true.</li>
+<li>ABF will keep a single backup of old files, and will overwrite older backups with new
+if they already exist. If restarting, a backup will not be created, instead
+ABF will read from and update the newest files.</li>
+<li>Multiple walkers will read from and write to the same histogram during runtime,
+and this histogram will be saved the same way a single walker histogram is saved.</li>
 <li>Can optionally define a restraint range. Outside this range, a harmonic
 restraint of user-chosen spring constant(s) will drive the CV(s) back into the
 range. This range should be WIDER than the CV range by at least one bin size
@@ -235,7 +233,7 @@ CV is restrained to -3.14 to -2.36 and the CV crosses the -3.14 boundary to 3.14
 this will ensure the restraint is applied correctly back towards -3.14 rather than
 a large force applied to bring it from 3.14 all the way to -2.36.</li>
 </ul>
-<p>How to define the ABF Method: <code class="docutils literal"><span class="pre">&quot;type&quot;</span> <span class="pre">:</span> <span class="pre">&quot;ABF&quot;</span></code></p>
+<p>How to define the ABF Method: <code class="docutils literal notranslate"><span class="pre">&quot;type&quot;</span> <span class="pre">:</span> <span class="pre">&quot;ABF&quot;</span></code></p>
 <dl class="docutils">
 <dt>cvs</dt>
 <dd><em>array of integers</em>.
@@ -308,6 +306,10 @@ Name of the file to backup the raw Nworld output to for restarts.</dd>
 <dt>output_frequency</dt>
 <dd><em>integer</em>.
 Saves the histogram of generalized force every this many timesteps.</dd>
+<dt>restart</dt>
+<dd><em>boolean</em>
+Default = false
+If set to true, ABF will attempt to load a previous state from Nworld and Fworld files.</dd>
 <dt>unit_conversion</dt>
 <dd><em>double</em>.
 Unit conversion from d(momentum)/d(time) to force for the simulation.
@@ -322,7 +324,7 @@ Leave at 1.</dd>
 </div>
 <div class="section" id="example-input">
 <h2>Example input<a class="headerlink" href="#example-input" title="Permalink to this headline">¶</a></h2>
-<div class="highlight-javascript"><div class="highlight"><pre><span class="s2">&quot;methods&quot;</span> <span class="o">:</span> <span class="p">[</span>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;methods&quot;</span> <span class="o">:</span> <span class="p">[</span>
     <span class="p">{</span>
         <span class="s2">&quot;type&quot;</span> <span class="o">:</span> <span class="s2">&quot;ABF&quot;</span><span class="p">,</span>
         <span class="s2">&quot;cvs&quot;</span> <span class="o">:</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">],</span>
@@ -346,9 +348,9 @@ Leave at 1.</dd>
 </div>
 <div class="section" id="output">
 <h2>Output<a class="headerlink" href="#output" title="Permalink to this headline">¶</a></h2>
-<p>The main output of the method is stored in a file specified in &#8216;filename&#8217;. This
+<p>The main output of the method is stored in a file specified in ‘filename’. This
 file will contain the Adaptive Force vector field printed out every
-&#8216;backup_frequency&#8217; steps and at the end of a simulation. The method outputs a vector
+‘backup_frequency’ steps and at the end of a simulation. The method outputs a vector
 field, with vectors defined on each point on a grid that goes from
 (CV_lower_bounds) to (CV_upper_bounds) of each CV in its dimension, with (CV_bins) of grid points
 in each dimension. For example, for 2 CVs defined from (-1,1) and (-1,0) with 3 and
@@ -413,7 +415,7 @@ To build RIGID and MOLECULE:</p>
 <li>Go to LAMMPS src folder (/build/hooks/lammps/lammps-download-prefix/src/lammps-download/src/ for -DLAMMPS=YES)</li>
 <li>Do:</li>
 </ol>
-<div class="highlight-bash"><div class="highlight"><pre>make yes-RIGID
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>make yes-RIGID
 make yes-MOLECULE
 </pre></div>
 </div>
@@ -422,49 +424,49 @@ make yes-MOLECULE
 </ol>
 <p>Find the following input files in Examples/User/ABF/Example_AlanineDipeptide:</p>
 <ul class="simple">
-<li><code class="docutils literal"><span class="pre">in.ADP_ABF_Example(0-1)</span></code> (2 files)</li>
-<li><code class="docutils literal"><span class="pre">example.input</span></code></li>
-<li><code class="docutils literal"><span class="pre">ADP_ABF_1walker.json</span></code></li>
-<li><code class="docutils literal"><span class="pre">ADP_ABF_2walkers.json</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">in.ADP_ABF_Example(0-1)</span></code> (2 files)</li>
+<li><code class="docutils literal notranslate"><span class="pre">example.input</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">ADP_ABF_1walker.json</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">ADP_ABF_2walkers.json</span></code></li>
 </ul>
 <ol class="arabic simple">
 <li>Put the contents of ABF_ADP_LAMMPS_Example folder in your ssages build folder</li>
 <li>For a single walker example, do:</li>
 </ol>
-<div class="highlight-bash"><div class="highlight"><pre>./ssages ADP_ABF_1walker.json.json
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>./ssages ADP_ABF_1walker.json.json
 </pre></div>
 </div>
 <p>For 2 walkers, do:</p>
-<div class="highlight-bash"><div class="highlight"><pre>mpirun -np <span class="m">2</span> ./ssages ADP_ABF_2walkers.json
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>mpirun -np <span class="m">2</span> ./ssages ADP_ABF_2walkers.json
 </pre></div>
 </div>
 <p>For GROMACS:</p>
 <p>Optional:</p>
 <ul class="simple">
-<li><code class="docutils literal"><span class="pre">adp.gro</span></code></li>
-<li><code class="docutils literal"><span class="pre">topol.top</span></code></li>
-<li><code class="docutils literal"><span class="pre">nvt.mdp</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">adp.gro</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">topol.top</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">nvt.mdp</span></code></li>
 </ul>
 <p>Required:</p>
 <ul class="simple">
-<li><code class="docutils literal"><span class="pre">example_adp(0-1).tpr</span></code> (2 files)</li>
-<li><code class="docutils literal"><span class="pre">ADP_ABF_1walker.json</span></code></li>
-<li><code class="docutils literal"><span class="pre">ADP_ABF_2walkers.json</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">example_adp(0-1).tpr</span></code> (2 files)</li>
+<li><code class="docutils literal notranslate"><span class="pre">ADP_ABF_1walker.json</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">ADP_ABF_2walkers.json</span></code></li>
 </ul>
 <ol class="arabic simple">
 <li>Put the contents of ABF_ADP_Gromacs_Example in your ssages build folder</li>
 <li>For a single walker example, do:</li>
 </ol>
-<div class="highlight-bash"><div class="highlight"><pre>./ssages ABF_ADP_1walker.json
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>./ssages ABF_ADP_1walker.json
 </pre></div>
 </div>
 <p>For 2 walkers, do:</p>
-<div class="highlight-bash"><div class="highlight"><pre>mpirun -np <span class="m">2</span> ./ssages ABF_ADP_2walkers.json
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>mpirun -np <span class="m">2</span> ./ssages ABF_ADP_2walkers.json
 </pre></div>
 </div>
 <p>These will run using the pre-prepared input files in .tpr format. If you wish to
 prepare the input files yourself using GROMACS tools (if compiled with -DGROMACS=YES):</p>
-<div class="highlight-bash"><div class="highlight"><pre>/build/hooks/gromacs/gromacs/bin/gmx_mpi grompp -f nvt.mdp -p topol.top -c adp.gro -o example_adp0.tpr
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>/build/hooks/gromacs/gromacs/bin/gmx_mpi grompp -f nvt.mdp -p topol.top -c adp.gro -o example_adp0.tpr
 /build/hooks/gromacs/gromacs/bin/gmx_mpi grompp -f nvt.mdp -p topol.top -c adp.gro -o example_adp1.tpr
 </pre></div>
 </div>
@@ -478,7 +480,7 @@ outputs given in the examples folders:</p>
 <li>Copy ABF_integrator.py (requires numpy, scipy and matplotlib) into your build folder.</li>
 <li>Run the integrator:</li>
 </ol>
-<div class="highlight-bash"><div class="highlight"><pre>python ABF_integrator.py --periodic1 True --periodic2 True --interpolate 200
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>python ABF_integrator.py --periodic1 True --periodic2 True --interpolate <span class="m">200</span>
 </pre></div>
 </div>
 <ol class="arabic simple" start="3">
@@ -491,7 +493,7 @@ To build RIGID and MOLECULE:</p>
 <li>Go to LAMMPS src folder (/build/hooks/lammps/lammps-download-prefix/src/lammps-download/src/ for -DLAMMPS=YES)</li>
 <li>Do:</li>
 </ol>
-<div class="highlight-bash"><div class="highlight"><pre>make yes-KSPACE
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>make yes-KSPACE
 make yes-MOLECULE
 </pre></div>
 </div>
@@ -500,49 +502,49 @@ make yes-MOLECULE
 </ol>
 <p>Find the following input files in Examples/User/ABF/Example_NaCl/ABF_NaCl_LAMMPS_Example:</p>
 <ul class="simple">
-<li><code class="docutils literal"><span class="pre">in.NaCl_ADP_example(0-1)</span></code> (2 files)</li>
-<li><code class="docutils literal"><span class="pre">data.spce</span></code></li>
-<li><code class="docutils literal"><span class="pre">ADP_NaCl_1walker.json</span></code></li>
-<li><code class="docutils literal"><span class="pre">ADP_NaCl_2walkers.json</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">in.NaCl_ADP_example(0-1)</span></code> (2 files)</li>
+<li><code class="docutils literal notranslate"><span class="pre">data.spce</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">ADP_NaCl_1walker.json</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">ADP_NaCl_2walkers.json</span></code></li>
 </ul>
 <ol class="arabic simple">
 <li>Put the contents of ABF_NaCl_LAMMPS_Example folder in your ssages build folder</li>
 <li>For a single walker example, do:</li>
 </ol>
-<div class="highlight-bash"><div class="highlight"><pre>./ssages ADP_NaCl_1walker.json.json
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>./ssages ADP_NaCl_1walker.json.json
 </pre></div>
 </div>
 <p>For 2 walkers, do:</p>
-<div class="highlight-bash"><div class="highlight"><pre>mpirun -np <span class="m">2</span> ./ssages ADP_NaCl_2walkers.json
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>mpirun -np <span class="m">2</span> ./ssages ADP_NaCl_2walkers.json
 </pre></div>
 </div>
 <p>For GROMACS:</p>
 <p>Optional:</p>
 <ul class="simple">
-<li><code class="docutils literal"><span class="pre">NaCl.gro</span></code></li>
-<li><code class="docutils literal"><span class="pre">topol.top</span></code></li>
-<li><code class="docutils literal"><span class="pre">npt.mdp</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">NaCl.gro</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">topol.top</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">npt.mdp</span></code></li>
 </ul>
 <p>Required:</p>
 <ul class="simple">
-<li><code class="docutils literal"><span class="pre">example_NaCl(0-1).tpr</span></code> (2 files)</li>
-<li><code class="docutils literal"><span class="pre">ADP_NaCl_1walker.json</span></code></li>
-<li><code class="docutils literal"><span class="pre">ADP_NaCl_2walkers.json</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">example_NaCl(0-1).tpr</span></code> (2 files)</li>
+<li><code class="docutils literal notranslate"><span class="pre">ADP_NaCl_1walker.json</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">ADP_NaCl_2walkers.json</span></code></li>
 </ul>
 <ol class="arabic simple">
 <li>Put the contents of ABF_NaCl_Gromacs_Example in your ssages build folder</li>
 <li>For a single walker example, do:</li>
 </ol>
-<div class="highlight-bash"><div class="highlight"><pre>./ssages ABF_NaCl_1walker.json
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>./ssages ABF_NaCl_1walker.json
 </pre></div>
 </div>
 <p>For 2 walkers, do:</p>
-<div class="highlight-bash"><div class="highlight"><pre>mpirun -np <span class="m">2</span> ./ssages ABF_NaCl_2walkers.json
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>mpirun -np <span class="m">2</span> ./ssages ABF_NaCl_2walkers.json
 </pre></div>
 </div>
 <p>These will run using the pre-prepared input files in .tpr format. If you wish to
 prepare the input files yourself using GROMACS tools (if compiled with -DGROMACS=YES):</p>
-<div class="highlight-bash"><div class="highlight"><pre>/build/hooks/gromacs/gromacs/bin/gmx_mpi grompp -f npt.mdp -p topol.top -c NaCl.gro -o example_NaCl0.tpr
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>/build/hooks/gromacs/gromacs/bin/gmx_mpi grompp -f npt.mdp -p topol.top -c NaCl.gro -o example_NaCl0.tpr
 /build/hooks/gromacs/gromacs/bin/gmx_mpi grompp -f npt.mdp -p topol.top -c NaCl.gro -o example_NaCl1.tpr
 </pre></div>
 </div>
@@ -556,7 +558,7 @@ outputs given in the examples folders:</p>
 <li>Copy ABF_integrator.py (requires numpy, scipy and matplotlib) into your build folder.</li>
 <li>Run the integrator:</li>
 </ol>
-<div class="highlight-bash"><div class="highlight"><pre>python ABF_integrator.py
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>python ABF_integrator.py
 </pre></div>
 </div>
 <ol class="arabic simple" start="3">
@@ -572,9 +574,7 @@ Hythem Sidky</p>
 
 
            </div>
-           <div class="articleComments">
-            
-           </div>
+           
           </div>
           <footer>
   
@@ -593,11 +593,11 @@ Hythem Sidky</p>
   <div role="contentinfo">
     <p>
         &copy; Copyright 2016, the SSAGES Team.
-      Last updated on Feb 27, 2018.
+      Last updated on Dec 14, 2018.
 
     </p>
   </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
 
 </footer>
 
@@ -615,17 +615,18 @@ Hythem Sidky</p>
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'./',
-            VERSION:'v0.8.0-alpha',
+            VERSION:'v0.8.3-alpha',
+            LANGUAGE:'None',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
             HAS_SOURCE:  true,
-            SOURCELINK_SUFFIX: ''
+            SOURCELINK_SUFFIX: '.txt'
         };
     </script>
       <script type="text/javascript" src="_static/jquery.js"></script>
       <script type="text/javascript" src="_static/underscore.js"></script>
       <script type="text/javascript" src="_static/doctools.js"></script>
-      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
   
 
@@ -634,14 +635,11 @@ Hythem Sidky</p>
     <script type="text/javascript" src="_static/js/theme.js"></script>
   
 
-  
-  
   <script type="text/javascript">
       jQuery(function () {
-          SphinxRtdTheme.StickyNav.enable();
+          SphinxRtdTheme.Navigation.enable(true);
       });
-  </script>
-   
+  </script> 
 
 </body>
 </html>

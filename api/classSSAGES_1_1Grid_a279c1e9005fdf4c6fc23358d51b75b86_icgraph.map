@@ -1,4 +1,4 @@
 <map id="SSAGES::Grid::LoadFromFile" name="SSAGES::Grid::LoadFromFile">
-<area shape="rect" id="node2" href="$classSSAGES_1_1ABF.html#aa131b026ddb40941889c8bde7840ac6a" title="SSAGES::ABF::Build" alt="" coords="249,5,397,32"/>
+<area shape="rect" id="node2" href="$classSSAGES_1_1ABF.html#aa131b026ddb40941889c8bde7840ac6a" title="Build a derived method from JSON node. " alt="" coords="249,5,397,32"/>
 <area shape="rect" id="node3" href="$classSSAGES_1_1ABF.html#ac206ccf90c29d11d6abdebeae44b033f" title="Set iteration of the method. " alt="" coords="445,5,632,32"/>
 </map>

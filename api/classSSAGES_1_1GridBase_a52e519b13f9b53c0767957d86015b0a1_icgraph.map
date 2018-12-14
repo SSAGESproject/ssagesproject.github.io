@@ -1,3 +1,5 @@
 <map id="SSAGES::GridBase::data" name="SSAGES::GridBase::data">
-<area shape="rect" id="node2" href="$classSSAGES_1_1BFS.html#a417bd522d0ec956394e0ee0d5a154f73" title="The functions which calculates the updated bias and coefficients and then stores them. " alt="" coords="225,5,412,32"/>
+<area shape="rect" id="node2" href="$classSSAGES_1_1BFS.html#a417bd522d0ec956394e0ee0d5a154f73" title="The functions which calculates the updated bias and coefficients and then stores them. " alt="" coords="232,5,419,32"/>
+<area shape="rect" id="node3" href="$classSSAGES_1_1ANN.html#a7091cb356fa05bc0b21a4e37144fb0b7" title="Trains the neural network. " alt="" coords="225,56,425,83"/>
+<area shape="rect" id="node4" href="$classSSAGES_1_1ANN.html#ad63d276efae1a266eb5d556bdf896a98" title="Post&#45;integration hook. " alt="" coords="473,56,684,83"/>
 </map>

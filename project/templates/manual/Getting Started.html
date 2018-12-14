@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Getting Started &mdash; SSAGES v0.8.0-alpha documentation</title>
+  <title>Getting Started &mdash; SSAGES v0.8.3-alpha documentation</title>
   
 
   
@@ -25,23 +25,19 @@
   
 
   
-  
     <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
-  
-
-  
-
-  
-    <link rel="top" title="SSAGES v0.8.0-alpha documentation" href="index.html"/>
-        <link rel="next" title="Build SSAGES with local copy of MD source" href="Build SSAGES with local copy of MD source.html"/>
-        <link rel="prev" title="Introduction" href="Introduction.html"/> 
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Build SSAGES with local copy of MD source" href="Build SSAGES with local copy of MD source.html" />
+    <link rel="prev" title="Introduction" href="Introduction.html" /> 
 
   
   <script src="_static/js/modernizr.min.js"></script>
 
 </head>
 
-<body class="wy-body-for-nav" role="document">
+<body class="wy-body-for-nav">
 
    
   <div class="wy-grid-for-nav">
@@ -63,7 +59,7 @@
             
             
               <div class="version">
-                0.8.0
+                0.8.3
               </div>
             
           
@@ -89,7 +85,7 @@
             
               <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="Introduction.html">Introduction</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="">Getting Started</a><ul>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Getting Started</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#prerequisites">Prerequisites</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#get-the-source-code">Get the source code</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#build-ssages">Build SSAGES</a></li>
@@ -123,7 +119,7 @@
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
 
       
-      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+      <nav class="wy-nav-top" aria-label="top navigation">
         
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="index.html">SSAGES</a>
@@ -131,9 +127,10 @@
       </nav>
 
 
-      
       <div class="wy-nav-content">
+        
         <div class="rst-content">
+        
           
 
 
@@ -162,7 +159,7 @@
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="_sources/Getting Started.txt" rel="nofollow"> View page source</a>
+            <a href="_sources/Getting Started.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -219,7 +216,7 @@ installed:</p>
 from github or clone the git repository. We strongly recommend the second method
 as it allows you to easily stay up-to-date with the latest version.</p>
 <p>To clone the git repository, call</p>
-<div class="highlight-bash"><div class="highlight"><pre>git clone https://github.com/MICCoM/SSAGES-public.git
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>git clone https://github.com/MICCoM/SSAGES-public.git
 </pre></div>
 </div>
 </div>
@@ -227,33 +224,33 @@ as it allows you to easily stay up-to-date with the latest version.</p>
 <h2>Build SSAGES<a class="headerlink" href="#build-ssages" title="Permalink to this headline">¶</a></h2>
 <p>SSAGES supports a number of simulation engines including LAMMPS and Gromacs.
 It is possible to have SSAGES auto-download the source codes for LAMMPS and Gromacs.
-This is done by providing the option <code class="docutils literal"><span class="pre">-DLAMMPS=YES</span></code> for LAMMPS and <code class="docutils literal"><span class="pre">-DGROMACS=YES</span></code> for
+This is done by providing the option <code class="docutils literal notranslate"><span class="pre">-DLAMMPS=YES</span></code> for LAMMPS and <code class="docutils literal notranslate"><span class="pre">-DGROMACS=YES</span></code> for
 Gromacs to Cmake. However, in many cases it will be necessary to build SSAGES using
 your local copy of the MD engine source code. For example, if you have modified it
 to fit a special need LAMMPS or Gromacs does not support natively.</p>
-<div class="highlight-bash"><div class="highlight"><pre>mkdir build/
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>mkdir build/
 <span class="nb">cd</span> build/
 cmake .. -DLAMMPS<span class="o">=</span>YES
 make
 </pre></div>
 </div>
 <p>or</p>
-<div class="highlight-bash"><div class="highlight"><pre>mkdir build/
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>mkdir build/
 <span class="nb">cd</span> build/
 cmake .. -DGROMACS<span class="o">=</span>YES
 make
 </pre></div>
 </div>
 <p>This set of commands will automatically download LAMMPS/Gromacs and build it together
-with SSAGES. Alternatively, you can <a class="reference internal" href="Build SSAGES with local copy of MD source.html#build-ssages-with-local-md-source"><span>build SSAGES using a local copy of the
+with SSAGES. Alternatively, you can <a class="reference internal" href="Build SSAGES with local copy of MD source.html#build-ssages-with-local-md-source"><span class="std std-ref">build SSAGES using a local copy of the
 MD engine source code</span></a>.</p>
 <p>LAMMPS can be built with optional packages. To enable or disable these packages,
 you can call</p>
-<div class="highlight-bash"><div class="highlight"><pre>make yes-package
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>make yes-package
 </pre></div>
 </div>
 <p>or</p>
-<div class="highlight-bash"><div class="highlight"><pre>make no-package
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>make no-package
 </pre></div>
 </div>
 <p>respectively. For more information on optional packages for LAMMPS, refer to
@@ -263,16 +260,16 @@ the <a class="reference external" href="http://lammps.sandia.gov/doc/Section_sta
 <h2>Run SSAGES<a class="headerlink" href="#run-ssages" title="Permalink to this headline">¶</a></h2>
 <p>In order to run ssages you need to use run the executable followed by the input file.
 For example:</p>
-<div class="highlight-bash"><div class="highlight"><pre>mpiexec -np <span class="m">6</span> ./ssages input.json
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>mpiexec -np <span class="m">6</span> ./ssages input.json
 </pre></div>
 </div>
 <p>Where the <cite>-np</cite> flag dictates the total number of processors you need and input.json
-is the input file. For a description of the input file click <a class="reference internal" href="Input Files.html#inputfiles"><span>here</span></a>.</p>
+is the input file. For a description of the input file click <a class="reference internal" href="Input Files.html#inputfiles"><span class="std std-ref">here</span></a>.</p>
 <p>More information on how to run SSAGES with a specific simulation engine can be found
 here:</p>
 <ul class="simple">
-<li><a class="reference internal" href="How to run SSAGES on LAMMPS.html#run-ssages-on-lammps"><span>How to run SSAGES on LAMMPS</span></a>.</li>
-<li><a class="reference internal" href="How to run SSAGES with GROMACS.html#run-ssages-with-gromacs"><span>How to run SSAGES with GROMACS</span></a>.</li>
+<li><a class="reference internal" href="How to run SSAGES on LAMMPS.html#run-ssages-on-lammps"><span class="std std-ref">How to run SSAGES on LAMMPS</span></a>.</li>
+<li><a class="reference internal" href="How to run SSAGES with GROMACS.html#run-ssages-with-gromacs"><span class="std std-ref">How to run SSAGES with GROMACS</span></a>.</li>
 </ul>
 </div>
 <div class="section" id="advanced-options">
@@ -291,9 +288,7 @@ on building and running SSAGES here.</p>
 
 
            </div>
-           <div class="articleComments">
-            
-           </div>
+           
           </div>
           <footer>
   
@@ -312,11 +307,11 @@ on building and running SSAGES here.</p>
   <div role="contentinfo">
     <p>
         &copy; Copyright 2016, the SSAGES Team.
-      Last updated on Feb 27, 2018.
+      Last updated on Dec 14, 2018.
 
     </p>
   </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
 
 </footer>
 
@@ -334,17 +329,18 @@ on building and running SSAGES here.</p>
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'./',
-            VERSION:'v0.8.0-alpha',
+            VERSION:'v0.8.3-alpha',
+            LANGUAGE:'None',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
             HAS_SOURCE:  true,
-            SOURCELINK_SUFFIX: ''
+            SOURCELINK_SUFFIX: '.txt'
         };
     </script>
       <script type="text/javascript" src="_static/jquery.js"></script>
       <script type="text/javascript" src="_static/underscore.js"></script>
       <script type="text/javascript" src="_static/doctools.js"></script>
-      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
   
 
@@ -353,14 +349,11 @@ on building and running SSAGES here.</p>
     <script type="text/javascript" src="_static/js/theme.js"></script>
   
 
-  
-  
   <script type="text/javascript">
       jQuery(function () {
-          SphinxRtdTheme.StickyNav.enable();
+          SphinxRtdTheme.Navigation.enable(true);
       });
-  </script>
-   
+  </script> 
 
 </body>
 </html>

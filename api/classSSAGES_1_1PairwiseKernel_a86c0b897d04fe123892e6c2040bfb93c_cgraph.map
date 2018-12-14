@@ -1,6 +1,6 @@
 <map id="SSAGES::PairwiseKernel::Build" name="SSAGES::PairwiseKernel::Build">
-<area shape="rect" id="node2" href="$classSSAGES_1_1GaussianPK.html#a6f2f35a0333bc7ba17c1999a2e38a2e1" title="Build GaussianPK from JSON value. " alt="" coords="241,235,400,276"/>
-<area shape="rect" id="node21" href="$classSSAGES_1_1RationalSwitchPK.html#aaba99dea2481b50341bd1ab50c991c6c" title="Build RationalSwitchPK from JSON value. " alt="" coords="225,300,416,341"/>
+<area shape="rect" id="node2" href="$classSSAGES_1_1GaussianPK.html#a6f2f35a0333bc7ba17c1999a2e38a2e1" title="Build GaussianPK from JSON value. " alt="" coords="241,231,400,272"/>
+<area shape="rect" id="node21" href="$classSSAGES_1_1RationalSwitchPK.html#aaba99dea2481b50341bd1ab50c991c6c" title="Build RationalSwitchPK from JSON value. " alt="" coords="225,296,416,337"/>
 <area shape="rect" id="node3" href="$classJson_1_1Requirement.html#a60bc275c366eb59f192fa2e621268480" title="Get list of error messages. " alt="" coords="698,201,838,243"/>
 <area shape="rect" id="node4" href="$classJson_1_1Requirement.html#adfaec336a9f051d6f6b9a6d7f1d97b75" title="Check if errors have occured. " alt="" coords="698,580,838,621"/>
 <area shape="rect" id="node5" href="$classJson_1_1ObjectRequirement.html#a4ed02ae1d612a5efba1688fcdd2df092" title="Parse JSON value to generate Requirement(s). " alt="" coords="464,136,635,177"/>

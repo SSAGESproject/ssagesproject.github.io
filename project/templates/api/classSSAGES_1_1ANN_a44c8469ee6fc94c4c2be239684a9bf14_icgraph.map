@@ -1,3 +1,3 @@
 <map id="SSAGES::ANN::Build" name="SSAGES::ANN::Build">
-<area shape="rect" id="node2" href="$classSSAGES_1_1ANN.html#af48fa9793d0b1df77f0f2681072e76d2" title="Set overwrite flag on output file. " alt="" coords="204,5,441,32"/>
+<area shape="rect" id="node2" href="$classSSAGES_1_1ANN.html#a05554b5f5f718f20d772fabf814e3e4c" title="Set minimum loss function value (should be zero for production). " alt="" coords="204,5,395,32"/>
 </map>

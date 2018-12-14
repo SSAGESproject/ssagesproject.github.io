@@ -1,5 +1,5 @@
 <map id="SSAGES::Umbrella::SetAppend" name="SSAGES::Umbrella::SetAppend">
-<area shape="rect" id="node2" href="$classSSAGES_1_1Umbrella.html#a0f8f31f884c4f2fb1551897e25401eb1" title="SSAGES::Umbrella::Build" alt="" coords="263,209,437,235"/>
+<area shape="rect" id="node2" href="$classSSAGES_1_1Umbrella.html#a0f8f31f884c4f2fb1551897e25401eb1" title="Build a derived method from JSON node. " alt="" coords="263,209,437,235"/>
 <area shape="rect" id="node3" href="$classJson_1_1Requirement.html#a60bc275c366eb59f192fa2e621268480" title="Get list of error messages. " alt="" coords="753,5,893,47"/>
 <area shape="rect" id="node4" href="$classJson_1_1Requirement.html#adfaec336a9f051d6f6b9a6d7f1d97b75" title="Check if errors have occured. " alt="" coords="753,71,893,112"/>
 <area shape="rect" id="node5" href="$classJson_1_1ObjectRequirement.html#a4ed02ae1d612a5efba1688fcdd2df092" title="Parse JSON value to generate Requirement(s). " alt="" coords="502,449,673,491"/>

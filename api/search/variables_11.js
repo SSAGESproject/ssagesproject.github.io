@@ -1,6 +1,7 @@
 var searchData=
 [
   ['r0_5f',['r0_',['../classSSAGES_1_1RationalSwitchPK.html#ab85327c73c97fdcc47f38d5c6a6c99d8',1,'SSAGES::RationalSwitchPK']]],
+  ['r_5f',['r_',['../classSSAGES_1_1RouseModeCV.html#a5190632f86bd3ff6a8036574263ae050',1,'SSAGES::RouseModeCV']]],
   ['recneigh_5f',['recneigh_',['../classSSAGES_1_1StringMethod.html#a18120cac8164b8e2f3de4079e4bc6fa8',1,'SSAGES::StringMethod']]],
   ['refalpha_5f',['refalpha_',['../classSSAGES_1_1ParallelBetaRMSDCV.html#ad203376aca50720339582b48c70caa23',1,'SSAGES::ParallelBetaRMSDCV']]],
   ['refcoord_5f',['refcoord_',['../classSSAGES_1_1RMSDCV.html#acae069d44ecd23091cdf43e3ba9bfce1',1,'SSAGES::RMSDCV']]],

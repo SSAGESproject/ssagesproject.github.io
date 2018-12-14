@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Artificial Neural Network Sampling &mdash; SSAGES v0.8.0-alpha documentation</title>
+  <title>Artificial Neural Network Sampling &mdash; SSAGES v0.8.3-alpha documentation</title>
   
 
   
@@ -25,24 +25,19 @@
   
 
   
-  
     <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
-  
-
-  
-
-  
-    <link rel="top" title="SSAGES v0.8.0-alpha documentation" href="index.html"/>
-        <link rel="up" title="Advanced Sampling Methods" href="Advanced Sampling Methods.html"/>
-        <link rel="next" title="Basis Function Sampling" href="Basis Function Sampling.html"/>
-        <link rel="prev" title="Adaptive Biasing Force Algorithm" href="Adaptive Biasing Force Algorithm.html"/> 
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Basis Function Sampling" href="Basis Function Sampling.html" />
+    <link rel="prev" title="Adaptive Biasing Force Algorithm" href="Adaptive Biasing Force Algorithm.html" /> 
 
   
   <script src="_static/js/modernizr.min.js"></script>
 
 </head>
 
-<body class="wy-body-for-nav" role="document">
+<body class="wy-body-for-nav">
 
    
   <div class="wy-grid-for-nav">
@@ -64,7 +59,7 @@
             
             
               <div class="version">
-                0.8.0
+                0.8.3
               </div>
             
           
@@ -96,7 +91,7 @@
 <li class="toctree-l1"><a class="reference internal" href="Collective Variables.html">Collective Variables</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="Advanced Sampling Methods.html">Advanced Sampling Methods</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="Adaptive Biasing Force Algorithm.html">Adaptive Biasing Force Algorithm</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="">Artificial Neural Network Sampling</a><ul>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Artificial Neural Network Sampling</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#introduction">Introduction</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#options-parameters">Options &amp; Parameters</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#example-input">Example Input</a></li>
@@ -132,7 +127,7 @@
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
 
       
-      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+      <nav class="wy-nav-top" aria-label="top navigation">
         
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="index.html">SSAGES</a>
@@ -140,9 +135,10 @@
       </nav>
 
 
-      
       <div class="wy-nav-content">
+        
         <div class="rst-content">
+        
           
 
 
@@ -173,7 +169,7 @@
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="_sources/Artificial Neural Network Sampling.txt" rel="nofollow"> View page source</a>
+            <a href="_sources/Artificial Neural Network Sampling.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -204,7 +200,7 @@ the <a class="reference external" href="https://arxiv.org/abs/1712.02840">public
 </div>
 <div class="section" id="options-parameters">
 <h2>Options &amp; Parameters<a class="headerlink" href="#options-parameters" title="Permalink to this headline">¶</a></h2>
-<p>ANN sampling is selected by defining <code class="docutils literal"><span class="pre">type&quot;</span> <span class="pre">:</span> <span class="pre">&quot;ANN&quot;</span></code> as the
+<p>ANN sampling is selected by defining <code class="docutils literal notranslate"><span class="pre">type&quot;</span> <span class="pre">:</span> <span class="pre">&quot;ANN&quot;</span></code> as the
 method in the JSON input file. It supports the following options:</p>
 <dl class="docutils">
 <dt>topology</dt>
@@ -268,7 +264,7 @@ or a very cheap system, you can leave this alone.</dd>
 <dt>prev_weight</dt>
 <dd><em>double</em>
 (Default = 1)
-This is a special feature that allows ANN sampling to &#8220;forget&#8221; previous history specified by a fraction.
+This is a special feature that allows ANN sampling to “forget” previous history specified by a fraction.
 For example, if you want to retain 90% of accumulated data each sweep, set this to 0.9. This is useful if
 you are sampling along a CV you know to be bad, and there is clear quasi-nonergodicity in the system. By
 allowing the ANN method to forget accumulated data, you allow it to adapt more efficiently to newly accessible
@@ -282,7 +278,7 @@ alone.</dd>
 Along with the original publication, this should provide you a good idea of how to specify the network
 architecture. The repository can be found <a class="reference external" href="https://github.com/hsidky/ann_sampling">here</a>.</p>
 <p>For a 1D CV such as Na-Cl distance, the input is as follows</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span class="s2">&quot;methods&quot;</span> <span class="o">:</span> <span class="p">[</span>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;methods&quot;</span> <span class="o">:</span> <span class="p">[</span>
         <span class="p">{</span>
                 <span class="s2">&quot;type&quot;</span> <span class="o">:</span> <span class="s2">&quot;ANN&quot;</span><span class="p">,</span>
                 <span class="s2">&quot;topology&quot;</span> <span class="o">:</span> <span class="p">[</span><span class="mi">15</span><span class="p">],</span>
@@ -303,7 +299,7 @@ architecture. The repository can be found <a class="reference external" href="ht
 </pre></div>
 </div>
 <p>for a 2D CV such as the dihedral angles of ADP, the input is as follows</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span class="s2">&quot;methods&quot;</span> <span class="o">:</span> <span class="p">[</span>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;methods&quot;</span> <span class="o">:</span> <span class="p">[</span>
         <span class="p">{</span>
                 <span class="s2">&quot;type&quot;</span> <span class="o">:</span> <span class="s2">&quot;ANN&quot;</span><span class="p">,</span>
                 <span class="s2">&quot;topology&quot;</span> <span class="o">:</span> <span class="p">[</span><span class="mi">10</span><span class="p">,</span> <span class="mi">6</span><span class="p">],</span>
@@ -332,11 +328,11 @@ architecture. The repository can be found <a class="reference external" href="ht
 file contains columns corresponding to the CVs, a column containing the unbiased histogram
 estimate and a final column containing the bias. The format is as follows:</p>
 <ul class="simple">
-<li>cv1 cv2 ... histogram bias *</li>
+<li>cv1 cv2 … histogram bias *</li>
 </ul>
 <p>This file can be loaded and visualized easily in many scripting languages such as Python and
 MATLAB. An exmaple of how to load data in Python for a 2D CV is shown below.</p>
-<div class="highlight-python"><div class="highlight"><pre>    <span class="c1"># Load data.</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span>    <span class="c1"># Load data.</span>
 <span class="n">X</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">loadtxt</span><span class="p">(</span><span class="s2">&quot;ann.dat&quot;</span><span class="p">)</span>
 <span class="n">xg</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="n">X</span><span class="p">[:,</span><span class="mi">0</span><span class="p">],</span> <span class="p">(</span><span class="mi">61</span><span class="p">,</span> <span class="mi">61</span><span class="p">))</span>
 <span class="n">yg</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="n">X</span><span class="p">[:,</span><span class="mi">1</span><span class="p">],</span> <span class="p">(</span><span class="mi">61</span><span class="p">,</span> <span class="mi">61</span><span class="p">))</span>
@@ -349,9 +345,9 @@ MATLAB. An exmaple of how to load data in Python for a 2D CV is shown below.</p>
 <span class="n">plt</span><span class="o">.</span><span class="n">contourf</span><span class="p">(</span><span class="n">xg</span><span class="p">,</span> <span class="n">yg</span><span class="p">,</span> <span class="n">zg</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>A file called &#8220;netstate.dat&#8221; is also written out which contains the neural network parameters.
+<p>A file called “netstate.dat” is also written out which contains the neural network parameters.
 This network can be evaluated in Python using a ANN library such as Tensorflow or Keras.</p>
-<div class="highlight-python"><div class="highlight"><pre><span class="kn">from</span> <span class="nn">keras.models</span> <span class="kn">import</span> <span class="n">Sequential</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">keras.models</span> <span class="kn">import</span> <span class="n">Sequential</span>
 <span class="kn">from</span> <span class="nn">keras.layers</span> <span class="kn">import</span> <span class="n">Dense</span><span class="p">,</span> <span class="n">Activation</span>
 
 <span class="c1"># Import and define Keras network.</span>
@@ -398,7 +394,7 @@ This network can be evaluated in Python using a ANN library such as Tensorflow o
 </pre></div>
 </div>
 <p>The network can then be evaluated on a high resolution grid and plotted.</p>
-<div class="highlight-python"><div class="highlight"><pre><span class="c1"># Define new high-resolution grid.</span>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Define new high-resolution grid.</span>
 <span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="o">-</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">,</span> <span class="mi">500</span><span class="p">,</span> <span class="n">endpoint</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
 <span class="n">y</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="o">-</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">,</span> <span class="mi">500</span><span class="p">,</span> <span class="n">endpoint</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
 <span class="n">xg</span><span class="p">,</span> <span class="n">yg</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">meshgrid</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
@@ -437,9 +433,7 @@ This network can be evaluated in Python using a ANN library such as Tensorflow o
 
 
            </div>
-           <div class="articleComments">
-            
-           </div>
+           
           </div>
           <footer>
   
@@ -458,11 +452,11 @@ This network can be evaluated in Python using a ANN library such as Tensorflow o
   <div role="contentinfo">
     <p>
         &copy; Copyright 2016, the SSAGES Team.
-      Last updated on Feb 27, 2018.
+      Last updated on Dec 14, 2018.
 
     </p>
   </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
 
 </footer>
 
@@ -480,17 +474,18 @@ This network can be evaluated in Python using a ANN library such as Tensorflow o
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'./',
-            VERSION:'v0.8.0-alpha',
+            VERSION:'v0.8.3-alpha',
+            LANGUAGE:'None',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
             HAS_SOURCE:  true,
-            SOURCELINK_SUFFIX: ''
+            SOURCELINK_SUFFIX: '.txt'
         };
     </script>
       <script type="text/javascript" src="_static/jquery.js"></script>
       <script type="text/javascript" src="_static/underscore.js"></script>
       <script type="text/javascript" src="_static/doctools.js"></script>
-      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
   
 
@@ -499,14 +494,11 @@ This network can be evaluated in Python using a ANN library such as Tensorflow o
     <script type="text/javascript" src="_static/js/theme.js"></script>
   
 
-  
-  
   <script type="text/javascript">
       jQuery(function () {
-          SphinxRtdTheme.StickyNav.enable();
+          SphinxRtdTheme.Navigation.enable(true);
       });
-  </script>
-   
+  </script> 
 
 </body>
 </html>

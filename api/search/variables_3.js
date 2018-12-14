@@ -5,7 +5,8 @@ var searchData=
   ['centers_5f',['centers_',['../classSSAGES_1_1StringMethod.html#a8f5e8ddc90a86dc363d3323c31f8e3b7',1,'SSAGES::StringMethod']]],
   ['changed_5f',['changed_',['../classSSAGES_1_1Snapshot.html#a91ac7438ff262d245db15b5c0b2525a0',1,'SSAGES::Snapshot']]],
   ['charges_5f',['charges_',['../classSSAGES_1_1Snapshot.html#a75d1591cfe674d8058ab07c566addf53',1,'SSAGES::Snapshot']]],
-  ['citers_5f',['citers_',['../classSSAGES_1_1ANN.html#ae54017fea78551d13fc34e76673136b5',1,'SSAGES::ANN']]],
+  ['citers_5f',['citers_',['../classSSAGES_1_1ANN.html#ac85a0999687739a805c0782e7421f2b1',1,'SSAGES::ANN']]],
+  ['coeff_5f',['coeff_',['../classSSAGES_1_1BasisEvaluator.html#a8760f28614bf89568f5a4cbca0904e58',1,'SSAGES::BasisEvaluator']]],
   ['coeffarr_5f',['coeffArr_',['../classSSAGES_1_1BFS.html#a5bc27ba07feb8ae8b05b96eb3acca1f7',1,'SSAGES::BFS']]],
   ['comm_5f',['comm_',['../classSSAGES_1_1Constraint.html#a4b3eba46dd6ff7594275046325b80446',1,'SSAGES::Constraint::comm_()'],['../classSSAGES_1_1Logger.html#a02cf19fc4fb86c0bb347ee081e619ea9',1,'SSAGES::Logger::comm_()'],['../classSSAGES_1_1Method.html#a1118666d61dbf3bc7606e3b61aa3a460',1,'SSAGES::Method::comm_()'],['../classSSAGES_1_1ResourceHandler.html#a6751d2a4a906f906af46952ab367d9c4',1,'SSAGES::ResourceHandler::comm_()'],['../classSSAGES_1_1Snapshot.html#a318172ccddbc82d73d5c2fdd327f92c6',1,'SSAGES::Snapshot::comm_()']]],
   ['component_5f',['component_',['../classSSAGES_1_1GyrationTensorCV.html#a0204db1d939bda7405d66cbb6a56dfcb',1,'SSAGES::GyrationTensorCV']]],
@@ -13,9 +14,10 @@ var searchData=
   ['convergeexit_5f',['convergeExit_',['../classSSAGES_1_1BFS.html#a0d1eb924d068ec3a3369c5f48c0a113b',1,'SSAGES::BFS']]],
   ['cv_5fdrift_5f',['cv_drift_',['../classSSAGES_1_1Swarm.html#af28af23d7954d79b7c8820763315ca7e',1,'SSAGES::Swarm']]],
   ['cvmanager_5f',['cvmanager_',['../classSSAGES_1_1Hook.html#abb190885a8ea57c73855d77cc4df81bb',1,'SSAGES::Hook::cvmanager_()'],['../classSSAGES_1_1ResourceHandler.html#a23d8d943b04503d2d521b6cb5749e3fb',1,'SSAGES::ResourceHandler::cvmanager_()']]],
-  ['cvmap_5f',['cvmap_',['../classSSAGES_1_1CVManager.html#a390661cf20277180faf7abf84474e02d',1,'SSAGES::CVManager']]],
-  ['cvmask_5f',['cvmask_',['../classSSAGES_1_1Logger.html#a261f6ebf26a3acb37ad5a3db938f7115',1,'SSAGES::Logger::cvmask_()'],['../classSSAGES_1_1Method.html#a04e4b8b9ea8d154ae88f6cccf6c91700',1,'SSAGES::Method::cvmask_()']]],
+  ['cvmap_5f',['cvmap_',['../classSSAGES_1_1CVManager.html#ae3963d1ef2cd48337cc11a9935fec665',1,'SSAGES::CVManager']]],
+  ['cvmask_5f',['cvmask_',['../classSSAGES_1_1Logger.html#a14751c41c2ffbfe8c694d3ca9b6fa20f',1,'SSAGES::Logger::cvmask_()'],['../classSSAGES_1_1Method.html#a24b0ac53b1fabcab0a5f3bd6cde26909',1,'SSAGES::Method::cvmask_()']]],
   ['cvs_5f',['cvs_',['../classSSAGES_1_1CVManager.html#ac61df57f7b4bd480a18d26f9bc15370f',1,'SSAGES::CVManager']]],
   ['cvspring_5f',['cvspring_',['../classSSAGES_1_1StringMethod.html#a51f68bc9e02055a96375617626240a79',1,'SSAGES::StringMethod']]],
-  ['cyclefreq_5f',['cyclefreq_',['../classSSAGES_1_1BFS.html#a64ad4487a5718a19d7b21fd621d873a8',1,'SSAGES::BFS']]]
+  ['cyclefreq_5f',['cyclefreq_',['../classSSAGES_1_1BFS.html#a64ad4487a5718a19d7b21fd621d873a8',1,'SSAGES::BFS']]],
+  ['cyclefreqtmp_5f',['cyclefreqTmp_',['../classSSAGES_1_1BFS.html#a09051de884cd13e453435147a86cc075',1,'SSAGES::BFS']]]
 ];

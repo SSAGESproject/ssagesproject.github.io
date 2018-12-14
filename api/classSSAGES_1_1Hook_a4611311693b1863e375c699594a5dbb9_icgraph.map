@@ -1,5 +1,4 @@
 <map id="SSAGES::Hook::SetCVManager" name="SSAGES::Hook::SetCVManager">
-<area shape="rect" id="node2" href="$classSSAGES_1_1Hook.html#ad0bf76d04f65739090db6d0fadfdc748" title="Constructor. " alt="" coords="283,5,437,32"/>
-<area shape="rect" id="node3" href="$classSSAGES_1_1ResourceHandler.html#a853141f2caba461d2676b13179b53710" title="Constructor. " alt="" coords="267,57,453,98"/>
-<area shape="rect" id="node4" href="$classSSAGES_1_1ResourceHandler.html#ac026ad9aa098fa1508a78b0b5a91e8a2" title="Build a new ResourceHandler from JSON. " alt="" coords="501,57,688,98"/>
+<area shape="rect" id="node2" href="$classSSAGES_1_1ResourceHandler.html#a9a83bec9ea0d0cfe67596d439490e766" title="Configure the Hook from given resources. " alt="" coords="267,5,453,47"/>
+<area shape="rect" id="node3" href="$classSSAGES_1_1Hook.html#ad0bf76d04f65739090db6d0fadfdc748" title="Constructor. " alt="" coords="283,71,437,98"/>
 </map>

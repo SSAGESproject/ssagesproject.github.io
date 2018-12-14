@@ -4,5 +4,6 @@ var searchData=
   ['finitetempstring',['FiniteTempString',['../classSSAGES_1_1FiniteTempString.html#ac2ab9214dc688b069337517596d67aa2',1,'SSAGES::FiniteTempString']]],
   ['fluxbruteforce',['FluxBruteForce',['../classSSAGES_1_1ForwardFlux.html#a79c153b2923fc05f5bff4b9d696900de',1,'SSAGES::ForwardFlux']]],
   ['force_5fpol',['force_pol',['../classSSAGES_1_1COPSSImage.html#aaf127791d4fe082dbb026a39aac866f8',1,'SSAGES::COPSSImage']]],
-  ['forwardflux',['ForwardFlux',['../classSSAGES_1_1ForwardFlux.html#a77060dea307348f3df6b9dfb4069dfdb',1,'SSAGES::ForwardFlux']]]
+  ['forwardflux',['ForwardFlux',['../classSSAGES_1_1ForwardFlux.html#a77060dea307348f3df6b9dfb4069dfdb',1,'SSAGES::ForwardFlux']]],
+  ['fourier',['Fourier',['../classSSAGES_1_1Fourier.html#a134396c31ddd3e5b45a8f928cfdd3f99',1,'SSAGES::Fourier']]]
 ];

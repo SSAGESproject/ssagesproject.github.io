@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Forward-Flux &mdash; SSAGES v0.8.0-alpha documentation</title>
+  <title>Forward-Flux &mdash; SSAGES v0.8.3-alpha documentation</title>
   
 
   
@@ -25,24 +25,19 @@
   
 
   
-  
     <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
-  
-
-  
-
-  
-    <link rel="top" title="SSAGES v0.8.0-alpha documentation" href="index.html"/>
-        <link rel="up" title="Advanced Sampling Methods" href="Advanced Sampling Methods.html"/>
-        <link rel="next" title="Metadynamics" href="Metadynamics.html"/>
-        <link rel="prev" title="Finite Temperature String" href="Finite Temperature String.html"/> 
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Metadynamics" href="Metadynamics.html" />
+    <link rel="prev" title="Finite Temperature String" href="Finite Temperature String.html" /> 
 
   
   <script src="_static/js/modernizr.min.js"></script>
 
 </head>
 
-<body class="wy-body-for-nav" role="document">
+<body class="wy-body-for-nav">
 
    
   <div class="wy-grid-for-nav">
@@ -64,7 +59,7 @@
             
             
               <div class="version">
-                0.8.0
+                0.8.3
               </div>
             
           
@@ -100,13 +95,13 @@
 <li class="toctree-l2"><a class="reference internal" href="Basis Function Sampling.html">Basis Function Sampling</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Elastic Band.html">Elastic Band</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Finite Temperature String.html">Finite Temperature String</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="">Forward-Flux</a><ul>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Forward-Flux</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#introduction">Introduction</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#rate-constant-and-initial-flux">Rate Constant and Initial Flux</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#rosenbluth-like-forward-flux-sampling-rbffs">Rosenbluth-like Forward Flux Sampling (RBFFS)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#options-parameters">Options &amp; Parameters</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#input-and-parameters-related-to-walkers">Input and parameters related to &#8220;walkers&#8221;</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#input-and-parameters-related-to-method">Input and parameters related to &#8220;method&#8221;</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#input-and-parameters-related-to-walkers">Input and parameters related to “walkers”</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#input-and-parameters-related-to-method">Input and parameters related to “method”</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#other-required-input-parameters">Other required input parameters</a></li>
 </ul>
 </li>
@@ -139,7 +134,7 @@
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
 
       
-      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+      <nav class="wy-nav-top" aria-label="top navigation">
         
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="index.html">SSAGES</a>
@@ -147,9 +142,10 @@
       </nav>
 
 
-      
       <div class="wy-nav-content">
+        
         <div class="rst-content">
+        
           
 
 
@@ -180,7 +176,7 @@
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="_sources/Forward-Flux.txt" rel="nofollow"> View page source</a>
+            <a href="_sources/Forward-Flux.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -215,14 +211,14 @@ from one region to another. The outcomes of rare events are
 generally substantial and thereby it is essential to obtain a molecular-level
 understanding of the mechanisms and kinetics of these events.
 “Thermal fluctuations” commonly drives the systems from an initial state to a
-final state over an energy barrier <span class="math">\(\Delta E\)</span>. The transition frequency
-from state A to state B is proportional to <span class="math">\(e^{\frac{-\Delta E}{k_{B}T}}\)</span>,
-where <span class="math">\(k_{B}T\)</span> is the thermal energy of the system. Accordingly, the time
+final state over an energy barrier <span class="math notranslate nohighlight">\(\Delta E\)</span>. The transition frequency
+from state A to state B is proportional to <span class="math notranslate nohighlight">\(e^{\frac{-\Delta E}{k_{B}T}}\)</span>,
+where <span class="math notranslate nohighlight">\(k_{B}T\)</span> is the thermal energy of the system. Accordingly, the time
 required for an equilibrated system in state A to reach state B grows
-exponentially (at a constant temperature) as the energy barrier <span class="math">\(\Delta E\)</span>
+exponentially (at a constant temperature) as the energy barrier <span class="math notranslate nohighlight">\(\Delta E\)</span>
 become larger. Eventually none or only a few transitions may occur within the
 typical timescale of molecular simulations. In FFS method, several intermediate
-states or so-called interfaces (<span class="math">\(\lambda_{i}\)</span>) are placed along a
+states or so-called interfaces (<span class="math notranslate nohighlight">\(\lambda_{i}\)</span>) are placed along a
 “reaction coordinate” or an “order parameter” between the initial state A and
 the final state B (Figure 1). These intermediate states are chosen such that the
 energy barrier between adjacent interfaces are readily surmountable using
@@ -244,7 +240,7 @@ properties.</span></p>
 <ol class="arabic simple">
 <li>generate the intermediate configurations,</li>
 <li>calculate the conditional probability of reaching state B starting from
-state A, <span class="math">\(P(\lambda_{B} = \lambda_{n} | \lambda_{A} = \lambda_{0})\)</span>,</li>
+state A, <span class="math notranslate nohighlight">\(P(\lambda_{B} = \lambda_{n} | \lambda_{A} = \lambda_{0})\)</span>,</li>
 <li>compute various thermodynamic properties, and</li>
 <li>optimize overall efficiency of the method. The following are the widely-used
 variants of forward flux sampling method:</li>
@@ -262,37 +258,37 @@ variants of forward flux sampling method:</li>
 <h2>Rate Constant and Initial Flux<a class="headerlink" href="#rate-constant-and-initial-flux" title="Permalink to this headline">¶</a></h2>
 <p>The overall rate constant or the frequency of going from state A to state B is
 computed using the following equation:</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[k_{AB} = \Phi_{A,0} \cdot P\left(\lambda_{N} \vert \lambda_{0}\right)\]</div>
-<p>here, <span class="math">\(\Phi_{A,0}\)</span> is the initial forward flux or the flux at the initial
-interface, and <span class="math">\(P\left(\lambda_{N} \vert \lambda_{0}\right)\)</span> is the
+<p>here, <span class="math notranslate nohighlight">\(\Phi_{A,0}\)</span> is the initial forward flux or the flux at the initial
+interface, and <span class="math notranslate nohighlight">\(P\left(\lambda_{N} \vert \lambda_{0}\right)\)</span> is the
 conditional probability of the trajectories that initiated from A and reached B
-before returning to A. In practice, <span class="math">\(\Phi_{A,0}\)</span> can be obtained by
+before returning to A. In practice, <span class="math notranslate nohighlight">\(\Phi_{A,0}\)</span> can be obtained by
 simulating a single trajectory in State A for a certain amount of time
-<span class="math">\(t_{A}\)</span>, and counting the number of crossings of the initial interface
-<span class="math">\(\lambda_{0}\)</span>. Alternatively, a simulation may be carried out around state
-A for a period of time until <span class="math">\(N_{0}\)</span> number of accumulated
+<span class="math notranslate nohighlight">\(t_{A}\)</span>, and counting the number of crossings of the initial interface
+<span class="math notranslate nohighlight">\(\lambda_{0}\)</span>. Alternatively, a simulation may be carried out around state
+A for a period of time until <span class="math notranslate nohighlight">\(N_{0}\)</span> number of accumulated
 configurations is stored (this has been implemented in SSAGES):</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[\Phi_{A,0} = \frac{N_{0}}{t_{A}}\]</div>
-<p>here, <span class="math">\(N_{0}\)</span> is the number of instances in which <span class="math">\(\lambda_{0}\)</span> is
-crossed in forward direction, and <span class="math">\(t_{A}\)</span> is the simulation time that the system was run around
+<p>here, <span class="math notranslate nohighlight">\(N_{0}\)</span> is the number of instances in which <span class="math notranslate nohighlight">\(\lambda_{0}\)</span> is
+crossed in forward direction, and <span class="math notranslate nohighlight">\(t_{A}\)</span> is the simulation time that the system was run around
 state A. Note that</p>
 <ol class="arabic simple">
-<li><span class="math">\(\lambda_{0}\)</span> can be crossed in either forward
-(<span class="math">\(\lambda_{t} &lt; \lambda_{0}\)</span>) or backward
-(<span class="math">\(\lambda_{t} &gt; \lambda_{0}\)</span>) directions, but only &#8220;forward crossing&#8221;
+<li><span class="math notranslate nohighlight">\(\lambda_{0}\)</span> can be crossed in either forward
+(<span class="math notranslate nohighlight">\(\lambda_{t} &lt; \lambda_{0}\)</span>) or backward
+(<span class="math notranslate nohighlight">\(\lambda_{t} &gt; \lambda_{0}\)</span>) directions, but only “forward crossing”
 marks a checkpoint (see Figure 2) and</li>
-<li><span class="math">\(t_{A}\)</span> should only include the simulation time around state A and
+<li><span class="math notranslate nohighlight">\(t_{A}\)</span> should only include the simulation time around state A and
 thereby the portion of time spent around state B must be excluded, if any.</li>
 </ol>
 <p>In general, the conditional probability is computed using the following expression:</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[P\left(\lambda_{n} \vert \lambda_{0}\right) =
 \prod\limits_{i=0}^{n-1} P\left(\lambda_{i+1} \vert \lambda_{i}\right) =
 P\left(\lambda_{1}\vert\lambda_{0}\right)\cdot P\left(\lambda_{2}\vert\lambda_{1}\right)
 \dots P\left(\lambda_{n}\vert\lambda_{n-1}\right)\]</div>
-<p><span class="math">\(P\left(\lambda_{i+1}\vert\lambda_{i}\right)\)</span> is computed by initiating a
+<p><span class="math notranslate nohighlight">\(P\left(\lambda_{i+1}\vert\lambda_{i}\right)\)</span> is computed by initiating a
 large number of trials from the current interface and recording the number of
 successful trials that reaches the next interface. The successful trials in
 which the system reaches the next interface are stored and used as
@@ -305,8 +301,8 @@ additional statistics.</p>
 <img alt="_images/forward_flux_image2.png" src="_images/forward_flux_image2.png" />
 <p class="caption"><span class="caption-text">A schematic representation of computation of initial flux using a single
 trajectory initiated in state A. The simulation runs for a certain period of
-time <span class="math">\(t_{A}\)</span> and number of forward crossing is recorded. Alternatively,
-we can specify the number of necessary checkpoints <span class="math">\(N_{0}\)</span> and run a
+time <span class="math notranslate nohighlight">\(t_{A}\)</span> and number of forward crossing is recorded. Alternatively,
+we can specify the number of necessary checkpoints <span class="math notranslate nohighlight">\(N_{0}\)</span> and run a
 simulation until desired number of checkpoints are collected. In this figure,
 green circles show the checkpoints that can be used to generate transition
 paths.</span></p>
@@ -319,41 +315,41 @@ Rosenbluth method in polymer sampling to simulate rare events <a class="footnote
 The RBFFS is comparable to Branched Growth Forward Flux (BGFFS) <a class="footnote-reference" href="#id6" id="id3">[1]</a> <a class="footnote-reference" href="#id7" id="id4">[2]</a> but,
 in contrast to BGFFS, a single checkpoint is randomly selected at a non-initial
 interface instead of initiation of trials from all checkpoints at a given
-interface (Figure 3). In RBFFS, first a checkpoint at <span class="math">\(\lambda_{0}\)</span> is
-selected and <span class="math">\(k_{0}\)</span> trials are initiated. The successful runs that reach
-<span class="math">\(\lambda_{1}\)</span> are stored. Next, one of the checkpoints at <span class="math">\(\lambda_{1}\)</span> is randomly chosen (in
+interface (Figure 3). In RBFFS, first a checkpoint at <span class="math notranslate nohighlight">\(\lambda_{0}\)</span> is
+selected and <span class="math notranslate nohighlight">\(k_{0}\)</span> trials are initiated. The successful runs that reach
+<span class="math notranslate nohighlight">\(\lambda_{1}\)</span> are stored. Next, one of the checkpoints at <span class="math notranslate nohighlight">\(\lambda_{1}\)</span> is randomly chosen (in
 contrast to Branched Growth where all checkpoints are involved), and
-<span class="math">\(k_{1}\)</span> trials are initiated to <span class="math">\(\lambda_{2}\)</span>. Last, this procedure
+<span class="math notranslate nohighlight">\(k_{1}\)</span> trials are initiated to <span class="math notranslate nohighlight">\(\lambda_{2}\)</span>. Last, this procedure
 is continued for the following interfaces until state B is reached or all trials
 fail. This algorithm is then repeated for the remaining checkpoints at
-<span class="math">\(\lambda_{0}\)</span> to generate multiple “transition paths”.</p>
+<span class="math notranslate nohighlight">\(\lambda_{0}\)</span> to generate multiple “transition paths”.</p>
 <div class="figure align-center" id="id12">
 <img alt="_images/forward_flux_image3.png" src="_images/forward_flux_image3.png" />
 <p class="caption"><span class="caption-text">Rosenbluth-like Forward Flux Sampling (RBFFS) involves sequential generation
 of unbranched transition paths from all available checkpoints at the first
-interface <span class="math">\(\lambda_{0}\)</span>. A single checkpoint at the interface
-<span class="math">\(\lambda_{i &gt; 0}\)</span>  is randomly marked and <span class="math">\(k_{i}\)</span> trials are
+interface <span class="math notranslate nohighlight">\(\lambda_{0}\)</span>. A single checkpoint at the interface
+<span class="math notranslate nohighlight">\(\lambda_{i &gt; 0}\)</span>  is randomly marked and <span class="math notranslate nohighlight">\(k_{i}\)</span> trials are
 initiated from that checkpoint which may reach to the next interface
-<span class="math">\(\lambda_{i+1}\)</span> (successful trials) or may return to state A (failed
+<span class="math notranslate nohighlight">\(\lambda_{i+1}\)</span> (successful trials) or may return to state A (failed
 trial).</span></p>
 </div>
 <p>In Rosenbluth-like forward flux sampling, we choose one checkpoint from each
 interface independent of the number of successes. The number of available
 checkpoints at an interface are not necessarily identical for different
-transition paths <span class="math">\(p\)</span>. This implies that more successful transition paths
+transition paths <span class="math notranslate nohighlight">\(p\)</span>. This implies that more successful transition paths
 are artificially more depleted than less successful paths. Therefore, we need to
 enhance those extra-depleted paths by reweighting them during post-processing.
-The weight of path <span class="math">\(p\)</span> at the interface <span class="math">\(\lambda_{i}\)</span> is given by:</p>
-<div class="math">
+The weight of path <span class="math notranslate nohighlight">\(p\)</span> at the interface <span class="math notranslate nohighlight">\(\lambda_{i}\)</span> is given by:</p>
+<div class="math notranslate nohighlight">
 \[w_{i,b} = \prod\limits_{j=0}^{i-1} \frac{S_{j,p}}{k_{j}}\]</div>
-<p>where <span class="math">\(S_{j,p}\)</span> is the number of successes at the interface <span class="math">\(j\)</span> for
-path <span class="math">\(p\)</span>. The conditional probability is then computed using the following
+<p>where <span class="math notranslate nohighlight">\(S_{j,p}\)</span> is the number of successes at the interface <span class="math notranslate nohighlight">\(j\)</span> for
+path <span class="math notranslate nohighlight">\(p\)</span>. The conditional probability is then computed using the following
 expression:</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[P\left(\lambda_{n}\vert\lambda_{0}\right) =
 \prod\limits_{i=0}^{n-1} P\left(\lambda_{i+1} \vert \lambda_{i}\right) =
 \frac{ \prod_{i=0}^{n-1}\sum_{p} w_{i,p} S_{i,p} / k_{i} }{ \sum_{p} w_{i,p} }\]</div>
-<p><span class="math">\(\Sigma\)</span> here runs over all transition paths in the simulation.</p>
+<p><span class="math notranslate nohighlight">\(\Sigma\)</span> here runs over all transition paths in the simulation.</p>
 </div>
 <div class="section" id="options-parameters">
 <h2>Options &amp; Parameters<a class="headerlink" href="#options-parameters" title="Permalink to this headline">¶</a></h2>
@@ -361,13 +357,13 @@ expression:</p>
 We recommend referring to this review article if the user is unfamiliar with the terminology.
 To run a DFFS simulation using SSAGES, an input file in JSON format is required
 along with a general input file designed for your choice of molecular dynamics
-engine (MD engine). For your convenience, two files <code class="docutils literal"><span class="pre">Template_Input.json</span></code> and
-<code class="docutils literal"><span class="pre">FF_Input_Generator.py</span></code> are provided to assist you in generating the JSON
+engine (MD engine). For your convenience, two files <code class="docutils literal notranslate"><span class="pre">Template_Input.json</span></code> and
+<code class="docutils literal notranslate"><span class="pre">FF_Input_Generator.py</span></code> are provided to assist you in generating the JSON
 file. Here we describe the parameters and the options that should be set in
-<code class="docutils literal"><span class="pre">Template_Input.json</span></code> file in order to successfully generate an input file and
+<code class="docutils literal notranslate"><span class="pre">Template_Input.json</span></code> file in order to successfully generate an input file and
 run a DFFS simulation.</p>
 <div class="section" id="input-and-parameters-related-to-walkers">
-<h3>Input and parameters related to &#8220;walkers&#8221;<a class="headerlink" href="#input-and-parameters-related-to-walkers" title="Permalink to this headline">¶</a></h3>
+<h3>Input and parameters related to “walkers”<a class="headerlink" href="#input-and-parameters-related-to-walkers" title="Permalink to this headline">¶</a></h3>
 <dl class="docutils">
 <dt>input</dt>
 <dd><ul class="first last simple">
@@ -377,7 +373,7 @@ run a DFFS simulation.</p>
 user is encouraged to refer to the documentation page of the corresponding
 MD package to learn about various input options as well as the structure
 and format of the input files suitable for their MD engine.
-NOTE: For GROMACS, you won&#8217;t need to specify this parameter; instead you&#8217;ll need to pass the base name of your .tpr files to &#8220;args&#8221; (please see the examples folder for details)</li>
+NOTE: For GROMACS, you won’t need to specify this parameter; instead you’ll need to pass the base name of your .tpr files to “args” (please see the examples folder for details)</li>
 </ul>
 </dd>
 <dt>logfile</dt>
@@ -391,12 +387,12 @@ uses to write the simulation information including timesteps, energies, etc.</li
 </dl>
 </div>
 <div class="section" id="input-and-parameters-related-to-method">
-<h3>Input and parameters related to &#8220;method&#8221;<a class="headerlink" href="#input-and-parameters-related-to-method" title="Permalink to this headline">¶</a></h3>
+<h3>Input and parameters related to “method”<a class="headerlink" href="#input-and-parameters-related-to-method" title="Permalink to this headline">¶</a></h3>
 <dl class="docutils">
 <dt>type</dt>
 <dd><ul class="first last simple">
 <li>Type: string</li>
-<li>Default: &#8220;ForwardFlux&#8221;</li>
+<li>Default: “ForwardFlux”</li>
 <li>Functionality:  Instructs SSAGES to activate the “ForwardFlux” module.
 Do not change this if you plan to run a forward flux sampling simulation.</li>
 </ul>
@@ -404,7 +400,7 @@ Do not change this if you plan to run a forward flux sampling simulation.</li>
 <dt>flavor</dt>
 <dd><ul class="first last simple">
 <li>Type: string</li>
-<li>Default: &#8220;DirectForwardFlux&#8221;</li>
+<li>Default: “DirectForwardFlux”</li>
 <li>Functionality: Specifies the flavor of the FFS method that SSAGES should run.
 Currently, DFFS has been implemented in SSAGES. RBFFS and BGFFS will be available in the future releases.</li>
 </ul>
@@ -422,9 +418,9 @@ Currently, DFFS has been implemented in SSAGES. RBFFS and BGFFS will be availabl
 <li>Default: []</li>
 <li>Functionality:  Defines an array of intermediate interfaces that links the
 initial state A to the final state B. This array can either be defined in
-the <code class="docutils literal"><span class="pre">Template_Input.json</span></code> file or <code class="docutils literal"><span class="pre">FF_Input_Generator.py</span></code> file. In the
+the <code class="docutils literal notranslate"><span class="pre">Template_Input.json</span></code> file or <code class="docutils literal notranslate"><span class="pre">FF_Input_Generator.py</span></code> file. In the
 latter case, the values of <strong>interfaces</strong> is left blank in the
-<code class="docutils literal"><span class="pre">Template_Input.json</span></code> file. Minimum of two interfaces must be defined.</li>
+<code class="docutils literal notranslate"><span class="pre">Template_Input.json</span></code> file. Minimum of two interfaces must be defined.</li>
 </ul>
 </dd>
 <dt>N0Target</dt>
@@ -440,21 +436,21 @@ to be generated (or have been provided by user) at the first interface.</li>
 <li>Type: array</li>
 <li>Default: []</li>
 <li>Functionality:  Specifies the number of trials that should be spawned from each
-interface. The length of this array should match the length of the array of the &#8220;interfaces&#8221;.</li>
+interface. The length of this array should match the length of the array of the “interfaces”.</li>
 </ul>
 </dd>
 <dt>computeInitialFlux</dt>
 <dd><ul class="first last simple">
 <li>Type: boolean</li>
-<li>Default: &#8220;true&#8221;</li>
-<li>Functionality:  Specifies whether a calculation of the initial flux should be performed. If this parameter is set to &#8220;true&#8221;, SSAGES would also
-generate the user-specified number of initial configurations (N0Target) at the first interface. To compute the initial flux, user must provide an initial configuration in state A, otherwise SSAGES would issue an error. If this parameter is set to &#8220;false&#8221;, the user must provide the necessary number of the initial configurations in separate files. The files name and the files content should follow a specific format. The format of the files name should be &#8220;l0-n&lt;n&gt;.dat&#8221; where &lt;n&gt; is the configuration number (i.e. 1, 2, 3, ..., N0Target). The first line of the configuration files includes three numbers &#8220;&lt;l&gt; &lt;n&gt; &lt;a&gt;&#8221;, where &lt;l&gt; is the interface number (set to zero here), &lt;n&gt; is the configuration number, and &lt;a&gt; is the attempt number (set to zero here). The rest of the lines include the atoms IDs and their corresponding values of positions and velocities, &#8220;&lt;atom ID&gt; &lt;x&gt; &lt;y&gt; &lt;z&gt; &lt;vx&gt; &lt;vy&gt; &lt;vz&gt;&#8221; where &lt;atom ID&gt; is the ID of an atoms, &lt;x&gt;, &lt;y&gt;, &lt;z&gt; are the coordinates of that atom and &lt;vx&gt;, &lt;vy&gt;, and &lt;vz&gt; are the components of the velocity in the x, y, and z directions. Please note that the stores configurations at other interfaces would follow a similar format.</li>
+<li>Default: “true”</li>
+<li>Functionality:  Specifies whether a calculation of the initial flux should be performed. If this parameter is set to “true”, SSAGES would also
+generate the user-specified number of initial configurations (N0Target) at the first interface. To compute the initial flux, user must provide an initial configuration in state A, otherwise SSAGES would issue an error. If this parameter is set to “false”, the user must provide the necessary number of the initial configurations in separate files. The files name and the files content should follow a specific format. The format of the files name should be “l0-n&lt;n&gt;.dat” where &lt;n&gt; is the configuration number (i.e. 1, 2, 3, …, N0Target). The first line of the configuration files includes three numbers “&lt;l&gt; &lt;n&gt; &lt;a&gt;”, where &lt;l&gt; is the interface number (set to zero here), &lt;n&gt; is the configuration number, and &lt;a&gt; is the attempt number (set to zero here). The rest of the lines include the atoms IDs and their corresponding values of positions and velocities, “&lt;atom ID&gt; &lt;x&gt; &lt;y&gt; &lt;z&gt; &lt;vx&gt; &lt;vy&gt; &lt;vz&gt;” where &lt;atom ID&gt; is the ID of an atoms, &lt;x&gt;, &lt;y&gt;, &lt;z&gt; are the coordinates of that atom and &lt;vx&gt;, &lt;vy&gt;, and &lt;vz&gt; are the components of the velocity in the x, y, and z directions. Please note that the stores configurations at other interfaces would follow a similar format.</li>
 </ul>
 </dd>
 <dt>saveTrajectories</dt>
 <dd><ul class="first last simple">
 <li>Type: boolean</li>
-<li>Default: &#8220;true&#8221;</li>
+<li>Default: “true”</li>
 <li>Functionality: This flag determines if the FFS trajectories should be saved. Be advised that saving the trajectories of thousands of atoms
 mandates large storage spaces.</li>
 </ul>
@@ -470,9 +466,9 @@ This parameter is helpful in restarting a FFS calculation from interfaces other 
 <dt>outputDirectoryName</dt>
 <dd><ul class="first last simple">
 <li>Type: string</li>
-<li>Default: &#8220;FFSoutput&#8221;</li>
+<li>Default: “FFSoutput”</li>
 <li>Functionality: Specifies the directory name that contains the output of the FFS calculations including
-the initial flux, the successful and failed configurations, commitor probabilities, and the trajectories. The output data related to the computation of the initial flux is stored in the file &#8220;initial_flux_value.dat&#8221;, and the data related to transition probabilities is stored in the file &#8220;commitor_probabilities.dat&#8221;.</li>
+the initial flux, the successful and failed configurations, commitor probabilities, and the trajectories. The output data related to the computation of the initial flux is stored in the file “initial_flux_value.dat”, and the data related to transition probabilities is stored in the file “commitor_probabilities.dat”.</li>
 </ul>
 </dd>
 </dl>
@@ -484,7 +480,7 @@ the initial flux, the successful and failed configurations, commitor probabiliti
 <dd><ul class="first last simple">
 <li>Type: array</li>
 <li>Default: none</li>
-<li>Functionality: Selection of the &#8220;order parameter&#8221; or the &#8220;reaction coordinate&#8221;.
+<li>Functionality: Selection of the “order parameter” or the “reaction coordinate”.
 The current implementation of FFS in SSAGES can takes one collective
 variable.</li>
 </ul>
@@ -496,21 +492,21 @@ variable.</li>
 <span id="ffs-tutorial"></span><h2>Tutorial<a class="headerlink" href="#tutorial" title="Permalink to this headline">¶</a></h2>
 <p>This tutorial will walk you step by step through the user example provided with
 the SSAGES source code that runs the forward flux method on a Langevin particle
-in a two-dimensional potential energy surface using LAMMPS. This example shows how to prepare a multi-walker simulation (here we use 2 walkers). First, be sure you have compiled SSAGES with LAMMPS. Then, navigate to the <code class="docutils literal"><span class="pre">SSAGES/Examples/User/ForwardFlux/LAMMPS/Langevin</span></code>
-subdirectory.  Now, take a moment to observe the <code class="docutils literal"><span class="pre">in.LAMMPS_FF_Test_1d</span></code> file to familiarize
+in a two-dimensional potential energy surface using LAMMPS. This example shows how to prepare a multi-walker simulation (here we use 2 walkers). First, be sure you have compiled SSAGES with LAMMPS. Then, navigate to the <code class="docutils literal notranslate"><span class="pre">SSAGES/Examples/User/ForwardFlux/LAMMPS/Langevin</span></code>
+subdirectory.  Now, take a moment to observe the <code class="docutils literal notranslate"><span class="pre">in.LAMMPS_FF_Test_1d</span></code> file to familiarize
 yourself with the system being simulated.</p>
-<p>The next two files of interest are the <code class="docutils literal"><span class="pre">Template_Input.json</span></code> input file and the
-<code class="docutils literal"><span class="pre">FF_Input_Generator.py</span></code> script.  These files are provided to help you setup sophisticated simulations. Both of these files can be modified in your
+<p>The next two files of interest are the <code class="docutils literal notranslate"><span class="pre">Template_Input.json</span></code> input file and the
+<code class="docutils literal notranslate"><span class="pre">FF_Input_Generator.py</span></code> script.  These files are provided to help you setup sophisticated simulations. Both of these files can be modified in your
 text editor of choice to customize your input files, but for this tutorial, simply
 observe them and leave them be. FF_Template.json contains all information necessary to fully specify a walker; FF_Input_Generator.py uses the information in this file and generates a new JSON along with necessary lammps input files. Issue the following command to generate the files:</p>
-<div class="highlight-bash"><div class="highlight"><pre>python FF_Input_Generator.py
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>python FF_Input_Generator.py
 </pre></div>
 </div>
-<p>You will produce a file called <code class="docutils literal"><span class="pre">Input-2walkers.json</span></code> along with &#8220;in.LAMMPS_FF_Test_1d-0&#8221;
-and &#8220;in.LAMMPS_FF_Test_1d-1&#8221;. You can also open these files to verify for yourself that
+<p>You will produce a file called <code class="docutils literal notranslate"><span class="pre">Input-2walkers.json</span></code> along with “in.LAMMPS_FF_Test_1d-0”
+and “in.LAMMPS_FF_Test_1d-1”. You can also open these files to verify for yourself that
 the script did what it was supposed to do.  Now, with your JSON input and your SSAGES binary,
 you have everything you need to perform a simulation.  Simply run:</p>
-<div class="highlight-bash"><div class="highlight"><pre>mpiexec -np <span class="m">2</span> ./ssages Input-2walkers.json
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>mpiexec -np <span class="m">2</span> ./ssages Input-2walkers.json
 </pre></div>
 </div>
 <p>This should run a quick FFS calculation and generate the necessary output.</p>
@@ -557,9 +553,7 @@ J. Chem. Phys. 1955, 23 (2), 356-359.</td></tr>
 
 
            </div>
-           <div class="articleComments">
-            
-           </div>
+           
           </div>
           <footer>
   
@@ -578,11 +572,11 @@ J. Chem. Phys. 1955, 23 (2), 356-359.</td></tr>
   <div role="contentinfo">
     <p>
         &copy; Copyright 2016, the SSAGES Team.
-      Last updated on Feb 27, 2018.
+      Last updated on Dec 14, 2018.
 
     </p>
   </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
 
 </footer>
 
@@ -600,17 +594,18 @@ J. Chem. Phys. 1955, 23 (2), 356-359.</td></tr>
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'./',
-            VERSION:'v0.8.0-alpha',
+            VERSION:'v0.8.3-alpha',
+            LANGUAGE:'None',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
             HAS_SOURCE:  true,
-            SOURCELINK_SUFFIX: ''
+            SOURCELINK_SUFFIX: '.txt'
         };
     </script>
       <script type="text/javascript" src="_static/jquery.js"></script>
       <script type="text/javascript" src="_static/underscore.js"></script>
       <script type="text/javascript" src="_static/doctools.js"></script>
-      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
   
 
@@ -619,14 +614,11 @@ J. Chem. Phys. 1955, 23 (2), 356-359.</td></tr>
     <script type="text/javascript" src="_static/js/theme.js"></script>
   
 
-  
-  
   <script type="text/javascript">
       jQuery(function () {
-          SphinxRtdTheme.StickyNav.enable();
+          SphinxRtdTheme.Navigation.enable(true);
       });
-  </script>
-   
+  </script> 
 
 </body>
 </html>

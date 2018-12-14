@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Welcome to SSAGES! &mdash; SSAGES v0.8.0-alpha documentation</title>
+  <title>Welcome to SSAGES! &mdash; SSAGES v0.8.3-alpha documentation</title>
   
 
   
@@ -25,22 +25,18 @@
   
 
   
-  
     <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
-  
-
-  
-
-  
-    <link rel="top" title="SSAGES v0.8.0-alpha documentation" href="#"/>
-        <link rel="next" title="Introduction" href="Introduction.html"/> 
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Introduction" href="Introduction.html" /> 
 
   
   <script src="_static/js/modernizr.min.js"></script>
 
 </head>
 
-<body class="wy-body-for-nav" role="document">
+<body class="wy-body-for-nav">
 
    
   <div class="wy-grid-for-nav">
@@ -62,7 +58,7 @@
             
             
               <div class="version">
-                0.8.0
+                0.8.3
               </div>
             
           
@@ -110,7 +106,7 @@
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
 
       
-      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+      <nav class="wy-nav-top" aria-label="top navigation">
         
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="#">SSAGES</a>
@@ -118,9 +114,10 @@
       </nav>
 
 
-      
       <div class="wy-nav-content">
+        
         <div class="rst-content">
+        
           
 
 
@@ -149,7 +146,7 @@
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="_sources/index.txt" rel="nofollow"> View page source</a>
+            <a href="_sources/index.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -190,7 +187,7 @@ pathways or to bias the statistics of a simulation for the purposes of
 computing free energies. The internal structure of the code has been designed
 to be simple and extensible to new methods and sampling engines. For further
 details on examples and capabilities of SSAGES, peruse the documentation
-for <a class="reference internal" href="Advanced Sampling Methods.html#advanced-sampling-methods"><span>specifc modules</span></a>.</p>
+for <a class="reference internal" href="Advanced Sampling Methods.html#advanced-sampling-methods"><span class="std std-ref">specifc modules</span></a>.</p>
 <p>Contents:</p>
 <div class="toctree-wrapper compound">
 <ul>
@@ -210,9 +207,10 @@ for <a class="reference internal" href="Advanced Sampling Methods.html#advanced-
 </li>
 <li class="toctree-l1"><a class="reference internal" href="Engines.html">Engines</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="Engines.html#lammps">LAMMPS</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Engines.html#gromacs">Gromacs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Engines.html#gromacs">GROMACS</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Engines.html#openmd">OpenMD</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Engines.html#qbox">Qbox</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Engines.html#hoomd-blue">HOOMD-blue</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="Collective Variables.html">Collective Variables</a><ul>
@@ -276,17 +274,15 @@ for <a class="reference internal" href="Advanced Sampling Methods.html#advanced-
 <div class="section" id="indices-and-tables">
 <h1>Indices and tables<a class="headerlink" href="#indices-and-tables" title="Permalink to this headline">¶</a></h1>
 <ul class="simple">
-<li><a class="reference internal" href="genindex.html"><span>Index</span></a></li>
-<li><a class="reference internal" href="py-modindex.html"><span>Module Index</span></a></li>
-<li><a class="reference internal" href="search.html"><span>Search Page</span></a></li>
+<li><a class="reference internal" href="genindex.html"><span class="std std-ref">Index</span></a></li>
+<li><a class="reference internal" href="py-modindex.html"><span class="std std-ref">Module Index</span></a></li>
+<li><a class="reference internal" href="search.html"><span class="std std-ref">Search Page</span></a></li>
 </ul>
 </div>
 
 
            </div>
-           <div class="articleComments">
-            
-           </div>
+           
           </div>
           <footer>
   
@@ -303,11 +299,11 @@ for <a class="reference internal" href="Advanced Sampling Methods.html#advanced-
   <div role="contentinfo">
     <p>
         &copy; Copyright 2016, the SSAGES Team.
-      Last updated on Feb 27, 2018.
+      Last updated on Dec 14, 2018.
 
     </p>
   </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
 
 </footer>
 
@@ -325,17 +321,18 @@ for <a class="reference internal" href="Advanced Sampling Methods.html#advanced-
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'./',
-            VERSION:'v0.8.0-alpha',
+            VERSION:'v0.8.3-alpha',
+            LANGUAGE:'None',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
             HAS_SOURCE:  true,
-            SOURCELINK_SUFFIX: ''
+            SOURCELINK_SUFFIX: '.txt'
         };
     </script>
       <script type="text/javascript" src="_static/jquery.js"></script>
       <script type="text/javascript" src="_static/underscore.js"></script>
       <script type="text/javascript" src="_static/doctools.js"></script>
-      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
   
 
@@ -344,14 +341,11 @@ for <a class="reference internal" href="Advanced Sampling Methods.html#advanced-
     <script type="text/javascript" src="_static/js/theme.js"></script>
   
 
-  
-  
   <script type="text/javascript">
       jQuery(function () {
-          SphinxRtdTheme.StickyNav.enable();
+          SphinxRtdTheme.Navigation.enable(true);
       });
-  </script>
-   
+  </script> 
 
 </body>
 </html>

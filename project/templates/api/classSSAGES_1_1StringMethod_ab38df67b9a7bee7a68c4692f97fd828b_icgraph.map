@@ -1,12 +1,11 @@
 <map id="SSAGES::StringMethod::GatherNeighbors" name="SSAGES::StringMethod::GatherNeighbors">
-<area shape="rect" id="node2" href="$classSSAGES_1_1StringMethod.html#a7c26e585db0cb798a1b64f41f913726b" title="Helper function for calculating distances. " alt="" coords="216,49,379,91"/>
-<area shape="rect" id="node3" href="$classSSAGES_1_1FiniteTempString.html#a7d621d15dd9a188ba2457573d4c9271d" title="Updates the string according to the FTS method. " alt="" coords="440,5,624,47"/>
-<area shape="rect" id="node6" href="$classSSAGES_1_1Swarm.html#aa585121e2046df1f1c911e9214e15b8b" title="Updates the positions of the string. " alt="" coords="427,86,637,113"/>
-<area shape="rect" id="node9" href="$classSSAGES_1_1ElasticBand.html#ace76faf4836b8023b236318101202a6b" title="Updates the nudged elastic band string. " alt="" coords="220,167,375,208"/>
-<area shape="rect" id="node4" href="$classSSAGES_1_1FiniteTempString.html#a94561a14cc08999d4531db528fe3f2e8" title="Post&#45;integration hook. " alt="" coords="705,5,889,47"/>
-<area shape="rect" id="node5" href="$classSSAGES_1_1FiniteTempString.html#ac2ab9214dc688b069337517596d67aa2" title="Constructor. " alt="" coords="956,5,1140,47"/>
-<area shape="rect" id="node7" href="$classSSAGES_1_1Swarm.html#aae8fbacf2c51b84a5a333387116dda0d" title="Post&#45;integration hook. " alt="" coords="685,86,908,113"/>
-<area shape="rect" id="node8" href="$classSSAGES_1_1Swarm.html#a775304060a72dcae60bdd5718a485976" title="Constructor. " alt="" coords="961,86,1135,113"/>
-<area shape="rect" id="node10" href="$classSSAGES_1_1ElasticBand.html#a85177e2c02fa8f767eb98664636732da" title="Post&#45;integration hook. " alt="" coords="455,167,609,208"/>
-<area shape="rect" id="node11" href="$classSSAGES_1_1ElasticBand.html#abf87da865fc5e668e21d21f9c9ff361a" title="Constructor. " alt="" coords="719,167,874,208"/>
+<area shape="rect" id="node2" href="$classSSAGES_1_1ElasticBand.html#a131b99117f7f7f3ff18419513a2c507b" title="Updates the nudged elastic band string. " alt="" coords="244,5,399,47"/>
+<area shape="rect" id="node5" href="$classSSAGES_1_1Swarm.html#a0ee007f404408c59c7217cd8fb6b7c1c" title="Updates the positions of the string. " alt="" coords="216,71,427,98"/>
+<area shape="rect" id="node8" href="$classSSAGES_1_1FiniteTempString.html#af68721c1b7953bc3d2d097ad9090f66c" title="Updates the string according to the FTS method. " alt="" coords="229,123,413,164"/>
+<area shape="rect" id="node3" href="$classSSAGES_1_1ElasticBand.html#a85177e2c02fa8f767eb98664636732da" title="Post&#45;integration hook. " alt="" coords="509,5,663,47"/>
+<area shape="rect" id="node4" href="$classSSAGES_1_1ElasticBand.html#abf87da865fc5e668e21d21f9c9ff361a" title="Constructor. " alt="" coords="760,5,915,47"/>
+<area shape="rect" id="node6" href="$classSSAGES_1_1Swarm.html#aae8fbacf2c51b84a5a333387116dda0d" title="Post&#45;integration hook. " alt="" coords="475,71,697,98"/>
+<area shape="rect" id="node7" href="$classSSAGES_1_1Swarm.html#a775304060a72dcae60bdd5718a485976" title="Constructor. " alt="" coords="750,71,925,98"/>
+<area shape="rect" id="node9" href="$classSSAGES_1_1FiniteTempString.html#a94561a14cc08999d4531db528fe3f2e8" title="Post&#45;integration hook. " alt="" coords="494,123,678,164"/>
+<area shape="rect" id="node10" href="$classSSAGES_1_1FiniteTempString.html#ac2ab9214dc688b069337517596d67aa2" title="Constructor. " alt="" coords="745,123,929,164"/>
 </map>

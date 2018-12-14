@@ -1,5 +1,0 @@
-<map id="SSAGES::EventListener::GetFrequency" name="SSAGES::EventListener::GetFrequency">
-<area shape="rect" id="node2" href="$classSSAGES_1_1EventListener.html#a57d91801a98139b2c0beb1d6246fa314" title="Method call post integration. " alt="" coords="219,5,384,47"/>
-<area shape="rect" id="node3" href="$classSSAGES_1_1EventListener.html#a54abe889f75574dc70a7a40464a03aeb" title="Method call post simulation. " alt="" coords="219,71,384,112"/>
-<area shape="rect" id="node4" href="$classSSAGES_1_1EventListener.html#aeb8eaa9c711bf03dddf7518f25b4df5e" title="Method call prior to simulation initiation. " alt="" coords="219,136,384,177"/>
-</map>

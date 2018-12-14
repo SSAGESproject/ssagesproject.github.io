@@ -1,8 +1,0 @@
-<map id="SSAGES::RMSDCV::RMSDCV" name="SSAGES::RMSDCV::RMSDCV">
-<area shape="rect" id="node2" href="$classSSAGES_1_1Snapshot.html#aa0063a19760ed14f163c0dec36582347" title="Access the atom IDs. " alt="" coords="265,5,486,32"/>
-<area shape="rect" id="node3" href="$classSSAGES_1_1Snapshot.html#aee700ad3c3b9c466ad3f52b8d2ede6d6" title="Access the particles image flags. " alt="" coords="273,57,478,98"/>
-<area shape="rect" id="node4" href="$classSSAGES_1_1Snapshot.html#a035ed6fb2cd46d4f66d1614bd90ad14b" title="Const access to the particle masses. " alt="" coords="268,123,483,149"/>
-<area shape="rect" id="node5" href="$classSSAGES_1_1Snapshot.html#aee2ceb317884bc5e0105b9824b5026d3" title="Access the particle positions. " alt="" coords="264,173,487,200"/>
-<area shape="rect" id="node6" href="$classSSAGES_1_1ReadFile.html#ad96b1c1dd8b4ff19020815f3058bb0a1" title="Read xyz file. " alt="" coords="274,224,477,251"/>
-<area shape="rect" id="node7" href="$classSSAGES_1_1Snapshot.html#abf25a3209e9afcf7e78cfd6ff6e5aa0d" title="Unwrap a vector&#39;s real coordinates according to its image replica count. " alt="" coords="279,275,472,317"/>
-</map>

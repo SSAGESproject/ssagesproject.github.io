@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Metadynamics &mdash; SSAGES v0.8.0-alpha documentation</title>
+  <title>Metadynamics &mdash; SSAGES v0.8.3-alpha documentation</title>
   
 
   
@@ -25,24 +25,19 @@
   
 
   
-  
     <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
-  
-
-  
-
-  
-    <link rel="top" title="SSAGES v0.8.0-alpha documentation" href="index.html"/>
-        <link rel="up" title="Advanced Sampling Methods" href="Advanced Sampling Methods.html"/>
-        <link rel="next" title="Image Method" href="Image Method.html"/>
-        <link rel="prev" title="Forward-Flux" href="Forward-Flux.html"/> 
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Image Method" href="Image Method.html" />
+    <link rel="prev" title="Forward-Flux" href="Forward-Flux.html" /> 
 
   
   <script src="_static/js/modernizr.min.js"></script>
 
 </head>
 
-<body class="wy-body-for-nav" role="document">
+<body class="wy-body-for-nav">
 
    
   <div class="wy-grid-for-nav">
@@ -64,7 +59,7 @@
             
             
               <div class="version">
-                0.8.0
+                0.8.3
               </div>
             
           
@@ -101,7 +96,7 @@
 <li class="toctree-l2"><a class="reference internal" href="Elastic Band.html">Elastic Band</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Finite Temperature String.html">Finite Temperature String</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Forward-Flux.html">Forward-Flux</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="">Metadynamics</a><ul>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Metadynamics</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#introduction">Introduction</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#options-parameters">Options &amp; Parameters</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#example-input">Example Input</a></li>
@@ -134,7 +129,7 @@
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
 
       
-      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+      <nav class="wy-nav-top" aria-label="top navigation">
         
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="index.html">SSAGES</a>
@@ -142,9 +137,10 @@
       </nav>
 
 
-      
       <div class="wy-nav-content">
+        
         <div class="rst-content">
+        
           
 
 
@@ -175,7 +171,7 @@
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="_sources/Metadynamics.txt" rel="nofollow"> View page source</a>
+            <a href="_sources/Metadynamics.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -197,33 +193,33 @@ molecular dynamics simulations. Within metadynamics, a
 history-dependent bias is accrued through the periodic application of
 elemental Gaussian biases to the collective variables (CVs) of
 interest. The form of the individual biases is</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[g(\vec{\xi},\vec{s}_i) = W_i
 e^{-\frac{\left[\vec{\xi}-\vec{s}_i\right]^2}{2\sigma_i^2}}\;.\]</div>
-<p>Here <span class="math">\(\vec{xi}\)</span> is the collective variable, <span class="math">\(\vec{s}_i\)</span> is
-the location of the <span class="math">\(i^{th}\)</span> hill, <span class="math">\(W_i\)</span> is the weight and
-<span class="math">\(\sigma_i\)</span> the width of the hill. This bias acts to push the
+<p>Here <span class="math notranslate nohighlight">\(\vec{xi}\)</span> is the collective variable, <span class="math notranslate nohighlight">\(\vec{s}_i\)</span> is
+the location of the <span class="math notranslate nohighlight">\(i^{th}\)</span> hill, <span class="math notranslate nohighlight">\(W_i\)</span> is the weight and
+<span class="math notranslate nohighlight">\(\sigma_i\)</span> the width of the hill. This bias acts to push the
 system away from previously visited states. As this bias accrues to
-the height of nearby features in the free energy surface, the system&#8217;s
+the height of nearby features in the free energy surface, the system’s
 trajectory will begin to explore an expanded area in CV space. After a
 sufficient number of biases have been applied, the total applied bias
 within a given region will begin to oscillate around the negative of
 the free energy in that region.</p>
-<p>The free energy surface (FES) at any time <span class="math">\(t\)</span> may be
+<p>The free energy surface (FES) at any time <span class="math notranslate nohighlight">\(t\)</span> may be
 reconstructed by summing over all applied biases thusly</p>
-<div class="math">
-\[\begin{split}F(\xi,t) = -V(\vec{\xi}) = -\sum_{i&lt;n(t)} W_i
-e^{-\frac{\left[\vec{\xi}-\vec{s}_i\right]^2}{2\sigma_i^2}}\;.\end{split}\]</div>
-<p>Here, <span class="math">\(n(t)\)</span> refers to the number of biases applied before time
-<span class="math">\(t\)</span>. The time-dependent FES can be used to determine whether or
+<div class="math notranslate nohighlight">
+\[F(\xi,t) = -V(\vec{\xi}) = -\sum_{i&lt;n(t)} W_i
+e^{-\frac{\left[\vec{\xi}-\vec{s}_i\right]^2}{2\sigma_i^2}}\;.\]</div>
+<p>Here, <span class="math notranslate nohighlight">\(n(t)\)</span> refers to the number of biases applied before time
+<span class="math notranslate nohighlight">\(t\)</span>. The time-dependent FES can be used to determine whether or
 not a simulation has reached a converged FES by computing block
 averages of the applied bias (see <a class="reference internal" href="#singh2012" id="id2">[Singh2012]</a>).</p>
 <p>Metadynamics can be applied to unbounded regions of CV space, or to
 bounded regions. For the case of bounded, non-periodic CVs, boundary
 corrections must be applied which alter the structure of the hills
-<span class="math">\(g(\vec{\xi},\vec{s}_i)\)</span> (see <a class="reference internal" href="#mcgovern2013" id="id3">[McGovern2013]</a>)</p>
-<p>Metadynamics exists in many flavors, in which <span class="math">\(W_i\)</span> and
-<span class="math">\(\sigma_i\)</span> are altered in a time- or trajectory- dependent
+<span class="math notranslate nohighlight">\(g(\vec{\xi},\vec{s}_i)\)</span> (see <a class="reference internal" href="#mcgovern2013" id="id3">[McGovern2013]</a>)</p>
+<p>Metadynamics exists in many flavors, in which <span class="math notranslate nohighlight">\(W_i\)</span> and
+<span class="math notranslate nohighlight">\(\sigma_i\)</span> are altered in a time- or trajectory- dependent
 fashion. These include Well-Tempered Metadynamics, Transition-Tempered
 Metadynamics and Metadynamics with Adaptive Gaussians. Each of these
 methods has advantages and drawbacks. Currently, SSAGES includes only
@@ -233,7 +229,7 @@ given in the following sections.</p>
 </div>
 <div class="section" id="options-parameters">
 <h2>Options &amp; Parameters<a class="headerlink" href="#options-parameters" title="Permalink to this headline">¶</a></h2>
-<p>Metadynamics is selected by defining <code class="docutils literal"><span class="pre">type&quot;</span> <span class="pre">:</span> <span class="pre">&quot;Metadynamics&quot;</span></code> as the
+<p>Metadynamics is selected by defining <code class="docutils literal notranslate"><span class="pre">type&quot;</span> <span class="pre">:</span> <span class="pre">&quot;Metadynamics&quot;</span></code> as the
 method in the JSON input file. It supports the following options:</p>
 <dl class="docutils">
 <dt>widths</dt>
@@ -260,17 +256,17 @@ are deposited.</dd>
 <div class="admonition warning">
 <p class="first admonition-title">Warning</p>
 <p class="last">Metadynamics will run for the duration specified in the
-input file under <code class="docutils literal"><span class="pre">MDSteps</span></code>. It is the user&#8217;s responsibility to ensure that
+input file under <code class="docutils literal notranslate"><span class="pre">MDSteps</span></code>. It is the user’s responsibility to ensure that
 enough time is given for Metadynamics to obtain an satisfactory representation
 of the free energy surface of interest. A simple way to prevent
 Metadynamics from terminating before convergence is to define a
-very large number of <code class="docutils literal"><span class="pre">MDSteps`</span></code> and to periodically
+very large number of <code class="docutils literal notranslate"><span class="pre">MDSteps`</span></code> and to periodically
 check the output file for convergence.</p>
 </div>
 </div>
 <div class="section" id="example-input">
 <h2>Example Input<a class="headerlink" href="#example-input" title="Permalink to this headline">¶</a></h2>
-<div class="highlight-javascript"><div class="highlight"><pre><span class="s2">&quot;method&quot;</span> <span class="o">:</span> <span class="p">{</span>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;method&quot;</span> <span class="o">:</span> <span class="p">{</span>
         <span class="s2">&quot;type&quot;</span> <span class="o">:</span> <span class="s2">&quot;Metadynamics&quot;</span><span class="p">,</span>
         <span class="s2">&quot;widths&quot;</span> <span class="o">:</span> <span class="p">[</span><span class="mf">0.1</span><span class="p">,</span> <span class="mf">0.1</span><span class="p">],</span>
         <span class="s2">&quot;height&quot;</span> <span class="o">:</span> <span class="mf">0.1</span><span class="p">,</span>
@@ -281,11 +277,11 @@ check the output file for convergence.</p>
 </div>
 <div class="section" id="output">
 <h2>Output<a class="headerlink" href="#output" title="Permalink to this headline">¶</a></h2>
-<p>The output of Metadynamics is stored in a file called &#8220;hills.out&#8221;. This file
+<p>The output of Metadynamics is stored in a file called “hills.out”. This file
 contains the location, width and height of each Gaussian that has been deposited
 over time. Each time Gaussian is deposited, a new line is written to the file
 in the following format:</p>
-<p><em>center1 center2 ... width1 width2 ... height</em></p>
+<p><em>center1 center2 … width1 width2 … height</em></p>
 <p>The centers denote the locations in CV space where each Gaussian has been deposited;
 these are listed in the order that the CVs appear in the SSAGES JSON input file.
 The widths denote the corresponding Gaussian widths for each CV dimension.
@@ -298,53 +294,49 @@ time, future additions to the Metadynamics method will allow for adaptive
 Gaussians.</p>
 </div>
 <p>Example MATLAB scripts are provided in the Examples/User/Meta directory.
-These scripts sum the Gaussians and generate a free energy surface from the &#8220;hills.out&#8221;
+These scripts sum the Gaussians and generate a free energy surface from the “hills.out”
 file.</p>
 </div>
 <div class="section" id="tutorial">
 <span id="metadynamics-tutorial"></span><h2>Tutorial<a class="headerlink" href="#tutorial" title="Permalink to this headline">¶</a></h2>
-<p>Two Metadynamics examples are included in the <code class="docutils literal"><span class="pre">Examples/User/Meta</span></code> directory.
+<p>Two Metadynamics examples are included in the <code class="docutils literal notranslate"><span class="pre">Examples/User/Meta</span></code> directory.
 In the first example, Metadynamics is used to sample the free energy surface of
 a two-dimensional particle undergoing Langevin dynamics. This example is found in
 the <cite>Single_Atom</cite> folder and requires LAMMPS. The files included are described below:</p>
-<ul>
+<ul class="simple">
 <li><dl class="first docutils">
-<dt><code class="docutils literal"><span class="pre">in.LAMMPS_Meta_Test</span></code> - LAMMPS input file describing the Langevin particle</dt>
-<dd><p class="first last">and underlying free energy surface to be sampled. The free energy surface consists of two
+<dt><code class="docutils literal notranslate"><span class="pre">in.LAMMPS_Meta_Test</span></code> - LAMMPS input file describing the Langevin particle</dt>
+<dd>and underlying free energy surface to be sampled. The free energy surface consists of two
 Gaussian wells at (0.98, 0.98) and (-0.98, -0.98) respectively, and one Gaussian
-barrier at the origin.</p>
-</dd>
+barrier at the origin.</dd>
 </dl>
 </li>
-<li><p class="first"><code class="docutils literal"><span class="pre">Meta.json</span></code> - SSAGES JSON input file specifying Metadynamics and CVs to be
-sampled. In this case the CVs are the <em>x</em> and <em>y</em> coordinates of the particle.</p>
-</li>
-<li><p class="first"><code class="docutils literal"><span class="pre">analysis.m</span></code> - MATLAB script that analyzes the output of the Metadynamics
-method.</p>
-</li>
-<li><p class="first"><code class="docutils literal"><span class="pre">Movie.m</span></code> - MATLAB script that generates a movie of the free energy
-surface estimate over time.</p>
-</li>
+<li><code class="docutils literal notranslate"><span class="pre">Meta.json</span></code> - SSAGES JSON input file specifying Metadynamics and CVs to be
+sampled. In this case the CVs are the <em>x</em> and <em>y</em> coordinates of the particle.</li>
+<li><code class="docutils literal notranslate"><span class="pre">analysis.m</span></code> - MATLAB script that analyzes the output of the Metadynamics
+method.</li>
+<li><code class="docutils literal notranslate"><span class="pre">Movie.m</span></code> - MATLAB script that generates a movie of the free energy
+surface estimate over time.</li>
 </ul>
 <p>To run this example:</p>
 <ol class="arabic simple">
 <li>Either copy or create a symbolic link to the SSAGES executable in the
 examples directory.</li>
 </ol>
-<div class="highlight-bash"><div class="highlight"><pre>ln -s /path/to/SSAGES/build/ssages
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ln -s /path/to/SSAGES/build/ssages
 </pre></div>
 </div>
 <ol class="arabic simple" start="2">
 <li>Run the example by issuing the command below. Please note that in this
 example, two walkers are used to explore the system more efficiently. If
 you would like to use more walkers (1 processor per walker), simply include
-more drivers in the <code class="docutils literal"><span class="pre">Meta.json</span></code> input file.</li>
+more drivers in the <code class="docutils literal notranslate"><span class="pre">Meta.json</span></code> input file.</li>
 </ol>
-<div class="highlight-bash"><div class="highlight"><pre>mpirun -np <span class="m">2</span> ./ssages Meta.json
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>mpirun -np <span class="m">2</span> ./ssages Meta.json
 </pre></div>
 </div>
 <ol class="arabic simple" start="3">
-<li>After the run is complete use the provided <code class="docutils literal"><span class="pre">analysis.m</span></code> script to generate
+<li>After the run is complete use the provided <code class="docutils literal notranslate"><span class="pre">analysis.m</span></code> script to generate
 a representation of the underlying free energy surface.</li>
 </ol>
 </div>
@@ -358,7 +350,7 @@ a representation of the underlying free energy surface.</li>
 <colgroup><col class="label" /><col /></colgroup>
 <tbody valign="top">
 <tr><td class="label"><a class="fn-backref" href="#id2">[Singh2012]</a></td><td>Singh, Sadanand, Manan Chopra, and Juan J. de
-Pablo. &#8220;Density of states–based molecular simulations.&#8221;
+Pablo. “Density of states–based molecular simulations.”
 Annual review of chemical and biomolecular engineering
 3 (2012): 369-394.</td></tr>
 </tbody>
@@ -366,9 +358,9 @@ Annual review of chemical and biomolecular engineering
 <table class="docutils citation" frame="void" id="mcgovern2013" rules="none">
 <colgroup><col class="label" /><col /></colgroup>
 <tbody valign="top">
-<tr><td class="label"><a class="fn-backref" href="#id3">[McGovern2013]</a></td><td>McGovern, Michael, and Juan de Pablo. &#8220;A boundary
+<tr><td class="label"><a class="fn-backref" href="#id3">[McGovern2013]</a></td><td>McGovern, Michael, and Juan de Pablo. “A boundary
 correction algorithm for metadynamics in multiple
-dimensions.&#8221; The Journal of chemical physics 139.8
+dimensions.” The Journal of chemical physics 139.8
 (2013): 084102.</td></tr>
 </tbody>
 </table>
@@ -377,9 +369,7 @@ dimensions.&#8221; The Journal of chemical physics 139.8
 
 
            </div>
-           <div class="articleComments">
-            
-           </div>
+           
           </div>
           <footer>
   
@@ -398,11 +388,11 @@ dimensions.&#8221; The Journal of chemical physics 139.8
   <div role="contentinfo">
     <p>
         &copy; Copyright 2016, the SSAGES Team.
-      Last updated on Feb 27, 2018.
+      Last updated on Dec 14, 2018.
 
     </p>
   </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
 
 </footer>
 
@@ -420,17 +410,18 @@ dimensions.&#8221; The Journal of chemical physics 139.8
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'./',
-            VERSION:'v0.8.0-alpha',
+            VERSION:'v0.8.3-alpha',
+            LANGUAGE:'None',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
             HAS_SOURCE:  true,
-            SOURCELINK_SUFFIX: ''
+            SOURCELINK_SUFFIX: '.txt'
         };
     </script>
       <script type="text/javascript" src="_static/jquery.js"></script>
       <script type="text/javascript" src="_static/underscore.js"></script>
       <script type="text/javascript" src="_static/doctools.js"></script>
-      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
   
 
@@ -439,14 +430,11 @@ dimensions.&#8221; The Journal of chemical physics 139.8
     <script type="text/javascript" src="_static/js/theme.js"></script>
   
 
-  
-  
   <script type="text/javascript">
       jQuery(function () {
-          SphinxRtdTheme.StickyNav.enable();
+          SphinxRtdTheme.Navigation.enable(true);
       });
-  </script>
-   
+  </script> 
 
 </body>
 </html>

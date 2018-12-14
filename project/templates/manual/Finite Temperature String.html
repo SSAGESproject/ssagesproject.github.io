@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Finite Temperature String &mdash; SSAGES v0.8.0-alpha documentation</title>
+  <title>Finite Temperature String &mdash; SSAGES v0.8.3-alpha documentation</title>
   
 
   
@@ -25,24 +25,19 @@
   
 
   
-  
     <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
-  
-
-  
-
-  
-    <link rel="top" title="SSAGES v0.8.0-alpha documentation" href="index.html"/>
-        <link rel="up" title="Advanced Sampling Methods" href="Advanced Sampling Methods.html"/>
-        <link rel="next" title="Forward-Flux" href="Forward-Flux.html"/>
-        <link rel="prev" title="Elastic Band" href="Elastic Band.html"/> 
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Forward-Flux" href="Forward-Flux.html" />
+    <link rel="prev" title="Elastic Band" href="Elastic Band.html" /> 
 
   
   <script src="_static/js/modernizr.min.js"></script>
 
 </head>
 
-<body class="wy-body-for-nav" role="document">
+<body class="wy-body-for-nav">
 
    
   <div class="wy-grid-for-nav">
@@ -64,7 +59,7 @@
             
             
               <div class="version">
-                0.8.0
+                0.8.3
               </div>
             
           
@@ -99,7 +94,7 @@
 <li class="toctree-l2"><a class="reference internal" href="Artificial Neural Network Sampling.html">Artificial Neural Network Sampling</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Basis Function Sampling.html">Basis Function Sampling</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Elastic Band.html">Elastic Band</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="">Finite Temperature String</a><ul>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Finite Temperature String</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#introduction">Introduction</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#options-parameters">Options &amp; Parameters</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#tutorial">Tutorial</a></li>
@@ -132,7 +127,7 @@
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
 
       
-      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+      <nav class="wy-nav-top" aria-label="top navigation">
         
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="index.html">SSAGES</a>
@@ -140,9 +135,10 @@
       </nav>
 
 
-      
       <div class="wy-nav-content">
+        
         <div class="rst-content">
+        
           
 
 
@@ -173,7 +169,7 @@
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="_sources/Finite Temperature String.txt" rel="nofollow"> View page source</a>
+            <a href="_sources/Finite Temperature String.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -192,11 +188,11 @@
 <h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h2>
 <p>Along with Nudged Elastic Band and Swarm of Trajectories, Finite Temperature
 String Method (FTS) is a chain-of-states method. As in other chain-of-states
-methods, multiple copies of a system are simulated, with each copy (&#8220;image&#8221;)
+methods, multiple copies of a system are simulated, with each copy (“image”)
 corresponding to a different state of the system along some proposed transition
 pathway. In FTS, each image is associated with a node along a smooth curve
 through in collective variable space, representing a transition pathway.</p>
-<p>The goal of FTS is to evolve the path of this smooth curve or &#8220;string&#8221; until it
+<p>The goal of FTS is to evolve the path of this smooth curve or “string” until it
 approximates a transition pathway by finding the <strong>principal curve</strong>, which by
 definition intersects each of the perpendicular hyperplanes that it passes
 through at the expected value of each hyperplane. As such, a principal curve is
@@ -234,8 +230,8 @@ of string method iterations)</li>
 </div>
 <div class="section" id="options-parameters">
 <h2>Options &amp; Parameters<a class="headerlink" href="#options-parameters" title="Permalink to this headline">¶</a></h2>
-<p>The following parameters need to be set under <cite>&#8220;method&#8221;</cite> in the JSON input file:</p>
-<div class="highlight-javascript"><div class="highlight"><pre><span class="s2">&quot;type&quot;</span> <span class="o">:</span> <span class="s2">&quot;String&quot;</span>
+<p>The following parameters need to be set under <cite>“method”</cite> in the JSON input file:</p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;type&quot;</span> <span class="o">:</span> <span class="s2">&quot;String&quot;</span>
 <span class="s2">&quot;flavor&quot;</span> <span class="o">:</span> <span class="s2">&quot;FTS&quot;</span>
 </pre></div>
 </div>
@@ -245,7 +241,7 @@ of string method iterations)</li>
 <dd>Array of integers, selecting which CVs this method will operate on. Index
 starts from 0.</dd>
 <dt>centers (required)</dt>
-<dd>Array containing this image&#8217;s coordinates in CV space</dd>
+<dd>Array containing this image’s coordinates in CV space</dd>
 <dt>ksprings (required)</dt>
 <dd>Array of spring constants corresponding to each CV
 Used to ensure that each simulation remains within its own respective Voronoi cell</dd>
@@ -254,11 +250,11 @@ Used to ensure that each simulation remains within its own respective Voronoi ce
 <p class="last">Default value is 2000.</p>
 </dd>
 <dt>time_step (required)</dt>
-<dd><p class="first"><cite>(double)</cite> Parameter used for updating the string (<span class="math">\(\Delta\tau\)</span> in <a class="footnote-reference" href="#id6" id="id4">[1]</a> ).</p>
+<dd><p class="first"><cite>(double)</cite> Parameter used for updating the string (<span class="math notranslate nohighlight">\(\Delta\tau\)</span> in <a class="footnote-reference" href="#id6" id="id4">[1]</a> ).</p>
 <p class="last">Default value is 0.1.</p>
 </dd>
 <dt>kappa (required)</dt>
-<dd><p class="first"><cite>(double)</cite> Parameter used for smoothing the string (<span class="math">\(kappa\)</span> in <a class="footnote-reference" href="#id6" id="id5">[1]</a>).</p>
+<dd><p class="first"><cite>(double)</cite> Parameter used for smoothing the string (<span class="math notranslate nohighlight">\(kappa\)</span> in <a class="footnote-reference" href="#id6" id="id5">[1]</a>).</p>
 <p class="last">Default value is 0.1.</p>
 </dd>
 <dt>frequency (required)</dt>
@@ -278,45 +274,45 @@ after tolerance criteria has been met for all CVs</dd>
 </div>
 <div class="section" id="tutorial">
 <span id="fts-tutorial"></span><h2>Tutorial<a class="headerlink" href="#tutorial" title="Permalink to this headline">¶</a></h2>
-<p>Two examples for running FTS can be found in the <code class="docutils literal"><span class="pre">Examples/User/FTS</span></code>
+<p>Two examples for running FTS can be found in the <code class="docutils literal notranslate"><span class="pre">Examples/User/FTS</span></code>
 directory. This tutorial will go through running FTS on a 2D single particle
 system, using LAMMPS as the MD engine. The necessary files are found in
-<code class="docutils literal"><span class="pre">Examples/User/FTS/2D_Particle</span></code>, which should contain the following:</p>
+<code class="docutils literal notranslate"><span class="pre">Examples/User/FTS/2D_Particle</span></code>, which should contain the following:</p>
 <dl class="docutils">
-<dt><code class="docutils literal"><span class="pre">in.LAMMPS_2DParticle</span></code></dt>
+<dt><code class="docutils literal notranslate"><span class="pre">in.LAMMPS_2DParticle</span></code></dt>
 <dd>LAMMPS input file; sets up 1 particle on a 2D surface with two Gaussian
-wells of different depths (at <span class="math">\((-0.98, -0.98)\)</span> and at
-<span class="math">\((0.98, 0.98)\)</span>) and one Gaussian barrier at the origin.</dd>
-<dt><code class="docutils literal"><span class="pre">Template_Input.json</span></code></dt>
+wells of different depths (at <span class="math notranslate nohighlight">\((-0.98, -0.98)\)</span> and at
+<span class="math notranslate nohighlight">\((0.98, 0.98)\)</span>) and one Gaussian barrier at the origin.</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">Template_Input.json</span></code></dt>
 <dd>Template JSON input containing information for one image on the string. We
 are looking at two CVs: x and y coordinate. We will use
-<code class="docutils literal"><span class="pre">Input_Generator.py</span></code> to use this template to create a JSON input file
+<code class="docutils literal notranslate"><span class="pre">Input_Generator.py</span></code> to use this template to create a JSON input file
 containing information for all string images.</dd>
-<dt><code class="docutils literal"><span class="pre">Input_Generator.py</span></code></dt>
+<dt><code class="docutils literal notranslate"><span class="pre">Input_Generator.py</span></code></dt>
 <dd>Python script for creating FTS JSON input file.</dd>
 </dl>
-<p>After compiling SSAGES with LAMMPS, we will use <code class="docutils literal"><span class="pre">Input_Generator.py</span></code> to
+<p>After compiling SSAGES with LAMMPS, we will use <code class="docutils literal notranslate"><span class="pre">Input_Generator.py</span></code> to
 create a JSON input file for FTS. Run this script</p>
-<div class="highlight-bash"><div class="highlight"><pre>python Input_Generator.py
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>python Input_Generator.py
 </pre></div>
 </div>
-<p>to create a file called <code class="docutils literal"><span class="pre">FTS.json</span></code>. A string with 16 images is initalized on
-the 2D surface, evenly spaced on a straight line from <span class="math">\((-0.98, -0.68)\)</span> to
-<span class="math">\((0.98, 1.28)\)</span>. If you take a look at <code class="docutils literal"><span class="pre">FTS.json</span></code>, you will see that the
-location of each image along the string has been appended to the &#8220;centers&#8221;
+<p>to create a file called <code class="docutils literal notranslate"><span class="pre">FTS.json</span></code>. A string with 16 images is initalized on
+the 2D surface, evenly spaced on a straight line from <span class="math notranslate nohighlight">\((-0.98, -0.68)\)</span> to
+<span class="math notranslate nohighlight">\((0.98, 1.28)\)</span>. If you take a look at <code class="docutils literal notranslate"><span class="pre">FTS.json</span></code>, you will see that the
+location of each image along the string has been appended to the “centers”
 field. These center locations are listed from one end of the string to the
 other; the first center listed corresponds to one end of the string, and the
 final center listed corresponds to the opposite end of the string.</p>
-<p>Once <code class="docutils literal"><span class="pre">FTS.json</span></code> has been generated, we can run the example with the following
+<p>Once <code class="docutils literal notranslate"><span class="pre">FTS.json</span></code> has been generated, we can run the example with the following
 command:</p>
-<div class="highlight-bash"><div class="highlight"><pre>mpirun -np <span class="m">16</span> /path/to/SSAGES/build/./ssages FTS.json
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>mpirun -np <span class="m">16</span> /path/to/SSAGES/build/./ssages FTS.json
 </pre></div>
 </div>
 <p>As SSAGES runs, a series of output files are generated:</p>
 <dl class="docutils">
-<dt><code class="docutils literal"><span class="pre">log.lammps</span></code></dt>
+<dt><code class="docutils literal notranslate"><span class="pre">log.lammps</span></code></dt>
 <dd>Output from LAMMPS.</dd>
-<dt><code class="docutils literal"><span class="pre">node-00xx.log</span></code></dt>
+<dt><code class="docutils literal notranslate"><span class="pre">node-00xx.log</span></code></dt>
 <dd>FTS output for each of the 16 nodes on the string. The first column contains
 the image number (0-15). The second column contains the iteration number. The
 remaining columns list the location of the image and the instantaneous value
@@ -326,9 +322,9 @@ of the string node, instantaneous x coordinate of the particle, y coordinate
 of the string node, instantaneous y coordinate of the particle.</dd>
 </dl>
 <p>To visualize the string, we can plot the appropriate values from the last line
-of each <code class="docutils literal"><span class="pre">node-00xx.log</span></code> file. For example, one can quickly plot the final
+of each <code class="docutils literal notranslate"><span class="pre">node-00xx.log</span></code> file. For example, one can quickly plot the final
 string using gnuplot with the command</p>
-<div class="highlight-bash"><div class="highlight"><pre>plot <span class="s2">&quot;&lt; tail -n 1 node*&quot;</span> u 3:5
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>plot <span class="s2">&quot;&lt; tail -n 1 node*&quot;</span> u <span class="m">3</span>:5
 </pre></div>
 </div>
 <p>The following image shows the initial string in blue, compared with the final
@@ -337,7 +333,7 @@ string plotted in green:</p>
 <img alt="_images/2dsingle.png" src="_images/2dsingle.png" />
 </div>
 <p>The two ends of the string have moved to the two energy minima (at
-<span class="math">\((-0.98, -0.98)\)</span> and <span class="math">\((0.98, 0.98)\)</span>), and the center of the string
+<span class="math notranslate nohighlight">\((-0.98, -0.98)\)</span> and <span class="math notranslate nohighlight">\((0.98, 0.98)\)</span>), and the center of the string
 has curved away from the energy barrier at the origin.</p>
 </div>
 <div class="section" id="developers">
@@ -360,9 +356,7 @@ has curved away from the energy barrier at the origin.</p>
 
 
            </div>
-           <div class="articleComments">
-            
-           </div>
+           
           </div>
           <footer>
   
@@ -381,11 +375,11 @@ has curved away from the energy barrier at the origin.</p>
   <div role="contentinfo">
     <p>
         &copy; Copyright 2016, the SSAGES Team.
-      Last updated on Feb 27, 2018.
+      Last updated on Dec 14, 2018.
 
     </p>
   </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
 
 </footer>
 
@@ -403,17 +397,18 @@ has curved away from the energy barrier at the origin.</p>
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'./',
-            VERSION:'v0.8.0-alpha',
+            VERSION:'v0.8.3-alpha',
+            LANGUAGE:'None',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
             HAS_SOURCE:  true,
-            SOURCELINK_SUFFIX: ''
+            SOURCELINK_SUFFIX: '.txt'
         };
     </script>
       <script type="text/javascript" src="_static/jquery.js"></script>
       <script type="text/javascript" src="_static/underscore.js"></script>
       <script type="text/javascript" src="_static/doctools.js"></script>
-      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
   
 
@@ -422,14 +417,11 @@ has curved away from the energy barrier at the origin.</p>
     <script type="text/javascript" src="_static/js/theme.js"></script>
   
 
-  
-  
   <script type="text/javascript">
       jQuery(function () {
-          SphinxRtdTheme.StickyNav.enable();
+          SphinxRtdTheme.Navigation.enable(true);
       });
-  </script>
-   
+  </script> 
 
 </body>
 </html>

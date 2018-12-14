@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Basis Function Sampling &mdash; SSAGES v0.8.0-alpha documentation</title>
+  <title>Basis Function Sampling &mdash; SSAGES v0.8.3-alpha documentation</title>
   
 
   
@@ -25,24 +25,19 @@
   
 
   
-  
     <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
-  
-
-  
-
-  
-    <link rel="top" title="SSAGES v0.8.0-alpha documentation" href="index.html"/>
-        <link rel="up" title="Advanced Sampling Methods" href="Advanced Sampling Methods.html"/>
-        <link rel="next" title="Elastic Band" href="Elastic Band.html"/>
-        <link rel="prev" title="Artificial Neural Network Sampling" href="Artificial Neural Network Sampling.html"/> 
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Elastic Band" href="Elastic Band.html" />
+    <link rel="prev" title="Artificial Neural Network Sampling" href="Artificial Neural Network Sampling.html" /> 
 
   
   <script src="_static/js/modernizr.min.js"></script>
 
 </head>
 
-<body class="wy-body-for-nav" role="document">
+<body class="wy-body-for-nav">
 
    
   <div class="wy-grid-for-nav">
@@ -64,7 +59,7 @@
             
             
               <div class="version">
-                0.8.0
+                0.8.3
               </div>
             
           
@@ -97,7 +92,7 @@
 <li class="toctree-l1 current"><a class="reference internal" href="Advanced Sampling Methods.html">Advanced Sampling Methods</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="Adaptive Biasing Force Algorithm.html">Adaptive Biasing Force Algorithm</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Artificial Neural Network Sampling.html">Artificial Neural Network Sampling</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="">Basis Function Sampling</a><ul>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Basis Function Sampling</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#introduction">Introduction</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#options-parameters">Options &amp; Parameters</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#required-to-run-bfs">Required to Run BFS</a></li>
@@ -138,7 +133,7 @@
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
 
       
-      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+      <nav class="wy-nav-top" aria-label="top navigation">
         
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="index.html">SSAGES</a>
@@ -146,9 +141,10 @@
       </nav>
 
 
-      
       <div class="wy-nav-content">
+        
         <div class="rst-content">
+        
           
 
 
@@ -179,7 +175,7 @@
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="_sources/Basis Function Sampling.txt" rel="nofollow"> View page source</a>
+            <a href="_sources/Basis Function Sampling.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -197,35 +193,35 @@
 <div class="section" id="introduction">
 <h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h2>
 <p>The Basis Function enhanced sampling method is a variant of the Continuous
-Wang-Landau Sampling method developed by Whitmer et al, which biases a PMF
+Wang-Landau Sampling method developed by Whitmer <em>et al.</em>, which biases a PMF
 through the summation of Kronecker deltas. In this method, the Kronecker delta
 is approximated by projection of a locally biased histogram to a truncated set
 of orthogonal basis functions.</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[\int_\Xi f_{i}(\vec{\xi})f_{j}(\vec{\xi})w(\vec{\xi})d\vec{\xi} = \delta_{i}c_{i}\]</div>
 <p>By projecting a basis set, the system resolves the same properties as the
 Kronecker deltas, but in a continuous and differentiable manner that lends well
 towards MD simulations. The current version of SSAGES has support for Legendre,
-Chebyshev, and Fourier polynomials. Each of these has their defined weight function <span class="math">\(w(\xi)\)</span>
+Chebyshev, and Fourier polynomials. Each of these has their defined weight function <span class="math notranslate nohighlight">\(w(\xi)\)</span>
 implemented specific to the method. Additionally, any combination of implemented basis sets can be
 used for any system. It is advised that a periodic basis set be used with a periodic CV, but it
 is not required.</p>
-<p>The BFS method applies its bias in sweeps of $N$ through a histogram (<span class="math">\(H_{i}\)</span>)
-that is updated at every <span class="math">\(j\)</span> microstate or timestep. This histogram is
-then modified to an unbiased partition function estimate (<span class="math">\(\tilde{H_{i}}\)</span>)
-by exponentiation with the current bias potential (<span class="math">\(\Phi_{i}\)</span>).</p>
-<div class="math">
+<p>The BFS method applies its bias in sweeps of <span class="math notranslate nohighlight">\(N\)</span> through a histogram (<span class="math notranslate nohighlight">\(H_{i}\)</span>)
+that is updated at every <span class="math notranslate nohighlight">\(j\)</span> microstate or timestep. This histogram is
+then modified to an unbiased partition function estimate (<span class="math notranslate nohighlight">\(\tilde{H_{i}}\)</span>)
+by exponentiation with the current bias potential (<span class="math notranslate nohighlight">\(\Phi_{i}\)</span>).</p>
+<div class="math notranslate nohighlight">
 \[\tilde{H}_{i}(\xi) = H_{i}(\xi)e^{\beta \Phi_{i}}\]</div>
-<p>A weight function has been added into this implementation (<span class="math">\(W(t_{j})\)</span>) so that
+<p>A weight function has been added into this implementation (<span class="math notranslate nohighlight">\(W(t_{j})\)</span>) so that
 the user can define the effective strength of the applied bias. If not chosen, the weight is normalized to
 the length of the interval.</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[Z_{i}(\xi) = \sum_{j} W(t_{j})\tilde{H_{j}}(\xi)\]</div>
 <p>This final estimate is then projected to the truncated basis set. After this set
 is evaluated, the coefficients of the basis set are evaluated. This process is
 iterated until the surface converges, which is determined by the overall update
 of the coefficients.</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[\begin{split}\beta \Phi_{i+1}(\xi) = \sum_j^N \alpha^i_j L_j(\xi)\\
 \alpha^i_j = \frac{2j + 1}{2} \int_{-1}^1 \log(Z_i(\xi))L_j(\xi)d\xi\end{split}\]</div>
 </div>
@@ -233,9 +229,9 @@ of the coefficients.</p>
 <h2>Options &amp; Parameters<a class="headerlink" href="#options-parameters" title="Permalink to this headline">¶</a></h2>
 <p>These are all the options that SSAGES provides for running Basis Function
 Sampling. In order to add BFS to the JSON file, the method should be labeled as
-&#8220;BFSMethod&#8221;.</p>
+“BFSMethod”.</p>
 <p>Basis Function Sampling requires the use of a basis set. These are defined by defining
-an object of &#8220;basis_functions&#8221;. These have the following properties</p>
+an object of “basis_functions”. These have the following properties</p>
 <dl class="docutils">
 <dt>type</dt>
 <dd>Currently can either be Chebyshev, Fourier, or Legendre</dd>
@@ -264,10 +260,9 @@ as the cycle_frequency (usually 0.1 times that) The system has a higher
 chance of exploding at higher weight values.</dd>
 <dt>basis_filename</dt>
 <dd>A suffix to name the output file. If not specified the output will be
-&#8220;basis.out&#8221;</dd>
+“basis.out”</dd>
 <dt>temperature</dt>
-<dd>Only should be used if the MD engine cannot produce a good temperature
-value. (ie: LAMMPS with 1 particle)</dd>
+<dd>The temperature of the simulation.</dd>
 <dt>tolerance</dt>
 <dd>Convergence criteria. The sum of the difference in subsequent updates of the
 coefficients squared must be less than this for convergence to work.</dd>
@@ -286,11 +281,12 @@ The only inputs required to run the method:</p>
 <li>cyclefrequency</li>
 <li>frequency</li>
 <li>basis_functions</li>
+<li>temperature</li>
 </ul>
 </div>
 <div class="section" id="example-input">
 <h2>Example Input<a class="headerlink" href="#example-input" title="Permalink to this headline">¶</a></h2>
-<div class="highlight-javascript"><div class="highlight"><pre><span class="s2">&quot;methods&quot;</span> <span class="o">:</span> <span class="p">[{</span>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;methods&quot;</span> <span class="o">:</span> <span class="p">[{</span>
     <span class="s2">&quot;type&quot;</span> <span class="o">:</span> <span class="s2">&quot;BFSMethod&quot;</span><span class="p">,</span>
     <span class="s2">&quot;basis_functions&quot;</span> <span class="o">:</span> <span class="p">[</span>
     <span class="p">{</span>
@@ -309,10 +305,10 @@ The only inputs required to run the method:</p>
     <span class="s2">&quot;cycle_frequency&quot;</span> <span class="o">:</span> <span class="mi">100000</span><span class="p">,</span>
     <span class="s2">&quot;basis_filename&quot;</span> <span class="o">:</span> <span class="s2">&quot;example&quot;</span><span class="p">,</span>
     <span class="s2">&quot;frequency&quot;</span> <span class="o">:</span> <span class="mi">1</span><span class="p">,</span>
-    <span class="s2">&quot;temperature&quot;</span> <span class="o">:</span> <span class="mf">1.0</span><span class="p">,</span>
-    <span class="s2">&quot;weight&quot;</span> <span class="o">:</span> <span class="mf">100000.0</span><span class="p">,</span>
-    <span class="s2">&quot;tolerance&quot;</span> <span class="o">:</span> <span class="mi">1</span><span class="nx">e</span><span class="o">-</span><span class="mi">6</span><span class="p">,</span>
-    <span class="s2">&quot;convergence_exit&quot;</span> <span class="o">:</span> <span class="kc">false</span><span class="p">,</span>
+    <span class="s2">&quot;temperature&quot;</span> <span class="o">:</span> <span class="mf">300.0</span><span class="p">,</span>
+    <span class="s2">&quot;weight&quot;</span> <span class="o">:</span> <span class="mf">1.0</span><span class="p">,</span>
+    <span class="s2">&quot;tolerance&quot;</span> <span class="o">:</span> <span class="mi">1</span><span class="nx">e</span><span class="o">-</span><span class="mi">3</span><span class="p">,</span>
+    <span class="s2">&quot;convergence_exit&quot;</span> <span class="o">:</span> <span class="kc">true</span><span class="p">,</span>
     <span class="s2">&quot;grid&quot;</span> <span class="o">:</span> <span class="p">{</span>
         <span class="s2">&quot;lower&quot;</span> <span class="o">:</span> <span class="p">[</span><span class="o">-</span><span class="mf">3.14</span><span class="p">,</span> <span class="o">-</span><span class="mf">3.14</span><span class="p">],</span>
         <span class="s2">&quot;upper&quot;</span> <span class="o">:</span> <span class="p">[</span><span class="mf">3.14</span><span class="p">,</span><span class="mf">3.14</span><span class="p">],</span>
@@ -327,7 +323,7 @@ The only inputs required to run the method:</p>
 <h2>Guidelines for running BFS<a class="headerlink" href="#guidelines-for-running-bfs" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li>It is generally a good idea to choose a lower order polynomial initially.
-Excessive number of polynomials may create an unwanted &#8220;ringing&#8221; effect that could result
+Excessive number of polynomials may create an unwanted “ringing” effect that could result
 in much slower convergence.</li>
 <li>For higher order polynomials, the error in projection is less, but the number
 of bins must increase in order to accurately project the surface. This may
@@ -340,16 +336,16 @@ then it is typically a good idea to place the bounds approximately 0.1 - 0.2
 units outside the grid boundaries.</p>
 <p>The convergence exit option is available if the user chooses to continue running
 past convergence, but a good heuristic for tolerance is around
-<span class="math">\(1\mathrm{e}{-6}\)</span>.</p>
+<span class="math notranslate nohighlight">\(1\mathrm{e}{-3}\)</span>.</p>
 </div>
 <div class="section" id="tutorial">
 <span id="bfs-tutorial"></span><h2>Tutorial<a class="headerlink" href="#tutorial" title="Permalink to this headline">¶</a></h2>
 <p>This tutorial will provide a reference for running BFS in SSAGES. There are
 multiple examples provided in the Examples/User directory of SSAGES, but this
 tutorial will cover the Alanine Dipeptide example.
-In the ADP subdirectory of the <code class="docutils literal"><span class="pre">Examples/User</span> <span class="pre">section</span></code> there should be a
-LAMMPS input file (titled <code class="docutils literal"><span class="pre">in.ADP_BFS_example(0-1)</span></code>) and two JSON input files.
-Both of these files will work for SSAGES, but the one titled <code class="docutils literal"><span class="pre">ADP_BFS_2walkers.json</span></code>
+In the ADP subdirectory of the <code class="docutils literal notranslate"><span class="pre">Examples/User</span> <span class="pre">section</span></code> there should be a
+LAMMPS input file (titled <code class="docutils literal notranslate"><span class="pre">in.ADP_BFS_example(0-1)</span></code>) and two JSON input files.
+Both of these files will work for SSAGES, but the one titled <code class="docutils literal notranslate"><span class="pre">ADP_BFS_2walkers.json</span></code>
 makes use of multiple walkers.</p>
 <p>For LAMMPS to run the example it must be made with RIGID and MOLECULE options.
 In order to do so,</p>
@@ -357,7 +353,7 @@ In order to do so,</p>
 <li>Go to LAMMPS src folder (/build/hooks/lammps/lammps-download-prefix/src/lammps-download/src/ for -DLAMMPS=YES)</li>
 <li>Do:</li>
 </ol>
-<div class="highlight-bash"><div class="highlight"><pre>make yes-RIGID
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>make yes-RIGID
 make yes-MOLECULE
 </pre></div>
 </div>
@@ -365,7 +361,7 @@ make yes-MOLECULE
 <li>Go to your build folder and make.</li>
 </ol>
 <p>Use the following command to run the example:</p>
-<div class="highlight-bash"><div class="highlight"><pre>mpiexec -np <span class="m">2</span> ./ssages ADP_BFS_2walkers.json
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>mpiexec -np <span class="m">2</span> ./ssages ADP_BFS_2walkers.json
 </pre></div>
 </div>
 <p>This should prompt SSAGES to begin an alanine dipeptide run. If the run is
@@ -373,9 +369,9 @@ successful, the console will output the current sweep number on each node.
 At this point the user can elect to read the output information after each sweep.</p>
 <div class="section" id="basis-out">
 <h3>basis.out<a class="headerlink" href="#basis-out" title="Permalink to this headline">¶</a></h3>
-<p>The <code class="docutils literal"><span class="pre">basis.out</span></code> file outputs in at least 4 columns. These columns refer to the
-CV values, the ultimate projected PMF, the unprojected PMF, and the biased
-histogram values. Depending on the number of CVs chosen for a simulation, the
+<p>The <code class="docutils literal notranslate"><span class="pre">basis.out</span></code> file outputs in at least 3 columns. These columns refer to the
+CV values, the projected PMF from the basis set, and the log of the histogram.
+Depending on the number of CVs chosen for a simulation, the
 number of CV columns will also correspond. Only the first CV column should be
 labeled.</p>
 <p>The important line for graphing purposes is the projected PMF, which is the
@@ -403,9 +399,7 @@ Julian Helfferich</p>
 
 
            </div>
-           <div class="articleComments">
-            
-           </div>
+           
           </div>
           <footer>
   
@@ -424,11 +418,11 @@ Julian Helfferich</p>
   <div role="contentinfo">
     <p>
         &copy; Copyright 2016, the SSAGES Team.
-      Last updated on Feb 27, 2018.
+      Last updated on Dec 14, 2018.
 
     </p>
   </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
 
 </footer>
 
@@ -446,17 +440,18 @@ Julian Helfferich</p>
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'./',
-            VERSION:'v0.8.0-alpha',
+            VERSION:'v0.8.3-alpha',
+            LANGUAGE:'None',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
             HAS_SOURCE:  true,
-            SOURCELINK_SUFFIX: ''
+            SOURCELINK_SUFFIX: '.txt'
         };
     </script>
       <script type="text/javascript" src="_static/jquery.js"></script>
       <script type="text/javascript" src="_static/underscore.js"></script>
       <script type="text/javascript" src="_static/doctools.js"></script>
-      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
   
 
@@ -465,14 +460,11 @@ Julian Helfferich</p>
     <script type="text/javascript" src="_static/js/theme.js"></script>
   
 
-  
-  
   <script type="text/javascript">
       jQuery(function () {
-          SphinxRtdTheme.StickyNav.enable();
+          SphinxRtdTheme.Navigation.enable(true);
       });
-  </script>
-   
+  </script> 
 
 </body>
 </html>

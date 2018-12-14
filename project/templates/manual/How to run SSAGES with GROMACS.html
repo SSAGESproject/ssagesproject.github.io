@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>How to use SSAGES with GROMACS &mdash; SSAGES v0.8.0-alpha documentation</title>
+  <title>How to use SSAGES with GROMACS &mdash; SSAGES v0.8.3-alpha documentation</title>
   
 
   
@@ -25,24 +25,19 @@
   
 
   
-  
     <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
-  
-
-  
-
-  
-    <link rel="top" title="SSAGES v0.8.0-alpha documentation" href="index.html"/>
-        <link rel="up" title="Getting Started" href="Getting Started.html"/>
-        <link rel="next" title="Input Files" href="Input Files.html"/>
-        <link rel="prev" title="How to run SSAGES on LAMMPS" href="How to run SSAGES on LAMMPS.html"/> 
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Input Files" href="Input Files.html" />
+    <link rel="prev" title="How to run SSAGES on LAMMPS" href="How to run SSAGES on LAMMPS.html" /> 
 
   
   <script src="_static/js/modernizr.min.js"></script>
 
 </head>
 
-<body class="wy-body-for-nav" role="document">
+<body class="wy-body-for-nav">
 
    
   <div class="wy-grid-for-nav">
@@ -64,7 +59,7 @@
             
             
               <div class="version">
-                0.8.0
+                0.8.3
               </div>
             
           
@@ -98,7 +93,7 @@
 <li class="toctree-l2 current"><a class="reference internal" href="Getting Started.html#advanced-options">Advanced options</a><ul class="current">
 <li class="toctree-l3"><a class="reference internal" href="Build SSAGES with local copy of MD source.html">Build SSAGES with local copy of MD source</a></li>
 <li class="toctree-l3"><a class="reference internal" href="How to run SSAGES on LAMMPS.html">How to run SSAGES on LAMMPS</a></li>
-<li class="toctree-l3 current"><a class="current reference internal" href="">How to use SSAGES with GROMACS</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">How to use SSAGES with GROMACS</a></li>
 </ul>
 </li>
 </ul>
@@ -124,7 +119,7 @@
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
 
       
-      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+      <nav class="wy-nav-top" aria-label="top navigation">
         
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="index.html">SSAGES</a>
@@ -132,9 +127,10 @@
       </nav>
 
 
-      
       <div class="wy-nav-content">
+        
         <div class="rst-content">
+        
           
 
 
@@ -165,7 +161,7 @@
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="_sources/How to run SSAGES with GROMACS.txt" rel="nofollow"> View page source</a>
+            <a href="_sources/How to run SSAGES with GROMACS.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -182,7 +178,7 @@
 <span id="run-ssages-with-gromacs"></span><h1>How to use SSAGES with GROMACS<a class="headerlink" href="#how-to-use-ssages-with-gromacs" title="Permalink to this headline">¶</a></h1>
 <p>After compiling GROMACS with SSAGES, you can use all of GROMACS’ available tools to
 set up systems and generate input files.  The executable (gmx_mpi) is located in
-<code class="docutils literal"><span class="pre">ssages/build/gromacs/bin</span></code>.</p>
+<code class="docutils literal notranslate"><span class="pre">ssages/build/gromacs/bin</span></code>.</p>
 <p>As GROMACS has an in-depth documentation and getting started section, we will not
 dwell much on how to use these tools to generate systems. For more information on
 Gromacs, read the Gromacs manual
@@ -191,60 +187,58 @@ and the official
 <a class="reference external" href="http://www.gromacs.org/Documentation">Gromacs documentation</a>.</p>
 <p>Briefly, a GROMACS input file (.tpr) requires the following three to generate:</p>
 <ol class="arabic simple">
-<li>A ‘box’ of particles to simulate (<code class="docutils literal"><span class="pre">.gro</span></code> file)</li>
-<li>A topology that describes the forcefield and connectivity (<code class="docutils literal"><span class="pre">.top</span></code> file,
-optionally <code class="docutils literal"><span class="pre">.itp</span></code> files)</li>
+<li>A ‘box’ of particles to simulate (<code class="docutils literal notranslate"><span class="pre">.gro</span></code> file)</li>
+<li>A topology that describes the forcefield and connectivity (<code class="docutils literal notranslate"><span class="pre">.top</span></code> file,
+optionally <code class="docutils literal notranslate"><span class="pre">.itp</span></code> files)</li>
 <li>A simulation details file that sets many parameters such as which thermostat
 and barostat to use if any, timesteps, integrator, saving frequency and many
-more (<code class="docutils literal"><span class="pre">.mdp</span></code> file)</li>
+more (<code class="docutils literal notranslate"><span class="pre">.mdp</span></code> file)</li>
 </ol>
-<p>For example, one can convert a protein <code class="docutils literal"><span class="pre">.pdb</span></code> file from an online database using
-GROMACS tools to generate a <code class="docutils literal"><span class="pre">.gro</span></code> and a <code class="docutils literal"><span class="pre">.top</span></code> file. To generate an input
-file, use the <code class="docutils literal"><span class="pre">gmx_mpi</span> <span class="pre">grompp</span></code> command:</p>
-<div class="highlight-bash"><div class="highlight"><pre>gmx_mpi grompp -f npt.mdp -p topol.top -c conf.gro -o input.tpr
+<p>For example, one can convert a protein <code class="docutils literal notranslate"><span class="pre">.pdb</span></code> file from an online database using
+GROMACS tools to generate a <code class="docutils literal notranslate"><span class="pre">.gro</span></code> and a <code class="docutils literal notranslate"><span class="pre">.top</span></code> file. To generate an input
+file, use the <code class="docutils literal notranslate"><span class="pre">gmx_mpi</span> <span class="pre">grompp</span></code> command:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>gmx_mpi grompp -f npt.mdp -p topol.top -c conf.gro -o input.tpr
 </pre></div>
 </div>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
-<p class="last">Note that currently, the <code class="docutils literal"><span class="pre">gmx_mpi</span></code> executable in the SSAGES folder
+<p class="last">Note that currently, the <code class="docutils literal notranslate"><span class="pre">gmx_mpi</span></code> executable in the SSAGES folder
 will NOT function normally for running regular GROMACS simulations via
-<code class="docutils literal"><span class="pre">gmx_mpi</span> <span class="pre">mdrun</span></code>.</p>
+<code class="docutils literal notranslate"><span class="pre">gmx_mpi</span> <span class="pre">mdrun</span></code>.</p>
 </div>
 <p>After an energy minimization and brief NVT and NPT equilibration runs, you should
-be ready to use SSAGES with your system. First, generate a <code class="docutils literal"><span class="pre">.json</span></code> for your
+be ready to use SSAGES with your system. First, generate a <code class="docutils literal notranslate"><span class="pre">.json</span></code> for your
 SSAGES input. If using a single walker, the “inputfile” should be the same as your
-<code class="docutils literal"><span class="pre">.tpr</span></code> file name. If using multiple walkers, you should number your input files
+<code class="docutils literal notranslate"><span class="pre">.tpr</span></code> file name. If using multiple walkers, you should number your input files
 right before the extension, include a numberless file, and set the “inputfile” to
 be the same as the numberless. For example, if using four walkers, you should set
-your “inputfile” to <code class="docutils literal"><span class="pre">input.tpr</span></code> and have the following in your folder:</p>
+your “inputfile” to <code class="docutils literal notranslate"><span class="pre">input.tpr</span></code> and have the following in your folder:</p>
 <ul class="simple">
-<li><code class="docutils literal"><span class="pre">input.tpr</span></code></li>
-<li><code class="docutils literal"><span class="pre">input0.tpr</span></code></li>
-<li><code class="docutils literal"><span class="pre">input1.tpr</span></code></li>
-<li><code class="docutils literal"><span class="pre">input2.tpr</span></code></li>
-<li><code class="docutils literal"><span class="pre">input3.tpr</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">input.tpr</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">input0.tpr</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">input1.tpr</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">input2.tpr</span></code></li>
+<li><code class="docutils literal notranslate"><span class="pre">input3.tpr</span></code></li>
 </ul>
-<p>The numberless <code class="docutils literal"><span class="pre">input.tpr</span></code> will not be used. Then, for each walker, set the “type”
+<p>The numberless <code class="docutils literal notranslate"><span class="pre">input.tpr</span></code> will not be used. Then, for each walker, set the “type”
 to “Gromacs”, and define the number of MPI walkers to use for each walker with
 “number processors”. Finally, define your CV(s) and Methods, either generally or
 for each walker. You can start your simulation by calling the ssages executable:</p>
-<div class="highlight-bash"><div class="highlight"><pre>mpirun -np X ./ssages input.json
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>mpirun -np X ./ssages input.json
 </pre></div>
 </div>
 <p>where <cite>X</cite> is the total number of MPI processes. For example, for three walkers with
-<code class="docutils literal"><span class="pre">“number</span> <span class="pre">processors”</span> <span class="pre">:</span> <span class="pre">2</span></code>,  <span class="math">\(X = 3*2 = 6\)</span>.</p>
-<p>Normally, you can also define an observer in <code class="docutils literal"><span class="pre">.json</span></code> to automatically generate
+<code class="docutils literal notranslate"><span class="pre">“number</span> <span class="pre">processors”</span> <span class="pre">:</span> <span class="pre">2</span></code>,  <span class="math notranslate nohighlight">\(X = 3*2 = 6\)</span>.</p>
+<p>Normally, you can also define an observer in <code class="docutils literal notranslate"><span class="pre">.json</span></code> to automatically generate
 backups that will save both simulation snapshots as well as method-critical data.
 However, this feature is not yet implemented for GROMACS.</p>
-<p>There are example <code class="docutils literal"><span class="pre">.gro</span></code>, <code class="docutils literal"><span class="pre">.mdp</span></code>, <code class="docutils literal"><span class="pre">.top</span></code>, <code class="docutils literal"><span class="pre">.tpr</span></code> and <code class="docutils literal"><span class="pre">.json</span></code> inputs
+<p>There are example <code class="docutils literal notranslate"><span class="pre">.gro</span></code>, <code class="docutils literal notranslate"><span class="pre">.mdp</span></code>, <code class="docutils literal notranslate"><span class="pre">.top</span></code>, <code class="docutils literal notranslate"><span class="pre">.tpr</span></code> and <code class="docutils literal notranslate"><span class="pre">.json</span></code> inputs
 available in the Examples folder.</p>
 </div>
 
 
            </div>
-           <div class="articleComments">
-            
-           </div>
+           
           </div>
           <footer>
   
@@ -263,11 +257,11 @@ available in the Examples folder.</p>
   <div role="contentinfo">
     <p>
         &copy; Copyright 2016, the SSAGES Team.
-      Last updated on Feb 27, 2018.
+      Last updated on Dec 14, 2018.
 
     </p>
   </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
 
 </footer>
 
@@ -285,17 +279,18 @@ available in the Examples folder.</p>
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'./',
-            VERSION:'v0.8.0-alpha',
+            VERSION:'v0.8.3-alpha',
+            LANGUAGE:'None',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
             HAS_SOURCE:  true,
-            SOURCELINK_SUFFIX: ''
+            SOURCELINK_SUFFIX: '.txt'
         };
     </script>
       <script type="text/javascript" src="_static/jquery.js"></script>
       <script type="text/javascript" src="_static/underscore.js"></script>
       <script type="text/javascript" src="_static/doctools.js"></script>
-      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
   
 
@@ -304,14 +299,11 @@ available in the Examples folder.</p>
     <script type="text/javascript" src="_static/js/theme.js"></script>
   
 
-  
-  
   <script type="text/javascript">
       jQuery(function () {
-          SphinxRtdTheme.StickyNav.enable();
+          SphinxRtdTheme.Navigation.enable(true);
       });
-  </script>
-   
+  </script> 
 
 </body>
 </html>

@@ -1,3 +1,5 @@
 <map id="SSAGES::TorsionalCV::TorsionalCV" name="SSAGES::TorsionalCV::TorsionalCV">
-<area shape="rect" id="node2" href="$classSSAGES_1_1TorsionalCV.html#af442beb9f397716e4906b4fcf5a67edd" title="Returns the minimum image of a CV based on the input location. " alt="" coords="211,5,368,47"/>
+<area shape="rect" id="node2" href="$classSSAGES_1_1TorsionalCV.html#acfa27d84d60248c363d111a82f175749" title="Set up collective variable. " alt="" coords="211,5,368,47"/>
+<area shape="rect" id="node3" href="$classSSAGES_1_1CollectiveVariable.html#ab56eae0d888f3d5125566bfb9b5e21aa" title="Set up collective variable. " alt="" coords="416,5,607,47"/>
+<area shape="rect" id="node4" href="$classSSAGES_1_1ResourceHandler.html#ac026ad9aa098fa1508a78b0b5a91e8a2" title="Build a new ResourceHandler from JSON. " alt="" coords="655,5,841,47"/>
 </map>

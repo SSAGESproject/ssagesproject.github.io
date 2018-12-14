@@ -2,7 +2,7 @@
 <area shape="rect" id="node2" href="$classJson_1_1Requirement.html#a60bc275c366eb59f192fa2e621268480" title="Get list of error messages. " alt="" coords="531,5,671,47"/>
 <area shape="rect" id="node3" href="$classJson_1_1Requirement.html#adfaec336a9f051d6f6b9a6d7f1d97b75" title="Check if errors have occured. " alt="" coords="531,71,671,112"/>
 <area shape="rect" id="node4" href="$classJson_1_1ObjectRequirement.html#a4ed02ae1d612a5efba1688fcdd2df092" title="Parse JSON value to generate Requirement(s). " alt="" coords="279,449,450,491"/>
-<area shape="rect" id="node12" href="$classSSAGES_1_1Method.html#a5438a9b6cd41bcc86b9662b1af2313a0" title="Sets the collective variable mask. " alt="" coords="261,515,468,542"/>
+<area shape="rect" id="node12" href="$classSSAGES_1_1Method.html#a701c90bfcddeb2099b78528fea850c07" title="Sets the collective variable mask. " alt="" coords="261,515,468,542"/>
 <area shape="rect" id="node13" href="$classJson_1_1ObjectRequirement.html#a9ac3b920001a35bc70580035d8d802b7" title="Validate JSON value. " alt="" coords="279,201,450,243"/>
 <area shape="rect" id="node5" href="$classJson_1_1RequirementLoader.html#a82857d029b7ebfeb315f5b1b32401291" title="Extended Requirement loader. " alt="" coords="516,449,687,491"/>
 <area shape="rect" id="node6" href="$classJson_1_1RequirementLoader.html#aeb1344919deda4bd8b8aa8a00cb50390" title="Load specific requirement. " alt="" coords="516,515,687,556"/>

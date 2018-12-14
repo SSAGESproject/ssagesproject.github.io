@@ -1,11 +1,11 @@
 <map id="SSAGES::EventListener" name="SSAGES::EventListener">
 <area shape="rect" id="node2" href="$classSSAGES_1_1Constraint.html" title="Interface for Constraint implementations. " alt="" coords="219,56,364,83"/>
-<area shape="rect" id="node5" href="$classSSAGES_1_1Logger.html" title="Base class for logging SSAGES data. " alt="" coords="229,132,353,159"/>
+<area shape="rect" id="node5" href="$classSSAGES_1_1Logger.html" title="Base class for logging SSAGES data. " alt="" coords="229,144,353,171"/>
 <area shape="rect" id="node6" href="$classSSAGES_1_1Method.html" title="Interface for Method implementations. " alt="" coords="227,233,355,260"/>
 <area shape="rect" id="node3" href="$classSSAGES_1_1COPSS.html" title="Wrapper class for COPSS simulations. " alt="" coords="430,5,562,32"/>
 <area shape="rect" id="node4" href="$classSSAGES_1_1COPSSImage.html" title="Image method. " alt="" coords="412,56,580,83"/>
 <area shape="rect" id="node7" href="$classSSAGES_1_1ABF.html" title="Adaptive Biasing Force Algorithm. " alt="" coords="441,107,551,133"/>
-<area shape="rect" id="node8" href="$classSSAGES_1_1ANN.html" title="SSAGES::ANN" alt="" coords="439,157,553,184"/>
+<area shape="rect" id="node8" href="$classSSAGES_1_1ANN.html" title="Artificial Neural Network Method. " alt="" coords="439,157,553,184"/>
 <area shape="rect" id="node9" href="$classSSAGES_1_1BFS.html" title="Basis Function Sampling Algorithm. " alt="" coords="441,208,551,235"/>
 <area shape="rect" id="node10" href="$classSSAGES_1_1ForwardFlux.html" title="ForwardFlux sampling method. " alt="" coords="417,259,575,285"/>
 <area shape="rect" id="node12" href="$classSSAGES_1_1Meta.html" title="&quot;Vanilla&quot; multi&#45;dimensional Metadynamics. " alt="" coords="439,309,553,336"/>

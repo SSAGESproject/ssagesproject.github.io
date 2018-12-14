@@ -4,6 +4,7 @@ var searchData=
   ['map',['map',['../structSSAGES_1_1Map.html#afe83ef07abce6e3768164eed0b13808c',1,'SSAGES::Map']]],
   ['mass_5f',['mass_',['../classSSAGES_1_1ABF.html#ac4ad4bbc8a1796f32a93987c5879a695',1,'SSAGES::ABF']]],
   ['masses_5f',['masses_',['../classSSAGES_1_1Snapshot.html#a02d6d1d1a25a651f34ec2679c1690f90',1,'SSAGES::Snapshot']]],
+  ['massg_5f',['massg_',['../classSSAGES_1_1RouseModeCV.html#af43d192dbbaad89f6265719aa0abd3d8',1,'SSAGES::RouseModeCV']]],
   ['massweigh_5f',['massweigh_',['../classSSAGES_1_1ABF.html#aa792d019aee0f614a2a0935405244e91',1,'SSAGES::ABF']]],
   ['max_5f',['max_',['../classJson_1_1ArrayRequirement.html#aed522ba9c5dae843bc782d494662e514',1,'Json::ArrayRequirement::max_()'],['../classJson_1_1IntegerRequirement.html#ac123a3690b87f9c358d18e382e57ceda',1,'Json::IntegerRequirement::max_()'],['../classJson_1_1NumberRequirement.html#a26d8d6b76d092248b481b3998cf1b0a0',1,'Json::NumberRequirement::max_()'],['../classJson_1_1ObjectRequirement.html#a13a21a31cc99757b42618dccced0fbea',1,'Json::ObjectRequirement::max_()']]],
   ['maxiterator_5f',['maxiterator_',['../classSSAGES_1_1StringMethod.html#ae356401c09835d8c2c10b5f38e86bf92',1,'SSAGES::StringMethod']]],

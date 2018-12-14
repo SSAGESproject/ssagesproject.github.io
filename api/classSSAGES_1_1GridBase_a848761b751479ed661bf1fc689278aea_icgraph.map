@@ -1,9 +1,0 @@
-<map id="SSAGES::GridBase::GetPeriodic" name="SSAGES::GridBase::GetPeriodic">
-<area shape="rect" id="node2" href="$classSSAGES_1_1GridBase.html#abe96484a8fc2454042f72ff7d941f224" title="Return the Grid indices for a given point. " alt="" coords="268,5,440,47"/>
-<area shape="rect" id="node3" href="$classSSAGES_1_1GridBase.html#ad66abbaa378dcd1eb64a00951e231c84" title="Return the lower edges of the Grid. " alt="" coords="268,71,440,112"/>
-<area shape="rect" id="node4" href="$classSSAGES_1_1GridBase.html#a2e91c7b650b26630be53f089884fff8a" title="Get the number of points for all dimensions. " alt="" coords="268,136,440,177"/>
-<area shape="rect" id="node5" href="$classSSAGES_1_1GridBase.html#a8fbfe7b2fc7caf0eef4f0543c384b95d" title="Get the periodicity in a specific dimension. " alt="" coords="268,201,440,243"/>
-<area shape="rect" id="node6" href="$classSSAGES_1_1GridBase.html#af8112655077c7e989ff28a1828912847" title="Return the upper edges of the Grid. " alt="" coords="268,267,440,308"/>
-<area shape="rect" id="node7" href="$classSSAGES_1_1Histogram.html#a4d425497ce8b101cfc675d9e30f8b29e" title="Map d&#45;dimensional indices to 1&#45;d data vector. " alt="" coords="277,332,431,373"/>
-<area shape="rect" id="node8" href="$classSSAGES_1_1GridBase.html#a0a126a2ed3e9de4b37db9dca3162b6f1" title="Wrap the index around periodic boundaries. " alt="" coords="268,397,440,439"/>
-</map>

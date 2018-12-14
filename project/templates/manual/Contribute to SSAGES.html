@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Contribute to SSAGES &mdash; SSAGES v0.8.0-alpha documentation</title>
+  <title>Contribute to SSAGES &mdash; SSAGES v0.8.3-alpha documentation</title>
   
 
   
@@ -25,23 +25,19 @@
   
 
   
-  
     <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
-  
-
-  
-
-  
-    <link rel="top" title="SSAGES v0.8.0-alpha documentation" href="index.html"/>
-        <link rel="next" title="The SSAGES cookbook" href="The SSAGES Cookbook.html"/>
-        <link rel="prev" title="Write your own Methods and CVs" href="Write your own Methods and CVs.html"/> 
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="The SSAGES cookbook" href="The SSAGES Cookbook.html" />
+    <link rel="prev" title="Write your own Methods and CVs" href="Write your own Methods and CVs.html" /> 
 
   
   <script src="_static/js/modernizr.min.js"></script>
 
 </head>
 
-<body class="wy-body-for-nav" role="document">
+<body class="wy-body-for-nav">
 
    
   <div class="wy-grid-for-nav">
@@ -63,7 +59,7 @@
             
             
               <div class="version">
-                0.8.0
+                0.8.3
               </div>
             
           
@@ -95,7 +91,7 @@
 <li class="toctree-l1"><a class="reference internal" href="Collective Variables.html">Collective Variables</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Advanced Sampling Methods.html">Advanced Sampling Methods</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Write your own Methods and CVs.html">Write your own Methods and CVs</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="">Contribute to SSAGES</a><ul>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Contribute to SSAGES</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#reporting-bugs-and-wishes">Reporting bugs and wishes</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#improving-the-documentation">Improving the Documentation</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#building-the-documentation">Building the documentation</a></li>
@@ -126,7 +122,7 @@
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
 
       
-      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+      <nav class="wy-nav-top" aria-label="top navigation">
         
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="index.html">SSAGES</a>
@@ -134,9 +130,10 @@
       </nav>
 
 
-      
       <div class="wy-nav-content">
+        
         <div class="rst-content">
+        
           
 
 
@@ -165,7 +162,7 @@
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="_sources/Contribute to SSAGES.txt" rel="nofollow"> View page source</a>
+            <a href="_sources/Contribute to SSAGES.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -197,7 +194,7 @@ as an inclusive community welcoming new ideas and contributions.</p>
 <dt>Reporting, Triaging, and Fixing Bugs</dt>
 <dd>No software is without errors, inconsistencies, and strange behaviors. Even
 with zero programming knowledge, you can help tremendously by reporting bugs or confirming issued bugs.
-<a class="reference internal" href="#report-bugs"><span>Read more...</span></a></dd>
+<a class="reference internal" href="#report-bugs"><span class="std std-ref">Read more…</span></a></dd>
 <dt>Improving the SSAGES documentation</dt>
 <dd>SSAGES would like to have a detailed yet comprehensive documentation on what it
 does and how it does it. This should include concise introductions to the
@@ -205,14 +202,14 @@ methods, quick to learn tutorials, complete coverage of the nooks and
 crannies of each method, and of course helpful pointers in
 case you run into errors. And while the documentation is already expansive,
 improvements on it never go unappreciated.
-<a class="reference internal" href="#improve-documentation"><span>Read more...</span></a></dd>
+<a class="reference internal" href="#improve-documentation"><span class="std std-ref">Read more…</span></a></dd>
 <dt>Including your Method and CV in SSAGES</dt>
 <dd>You have developed a new Metadynamics scheme or a Collective Variable and
 want to make it available to the community via SSAGES? Great!
-<a class="reference internal" href="#add-your-method"><span>Read more...</span></a></dd>
+<a class="reference internal" href="#add-your-method"><span class="std std-ref">Read more…</span></a></dd>
 <dt>Working on the core SSAGES system</dt>
 <dd>If you would like to climb into the heart of SSAGES and get your hands
-dirty, this task is for you. <a class="reference internal" href="#work-on-core-ssages"><span>Read more...</span></a></dd>
+dirty, this task is for you. <a class="reference internal" href="#work-on-core-ssages"><span class="std std-ref">Read more…</span></a></dd>
 </dl>
 <div class="section" id="reporting-bugs-and-wishes">
 <span id="report-bugs"></span><h2>Reporting bugs and wishes<a class="headerlink" href="#reporting-bugs-and-wishes" title="Permalink to this headline">¶</a></h2>
@@ -248,30 +245,30 @@ are more helpful than a hundred pages of dry descriptions.</li>
 <p>Before you can work on the documentation, you first have to build it. The
 documentation is part of the SSAGES source code. It is assumed that you have already
 downloaded and built the source code as described in the
-<a class="reference internal" href="Getting Started.html#getting-started"><span>Getting Started</span></a> section. You will find a
-collection of rst files comprising the User Manual under <code class="docutils literal"><span class="pre">doc/source/</span></code> where
-the file ending <code class="docutils literal"><span class="pre">rst</span></code> stands for ReStructured Text. The API documentation on
+<a class="reference internal" href="Getting Started.html#getting-started"><span class="std std-ref">Getting Started</span></a> section. You will find a
+collection of rst files comprising the User Manual under <code class="docutils literal notranslate"><span class="pre">doc/source/</span></code> where
+the file ending <code class="docutils literal notranslate"><span class="pre">rst</span></code> stands for ReStructured Text. The API documentation on
 the other hand resides directly in the header files right next to the classes
 and functions they describe.</p>
 <p>Assuming you have already built SSAGES, building the documentation is as easy as
 typing
-<code class="docutils literal"><span class="pre">make</span> <span class="pre">doc</span></code>
+<code class="docutils literal notranslate"><span class="pre">make</span> <span class="pre">doc</span></code>
 in your build directory. In order to make correctly check that you have the
 following programs installed:</p>
 <ul class="simple">
-<li>Sphinx (with PyPI via <code class="docutils literal"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">Sphinx</span></code> for example)</li>
+<li>Sphinx (with PyPI via <code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">Sphinx</span></code> for example)</li>
 <li>Doxygen</li>
 <li>dot (in Ubuntu this is part of the graphViz package)</li>
-<li>Sphinx &#8220;<a class="reference external" href="https://github.com/snide/sphinx_rtd_theme">Read the docs</a>&#8221; theme (via <code class="docutils literal"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">sphinx_rtd_theme</span></code>)</li>
+<li>Sphinx “<a class="reference external" href="https://github.com/snide/sphinx_rtd_theme">Read the docs</a>” theme (via <code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">sphinx_rtd_theme</span></code>)</li>
 </ul>
 <p>Once you have successfully built the documentation you will find the User Manual
-under <code class="docutils literal"><span class="pre">doc/Manual/</span></code> and the API documentation under <code class="docutils literal"><span class="pre">doc/API-doc/html/</span></code>
-(relative to your build directory - do not confuse it with the <code class="docutils literal"><span class="pre">doc/</span></code> folder
+under <code class="docutils literal notranslate"><span class="pre">doc/Manual/</span></code> and the API documentation under <code class="docutils literal notranslate"><span class="pre">doc/API-doc/html/</span></code>
+(relative to your build directory - do not confuse it with the <code class="docutils literal notranslate"><span class="pre">doc/</span></code> folder
 in the main directory of the project). To view it in your favorite web
 browser (using FireFox as an example) just type</p>
-<p><code class="docutils literal"><span class="pre">firefox</span> <span class="pre">doc/Manual/index.html</span></code></p>
+<p><code class="docutils literal notranslate"><span class="pre">firefox</span> <span class="pre">doc/Manual/index.html</span></code></p>
 <p>for the User Manual or</p>
-<p><code class="docutils literal"><span class="pre">firefox</span> <span class="pre">doc/API-doc/html/index.html</span></code></p>
+<p><code class="docutils literal notranslate"><span class="pre">firefox</span> <span class="pre">doc/API-doc/html/index.html</span></code></p>
 <p>for the API documentation.</p>
 </div>
 <div class="section" id="how-to-write-documentation">
@@ -280,17 +277,17 @@ browser (using FireFox as an example) just type</p>
 into the details of <strong>Sphinx</strong> and <strong>Doxygen</strong> for the User Manual and the API
 documentation:</p>
 <ul>
-<li><p class="first">Write documentation &#8220;along the way&#8221;. Do not code first and write the
+<li><p class="first">Write documentation “along the way”. Do not code first and write the
 documentation later.</p>
 </li>
 <li><p class="first">Use helpful error messages. These are considered part of the documentation and
 probably are the part that is read most frequently.</p>
 </li>
-<li><p class="first">Do everything you can to structure the text. Let&#8217;s face it: Most people will
+<li><p class="first">Do everything you can to structure the text. Let’s face it: Most people will
 just skim the documentation. Feel encouraged to use all techniques that
 help to spot the relevant information, for example:</p>
 <ul class="simple">
-<li>Format your text <strong>bold</strong>, <em>italic</em>, <code class="docutils literal"><span class="pre">code</span></code>, etc.</li>
+<li>Format your text <strong>bold</strong>, <em>italic</em>, <code class="docutils literal notranslate"><span class="pre">code</span></code>, etc.</li>
 <li>Write in short paragraphs, use headers</li>
 <li>Use lists, code blocks, tables, etc.</li>
 </ul>
@@ -310,8 +307,8 @@ help to spot the relevant information, for example:</p>
 </li>
 <li><p class="first">Use examples, a lot of them</p>
 </li>
-<li><p class="first">In the initial stages: Don&#8217;t be a perfectionist. Missing documentation is the worst kind of documentation.
-&#8220;It is better to have written and coded than to have never written at all.&#8221;
+<li><p class="first">In the initial stages: Don’t be a perfectionist. Missing documentation is the worst kind of documentation.
+“It is better to have written and coded than to have never written at all.”
 -SSAGE advice</p>
 </li>
 </ul>
@@ -331,22 +328,22 @@ include:</p>
 <li><a class="reference external" href="http://docutils.sourceforge.net/docs/user/rst/quickref.html">http://docutils.sourceforge.net/docs/user/rst/quickref.html</a></li>
 <li><a class="reference external" href="http://openalea.gforge.inria.fr/doc/openalea/doc/_build/html/source/sphinx/rest_syntax.html">http://openalea.gforge.inria.fr/doc/openalea/doc/_build/html/source/sphinx/rest_syntax.html</a></li>
 </ul>
-<p>One of the great things of Sphinx is that most documentations have a &#8220;view page
-source&#8221; link where you can take a look at the Sphinx source code. Thus, the best
+<p>One of the great things of Sphinx is that most documentations have a “view page
+source” link where you can take a look at the Sphinx source code. Thus, the best
 way to learn Sphinx is to click on this link right now and look at the source
 code of this page. But here is a short summary of the most important commands:</p>
 <ul class="simple">
 <li>Markup: You can use *italic*, **bold**, and ``code`` for <em>italic</em>, <strong>bold</strong>
-and <code class="docutils literal"><span class="pre">code</span></code>.</li>
-<li>Headers. Underline your headers with at least three <code class="docutils literal"><span class="pre">===</span></code> for titles,
-<code class="docutils literal"><span class="pre">---</span></code> for subtitles, <code class="docutils literal"><span class="pre">^^^</span></code> for subsubtitles and <code class="docutils literal"><span class="pre">~~~</span></code> for paragraphs.</li>
-<li>Bullet lists are indicated by lines beginning with <code class="docutils literal"><span class="pre">*</span></code>.</li>
+and <code class="docutils literal notranslate"><span class="pre">code</span></code>.</li>
+<li>Headers. Underline your headers with at least three <code class="docutils literal notranslate"><span class="pre">===</span></code> for titles,
+<code class="docutils literal notranslate"><span class="pre">---</span></code> for subtitles, <code class="docutils literal notranslate"><span class="pre">^^^</span></code> for subsubtitles and <code class="docutils literal notranslate"><span class="pre">~~~</span></code> for paragraphs.</li>
+<li>Bullet lists are indicated by lines beginning with <code class="docutils literal notranslate"><span class="pre">*</span></code>.</li>
 </ul>
 <div class="admonition note">
 <p class="first admonition-title">Note</p>
-<p class="last">These highlighted blocks can be created with <code class="docutils literal"><span class="pre">..</span> <span class="pre">note::</span></code>. The content of
-this block needs to be indented. You can also use <code class="docutils literal"><span class="pre">warning</span></code> and
-<code class="docutils literal"><span class="pre">seealso</span></code>. Even more can be found
+<p class="last">These highlighted blocks can be created with <code class="docutils literal notranslate"><span class="pre">..</span> <span class="pre">note::</span></code>. The content of
+this block needs to be indented. You can also use <code class="docutils literal notranslate"><span class="pre">warning</span></code> and
+<code class="docutils literal notranslate"><span class="pre">seealso</span></code>. Even more can be found
 <a class="reference external" href="http://www.sphinx-doc.org/en/stable/markup/para.html">here</a>.</p>
 </div>
 </div>
@@ -363,15 +360,15 @@ the documentation. Examples for documentation created with Doxygen:</p>
 <li><a class="reference external" href="https://root.cern.ch/doc/master/index.html">Root</a></li>
 </ul>
 <p>The mainpage of the Doxygen documentation is written in a separate header file,
-in our case <code class="docutils literal"><span class="pre">doc/mainpage.h</span></code>. A good introduction to the Doxygen syntax can
+in our case <code class="docutils literal notranslate"><span class="pre">doc/mainpage.h</span></code>. A good introduction to the Doxygen syntax can
 be found at</p>
 <ul class="simple">
 <li><a class="reference external" href="http://www.stack.nl/~dimitri/doxygen/manual/docblocks.html">http://www.stack.nl/~dimitri/doxygen/manual/docblocks.html</a></li>
 </ul>
-<p>The basic rule is that Doxygen comments start with <code class="docutils literal"><span class="pre">//!</span></code> or <code class="docutils literal"><span class="pre">/*!</span></code> and
-document the class, namespace or function that directly follows it. Let&#8217;s start
+<p>The basic rule is that Doxygen comments start with <code class="docutils literal notranslate"><span class="pre">//!</span></code> or <code class="docutils literal notranslate"><span class="pre">/*!</span></code> and
+document the class, namespace or function that directly follows it. Let’s start
 with a short example:</p>
-<div class="highlight-cpp"><div class="highlight"><pre><span class="c1">//! Function taking the square of a value</span>
+<div class="highlight-cpp notranslate"><div class="highlight"><pre><span></span><span class="c1">//! Function taking the square of a value</span>
 <span class="cm">/*!</span>
 <span class="cm"> * \param val Input value</span>
 <span class="cm"> * \returns Square of the input value</span>
@@ -384,10 +381,10 @@ with a short example:</p>
 <span class="p">}</span>
 </pre></div>
 </div>
-<p>This example documents the function <code class="docutils literal"><span class="pre">square()</span></code> which simply calculates the
-square of a number. The first line, starting with <code class="docutils literal"><span class="pre">//!</span></code>, is the brief
+<p>This example documents the function <code class="docutils literal notranslate"><span class="pre">square()</span></code> which simply calculates the
+square of a number. The first line, starting with <code class="docutils literal notranslate"><span class="pre">//!</span></code>, is the brief
 description and should not be longer than one line. The second comment block,
-starting with <code class="docutils literal"><span class="pre">/*!</span></code> is the full description. Here, two special commands
+starting with <code class="docutils literal notranslate"><span class="pre">/*!</span></code> is the full description. Here, two special commands
 are used:</p>
 <dl class="docutils">
 <dt>\param</dt>
@@ -402,7 +399,7 @@ the most important, apart from the two mentioned above, are:</p>
 <dd>Used to document a template parameter.</dd>
 <dt>\ingroup</dt>
 <dd>This class is part of a group, such as Methods or Core. The groups are
-defined in <code class="docutils literal"><span class="pre">doc/mainpage.h</span></code>.</dd>
+defined in <code class="docutils literal notranslate"><span class="pre">doc/mainpage.h</span></code>.</dd>
 </dl>
 <p>Helpful are also boxes highlighting a given aspect of the function, such as:</p>
 <dl class="docutils">
@@ -413,7 +410,7 @@ defined in <code class="docutils literal"><span class="pre">doc/mainpage.h</span
 <dt>\remark</dt>
 <dd>Starts a paragraph where remarks may be entered.</dd>
 <dt>\see</dt>
-<dd>Paragraph for &#8220;See also&#8221;.</dd>
+<dd>Paragraph for “See also”.</dd>
 <dt>\deprecated</dt>
 <dd>The documented class or function is deprecated and only kept for backwards
 compatibility.</dd>
@@ -430,7 +427,7 @@ compatibility.</dd>
 <dd>For typewriter font. To have more text in typewriter font, use
 &lt;tt&gt;Typewriter Font&lt;/tt&gt;.</dd>
 <dt>\code</dt>
-<dd>Starts a <code class="docutils literal"><span class="pre">code</span></code> block. The block ends with <strong>\endcode</strong>.</dd>
+<dd>Starts a <code class="docutils literal notranslate"><span class="pre">code</span></code> block. The block ends with <strong>\endcode</strong>.</dd>
 <dt>\li</dt>
 <dd>A line starting with <strong>\li</strong> is an entry in a bullet list.</dd>
 </dl>
@@ -442,15 +439,15 @@ example:</p>
 <dt>\f[ and \f]</dt>
 <dd>Start and end a display-style LaTeX equation.</dd>
 <dt>\cite &lt;label&gt;</dt>
-<dd>Cite a reference. The references are listed in <code class="docutils literal"><span class="pre">doc/references.bib</span></code> and
+<dd>Cite a reference. The references are listed in <code class="docutils literal notranslate"><span class="pre">doc/references.bib</span></code> and
 follow the BibTex syntax.</dd>
 </dl>
 <p>Doxygen is very clever in producing automatic links. For example, there
-exists a class <code class="docutils literal"><span class="pre">Method</span></code> in SSAGES. Thus, Doxygen automatically creates a
-link to the documentation of this class where the word &#8220;Method&#8221; appears. This
-does, however, not work for the plural, &#8220;Methods&#8221;. Instead, you can write
-<code class="docutils literal"><span class="pre">\link</span> <span class="pre">Method</span> <span class="pre">Methods</span> <span class="pre">\endlink</span></code>. On the other hand, if you want to prevent
-Doxygen from creating an autolink, put a <code class="docutils literal"><span class="pre">%</span></code> in front of the word.</p>
+exists a class <code class="docutils literal notranslate"><span class="pre">Method</span></code> in SSAGES. Thus, Doxygen automatically creates a
+link to the documentation of this class where the word “Method” appears. This
+does, however, not work for the plural, “Methods”. Instead, you can write
+<code class="docutils literal notranslate"><span class="pre">\link</span> <span class="pre">Method</span> <span class="pre">Methods</span> <span class="pre">\endlink</span></code>. On the other hand, if you want to prevent
+Doxygen from creating an autolink, put a <code class="docutils literal notranslate"><span class="pre">%</span></code> in front of the word.</p>
 </div>
 </div>
 <div class="section" id="what-to-document">
@@ -472,7 +469,7 @@ requirements, etc.</li>
 <span id="add-your-method"></span><h2>Adding your method to SSAGES<a class="headerlink" href="#adding-your-method-to-ssages" title="Permalink to this headline">¶</a></h2>
 <div class="admonition seealso">
 <p class="first admonition-title">See also</p>
-<p class="last">See <a class="reference internal" href="Write your own Methods and CVs.html#write-your-own-method"><span>here</span></a> for an introduction to how to
+<p class="last">See <a class="reference internal" href="Write your own Methods and CVs.html#write-your-own-method"><span class="std std-ref">here</span></a> for an introduction to how to
 develop your own method.</p>
 </div>
 <p>So, you have developed a new Metadynamics method or a new collective variable (CV)?
@@ -486,7 +483,7 @@ please give a small example of usage. In which case(s) does the new CV come in
 handy?</li>
 <li>Your method needs to come with the necessary documentation. For others to
 be able to use your method, you will have to explain how it works. You can
-take a look at the section <a class="reference internal" href="#improve-documentation"><span>&#8220;How to improve the documentation&#8221;</span></a> for a starter on how to write good documentation.</li>
+take a look at the section <a class="reference internal" href="#improve-documentation"><span class="std std-ref">“How to improve the documentation”</span></a> for a starter on how to write good documentation.</li>
 <li>Please provide an example system. This could be the folding of an
 Alanine Dipeptide molecule, a NaCl system or just a toy model with a simple
 energy landscape. As long as the system is small and the method can easily
@@ -507,9 +504,7 @@ SSAGES code.</p>
 
 
            </div>
-           <div class="articleComments">
-            
-           </div>
+           
           </div>
           <footer>
   
@@ -528,11 +523,11 @@ SSAGES code.</p>
   <div role="contentinfo">
     <p>
         &copy; Copyright 2016, the SSAGES Team.
-      Last updated on Feb 27, 2018.
+      Last updated on Dec 14, 2018.
 
     </p>
   </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
 
 </footer>
 
@@ -550,17 +545,18 @@ SSAGES code.</p>
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'./',
-            VERSION:'v0.8.0-alpha',
+            VERSION:'v0.8.3-alpha',
+            LANGUAGE:'None',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
             HAS_SOURCE:  true,
-            SOURCELINK_SUFFIX: ''
+            SOURCELINK_SUFFIX: '.txt'
         };
     </script>
       <script type="text/javascript" src="_static/jquery.js"></script>
       <script type="text/javascript" src="_static/underscore.js"></script>
       <script type="text/javascript" src="_static/doctools.js"></script>
-      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
   
 
@@ -569,14 +565,11 @@ SSAGES code.</p>
     <script type="text/javascript" src="_static/js/theme.js"></script>
   
 
-  
-  
   <script type="text/javascript">
       jQuery(function () {
-          SphinxRtdTheme.StickyNav.enable();
+          SphinxRtdTheme.Navigation.enable(true);
       });
-  </script>
-   
+  </script> 
 
 </body>
 </html>

@@ -6,8 +6,8 @@
 <area shape="rect" id="node11" href="$classSSAGES_1_1Hook.html#a4611311693b1863e375c699594a5dbb9" title="Sets the current CV manager. " alt="" coords="223,208,436,235"/>
 <area shape="rect" id="node12" href="$classSSAGES_1_1Hook.html#ae859e87854f2a59420a1703e244c3032" title="Sets the active snapshot. " alt="" coords="230,259,429,285"/>
 <area shape="rect" id="node5" href="$classSSAGES_1_1Snapshot.html#a1bc1d505100ddaebd9a7650c55d35001" title="Set the &quot;changed&quot; flag of the Snapshot. " alt="" coords="511,99,711,125"/>
-<area shape="rect" id="node6" href="$classSSAGES_1_1CVManager.html#a7317d7a4400d1c6ece08559f146dc049" title="Get CV iterator. " alt="" coords="529,150,692,191"/>
-<area shape="rect" id="node7" href="$classSSAGES_1_1Snapshot.html#acaee0172694743e118273a055ff2c3fc" title="Get the current iteration. " alt="" coords="503,267,719,293"/>
-<area shape="rect" id="node8" href="$classSSAGES_1_1Snapshot.html#ac047da6094f31ab617127a4980104b5a" title="Query if Snapshot was modified. " alt="" coords="499,216,723,243"/>
+<area shape="rect" id="node6" href="$classSSAGES_1_1CVManager.html#a9b4f51cba87bd962ae966c817cb710c8" title="Get CV iterator. " alt="" coords="529,150,692,191"/>
+<area shape="rect" id="node7" href="$classSSAGES_1_1Snapshot.html#ab38cbf3c463820d1b8bbd733759bfa32" title="Get the current iteration. " alt="" coords="503,267,719,293"/>
+<area shape="rect" id="node8" href="$classSSAGES_1_1Snapshot.html#a10c9c038f0caa4a6e6832f96a8a647d5" title="Query if Snapshot was modified. " alt="" coords="499,216,723,243"/>
 <area shape="rect" id="node9" href="$classSSAGES_1_1Hook.html#a3f2e8e7df9355515237c7548f679a893" title="Synchronization to the simulation engine. " alt="" coords="506,48,715,75"/>
 </map>

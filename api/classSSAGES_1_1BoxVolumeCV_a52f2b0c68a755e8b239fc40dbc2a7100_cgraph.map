@@ -1,24 +1,5 @@
 <map id="SSAGES::BoxVolumeCV::Evaluate" name="SSAGES::BoxVolumeCV::Evaluate">
-<area shape="rect" id="node2" href="$classSSAGES_1_1BoxVolumeCV.html#a7ee65e561d37693a782f8b61b0005ba8" title="Constructor. " alt="" coords="266,5,437,47"/>
-<area shape="rect" id="node3" href="$classSSAGES_1_1Snapshot.html#a9079d14677b94ff2c88c1f35c867c303" title="Get communicator for walker. " alt="" coords="224,71,479,98"/>
-<area shape="rect" id="node4" href="$classJson_1_1Requirement.html#a60bc275c366eb59f192fa2e621268480" title="Get list of error messages. " alt="" coords="542,60,682,101"/>
-<area shape="rect" id="node5" href="$classSSAGES_1_1Snapshot.html#ae05879b78672cd4899a06ae2d6a140fd" title="Get number of atoms in this snapshot. " alt="" coords="253,289,450,331"/>
-<area shape="rect" id="node6" href="$classSSAGES_1_1Snapshot.html#a056aace63325d03d5357cee25e6b240f" title="Get system volume. " alt="" coords="245,355,458,382"/>
-<area shape="rect" id="node7" href="$classJson_1_1Requirement.html#adfaec336a9f051d6f6b9a6d7f1d97b75" title="Check if errors have occured. " alt="" coords="542,125,682,167"/>
-<area shape="rect" id="node8" href="$classJson_1_1ObjectRequirement.html#a4ed02ae1d612a5efba1688fcdd2df092" title="Parse JSON value to generate Requirement(s). " alt="" coords="266,537,437,579"/>
-<area shape="rect" id="node16" href="$classJson_1_1ObjectRequirement.html#a9ac3b920001a35bc70580035d8d802b7" title="Validate JSON value. " alt="" coords="266,224,437,265"/>
-<area shape="rect" id="node9" href="$classJson_1_1RequirementLoader.html#a82857d029b7ebfeb315f5b1b32401291" title="Extended Requirement loader. " alt="" coords="527,504,697,545"/>
-<area shape="rect" id="node10" href="$classJson_1_1RequirementLoader.html#aeb1344919deda4bd8b8aa8a00cb50390" title="Load specific requirement. " alt="" coords="527,569,697,611"/>
-<area shape="rect" id="node11" href="$classJson_1_1ObjectRequirement.html#a4f2e76636df4f7b153aaac02a1b05e4f" title="Reset Requirement. " alt="" coords="527,635,697,676"/>
-<area shape="rect" id="node12" href="$classJson_1_1ObjectRequirement.html#aa8181c37cbe67db098bc2b82cdea71ef" title="Clear errors on all Requirements. " alt="" coords="745,667,916,708"/>
-<area shape="rect" id="node14" href="$classJson_1_1ObjectRequirement.html#a4fc797684496f4f0381d1388877c133d" title="Clear notices on all Requirements. " alt="" coords="745,601,916,643"/>
-<area shape="rect" id="node13" href="$classJson_1_1Requirement.html#ace71ebbbcc885f0c4c391a3807c80f33" title="Clear list of error messages. " alt="" coords="964,667,1104,708"/>
-<area shape="rect" id="node15" href="$classJson_1_1Requirement.html#a8a8a4020e4955be56dcacf4727ae5bc3" title="Clear list of notice messages. " alt="" coords="964,601,1104,643"/>
-<area shape="rect" id="node17" href="$classJson_1_1Requirement.html#a46a0056414100386541cd1cb899e0030" title="Get list of notices. " alt="" coords="542,191,682,232"/>
-<area shape="rect" id="node18" href="$classJson_1_1Requirement.html#ad407cff3cc37295c3b2a7ebe31798548" title="Check if notices have been queued. " alt="" coords="542,256,682,297"/>
-<area shape="rect" id="node19" href="$classJson_1_1Requirement.html#adeb9efa6cf271d9cea0599ff2d458a08" title="Add error to list of error messages. " alt="" coords="542,321,682,363"/>
-<area shape="rect" id="node20" href="$classJson_1_1Requirement.html#a00feadb29fa33f4f2cca7362f12aaed4" title="Add message to list of notices. " alt="" coords="542,387,682,428"/>
-<area shape="rect" id="node23" href="$classJson_1_1Requirement.html#aa97494b642414d00482745a0d5b2c2c3" title="Validate that JSON value meets requirements. " alt="" coords="761,449,901,491"/>
-<area shape="rect" id="node21" href="$classJson_1_1Requirement.html#af13c20497e7ad6c332c57fa80a266e27" title="Parse JSON value. " alt="" coords="761,384,901,425"/>
-<area shape="rect" id="node22" href="$classJson_1_1Requirement.html#a34bda791587973d7e5b5c222936b2d4e" title="Reset validator. " alt="" coords="761,319,901,360"/>
+<area shape="rect" id="node2" href="$classSSAGES_1_1Snapshot.html#a4811c9435e56196d5525832345ef1680" title="Get communicator for walker. " alt="" coords="224,5,479,32"/>
+<area shape="rect" id="node3" href="$classSSAGES_1_1Snapshot.html#a103af07a012d55a9637f6203c7eba0af" title="Get number of atoms in this snapshot. " alt="" coords="253,57,450,98"/>
+<area shape="rect" id="node4" href="$classSSAGES_1_1Snapshot.html#a432a80204546729ec3d1cfb14bb56575" title="Get system volume. " alt="" coords="245,123,458,149"/>
 </map>

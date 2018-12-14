@@ -1,29 +1,10 @@
 <map id="SSAGES::ParticlePositionCV::Evaluate" name="SSAGES::ParticlePositionCV::Evaluate">
-<area shape="rect" id="node2" href="$classSSAGES_1_1Snapshot.html#a46d2a991fd3446bfe6f6f72291ec1483" title="Apply minimum image to a vector. " alt="" coords="229,5,464,47"/>
-<area shape="rect" id="node4" href="$classSSAGES_1_1Snapshot.html#a3527cc78f7c8be1690992da44524ab19" title="SSAGES::Snapshot::Center\lOfMass" alt="" coords="253,71,440,112"/>
-<area shape="rect" id="node5" href="$classSSAGES_1_1Snapshot.html#a19de6aadba8b8eed8c96dc1e67087e62" title="Compute the total mass of a group of particles based on index. " alt="" coords="512,70,721,97"/>
-<area shape="rect" id="node6" href="$classJson_1_1Requirement.html#a60bc275c366eb59f192fa2e621268480" title="Get list of error messages. " alt="" coords="547,121,687,163"/>
-<area shape="rect" id="node7" href="$classSSAGES_1_1Snapshot.html#abeef8bea41bf9706855c59b6cde0777a" title="SSAGES::Snapshot::GetLocal\lIndices" alt="" coords="247,355,447,396"/>
-<area shape="rect" id="node9" href="$classSSAGES_1_1Snapshot.html#a035ed6fb2cd46d4f66d1614bd90ad14b" title="Const access to the particle masses. " alt="" coords="239,421,454,447"/>
-<area shape="rect" id="node10" href="$classSSAGES_1_1Snapshot.html#ae05879b78672cd4899a06ae2d6a140fd" title="Get number of atoms in this snapshot. " alt="" coords="248,472,445,513"/>
-<area shape="rect" id="node11" href="$classJson_1_1Requirement.html#adfaec336a9f051d6f6b9a6d7f1d97b75" title="Check if errors have occured. " alt="" coords="547,187,687,228"/>
-<area shape="rect" id="node12" href="$classJson_1_1ObjectRequirement.html#a4ed02ae1d612a5efba1688fcdd2df092" title="Parse JSON value to generate Requirement(s). " alt="" coords="261,631,432,672"/>
-<area shape="rect" id="node20" href="$classSSAGES_1_1ParticlePositionCV.html#aae4759b59e6df57a3848b029062115ec" title="Constructor. " alt="" coords="259,696,435,737"/>
-<area shape="rect" id="node21" href="$classJson_1_1ObjectRequirement.html#a9ac3b920001a35bc70580035d8d802b7" title="Validate JSON value. " alt="" coords="261,289,432,331"/>
+<area shape="rect" id="node2" href="$classSSAGES_1_1Snapshot.html#ad6caa5b92433501fd4a62deef288340a" title="Apply minimum image to a vector. " alt="" coords="229,5,464,47"/>
+<area shape="rect" id="node4" href="$classSSAGES_1_1Snapshot.html#a8195dc7a8a536999f63e20b4cb86639b" title="SSAGES::Snapshot::Center\lOfMass" alt="" coords="253,71,440,112"/>
+<area shape="rect" id="node5" href="$classSSAGES_1_1Snapshot.html#a77cfe35b720393223aa5c7410b2dd3ad" title="Compute the total mass of a group of particles based on index. " alt="" coords="512,107,721,134"/>
+<area shape="rect" id="node6" href="$classSSAGES_1_1Snapshot.html#a196a91c541c72bcb5147b9e60a44ea8b" title="SSAGES::Snapshot::GetLocal\lIndices" alt="" coords="247,188,447,229"/>
+<area shape="rect" id="node8" href="$classSSAGES_1_1Snapshot.html#abef8348e7811deeea88a7ff8f49a1af4" title="Const access to the particle masses. " alt="" coords="239,254,454,281"/>
+<area shape="rect" id="node9" href="$classSSAGES_1_1Snapshot.html#a103af07a012d55a9637f6203c7eba0af" title="Get number of atoms in this snapshot. " alt="" coords="248,305,445,347"/>
 <area shape="rect" id="node3" href="$namespaceSSAGES.html#a49bb77a1b5822888753c96c70780ab47" title="Quick helper function to round a double. " alt="" coords="556,13,677,39"/>
-<area shape="rect" id="node8" href="$classSSAGES_1_1Snapshot.html#a3ecf272dca61538320a4d503303fa9ba" title="Gets the local atom index corresponding to an atom ID. " alt="" coords="517,565,717,607"/>
-<area shape="rect" id="node13" href="$classJson_1_1RequirementLoader.html#a82857d029b7ebfeb315f5b1b32401291" title="Extended Requirement loader. " alt="" coords="531,631,702,672"/>
-<area shape="rect" id="node14" href="$classJson_1_1RequirementLoader.html#aeb1344919deda4bd8b8aa8a00cb50390" title="Load specific requirement. " alt="" coords="531,696,702,737"/>
-<area shape="rect" id="node15" href="$classJson_1_1ObjectRequirement.html#a4f2e76636df4f7b153aaac02a1b05e4f" title="Reset Requirement. " alt="" coords="531,761,702,803"/>
-<area shape="rect" id="node16" href="$classJson_1_1ObjectRequirement.html#aa8181c37cbe67db098bc2b82cdea71ef" title="Clear errors on all Requirements. " alt="" coords="769,793,940,835"/>
-<area shape="rect" id="node18" href="$classJson_1_1ObjectRequirement.html#a4fc797684496f4f0381d1388877c133d" title="Clear notices on all Requirements. " alt="" coords="769,728,940,769"/>
-<area shape="rect" id="node17" href="$classJson_1_1Requirement.html#ace71ebbbcc885f0c4c391a3807c80f33" title="Clear list of error messages. " alt="" coords="988,793,1128,835"/>
-<area shape="rect" id="node19" href="$classJson_1_1Requirement.html#a8a8a4020e4955be56dcacf4727ae5bc3" title="Clear list of notice messages. " alt="" coords="988,728,1128,769"/>
-<area shape="rect" id="node22" href="$classJson_1_1Requirement.html#a46a0056414100386541cd1cb899e0030" title="Get list of notices. " alt="" coords="547,500,687,541"/>
-<area shape="rect" id="node23" href="$classJson_1_1Requirement.html#ad407cff3cc37295c3b2a7ebe31798548" title="Check if notices have been queued. " alt="" coords="547,252,687,293"/>
-<area shape="rect" id="node24" href="$classJson_1_1Requirement.html#adeb9efa6cf271d9cea0599ff2d458a08" title="Add error to list of error messages. " alt="" coords="547,317,687,359"/>
-<area shape="rect" id="node25" href="$classJson_1_1Requirement.html#a00feadb29fa33f4f2cca7362f12aaed4" title="Add message to list of notices. " alt="" coords="547,383,687,424"/>
-<area shape="rect" id="node28" href="$classJson_1_1Requirement.html#aa97494b642414d00482745a0d5b2c2c3" title="Validate that JSON value meets requirements. " alt="" coords="785,445,925,487"/>
-<area shape="rect" id="node26" href="$classJson_1_1Requirement.html#af13c20497e7ad6c332c57fa80a266e27" title="Parse JSON value. " alt="" coords="785,315,925,356"/>
-<area shape="rect" id="node27" href="$classJson_1_1Requirement.html#a34bda791587973d7e5b5c222936b2d4e" title="Reset validator. " alt="" coords="785,380,925,421"/>
+<area shape="rect" id="node7" href="$classSSAGES_1_1Snapshot.html#a7146597433bcfd256385db274330cd36" title="Gets the local atom index corresponding to an atom ID. " alt="" coords="517,188,717,229"/>
 </map>

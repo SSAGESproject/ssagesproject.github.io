@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Elastic Band &mdash; SSAGES v0.8.0-alpha documentation</title>
+  <title>Elastic Band &mdash; SSAGES v0.8.3-alpha documentation</title>
   
 
   
@@ -25,24 +25,19 @@
   
 
   
-  
     <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
-  
-
-  
-
-  
-    <link rel="top" title="SSAGES v0.8.0-alpha documentation" href="index.html"/>
-        <link rel="up" title="Advanced Sampling Methods" href="Advanced Sampling Methods.html"/>
-        <link rel="next" title="Finite Temperature String" href="Finite Temperature String.html"/>
-        <link rel="prev" title="Basis Function Sampling" href="Basis Function Sampling.html"/> 
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Finite Temperature String" href="Finite Temperature String.html" />
+    <link rel="prev" title="Basis Function Sampling" href="Basis Function Sampling.html" /> 
 
   
   <script src="_static/js/modernizr.min.js"></script>
 
 </head>
 
-<body class="wy-body-for-nav" role="document">
+<body class="wy-body-for-nav">
 
    
   <div class="wy-grid-for-nav">
@@ -64,7 +59,7 @@
             
             
               <div class="version">
-                0.8.0
+                0.8.3
               </div>
             
           
@@ -98,7 +93,7 @@
 <li class="toctree-l2"><a class="reference internal" href="Adaptive Biasing Force Algorithm.html">Adaptive Biasing Force Algorithm</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Artificial Neural Network Sampling.html">Artificial Neural Network Sampling</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Basis Function Sampling.html">Basis Function Sampling</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="">Elastic Band</a><ul>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Elastic Band</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#introduction">Introduction</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#options-parameters">Options &amp; Parameters</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#tutorial">Tutorial</a></li>
@@ -132,7 +127,7 @@
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
 
       
-      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+      <nav class="wy-nav-top" aria-label="top navigation">
         
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="index.html">SSAGES</a>
@@ -140,9 +135,10 @@
       </nav>
 
 
-      
       <div class="wy-nav-content">
+        
         <div class="rst-content">
+        
           
 
 
@@ -173,7 +169,7 @@
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="_sources/Elastic Band.txt" rel="nofollow"> View page source</a>
+            <a href="_sources/Elastic Band.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -215,24 +211,24 @@ forces act similarly to reparameterization schemes common to the string method.<
 <a class="reference external" href="elastic-band-references">references</a>, but a brief overview is given here. The
 band is discretized as a series of N+1 images, and the force on each image is
 given by:</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[F_{i} = F_{i,\parallel}^{s} - \nabla E(R_{i})_{\perp}\]</div>
-<p>Where <span class="math">\(F_{i}\)</span> is the total force on the image, <span class="math">\(F_{i,\parallel}^{s}\)</span>
+<p>Where <span class="math notranslate nohighlight">\(F_{i}\)</span> is the total force on the image, <span class="math notranslate nohighlight">\(F_{i,\parallel}^{s}\)</span>
 refers to the parallel component of the spring force on the ith image, and
-<span class="math">\(\nabla E(R_{i})_{\perp}\)</span> is the perpendicular component of the gradient
-of the energy evaluated at each image <span class="math">\(R_{i}\)</span>. The second term on the
+<span class="math notranslate nohighlight">\(\nabla E(R_{i})_{\perp}\)</span> is the perpendicular component of the gradient
+of the energy evaluated at each image <span class="math notranslate nohighlight">\(R_{i}\)</span>. The second term on the
 right hand side is the “true force” and is evaluated as:</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[\nabla E(R_{i})_{\perp} = \nabla E(R_{i}) - \nabla E(R_{i})\cdot\hat{\tau_{i}}\]</div>
-<p>The term <span class="math">\(\hat{\tau_{i}}\)</span> represents the normalized local tangent at the
+<p>The term <span class="math notranslate nohighlight">\(\hat{\tau_{i}}\)</span> represents the normalized local tangent at the
 ith image, and thus this equation states simply that the perpendicular component
 of the gradient is the full gradient minus the parallel portion of the gradient.
 There are different schemes available in literature to evaluate the tangent
 vector <a class="footnote-reference" href="#id7" id="id4">[2]</a>. The “spring force” is calculated as:</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[F_{i,\parallel}^{s} = k \left( \lvert R_{i+1} - R_{i} \rvert -
                                \lvert R_{i} - R_{i-1} \rvert \right) \cdot \hat{\tau_{i}}\]</div>
-<p>Where <span class="math">\(k\)</span> is the spring constant, which can be different for each image of
+<p>Where <span class="math notranslate nohighlight">\(k\)</span> is the spring constant, which can be different for each image of
 the band.  One can evolve the images with these forces according to any number
 of schemes - a straightforward Verlet integration scheme is used in the SSAGES
 implementation, described below.</p>
@@ -245,7 +241,7 @@ not necessarily be in the basins of interest; the method should allow the
 ends to naturally fall into nearby metastable basins.</li>
 <li>For each image of the band, a molecular system with atomic coordinates that
 roughly correspond to the collective variables of that image is constructed.
-A period of equilibration is performed to ensure that the underlying systems&#8217;
+A period of equilibration is performed to ensure that the underlying systems’
 CVs match their respective band images.</li>
 <li>The gradient is sampled over a user-defined period of time and intervals,
 this being the only quantity with statistical variance that needs to be
@@ -312,29 +308,29 @@ set to 1.</dd>
 <p>This tutorial will walk you step by step through the user example provided with
 the SSAGES source code that runs the NEB method on the alanine dipeptide using
 LAMMPS.  First, be sure you have compiled SSAGES with LAMMPS.  Then, navigate to
-the <code class="docutils literal"><span class="pre">SSAGES/Examples/User/ElasticBand/ADP</span></code> subdirectory.  Now, take a moment
-to observe the <code class="docutils literal"><span class="pre">in.ADP_Test</span> <span class="pre">and</span> <span class="pre">data.input</span></code> files in order to familiarize
+the <code class="docutils literal notranslate"><span class="pre">SSAGES/Examples/User/ElasticBand/ADP</span></code> subdirectory.  Now, take a moment
+to observe the <code class="docutils literal notranslate"><span class="pre">in.ADP_Test</span> <span class="pre">and</span> <span class="pre">data.input</span></code> files in order to familiarize
 yourself with the system being simulated.</p>
-<p>The next two files of interest are the <code class="docutils literal"><span class="pre">Template_Input.json</span></code> input file and the
-<code class="docutils literal"><span class="pre">Input_Generator.py</span></code> script.  Both of these files can be modified in your
+<p>The next two files of interest are the <code class="docutils literal notranslate"><span class="pre">Template_Input.json</span></code> input file and the
+<code class="docutils literal notranslate"><span class="pre">Input_Generator.py</span></code> script.  Both of these files can be modified in your
 text editor of choice to customize the inputs, but for this tutorial, simply
-observe them and leave them be.  <code class="docutils literal"><span class="pre">Template_Input.json</span></code> contains all the information
-necessary to fully specify one driver; <code class="docutils literal"><span class="pre">Input_Generator.py</span></code> copies this
+observe them and leave them be.  <code class="docutils literal notranslate"><span class="pre">Template_Input.json</span></code> contains all the information
+necessary to fully specify one driver; <code class="docutils literal notranslate"><span class="pre">Input_Generator.py</span></code> copies this
 information a number of times specified within the script (for this tutorial,
 22 times) while also linearly interpolating through the start and end states
 defined in the script and substituting the correct values into the “centers”
 portion of the method definition.  Execute this script as follows:</p>
-<div class="highlight-bash"><div class="highlight"><pre>python Input_Generator.py
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>python Input_Generator.py
 </pre></div>
 </div>
-<p>You will produce a file called <code class="docutils literal"><span class="pre">ElasticBand.json</span></code>. You can also open this file to
+<p>You will produce a file called <code class="docutils literal notranslate"><span class="pre">ElasticBand.json</span></code>. You can also open this file to
 verify for yourself that the script did what it was supposed to do.  Now, with
 your JSON input and your SSAGES binary, you have everything you need to perform
 a simulation.  Simply run:</p>
-<div class="highlight-bash"><div class="highlight"><pre>mpiexec -np <span class="m">22</span> ./ssages ElasticBand.json
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>mpiexec -np <span class="m">22</span> ./ssages ElasticBand.json
 </pre></div>
 </div>
-<p>Soon, the simulation will produce a <code class="docutils literal"><span class="pre">node-X.log</span></code> file for each driver, where
+<p>Soon, the simulation will produce a <code class="docutils literal notranslate"><span class="pre">node-X.log</span></code> file for each driver, where
 X is the number specifying the driver (in this case, 0-21 for our 22 drivers).
 Each one will report the following information, in order: the node number, the
 iteration number, and for each CV, the current value of the band CV as well as
@@ -370,9 +366,7 @@ J. Chem. Phys. <strong>113</strong>, 9978 (2000).</td></tr>
 
 
            </div>
-           <div class="articleComments">
-            
-           </div>
+           
           </div>
           <footer>
   
@@ -391,11 +385,11 @@ J. Chem. Phys. <strong>113</strong>, 9978 (2000).</td></tr>
   <div role="contentinfo">
     <p>
         &copy; Copyright 2016, the SSAGES Team.
-      Last updated on Feb 27, 2018.
+      Last updated on Dec 14, 2018.
 
     </p>
   </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
 
 </footer>
 
@@ -413,17 +407,18 @@ J. Chem. Phys. <strong>113</strong>, 9978 (2000).</td></tr>
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'./',
-            VERSION:'v0.8.0-alpha',
+            VERSION:'v0.8.3-alpha',
+            LANGUAGE:'None',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
             HAS_SOURCE:  true,
-            SOURCELINK_SUFFIX: ''
+            SOURCELINK_SUFFIX: '.txt'
         };
     </script>
       <script type="text/javascript" src="_static/jquery.js"></script>
       <script type="text/javascript" src="_static/underscore.js"></script>
       <script type="text/javascript" src="_static/doctools.js"></script>
-      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
   
 
@@ -432,14 +427,11 @@ J. Chem. Phys. <strong>113</strong>, 9978 (2000).</td></tr>
     <script type="text/javascript" src="_static/js/theme.js"></script>
   
 
-  
-  
   <script type="text/javascript">
       jQuery(function () {
-          SphinxRtdTheme.StickyNav.enable();
+          SphinxRtdTheme.Navigation.enable(true);
       });
-  </script>
-   
+  </script> 
 
 </body>
 </html>

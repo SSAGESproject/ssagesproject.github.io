@@ -1,9 +1,0 @@
-<map id="SSAGES::GridBase::GetNumPoints" name="SSAGES::GridBase::GetNumPoints">
-<area shape="rect" id="node2" href="$classSSAGES_1_1BFS.html#aae30a5592035f756e0290fd2b044cf5e" title="SSAGES::BFS::Build" alt="" coords="263,5,411,32"/>
-<area shape="rect" id="node4" href="$classSSAGES_1_1Histogram.html#a5429313c7a6807e9be90506df9eedb6e" title="Return iterator after last valid bin. " alt="" coords="249,56,424,83"/>
-<area shape="rect" id="node5" href="$classSSAGES_1_1Histogram.html#a57aab07146b49c6e494b6c0d5870b94a" title="Constructor. " alt="" coords="260,107,413,149"/>
-<area shape="rect" id="node7" href="$classSSAGES_1_1Histogram.html#a4d425497ce8b101cfc675d9e30f8b29e" title="Map d&#45;dimensional indices to 1&#45;d data vector. " alt="" coords="260,173,413,214"/>
-<area shape="rect" id="node8" href="$classSSAGES_1_1Grid.html#abb3356d220a8aef367ac8f2946e3bce2" title="Write grid out to file. " alt="" coords="265,238,408,279"/>
-<area shape="rect" id="node3" href="$classSSAGES_1_1BFS.html#ae7a1e5c49a98296b2451e6127ef8f425" title="Set the values for the basis. " alt="" coords="472,5,644,32"/>
-<area shape="rect" id="node6" href="$classSSAGES_1_1Histogram.html#a502ac115a7c5f95599e1cef20ce37c56" title="Set up the histogram. " alt="" coords="481,107,635,149"/>
-</map>

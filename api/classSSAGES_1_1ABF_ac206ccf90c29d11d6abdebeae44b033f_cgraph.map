@@ -1,5 +1,5 @@
 <map id="SSAGES::ABF::SetIteration" name="SSAGES::ABF::SetIteration">
-<area shape="rect" id="node2" href="$classSSAGES_1_1ABF.html#aa131b026ddb40941889c8bde7840ac6a" title="SSAGES::ABF::Build" alt="" coords="240,197,388,223"/>
+<area shape="rect" id="node2" href="$classSSAGES_1_1ABF.html#aa131b026ddb40941889c8bde7840ac6a" title="Build a derived method from JSON node. " alt="" coords="240,197,388,223"/>
 <area shape="rect" id="node3" href="$classJson_1_1Requirement.html#a60bc275c366eb59f192fa2e621268480" title="Get list of error messages. " alt="" coords="695,5,835,47"/>
 <area shape="rect" id="node4" href="$classJson_1_1Requirement.html#adfaec336a9f051d6f6b9a6d7f1d97b75" title="Check if errors have occured. " alt="" coords="695,71,835,112"/>
 <area shape="rect" id="node5" href="$classSSAGES_1_1Grid.html#a279c1e9005fdf4c6fc23358d51b75b86" title="Builds a grid from file. " alt="" coords="436,255,632,282"/>

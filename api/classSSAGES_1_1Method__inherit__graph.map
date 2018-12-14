@@ -1,6 +1,6 @@
 <map id="SSAGES::Method" name="SSAGES::Method">
 <area shape="rect" id="node3" href="$classSSAGES_1_1ABF.html" title="Adaptive Biasing Force Algorithm. " alt="" coords="421,5,531,32"/>
-<area shape="rect" id="node4" href="$classSSAGES_1_1ANN.html" title="SSAGES::ANN" alt="" coords="419,56,533,83"/>
+<area shape="rect" id="node4" href="$classSSAGES_1_1ANN.html" title="Artificial Neural Network Method. " alt="" coords="419,56,533,83"/>
 <area shape="rect" id="node5" href="$classSSAGES_1_1BFS.html" title="Basis Function Sampling Algorithm. " alt="" coords="421,107,531,133"/>
 <area shape="rect" id="node6" href="$classSSAGES_1_1ForwardFlux.html" title="ForwardFlux sampling method. " alt="" coords="397,157,555,184"/>
 <area shape="rect" id="node8" href="$classSSAGES_1_1Meta.html" title="&quot;Vanilla&quot; multi&#45;dimensional Metadynamics. " alt="" coords="419,208,533,235"/>

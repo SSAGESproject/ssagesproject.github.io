@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Swarm of Trajectories &mdash; SSAGES v0.8.0-alpha documentation</title>
+  <title>Swarm of Trajectories &mdash; SSAGES v0.8.3-alpha documentation</title>
   
 
   
@@ -25,24 +25,19 @@
   
 
   
-  
     <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
-  
-
-  
-
-  
-    <link rel="top" title="SSAGES v0.8.0-alpha documentation" href="index.html"/>
-        <link rel="up" title="Advanced Sampling Methods" href="Advanced Sampling Methods.html"/>
-        <link rel="next" title="Umbrella Sampling" href="Umbrella Sampling.html"/>
-        <link rel="prev" title="Replica Exchange" href="Replica Exchange.html"/> 
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Umbrella Sampling" href="Umbrella Sampling.html" />
+    <link rel="prev" title="Replica Exchange" href="Replica Exchange.html" /> 
 
   
   <script src="_static/js/modernizr.min.js"></script>
 
 </head>
 
-<body class="wy-body-for-nav" role="document">
+<body class="wy-body-for-nav">
 
    
   <div class="wy-grid-for-nav">
@@ -64,7 +59,7 @@
             
             
               <div class="version">
-                0.8.0
+                0.8.3
               </div>
             
           
@@ -104,7 +99,7 @@
 <li class="toctree-l2"><a class="reference internal" href="Metadynamics.html">Metadynamics</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Image Method.html">Image Method</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Replica Exchange.html">Replica Exchange</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="">Swarm of Trajectories</a><ul>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Swarm of Trajectories</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#introduction">Introduction</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#options-parameters">Options &amp; Parameters</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#tutorial">Tutorial</a></li>
@@ -132,7 +127,7 @@
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
 
       
-      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+      <nav class="wy-nav-top" aria-label="top navigation">
         
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="index.html">SSAGES</a>
@@ -140,9 +135,10 @@
       </nav>
 
 
-      
       <div class="wy-nav-content">
+        
         <div class="rst-content">
+        
           
 
 
@@ -173,7 +169,7 @@
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="_sources/Swarm of Trajectories.txt" rel="nofollow"> View page source</a>
+            <a href="_sources/Swarm of Trajectories.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -191,8 +187,8 @@
 <div class="section" id="introduction">
 <h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h2>
 <p>Like all string methods in general, the <strong>string method with swarms of
-trajectories</strong> (often abbreviated to &#8220;swarm of trajectories&#8221; or even more simply
-&#8220;SoT&#8221;) is a method to identify a transition pathway in an arbitrarily
+trajectories</strong> (often abbreviated to “swarm of trajectories” or even more simply
+“SoT”) is a method to identify a transition pathway in an arbitrarily
 high-dimensional collective variable space between two metastable states of a
 system.  This pathway (the string) is a parametrized curve discretized into a
 set of images, each of which is itself a molecular system.  The classical <em>string
@@ -203,28 +199,28 @@ swarm) of <strong>unrestrained</strong> trajectories from each image and estimat
 drift of the collective variables over the swarm.</p>
 <p>The mathematical background of the method can be expressed in a few relatively
 straightforward equations, with further detail available in the original work of
-Benoit Roux and collaborators <a class="footnote-reference" href="#id2" id="id1">[1]</a>.  First, consider a path <span class="math">\(z(\alpha)\)</span>
-constructed between two metastable states, such that <span class="math">\(\alpha=0\)</span> represents
-the starting state and <span class="math">\(\alpha=1\)</span> is the final state.  The &#8220;most probable
-transition pathway&#8221; (MPTP) is defined such that a molecular system started from
+Benoit Roux and collaborators <a class="footnote-reference" href="#id2" id="id1">[1]</a>.  First, consider a path <span class="math notranslate nohighlight">\(z(\alpha)\)</span>
+constructed between two metastable states, such that <span class="math notranslate nohighlight">\(\alpha=0\)</span> represents
+the starting state and <span class="math notranslate nohighlight">\(\alpha=1\)</span> is the final state.  The “most probable
+transition pathway” (MPTP) is defined such that a molecular system started from
 anywhere on the path will most probably evolve while staying on the path.  It is
 shown in the original work that a mathematical definition for such a path is
 given when the collective variables evolve according to:</p>
-<div class="math">
+<div class="math notranslate nohighlight">
 \[z_{i}(\alpha) = z_{i}(\alpha') + \sum\limits_{j}\left(
 \beta D_{ij}\left[ z(0) \right] F_{j}\left[z(0)\right] +
 \frac{\partial}{\partial z_{j}}\left( D_{ij}\left[z(0)\right]\right)
 \right)\delta\tau\]</div>
-<p>Where the following notation is used: <span class="math">\(z_{i}\)</span> represents the collective
-variables belonging to the string, <span class="math">\(\alpha\)</span> represents the parameter
-identifying that point on the string, <span class="math">\(\beta\)</span> represents the temperature,
-<span class="math">\(D_{ij}\)</span> represents the diffusion tensor, <span class="math">\(F_{j}\)</span> represents the
-mean force, <span class="math">\(z\)</span> represents the collective variables constructed from the
-molecular system at a given moment in time, and <span class="math">\(\delta\tau\)</span> represents
+<p>Where the following notation is used: <span class="math notranslate nohighlight">\(z_{i}\)</span> represents the collective
+variables belonging to the string, <span class="math notranslate nohighlight">\(\alpha\)</span> represents the parameter
+identifying that point on the string, <span class="math notranslate nohighlight">\(\beta\)</span> represents the temperature,
+<span class="math notranslate nohighlight">\(D_{ij}\)</span> represents the diffusion tensor, <span class="math notranslate nohighlight">\(F_{j}\)</span> represents the
+mean force, <span class="math notranslate nohighlight">\(z\)</span> represents the collective variables constructed from the
+molecular system at a given moment in time, and <span class="math notranslate nohighlight">\(\delta\tau\)</span> represents
 the time step of the evolution of the dynamics.  The SoT method approximates
 this equation using the average drift evaluated from a large number of unbiased
-trajectories, each of length <span class="math">\(\delta\tau\)</span>, launched from each image:</p>
-<div class="math">
+trajectories, each of length <span class="math notranslate nohighlight">\(\delta\tau\)</span>, launched from each image:</p>
+<div class="math notranslate nohighlight">
 \[\bar{\Delta z_{i}(\delta\tau)} = \bar{z_{i}(\delta\tau) - z_{i}(0)} \equiv
 \sum\limits_{j} \left( \beta D_{ij}\left[z(0)\right] F_{j}\left[z(0)]\right] +
 \frac{\partial}{\partial z_{j}}\left( D_{ij}\left[ z(0)\right]\right)\right)\delta\tau\]</div>
@@ -282,7 +278,7 @@ thus should be set to “String”</dd>
 being used; for swarm, it should be set to “Swarm”.</dd>
 <dt>centers</dt>
 <dd>The initial values of each CV for each image on the string are specified
-under &#8220;centers&#8221;, which is an array of size equal to the total number of
+under “centers”, which is an array of size equal to the total number of
 images, with each entry consisting of an array with size equal to the
 number of CVs used for the string method. In this way, the initial string
 is defined.</dd>
@@ -307,8 +303,8 @@ set to 1.</dd>
 <p>This tutorial will walk you step by step through the user example provided with
 the SSAGES source code that runs the SoT method on the alanine dipeptide using
 LAMMPS.  First, be sure you have compiled SSAGES with LAMMPS.  Then, navigate to
-the <code class="docutils literal"><span class="pre">SSAGES/Examples/User/Swarm/ADP</span></code> subdirectory.  Now, take a moment to
-observe the <code class="docutils literal"><span class="pre">in.ADP_Test</span> <span class="pre">and</span> <span class="pre">data.input</span></code> files.  In general, these should be
+the <code class="docutils literal notranslate"><span class="pre">SSAGES/Examples/User/Swarm/ADP</span></code> subdirectory.  Now, take a moment to
+observe the <code class="docutils literal notranslate"><span class="pre">in.ADP_Test</span> <span class="pre">and</span> <span class="pre">data.input</span></code> files.  In general, these should be
 the same as what you would use for any other method, but for the SoT method, it
 is important to define a larger skin distance than one normally would in the
 neighbor command in LAMMPS.  This is because, under the hood, each unrestrained
@@ -316,30 +312,30 @@ trajectory in the swarm is started by manually resetting the positions of each
 atom in the LAMMPS simulation to the start of a new trajectory.  From the
 perspective of LAMMPS, this is a huge amount of distance to move in a single
 time step; this move triggers neighbor list rebuilding, but LAMMPS considers it
-a &#8220;dangerous build&#8221; which threatens to crash the simulation.  Thus, we increase
+a “dangerous build” which threatens to crash the simulation.  Thus, we increase
 the skin distance, which forces LAMMPS to keep track of more pairs in the
 neighbor lists, and thus reduces the number of dangerous builds.  Keep this in
 mind for future runs of the SoT method.</p>
-<p>The next two files of interest are the <code class="docutils literal"><span class="pre">Template_Input.json</span></code> input file and
-the <code class="docutils literal"><span class="pre">Input_Generator.py</span></code> script.  Both of these files can be modified in your
+<p>The next two files of interest are the <code class="docutils literal notranslate"><span class="pre">Template_Input.json</span></code> input file and
+the <code class="docutils literal notranslate"><span class="pre">Input_Generator.py</span></code> script.  Both of these files can be modified in your
 text editor of choice to customize the inputs, but for this tutorial, simply
-observe them and leave them be.  <code class="docutils literal"><span class="pre">Template_Input.json</span></code> contains all the
-information necessary to fully specify one driver; <code class="docutils literal"><span class="pre">Input_Generator.py</span></code> copies
+observe them and leave them be.  <code class="docutils literal notranslate"><span class="pre">Template_Input.json</span></code> contains all the
+information necessary to fully specify one driver; <code class="docutils literal notranslate"><span class="pre">Input_Generator.py</span></code> copies
 this information a number of times specified within the script (for this
 tutorial, 22 times) while also linearly interpolating through the start and end
 states defined in the script and substituting the correct values into the
-&#8220;centers&#8221; portion of the method definition.  Execute this script as follows:</p>
-<div class="highlight-bash"><div class="highlight"><pre>python Input_Generator.py
+“centers” portion of the method definition.  Execute this script as follows:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>python Input_Generator.py
 </pre></div>
 </div>
-<p>You will produce a file called <code class="docutils literal"><span class="pre">Swarm.json</span></code>.  You can also open this file to
+<p>You will produce a file called <code class="docutils literal notranslate"><span class="pre">Swarm.json</span></code>.  You can also open this file to
 verify for yourself that the script did what it was supposed to do.  Now, with
 your JSON input and your SSAGES binary, you have everything you need to perform
 a simulation.  Simply run:</p>
-<div class="highlight-bash"><div class="highlight"><pre>mpiexec -np <span class="m">22</span> ./ssages Swarm.json
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>mpiexec -np <span class="m">22</span> ./ssages Swarm.json
 </pre></div>
 </div>
-<p>Soon, the simulation will produce a <code class="docutils literal"><span class="pre">node-X.log</span></code> file for each driver, where
+<p>Soon, the simulation will produce a <code class="docutils literal notranslate"><span class="pre">node-X.log</span></code> file for each driver, where
 X is the number specifying the driver (in this case, 0-21 for our 22 drivers).
 Each one will report the following information, in order: the node number, the
 iteration number, and for each CV, the current value of the string CV as well as
@@ -353,7 +349,7 @@ included plotter.py function in a directory containing the node files with the
 command line argument of how many images your string had.  The script also
 accepts an argument to plot a free energy surface alongside the string, but that
 goes beyond the scope of this tutorial.  Thus, simply execute:</p>
-<div class="highlight-bash"><div class="highlight"><pre>python plotter.py <span class="m">22</span> none
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>python plotter.py <span class="m">22</span> none
 </pre></div>
 </div>
 <p>And in a moment you should have a graph of your converged string.  Thus concludes
@@ -378,9 +374,7 @@ J. Phys. Chem. B <strong>112</strong>, 3432–3440 (2008).</td></tr>
 
 
            </div>
-           <div class="articleComments">
-            
-           </div>
+           
           </div>
           <footer>
   
@@ -399,11 +393,11 @@ J. Phys. Chem. B <strong>112</strong>, 3432–3440 (2008).</td></tr>
   <div role="contentinfo">
     <p>
         &copy; Copyright 2016, the SSAGES Team.
-      Last updated on Feb 27, 2018.
+      Last updated on Dec 14, 2018.
 
     </p>
   </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
 
 </footer>
 
@@ -421,17 +415,18 @@ J. Phys. Chem. B <strong>112</strong>, 3432–3440 (2008).</td></tr>
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'./',
-            VERSION:'v0.8.0-alpha',
+            VERSION:'v0.8.3-alpha',
+            LANGUAGE:'None',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
             HAS_SOURCE:  true,
-            SOURCELINK_SUFFIX: ''
+            SOURCELINK_SUFFIX: '.txt'
         };
     </script>
       <script type="text/javascript" src="_static/jquery.js"></script>
       <script type="text/javascript" src="_static/underscore.js"></script>
       <script type="text/javascript" src="_static/doctools.js"></script>
-      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
   
 
@@ -440,14 +435,11 @@ J. Phys. Chem. B <strong>112</strong>, 3432–3440 (2008).</td></tr>
     <script type="text/javascript" src="_static/js/theme.js"></script>
   
 
-  
-  
   <script type="text/javascript">
       jQuery(function () {
-          SphinxRtdTheme.StickyNav.enable();
+          SphinxRtdTheme.Navigation.enable(true);
       });
-  </script>
-   
+  </script> 
 
 </body>
 </html>

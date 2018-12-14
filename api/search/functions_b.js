@@ -1,8 +1,8 @@
 var searchData=
 [
   ['map',['Map',['../structSSAGES_1_1Map.html#a53de4c278f5b5543f3a2fa0571e45218',1,'SSAGES::Map']]],
-  ['mapto1d',['mapTo1d',['../classSSAGES_1_1Grid.html#ad60e455c3d5a58b3aa1581215988a03b',1,'SSAGES::Grid::mapTo1d()'],['../classSSAGES_1_1GridBase.html#a1f7bae14a777239968ae9445d19af823',1,'SSAGES::GridBase::mapTo1d()'],['../classSSAGES_1_1Histogram.html#a4d425497ce8b101cfc675d9e30f8b29e',1,'SSAGES::Histogram::mapTo1d()']]],
+  ['mapto1d',['mapTo1d',['../classSSAGES_1_1Grid.html#ad60e455c3d5a58b3aa1581215988a03b',1,'SSAGES::Grid::mapTo1d()'],['../classSSAGES_1_1GridBase.html#a1f7bae14a777239968ae9445d19af823',1,'SSAGES::GridBase::mapTo1d()']]],
   ['meta',['Meta',['../classSSAGES_1_1Meta.html#a3a8bf5758a11025cd76aea99895cc855',1,'SSAGES::Meta']]],
-  ['method',['Method',['../classSSAGES_1_1Method.html#a05bb6ea0244814c1290c46bb3a059be9',1,'SSAGES::Method']]],
+  ['method',['Method',['../classSSAGES_1_1Method.html#ad751450ecd30e8ab40024c6f5e870d30',1,'SSAGES::Method']]],
   ['mockcv',['MockCV',['../classSSAGES_1_1MockCV.html#a3a3d619a2a2a94ef36a168084708a00c',1,'SSAGES::MockCV']]]
 ];

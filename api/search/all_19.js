@@ -1,25 +1,4 @@
 var searchData=
 [
-  ['_7eabf',['~ABF',['../classSSAGES_1_1ABF.html#aa683e1d8a8df3522bc64529ea5e80a78',1,'SSAGES::ABF']]],
-  ['_7ebasisfunction',['~BasisFunction',['../classSSAGES_1_1BasisFunction.html#a605db4ad24337ffecc6178d5a6c1a5c7',1,'SSAGES::BasisFunction']]],
-  ['_7ebfs',['~BFS',['../classSSAGES_1_1BFS.html#ae7e85e21f589b6478a6bf6236bb39120',1,'SSAGES::BFS']]],
-  ['_7ecollectivevariable',['~CollectiveVariable',['../classSSAGES_1_1CollectiveVariable.html#a39a517ed26b0c9e943cdc09ac3f37010',1,'SSAGES::CollectiveVariable']]],
-  ['_7econstraint',['~Constraint',['../classSSAGES_1_1Constraint.html#a279e8362860ee348a4c945edde376a83',1,'SSAGES::Constraint']]],
-  ['_7ecopss',['~COPSS',['../classSSAGES_1_1COPSS.html#af04ca5f849d9c80023a26c3d57682af6',1,'SSAGES::COPSS']]],
-  ['_7ecopssimage',['~COPSSImage',['../classSSAGES_1_1COPSSImage.html#a18039f939679d370760f34713440a82b',1,'SSAGES::COPSSImage']]],
-  ['_7edependencyrequirement',['~DependencyRequirement',['../classJson_1_1DependencyRequirement.html#abb63a4f5a0a75d6981654d63ea1703ca',1,'Json::DependencyRequirement']]],
-  ['_7eelasticband',['~ElasticBand',['../classSSAGES_1_1ElasticBand.html#a5e7a910172b44de2920681ab0ccd1e52',1,'SSAGES::ElasticBand']]],
-  ['_7eeventlistener',['~EventListener',['../classSSAGES_1_1EventListener.html#a7cadffb0e82186a12023dd5963c3c5b1',1,'SSAGES::EventListener']]],
-  ['_7efinitetempstring',['~FiniteTempString',['../classSSAGES_1_1FiniteTempString.html#a81151f016c40db1a12b52d95e4059f34',1,'SSAGES::FiniteTempString']]],
-  ['_7ehook',['~Hook',['../classSSAGES_1_1Hook.html#a4c7dad55e26e14b4a22d58e91dd40e7f',1,'SSAGES::Hook']]],
-  ['_7elogger',['~Logger',['../classSSAGES_1_1Logger.html#aaea5c9cb98a29a88cdc4f8746686832f',1,'SSAGES::Logger']]],
-  ['_7emeta',['~Meta',['../classSSAGES_1_1Meta.html#a2581995cf90fc1a72bcd5b00940818c5',1,'SSAGES::Meta']]],
-  ['_7emethod',['~Method',['../classSSAGES_1_1Method.html#a86b979a552970f63a8edf160387f6ff9',1,'SSAGES::Method']]],
-  ['_7eobjectrequirement',['~ObjectRequirement',['../classJson_1_1ObjectRequirement.html#a8981d5421da512e6d9c54d0c2550aa1c',1,'Json::ObjectRequirement']]],
-  ['_7ereadfile',['~ReadFile',['../classSSAGES_1_1ReadFile.html#a6091bfcec90eaf081c1d16e139d561ba',1,'SSAGES::ReadFile']]],
-  ['_7erequirement',['~Requirement',['../classJson_1_1Requirement.html#a68e63427d28f9ab5aa68beb0360bcc50',1,'Json::Requirement']]],
-  ['_7eresourcehandler',['~ResourceHandler',['../classSSAGES_1_1ResourceHandler.html#a48e4c2c297bc2c3e4fcb296ab70745b8',1,'SSAGES::ResourceHandler']]],
-  ['_7esnapshot',['~Snapshot',['../classSSAGES_1_1Snapshot.html#ac69b3a647d2406875d661d70aca97a46',1,'SSAGES::Snapshot']]],
-  ['_7estringmethod',['~StringMethod',['../classSSAGES_1_1StringMethod.html#abe15ea4ee4052e153f361af61e3c2062',1,'SSAGES::StringMethod']]],
-  ['_7eswarm',['~Swarm',['../classSSAGES_1_1Swarm.html#aed3d57b4ac6fc9f484dcb2ebc4a0aa47',1,'SSAGES::Swarm']]]
+  ['zeroorder_5f',['zeroOrder_',['../classSSAGES_1_1BasisFunction.html#a38ef16cf98fa14f6899193b66ba54068',1,'SSAGES::BasisFunction']]]
 ];

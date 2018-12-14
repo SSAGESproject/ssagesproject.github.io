@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Build SSAGES with local copy of MD source &mdash; SSAGES v0.8.0-alpha documentation</title>
+  <title>Build SSAGES with local copy of MD source &mdash; SSAGES v0.8.3-alpha documentation</title>
   
 
   
@@ -25,24 +25,19 @@
   
 
   
-  
     <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
-  
-
-  
-
-  
-    <link rel="top" title="SSAGES v0.8.0-alpha documentation" href="index.html"/>
-        <link rel="up" title="Getting Started" href="Getting Started.html"/>
-        <link rel="next" title="How to run SSAGES on LAMMPS" href="How to run SSAGES on LAMMPS.html"/>
-        <link rel="prev" title="Getting Started" href="Getting Started.html"/> 
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="How to run SSAGES on LAMMPS" href="How to run SSAGES on LAMMPS.html" />
+    <link rel="prev" title="Getting Started" href="Getting Started.html" /> 
 
   
   <script src="_static/js/modernizr.min.js"></script>
 
 </head>
 
-<body class="wy-body-for-nav" role="document">
+<body class="wy-body-for-nav">
 
    
   <div class="wy-grid-for-nav">
@@ -64,7 +59,7 @@
             
             
               <div class="version">
-                0.8.0
+                0.8.3
               </div>
             
           
@@ -96,7 +91,7 @@
 <li class="toctree-l2"><a class="reference internal" href="Getting Started.html#build-ssages">Build SSAGES</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Getting Started.html#run-ssages">Run SSAGES</a></li>
 <li class="toctree-l2 current"><a class="reference internal" href="Getting Started.html#advanced-options">Advanced options</a><ul class="current">
-<li class="toctree-l3 current"><a class="current reference internal" href="">Build SSAGES with local copy of MD source</a></li>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">Build SSAGES with local copy of MD source</a></li>
 <li class="toctree-l3"><a class="reference internal" href="How to run SSAGES on LAMMPS.html">How to run SSAGES on LAMMPS</a></li>
 <li class="toctree-l3"><a class="reference internal" href="How to run SSAGES with GROMACS.html">How to use SSAGES with GROMACS</a></li>
 </ul>
@@ -124,7 +119,7 @@
     <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
 
       
-      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+      <nav class="wy-nav-top" aria-label="top navigation">
         
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
           <a href="index.html">SSAGES</a>
@@ -132,9 +127,10 @@
       </nav>
 
 
-      
       <div class="wy-nav-content">
+        
         <div class="rst-content">
+        
           
 
 
@@ -165,7 +161,7 @@
       <li class="wy-breadcrumbs-aside">
         
             
-            <a href="_sources/Build SSAGES with local copy of MD source.txt" rel="nofollow"> View page source</a>
+            <a href="_sources/Build SSAGES with local copy of MD source.rst.txt" rel="nofollow"> View page source</a>
           
         
       </li>
@@ -182,50 +178,55 @@
 <span id="build-ssages-with-local-md-source"></span><h1>Build SSAGES with local copy of MD source<a class="headerlink" href="#build-ssages-with-local-copy-of-md-source" title="Permalink to this headline">¶</a></h1>
 <p>The standard procedure to build SSAGES is to auto-download the source code for the
 simulation engine you intend to use. This is done by providing the option
-<code class="docutils literal"><span class="pre">-DLAMMPS=YES</span></code> (for LAMMPS) or <code class="docutils literal"><span class="pre">-DGROMACS=YES</span></code> (for Gromacs) to <code class="docutils literal"><span class="pre">cmake</span></code>.
+<code class="docutils literal notranslate"><span class="pre">-DLAMMPS=YES</span></code> (for LAMMPS) or <code class="docutils literal notranslate"><span class="pre">-DGROMACS=YES</span></code> (for GROMACS) to <code class="docutils literal notranslate"><span class="pre">cmake</span></code>.
 However, in many cases it will be necessary to build SSAGES using your local copy of
 the MD engine source code. For example, if you have modified it to fit a special
-need LAMMPS or Gromacs does not support natively.</p>
+need LAMMPS or GROMACS does not support natively.</p>
 <p>If you want to build SSAGES using a local copy of the MD engine source code, modify
 the cmake call to</p>
-<div class="highlight-bash"><div class="highlight"><pre>cmake .. -DLAMMPS_SRC<span class="o">=</span>/path/to/LAMMPS/src
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>cmake .. -DLAMMPS_SRC<span class="o">=</span>/path/to/LAMMPS/src
 </pre></div>
 </div>
 <p>if you are using LAMMPS and to</p>
-<div class="highlight-bash"><div class="highlight"><pre>cmake .. -DGROMACS_SRC<span class="o">=</span>/path/to/gromacs
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>cmake .. -DGROMACS_SRC<span class="o">=</span>/path/to/gromacs
 </pre></div>
 </div>
-<p>if you are using Gromacs.</p>
+<p>if you are using GROMACS.</p>
 <div class="admonition warning">
 <p class="first admonition-title">Warning</p>
-<p class="last">The current implementation of SSAGES will patch the Gromacs source. Thus, if you
-compile the patched Gromacs source, it will no longer run. We are working to remedy
+<p class="last">The current implementation of SSAGES will patch the GROMACS source. Thus, if you
+compile the patched GROMACS source, it will no longer run. We are working to remedy
 this inconvenience.</p>
 </div>
-<p>SSAGES is not compatible with all versions of LAMMPS and Gromacs. The following
+<p>SSAGES is not compatible with all versions of LAMMPS and GROMACS. The following
 versions of LAMMPS have been tested extensively, but we are confident that SSAGES will
 also work with most other LAMMPS versions.</p>
 <ul class="simple">
 <li>10 Aug 2015</li>
 <li>7 Dec 2015</li>
+<li>16 Feb 2016</li>
 <li>14 May 2016</li>
-<li>15 Jul 2016</li>
 <li>30 Jul 2016</li>
+<li>5 Nov 2016</li>
+<li>17 Nov 2016</li>
+<li>31 Mar 2017</li>
+<li>11 Aug 2017</li>
+<li>16 Mar 2018</li>
 </ul>
-<p>The following version of Gromacs is supported</p>
+<p>The following versions of GROMACS are supported</p>
 <ul class="simple">
-<li>5.1.3</li>
+<li>5.1.x</li>
+<li>2016.x</li>
+<li>2018.x</li>
 </ul>
 <p>In contrast to LAMMPS, we are very confident that SSAGES will <em>not</em> work with other
-versions of Gromacs out of the box. We are working hard to make SSAGES compatible with
-more versions of Gromacs, especially with the new version 6.</p>
+versions of GROMACS out of the box. We are working hard to make SSAGES compatible with
+new versions of GROMACS, as they are released.</p>
 </div>
 
 
            </div>
-           <div class="articleComments">
-            
-           </div>
+           
           </div>
           <footer>
   
@@ -244,11 +245,11 @@ more versions of Gromacs, especially with the new version 6.</p>
   <div role="contentinfo">
     <p>
         &copy; Copyright 2016, the SSAGES Team.
-      Last updated on Feb 27, 2018.
+      Last updated on Dec 14, 2018.
 
     </p>
   </div>
-  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
 
 </footer>
 
@@ -266,17 +267,18 @@ more versions of Gromacs, especially with the new version 6.</p>
     <script type="text/javascript">
         var DOCUMENTATION_OPTIONS = {
             URL_ROOT:'./',
-            VERSION:'v0.8.0-alpha',
+            VERSION:'v0.8.3-alpha',
+            LANGUAGE:'None',
             COLLAPSE_INDEX:false,
             FILE_SUFFIX:'.html',
             HAS_SOURCE:  true,
-            SOURCELINK_SUFFIX: ''
+            SOURCELINK_SUFFIX: '.txt'
         };
     </script>
       <script type="text/javascript" src="_static/jquery.js"></script>
       <script type="text/javascript" src="_static/underscore.js"></script>
       <script type="text/javascript" src="_static/doctools.js"></script>
-      <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 
   
 
@@ -285,14 +287,11 @@ more versions of Gromacs, especially with the new version 6.</p>
     <script type="text/javascript" src="_static/js/theme.js"></script>
   
 
-  
-  
   <script type="text/javascript">
       jQuery(function () {
-          SphinxRtdTheme.StickyNav.enable();
+          SphinxRtdTheme.Navigation.enable(true);
       });
-  </script>
-   
+  </script> 
 
 </body>
 </html>

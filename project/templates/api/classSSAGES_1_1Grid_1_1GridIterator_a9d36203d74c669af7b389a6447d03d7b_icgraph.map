@@ -1,5 +1,5 @@
 <map id="SSAGES::Grid::GridIterator::indices" name="SSAGES::Grid::GridIterator::indices">
-<area shape="rect" id="node2" href="$classSSAGES_1_1Grid.html#a709374b3cadf320347604077a2e45e5b" title="Return iterator at first grid point. " alt="" coords="256,5,399,47"/>
-<area shape="rect" id="node3" href="$classSSAGES_1_1Grid.html#ac4fcc9f0cd61476ce4fd880c768d9694" title="Return iterator after last valid grid point. " alt="" coords="256,71,399,112"/>
+<area shape="rect" id="node2" href="$classSSAGES_1_1Grid.html#a709374b3cadf320347604077a2e45e5b" title="Return iterator at first grid point. " alt="" coords="250,5,405,47"/>
+<area shape="rect" id="node3" href="$classSSAGES_1_1Grid.html#ac4fcc9f0cd61476ce4fd880c768d9694" title="Return iterator after last valid grid point. " alt="" coords="250,71,405,112"/>
 <area shape="rect" id="node4" href="$classSSAGES_1_1Grid_1_1GridIterator.html#af450d3d72dfe1e6df274f9a9e6de2049" title="Access a specific index. " alt="" coords="236,136,419,177"/>
 </map>

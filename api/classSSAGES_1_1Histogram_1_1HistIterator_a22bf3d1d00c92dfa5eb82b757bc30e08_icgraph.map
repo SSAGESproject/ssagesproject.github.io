@@ -1,5 +1,0 @@
-<map id="SSAGES::Histogram::HistIterator::indices" name="SSAGES::Histogram::HistIterator::indices">
-<area shape="rect" id="node2" href="$classSSAGES_1_1Histogram.html#a8393d6ed7ce051813249ab1b81cf1d83" title="Return iterator at first bin of histogram. " alt="" coords="217,5,371,47"/>
-<area shape="rect" id="node3" href="$classSSAGES_1_1Histogram.html#a5429313c7a6807e9be90506df9eedb6e" title="Return iterator after last valid bin. " alt="" coords="207,71,381,98"/>
-<area shape="rect" id="node4" href="$classSSAGES_1_1Histogram_1_1HistIterator.html#a117a4aaa63185e9906ac55a7463a91d4" title="Access a specific index. " alt="" coords="217,123,371,164"/>
-</map>

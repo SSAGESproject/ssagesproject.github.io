@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['p_5f',['p_',['../classSSAGES_1_1RouseModeCV.html#adfee38699838eb6e69d3605b830375c8',1,'SSAGES::RouseModeCV']]],
   ['path_5f',['path_',['../classJson_1_1IntegerRequirement.html#af562ca100fe36993d0769573a6e8110f',1,'Json::IntegerRequirement::path_()'],['../classJson_1_1NumberRequirement.html#abed8df0b1af656ede203b0e3d018cf6f',1,'Json::NumberRequirement::path_()'],['../classJson_1_1StringRequirement.html#a6d961a1884a7f7735c621860b794e474',1,'Json::StringRequirement::path_()']]],
   ['patternprops_5f',['patternProps_',['../classJson_1_1ObjectRequirement.html#a5a1aecccef7030caad41988939ea9bbf',1,'Json::ObjectRequirement']]],
   ['periodic_5f',['periodic_',['../classSSAGES_1_1TorsionalCV.html#a43ce3e5ede135ac9dd8c06a0b79eff98',1,'SSAGES::TorsionalCV']]],
@@ -8,6 +9,7 @@ var searchData=
   ['pk_5f',['pk_',['../classSSAGES_1_1PairwiseCV.html#ad9a650d491217bde6c9f31d41244aeba',1,'SSAGES::PairwiseCV']]],
   ['plugins_5f',['plugins_',['../classSSAGES_1_1JSONLoader.html#a67c3a000640b95c8be0f61820c53f9dd',1,'SSAGES::JSONLoader']]],
   ['point_5f',['point_',['../classSSAGES_1_1ParticlePositionCV.html#abf2ac519239a59f30901898b5dbc82e9',1,'SSAGES::ParticlePositionCV']]],
+  ['polyord_5f',['polyOrd_',['../classSSAGES_1_1BasisFunction.html#acb20c103d9ae654cdec5d414938fe161',1,'SSAGES::BasisFunction']]],
   ['positions_5f',['positions_',['../classSSAGES_1_1Snapshot.html#a47cac5746857da7ddf86353658a231cc',1,'SSAGES::Snapshot']]],
   ['prev_5fcvs_5f',['prev_CVs_',['../classSSAGES_1_1FiniteTempString.html#a83a94533675a08bc7d6b73a460af2aa7',1,'SSAGES::FiniteTempString']]],
   ['prev_5fids_5f',['prev_IDs_',['../classSSAGES_1_1StringMethod.html#ad3ff83869b7ef597d3641f0eb1649c82',1,'SSAGES::StringMethod']]],
