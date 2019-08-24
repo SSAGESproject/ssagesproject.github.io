@@ -1,0 +1,6 @@
+<map id="SSAGES::RMSDCV::Initialize" name="SSAGES::RMSDCV::Initialize">
+<area shape="rect" id="node2" href="$classSSAGES_1_1Snapshot.html#aa0063a19760ed14f163c0dec36582347" title="Access the atom IDs. " alt="" coords="254,5,475,32"/>
+<area shape="rect" id="node3" href="$classSSAGES_1_1Snapshot.html#a035ed6fb2cd46d4f66d1614bd90ad14b" title="Const access to the particle masses. " alt="" coords="257,56,472,83"/>
+<area shape="rect" id="node4" href="$classSSAGES_1_1Snapshot.html#aee2ceb317884bc5e0105b9824b5026d3" title="Access the particle positions. " alt="" coords="253,107,476,133"/>
+<area shape="rect" id="node5" href="$classSSAGES_1_1ReadFile.html#ad96b1c1dd8b4ff19020815f3058bb0a1" title="Read xyz file. " alt="" coords="263,157,466,184"/>
+</map>

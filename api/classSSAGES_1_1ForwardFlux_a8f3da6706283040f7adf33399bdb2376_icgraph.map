@@ -1,0 +1,5 @@
+<map id="SSAGES::ForwardFlux::WriteFFSConfiguration" name="SSAGES::ForwardFlux::WriteFFSConfiguration">
+<area shape="rect" id="node2" href="$classSSAGES_1_1DirectForwardFlux.html#a2be13ab9b33d4cb90aa22ca9d71077e9" title="Function that checks if interfaces have been crossed (different for each FFS flavor) ..." alt="" coords="216,5,413,47"/>
+<area shape="rect" id="node3" href="$classSSAGES_1_1DirectForwardFlux.html#a5491cd537f737524f5fc295236eefb85" title="Post&#45;integration hook. " alt="" coords="461,5,653,47"/>
+<area shape="rect" id="node4" href="$classSSAGES_1_1DirectForwardFlux.html#a8620d21463fe4ac3bf778a3e4ee588aa" title="Constructor. " alt="" coords="701,5,893,47"/>
+</map>

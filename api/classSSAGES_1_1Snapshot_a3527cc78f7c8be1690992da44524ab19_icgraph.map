@@ -1,0 +1,7 @@
+<map id="SSAGES::Snapshot::CenterOfMass" name="SSAGES::Snapshot::CenterOfMass">
+<area shape="rect" id="node2" href="$classSSAGES_1_1ParticleCoordinateCV.html#afff49e8eb1571fe3527712be50da001e" title="Evaluate the CV. " alt="" coords="241,5,433,47"/>
+<area shape="rect" id="node3" href="$classSSAGES_1_1ParticlePositionCV.html#aa2ee9b7b3ca3133183e2d5f511251e29" title="Evaluate the CV. " alt="" coords="249,71,425,112"/>
+<area shape="rect" id="node4" href="$classSSAGES_1_1RouseModeCV.html#a1468b1aabf81ceb2ef3feb3b8fc79d0d" title="Evaluate the CV. " alt="" coords="249,136,424,177"/>
+<area shape="rect" id="node5" href="$classSSAGES_1_1GyrationTensorCV.html#ac613c1659bd00b335c3d6de3d8ff0ebc" title="Evaluate the CV. " alt="" coords="240,201,433,243"/>
+<area shape="rect" id="node6" href="$classSSAGES_1_1ParticleSeparationCV.html#ae6452c47bf1d849e2af60c84209a9955" title="Evaluate the CV. " alt="" coords="241,267,432,308"/>
+</map>

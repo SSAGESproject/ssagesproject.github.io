@@ -1,0 +1,7 @@
+<map id="SSAGES::Snapshot::HasChanged" name="SSAGES::Snapshot::HasChanged">
+<area shape="rect" id="node2" href="$classSSAGES_1_1Hook.html#af1bef00460b9a64ac92d7f9cef57648d" title="Post&#45;integration hook. " alt="" coords="277,5,520,32"/>
+<area shape="rect" id="node4" href="$classSSAGES_1_1Hook.html#aa7933b3db67d3b976284e17dfa8cb61a" title="Post&#45;simulation hook. " alt="" coords="277,107,520,133"/>
+<area shape="rect" id="node6" href="$classSSAGES_1_1Hook.html#afc19d218cb7913a8822609a9511fd08e" title="Pre&#45;simulation hook. " alt="" coords="281,56,517,83"/>
+<area shape="rect" id="node3" href="$classSSAGES_1_1Hook.html#ad0bf76d04f65739090db6d0fadfdc748" title="Constructor. " alt="" coords="595,31,750,57"/>
+<area shape="rect" id="node5" href="$classSSAGES_1_1Hook.html#af5c1d217feb897a0ef18ecbee6c33416" title="Post&#45;step hook. " alt="" coords="568,107,777,133"/>
+</map>

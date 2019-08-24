@@ -1,0 +1,5 @@
+<map id="SSAGES::ParticlePositionCV::ParticlePositionCV" name="SSAGES::ParticlePositionCV::ParticlePositionCV">
+<area shape="rect" id="node2" href="$classSSAGES_1_1ParticlePositionCV.html#aba39d6128e00ab299f41c12b46c45b8b" title="Set up collective variable. " alt="" coords="229,5,405,47"/>
+<area shape="rect" id="node3" href="$classSSAGES_1_1CollectiveVariable.html#ab56eae0d888f3d5125566bfb9b5e21aa" title="Set up collective variable. " alt="" coords="453,5,644,47"/>
+<area shape="rect" id="node4" href="$classSSAGES_1_1ResourceHandler.html#ac026ad9aa098fa1508a78b0b5a91e8a2" title="Build a new ResourceHandler from JSON. " alt="" coords="692,5,879,47"/>
+</map>

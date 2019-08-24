@@ -1,0 +1,5 @@
+<map id="SSAGES::ForwardFlux::WriteFFSConfiguration" name="SSAGES::ForwardFlux::WriteFFSConfiguration">
+<area shape="rect" id="node2" href="$classSSAGES_1_1Snapshot.html#aa0063a19760ed14f163c0dec36582347" title="Access the atom IDs. " alt="" coords="219,5,440,32"/>
+<area shape="rect" id="node3" href="$classSSAGES_1_1Snapshot.html#aee2ceb317884bc5e0105b9824b5026d3" title="Access the particle positions. " alt="" coords="218,56,441,83"/>
+<area shape="rect" id="node4" href="$classSSAGES_1_1Snapshot.html#aeadc50cebd62e3fcbdc17511f781de19" title="Access the particle velocities. " alt="" coords="216,107,443,133"/>
+</map>

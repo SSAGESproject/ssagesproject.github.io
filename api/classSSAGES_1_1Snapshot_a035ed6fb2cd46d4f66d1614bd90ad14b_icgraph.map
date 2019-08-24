@@ -1,0 +1,11 @@
+<map id="SSAGES::Snapshot::GetMasses" name="SSAGES::Snapshot::GetMasses">
+<area shape="rect" id="node2" href="$classSSAGES_1_1ParticleCoordinateCV.html#afff49e8eb1571fe3527712be50da001e" title="Evaluate the CV. " alt="" coords="275,5,467,47"/>
+<area shape="rect" id="node3" href="$classSSAGES_1_1ParticlePositionCV.html#aa2ee9b7b3ca3133183e2d5f511251e29" title="Evaluate the CV. " alt="" coords="283,71,459,112"/>
+<area shape="rect" id="node4" href="$classSSAGES_1_1RouseModeCV.html#a1468b1aabf81ceb2ef3feb3b8fc79d0d" title="Evaluate the CV. " alt="" coords="284,136,459,177"/>
+<area shape="rect" id="node5" href="$classSSAGES_1_1GyrationTensorCV.html#ac613c1659bd00b335c3d6de3d8ff0ebc" title="Evaluate the CV. " alt="" coords="275,201,468,243"/>
+<area shape="rect" id="node6" href="$classSSAGES_1_1ParticleSeparationCV.html#ae6452c47bf1d849e2af60c84209a9955" title="Evaluate the CV. " alt="" coords="276,267,467,308"/>
+<area shape="rect" id="node7" href="$classSSAGES_1_1RMSDCV.html#aff77158b643fec57c6d1649a78b0dd14" title="Evaluate the CV. " alt="" coords="270,333,473,359"/>
+<area shape="rect" id="node8" href="$classSSAGES_1_1RMSDCV.html#a7e82843aa5d4eae3ada4ea26a7e6502a" title="Initialize necessary variables. " alt="" coords="271,383,471,410"/>
+<area shape="rect" id="node9" href="$classSSAGES_1_1ABF.html#ad2007ce8bb539072a97d4d02d268c638" title="Post&#45;integration hook. " alt="" coords="268,434,475,461"/>
+<area shape="rect" id="node10" href="$classSSAGES_1_1ABF.html#a7071f09b2810b388ff6eabdc49fab005" title="Constructor. " alt="" coords="523,434,668,461"/>
+</map>
