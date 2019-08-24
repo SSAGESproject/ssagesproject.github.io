@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Artificial Neural Network Sampling &mdash; SSAGES v0.8.3-alpha documentation</title>
+  <title>Artificial Neural Network Sampling &mdash; SSAGES v0.8.5-alpha documentation</title>
   
 
   
@@ -17,35 +17,37 @@
   
 
   
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
 
-  
-  
     
 
   
-
-  
-    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="Basis Function Sampling" href="Basis Function Sampling.html" />
     <link rel="prev" title="Adaptive Biasing Force Algorithm" href="Adaptive Biasing Force Algorithm.html" /> 
-
-  
-  <script src="_static/js/modernizr.min.js"></script>
-
 </head>
 
 <body class="wy-body-for-nav">
 
    
   <div class="wy-grid-for-nav">
-
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
-        <div class="wy-side-nav-search">
+        <div class="wy-side-nav-search" >
           
 
           
@@ -59,7 +61,7 @@
             
             
               <div class="version">
-                0.8.3
+                0.8.5
               </div>
             
           
@@ -104,18 +106,16 @@
 <li class="toctree-l2"><a class="reference internal" href="Finite Temperature String.html">Finite Temperature String</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Forward-Flux.html">Forward-Flux</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Metadynamics.html">Metadynamics</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Image Method.html">Image Method</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Replica Exchange.html">Replica Exchange</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Swarm of Trajectories.html">Swarm of Trajectories</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Umbrella Sampling.html">Umbrella Sampling</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="Write your own Methods and CVs.html">Write your own Methods and CVs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Write your own Methods and CVs.html">Write Your Own CVs and Methods</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Contribute to SSAGES.html">Contribute to SSAGES</a></li>
-<li class="toctree-l1"><a class="reference internal" href="The SSAGES Cookbook.html">The SSAGES cookbook</a></li>
+<li class="toctree-l1"><a class="reference internal" href="The SSAGES Cookbook.html">The SSAGES Cookbook</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Acknowledgements.html">Acknowledgments</a></li>
-<li class="toctree-l1"><a class="reference internal" href="License.html">Copyright</a></li>
-<li class="toctree-l1"><a class="reference internal" href="License.html#id1">License information</a></li>
+<li class="toctree-l1"><a class="reference internal" href="zReferences.html">References</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Copyright and License.html">Copyright and License Information</a></li>
 </ul>
 
             
@@ -186,98 +186,108 @@
 <span id="id1"></span><h1>Artificial Neural Network Sampling<a class="headerlink" href="#artificial-neural-network-sampling" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="introduction">
 <h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h2>
-<p>Artificial neural network (ANN) sampling is a free energy sampling method which uses
-ANNs to generate an on-the-fly adaptive bias capable of rapidly resolving free energy
-landscapes. It is a recent method proposed by Sidky &amp; Whitmer which is demonstrated
-to be robust to user inputs and requires a minimal number of parameters. It is quite
-simple to use as described below.</p>
-<p>Like Basis Function Sampling, the algorithm proceeds in sweeps. Statistics are collected
-over a user specified interval, which is a very flexible choice. At the end of each sweep
-an ANN is fit to the statistics to determine the optimal bias which is then applied in the
-subsequent sweep. This proceeeds until the free energy landscape has converged.</p>
+<p>Artificial Neural Network (ANN) sampling is a free energy sampling method which uses
+ANNs to generate an on-the-fly adaptive bias capable of rapidly resolving free
+energy landscapes. It is a recent method proposed by Sidky &amp; Whitmer
+<a class="reference internal" href="zReferences.html#sidky2018104111" id="id2">[19]</a> which is demonstrated to be robust to user inputs and
+requires a minimal number of parameters. It is quite simple to use as described below.</p>
+<p>Like Basis Function Sampling, the algorithm proceeds in sweeps. Statistics are
+collected over a user specified interval, which is a very flexible choice. At
+the end of each sweep an ANN is fit to the statistics to determine the optimal
+bias which is then applied in the subsequent sweep. This proceeds until the
+free energy landscape has converged.</p>
 <p>Detailed information on the method and implementation can be found in
-the <a class="reference external" href="https://arxiv.org/abs/1712.02840">publication</a>.</p>
+the publication <a class="reference internal" href="zReferences.html#sidky2018104111" id="id3">[19]</a>.</p>
 </div>
 <div class="section" id="options-parameters">
 <h2>Options &amp; Parameters<a class="headerlink" href="#options-parameters" title="Permalink to this headline">¶</a></h2>
-<p>ANN sampling is selected by defining <code class="docutils literal notranslate"><span class="pre">type&quot;</span> <span class="pre">:</span> <span class="pre">&quot;ANN&quot;</span></code> as the
+<p>ANN sampling is selected by defining <code class="docutils literal notranslate"><span class="pre">&quot;type&quot;:</span> <span class="pre">&quot;ANN&quot;</span></code> as the
 method in the JSON input file. It supports the following options:</p>
-<dl class="docutils">
-<dt>topology</dt>
-<dd><em>Array of integers (length: number of hidden layers)</em>.
+<dl class="simple">
+<dt>topology</dt><dd><p><em>Array of integers (length: number of hidden layers)</em>.
 This array defines the architecture of the neural network. ANN sampling
-is quite robust to the choice of network architure. Nonetheless, there are
+is quite robust to the choice of network architecture. Nonetheless, there are
 very good heuristics that will ensure you have a network that trains quickly
 and performs well. The key rule is to use a network with a single hidden layer
 if you are biasing on one CV, and two hidden layers if you are biasing on two or
 more. <strong>Please take a look at the example section for more details on network
-architectures</strong>.</dd>
-<dt>grid</dt>
-<dd>This is a grid object which defines how CV space will be discretized.</dd>
-<dt>nsweep</dt>
-<dd><em>integer</em>
-Defines the length of a sweep in iterations. Typical values range from 1,000 to 10,000 depending
-on the size of the system. The slower the system dynamics, the longer the sweep. This is not going to heavily
-affect convergence time, and the method is generally quite robust to choice of sweep length. The main
-consequence of this choice is that the ANN training time become relatively expensive if the system is
-very cheap to evaluate.</dd>
-<dt>weight</dt>
-<dd><em>double</em>
+architectures</strong>.</p>
+</dd>
+<dt>grid</dt><dd><p>This is a grid object which defines how CV space will be discretized.</p>
+</dd>
+<dt>nsweep</dt><dd><p><em>integer</em>
+Defines the length of a sweep in iterations. Typical values range from
+1,000 to 10,000 depending on the size of the system. The slower the system
+dynamics, the longer the sweep. This is not going to heavily affect
+convergence time, and the method is generally quite robust to choice of
+sweep length. The main consequence of this choice is that the ANN training
+time become relatively expensive if the system is very cheap to evaluate.</p>
+</dd>
+<dt>weight</dt><dd><p><em>double</em>
 (Default = 1)
-This defines how much relative weight is assigned to the statistics collected during a sweep.
-The default value works fine in all cases. However, if you know the free energy barriers are very large
-or very small, you can adjust this to speed up convergence.</dd>
-<dt>temperature</dt>
-<dd><em>double</em>
-The temperature of the simulation must be specified.</dd>
-<dt>output_file</dt>
-<dd><em>string</em>
-(Default = ann.out)
-This specifies the name of the output file containing the bias and reweighted histogram.</dd>
-<dt>overwrite_output</dt>
-<dd><em>boolean</em>
+This defines how much relative weight is assigned to the statistics
+collected during a sweep. The default value works fine in all cases.
+However, if you know the free energy barriers are very large
+or very small, you can adjust this to speed up convergence.</p>
+</dd>
+<dt>temperature</dt><dd><p><em>double</em>
+The temperature of the simulation must be specified.</p>
+</dd>
+<dt>output_file</dt><dd><p><em>string</em>
+(Default = <code class="docutils literal notranslate"><span class="pre">ann.out</span></code>)
+This specifies the name of the output file containing the bias and
+reweighted histogram.</p>
+</dd>
+<dt>overwrite_output</dt><dd><p><em>boolean</em>
 (Default = true)
-Setting this to false will append the sweep number to the output file name so that a series of files
-will be created over time. This is useful if a user is interested in plotting the evolution of the bias
-over time.</dd>
-<dt>lower_bounds</dt>
-<dd><em>array of doubles (nr of CVs) long</em>.
-This array defines the minimum values for the CV restraints.</dd>
-<dt>upper_bounds</dt>
-<dd><em>array of doubles (nr of CVs) long</em>.
-This array defines the maximum values for the CV restraints.</dd>
-<dt>lower_bound_restraints</dt>
-<dd><em>array of doubles (nr of CVs) long</em>.
-This array defines the spring constants for the lower bound CV restraints. If you do not
-wish to restrain the CVs to a particular interval, you can set this to zero.</dd>
-<dt>upper_bound_restraints</dt>
-<dd><em>array of doubles (nr of CVs) long</em>.
-This array defines the spring constants for the upper bound CV restraints. If you do not
-wish to restrain the CVs to a particular interval, you can set this to zero.</dd>
-<dt>max_iters</dt>
-<dd><em>integer</em>
+Setting this to false will append the sweep number to the output file name
+so that a series of files will be created over time. This is useful if a
+user is interested in plotting the evolution of the bias over time.</p>
+</dd>
+<dt>lower_bounds</dt><dd><p><em>array of doubles (nr of CVs) long</em>.
+This array defines the minimum values for the CV restraints.</p>
+</dd>
+<dt>upper_bounds</dt><dd><p><em>array of doubles (nr of CVs) long</em>.
+This array defines the maximum values for the CV restraints.</p>
+</dd>
+<dt>lower_bound_restraints</dt><dd><p><em>array of doubles (nr of CVs) long</em>.
+This array defines the spring constants for the lower bound CV restraints.
+If you do not wish to restrain the CVs to a particular interval, you can
+set this to zero.</p>
+</dd>
+<dt>upper_bound_restraints</dt><dd><p><em>array of doubles (nr of CVs) long</em>.
+This array defines the spring constants for the upper bound CV restraints.
+If you do not wish to restrain the CVs to a particular interval, you can
+set this to zero.</p>
+</dd>
+<dt>max_iters</dt><dd><p><em>integer</em>
 (Default = 1000)
-Defines the maximum number of training iterations/epochs per sweep. If you are running a very
-large network or a large number of CVs then this can be made quite small (10 to 100) since the
-network will continually improve as the system proceeds. Unless you have a very large network,
-or a very cheap system, you can leave this alone.</dd>
-<dt>prev_weight</dt>
-<dd><em>double</em>
+Defines the maximum number of training iterations/epochs per sweep. If you
+are running a very large network or a large number of CVs then this can be
+made quite small (10 to 100) since the network will continually improve as
+the system proceeds. Unless you have a very large network, or a very cheap
+system, you can leave this alone.</p>
+</dd>
+<dt>prev_weight</dt><dd><p><em>double</em>
 (Default = 1)
-This is a special feature that allows ANN sampling to “forget” previous history specified by a fraction.
-For example, if you want to retain 90% of accumulated data each sweep, set this to 0.9. This is useful if
-you are sampling along a CV you know to be bad, and there is clear quasi-nonergodicity in the system. By
-allowing the ANN method to forget accumulated data, you allow it to adapt more efficiently to newly accessible
-regions of phase space. Note that unless you really know why you need to be using this, you should leave it
-alone.</dd>
+This is a special feature that allows ANN sampling to “forget” previous
+history specified by a fraction. For example, if you want to retain 90% of
+accumulated data each sweep, set this to 0.9. This is useful if
+you are sampling along a CV you know to be bad, and there is clear
+quasi-nonergodicity in the system. By allowing the ANN method to forget
+accumulated data, you allow it to adapt more efficiently to newly
+accessible regions of phase space. Note that unless you really know why
+you need to be using this, you should leave it alone.</p>
+</dd>
 </dl>
 </div>
 <div class="section" id="example-input">
 <h2>Example Input<a class="headerlink" href="#example-input" title="Permalink to this headline">¶</a></h2>
-<p>There is an online repository containing complete examples and analysis for systems of up to 4 CVs.
-Along with the original publication, this should provide you a good idea of how to specify the network
-architecture. The repository can be found <a class="reference external" href="https://github.com/hsidky/ann_sampling">here</a>.</p>
-<p>For a 1D CV such as Na-Cl distance, the input is as follows</p>
+<p>There is an online repository containing complete examples and analysis for
+systems of up to 4 CVs. Along with the original publication, this should
+provide you a good idea of how to specify the network architecture. The
+repository can be found <a class="reference external" href="https://github.com/hsidky/ann_sampling">here</a>.</p>
+<p>For one CV, such as Na–Cl distance, the input is as follows:</p>
 <div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;methods&quot;</span> <span class="o">:</span> <span class="p">[</span>
         <span class="p">{</span>
                 <span class="s2">&quot;type&quot;</span> <span class="o">:</span> <span class="s2">&quot;ANN&quot;</span><span class="p">,</span>
@@ -298,7 +308,8 @@ architecture. The repository can be found <a class="reference external" href="ht
 <span class="p">]</span>
 </pre></div>
 </div>
-<p>for a 2D CV such as the dihedral angles of ADP, the input is as follows</p>
+<p>for two simultaneous CVs, such as the dihedral angles of ADP, the input is
+as follows:</p>
 <div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;methods&quot;</span> <span class="o">:</span> <span class="p">[</span>
         <span class="p">{</span>
                 <span class="s2">&quot;type&quot;</span> <span class="o">:</span> <span class="s2">&quot;ANN&quot;</span><span class="p">,</span>
@@ -324,15 +335,15 @@ architecture. The repository can be found <a class="reference external" href="ht
 </div>
 <div class="section" id="output">
 <h2>Output<a class="headerlink" href="#output" title="Permalink to this headline">¶</a></h2>
-<p>ANN sampling writes either a single output file or a series of output files over time. Each
-file contains columns corresponding to the CVs, a column containing the unbiased histogram
-estimate and a final column containing the bias. The format is as follows:</p>
-<ul class="simple">
-<li>cv1 cv2 … histogram bias *</li>
-</ul>
-<p>This file can be loaded and visualized easily in many scripting languages such as Python and
-MATLAB. An exmaple of how to load data in Python for a 2D CV is shown below.</p>
-<div class="highlight-python notranslate"><div class="highlight"><pre><span></span>    <span class="c1"># Load data.</span>
+<p>ANN sampling writes either a single output file or a series of output files
+over time. Each file contains columns corresponding to the CVs, a column
+containing the unbiased histogram estimate and a final column containing the
+bias. The format is as follows:</p>
+<p><em>cv1 cv2 … histogram bias</em></p>
+<p>This file can be loaded and visualized easily in many scripting languages, such
+as Python and MATLAB. An example of how to load data in Python for a 2D CV is
+shown below.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Load data.</span>
 <span class="n">X</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">loadtxt</span><span class="p">(</span><span class="s2">&quot;ann.dat&quot;</span><span class="p">)</span>
 <span class="n">xg</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="n">X</span><span class="p">[:,</span><span class="mi">0</span><span class="p">],</span> <span class="p">(</span><span class="mi">61</span><span class="p">,</span> <span class="mi">61</span><span class="p">))</span>
 <span class="n">yg</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">reshape</span><span class="p">(</span><span class="n">X</span><span class="p">[:,</span><span class="mi">1</span><span class="p">],</span> <span class="p">(</span><span class="mi">61</span><span class="p">,</span> <span class="mi">61</span><span class="p">))</span>
@@ -340,13 +351,15 @@ MATLAB. An exmaple of how to load data in Python for a 2D CV is shown below.</p>
 <span class="n">zg</span> <span class="o">=</span> <span class="n">zg</span> <span class="o">-</span> <span class="n">np</span><span class="o">.</span><span class="n">max</span><span class="p">(</span><span class="n">zg</span><span class="p">)</span>
 
 <span class="c1"># Plot data.</span>
-    <span class="n">fig</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span><span class="mi">5</span><span class="p">))</span>
+<span class="n">fig</span> <span class="o">=</span> <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span><span class="mi">5</span><span class="p">))</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">contour</span><span class="p">(</span><span class="n">xg</span><span class="p">,</span> <span class="n">yg</span><span class="p">,</span> <span class="n">zg</span><span class="p">,</span> <span class="n">linewidths</span><span class="o">=</span><span class="mf">0.5</span><span class="p">,</span> <span class="n">colors</span><span class="o">=</span><span class="s2">&quot;k&quot;</span><span class="p">)</span>
 <span class="n">plt</span><span class="o">.</span><span class="n">contourf</span><span class="p">(</span><span class="n">xg</span><span class="p">,</span> <span class="n">yg</span><span class="p">,</span> <span class="n">zg</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>A file called “netstate.dat” is also written out which contains the neural network parameters.
-This network can be evaluated in Python using a ANN library such as Tensorflow or Keras.</p>
+<p>A file called “netstate.dat” is also written out which contains the neural
+network parameters. This network can be evaluated in Python using a ANN library
+such as <a class="reference external" href="https://www.tensorflow.org/">TensorFlow</a> or
+<a class="reference external" href="https://keras.io/">Keras</a>.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">keras.models</span> <span class="kn">import</span> <span class="n">Sequential</span>
 <span class="kn">from</span> <span class="nn">keras.layers</span> <span class="kn">import</span> <span class="n">Dense</span><span class="p">,</span> <span class="n">Activation</span>
 
@@ -393,7 +406,7 @@ This network can be evaluated in Python using a ANN library such as Tensorflow o
 <span class="n">net</span><span class="o">.</span><span class="n">set_weights</span><span class="p">(</span><span class="n">params</span><span class="p">)</span>
 </pre></div>
 </div>
-<p>The network can then be evaluated on a high resolution grid and plotted.</p>
+<p>The network can then be evaluated on a high-resolution grid and plotted.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Define new high-resolution grid.</span>
 <span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="o">-</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">,</span> <span class="mi">500</span><span class="p">,</span> <span class="n">endpoint</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
 <span class="n">y</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="o">-</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">,</span> <span class="mi">500</span><span class="p">,</span> <span class="n">endpoint</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
@@ -423,10 +436,13 @@ This network can be evaluated in Python using a ANN library such as Tensorflow o
 </div>
 <div class="section" id="developer">
 <h2>Developer<a class="headerlink" href="#developer" title="Permalink to this headline">¶</a></h2>
-<p>Hythem Sidky.</p>
+<ul class="simple">
+<li><p>Hythem Sidky</p></li>
+</ul>
 <div class="admonition warning">
-<p class="first admonition-title">Warning</p>
-<p class="last">Please make sure to cite the paper if you use this method!</p>
+<p class="admonition-title">Warning</p>
+<p>Please make sure to cite the paper <a class="reference internal" href="zReferences.html#sidky2018104111" id="id4">[19]</a> if you use
+this method!</p>
 </div>
 </div>
 </div>
@@ -442,7 +458,7 @@ This network can be evaluated in Python using a ANN library such as Tensorflow o
         <a href="Basis Function Sampling.html" class="btn btn-neutral float-right" title="Basis Function Sampling" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="Adaptive Biasing Force Algorithm.html" class="btn btn-neutral" title="Adaptive Biasing Force Algorithm" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="Adaptive Biasing Force Algorithm.html" class="btn btn-neutral float-left" title="Adaptive Biasing Force Algorithm" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -451,8 +467,10 @@ This network can be evaluated in Python using a ANN library such as Tensorflow o
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2016, the SSAGES Team.
-      Last updated on Dec 14, 2018.
+        &copy; Copyright 2018, the SSAGES Team
+      <span class="lastupdated">
+        Last updated on Aug 23, 2019.
+      </span>
 
     </p>
   </div>
@@ -469,36 +487,16 @@ This network can be evaluated in Python using a ANN library such as Tensorflow o
   
 
 
-  
-
-    <script type="text/javascript">
-        var DOCUMENTATION_OPTIONS = {
-            URL_ROOT:'./',
-            VERSION:'v0.8.3-alpha',
-            LANGUAGE:'None',
-            COLLAPSE_INDEX:false,
-            FILE_SUFFIX:'.html',
-            HAS_SOURCE:  true,
-            SOURCELINK_SUFFIX: '.txt'
-        };
-    </script>
-      <script type="text/javascript" src="_static/jquery.js"></script>
-      <script type="text/javascript" src="_static/underscore.js"></script>
-      <script type="text/javascript" src="_static/doctools.js"></script>
-      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-
-  
-
-  
-  
-    <script type="text/javascript" src="_static/js/theme.js"></script>
-  
-
   <script type="text/javascript">
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
-  </script> 
+  </script>
+
+  
+  
+    
+   
 
 </body>
 </html>

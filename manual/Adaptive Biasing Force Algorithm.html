@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Adaptive Biasing Force Algorithm &mdash; SSAGES v0.8.3-alpha documentation</title>
+  <title>Adaptive Biasing Force Algorithm &mdash; SSAGES v0.8.5-alpha documentation</title>
   
 
   
@@ -17,35 +17,37 @@
   
 
   
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
 
-  
-  
     
 
   
-
-  
-    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="Artificial Neural Network Sampling" href="Artificial Neural Network Sampling.html" />
     <link rel="prev" title="Advanced Sampling Methods" href="Advanced Sampling Methods.html" /> 
-
-  
-  <script src="_static/js/modernizr.min.js"></script>
-
 </head>
 
 <body class="wy-body-for-nav">
 
    
   <div class="wy-grid-for-nav">
-
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
-        <div class="wy-side-nav-search">
+        <div class="wy-side-nav-search" >
           
 
           
@@ -59,7 +61,7 @@
             
             
               <div class="version">
-                0.8.3
+                0.8.5
               </div>
             
           
@@ -92,8 +94,9 @@
 <li class="toctree-l1 current"><a class="reference internal" href="Advanced Sampling Methods.html">Advanced Sampling Methods</a><ul class="current">
 <li class="toctree-l2 current"><a class="current reference internal" href="#">Adaptive Biasing Force Algorithm</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#introduction">Introduction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#implementation-notes">Implementation Notes</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#example-input">Example Input</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#options-parameters">Options &amp; Parameters</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#example-input">Example input</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#output">Output</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#tutorial">Tutorial</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#developers">Developers</a></li>
@@ -105,18 +108,16 @@
 <li class="toctree-l2"><a class="reference internal" href="Finite Temperature String.html">Finite Temperature String</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Forward-Flux.html">Forward-Flux</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Metadynamics.html">Metadynamics</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Image Method.html">Image Method</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Replica Exchange.html">Replica Exchange</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Swarm of Trajectories.html">Swarm of Trajectories</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Umbrella Sampling.html">Umbrella Sampling</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="Write your own Methods and CVs.html">Write your own Methods and CVs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Write your own Methods and CVs.html">Write Your Own CVs and Methods</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Contribute to SSAGES.html">Contribute to SSAGES</a></li>
-<li class="toctree-l1"><a class="reference internal" href="The SSAGES Cookbook.html">The SSAGES cookbook</a></li>
+<li class="toctree-l1"><a class="reference internal" href="The SSAGES Cookbook.html">The SSAGES Cookbook</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Acknowledgements.html">Acknowledgments</a></li>
-<li class="toctree-l1"><a class="reference internal" href="License.html">Copyright</a></li>
-<li class="toctree-l1"><a class="reference internal" href="License.html#id1">License information</a></li>
+<li class="toctree-l1"><a class="reference internal" href="zReferences.html">References</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Copyright and License.html">Copyright and License Information</a></li>
 </ul>
 
             
@@ -187,149 +188,78 @@
 <span id="adaptive-biasing-force"></span><h1>Adaptive Biasing Force Algorithm<a class="headerlink" href="#adaptive-biasing-force-algorithm" title="Permalink to this headline">¶</a></h1>
 <div class="section" id="introduction">
 <h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h2>
-<p>Adaptive Biasing Force is a variant of a flat histogram method. Like many
-other methods that seek uniform sampling over CV space such as Metadynamics, it
-adaptively biases the simulation until such diffusive sampling is achieved.
-However, unlike metadynamics, ABF does not estimate the free energy surface.
-Rather, it directly estimates the derivative of the free energy in CV directions
-- the generalized force on that CV by the system.</p>
-<p>In practice, this translates to histogramming coordinates in CV space with an
-instantaneous estimation of the free energy derivative. This instantaneous
-estimate fluctuates around the true, global free energy derivative at that
-point, but the average quickly converges to the real value. Then, the free
-energy derivatives can be integrated much like Thermodynamic Integration to get
-the free energy surface.</p>
-<p>Thus, ABF gives a vector field and not a free energy surface.</p>
-<p>An excellent write-up on the method can be found
-<a class="reference external" href="http://pubs.acs.org/doi/abs/10.1021/jp506633n">here</a>.</p>
-<p>Details on the specific implementation used in SSAGES can be found
-<a class="reference external" href="http://mc.stanford.edu/cgi-bin/images/0/06/Darve_2008.pdf">here</a>.</p>
-<p>An integrator for 1D, 2D and 3D surfaces are provided in SSAGES/Tools/ABF_integrator (requires numpy, scipy and matplotlib).
-ABF_integrator.py -i &lt;inputfile&gt; -o &lt;outputname&gt; -p &lt;bool&gt; (&lt;bool&gt; &lt;bool&gt;) –interpolate &lt;integer&gt; (&lt;integer&gt; &lt;integer&gt;) –scale &lt;float&gt;</p>
+<p>Relative to most other free energy methods, which are based on adding biases
+to the Hamiltonian of a system to obtain a flat histogram in converged
+sampling, the adaptive biasing force method (ABF) is unique, as it seeks a
+flattening of the generalized force. Like flat histogram methods, this bias
+force is applied until the landscape seen by a simulation is flat in
+collective variable (CV) space and freely diffusive sampling is achieved.</p>
+<p>In practice, ABF functions by partitioning relevant CV space into histogram-
+like bins with a grid, and keeping a running tabulation of the number of
+visits to each bin. Concurrently, a running sum of the instantaneous
+generalized force experienced by the system. Putting these together gives an
+estimate for the mean generalized force, and integrating this quantity yields
+the free energy. Note that this means ABF returns a vector field rather than a
+free energy surface (which is the output of most methods.) Ref.
+<a class="reference internal" href="zReferences.html#comer20141129" id="id1">[4]</a> contains
+an excellent write-up on the method in general. The specific implementation in
+SSAGES is discussed in Ref. <a class="reference internal" href="zReferences.html#darve2008144120" id="id2">[6]</a>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>An integrator for 1D, 2D and 3D surfaces are provided in SSAGES/Tools/ABF_integrator (requires numpy, scipy and matplotlib). Syntax is below; this is illustrated further in the tutorial found on this page.</p>
 </div>
-<div class="section" id="options-parameters">
-<h2>Options &amp; Parameters<a class="headerlink" href="#options-parameters" title="Permalink to this headline">¶</a></h2>
-<p>Adaptive Biasing Force Method</p>
-<ul class="simple">
-<li>Calculate the generalized force on CVs at each timestep</li>
-<li>Bias with the negative of the estimated generalized force</li>
-<li>Define a CV range. Outside of the CV range, there will be no bias, and no
-histogram hits will be collected.</li>
-<li>Can restart from a previous run. Simply include Fworld_cvX and Nworld outputs
-in your working directory at runtime, and set ‘restart’ to true.</li>
-<li>ABF will keep a single backup of old files, and will overwrite older backups with new
-if they already exist. If restarting, a backup will not be created, instead
-ABF will read from and update the newest files.</li>
-<li>Multiple walkers will read from and write to the same histogram during runtime,
-and this histogram will be saved the same way a single walker histogram is saved.</li>
-<li>Can optionally define a restraint range. Outside this range, a harmonic
-restraint of user-chosen spring constant(s) will drive the CV(s) back into the
-range. This range should be WIDER than the CV range by at least one bin size
-in each direction. To disable restraints, enter a spring constant k equal to
-or less than zero. If restraints are used on a periodic system, one can define
-the periodic boundaries, so that minimum image convention to CVs can be applied.
-(CV_periodic_boundary_upper/lower_bounds). For example, on a -pi to pi CV, if the
-CV is restrained to -3.14 to -2.36 and the CV crosses the -3.14 boundary to 3.14,
-this will ensure the restraint is applied correctly back towards -3.14 rather than
-a large force applied to bring it from 3.14 all the way to -2.36.</li>
-</ul>
-<p>How to define the ABF Method: <code class="docutils literal notranslate"><span class="pre">&quot;type&quot;</span> <span class="pre">:</span> <span class="pre">&quot;ABF&quot;</span></code></p>
-<dl class="docutils">
-<dt>cvs</dt>
-<dd><em>array of integers</em>.
-This array selects which CVs this method will operate on. Index starts from 0.</dd>
-<dt>CV_lower_bounds</dt>
-<dd><em>array of doubles (nr of CVs) long</em>.
-This array defines the minimum values for the CVs for the range in which the
-method will be used in order.</dd>
-<dt>CV_upper_bounds</dt>
-<dd><em>array of doubles (nr of CVs) long</em>.
-This array defines the minimum values for the CVs for the range in which the
-method will be used in order.</dd>
-<dt>CV_bins</dt>
-<dd><em>array of doubles (nr of CVs) long</em>.
-This array defines the number of histogram bins in each CV dimension in order.</dd>
-<dt>CV_restraint_minimums</dt>
-<dd><em>array of doubles (nr of CVs) long</em>.
-This array defines the minimum values for the CV restraints in order.</dd>
-<dt>CV_restraint_maximums</dt>
-<dd><em>array of doubles (nr of CVs) long</em>.
-This array defines the maximum values for the CV restraints in order.</dd>
-<dt>CV_restraint_spring_constants</dt>
-<dd><em>array of doubles (nr of CVs) long</em>.
-This array defines the spring constants for the CV restraints in order.
-Enter a value equal to or less than zero to turn restraints off.</dd>
-<dt>CV_isperiodic</dt>
-<dd><em>array of booleans (nr of CVs) long</em>.
-This array defines whether a given CV is periodic for restraint purposes.
-This is only used to apply minimum image convention to CV restraints.
-Can be safely set to false even for periodic CVs if no restraints are being used.
-If ANY CV is set to periodic, then CV_periodic_boundary_lower_bounds and
-CV_periodic_boundary_upper_bounds must be provided for ALL CVs.
-Values entered for non-periodic CVs are not used.</dd>
-<dt>CV_periodic_boundary_lower_bounds</dt>
-<dd><em>array of doubles (nr of CVs) long</em>.
-This array defines the lower end of the period.
-This only matters if CV_isperiodic is true for the CV.</dd>
-<dt>CV_periodic_boundary_upper_bounds</dt>
-<dd><em>array of doubles (nr of CVs) long</em>.
-This array defines the upper end of the period.
-This only matters if CV_isperiodic is true for the CV.</dd>
-<dt>timestep</dt>
-<dd><em>double</em>.
-The timestep of the simulation. Units depend on the conversion factor that
-follows. This must be entered correctly, otherwise generalized force estimate
-will be incorrect.</dd>
-<dt>minimum_count</dt>
-<dd><em>integer</em>.
-Number of hits in a histogram required before the full bias is active for
-that bin. Below this value, the bias linearly decreases to equal 0 at hits = 0.
-Default = 200, but user should provide a reasonable value for their system.</dd>
-<dt>mass_weighing</dt>
-<dd><em>boolean</em>
-Turns on/off mass weighing of the adaptive force.
-Default is off. Keep off if your system has massless sites such as in TIP4P water.</dd>
-<dt>output_file</dt>
-<dd><em>string</em>.
-Default = F_out
-Name of the file to save Adaptive Force Vector Field information to - this
-is what’s useful</dd>
-<dt>Fworld_output_file</dt>
-<dd><em>string</em>.
-Default = Fworld_cv
-Name of the file to backup the raw Fworld output to for restarts.
-There will be separate outputs for each CV.</dd>
-<dt>Nworld_output_file</dt>
-<dd><em>string</em>.
-Default = Nworld
-Name of the file to backup the raw Nworld output to for restarts.</dd>
-<dt>output_frequency</dt>
-<dd><em>integer</em>.
-Saves the histogram of generalized force every this many timesteps.</dd>
-<dt>restart</dt>
-<dd><em>boolean</em>
-Default = false
-If set to true, ABF will attempt to load a previous state from Nworld and Fworld files.</dd>
-<dt>unit_conversion</dt>
-<dd><em>double</em>.
-Unit conversion from d(momentum)/d(time) to force for the simulation.
-For LAMMPS using units real, this is 2390.06
-(gram.angstrom/mole.femtosecond^2 -&gt; kcal/mole.angstrom)
-For GROMACS, this is 1.</dd>
-<dt>frequency</dt>
-<dd><em>1</em>.
-OPTIONAL
-Leave at 1.</dd>
-</dl>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>./ABF_integrator.py -i &lt;inputfile&gt; -o &lt;outputname&gt; -p &lt;bool&gt; <span class="o">(</span>&lt;bool&gt; &lt;bool&gt;<span class="o">)</span> --interpolate &lt;integer&gt; <span class="o">(</span>&lt;integer&gt; &lt;integer&gt;<span class="o">)</span> --scale &lt;float&gt;
+</pre></div>
+</div>
+</div>
+<div class="section" id="implementation-notes">
+<h2>Implementation Notes<a class="headerlink" href="#implementation-notes" title="Permalink to this headline">¶</a></h2>
+<p>ABF calculates a generalized force on CVs at each timestep, and biases
+simulations using the negative of the estimated generalized force. This
+requires a grid, which requires that you define a CV range. Outside of the CV
+range, the simulation will continue to run, but the grid does not extend
+there, so there is no bias applied and no histogram hits are collected.
+histogram hits will be collected.</p>
+<p>ABF can restart from a previous run. Simply include Fworld_cvX and Nworld
+outputs generated by the previous run in your working directory, and set the
+‘restart’ option to true.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>ABF keeps only a single backup of old files, and overwrites older backups
+with new data if they already exist. If restarting, a backup will not be
+created, instead ABF will read from and update the newest files. If you want
+to keep a copy of the output from a previous run after restart, be sure to
+rename the output or place a copy in a different directory.</p>
+</div>
+<p>If you are using the multiple walkers option, they will read from and write to
+the same histogram and force estimate during runtime. The resulting histogram
+and force data are saved in the same way as single-walker simulations.</p>
+<p>ABF can optionally define a restraint range, which biases simulations back
+toward the region of interest using a harmonic restraint with user-chosen
+spring constant(s). To disable restraints, enter a spring constant k equal to
+or less than zero.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>The restraint range should be WIDER than the CV range by at least one bin size
+in each direction.</p>
+</div>
+<p>If restraints are used on a periodic system, one can define the periodic
+boundaries, so that minimum image convention to CVs can be applied using the
+commands <code class="docutils literal notranslate"><span class="pre">CV_periodic_boundary_upper_bounds</span></code> and
+<code class="docutils literal notranslate"><span class="pre">CV_periodic_boundary_lower_bounds</span></code>. For example, on a <span class="math notranslate nohighlight">\(-\pi\)</span> to
+<span class="math notranslate nohighlight">\(\pi\)</span> CV, if the CV is restrained between -3.14 to -2.36 and the system
+crosses the periodic boundary, setting this will ensure the restraint is
+applied correctly back towards -3.14 rather than applying an incorrect a large
+force to push it toward -2.36.</p>
 </div>
 <div class="section" id="example-input">
-<h2>Example input<a class="headerlink" href="#example-input" title="Permalink to this headline">¶</a></h2>
+<h2>Example Input<a class="headerlink" href="#example-input" title="Permalink to this headline">¶</a></h2>
 <div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;methods&quot;</span> <span class="o">:</span> <span class="p">[</span>
     <span class="p">{</span>
         <span class="s2">&quot;type&quot;</span> <span class="o">:</span> <span class="s2">&quot;ABF&quot;</span><span class="p">,</span>
         <span class="s2">&quot;cvs&quot;</span> <span class="o">:</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">],</span>
         <span class="s2">&quot;CV_lower_bounds&quot;</span> <span class="o">:</span> <span class="p">[</span><span class="o">-</span><span class="mf">3.14</span><span class="p">,</span> <span class="o">-</span><span class="mf">3.14</span><span class="p">],</span>
-        <span class="s2">&quot;CV_upper_bounds&quot;</span> <span class="o">:</span> <span class="p">[</span><span class="mf">3.14</span><span class="p">,</span><span class="mf">3.14</span><span class="p">],</span>
+        <span class="s2">&quot;CV_upper_bounds&quot;</span> <span class="o">:</span> <span class="p">[</span><span class="mf">3.14</span><span class="p">,</span> <span class="mf">3.14</span><span class="p">],</span>
         <span class="s2">&quot;CV_bins&quot;</span> <span class="o">:</span> <span class="p">[</span><span class="mi">21</span><span class="p">,</span><span class="mi">21</span><span class="p">],</span>
         <span class="s2">&quot;CV_restraint_minimums&quot;</span> <span class="o">:</span> <span class="p">[</span><span class="o">-</span><span class="mi">5</span><span class="p">,</span><span class="o">-</span><span class="mi">5</span><span class="p">],</span>
         <span class="s2">&quot;CV_restraint_maximums&quot;</span> <span class="o">:</span> <span class="p">[</span><span class="mi">5</span><span class="p">,</span><span class="mi">5</span><span class="p">],</span>
@@ -345,6 +275,121 @@ Leave at 1.</dd>
 <span class="p">]</span>
 </pre></div>
 </div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Be sure to follow correct JSON syntax for your input, with a comma after every line except the last within each bracket.</p>
+</div>
+</div>
+<div class="section" id="options-parameters">
+<h2>Options &amp; Parameters<a class="headerlink" href="#options-parameters" title="Permalink to this headline">¶</a></h2>
+<p><strong>Define ABF</strong>:</p>
+<p>In the methods block, define the ABF method through the syntax:</p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;type&quot;</span> <span class="o">:</span> <span class="s2">&quot;ABF&quot;</span>
+</pre></div>
+</div>
+<p><strong>Define CVs</strong></p>
+<p>To define the collective variables:</p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;cvs&quot;</span> <span class="o">:</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span>
+</pre></div>
+</div>
+<p>In the example input, this defines a two-dimensional CV-space to be sampled by ABF, with indices [0,1]. The argument to this must be a list of integers defining the CVs to be operated on by ABF.</p>
+<p><strong>Define the grid</strong></p>
+<p>To define the bounds:</p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;CV_lower_bounds&quot;</span> <span class="o">:</span> <span class="p">[</span><span class="o">-</span><span class="mf">3.14</span><span class="p">,</span> <span class="o">-</span><span class="mf">3.14</span><span class="p">]</span>
+<span class="s2">&quot;CV_upper_bounds&quot;</span> <span class="o">:</span> <span class="p">[</span><span class="mf">3.14</span><span class="p">,</span> <span class="mf">3.14</span><span class="p">]</span>
+</pre></div>
+</div>
+<p>Thee are arrays of doubles whose length is the number of CVs used. This
+defines the minimum and maximum values for the CVs for the range in which the
+method will be used in order.</p>
+<p>To define the number of CV bins used:</p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;CV_bins&quot;</span> <span class="o">:</span> <span class="p">[</span><span class="mi">21</span><span class="p">,</span><span class="mi">21</span><span class="p">]</span>
+</pre></div>
+</div>
+<p>This array of integers defines the number of histogram bins in each CV dimension in order.</p>
+<p><strong>Define the restraints</strong></p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;CV_restraint_minimums&quot;</span> <span class="o">:</span> <span class="p">[</span><span class="o">-</span><span class="mi">5</span><span class="p">,</span><span class="o">-</span><span class="mi">5</span><span class="p">],</span>
+<span class="s2">&quot;CV_restraint_maximums&quot;</span> <span class="o">:</span> <span class="p">[</span><span class="mi">5</span><span class="p">,</span><span class="mi">5</span><span class="p">],</span>
+</pre></div>
+</div>
+<p>These arrays define the minimum and maximum values for the CV restraints in order.</p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;CV_restraint_spring_constants&quot;</span> <span class="o">:</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">],</span>
+</pre></div>
+</div>
+<p>This array defines the spring constants for the CV restraints in order.
+Enter a value equal to or less than zero to turn restraints off.</p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;CV_isperiodic&quot;</span> <span class="o">:</span> <span class="p">[</span><span class="kc">false</span><span class="p">,</span><span class="kc">false</span><span class="p">],</span>
+
+<span class="nx">This</span> <span class="nx">array</span> <span class="nx">defines</span> <span class="nx">whether</span> <span class="nx">a</span> <span class="nx">given</span> <span class="nx">CV</span> <span class="nx">is</span> <span class="nx">periodic</span> <span class="k">for</span> <span class="nx">restraint</span> <span class="nx">purposes</span><span class="p">.</span>
+<span class="nx">This</span> <span class="nx">is</span> <span class="nx">only</span> <span class="nx">used</span> <span class="nx">to</span> <span class="nx">apply</span> <span class="nx">minimum</span> <span class="nx">image</span> <span class="nx">convention</span> <span class="nx">to</span> <span class="nx">CV</span> <span class="nx">restraints</span><span class="p">.</span> <span class="nx">The</span>
+<span class="nx">value</span> <span class="nx">can</span> <span class="nx">be</span> <span class="nx">safely</span> <span class="nx">set</span> <span class="nx">to</span> <span class="kc">false</span> <span class="o">*</span><span class="nx">even</span> <span class="k">for</span> <span class="nx">periodic</span> <span class="nx">CVs</span><span class="o">*</span> <span class="k">if</span> <span class="nx">no</span> <span class="nx">restraints</span>
+<span class="nx">are</span> <span class="nx">being</span> <span class="nx">used</span><span class="p">.</span>
+</pre></div>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>If ANY CV is set to periodic, then <code class="docutils literal notranslate"><span class="pre">CV_periodic_boundary_lower_bounds</span></code>
+and  <code class="docutils literal notranslate"><span class="pre">CV_periodic_boundary_upper_bounds</span></code> must be provided for ALL CVs.
+Values entered for non-periodic CVs are not used.</p>
+</div>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;CV_periodic_boundary_lower_bounds&quot;</span> <span class="o">:</span> <span class="p">[</span><span class="o">-</span><span class="mf">3.14</span><span class="p">,</span> <span class="o">-</span><span class="mf">3.14</span><span class="p">],</span>
+<span class="s2">&quot;CV_periodic_boundary_upper_bounds&quot;</span> <span class="o">:</span> <span class="p">[</span><span class="mf">3.14</span><span class="p">,</span> <span class="mf">3.14</span><span class="p">],</span>
+</pre></div>
+</div>
+<p>These arrays define the lower and upper end of the period. This only matters if <code class="docutils literal notranslate"><span class="pre">CV_isperiodic</span></code> is true for the CV.</p>
+<p><strong>Define time and unit parameters</strong></p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;timestep&quot;</span> <span class="o">:</span> <span class="mf">0.002</span><span class="p">,</span>
+</pre></div>
+</div>
+<p>The timestep of the simulation. Units depend on the conversion factor that
+follows. This must be entered correctly, otherwise the generalized force estimate
+will be incorrect.</p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;unit_conversion&quot;</span> <span class="o">:</span> <span class="mi">1</span><span class="p">,</span>
+</pre></div>
+</div>
+<p>Defines the unit conversion from d(momentum)/d(time) to force for the simulation. For LAMMPS using units real, this is 2390.06 (gram.angstrom/mole.femtosecond^2 -&gt; kcal/mole.angstrom) For GROMACS, this is 1.</p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;minimum_count&quot;</span> <span class="o">:</span> <span class="mi">50</span><span class="p">,</span>
+</pre></div>
+</div>
+<p>This is the number of hits required to a bin in the general histogram before
+the full bias is active. Below this value, the bias linearly decreases to
+equal 0 at hits = 0. Default = 200, but user should provide a reasonable
+value for their system. See <a class="reference internal" href="zReferences.html#comer20141129" id="id3">[4]</a> and <a class="reference internal" href="zReferences.html#darve2008144120" id="id4">[6]</a> for more details.</p>
+<p><strong>Output parameters</strong></p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;output_frequency&quot;</span> <span class="o">:</span> <span class="mi">1000</span><span class="p">,</span>
+</pre></div>
+</div>
+<p><em>Optional</em>: This defines how many timesteps pass in between output of the generalized force.</p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;output_file&quot;</span> <span class="o">:</span> <span class="s2">&quot;F_out&quot;</span><span class="p">,</span>
+</pre></div>
+</div>
+<p>This is a string value defining the file name for the adaptive vector force field that is acquired. The default name is “F_out”.</p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;Fworld_output_file&quot;</span> <span class="o">:</span> <span class="s2">&quot;Fworld_cv&quot;</span>
+</pre></div>
+</div>
+<p><em>Optional</em>: This is the name of the file to backup raw Fworld force output for use in restarts. There will be separate outputs for each CV. The default filename is Fworld_cv, which saves each CV’s output to Fworld_cvX.</p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;Nworld_output_file&quot;</span> <span class="o">:</span> <span class="s2">&quot;Nworld&quot;</span>
+</pre></div>
+</div>
+<p><em>Optional</em>: This is name of the file which backs up the raw histogram data for restart purposes. The default filename is “Nworld”.</p>
+<p><strong>Optional Parameters</strong></p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;mass_weighting&quot;</span> <span class="o">:</span> <span class="kc">false</span><span class="p">,</span>
+</pre></div>
+</div>
+<p>Turns on/off mass weighing of the adaptive force. The default is false, which
+turns off the weighting.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Leave this off if your system has massless sites such as in TIP4P water.</p>
+</div>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;restart&quot;</span> <span class="o">:</span> <span class="s2">&quot;false&quot;</span>
+</pre></div>
+</div>
+<p>This boolean determines whether the simulation is a restart. The default value is false. If set to true, ABF will attempt to load a previous state from Nworld and Fworld files.</p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;frequency&quot;</span> <span class="o">:</span> <span class="mi">1</span>
+</pre></div>
+</div>
+<p>Leave at 1.</p>
 </div>
 <div class="section" id="output">
 <h2>Output<a class="headerlink" href="#output" title="Permalink to this headline">¶</a></h2>
@@ -358,50 +403,50 @@ in each dimension. For example, for 2 CVs defined from (-1,1) and (-1,0) with 3 
 following format: 2*N number of columns, where N is the number of CVs. First N columns
 are coordinates in CV space, the N+1 to 2N columns are components of the Adaptive Force
 vectors. An example for N=2 is:</p>
-<table border="1" class="docutils">
+<table class="docutils align-default">
 <colgroup>
-<col width="23%" />
-<col width="23%" />
-<col width="27%" />
-<col width="27%" />
+<col style="width: 23%" />
+<col style="width: 23%" />
+<col style="width: 27%" />
+<col style="width: 27%" />
 </colgroup>
-<thead valign="bottom">
-<tr class="row-odd"><th class="head">CV1 Coord</th>
-<th class="head">CV2 Coord</th>
-<th class="head">d(A)/d(CV1)</th>
-<th class="head">d(A)/d(CV2)</th>
+<thead>
+<tr class="row-odd"><th class="head"><p>CV1 Coord</p></th>
+<th class="head"><p>CV2 Coord</p></th>
+<th class="head"><p>d(A)/d(CV1)</p></th>
+<th class="head"><p>d(A)/d(CV2)</p></th>
 </tr>
 </thead>
-<tbody valign="top">
-<tr class="row-even"><td>-1</td>
-<td>-1</td>
-<td>-1</td>
-<td>1</td>
+<tbody>
+<tr class="row-even"><td><p>-1</p></td>
+<td><p>-1</p></td>
+<td><p>-1</p></td>
+<td><p>1</p></td>
 </tr>
-<tr class="row-odd"><td>-1</td>
-<td>0</td>
-<td>2</td>
-<td>1</td>
+<tr class="row-odd"><td><p>-1</p></td>
+<td><p>0</p></td>
+<td><p>2</p></td>
+<td><p>1</p></td>
 </tr>
-<tr class="row-even"><td>0</td>
-<td>-1</td>
-<td>1</td>
-<td>2</td>
+<tr class="row-even"><td><p>0</p></td>
+<td><p>-1</p></td>
+<td><p>1</p></td>
+<td><p>2</p></td>
 </tr>
-<tr class="row-odd"><td>0</td>
-<td>0</td>
-<td>2</td>
-<td>3</td>
+<tr class="row-odd"><td><p>0</p></td>
+<td><p>0</p></td>
+<td><p>2</p></td>
+<td><p>3</p></td>
 </tr>
-<tr class="row-even"><td>1</td>
-<td>-1</td>
-<td>2</td>
-<td>4</td>
+<tr class="row-even"><td><p>1</p></td>
+<td><p>-1</p></td>
+<td><p>2</p></td>
+<td><p>4</p></td>
 </tr>
-<tr class="row-odd"><td>1</td>
-<td>0</td>
-<td>3</td>
-<td>5</td>
+<tr class="row-odd"><td><p>1</p></td>
+<td><p>0</p></td>
+<td><p>3</p></td>
+<td><p>5</p></td>
 </tr>
 </tbody>
 </table>
@@ -412,26 +457,26 @@ vectors. An example for N=2 is:</p>
 <p>For LAMMPS (must be built with RIGID and MOLECULE packages)
 To build RIGID and MOLECULE:</p>
 <ol class="arabic simple">
-<li>Go to LAMMPS src folder (/build/hooks/lammps/lammps-download-prefix/src/lammps-download/src/ for -DLAMMPS=YES)</li>
-<li>Do:</li>
+<li><p>Go to LAMMPS src folder (/build/hooks/lammps/lammps-download-prefix/src/lammps-download/src/ for -DLAMMPS=YES)</p></li>
+<li><p>Do:</p></li>
 </ol>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>make yes-RIGID
 make yes-MOLECULE
 </pre></div>
 </div>
 <ol class="arabic simple" start="3">
-<li>Go to your build folder and make.</li>
+<li><p>Go to your build folder and make.</p></li>
 </ol>
 <p>Find the following input files in Examples/User/ABF/Example_AlanineDipeptide:</p>
 <ul class="simple">
-<li><code class="docutils literal notranslate"><span class="pre">in.ADP_ABF_Example(0-1)</span></code> (2 files)</li>
-<li><code class="docutils literal notranslate"><span class="pre">example.input</span></code></li>
-<li><code class="docutils literal notranslate"><span class="pre">ADP_ABF_1walker.json</span></code></li>
-<li><code class="docutils literal notranslate"><span class="pre">ADP_ABF_2walkers.json</span></code></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">in.ADP_ABF_Example(0-1)</span></code> (2 files)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">example.input</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">ADP_ABF_1walker.json</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">ADP_ABF_2walkers.json</span></code></p></li>
 </ul>
 <ol class="arabic simple">
-<li>Put the contents of ABF_ADP_LAMMPS_Example folder in your ssages build folder</li>
-<li>For a single walker example, do:</li>
+<li><p>Put the contents of ABF_ADP_LAMMPS_Example folder in your ssages build folder</p></li>
+<li><p>For a single walker example, do:</p></li>
 </ol>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>./ssages ADP_ABF_1walker.json.json
 </pre></div>
@@ -443,19 +488,19 @@ make yes-MOLECULE
 <p>For GROMACS:</p>
 <p>Optional:</p>
 <ul class="simple">
-<li><code class="docutils literal notranslate"><span class="pre">adp.gro</span></code></li>
-<li><code class="docutils literal notranslate"><span class="pre">topol.top</span></code></li>
-<li><code class="docutils literal notranslate"><span class="pre">nvt.mdp</span></code></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">adp.gro</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">topol.top</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">nvt.mdp</span></code></p></li>
 </ul>
 <p>Required:</p>
 <ul class="simple">
-<li><code class="docutils literal notranslate"><span class="pre">example_adp(0-1).tpr</span></code> (2 files)</li>
-<li><code class="docutils literal notranslate"><span class="pre">ADP_ABF_1walker.json</span></code></li>
-<li><code class="docutils literal notranslate"><span class="pre">ADP_ABF_2walkers.json</span></code></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">example_adp(0-1).tpr</span></code> (2 files)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">ADP_ABF_1walker.json</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">ADP_ABF_2walkers.json</span></code></p></li>
 </ul>
 <ol class="arabic simple">
-<li>Put the contents of ABF_ADP_Gromacs_Example in your ssages build folder</li>
-<li>For a single walker example, do:</li>
+<li><p>Put the contents of ABF_ADP_Gromacs_Example in your ssages build folder</p></li>
+<li><p>For a single walker example, do:</p></li>
 </ol>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>./ssages ABF_ADP_1walker.json
 </pre></div>
@@ -477,39 +522,39 @@ explore different regions and will all contribute to the same adaptive force.</p
 <p>After the run is finished, you can check that your output matches the sample
 outputs given in the examples folders:</p>
 <ol class="arabic simple">
-<li>Copy ABF_integrator.py (requires numpy, scipy and matplotlib) into your build folder.</li>
-<li>Run the integrator:</li>
+<li><p>Copy ABF_integrator.py (requires numpy, scipy and matplotlib) into your build folder.</p></li>
+<li><p>Run the integrator:</p></li>
 </ol>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>python ABF_integrator.py --periodic1 True --periodic2 True --interpolate <span class="m">200</span>
 </pre></div>
 </div>
 <ol class="arabic simple" start="3">
-<li>This will output a contour map, a gradient field and a heatmap. Compare these to the sample outputs.</li>
+<li><p>This will output a contour map, a gradient field and a heatmap. Compare these to the sample outputs.</p></li>
 </ol>
 <p>Sodium Chloride</p>
 <p>For LAMMPS (must be built with KSPACE and MOLECULE packages)
 To build RIGID and MOLECULE:</p>
 <ol class="arabic simple">
-<li>Go to LAMMPS src folder (/build/hooks/lammps/lammps-download-prefix/src/lammps-download/src/ for -DLAMMPS=YES)</li>
-<li>Do:</li>
+<li><p>Go to LAMMPS src folder (/build/hooks/lammps/lammps-download-prefix/src/lammps-download/src/ for -DLAMMPS=YES)</p></li>
+<li><p>Do:</p></li>
 </ol>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>make yes-KSPACE
 make yes-MOLECULE
 </pre></div>
 </div>
 <ol class="arabic simple" start="3">
-<li>Go to your build folder and make.</li>
+<li><p>Go to your build folder and make.</p></li>
 </ol>
 <p>Find the following input files in Examples/User/ABF/Example_NaCl/ABF_NaCl_LAMMPS_Example:</p>
 <ul class="simple">
-<li><code class="docutils literal notranslate"><span class="pre">in.NaCl_ADP_example(0-1)</span></code> (2 files)</li>
-<li><code class="docutils literal notranslate"><span class="pre">data.spce</span></code></li>
-<li><code class="docutils literal notranslate"><span class="pre">ADP_NaCl_1walker.json</span></code></li>
-<li><code class="docutils literal notranslate"><span class="pre">ADP_NaCl_2walkers.json</span></code></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">in.NaCl_ADP_example(0-1)</span></code> (2 files)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">data.spce</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">ADP_NaCl_1walker.json</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">ADP_NaCl_2walkers.json</span></code></p></li>
 </ul>
 <ol class="arabic simple">
-<li>Put the contents of ABF_NaCl_LAMMPS_Example folder in your ssages build folder</li>
-<li>For a single walker example, do:</li>
+<li><p>Put the contents of ABF_NaCl_LAMMPS_Example folder in your ssages build folder</p></li>
+<li><p>For a single walker example, do:</p></li>
 </ol>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>./ssages ADP_NaCl_1walker.json.json
 </pre></div>
@@ -521,19 +566,19 @@ make yes-MOLECULE
 <p>For GROMACS:</p>
 <p>Optional:</p>
 <ul class="simple">
-<li><code class="docutils literal notranslate"><span class="pre">NaCl.gro</span></code></li>
-<li><code class="docutils literal notranslate"><span class="pre">topol.top</span></code></li>
-<li><code class="docutils literal notranslate"><span class="pre">npt.mdp</span></code></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">NaCl.gro</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">topol.top</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">npt.mdp</span></code></p></li>
 </ul>
 <p>Required:</p>
 <ul class="simple">
-<li><code class="docutils literal notranslate"><span class="pre">example_NaCl(0-1).tpr</span></code> (2 files)</li>
-<li><code class="docutils literal notranslate"><span class="pre">ADP_NaCl_1walker.json</span></code></li>
-<li><code class="docutils literal notranslate"><span class="pre">ADP_NaCl_2walkers.json</span></code></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">example_NaCl(0-1).tpr</span></code> (2 files)</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">ADP_NaCl_1walker.json</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">ADP_NaCl_2walkers.json</span></code></p></li>
 </ul>
 <ol class="arabic simple">
-<li>Put the contents of ABF_NaCl_Gromacs_Example in your ssages build folder</li>
-<li>For a single walker example, do:</li>
+<li><p>Put the contents of ABF_NaCl_Gromacs_Example in your ssages build folder</p></li>
+<li><p>For a single walker example, do:</p></li>
 </ol>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>./ssages ABF_NaCl_1walker.json
 </pre></div>
@@ -555,20 +600,22 @@ explore different regions and will all contribute to the same adaptive force.</p
 <p>After the run is finished, you can check that your output matches the sample
 outputs given in the examples folders:</p>
 <ol class="arabic simple">
-<li>Copy ABF_integrator.py (requires numpy, scipy and matplotlib) into your build folder.</li>
-<li>Run the integrator:</li>
+<li><p>Copy ABF_integrator.py (requires numpy, scipy and matplotlib) into your build folder.</p></li>
+<li><p>Run the integrator:</p></li>
 </ol>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>python ABF_integrator.py
 </pre></div>
 </div>
 <ol class="arabic simple" start="3">
-<li>This will output a Potential of Mean Force graph. Compare this to the sample output.</li>
+<li><p>This will output a Potential of Mean Force graph. Compare this to the sample output.</p></li>
 </ol>
 </div>
 <div class="section" id="developers">
 <h2>Developers<a class="headerlink" href="#developers" title="Permalink to this headline">¶</a></h2>
-<p>Emre Sevgen
-Hythem Sidky</p>
+<ul class="simple">
+<li><p>Emre Sevgen</p></li>
+<li><p>Hythem Sidky</p></li>
+</ul>
 </div>
 </div>
 
@@ -583,7 +630,7 @@ Hythem Sidky</p>
         <a href="Artificial Neural Network Sampling.html" class="btn btn-neutral float-right" title="Artificial Neural Network Sampling" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="Advanced Sampling Methods.html" class="btn btn-neutral" title="Advanced Sampling Methods" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="Advanced Sampling Methods.html" class="btn btn-neutral float-left" title="Advanced Sampling Methods" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -592,8 +639,10 @@ Hythem Sidky</p>
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2016, the SSAGES Team.
-      Last updated on Dec 14, 2018.
+        &copy; Copyright 2018, the SSAGES Team
+      <span class="lastupdated">
+        Last updated on Aug 23, 2019.
+      </span>
 
     </p>
   </div>
@@ -610,36 +659,16 @@ Hythem Sidky</p>
   
 
 
-  
-
-    <script type="text/javascript">
-        var DOCUMENTATION_OPTIONS = {
-            URL_ROOT:'./',
-            VERSION:'v0.8.3-alpha',
-            LANGUAGE:'None',
-            COLLAPSE_INDEX:false,
-            FILE_SUFFIX:'.html',
-            HAS_SOURCE:  true,
-            SOURCELINK_SUFFIX: '.txt'
-        };
-    </script>
-      <script type="text/javascript" src="_static/jquery.js"></script>
-      <script type="text/javascript" src="_static/underscore.js"></script>
-      <script type="text/javascript" src="_static/doctools.js"></script>
-      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-
-  
-
-  
-  
-    <script type="text/javascript" src="_static/js/theme.js"></script>
-  
-
   <script type="text/javascript">
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
-  </script> 
+  </script>
+
+  
+  
+    
+   
 
 </body>
 </html>

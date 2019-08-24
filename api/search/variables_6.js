@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['f_5f',['f_',['../classSSAGES_1_1BFS.html#a2eba4830e64c05fe99ddc12d9d6bb95d',1,'SSAGES::BFS::f_()'],['../classSSAGES_1_1ABF.html#a47453516b73e968060821c57d67b44ff',1,'SSAGES::ABF::F_()']]],
+  ['f_5f',['F_',['../classSSAGES_1_1ABF.html#a47453516b73e968060821c57d67b44ff',1,'SSAGES::ABF::F_()'],['../classSSAGES_1_1BFS.html#a2eba4830e64c05fe99ddc12d9d6bb95d',1,'SSAGES::BFS::f_()']]],
   ['fbackupinterv_5f',['FBackupInterv_',['../classSSAGES_1_1ABF.html#acc2ac53b0342d31bce16cce64448830f',1,'SSAGES::ABF']]],
   ['ffsconfigidqueue',['FFSConfigIDQueue',['../classSSAGES_1_1ForwardFlux.html#aca7da062aee9a5e3a1e8a173d50447a7',1,'SSAGES::ForwardFlux']]],
   ['fgrid_5f',['fgrid_',['../classSSAGES_1_1ANN.html#a8b12b03e1b6585461b83264c9adf6e30',1,'SSAGES::ANN']]],

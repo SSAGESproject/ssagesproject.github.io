@@ -1,7 +1,6 @@
 var searchData=
 [
   ['ugrid_5f',['ugrid_',['../classSSAGES_1_1ANN.html#ae925218647bd62eccf8d2983a87baad8',1,'SSAGES::ANN']]],
-  ['ukj',['ukj',['../classSSAGES_1_1COPSSImage.html#adc2dfa9b5cda5c26a98d4b4b23a726b3',1,'SSAGES::COPSSImage']]],
   ['umbrella_5f',['umbrella_',['../classSSAGES_1_1Umbrella.html#a25313c59d7bf8fbc842228626fbbdd8e',1,'SSAGES::Umbrella']]],
   ['umbrella_5fiter_5f',['umbrella_iter_',['../classSSAGES_1_1FiniteTempString.html#aed5757522f4c2e60199f483a8067e4b9',1,'SSAGES::FiniteTempString']]],
   ['unbias_5f',['unbias_',['../classSSAGES_1_1BFS.html#af5f4a44ac6759ac5886618707b448dc2',1,'SSAGES::BFS']]],

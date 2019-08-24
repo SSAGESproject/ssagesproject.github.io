@@ -1,6 +1,7 @@
 <map id="SSAGES::StringMethod::StringMethod" name="SSAGES::StringMethod::StringMethod">
-<area shape="rect" id="node2" href="$classSSAGES_1_1StringMethod.html#a5e02e69fbe65d3064f9fe76c36be6ab5" title="Post&#45;integration hook. " alt="" coords="216,5,379,47"/>
-<area shape="rect" id="node3" href="$classSSAGES_1_1StringMethod.html#ab3a248ca3236ac6b068b3f97074e4218" title="Pre&#45;simulation hook. " alt="" coords="216,71,379,112"/>
-<area shape="rect" id="node4" href="$classSSAGES_1_1Snapshot.html#afb8b21acf43558edaf173a23f226a525" title="Get walker ID. " alt="" coords="427,49,651,75"/>
-<area shape="rect" id="node5" href="$classSSAGES_1_1CVManager.html#a9b4f51cba87bd962ae966c817cb710c8" title="Get CV iterator. " alt="" coords="457,100,620,141"/>
+<area shape="rect" id="node2" href="$classSSAGES_1_1StringMethod.html#a5e02e69fbe65d3064f9fe76c36be6ab5" title="Method call post integration. " alt="" coords="216,5,379,47"/>
+<area shape="rect" id="node3" href="$classSSAGES_1_1StringMethod.html#aa112ed059f1fdbb647ee2b788699badf" title="Method call post simulation. " alt="" coords="216,71,379,112"/>
+<area shape="rect" id="node4" href="$classSSAGES_1_1StringMethod.html#ab3a248ca3236ac6b068b3f97074e4218" title="Method call prior to simulation initiation. " alt="" coords="216,136,379,177"/>
+<area shape="rect" id="node5" href="$classSSAGES_1_1Snapshot.html#aacd28c6ce70534440930b7029167b3ae" title="Get walker ID. " alt="" coords="427,114,651,141"/>
+<area shape="rect" id="node6" href="$classSSAGES_1_1CVManager.html#a7ab8ff40ccdc862e624ede661a24cfd8" title="Get CV iterator. " alt="" coords="457,165,620,207"/>
 </map>

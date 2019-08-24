@@ -1,5 +1,9 @@
 <map id="SSAGES::GridBase::data" name="SSAGES::GridBase::data">
 <area shape="rect" id="node2" href="$classSSAGES_1_1BFS.html#a417bd522d0ec956394e0ee0d5a154f73" title="The functions which calculates the updated bias and coefficients and then stores them. " alt="" coords="232,5,419,32"/>
-<area shape="rect" id="node3" href="$classSSAGES_1_1ANN.html#a7091cb356fa05bc0b21a4e37144fb0b7" title="Trains the neural network. " alt="" coords="225,56,425,83"/>
-<area shape="rect" id="node4" href="$classSSAGES_1_1ANN.html#ad63d276efae1a266eb5d556bdf896a98" title="Post&#45;integration hook. " alt="" coords="473,56,684,83"/>
+<area shape="rect" id="node3" href="$classSSAGES_1_1ANN.html#ab136bbdda45ca2672145e545f25c64f9" title="Load network state and bias from file. " alt="" coords="236,56,415,83"/>
+<area shape="rect" id="node5" href="$classSSAGES_1_1ANN.html#a7091cb356fa05bc0b21a4e37144fb0b7" title="Trains the neural network. " alt="" coords="225,107,425,133"/>
+<area shape="rect" id="node8" href="$classSSAGES_1_1ANN.html#acfdfae96fc9c752323828e2c222ef006" title="Writes out the bias to file. " alt="" coords="236,157,415,184"/>
+<area shape="rect" id="node4" href="$classSSAGES_1_1ANN.html#a05554b5f5f718f20d772fabf814e3e4c" title="Set minimum loss function value (should be zero for production). " alt="" coords="483,56,674,83"/>
+<area shape="rect" id="node6" href="$classSSAGES_1_1ANN.html#a86e2611b4516c8a465014919139aae19" title="Pre&#45;simulation hook. " alt="" coords="477,107,680,133"/>
+<area shape="rect" id="node7" href="$classSSAGES_1_1ANN.html#ad63d276efae1a266eb5d556bdf896a98" title="Post&#45;integration hook. " alt="" coords="473,157,684,184"/>
 </map>

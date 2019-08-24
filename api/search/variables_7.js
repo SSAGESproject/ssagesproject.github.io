@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['ginv_5f',['ginv_',['../classSSAGES_1_1COPSSImage.html#a625717ab8ff65d0c10af19bfe845aaee',1,'SSAGES::COPSSImage']]],
   ['grad_5f',['grad_',['../classSSAGES_1_1CollectiveVariable.html#a390202f6e541da879f1cfcde22c49489',1,'SSAGES::CollectiveVariable']]],
   ['grid_5f',['grid_',['../classSSAGES_1_1Grid_1_1GridIterator.html#a5e1b7f823c27f3d1844156a100517e6f',1,'SSAGES::Grid::GridIterator::grid_()'],['../classSSAGES_1_1Meta.html#aa6dfcaf45887ff30bfe28c65055a0494',1,'SSAGES::Meta::grid_()']]],
   ['group1_5f',['group1_',['../classSSAGES_1_1PairwiseCV.html#a0cd20f16a2efe8f80350e8e822c1300b',1,'SSAGES::PairwiseCV::group1_()'],['../classSSAGES_1_1ParticleSeparationCV.html#a8707456bef8e851e8328813e48d7b8b6',1,'SSAGES::ParticleSeparationCV::group1_()']]],

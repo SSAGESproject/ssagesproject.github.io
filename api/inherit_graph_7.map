@@ -1,17 +1,3 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classSSAGES_1_1CollectiveVariable.html" title="Abstract class for a collective variable. " alt="" coords="5,335,196,361"/>
-<area shape="rect" id="node2" href="$classSSAGES_1_1AlphaRMSDCV.html" title="Collective variable to measure alpha helix secondary structure. " alt="" coords="263,5,440,32"/>
-<area shape="rect" id="node3" href="$classSSAGES_1_1AngleCV.html" title="Collective variable to calculate angle. " alt="" coords="283,56,420,83"/>
-<area shape="rect" id="node4" href="$classSSAGES_1_1AntiBetaRMSDCV.html" title="Collective variable to measure antiparallel beta secondary structure. " alt="" coords="254,107,449,133"/>
-<area shape="rect" id="node5" href="$classSSAGES_1_1BoxVolumeCV.html" title="Collective variable on the volume of a box. " alt="" coords="266,157,437,184"/>
-<area shape="rect" id="node6" href="$classSSAGES_1_1GyrationTensorCV.html" title="Collective variable on components of the gyration tensor. " alt="" coords="255,208,448,235"/>
-<area shape="rect" id="node7" href="$classSSAGES_1_1MockCV.html" title="Mock collective variable for testing purposes. " alt="" coords="283,259,419,285"/>
-<area shape="rect" id="node8" href="$classSSAGES_1_1PairwiseCV.html" title="Generalized collective variable based on pairwise properties of atoms. " alt="" coords="274,309,429,336"/>
-<area shape="rect" id="node9" href="$classSSAGES_1_1ParallelBetaRMSDCV.html" title="Collective variable to measure parallel beta sheet secondary structure. " alt="" coords="244,360,459,387"/>
-<area shape="rect" id="node10" href="$classSSAGES_1_1ParticleCoordinateCV.html" title="Collective variable on a particle coordinate. " alt="" coords="246,411,457,437"/>
-<area shape="rect" id="node11" href="$classSSAGES_1_1ParticlePositionCV.html" title="Collective variable on an particle position. " alt="" coords="254,461,449,488"/>
-<area shape="rect" id="node12" href="$classSSAGES_1_1ParticleSeparationCV.html" title="Collective variable on the distance between two particles&#39; centers of mass. " alt="" coords="246,512,457,539"/>
-<area shape="rect" id="node13" href="$classSSAGES_1_1RMSDCV.html" title="Collective variable to calculate root mean square displacement. " alt="" coords="279,563,423,589"/>
-<area shape="rect" id="node14" href="$classSSAGES_1_1RouseModeCV.html" title="Collective variable is a Rouse mode for a polymer chain comprised of N particle groups. " alt="" coords="264,613,439,640"/>
-<area shape="rect" id="node15" href="$classSSAGES_1_1TorsionalCV.html" title="Collective variable on the torsion angles. " alt="" coords="273,664,430,691"/>
+<area shape="rect" id="node1" href="$classSSAGES_1_1CVManager.html" title="Collective variable manager. " alt="" coords="5,5,160,32"/>
 </map>

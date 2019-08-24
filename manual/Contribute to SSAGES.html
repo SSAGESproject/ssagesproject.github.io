@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Contribute to SSAGES &mdash; SSAGES v0.8.3-alpha documentation</title>
+  <title>Contribute to SSAGES &mdash; SSAGES v0.8.5-alpha documentation</title>
   
 
   
@@ -17,35 +17,37 @@
   
 
   
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
 
-  
-  
     
 
   
-
-  
-    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="The SSAGES cookbook" href="The SSAGES Cookbook.html" />
-    <link rel="prev" title="Write your own Methods and CVs" href="Write your own Methods and CVs.html" /> 
-
-  
-  <script src="_static/js/modernizr.min.js"></script>
-
+    <link rel="next" title="The SSAGES Cookbook" href="The SSAGES Cookbook.html" />
+    <link rel="prev" title="Write Your Own CVs and Methods" href="Write your own Methods and CVs.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
 
    
   <div class="wy-grid-for-nav">
-
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
-        <div class="wy-side-nav-search">
+        <div class="wy-side-nav-search" >
           
 
           
@@ -59,7 +61,7 @@
             
             
               <div class="version">
-                0.8.3
+                0.8.5
               </div>
             
           
@@ -90,27 +92,27 @@
 <li class="toctree-l1"><a class="reference internal" href="Engines.html">Engines</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Collective Variables.html">Collective Variables</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Advanced Sampling Methods.html">Advanced Sampling Methods</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Write your own Methods and CVs.html">Write your own Methods and CVs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Write your own Methods and CVs.html">Write Your Own CVs and Methods</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Contribute to SSAGES</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#reporting-bugs-and-wishes">Reporting bugs and wishes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#reporting-bugs-and-requesting-features">Reporting Bugs and Requesting Features</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#improving-the-documentation">Improving the Documentation</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#building-the-documentation">Building the documentation</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#how-to-write-documentation">How to write documentation</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#how-to-write-sphinx">How to write Sphinx</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#how-to-write-doxygen">How to write Doxygen</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#building-the-documentation">Building the Documentation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#writing-documentation">Writing Documentation</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#documenting-with-sphinx">Documenting with Sphinx</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#documenting-with-doxygen">Documenting with Doxygen</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="#what-to-document">What to document</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#what-to-document">What to Document</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#adding-your-method-to-ssages">Adding your method to SSAGES</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#working-on-the-core-classes">Working on the core classes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#adding-your-method-to-ssages">Adding your Method to SSAGES</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#working-on-the-core-classes">Working on the Core Classes</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="The SSAGES Cookbook.html">The SSAGES cookbook</a></li>
+<li class="toctree-l1"><a class="reference internal" href="The SSAGES Cookbook.html">The SSAGES Cookbook</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Acknowledgements.html">Acknowledgments</a></li>
-<li class="toctree-l1"><a class="reference internal" href="License.html">Copyright</a></li>
-<li class="toctree-l1"><a class="reference internal" href="License.html#id1">License information</a></li>
+<li class="toctree-l1"><a class="reference internal" href="zReferences.html">References</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Copyright and License.html">Copyright and License Information</a></li>
 </ul>
 
             
@@ -177,91 +179,111 @@
             
   <div class="section" id="contribute-to-ssages">
 <h1>Contribute to SSAGES<a class="headerlink" href="#contribute-to-ssages" title="Permalink to this headline">¶</a></h1>
-<p>The SSAGES project is built on an inclusive and welcoming group of physicists,
-chemists, and chemical engineers working on complex Molecular Dynamics
-simulations employing Metadynamic techniques. Metadynamics is an exciting and
-fast developing field and similarly this project is designed to facilitate the
-usage and implementation of a wide array of Metadynamics methods. And we
-welcome you heartily to join us and to embark with us on this great adventure.</p>
-<p>There are many ways to contribute to SSAGES and you do not necessarily need
+<p>The SSAGES project is built by an inclusive and welcoming group of physicists,
+chemists, and chemical engineers working on complex Molecular Dynamics (MD)
+simulations employing advanced sampling techniques. Advanced sampling is an
+exciting and rapidly developing field. Similarly, this project is designed to
+facilitate the usage and implementation of a wide array of sampling methods.
+We welcome you heartily to join us as we embark on this great adventure.</p>
+<p>There are many ways to contribute to SSAGES, and you do not necessarily need
 programming skills to be part of this project (even though they surely help).
 But, if you decide to work on the code base, you will be happy to find that
 SSAGES is designed to be easy to use and is just as easy to extend. We put a
-high priority on maintaining a readable and clearly structured code base as well
-as an inclusive community welcoming new ideas and contributions.</p>
+high priority on maintaining a readable and clearly structured code base as
+well as an inclusive community welcoming new ideas and contributions.</p>
 <p>Here is a short summary of ideas how you can become part of SSAGES:</p>
-<dl class="docutils">
-<dt>Reporting, Triaging, and Fixing Bugs</dt>
-<dd>No software is without errors, inconsistencies, and strange behaviors. Even
-with zero programming knowledge, you can help tremendously by reporting bugs or confirming issued bugs.
-<a class="reference internal" href="#report-bugs"><span class="std std-ref">Read more…</span></a></dd>
-<dt>Improving the SSAGES documentation</dt>
-<dd>SSAGES would like to have a detailed yet comprehensive documentation on what it
-does and how it does it. This should include concise introductions to the
-methods, quick to learn tutorials, complete coverage of the nooks and
-crannies of each method, and of course helpful pointers in
-case you run into errors. And while the documentation is already expansive,
-improvements on it never go unappreciated.
-<a class="reference internal" href="#improve-documentation"><span class="std std-ref">Read more…</span></a></dd>
-<dt>Including your Method and CV in SSAGES</dt>
-<dd>You have developed a new Metadynamics scheme or a Collective Variable and
+<dl class="simple">
+<dt>Reporting, Triaging, and Fixing Bugs</dt><dd><p>No software is without errors, inconsistencies, and strange behaviors. Even
+with zero programming knowledge, you can help tremendously by reporting
+bugs or confirming issued bugs.
+<a class="reference internal" href="#report-bugs"><span class="std std-ref">Read more…</span></a></p>
+</dd>
+<dt>Improving the SSAGES documentation</dt><dd><p>We strive for SSAGES to have a detailed, yet comprehensive, documentation
+on what it does and how it does it. This should include concise
+introductions to methods, quick to learn tutorials, complete coverage of
+the intricacies of each method, and helpful pointers in case you run into
+errors. While the documentation is already expansive, improvements on it
+never go unappreciated.
+<a class="reference internal" href="#improve-documentation"><span class="std std-ref">Read more…</span></a></p>
+</dd>
+<dt>Including your Method and CV in SSAGES</dt><dd><p>You have developed a new sampling method or collective variable and
 want to make it available to the community via SSAGES? Great!
-<a class="reference internal" href="#add-your-method"><span class="std std-ref">Read more…</span></a></dd>
-<dt>Working on the core SSAGES system</dt>
-<dd>If you would like to climb into the heart of SSAGES and get your hands
-dirty, this task is for you. <a class="reference internal" href="#work-on-core-ssages"><span class="std std-ref">Read more…</span></a></dd>
+<a class="reference internal" href="#add-your-method"><span class="std std-ref">Read more…</span></a></p>
+</dd>
+<dt>Working on the core SSAGES system</dt><dd><p>If you would like to climb into the heart of SSAGES and get your hands
+dirty, this task is for you! <a class="reference internal" href="#work-on-core-ssages"><span class="std std-ref">Read more…</span></a></p>
+</dd>
 </dl>
-<div class="section" id="reporting-bugs-and-wishes">
-<span id="report-bugs"></span><h2>Reporting bugs and wishes<a class="headerlink" href="#reporting-bugs-and-wishes" title="Permalink to this headline">¶</a></h2>
-<div class="admonition-todo admonition" id="index-0">
-<p class="first admonition-title">Todo</p>
-<p class="last">Link to GitHub issue tracker</p>
-</div>
+<div class="section" id="reporting-bugs-and-requesting-features">
+<span id="report-bugs"></span><h2>Reporting Bugs and Requesting Features<a class="headerlink" href="#reporting-bugs-and-requesting-features" title="Permalink to this headline">¶</a></h2>
+<p>SSAGES is an open-source project maintained by a small team of scientific
+developers. Because of this, we appreciate any help that the community can
+provide!</p>
+<p>If you have been using SSAGES and have come across an error that might affect
+other users or the core code base, please report it on the <a class="reference external" href="https://github.com/MICCoM/SSAGES-public/issues">GitHub Issues</a>
+page within the repository. When reporting bugs, it is helpful to include as
+much detail as possible. This can include, but is not limited to, input files
+necessary for replicating the bug, the output you expected to see versus what
+you got from SSAGES, and any relevant error messages. Before submitting a bug,
+browse the current issues to make sure that it has not already been reported.</p>
+<p>If you feel that there is a feature missing from SSAGES, you can either submit
+a feature request (also via <a class="reference external" href="https://github.com/MICCoM/SSAGES-public/issues">GitHub Issues</a>) or you can add the feature
+yourself and submit a pull request on the <a class="reference external" href="https://github.com/MICCoM/SSAGES-public/pulls">GitHub Pull Requests</a> page. When
+submitting a feature request, please include a reference to relevant literature
+for new methods/CVs/etc., as well as a generalized use case (or more) that can
+motivate adding in the requested feature.</p>
 </div>
 <div class="section" id="improving-the-documentation">
 <span id="improve-documentation"></span><h2>Improving the Documentation<a class="headerlink" href="#improving-the-documentation" title="Permalink to this headline">¶</a></h2>
-<p>Great documentation and great code produces great software.
--SSAGE advice</p>
+<div class="line-block">
+<div class="line">Great documentation and great code produces great software.</div>
+<div class="line">—SSAGE advice</div>
+<div class="line"><br /></div>
+</div>
 <p>Improvements on the documentation are always highly appreciated.
 The SSAGES documentation is split into two parts: The User Manual (which you
-are reading right now), and the API documentation. While the Manual uses the
-<a class="reference external" href="http://sphinx-doc.org">Sphinx</a> documentation and contains all information necessary to use the
-program, the API docs are bulit on <a class="reference external" href="http://www.doxygen.org">Doxygen</a> and describe the usage of the
+are reading right now) and the API documentation. While the User Manual uses
+the <a class="reference external" href="http://sphinx-doc.org">Sphinx</a> documentation and contains all information necessary to use the
+program, the API docs are built on <a class="reference external" href="http://www.doxygen.org">Doxygen</a> to describe the usage of the
 underlying classes and functions for everyone willing to extend and improve
 SSAGES.</p>
 <p>Here are a few ideas on how you can help:</p>
 <ul class="simple">
-<li>Fix typos: Even though we have thoroughly checked, there are certainly still
-a few hidden somewhere.</li>
-<li>Check if all internal and external links are working.</li>
-<li>Make sure that the documentation is up to date, i.e. that it reflects the
-usage of the latest version.</li>
-<li>Add examples: An examples on how to use a method, avoid a common problem, etc.
-are more helpful than a hundred pages of dry descriptions.</li>
-<li>Write a tutorial.</li>
+<li><p>Fix typos: Even though we are regularly checking, there are certainly still
+a few hidden somewhere.</p></li>
+<li><p>Check links: Verify all internal and external links are working.</p></li>
+<li><p>Bring up to date: Make sure that the documentation is current, i.e. that it
+reflects the usage of the latest version.</p></li>
+<li><p>Add examples: An example on how to use a method, avoid a common problem, etc.
+is more helpful than a hundred pages of dry descriptions.</p></li>
+<li><p>Write a tutorial: If there are aspects of the code that are missing a
+tutorial, and one might be useful, consider adding a short tutorial with a
+simple toy system.</p></li>
 </ul>
 <div class="section" id="building-the-documentation">
-<h3>Building the documentation<a class="headerlink" href="#building-the-documentation" title="Permalink to this headline">¶</a></h3>
+<h3>Building the Documentation<a class="headerlink" href="#building-the-documentation" title="Permalink to this headline">¶</a></h3>
 <p>Before you can work on the documentation, you first have to build it. The
-documentation is part of the SSAGES source code. It is assumed that you have already
-downloaded and built the source code as described in the
+documentation is part of the SSAGES source code. It is assumed that you have
+already downloaded and built the source code as described in the
 <a class="reference internal" href="Getting Started.html#getting-started"><span class="std std-ref">Getting Started</span></a> section. You will find a
-collection of rst files comprising the User Manual under <code class="docutils literal notranslate"><span class="pre">doc/source/</span></code> where
-the file ending <code class="docutils literal notranslate"><span class="pre">rst</span></code> stands for ReStructured Text. The API documentation on
-the other hand resides directly in the header files right next to the classes
-and functions they describe.</p>
+collection of <code class="docutils literal notranslate"><span class="pre">.rst</span></code> files comprising the User Manual under <code class="docutils literal notranslate"><span class="pre">doc/source/</span></code>
+where the file ending <code class="docutils literal notranslate"><span class="pre">.rst</span></code> stands for ReStructured Text. The API
+documentation, on the other hand, resides directly in the header files, right
+next to the classes and functions they describe.</p>
 <p>Assuming you have already built SSAGES, building the documentation is as easy as
-typing
-<code class="docutils literal notranslate"><span class="pre">make</span> <span class="pre">doc</span></code>
-in your build directory. In order to make correctly check that you have the
-following programs installed:</p>
+typing</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="sb">``</span>make doc<span class="sb">``</span>
+</pre></div>
+</div>
+<p>within your build directory. In order to make the documentation, you must have
+the following programs installed:</p>
 <ul class="simple">
-<li>Sphinx (with PyPI via <code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">Sphinx</span></code> for example)</li>
-<li>Doxygen</li>
-<li>dot (in Ubuntu this is part of the graphViz package)</li>
-<li>Sphinx “<a class="reference external" href="https://github.com/snide/sphinx_rtd_theme">Read the docs</a>” theme (via <code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">sphinx_rtd_theme</span></code>)</li>
+<li><p>Sphinx (with PyPI via <code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">Sphinx</span></code> for example)</p></li>
+<li><p>Doxygen</p></li>
+<li><p>dot (in Ubuntu this is part of the graphViz package)</p></li>
+<li><p>Sphinx “<a class="reference external" href="https://github.com/snide/sphinx_rtd_theme">Read the docs</a>” theme (via <code class="docutils literal notranslate"><span class="pre">pip</span> <span class="pre">install</span> <span class="pre">sphinx_rtd_theme</span></code>)</p></li>
 </ul>
-<p>Once you have successfully built the documentation you will find the User Manual
+<p>Once you have successfully built the documentation, you will find the User Manual
 under <code class="docutils literal notranslate"><span class="pre">doc/Manual/</span></code> and the API documentation under <code class="docutils literal notranslate"><span class="pre">doc/API-doc/html/</span></code>
 (relative to your build directory - do not confuse it with the <code class="docutils literal notranslate"><span class="pre">doc/</span></code> folder
 in the main directory of the project). To view it in your favorite web
@@ -271,99 +293,101 @@ browser (using FireFox as an example) just type</p>
 <p><code class="docutils literal notranslate"><span class="pre">firefox</span> <span class="pre">doc/API-doc/html/index.html</span></code></p>
 <p>for the API documentation.</p>
 </div>
-<div class="section" id="how-to-write-documentation">
-<h3>How to write documentation<a class="headerlink" href="#how-to-write-documentation" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="writing-documentation">
+<h3>Writing Documentation<a class="headerlink" href="#writing-documentation" title="Permalink to this headline">¶</a></h3>
 <p>Here are a few pointers on how to write helpful documentation, before we dive
 into the details of <strong>Sphinx</strong> and <strong>Doxygen</strong> for the User Manual and the API
 documentation:</p>
 <ul>
-<li><p class="first">Write documentation “along the way”. Do not code first and write the
-documentation later.</p>
-</li>
-<li><p class="first">Use helpful error messages. These are considered part of the documentation and
-probably are the part that is read most frequently.</p>
-</li>
-<li><p class="first">Do everything you can to structure the text. Let’s face it: Most people will
-just skim the documentation. Feel encouraged to use all techniques that
+<li><p>Write documentation “along the way”. Do not code first and write the
+documentation later.</p></li>
+<li><p>Use helpful error messages. These are considered part of the documentation and
+probably are the part that is read most frequently.</p></li>
+<li><p>Do everything you can to structure the text. Let’s face it: most people will
+just skim the documentation. Feel encouraged to use any and all techniques that
 help to spot the relevant information, for example:</p>
 <ul class="simple">
-<li>Format your text <strong>bold</strong>, <em>italic</em>, <code class="docutils literal notranslate"><span class="pre">code</span></code>, etc.</li>
-<li>Write in short paragraphs, use headers</li>
-<li>Use lists, code blocks, tables, etc.</li>
+<li><p>Format your text <strong>bold</strong>, <em>italic</em>, <code class="docutils literal notranslate"><span class="pre">code</span></code>, etc.</p></li>
+<li><p>Use effective headers</p></li>
+<li><p>Write in short paragraphs</p></li>
+<li><p>Use lists, code blocks, tables, etc.</p></li>
 </ul>
 <div class="admonition note">
-<p class="first admonition-title">Note</p>
-<p class="last">These Note blocks are extremely helpful for example.</p>
+<p class="admonition-title">Note</p>
+<p>These Note blocks are extremely helpful for example.</p>
 </div>
 <div class="admonition warning">
-<p class="first admonition-title">Warning</p>
-<p class="last">Warnings work great, too!</p>
+<p class="admonition-title">Warning</p>
+<p>Warnings work great, too!</p>
 </div>
 <div class="admonition seealso">
-<p class="first admonition-title">See also</p>
-<p class="last">Here you can find more examples for helpful Sphinx markup:
-<a class="reference external" href="http://www.sphinx-doc.org/en/stable/markup/para.html">http://www.sphinx-doc.org/en/stable/markup/para.html</a></p>
+<p class="admonition-title">See also</p>
+<p>Here you can find more examples for helpful Sphinx markup:</p>
+<p><a class="reference external" href="http://www.sphinx-doc.org/en/stable/markup/para.html">http://www.sphinx-doc.org/en/stable/markup/para.html</a></p>
 </div>
 </li>
-<li><p class="first">Use examples, a lot of them</p>
-</li>
-<li><p class="first">In the initial stages: Don’t be a perfectionist. Missing documentation is the worst kind of documentation.
-“It is better to have written and coded than to have never written at all.”
--SSAGE advice</p>
-</li>
+<li><p>Use examples, a lot of them.</p></li>
+<li><p>In the initial stages: Don’t be a perfectionist. Missing documentation is
+the worst kind of documentation.</p></li>
 </ul>
-<div class="section" id="how-to-write-sphinx">
-<h4>How to write Sphinx<a class="headerlink" href="#how-to-write-sphinx" title="Permalink to this headline">¶</a></h4>
-<p>The <strong>Sphinx</strong> documentation system uses ReStructured text which is loosely
-based on the markdown format. Examples for documentations written with Sphinx
+<div class="line-block">
+<div class="line">“It is better to have written and coded than to have never written at all.”</div>
+<div class="line">—SSAGE advice</div>
+<div class="line"><br /></div>
+</div>
+<div class="section" id="documenting-with-sphinx">
+<h4>Documenting with Sphinx<a class="headerlink" href="#documenting-with-sphinx" title="Permalink to this headline">¶</a></h4>
+<p>The <strong>Sphinx</strong> documentation system uses reStructuredText which is loosely
+based on the Markdown format. Examples for documentations written with Sphinx
 include:</p>
 <ul class="simple">
-<li><a class="reference external" href="http://lammps.sandia.gov/doc/Manual.html">LAMMPS</a></li>
-<li><a class="reference external" href="http://hoomd-blue.readthedocs.io/en/stable/index.html#">HOOMD</a></li>
-<li>Virtually all of the <a class="reference external" href="https://docs.python.org/3/">Python</a> Documentation</li>
+<li><p><a class="reference external" href="http://lammps.sandia.gov/doc/Manual.html">LAMMPS</a></p></li>
+<li><p><a class="reference external" href="http://hoomd-blue.readthedocs.io/en/stable/index.html#">HOOMD-blue</a></p></li>
+<li><p>Virtually all of the <a class="reference external" href="https://docs.python.org/3/">Python</a> Documentation</p></li>
 </ul>
 <p>The following tutorials are extremely helpful:</p>
 <ul class="simple">
-<li><a class="reference external" href="http://www.sphinx-doc.org/en/stable/rest.html">http://www.sphinx-doc.org/en/stable/rest.html</a></li>
-<li><a class="reference external" href="http://docutils.sourceforge.net/docs/user/rst/quickref.html">http://docutils.sourceforge.net/docs/user/rst/quickref.html</a></li>
-<li><a class="reference external" href="http://openalea.gforge.inria.fr/doc/openalea/doc/_build/html/source/sphinx/rest_syntax.html">http://openalea.gforge.inria.fr/doc/openalea/doc/_build/html/source/sphinx/rest_syntax.html</a></li>
+<li><p><a class="reference external" href="http://www.sphinx-doc.org/en/stable/rest.html">http://www.sphinx-doc.org/en/stable/rest.html</a></p></li>
+<li><p><a class="reference external" href="http://docutils.sourceforge.net/docs/user/rst/quickref.html">http://docutils.sourceforge.net/docs/user/rst/quickref.html</a></p></li>
+<li><p><a class="reference external" href="http://openalea.gforge.inria.fr/doc/openalea/doc/_build/html/source/sphinx/rest_syntax.html">http://openalea.gforge.inria.fr/doc/openalea/doc/_build/html/source/sphinx/rest_syntax.html</a></p></li>
 </ul>
 <p>One of the great things of Sphinx is that most documentations have a “view page
-source” link where you can take a look at the Sphinx source code. Thus, the best
-way to learn Sphinx is to click on this link right now and look at the source
-code of this page. But here is a short summary of the most important commands:</p>
+source” link at the top of the page, where you can take a look at the Sphinx
+source code. Thus, the best way to learn Sphinx is to click on this link right
+now and look at the source code of this page. But here is a short summary of
+the most important commands:</p>
 <ul class="simple">
-<li>Markup: You can use *italic*, **bold**, and ``code`` for <em>italic</em>, <strong>bold</strong>
-and <code class="docutils literal notranslate"><span class="pre">code</span></code>.</li>
-<li>Headers. Underline your headers with at least three <code class="docutils literal notranslate"><span class="pre">===</span></code> for titles,
-<code class="docutils literal notranslate"><span class="pre">---</span></code> for subtitles, <code class="docutils literal notranslate"><span class="pre">^^^</span></code> for subsubtitles and <code class="docutils literal notranslate"><span class="pre">~~~</span></code> for paragraphs.</li>
-<li>Bullet lists are indicated by lines beginning with <code class="docutils literal notranslate"><span class="pre">*</span></code>.</li>
+<li><p>Markup: You can use *italic*, **bold**, and ``code`` for <em>italic</em>, <strong>bold</strong>
+and <code class="docutils literal notranslate"><span class="pre">code</span></code>.</p></li>
+<li><p>Headers: Underline your headers with at least three <code class="docutils literal notranslate"><span class="pre">===</span></code> for titles,
+<code class="docutils literal notranslate"><span class="pre">---</span></code> for subtitles, <code class="docutils literal notranslate"><span class="pre">^^^</span></code> for subsubtitles and <code class="docutils literal notranslate"><span class="pre">~~~</span></code> for paragraphs.</p></li>
+<li><p>Lists: Bulleted lists are indicated by lines beginning with <code class="docutils literal notranslate"><span class="pre">*</span></code>.</p></li>
 </ul>
 <div class="admonition note">
-<p class="first admonition-title">Note</p>
-<p class="last">These highlighted blocks can be created with <code class="docutils literal notranslate"><span class="pre">..</span> <span class="pre">note::</span></code>. The content of
+<p class="admonition-title">Note</p>
+<p>These highlighted blocks can be created with <code class="docutils literal notranslate"><span class="pre">..</span> <span class="pre">note::</span></code>. The content of
 this block needs to be indented. You can also use <code class="docutils literal notranslate"><span class="pre">warning</span></code> and
 <code class="docutils literal notranslate"><span class="pre">seealso</span></code>. Even more can be found
 <a class="reference external" href="http://www.sphinx-doc.org/en/stable/markup/para.html">here</a>.</p>
 </div>
 </div>
-<div class="section" id="how-to-write-doxygen">
-<h4>How to write Doxygen<a class="headerlink" href="#how-to-write-doxygen" title="Permalink to this headline">¶</a></h4>
+<div class="section" id="documenting-with-doxygen">
+<h4>Documenting with Doxygen<a class="headerlink" href="#documenting-with-doxygen" title="Permalink to this headline">¶</a></h4>
 <p><strong>Doxygen</strong> follows a very different philosophy compared to Sphinx and is more
 steered towards API documentation, exactly what we use it for in SSAGES.
-Instead of maintaining the documentation separate from the source code, the
+Instead of maintaining the documentation separately from the source code, the
 classes and functions are documented in the same place where they are declared:
-The header files. Doxygen then reads the source code and automatically builds
-the documentation. Examples for documentation created with Doxygen:</p>
+the header files. Doxygen then reads the source code and automatically builds
+the documentation. Examples for documentation created with Doxygen include:</p>
 <ul class="simple">
-<li><a class="reference external" href="http://plumed.github.io/doc-v2.2/user-doc/html/index.html">Plumed</a></li>
-<li><a class="reference external" href="https://root.cern.ch/doc/master/index.html">Root</a></li>
+<li><p><a class="reference external" href="https://plumed.github.io/doc-v2.3/user-doc/html/index.html">PLUMED</a></p></li>
+<li><p><a class="reference external" href="https://root.cern.ch/doc/master/index.html">Root</a></p></li>
 </ul>
 <p>The mainpage of the Doxygen documentation is written in a separate header file,
 in our case <code class="docutils literal notranslate"><span class="pre">doc/mainpage.h</span></code>. A good introduction to the Doxygen syntax can
 be found at</p>
 <ul class="simple">
-<li><a class="reference external" href="http://www.stack.nl/~dimitri/doxygen/manual/docblocks.html">http://www.stack.nl/~dimitri/doxygen/manual/docblocks.html</a></li>
+<li><p><a class="reference external" href="http://www.stack.nl/~dimitri/doxygen/manual/docblocks.html">http://www.stack.nl/~dimitri/doxygen/manual/docblocks.html</a></p></li>
 </ul>
 <p>The basic rule is that Doxygen comments start with <code class="docutils literal notranslate"><span class="pre">//!</span></code> or <code class="docutils literal notranslate"><span class="pre">/*!</span></code> and
 document the class, namespace or function that directly follows it. Let’s start
@@ -386,118 +410,117 @@ square of a number. The first line, starting with <code class="docutils literal 
 description and should not be longer than one line. The second comment block,
 starting with <code class="docutils literal notranslate"><span class="pre">/*!</span></code> is the full description. Here, two special commands
 are used:</p>
-<dl class="docutils">
-<dt>\param</dt>
-<dd>This command documents one parameter of the function</dd>
-<dt>\returns</dt>
-<dd>This command documents the return value of the function</dd>
+<dl class="simple">
+<dt>\param</dt><dd><p>This command documents one parameter of the function.</p>
+</dd>
+<dt>\returns</dt><dd><p>This command documents the return value of the function.</p>
+</dd>
 </dl>
 <p>There are many special Doxygen commands. They all start with a backslash and
 the most important, apart from the two mentioned above, are:</p>
-<dl class="docutils">
-<dt>\tparam</dt>
-<dd>Used to document a template parameter.</dd>
-<dt>\ingroup</dt>
-<dd>This class is part of a group, such as Methods or Core. The groups are
-defined in <code class="docutils literal notranslate"><span class="pre">doc/mainpage.h</span></code>.</dd>
+<dl class="simple">
+<dt>\tparam</dt><dd><p>Used to document a template parameter.</p>
+</dd>
+<dt>\ingroup</dt><dd><p>This class is part of a group, such as Methods or Core. The groups are
+defined in <code class="docutils literal notranslate"><span class="pre">doc/mainpage.h</span></code>.</p>
+</dd>
 </dl>
-<p>Helpful are also boxes highlighting a given aspect of the function, such as:</p>
-<dl class="docutils">
-<dt>\attention</dt>
-<dd>Puts the following text in a raised box. A blank line ends the attention box.</dd>
-<dt>\note</dt>
-<dd>Starts a highlighted block. A blank line ends the note block.</dd>
-<dt>\remark</dt>
-<dd>Starts a paragraph where remarks may be entered.</dd>
-<dt>\see</dt>
-<dd>Paragraph for “See also”.</dd>
-<dt>\deprecated</dt>
-<dd>The documented class or function is deprecated and only kept for backwards
-compatibility.</dd>
-<dt>\todo</dt>
-<dd>Leave a ToDo note with this command.</dd>
+<p>There are also helpful boxes that highlight a given aspect of the function, such as:</p>
+<dl class="simple">
+<dt>\attention</dt><dd><p>Puts the following text in a raised box. A blank line ends the attention box.</p>
+</dd>
+<dt>\note</dt><dd><p>Starts a highlighted block. A blank line ends the note block.</p>
+</dd>
+<dt>\remark</dt><dd><p>Starts a paragraph where remarks may be entered.</p>
+</dd>
+<dt>\see</dt><dd><p>Paragraph for “See also”.</p>
+</dd>
+<dt>\deprecated</dt><dd><p>The documented class or function is deprecated and only kept for backwards
+compatibility.</p>
+</dd>
+<dt>\todo</dt><dd><p>Leave a “to do” note with this command.</p>
+</dd>
 </dl>
 <p>You can also highlight your text:</p>
-<dl class="docutils">
-<dt>\em</dt>
-<dd>For <em>italic</em> word. To highlight more text use &lt;em&gt; <em>Highlighted text</em> &lt;/em&gt;.</dd>
-<dt>\b</dt>
-<dd>For <strong>bold</strong> text. To highlight more text use &lt;b&gt; <strong>Bold text</strong> &lt;/b&gt;.</dd>
-<dt>\c</dt>
-<dd>For typewriter font. To have more text in typewriter font, use
-&lt;tt&gt;Typewriter Font&lt;/tt&gt;.</dd>
-<dt>\code</dt>
-<dd>Starts a <code class="docutils literal notranslate"><span class="pre">code</span></code> block. The block ends with <strong>\endcode</strong>.</dd>
-<dt>\li</dt>
-<dd>A line starting with <strong>\li</strong> is an entry in a bullet list.</dd>
+<dl class="simple">
+<dt>\em</dt><dd><p>For an <em>italic</em> word. To apply to multiple words, use &lt;em&gt; <em>Italic text</em> &lt;/em&gt;.</p>
+</dd>
+<dt>\b</dt><dd><p>For a <strong>bold</strong> word. To apply to multiple words, use &lt;b&gt; <strong>Bold text</strong> &lt;/b&gt;.</p>
+</dd>
+<dt>\c</dt><dd><p>For a <code class="docutils literal notranslate"><span class="pre">code</span></code> word (in typewriter font). To apply to multiple words, use
+&lt;tt&gt; <code class="docutils literal notranslate"><span class="pre">Typewriter</span></code> &lt;/tt&gt;.</p>
+</dd>
+<dt>\code</dt><dd><p>Starts a <code class="docutils literal notranslate"><span class="pre">code</span></code> block. The block ends with <strong>\endcode</strong>.</p>
+</dd>
+<dt>\li</dt><dd><p>A line starting with <strong>\li</strong> is an entry in a bullet list.</p>
+</dd>
 </dl>
-<p>Another big benefit of doxygen is that you can use a lot of LaTeX syntax. For
-example:</p>
-<dl class="docutils">
-<dt>\f$</dt>
-<dd>Starts and ends an inline math equation, similar to $ in Latex.</dd>
-<dt>\f[ and \f]</dt>
-<dd>Start and end a display-style LaTeX equation.</dd>
-<dt>\cite &lt;label&gt;</dt>
-<dd>Cite a reference. The references are listed in <code class="docutils literal notranslate"><span class="pre">doc/references.bib</span></code> and
-follow the BibTex syntax.</dd>
+<p>Another benefit of Doxygen is that you can use some LaTeX syntax. For example:</p>
+<dl class="simple">
+<dt>\f$</dt><dd><p>Starts and ends an inline math equation, similar to $ in Latex.</p>
+</dd>
+<dt>\f[ and \f]</dt><dd><p>Start and end a display-style LaTeX equation.</p>
+</dd>
+<dt>\cite &lt;label&gt;</dt><dd><p>Cite a reference. The references are listed in <code class="docutils literal notranslate"><span class="pre">doc/references.bib</span></code> and
+follow BibTex syntax.</p>
+</dd>
 </dl>
 <p>Doxygen is very clever in producing automatic links. For example, there
 exists a class <code class="docutils literal notranslate"><span class="pre">Method</span></code> in SSAGES. Thus, Doxygen automatically creates a
-link to the documentation of this class where the word “Method” appears. This
-does, however, not work for the plural, “Methods”. Instead, you can write
+link to the documentation of this class where the word “Method” appears. This,
+however, does not work for the plural, “Methods”. Instead, you can write
 <code class="docutils literal notranslate"><span class="pre">\link</span> <span class="pre">Method</span> <span class="pre">Methods</span> <span class="pre">\endlink</span></code>. On the other hand, if you want to prevent
 Doxygen from creating an autolink, put a <code class="docutils literal notranslate"><span class="pre">%</span></code> in front of the word.</p>
 </div>
 </div>
 <div class="section" id="what-to-document">
-<h3>What to document<a class="headerlink" href="#what-to-document" title="Permalink to this headline">¶</a></h3>
-<p>We are aiming for a comprehensive documentation of all the methods available in
-SSAGES as well as the core features. Thus, for each method the documentation
-should include</p>
+<h3>What to Document<a class="headerlink" href="#what-to-document" title="Permalink to this headline">¶</a></h3>
+<p>We strive for a comprehensive documentation of all the methods available in
+SSAGES, as well as the core features. Thus, for each method, the documentation
+should include:</p>
 <ul class="simple">
-<li>An introduction into the method, what it does and how it does it.</li>
-<li>A short tutorial based on one of the working examples. The reader should be
-able to complete the tutorial in ~30min and should leave with a sense of
-accomplishment, e.g. a nice energy profile or a picture of a folded protein.</li>
-<li>A detailed description on how to use the method, the parameters, constraints,
-requirements, etc.</li>
+<li><p>An introduction to the method, what it does, and how it does it.</p></li>
+<li><p>A short tutorial based on one of the working examples. The reader should be
+able to complete the tutorial in ~30 min and should leave with a sense of
+accomplishment, e.g. a nice energy profile or a picture of a folded protein.</p></li>
+<li><p>A detailed description on how to use the method, the parameters, constraints,
+requirements, etc.</p></li>
 </ul>
 </div>
 </div>
 <div class="section" id="adding-your-method-to-ssages">
-<span id="add-your-method"></span><h2>Adding your method to SSAGES<a class="headerlink" href="#adding-your-method-to-ssages" title="Permalink to this headline">¶</a></h2>
+<span id="add-your-method"></span><h2>Adding your Method to SSAGES<a class="headerlink" href="#adding-your-method-to-ssages" title="Permalink to this headline">¶</a></h2>
 <div class="admonition seealso">
-<p class="first admonition-title">See also</p>
-<p class="last">See <a class="reference internal" href="Write your own Methods and CVs.html#write-your-own-method"><span class="std std-ref">here</span></a> for an introduction to how to
+<p class="admonition-title">See also</p>
+<p>See <a class="reference internal" href="Write your own Methods and CVs.html#write-your-own-method"><span class="std std-ref">here</span></a> for an introduction to how to
 develop your own method.</p>
 </div>
-<p>So, you have developed a new Metadynamics method or a new collective variable (CV)?
-Great! SSAGES is about collaboration and integrating your new CV or method is a priority. But before we do that, make sure you check the following boxes:</p>
+<p>So, you have developed a new sampling method or new collective variable (CV)?
+Great! SSAGES is about collaboration and integrating your new CV or method is
+a priority. But before we do that, make sure you check the following boxes:</p>
 <ul class="simple">
-<li>Your code needs to compile and run (obviously).</li>
-<li>If you have implemented a new method, this method should have been published
+<li><p>Your code needs to compile and run (obviously).</p></li>
+<li><p>If you have implemented a new method, this method should have been published
 in a peer reviewed journal and the publication should be cited in the
 documentation of the method (see next point). If you have implemented a CV,
-please give a small example of usage. In which case(s) does the new CV come in
-handy?</li>
-<li>Your method needs to come with the necessary documentation. For others to
+please give a small example of usage. In which case(s) does the new CV come
+in handy?</p></li>
+<li><p>Your method needs to come with the necessary documentation. For others to
 be able to use your method, you will have to explain how it works. You can
-take a look at the section <a class="reference internal" href="#improve-documentation"><span class="std std-ref">“How to improve the documentation”</span></a> for a starter on how to write good documentation.</li>
-<li>Please provide an example system. This could be the folding of an
-Alanine Dipeptide molecule, a NaCl system or just a toy model with a simple
+take a look at the section <a class="reference internal" href="#improve-documentation"><span class="std std-ref">“Improving the Documentation”</span></a> for a starter on how to write good documentation.</p></li>
+<li><p>Please provide an example system. This could be the folding of an
+Alanine Dipeptide molecule, a NaCl system, or just a toy model with a simple
 energy landscape. As long as the system is small and the method can easily
-complete within a few hours, it will be fine.</li>
+complete within a few hours, it will be fine.</p></li>
 </ul>
-<p>Once these boxes have been checked, our team of friendly code-reviewers will
-take a look at your source code and help you meet the high standard of the
-SSAGES code.</p>
+<p>Once these boxes have been checked, our team of friendly developers will review
+your source code to help you meet the standards of the SSAGES code.</p>
 </div>
 <div class="section" id="working-on-the-core-classes">
-<span id="work-on-core-ssages"></span><h2>Working on the core classes<a class="headerlink" href="#working-on-the-core-classes" title="Permalink to this headline">¶</a></h2>
-<div class="admonition-todo admonition" id="index-1">
-<p class="first admonition-title">Todo</p>
-<p class="last">Describe SSAGES development</p>
+<span id="work-on-core-ssages"></span><h2>Working on the Core Classes<a class="headerlink" href="#working-on-the-core-classes" title="Permalink to this headline">¶</a></h2>
+<div class="admonition-todo admonition" id="id1">
+<p class="admonition-title">Todo</p>
+<p>Describe SSAGES code hierarchy and development workflow.</p>
 </div>
 </div>
 </div>
@@ -510,10 +533,10 @@ SSAGES code.</p>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="The SSAGES Cookbook.html" class="btn btn-neutral float-right" title="The SSAGES cookbook" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="The SSAGES Cookbook.html" class="btn btn-neutral float-right" title="The SSAGES Cookbook" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="Write your own Methods and CVs.html" class="btn btn-neutral" title="Write your own Methods and CVs" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="Write your own Methods and CVs.html" class="btn btn-neutral float-left" title="Write Your Own CVs and Methods" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -522,8 +545,10 @@ SSAGES code.</p>
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2016, the SSAGES Team.
-      Last updated on Dec 14, 2018.
+        &copy; Copyright 2018, the SSAGES Team
+      <span class="lastupdated">
+        Last updated on Aug 23, 2019.
+      </span>
 
     </p>
   </div>
@@ -540,36 +565,16 @@ SSAGES code.</p>
   
 
 
-  
-
-    <script type="text/javascript">
-        var DOCUMENTATION_OPTIONS = {
-            URL_ROOT:'./',
-            VERSION:'v0.8.3-alpha',
-            LANGUAGE:'None',
-            COLLAPSE_INDEX:false,
-            FILE_SUFFIX:'.html',
-            HAS_SOURCE:  true,
-            SOURCELINK_SUFFIX: '.txt'
-        };
-    </script>
-      <script type="text/javascript" src="_static/jquery.js"></script>
-      <script type="text/javascript" src="_static/underscore.js"></script>
-      <script type="text/javascript" src="_static/doctools.js"></script>
-      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-
-  
-
-  
-  
-    <script type="text/javascript" src="_static/js/theme.js"></script>
-  
-
   <script type="text/javascript">
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
-  </script> 
+  </script>
+
+  
+  
+    
+   
 
 </body>
 </html>

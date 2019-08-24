@@ -1,6 +1,6 @@
 <map id="SSAGES::Umbrella::PostIntegration" name="SSAGES::Umbrella::PostIntegration">
-<area shape="rect" id="node2" href="$classSSAGES_1_1CVManager.html#a9b4f51cba87bd962ae966c817cb710c8" title="Get CV iterator. " alt="" coords="313,5,476,47"/>
-<area shape="rect" id="node3" href="$classSSAGES_1_1Snapshot.html#a2d195c04efbc7d7d1c3dd4ccd4b9a5bc" title="Access the per&#45;particle forces. " alt="" coords="290,71,499,98"/>
-<area shape="rect" id="node4" href="$classSSAGES_1_1Snapshot.html#ab38cbf3c463820d1b8bbd733759bfa32" title="Get the current iteration. " alt="" coords="287,122,503,149"/>
-<area shape="rect" id="node5" href="$classSSAGES_1_1Snapshot.html#a02b7418ade9d06c64d1c074a95783635" title="Get box virial. " alt="" coords="295,173,494,199"/>
+<area shape="rect" id="node2" href="$classSSAGES_1_1CVManager.html#a7ab8ff40ccdc862e624ede661a24cfd8" title="Get CV iterator. " alt="" coords="313,5,476,47"/>
+<area shape="rect" id="node3" href="$classSSAGES_1_1Snapshot.html#a2533f7b900bc33185424eb94d6996edf" title="Access the per&#45;particle forces. " alt="" coords="290,71,499,98"/>
+<area shape="rect" id="node4" href="$classSSAGES_1_1Snapshot.html#acebaa24b3c2a4cdbd983e28c87df08c7" title="Get the current iteration. " alt="" coords="287,122,503,149"/>
+<area shape="rect" id="node5" href="$classSSAGES_1_1Snapshot.html#a00de82748940b4a7982b19fa8abe1c30" title="Get box virial. " alt="" coords="295,173,494,199"/>
 </map>

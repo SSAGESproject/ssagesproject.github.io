@@ -1,17 +1,17 @@
 <map id="SSAGES::FiniteTempString::FiniteTempString" name="SSAGES::FiniteTempString::FiniteTempString">
-<area shape="rect" id="node2" href="$classSSAGES_1_1FiniteTempString.html#a94561a14cc08999d4531db528fe3f2e8" title="Post&#45;integration hook. " alt="" coords="237,304,421,345"/>
-<area shape="rect" id="node3" href="$classSSAGES_1_1CVManager.html#a9b4f51cba87bd962ae966c817cb710c8" title="Get CV iterator. " alt="" coords="499,5,662,47"/>
-<area shape="rect" id="node4" href="$classSSAGES_1_1Snapshot.html#a2d195c04efbc7d7d1c3dd4ccd4b9a5bc" title="Access the per&#45;particle forces. " alt="" coords="476,71,685,98"/>
-<area shape="rect" id="node5" href="$classSSAGES_1_1Snapshot.html#a91852084d69a0703a8fcc9b27dc50459" title="Access the particle positions. " alt="" coords="469,122,692,149"/>
-<area shape="rect" id="node6" href="$classSSAGES_1_1Snapshot.html#a7146597433bcfd256385db274330cd36" title="Gets the local atom index corresponding to an atom ID. " alt="" coords="481,173,681,215"/>
-<area shape="rect" id="node7" href="$classSSAGES_1_1FiniteTempString.html#a89fd48843ba1d185529d7bfe560ec3ab" title="Checks if CV is in voronoi cell. " alt="" coords="489,239,673,280"/>
+<area shape="rect" id="node2" href="$classSSAGES_1_1FiniteTempString.html#a94561a14cc08999d4531db528fe3f2e8" title="Method call post integration. " alt="" coords="237,304,421,345"/>
+<area shape="rect" id="node3" href="$classSSAGES_1_1CVManager.html#a7ab8ff40ccdc862e624ede661a24cfd8" title="Get CV iterator. " alt="" coords="499,5,662,47"/>
+<area shape="rect" id="node4" href="$classSSAGES_1_1Snapshot.html#a2533f7b900bc33185424eb94d6996edf" title="Access the per&#45;particle forces. " alt="" coords="476,71,685,98"/>
+<area shape="rect" id="node5" href="$classSSAGES_1_1Snapshot.html#aee2ceb317884bc5e0105b9824b5026d3" title="Access the particle positions. " alt="" coords="469,122,692,149"/>
+<area shape="rect" id="node6" href="$classSSAGES_1_1Snapshot.html#a3ecf272dca61538320a4d503303fa9ba" title="Gets the local atom index corresponding to an atom ID. " alt="" coords="481,173,681,215"/>
+<area shape="rect" id="node7" href="$classSSAGES_1_1FiniteTempString.html#a14cdd0539092537c5113fbb4f4a07fec" title="Checks if CV is in Voronoi cell. " alt="" coords="489,239,673,280"/>
 <area shape="rect" id="node8" href="$classSSAGES_1_1Snapshot.html#ae115207255026556b7c44ecb7812001e" title="Return the serialized positions across all local cores. " alt="" coords="481,304,680,345"/>
-<area shape="rect" id="node9" href="$classSSAGES_1_1Snapshot.html#a2d75d610b88fcd9c326f0ab3d22668b7" title="Return the serialized positions across all local cores. " alt="" coords="471,370,690,397"/>
+<area shape="rect" id="node9" href="$classSSAGES_1_1Snapshot.html#a2d75d610b88fcd9c326f0ab3d22668b7" title="Return the serialized IDs across all local cores. " alt="" coords="471,370,690,397"/>
 <area shape="rect" id="node10" href="$classSSAGES_1_1FiniteTempString.html#af68721c1b7953bc3d2d097ad9090f66c" title="Updates the string according to the FTS method. " alt="" coords="489,421,673,463"/>
-<area shape="rect" id="node14" href="$classSSAGES_1_1StringMethod.html#a98d6840cc33ad30c2e9a4311e57ea2de" title="Check if method reached one of the exit criteria. " alt="" coords="499,487,662,528"/>
-<area shape="rect" id="node15" href="$classSSAGES_1_1StringMethod.html#a538a83e6f944a2b37ae9cc6207c970f5" title="Update the world string over MPI. " alt="" coords="499,552,662,593"/>
-<area shape="rect" id="node16" href="$classSSAGES_1_1StringMethod.html#aaac8b878af3574e7da1c109e5d2bfaf0" title="Prints the CV positions to file. " alt="" coords="499,617,662,659"/>
-<area shape="rect" id="node11" href="$classSSAGES_1_1StringMethod.html#ab38df67b9a7bee7a68c4692f97fd828b" title="Gather neighbors over MPI. " alt="" coords="740,356,903,397"/>
-<area shape="rect" id="node12" href="$classSSAGES_1_1StringMethod.html#aafa9592af4a0c3f3ce88989d9f28b9f1" title="Helper function for calculating distances. " alt="" coords="740,421,903,463"/>
-<area shape="rect" id="node13" href="$classSSAGES_1_1StringMethod.html#afbcff89f61a27e55a5a3c6323a61d147" title="Reparameterize the string. " alt="" coords="740,487,903,528"/>
+<area shape="rect" id="node13" href="$classSSAGES_1_1StringMethod.html#aaac8b878af3574e7da1c109e5d2bfaf0" title="Prints the CV positions to file. " alt="" coords="951,449,1113,491"/>
+<area shape="rect" id="node15" href="$classSSAGES_1_1StringMethod.html#a538a83e6f944a2b37ae9cc6207c970f5" title="Update the world string over MPI. " alt="" coords="951,520,1113,561"/>
+<area shape="rect" id="node16" href="$classSSAGES_1_1StringMethod.html#a98d6840cc33ad30c2e9a4311e57ea2de" title="Check if method reached one of the exit criteria. " alt="" coords="499,589,662,631"/>
+<area shape="rect" id="node11" href="$classSSAGES_1_1StringMethod.html#ab38df67b9a7bee7a68c4692f97fd828b" title="Gather neighbors over MPI. " alt="" coords="951,381,1113,423"/>
+<area shape="rect" id="node12" href="$classSSAGES_1_1StringMethod.html#a7c26e585db0cb798a1b64f41f913726b" title="Helper function for calculating distances. " alt="" coords="740,421,903,463"/>
+<area shape="rect" id="node14" href="$classSSAGES_1_1StringMethod.html#afbcff89f61a27e55a5a3c6323a61d147" title="Reparameterize the string. " alt="" coords="951,315,1113,356"/>
 </map>

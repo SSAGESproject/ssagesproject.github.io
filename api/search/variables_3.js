@@ -8,7 +8,7 @@ var searchData=
   ['citers_5f',['citers_',['../classSSAGES_1_1ANN.html#ac85a0999687739a805c0782e7421f2b1',1,'SSAGES::ANN']]],
   ['coeff_5f',['coeff_',['../classSSAGES_1_1BasisEvaluator.html#a8760f28614bf89568f5a4cbca0904e58',1,'SSAGES::BasisEvaluator']]],
   ['coeffarr_5f',['coeffArr_',['../classSSAGES_1_1BFS.html#a5bc27ba07feb8ae8b05b96eb3acca1f7',1,'SSAGES::BFS']]],
-  ['comm_5f',['comm_',['../classSSAGES_1_1Constraint.html#a4b3eba46dd6ff7594275046325b80446',1,'SSAGES::Constraint::comm_()'],['../classSSAGES_1_1Logger.html#a02cf19fc4fb86c0bb347ee081e619ea9',1,'SSAGES::Logger::comm_()'],['../classSSAGES_1_1Method.html#a1118666d61dbf3bc7606e3b61aa3a460',1,'SSAGES::Method::comm_()'],['../classSSAGES_1_1ResourceHandler.html#a6751d2a4a906f906af46952ab367d9c4',1,'SSAGES::ResourceHandler::comm_()'],['../classSSAGES_1_1Snapshot.html#a318172ccddbc82d73d5c2fdd327f92c6',1,'SSAGES::Snapshot::comm_()']]],
+  ['comm_5f',['comm_',['../classSSAGES_1_1Logger.html#a02cf19fc4fb86c0bb347ee081e619ea9',1,'SSAGES::Logger::comm_()'],['../classSSAGES_1_1Method.html#a1118666d61dbf3bc7606e3b61aa3a460',1,'SSAGES::Method::comm_()'],['../classSSAGES_1_1ResourceHandler.html#a6751d2a4a906f906af46952ab367d9c4',1,'SSAGES::ResourceHandler::comm_()'],['../classSSAGES_1_1Snapshot.html#a318172ccddbc82d73d5c2fdd327f92c6',1,'SSAGES::Snapshot::comm_()']]],
   ['component_5f',['component_',['../classSSAGES_1_1GyrationTensorCV.html#a0204db1d939bda7405d66cbb6a56dfcb',1,'SSAGES::GyrationTensorCV']]],
   ['comref_5f',['COMref_',['../classSSAGES_1_1RMSDCV.html#afb37312a2c477a231a1ef748171b87af',1,'SSAGES::RMSDCV']]],
   ['convergeexit_5f',['convergeExit_',['../classSSAGES_1_1BFS.html#a0d1eb924d068ec3a3369c5f48c0a113b',1,'SSAGES::BFS']]],

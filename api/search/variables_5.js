@@ -1,11 +1,8 @@
 var searchData=
 [
-  ['e_5f',['e_',['../classSSAGES_1_1COPSSImage.html#acba73d15a22c79734de9e630853ad269',1,'SSAGES::COPSSImage']]],
   ['edges_5f',['edges_',['../classSSAGES_1_1GridBase.html#a261701541cd481c6c505635fa1d7bb5e',1,'SSAGES::GridBase']]],
-  ['einner_5f',['einner_',['../classSSAGES_1_1COPSSImage.html#a31b592aced378d27baf416c08bdcf74f',1,'SSAGES::COPSSImage']]],
   ['energy_5f',['energy_',['../classSSAGES_1_1Snapshot.html#a020c5622f65477ad82de75bc49ee6e54',1,'SSAGES::Snapshot']]],
   ['enum_5f',['enum_',['../classJson_1_1EnumRequirement.html#af5b74bbeb95d57f8f8a7507b41b84e95',1,'Json::EnumRequirement::enum_()'],['../classJson_1_1StringRequirement.html#a84315f436a2aca4aa9c98d86c0ffc4a7',1,'Json::StringRequirement::enum_()']]],
-  ['eouter_5f',['eouter_',['../classSSAGES_1_1COPSSImage.html#a5812db4a360904e66d99467966e4e77b',1,'SSAGES::COPSSImage']]],
   ['equilibrate_5f',['equilibrate_',['../classSSAGES_1_1ElasticBand.html#a22f5657825ca797d6a99a96b8948bd7a',1,'SSAGES::ElasticBand']]],
   ['errors_5f',['errors_',['../classSSAGES_1_1BuildException.html#a70e41d120fdf719a3fb28ae93ad99bda',1,'SSAGES::BuildException::errors_()'],['../classJson_1_1Requirement.html#a585f6404d071d7a9b6f265ea6aacfa5f',1,'Json::Requirement::errors_()']]],
   ['evaluator_5f',['evaluator_',['../classSSAGES_1_1BFS.html#a30981e775e2bed6c3c531ccc813acfaf',1,'SSAGES::BFS']]],

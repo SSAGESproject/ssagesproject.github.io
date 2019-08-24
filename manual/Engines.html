@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Engines &mdash; SSAGES v0.8.3-alpha documentation</title>
+  <title>Engines &mdash; SSAGES v0.8.5-alpha documentation</title>
   
 
   
@@ -17,35 +17,37 @@
   
 
   
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
 
-  
-  
     
 
   
-
-  
-    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="Collective Variables" href="Collective Variables.html" />
     <link rel="prev" title="Input Files" href="Input Files.html" /> 
-
-  
-  <script src="_static/js/modernizr.min.js"></script>
-
 </head>
 
 <body class="wy-body-for-nav">
 
    
   <div class="wy-grid-for-nav">
-
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
-        <div class="wy-side-nav-search">
+        <div class="wy-side-nav-search" >
           
 
           
@@ -59,7 +61,7 @@
             
             
               <div class="version">
-                0.8.3
+                0.8.5
               </div>
             
           
@@ -95,6 +97,7 @@
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#gromacs">GROMACS</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#id2">Building</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#setup">Setup</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#id3">Running</a></li>
 </ul>
 </li>
@@ -105,26 +108,26 @@
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#qbox">Qbox</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#id6">Building</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#set-up">Set-up</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id7">Running</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#running-on-clusters">Running on clusters</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id7">Setup</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id8">Running</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#running-on-clusters">Running on Clusters</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#hoomd-blue">HOOMD-blue</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#id8">Building</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id9">Running</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id9">Building</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id10">Running</a></li>
 </ul>
 </li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="Collective Variables.html">Collective Variables</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Advanced Sampling Methods.html">Advanced Sampling Methods</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Write your own Methods and CVs.html">Write your own Methods and CVs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Write your own Methods and CVs.html">Write Your Own CVs and Methods</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Contribute to SSAGES.html">Contribute to SSAGES</a></li>
-<li class="toctree-l1"><a class="reference internal" href="The SSAGES Cookbook.html">The SSAGES cookbook</a></li>
+<li class="toctree-l1"><a class="reference internal" href="The SSAGES Cookbook.html">The SSAGES Cookbook</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Acknowledgements.html">Acknowledgments</a></li>
-<li class="toctree-l1"><a class="reference internal" href="License.html">Copyright</a></li>
-<li class="toctree-l1"><a class="reference internal" href="License.html#id1">License information</a></li>
+<li class="toctree-l1"><a class="reference internal" href="zReferences.html">References</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Copyright and License.html">Copyright and License Information</a></li>
 </ul>
 
             
@@ -195,45 +198,45 @@
 features between MD engines. This may be the result of engine limitations
 or work in progress. The table below summarizes the main features that
 vary between supported engines.</p>
-<table border="1" class="docutils">
+<table class="docutils align-default">
 <colgroup>
-<col width="23%" />
-<col width="36%" />
-<col width="22%" />
-<col width="19%" />
+<col style="width: 23%" />
+<col style="width: 36%" />
+<col style="width: 22%" />
+<col style="width: 19%" />
 </colgroup>
-<thead valign="bottom">
-<tr class="row-odd"><th class="head">Engine</th>
-<th class="head">Supported versions</th>
-<th class="head">Multi-walker</th>
-<th class="head">NPT virial</th>
+<thead>
+<tr class="row-odd"><th class="head"><p>Engine</p></th>
+<th class="head"><p>Supported versions</p></th>
+<th class="head"><p>Multi-walker</p></th>
+<th class="head"><p>NPT virial</p></th>
 </tr>
 </thead>
-<tbody valign="top">
-<tr class="row-even"><td><a class="reference internal" href="#lammps">LAMMPS</a></td>
-<td>2010 or newer</td>
-<td>yes</td>
-<td>yes</td>
+<tbody>
+<tr class="row-even"><td><p><a class="reference internal" href="#lammps">LAMMPS</a></p></td>
+<td><p>2010 or newer</p></td>
+<td><p>yes</p></td>
+<td><p>yes</p></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#gromacs">GROMACS</a></td>
-<td>5.1.x, 2016.x, 2018.x</td>
-<td>yes</td>
-<td>yes</td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#gromacs">GROMACS</a></p></td>
+<td><p>5.1.x, 2016.x, 2018.x</p></td>
+<td><p>yes</p></td>
+<td><p>yes</p></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#openmd">OpenMD</a></td>
-<td>2.5</td>
-<td>no</td>
-<td>no</td>
+<tr class="row-even"><td><p><a class="reference internal" href="#openmd">OpenMD</a></p></td>
+<td><p>2.5</p></td>
+<td><p>no</p></td>
+<td><p>no</p></td>
 </tr>
-<tr class="row-odd"><td><a class="reference internal" href="#qbox">Qbox</a></td>
-<td>1.60 or newer</td>
-<td>yes</td>
-<td>no</td>
+<tr class="row-odd"><td><p><a class="reference internal" href="#qbox">Qbox</a></p></td>
+<td><p>1.60 or newer</p></td>
+<td><p>yes</p></td>
+<td><p>no</p></td>
 </tr>
-<tr class="row-even"><td><a class="reference internal" href="#hoomd-blue">HOOMD-blue</a></td>
-<td>2.4 or newer</td>
-<td>yes</td>
-<td>no</td>
+<tr class="row-even"><td><p><a class="reference internal" href="#hoomd-blue">HOOMD-blue</a></p></td>
+<td><p>2.4 or newer</p></td>
+<td><p>yes</p></td>
+<td><p>no</p></td>
 </tr>
 </tbody>
 </table>
@@ -245,61 +248,81 @@ listed under the appropriate section.</p>
 <h3>Building<a class="headerlink" href="#building" title="Permalink to this headline">¶</a></h3>
 <p>SSAGES supports most recent versions of LAMMPS. To compile SSAGES with a
 compatible version of LAMMPS, either <code class="docutils literal notranslate"><span class="pre">-DLAMMPS=YES</span></code> or
-<code class="docutils literal notranslate"><span class="pre">-DLAMMPS_SRC=/path/to/LAMMPS</span></code> must be specified in the cmake command.
+<code class="docutils literal notranslate"><span class="pre">-DLAMMPS_SRC=/path/to/LAMMPS</span></code> must be specified in the CMake command.
 For example,</p>
-<div class="code bash highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">cmake</span> <span class="o">-</span><span class="n">DLAMMPS</span><span class="o">=</span><span class="n">YES</span> <span class="o">..</span>
-<span class="n">make</span>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>cmake -DLAMMPS<span class="o">=</span>YES ..
+make
 </pre></div>
 </div>
 <p>will automatically download LAMMPS (version 30 Jul 2016, tagged <code class="docutils literal notranslate"><span class="pre">r15407</span></code>)
-and compile SSAGES. Because many users may take advantage of optional LAMMPS
-packages, SSAGES forwards the make commands necessary to do so, such
-as</p>
-<div class="code bash highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">make</span> <span class="n">yes</span><span class="o">-</span><span class="n">molecule</span>
-<span class="n">make</span> <span class="n">yes</span><span class="o">-</span><span class="n">user</span><span class="o">-</span><span class="n">drude</span>
-</pre></div>
-</div>
-<p>If a user is interested in using a different version of LAMMPS, SSAGES can
-download a specific stable release (must be supported) with</p>
-<div class="code bash highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">cmake</span> <span class="o">-</span><span class="n">DLAMMPS</span><span class="o">=</span><span class="s2">&quot;5 Nov 2016&quot;</span> <span class="o">..</span>
+and compile SSAGES. If a user is interested in using a different version of
+LAMMPS, SSAGES can download a specific stable release (must be supported) with</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>cmake -DLAMMPS<span class="o">=</span><span class="s2">&quot;22 Aug 2018&quot;</span> ..
 </pre></div>
 </div>
 <p>If a user is interested in using an already-downloaded source or one with
 personal modifications, then SSAGES can be pointed to that particular source
 repository.</p>
-<div class="code bash highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">cmake</span> <span class="o">-</span><span class="n">DLAMMPS_SRC</span><span class="o">=/</span><span class="n">path</span><span class="o">/</span><span class="n">to</span><span class="o">/</span><span class="n">lammps</span> <span class="o">..</span>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>cmake -DLAMMPS_SRC<span class="o">=</span>/path/to/lammps ..
 </pre></div>
 </div>
+<p>Because many users may take advantage of optional LAMMPS
+packages, SSAGES forwards the make commands necessary to do so. To enable or
+disable these packages, you can call</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>make yes-package
+</pre></div>
+</div>
+<p>or</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>make no-package
+</pre></div>
+</div>
+<p>For more information on optional packages for LAMMPS, refer to
+the <a class="reference external" href="https://lammps.sandia.gov/doc/Packages.html">LAMMPS User Manual</a>.</p>
 <div class="admonition warning">
-<p class="first admonition-title">Warning</p>
-<p class="last">Once you link SSAGES to a particular LAMMPS source, you will be
+<p class="admonition-title">Warning</p>
+<p>Once you link SSAGES to a particular LAMMPS source, you will be
 <strong>unable</strong> to compile that LAMMPS source outside of SSAGES because of
 SSAGES dependencies which are introduced. Be sure to backup your
 repository accordingly.</p>
 </div>
+<p>The following stable versions of LAMMPS have been tested extensively, but we
+are confident that SSAGES will also work with most other LAMMPS versions.</p>
+<ul class="simple">
+<li><p>10 Aug 2015</p></li>
+<li><p>7 Dec 2015</p></li>
+<li><p>16 Feb 2016</p></li>
+<li><p>14 May 2016</p></li>
+<li><p>30 Jul 2016</p></li>
+<li><p>5 Nov 2016</p></li>
+<li><p>17 Nov 2016</p></li>
+<li><p>31 Mar 2017</p></li>
+<li><p>11 Aug 2017</p></li>
+<li><p>16 Mar 2018</p></li>
+<li><p>22 Aug 2018</p></li>
+</ul>
 </div>
 <div class="section" id="running">
 <h3>Running<a class="headerlink" href="#running" title="Permalink to this headline">¶</a></h3>
 <p>SSAGES integrates with LAMMPS though the flexible <em>fix</em> API offered
 by LAMMPS. It is therefore necessary to define a SSAGES fix within
 the LAMMPS input file as follows.</p>
-<div class="code highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">fix</span> <span class="n">ssages</span> <span class="nb">all</span> <span class="n">ssages</span>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>fix ssages all ssages
 </pre></div>
 </div>
 <p>This directive ensures that SSAGES is able to locate the appropriate
 adapter and interface with the LAMMPS library. <strong>It is very important to
 name the fix “ssages” as shown above. Otherwise, SSAGES will not work
 properly</strong>. It is highly recommended that the SSAGES fix command be placed
-after all integrator fixes. Also, make sure tht the fix is specified before
+after all integrator fixes. Also, make sure that the fix is specified before
 the run command, which will begin the advanced sampling simulation.</p>
 <div class="admonition note">
-<p class="first admonition-title">Note</p>
-<p class="last">Due to the nature of how SSAGES forwards commands to LAMMPS, the use
+<p class="admonition-title">Note</p>
+<p>Due to the nature of how SSAGES forwards commands to LAMMPS, the use
 of <code class="docutils literal notranslate"><span class="pre">include</span></code> and <code class="docutils literal notranslate"><span class="pre">label/jump</span></code> within a LAMMPS input script is
 currently not supported.</p>
 </div>
 <p>SSAGES is compatible with typical LAMMPS workflows that include equilibration
-or energy minimzation steps before production. So long as the SSAGES fix is not
+or energy minimization steps before production. So long as the SSAGES fix is not
 declared, LAMMPS will run without any modification.</p>
 <p>The only LAMMPS-specific property required in a SSAGES input file is the <code class="docutils literal notranslate"><span class="pre">input</span></code>
 property which points to the LAMMPS input script. Details can be found on the
@@ -310,58 +333,132 @@ property which points to the LAMMPS input script. Details can be found on the
 <h2>GROMACS<a class="headerlink" href="#gromacs" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="id2">
 <h3>Building<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h3>
-<p>SSAGES supports GROMACS versions 5.1.x, 2016.x, and 2018.x. To compile SSAGES
-with a compatible version of GROMACS, either <code class="docutils literal notranslate"><span class="pre">-DGROMACS=YES</span></code> or
-<code class="docutils literal notranslate"><span class="pre">-DGROMACS_SRC=/path/to/GROMACS</span></code> must be specified in the cmake command.
+<p>SSAGES supports most recent versions of GROMACS. To compile SSAGES with a
+compatible version of GROMACS, either <code class="docutils literal notranslate"><span class="pre">-DGROMACS=YES</span></code> or
+<code class="docutils literal notranslate"><span class="pre">-DGROMACS_SRC=/path/to/GROMACS</span></code> must be specified in the CMake command.
 For example,</p>
-<div class="code bash highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">cmake</span> <span class="o">-</span><span class="n">DGROMACS</span><span class="o">=</span><span class="n">YES</span> <span class="o">..</span>
-<span class="n">make</span>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>cmake -DGROMACS<span class="o">=</span>YES ..
+make
 </pre></div>
 </div>
 <p>will automatically download GROMACS 5.1.3 and compile SSAGES.
 If a user is interested in using a different version of GROMACS, SSAGES can
 download a specific release (must be supported) with</p>
-<div class="code bash highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">cmake</span> <span class="o">-</span><span class="n">DGROMACS</span><span class="o">=</span><span class="mf">2016.4</span> <span class="o">..</span>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>cmake -DGROMACS<span class="o">=</span><span class="m">2018</span>.3 ..
 </pre></div>
 </div>
 <p>If a user is interested in using an already-downloaded source or one with
 personal modifications, then SSAGES can be pointed to that particular source
 repository.</p>
-<div class="code bash highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">cmake</span> <span class="o">-</span><span class="n">DGROMACS_SRC</span><span class="o">=/</span><span class="n">path</span><span class="o">/</span><span class="n">to</span><span class="o">/</span><span class="n">gromacs</span> <span class="o">..</span>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>cmake -DGROMACS_SRC<span class="o">=</span>/path/to/gromacs ..
 </pre></div>
 </div>
 <div class="admonition warning">
-<p class="first admonition-title">Warning</p>
-<p class="last">Once you link SSAGES to a particular GROMACS source, you will be
+<p class="admonition-title">Warning</p>
+<p>Once you link SSAGES to a particular GROMACS source, you will be
 <strong>unable</strong> to compile that GROMACS source outside of SSAGES because of
 SSAGES dependencies which are introduced. Be sure to backup your
 repository accordingly.</p>
 </div>
+<p>The following versions of GROMACS are supported by SSAGES, but we are very
+confident that SSAGES will <em>not</em> work with other versions of GROMACS out of
+the box, in contrast to LAMMPS. We are working hard to make SSAGES
+compatible with new versions of GROMACS, as they are released.</p>
+<ul class="simple">
+<li><p>5.1.x</p></li>
+<li><p>2016.x</p></li>
+<li><p>2018.x</p></li>
+</ul>
+</div>
+<div class="section" id="setup">
+<h3>Setup<a class="headerlink" href="#setup" title="Permalink to this headline">¶</a></h3>
+<p>After compiling GROMACS with SSAGES, you can use all of GROMACS’s available
+tools to set up systems and generate input files. The executable is located at
+<code class="docutils literal notranslate"><span class="pre">hooks/gromacs/gromacs/bin/gmx_mpi</span></code> within the build directory.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Note that, the <code class="docutils literal notranslate"><span class="pre">gmx_mpi</span></code> executable in the SSAGES folder will NOT
+function normally for running regular GROMACS simulations via
+<code class="docutils literal notranslate"><span class="pre">gmx_mpi</span> <span class="pre">mdrun</span></code>.</p>
+</div>
+<p>As GROMACS has in-depth
+<a class="reference external" href="http://manual.gromacs.org/documentation/current/user-guide/">Documentation</a>
+and a helpful
+<a class="reference external" href="http://manual.gromacs.org/documentation/current/user-guide/getting-started.html">Getting Started</a>
+section, we will not dwell much on how to use these tools to generate systems.</p>
+<p>Briefly, generating a GROMACS binary input file (<code class="docutils literal notranslate"><span class="pre">.tpr</span></code>) requires the
+following three files:</p>
+<ol class="arabic simple">
+<li><p>A “box” of particle coordinates to simulate (<code class="docutils literal notranslate"><span class="pre">.gro</span></code> file)</p></li>
+<li><p>A topology that describes the forcefield and connectivity (<code class="docutils literal notranslate"><span class="pre">.top</span></code> file,
+optionally <code class="docutils literal notranslate"><span class="pre">.itp</span></code> files)</p></li>
+<li><p>A simulation detail file that sets parameters such as which thermostat
+and barostat to use, number and length of time steps, integrator, saving
+frequency, and many more (<code class="docutils literal notranslate"><span class="pre">.mdp</span></code> file)</p></li>
+</ol>
+<p>For example, one can convert a protein <code class="docutils literal notranslate"><span class="pre">.pdb</span></code> file from an
+<a class="reference external" href="http://www.rcsb.org/">online database</a> using GROMACS tools to generate
+a <code class="docutils literal notranslate"><span class="pre">.gro</span></code> and a <code class="docutils literal notranslate"><span class="pre">.top</span></code> file. To generate an input file, use the preprocessor
+<code class="docutils literal notranslate"><span class="pre">gmx_mpi</span> <span class="pre">grompp</span></code> command:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>gmx_mpi grompp -f npt.mdp -p topol.top -c conf.gro -o input.tpr
+</pre></div>
+</div>
+<p>There are example <code class="docutils literal notranslate"><span class="pre">.gro</span></code>, <code class="docutils literal notranslate"><span class="pre">.mdp</span></code>, <code class="docutils literal notranslate"><span class="pre">.top</span></code>, <code class="docutils literal notranslate"><span class="pre">.tpr</span></code>, and <code class="docutils literal notranslate"><span class="pre">.json</span></code> inputs
+available in the Examples folder.</p>
+<p>After an energy minimization and brief NVT and NPT equilibration runs, you
+should be ready to use SSAGES with your system. First, generate a <code class="docutils literal notranslate"><span class="pre">.json</span></code>
+file for your SSAGES input. If using a single walker, the <code class="docutils literal notranslate"><span class="pre">inputfile</span></code> should
+be the same as your <code class="docutils literal notranslate"><span class="pre">.tpr</span></code> file name. If using multiple walkers, you should
+number your input files right before the extension, include a numberless file,
+and set the “inputfile” to be the same as the numberless. For example, if using
+four walkers, you should set your “inputfile” to <code class="docutils literal notranslate"><span class="pre">input.tpr</span></code> and have the
+following in your folder:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">input.tpr</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">input0.tpr</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">input1.tpr</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">input2.tpr</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">input3.tpr</span></code></p></li>
+</ul>
+<p>Finally, define your CV(s) and Methods, as detailed in the
+<a class="reference internal" href="Input Files.html#inputfiles"><span class="std std-ref">input files</span></a> page.</p>
 </div>
 <div class="section" id="id3">
 <h3>Running<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h3>
 <p>SSAGES forwards arguments to the GROMACS <strong>mdrun</strong> library. The
 <code class="docutils literal notranslate"><span class="pre">args</span></code> property must specified in the SSAGES input file as
-described on the <a class="reference internal" href="Input Files.html#inputfiles"><span class="std std-ref">input files page</span></a>.</p>
+described on the <a class="reference internal" href="Input Files.html#inputfiles"><span class="std std-ref">input files</span></a> page.</p>
+<p>You can start your simulation by calling the SSAGES executable:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>mpiexec -np N ./ssages input.json
+</pre></div>
+</div>
+<p>where <cite>N</cite> is the total number of MPI processes. For example, for three walkers
+using 2 processors each, set <span class="math notranslate nohighlight">\(N = 3*2 = 6\)</span>.</p>
 </div>
 </div>
 <div class="section" id="openmd">
 <h2>OpenMD<a class="headerlink" href="#openmd" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="id4">
 <h3>Building<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h3>
-<p>SSAGES supports OpenMD version 2.5. To compile SSAGES with a compatible
-version of OpenMD, the location of the already-downloaded source must be
-specified in the cmake command.</p>
-<div class="code bash highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">cmake</span> <span class="o">-</span><span class="n">DOPENMD_SRC</span><span class="o">=/</span><span class="n">path</span><span class="o">/</span><span class="n">to</span><span class="o">/</span><span class="n">OpenMD</span> <span class="o">..</span>
+<p>SSAGES supports most recent versions of OpenMD. To compile SSAGES with a
+compatible version of OpenMD, the location of the already-downloaded source
+must be specified in the CMake command.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>cmake -DOPENMD_SRC<span class="o">=</span>/path/to/OpenMD ..
 </pre></div>
 </div>
 <div class="admonition warning">
-<p class="first admonition-title">Warning</p>
-<p class="last">Once you link SSAGES to a particular OpenMD source, you will be
+<p class="admonition-title">Warning</p>
+<p>Once you link SSAGES to a particular OpenMD source, you will be
 <strong>unable</strong> to compile that OpenMD source outside of SSAGES because of
 SSAGES dependencies which are introduced. Be sure to backup your
 repository accordingly.</p>
 </div>
+<p>The following versions of OpenMD are supported by SSAGES, but we are very
+confident that SSAGES will <em>not</em> work with other versions of OpenMD out of
+the box, in contrast to LAMMPS.</p>
+<ul class="simple">
+<li><p>2.5</p></li>
+</ul>
 </div>
 <div class="section" id="id5">
 <h3>Running<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h3>
@@ -374,108 +471,204 @@ property which points to the OpenMD input script. Details can be found on the
 <h2>Qbox<a class="headerlink" href="#qbox" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="id6">
 <h3>Building<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h3>
-<p>Qbox and SSAGES can be used together to use enhanced sampling methods in <em>ab initio</em> molecular dynamics simulations. The coupling with Qbox is performed in a server-driver mode, with SSAGES acting as the driver and Qbox as the server. This means that if you have access to a version of Qbox (minimum 1.60) you do not need to recompile SSAGES and Qbox together. However, it is necessary to configure SSAGES to be used with Qbox, so that it will compile the correct Hook and Driver. To do so, add the following flag during the configuration of SSAGES</p>
-<div class="code bash highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">cmake</span> <span class="o">-</span><span class="n">DQBOX</span><span class="o">=</span><span class="n">YES</span> <span class="o">..</span>
+<p>SSAGES and Qbox can be run together to use advanced sampling methods in
+<em>ab initio</em> molecular dynamics simulations. The coupling with Qbox is performed
+in a server–driver mode, with SSAGES acting as the driver and Qbox as the
+server. This means that if you have access to a version of Qbox (minimum 1.60)
+you do not need to recompile SSAGES and Qbox together. However, it is necessary
+to configure SSAGES to be used with Qbox, so that it will compile the correct
+Hook and Driver. To do so, add the following flag during the configuration of
+SSAGES:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>cmake -DQBOX<span class="o">=</span>YES ..
 </pre></div>
 </div>
-<p>It is important to remark that in this case, <strong>SSAGES will not automatically download Qbox</strong>, it will be simply configured so to communicate with it. You are required to have access to a Qbox executable. If you do not have access to a precompiled version, then you will need to download and compile it yourself (<a class="reference external" href="http://qboxcode.org/build/">http://qboxcode.org/build/</a>)</p>
+<p>It is important to remark that in this case, <strong>SSAGES will not automatically
+download Qbox</strong>, it will be simply configured so to communicate with it. You
+are required to have access to a Qbox executable. If you do not have access to
+a pre-compiled version, then you will need to
+<a class="reference external" href="http://qboxcode.org/build/">download and compile it yourself</a>.</p>
 </div>
-<div class="section" id="set-up">
-<h3>Set-up<a class="headerlink" href="#set-up" title="Permalink to this headline">¶</a></h3>
-<p>As for other engines, there are two input scripts necessary to run a Qbox-SSAGES calculation composed of <cite>N</cite> walkers:</p>
+<div class="section" id="id7">
+<h3>Setup<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h3>
+<p>As for other engines, there are two input scripts necessary to run a
+Qbox–SSAGES calculation composed of <code class="docutils literal notranslate"><span class="pre">N</span></code> walkers:</p>
 <ol class="arabic simple">
-<li>A JSON input file, specifying the methods and CVs that you want to use. Also, it specifies the qbox input file names and the number of MD, density, and wavefunction steps that you want to use.</li>
-<li>A number N of Qbox input files, that will be used in the first step of the calculation to obtain the ground state density in the first step.</li>
+<li><p>A JSON input file, specifying the methods and CVs that you want to use.
+Also, it specifies the Qbox input file names and the number of MD, density,
+and wavefunction steps that you want to use.</p></li>
+<li><p>A number <code class="docutils literal notranslate"><span class="pre">N</span></code> of Qbox input files, that will be used in the first step of
+the calculation to obtain the ground state density in the first step.</p></li>
 </ol>
-<p>The JSON file contains the same field that would usually have (CVs, methods, logger, etc..) with three more options:</p>
-<div class="code javascript highlight-default notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
-    <span class="s2">&quot;walkers&quot;</span><span class="p">:</span> <span class="n">N</span><span class="p">,</span>
-    <span class="s2">&quot;input&quot;</span><span class="p">:</span> <span class="s2">&quot;[md.1,md.2,..md.N]&quot;</span><span class="p">,</span>
-    <span class="s2">&quot;md_iterations&quot;</span> <span class="p">:</span> <span class="mi">10</span><span class="p">,</span>
-    <span class="s2">&quot;qm_iterations&quot;</span> <span class="p">:</span> <span class="mi">30</span><span class="p">,</span>
-    <span class="s2">&quot;wf_iterations&quot;</span> <span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+<p>The JSON file contains the same field that would usually have (CVs, methods, logger, etc.) with three additional options:</p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+        <span class="s2">&quot;walkers&quot;</span><span class="o">:</span> <span class="nx">N</span><span class="p">,</span>
+        <span class="s2">&quot;input&quot;</span><span class="o">:</span> <span class="s2">&quot;[md.1, md.2, ..., md.N]&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;md_iterations&quot;</span> <span class="o">:</span> <span class="mi">10</span><span class="p">,</span>
+        <span class="s2">&quot;qm_iterations&quot;</span> <span class="o">:</span> <span class="mi">30</span><span class="p">,</span>
+        <span class="s2">&quot;wf_iterations&quot;</span> <span class="o">:</span> <span class="mi">1</span><span class="p">,</span>
 <span class="p">}</span>
 </pre></div>
 </div>
-<p>The keywords <code class="docutils literal notranslate"><span class="pre">walkers</span></code> and <code class="docutils literal notranslate"><span class="pre">input</span></code> are the standard SSAGES keywords to declare the number of walkers and the starting input file of each walker. The keywords <code class="docutils literal notranslate"><span class="pre">md_iterations</span></code>, <code class="docutils literal notranslate"><span class="pre">qm_iterations</span></code> and <code class="docutils literal notranslate"><span class="pre">wf_iterations</span></code>  are the respectively the number of MD steps to perform, the number of <cite>scf</cite> to perform per MD step, and the number of wave-function optimization per <cite>scf</cite> steps. These parameters correspond to the first, second and third number in the command <cite>run 20 10 0</cite>  (<a class="reference external" href="http://eslab.ucdavis.edu/software/qbox/QboxUserGuide.pdf">http://eslab.ucdavis.edu/software/qbox/QboxUserGuide.pdf</a>).</p>
-<p>The Qbox input file of each walker, specifies the parameters to be used in the DFT calculations (<cite>xc</cite>,`ecut`, T etc..). This file will be parsed by Qbox <strong>at the first timestep of the simulations</strong> to set up the calculations. If the file contains a command such as <cite>run 200 10</cite> the 200 MD steps that Qbox will perform <strong>will be unbiased</strong>. If wanted, this feature can be used to equilibrate the system. After this first step, the command <cite>run 1 qm_iterations wf_iterations</cite> will be repeated for <cite>md_iterations</cite>.</p>
-<p>An example of <cite>input.json</cite> and <cite>md.i</cite> is present in the <cite>/Examples/User/ABF/NaCl-Qbox</cite> folder.</p>
+<p>The keywords <code class="docutils literal notranslate"><span class="pre">walkers</span></code> and <code class="docutils literal notranslate"><span class="pre">input</span></code> are the standard SSAGES keywords to
+declare the number of walkers and the starting input file of each walker. The
+keywords <code class="docutils literal notranslate"><span class="pre">md_iterations</span></code>, <code class="docutils literal notranslate"><span class="pre">qm_iterations</span></code> and <code class="docutils literal notranslate"><span class="pre">wf_iterations</span></code>  are the
+respectively the number of MD steps to perform, the number of <cite>scf</cite> to perform
+per MD step, and the number of wave-function optimization per <cite>scf</cite> steps.
+These parameters correspond to the first, second and third number in the
+command <code class="docutils literal notranslate"><span class="pre">run</span> <span class="pre">20</span> <span class="pre">10</span> <span class="pre">0</span></code>. Consult the
+<a class="reference external" href="http://qboxcode.org/doc/html/">Qbox Documentation</a> for more information.</p>
+<p>The Qbox input file of each walker, specifies the parameters to be used in the
+DFT calculations (<code class="docutils literal notranslate"><span class="pre">xc</span></code>, <code class="docutils literal notranslate"><span class="pre">ecut</span></code>, <code class="docutils literal notranslate"><span class="pre">T</span></code>, etc.). This file will be parsed by
+Qbox <strong>at the first time step of the simulations</strong> to set up the calculations.
+If the file contains a command such as <code class="docutils literal notranslate"><span class="pre">run</span> <span class="pre">200</span> <span class="pre">10</span></code>, the 200 MD steps that
+Qbox will perform <strong>will be unbiased</strong>. If wanted, this feature can be used to
+equilibrate the system. After this first step, the command
+<code class="docutils literal notranslate"><span class="pre">run</span> <span class="pre">1</span> <span class="pre">qm_iterations</span> <span class="pre">wf_iterations</span></code> will be repeated for <code class="docutils literal notranslate"><span class="pre">md_iterations</span></code>.</p>
+<p>An example of <code class="docutils literal notranslate"><span class="pre">input.json</span></code> and <code class="docutils literal notranslate"><span class="pre">md.i</span></code> is present in the <code class="docutils literal notranslate"><span class="pre">Examples/User/ABF/NaCl-Qbox</span></code> directory.</p>
 </div>
-<div class="section" id="id7">
-<h3>Running<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h3>
-<p>As previously reported, Qbox and SSAGES communicate in a server-driver mode. To launch Qbox in a server mode is sufficient to use the proper keyword and specify its input and output file:</p>
-<div class="code bash highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">mpirun</span> <span class="o">-</span><span class="n">n</span> <span class="n">X</span> <span class="n">qb</span> <span class="o">-</span><span class="n">server</span> <span class="n">ssages_in_0</span> <span class="n">ssages_out_0</span>
+<div class="section" id="id8">
+<h3>Running<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h3>
+<p>As previously reported, Qbox and SSAGES communicate in a server–driver mode.
+To launch Qbox in a server mode is sufficient to use the proper keyword and
+specify its input and output file:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>mpirun -n X qb -server ssages_in_0 ssages_out_0
 </pre></div>
 </div>
 <p>for a single walker or</p>
-<div class="code bash highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">mpirun</span> <span class="o">-</span><span class="n">n</span> <span class="n">X</span> <span class="n">qb</span> <span class="o">-</span><span class="n">server</span> <span class="n">ssages_in_0</span> <span class="n">ssages_out_0</span>
-<span class="n">mpirun</span> <span class="o">-</span><span class="n">n</span> <span class="n">X</span> <span class="n">qb</span> <span class="o">-</span><span class="n">server</span> <span class="n">ssages_in_1</span> <span class="n">ssages_out_1</span>
-<span class="o">....</span>
-<span class="n">mpirun</span> <span class="o">-</span><span class="n">n</span> <span class="n">X</span> <span class="n">qb</span> <span class="o">-</span><span class="n">server</span> <span class="n">ssages_in_N</span> <span class="n">ssages_out_N</span>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>mpirun -n X qb -server ssages_in_0 ssages_out_0
+mpirun -n X qb -server ssages_in_1 ssages_out_1
+....
+mpirun -n X qb -server ssages_in_N ssages_out_N
 </pre></div>
 </div>
-<p>for multiple walkers. At the moment, the name <cite>ssages_in_</cite> and <cite>ssages_out_</cite> are <strong>mandatory</strong> and cannot be changed. When launched in this way, Qbox creates N files called <cite>ssages_in_N.lock</cite>, and then wait for input. When the files <cite>ssages_in_N.lock</cite> are deleted from disk, Qbox will execute the commands contained in the files <cite>ssages_in_N</cite>, write the result of the calculation in <cite>ssages_out_N</cite>, and create N <cite>ssages_in_N.lock</cite> files. Without the deletion of the <cite>.lock</cite> files, Qbox will not execute any command and will remain idle.</p>
-<p><em>After</em> that Qbox has <em>started</em> the server mode run (so it is idling and the file <cite>.lock</cite> are present on disk) we can launch SSAGES to drive the calculations:</p>
-<div class="code highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">mpirun</span> <span class="o">-</span><span class="n">n</span> <span class="n">N</span> <span class="n">ssages</span> <span class="nb">input</span><span class="o">.</span><span class="n">json</span>
+<p>for multiple walkers. At the moment, the name <code class="docutils literal notranslate"><span class="pre">ssages_in_</span></code> and
+<code class="docutils literal notranslate"><span class="pre">ssages_out_</span></code> are <strong>mandatory</strong> and cannot be changed. When launched in this
+way, Qbox creates <code class="docutils literal notranslate"><span class="pre">N</span></code> files called <code class="docutils literal notranslate"><span class="pre">ssages_in_N.lock</span></code>, and then wait for
+input. When the files <code class="docutils literal notranslate"><span class="pre">ssages_in_N.lock</span></code> are deleted from disk, Qbox will
+execute the commands contained in the files <code class="docutils literal notranslate"><span class="pre">ssages_in_N</span></code>, write the result
+of the calculation in <code class="docutils literal notranslate"><span class="pre">ssages_out_N</span></code>, and create N <code class="docutils literal notranslate"><span class="pre">ssages_in_N.lock</span></code>
+files. Without the deletion of the <code class="docutils literal notranslate"><span class="pre">.lock</span></code> files, Qbox will not execute any
+command and will remain idle.</p>
+<p>After Qbox has started the server mode run (so it is idling and the <code class="docutils literal notranslate"><span class="pre">.lock</span></code>
+files are present on disk), we can launch SSAGES to drive the calculations:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">mpirun</span> <span class="o">-</span><span class="n">n</span> <span class="n">N</span> <span class="n">ssages</span> <span class="nb">input</span><span class="o">.</span><span class="n">json</span>
 </pre></div>
 </div>
-<p>After that SSAGES started, the two codes will alternate each other in the following way:</p>
+<p>After SSAGES has started, the two codes will alternate with each other in the
+following way:</p>
 <ol class="arabic simple">
-<li>SSAGES will write on file <cite>ssages_in_i</cite> the script <cite>md.i</cite>, that will initialize the DFT parameters of the calculations. Then, it will trigger Qbox execution by deleting the .lock files.</li>
-<li>Qbox will perform the DFT calculation specified in <cite>ssages_in_i</cite>, write the output in <cite>ssages_out_i</cite> and will recreate the <cite>.lock</cite> file.</li>
-<li>SSAGES will read the Qbox output, calculate the CVs values and the bias, and write the files <cite>ssages_in_i</cite> containing the external forces and the position of the atoms, as well as the command <cite>run 1 qm_iterations wf_iterations</cite>. It will then delete the .lock file, triggering another MD step calculation in Qbox.</li>
-<li>Step 2 and 3 will be repeated for <cite>md_iterations</cite> number of time.</li>
-<li>After the last iterations, SSAGES will write an input file that will instruct Qbox to save a <cite>restart_i.xml</cite> file that can be used to restart the calculations, and <cite>quit</cite> to terminate the Qbox instance.</li>
-<li>Qbox and SSAGES will then finish the execution.</li>
+<li><p>SSAGES will write the script <code class="docutils literal notranslate"><span class="pre">md.i</span></code> to file <code class="docutils literal notranslate"><span class="pre">ssages_in_i</span></code>, which will
+initialize the DFT parameters of the calculations. Then, it will trigger
+Qbox execution by deleting the <code class="docutils literal notranslate"><span class="pre">.lock</span></code> files.</p></li>
+<li><p>Qbox will perform the DFT calculation specified in <code class="docutils literal notranslate"><span class="pre">ssages_in_i</span></code> and write
+the output in <code class="docutils literal notranslate"><span class="pre">ssages_out_i</span></code> and will recreate the <code class="docutils literal notranslate"><span class="pre">.lock</span></code> files.</p></li>
+<li><p>SSAGES will read the Qbox output, calculate the CVs and the bias, and write
+to the files <code class="docutils literal notranslate"><span class="pre">ssages_in_i</span></code>, containing the external forces and the
+position of the atoms, as well as the command
+<code class="docutils literal notranslate"><span class="pre">run</span> <span class="pre">1</span> <span class="pre">qm_iterations</span> <span class="pre">wf_iterations</span></code>. It will then delete the <code class="docutils literal notranslate"><span class="pre">.lock</span></code>
+file, triggering another MD step calculation in Qbox.</p></li>
+<li><p>Steps 2 and 3 will be repeated for <code class="docutils literal notranslate"><span class="pre">md_iterations</span></code> number of time.</p></li>
+<li><p>After the last iteration, SSAGES will write an input file that will instruct
+Qbox to save a <code class="docutils literal notranslate"><span class="pre">restart_i.xml</span></code> file that can be used to restart the
+calculations, and terminate the Qbox instance.</p></li>
+<li><p>Qbox and SSAGES will then finish the execution.</p></li>
 </ol>
-<p>Normally, Qbox overwrites the output <cite>ssages_out_i</cite> in server mode. To preserve the trajectory and avoid the loss of data, SSAGES will append the <cite>ssages_out_i</cite> file to a <cite>ssages_out_i_run_j.xml</cite> file. In the latter, the <cite>i</cite> index identify the walker, while the <cite>j</cite> index identifies the number of runs (So if you restarted two times, you would have _run1.xml, _run2.xml, and _run3.xml). We suggest using the <cite>restart_i.xml</cite> files to avoid discontinuities in the trajectories: when restarting, create a <cite>md.i</cite> file that contains the <cite>load restart_i.xml</cite> instruction.</p>
+<p>Normally, Qbox overwrites the output <code class="docutils literal notranslate"><span class="pre">ssages_out_i</span></code> in server mode. To
+preserve the trajectory and avoid the loss of data, SSAGES will append the
+<code class="docutils literal notranslate"><span class="pre">ssages_out_i</span></code> file to a <code class="docutils literal notranslate"><span class="pre">ssages_out_i_run_j.xml</span></code> file. In the latter, the
+<code class="docutils literal notranslate"><span class="pre">i</span></code> index identifies the walker, while the <code class="docutils literal notranslate"><span class="pre">j</span></code> index identifies the number
+of runs. (For example, if you restarted two times, you would have
+<code class="docutils literal notranslate"><span class="pre">_run_1.xml</span></code>, <code class="docutils literal notranslate"><span class="pre">_run_2.xml</span></code>, and <code class="docutils literal notranslate"><span class="pre">_run_3.xml</span></code>.) We suggest using the
+<code class="docutils literal notranslate"><span class="pre">restart_i.xml</span></code> files to avoid discontinuities in the trajectories; when
+restarting, create a <code class="docutils literal notranslate"><span class="pre">md.i</span></code> file that contains the <code class="docutils literal notranslate"><span class="pre">load</span> <span class="pre">restart_i.xml</span></code>
+instructions.</p>
 </div>
 <div class="section" id="running-on-clusters">
-<h3>Running on clusters<a class="headerlink" href="#running-on-clusters" title="Permalink to this headline">¶</a></h3>
-<p>Most likely, you are going to launch this calculation on a cluster or a supercomputer, where you will need to prepare a submission scripts and then launch it through a job scheduler. Given the fact that SSAGES need to start <em>after</em> Qbox, it is better to either separate the scripts that submit the two different calculations, or use a syntax that ensure that the submission occurs in the right order. For example on <em>slurm</em> we can either use one script</p>
-<div class="code bash highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">srun</span> <span class="o">-</span><span class="n">n</span> <span class="n">X</span>  <span class="o">-</span><span class="n">N</span> <span class="mi">1</span> <span class="n">qb</span> <span class="o">-</span><span class="n">server</span> <span class="n">ssages_in0</span> <span class="n">ssages_out0</span>  <span class="o">&amp;</span>
-<span class="n">srun</span> <span class="o">-</span><span class="n">n</span> <span class="n">X</span>  <span class="o">-</span><span class="n">N</span> <span class="mi">1</span> <span class="n">qb</span> <span class="o">-</span><span class="n">server</span> <span class="n">ssages_in1</span> <span class="n">ssages_out1</span>  <span class="o">&amp;</span>
-<span class="n">srun</span> <span class="o">-</span><span class="n">n</span> <span class="mi">2</span>  <span class="o">-</span><span class="n">N</span> <span class="mi">1</span> <span class="n">ssages</span> <span class="nb">input</span><span class="o">.</span><span class="n">json</span> <span class="o">&amp;</span>
-<span class="n">wait</span>
+<h3>Running on Clusters<a class="headerlink" href="#running-on-clusters" title="Permalink to this headline">¶</a></h3>
+<p>Most likely, you are going to launch this calculation on a cluster or a
+supercomputer, where you will need to prepare a submission scripts and then
+launch through a job scheduler. Given the fact that SSAGES needs to start
+<em>after</em> Qbox, it is better to either separate the scripts that submit the two
+different calculations, or use a syntax that ensure that the submission occurs
+in the right order. For example, on <a class="reference external" href="https://slurm.schedmd.com/">Slurm</a>, we
+can use one script:</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>srun -n X  -N <span class="m">1</span> qb -server ssages_in0 ssages_out0  <span class="p">&amp;</span>
+srun -n X  -N <span class="m">1</span> qb -server ssages_in1 ssages_out1  <span class="p">&amp;</span>
+srun -n <span class="m">2</span>  -N <span class="m">1</span> ssages input.json <span class="p">&amp;</span>
+<span class="nb">wait</span>
 </pre></div>
 </div>
-<p>which ensure that the script are executed in the right way. If you want to have different scripts for Qbox and SSAGES:</p>
-<p>In the qbox scripts, <cite>qb.sh</cite></p>
-<div class="code bash highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">srun</span> <span class="o">-</span><span class="n">n</span> <span class="n">X</span>  <span class="o">-</span><span class="n">N</span> <span class="mi">1</span> <span class="n">qb</span> <span class="o">-</span><span class="n">server</span> <span class="n">ssages_in0</span> <span class="n">ssages_out0</span>
-<span class="n">srun</span> <span class="o">-</span><span class="n">n</span> <span class="n">X</span>  <span class="o">-</span><span class="n">N</span> <span class="mi">1</span> <span class="n">qb</span> <span class="o">-</span><span class="n">server</span> <span class="n">ssages_in1</span> <span class="n">ssages_out1</span>
+<p>which ensures that the scripts are executed in the right way.</p>
+<p>If you want to have different scripts for Qbox and SSAGES:</p>
+<p>In the Qbox scripts, <code class="docutils literal notranslate"><span class="pre">qb.sh</span></code></p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>srun -n X  -N <span class="m">1</span> qb -server ssages_in0 ssages_out0
+srun -n X  -N <span class="m">1</span> qb -server ssages_in1 ssages_out1
 </pre></div>
 </div>
-<p>In the SSAGES script, <cite>ssages.sh</cite></p>
-<div class="code bash highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">srun</span> <span class="o">-</span><span class="n">n</span> <span class="mi">2</span>  <span class="o">-</span><span class="n">N</span> <span class="mi">1</span> <span class="n">ssages</span> <span class="nb">input</span><span class="o">.</span><span class="n">json</span>
+<p>In the SSAGES script, <code class="docutils literal notranslate"><span class="pre">ssages.sh</span></code></p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>srun -n <span class="m">2</span>  -N <span class="m">1</span> ssages input.json
 </pre></div>
 </div>
-<p>Then you will need to submit both of them with a third script, <cite>launch.sh</cite></p>
-<div class="code bash highlight-default notranslate"><div class="highlight"><pre><span></span>#!/bin/bash
+<p>Then you will need to submit both of them with a third script, <code class="docutils literal notranslate"><span class="pre">launch.sh</span></code></p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="ch">#!/bin/bash</span>
 
-j_qb=`sbatch qb.sh | awk &#39;{print $4}&#39;`
+<span class="nv">j_qb</span><span class="o">=</span><span class="sb">`</span>sbatch qb.sh <span class="p">|</span> awk <span class="s1">&#39;{print $4}&#39;</span><span class="sb">`</span>
 
-sbatch --dependency=after:${j_qb} ssages.sh
+sbatch --dependency<span class="o">=</span>after:<span class="si">${</span><span class="nv">j_qb</span><span class="si">}</span> ssages.sh
 </pre></div>
 </div>
-<p>The advantage of the latter method, with three scripts, is that it will avoid conflict between modules, which may be present in the first example, depending on how you have compiled Qbox and SSAGES.</p>
+<p>The advantage of the latter method, with three scripts, is that it will avoid
+conflict between modules, which may be present in the first example, depending
+on how you have compiled Qbox and SSAGES.</p>
 </div>
 </div>
 <div class="section" id="hoomd-blue">
 <h2>HOOMD-blue<a class="headerlink" href="#hoomd-blue" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="id8">
-<h3>Building<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h3>
-<p>HOOMD-blue supports SSAGES on the current <code class="docutils literal notranslate"><span class="pre">master</span></code> branch as of 2018-08-01, and will be supported in releases v2.4.0 and later. HOOMD-blue must be built with <strong>MPI support enabled</strong>.
-Specify the <code class="docutils literal notranslate"><span class="pre">cmake</span></code> flag <code class="docutils literal notranslate"><span class="pre">-DHOOMD_SRC=/path/to/hoomd/include</span></code>, pointing to the HOOMD-blue <code class="docutils literal notranslate"><span class="pre">include</span></code> path.</p>
-</div>
 <div class="section" id="id9">
-<h3>Running<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h3>
+<h3>Building<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h3>
+<p>HOOMD-blue supports SSAGES on the current <code class="docutils literal notranslate"><span class="pre">master</span></code> branch as of 2018-08-01,
+and will be supported in releases v2.4.0 and later. HOOMD-blue must be built
+with <strong>MPI support enabled</strong>, using the HOOMD CMake flag <code class="docutils literal notranslate"><span class="pre">-DMPI_ENABLED=ON</span></code>.
+If building HOOMD from source, there are two ways to create a valid
+installation, which contains the <code class="docutils literal notranslate"><span class="pre">include</span></code> files needed by SSAGES.</p>
+<ol class="arabic simple">
+<li><p>HOOMD can be installed with <code class="docutils literal notranslate"><span class="pre">make</span> <span class="pre">install</span></code> to the location specified by
+the HOOMD CMake flag <code class="docutils literal notranslate"><span class="pre">-DCMAKE_INSTALL_PREFIX</span></code>.</p></li>
+<li><p>HOOMD can be built using <code class="docutils literal notranslate"><span class="pre">make</span></code> (without installation) using the HOOMD
+CMake flag <code class="docutils literal notranslate"><span class="pre">-DCOPY_HEADERS=ON</span></code>.</p></li>
+</ol>
+<p>For more information on HOOMD CMake flags, see <a class="reference external" href="https://hoomd-blue.readthedocs.io/en/stable/compiling.html">the HOOMD documentation</a>.
+After installing HOOMD, specify the SSAGES CMake flag <code class="docutils literal notranslate"><span class="pre">-DHOOMD_ROOT=/path/to/hoomd_installation/hoomd</span></code>, pointing to the <code class="docutils literal notranslate"><span class="pre">hoomd</span></code> directory within the HOOMD-blue installation prefix.
+For example (using 8 <code class="docutils literal notranslate"><span class="pre">make</span></code> job slots),</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span> /path/to/hoomd
+mkdir build
+<span class="nb">cd</span> build/
+cmake ../ -DENABLE_MPI<span class="o">=</span>on -DCMAKE_INSTALL_PREFIX<span class="o">=</span>/path/to/hoomd_installation
+make install -j <span class="m">8</span>
+
+<span class="nb">cd</span> /path/to/SSAGES
+mkdir build
+<span class="nb">cd</span> build/
+<span class="c1"># Note that this path adds a suffix .../hoomd</span>
+cmake ../ -DHOOMD_ROOT<span class="o">=</span>/path/to/hoomd_installation/hoomd
+make -j <span class="m">8</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="id10">
+<h3>Running<a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h3>
 <p>HOOMD-blue offers a “half-step hook” API to support SSAGES.
-This feature is automatically configured when SSAGES launches the HOOMD-blue simulation.</p>
-<p>The HOOMD-blue SSAGES user script is written in Python.
-This script should contain necessary <code class="docutils literal notranslate"><span class="pre">import</span></code> statements, configure the simulation, and set types, interactions, integrators, log outputs and so forth.
-However, the simulation user script should <em>not</em> call <code class="docutils literal notranslate"><span class="pre">hoomd.run(steps)</span></code> as this will be called for the user by SSAGES.</p>
-<p>To set <a class="reference external" href="http://hoomd-blue.readthedocs.io/en/stable/command-line-options.html">HOOMD-blue command-line options</a>, use the SSAGES JSON input file.
-Set the key <code class="docutils literal notranslate"><span class="pre">&quot;args&quot;</span></code> with a string of command line options that will be passed to <code class="docutils literal notranslate"><span class="pre">hoomd.context.initialize()</span></code>.</p>
+This feature is automatically configured when SSAGES launches
+the HOOMD-blue simulation.</p>
+<p>The HOOMD-blue SSAGES user script is written in Python. This script should
+contain necessary <code class="docutils literal notranslate"><span class="pre">import</span></code> statements, configure the simulation, and set
+types, interactions, integrators, log outputs and so forth. However, the
+simulation user script should <em>not</em> call <code class="docutils literal notranslate"><span class="pre">hoomd.run(steps)</span></code> as this will
+be called within SSAGES.</p>
+<p>To set
+<a class="reference external" href="http://hoomd-blue.readthedocs.io/en/stable/command-line-options.html">HOOMD-blue command-line options</a>,
+use the SSAGES JSON input file. Set the key <code class="docutils literal notranslate"><span class="pre">&quot;args&quot;</span></code> with a string of command
+line options that will be passed to <code class="docutils literal notranslate"><span class="pre">hoomd.context.initialize()</span></code>.</p>
 </div>
 </div>
 </div>
@@ -491,7 +684,7 @@ Set the key <code class="docutils literal notranslate"><span class="pre">&quot;a
         <a href="Collective Variables.html" class="btn btn-neutral float-right" title="Collective Variables" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="Input Files.html" class="btn btn-neutral" title="Input Files" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="Input Files.html" class="btn btn-neutral float-left" title="Input Files" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -500,8 +693,10 @@ Set the key <code class="docutils literal notranslate"><span class="pre">&quot;a
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2016, the SSAGES Team.
-      Last updated on Dec 14, 2018.
+        &copy; Copyright 2018, the SSAGES Team
+      <span class="lastupdated">
+        Last updated on Aug 23, 2019.
+      </span>
 
     </p>
   </div>
@@ -518,36 +713,16 @@ Set the key <code class="docutils literal notranslate"><span class="pre">&quot;a
   
 
 
-  
-
-    <script type="text/javascript">
-        var DOCUMENTATION_OPTIONS = {
-            URL_ROOT:'./',
-            VERSION:'v0.8.3-alpha',
-            LANGUAGE:'None',
-            COLLAPSE_INDEX:false,
-            FILE_SUFFIX:'.html',
-            HAS_SOURCE:  true,
-            SOURCELINK_SUFFIX: '.txt'
-        };
-    </script>
-      <script type="text/javascript" src="_static/jquery.js"></script>
-      <script type="text/javascript" src="_static/underscore.js"></script>
-      <script type="text/javascript" src="_static/doctools.js"></script>
-      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-
-  
-
-  
-  
-    <script type="text/javascript" src="_static/js/theme.js"></script>
-  
-
   <script type="text/javascript">
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
-  </script> 
+  </script>
+
+  
+  
+    
+   
 
 </body>
 </html>

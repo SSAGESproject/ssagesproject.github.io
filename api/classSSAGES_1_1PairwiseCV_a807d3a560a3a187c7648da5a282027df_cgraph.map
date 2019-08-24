@@ -1,11 +1,11 @@
 <map id="SSAGES::PairwiseCV::Evaluate" name="SSAGES::PairwiseCV::Evaluate">
-<area shape="rect" id="node2" href="$classSSAGES_1_1Snapshot.html#ad6caa5b92433501fd4a62deef288340a" title="Apply minimum image to a vector. " alt="" coords="218,5,453,47"/>
+<area shape="rect" id="node2" href="$classSSAGES_1_1Snapshot.html#a46d2a991fd3446bfe6f6f72291ec1483" title="Apply minimum image to a vector. " alt="" coords="218,5,453,47"/>
 <area shape="rect" id="node4" href="$classSSAGES_1_1PairwiseKernel.html#a4c8fb122b9d895399a04f0df76d3a9d4" title="Evaluate the pairwise kernel function. " alt="" coords="249,71,421,112"/>
-<area shape="rect" id="node5" href="$classSSAGES_1_1Snapshot.html#ac9cd613a5fd8dacbd6dfc839cf526d28" title="Access the atom IDs. " alt="" coords="225,137,446,163"/>
-<area shape="rect" id="node6" href="$classSSAGES_1_1Snapshot.html#a4811c9435e56196d5525832345ef1680" title="Get communicator for walker. " alt="" coords="208,187,463,214"/>
-<area shape="rect" id="node7" href="$classSSAGES_1_1Snapshot.html#a7146597433bcfd256385db274330cd36" title="Gets the local atom index corresponding to an atom ID. " alt="" coords="511,260,711,301"/>
-<area shape="rect" id="node8" href="$classSSAGES_1_1Snapshot.html#a196a91c541c72bcb5147b9e60a44ea8b" title="SSAGES::Snapshot::GetLocal\lIndices" alt="" coords="235,289,435,331"/>
-<area shape="rect" id="node9" href="$classSSAGES_1_1Snapshot.html#a103af07a012d55a9637f6203c7eba0af" title="Get number of atoms in this snapshot. " alt="" coords="237,355,434,396"/>
-<area shape="rect" id="node10" href="$classSSAGES_1_1Snapshot.html#a91852084d69a0703a8fcc9b27dc50459" title="Access the particle positions. " alt="" coords="224,421,447,447"/>
+<area shape="rect" id="node5" href="$classSSAGES_1_1Snapshot.html#aa0063a19760ed14f163c0dec36582347" title="Access the atom IDs. " alt="" coords="225,137,446,163"/>
+<area shape="rect" id="node6" href="$classSSAGES_1_1Snapshot.html#a9079d14677b94ff2c88c1f35c867c303" title="Get communicator for walker. " alt="" coords="208,187,463,214"/>
+<area shape="rect" id="node7" href="$classSSAGES_1_1Snapshot.html#a3ecf272dca61538320a4d503303fa9ba" title="Gets the local atom index corresponding to an atom ID. " alt="" coords="511,260,711,301"/>
+<area shape="rect" id="node8" href="$classSSAGES_1_1Snapshot.html#abeef8bea41bf9706855c59b6cde0777a" title="SSAGES::Snapshot::GetLocal\lIndices" alt="" coords="235,289,435,331"/>
+<area shape="rect" id="node9" href="$classSSAGES_1_1Snapshot.html#ae05879b78672cd4899a06ae2d6a140fd" title="Get number of atoms in this snapshot. " alt="" coords="237,355,434,396"/>
+<area shape="rect" id="node10" href="$classSSAGES_1_1Snapshot.html#aee2ceb317884bc5e0105b9824b5026d3" title="Access the particle positions. " alt="" coords="224,421,447,447"/>
 <area shape="rect" id="node3" href="$namespaceSSAGES.html#a49bb77a1b5822888753c96c70780ab47" title="Quick helper function to round a double. " alt="" coords="550,13,671,39"/>
 </map>

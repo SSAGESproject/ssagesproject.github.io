@@ -5,7 +5,6 @@ var searchData=
   ['nbins_5f',['nbins_',['../classSSAGES_1_1BasisFunction.html#a819f3db0d72098ba3d6fc4ea71ec8a8c',1,'SSAGES::BasisFunction']]],
   ['net_5f',['net_',['../classSSAGES_1_1ANN.html#a8df5bc974f48135e0add44d77b91182a',1,'SSAGES::ANN']]],
   ['newcenters_5f',['newcenters_',['../classSSAGES_1_1StringMethod.html#af62b2619c59a5b505d46ee861b034744',1,'SSAGES::StringMethod']]],
-  ['ngauss',['ngauss',['../classSSAGES_1_1COPSSImage.html#aeffc8a57e1d3b9b614a3208aab216e56',1,'SSAGES::COPSSImage']]],
   ['nlocal_5f',['nlocal_',['../classSSAGES_1_1Snapshot.html#a0f4ff8ae2a1db5546a1a4d538ed91db7',1,'SSAGES::Snapshot']]],
   ['notices_5f',['notices_',['../classJson_1_1Requirement.html#a2352a685626b1257743b88d95ce69573',1,'Json::Requirement']]],
   ['nprev',['nprev',['../classSSAGES_1_1ForwardFlux_1_1FFSConfigID.html#a8d0342ad1bec7cb631ef6e14ba697ba8',1,'SSAGES::ForwardFlux::FFSConfigID']]],

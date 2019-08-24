@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Umbrella Sampling &mdash; SSAGES v0.8.3-alpha documentation</title>
+  <title>Umbrella Sampling &mdash; SSAGES v0.8.5-alpha documentation</title>
   
 
   
@@ -17,35 +17,37 @@
   
 
   
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
 
-  
-  
     
 
   
-
-  
-    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Write your own Methods and CVs" href="Write your own Methods and CVs.html" />
+    <link rel="next" title="Write Your Own CVs and Methods" href="Write your own Methods and CVs.html" />
     <link rel="prev" title="Swarm of Trajectories" href="Swarm of Trajectories.html" /> 
-
-  
-  <script src="_static/js/modernizr.min.js"></script>
-
 </head>
 
 <body class="wy-body-for-nav">
 
    
   <div class="wy-grid-for-nav">
-
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
-        <div class="wy-side-nav-search">
+        <div class="wy-side-nav-search" >
           
 
           
@@ -59,7 +61,7 @@
             
             
               <div class="version">
-                0.8.3
+                0.8.5
               </div>
             
           
@@ -97,25 +99,23 @@
 <li class="toctree-l2"><a class="reference internal" href="Finite Temperature String.html">Finite Temperature String</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Forward-Flux.html">Forward-Flux</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Metadynamics.html">Metadynamics</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Image Method.html">Image Method</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Replica Exchange.html">Replica Exchange</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Swarm of Trajectories.html">Swarm of Trajectories</a></li>
 <li class="toctree-l2 current"><a class="current reference internal" href="#">Umbrella Sampling</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#introduction">Introduction</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#options-parameters">Options &amp; Parameters</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#lammps-tutorial">LAMMPS Tutorial</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#hoomd-blue-tutorial">HOOMD-blue Tutorial</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#references">References</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#developers">Developers</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="Write your own Methods and CVs.html">Write your own Methods and CVs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Write your own Methods and CVs.html">Write Your Own CVs and Methods</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Contribute to SSAGES.html">Contribute to SSAGES</a></li>
-<li class="toctree-l1"><a class="reference internal" href="The SSAGES Cookbook.html">The SSAGES cookbook</a></li>
+<li class="toctree-l1"><a class="reference internal" href="The SSAGES Cookbook.html">The SSAGES Cookbook</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Acknowledgements.html">Acknowledgments</a></li>
-<li class="toctree-l1"><a class="reference internal" href="License.html">Copyright</a></li>
-<li class="toctree-l1"><a class="reference internal" href="License.html#id1">License information</a></li>
+<li class="toctree-l1"><a class="reference internal" href="zReferences.html">References</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Copyright and License.html">Copyright and License Information</a></li>
 </ul>
 
             
@@ -191,98 +191,99 @@ However, the presence of energy barriers can prevent certain configurations from
 all. Umbrella sampling is a simulation technique that helps to overcome those barriers and improve sampling
 by applying a bias along a specified collective variable. The bias takes the form of a harmonic potential and is typically constant throughout a simulation.
 Usually, a series of umbrella-sampled simulations are performed and analyzed together using the weighted histogram analysis method
-(WHAM).</p>
+(WHAM) <a class="reference internal" href="zReferences.html#kumar19921011" id="id2">[12]</a>.</p>
 <p>The functional form of the artificial bias is</p>
 <div class="math notranslate nohighlight">
-\[U_{umbrella} = \frac{1}{2} k \left(s - s_0\right)^2\]</div>
-<p>where <span class="math notranslate nohighlight">\(k\)</span> is the spring constant, <span class="math notranslate nohighlight">\(s\)</span> is the current value of the collective variable and <span class="math notranslate nohighlight">\(s_0\)</span> is the desired value of the collective variable.
-The success of the umbrella sampling method depends on the correct choice of <span class="math notranslate nohighlight">\(k\)</span> and <span class="math notranslate nohighlight">\(s_0\)</span> for the different simulations. Suitable values of <span class="math notranslate nohighlight">\(k\)</span> and <span class="math notranslate nohighlight">\(s_0\)</span> depend on the distances between adjacent umbrellas, and the gradient of the free energy surface at <span class="math notranslate nohighlight">\(s_0\)</span>.</p>
-<p>For more information about the umbrella sampling method, the interested reader is referred  to Ref. <a class="footnote-reference" href="#id7" id="id2">[1]</a>.</p>
+\[U_\text{umbrella} = \frac{1}{2} k \left(\xi - \xi_0\right)^2\]</div>
+<p>where <span class="math notranslate nohighlight">\(k\)</span> is the spring constant, <span class="math notranslate nohighlight">\(\xi\)</span> is the current value of the collective variable and <span class="math notranslate nohighlight">\(\xi_0\)</span> is the desired value of the collective variable.
+The success of the umbrella sampling method depends on the correct choice of <span class="math notranslate nohighlight">\(k\)</span> and <span class="math notranslate nohighlight">\(\xi_0\)</span> for the different simulations. Suitable values of <span class="math notranslate nohighlight">\(k\)</span> and <span class="math notranslate nohighlight">\(\xi_0\)</span> depend on the distances between adjacent umbrellas, and the gradient of the free energy surface at <span class="math notranslate nohighlight">\(\xi_0\)</span>.</p>
+<p>For more information about the umbrella sampling method, the interested reader is referred to Ref. <a class="reference internal" href="zReferences.html#kastner2011932" id="id3">[13]</a>.</p>
 </div>
 <div class="section" id="options-parameters">
 <h2>Options &amp; Parameters<a class="headerlink" href="#options-parameters" title="Permalink to this headline">¶</a></h2>
-<p>The following parameters need to be set under <cite>“method”</cite> in the JSON input file:</p>
+<p>The following parameters need to be set under <code class="docutils literal notranslate"><span class="pre">&quot;method&quot;</span></code> in the JSON input file:</p>
 <div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;type&quot;</span> <span class="o">:</span> <span class="s2">&quot;Umbrella&quot;</span>
 </pre></div>
 </div>
 <p>The following options are available for Umbrella Sampling:</p>
-<dl class="docutils">
-<dt>centers (required)</dt>
-<dd>Array of target values for each CV. This can either be an array of numbers, or
+<dl class="simple">
+<dt>centers (required)</dt><dd><p>Array of target values for each CV. This can either be an array of numbers, or
 an array of an array of numbers, for multiple walkers. If only a single array is
-defined, it is used across all walkers.</dd>
-<dt>ksprings (required)</dt>
-<dd>Array of spring constants for each CV. This can either be an array of numbers, or
+defined, it is used across all walkers.</p>
+</dd>
+<dt>ksprings (required)</dt><dd><p>Array of spring constants for each CV. This can either be an array of numbers, or
 an array of an array of numbers, for multiple walkers. If only a single array is
-defined, it is used across all walkers.</dd>
-<dt>output_file (required)</dt>
-<dd>Output file name for umbrella sampling data. This can be a string or
-an array of strings for multiple walkers.</dd>
-<dt>output_frequency (optional)</dt>
-<dd>Frequency of writing to output file (default: 1)</dd>
-<dt>append (optional)</dt>
-<dd>Boolean value which will cause umbrella sampling to either append to
-an existing file or override it entirely.</dd>
+defined, it is used across all walkers.</p>
+</dd>
+<dt>output_file (required)</dt><dd><p>Output file name for umbrella sampling data. This can be a string or
+an array of strings for multiple walkers.</p>
+</dd>
+<dt>output_frequency (optional)</dt><dd><p>Frequency of writing to output file. (Default: 1)</p>
+</dd>
+<dt>append (optional)</dt><dd><p>Boolean value which will cause umbrella sampling to either append to
+an existing file or override it entirely. (Default: false)</p>
+</dd>
 </dl>
 <p>The umbrella sampling method can also be run with time dependent centers.
-This is equivalent to the “steered MD” method. To do so, omit <cite>“centers”</cite>
+This is equivalent to the “steered MD” method. To do so, omit <code class="docutils literal notranslate"><span class="pre">&quot;centers&quot;</span></code>
 and use the following options instead:</p>
-<dl class="docutils">
-<dt>centers0 (required)</dt>
-<dd>Array of initial target values for each CV. This can either be an array of numbers, or
+<dl class="simple">
+<dt>centers0 (required)</dt><dd><p>Array of initial target values for each CV. This can either be an array of numbers, or
 an array of an array of numbers, for multiple walkers. If only a single array is
-defined, it is used across all walkers.</dd>
-<dt>centers1 (required)</dt>
-<dd>Array of final target values for each CV. This can either be an array of numbers, or
+defined, it is used across all walkers.</p>
+</dd>
+<dt>centers1 (required)</dt><dd><p>Array of final target values for each CV. This can either be an array of numbers, or
 an array of an array of numbers, for multiple walkers. If only a single array is
-defined, it is used across all walkers.</dd>
-<dt>timesteps (required)</dt>
-<dd>The number of timesteps over which to scale the umbrella centers</dd>
+defined, it is used across all walkers.</p>
+</dd>
+<dt>timesteps (required)</dt><dd><p>The number of timesteps over which to scale the umbrella centers</p>
+</dd>
 </dl>
 <p>By setting the above options, the umbrella method will linearly interpolate
-between <cite>centers0</cite> and <cite>centers1</cite> in <cite>timesteps</cite> iterations.</p>
+between <code class="docutils literal notranslate"><span class="pre">centers0</span></code> and <code class="docutils literal notranslate"><span class="pre">centers1</span></code> in <code class="docutils literal notranslate"><span class="pre">timesteps</span></code> iterations.</p>
 </div>
 <div class="section" id="lammps-tutorial">
 <span id="umbrella-tutorial"></span><h2>LAMMPS Tutorial<a class="headerlink" href="#lammps-tutorial" title="Permalink to this headline">¶</a></h2>
-<p>This tutorial will go through running Umbrella Sampling on an atomistic model of butane using LAMMPS as the
-MD engine.
+<p>This tutorial will go through running Umbrella Sampling on an atomistic model
+of butane using LAMMPS as the MD engine.
 Umbrella sampling will be performed on the torsional CV of the butane C atoms.</p>
-<p>The butane implementation in LAMMPS requires several modules to be added before being linked to SSAGES.
-To do this, return to your LAMMPS <code class="docutils literal notranslate"><span class="pre">src</span></code> directory and issue the following commands</p>
+<p>The butane implementation in LAMMPS requires several modules to be added
+before being linked to SSAGES.
+To do this, return to your build directory and issue the following commands:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>make yes-molecule
 make yes-kspace
 make
 </pre></div>
 </div>
-<p>which add the <code class="docutils literal notranslate"><span class="pre">MOLECULE</span></code> and <code class="docutils literal notranslate"><span class="pre">KSPACE</span></code> LAMMPS packages. Additional information about building
-LAMMPS with optional packages can be found in the
-<a class="reference external" href="http://lammps.sandia.gov/doc/Section_start.html#start-3">LAMMPS documentation</a>.</p>
+<p>which add the <code class="docutils literal notranslate"><span class="pre">MOLECULE</span></code> and <code class="docutils literal notranslate"><span class="pre">KSPACE</span></code> LAMMPS packages.
+For more information on optional packages for LAMMPS, refer to
+the <a class="reference external" href="https://lammps.sandia.gov/doc/Packages.html">LAMMPS User Manual</a>.</p>
 <p>The files for running this example can
 be found in <code class="docutils literal notranslate"><span class="pre">Examples/User/Umbrella/LAMMPS</span></code> and consist of the following files:</p>
-<dl class="docutils">
-<dt><code class="docutils literal notranslate"><span class="pre">Butane_SSAGES.in</span></code></dt>
-<dd>LAMMPS input file</dd>
-<dt><code class="docutils literal notranslate"><span class="pre">Butane.data</span></code></dt>
-<dd>LAMMPS data file describing butane molecule.</dd>
-<dt><code class="docutils literal notranslate"><span class="pre">umbrella_input.json</span></code></dt>
-<dd>Template JSON input containing information for one Umbrella Sampling simulation.</dd>
-<dt><code class="docutils literal notranslate"><span class="pre">umbrella_multiwalker_gen.py</span></code></dt>
-<dd>Python script for creating <cite>multiwalker_umbrella.json</cite> input file. The total number of
-simulations and the ‘centers’ values are controlled in this file.</dd>
+<dl class="simple">
+<dt><code class="docutils literal notranslate"><span class="pre">Butane_SSAGES.in</span></code></dt><dd><p>LAMMPS input file</p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">Butane.data</span></code></dt><dd><p>LAMMPS data file describing butane molecule.</p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">umbrella_input.json</span></code></dt><dd><p>Template JSON input containing information for one Umbrella Sampling simulation.</p>
+</dd>
+<dt><code class="docutils literal notranslate"><span class="pre">umbrella_multiwalker_gen.py</span></code></dt><dd><p>Python script for creating <code class="docutils literal notranslate"><span class="pre">multiwalker_umbrella.json</span></code> input file. The total number of
+simulations and the <code class="docutils literal notranslate"><span class="pre">centers</span></code> values are controlled in this file.</p>
+</dd>
 </dl>
-<p>Once in the directory, the appropriate <cite>.json</cite> file needs to be generated. A <cite>.json</cite> file
+<p>Once in the directory, the appropriate <code class="docutils literal notranslate"><span class="pre">.json</span></code> file needs to be generated. A <code class="docutils literal notranslate"><span class="pre">.json</span></code> file
 is already in the directory, <code class="docutils literal notranslate"><span class="pre">umbrella_input.json</span></code>, which contains the CV information
 and specifies the LAMMPS input files to be used. A single-walker umbrella simulation can
 be run directly using</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>ssages umbrella_input.json
 </pre></div>
 </div>
-<p>The simulation will create an output file named <cite>umbrella.dat1</cite> containing the value of
+<p>The simulation will create an output file named <code class="docutils literal notranslate"><span class="pre">umbrella.dat1</span></code> containing the value of
 the CV and the target value (the center) every 100 timesteps. From this histogram, the
 local free energy can be calculated.</p>
-<p>While it is possible to run Umbrella sampling using a simle walker, typically multiple
-walker (multiple umbrellas) are simulated. For multiwalker Umbrella sampling of butane,
-you can generate an input file using the <cite>umbrella_multiwalker_gen.py</cite> script via</p>
+<p>While it is possible to run Umbrella Sampling using a single walker, typically multiple
+walkers (multiple umbrellas) are simulated. To run multiwalker Umbrella Sampling of butane,
+you can generate an input file using the <code class="docutils literal notranslate"><span class="pre">umbrella_multiwalker_gen.py</span></code> script via</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>python umbrella_multiwalker_gen.py
 </pre></div>
 </div>
@@ -298,12 +299,12 @@ Ideally, this example will be run in computing environment where each process ca
 on a different processor. The example will still work if run on a users local desktop
 or laptop machine, but the runtime of the code will be very large.</p>
 <p>During the simulation 12 different output files will be generated, each containing the
-iteration, target value of the corresponding ‘center’ CV,  and the value of the CV at
+iteration, target value of the corresponding ‘center’ CV, and the value of the CV at
 the iteration number.</p>
 <p>These output files can then be used to construct a complete free energy surface using
-the WHAM algorithm <a class="footnote-reference" href="#id8" id="id3">[2]</a>. Though SSAGES does not currently contain its own implementation
+the WHAM algorithm <a class="reference internal" href="zReferences.html#kumar19921011" id="id4">[12]</a>. Though SSAGES does not currently contain its own implementation
 of WHAM, there are many implementations available, such as that provided by the
-Grossfield Lab <a class="footnote-reference" href="#id9" id="id4">[3]</a>.</p>
+Grossfield Lab <a class="reference internal" href="zReferences.html#wham" id="id5">[9]</a>.</p>
 </div>
 <div class="section" id="hoomd-blue-tutorial">
 <h2>HOOMD-blue Tutorial<a class="headerlink" href="#hoomd-blue-tutorial" title="Permalink to this headline">¶</a></h2>
@@ -312,55 +313,59 @@ The free energy is measured as a function of the dihedral angle between the term
 The butane molecule has a backbone of four carbon atoms that <a class="reference external" href="https://chem.libretexts.org/Textbook_Maps/Organic_Chemistry/Supplemental_Modules_(Organic_Chemistry)/Chirality/Stereoisomers/Butane_Conformers">rotates into different conformations</a> (<em>anti</em>, <em>gauche</em>, and <em>eclipsed</em>).
 We wish to extract the free energy of this rotation, to know the energy cost of any angle between -180 degrees and 180 degrees.</p>
 <p>This example uses Umbrella Sampling with the weighted histogram analysis method (WHAM).
-The WHAM tool developed by Alan Grossfield <a class="footnote-reference" href="#id9" id="id5">[3]</a> is used to determine the free energy from the biased sampling we perform.
+The WHAM tool developed by Alan Grossfield <a class="reference internal" href="zReferences.html#wham" id="id6">[9]</a> is used to determine the free energy from the biased sampling we perform.
 Disclaimer: The parameters of this simulation (number of walkers, strength of bias potential springs, length of run, etc.) may not provide ideal sampling for this example problem, and improvements to this code are welcomed.</p>
 <p>The files for running this example can be found in <code class="docutils literal notranslate"><span class="pre">Examples/User/Umbrella/HOOMD</span></code>.</p>
 <p>Sample output files from this example code are in the <code class="docutils literal notranslate"><span class="pre">Examples/User/Umbrella/HOOMD/sample_outputs</span></code> folder.</p>
-<p><strong>Running the example script:</strong></p>
-<ol class="arabic">
-<li><p class="first">Modify HOOMD-blue script: Set desired parameters (e.g. <code class="docutils literal notranslate"><span class="pre">kT</span></code>) in <code class="docutils literal notranslate"><span class="pre">Butane_SSAGES.py</span></code></p>
-</li>
-<li><p class="first">Modify input generator: Set the parameters in <code class="docutils literal notranslate"><span class="pre">umbrella_multiwalker_gen.py</span></code> and <code class="docutils literal notranslate"><span class="pre">umbrella_input.json</span></code>. Important parameters:</p>
-<ol class="loweralpha simple">
-<li><code class="docutils literal notranslate"><span class="pre">umbrella_multiwalker_gen.py</span></code>:<ul>
-<li><code class="docutils literal notranslate"><span class="pre">nwalkers</span></code> is the number of walkers, determining how many independent simulations will be run.</li>
-</ul>
-</li>
-<li><code class="docutils literal notranslate"><span class="pre">umbrella_input.json</span></code><ul>
-<li><code class="docutils literal notranslate"><span class="pre">ksprings</span></code> gives the bias potential spring strength.</li>
-<li><code class="docutils literal notranslate"><span class="pre">hoomd_steps</span></code> changes the length of the run.</li>
-</ul>
-</li>
+<p><strong>Running the Example Script:</strong></p>
+<ol class="arabic simple">
+<li><p>Modify HOOMD-blue script: Set desired parameters (e.g. <code class="docutils literal notranslate"><span class="pre">kT</span></code>) in <code class="docutils literal notranslate"><span class="pre">Butane_SSAGES.py</span></code></p></li>
+<li><p>Modify input generator: Set the parameters in <code class="docutils literal notranslate"><span class="pre">umbrella_multiwalker_gen.py</span></code> and <code class="docutils literal notranslate"><span class="pre">umbrella_input.json</span></code>. Important parameters:</p></li>
 </ol>
+<p><code class="docutils literal notranslate"><span class="pre">umbrella_multiwalker_gen.py</span></code>:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">nwalkers</span></code> is the number of walkers, determining how many independent simulations will be run.</p></li>
+</ul>
+</div></blockquote>
+<p><code class="docutils literal notranslate"><span class="pre">umbrella_input.json</span></code>:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">ksprings</span></code> gives the bias potential spring strength.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">hoomd_steps</span></code> changes the length of the run.</p></li>
+</ul>
 <p>Most of the other parameters are used to define the system and collective variables and should not be changed.</p>
-</li>
-<li><p class="first">Generate inputs:</p>
-</li>
+</div></blockquote>
+<ol class="arabic simple" start="3">
+<li><p>Generate inputs:</p></li>
 </ol>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>python umbrella_multiwalker_gen.py
 </pre></div>
 </div>
 <ol class="arabic simple" start="4">
-<li>Run SSAGES, replacing “nwalker” with the number of walkers specified previously:</li>
+<li><p>Run SSAGES, replacing “nwalker” with the number of walkers specified previously:</p></li>
 </ol>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>mpirun -np nwalker /path/to/SSAGES/build/ssages multiwalker_umbrella_input.json
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>mpiexec -np nwalker /path/to/SSAGES/build/ssages multiwalker_umbrella_input.json
 </pre></div>
 </div>
 <ol class="arabic" start="5">
-<li><p class="first">Analyze data:</p>
+<li><p>Analyze data:</p>
 <blockquote>
-<div><p>Download the WHAM code available here <a class="footnote-reference" href="#id9" id="id6">[3]</a>.
+<div><p>Download the WHAM code available here <a class="reference internal" href="zReferences.html#wham" id="id7">[9]</a>.
 Compile the program using the instructions and documentation provided.
 It is recommended to read <a class="reference external" href="http://membrane.urmc.rochester.edu/sites/default/files/wham/wham_talk.pdf">this talk about the theory and practice of WHAM</a>.</p>
 <ol class="loweralpha simple">
-<li>Call wham: The script <code class="docutils literal notranslate"><span class="pre">wham_analysis.sh</span></code> contains a set of parameters for calling <code class="docutils literal notranslate"><span class="pre">wham</span></code>.
-This requires that the executable <code class="docutils literal notranslate"><span class="pre">wham</span></code> is in this directory.</li>
+<li><dl class="simple">
+<dt>Call wham: The script <code class="docutils literal notranslate"><span class="pre">wham_analysis.sh</span></code> contains a set of parameters for calling <code class="docutils literal notranslate"><span class="pre">wham</span></code>.</dt><dd><p>This requires that the executable <code class="docutils literal notranslate"><span class="pre">wham</span></code> is in this directory.</p>
+</dd>
+</dl>
+</li>
 </ol>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>./wham_analysis.sh
 </pre></div>
 </div>
 <ol class="loweralpha simple" start="2">
-<li>Run visualization script:</li>
+<li><p>Run visualization script:</p></li>
 </ol>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>python wham_visualization.py
 </pre></div>
@@ -368,35 +373,25 @@ This requires that the executable <code class="docutils literal notranslate"><sp
 <p>The script <code class="docutils literal notranslate"><span class="pre">wham_visualization.py</span></code> will read the output data files from SSAGES and the <code class="docutils literal notranslate"><span class="pre">wham</span></code> software to produce sets of figures similar to those in the talk linked above.
 The visualization outputs include:</p>
 <ul class="simple">
-<li><code class="docutils literal notranslate"><span class="pre">cv_vs_time.png</span></code> plots the collective variable (dihedral angle) over time. This helps check that enough autocorrelation times have passed.</li>
-<li><code class="docutils literal notranslate"><span class="pre">histogram_trajectories.png</span></code> shows a histogram from each of the trajectories and the regions of the CV that were sampled.</li>
-<li><code class="docutils literal notranslate"><span class="pre">histogram_combined.png</span></code> shows a histogram summed over all trajectories to ensure that the entire range of angles were sampled.</li>
-<li><code class="docutils literal notranslate"><span class="pre">wham_free_energy.png</span></code> is the free energy as a function of the dihedral angle.</li>
+<li><p><code class="docutils literal notranslate"><span class="pre">cv_vs_time.png</span></code> plots the collective variable (dihedral angle) over
+time. This helps check that enough autocorrelation times have passed.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">histogram_trajectories.png</span></code> shows a histogram from each of the
+trajectories and the regions of the CV that were sampled.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">histogram_combined.png</span></code> shows a histogram summed over all trajectories
+to ensure that the entire range of angles were sampled.</p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">wham_free_energy.png</span></code> is the free energy as a function of the dihedral
+angle.</p></li>
 </ul>
 </div></blockquote>
 </li>
 </ol>
 </div>
-<div class="section" id="references">
-<h2>References<a class="headerlink" href="#references" title="Permalink to this headline">¶</a></h2>
-<table class="docutils footnote" frame="void" id="id7" rules="none">
-<colgroup><col class="label" /><col /></colgroup>
-<tbody valign="top">
-<tr><td class="label"><a class="fn-backref" href="#id2">[1]</a></td><td>Kästner, J. (2011). <em>Umbrella sampling</em>. Wiley Interdiscip Rev Comput Mol Sci, 1(6), 932–942.</td></tr>
-</tbody>
-</table>
-<table class="docutils footnote" frame="void" id="id8" rules="none">
-<colgroup><col class="label" /><col /></colgroup>
-<tbody valign="top">
-<tr><td class="label"><a class="fn-backref" href="#id3">[2]</a></td><td>Kumar, S., Rosenberg, J., &amp; Bouzida, D. (1992). The weighted histogram analysis method for free‐energy calculations on biomolecules. I. The method. Journal of Computational Chemistry, 13(8), 1011–1021.</td></tr>
-</tbody>
-</table>
-<table class="docutils footnote" frame="void" id="id9" rules="none">
-<colgroup><col class="label" /><col /></colgroup>
-<tbody valign="top">
-<tr><td class="label">[3]</td><td><em>(<a class="fn-backref" href="#id4">1</a>, <a class="fn-backref" href="#id5">2</a>, <a class="fn-backref" href="#id6">3</a>)</em> Grossfield, A. WHAM: the weighted histogram analysis method. <a class="reference external" href="http://membrane.urmc.rochester.edu/content/wham">http://membrane.urmc.rochester.edu/content/wham</a></td></tr>
-</tbody>
-</table>
+<div class="section" id="developers">
+<h2>Developers<a class="headerlink" href="#developers" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Hythem Sidky</p></li>
+<li><p>Benjamin Sikora</p></li>
+</ul>
 </div>
 </div>
 
@@ -408,10 +403,10 @@ The visualization outputs include:</p>
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="Write your own Methods and CVs.html" class="btn btn-neutral float-right" title="Write your own Methods and CVs" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="Write your own Methods and CVs.html" class="btn btn-neutral float-right" title="Write Your Own CVs and Methods" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="Swarm of Trajectories.html" class="btn btn-neutral" title="Swarm of Trajectories" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="Swarm of Trajectories.html" class="btn btn-neutral float-left" title="Swarm of Trajectories" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -420,8 +415,10 @@ The visualization outputs include:</p>
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2016, the SSAGES Team.
-      Last updated on Dec 14, 2018.
+        &copy; Copyright 2018, the SSAGES Team
+      <span class="lastupdated">
+        Last updated on Aug 23, 2019.
+      </span>
 
     </p>
   </div>
@@ -438,36 +435,16 @@ The visualization outputs include:</p>
   
 
 
-  
-
-    <script type="text/javascript">
-        var DOCUMENTATION_OPTIONS = {
-            URL_ROOT:'./',
-            VERSION:'v0.8.3-alpha',
-            LANGUAGE:'None',
-            COLLAPSE_INDEX:false,
-            FILE_SUFFIX:'.html',
-            HAS_SOURCE:  true,
-            SOURCELINK_SUFFIX: '.txt'
-        };
-    </script>
-      <script type="text/javascript" src="_static/jquery.js"></script>
-      <script type="text/javascript" src="_static/underscore.js"></script>
-      <script type="text/javascript" src="_static/doctools.js"></script>
-      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-
-  
-
-  
-  
-    <script type="text/javascript" src="_static/js/theme.js"></script>
-  
-
   <script type="text/javascript">
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
-  </script> 
+  </script>
+
+  
+  
+    
+   
 
 </body>
 </html>

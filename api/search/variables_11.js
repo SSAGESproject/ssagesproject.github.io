@@ -16,15 +16,5 @@ var searchData=
   ['restrained_5fsteps_5f',['restrained_steps_',['../classSSAGES_1_1Swarm.html#a4ae35c195e1dd5f1bc07c6dcf2c65857',1,'SSAGES::Swarm']]],
   ['restraint_5f',['restraint_',['../classSSAGES_1_1ABF.html#a7e2b1995149d50d1b1e9d05e6a44c1b6',1,'SSAGES::ABF::restraint_()'],['../classSSAGES_1_1BFS.html#a11d9317604fb0b474eaf40744377480b',1,'SSAGES::BFS::restraint_()']]],
   ['rgxset_5f',['rgxSet_',['../classJson_1_1StringRequirement.html#abdd026b731646f95661012d36c34d936',1,'Json::StringRequirement']]],
-  ['rij',['rij',['../classSSAGES_1_1COPSSImage.html#aff80919aea30c8a7639e4a1ee902ca09',1,'SSAGES::COPSSImage']]],
-  ['rij2',['Rij2',['../classSSAGES_1_1COPSSImage.html#afb56397347a6a9a4a52adb6ecead5f18',1,'SSAGES::COPSSImage']]],
-  ['rkj',['rkj',['../classSSAGES_1_1COPSSImage.html#a3f6506926919c11af7a37632f5825361',1,'SSAGES::COPSSImage']]],
-  ['rkj2',['Rkj2',['../classSSAGES_1_1COPSSImage.html#aebedb45ce922b45f8e73a2136d74aa24',1,'SSAGES::COPSSImage']]],
-  ['run_5fumbrella_5f',['run_umbrella_',['../classSSAGES_1_1FiniteTempString.html#abd54634ea639fbea32468a4e55693e3d',1,'SSAGES::FiniteTempString']]],
-  ['rxij',['Rxij',['../classSSAGES_1_1COPSSImage.html#abc2d664c83d80a086b6838043335364b',1,'SSAGES::COPSSImage']]],
-  ['rxkj',['Rxkj',['../classSSAGES_1_1COPSSImage.html#aba649b936dbfa466e48b5ad2d0654341',1,'SSAGES::COPSSImage']]],
-  ['ryij',['Ryij',['../classSSAGES_1_1COPSSImage.html#a03b630eb2bc6495bacc7b75fcdc49225',1,'SSAGES::COPSSImage']]],
-  ['rykj',['Rykj',['../classSSAGES_1_1COPSSImage.html#aa60f60a6eb80189c881eb6a23de7c957',1,'SSAGES::COPSSImage']]],
-  ['rzij',['Rzij',['../classSSAGES_1_1COPSSImage.html#a6767b804aa147adf46f0a2db862177a7',1,'SSAGES::COPSSImage']]],
-  ['rzkj',['Rzkj',['../classSSAGES_1_1COPSSImage.html#ad4e9cf8e640b275745936c0ddf784cd5',1,'SSAGES::COPSSImage']]]
+  ['run_5fumbrella_5f',['run_umbrella_',['../classSSAGES_1_1FiniteTempString.html#abd54634ea639fbea32468a4e55693e3d',1,'SSAGES::FiniteTempString']]]
 ];

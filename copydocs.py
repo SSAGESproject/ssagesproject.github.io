@@ -5,15 +5,15 @@ from shutil import rmtree
 from subprocess import call
 
 #Path to SSAGES
-ssages_path = "/home/cody/Projects/SSAGES-public"
-ssages_site_path = "/home/cody/Projects/SSAGES-site"
+ssages_path = "/home/cody/SSAGES-public"
+ssages_site_path = "/home/cody/SSAGES-site"
 ssages_site_project_path = "/home/cody/Projects/SSAGES-site/project/templates"
 build_ssages_path = ssages_path + "/build"
 api_path = ssages_path + "/build/doc/API-doc/html/"
 manual_path = ssages_path + "/build/doc/Manual"
 
 #Path to DASH
-dash_path = "/home/cody/Projects/DASH_public"
+dash_path = "/home/cody/DASH_public"
 dash_manual_path = dash_path + "/doc/documentation"
 
 #Switch to build directory, build SSAGES and docs

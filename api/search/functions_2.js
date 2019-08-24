@@ -1,8 +1,9 @@
 var searchData=
 [
   ['calcbiasforce',['CalcBiasForce',['../classSSAGES_1_1ABF.html#aa2200677359f582d73f095c42ec5ad83',1,'SSAGES::ABF::CalcBiasForce()'],['../classSSAGES_1_1Meta.html#a9cd073ee3c04a98e5131e96ffcb11df8',1,'SSAGES::Meta::CalcBiasForce()']]],
-  ['centerofmass',['CenterOfMass',['../classSSAGES_1_1Snapshot.html#a8195dc7a8a536999f63e20b4cb86639b',1,'SSAGES::Snapshot::CenterOfMass(const Label &amp;indices) const'],['../classSSAGES_1_1Snapshot.html#a37cd55705201e0a40adc75b646a6e864',1,'SSAGES::Snapshot::CenterOfMass(const Label &amp;indices, double mtot) const']]],
+  ['centerofmass',['CenterOfMass',['../classSSAGES_1_1Snapshot.html#a3527cc78f7c8be1690992da44524ab19',1,'SSAGES::Snapshot::CenterOfMass(const Label &amp;indices) const '],['../classSSAGES_1_1Snapshot.html#aa63df4f85b0912f9e7c99b9a81c92127',1,'SSAGES::Snapshot::CenterOfMass(const Label &amp;indices, double mtot) const ']]],
   ['changed',['Changed',['../classSSAGES_1_1Snapshot.html#a1bc1d505100ddaebd9a7650c55d35001',1,'SSAGES::Snapshot']]],
+  ['changevariable',['ChangeVariable',['../classSSAGES_1_1Chebyshev.html#ac4714ca82a78904abe0721c1828ef47c',1,'SSAGES::Chebyshev']]],
   ['chebyshev',['Chebyshev',['../classSSAGES_1_1Chebyshev.html#a54e17285d28fca66595906e2701bf8bc',1,'SSAGES::Chebyshev']]],
   ['checkend',['CheckEnd',['../classSSAGES_1_1StringMethod.html#a98d6840cc33ad30c2e9a4311e57ea2de',1,'SSAGES::StringMethod']]],
   ['checkforinterfacecrossings',['CheckForInterfaceCrossings',['../classSSAGES_1_1DirectForwardFlux.html#a2be13ab9b33d4cb90aa22ca9d71077e9',1,'SSAGES::DirectForwardFlux::CheckForInterfaceCrossings()'],['../classSSAGES_1_1ForwardFlux.html#ab29defb5bcbaca0c7c33d7ecb91184f6',1,'SSAGES::ForwardFlux::CheckForInterfaceCrossings()']]],
@@ -16,10 +17,7 @@ var searchData=
   ['computeinitialflux',['ComputeInitialFlux',['../classSSAGES_1_1ForwardFlux.html#a7406bdfbded69fca48c675d69949626d',1,'SSAGES::ForwardFlux']]],
   ['computetransitionprobabilities',['ComputeTransitionProbabilities',['../classSSAGES_1_1ForwardFlux.html#a40ea4795340f509536b8276a8c1cc92a',1,'SSAGES::ForwardFlux']]],
   ['configurehook',['ConfigureHook',['../classSSAGES_1_1ResourceHandler.html#a9a83bec9ea0d0cfe67596d439490e766',1,'SSAGES::ResourceHandler']]],
-  ['constraint',['Constraint',['../classSSAGES_1_1Constraint.html#a7ff9763cbce03027c0248fbb623d77da',1,'SSAGES::Constraint']]],
-  ['coordinate',['coordinate',['../classSSAGES_1_1Grid_1_1GridIterator.html#a9dfb3e0c11bd6d24cdeacce29ceef583',1,'SSAGES::Grid::GridIterator']]],
-  ['coordinates',['coordinates',['../classSSAGES_1_1Grid_1_1GridIterator.html#ac7050053f8da7e4075d847c5f1abd9be',1,'SSAGES::Grid::GridIterator']]],
-  ['copss',['COPSS',['../classSSAGES_1_1COPSS.html#a5d4f40d971a70b9886f7bf6ff4ef793a',1,'SSAGES::COPSS']]],
-  ['copssimage',['COPSSImage',['../classSSAGES_1_1COPSSImage.html#ab7b4a09ae0599b79c1f682c2614ad831',1,'SSAGES::COPSSImage']]],
+  ['coordinate',['coordinate',['../classSSAGES_1_1Grid_1_1GridIterator.html#ac3c4659465cb145a820b1319fec8fb14',1,'SSAGES::Grid::GridIterator']]],
+  ['coordinates',['coordinates',['../classSSAGES_1_1Grid_1_1GridIterator.html#a4f5896e23f81d4416f5810a13e35f547',1,'SSAGES::Grid::GridIterator']]],
   ['cvinitialized',['CVInitialized',['../classSSAGES_1_1Swarm.html#a6e23dbcbe88170778a7c6788474e45ab',1,'SSAGES::Swarm']]]
 ];

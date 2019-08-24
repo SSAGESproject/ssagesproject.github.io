@@ -1,7 +1,6 @@
 var searchData=
 [
-  ['scalevector',['ScaleVector',['../classSSAGES_1_1Snapshot.html#a78ed4f97a71286e25a9e4a4b3e4abe80',1,'SSAGES::Snapshot']]],
-  ['serialize',['Serialize',['../classSSAGES_1_1COPSS.html#ac2e9b4062248b258877448cb698148ad',1,'SSAGES::COPSS::Serialize()'],['../classSSAGES_1_1COPSSImage.html#a52c1761ac81d582faf7d4b3d33a626e4',1,'SSAGES::COPSSImage::Serialize()']]],
+  ['scalevector',['ScaleVector',['../classSSAGES_1_1Snapshot.html#a10da0d09685627c2366a85c27c4a7f6c',1,'SSAGES::Snapshot']]],
   ['serializeids',['SerializeIDs',['../classSSAGES_1_1Snapshot.html#a2d75d610b88fcd9c326f0ab3d22668b7',1,'SSAGES::Snapshot']]],
   ['serializepositions',['SerializePositions',['../classSSAGES_1_1Snapshot.html#ae115207255026556b7c44ecb7812001e',1,'SSAGES::Snapshot']]],
   ['serializevelocities',['SerializeVelocities',['../classSSAGES_1_1Snapshot.html#a170af774440547ec5dcd379f5a8bd575',1,'SSAGES::Snapshot']]],
@@ -33,7 +32,7 @@ var searchData=
   ['settemperature',['SetTemperature',['../classSSAGES_1_1Snapshot.html#ab5489e68cc3e68c306de69d5ec7889d5',1,'SSAGES::Snapshot']]],
   ['settolerance',['SetTolerance',['../classSSAGES_1_1StringMethod.html#a1bebfc3c0fe92fca8aa77fa7e4ef3aa1',1,'SSAGES::StringMethod']]],
   ['setvirial',['SetVirial',['../classSSAGES_1_1Snapshot.html#a4cf7870a5a287d18f6e75ce2b2ff6e14',1,'SSAGES::Snapshot']]],
-  ['size',['size',['../classSSAGES_1_1GridBase.html#a4f8abb752ae6ec51ebcf24b599bf4896',1,'SSAGES::GridBase']]],
+  ['size',['size',['../classSSAGES_1_1GridBase.html#a7bde73c54b11d8841bc7710a5fc604bd',1,'SSAGES::GridBase']]],
   ['snapshot',['Snapshot',['../classSSAGES_1_1Snapshot.html#acb8c900049254f7ec4d9304870384760',1,'SSAGES::Snapshot']]],
   ['stringmethod',['StringMethod',['../classSSAGES_1_1StringMethod.html#a52e179be14386a48b0d6e84e1f100fb7',1,'SSAGES::StringMethod']]],
   ['stringreparam',['StringReparam',['../classSSAGES_1_1StringMethod.html#afbcff89f61a27e55a5a3c6323a61d147',1,'SSAGES::StringMethod']]],

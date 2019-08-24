@@ -1,10 +1,10 @@
 <map id="SSAGES::RouseModeCV::Evaluate" name="SSAGES::RouseModeCV::Evaluate">
-<area shape="rect" id="node2" href="$classSSAGES_1_1Snapshot.html#ad6caa5b92433501fd4a62deef288340a" title="Apply minimum image to a vector. " alt="" coords="228,5,463,47"/>
-<area shape="rect" id="node4" href="$classSSAGES_1_1Snapshot.html#a8195dc7a8a536999f63e20b4cb86639b" title="SSAGES::Snapshot::Center\lOfMass" alt="" coords="252,71,439,112"/>
-<area shape="rect" id="node6" href="$classSSAGES_1_1Snapshot.html#a196a91c541c72bcb5147b9e60a44ea8b" title="SSAGES::Snapshot::GetLocal\lIndices" alt="" coords="245,136,445,177"/>
-<area shape="rect" id="node8" href="$classSSAGES_1_1Snapshot.html#abef8348e7811deeea88a7ff8f49a1af4" title="Const access to the particle masses. " alt="" coords="238,202,453,229"/>
-<area shape="rect" id="node9" href="$classSSAGES_1_1Snapshot.html#a103af07a012d55a9637f6203c7eba0af" title="Get number of atoms in this snapshot. " alt="" coords="247,253,444,295"/>
+<area shape="rect" id="node2" href="$classSSAGES_1_1Snapshot.html#a46d2a991fd3446bfe6f6f72291ec1483" title="Apply minimum image to a vector. " alt="" coords="228,5,463,47"/>
+<area shape="rect" id="node4" href="$classSSAGES_1_1Snapshot.html#a3527cc78f7c8be1690992da44524ab19" title="SSAGES::Snapshot::Center\lOfMass" alt="" coords="252,71,439,112"/>
+<area shape="rect" id="node6" href="$classSSAGES_1_1Snapshot.html#abeef8bea41bf9706855c59b6cde0777a" title="SSAGES::Snapshot::GetLocal\lIndices" alt="" coords="245,136,445,177"/>
+<area shape="rect" id="node8" href="$classSSAGES_1_1Snapshot.html#a035ed6fb2cd46d4f66d1614bd90ad14b" title="Const access to the particle masses. " alt="" coords="238,202,453,229"/>
+<area shape="rect" id="node9" href="$classSSAGES_1_1Snapshot.html#ae05879b78672cd4899a06ae2d6a140fd" title="Get number of atoms in this snapshot. " alt="" coords="247,253,444,295"/>
 <area shape="rect" id="node3" href="$namespaceSSAGES.html#a49bb77a1b5822888753c96c70780ab47" title="Quick helper function to round a double. " alt="" coords="555,13,676,39"/>
-<area shape="rect" id="node5" href="$classSSAGES_1_1Snapshot.html#a77cfe35b720393223aa5c7410b2dd3ad" title="Compute the total mass of a group of particles based on index. " alt="" coords="511,78,720,105"/>
-<area shape="rect" id="node7" href="$classSSAGES_1_1Snapshot.html#a7146597433bcfd256385db274330cd36" title="Gets the local atom index corresponding to an atom ID. " alt="" coords="515,136,715,177"/>
+<area shape="rect" id="node5" href="$classSSAGES_1_1Snapshot.html#a19de6aadba8b8eed8c96dc1e67087e62" title="Compute the total mass of a group of particles based on index. " alt="" coords="511,78,720,105"/>
+<area shape="rect" id="node7" href="$classSSAGES_1_1Snapshot.html#a3ecf272dca61538320a4d503303fa9ba" title="Gets the local atom index corresponding to an atom ID. " alt="" coords="515,136,715,177"/>
 </map>

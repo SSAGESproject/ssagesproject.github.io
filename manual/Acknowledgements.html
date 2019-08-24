@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Acknowledgments &mdash; SSAGES v0.8.3-alpha documentation</title>
+  <title>Acknowledgments &mdash; SSAGES v0.8.5-alpha documentation</title>
   
 
   
@@ -17,35 +17,37 @@
   
 
   
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
 
-  
-  
     
 
   
-
-  
-    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Copyright" href="License.html" />
-    <link rel="prev" title="The SSAGES cookbook" href="The SSAGES Cookbook.html" /> 
-
-  
-  <script src="_static/js/modernizr.min.js"></script>
-
+    <link rel="next" title="References" href="zReferences.html" />
+    <link rel="prev" title="The SSAGES Cookbook" href="The SSAGES Cookbook.html" /> 
 </head>
 
 <body class="wy-body-for-nav">
 
    
   <div class="wy-grid-for-nav">
-
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
-        <div class="wy-side-nav-search">
+        <div class="wy-side-nav-search" >
           
 
           
@@ -59,7 +61,7 @@
             
             
               <div class="version">
-                0.8.3
+                0.8.5
               </div>
             
           
@@ -90,22 +92,22 @@
 <li class="toctree-l1"><a class="reference internal" href="Engines.html">Engines</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Collective Variables.html">Collective Variables</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Advanced Sampling Methods.html">Advanced Sampling Methods</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Write your own Methods and CVs.html">Write your own Methods and CVs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Write your own Methods and CVs.html">Write Your Own CVs and Methods</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Contribute to SSAGES.html">Contribute to SSAGES</a></li>
-<li class="toctree-l1"><a class="reference internal" href="The SSAGES Cookbook.html">The SSAGES cookbook</a></li>
+<li class="toctree-l1"><a class="reference internal" href="The SSAGES Cookbook.html">The SSAGES Cookbook</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Acknowledgments</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#project-supervisors">Project Supervisors</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#project-leads">Project Leads</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#past-project-leads">Past Project Leads</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#core-development">Core Development</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#methods">Methods</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#collective-variables">Collective Variables</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#documentation">Documentation</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#engine-adapters">Engine Adapters</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#former-team-members">Former Team Members</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="License.html">Copyright</a></li>
-<li class="toctree-l1"><a class="reference internal" href="License.html#id1">License information</a></li>
+<li class="toctree-l1"><a class="reference internal" href="zReferences.html">References</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Copyright and License.html">Copyright and License Information</a></li>
 </ul>
 
             
@@ -172,7 +174,7 @@
             
   <div class="section" id="acknowledgments">
 <h1>Acknowledgments<a class="headerlink" href="#acknowledgments" title="Permalink to this headline">¶</a></h1>
-<p>We are grateful to Argonne National Labs for initiating this project and
+<p>We are grateful to Argonne National Laboratory for initiating this project and
 their continued support. Julian Helfferich acknowledges financial support from
 the DFG research fellowship program, grant No. HE 7429/1.</p>
 <p>Some important core functionality of SSAGES comes from SAPHRON.
@@ -181,78 +183,85 @@ SAPHRON - Statistical Applied PHysics through Random On-the-fly Numerics
 <div class="section" id="project-supervisors">
 <h2>Project Supervisors<a class="headerlink" href="#project-supervisors" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li>Juan de Pablo</li>
-<li>Jonathan Whitmer</li>
+<li><p>Juan de Pablo</p></li>
+<li><p>Jonathan Whitmer</p></li>
 </ul>
 </div>
 <div class="section" id="project-leads">
 <h2>Project Leads<a class="headerlink" href="#project-leads" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li>Yamil J. Colón</li>
-<li>Hythem Sidky</li>
+<li><p>Michael Quevillon</p></li>
+<li><p>Emre Sevgen</p></li>
+</ul>
+</div>
+<div class="section" id="past-project-leads">
+<h2>Past Project Leads<a class="headerlink" href="#past-project-leads" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Yamil J. Colón (2015-2018)</p></li>
+<li><p>Hythem Sidky (2015-2018)</p></li>
 </ul>
 </div>
 <div class="section" id="core-development">
 <h2>Core Development<a class="headerlink" href="#core-development" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li>Julian Helfferich</li>
-<li>Hythem Sidky</li>
+<li><p>Julian Helfferich</p></li>
+<li><p>Hythem Sidky</p></li>
+<li><p>Benjamin Sikora</p></li>
 </ul>
 </div>
 <div class="section" id="methods">
 <h2>Methods<a class="headerlink" href="#methods" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li>Cody Bezik</li>
-<li>Yamil J. Colón</li>
-<li>Ashley Guo</li>
-<li>Joshua Lequieu</li>
-<li>Jiyuan Li</li>
-<li>Joshua Moller</li>
-<li>Hadi Ramezani-Dakhel</li>
-<li>Emre Sevgen</li>
-<li>Hythem Sidky</li>
-<li>Ben Sikora</li>
-<li>Jonathan Whitmer</li>
+<li><p>Cody Bezik</p></li>
+<li><p>Yamil J. Colón</p></li>
+<li><p>Federico Giberti</p></li>
+<li><p>Ashley Guo</p></li>
+<li><p>Joshua Lequieu</p></li>
+<li><p>Jiyuan Li</p></li>
+<li><p>Joshua Moller</p></li>
+<li><p>Hadi Ramezani-Dakhel</p></li>
+<li><p>Emre Sevgen</p></li>
+<li><p>Hythem Sidky</p></li>
+<li><p>Benjamin Sikora</p></li>
+<li><p>Jonathan Whitmer</p></li>
 </ul>
 </div>
 <div class="section" id="collective-variables">
 <h2>Collective Variables<a class="headerlink" href="#collective-variables" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li>Yamil J. Colón</li>
-<li>Ashley Guo</li>
-<li>Michael Quevillon</li>
-<li>Hythem Sidky</li>
-<li>Ben Sikora</li>
-<li>Mike Webb</li>
+<li><p>Yamil J. Colón</p></li>
+<li><p>Ashley Guo</p></li>
+<li><p>Michael Quevillon</p></li>
+<li><p>Hythem Sidky</p></li>
+<li><p>Benjamin Sikora</p></li>
+<li><p>Mike Webb</p></li>
 </ul>
 </div>
 <div class="section" id="documentation">
 <h2>Documentation<a class="headerlink" href="#documentation" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li>Cody Bezik</li>
-<li>Yamil J. Colón</li>
-<li>Ashley Guo</li>
-<li>Julian Helfferich</li>
-<li>Joshua Moller</li>
-<li>Hadi Ramezani-Dakhel</li>
-<li>Emre Sevgen</li>
-<li>Hythem Sidky</li>
+<li><p>Cody Bezik</p></li>
+<li><p>Yamil J. Colón</p></li>
+<li><p>Federico Giberti</p></li>
+<li><p>Ashley Guo</p></li>
+<li><p>Julian Helfferich</p></li>
+<li><p>Joshua Moller</p></li>
+<li><p>Michael Quevillon</p></li>
+<li><p>Hadi Ramezani-Dakhel</p></li>
+<li><p>Emre Sevgen</p></li>
+<li><p>Hythem Sidky</p></li>
 </ul>
 </div>
 <div class="section" id="engine-adapters">
 <h2>Engine Adapters<a class="headerlink" href="#engine-adapters" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li>Emre Sevgen</li>
-<li>Hythem Sidky</li>
-<li>Ben Sikora</li>
-<li>Bradley Dice</li>
-<li>Carl Simon Adorf</li>
-</ul>
-</div>
-<div class="section" id="former-team-members">
-<h2>Former Team Members<a class="headerlink" href="#former-team-members" title="Permalink to this headline">¶</a></h2>
-<ul class="simple">
-<li>Ben Sikora</li>
+<li><p>Carl Simon Adorf</p></li>
+<li><p>Federico Giberti</p></li>
+<li><p>Bradley Dice</p></li>
+<li><p>Michael Quevillon</p></li>
+<li><p>Emre Sevgen</p></li>
+<li><p>Hythem Sidky</p></li>
+<li><p>Benjamin Sikora</p></li>
 </ul>
 </div>
 </div>
@@ -265,10 +274,10 @@ SAPHRON - Statistical Applied PHysics through Random On-the-fly Numerics
   
     <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
       
-        <a href="License.html" class="btn btn-neutral float-right" title="Copyright" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+        <a href="zReferences.html" class="btn btn-neutral float-right" title="References" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="The SSAGES Cookbook.html" class="btn btn-neutral" title="The SSAGES cookbook" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="The SSAGES Cookbook.html" class="btn btn-neutral float-left" title="The SSAGES Cookbook" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -277,8 +286,10 @@ SAPHRON - Statistical Applied PHysics through Random On-the-fly Numerics
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2016, the SSAGES Team.
-      Last updated on Dec 14, 2018.
+        &copy; Copyright 2018, the SSAGES Team
+      <span class="lastupdated">
+        Last updated on Aug 23, 2019.
+      </span>
 
     </p>
   </div>
@@ -295,36 +306,16 @@ SAPHRON - Statistical Applied PHysics through Random On-the-fly Numerics
   
 
 
-  
-
-    <script type="text/javascript">
-        var DOCUMENTATION_OPTIONS = {
-            URL_ROOT:'./',
-            VERSION:'v0.8.3-alpha',
-            LANGUAGE:'None',
-            COLLAPSE_INDEX:false,
-            FILE_SUFFIX:'.html',
-            HAS_SOURCE:  true,
-            SOURCELINK_SUFFIX: '.txt'
-        };
-    </script>
-      <script type="text/javascript" src="_static/jquery.js"></script>
-      <script type="text/javascript" src="_static/underscore.js"></script>
-      <script type="text/javascript" src="_static/doctools.js"></script>
-      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-
-  
-
-  
-  
-    <script type="text/javascript" src="_static/js/theme.js"></script>
-  
-
   <script type="text/javascript">
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
-  </script> 
+  </script>
+
+  
+  
+    
+   
 
 </body>
 </html>

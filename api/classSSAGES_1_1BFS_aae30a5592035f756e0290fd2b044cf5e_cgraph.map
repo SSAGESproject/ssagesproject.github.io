@@ -1,6 +1,6 @@
 <map id="SSAGES::BFS::Build" name="SSAGES::BFS::Build">
 <area shape="rect" id="node2" href="$classJson_1_1Requirement.html#a60bc275c366eb59f192fa2e621268480" title="Get list of error messages. " alt="" coords="461,5,601,47"/>
-<area shape="rect" id="node3" href="$classSSAGES_1_1GridBase.html#ab56c5b7786560a9a35951f1c3a44b077" title="Get the number of points for all dimensions. " alt="" coords="201,255,397,296"/>
+<area shape="rect" id="node3" href="$classSSAGES_1_1GridBase.html#a2e91c7b650b26630be53f089884fff8a" title="Get the number of points for all dimensions. " alt="" coords="201,255,397,296"/>
 <area shape="rect" id="node4" href="$classJson_1_1Requirement.html#adfaec336a9f051d6f6b9a6d7f1d97b75" title="Check if errors have occured. " alt="" coords="461,71,601,112"/>
 <area shape="rect" id="node5" href="$classJson_1_1ObjectRequirement.html#a4ed02ae1d612a5efba1688fcdd2df092" title="Parse JSON value to generate Requirement(s). " alt="" coords="214,481,385,523"/>
 <area shape="rect" id="node13" href="$classJson_1_1ObjectRequirement.html#a9ac3b920001a35bc70580035d8d802b7" title="Validate JSON value. " alt="" coords="214,189,385,231"/>

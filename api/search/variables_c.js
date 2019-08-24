@@ -22,6 +22,5 @@ var searchData=
   ['mu_5f',['mu_',['../classSSAGES_1_1GaussianPK.html#a8908e97aa93c2acd105a5ae365e4e7f7',1,'SSAGES::GaussianPK']]],
   ['multipleof_5f',['multipleOf_',['../classJson_1_1IntegerRequirement.html#af7b2dd53eb2851f1caad0d55b869d87f',1,'Json::IntegerRequirement::multipleOf_()'],['../classJson_1_1NumberRequirement.html#a9f2996f47e1ae2cf048aac2144cb0c88',1,'Json::NumberRequirement::multipleOf_()']]],
   ['multset_5f',['multSet_',['../classJson_1_1IntegerRequirement.html#a87d7d0435c45bebce4501a4df831d0c6',1,'Json::IntegerRequirement::multSet_()'],['../classJson_1_1NumberRequirement.html#a553cf0fafa24b40fcf51ba106fb5d2c7',1,'Json::NumberRequirement::multSet_()']]],
-  ['myffsconfigid',['myFFSConfigID',['../classSSAGES_1_1ForwardFlux.html#a6c49c23271152837a76a8de904eaa1b0',1,'SSAGES::ForwardFlux']]],
-  ['myout_5f',['myout_',['../classSSAGES_1_1COPSS.html#a1209e525483352da5d0771307924ce0e',1,'SSAGES::COPSS']]]
+  ['myffsconfigid',['myFFSConfigID',['../classSSAGES_1_1ForwardFlux.html#a6c49c23271152837a76a8de904eaa1b0',1,'SSAGES::ForwardFlux']]]
 ];

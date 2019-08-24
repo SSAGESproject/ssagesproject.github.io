@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['h_5f',['H_',['../classSSAGES_1_1Snapshot.html#a93791415988f0c22d1101ba560f093cb',1,'SSAGES::Snapshot::H_()'],['../classSSAGES_1_1BFS.html#a291d4da1b6b8eb0de751fd3e6130d285',1,'SSAGES::BFS::h_()']]],
+  ['h_5f',['h_',['../classSSAGES_1_1BFS.html#a291d4da1b6b8eb0de751fd3e6130d285',1,'SSAGES::BFS::h_()'],['../classSSAGES_1_1Snapshot.html#a93791415988f0c22d1101ba560f093cb',1,'SSAGES::Snapshot::H_()']]],
   ['harvest_5flength_5f',['harvest_length_',['../classSSAGES_1_1Swarm.html#a0c1f8ecda790d89724a4ca49467ea6d7',1,'SSAGES::Swarm']]],
   ['height',['height',['../structSSAGES_1_1Hill.html#abf44dce7bafa077e71be1e30171f7559',1,'SSAGES::Hill']]],
   ['height_5f',['height_',['../classSSAGES_1_1Meta.html#adfad422c777be811ccb5a47729992a4e',1,'SSAGES::Meta']]],

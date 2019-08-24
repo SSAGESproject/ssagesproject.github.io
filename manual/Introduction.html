@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Introduction &mdash; SSAGES v0.8.3-alpha documentation</title>
+  <title>Introduction &mdash; SSAGES v0.8.5-alpha documentation</title>
   
 
   
@@ -17,35 +17,37 @@
   
 
   
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
 
-  
-  
     
 
   
-
-  
-    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="Getting Started" href="Getting Started.html" />
     <link rel="prev" title="Welcome to SSAGES!" href="index.html" /> 
-
-  
-  <script src="_static/js/modernizr.min.js"></script>
-
 </head>
 
 <body class="wy-body-for-nav">
 
    
   <div class="wy-grid-for-nav">
-
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
-        <div class="wy-side-nav-search">
+        <div class="wy-side-nav-search" >
           
 
           
@@ -59,7 +61,7 @@
             
             
               <div class="version">
-                0.8.3
+                0.8.5
               </div>
             
           
@@ -90,12 +92,12 @@
 <li class="toctree-l1"><a class="reference internal" href="Engines.html">Engines</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Collective Variables.html">Collective Variables</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Advanced Sampling Methods.html">Advanced Sampling Methods</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Write your own Methods and CVs.html">Write your own Methods and CVs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Write your own Methods and CVs.html">Write Your Own CVs and Methods</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Contribute to SSAGES.html">Contribute to SSAGES</a></li>
-<li class="toctree-l1"><a class="reference internal" href="The SSAGES Cookbook.html">The SSAGES cookbook</a></li>
+<li class="toctree-l1"><a class="reference internal" href="The SSAGES Cookbook.html">The SSAGES Cookbook</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Acknowledgements.html">Acknowledgments</a></li>
-<li class="toctree-l1"><a class="reference internal" href="License.html">Copyright</a></li>
-<li class="toctree-l1"><a class="reference internal" href="License.html#id1">License information</a></li>
+<li class="toctree-l1"><a class="reference internal" href="zReferences.html">References</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Copyright and License.html">Copyright and License Information</a></li>
 </ul>
 
             
@@ -162,50 +164,53 @@
             
   <div class="section" id="introduction">
 <h1>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h1>
-<p>Welcome to SSAGES, our new and shiny advanced sampling package.</p>
+<p>Welcome to SSAGES, our extensive advanced sampling package. You might be
+wondering—what is SSAGES and what can it do for my research?</p>
 <p>Over the past several decades, molecular simulation has emerged as a powerful
-tool for investigating a wide range of physical phenomena. Molecular simulation
-is, in essence, a computational “microscope” whereby computers are used to “look
-at” the properties of a system that are difficult to observe or measure through
-traditional experimental setups. The comparison between simulations and the
-corresponding experimental systems can sometimes be challenging, usually due to
-factors such as the length and time scales explored. In simulation, a molecular
-model must have sufficient temporal and spatial accuracy to resolve the fastest
-time scales and shortest length scales within a system. Unfortunately, due to
-computational constraints, this detailed resolution has limited the length of
-time and number of particles that a model can simulate, typically simulating
-systems that are smaller than analogous experimental setups in laboratory
-environments for much shorter times than the duration of the experiments.
-However in recent years, advancements in computational processing power,
-including custom built computer architectures, have continued to increase the
-time and length scales accessible by molecular simulation, with current
-state-of-the-art simulations able to analyze systems for milliseconds (10-3s).</p>
-<p>Another challenge arises from the difficulty in obtaining good statistics from
-molecular simulations.  Thermal fluctuations dominate motion at the nano-scale
-and result in motion that appears random (i.e. Brownian), with no two molecular
-trajectories being identical. As a result, statistically meaningful averages are
-necessary in order to calculate thermodynamic and kinetic quantities of interest
-in these systems.  An incredibly powerful thermodynamic quantity referred to as
-the relative free energy of a system can be calculated in this way. The relative
-free energy can characterize underlying system behavior in the presence of the
-thermal-induced random noise. Performing this necessary averaging within
-simulations is challenging. In essence, the requirement of averaging compounds
-the issue of time scales described previously; not only must long simulations be
-performed, but they must be performed a prohibitively large number of times in
-order to extract sufficient statistics. It is therefore necessary to develop
-efficient techniques to calculate meaningful averages from simulations.</p>
+tool for investigating a wide range of physical phenomena. Molecular
+simulation is, in essence, a computational “microscope” whereby computers are
+used to “look at” the properties of a system that are difficult to observe or
+measure through traditional experimental setups. The comparison between
+simulations and the corresponding experimental systems can sometimes be
+challenging, usually due to factors such as the length and time scales
+explored. In simulation, a molecular model must have sufficient temporal and
+spatial accuracy to resolve the fastest time scales and shortest length scales
+within a system. Unfortunately, due to computational constraints, this
+detailed resolution has limited the length of time and number of particles
+that a model can simulate, typically simulating systems that are smaller than
+analogous experimental setups in laboratory environments for much shorter
+times than the duration of the experiments. Recent advancements in processing
+power, including custom-built computer architectures and GPU-based computing,
+have continued to increase the time and length scales accessible by molecular
+simulation, with current state-of-the-art simulations able to analyze systems
+for milliseconds (<span class="math notranslate nohighlight">\(10^{-3}\)</span> s) or more <a class="reference internal" href="zReferences.html#piana2013201218321" id="id1">[17]</a>.</p>
+<p>However, other challenges arise in obtaining good statistics from molecular
+simulations.  Thermal fluctuations dominate motion at the nano-scale and
+result in motion that appears random (i.e. Brownian), with no two molecular
+trajectories being identical. As a result, statistically meaningful averages
+are necessary in order to calculate thermodynamic and kinetic quantities of
+interest in these systems <a class="reference internal" href="zReferences.html#frenkelandsmit" id="id2">[8]</a>. An incredibly powerful
+thermodynamic quantity referred to as the relative free energy of a system can
+be calculated in this way. The relative free energy can characterize
+underlying system behavior in the presence of thermally-induced random
+noise. Performing this necessary averaging within simulations is challenging.
+In essence, the requirement of averaging compounds the issue of time scales
+described previously; not only must long simulations be performed, but they
+must be performed a prohibitively large number of times in order to extract
+sufficient statistics. It is therefore necessary to develop efficient
+techniques to calculate meaningful averages from simulations.</p>
 <p>Advanced sampling methods represent a class of simulation techniques that seek
 to improve this improper averaging and accelerate the extraction of useful
 properties (e.g. free energies, transition paths) from simulations.  At the
-heart of all advanced sampling methods, is statistical mechanics, a field of
-physics that relates microscopic phenomena (i.e. the motion of particles) to
+heart of all advanced sampling methods is statistical mechanics, a field of
+physics that relates microscopic phenomena (e.g. the motion of particles) to
 macroscopic observables (e.g. temperature and pressure). By taking advantage of
 statistical mechanics, advanced sampling methods are used to apply a systematic
 bias to a simulation to speed convergence, and then mathematically remove this
 bias to extract the true underlying behavior. Throughout the past decade,
 advanced sampling methods have become wildly successful, and have now become an
 essential component in the toolbox of molecular simulation.</p>
-<p>Despite the demonstrated utility of advanced sampling techinques, they have only
+<p>Despite the demonstrated utility of advanced sampling techniques, they have only
 been adopted by a fraction of the scientists working in the field. One
 explanation for this slow adoption is technical: advanced sampling methods are
 complicated, and not all research groups have the expertise required in order to
@@ -219,18 +224,18 @@ systems. This prevents the distribution of code between researches in the field.
 As a result, the same methods are implemented again and again by different
 members of the community. Sadly, in molecular simulation, it is quite common to
 “reinvent the wheel”.</p>
-<p>SSAGES is an answer to this problem. SSAGES (Suite for Advanced Generalized
-Ensemble Simulations) is a free, open-source software package that allows users
-to easily apply advanced sampling techniques to any molecular system of
-interest. Simply put, SSAGES is a wrapper that converts a molecular simulation
-engine (e.g. LAMMPS, NAMD) into an advanced sampling engine. SSAGES contains a
-library of widely used enhanced sampling methods that can be used to calculate
-everything from free energies to transition pathways. Importantly, SSAGES works
-with many of the widely used simulation packages, and can simply be added on top
-of the simulations a researcher is already running. SSAGES is implemented in a
-highly modular way, and is easily extended to incorporate a new method or to
-modify an existing one and has been rigorously tested to ensure the accuracy of
-its calculations.</p>
+<p>SSAGES is an answer to this problem <a class="reference internal" href="zReferences.html#ssages" id="id3">[20]</a>. SSAGES (Software Suite for
+Advanced General Ensemble Simulations) is a free, open-source software package
+that allows users to easily apply advanced sampling techniques to any
+molecular system of interest. Simply put, SSAGES is a wrapper that converts a
+molecular simulation engine (e.g. LAMMPS, GROMACS) into an advanced sampling
+engine. SSAGES contains a library of widely used advanced sampling methods
+that can be used to calculate everything from free energies to transition
+pathways. Importantly, SSAGES works with many widely used simulation
+packages, and can simply be added on top of the simulations a researcher is
+already running. SSAGES is implemented in a highly modular way, and is easily
+extended to incorporate a new method or to modify an existing one and has been
+rigorously tested to ensure the accuracy of its calculations.</p>
 <p>In short, SSAGES makes advanced sampling methods easy. We hope that it will do
 just that for your research.</p>
 </div>
@@ -246,7 +251,7 @@ just that for your research.</p>
         <a href="Getting Started.html" class="btn btn-neutral float-right" title="Getting Started" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
       
       
-        <a href="index.html" class="btn btn-neutral" title="Welcome to SSAGES!" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+        <a href="index.html" class="btn btn-neutral float-left" title="Welcome to SSAGES!" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
       
     </div>
   
@@ -255,8 +260,10 @@ just that for your research.</p>
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2016, the SSAGES Team.
-      Last updated on Dec 14, 2018.
+        &copy; Copyright 2018, the SSAGES Team
+      <span class="lastupdated">
+        Last updated on Aug 23, 2019.
+      </span>
 
     </p>
   </div>
@@ -273,36 +280,16 @@ just that for your research.</p>
   
 
 
-  
-
-    <script type="text/javascript">
-        var DOCUMENTATION_OPTIONS = {
-            URL_ROOT:'./',
-            VERSION:'v0.8.3-alpha',
-            LANGUAGE:'None',
-            COLLAPSE_INDEX:false,
-            FILE_SUFFIX:'.html',
-            HAS_SOURCE:  true,
-            SOURCELINK_SUFFIX: '.txt'
-        };
-    </script>
-      <script type="text/javascript" src="_static/jquery.js"></script>
-      <script type="text/javascript" src="_static/underscore.js"></script>
-      <script type="text/javascript" src="_static/doctools.js"></script>
-      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-
-  
-
-  
-  
-    <script type="text/javascript" src="_static/js/theme.js"></script>
-  
-
   <script type="text/javascript">
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
-  </script> 
+  </script>
+
+  
+  
+    
+   
 
 </body>
 </html>

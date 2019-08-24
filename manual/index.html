@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Welcome to SSAGES! &mdash; SSAGES v0.8.3-alpha documentation</title>
+  <title>Welcome to SSAGES! &mdash; SSAGES v0.8.5-alpha documentation</title>
   
 
   
@@ -17,34 +17,36 @@
   
 
   
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script type="text/javascript" src="_static/jquery.js"></script>
+        <script type="text/javascript" src="_static/underscore.js"></script>
+        <script type="text/javascript" src="_static/doctools.js"></script>
+        <script type="text/javascript" src="_static/language_data.js"></script>
+        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
 
-  
-  
     
 
   
-
-  
-    <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
   <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="Introduction" href="Introduction.html" /> 
-
-  
-  <script src="_static/js/modernizr.min.js"></script>
-
 </head>
 
 <body class="wy-body-for-nav">
 
    
   <div class="wy-grid-for-nav">
-
     
     <nav data-toggle="wy-nav-shift" class="wy-nav-side">
       <div class="wy-side-scroll">
-        <div class="wy-side-nav-search">
+        <div class="wy-side-nav-search" >
           
 
           
@@ -58,7 +60,7 @@
             
             
               <div class="version">
-                0.8.3
+                0.8.5
               </div>
             
           
@@ -89,12 +91,12 @@
 <li class="toctree-l1"><a class="reference internal" href="Engines.html">Engines</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Collective Variables.html">Collective Variables</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Advanced Sampling Methods.html">Advanced Sampling Methods</a></li>
-<li class="toctree-l1"><a class="reference internal" href="Write your own Methods and CVs.html">Write your own Methods and CVs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Write your own Methods and CVs.html">Write Your Own CVs and Methods</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Contribute to SSAGES.html">Contribute to SSAGES</a></li>
-<li class="toctree-l1"><a class="reference internal" href="The SSAGES Cookbook.html">The SSAGES cookbook</a></li>
+<li class="toctree-l1"><a class="reference internal" href="The SSAGES Cookbook.html">The SSAGES Cookbook</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Acknowledgements.html">Acknowledgments</a></li>
-<li class="toctree-l1"><a class="reference internal" href="License.html">Copyright</a></li>
-<li class="toctree-l1"><a class="reference internal" href="License.html#id1">License information</a></li>
+<li class="toctree-l1"><a class="reference internal" href="zReferences.html">References</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Copyright and License.html">Copyright and License Information</a></li>
 </ul>
 
             
@@ -161,43 +163,47 @@
             
   <div class="section" id="welcome-to-ssages">
 <h1>Welcome to SSAGES!<a class="headerlink" href="#welcome-to-ssages" title="Permalink to this headline">¶</a></h1>
-<p>In their simplest form, particle based simulations are limited to generating
+<p>In their simplest form, particle-based simulations are limited to generating
 ensembles of configurations (in Monte Carlo [MC] simulations) or trajectories
 in time (in molecular dynamics [MD] or Brownian dynamics [BD]). One can then
 extract mechanical variables such as the potential energy or pressure and
 perform ensemble or time averages. There are two important limitations to such
-calculations: 1) for complex materials, the time scales available to standard
+calculations:</p>
+<ol class="arabic simple">
+<li><p>For complex materials, the time scales available to standard
 MD simulations are often insufficient to sample relevant regions of phase
-space; 2) in order to develop a fundamental understanding of materials,
+space</p></li>
+<li><p>In order to develop a fundamental understanding of materials,
 researchers are primarily interested in calculating the free energy, the
 entropy, and their derivatives with respect to various thermodynamic
 quantities (which lead to material properties such as elastic moduli, heat
-capacity, and various other susceptibilities; these quantities are difficult
-to obtain or intractable in standard MC and MD simulations. To overcome these
-limitations, MC and MD simulations must be supplemented with advanced sampling
-techniques. These methods are critical for the efficient simulation of complex
-assembly processes.</p>
-<p>SSAGES (Software Suite for Advanced Generalized Ensemble Simulations) is
+capacity, and various other susceptibilities).</p></li>
+</ol>
+<p>These quantities are difficult to obtain or intractable in standard MC and MD
+simulations. To overcome these limitations, MC and MD simulations must be
+supplemented with advanced sampling techniques. These methods are critical for
+the efficient simulation of complex assembly processes.</p>
+<p>SSAGES (Software Suite for Advanced General Ensemble Simulations) is
 designed to perform these calculations. The framework is designed to treat
 molecular simulation routines as a black box, using the coordinates of the
-system as evolved by an MC or MD engine to compute collective variables which
+system as evolved by an MD engine to compute collective variables which
 permit a meaningful reduced-dimensionality representation of the phase space
 within a system. This information is then used to define evolving reactive
 pathways or to bias the statistics of a simulation for the purposes of
 computing free energies. The internal structure of the code has been designed
-to be simple and extensible to new methods and sampling engines. For further
+to be simple and extensible to new sampling methods and engines. For further
 details on examples and capabilities of SSAGES, peruse the documentation
-for <a class="reference internal" href="Advanced Sampling Methods.html#advanced-sampling-methods"><span class="std std-ref">specifc modules</span></a>.</p>
+for <a class="reference internal" href="Advanced Sampling Methods.html#advanced-sampling-methods"><span class="std std-ref">specific methods</span></a>.</p>
 <p>Contents:</p>
 <div class="toctree-wrapper compound">
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="Introduction.html">Introduction</a></li>
 <li class="toctree-l1"><a class="reference internal" href="Getting Started.html">Getting Started</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="Getting Started.html#prerequisites">Prerequisites</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Getting Started.html#get-the-source-code">Get the source code</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Getting Started.html#get-the-source-code">Get the Source Code</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Getting Started.html#build-ssages">Build SSAGES</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Getting Started.html#run-ssages">Run SSAGES</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Getting Started.html#advanced-options">Advanced options</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Getting Started.html#advanced-options">Advanced Options</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="Input Files.html">Input Files</a><ul>
@@ -236,47 +242,52 @@ for <a class="reference internal" href="Advanced Sampling Methods.html#advanced-
 <li class="toctree-l2"><a class="reference internal" href="Finite Temperature String.html">Finite Temperature String</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Forward-Flux.html">Forward-Flux</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Metadynamics.html">Metadynamics</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Image Method.html">Image Method</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Replica Exchange.html">Replica Exchange</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Swarm of Trajectories.html">Swarm of Trajectories</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Umbrella Sampling.html">Umbrella Sampling</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="Write your own Methods and CVs.html">Write your own Methods and CVs</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="Write your own Methods and CVs.html#how-to-write-a-new-cv">How to write a new CV</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Write your own Methods and CVs.html#how-to-write-a-new-method">How to write a new method</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Write your own Methods and CVs.html">Write Your Own CVs and Methods</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Write your own Methods and CVs.html#how-to-write-a-new-cv">How to Write a New CV</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Write your own Methods and CVs.html#how-to-write-a-new-method">How to Write a New Method</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="Contribute to SSAGES.html">Contribute to SSAGES</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="Contribute to SSAGES.html#reporting-bugs-and-wishes">Reporting bugs and wishes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Contribute to SSAGES.html#reporting-bugs-and-requesting-features">Reporting Bugs and Requesting Features</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Contribute to SSAGES.html#improving-the-documentation">Improving the Documentation</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Contribute to SSAGES.html#adding-your-method-to-ssages">Adding your method to SSAGES</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Contribute to SSAGES.html#working-on-the-core-classes">Working on the core classes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Contribute to SSAGES.html#adding-your-method-to-ssages">Adding your Method to SSAGES</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Contribute to SSAGES.html#working-on-the-core-classes">Working on the Core Classes</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="The SSAGES Cookbook.html">The SSAGES cookbook</a></li>
+<li class="toctree-l1"><a class="reference internal" href="The SSAGES Cookbook.html">The SSAGES Cookbook</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="The SSAGES Cookbook.html#miccom-summer-school-2017">MICCoM Summer School 2017</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="Acknowledgements.html">Acknowledgments</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="Acknowledgements.html#project-supervisors">Project Supervisors</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Acknowledgements.html#project-leads">Project Leads</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Acknowledgements.html#past-project-leads">Past Project Leads</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Acknowledgements.html#core-development">Core Development</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Acknowledgements.html#methods">Methods</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Acknowledgements.html#collective-variables">Collective Variables</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Acknowledgements.html#documentation">Documentation</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Acknowledgements.html#engine-adapters">Engine Adapters</a></li>
-<li class="toctree-l2"><a class="reference internal" href="Acknowledgements.html#former-team-members">Former Team Members</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="License.html">Copyright</a></li>
-<li class="toctree-l1"><a class="reference internal" href="License.html#id1">License information</a></li>
+<li class="toctree-l1"><a class="reference internal" href="zReferences.html">References</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Copyright and License.html">Copyright and License Information</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Copyright and License.html#copyright">Copyright</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Copyright and License.html#id1">License Information</a></li>
+</ul>
+</li>
 </ul>
 </div>
 </div>
 <div class="section" id="indices-and-tables">
 <h1>Indices and tables<a class="headerlink" href="#indices-and-tables" title="Permalink to this headline">¶</a></h1>
 <ul class="simple">
-<li><a class="reference internal" href="genindex.html"><span class="std std-ref">Index</span></a></li>
-<li><a class="reference internal" href="py-modindex.html"><span class="std std-ref">Module Index</span></a></li>
-<li><a class="reference internal" href="search.html"><span class="std std-ref">Search Page</span></a></li>
+<li><p><a class="reference internal" href="genindex.html"><span class="std std-ref">Index</span></a></p></li>
+<li><p><a class="reference internal" href="py-modindex.html"><span class="std std-ref">Module Index</span></a></p></li>
+<li><p><a class="reference internal" href="search.html"><span class="std std-ref">Search Page</span></a></p></li>
 </ul>
 </div>
 
@@ -298,8 +309,10 @@ for <a class="reference internal" href="Advanced Sampling Methods.html#advanced-
 
   <div role="contentinfo">
     <p>
-        &copy; Copyright 2016, the SSAGES Team.
-      Last updated on Dec 14, 2018.
+        &copy; Copyright 2018, the SSAGES Team
+      <span class="lastupdated">
+        Last updated on Aug 23, 2019.
+      </span>
 
     </p>
   </div>
@@ -316,36 +329,16 @@ for <a class="reference internal" href="Advanced Sampling Methods.html#advanced-
   
 
 
-  
-
-    <script type="text/javascript">
-        var DOCUMENTATION_OPTIONS = {
-            URL_ROOT:'./',
-            VERSION:'v0.8.3-alpha',
-            LANGUAGE:'None',
-            COLLAPSE_INDEX:false,
-            FILE_SUFFIX:'.html',
-            HAS_SOURCE:  true,
-            SOURCELINK_SUFFIX: '.txt'
-        };
-    </script>
-      <script type="text/javascript" src="_static/jquery.js"></script>
-      <script type="text/javascript" src="_static/underscore.js"></script>
-      <script type="text/javascript" src="_static/doctools.js"></script>
-      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-
-  
-
-  
-  
-    <script type="text/javascript" src="_static/js/theme.js"></script>
-  
-
   <script type="text/javascript">
       jQuery(function () {
           SphinxRtdTheme.Navigation.enable(true);
       });
-  </script> 
+  </script>
+
+  
+  
+    
+   
 
 </body>
 </html>

@@ -1,7 +1,7 @@
 <map id="SSAGES::Hook::PostIntegrationHook" name="SSAGES::Hook::PostIntegrationHook">
 <area shape="rect" id="node2" href="$classSSAGES_1_1Snapshot.html#a1bc1d505100ddaebd9a7650c55d35001" title="Set the &quot;changed&quot; flag of the Snapshot. " alt="" coords="308,5,508,32"/>
-<area shape="rect" id="node3" href="$classSSAGES_1_1CVManager.html#a9b4f51cba87bd962ae966c817cb710c8" title="Get CV iterator. " alt="" coords="327,57,489,98"/>
-<area shape="rect" id="node4" href="$classSSAGES_1_1Snapshot.html#ab38cbf3c463820d1b8bbd733759bfa32" title="Get the current iteration. " alt="" coords="300,123,516,149"/>
-<area shape="rect" id="node5" href="$classSSAGES_1_1Snapshot.html#a10c9c038f0caa4a6e6832f96a8a647d5" title="Query if Snapshot was modified. " alt="" coords="296,173,520,200"/>
+<area shape="rect" id="node3" href="$classSSAGES_1_1CVManager.html#a7ab8ff40ccdc862e624ede661a24cfd8" title="Get CV iterator. " alt="" coords="327,57,489,98"/>
+<area shape="rect" id="node4" href="$classSSAGES_1_1Snapshot.html#acebaa24b3c2a4cdbd983e28c87df08c7" title="Get the current iteration. " alt="" coords="300,123,516,149"/>
+<area shape="rect" id="node5" href="$classSSAGES_1_1Snapshot.html#ac047da6094f31ab617127a4980104b5a" title="Query if Snapshot was modified. " alt="" coords="296,173,520,200"/>
 <area shape="rect" id="node6" href="$classSSAGES_1_1Hook.html#a3f2e8e7df9355515237c7548f679a893" title="Synchronization to the simulation engine. " alt="" coords="303,224,513,251"/>
 </map>
