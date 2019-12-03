@@ -1,0 +1,51 @@
+<map id="libMesh::PMSystemStokes::test_l2_norm" name="libMesh::PMSystemStokes::test_l2_norm">
+<area shape="rect" id="node2" href="$classPMToolBox.html#ad2bbf19ea02bcf7c94d2873430ba62f2" title="PMToolBox::output_message" alt="" coords="464,931,659,958"/>
+<area shape="rect" id="node3" href="$classlibMesh_1_1PMSystemStokes.html#a999bbb519880095d3d057da51faa2c4e" title="libMesh::PMSystemStokes\l::reinit_hi_system" alt="" coords="944,169,1125,211"/>
+<area shape="rect" id="node15" href="$classlibMesh_1_1PMSystemStokes.html#acde31fa8783103fadcb5a074314119c9" title="libMesh::PMSystemStokes\l::solve" alt="" coords="235,809,416,851"/>
+<area shape="rect" id="node37" href="$classAnalyticalSolution.html#ae5bcb1cf15cd4bdfa80b7e20750e8798" title="Exact solution for point forces in an unbounded domain. " alt="" coords="1197,1043,1355,1099"/>
+<area shape="rect" id="node50" href="$classlibMesh_1_1PMSystemStokes.html#a5382a4a000770b950a95d1e7f776b1ab" title="libMesh::PMSystemStokes\l::add_local_solution" alt="" coords="235,959,416,1000"/>
+<area shape="rect" id="node4" href="$classlibMesh_1_1PointMesh.html#ad0e98b3defe911597b0e51ff0db6bc69" title="libMesh::PointMesh\l::reinit" alt="" coords="1207,201,1345,243"/>
+<area shape="rect" id="node12" href="$classlibMesh_1_1PointMesh.html#aee2365434c296d7b639b6e6c33026aea" title="libMesh::PointMesh\l::update_particle_mesh" alt="" coords="1197,39,1355,80"/>
+<area shape="rect" id="node14" href="$classlibMesh_1_1ParticleMesh.html#a02b2f2a1e336ab6c909aa82b42574541" title="libMesh::ParticleMesh\l::zero_node_force" alt="" coords="1201,136,1351,177"/>
+<area shape="rect" id="node5" href="$classlibMesh_1_1PointMesh.html#ac4115e5a765abd851d72265b9c5bfb23" title="libMesh::PointMesh\l::clear_kd_tree" alt="" coords="1453,71,1590,112"/>
+<area shape="rect" id="node6" href="$classlibMesh_1_1PointMesh.html#a11116c5e4a20bf440389e2e7d63ccd64" title="libMesh::PointMesh\l::construct_kd_tree" alt="" coords="1943,401,2081,443"/>
+<area shape="rect" id="node7" href="$classlibMesh_1_1PointMesh.html#ae821eb024d382470b3764302efd29333" title="libMesh::PointMesh\l::build_particle_neighbor_list" alt="" coords="1428,201,1615,243"/>
+<area shape="rect" id="node8" href="$classlibMesh_1_1PointMesh.html#a7bd7912dd211134ea21a89fe41d578e0" title="libMesh::PointMesh\l::build_elem_neighbor_list" alt="" coords="1435,267,1607,308"/>
+<area shape="rect" id="node9" href="$classlibMesh_1_1PointMesh.html#adbe61209586ea0953faf2bb304d11f7d" title="libMesh::PointMesh\l::reinit_neighbor_vector" alt="" coords="1443,136,1600,177"/>
+<area shape="rect" id="node10" href="$classlibMesh_1_1PMPeriodicBoundary.html#a9fb35a9fbaf9ea6911ce1e8795064b6d" title="libMesh::PMPeriodicBoundary\l::point_vector" alt="" coords="1668,525,1865,567"/>
+<area shape="rect" id="node11" href="$classlibMesh_1_1PMPeriodicBoundary.html#add774759962454df0f2574edcdc54c53" title="libMesh::PMPeriodicBoundary\l::box_length" alt="" coords="2159,771,2356,812"/>
+<area shape="rect" id="node13" href="$classlibMesh_1_1ParticleMesh.html#ae2444fe3d40b786eebf4f71bcdaea5bd" title="libMesh::ParticleMesh\l::update_mesh" alt="" coords="1446,5,1597,47"/>
+<area shape="rect" id="node16" href="$classlibMesh_1_1PMSystemStokes.html#aabea4615c16877d23bf5f2bd57c6cb2d" title="libMesh::PMSystemStokes\l::assemble_matrix" alt="" coords="471,809,652,851"/>
+<area shape="rect" id="node42" href="$classlibMesh_1_1PMSystemStokes.html#aa10d96c245ffb2f1e0386fc5d602f516" title="libMesh::PMSystemStokes\l::assemble_rhs" alt="" coords="471,617,652,659"/>
+<area shape="rect" id="node17" href="$classAssembleStokes.html#a8a6dc64c86c0124bf0fe4dcd0ad0de12" title="Assemble the Global Matrix K. " alt="" coords="707,809,892,851"/>
+<area shape="rect" id="node18" href="$classAssembleStokes.html#a93b23ed6716da7c11977caa274b8214d" title="select sides on the boundary for all elements " alt="" coords="953,679,1117,720"/>
+<area shape="rect" id="node23" href="$classAssembleStokes.html#add3bf66e015a705d659f4834f30ae541" title="Assemble the element matrix K_IJ. " alt="" coords="942,809,1127,851"/>
+<area shape="rect" id="node24" href="$classAssembleStokes.html#a579528df42cf2c1f94453590afdaa68d" title="Assemble the element matrices Q_I, i.e., kup, kvp, kwp, for pressure. " alt="" coords="942,875,1127,916"/>
+<area shape="rect" id="node25" href="$classAssembleStokes.html#ac1dd8a17c119913ea32926069b87b99e" title="Apply BCs by penalty method. " alt="" coords="955,744,1115,785"/>
+<area shape="rect" id="node41" href="$classAssembleStokes.html#a469825c0f38d785e08da61daa97a19e8" title="Assemble the element mass matrix M for preconditioning matrix. " alt="" coords="942,940,1127,981"/>
+<area shape="rect" id="node19" href="$classlibMesh_1_1PMLinearImplicitSystem.html#aa770d36bc9f7d48f6c576d6cf3230054" title="libMesh::PMLinearImplicit\lSystem::point_mesh" alt="" coords="1435,580,1607,621"/>
+<area shape="rect" id="node20" href="$classlibMesh_1_1PointMesh.html#abda634700da500bec06e2267505c00a7" title="libMesh::PointMesh\l::pm_periodic_boundary" alt="" coords="1687,757,1847,799"/>
+<area shape="rect" id="node21" href="$classlibMesh_1_1PMPeriodicBoundary.html#a66051ef0f9bbb9762571f0a99be1b9fe" title="libMesh::PMPeriodicBoundary\l::periodic_direction" alt="" coords="1177,679,1375,720"/>
+<area shape="rect" id="node22" href="$classlibMesh_1_1PMPeriodicBoundary.html#a334df31a59a78108c9b63691abdcfc05" title="libMesh::PMPeriodicBoundary\l::inlet_direction" alt="" coords="1177,744,1375,785"/>
+<area shape="rect" id="node26" href="$classlibMesh_1_1PMSystemStokes.html#aa76cc710ba46a551a661a73e92754c0a" title="libMesh::PMSystemStokes\l::local_velocity_fluid" alt="" coords="1185,979,1367,1020"/>
+<area shape="rect" id="node40" href="$classAssembleSystem.html#afacfd9db36291075867e05964f7cc5ba" title="Universal function to penalize element matrix or vector with a large number. " alt="" coords="1185,861,1367,903"/>
+<area shape="rect" id="node27" href="$classlibMesh_1_1GGEMSystem.html#a9bc94f74ed615036496aa03b5deeb53c" title="libMesh::GGEMSystem\l::local_velocity_fluid" alt="" coords="1441,955,1601,996"/>
+<area shape="rect" id="node28" href="$classlibMesh_1_1PointMesh.html#a1da65a36eebe78d129955a0ae0552ed7" title="libMesh::PointMesh\l::build_particle_neighbor_list" alt="" coords="1673,953,1860,995"/>
+<area shape="rect" id="node34" href="$classlibMesh_1_1PointMesh.html#a9c38c608d55b6a8162c741b40701cf48" title="libMesh::PointMesh\l::particles" alt="" coords="1698,1019,1835,1060"/>
+<area shape="rect" id="node35" href="$classlibMesh_1_1GGEMSystem.html#a7cd973b00cf0170374e2c9797d7e2089" title="libMesh::GGEMSystem\l::regularization_parameter" alt="" coords="1681,823,1853,864"/>
+<area shape="rect" id="node36" href="$classlibMesh_1_1GGEMSystem.html#acc37e82c83608fdbd6e11f3d6880ec02" title="libMesh::GGEMSystem\l::green_tensor_regularized" alt="" coords="1679,888,1854,929"/>
+<area shape="rect" id="node29" href="$classlibMesh_1_1PointMesh.html#ac3af00595a57d0430b320bf3c6a2c33b" title="libMesh::PointMesh\l::is_sorted" alt="" coords="1943,888,2081,929"/>
+<area shape="rect" id="node30" href="$classlibMesh_1_1PMPeriodicBoundary.html#ae2deb49b90a82e8592df0e4abb9e3b49" title="libMesh::PMPeriodicBoundary\l::get_image_point" alt="" coords="1913,953,2111,995"/>
+<area shape="rect" id="node31" href="$classlibMesh_1_1PMPeriodicBoundary.html#aecdf8b3ea6c3f86b1924e3e80f2ef661" title="libMesh::PMPeriodicBoundary\l::periodic_direction" alt="" coords="2159,953,2356,995"/>
+<area shape="rect" id="node32" href="$classlibMesh_1_1PMPeriodicBoundary.html#a9a319b885feb0526d605e7a8773ce19f" title="libMesh::PMPeriodicBoundary\l::box_min" alt="" coords="2159,1019,2356,1060"/>
+<area shape="rect" id="node33" href="$classlibMesh_1_1PMPeriodicBoundary.html#a838a2b78010d3e6f4c652f6328d648f0" title="libMesh::PMPeriodicBoundary\l::box_max" alt="" coords="2159,888,2356,929"/>
+<area shape="rect" id="node38" href="$classlibMesh_1_1PointMesh.html#a0fe0b2102de7fba2591a09d6a16193ac" title="libMesh::PointMesh\l::num_particles" alt="" coords="1453,1140,1590,1181"/>
+<area shape="rect" id="node39" href="$classlibMesh_1_1GGEMSystem.html#a0a0c88c923ad2c20715b8e480b6e4fc0" title="libMesh::GGEMSystem\l::green_tensor_exp" alt="" coords="1441,1075,1601,1116"/>
+<area shape="rect" id="node43" href="$classAssembleStokes.html#a28f0ec89836e79dab70f447ea9dbe02f" title="Assemble the Global force vector F. " alt="" coords="707,489,892,531"/>
+<area shape="rect" id="node44" href="$classAssembleSystem.html#a13fecee93a9449a9c2624d8169c4dd35" title="Assemble int_force matrix for every element, this includes Gaussian quadrature weights multiplied by ..." alt="" coords="940,395,1129,436"/>
+<area shape="rect" id="node45" href="$classlibMesh_1_1PointMesh.html#a290549e7bf68828756ecff8af2bb3ed6" title="libMesh::PointMesh\l::elem_neighbor_list" alt="" coords="965,460,1104,501"/>
+<area shape="rect" id="node46" href="$classAssembleStokes.html#aa30a7b5573b6ef862659de8ea6314caf" title="Assemble function for the right&#45;hand&#45;side in Stokes equation. " alt="" coords="1187,449,1365,491"/>
+<area shape="rect" id="node47" href="$classlibMesh_1_1PMPeriodicBoundary.html#ad2291d5f1024772c3ddb921990ffdf16" title="libMesh::PMPeriodicBoundary\l::inlet_pressure" alt="" coords="1423,515,1620,556"/>
+<area shape="rect" id="node48" href="$classlibMesh_1_1PMPeriodicBoundary.html#aca1f676c637b8d360e75e115774c44fd" title="libMesh::PMPeriodicBoundary\l::point_distance" alt="" coords="1423,384,1620,425"/>
+<area shape="rect" id="node49" href="$classlibMesh_1_1GGEMSystem.html#a80e13a48cfb47578c9522f52f6b7fe06" title="libMesh::GGEMSystem\l::smoothed_force_exp" alt="" coords="1441,449,1601,491"/>
+</map>

@@ -1,0 +1,4 @@
+<map id="libMesh::FixRigid::sync_node_to_pointmesh" name="libMesh::FixRigid::sync_node_to_pointmesh">
+<area shape="rect" id="node2" href="$classlibMesh_1_1ParticleMesh.html#aebc3cdfa6ccff67e1bdf20ed6ab275a1" title="libMesh::ParticleMesh\l::particles" alt="" coords="224,5,375,47"/>
+<area shape="rect" id="node3" href="$classlibMesh_1_1PointMesh.html#a9c38c608d55b6a8162c741b40701cf48" title="libMesh::PointMesh\l::particles" alt="" coords="231,71,368,112"/>
+</map>

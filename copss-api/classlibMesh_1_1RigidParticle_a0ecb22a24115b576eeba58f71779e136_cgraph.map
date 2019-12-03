@@ -1,0 +1,7 @@
+<map id="libMesh::RigidParticle::on_the_periodic_boundary" name="libMesh::RigidParticle::on_the_periodic_boundary">
+<area shape="rect" id="node2" href="$classlibMesh_1_1MeshSpringNetwork.html#acc0042454066143530171351a511c976" title="libMesh::MeshSpringNetwork\l::periodic_boundary" alt="" coords="237,5,430,47"/>
+<area shape="rect" id="node4" href="$classlibMesh_1_1PMPeriodicBoundary.html#a66051ef0f9bbb9762571f0a99be1b9fe" title="libMesh::PMPeriodicBoundary\l::periodic_direction" alt="" coords="235,71,432,112"/>
+<area shape="rect" id="node5" href="$classlibMesh_1_1PMPeriodicBoundary.html#a3b5c56c073a77040314d8b975c4b3321" title="libMesh::PMPeriodicBoundary\l::image_elem" alt="" coords="235,136,432,177"/>
+<area shape="rect" id="node3" href="$classlibMesh_1_1MeshSpringNetwork.html#a11b427a7c47871f2ce18cf462895eb1b" title="libMesh::MeshSpringNetwork\l::print_info" alt="" coords="482,5,675,47"/>
+<area shape="rect" id="node6" href="$classlibMesh_1_1PMPeriodicBoundary.html#add774759962454df0f2574edcdc54c53" title="libMesh::PMPeriodicBoundary\l::box_length" alt="" coords="480,136,677,177"/>
+</map>

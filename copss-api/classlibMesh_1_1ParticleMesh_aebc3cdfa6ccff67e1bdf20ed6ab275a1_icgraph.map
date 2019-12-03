@@ -1,0 +1,9 @@
+<map id="libMesh::ParticleMesh::particles" name="libMesh::ParticleMesh::particles">
+<area shape="rect" id="node2" href="$classlibMesh_1_1FixRigid.html#a6c6cf4c13ae4dc1633ebd82bce5010c4" title="Constructor for a system with elastic structures (finite size particles) " alt="" coords="235,5,365,47"/>
+<area shape="rect" id="node3" href="$classlibMesh_1_1FixRigid.html#acb9b3f93c8ec63cbad2cb44a2206462c" title="libMesh::FixRigid::\lsync_node_to_pointmesh" alt="" coords="215,71,385,112"/>
+<area shape="rect" id="node5" href="$classlibMesh_1_1PointMesh.html#afc502b594c7e67a0324bc144c29735b1" title="libMesh::PointMesh\l::PointMesh" alt="" coords="231,136,369,177"/>
+<area shape="rect" id="node6" href="$classlibMesh_1_1CopssRigidParticleSystem.html#a4f776976fed855dd2f050154eff0de70" title="libMesh::CopssRigidParticle\lSystem::attach_mesh_spring\l_network" alt="" coords="204,201,396,257"/>
+<area shape="rect" id="node4" href="$classlibMesh_1_1FixRigid.html#aa87954897c65e2aa2a5f9c650f969579" title="libMesh::FixRigid::\l~FixRigid" alt="" coords="472,71,603,112"/>
+<area shape="rect" id="node7" href="$classlibMesh_1_1CopssRigidParticleSystem.html#a43385b16835b73bf012b1fb6514b56e9" title="libMesh::CopssRigidParticle\lSystem::create_object" alt="" coords="444,208,631,249"/>
+<area shape="rect" id="node8" href="$classlibMesh_1_1CopssRigidParticleSystem.html#a502b6bdc84a5f4dd8906834247533da8" title="libMesh::CopssRigidParticle\lSystem::create_object_mesh" alt="" coords="679,208,871,249"/>
+</map>
