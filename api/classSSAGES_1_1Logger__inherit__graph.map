@@ -1,3 +1,4 @@
 <map id="SSAGES::Logger" name="SSAGES::Logger">
-<area shape="rect" id="node2" href="$classSSAGES_1_1EventListener.html" title="Base abstract class for listening in to events fired by &quot;Hook&quot;. " alt="" coords="5,5,171,32"/>
+<area shape="rect" id="node1" title="Base class for logging SSAGES data." alt="" coords="26,80,150,107"/>
+<area shape="rect" id="node2" href="$classSSAGES_1_1EventListener.html" title="Base abstract class for listening in to events fired by &quot;Hook&quot;." alt="" coords="5,5,171,32"/>
 </map>

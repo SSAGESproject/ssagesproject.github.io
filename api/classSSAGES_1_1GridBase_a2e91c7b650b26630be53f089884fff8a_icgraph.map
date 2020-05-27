@@ -1,7 +1,0 @@
-<map id="SSAGES::GridBase::GetNumPoints" name="SSAGES::GridBase::GetNumPoints">
-<area shape="rect" id="node2" href="$classSSAGES_1_1BFS.html#aae30a5592035f756e0290fd2b044cf5e" title="Build a derived method from JSON node. " alt="" coords="262,5,410,32"/>
-<area shape="rect" id="node4" href="$classSSAGES_1_1BasisEvaluator.html#ad017032c44a0840f05c7ac4d7fedd5cd" title="Outputs the basis projection at a specific coordinate. " alt="" coords="249,57,423,98"/>
-<area shape="rect" id="node5" href="$classSSAGES_1_1BasisEvaluator.html#ad02d4d3e5e2e0af87a8e4a9d759a64a0" title="SSAGES::BasisEvaluator\l::UpdateCoeff" alt="" coords="249,122,423,163"/>
-<area shape="rect" id="node6" href="$classSSAGES_1_1Grid.html#ab79a2be84faa3a5b27d9bf092fa30cca" title="Write grid out to file. " alt="" coords="251,187,421,229"/>
-<area shape="rect" id="node3" href="$classSSAGES_1_1BFS.html#ae7a1e5c49a98296b2451e6127ef8f425" title="Set the values for the basis. " alt="" coords="471,5,643,32"/>
-</map>

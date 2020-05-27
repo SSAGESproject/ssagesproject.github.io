@@ -1,4 +1,5 @@
 <map id="SSAGES::GyrationTensorCV::Initialize" name="SSAGES::GyrationTensorCV::Initialize">
-<area shape="rect" id="node2" href="$classSSAGES_1_1Snapshot.html#a9079d14677b94ff2c88c1f35c867c303" title="Get communicator for walker. " alt="" coords="247,5,501,32"/>
-<area shape="rect" id="node3" href="$classSSAGES_1_1Snapshot.html#a3ecf272dca61538320a4d503303fa9ba" title="Gets the local atom index corresponding to an atom ID. " alt="" coords="274,57,474,98"/>
+<area shape="rect" id="node1" title="Initialize necessary variables." alt="" coords="5,27,199,69"/>
+<area shape="rect" id="node2" href="$classSSAGES_1_1Snapshot.html#a4811c9435e56196d5525832345ef1680" title="Get communicator for walker." alt="" coords="247,5,501,32"/>
+<area shape="rect" id="node3" href="$classSSAGES_1_1Snapshot.html#a7146597433bcfd256385db274330cd36" title="Gets the local atom index corresponding to an atom ID." alt="" coords="274,57,474,98"/>
 </map>

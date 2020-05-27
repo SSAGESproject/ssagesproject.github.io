@@ -1,4 +1,4 @@
 <map id="SSAGES::Hook::AddListener" name="SSAGES::Hook::AddListener">
-<area shape="rect" id="node2" href="$classSSAGES_1_1ResourceHandler.html#a9a83bec9ea0d0cfe67596d439490e766" title="Configure the Hook from given resources. " alt="" coords="247,5,433,47"/>
-<area shape="rect" id="node3" href="$classSSAGES_1_1Hook.html#ad0bf76d04f65739090db6d0fadfdc748" title="Constructor. " alt="" coords="263,71,417,98"/>
+<area shape="rect" id="node1" title="Add a listener to the hook." alt="" coords="240,13,433,39"/>
+<area shape="rect" id="node2" href="$classSSAGES_1_1ResourceHandler.html#a9a83bec9ea0d0cfe67596d439490e766" title="Configure the Hook from given resources." alt="" coords="5,5,192,47"/>
 </map>

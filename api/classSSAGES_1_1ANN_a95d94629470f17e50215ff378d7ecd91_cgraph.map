@@ -1,6 +1,7 @@
 <map id="SSAGES::ANN::ANN" name="SSAGES::ANN::ANN">
-<area shape="rect" id="node2" href="$classSSAGES_1_1Grid.html#a709374b3cadf320347604077a2e45e5b" title="Return iterator at first grid point. " alt="" coords="245,5,393,32"/>
-<area shape="rect" id="node3" href="$classSSAGES_1_1Grid.html#ac4fcc9f0cd61476ce4fd880c768d9694" title="Return iterator after last valid grid point. " alt="" coords="250,56,389,83"/>
-<area shape="rect" id="node4" href="$classSSAGES_1_1GridBase.html#a6f11814764298d1c2c25f12ba20d9036" title="Get the dimension. " alt="" coords="204,107,435,133"/>
-<area shape="rect" id="node5" href="$classSSAGES_1_1GridBase.html#a7bde73c54b11d8841bc7710a5fc604bd" title="Get the size of the internal storage vector. " alt="" coords="234,157,405,184"/>
+<area shape="rect" id="node1" title="Constructor." alt="" coords="5,81,156,108"/>
+<area shape="rect" id="node2" href="$classSSAGES_1_1Grid.html#a709374b3cadf320347604077a2e45e5b" title="Return iterator at first grid point." alt="" coords="245,5,393,32"/>
+<area shape="rect" id="node3" href="$classSSAGES_1_1Grid.html#ac4fcc9f0cd61476ce4fd880c768d9694" title="Return iterator after last valid grid point." alt="" coords="250,56,389,83"/>
+<area shape="rect" id="node4" href="$classSSAGES_1_1GridBase.html#a72f98ef47da691b00823d612efbd46b8" title="Get the dimension." alt="" coords="204,107,435,133"/>
+<area shape="rect" id="node5" href="$classSSAGES_1_1GridBase.html#a4f8abb752ae6ec51ebcf24b599bf4896" title="Get the size of the internal storage vector." alt="" coords="234,157,405,184"/>
 </map>

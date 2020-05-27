@@ -1,5 +1,6 @@
 <map id="SSAGES::RouseModeCV::RouseModeCV" name="SSAGES::RouseModeCV::RouseModeCV">
-<area shape="rect" id="node2" href="$classSSAGES_1_1RouseModeCV.html#a369dd6839f82c595844881f3db88a956" title="Set up collective variable. " alt="" coords="228,5,403,47"/>
-<area shape="rect" id="node3" href="$classSSAGES_1_1CollectiveVariable.html#ab56eae0d888f3d5125566bfb9b5e21aa" title="Set up collective variable. " alt="" coords="451,5,641,47"/>
-<area shape="rect" id="node4" href="$classSSAGES_1_1ResourceHandler.html#ac026ad9aa098fa1508a78b0b5a91e8a2" title="Build a new ResourceHandler from JSON. " alt="" coords="689,5,876,47"/>
+<area shape="rect" id="node1" title="Basic Constructor for Rouse Mode CV." alt="" coords="701,5,876,47"/>
+<area shape="rect" id="node2" href="$classSSAGES_1_1RouseModeCV.html#a369dd6839f82c595844881f3db88a956" title="Set up collective variable." alt="" coords="479,5,653,47"/>
+<area shape="rect" id="node3" href="$classSSAGES_1_1CollectiveVariable.html#ab56eae0d888f3d5125566bfb9b5e21aa" title="Set up collective variable." alt="" coords="240,5,431,47"/>
+<area shape="rect" id="node4" href="$classSSAGES_1_1ResourceHandler.html#ac026ad9aa098fa1508a78b0b5a91e8a2" title="Build a new ResourceHandler from JSON." alt="" coords="5,5,192,47"/>
 </map>

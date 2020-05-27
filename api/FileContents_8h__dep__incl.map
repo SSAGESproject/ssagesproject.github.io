@@ -1,7 +1,8 @@
-<map id="/home/cody/SSAGES&#45;public/src/FileContents.h" name="/home/cody/SSAGES&#45;public/src/FileContents.h">
-<area shape="rect" id="node2" href="$JSONLoaderPlugin_8h_source.html" title="/home/cody/SSAGES&#45;public\l/src/JSON/JSONLoaderPlugin.h" alt="" coords="5,95,216,136"/>
-<area shape="rect" id="node5" href="$DirectForwardFlux_8cpp_source.html" title="/home/cody/SSAGES&#45;public\l/src/Methods/DirectForwardFlux.cpp" alt="" coords="240,95,475,136"/>
-<area shape="rect" id="node6" href="$ForwardFlux_8cpp_source.html" title="/home/cody/SSAGES&#45;public\l/src/Methods/ForwardFlux.cpp" alt="" coords="498,95,697,136"/>
-<area shape="rect" id="node3" href="$JSONLoader_8h_source.html" title="/home/cody/SSAGES&#45;public\l/src/JSON/JSONLoader.h" alt="" coords="17,184,204,225"/>
-<area shape="rect" id="node4" href="$main_8cpp_source.html" title="/home/cody/SSAGES&#45;public\l/src/main.cpp" alt="" coords="17,273,204,315"/>
+<map id="/home/michael/development/SSAGES/src/FileContents.h" name="/home/michael/development/SSAGES/src/FileContents.h">
+<area shape="rect" id="node1" title=" " alt="" coords="324,5,516,47"/>
+<area shape="rect" id="node2" href="$JSONLoaderPlugin_8h_source.html" title=" " alt="" coords="5,102,275,143"/>
+<area shape="rect" id="node5" href="$DirectForwardFlux_8cpp_source.html" title=" " alt="" coords="299,95,541,151"/>
+<area shape="rect" id="node6" href="$ForwardFlux_8cpp_source.html" title=" " alt="" coords="565,102,824,143"/>
+<area shape="rect" id="node3" href="$JSONLoader_8h_source.html" title=" " alt="" coords="23,199,257,240"/>
+<area shape="rect" id="node4" href="$main_8cpp_source.html" title=" " alt="" coords="47,288,233,329"/>
 </map>

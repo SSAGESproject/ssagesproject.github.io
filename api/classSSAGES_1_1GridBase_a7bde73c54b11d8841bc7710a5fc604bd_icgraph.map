@@ -1,9 +1,0 @@
-<map id="SSAGES::GridBase::size" name="SSAGES::GridBase::size">
-<area shape="rect" id="node2" href="$classSSAGES_1_1ANN.html#a95d94629470f17e50215ff378d7ecd91" title="Constructor. " alt="" coords="249,5,399,32"/>
-<area shape="rect" id="node5" href="$classSSAGES_1_1Grid.html#a9e933a2490b0d835c0578cbe7f012292" title="Set up the grid. " alt="" coords="245,57,403,98"/>
-<area shape="rect" id="node6" href="$classSSAGES_1_1ANN.html#a7091cb356fa05bc0b21a4e37144fb0b7" title="Trains the neural network. " alt="" coords="224,123,424,149"/>
-<area shape="rect" id="node3" href="$classSSAGES_1_1ANN.html#a44c8469ee6fc94c4c2be239684a9bf14" title="Build a derived method from JSON node. " alt="" coords="502,5,653,32"/>
-<area shape="rect" id="node4" href="$classSSAGES_1_1ANN.html#a05554b5f5f718f20d772fabf814e3e4c" title="Set minimum loss function value (should be zero for production). " alt="" coords="731,5,921,32"/>
-<area shape="rect" id="node7" href="$classSSAGES_1_1ANN.html#a86e2611b4516c8a465014919139aae19" title="Pre&#45;simulation hook. " alt="" coords="476,97,679,124"/>
-<area shape="rect" id="node8" href="$classSSAGES_1_1ANN.html#ad63d276efae1a266eb5d556bdf896a98" title="Post&#45;integration hook. " alt="" coords="472,148,683,175"/>
-</map>

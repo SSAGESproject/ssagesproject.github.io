@@ -1,7 +1,0 @@
-<map id="SSAGES::Hook::PostStepHook" name="SSAGES::Hook::PostStepHook">
-<area shape="rect" id="node2" href="$classSSAGES_1_1Hook.html#aa7933b3db67d3b976284e17dfa8cb61a" title="Post&#45;simulation hook. " alt="" coords="263,93,505,120"/>
-<area shape="rect" id="node3" href="$classSSAGES_1_1Snapshot.html#a1bc1d505100ddaebd9a7650c55d35001" title="Set the &quot;changed&quot; flag of the Snapshot. " alt="" coords="565,5,765,32"/>
-<area shape="rect" id="node4" href="$classSSAGES_1_1CVManager.html#a7ab8ff40ccdc862e624ede661a24cfd8" title="Get CV iterator. " alt="" coords="584,57,747,98"/>
-<area shape="rect" id="node5" href="$classSSAGES_1_1Snapshot.html#ac047da6094f31ab617127a4980104b5a" title="Query if Snapshot was modified. " alt="" coords="553,123,777,149"/>
-<area shape="rect" id="node6" href="$classSSAGES_1_1Hook.html#a3f2e8e7df9355515237c7548f679a893" title="Synchronization to the simulation engine. " alt="" coords="561,173,770,200"/>
-</map>

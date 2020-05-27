@@ -1,20 +1,20 @@
 <map id="SSAGES::Legendre::Build" name="SSAGES::Legendre::Build">
-<area shape="rect" id="node2" href="$classJson_1_1Requirement.html#a60bc275c366eb59f192fa2e621268480" title="Get list of error messages. " alt="" coords="462,5,602,47"/>
-<area shape="rect" id="node3" href="$classJson_1_1Requirement.html#adfaec336a9f051d6f6b9a6d7f1d97b75" title="Check if errors have occured. " alt="" coords="462,71,602,112"/>
-<area shape="rect" id="node4" href="$classJson_1_1ObjectRequirement.html#a4ed02ae1d612a5efba1688fcdd2df092" title="Parse JSON value to generate Requirement(s). " alt="" coords="228,481,399,523"/>
-<area shape="rect" id="node12" href="$classJson_1_1ObjectRequirement.html#a9ac3b920001a35bc70580035d8d802b7" title="Validate JSON value. " alt="" coords="228,189,399,231"/>
-<area shape="rect" id="node5" href="$classJson_1_1RequirementLoader.html#a82857d029b7ebfeb315f5b1b32401291" title="Extended Requirement loader. " alt="" coords="447,449,617,491"/>
-<area shape="rect" id="node6" href="$classJson_1_1RequirementLoader.html#aeb1344919deda4bd8b8aa8a00cb50390" title="Load specific requirement. " alt="" coords="447,515,617,556"/>
-<area shape="rect" id="node7" href="$classJson_1_1ObjectRequirement.html#a4f2e76636df4f7b153aaac02a1b05e4f" title="Reset Requirement. " alt="" coords="447,580,617,621"/>
-<area shape="rect" id="node8" href="$classJson_1_1ObjectRequirement.html#aa8181c37cbe67db098bc2b82cdea71ef" title="Clear errors on all Requirements. " alt="" coords="665,612,836,653"/>
-<area shape="rect" id="node10" href="$classJson_1_1ObjectRequirement.html#a4fc797684496f4f0381d1388877c133d" title="Clear notices on all Requirements. " alt="" coords="665,547,836,588"/>
-<area shape="rect" id="node9" href="$classJson_1_1Requirement.html#ace71ebbbcc885f0c4c391a3807c80f33" title="Clear list of error messages. " alt="" coords="884,612,1024,653"/>
-<area shape="rect" id="node11" href="$classJson_1_1Requirement.html#a8a8a4020e4955be56dcacf4727ae5bc3" title="Clear list of notice messages. " alt="" coords="884,547,1024,588"/>
-<area shape="rect" id="node13" href="$classJson_1_1Requirement.html#a46a0056414100386541cd1cb899e0030" title="Get list of notices. " alt="" coords="462,136,602,177"/>
-<area shape="rect" id="node14" href="$classJson_1_1Requirement.html#ad407cff3cc37295c3b2a7ebe31798548" title="Check if notices have been queued. " alt="" coords="462,201,602,243"/>
-<area shape="rect" id="node15" href="$classJson_1_1Requirement.html#adeb9efa6cf271d9cea0599ff2d458a08" title="Add error to list of error messages. " alt="" coords="462,267,602,308"/>
-<area shape="rect" id="node16" href="$classJson_1_1Requirement.html#a00feadb29fa33f4f2cca7362f12aaed4" title="Add message to list of notices. " alt="" coords="462,332,602,373"/>
-<area shape="rect" id="node19" href="$classJson_1_1Requirement.html#aa97494b642414d00482745a0d5b2c2c3" title="Validate that JSON value meets requirements. " alt="" coords="681,395,821,436"/>
-<area shape="rect" id="node17" href="$classJson_1_1Requirement.html#af13c20497e7ad6c332c57fa80a266e27" title="Parse JSON value. " alt="" coords="681,329,821,371"/>
-<area shape="rect" id="node18" href="$classJson_1_1Requirement.html#a34bda791587973d7e5b5c222936b2d4e" title="Reset validator. " alt="" coords="681,264,821,305"/>
+<area shape="rect" id="node1" title="Build BasisFunction from JSON value." alt="" coords="5,197,180,223"/>
+<area shape="rect" id="node2" href="$classJson_1_1Requirement.html#a60bc275c366eb59f192fa2e621268480" title="Get list of error messages." alt="" coords="490,5,630,47"/>
+<area shape="rect" id="node3" href="$classJson_1_1Requirement.html#adfaec336a9f051d6f6b9a6d7f1d97b75" title="Check if errors have occured." alt="" coords="490,71,630,112"/>
+<area shape="rect" id="node4" href="$classSSAGES_1_1Legendre.html#ab9f467d83bc7fc1422946dc525a7d3ec" title="Constructor." alt="" coords="228,255,427,282"/>
+<area shape="rect" id="node5" href="$classJson_1_1ObjectRequirement.html#a4ed02ae1d612a5efba1688fcdd2df092" title="Parse JSON value to generate Requirement(s)." alt="" coords="242,495,413,536"/>
+<area shape="rect" id="node13" href="$classJson_1_1ObjectRequirement.html#a9ac3b920001a35bc70580035d8d802b7" title="Validate JSON value." alt="" coords="242,189,413,231"/>
+<area shape="rect" id="node6" href="$classJson_1_1RequirementLoader.html#a82857d029b7ebfeb315f5b1b32401291" title="Extended Requirement loader." alt="" coords="475,463,645,504"/>
+<area shape="rect" id="node7" href="$classJson_1_1RequirementLoader.html#aeb1344919deda4bd8b8aa8a00cb50390" title="Load specific requirement." alt="" coords="475,528,645,569"/>
+<area shape="rect" id="node8" href="$classJson_1_1ObjectRequirement.html#a4f2e76636df4f7b153aaac02a1b05e4f" title="Reset Requirement." alt="" coords="475,593,645,635"/>
+<area shape="rect" id="node9" href="$classJson_1_1ObjectRequirement.html#aa8181c37cbe67db098bc2b82cdea71ef" title="Clear errors on all Requirements." alt="" coords="693,560,864,601"/>
+<area shape="rect" id="node11" href="$classJson_1_1ObjectRequirement.html#a4fc797684496f4f0381d1388877c133d" title="Clear notices on all Requirements." alt="" coords="693,625,864,667"/>
+<area shape="rect" id="node10" href="$classJson_1_1Requirement.html#ace71ebbbcc885f0c4c391a3807c80f33" title="Clear list of error messages." alt="" coords="912,560,1052,601"/>
+<area shape="rect" id="node12" href="$classJson_1_1Requirement.html#a8a8a4020e4955be56dcacf4727ae5bc3" title="Clear list of notice messages." alt="" coords="912,625,1052,667"/>
+<area shape="rect" id="node14" href="$classJson_1_1Requirement.html#a46a0056414100386541cd1cb899e0030" title="Get list of notices." alt="" coords="490,136,630,177"/>
+<area shape="rect" id="node15" href="$classJson_1_1Requirement.html#ad407cff3cc37295c3b2a7ebe31798548" title="Check if notices have been queued." alt="" coords="490,201,630,243"/>
+<area shape="rect" id="node16" href="$classJson_1_1Requirement.html#adeb9efa6cf271d9cea0599ff2d458a08" title="Add error to list of error messages." alt="" coords="490,267,630,308"/>
+<area shape="rect" id="node17" href="$classJson_1_1Requirement.html#a00feadb29fa33f4f2cca7362f12aaed4" title="Add message to list of notices." alt="" coords="490,332,630,373"/>
+<area shape="rect" id="node18" href="$classJson_1_1Requirement.html#aa97494b642414d00482745a0d5b2c2c3" title="Validate that JSON value meets requirements." alt="" coords="490,397,630,439"/>
 </map>

@@ -1,4 +1,4 @@
 <map id="SSAGES::ANN::ANN" name="SSAGES::ANN::ANN">
-<area shape="rect" id="node2" href="$classSSAGES_1_1ANN.html#a44c8469ee6fc94c4c2be239684a9bf14" title="Build a derived method from JSON node. " alt="" coords="204,5,355,32"/>
-<area shape="rect" id="node3" href="$classSSAGES_1_1ANN.html#a05554b5f5f718f20d772fabf814e3e4c" title="Set minimum loss function value (should be zero for production). " alt="" coords="403,5,593,32"/>
+<area shape="rect" id="node1" title="Constructor." alt="" coords="204,5,355,32"/>
+<area shape="rect" id="node2" href="$classSSAGES_1_1ANN.html#a44c8469ee6fc94c4c2be239684a9bf14" title="Build a derived method from JSON node." alt="" coords="5,5,156,32"/>
 </map>

@@ -1,12 +1,13 @@
 <map id="SSAGES::roundf" name="SSAGES::roundf">
-<area shape="rect" id="node2" href="$classSSAGES_1_1Snapshot.html#a46d2a991fd3446bfe6f6f72291ec1483" title="Apply minimum image to a vector. " alt="" coords="175,253,409,294"/>
-<area shape="rect" id="node3" href="$classSSAGES_1_1AngleCV.html#afc7cddc3872aeeeeb098c69f1126b594" title="Evaluate the CV. " alt="" coords="457,5,653,32"/>
-<area shape="rect" id="node4" href="$classSSAGES_1_1GyrationTensorCV.html#ac613c1659bd00b335c3d6de3d8ff0ebc" title="Evaluate the CV. " alt="" coords="459,57,652,98"/>
-<area shape="rect" id="node5" href="$classSSAGES_1_1PairwiseCV.html#a807d3a560a3a187c7648da5a282027df" title="Evaluate the CV. " alt="" coords="478,122,633,163"/>
-<area shape="rect" id="node6" href="$classSSAGES_1_1ParticlePositionCV.html#aa2ee9b7b3ca3133183e2d5f511251e29" title="Evaluate the CV. " alt="" coords="467,187,643,229"/>
-<area shape="rect" id="node7" href="$classSSAGES_1_1ParticleSeparationCV.html#ae6452c47bf1d849e2af60c84209a9955" title="Evaluate the CV. " alt="" coords="460,253,651,294"/>
-<area shape="rect" id="node8" href="$classSSAGES_1_1RouseModeCV.html#a1468b1aabf81ceb2ef3feb3b8fc79d0d" title="Evaluate the CV. " alt="" coords="468,318,643,359"/>
-<area shape="rect" id="node9" href="$classSSAGES_1_1TorsionalCV.html#ae3e82fb11240eb780cfcc57b2b0112a5" title="Evaluate the CV. " alt="" coords="477,383,634,425"/>
-<area shape="rect" id="node10" href="$classSSAGES_1_1Snapshot.html#aa63df4f85b0912f9e7c99b9a81c92127" title="SSAGES::Snapshot::Center\lOfMass" alt="" coords="462,449,649,490"/>
-<area shape="rect" id="node11" href="$classSSAGES_1_1Snapshot.html#aac32f793f06b57247073d498ba339a92" title="Unwrap the particle positions, based on first position. " alt="" coords="459,514,652,555"/>
+<area shape="rect" id="node1" title="Quick helper function to round a double." alt="" coords="539,261,660,287"/>
+<area shape="rect" id="node2" href="$classSSAGES_1_1Snapshot.html#ad6caa5b92433501fd4a62deef288340a" title="Apply minimum image to a vector." alt="" coords="256,253,491,295"/>
+<area shape="rect" id="node3" href="$classSSAGES_1_1Snapshot.html#a37cd55705201e0a40adc75b646a6e864" title=" " alt="" coords="13,5,200,47"/>
+<area shape="rect" id="node4" href="$classSSAGES_1_1AngleCV.html#afc7cddc3872aeeeeb098c69f1126b594" title="Evaluate the CV." alt="" coords="9,71,205,98"/>
+<area shape="rect" id="node5" href="$classSSAGES_1_1TorsionalCV.html#ae3e82fb11240eb780cfcc57b2b0112a5" title="Evaluate the CV." alt="" coords="28,123,185,164"/>
+<area shape="rect" id="node6" href="$classSSAGES_1_1PairwiseCV.html#a807d3a560a3a187c7648da5a282027df" title="Evaluate the CV." alt="" coords="29,188,184,229"/>
+<area shape="rect" id="node7" href="$classSSAGES_1_1ParticlePositionCV.html#aa2ee9b7b3ca3133183e2d5f511251e29" title="Evaluate the CV." alt="" coords="19,253,195,295"/>
+<area shape="rect" id="node8" href="$classSSAGES_1_1RouseModeCV.html#a1468b1aabf81ceb2ef3feb3b8fc79d0d" title="Evaluate the CV." alt="" coords="19,319,194,360"/>
+<area shape="rect" id="node9" href="$classSSAGES_1_1GyrationTensorCV.html#ac613c1659bd00b335c3d6de3d8ff0ebc" title="Evaluate the CV." alt="" coords="10,384,203,425"/>
+<area shape="rect" id="node10" href="$classSSAGES_1_1ParticleSeparationCV.html#ae6452c47bf1d849e2af60c84209a9955" title="Evaluate the CV." alt="" coords="11,449,202,491"/>
+<area shape="rect" id="node11" href="$classSSAGES_1_1RMSDCV.html#aff77158b643fec57c6d1649a78b0dd14" title="Evaluate the CV." alt="" coords="5,515,208,542"/>
 </map>

@@ -1,4 +1,4 @@
 <map id="SSAGES::GridBase::mapTo1d" name="SSAGES::GridBase::mapTo1d">
-<area shape="rect" id="node2" href="$classSSAGES_1_1GridBase.html#a896d88442ef110a3afb58944e5107b53" title="Access Grid element read&#45;only. " alt="" coords="255,5,439,47"/>
-<area shape="rect" id="node3" href="$classSSAGES_1_1GridBase.html#a0a126a2ed3e9de4b37db9dca3162b6f1" title="Wrap the index around periodic boundaries. " alt="" coords="255,71,439,112"/>
+<area shape="rect" id="node1" title="This function needs to be implemented by child classes." alt="" coords="237,13,439,39"/>
+<area shape="rect" id="node2" href="$classSSAGES_1_1GridBase.html#a7da01557a9b85498c2acd975c152403a" title="Access Grid element read&#45;only." alt="" coords="5,5,189,47"/>
 </map>

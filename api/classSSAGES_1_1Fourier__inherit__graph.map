@@ -1,3 +1,4 @@
 <map id="SSAGES::Fourier" name="SSAGES::Fourier">
-<area shape="rect" id="node2" href="$classSSAGES_1_1BasisFunction.html" title="Abstract class for all BasisFunction inheritance. " alt="" coords="5,5,173,32"/>
+<area shape="rect" id="node1" title="Defines the class of Fourier polynomials." alt="" coords="27,80,152,107"/>
+<area shape="rect" id="node2" href="$classSSAGES_1_1BasisFunction.html" title="Abstract class for all BasisFunction inheritance." alt="" coords="5,5,173,32"/>
 </map>

@@ -1,9 +1,10 @@
 <map id="SSAGES::Grid&lt; T &gt;" name="SSAGES::Grid&lt; T &gt;">
-<area shape="rect" id="node3" href="$classSSAGES_1_1Grid.html" title="SSAGES::Grid\&lt; double \&gt;" alt="" coords="569,5,740,32"/>
-<area shape="rect" id="node4" href="$classSSAGES_1_1Grid.html" title="SSAGES::Grid\&lt; Vector \&gt;" alt="" coords="569,56,740,83"/>
-<area shape="rect" id="node5" href="$classSSAGES_1_1Grid.html" title="SSAGES::Grid\&lt; int \&gt;" alt="" coords="581,107,728,133"/>
-<area shape="rect" id="node6" href="$classSSAGES_1_1Grid.html" title="SSAGES::Grid\&lt; unsigned\l int \&gt;" alt="" coords="568,158,741,199"/>
-<area shape="rect" id="node7" href="$classSSAGES_1_1Grid.html" title="SSAGES::Grid\&lt; std::\lvector\&lt; double \&gt; \&gt;" alt="" coords="581,223,728,265"/>
-<area shape="rect" id="node8" href="$classSSAGES_1_1Grid.html" title="SSAGES::Grid\&lt; Eigen\l::VectorXd \&gt;" alt="" coords="577,289,732,330"/>
-<area shape="rect" id="node2" href="$classSSAGES_1_1GridBase.html" title="Base class for Grids. " alt="" coords="5,136,176,163"/>
+<area shape="rect" id="node1" title="Basic Grid." alt="" coords="225,136,367,163"/>
+<area shape="rect" id="node3" href="$classSSAGES_1_1Grid.html" title=" " alt="" coords="569,5,740,32"/>
+<area shape="rect" id="node4" href="$classSSAGES_1_1Grid.html" title=" " alt="" coords="569,56,740,83"/>
+<area shape="rect" id="node5" href="$classSSAGES_1_1Grid.html" title=" " alt="" coords="581,107,728,133"/>
+<area shape="rect" id="node6" href="$classSSAGES_1_1Grid.html" title=" " alt="" coords="568,158,741,199"/>
+<area shape="rect" id="node7" href="$classSSAGES_1_1Grid.html" title=" " alt="" coords="581,223,728,265"/>
+<area shape="rect" id="node8" href="$classSSAGES_1_1Grid.html" title=" " alt="" coords="577,289,732,330"/>
+<area shape="rect" id="node2" href="$classSSAGES_1_1GridBase.html" title="Base class for Grids." alt="" coords="5,136,176,163"/>
 </map>

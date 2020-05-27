@@ -1,6 +1,6 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classSSAGES_1_1BasisFunction.html" title="Abstract class for all BasisFunction inheritance. " alt="" coords="5,56,173,83"/>
-<area shape="rect" id="node2" href="$classSSAGES_1_1Chebyshev.html" title="Defines the class of Chebyshev polynomials. " alt="" coords="221,5,372,32"/>
-<area shape="rect" id="node3" href="$classSSAGES_1_1Fourier.html" title="Defines the class of Fourier polynomials. " alt="" coords="234,56,359,83"/>
-<area shape="rect" id="node4" href="$classSSAGES_1_1Legendre.html" title="Defines the class of Legendre polynomials. " alt="" coords="227,107,366,133"/>
+<area shape="rect" id="node1" href="$classSSAGES_1_1BasisFunction.html" title="Abstract class for all BasisFunction inheritance." alt="" coords="5,56,173,83"/>
+<area shape="rect" id="node2" href="$classSSAGES_1_1Chebyshev.html" title="Defines the class of Chebyshev polynomials." alt="" coords="221,5,372,32"/>
+<area shape="rect" id="node3" href="$classSSAGES_1_1Fourier.html" title="Defines the class of Fourier polynomials." alt="" coords="234,56,359,83"/>
+<area shape="rect" id="node4" href="$classSSAGES_1_1Legendre.html" title="Defines the class of Legendre polynomials." alt="" coords="227,107,366,133"/>
 </map>

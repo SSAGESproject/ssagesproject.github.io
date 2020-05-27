@@ -1,15 +1,16 @@
 <map id="Json::Requirement" name="Json::Requirement">
-<area shape="rect" id="node2" href="$classJson_1_1AllOfRequirement.html" title="Requires that all of a list of Requirements hold. " alt="" coords="207,5,369,32"/>
-<area shape="rect" id="node3" href="$classJson_1_1AnyOfRequirement.html" title="Requires that at least one of a list of Requirements hold. " alt="" coords="203,56,373,83"/>
-<area shape="rect" id="node4" href="$classJson_1_1ArrayRequirement.html" title="Array of Requirements. " alt="" coords="207,107,369,133"/>
-<area shape="rect" id="node5" href="$classJson_1_1BooleanRequirement.html" title="Requires json value to be of type Bool. " alt="" coords="199,157,377,184"/>
-<area shape="rect" id="node6" href="$classJson_1_1DependencyRequirement.html" title="Requires dependencies to be met. " alt="" coords="185,208,391,235"/>
-<area shape="rect" id="node7" href="$classJson_1_1EnumRequirement.html" title="Requires entry to be member of an enum. " alt="" coords="205,259,371,285"/>
-<area shape="rect" id="node8" href="$classJson_1_1IntegerRequirement.html" title="Requirements on Integer values. " alt="" coords="202,309,374,336"/>
-<area shape="rect" id="node9" href="$classJson_1_1NotRequirement.html" title="Requires a given Requirement to fail. " alt="" coords="211,360,365,387"/>
-<area shape="rect" id="node10" href="$classJson_1_1NullRequirement.html" title="Requires value to be of type Null. " alt="" coords="211,411,365,437"/>
-<area shape="rect" id="node11" href="$classJson_1_1NumberRequirement.html" title="Requirements on a numeric value. " alt="" coords="199,461,377,488"/>
-<area shape="rect" id="node12" href="$classJson_1_1ObjectRequirement.html" title="Requirements on an object. " alt="" coords="203,512,373,539"/>
-<area shape="rect" id="node13" href="$classJson_1_1OneOfRequirement.html" title="Requires exactly one of a list of Requirements to hold. " alt="" coords="203,563,373,589"/>
-<area shape="rect" id="node14" href="$classJson_1_1StringRequirement.html" title="Requirements on strings. " alt="" coords="205,613,371,640"/>
+<area shape="rect" id="node1" title="Requirements on input files." alt="" coords="5,309,137,336"/>
+<area shape="rect" id="node2" href="$classJson_1_1AllOfRequirement.html" title="Requires that all of a list of Requirements hold." alt="" coords="207,5,369,32"/>
+<area shape="rect" id="node3" href="$classJson_1_1AnyOfRequirement.html" title="Requires that at least one of a list of Requirements hold." alt="" coords="203,56,373,83"/>
+<area shape="rect" id="node4" href="$classJson_1_1ArrayRequirement.html" title="Array of Requirements." alt="" coords="207,107,369,133"/>
+<area shape="rect" id="node5" href="$classJson_1_1BooleanRequirement.html" title="Requires json value to be of type Bool." alt="" coords="199,157,377,184"/>
+<area shape="rect" id="node6" href="$classJson_1_1DependencyRequirement.html" title="Requires dependencies to be met." alt="" coords="185,208,391,235"/>
+<area shape="rect" id="node7" href="$classJson_1_1EnumRequirement.html" title="Requires entry to be member of an enum." alt="" coords="205,259,371,285"/>
+<area shape="rect" id="node8" href="$classJson_1_1IntegerRequirement.html" title="Requirements on Integer values." alt="" coords="202,309,374,336"/>
+<area shape="rect" id="node9" href="$classJson_1_1NotRequirement.html" title="Requires a given Requirement to fail." alt="" coords="211,360,365,387"/>
+<area shape="rect" id="node10" href="$classJson_1_1NullRequirement.html" title="Requires value to be of type Null." alt="" coords="211,411,365,437"/>
+<area shape="rect" id="node11" href="$classJson_1_1NumberRequirement.html" title="Requirements on a numeric value." alt="" coords="199,461,377,488"/>
+<area shape="rect" id="node12" href="$classJson_1_1ObjectRequirement.html" title="Requirements on an object." alt="" coords="203,512,373,539"/>
+<area shape="rect" id="node13" href="$classJson_1_1OneOfRequirement.html" title="Requires exactly one of a list of Requirements to hold." alt="" coords="203,563,373,589"/>
+<area shape="rect" id="node14" href="$classJson_1_1StringRequirement.html" title="Requirements on strings." alt="" coords="205,613,371,640"/>
 </map>
