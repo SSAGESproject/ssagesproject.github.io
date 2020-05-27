@@ -799,10 +799,8 @@ html .md-footer-meta.md-typeset a:focus, html .md-footer-meta.md-typeset a:hover
 }
 .md-footer-copyright__highlight {
     color: #92999f;
-    text-align: left;
-    margin-left: 10%;
+    text-align: center;
     font-size: 1.4em;
-    max-width: 350px;
 }
 .md-footer-social {
     margin: 0 .8rem;
