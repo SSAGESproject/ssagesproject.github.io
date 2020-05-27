@@ -1,7 +1,0 @@
-<map id="libMesh::PMLinearImplicitSystem::fixes" name="libMesh::PMLinearImplicitSystem::fixes">
-<area shape="rect" id="node2" href="$classlibMesh_1_1PMLinearImplicitSystem.html#aa9b48de0e75c65f423bc6df04dcc3076" title="libMesh::PMLinearImplicit\lSystem::write_out_single\l_particle" alt="" coords="225,5,397,61"/>
-<area shape="rect" id="node3" href="$classlibMesh_1_1PMLinearImplicitSystem.html#aca76f908fce0bb22f8d680d4792e8300" title="libMesh::PMLinearImplicit\lSystem::write_out_point\l_coordinate" alt="" coords="225,85,397,141"/>
-<area shape="rect" id="node5" href="$classlibMesh_1_1PMLinearImplicitSystem.html#a9baf5f9139b6747f759c971d7deedaed" title="libMesh::PMLinearImplicit\lSystem::write_point_csv" alt="" coords="225,165,397,206"/>
-<area shape="rect" id="node4" href="$classlibMesh_1_1PointMesh.html#a0fe0b2102de7fba2591a09d6a16193ac" title="libMesh::PointMesh\l::num_particles" alt="" coords="445,97,583,138"/>
-<area shape="rect" id="node6" href="$classlibMesh_1_1PointMesh.html#a9c38c608d55b6a8162c741b40701cf48" title="libMesh::PointMesh\l::particles" alt="" coords="445,165,583,206"/>
-</map>

@@ -1,7 +1,0 @@
-<map id="libMesh::FixPointSlitWallEmpiricalDNA::~FixPointSlitWallEmpiricalDNA" name="libMesh::FixPointSlitWallEmpiricalDNA::~FixPointSlitWallEmpiricalDNA">
-<area shape="rect" id="node2" href="$classlibMesh_1_1FixPointSlitWallEmpiricalDNA.html#a6ec28633308db0d50f0adb3475def8f3" title="libMesh::FixPointSlitWall\lEmpiricalDNA::initPointParticleType" alt="" coords="268,5,501,47"/>
-<area shape="rect" id="node3" href="$classlibMesh_1_1FixPointSlitWallEmpiricalDNA.html#a02ae9f674545e2401c8c9a55cfd80c92" title="Check if num of parameters are correct. " alt="" coords="297,71,472,112"/>
-<area shape="rect" id="node4" href="$classlibMesh_1_1FixPointSlitWallEmpiricalDNA.html#ad8ea855f1fc8bdb5486707f4b1e6461e" title="libMesh::FixPointSlitWall\lEmpiricalDNA::print_fix" alt="" coords="301,136,469,177"/>
-<area shape="rect" id="node5" href="$classlibMesh_1_1FixPointSlitWallEmpiricalDNA.html#ac743cccb57649fc7ce4191e5165a4e30" title="libMesh::FixPointSlitWall\lEmpiricalDNA::compute" alt="" coords="301,201,469,243"/>
-<area shape="rect" id="node6" href="$classlibMesh_1_1FixBase.html#a51a4a945996c9eeb7eeec553a48e3f19" title="libMesh::FixBase::polymer\l_wall_empirical_force" alt="" coords="549,201,727,243"/>
-</map>

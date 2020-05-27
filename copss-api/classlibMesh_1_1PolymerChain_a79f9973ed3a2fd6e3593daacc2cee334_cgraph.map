@@ -1,6 +1,0 @@
-<map id="libMesh::PolymerChain::check_chain" name="libMesh::PolymerChain::check_chain">
-<area shape="rect" id="node2" href="$classlibMesh_1_1PolymerChain.html#a76e0d616e7f5f2a5bc10649dc3d8e38e" title="libMesh::PolymerChain\l::bead_vector" alt="" coords="211,8,368,49"/>
-<area shape="rect" id="node5" href="$classlibMesh_1_1PMPeriodicBoundary.html#aaa464bb7c5e9cd48e604cec464a3541e" title="libMesh::PMPeriodicBoundary\l::correct_position" alt="" coords="416,71,613,112"/>
-<area shape="rect" id="node3" href="$classlibMesh_1_1PMPeriodicBoundary.html#a9fb35a9fbaf9ea6911ce1e8795064b6d" title="libMesh::PMPeriodicBoundary\l::point_vector" alt="" coords="416,5,613,47"/>
-<area shape="rect" id="node4" href="$classlibMesh_1_1PMPeriodicBoundary.html#add774759962454df0f2574edcdc54c53" title="libMesh::PMPeriodicBoundary\l::box_length" alt="" coords="661,39,859,80"/>
-</map>

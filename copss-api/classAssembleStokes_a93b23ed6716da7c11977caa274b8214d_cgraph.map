@@ -1,6 +1,0 @@
-<map id="AssembleStokes::select_boundary_side" name="AssembleStokes::select_boundary_side">
-<area shape="rect" id="node2" href="$classlibMesh_1_1PMLinearImplicitSystem.html#aa770d36bc9f7d48f6c576d6cf3230054" title="libMesh::PMLinearImplicit\lSystem::point_mesh" alt="" coords="230,5,402,47"/>
-<area shape="rect" id="node3" href="$classlibMesh_1_1PointMesh.html#abda634700da500bec06e2267505c00a7" title="libMesh::PointMesh\l::pm_periodic_boundary" alt="" coords="236,71,396,112"/>
-<area shape="rect" id="node4" href="$classlibMesh_1_1PMPeriodicBoundary.html#a66051ef0f9bbb9762571f0a99be1b9fe" title="libMesh::PMPeriodicBoundary\l::periodic_direction" alt="" coords="217,136,415,177"/>
-<area shape="rect" id="node5" href="$classlibMesh_1_1PMPeriodicBoundary.html#a334df31a59a78108c9b63691abdcfc05" title="libMesh::PMPeriodicBoundary\l::inlet_direction" alt="" coords="217,201,415,243"/>
-</map>

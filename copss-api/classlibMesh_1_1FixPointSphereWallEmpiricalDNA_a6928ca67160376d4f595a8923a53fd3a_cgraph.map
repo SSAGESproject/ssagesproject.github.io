@@ -1,7 +1,0 @@
-<map id="libMesh::FixPointSphereWallEmpiricalDNA::~FixPointSphereWallEmpiricalDNA" name="libMesh::FixPointSphereWallEmpiricalDNA::~FixPointSphereWallEmpiricalDNA">
-<area shape="rect" id="node2" href="$classlibMesh_1_1FixPointSphereWallEmpiricalDNA.html#ab18ebc0acb1b27b45224f719d6bd9caa" title="libMesh::FixPointSphereWall\lEmpiricalDNA::initPointParticleType" alt="" coords="289,5,523,47"/>
-<area shape="rect" id="node3" href="$classlibMesh_1_1FixPointSphereWallEmpiricalDNA.html#a7ce4a2aa426da482c3ccac5edfb707cb" title="Check if num of parameters are correct. " alt="" coords="311,71,501,112"/>
-<area shape="rect" id="node4" href="$classlibMesh_1_1FixPointSphereWallEmpiricalDNA.html#a73cee81f95ecd450f1a5463c8777518b" title="libMesh::FixPointSphereWall\lEmpiricalDNA::print_fix" alt="" coords="311,136,501,177"/>
-<area shape="rect" id="node5" href="$classlibMesh_1_1FixPointSphereWallEmpiricalDNA.html#a6dd63cbfb40cf0ef54277609058e940a" title="libMesh::FixPointSphereWall\lEmpiricalDNA::compute" alt="" coords="311,201,501,243"/>
-<area shape="rect" id="node6" href="$classlibMesh_1_1FixBase.html#a51a4a945996c9eeb7eeec553a48e3f19" title="libMesh::FixBase::polymer\l_wall_empirical_force" alt="" coords="571,201,748,243"/>
-</map>

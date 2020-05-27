@@ -1,7 +1,0 @@
-<map id="libMesh::ParticleMesh::mesh" name="libMesh::ParticleMesh::mesh">
-<area shape="rect" id="node2" href="$classlibMesh_1_1ParticleMesh.html#a6b89e508f6dc717a0486ac779b8382c1" title="libMesh::ParticleMesh\l::write_particle_mesh" alt="" coords="204,5,355,47"/>
-<area shape="rect" id="node6" href="$classlibMesh_1_1ParticleMesh.html#af122bb636f2be1c5f5ae4e606d94c786" title="libMesh::ParticleMesh\l::stitched_mesh" alt="" coords="204,71,355,112"/>
-<area shape="rect" id="node3" href="$classlibMesh_1_1ParticleMesh.html#a34c0aafa7eb4d9d739ba553f9d0533b9" title="libMesh::ParticleMesh\l::write_particle" alt="" coords="403,68,553,109"/>
-<area shape="rect" id="node4" href="$classlibMesh_1_1CopssRigidParticleSystem.html#a46fa2a2d748913f826b0df18349e4e74" title="libMesh::CopssRigidParticle\lSystem::write_object" alt="" coords="601,68,788,109"/>
-<area shape="rect" id="node5" href="$classlibMesh_1_1CopssRigidParticleSystem.html#a0b6eb440298637301e3f50ca7d6dca12" title="libMesh::CopssRigidParticle\lSystem::update_object" alt="" coords="836,68,1023,109"/>
-</map>

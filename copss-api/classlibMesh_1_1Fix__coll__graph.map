@@ -1,7 +1,0 @@
-<map id="libMesh::Fix" name="libMesh::Fix">
-<area shape="rect" id="node2" href="$classlibMesh_1_1PMLinearImplicitSystem.html" title="libMesh::PMLinearImplicit\lSystem" alt="" coords="642,63,814,104"/>
-<area shape="rect" id="node4" href="$classlibMesh_1_1PointMesh.html" title="libMesh::PointMesh\&lt; 3 \&gt;" alt="" coords="301,17,469,43"/>
-<area shape="rect" id="node7" href="$classlibMesh_1_1ParticleMesh.html" title="libMesh::ParticleMesh\&lt; 3 \&gt;" alt="" coords="293,122,476,149"/>
-<area shape="rect" id="node9" href="$classlibMesh_1_1FixBase.html" title="libMesh::FixBase" alt="" coords="667,129,789,155"/>
-<area shape="rect" id="node12" href="$classlibMesh_1_1PMPeriodicBoundary.html" title="libMesh::PMPeriodicBoundary" alt="" coords="629,325,827,351"/>
-</map>

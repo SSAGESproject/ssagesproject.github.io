@@ -1,5 +1,0 @@
-<map id="libMesh::FixRigidSedimentation::~FixRigidSedimentation" name="libMesh::FixRigidSedimentation::~FixRigidSedimentation">
-<area shape="rect" id="node2" href="$classlibMesh_1_1FixRigidSedimentation.html#aa06ea53e9c0c846b095e0055f03a9a1f" title="libMesh::FixRigidSedimentation\l::print_fix" alt="" coords="260,5,467,47"/>
-<area shape="rect" id="node3" href="$classlibMesh_1_1FixRigidSedimentation.html#ace0024b5172b5749298453268f760b57" title="Check if num of parameters are correct. " alt="" coords="260,71,467,112"/>
-<area shape="rect" id="node4" href="$classlibMesh_1_1FixRigidSedimentation.html#a42542c0336a1aaf5aa3ad856128047f9" title="libMesh::FixRigidSedimentation\l::compute" alt="" coords="260,136,467,177"/>
-</map>

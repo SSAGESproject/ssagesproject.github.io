@@ -1,8 +1,0 @@
-<map id="libMesh::CopssPointParticleSystem::update_object" name="libMesh::CopssPointParticleSystem::update_object">
-<area shape="rect" id="node2" href="$classlibMesh_1_1PolymerChain.html#a79f9973ed3a2fd6e3593daacc2cee334" title="libMesh::PolymerChain\l::check_chain" alt="" coords="259,37,416,79"/>
-<area shape="rect" id="node7" href="$classPMToolBox.html#ad2bbf19ea02bcf7c94d2873430ba62f2" title="PMToolBox::output_message" alt="" coords="240,103,435,130"/>
-<area shape="rect" id="node3" href="$classlibMesh_1_1PolymerChain.html#a76e0d616e7f5f2a5bc10649dc3d8e38e" title="libMesh::PolymerChain\l::bead_vector" alt="" coords="483,8,640,49"/>
-<area shape="rect" id="node6" href="$classlibMesh_1_1PMPeriodicBoundary.html#aaa464bb7c5e9cd48e604cec464a3541e" title="libMesh::PMPeriodicBoundary\l::correct_position" alt="" coords="688,71,885,112"/>
-<area shape="rect" id="node4" href="$classlibMesh_1_1PMPeriodicBoundary.html#a9fb35a9fbaf9ea6911ce1e8795064b6d" title="libMesh::PMPeriodicBoundary\l::point_vector" alt="" coords="688,5,885,47"/>
-<area shape="rect" id="node5" href="$classlibMesh_1_1PMPeriodicBoundary.html#add774759962454df0f2574edcdc54c53" title="libMesh::PMPeriodicBoundary\l::box_length" alt="" coords="933,39,1131,80"/>
-</map>

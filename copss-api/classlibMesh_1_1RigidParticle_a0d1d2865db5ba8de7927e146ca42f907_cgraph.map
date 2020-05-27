@@ -1,5 +1,0 @@
-<map id="libMesh::RigidParticle::update_mesh" name="libMesh::RigidParticle::update_mesh">
-<area shape="rect" id="node2" href="$classlibMesh_1_1RigidParticle.html#a9a05c129aa928e2bd99250fb2b34bdae" title="libMesh::RigidParticle\l::compute_centroid" alt="" coords="221,5,370,47"/>
-<area shape="rect" id="node3" href="$classlibMesh_1_1RigidParticle.html#a15294f1b806232661d91aceef252d5ec" title="compute body velocity each node of this rigid particle does not have member velocity so we can only c..." alt="" coords="203,71,388,112"/>
-<area shape="rect" id="node4" href="$classlibMesh_1_1RigidParticle.html#ae14c0deaa107414e540c5ecbfb13437f" title="compute body force " alt="" coords="211,136,380,177"/>
-</map>

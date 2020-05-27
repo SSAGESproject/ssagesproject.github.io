@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" >
+  <generator uri="https://jekyllrb.com/" version="4.0.1">Jekyll</generator>
+  <link href="/dev/feed.xml" rel="self" type="application/atom+xml" />
+  <link href="/dev/" rel="alternate" type="text/html" />
+  <updated>2020-05-26T17:29:42+00:00</updated>
+  <id>/feed.xml</id>
+  <title type="html">SSAGES</title>
+  <subtitle>Suite for Advanced General Ensemble Simulations.</subtitle>
+  <author><name>The SSAGES Team</name></author>
+  <entry>
+  <title type="html">SSAGES Blog</title>
+  <link href="/posts/2020-05-26-initial-post" rel="alternate" type="text/html" title="SSAGES Blog" /> 
+  <published>2020-05-26T00:00:00+00:00</published><updated>2020-12-26T00:00:00+00:00</updated>
+  <id>/posts/initial-post</id>
+  <content type="html" xml:base="/posts/2020-05-26-initial-post">
+    &lt;p&gt;All good open source projects should have a blog, and SSAGES is one such
+    project. Later on, members of the SSAGES team may be populating this feed with posts
+    on topics like&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;Interesting things you can do with SSAGES, or interesting things we have seen others do.&lt;/li&gt;
+      &lt;li&gt;Development updates and major release announcements.&lt;/li&gt;
+      &lt;li&gt;Research updates.&lt;/li&gt;
+      &lt;li&gt;Explorations of SSAGES’s internals.&lt;/li&gt;
+    &lt;/ul&gt;
+
+    &lt;p&gt;Stay tuned!&lt;/p&gt;
+  </content>
+  <author><name>Pablo Zubieta</name></author>
+  <summary type="html">
+    All good open source projects should have a blog, and SSAGES is one such project.
+    Later on, members of the SSAGES team may be populating this feed with
+    posts on topics like
+  </summary>
+  </entry>
+</feed>

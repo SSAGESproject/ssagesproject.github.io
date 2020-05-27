@@ -1,5 +1,0 @@
-<map id="libMesh::ParticleMesh::pm_periodic_boundary" name="libMesh::ParticleMesh::pm_periodic_boundary">
-<area shape="rect" id="node2" href="$classlibMesh_1_1FixRigidSurfaceConstraint.html#a92939c517b0bad8e7a40496fc6f69783" title="libMesh::FixRigidSurface\lConstraint::compute" alt="" coords="213,13,381,54"/>
-<area shape="rect" id="node4" href="$classlibMesh_1_1PointMesh.html#afc502b594c7e67a0324bc144c29735b1" title="libMesh::PointMesh\l::PointMesh" alt="" coords="229,78,366,119"/>
-<area shape="rect" id="node3" href="$classlibMesh_1_1FixRigidSurfaceConstraint.html#a100017634cf6034459841391fe9839f2" title="libMesh::FixRigidSurface\lConstraint::~FixRigidSurface\lConstraint" alt="" coords="429,5,620,61"/>
-</map>

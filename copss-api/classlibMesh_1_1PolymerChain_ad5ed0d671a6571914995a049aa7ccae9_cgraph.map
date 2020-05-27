@@ -1,5 +1,0 @@
-<map id="libMesh::PolymerChain::end_to_end_vector_square" name="libMesh::PolymerChain::end_to_end_vector_square">
-<area shape="rect" id="node2" href="$classlibMesh_1_1PolymerChain.html#a76e0d616e7f5f2a5bc10649dc3d8e38e" title="libMesh::PolymerChain\l::bead_vector" alt="" coords="240,5,397,47"/>
-<area shape="rect" id="node3" href="$classlibMesh_1_1PMPeriodicBoundary.html#a9fb35a9fbaf9ea6911ce1e8795064b6d" title="libMesh::PMPeriodicBoundary\l::point_vector" alt="" coords="445,5,643,47"/>
-<area shape="rect" id="node4" href="$classlibMesh_1_1PMPeriodicBoundary.html#add774759962454df0f2574edcdc54c53" title="libMesh::PMPeriodicBoundary\l::box_length" alt="" coords="691,5,888,47"/>
-</map>

@@ -1,7 +1,0 @@
-<map id="libMesh::CopssPointParticleSystem::create_object" name="libMesh::CopssPointParticleSystem::create_object">
-<area shape="rect" id="node2" href="$classlibMesh_1_1PolymerChain.html#acdcda7e9ac26e97f2e9993a01f6e843e" title="libMesh::PolymerChain\l::read_data_vtk" alt="" coords="240,5,397,47"/>
-<area shape="rect" id="node4" href="$classlibMesh_1_1PolymerChain.html#a88e2f02276f1adab64baf9f483b7ee7b" title="libMesh::PolymerChain\l::read_data_csv" alt="" coords="240,136,397,177"/>
-<area shape="rect" id="node6" href="$classlibMesh_1_1PolymerChain.html#a9d79ffa8b94ab68095c6bbe90b31ad55" title="libMesh::PolymerChain\l::read_data_pizza" alt="" coords="240,71,397,112"/>
-<area shape="rect" id="node3" href="$classlibMesh_1_1PolymerChain.html#ad4f18d8d13af5f53518b115e653356cd" title="libMesh::PolymerChain\l::chain_id" alt="" coords="445,71,603,112"/>
-<area shape="rect" id="node5" href="$classlibMesh_1_1PointParticle.html#af12bd1e839420ab98ca797ac6235f8f8" title="libMesh::PointParticle\l::set_parent_id" alt="" coords="449,136,599,177"/>
-</map>

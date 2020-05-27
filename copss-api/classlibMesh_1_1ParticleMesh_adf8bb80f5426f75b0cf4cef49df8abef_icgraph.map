@@ -1,6 +1,0 @@
-<map id="libMesh::ParticleMesh::write_particle_trajectory" name="libMesh::ParticleMesh::write_particle_trajectory">
-<area shape="rect" id="node2" href="$classlibMesh_1_1ParticleMesh.html#a34c0aafa7eb4d9d739ba553f9d0533b9" title="libMesh::ParticleMesh\l::write_particle" alt="" coords="221,64,372,105"/>
-<area shape="rect" id="node3" href="$classlibMesh_1_1ParticleMesh.html#a3ff156ce68ed98e89cb5a85ce26681ce" title="libMesh::ParticleMesh\l\&lt; 3 \&gt;::mesh" alt="" coords="438,5,589,47"/>
-<area shape="rect" id="node4" href="$classlibMesh_1_1CopssRigidParticleSystem.html#a46fa2a2d748913f826b0df18349e4e74" title="libMesh::CopssRigidParticle\lSystem::write_object" alt="" coords="420,71,607,112"/>
-<area shape="rect" id="node5" href="$classlibMesh_1_1CopssRigidParticleSystem.html#a0b6eb440298637301e3f50ca7d6dca12" title="libMesh::CopssRigidParticle\lSystem::update_object" alt="" coords="655,71,841,112"/>
-</map>

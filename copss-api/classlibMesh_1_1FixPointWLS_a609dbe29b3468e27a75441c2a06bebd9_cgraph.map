@@ -1,5 +1,0 @@
-<map id="libMesh::FixPointWLS::FixPointWLS" name="libMesh::FixPointWLS::FixPointWLS">
-<area shape="rect" id="node2" href="$classlibMesh_1_1FixPointWLS.html#a55f05c16ab3c693f6456dd8655bf38c5" title="libMesh::FixPointWLS\l::initPointParticleType" alt="" coords="205,5,357,47"/>
-<area shape="rect" id="node3" href="$classlibMesh_1_1FixPointWLS.html#a53045f37175467f2f20701ca3f9dc329" title="Check if num of parameters are correct. " alt="" coords="205,71,357,112"/>
-<area shape="rect" id="node4" href="$classlibMesh_1_1PointMesh.html#a2f517b077d4c1c37e0ba60f1ed6ccc25" title="libMesh::PointMesh\l::polymer_chain" alt="" coords="405,71,543,112"/>
-</map>

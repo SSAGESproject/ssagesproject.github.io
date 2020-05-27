@@ -1,6 +1,0 @@
-<map id="libMesh::Fix::initialization" name="libMesh::Fix::initialization">
-<area shape="rect" id="node2" href="$classlibMesh_1_1PMLinearImplicitSystem.html#aa770d36bc9f7d48f6c576d6cf3230054" title="libMesh::PMLinearImplicit\lSystem::point_mesh" alt="" coords="223,5,395,47"/>
-<area shape="rect" id="node3" href="$classlibMesh_1_1PointMesh.html#abda634700da500bec06e2267505c00a7" title="libMesh::PointMesh\l::pm_periodic_boundary" alt="" coords="229,71,389,112"/>
-<area shape="rect" id="node4" href="$classlibMesh_1_1PointMesh.html#a0fe0b2102de7fba2591a09d6a16193ac" title="libMesh::PointMesh\l::num_particles" alt="" coords="240,136,377,177"/>
-<area shape="rect" id="node5" href="$classlibMesh_1_1PointMesh.html#a9c38c608d55b6a8162c741b40701cf48" title="libMesh::PointMesh\l::particles" alt="" coords="240,201,377,243"/>
-</map>

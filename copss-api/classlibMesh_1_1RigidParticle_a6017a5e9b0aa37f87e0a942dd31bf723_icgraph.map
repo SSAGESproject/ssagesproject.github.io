@@ -1,5 +1,0 @@
-<map id="libMesh::RigidParticle::num_mesh_elem" name="libMesh::RigidParticle::num_mesh_elem">
-<area shape="rect" id="node2" href="$classlibMesh_1_1RigidParticle.html#ad45dfc47a17b8ac651835ab4a05acb92" title="libMesh::RigidParticle\l::print_info" alt="" coords="207,5,356,47"/>
-<area shape="rect" id="node4" href="$classlibMesh_1_1RigidParticle.html#a90af7cf9dd481d6fd2b0df63cf8bda5a" title="libMesh::RigidParticle\l::mesh_spring_network" alt="" coords="203,71,360,112"/>
-<area shape="rect" id="node3" href="$classlibMesh_1_1RigidParticle.html#a83997898612b21a26353dcbf8b1d984b" title="libMesh::RigidParticle\l::get_particle_shape" alt="" coords="408,5,557,47"/>
-</map>

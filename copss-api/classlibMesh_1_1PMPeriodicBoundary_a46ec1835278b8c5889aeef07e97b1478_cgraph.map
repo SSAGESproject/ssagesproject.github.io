@@ -1,6 +1,0 @@
-<map id="libMesh::PMPeriodicBoundary::build_image_elem" name="libMesh::PMPeriodicBoundary::build_image_elem">
-<area shape="rect" id="node2" href="$classlibMesh_1_1PMPeriodicBoundary.html#a3b5c56c073a77040314d8b975c4b3321" title="libMesh::PMPeriodicBoundary\l::image_elem" alt="" coords="251,5,448,47"/>
-<area shape="rect" id="node3" href="$classlibMesh_1_1PMPeriodicBoundary.html#add774759962454df0f2574edcdc54c53" title="libMesh::PMPeriodicBoundary\l::box_length" alt="" coords="496,35,693,76"/>
-<area shape="rect" id="node4" href="$classlibMesh_1_1PMPeriodicBoundary.html#a9a319b885feb0526d605e7a8773ce19f" title="libMesh::PMPeriodicBoundary\l::box_min" alt="" coords="251,123,448,164"/>
-<area shape="rect" id="node5" href="$classlibMesh_1_1PMPeriodicBoundary.html#a838a2b78010d3e6f4c652f6328d648f0" title="libMesh::PMPeriodicBoundary\l::box_max" alt="" coords="251,188,448,229"/>
-</map>

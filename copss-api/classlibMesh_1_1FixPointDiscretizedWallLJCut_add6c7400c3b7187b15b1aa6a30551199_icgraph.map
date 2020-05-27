@@ -1,5 +1,0 @@
-<map id="libMesh::FixPointDiscretizedWallLJCut::read_wall_particle" name="libMesh::FixPointDiscretizedWallLJCut::read_wall_particle">
-<area shape="rect" id="node2" href="$classlibMesh_1_1FixPointDiscretizedWallLJCut.html#a09ee2be4187490d0160cc9cc17faf7b1" title="Check if num of parameters are correct. " alt="" coords="248,19,437,60"/>
-<area shape="rect" id="node4" href="$classlibMesh_1_1FixPointDiscretizedWallLJCut.html#aef8f7a18b7dd8a2b6c5325ec48d44940" title="libMesh::FixPointDiscretized\lWallLJCut::~FixPointDiscretized\lWallLJCut" alt="" coords="512,70,725,126"/>
-<area shape="rect" id="node3" href="$classlibMesh_1_1FixPointDiscretizedWallLJCut.html#aa48ead9fe36a1eded824c003ff8c03f6" title="libMesh::FixPointDiscretized\lWallLJCut::FixPointDiscretizedWallLJCut" alt="" coords="485,5,752,47"/>
-</map>

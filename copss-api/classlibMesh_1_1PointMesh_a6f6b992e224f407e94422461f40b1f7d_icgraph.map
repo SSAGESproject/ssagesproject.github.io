@@ -1,8 +1,0 @@
-<map id="libMesh::PointMesh::minimum_bead_velocity" name="libMesh::PointMesh::minimum_bead_velocity">
-<area shape="rect" id="node2" href="$classlibMesh_1_1Copss.html#a3be7ef403a2572be6b2ff7d9374ea0a9" title="libMesh::Copss::fixman\l_integrate" alt="" coords="441,103,601,144"/>
-<area shape="rect" id="node7" href="$classlibMesh_1_1Copss.html#af991ef70f03d6235a8bad891e8b876c7" title="libMesh::Copss::langevin\l_integrate" alt="" coords="224,44,393,85"/>
-<area shape="rect" id="node3" href="$classlibMesh_1_1CopssPointParticleSystem.html#a36c907027adfded5d7314bdb156f3c9b" title="libMesh::CopssPointParticle\lSystem::run" alt="" coords="649,92,836,133"/>
-<area shape="rect" id="node5" href="$classlibMesh_1_1CopssRigidParticleSystem.html#ad0df37302c3bd42a8dc8ee267e791cc0" title="libMesh::CopssRigidParticle\lSystem::run" alt="" coords="649,5,836,47"/>
-<area shape="rect" id="node4" href="$POINTPARTICLE_2main_8C.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="884,99,935,126"/>
-<area shape="rect" id="node6" href="$RIGIDPARTICLE_2main_8C.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="884,13,935,39"/>
-</map>

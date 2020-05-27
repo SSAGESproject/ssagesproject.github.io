@@ -1,5 +1,0 @@
-<map id="libMesh::PMSystemStokes" name="libMesh::PMSystemStokes">
-<area shape="rect" id="node2" href="$classlibMesh_1_1PMLinearImplicitSystem.html" title="libMesh::PMLinearImplicit\lSystem" alt="" coords="605,49,777,90"/>
-<area shape="rect" id="node4" href="$classlibMesh_1_1PointMesh.html" title="libMesh::PointMesh\&lt; 3 \&gt;" alt="" coords="289,56,457,83"/>
-<area shape="rect" id="node7" href="$classlibMesh_1_1ParticleMesh.html" title="libMesh::ParticleMesh\&lt; 3 \&gt;" alt="" coords="281,107,464,133"/>
-</map>

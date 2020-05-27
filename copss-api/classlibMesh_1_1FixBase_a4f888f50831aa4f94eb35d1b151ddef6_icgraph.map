@@ -1,6 +1,0 @@
-<map id="libMesh::FixBase::gaussian_force" name="libMesh::FixBase::gaussian_force">
-<area shape="rect" id="node2" href="$classlibMesh_1_1FixPointGaussian.html#a715b20fc40bb627059b06c8a5e2cf4a8" title="libMesh::FixPointGaussian\l::compute" alt="" coords="236,5,415,47"/>
-<area shape="rect" id="node4" href="$classlibMesh_1_1FixPointGaussianDNA.html#aec61a6687479e0ce6b95dbf144e0f414" title="libMesh::FixPointGaussian\lDNA::compute" alt="" coords="236,71,415,112"/>
-<area shape="rect" id="node3" href="$classlibMesh_1_1FixPointGaussian.html#a657d3c8ddcdd5fcad2cf347250f719f5" title="libMesh::FixPointGaussian\l::~FixPointGaussian" alt="" coords="473,5,651,47"/>
-<area shape="rect" id="node5" href="$classlibMesh_1_1FixPointGaussianDNA.html#a098b6e4ea0754ff77a5df2049a61b014" title="libMesh::FixPointGaussian\lDNA::~FixPointGaussianDNA" alt="" coords="463,71,661,112"/>
-</map>

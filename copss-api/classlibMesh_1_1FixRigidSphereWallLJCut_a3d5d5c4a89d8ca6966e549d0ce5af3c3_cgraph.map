@@ -1,6 +1,0 @@
-<map id="libMesh::FixRigidSphereWallLJCut::~FixRigidSphereWallLJCut" name="libMesh::FixRigidSphereWallLJCut::~FixRigidSphereWallLJCut">
-<area shape="rect" id="node2" href="$classlibMesh_1_1FixRigidSphereWallLJCut.html#a2d896391f1c0686364b700a079510377" title="Check if num of parameters are correct. " alt="" coords="276,5,467,47"/>
-<area shape="rect" id="node3" href="$classlibMesh_1_1FixRigidSphereWallLJCut.html#a5a96ee7ad25b641d4a5ab4c320dabdfa" title="libMesh::FixRigidSphereWall\lLJCut::print_fix" alt="" coords="276,71,467,112"/>
-<area shape="rect" id="node4" href="$classlibMesh_1_1FixRigidSphereWallLJCut.html#a3297e4e10bfedb79d661805a2168b011" title="libMesh::FixRigidSphereWall\lLJCut::compute" alt="" coords="276,136,467,177"/>
-<area shape="rect" id="node5" href="$classlibMesh_1_1FixBase.html#acf832d0d4715b8dc86994dd48c2df1a2" title="libMesh::FixBase::lj\l_force" alt="" coords="515,136,652,177"/>
-</map>

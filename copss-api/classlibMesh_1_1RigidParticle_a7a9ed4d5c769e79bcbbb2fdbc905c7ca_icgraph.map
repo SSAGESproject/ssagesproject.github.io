@@ -1,7 +1,0 @@
-<map id="libMesh::RigidParticle::read_mesh" name="libMesh::RigidParticle::read_mesh">
-<area shape="rect" id="node2" href="$classlibMesh_1_1ParticleMesh.html#a8e07c712184d9b6a7ef94bff2cbb54e6" title="libMesh::ParticleMesh\l::read_particles_data" alt="" coords="206,5,357,47"/>
-<area shape="rect" id="node3" href="$classlibMesh_1_1ParticleMesh.html#ac0717118bd6d3b8a5dae123f6f6f956d" title="libMesh::ParticleMesh\l::read_particles_data\l_restart" alt="" coords="206,70,357,126"/>
-<area shape="rect" id="node6" href="$classlibMesh_1_1RigidParticle.html#a90af7cf9dd481d6fd2b0df63cf8bda5a" title="libMesh::RigidParticle\l::mesh_spring_network" alt="" coords="203,149,360,191"/>
-<area shape="rect" id="node4" href="$classlibMesh_1_1CopssRigidParticleSystem.html#a43385b16835b73bf012b1fb6514b56e9" title="libMesh::CopssRigidParticle\lSystem::create_object" alt="" coords="408,77,595,119"/>
-<area shape="rect" id="node5" href="$classlibMesh_1_1CopssRigidParticleSystem.html#a502b6bdc84a5f4dd8906834247533da8" title="libMesh::CopssRigidParticle\lSystem::create_object_mesh" alt="" coords="643,77,835,119"/>
-</map>
