@@ -1,0 +1,5 @@
+<map id="SSAGES::Snapshot::GetKb" name="SSAGES::Snapshot::GetKb">
+<area shape="rect" id="node1" title="Get system Kb." alt="" coords="260,31,445,57"/>
+<area shape="rect" id="node2" href="$classSSAGES_1_1BFS.html#a6b4639e309cbaffa82113f2577c065c4" title="Method call post integration." alt="" coords="5,5,212,32"/>
+<area shape="rect" id="node3" href="$classSSAGES_1_1ANN.html#a86e2611b4516c8a465014919139aae19" title="Method call prior to simulation initiation." alt="" coords="7,56,210,83"/>
+</map>

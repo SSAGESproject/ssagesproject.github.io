@@ -1,7 +1,13 @@
 <map id="SSAGES::RMSDCV::Evaluate" name="SSAGES::RMSDCV::Evaluate">
-<area shape="rect" id="node2" href="$classSSAGES_1_1Snapshot.html#aa0063a19760ed14f163c0dec36582347" title="Access the atom IDs. " alt="" coords="257,5,478,32"/>
-<area shape="rect" id="node3" href="$classSSAGES_1_1Snapshot.html#aee700ad3c3b9c466ad3f52b8d2ede6d6" title="Access the particles image flags. " alt="" coords="265,57,470,98"/>
-<area shape="rect" id="node4" href="$classSSAGES_1_1Snapshot.html#a035ed6fb2cd46d4f66d1614bd90ad14b" title="Const access to the particle masses. " alt="" coords="260,123,475,149"/>
-<area shape="rect" id="node5" href="$classSSAGES_1_1Snapshot.html#aee2ceb317884bc5e0105b9824b5026d3" title="Access the particle positions. " alt="" coords="256,173,479,200"/>
-<area shape="rect" id="node6" href="$classSSAGES_1_1Snapshot.html#abf25a3209e9afcf7e78cfd6ff6e5aa0d" title="Unwrap a vector&#39;s real coordinates according to its image replica count. " alt="" coords="271,225,464,266"/>
+<area shape="rect" id="node1" title="Evaluate the CV." alt="" coords="5,217,208,243"/>
+<area shape="rect" id="node2" href="$classSSAGES_1_1Snapshot.html#ad6caa5b92433501fd4a62deef288340a" title="Apply minimum image to a vector." alt="" coords="266,5,501,47"/>
+<area shape="rect" id="node4" href="$classSSAGES_1_1Snapshot.html#a8195dc7a8a536999f63e20b4cb86639b" title=" " alt="" coords="290,71,477,112"/>
+<area shape="rect" id="node5" href="$classSSAGES_1_1Snapshot.html#a77cfe35b720393223aa5c7410b2dd3ad" title="Compute the total mass of a group of particles based on index." alt="" coords="559,107,768,134"/>
+<area shape="rect" id="node6" href="$classSSAGES_1_1Snapshot.html#a4811c9435e56196d5525832345ef1680" title="Get communicator for walker." alt="" coords="256,187,511,214"/>
+<area shape="rect" id="node7" href="$classSSAGES_1_1Snapshot.html#a196a91c541c72bcb5147b9e60a44ea8b" title=" " alt="" coords="283,239,483,280"/>
+<area shape="rect" id="node9" href="$classSSAGES_1_1Snapshot.html#abef8348e7811deeea88a7ff8f49a1af4" title="Const access to the particle masses." alt="" coords="276,305,491,331"/>
+<area shape="rect" id="node10" href="$classSSAGES_1_1Snapshot.html#a103af07a012d55a9637f6203c7eba0af" title="Get number of atoms in this snapshot." alt="" coords="285,356,482,397"/>
+<area shape="rect" id="node11" href="$classSSAGES_1_1Snapshot.html#a91852084d69a0703a8fcc9b27dc50459" title="Access the particle positions." alt="" coords="272,422,495,449"/>
+<area shape="rect" id="node3" href="$namespaceSSAGES.html#a49bb77a1b5822888753c96c70780ab47" title="Quick helper function to round a double." alt="" coords="603,13,724,39"/>
+<area shape="rect" id="node8" href="$classSSAGES_1_1Snapshot.html#a7146597433bcfd256385db274330cd36" title="Gets the local atom index corresponding to an atom ID." alt="" coords="563,239,763,280"/>
 </map>

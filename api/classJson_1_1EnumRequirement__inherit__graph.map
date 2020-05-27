@@ -1,3 +1,4 @@
 <map id="Json::EnumRequirement" name="Json::EnumRequirement">
-<area shape="rect" id="node2" href="$classJson_1_1Requirement.html" title="Requirements on input files. " alt="" coords="23,5,155,32"/>
+<area shape="rect" id="node1" title="Requires entry to be member of an enum." alt="" coords="5,80,172,107"/>
+<area shape="rect" id="node2" href="$classJson_1_1Requirement.html" title="Requirements on input files." alt="" coords="23,5,155,32"/>
 </map>

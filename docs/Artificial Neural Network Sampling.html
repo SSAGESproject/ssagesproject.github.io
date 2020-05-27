@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Artificial Neural Network Sampling &mdash; SSAGES v0.8.5-alpha documentation</title>
+  <title>Artificial Neural Network Sampling &mdash; SSAGES 0.8.6 documentation</title>
   
 
   
@@ -21,11 +21,11 @@
   
     
       <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
-        <script type="text/javascript" src="_static/jquery.js"></script>
-        <script type="text/javascript" src="_static/underscore.js"></script>
-        <script type="text/javascript" src="_static/doctools.js"></script>
-        <script type="text/javascript" src="_static/language_data.js"></script>
-        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+        <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
     
     <script type="text/javascript" src="_static/js/theme.js"></script>
 
@@ -61,7 +61,7 @@
             
             
               <div class="version">
-                0.8.5
+                0.8.6
               </div>
             
           
@@ -189,7 +189,7 @@
 <p>Artificial Neural Network (ANN) sampling is a free energy sampling method which uses
 ANNs to generate an on-the-fly adaptive bias capable of rapidly resolving free
 energy landscapes. It is a recent method proposed by Sidky &amp; Whitmer
-<a class="reference internal" href="zReferences.html#sidky2018104111" id="id2">[19]</a> which is demonstrated to be robust to user inputs and
+<a class="bibtex reference internal" href="zReferences.html#sidky2018104111" id="id2">[19]</a> which is demonstrated to be robust to user inputs and
 requires a minimal number of parameters. It is quite simple to use as described below.</p>
 <p>Like Basis Function Sampling, the algorithm proceeds in sweeps. Statistics are
 collected over a user specified interval, which is a very flexible choice. At
@@ -197,7 +197,7 @@ the end of each sweep an ANN is fit to the statistics to determine the optimal
 bias which is then applied in the subsequent sweep. This proceeds until the
 free energy landscape has converged.</p>
 <p>Detailed information on the method and implementation can be found in
-the publication <a class="reference internal" href="zReferences.html#sidky2018104111" id="id3">[19]</a>.</p>
+the publication <a class="bibtex reference internal" href="zReferences.html#sidky2018104111" id="id3">[19]</a>.</p>
 </div>
 <div class="section" id="options-parameters">
 <h2>Options &amp; Parameters<a class="headerlink" href="#options-parameters" title="Permalink to this headline">¶</a></h2>
@@ -239,8 +239,8 @@ This specifies the name of the output file containing the bias and
 reweighted histogram.</p>
 </dd>
 <dt>overwrite_output</dt><dd><p><em>boolean</em>
-(Default = true)
-Setting this to false will append the sweep number to the output file name
+(Default = <code class="docutils literal notranslate"><span class="pre">true</span></code>)
+Setting this to <code class="docutils literal notranslate"><span class="pre">false</span></code> will append the sweep number to the output file name
 so that a series of files will be created over time. This is useful if a
 user is interested in plotting the evolution of the bias over time.</p>
 </dd>
@@ -408,8 +408,8 @@ such as <a class="reference external" href="https://www.tensorflow.org/">TensorF
 </div>
 <p>The network can then be evaluated on a high-resolution grid and plotted.</p>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Define new high-resolution grid.</span>
-<span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="o">-</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">,</span> <span class="mi">500</span><span class="p">,</span> <span class="n">endpoint</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
-<span class="n">y</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="o">-</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">,</span> <span class="mi">500</span><span class="p">,</span> <span class="n">endpoint</span><span class="o">=</span><span class="bp">True</span><span class="p">)</span>
+<span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="o">-</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">,</span> <span class="mi">500</span><span class="p">,</span> <span class="n">endpoint</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">y</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="o">-</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">,</span> <span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="p">,</span> <span class="mi">500</span><span class="p">,</span> <span class="n">endpoint</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
 <span class="n">xg</span><span class="p">,</span> <span class="n">yg</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">meshgrid</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
 
 <span class="c1"># Scale data.</span>
@@ -441,7 +441,7 @@ such as <a class="reference external" href="https://www.tensorflow.org/">TensorF
 </ul>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
-<p>Please make sure to cite the paper <a class="reference internal" href="zReferences.html#sidky2018104111" id="id4">[19]</a> if you use
+<p>Please make sure to cite the paper <a class="bibtex reference internal" href="zReferences.html#sidky2018104111" id="id4">[19]</a> if you use
 this method!</p>
 </div>
 </div>
@@ -469,7 +469,7 @@ this method!</p>
     <p>
         &copy; Copyright 2018, the SSAGES Team
       <span class="lastupdated">
-        Last updated on Aug 23, 2019.
+        Last updated on May 27, 2020.
       </span>
 
     </p>

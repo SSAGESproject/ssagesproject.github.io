@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Elastic Band &mdash; SSAGES v0.8.5-alpha documentation</title>
+  <title>Elastic Band &mdash; SSAGES 0.8.6 documentation</title>
   
 
   
@@ -21,11 +21,11 @@
   
     
       <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
-        <script type="text/javascript" src="_static/jquery.js"></script>
-        <script type="text/javascript" src="_static/underscore.js"></script>
-        <script type="text/javascript" src="_static/doctools.js"></script>
-        <script type="text/javascript" src="_static/language_data.js"></script>
-        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+        <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
     
     <script type="text/javascript" src="_static/js/theme.js"></script>
 
@@ -61,7 +61,7 @@
             
             
               <div class="version">
-                0.8.5
+                0.8.6
               </div>
             
           
@@ -194,7 +194,7 @@ has no perpendicular component. By finding the MEP, one also finds the saddle
 points of the potential energy surface, as they are by definition the maxima of
 the MEP. The <em>Nudged Elastic Band</em> (NEB) method is a popular and efficient
 method to calculate the MEP between the initial and final state of a transition
-<a class="reference internal" href="zReferences.html#henkelman20009978" id="id2">[10]</a><a class="reference internal" href="zReferences.html#henkelman20009901" id="id3">[11]</a>.</p>
+<a class="bibtex reference internal" href="zReferences.html#henkelman20009978" id="id2">[10]</a><a class="bibtex reference internal" href="zReferences.html#henkelman20009901" id="id3">[11]</a>.</p>
 <p>The method involves the evolution of a series of images connected by a spring
 interaction (hence the “elastic” nature of the band). The force acting on the
 images (a combination of the spring force along the band and the true force
@@ -206,8 +206,8 @@ band (that is, it ensures all the images do not fall into the metastable states)
 This projection is accomplished by using the parallel portion of the spring
 force and the perpendicular portion of the true force. In this way, the spring
 forces act similarly to reparameterization schemes common to the string method.</p>
-<p>Full mathematical background is available in <a class="reference internal" href="zReferences.html#henkelman20009978" id="id4">[10]</a> and
-<a class="reference internal" href="zReferences.html#henkelman20009901" id="id5">[11]</a>, but a brief overview is given here. The
+<p>Full mathematical background is available in <a class="bibtex reference internal" href="zReferences.html#henkelman20009978" id="id4">[10]</a> and
+<a class="bibtex reference internal" href="zReferences.html#henkelman20009901" id="id5">[11]</a>, but a brief overview is given here. The
 band is discretized as a series of N+1 images, and the force on each image is
 given by:</p>
 <div class="math notranslate nohighlight">
@@ -224,7 +224,7 @@ right hand side is the “true force” and is evaluated as:</p>
 <span class="math notranslate nohighlight">\(i^\text{th}\)</span> image, and thus this equation states simply that the perpendicular component
 of the gradient is the full gradient minus the parallel portion of the gradient.
 There are different schemes available in literature to evaluate the tangent
-vector <a class="reference internal" href="zReferences.html#henkelman20009978" id="id6">[10]</a>. The “spring force” is calculated as:</p>
+vector <a class="bibtex reference internal" href="zReferences.html#henkelman20009978" id="id6">[10]</a>. The “spring force” is calculated as:</p>
 <div class="math notranslate nohighlight">
 \[F_{i,\parallel}^{s} =
 k \left( \lvert R_{i+1} - R_{i} \rvert -
@@ -369,7 +369,7 @@ positions of each image of the elastic band.</p>
     <p>
         &copy; Copyright 2018, the SSAGES Team
       <span class="lastupdated">
-        Last updated on Aug 23, 2019.
+        Last updated on May 27, 2020.
       </span>
 
     </p>

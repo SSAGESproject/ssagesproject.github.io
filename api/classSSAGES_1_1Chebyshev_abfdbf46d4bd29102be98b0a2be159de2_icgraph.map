@@ -1,0 +1,4 @@
+<map id="SSAGES::Chebyshev::Evaluate" name="SSAGES::Chebyshev::Evaluate">
+<area shape="rect" id="node1" title="Calculates the output of the basis function." alt="" coords="212,5,371,47"/>
+<area shape="rect" id="node2" href="$classSSAGES_1_1Chebyshev.html#a2cfb23d7b3b57fc7c936bc0789888cc8" title="Calculates the gradient of the basis function." alt="" coords="5,5,164,47"/>
+</map>

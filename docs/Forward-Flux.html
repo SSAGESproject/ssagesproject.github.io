@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Forward-Flux &mdash; SSAGES v0.8.5-alpha documentation</title>
+  <title>Forward-Flux &mdash; SSAGES 0.8.6 documentation</title>
   
 
   
@@ -21,11 +21,11 @@
   
     
       <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
-        <script type="text/javascript" src="_static/jquery.js"></script>
-        <script type="text/javascript" src="_static/underscore.js"></script>
-        <script type="text/javascript" src="_static/doctools.js"></script>
-        <script type="text/javascript" src="_static/language_data.js"></script>
-        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+        <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
     
     <script type="text/javascript" src="_static/js/theme.js"></script>
 
@@ -61,7 +61,7 @@
             
             
               <div class="version">
-                0.8.5
+                0.8.6
               </div>
             
           
@@ -237,7 +237,7 @@ obtain relevant kinetic and thermodynamic properties.</span><a class="headerlink
 <li><p>calculate the conditional probability of reaching state B starting from
 state A, <span class="math notranslate nohighlight">\(P(\lambda_{B} = \lambda_{n} | \lambda_{A} = \lambda_{0})\)</span>,</p></li>
 <li><p>compute various thermodynamic properties, and</p></li>
-<li><p>optimize overall efficiency of the method <a class="reference internal" href="zReferences.html#allen2006194111" id="id2">[1]</a>.
+<li><p>optimize overall efficiency of the method <a class="bibtex reference internal" href="zReferences.html#allen2006194111" id="id2">[1]</a>.
 The following are the widely-used variants of Forward Flux Sampling method:</p></li>
 </ol>
 <ul class="simple">
@@ -308,9 +308,9 @@ paths.</span><a class="headerlink" href="#id8" title="Permalink to this image">�
 <h2>Rosenbluth-like Forward Flux Sampling (RBFFS)<a class="headerlink" href="#rosenbluth-like-forward-flux-sampling-rbffs" title="Permalink to this headline">¶</a></h2>
 <p>Rosenbluth-like Forward Flux Sampling (RBFFS) method is an adaptation of
 Rosenbluth method in polymer sampling to simulate rare events
-<a class="reference internal" href="zReferences.html#rosenbluth1955356" id="id3">[18]</a>.
+<a class="bibtex reference internal" href="zReferences.html#rosenbluth1955356" id="id3">[18]</a>.
 The RBFFS is comparable to Branched Growth Forward Flux (BGFFS)
-<a class="reference internal" href="zReferences.html#allen2009463102" id="id4">[2]</a><a class="reference internal" href="zReferences.html#escobedo2009333101" id="id5">[7]</a> but,
+<a class="bibtex reference internal" href="zReferences.html#allen2009463102" id="id4">[2]</a><a class="bibtex reference internal" href="zReferences.html#escobedo2009333101" id="id5">[7]</a> but,
 in contrast to BGFFS, a single checkpoint is randomly selected at a non-initial
 interface instead of initiation of trials from all checkpoints at a given
 interface (Figure 3). In RBFFS, first a checkpoint at <span class="math notranslate nohighlight">\(\lambda_{0}\)</span> is
@@ -352,7 +352,7 @@ frac{ \prod_{i=0}^{n-1}\sum_{p} w_{i,p} S_{i,p} / k_{i} }{ \sum_{p} w_{i,p} }\]<
 <div class="section" id="options-parameters">
 <h2>Options &amp; Parameters<a class="headerlink" href="#options-parameters" title="Permalink to this headline">¶</a></h2>
 <p>The notation used in SSAGES implementation of the FFS is mainly drawn from
-Ref. <a class="reference internal" href="zReferences.html#allen2009463102" id="id6">[2]</a>. We recommend referring to this review article if
+Ref. <a class="bibtex reference internal" href="zReferences.html#allen2009463102" id="id6">[2]</a>. We recommend referring to this review article if
 the user is unfamiliar with the terminology.</p>
 <p>To run a DFFS simulation using SSAGES, an input file in JSON format is required
 along with a general input file designed for your choice of molecular dynamics
@@ -403,11 +403,11 @@ the final state B, inclusive. (Default: 5)</p>
 first interface. (Default: 100)</p>
 </dd>
 <dt>computeInitialFlux (optional)</dt><dd><p>Specifies whether a calculation of the initial flux should be performed.
-If this parameter is set to <code class="docutils literal notranslate"><span class="pre">&quot;true&quot;</span></code>, SSAGES would also generate the
+If this parameter is set to <code class="docutils literal notranslate"><span class="pre">true</span></code>, SSAGES would also generate the
 user-specified number of initial configurations (<code class="docutils literal notranslate"><span class="pre">N0Target</span></code>) at the first
 interface. To compute the initial flux, user must provide an initial
 configuration in state A, otherwise SSAGES would issue an error. If this
-parameter is set to <code class="docutils literal notranslate"><span class="pre">&quot;false&quot;</span></code>, the user must provide the necessary number
+parameter is set to <code class="docutils literal notranslate"><span class="pre">false</span></code>, the user must provide the necessary number
 of the initial configurations in separate files. The files name and the
 files content should follow a specific format. The format of the filenames
 should be <code class="docutils literal notranslate"><span class="pre">l0-n&lt;n&gt;.dat</span></code> where &lt;n&gt; is the configuration number
@@ -422,10 +422,10 @@ where &lt;atom ID&gt; is the ID of an atoms,
 &lt;x&gt;, &lt;y&gt;, &lt;z&gt; are the coordinates of that atom,
 and &lt;vx&gt;, &lt;vy&gt;, and &lt;vz&gt; are the components of the velocity in
 the x, y, and z directions. Please note that the stored configurations at
-other interfaces follow a similar format. (Default: “true”)</p>
+other interfaces follow a similar format. (Default: <code class="docutils literal notranslate"><span class="pre">true</span></code>)</p>
 </dd>
 <dt>saveTrajectories (optional)</dt><dd><p>This flag determines if the FFS trajectories should be saved.
-(Default: “true”)</p>
+(Default: <code class="docutils literal notranslate"><span class="pre">true</span></code>)</p>
 </dd>
 </dl>
 <div class="admonition warning">
@@ -511,7 +511,7 @@ need to perform a simulation. Simply run:</p>
     <p>
         &copy; Copyright 2018, the SSAGES Team
       <span class="lastupdated">
-        Last updated on Aug 23, 2019.
+        Last updated on May 27, 2020.
       </span>
 
     </p>

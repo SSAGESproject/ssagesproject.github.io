@@ -1,3 +1,4 @@
 <map id="SSAGES::AlphaRMSDCV" name="SSAGES::AlphaRMSDCV">
-<area shape="rect" id="node2" href="$classSSAGES_1_1CollectiveVariable.html" title="Abstract class for a collective variable. " alt="" coords="5,5,196,32"/>
+<area shape="rect" id="node1" title="Collective variable to measure alpha helix secondary structure." alt="" coords="12,80,189,107"/>
+<area shape="rect" id="node2" href="$classSSAGES_1_1CollectiveVariable.html" title="Abstract class for a collective variable." alt="" coords="5,5,196,32"/>
 </map>

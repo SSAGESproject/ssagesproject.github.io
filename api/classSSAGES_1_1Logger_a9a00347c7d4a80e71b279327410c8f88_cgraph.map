@@ -1,4 +1,5 @@
 <map id="SSAGES::Logger::PostIntegration" name="SSAGES::Logger::PostIntegration">
-<area shape="rect" id="node2" href="$classSSAGES_1_1CVManager.html#a7ab8ff40ccdc862e624ede661a24cfd8" title="Get CV iterator. " alt="" coords="300,5,463,47"/>
-<area shape="rect" id="node3" href="$classSSAGES_1_1Snapshot.html#acebaa24b3c2a4cdbd983e28c87df08c7" title="Get the current iteration. " alt="" coords="273,71,489,98"/>
+<area shape="rect" id="node1" title="Logger call post integration." alt="" coords="5,42,225,69"/>
+<area shape="rect" id="node2" href="$classSSAGES_1_1CVManager.html#ad2a31c91a0298b4e80ca5ba720c5eee3" title="Get CV iterator." alt="" coords="300,5,463,47"/>
+<area shape="rect" id="node3" href="$classSSAGES_1_1Snapshot.html#ab38cbf3c463820d1b8bbd733759bfa32" title="Get the current iteration." alt="" coords="273,71,489,98"/>
 </map>

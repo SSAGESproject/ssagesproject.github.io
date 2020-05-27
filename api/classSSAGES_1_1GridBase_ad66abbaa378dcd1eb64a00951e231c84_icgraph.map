@@ -1,5 +1,0 @@
-<map id="SSAGES::GridBase::GetLower" name="SSAGES::GridBase::GetLower">
-<area shape="rect" id="node2" href="$classSSAGES_1_1ANN.html#ad63d276efae1a266eb5d556bdf896a98" title="Post&#45;integration hook. " alt="" coords="256,5,467,32"/>
-<area shape="rect" id="node3" href="$classSSAGES_1_1BasisEvaluator.html#ad017032c44a0840f05c7ac4d7fedd5cd" title="Outputs the basis projection at a specific coordinate. " alt="" coords="275,57,448,98"/>
-<area shape="rect" id="node4" href="$classSSAGES_1_1Grid.html#ab79a2be84faa3a5b27d9bf092fa30cca" title="Write grid out to file. " alt="" coords="276,122,447,163"/>
-</map>
