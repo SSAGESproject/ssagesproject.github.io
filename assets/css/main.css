@@ -11,8 +11,10 @@ html {
     text-size-adjust: none;
 }
 body {
+    font-family: "Lato",-apple-system,BlinkMacSystemFont,"Roboto","Segoe UI","Helvetica Neue","Lucida Grande",Arial,sans-serif;
     margin: 0;
 }
+
 hr {
     overflow: visible;
     box-sizing: content-box;

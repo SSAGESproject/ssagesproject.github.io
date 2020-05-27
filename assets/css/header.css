@@ -1,5 +1,6 @@
 /* Bootstrap dropdown style */
 body {
+  font-family: "Lato",-apple-system,BlinkMacSystemFont,"Roboto","Segoe UI","Helvetica Neue","Lucida Grande",Arial,sans-serif;
   line-height: 1.5;
 }
 .dropdown {
