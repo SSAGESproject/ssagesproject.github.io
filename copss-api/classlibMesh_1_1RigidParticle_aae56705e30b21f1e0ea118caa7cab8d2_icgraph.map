@@ -1,5 +1,0 @@
-<map id="libMesh::RigidParticle::rebuild_periodic_mesh" name="libMesh::RigidParticle::rebuild_periodic_mesh">
-<area shape="rect" id="node2" href="$classlibMesh_1_1RigidParticle.html#a773d085c67418e7667547f2e56bf10c0" title="libMesh::RigidParticle\l::volume_conservation" alt="" coords="233,5,386,47"/>
-<area shape="rect" id="node4" href="$classlibMesh_1_1RigidParticle.html#ae4327e1838b04ce53c2799504658ac65" title="libMesh::RigidParticle\l::if_on_the_periodic_boundary" alt="" coords="212,71,407,112"/>
-<area shape="rect" id="node3" href="$classlibMesh_1_1RigidParticle.html#a83997898612b21a26353dcbf8b1d984b" title="libMesh::RigidParticle\l::get_particle_shape" alt="" coords="455,5,604,47"/>
-</map>

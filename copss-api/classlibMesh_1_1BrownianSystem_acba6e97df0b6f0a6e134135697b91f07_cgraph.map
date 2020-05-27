@@ -1,7 +1,0 @@
-<map id="libMesh::BrownianSystem::get_equation_systems" name="libMesh::BrownianSystem::get_equation_systems">
-<area shape="rect" id="node2" href="$classlibMesh_1_1BrownianSystem.html#a0e3472f5baf8d3e2ddd1f78b5cbd30af" title="libMesh::BrownianSystem\l::petsc_vec_scatter_to_all" alt="" coords="451,5,625,47"/>
-<area shape="rect" id="node3" href="$classlibMesh_1_1BrownianSystem.html#aefbd6a07ccf21a2f7847e7015fa518f2" title="libMesh::BrownianSystem\l::extract_particle_vector" alt="" coords="228,69,403,111"/>
-<area shape="rect" id="node6" href="$classlibMesh_1_1BrownianSystem.html#a6e4b000faf1866ed16d71f98cae6884c" title="libMesh::BrownianSystem\l::vector_transform" alt="" coords="228,135,403,176"/>
-<area shape="rect" id="node4" href="$classlibMesh_1_1PointMesh.html#a9c38c608d55b6a8162c741b40701cf48" title="libMesh::PointMesh\l::particles" alt="" coords="469,71,607,112"/>
-<area shape="rect" id="node5" href="$classlibMesh_1_1BrownianSystem.html#a3991bf7a0ea60515de06f72f0fc8449d" title="libMesh::BrownianSystem\l::_create_petsc_vec" alt="" coords="451,136,625,177"/>
-</map>

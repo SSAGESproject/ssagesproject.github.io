@@ -1,7 +1,0 @@
-<map id="libMesh::RigidParticle::rebuild_periodic_mesh" name="libMesh::RigidParticle::rebuild_periodic_mesh">
-<area shape="rect" id="node2" href="$classlibMesh_1_1MeshSpringNetwork.html#acc0042454066143530171351a511c976" title="libMesh::MeshSpringNetwork\l::periodic_boundary" alt="" coords="214,5,407,47"/>
-<area shape="rect" id="node4" href="$classlibMesh_1_1PMPeriodicBoundary.html#a66051ef0f9bbb9762571f0a99be1b9fe" title="libMesh::PMPeriodicBoundary\l::periodic_direction" alt="" coords="212,71,409,112"/>
-<area shape="rect" id="node5" href="$classlibMesh_1_1PMPeriodicBoundary.html#a9a319b885feb0526d605e7a8773ce19f" title="libMesh::PMPeriodicBoundary\l::box_min" alt="" coords="212,136,409,177"/>
-<area shape="rect" id="node6" href="$classlibMesh_1_1PMPeriodicBoundary.html#a5468ec4ff47afb8e2247d27bac16013d" title="libMesh::PMPeriodicBoundary\l::box_length" alt="" coords="212,201,409,243"/>
-<area shape="rect" id="node3" href="$classlibMesh_1_1MeshSpringNetwork.html#a11b427a7c47871f2ce18cf462895eb1b" title="libMesh::MeshSpringNetwork\l::print_info" alt="" coords="457,5,651,47"/>
-</map>

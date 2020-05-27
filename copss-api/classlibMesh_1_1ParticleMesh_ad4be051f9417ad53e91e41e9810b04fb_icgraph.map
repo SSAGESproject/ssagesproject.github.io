@@ -1,8 +1,0 @@
-<map id="libMesh::ParticleMesh::num_particles" name="libMesh::ParticleMesh::num_particles">
-<area shape="rect" id="node2" href="$classlibMesh_1_1ParticleMesh.html#adaeb3314738ff7f40e1d92eff2d38048" title="libMesh::ParticleMesh\l::mesh_size" alt="" coords="204,71,355,112"/>
-<area shape="rect" id="node4" href="$classlibMesh_1_1CopssRigidParticleSystem.html#a43385b16835b73bf012b1fb6514b56e9" title="libMesh::CopssRigidParticle\lSystem::create_object" alt="" coords="403,100,589,141"/>
-<area shape="rect" id="node6" href="$classlibMesh_1_1ParticleMesh.html#af122bb636f2be1c5f5ae4e606d94c786" title="libMesh::ParticleMesh\l::stitched_mesh" alt="" coords="204,5,355,47"/>
-<area shape="rect" id="node7" href="$classlibMesh_1_1PointMesh.html#afc502b594c7e67a0324bc144c29735b1" title="libMesh::PointMesh\l::PointMesh" alt="" coords="211,188,348,229"/>
-<area shape="rect" id="node3" href="$classlibMesh_1_1ParticleMesh.html#a3ff156ce68ed98e89cb5a85ce26681ce" title="libMesh::ParticleMesh\l\&lt; 3 \&gt;::mesh" alt="" coords="421,20,571,61"/>
-<area shape="rect" id="node5" href="$classlibMesh_1_1CopssRigidParticleSystem.html#a502b6bdc84a5f4dd8906834247533da8" title="libMesh::CopssRigidParticle\lSystem::create_object_mesh" alt="" coords="637,100,829,141"/>
-</map>

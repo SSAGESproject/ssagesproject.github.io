@@ -1,7 +1,0 @@
-<map id="libMesh::Copss::langevin_integrate" name="libMesh::Copss::langevin_integrate">
-<area shape="rect" id="node2" href="$classlibMesh_1_1Copss.html#a3be7ef403a2572be6b2ff7d9374ea0a9" title="libMesh::Copss::fixman\l_integrate" alt="" coords="223,51,383,92"/>
-<area shape="rect" id="node3" href="$classlibMesh_1_1CopssPointParticleSystem.html#a36c907027adfded5d7314bdb156f3c9b" title="libMesh::CopssPointParticle\lSystem::run" alt="" coords="431,5,617,47"/>
-<area shape="rect" id="node5" href="$classlibMesh_1_1CopssRigidParticleSystem.html#ad0df37302c3bd42a8dc8ee267e791cc0" title="libMesh::CopssRigidParticle\lSystem::run" alt="" coords="431,84,617,125"/>
-<area shape="rect" id="node4" href="$POINTPARTICLE_2main_8C.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="665,13,716,39"/>
-<area shape="rect" id="node6" href="$RIGIDPARTICLE_2main_8C.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="665,91,716,118"/>
-</map>

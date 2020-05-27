@@ -1,7 +1,0 @@
-<map id="libMesh::CopssRigidParticleSystem" name="libMesh::CopssRigidParticleSystem">
-<area shape="rect" id="node2" href="$classlibMesh_1_1Copss.html" title="libMesh::Copss" alt="" coords="648,248,761,275"/>
-<area shape="rect" id="node3" href="$classlibMesh_1_1PMPeriodicBoundary.html" title="libMesh::PMPeriodicBoundary" alt="" coords="268,13,465,40"/>
-<area shape="rect" id="node6" href="$classlibMesh_1_1PointMesh.html" title="libMesh::PointMesh\&lt; 3 \&gt;" alt="" coords="283,223,451,249"/>
-<area shape="rect" id="node11" href="$classlibMesh_1_1BrownianSystem.html" title="libMesh::BrownianSystem" alt="" coords="279,273,454,300"/>
-<area shape="rect" id="node9" href="$classlibMesh_1_1FixFactory.html" title="libMesh::FixFactory" alt="" coords="298,324,435,351"/>
-</map>

@@ -1,5 +1,0 @@
-<map id="libMesh::ElasticitySystem::system" name="libMesh::ElasticitySystem::system">
-<area shape="rect" id="node2" href="$classlibMesh_1_1ElasticitySystem.html#ac0c30239fb6049e7a6403a431a5630de" title="libMesh::ElasticitySystem\l::clear" alt="" coords="228,5,403,47"/>
-<area shape="rect" id="node3" href="$classlibMesh_1_1ElasticitySystem.html#aad4dc52750623509840865e31cdd76a3" title="libMesh::ElasticitySystem\l::init_ksp_solver" alt="" coords="228,71,403,112"/>
-<area shape="rect" id="node4" href="$classlibMesh_1_1ElasticitySystem.html#a4ef0471166915d72342be3e34e3a2029" title="libMesh::ElasticitySystem\l::destroy_ksp_solver" alt="" coords="228,136,403,177"/>
-</map>

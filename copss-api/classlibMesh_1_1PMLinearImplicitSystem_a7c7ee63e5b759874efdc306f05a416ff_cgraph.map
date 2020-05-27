@@ -1,5 +1,0 @@
-<map id="libMesh::PMLinearImplicitSystem::write_point_csv" name="libMesh::PMLinearImplicitSystem::write_point_csv">
-<area shape="rect" id="node2" href="$classlibMesh_1_1PMLinearImplicitSystem.html#a9baf5f9139b6747f759c971d7deedaed" title="libMesh::PMLinearImplicit\lSystem::write_point_csv" alt="" coords="225,39,397,80"/>
-<area shape="rect" id="node3" href="$classlibMesh_1_1PointMesh.html#a0fe0b2102de7fba2591a09d6a16193ac" title="libMesh::PointMesh\l::num_particles" alt="" coords="445,5,583,47"/>
-<area shape="rect" id="node4" href="$classlibMesh_1_1PointMesh.html#a9c38c608d55b6a8162c741b40701cf48" title="libMesh::PointMesh\l::particles" alt="" coords="445,71,583,112"/>
-</map>

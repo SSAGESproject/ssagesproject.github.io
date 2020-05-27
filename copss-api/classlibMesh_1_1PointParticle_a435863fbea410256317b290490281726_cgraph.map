@@ -1,5 +1,0 @@
-<map id="libMesh::PointParticle::orientation" name="libMesh::PointParticle::orientation">
-<area shape="rect" id="node2" href="$classlibMesh_1_1PointParticle.html#ae90d06422eca59e6e4d17d65ff2e62c3" title="libMesh::PointParticle\l::set_orientation" alt="" coords="203,5,352,47"/>
-<area shape="rect" id="node3" href="$classlibMesh_1_1PointParticle.html#a5ce703e8122dad748c899f6f25c7b07d" title="libMesh::PointParticle\l::reinit_particle" alt="" coords="203,71,352,112"/>
-<area shape="rect" id="node4" href="$classlibMesh_1_1PointParticle.html#ac58e150656c0adcecc62b1d9ddc9a224" title="libMesh::PointParticle\l::print_info" alt="" coords="203,136,352,177"/>
-</map>

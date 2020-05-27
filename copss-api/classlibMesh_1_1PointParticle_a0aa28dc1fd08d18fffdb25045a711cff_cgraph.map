@@ -1,6 +1,0 @@
-<map id="libMesh::PointParticle::set_neighbor_vector" name="libMesh::PointParticle::set_neighbor_vector">
-<area shape="rect" id="node2" href="$classlibMesh_1_1PointParticle.html#abeef62630192e6a10d4a195660aa059b" title="libMesh::PointParticle\l::neighbor_vector" alt="" coords="203,71,352,112"/>
-<area shape="rect" id="node3" href="$classlibMesh_1_1PointParticle.html#a3435ea34a0cae8e313d8478b14d5ec4c" title="libMesh::PointParticle\l::set_particle_force" alt="" coords="400,5,549,47"/>
-<area shape="rect" id="node4" href="$classlibMesh_1_1PointParticle.html#afbb095c16e5caa1bf56cafd96e39f6f9" title="libMesh::PointParticle\l::add_particle_force" alt="" coords="400,71,549,112"/>
-<area shape="rect" id="node5" href="$classlibMesh_1_1PointParticle.html#a2ec9f05cffb420ad1ff14f61478800c7" title="libMesh::PointParticle\l::zero_particle_force" alt="" coords="400,136,549,177"/>
-</map>

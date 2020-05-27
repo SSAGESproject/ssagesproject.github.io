@@ -1,8 +1,0 @@
-<map id="libMesh::PMPeriodicBoundary::image_elem" name="libMesh::PMPeriodicBoundary::image_elem">
-<area shape="rect" id="node2" href="$classlibMesh_1_1PMPeriodicBoundary.html#a46ec1835278b8c5889aeef07e97b1478" title="libMesh::PMPeriodicBoundary\l::build_image_elem" alt="" coords="251,5,448,47"/>
-<area shape="rect" id="node3" href="$classlibMesh_1_1PMPeriodicBoundary.html#aa4a432ca6f3465552a31864d3da200a3" title="libMesh::PMPeriodicBoundary\l::dimension" alt="" coords="496,19,693,60"/>
-<area shape="rect" id="node4" href="$classlibMesh_1_1RigidParticle.html#a0ecb22a24115b576eeba58f71779e136" title="libMesh::RigidParticle\l::on_the_periodic_boundary" alt="" coords="259,123,440,164"/>
-<area shape="rect" id="node5" href="$classlibMesh_1_1RigidParticle.html#a773d085c67418e7667547f2e56bf10c0" title="libMesh::RigidParticle\l::volume_conservation" alt="" coords="518,109,671,151"/>
-<area shape="rect" id="node7" href="$classlibMesh_1_1RigidParticle.html#a90af7cf9dd481d6fd2b0df63cf8bda5a" title="libMesh::RigidParticle\l::mesh_spring_network" alt="" coords="516,175,673,216"/>
-<area shape="rect" id="node6" href="$classlibMesh_1_1RigidParticle.html#a83997898612b21a26353dcbf8b1d984b" title="libMesh::RigidParticle\l::get_particle_shape" alt="" coords="741,109,891,151"/>
-</map>

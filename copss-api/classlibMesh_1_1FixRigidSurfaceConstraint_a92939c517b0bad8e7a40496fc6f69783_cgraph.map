@@ -1,8 +1,0 @@
-<map id="libMesh::FixRigidSurfaceConstraint::compute" name="libMesh::FixRigidSurfaceConstraint::compute">
-<area shape="rect" id="node2" href="$classlibMesh_1_1MeshSpringNetwork.html#a56fda23a38ad4a8e15df430cc47fe292" title="libMesh::MeshSpringNetwork\l::nodes_neighbors" alt="" coords="224,5,417,47"/>
-<area shape="rect" id="node3" href="$classlibMesh_1_1ParticleMesh.html#abdfc856f7c73aec931e66710dcbb5488" title="libMesh::ParticleMesh\l::pm_periodic_boundary" alt="" coords="241,71,401,112"/>
-<area shape="rect" id="node4" href="$classlibMesh_1_1PMPeriodicBoundary.html#a9fb35a9fbaf9ea6911ce1e8795064b6d" title="libMesh::PMPeriodicBoundary\l::point_vector" alt="" coords="222,136,419,177"/>
-<area shape="rect" id="node6" href="$classlibMesh_1_1FixBase.html#a12abc208c1e345f09da3e8803e076e35" title="libMesh::FixBase::spring\l_force_lhs" alt="" coords="237,201,404,243"/>
-<area shape="rect" id="node7" href="$classlibMesh_1_1MeshSpringNetwork.html#a7dab78c85ad2557e48afe3e712ceb9f7" title="libMesh::MeshSpringNetwork\l::node_center_equilibrium_dist" alt="" coords="221,267,420,308"/>
-<area shape="rect" id="node5" href="$classlibMesh_1_1PMPeriodicBoundary.html#add774759962454df0f2574edcdc54c53" title="libMesh::PMPeriodicBoundary\l::box_length" alt="" coords="468,136,665,177"/>
-</map>

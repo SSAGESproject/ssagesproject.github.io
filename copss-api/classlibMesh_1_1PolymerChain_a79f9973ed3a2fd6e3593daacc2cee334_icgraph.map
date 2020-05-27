@@ -1,8 +1,0 @@
-<map id="libMesh::PolymerChain::check_chain" name="libMesh::PolymerChain::check_chain">
-<area shape="rect" id="node2" href="$classlibMesh_1_1CopssPointParticleSystem.html#aaa6cb8e8f018ed7ac8d4e543b3e28c8b" title="libMesh::CopssPointParticle\lSystem::update_object" alt="" coords="211,5,397,47"/>
-<area shape="rect" id="node5" href="$classlibMesh_1_1PolymerChain.html#a2e0d39845e80eb21b79c0456f53bd903" title="libMesh::PolymerChain\l::bonds" alt="" coords="225,71,383,112"/>
-<area shape="rect" id="node3" href="$classlibMesh_1_1CopssPointParticleSystem.html#a36c907027adfded5d7314bdb156f3c9b" title="libMesh::CopssPointParticle\lSystem::run" alt="" coords="445,5,632,47"/>
-<area shape="rect" id="node4" href="$POINTPARTICLE_2main_8C.html#a3c04138a5bfe5d72780bb7e82a18e627" title="main" alt="" coords="731,13,781,39"/>
-<area shape="rect" id="node6" href="$classlibMesh_1_1FixPointWLS.html#abf34c4b68279569c1e90c8ce44ce0875" title="libMesh::FixPointWLS\l::compute" alt="" coords="463,71,615,112"/>
-<area shape="rect" id="node7" href="$classlibMesh_1_1FixPointWLS.html#a8429348b2ba9dacb31ada64f94732d7d" title="libMesh::FixPointWLS\l::~FixPointWLS" alt="" coords="680,71,832,112"/>
-</map>

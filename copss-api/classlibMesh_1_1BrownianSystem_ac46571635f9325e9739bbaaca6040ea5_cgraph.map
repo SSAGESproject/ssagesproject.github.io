@@ -1,6 +1,0 @@
-<map id="libMesh::BrownianSystem::hi_ewald" name="libMesh::BrownianSystem::hi_ewald">
-<area shape="rect" id="node2" href="$classlibMesh_1_1BrownianSystem.html#a16fbe5bcbc4828005dd69bd0d5581617" title="libMesh::BrownianSystem\l::_test_diagonal_mat" alt="" coords="228,5,403,47"/>
-<area shape="rect" id="node3" href="$classlibMesh_1_1BrownianSystem.html#ab0d2fd8583b25cc80fd6d5ccee7c005e" title="libMesh::BrownianSystem\l::_vector_mean_variance" alt="" coords="228,71,403,112"/>
-<area shape="rect" id="node4" href="$classlibMesh_1_1BrownianSystem.html#a73a221ef435663c6840533102182fb38" title="libMesh::BrownianSystem\l::_create_shell_mat" alt="" coords="228,136,403,177"/>
-<area shape="rect" id="node5" href="$classlibMesh_1_1BrownianSystem.html#a3991bf7a0ea60515de06f72f0fc8449d" title="libMesh::BrownianSystem\l::_create_petsc_vec" alt="" coords="228,201,403,243"/>
-</map>

@@ -1,7 +1,0 @@
-<map id="libMesh::RigidParticle::compute_centroid_force" name="libMesh::RigidParticle::compute_centroid_force">
-<area shape="rect" id="node2" href="$classlibMesh_1_1RigidParticle.html#a0d1d2865db5ba8de7927e146ca42f907" title="libMesh::RigidParticle\l::update_mesh" alt="" coords="223,37,372,79"/>
-<area shape="rect" id="node6" href="$classlibMesh_1_1RigidParticle.html#a511466a1c588a3d26ad9482da9bf031d" title="get centroid velocity " alt="" coords="223,103,372,144"/>
-<area shape="rect" id="node3" href="$classlibMesh_1_1RigidParticle.html#a773d085c67418e7667547f2e56bf10c0" title="libMesh::RigidParticle\l::volume_conservation" alt="" coords="422,5,575,47"/>
-<area shape="rect" id="node5" href="$classlibMesh_1_1RigidParticle.html#a90af7cf9dd481d6fd2b0df63cf8bda5a" title="libMesh::RigidParticle\l::mesh_spring_network" alt="" coords="420,71,577,112"/>
-<area shape="rect" id="node4" href="$classlibMesh_1_1RigidParticle.html#a83997898612b21a26353dcbf8b1d984b" title="libMesh::RigidParticle\l::get_particle_shape" alt="" coords="625,5,775,47"/>
-</map>

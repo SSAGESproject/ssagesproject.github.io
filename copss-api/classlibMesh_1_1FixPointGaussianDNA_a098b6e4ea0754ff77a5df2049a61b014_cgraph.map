@@ -1,7 +1,0 @@
-<map id="libMesh::FixPointGaussianDNA::~FixPointGaussianDNA" name="libMesh::FixPointGaussianDNA::~FixPointGaussianDNA">
-<area shape="rect" id="node2" href="$classlibMesh_1_1FixPointGaussianDNA.html#a506401f3ce73c7375b30acfdb6ca69ac" title="libMesh::FixPointGaussian\lDNA::print_fix" alt="" coords="252,5,431,47"/>
-<area shape="rect" id="node3" href="$classlibMesh_1_1FixPointGaussianDNA.html#afc28ab6e88906611f14e51f5b9aa8812" title="libMesh::FixPointGaussian\lDNA::initPointParticleType" alt="" coords="252,71,431,112"/>
-<area shape="rect" id="node4" href="$classlibMesh_1_1FixPointGaussianDNA.html#a12b01f7030c1b15d0d29660285ea15b3" title="Check if num of parameters are correct. " alt="" coords="252,136,431,177"/>
-<area shape="rect" id="node5" href="$classlibMesh_1_1FixPointGaussianDNA.html#aec61a6687479e0ce6b95dbf144e0f414" title="libMesh::FixPointGaussian\lDNA::compute" alt="" coords="252,201,431,243"/>
-<area shape="rect" id="node6" href="$classlibMesh_1_1FixBase.html#a4f888f50831aa4f94eb35d1b151ddef6" title="libMesh::FixBase::gaussian\l_force" alt="" coords="479,201,661,243"/>
-</map>
