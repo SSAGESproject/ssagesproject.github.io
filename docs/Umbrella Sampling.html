@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Umbrella Sampling &mdash; SSAGES v0.8.5-alpha documentation</title>
+  <title>Umbrella Sampling &mdash; SSAGES 0.8.6 documentation</title>
   
 
   
@@ -21,11 +21,11 @@
   
     
       <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
-        <script type="text/javascript" src="_static/jquery.js"></script>
-        <script type="text/javascript" src="_static/underscore.js"></script>
-        <script type="text/javascript" src="_static/doctools.js"></script>
-        <script type="text/javascript" src="_static/language_data.js"></script>
-        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+        <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
     
     <script type="text/javascript" src="_static/js/theme.js"></script>
 
@@ -61,7 +61,7 @@
             
             
               <div class="version">
-                0.8.5
+                0.8.6
               </div>
             
           
@@ -191,13 +191,13 @@ However, the presence of energy barriers can prevent certain configurations from
 all. Umbrella sampling is a simulation technique that helps to overcome those barriers and improve sampling
 by applying a bias along a specified collective variable. The bias takes the form of a harmonic potential and is typically constant throughout a simulation.
 Usually, a series of umbrella-sampled simulations are performed and analyzed together using the weighted histogram analysis method
-(WHAM) <a class="reference internal" href="zReferences.html#kumar19921011" id="id2">[12]</a>.</p>
+(WHAM) <a class="bibtex reference internal" href="zReferences.html#kumar19921011" id="id2">[12]</a>.</p>
 <p>The functional form of the artificial bias is</p>
 <div class="math notranslate nohighlight">
 \[U_\text{umbrella} = \frac{1}{2} k \left(\xi - \xi_0\right)^2\]</div>
 <p>where <span class="math notranslate nohighlight">\(k\)</span> is the spring constant, <span class="math notranslate nohighlight">\(\xi\)</span> is the current value of the collective variable and <span class="math notranslate nohighlight">\(\xi_0\)</span> is the desired value of the collective variable.
 The success of the umbrella sampling method depends on the correct choice of <span class="math notranslate nohighlight">\(k\)</span> and <span class="math notranslate nohighlight">\(\xi_0\)</span> for the different simulations. Suitable values of <span class="math notranslate nohighlight">\(k\)</span> and <span class="math notranslate nohighlight">\(\xi_0\)</span> depend on the distances between adjacent umbrellas, and the gradient of the free energy surface at <span class="math notranslate nohighlight">\(\xi_0\)</span>.</p>
-<p>For more information about the umbrella sampling method, the interested reader is referred to Ref. <a class="reference internal" href="zReferences.html#kastner2011932" id="id3">[13]</a>.</p>
+<p>For more information about the umbrella sampling method, the interested reader is referred to Ref. <a class="bibtex reference internal" href="zReferences.html#kastner2011932" id="id3">[13]</a>.</p>
 </div>
 <div class="section" id="options-parameters">
 <h2>Options &amp; Parameters<a class="headerlink" href="#options-parameters" title="Permalink to this headline">¶</a></h2>
@@ -221,7 +221,7 @@ an array of strings for multiple walkers.</p>
 <dt>output_frequency (optional)</dt><dd><p>Frequency of writing to output file. (Default: 1)</p>
 </dd>
 <dt>append (optional)</dt><dd><p>Boolean value which will cause umbrella sampling to either append to
-an existing file or override it entirely. (Default: false)</p>
+an existing file or override it entirely. (Default: <code class="docutils literal notranslate"><span class="pre">false</span></code>)</p>
 </dd>
 </dl>
 <p>The umbrella sampling method can also be run with time dependent centers.
@@ -302,9 +302,9 @@ or laptop machine, but the runtime of the code will be very large.</p>
 iteration, target value of the corresponding ‘center’ CV, and the value of the CV at
 the iteration number.</p>
 <p>These output files can then be used to construct a complete free energy surface using
-the WHAM algorithm <a class="reference internal" href="zReferences.html#kumar19921011" id="id4">[12]</a>. Though SSAGES does not currently contain its own implementation
+the WHAM algorithm <a class="bibtex reference internal" href="zReferences.html#kumar19921011" id="id4">[12]</a>. Though SSAGES does not currently contain its own implementation
 of WHAM, there are many implementations available, such as that provided by the
-Grossfield Lab <a class="reference internal" href="zReferences.html#wham" id="id5">[9]</a>.</p>
+Grossfield Lab <a class="bibtex reference internal" href="zReferences.html#wham" id="id5">[9]</a>.</p>
 </div>
 <div class="section" id="hoomd-blue-tutorial">
 <h2>HOOMD-blue Tutorial<a class="headerlink" href="#hoomd-blue-tutorial" title="Permalink to this headline">¶</a></h2>
@@ -313,7 +313,7 @@ The free energy is measured as a function of the dihedral angle between the term
 The butane molecule has a backbone of four carbon atoms that <a class="reference external" href="https://chem.libretexts.org/Textbook_Maps/Organic_Chemistry/Supplemental_Modules_(Organic_Chemistry)/Chirality/Stereoisomers/Butane_Conformers">rotates into different conformations</a> (<em>anti</em>, <em>gauche</em>, and <em>eclipsed</em>).
 We wish to extract the free energy of this rotation, to know the energy cost of any angle between -180 degrees and 180 degrees.</p>
 <p>This example uses Umbrella Sampling with the weighted histogram analysis method (WHAM).
-The WHAM tool developed by Alan Grossfield <a class="reference internal" href="zReferences.html#wham" id="id6">[9]</a> is used to determine the free energy from the biased sampling we perform.
+The WHAM tool developed by Alan Grossfield <a class="bibtex reference internal" href="zReferences.html#wham" id="id6">[9]</a> is used to determine the free energy from the biased sampling we perform.
 Disclaimer: The parameters of this simulation (number of walkers, strength of bias potential springs, length of run, etc.) may not provide ideal sampling for this example problem, and improvements to this code are welcomed.</p>
 <p>The files for running this example can be found in <code class="docutils literal notranslate"><span class="pre">Examples/User/Umbrella/HOOMD</span></code>.</p>
 <p>Sample output files from this example code are in the <code class="docutils literal notranslate"><span class="pre">Examples/User/Umbrella/HOOMD/sample_outputs</span></code> folder.</p>
@@ -351,7 +351,7 @@ Disclaimer: The parameters of this simulation (number of walkers, strength of bi
 <ol class="arabic" start="5">
 <li><p>Analyze data:</p>
 <blockquote>
-<div><p>Download the WHAM code available here <a class="reference internal" href="zReferences.html#wham" id="id7">[9]</a>.
+<div><p>Download the WHAM code available here <a class="bibtex reference internal" href="zReferences.html#wham" id="id7">[9]</a>.
 Compile the program using the instructions and documentation provided.
 It is recommended to read <a class="reference external" href="http://membrane.urmc.rochester.edu/sites/default/files/wham/wham_talk.pdf">this talk about the theory and practice of WHAM</a>.</p>
 <ol class="loweralpha simple">
@@ -417,7 +417,7 @@ angle.</p></li>
     <p>
         &copy; Copyright 2018, the SSAGES Team
       <span class="lastupdated">
-        Last updated on Aug 23, 2019.
+        Last updated on May 27, 2020.
       </span>
 
     </p>

@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Collective Variables &mdash; SSAGES v0.8.5-alpha documentation</title>
+  <title>Collective Variables &mdash; SSAGES 0.8.6 documentation</title>
   
 
   
@@ -21,11 +21,11 @@
   
     
       <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
-        <script type="text/javascript" src="_static/jquery.js"></script>
-        <script type="text/javascript" src="_static/underscore.js"></script>
-        <script type="text/javascript" src="_static/doctools.js"></script>
-        <script type="text/javascript" src="_static/language_data.js"></script>
-        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+        <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
     
     <script type="text/javascript" src="_static/js/theme.js"></script>
 
@@ -61,7 +61,7 @@
             
             
               <div class="version">
-                0.8.5
+                0.8.6
               </div>
             
           
@@ -344,7 +344,7 @@ this and simply reference a CV by its numerical index.</p>
 <h2>Box Volume<a class="headerlink" href="#box-volume" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="id1">
 <h3>Description<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
-<p>The current volume of a simulation box is an important parameter determining the thermodynamic state. Constant-pressure simulations where volume information is recorded may be reweighted according to standard methods <a class="reference internal" href="zReferences.html#conrad199851" id="id2">[5]</a>. This CV calculates the box volume as the determinant of the Parrinello-Rahman matrix <span class="math notranslate nohighlight">\(\mathbf{H}\)</span>,</p>
+<p>The current volume of a simulation box is an important parameter determining the thermodynamic state. Constant-pressure simulations where volume information is recorded may be reweighted according to standard methods <a class="bibtex reference internal" href="zReferences.html#conrad199851" id="id2">[5]</a>. This CV calculates the box volume as the determinant of the Parrinello-Rahman matrix <span class="math notranslate nohighlight">\(\mathbf{H}\)</span>,</p>
 <div class="math notranslate nohighlight">
 \[\xi = \det\left( H_{ij} \right)\]</div>
 </div>
@@ -741,7 +741,7 @@ three xyz components will be used.</p>
 <div class="section" id="id33">
 <h3>Description<a class="headerlink" href="#id33" title="Permalink to this headline">¶</a></h3>
 <p>This CV calculates the dihedral angle, in radians, formed by four atoms <span class="math notranslate nohighlight">\(i,j,k,l\)</span>.
-It is computed as in <a class="reference internal" href="zReferences.html#blondel19961132" id="id34">[3]</a>,</p>
+It is computed as in <a class="bibtex reference internal" href="zReferences.html#blondel19961132" id="id34">[3]</a>,</p>
 <div class="math notranslate nohighlight">
 \[\xi = \tan^{-1}\left( \frac{\left[(r_{lk} \times r_{jk}) \times (r_{ij} \times r_{jk}) \right] \cdot \frac{r_{jk}}{\Vert r_{jk}\Vert}}{(r_{lk} \times r_{jk}) \cdot (r_{ij} \times r_{jk}) } \right).\]</div>
 <p>Specifically, the function <code class="docutils literal notranslate"><span class="pre">atan2</span></code> is used for the inverse tangent calculation to yield a four-quadrant angle.</p>
@@ -1053,7 +1053,7 @@ A value of 1 selects for the intra mode; a value of 2 selects for inter mode.</p
     <p>
         &copy; Copyright 2018, the SSAGES Team
       <span class="lastupdated">
-        Last updated on Aug 23, 2019.
+        Last updated on May 27, 2020.
       </span>
 
     </p>

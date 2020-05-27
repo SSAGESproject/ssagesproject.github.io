@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Engines &mdash; SSAGES v0.8.5-alpha documentation</title>
+  <title>Engines &mdash; SSAGES 0.8.6 documentation</title>
   
 
   
@@ -21,11 +21,11 @@
   
     
       <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
-        <script type="text/javascript" src="_static/jquery.js"></script>
-        <script type="text/javascript" src="_static/underscore.js"></script>
-        <script type="text/javascript" src="_static/doctools.js"></script>
-        <script type="text/javascript" src="_static/language_data.js"></script>
-        <script async="async" type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+        <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
     
     <script type="text/javascript" src="_static/js/theme.js"></script>
 
@@ -61,7 +61,7 @@
             
             
               <div class="version">
-                0.8.5
+                0.8.6
               </div>
             
           
@@ -114,8 +114,8 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#hoomd-blue">HOOMD-blue</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#id9">Building</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id10">Running</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id10">Building</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id11">Running</a></li>
 </ul>
 </li>
 </ul>
@@ -502,7 +502,7 @@ the calculation to obtain the ground state density in the first step.</p></li>
 <p>The JSON file contains the same field that would usually have (CVs, methods, logger, etc.) with three additional options:</p>
 <div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
         <span class="s2">&quot;walkers&quot;</span><span class="o">:</span> <span class="nx">N</span><span class="p">,</span>
-        <span class="s2">&quot;input&quot;</span><span class="o">:</span> <span class="s2">&quot;[md.1, md.2, ..., md.N]&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;input&quot;</span><span class="o">:</span> <span class="p">[</span><span class="s2">&quot;md.1&quot;</span><span class="p">,</span> <span class="s2">&quot;md.2&quot;</span><span class="p">,</span> <span class="p">...,</span> <span class="s2">&quot;md.N&quot;</span><span class="p">],</span>
         <span class="s2">&quot;md_iterations&quot;</span> <span class="o">:</span> <span class="mi">10</span><span class="p">,</span>
         <span class="s2">&quot;qm_iterations&quot;</span> <span class="o">:</span> <span class="mi">30</span><span class="p">,</span>
         <span class="s2">&quot;wf_iterations&quot;</span> <span class="o">:</span> <span class="mi">1</span><span class="p">,</span>
@@ -523,7 +523,9 @@ Qbox <strong>at the first time step of the simulations</strong> to set up the ca
 If the file contains a command such as <code class="docutils literal notranslate"><span class="pre">run</span> <span class="pre">200</span> <span class="pre">10</span></code>, the 200 MD steps that
 Qbox will perform <strong>will be unbiased</strong>. If wanted, this feature can be used to
 equilibrate the system. After this first step, the command
-<code class="docutils literal notranslate"><span class="pre">run</span> <span class="pre">1</span> <span class="pre">qm_iterations</span> <span class="pre">wf_iterations</span></code> will be repeated for <code class="docutils literal notranslate"><span class="pre">md_iterations</span></code>.</p>
+<code class="docutils literal notranslate"><span class="pre">run</span> <span class="pre">1</span> <span class="pre">qm_iterations</span> <span class="pre">wf_iterations</span></code> will be repeated for <code class="docutils literal notranslate"><span class="pre">md_iterations</span></code>.
+<strong>The QBox input file must contain at least 1 MD step in order to run with SSAGES.</strong>
+Thus always include the <code class="docutils literal notranslate"><span class="pre">run</span> <span class="pre">1</span></code> command.</p>
 <p>An example of <code class="docutils literal notranslate"><span class="pre">input.json</span></code> and <code class="docutils literal notranslate"><span class="pre">md.i</span></code> is present in the <code class="docutils literal notranslate"><span class="pre">Examples/User/ABF/NaCl-Qbox</span></code> directory.</p>
 </div>
 <div class="section" id="id8">
@@ -582,6 +584,14 @@ of runs. (For example, if you restarted two times, you would have
 <code class="docutils literal notranslate"><span class="pre">restart_i.xml</span></code> files to avoid discontinuities in the trajectories; when
 restarting, create a <code class="docutils literal notranslate"><span class="pre">md.i</span></code> file that contains the <code class="docutils literal notranslate"><span class="pre">load</span> <span class="pre">restart_i.xml</span></code>
 instructions.</p>
+<p>There are useful scripts to analyze and plot Qbox trajectories, which are available in the <a class="reference external" href="http://qboxcode.org/tools//">Qbox tools webpage</a>. To run any of these scripts, first reformat <code class="docutils literal notranslate"><span class="pre">ssages_out_i_run_j.xml</span></code> file by running a python script <code class="docutils literal notranslate"><span class="pre">Qbox-xml-cleaning.py</span></code> present in <code class="docutils literal notranslate"><span class="pre">Tools/</span></code> directory. For example, if the original ssages-qbox output file is <code class="docutils literal notranslate"><span class="pre">ssages_out_0_run_0.xml</span></code> then the command line to reformat this xml file is</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>python3 Qbox-xml-cleaning.py ssages_out_0_run_0.xml ssages_out_0_run_0_cleaned.xml
+</pre></div>
+</div>
+<p>where first arugment the name of the original xml output file, and the second argument is the reformatted xml file. Now these files can be analyzed using the scripts in <a class="reference external" href="http://qboxcode.org/tools//">Qbox tools webpage</a>. For example, to create xyz trajectory file from the reformatted output  <code class="docutils literal notranslate"><span class="pre">ssages_out_0_run_0_cleaned.xml</span></code>, run the command</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>python2 qbox_xyz.py -all ssages_out_0_run_0_cleaned.xml &gt; out_0_run_0.xyz
+</pre></div>
+</div>
 </div>
 <div class="section" id="running-on-clusters">
 <h3>Running on Clusters<a class="headerlink" href="#running-on-clusters" title="Permalink to this headline">¶</a></h3>
@@ -624,8 +634,8 @@ on how you have compiled Qbox and SSAGES.</p>
 </div>
 <div class="section" id="hoomd-blue">
 <h2>HOOMD-blue<a class="headerlink" href="#hoomd-blue" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="id9">
-<h3>Building<a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id10">
+<h3>Building<a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h3>
 <p>HOOMD-blue supports SSAGES on the current <code class="docutils literal notranslate"><span class="pre">master</span></code> branch as of 2018-08-01,
 and will be supported in releases v2.4.0 and later. HOOMD-blue must be built
 with <strong>MPI support enabled</strong>, using the HOOMD CMake flag <code class="docutils literal notranslate"><span class="pre">-DMPI_ENABLED=ON</span></code>.
@@ -655,8 +665,8 @@ make -j <span class="m">8</span>
 </pre></div>
 </div>
 </div>
-<div class="section" id="id10">
-<h3>Running<a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id11">
+<h3>Running<a class="headerlink" href="#id11" title="Permalink to this headline">¶</a></h3>
 <p>HOOMD-blue offers a “half-step hook” API to support SSAGES.
 This feature is automatically configured when SSAGES launches
 the HOOMD-blue simulation.</p>
@@ -695,7 +705,7 @@ line options that will be passed to <code class="docutils literal notranslate"><
     <p>
         &copy; Copyright 2018, the SSAGES Team
       <span class="lastupdated">
-        Last updated on Aug 23, 2019.
+        Last updated on May 27, 2020.
       </span>
 
     </p>
