@@ -42,13 +42,25 @@ sub {
 sup {
     top: -.5em;
 }
+
 img {
-    border-style: none;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
+
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 50px;
+  padding-bottom: 50px;
+
 }
+
+video {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
 table {
     border-collapse: separate;
     border-spacing: 0;
