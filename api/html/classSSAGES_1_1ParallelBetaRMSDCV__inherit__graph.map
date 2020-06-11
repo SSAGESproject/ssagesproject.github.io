@@ -1,0 +1,4 @@
+<map id="SSAGES::ParallelBetaRMSDCV" name="SSAGES::ParallelBetaRMSDCV">
+<area shape="rect" id="node1" title="Collective variable to measure parallel beta sheet secondary structure." alt="" coords="5,80,220,107"/>
+<area shape="rect" id="node2" href="$classSSAGES_1_1CollectiveVariable.html" title="Abstract class for a collective variable." alt="" coords="17,5,208,32"/>
+</map>

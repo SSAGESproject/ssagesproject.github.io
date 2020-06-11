@@ -1,0 +1,208 @@
+\hypertarget{classJson_1_1StringRequirement}{}\doxysection{Json\+::String\+Requirement Class Reference}
+\label{classJson_1_1StringRequirement}\index{Json::StringRequirement@{Json::StringRequirement}}
+
+
+Requirements on strings.  
+
+
+
+
+{\ttfamily \#include $<$String\+Requirement.\+h$>$}
+
+
+
+Inheritance diagram for Json\+::String\+Requirement\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=205pt]{classJson_1_1StringRequirement__inherit__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classJson_1_1StringRequirement_af29040b1e09dcd3da8d22d03f2ec8cc3}\label{classJson_1_1StringRequirement_af29040b1e09dcd3da8d22d03f2ec8cc3}} 
+\mbox{\hyperlink{classJson_1_1StringRequirement_af29040b1e09dcd3da8d22d03f2ec8cc3}{String\+Requirement}} ()
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classJson_1_1StringRequirement_a94c05d138cbf61dc555b15acf66faf20}\label{classJson_1_1StringRequirement_a94c05d138cbf61dc555b15acf66faf20}} 
+virtual void \mbox{\hyperlink{classJson_1_1StringRequirement_a94c05d138cbf61dc555b15acf66faf20}{Reset}} () override
+\begin{DoxyCompactList}\small\item\em Reset \mbox{\hyperlink{classJson_1_1Requirement}{Requirement}}. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classJson_1_1StringRequirement_abd43029af18e00f1833d9385732c8c54}{Parse}} (Value json, const std\+::string \&path) override
+\begin{DoxyCompactList}\small\item\em Parse \mbox{\hyperlink{namespaceJSON}{J\+S\+ON}} value to generate \mbox{\hyperlink{classJson_1_1Requirement}{Requirement}}. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classJson_1_1StringRequirement_a88d4a2078cd565739f30ed3ec0ff5024}{Validate}} (const Value \&json, const std\+::string \&path) override
+\begin{DoxyCompactList}\small\item\em Validate string value. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classJson_1_1StringRequirement_a94ff97076298c0e25133869e893fbf7e}\label{classJson_1_1StringRequirement_a94ff97076298c0e25133869e893fbf7e}} 
+bool \mbox{\hyperlink{classJson_1_1StringRequirement_a94ff97076298c0e25133869e893fbf7e}{min\+Set\+\_\+}}
+\begin{DoxyCompactList}\small\item\em If {\ttfamily True}, minimum length requirement is active. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classJson_1_1StringRequirement_ab2529c316308f8029e08db7fd97edd85}\label{classJson_1_1StringRequirement_ab2529c316308f8029e08db7fd97edd85}} 
+bool \mbox{\hyperlink{classJson_1_1StringRequirement_ab2529c316308f8029e08db7fd97edd85}{max\+Set\+\_\+}}
+\begin{DoxyCompactList}\small\item\em If {\ttfamily True}, maximum length requirement is active. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classJson_1_1StringRequirement_abdd026b731646f95661012d36c34d936}\label{classJson_1_1StringRequirement_abdd026b731646f95661012d36c34d936}} 
+bool \mbox{\hyperlink{classJson_1_1StringRequirement_abdd026b731646f95661012d36c34d936}{rgx\+Set\+\_\+}}
+\begin{DoxyCompactList}\small\item\em If {\ttfamily True}, string has to match regular expression. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classJson_1_1StringRequirement_a24e06f4ce0693240309560ce705d6a88}\label{classJson_1_1StringRequirement_a24e06f4ce0693240309560ce705d6a88}} 
+size\+\_\+t \mbox{\hyperlink{classJson_1_1StringRequirement_a24e06f4ce0693240309560ce705d6a88}{min\+Length\+\_\+}}
+\begin{DoxyCompactList}\small\item\em Minimum string length;. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classJson_1_1StringRequirement_aaa989f8f53accf879138cb074bb5d9cd}\label{classJson_1_1StringRequirement_aaa989f8f53accf879138cb074bb5d9cd}} 
+size\+\_\+t \mbox{\hyperlink{classJson_1_1StringRequirement_aaa989f8f53accf879138cb074bb5d9cd}{max\+Length\+\_\+}}
+\begin{DoxyCompactList}\small\item\em Maximum string length;. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classJson_1_1StringRequirement_a9a4f423d4016588a9b16380818eb32e1}\label{classJson_1_1StringRequirement_a9a4f423d4016588a9b16380818eb32e1}} 
+std\+::regex \mbox{\hyperlink{classJson_1_1StringRequirement_a9a4f423d4016588a9b16380818eb32e1}{regex\+\_\+}}
+\begin{DoxyCompactList}\small\item\em Regular expression to match string to. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classJson_1_1StringRequirement_aa361c4263542f4b5741bf366253dfa83}\label{classJson_1_1StringRequirement_aa361c4263542f4b5741bf366253dfa83}} 
+std\+::string \mbox{\hyperlink{classJson_1_1StringRequirement_aa361c4263542f4b5741bf366253dfa83}{expr\+\_\+}}
+\begin{DoxyCompactList}\small\item\em Expression. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classJson_1_1StringRequirement_a6d961a1884a7f7735c621860b794e474}\label{classJson_1_1StringRequirement_a6d961a1884a7f7735c621860b794e474}} 
+std\+::string \mbox{\hyperlink{classJson_1_1StringRequirement_a6d961a1884a7f7735c621860b794e474}{path\+\_\+}}
+\begin{DoxyCompactList}\small\item\em Path for \mbox{\hyperlink{namespaceJSON}{J\+S\+ON}} path specification. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classJson_1_1StringRequirement_a84315f436a2aca4aa9c98d86c0ffc4a7}\label{classJson_1_1StringRequirement_a84315f436a2aca4aa9c98d86c0ffc4a7}} 
+std\+::vector$<$ std\+::string $>$ \mbox{\hyperlink{classJson_1_1StringRequirement_a84315f436a2aca4aa9c98d86c0ffc4a7}{enum\+\_\+}}
+\begin{DoxyCompactList}\small\item\em Enum values. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Requirements on strings. 
+
+Definition at line 37 of file String\+Requirement.\+h.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classJson_1_1StringRequirement_abd43029af18e00f1833d9385732c8c54}\label{classJson_1_1StringRequirement_abd43029af18e00f1833d9385732c8c54}} 
+\index{Json::StringRequirement@{Json::StringRequirement}!Parse@{Parse}}
+\index{Parse@{Parse}!Json::StringRequirement@{Json::StringRequirement}}
+\doxysubsubsection{\texorpdfstring{Parse()}{Parse()}}
+{\footnotesize\ttfamily virtual void Json\+::\+String\+Requirement\+::\+Parse (\begin{DoxyParamCaption}\item[{Value}]{json,  }\item[{const std\+::string \&}]{path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Parse \mbox{\hyperlink{namespaceJSON}{J\+S\+ON}} value to generate \mbox{\hyperlink{classJson_1_1Requirement}{Requirement}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em json} & \mbox{\hyperlink{namespaceJSON}{J\+S\+ON}} input value. \\
+\hline
+{\em path} & Path for \mbox{\hyperlink{namespaceJSON}{J\+S\+ON}} path specification. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classJson_1_1Requirement_af13c20497e7ad6c332c57fa80a266e27}{Json\+::\+Requirement}}.
+
+
+
+Definition at line 78 of file String\+Requirement.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{79         \{}
+\DoxyCodeLine{80             \mbox{\hyperlink{classJson_1_1StringRequirement_a94c05d138cbf61dc555b15acf66faf20}{Reset}}();}
+\DoxyCodeLine{81             }
+\DoxyCodeLine{82             \mbox{\hyperlink{classJson_1_1StringRequirement_a6d961a1884a7f7735c621860b794e474}{path\_}} = path;}
+\DoxyCodeLine{83             \textcolor{keywordflow}{if}(json.isMember(\textcolor{stringliteral}{"minLength"}) \&\& json[\textcolor{stringliteral}{"minLength"}].isUInt())}
+\DoxyCodeLine{84             \{}
+\DoxyCodeLine{85                 \mbox{\hyperlink{classJson_1_1StringRequirement_a94ff97076298c0e25133869e893fbf7e}{minSet\_}} = \textcolor{keyword}{true};}
+\DoxyCodeLine{86                 \mbox{\hyperlink{classJson_1_1StringRequirement_a24e06f4ce0693240309560ce705d6a88}{minLength\_}} = json[\textcolor{stringliteral}{"minLength"}].asUInt();}
+\DoxyCodeLine{87             \}}
+\DoxyCodeLine{88             }
+\DoxyCodeLine{89             \textcolor{keywordflow}{if}(json.isMember(\textcolor{stringliteral}{"maxLength"}) \&\& json[\textcolor{stringliteral}{"maxLength"}].isUInt())}
+\DoxyCodeLine{90             \{}
+\DoxyCodeLine{91                 \mbox{\hyperlink{classJson_1_1StringRequirement_ab2529c316308f8029e08db7fd97edd85}{maxSet\_}} = \textcolor{keyword}{true};}
+\DoxyCodeLine{92                 \mbox{\hyperlink{classJson_1_1StringRequirement_aaa989f8f53accf879138cb074bb5d9cd}{maxLength\_}} = json[\textcolor{stringliteral}{"maxLength"}].asUInt();}
+\DoxyCodeLine{93             }
+\DoxyCodeLine{94             \}}
+\DoxyCodeLine{95 }
+\DoxyCodeLine{96             \textcolor{keywordflow}{if}(json.isMember(\textcolor{stringliteral}{"pattern"}) \&\& json[\textcolor{stringliteral}{"pattern"}].isString())}
+\DoxyCodeLine{97             \{}
+\DoxyCodeLine{98                 \mbox{\hyperlink{classJson_1_1StringRequirement_abdd026b731646f95661012d36c34d936}{rgxSet\_}} = \textcolor{keyword}{true};}
+\DoxyCodeLine{99                 \mbox{\hyperlink{classJson_1_1StringRequirement_aa361c4263542f4b5741bf366253dfa83}{expr\_}} = json[\textcolor{stringliteral}{"pattern"}].asString();}
+\DoxyCodeLine{100                 \mbox{\hyperlink{classJson_1_1StringRequirement_a9a4f423d4016588a9b16380818eb32e1}{regex\_}} = std::regex(\mbox{\hyperlink{classJson_1_1StringRequirement_aa361c4263542f4b5741bf366253dfa83}{expr\_}}, std::regex::ECMAScript);}
+\DoxyCodeLine{101             \}}
+\DoxyCodeLine{102 }
+\DoxyCodeLine{103             \textcolor{keywordflow}{if}(json.isMember(\textcolor{stringliteral}{"enum"}) \&\& json[\textcolor{stringliteral}{"enum"}].isArray())}
+\DoxyCodeLine{104             \{}
+\DoxyCodeLine{105                 \textcolor{keywordflow}{for}(\textcolor{keyword}{const} \textcolor{keyword}{auto}\& val : json[\textcolor{stringliteral}{"enum"}])}
+\DoxyCodeLine{106                     \mbox{\hyperlink{classJson_1_1StringRequirement_a84315f436a2aca4aa9c98d86c0ffc4a7}{enum\_}}.push\_back(val.asString());}
+\DoxyCodeLine{107             \}}
+\DoxyCodeLine{108         \}}
+
+\end{DoxyCode}
+
+
+References enum\+\_\+, expr\+\_\+, max\+Length\+\_\+, max\+Set\+\_\+, min\+Length\+\_\+, min\+Set\+\_\+, path\+\_\+, regex\+\_\+, Reset(), and rgx\+Set\+\_\+.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classJson_1_1StringRequirement_abd43029af18e00f1833d9385732c8c54_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classJson_1_1StringRequirement_a88d4a2078cd565739f30ed3ec0ff5024}\label{classJson_1_1StringRequirement_a88d4a2078cd565739f30ed3ec0ff5024}} 
+\index{Json::StringRequirement@{Json::StringRequirement}!Validate@{Validate}}
+\index{Validate@{Validate}!Json::StringRequirement@{Json::StringRequirement}}
+\doxysubsubsection{\texorpdfstring{Validate()}{Validate()}}
+{\footnotesize\ttfamily virtual void Json\+::\+String\+Requirement\+::\+Validate (\begin{DoxyParamCaption}\item[{const Value \&}]{json,  }\item[{const std\+::string \&}]{path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Validate string value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em json} & \mbox{\hyperlink{namespaceJSON}{J\+S\+ON}} value to be validated. \\
+\hline
+{\em path} & Path for \mbox{\hyperlink{namespaceJSON}{J\+S\+ON}} path specification.\\
+\hline
+\end{DoxyParams}
+This function tests if the \mbox{\hyperlink{namespaceJSON}{J\+S\+ON}} value is of type string and if the string meets the requirements loaded via \mbox{\hyperlink{classJson_1_1StringRequirement_abd43029af18e00f1833d9385732c8c54}{String\+Requirement\+::\+Parse()}}. If the validation fails, one or more errors are appended to the list of errors. 
+
+Implements \mbox{\hyperlink{classJson_1_1Requirement_aa97494b642414d00482745a0d5b2c2c3}{Json\+::\+Requirement}}.
+
+
+
+Definition at line 120 of file String\+Requirement.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{121         \{}
+\DoxyCodeLine{122             \textcolor{keywordflow}{if}(!json.isString())}
+\DoxyCodeLine{123             \{}
+\DoxyCodeLine{124                 \mbox{\hyperlink{classJson_1_1Requirement_adeb9efa6cf271d9cea0599ff2d458a08}{PushError}}(path + \textcolor{stringliteral}{": Must be of type \(\backslash\)"string\(\backslash\)""});}
+\DoxyCodeLine{125                 \textcolor{keywordflow}{return};}
+\DoxyCodeLine{126             \}}
+\DoxyCodeLine{127             }
+\DoxyCodeLine{128             \textcolor{keywordflow}{if}(\mbox{\hyperlink{classJson_1_1StringRequirement_a94ff97076298c0e25133869e893fbf7e}{minSet\_}} \&\& json.asString().length() < \mbox{\hyperlink{classJson_1_1StringRequirement_a24e06f4ce0693240309560ce705d6a88}{minLength\_}})}
+\DoxyCodeLine{129                 \mbox{\hyperlink{classJson_1_1Requirement_adeb9efa6cf271d9cea0599ff2d458a08}{PushError}}(path + \textcolor{stringliteral}{": Length must be greater than "} + std::to\_string(\mbox{\hyperlink{classJson_1_1StringRequirement_a24e06f4ce0693240309560ce705d6a88}{minLength\_}}));}
+\DoxyCodeLine{130             }
+\DoxyCodeLine{131             \textcolor{keywordflow}{if}(\mbox{\hyperlink{classJson_1_1StringRequirement_ab2529c316308f8029e08db7fd97edd85}{maxSet\_}} \&\& json.asString().length() > \mbox{\hyperlink{classJson_1_1StringRequirement_aaa989f8f53accf879138cb074bb5d9cd}{maxLength\_}})}
+\DoxyCodeLine{132                 \mbox{\hyperlink{classJson_1_1Requirement_adeb9efa6cf271d9cea0599ff2d458a08}{PushError}}(path + \textcolor{stringliteral}{": Length must be less than "} + std::to\_string(\mbox{\hyperlink{classJson_1_1StringRequirement_a24e06f4ce0693240309560ce705d6a88}{minLength\_}}));}
+\DoxyCodeLine{133 }
+\DoxyCodeLine{134             \textcolor{keywordflow}{if}(\mbox{\hyperlink{classJson_1_1StringRequirement_abdd026b731646f95661012d36c34d936}{rgxSet\_}} \&\& !std::regex\_match(json.asString(), \mbox{\hyperlink{classJson_1_1StringRequirement_a9a4f423d4016588a9b16380818eb32e1}{regex\_}}))}
+\DoxyCodeLine{135                 \mbox{\hyperlink{classJson_1_1Requirement_adeb9efa6cf271d9cea0599ff2d458a08}{PushError}}(path + \textcolor{stringliteral}{": String must match regular expression \(\backslash\)""} + \mbox{\hyperlink{classJson_1_1StringRequirement_aa361c4263542f4b5741bf366253dfa83}{expr\_}} + \textcolor{stringliteral}{"\(\backslash\)""});}
+\DoxyCodeLine{136 }
+\DoxyCodeLine{137             \textcolor{keywordflow}{if}(\mbox{\hyperlink{classJson_1_1StringRequirement_a84315f436a2aca4aa9c98d86c0ffc4a7}{enum\_}}.size() \&\& std::find(\mbox{\hyperlink{classJson_1_1StringRequirement_a84315f436a2aca4aa9c98d86c0ffc4a7}{enum\_}}.begin(),\mbox{\hyperlink{classJson_1_1StringRequirement_a84315f436a2aca4aa9c98d86c0ffc4a7}{enum\_}}.end(), json.asString()) == \mbox{\hyperlink{classJson_1_1StringRequirement_a84315f436a2aca4aa9c98d86c0ffc4a7}{enum\_}}.end())}
+\DoxyCodeLine{138                 \mbox{\hyperlink{classJson_1_1Requirement_adeb9efa6cf271d9cea0599ff2d458a08}{PushError}}(path + \textcolor{stringliteral}{": String is not a valid entry"});}
+\DoxyCodeLine{139         \}}
+
+\end{DoxyCode}
+
+
+References enum\+\_\+, expr\+\_\+, max\+Length\+\_\+, max\+Set\+\_\+, min\+Length\+\_\+, min\+Set\+\_\+, Json\+::\+Requirement\+::\+Push\+Error(), regex\+\_\+, and rgx\+Set\+\_\+.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=346pt]{classJson_1_1StringRequirement_a88d4a2078cd565739f30ed3ec0ff5024_cgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/michael/development/\+S\+S\+A\+G\+E\+S/src/\+Validator/String\+Requirement.\+h\end{DoxyCompactItemize}

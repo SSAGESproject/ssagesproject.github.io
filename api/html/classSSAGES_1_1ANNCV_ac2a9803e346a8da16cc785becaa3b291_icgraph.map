@@ -1,0 +1,6 @@
+<map id="SSAGES::ANNCV::ANNCV" name="SSAGES::ANNCV::ANNCV">
+<area shape="rect" id="node1" title="Constructor." alt="" coords="697,13,887,39"/>
+<area shape="rect" id="node2" href="$classSSAGES_1_1ANNCV.html#a8173b4f597f6eba50295c5eeb508dec1" title="Set up collective variable." alt="" coords="479,13,649,39"/>
+<area shape="rect" id="node3" href="$classSSAGES_1_1CollectiveVariable.html#ab56eae0d888f3d5125566bfb9b5e21aa" title="Set up collective variable." alt="" coords="240,5,431,47"/>
+<area shape="rect" id="node4" href="$classSSAGES_1_1ResourceHandler.html#ac026ad9aa098fa1508a78b0b5a91e8a2" title="Build a new ResourceHandler from JSON." alt="" coords="5,5,192,47"/>
+</map>

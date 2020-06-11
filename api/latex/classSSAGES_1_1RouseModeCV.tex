@@ -1,0 +1,429 @@
+\hypertarget{classSSAGES_1_1RouseModeCV}{}\doxysection{S\+S\+A\+G\+ES\+::Rouse\+Mode\+CV Class Reference}
+\label{classSSAGES_1_1RouseModeCV}\index{SSAGES::RouseModeCV@{SSAGES::RouseModeCV}}
+
+
+Collective variable is a Rouse mode for a polymer chain comprised of N particle groups.  
+
+
+
+
+{\ttfamily \#include $<$Rouse\+Mode\+C\+V.\+h$>$}
+
+
+
+Inheritance diagram for S\+S\+A\+G\+ES\+::Rouse\+Mode\+CV\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=223pt]{classSSAGES_1_1RouseModeCV__inherit__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classSSAGES_1_1RouseModeCV_ad62878654ee690c5ef822fea8339ef88}{Rouse\+Mode\+CV}} (const std\+::vector$<$ \mbox{\hyperlink{namespaceSSAGES_afbb26053e292f94ea83b1c441ce6df74}{Label}} $>$ \&groups, int p)
+\begin{DoxyCompactList}\small\item\em Basic Constructor for Rouse Mode CV. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classSSAGES_1_1RouseModeCV_a5842a8b7e54d435af5465aea2c85e924}{set\+Masses}} (const std\+::vector$<$ \mbox{\hyperlink{namespaceSSAGES_afbb26053e292f94ea83b1c441ce6df74}{Label}} $>$ \&groups, const \mbox{\hyperlink{classSSAGES_1_1Snapshot}{Snapshot}} \&snapshot)
+\begin{DoxyCompactList}\small\item\em Helper function to determine masses of each group. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classSSAGES_1_1RouseModeCV_a851e533301a1464b5d69c711c6499ba1}{Initialize}} (const \mbox{\hyperlink{classSSAGES_1_1Snapshot}{Snapshot}} \&snapshot) override
+\begin{DoxyCompactList}\small\item\em Initialize necessary variables. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classSSAGES_1_1RouseModeCV_a1468b1aabf81ceb2ef3feb3b8fc79d0d}{Evaluate}} (const \mbox{\hyperlink{classSSAGES_1_1Snapshot}{Snapshot}} \&snapshot) override
+\begin{DoxyCompactList}\small\item\em Evaluate the CV. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classSSAGES_1_1RouseModeCV}{Rouse\+Mode\+CV}} $\ast$ \mbox{\hyperlink{classSSAGES_1_1RouseModeCV_a369dd6839f82c595844881f3db88a956}{Build}} (const Json\+::\+Value \&json, const std\+::string \&path)
+\begin{DoxyCompactList}\small\item\em Set up collective variable. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classSSAGES_1_1RouseModeCV_a6d2926c996f8be52f5a6f395e879b8bb}\label{classSSAGES_1_1RouseModeCV_a6d2926c996f8be52f5a6f395e879b8bb}} 
+std\+::vector$<$ \mbox{\hyperlink{namespaceSSAGES_afbb26053e292f94ea83b1c441ce6df74}{Label}} $>$ \mbox{\hyperlink{classSSAGES_1_1RouseModeCV_a6d2926c996f8be52f5a6f395e879b8bb}{groups\+\_\+}}
+\begin{DoxyCompactList}\small\item\em vector of groups of indices to define the particle groups \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classSSAGES_1_1RouseModeCV_af43d192dbbaad89f6265719aa0abd3d8}\label{classSSAGES_1_1RouseModeCV_af43d192dbbaad89f6265719aa0abd3d8}} 
+std\+::vector$<$ double $>$ \mbox{\hyperlink{classSSAGES_1_1RouseModeCV_af43d192dbbaad89f6265719aa0abd3d8}{massg\+\_\+}}
+\begin{DoxyCompactList}\small\item\em vector of the total mass for each particle group \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classSSAGES_1_1RouseModeCV_adfee38699838eb6e69d3605b830375c8}\label{classSSAGES_1_1RouseModeCV_adfee38699838eb6e69d3605b830375c8}} 
+size\+\_\+t \mbox{\hyperlink{classSSAGES_1_1RouseModeCV_adfee38699838eb6e69d3605b830375c8}{p\+\_\+}}
+\begin{DoxyCompactList}\small\item\em index of mode of interest as CV \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classSSAGES_1_1RouseModeCV_a4aceea5b175a73d55219668869533a68}\label{classSSAGES_1_1RouseModeCV_a4aceea5b175a73d55219668869533a68}} 
+size\+\_\+t \mbox{\hyperlink{classSSAGES_1_1RouseModeCV_a4aceea5b175a73d55219668869533a68}{N\+\_\+}}
+\begin{DoxyCompactList}\small\item\em number of Rouse beads in polymer chain \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classSSAGES_1_1RouseModeCV_aa304ecd023f3cef5fb96d584ccc0362b}\label{classSSAGES_1_1RouseModeCV_aa304ecd023f3cef5fb96d584ccc0362b}} 
+\mbox{\hyperlink{namespaceSSAGES_a630084a0a5e185e89e21b3735f8f8b2e}{Vector3}} \mbox{\hyperlink{classSSAGES_1_1RouseModeCV_aa304ecd023f3cef5fb96d584ccc0362b}{xp\+\_\+}}
+\begin{DoxyCompactList}\small\item\em 3d vector for containing vectorial rouse amplitude \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classSSAGES_1_1RouseModeCV_a5190632f86bd3ff6a8036574263ae050}\label{classSSAGES_1_1RouseModeCV_a5190632f86bd3ff6a8036574263ae050}} 
+std\+::vector$<$ \mbox{\hyperlink{namespaceSSAGES_a630084a0a5e185e89e21b3735f8f8b2e}{Vector3}} $>$ \mbox{\hyperlink{classSSAGES_1_1RouseModeCV_a5190632f86bd3ff6a8036574263ae050}{r\+\_\+}}
+\begin{DoxyCompactList}\small\item\em vector of coordinate positions for each bead \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Collective variable is a Rouse mode for a polymer chain comprised of N particle groups. 
+
+This CV returns the value for the p\textquotesingle{}th Rouse mode, computed as Xp(t) $\sim$ (1/N) sum\+\_\+\{i=1\}$^\wedge$\{N\} ri(t)$\ast$cos\mbox{[}pi(n-\/0.\+5)p/N\mbox{]}, where N is the number of particle groups, p is the mode index, ri is the center-\/of-\/mass position of a collection of atoms comprising the i\textquotesingle{}th bead in the N-\/bead polymer chain 
+
+Definition at line 39 of file Rouse\+Mode\+C\+V.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classSSAGES_1_1RouseModeCV_ad62878654ee690c5ef822fea8339ef88}\label{classSSAGES_1_1RouseModeCV_ad62878654ee690c5ef822fea8339ef88}} 
+\index{SSAGES::RouseModeCV@{SSAGES::RouseModeCV}!RouseModeCV@{RouseModeCV}}
+\index{RouseModeCV@{RouseModeCV}!SSAGES::RouseModeCV@{SSAGES::RouseModeCV}}
+\doxysubsubsection{\texorpdfstring{RouseModeCV()}{RouseModeCV()}}
+{\footnotesize\ttfamily S\+S\+A\+G\+E\+S\+::\+Rouse\+Mode\+C\+V\+::\+Rouse\+Mode\+CV (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ \mbox{\hyperlink{namespaceSSAGES_afbb26053e292f94ea83b1c441ce6df74}{Label}} $>$ \&}]{groups,  }\item[{int}]{p }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Basic Constructor for Rouse Mode CV. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em groups} & -\/ vector of vector of atom I\+Ds, each group comprising a bead in the Rouse chain \\
+\hline
+{\em p} & -\/ index for relevant Rouse mode \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 55 of file Rouse\+Mode\+C\+V.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{55                                                            : }
+\DoxyCodeLine{56         \mbox{\hyperlink{classSSAGES_1_1RouseModeCV_a6d2926c996f8be52f5a6f395e879b8bb}{groups\_}}(groups), \mbox{\hyperlink{classSSAGES_1_1RouseModeCV_adfee38699838eb6e69d3605b830375c8}{p\_}}(p), \mbox{\hyperlink{classSSAGES_1_1RouseModeCV_a4aceea5b175a73d55219668869533a68}{N\_}}( \mbox{\hyperlink{classSSAGES_1_1RouseModeCV_a6d2926c996f8be52f5a6f395e879b8bb}{groups\_}}.size())}
+\DoxyCodeLine{57         \{ \mbox{\hyperlink{classSSAGES_1_1RouseModeCV_af43d192dbbaad89f6265719aa0abd3d8}{massg\_}}.resize( \mbox{\hyperlink{classSSAGES_1_1RouseModeCV_a6d2926c996f8be52f5a6f395e879b8bb}{groups\_}}.size(),0.0 ); \}}
+
+\end{DoxyCode}
+
+
+References groups\+\_\+, and massg\+\_\+.
+
+
+
+Referenced by Build().
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classSSAGES_1_1RouseModeCV_ad62878654ee690c5ef822fea8339ef88_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classSSAGES_1_1RouseModeCV_a369dd6839f82c595844881f3db88a956}\label{classSSAGES_1_1RouseModeCV_a369dd6839f82c595844881f3db88a956}} 
+\index{SSAGES::RouseModeCV@{SSAGES::RouseModeCV}!Build@{Build}}
+\index{Build@{Build}!SSAGES::RouseModeCV@{SSAGES::RouseModeCV}}
+\doxysubsubsection{\texorpdfstring{Build()}{Build()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classSSAGES_1_1RouseModeCV}{Rouse\+Mode\+CV}}$\ast$ S\+S\+A\+G\+E\+S\+::\+Rouse\+Mode\+C\+V\+::\+Build (\begin{DoxyParamCaption}\item[{const Json\+::\+Value \&}]{json,  }\item[{const std\+::string \&}]{path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Set up collective variable. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em json} & \mbox{\hyperlink{namespaceJSON}{J\+S\+ON}} input value. \\
+\hline
+{\em path} & Path for \mbox{\hyperlink{namespaceJSON}{J\+S\+ON}} path specification. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pointer to the CV built by this function. {\ttfamily nullptr} in case of unknown error.
+\end{DoxyReturn}
+Builds a CV from a \mbox{\hyperlink{namespaceJSON}{J\+S\+ON}} node. Returns a pointer to the built cv. If an unknown error is encountered, this function will return a {\ttfamily nullptr}, but generally it will throw a \mbox{\hyperlink{classSSAGES_1_1BuildException}{Build\+Exception}} on failure. \begin{DoxyWarning}{Warning}
+Object lifetime is the caller\textquotesingle{}s responsibility. 
+\end{DoxyWarning}
+
+
+Definition at line 192 of file Rouse\+Mode\+C\+V.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{193         \{}
+\DoxyCodeLine{194             \mbox{\hyperlink{classJson_1_1ObjectRequirement}{Json::ObjectRequirement}} validator;}
+\DoxyCodeLine{195             Json::Value schema;}
+\DoxyCodeLine{196             Json::CharReaderBuilder rbuilder;}
+\DoxyCodeLine{197             Json::CharReader* reader = rbuilder.newCharReader();}
+\DoxyCodeLine{198 }
+\DoxyCodeLine{199             reader-\/>parse(JsonSchema::RouseModeCV.c\_str(),}
+\DoxyCodeLine{200                           JsonSchema::RouseModeCV.c\_str() + JsonSchema::RouseModeCV.size(),}
+\DoxyCodeLine{201                           \&schema, \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{202             validator.\mbox{\hyperlink{classJson_1_1ObjectRequirement_a4ed02ae1d612a5efba1688fcdd2df092}{Parse}}(schema, path);}
+\DoxyCodeLine{203 }
+\DoxyCodeLine{204             \textcolor{comment}{// Validate inputs.}}
+\DoxyCodeLine{205             validator.\mbox{\hyperlink{classJson_1_1ObjectRequirement_a9ac3b920001a35bc70580035d8d802b7}{Validate}}(json, path);}
+\DoxyCodeLine{206             \textcolor{keywordflow}{if}(validator.\mbox{\hyperlink{classJson_1_1Requirement_adfaec336a9f051d6f6b9a6d7f1d97b75}{HasErrors}}())}
+\DoxyCodeLine{207                 \textcolor{keywordflow}{throw} BuildException(validator.\mbox{\hyperlink{classJson_1_1Requirement_a60bc275c366eb59f192fa2e621268480}{GetErrors}}());}
+\DoxyCodeLine{208             }
+\DoxyCodeLine{209             std::vector<Label> groups;}
+\DoxyCodeLine{210             \textcolor{keywordflow}{for} (\textcolor{keyword}{auto}\& group : json[\textcolor{stringliteral}{"groups"}]) }
+\DoxyCodeLine{211             \{}
+\DoxyCodeLine{212                 groups.push\_back(\{\});}
+\DoxyCodeLine{213                 \textcolor{keywordflow}{for}(\textcolor{keyword}{auto}\& \textcolor{keywordtype}{id} : group) }
+\DoxyCodeLine{214                     groups.back().push\_back(\textcolor{keywordtype}{id}.asInt());}
+\DoxyCodeLine{215             \}}
+\DoxyCodeLine{216 }
+\DoxyCodeLine{217             \textcolor{keyword}{auto} mode = json.get(\textcolor{stringliteral}{"mode"},0).asInt();}
+\DoxyCodeLine{218             \textcolor{keywordflow}{return} \textcolor{keyword}{new} \mbox{\hyperlink{classSSAGES_1_1RouseModeCV_ad62878654ee690c5ef822fea8339ef88}{RouseModeCV}}( groups, mode);   }
+\DoxyCodeLine{219         \}}
+
+\end{DoxyCode}
+
+
+References Json\+::\+Requirement\+::\+Get\+Errors(), Json\+::\+Requirement\+::\+Has\+Errors(), Json\+::\+Object\+Requirement\+::\+Parse(), Rouse\+Mode\+C\+V(), and Json\+::\+Object\+Requirement\+::\+Validate().
+
+
+
+Referenced by S\+S\+A\+G\+E\+S\+::\+Collective\+Variable\+::\+Build\+C\+V().
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classSSAGES_1_1RouseModeCV_a369dd6839f82c595844881f3db88a956_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classSSAGES_1_1RouseModeCV_a369dd6839f82c595844881f3db88a956_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classSSAGES_1_1RouseModeCV_a1468b1aabf81ceb2ef3feb3b8fc79d0d}\label{classSSAGES_1_1RouseModeCV_a1468b1aabf81ceb2ef3feb3b8fc79d0d}} 
+\index{SSAGES::RouseModeCV@{SSAGES::RouseModeCV}!Evaluate@{Evaluate}}
+\index{Evaluate@{Evaluate}!SSAGES::RouseModeCV@{SSAGES::RouseModeCV}}
+\doxysubsubsection{\texorpdfstring{Evaluate()}{Evaluate()}}
+{\footnotesize\ttfamily void S\+S\+A\+G\+E\+S\+::\+Rouse\+Mode\+C\+V\+::\+Evaluate (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classSSAGES_1_1Snapshot}{Snapshot}} \&}]{snapshot }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}}
+
+
+
+Evaluate the CV. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em snapshot} & Current simulation snapshot. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 121 of file Rouse\+Mode\+C\+V.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{122         \{}
+\DoxyCodeLine{123 }
+\DoxyCodeLine{124             \textcolor{comment}{// Get data from snapshot.}}
+\DoxyCodeLine{125             \textcolor{keyword}{auto}          ntot = snapshot.GetNumAtoms(); \textcolor{comment}{// total number of atoms}}
+\DoxyCodeLine{126             \textcolor{keyword}{const} \textcolor{keyword}{auto}\& masses = snapshot.GetMasses();   \textcolor{comment}{// mass of each atom}}
+\DoxyCodeLine{127 }
+\DoxyCodeLine{128             \textcolor{comment}{// Initialize working variables}}
+\DoxyCodeLine{129             \textcolor{keywordtype}{double} ppi\_n = \mbox{\hyperlink{classSSAGES_1_1RouseModeCV_adfee38699838eb6e69d3605b830375c8}{p\_}} * M\_PI / \mbox{\hyperlink{classSSAGES_1_1RouseModeCV_a4aceea5b175a73d55219668869533a68}{N\_}};  \textcolor{comment}{// constant}}
+\DoxyCodeLine{130             \mbox{\hyperlink{classSSAGES_1_1RouseModeCV_aa304ecd023f3cef5fb96d584ccc0362b}{xp\_}}.fill(0.0);   \textcolor{comment}{// vectorial Rouse mode}}
+\DoxyCodeLine{131             \mbox{\hyperlink{classSSAGES_1_1RouseModeCV_a5190632f86bd3ff6a8036574263ae050}{r\_}}.resize(\mbox{\hyperlink{classSSAGES_1_1RouseModeCV_a4aceea5b175a73d55219668869533a68}{N\_}});      \textcolor{comment}{// position vector for beads in Rouse chain (unwrapped)}}
+\DoxyCodeLine{132             \mbox{\hyperlink{classSSAGES_1_1CollectiveVariable_a390202f6e541da879f1cfcde22c49489}{grad\_}}.resize(ntot, \mbox{\hyperlink{namespaceSSAGES_a630084a0a5e185e89e21b3735f8f8b2e}{Vector3}}\{0,0,0\});  \textcolor{comment}{// gradient set to 0.0 for all atoms}}
+\DoxyCodeLine{133             std::fill(\mbox{\hyperlink{classSSAGES_1_1CollectiveVariable_a390202f6e541da879f1cfcde22c49489}{grad\_}}.begin(), \mbox{\hyperlink{classSSAGES_1_1CollectiveVariable_a390202f6e541da879f1cfcde22c49489}{grad\_}}.end(), \mbox{\hyperlink{namespaceSSAGES_a630084a0a5e185e89e21b3735f8f8b2e}{Vector3}}\{0,0,0\});}
+\DoxyCodeLine{134 }
+\DoxyCodeLine{135             \textcolor{comment}{// Iterate over all N\_ atom groups and compute the center of mass for each}}
+\DoxyCodeLine{136             std::vector<Vector3>     rcom; \textcolor{comment}{// vector of COM positions }}
+\DoxyCodeLine{137             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{size\_t} i = 0; i < \mbox{\hyperlink{classSSAGES_1_1RouseModeCV_a4aceea5b175a73d55219668869533a68}{N\_}}; ++i) \{}
+\DoxyCodeLine{138                 \mbox{\hyperlink{namespaceSSAGES_afbb26053e292f94ea83b1c441ce6df74}{Label}} idi; \textcolor{comment}{// list of indices}}
+\DoxyCodeLine{139                 snapshot.GetLocalIndices(\mbox{\hyperlink{classSSAGES_1_1RouseModeCV_a6d2926c996f8be52f5a6f395e879b8bb}{groups\_}}[i], \&idi);}
+\DoxyCodeLine{140                 rcom.push\_back(snapshot.CenterOfMass(idi)); \textcolor{comment}{// center of mass for group}}
+\DoxyCodeLine{141             \}}
+\DoxyCodeLine{142 }
+\DoxyCodeLine{143             \textcolor{comment}{// Now compute differences vectors between the neighboring beads}}
+\DoxyCodeLine{144             \textcolor{comment}{// accumulate displacements to reconstruct unwrapped polymer chain}}
+\DoxyCodeLine{145             \textcolor{comment}{// for simplicity, we consider the first bead to be the reference position}}
+\DoxyCodeLine{146             \textcolor{comment}{// in all snapshots}}
+\DoxyCodeLine{147             \mbox{\hyperlink{classSSAGES_1_1RouseModeCV_a5190632f86bd3ff6a8036574263ae050}{r\_}}[0] = rcom[0];}
+\DoxyCodeLine{148             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{size\_t} i = 1; i < \mbox{\hyperlink{classSSAGES_1_1RouseModeCV_a4aceea5b175a73d55219668869533a68}{N\_}}; ++i) \{}
+\DoxyCodeLine{149                 \mbox{\hyperlink{namespaceSSAGES_a630084a0a5e185e89e21b3735f8f8b2e}{Vector3}} dri = snapshot.ApplyMinimumImage(rcom[i] -\/ rcom[i-\/1]);}
+\DoxyCodeLine{150                 \mbox{\hyperlink{classSSAGES_1_1RouseModeCV_a5190632f86bd3ff6a8036574263ae050}{r\_}}[i] = \mbox{\hyperlink{classSSAGES_1_1RouseModeCV_a5190632f86bd3ff6a8036574263ae050}{r\_}}[i-\/1] + dri;  \textcolor{comment}{// r\_i = r\_\{i-\/1\} + (r\_i -\/ r\_\{i-\/1\})}}
+\DoxyCodeLine{151             \}}
+\DoxyCodeLine{152 }
+\DoxyCodeLine{153             \textcolor{comment}{// Determine the value of the Rouse coordinate}}
+\DoxyCodeLine{154             \textcolor{comment}{// Xp(t) = 1/sqrt(N) * sum\_\{i=1\}\string^\{N\} ri, p = 0}}
+\DoxyCodeLine{155             \textcolor{comment}{// Xp(t) = sqrt(2/N) * sum\_\{i=1\}\string^\{N\} ri * cos[p*pi/N*(i-\/0.5)], p = 1,...,N-\/1}}
+\DoxyCodeLine{156             \textcolor{comment}{// Note: this solution is valid for homogeneous friction}}
+\DoxyCodeLine{157             \mbox{\hyperlink{classSSAGES_1_1RouseModeCV_aa304ecd023f3cef5fb96d584ccc0362b}{xp\_}}.fill(0.0);}
+\DoxyCodeLine{158             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{size\_t} i = 0; i < \mbox{\hyperlink{classSSAGES_1_1RouseModeCV_a4aceea5b175a73d55219668869533a68}{N\_}}; ++i) \{}
+\DoxyCodeLine{159                 \mbox{\hyperlink{classSSAGES_1_1RouseModeCV_aa304ecd023f3cef5fb96d584ccc0362b}{xp\_}} += \mbox{\hyperlink{classSSAGES_1_1RouseModeCV_a5190632f86bd3ff6a8036574263ae050}{r\_}}[i]*cos ( ppi\_n * (i+0.5) );}
+\DoxyCodeLine{160             \}}
+\DoxyCodeLine{161             \mbox{\hyperlink{classSSAGES_1_1RouseModeCV_aa304ecd023f3cef5fb96d584ccc0362b}{xp\_}} /= sqrt(\mbox{\hyperlink{classSSAGES_1_1RouseModeCV_a4aceea5b175a73d55219668869533a68}{N\_}});}
+\DoxyCodeLine{162             \textcolor{keywordflow}{if} ( \mbox{\hyperlink{classSSAGES_1_1RouseModeCV_adfee38699838eb6e69d3605b830375c8}{p\_}} != 0 ) \mbox{\hyperlink{classSSAGES_1_1RouseModeCV_aa304ecd023f3cef5fb96d584ccc0362b}{xp\_}} *= sqrt(2.0) ;}
+\DoxyCodeLine{163 }
+\DoxyCodeLine{164             \textcolor{comment}{// Compute Rouse vector norm as the CV}}
+\DoxyCodeLine{165             \textcolor{comment}{// CV = sqrt(Xp*Xp), Xp = (Xp1,Xp2,Xp3)}}
+\DoxyCodeLine{166             \mbox{\hyperlink{classSSAGES_1_1CollectiveVariable_a65b17f3e9b3c967ad42814c3eec88bb2}{val\_}} = \mbox{\hyperlink{classSSAGES_1_1RouseModeCV_aa304ecd023f3cef5fb96d584ccc0362b}{xp\_}}.norm();}
+\DoxyCodeLine{167 }
+\DoxyCodeLine{168             \textcolor{comment}{// Now perform gradient operation}}
+\DoxyCodeLine{169             \textcolor{comment}{// dCV/dxjd = (Xpd/CV)*(c/N)**0.5*sum\_i=1\string^N cos[p*pi(i-\/0.5)/N] mj/Mi *delta\_j(\{i\})}}
+\DoxyCodeLine{170             \textcolor{comment}{// delta\_j(\{i\}) = 1, if j in \{i\}, 0 otherwise}}
+\DoxyCodeLine{171             \mbox{\hyperlink{namespaceSSAGES_a630084a0a5e185e89e21b3735f8f8b2e}{Vector3}}   gradpcon  = \mbox{\hyperlink{classSSAGES_1_1RouseModeCV_aa304ecd023f3cef5fb96d584ccc0362b}{xp\_}} / sqrt(\mbox{\hyperlink{classSSAGES_1_1RouseModeCV_a4aceea5b175a73d55219668869533a68}{N\_}}) / \mbox{\hyperlink{classSSAGES_1_1CollectiveVariable_a65b17f3e9b3c967ad42814c3eec88bb2}{val\_}};}
+\DoxyCodeLine{172             \textcolor{keywordflow}{if} ( \mbox{\hyperlink{classSSAGES_1_1RouseModeCV_adfee38699838eb6e69d3605b830375c8}{p\_}} != 0) gradpcon *= sqrt(2.0);         \textcolor{comment}{// (Xpd/CV)*(c/N)**0.5}}
+\DoxyCodeLine{173             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{size\_t} i = 0; i < \mbox{\hyperlink{classSSAGES_1_1RouseModeCV_a4aceea5b175a73d55219668869533a68}{N\_}}; ++i) \{}
+\DoxyCodeLine{174                 \mbox{\hyperlink{namespaceSSAGES_afbb26053e292f94ea83b1c441ce6df74}{Label}} idi; \textcolor{comment}{// list of indices}}
+\DoxyCodeLine{175                 snapshot.GetLocalIndices(\mbox{\hyperlink{classSSAGES_1_1RouseModeCV_a6d2926c996f8be52f5a6f395e879b8bb}{groups\_}}[i], \&idi);}
+\DoxyCodeLine{176                 \textcolor{comment}{// go over each atom in the group and add to its gradient}}
+\DoxyCodeLine{177                 \textcolor{comment}{// Note: performance tradeoff here. All gradient elements have a common factor of}}
+\DoxyCodeLine{178                 \textcolor{comment}{// Xpd/CV*sqrt(c/N) = prefactor, with c = 2 if p != 0}}
+\DoxyCodeLine{179                 \textcolor{comment}{// this could be factored out, but if ntot >> number of atoms in groups}}
+\DoxyCodeLine{180                 \textcolor{comment}{// then it won't be worth it to post multiply all gradient terms... }}
+\DoxyCodeLine{181                 \textcolor{comment}{// Could also go over loop again after to do the multiplication, but }}
+\DoxyCodeLine{182                 \textcolor{comment}{// that is troublesome if atom ids appear in multiple groups for some reason}}
+\DoxyCodeLine{183                 \textcolor{keywordtype}{double} cosval = cos(ppi\_n*(i+0.5)) / \mbox{\hyperlink{classSSAGES_1_1RouseModeCV_af43d192dbbaad89f6265719aa0abd3d8}{massg\_}}[i]; \textcolor{comment}{// cos[p*pi(i-\/0.5)/N] / Mi}}
+\DoxyCodeLine{184                 \textcolor{keywordflow}{for} (\textcolor{keyword}{auto}\& \textcolor{keywordtype}{id} : idi) \{}
+\DoxyCodeLine{185                     \mbox{\hyperlink{classSSAGES_1_1CollectiveVariable_a390202f6e541da879f1cfcde22c49489}{grad\_}}[id] +=  gradpcon* cosval * masses[id];}
+\DoxyCodeLine{186                 \}}
+\DoxyCodeLine{187             \}}
+\DoxyCodeLine{188 }
+\DoxyCodeLine{189         \}}
+
+\end{DoxyCode}
+
+
+References S\+S\+A\+G\+E\+S\+::\+Snapshot\+::\+Apply\+Minimum\+Image(), S\+S\+A\+G\+E\+S\+::\+Snapshot\+::\+Center\+Of\+Mass(), S\+S\+A\+G\+E\+S\+::\+Snapshot\+::\+Get\+Local\+Indices(), S\+S\+A\+G\+E\+S\+::\+Snapshot\+::\+Get\+Masses(), S\+S\+A\+G\+E\+S\+::\+Snapshot\+::\+Get\+Num\+Atoms(), S\+S\+A\+G\+E\+S\+::\+Collective\+Variable\+::grad\+\_\+, groups\+\_\+, massg\+\_\+, N\+\_\+, p\+\_\+, r\+\_\+, S\+S\+A\+G\+E\+S\+::\+Collective\+Variable\+::val\+\_\+, and xp\+\_\+.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classSSAGES_1_1RouseModeCV_a1468b1aabf81ceb2ef3feb3b8fc79d0d_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classSSAGES_1_1RouseModeCV_a851e533301a1464b5d69c711c6499ba1}\label{classSSAGES_1_1RouseModeCV_a851e533301a1464b5d69c711c6499ba1}} 
+\index{SSAGES::RouseModeCV@{SSAGES::RouseModeCV}!Initialize@{Initialize}}
+\index{Initialize@{Initialize}!SSAGES::RouseModeCV@{SSAGES::RouseModeCV}}
+\doxysubsubsection{\texorpdfstring{Initialize()}{Initialize()}}
+{\footnotesize\ttfamily void S\+S\+A\+G\+E\+S\+::\+Rouse\+Mode\+C\+V\+::\+Initialize (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classSSAGES_1_1Snapshot}{Snapshot}} \&}]{snapshot }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}}
+
+
+
+Initialize necessary variables. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em snapshot} & Current simulation snapshot. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 80 of file Rouse\+Mode\+C\+V.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{81         \{}
+\DoxyCodeLine{82             \textcolor{keyword}{using} std::to\_string;}
+\DoxyCodeLine{83 }
+\DoxyCodeLine{84             \textcolor{comment}{// Check for valid p\_}}
+\DoxyCodeLine{85             \textcolor{keywordflow}{if} (\mbox{\hyperlink{classSSAGES_1_1RouseModeCV_adfee38699838eb6e69d3605b830375c8}{p\_}} > \mbox{\hyperlink{classSSAGES_1_1RouseModeCV_a6d2926c996f8be52f5a6f395e879b8bb}{groups\_}}.size())}
+\DoxyCodeLine{86                 \textcolor{keywordflow}{throw} std::invalid\_argument(}
+\DoxyCodeLine{87                     \textcolor{stringliteral}{"RouseModeCV: Expected to find p to be less than "} + }
+\DoxyCodeLine{88                     to\_string(\mbox{\hyperlink{classSSAGES_1_1RouseModeCV_a6d2926c996f8be52f5a6f395e879b8bb}{groups\_}}.size()) +\textcolor{stringliteral}{" but found p = "} + }
+\DoxyCodeLine{89                     to\_string(\mbox{\hyperlink{classSSAGES_1_1RouseModeCV_adfee38699838eb6e69d3605b830375c8}{p\_}}) }
+\DoxyCodeLine{90                 );          }
+\DoxyCodeLine{91             \textcolor{comment}{// Check for valid groups}}
+\DoxyCodeLine{92             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{size\_t} j = 0; j < \mbox{\hyperlink{classSSAGES_1_1RouseModeCV_a6d2926c996f8be52f5a6f395e879b8bb}{groups\_}}.size(); ++j) \{}
+\DoxyCodeLine{93                 \textcolor{keyword}{auto} nj = \mbox{\hyperlink{classSSAGES_1_1RouseModeCV_a6d2926c996f8be52f5a6f395e879b8bb}{groups\_}}[j].size();}
+\DoxyCodeLine{94                 \textcolor{comment}{// Make sure atom IDs in the group are somewhere}}
+\DoxyCodeLine{95                 std::vector<int> found(nj,0);}
+\DoxyCodeLine{96                 \textcolor{keywordflow}{for} (\textcolor{keywordtype}{size\_t} i = 0; i < nj; ++i) \{}
+\DoxyCodeLine{97                     \textcolor{keywordflow}{if}(snapshot.GetLocalIndex(\mbox{\hyperlink{classSSAGES_1_1RouseModeCV_a6d2926c996f8be52f5a6f395e879b8bb}{groups\_}}[j][i]) != -\/1)}
+\DoxyCodeLine{98                         found[i] = 1;}
+\DoxyCodeLine{99                 \}}
+\DoxyCodeLine{100 }
+\DoxyCodeLine{101                 MPI\_Allreduce(MPI\_IN\_PLACE, found.data(), nj, MPI\_INT, MPI\_SUM, snapshot.GetCommunicator());}
+\DoxyCodeLine{102                 \textcolor{keywordtype}{unsigned} njtot = std::accumulate(found.begin(), found.end(), 0, std::plus<int>());}
+\DoxyCodeLine{103                 }
+\DoxyCodeLine{104                 \textcolor{keywordflow}{if}(njtot != nj)}
+\DoxyCodeLine{105                     \textcolor{keywordflow}{throw} std::invalid\_argument(}
+\DoxyCodeLine{106                         \textcolor{stringliteral}{"RouseModeCV: Expected to find "} + }
+\DoxyCodeLine{107                         to\_string(nj) + }
+\DoxyCodeLine{108                         \textcolor{stringliteral}{" atoms in group "} + to\_string(j) +\textcolor{stringliteral}{", but only found "} + }
+\DoxyCodeLine{109                         to\_string(njtot) + \textcolor{stringliteral}{"."}}
+\DoxyCodeLine{110                     );          }
+\DoxyCodeLine{111 }
+\DoxyCodeLine{112             \}}
+\DoxyCodeLine{113             \textcolor{comment}{// Set the masses of each particle group in massg\_}}
+\DoxyCodeLine{114             this-\/>\mbox{\hyperlink{classSSAGES_1_1RouseModeCV_a5842a8b7e54d435af5465aea2c85e924}{setMasses}}(\mbox{\hyperlink{classSSAGES_1_1RouseModeCV_a6d2926c996f8be52f5a6f395e879b8bb}{groups\_}}, snapshot);}
+\DoxyCodeLine{115         \}}
+
+\end{DoxyCode}
+
+
+References S\+S\+A\+G\+E\+S\+::\+Snapshot\+::\+Get\+Communicator(), S\+S\+A\+G\+E\+S\+::\+Snapshot\+::\+Get\+Local\+Index(), groups\+\_\+, p\+\_\+, and set\+Masses().
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classSSAGES_1_1RouseModeCV_a851e533301a1464b5d69c711c6499ba1_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classSSAGES_1_1RouseModeCV_a5842a8b7e54d435af5465aea2c85e924}\label{classSSAGES_1_1RouseModeCV_a5842a8b7e54d435af5465aea2c85e924}} 
+\index{SSAGES::RouseModeCV@{SSAGES::RouseModeCV}!setMasses@{setMasses}}
+\index{setMasses@{setMasses}!SSAGES::RouseModeCV@{SSAGES::RouseModeCV}}
+\doxysubsubsection{\texorpdfstring{setMasses()}{setMasses()}}
+{\footnotesize\ttfamily void S\+S\+A\+G\+E\+S\+::\+Rouse\+Mode\+C\+V\+::set\+Masses (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ \mbox{\hyperlink{namespaceSSAGES_afbb26053e292f94ea83b1c441ce6df74}{Label}} $>$ \&}]{groups,  }\item[{const \mbox{\hyperlink{classSSAGES_1_1Snapshot}{Snapshot}} \&}]{snapshot }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Helper function to determine masses of each group. 
+
+Note\+: this here assumes that the masses of each group are not changing during the simulation, which is likely typical... 
+\begin{DoxyParams}{Parameters}
+{\em snapshot} & Current simulation snapshot. \\
+\hline
+{\em groups} & -\/ vector of vector of atom I\+Ds, each group comprising a bead in the Rouse chain \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 65 of file Rouse\+Mode\+C\+V.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{65                                                                                   \{}
+\DoxyCodeLine{66             \textcolor{comment}{// Compute mass of each group and store to massg\_}}
+\DoxyCodeLine{67             \mbox{\hyperlink{namespaceSSAGES_afbb26053e292f94ea83b1c441ce6df74}{Label}} listi;}
+\DoxyCodeLine{68             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{size\_t} i = 0; i < \mbox{\hyperlink{classSSAGES_1_1RouseModeCV_a4aceea5b175a73d55219668869533a68}{N\_}}; ++i) \{}
+\DoxyCodeLine{69                 listi     = groups[i];     \textcolor{comment}{// MW: can this be used directly in Total Mass}}
+\DoxyCodeLine{70                 \mbox{\hyperlink{namespaceSSAGES_afbb26053e292f94ea83b1c441ce6df74}{Label}} idi;}
+\DoxyCodeLine{71                 snapshot.GetLocalIndices(listi, \&idi);}
+\DoxyCodeLine{72                 \mbox{\hyperlink{classSSAGES_1_1RouseModeCV_af43d192dbbaad89f6265719aa0abd3d8}{massg\_}}[i] = snapshot.TotalMass(idi);}
+\DoxyCodeLine{73             \} }
+\DoxyCodeLine{74         \}}
+
+\end{DoxyCode}
+
+
+References S\+S\+A\+G\+E\+S\+::\+Snapshot\+::\+Get\+Local\+Indices(), massg\+\_\+, N\+\_\+, and S\+S\+A\+G\+E\+S\+::\+Snapshot\+::\+Total\+Mass().
+
+
+
+Referenced by Initialize().
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classSSAGES_1_1RouseModeCV_a5842a8b7e54d435af5465aea2c85e924_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classSSAGES_1_1RouseModeCV_a5842a8b7e54d435af5465aea2c85e924_icgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/michael/development/\+S\+S\+A\+G\+E\+S/src/\+C\+Vs/Rouse\+Mode\+C\+V.\+h\end{DoxyCompactItemize}

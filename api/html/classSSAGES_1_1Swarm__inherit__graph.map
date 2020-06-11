@@ -1,0 +1,6 @@
+<map id="SSAGES::Swarm" name="SSAGES::Swarm">
+<area shape="rect" id="node1" title="Swarm of Trajectories String Method." alt="" coords="25,229,151,256"/>
+<area shape="rect" id="node2" href="$classSSAGES_1_1StringMethod.html" title="String base class for FTS, Swarm, and elastic band." alt="" coords="7,155,169,181"/>
+<area shape="rect" id="node3" href="$classSSAGES_1_1Method.html" title="Interface for Method implementations." alt="" coords="24,80,152,107"/>
+<area shape="rect" id="node4" href="$classSSAGES_1_1EventListener.html" title="Base abstract class for listening in to events fired by &quot;Hook&quot;." alt="" coords="5,5,171,32"/>
+</map>

@@ -1,0 +1,6 @@
+<map id="SSAGES::BoxVolumeCV::Evaluate" name="SSAGES::BoxVolumeCV::Evaluate">
+<area shape="rect" id="node1" title="Evaluate the CV." alt="" coords="5,57,176,98"/>
+<area shape="rect" id="node2" href="$classSSAGES_1_1Snapshot.html#a4811c9435e56196d5525832345ef1680" title="Get communicator for walker." alt="" coords="224,5,479,32"/>
+<area shape="rect" id="node3" href="$classSSAGES_1_1Snapshot.html#a103af07a012d55a9637f6203c7eba0af" title="Get number of atoms in this snapshot." alt="" coords="253,57,450,98"/>
+<area shape="rect" id="node4" href="$classSSAGES_1_1Snapshot.html#a432a80204546729ec3d1cfb14bb56575" title="Get system volume." alt="" coords="245,123,458,149"/>
+</map>

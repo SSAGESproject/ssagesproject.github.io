@@ -1,0 +1,14 @@
+<map id="SSAGES::Snapshot::ApplyMinimumImage" name="SSAGES::Snapshot::ApplyMinimumImage">
+<area shape="rect" id="node1" title="Apply minimum image to a vector." alt="" coords="500,303,735,344"/>
+<area shape="rect" id="node2" href="$classSSAGES_1_1Snapshot.html#ac600b5f3d3e240d2cc9965c06547e97e" title="Compute center of mass of a group of atoms based on index." alt="" coords="261,191,447,232"/>
+<area shape="rect" id="node4" href="$classSSAGES_1_1ParticlePositionCV.html#aa2ee9b7b3ca3133183e2d5f511251e29" title="Evaluate the CV." alt="" coords="19,5,195,47"/>
+<area shape="rect" id="node5" href="$classSSAGES_1_1RouseModeCV.html#a1468b1aabf81ceb2ef3feb3b8fc79d0d" title="Evaluate the CV." alt="" coords="19,71,194,112"/>
+<area shape="rect" id="node6" href="$classSSAGES_1_1GyrationTensorCV.html#ac613c1659bd00b335c3d6de3d8ff0ebc" title="Evaluate the CV." alt="" coords="10,253,203,295"/>
+<area shape="rect" id="node7" href="$classSSAGES_1_1ParticleSeparationCV.html#ae6452c47bf1d849e2af60c84209a9955" title="Evaluate the CV." alt="" coords="11,319,202,360"/>
+<area shape="rect" id="node8" href="$classSSAGES_1_1RMSDCV.html#aff77158b643fec57c6d1649a78b0dd14" title="Evaluate the CV." alt="" coords="5,385,208,411"/>
+<area shape="rect" id="node10" href="$classSSAGES_1_1AngleCV.html#afc7cddc3872aeeeeb098c69f1126b594" title="Evaluate the CV." alt="" coords="256,411,452,438"/>
+<area shape="rect" id="node11" href="$classSSAGES_1_1TorsionalCV.html#ae3e82fb11240eb780cfcc57b2b0112a5" title="Evaluate the CV." alt="" coords="275,463,433,504"/>
+<area shape="rect" id="node12" href="$classSSAGES_1_1PairwiseCV.html#a807d3a560a3a187c7648da5a282027df" title="Evaluate the CV." alt="" coords="277,528,431,569"/>
+<area shape="rect" id="node3" href="$classSSAGES_1_1ParticleCoordinateCV.html#afff49e8eb1571fe3527712be50da001e" title="Evaluate the CV." alt="" coords="11,188,203,229"/>
+<area shape="rect" id="node9" href="$classSSAGES_1_1ANNCV.html#a1ddb11f32dbf1c1c19e119310c047a0d" title="Evaluate the CV." alt="" coords="11,137,203,163"/>
+</map>

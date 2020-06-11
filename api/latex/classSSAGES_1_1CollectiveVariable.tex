@@ -1,0 +1,412 @@
+\hypertarget{classSSAGES_1_1CollectiveVariable}{}\doxysection{S\+S\+A\+G\+ES\+::Collective\+Variable Class Reference}
+\label{classSSAGES_1_1CollectiveVariable}\index{SSAGES::CollectiveVariable@{SSAGES::CollectiveVariable}}
+
+
+Abstract class for a collective variable.  
+
+
+
+
+{\ttfamily \#include $<$Collective\+Variable.\+h$>$}
+
+
+
+Inheritance diagram for S\+S\+A\+G\+ES\+::Collective\+Variable\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classSSAGES_1_1CollectiveVariable__inherit__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classSSAGES_1_1CollectiveVariable_a9e5f5006cfa10a9679ef1826393ea889}\label{classSSAGES_1_1CollectiveVariable_a9e5f5006cfa10a9679ef1826393ea889}} 
+\mbox{\hyperlink{classSSAGES_1_1CollectiveVariable_a9e5f5006cfa10a9679ef1826393ea889}{Collective\+Variable}} ()
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classSSAGES_1_1CollectiveVariable_a39a517ed26b0c9e943cdc09ac3f37010}\label{classSSAGES_1_1CollectiveVariable_a39a517ed26b0c9e943cdc09ac3f37010}} 
+virtual \mbox{\hyperlink{classSSAGES_1_1CollectiveVariable_a39a517ed26b0c9e943cdc09ac3f37010}{$\sim$\+Collective\+Variable}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classSSAGES_1_1CollectiveVariable_a6a49d915d1a8bdea3baf2aee5a985f32}{Initialize}} (const class \mbox{\hyperlink{classSSAGES_1_1Snapshot}{Snapshot}} \&)
+\begin{DoxyCompactList}\small\item\em Initialize CV. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classSSAGES_1_1CollectiveVariable_a8e52ad7a429c31ca274dc2767c156ba7}{Evaluate}} (const class \mbox{\hyperlink{classSSAGES_1_1Snapshot}{Snapshot}} \&)=0
+\begin{DoxyCompactList}\small\item\em Evaluate CV. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classSSAGES_1_1CollectiveVariable_a688fe338bc9668dae516a0850d7717af}{Get\+Value}} () const
+\begin{DoxyCompactList}\small\item\em Get current value of the CV. \end{DoxyCompactList}\item 
+virtual double \mbox{\hyperlink{classSSAGES_1_1CollectiveVariable_af47316467387f64ab226136b26d38b75}{Get\+Minimum\+Image}} (double) const
+\begin{DoxyCompactList}\small\item\em Returns the minimum image of a CV based on the input location. \end{DoxyCompactList}\item 
+virtual double \mbox{\hyperlink{classSSAGES_1_1CollectiveVariable_a0b32627283cd44d97eebd6b40814f9d1}{Get\+Periodic\+Value}} (double location) const
+\begin{DoxyCompactList}\small\item\em Apply periodic boundaries to a given value. \end{DoxyCompactList}\item 
+const std\+::vector$<$ \mbox{\hyperlink{namespaceSSAGES_a630084a0a5e185e89e21b3735f8f8b2e}{Vector3}} $>$ \& \mbox{\hyperlink{classSSAGES_1_1CollectiveVariable_ac3ad6a80fce7d67ffdd3c32677fd28e6}{Get\+Gradient}} () const
+\begin{DoxyCompactList}\small\item\em Get current gradient of the CV. \end{DoxyCompactList}\item 
+const \mbox{\hyperlink{namespaceSSAGES_a306e635f4b20f86fbc726fbf9a5d11a8}{Matrix3}} \& \mbox{\hyperlink{classSSAGES_1_1CollectiveVariable_aaf838eb8caac45fbf19228193c873082}{Get\+Box\+Gradient}} () const
+\begin{DoxyCompactList}\small\item\em Get gradient contribution to box. \end{DoxyCompactList}\item 
+const std\+::array$<$ double, 2 $>$ \& \mbox{\hyperlink{classSSAGES_1_1CollectiveVariable_a1e1f4a80b2a275b9791a1ee4d430c1d4}{Get\+Boundaries}} ()
+\begin{DoxyCompactList}\small\item\em Get CV boundaries. \end{DoxyCompactList}\item 
+virtual double \mbox{\hyperlink{classSSAGES_1_1CollectiveVariable_a01d3a711691c4354ea78a54ed2d5f838}{Get\+Difference}} (double location) const
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classSSAGES_1_1CollectiveVariable}{Collective\+Variable}} $\ast$ \mbox{\hyperlink{classSSAGES_1_1CollectiveVariable_ab56eae0d888f3d5125566bfb9b5e21aa}{Build\+CV}} (const Json\+::\+Value \&json, const std\+::string \&path)
+\begin{DoxyCompactList}\small\item\em Set up collective variable. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classSSAGES_1_1CollectiveVariable_a390202f6e541da879f1cfcde22c49489}\label{classSSAGES_1_1CollectiveVariable_a390202f6e541da879f1cfcde22c49489}} 
+std\+::vector$<$ \mbox{\hyperlink{namespaceSSAGES_a630084a0a5e185e89e21b3735f8f8b2e}{Vector3}} $>$ \mbox{\hyperlink{classSSAGES_1_1CollectiveVariable_a390202f6e541da879f1cfcde22c49489}{grad\+\_\+}}
+\begin{DoxyCompactList}\small\item\em Gradient vector d\+Cv/dxi. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classSSAGES_1_1CollectiveVariable_a3896192a76e97af8f41a39be9e220f13}\label{classSSAGES_1_1CollectiveVariable_a3896192a76e97af8f41a39be9e220f13}} 
+\mbox{\hyperlink{namespaceSSAGES_a306e635f4b20f86fbc726fbf9a5d11a8}{Matrix3}} \mbox{\hyperlink{classSSAGES_1_1CollectiveVariable_a3896192a76e97af8f41a39be9e220f13}{boxgrad\+\_\+}}
+\begin{DoxyCompactList}\small\item\em Gradient w.\+r.\+t box vectors d\+Cv/d\+Hij. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classSSAGES_1_1CollectiveVariable_a65b17f3e9b3c967ad42814c3eec88bb2}\label{classSSAGES_1_1CollectiveVariable_a65b17f3e9b3c967ad42814c3eec88bb2}} 
+double \mbox{\hyperlink{classSSAGES_1_1CollectiveVariable_a65b17f3e9b3c967ad42814c3eec88bb2}{val\+\_\+}}
+\begin{DoxyCompactList}\small\item\em Current value of CV. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classSSAGES_1_1CollectiveVariable_abc60e9b019d4b61354faf60a76d3530e}\label{classSSAGES_1_1CollectiveVariable_abc60e9b019d4b61354faf60a76d3530e}} 
+std\+::array$<$ double, 2 $>$ \mbox{\hyperlink{classSSAGES_1_1CollectiveVariable_abc60e9b019d4b61354faf60a76d3530e}{bounds\+\_\+}}
+\begin{DoxyCompactList}\small\item\em Bounds on CV. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Abstract class for a collective variable. 
+
+Definition at line 40 of file Collective\+Variable.\+h.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classSSAGES_1_1CollectiveVariable_ab56eae0d888f3d5125566bfb9b5e21aa}\label{classSSAGES_1_1CollectiveVariable_ab56eae0d888f3d5125566bfb9b5e21aa}} 
+\index{SSAGES::CollectiveVariable@{SSAGES::CollectiveVariable}!BuildCV@{BuildCV}}
+\index{BuildCV@{BuildCV}!SSAGES::CollectiveVariable@{SSAGES::CollectiveVariable}}
+\doxysubsubsection{\texorpdfstring{BuildCV()}{BuildCV()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classSSAGES_1_1CollectiveVariable}{Collective\+Variable}} $\ast$ S\+S\+A\+G\+E\+S\+::\+Collective\+Variable\+::\+Build\+CV (\begin{DoxyParamCaption}\item[{const Json\+::\+Value \&}]{json,  }\item[{const std\+::string \&}]{path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Set up collective variable. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em json} & \mbox{\hyperlink{namespaceJSON}{J\+S\+ON}} input value. \\
+\hline
+{\em path} & Path for \mbox{\hyperlink{namespaceJSON}{J\+S\+ON}} path specification. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pointer to the CV built by this function. {\ttfamily nullptr} in case of unknown error.
+\end{DoxyReturn}
+Builds a CV from a \mbox{\hyperlink{namespaceJSON}{J\+S\+ON}} node. Returns a pointer to the built cv. If an unknown error is encountered, this function will return a {\ttfamily nullptr}, but generally it will throw a \mbox{\hyperlink{classSSAGES_1_1BuildException}{Build\+Exception}} on failure. \begin{DoxyWarning}{Warning}
+Object lifetime is the caller\textquotesingle{}s responsibility. 
+\end{DoxyWarning}
+
+
+Definition at line 43 of file Collective\+Variable.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{44     \{}
+\DoxyCodeLine{45         \textcolor{comment}{// Get CV type. }}
+\DoxyCodeLine{46         \textcolor{keyword}{auto} type = json.get(\textcolor{stringliteral}{"type"}, \textcolor{stringliteral}{"none"}).asString();}
+\DoxyCodeLine{47 }
+\DoxyCodeLine{48         \textcolor{keywordflow}{if}(type == \textcolor{stringliteral}{"Angle"})}
+\DoxyCodeLine{49             \textcolor{keywordflow}{return} \mbox{\hyperlink{classSSAGES_1_1AngleCV_abb07c513c9eb73a0b4b44f2eb602096d}{AngleCV::Build}}(json, path);}
+\DoxyCodeLine{50         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (type == \textcolor{stringliteral}{"ANNCV"}) }
+\DoxyCodeLine{51             \textcolor{keywordflow}{return} \mbox{\hyperlink{classSSAGES_1_1ANNCV_a8173b4f597f6eba50295c5eeb508dec1}{ANNCV::Build}}(json, path);}
+\DoxyCodeLine{52         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(type == \textcolor{stringliteral}{"BoxVolume"})}
+\DoxyCodeLine{53             \textcolor{keywordflow}{return} \mbox{\hyperlink{classSSAGES_1_1BoxVolumeCV_a75675bb4e1bdcb198b7201ed0ea6cc24}{BoxVolumeCV::Build}}(json, path);}
+\DoxyCodeLine{54         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(type == \textcolor{stringliteral}{"GyrationTensor"})}
+\DoxyCodeLine{55             \textcolor{keywordflow}{return} \mbox{\hyperlink{classSSAGES_1_1GyrationTensorCV_a68cd7731a77e1a4e4ba2835a6fe65467}{GyrationTensorCV::Build}}(json, path);}
+\DoxyCodeLine{56         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(type == \textcolor{stringliteral}{"Pairwise"})}
+\DoxyCodeLine{57             \textcolor{keywordflow}{return} \mbox{\hyperlink{classSSAGES_1_1PairwiseCV_ad07080b9c899d5a31f233a2103994931}{PairwiseCV::Build}}(json, path);}
+\DoxyCodeLine{58         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(type == \textcolor{stringliteral}{"ParticleCoordinate"})}
+\DoxyCodeLine{59             \textcolor{keywordflow}{return} \mbox{\hyperlink{classSSAGES_1_1ParticleCoordinateCV_ad21a72b2fe3e34c16c985fb13de32d58}{ParticleCoordinateCV::Build}}(json, path);}
+\DoxyCodeLine{60         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(type == \textcolor{stringliteral}{"ParticlePosition"})}
+\DoxyCodeLine{61             \textcolor{keywordflow}{return} \mbox{\hyperlink{classSSAGES_1_1ParticlePositionCV_aba39d6128e00ab299f41c12b46c45b8b}{ParticlePositionCV::Build}}(json, path);}
+\DoxyCodeLine{62         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(type == \textcolor{stringliteral}{"ParticleSeparation"})}
+\DoxyCodeLine{63             \textcolor{keywordflow}{return} \mbox{\hyperlink{classSSAGES_1_1ParticleSeparationCV_a1e8c2b87b91bdf8722e37feb109576fd}{ParticleSeparationCV::Build}}(json, path);}
+\DoxyCodeLine{64         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(type == \textcolor{stringliteral}{"RouseMode"})}
+\DoxyCodeLine{65             \textcolor{keywordflow}{return} \mbox{\hyperlink{classSSAGES_1_1RouseModeCV_a369dd6839f82c595844881f3db88a956}{RouseModeCV::Build}}(json, path);}
+\DoxyCodeLine{66         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(type == \textcolor{stringliteral}{"Torsional"})}
+\DoxyCodeLine{67             \textcolor{keywordflow}{return} \mbox{\hyperlink{classSSAGES_1_1TorsionalCV_acfa27d84d60248c363d111a82f175749}{TorsionalCV::Build}}(json, path);}
+\DoxyCodeLine{68         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (type == \textcolor{stringliteral}{"AlphaRMSD"})}
+\DoxyCodeLine{69             \textcolor{keywordflow}{return} \mbox{\hyperlink{classSSAGES_1_1AlphaRMSDCV_a927dbccb0136c844a5b1cc8b2e74ecbd}{AlphaRMSDCV::Build}}(json, path);}
+\DoxyCodeLine{70         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (type == \textcolor{stringliteral}{"ParallelBetaRMSD"})}
+\DoxyCodeLine{71             \textcolor{keywordflow}{return} \mbox{\hyperlink{classSSAGES_1_1ParallelBetaRMSDCV_ad4c42c1bddc74fc312517ad13526c5cc}{ParallelBetaRMSDCV::Build}}(json, path);}
+\DoxyCodeLine{72         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (type == \textcolor{stringliteral}{"AntiBetaRMSD"})}
+\DoxyCodeLine{73             \textcolor{keywordflow}{return} \mbox{\hyperlink{classSSAGES_1_1AntiBetaRMSDCV_a4153e7b2aa827ac6367ec6374f986370}{AntiBetaRMSDCV::Build}}(json, path);}
+\DoxyCodeLine{74         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (type == \textcolor{stringliteral}{"RMSD"})}
+\DoxyCodeLine{75             \textcolor{keywordflow}{return} \mbox{\hyperlink{classSSAGES_1_1RMSDCV_ac74e72f38b333070f66d6ae383a860a1}{RMSDCV::Build}}(json, path);}
+\DoxyCodeLine{76         \textcolor{keywordflow}{else}}
+\DoxyCodeLine{77             \textcolor{keywordflow}{throw} std::invalid\_argument(path + \textcolor{stringliteral}{": Unknown CV type specified."});}
+\DoxyCodeLine{78     \}}
+
+\end{DoxyCode}
+
+
+References S\+S\+A\+G\+E\+S\+::\+Box\+Volume\+C\+V\+::\+Build(), S\+S\+A\+G\+E\+S\+::\+Angle\+C\+V\+::\+Build(), S\+S\+A\+G\+E\+S\+::\+Particle\+Position\+C\+V\+::\+Build(), S\+S\+A\+G\+E\+S\+::\+Particle\+Separation\+C\+V\+::\+Build(), S\+S\+A\+G\+E\+S\+::\+Particle\+Coordinate\+C\+V\+::\+Build(), S\+S\+A\+G\+E\+S\+::\+Rouse\+Mode\+C\+V\+::\+Build(), S\+S\+A\+G\+E\+S\+::\+Pairwise\+C\+V\+::\+Build(), S\+S\+A\+G\+E\+S\+::\+Torsional\+C\+V\+::\+Build(), S\+S\+A\+G\+E\+S\+::\+Alpha\+R\+M\+S\+D\+C\+V\+::\+Build(), S\+S\+A\+G\+E\+S\+::\+A\+N\+N\+C\+V\+::\+Build(), S\+S\+A\+G\+E\+S\+::\+R\+M\+S\+D\+C\+V\+::\+Build(), S\+S\+A\+G\+E\+S\+::\+Gyration\+Tensor\+C\+V\+::\+Build(), S\+S\+A\+G\+E\+S\+::\+Anti\+Beta\+R\+M\+S\+D\+C\+V\+::\+Build(), and S\+S\+A\+G\+E\+S\+::\+Parallel\+Beta\+R\+M\+S\+D\+C\+V\+::\+Build().
+
+
+
+Referenced by S\+S\+A\+G\+E\+S\+::\+Resource\+Handler\+::\+Build().
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classSSAGES_1_1CollectiveVariable_ab56eae0d888f3d5125566bfb9b5e21aa_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classSSAGES_1_1CollectiveVariable_ab56eae0d888f3d5125566bfb9b5e21aa_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classSSAGES_1_1CollectiveVariable_a8e52ad7a429c31ca274dc2767c156ba7}\label{classSSAGES_1_1CollectiveVariable_a8e52ad7a429c31ca274dc2767c156ba7}} 
+\index{SSAGES::CollectiveVariable@{SSAGES::CollectiveVariable}!Evaluate@{Evaluate}}
+\index{Evaluate@{Evaluate}!SSAGES::CollectiveVariable@{SSAGES::CollectiveVariable}}
+\doxysubsubsection{\texorpdfstring{Evaluate()}{Evaluate()}}
+{\footnotesize\ttfamily virtual void S\+S\+A\+G\+E\+S\+::\+Collective\+Variable\+::\+Evaluate (\begin{DoxyParamCaption}\item[{const class \mbox{\hyperlink{classSSAGES_1_1Snapshot}{Snapshot}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Evaluate CV. 
+
+Evaluation of the CV. This function is called by the \mbox{\hyperlink{classSSAGES_1_1Hook}{Hook}} in the post-\/integration phase every iteration. The CV should compute its value and gradient, storing them in a local private variable. \mbox{\Hypertarget{classSSAGES_1_1CollectiveVariable_a1e1f4a80b2a275b9791a1ee4d430c1d4}\label{classSSAGES_1_1CollectiveVariable_a1e1f4a80b2a275b9791a1ee4d430c1d4}} 
+\index{SSAGES::CollectiveVariable@{SSAGES::CollectiveVariable}!GetBoundaries@{GetBoundaries}}
+\index{GetBoundaries@{GetBoundaries}!SSAGES::CollectiveVariable@{SSAGES::CollectiveVariable}}
+\doxysubsubsection{\texorpdfstring{GetBoundaries()}{GetBoundaries()}}
+{\footnotesize\ttfamily const std\+::array$<$double, 2$>$\& S\+S\+A\+G\+E\+S\+::\+Collective\+Variable\+::\+Get\+Boundaries (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get CV boundaries. 
+
+\begin{DoxyReturn}{Returns}
+List of lower and upper boundaries of the CV.
+\end{DoxyReturn}
+Returns the boundaries of the CV. These represent the bounds within which the CV is expected to be constrained. There is no requirement on the method to respect the values returned here. 
+
+Definition at line 151 of file Collective\+Variable.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{152         \{}
+\DoxyCodeLine{153             \textcolor{keywordflow}{return} \mbox{\hyperlink{classSSAGES_1_1CollectiveVariable_abc60e9b019d4b61354faf60a76d3530e}{bounds\_}};}
+\DoxyCodeLine{154         \}}
+
+\end{DoxyCode}
+
+
+References bounds\+\_\+.
+
+\mbox{\Hypertarget{classSSAGES_1_1CollectiveVariable_aaf838eb8caac45fbf19228193c873082}\label{classSSAGES_1_1CollectiveVariable_aaf838eb8caac45fbf19228193c873082}} 
+\index{SSAGES::CollectiveVariable@{SSAGES::CollectiveVariable}!GetBoxGradient@{GetBoxGradient}}
+\index{GetBoxGradient@{GetBoxGradient}!SSAGES::CollectiveVariable@{SSAGES::CollectiveVariable}}
+\doxysubsubsection{\texorpdfstring{GetBoxGradient()}{GetBoxGradient()}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{namespaceSSAGES_a306e635f4b20f86fbc726fbf9a5d11a8}{Matrix3}}\& S\+S\+A\+G\+E\+S\+::\+Collective\+Variable\+::\+Get\+Box\+Gradient (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get gradient contribution to box. 
+
+\begin{DoxyReturn}{Returns}
+Gradient of CV with respect to box.
+\end{DoxyReturn}
+Returns the gradient of the CV with respect to the box. 
+
+Definition at line 138 of file Collective\+Variable.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{139         \{}
+\DoxyCodeLine{140             \textcolor{keywordflow}{return} \mbox{\hyperlink{classSSAGES_1_1CollectiveVariable_a3896192a76e97af8f41a39be9e220f13}{boxgrad\_}};}
+\DoxyCodeLine{141         \}}
+
+\end{DoxyCode}
+
+
+References boxgrad\+\_\+.
+
+\mbox{\Hypertarget{classSSAGES_1_1CollectiveVariable_a01d3a711691c4354ea78a54ed2d5f838}\label{classSSAGES_1_1CollectiveVariable_a01d3a711691c4354ea78a54ed2d5f838}} 
+\index{SSAGES::CollectiveVariable@{SSAGES::CollectiveVariable}!GetDifference@{GetDifference}}
+\index{GetDifference@{GetDifference}!SSAGES::CollectiveVariable@{SSAGES::CollectiveVariable}}
+\doxysubsubsection{\texorpdfstring{GetDifference()}{GetDifference()}}
+{\footnotesize\ttfamily virtual double S\+S\+A\+G\+E\+S\+::\+Collective\+Variable\+::\+Get\+Difference (\begin{DoxyParamCaption}\item[{double}]{location }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+Get difference between current CV value and a given value, taking periodic boundaries into account.
+
+
+\begin{DoxyParams}{Parameters}
+{\em location} & Value whose distance from the current CV value should be calculated. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Difference taking periodic boundaries into account.
+\end{DoxyReturn}
+Returns the difference betwen the current cv value and Location\+: (value\+\_\+ -\/ Location) respecting periodic boundary conditions of the CV, if the CV has periodic boundary conditions. For example Torsional angle has boundaries at pi and -\/pi, in which the difference beteen the angles is 0 not 2pi 
+
+Reimplemented in \mbox{\hyperlink{classSSAGES_1_1TorsionalCV_acaa9bd494f8116b38b76b80261c6ce7b}{S\+S\+A\+G\+E\+S\+::\+Torsional\+CV}}, and \mbox{\hyperlink{classSSAGES_1_1ParticleCoordinateCV_a5ce37330c0e9654a5977afc8c6bdeed1}{S\+S\+A\+G\+E\+S\+::\+Particle\+Coordinate\+CV}}.
+
+
+
+Definition at line 168 of file Collective\+Variable.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{169         \{}
+\DoxyCodeLine{170             \textcolor{keywordflow}{return} \mbox{\hyperlink{classSSAGES_1_1CollectiveVariable_a65b17f3e9b3c967ad42814c3eec88bb2}{val\_}} -\/ location;}
+\DoxyCodeLine{171         \}}
+
+\end{DoxyCode}
+
+
+References val\+\_\+.
+
+\mbox{\Hypertarget{classSSAGES_1_1CollectiveVariable_ac3ad6a80fce7d67ffdd3c32677fd28e6}\label{classSSAGES_1_1CollectiveVariable_ac3ad6a80fce7d67ffdd3c32677fd28e6}} 
+\index{SSAGES::CollectiveVariable@{SSAGES::CollectiveVariable}!GetGradient@{GetGradient}}
+\index{GetGradient@{GetGradient}!SSAGES::CollectiveVariable@{SSAGES::CollectiveVariable}}
+\doxysubsubsection{\texorpdfstring{GetGradient()}{GetGradient()}}
+{\footnotesize\ttfamily const std\+::vector$<$\mbox{\hyperlink{namespaceSSAGES_a630084a0a5e185e89e21b3735f8f8b2e}{Vector3}}$>$\& S\+S\+A\+G\+E\+S\+::\+Collective\+Variable\+::\+Get\+Gradient (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get current gradient of the CV. 
+
+\begin{DoxyReturn}{Returns}
+Per-\/atom gradient of the CV.
+\end{DoxyReturn}
+Returns the current value of the CV gradient. This should be an n length vector, where n is the number of atoms in the snapshot. Each element in the vector is the derivative of the CV with respect to the atom\textquotesingle{}s coordinate (d\+C\+V/dxi). 
+
+Definition at line 127 of file Collective\+Variable.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{128         \{}
+\DoxyCodeLine{129             \textcolor{keywordflow}{return} \mbox{\hyperlink{classSSAGES_1_1CollectiveVariable_a390202f6e541da879f1cfcde22c49489}{grad\_}};}
+\DoxyCodeLine{130         \}}
+
+\end{DoxyCode}
+
+
+References grad\+\_\+.
+
+\mbox{\Hypertarget{classSSAGES_1_1CollectiveVariable_af47316467387f64ab226136b26d38b75}\label{classSSAGES_1_1CollectiveVariable_af47316467387f64ab226136b26d38b75}} 
+\index{SSAGES::CollectiveVariable@{SSAGES::CollectiveVariable}!GetMinimumImage@{GetMinimumImage}}
+\index{GetMinimumImage@{GetMinimumImage}!SSAGES::CollectiveVariable@{SSAGES::CollectiveVariable}}
+\doxysubsubsection{\texorpdfstring{GetMinimumImage()}{GetMinimumImage()}}
+{\footnotesize\ttfamily virtual double S\+S\+A\+G\+E\+S\+::\+Collective\+Variable\+::\+Get\+Minimum\+Image (\begin{DoxyParamCaption}\item[{double}]{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Returns the minimum image of a CV based on the input location. 
+
+\begin{DoxyReturn}{Returns}
+Minimum image of the CV
+\end{DoxyReturn}
+Takes the input location and applies the periodic boundary conditions to return a minimum image of the CV. 
+
+Reimplemented in \mbox{\hyperlink{classSSAGES_1_1TorsionalCV_af442beb9f397716e4906b4fcf5a67edd}{S\+S\+A\+G\+E\+S\+::\+Torsional\+CV}}.
+
+
+
+Definition at line 98 of file Collective\+Variable.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{99         \{}
+\DoxyCodeLine{100             \textcolor{keywordflow}{return} \mbox{\hyperlink{classSSAGES_1_1CollectiveVariable_a65b17f3e9b3c967ad42814c3eec88bb2}{val\_}};}
+\DoxyCodeLine{101         \}}
+
+\end{DoxyCode}
+
+
+References val\+\_\+.
+
+\mbox{\Hypertarget{classSSAGES_1_1CollectiveVariable_a0b32627283cd44d97eebd6b40814f9d1}\label{classSSAGES_1_1CollectiveVariable_a0b32627283cd44d97eebd6b40814f9d1}} 
+\index{SSAGES::CollectiveVariable@{SSAGES::CollectiveVariable}!GetPeriodicValue@{GetPeriodicValue}}
+\index{GetPeriodicValue@{GetPeriodicValue}!SSAGES::CollectiveVariable@{SSAGES::CollectiveVariable}}
+\doxysubsubsection{\texorpdfstring{GetPeriodicValue()}{GetPeriodicValue()}}
+{\footnotesize\ttfamily virtual double S\+S\+A\+G\+E\+S\+::\+Collective\+Variable\+::\+Get\+Periodic\+Value (\begin{DoxyParamCaption}\item[{double}]{location }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Apply periodic boundaries to a given value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em location} & Value to which the periodic boundaries should be applied. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Correct value.
+\end{DoxyReturn}
+Takes location and applies periodic boundaries of the CV on it and returns a correct value. Example would be torsional angle which has bounds at pi and -\/pi. If location = 2pi, Get\+Periodic\+Value(location) would return 0. 
+
+Reimplemented in \mbox{\hyperlink{classSSAGES_1_1TorsionalCV_a82eedc6924ce1739f445f9f0da9e288d}{S\+S\+A\+G\+E\+S\+::\+Torsional\+CV}}, and \mbox{\hyperlink{classSSAGES_1_1ParticleCoordinateCV_a629b3653807f3af52c818adf6b12687c}{S\+S\+A\+G\+E\+S\+::\+Particle\+Coordinate\+CV}}.
+
+
+
+Definition at line 113 of file Collective\+Variable.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{114         \{}
+\DoxyCodeLine{115             \textcolor{keywordflow}{return} location;}
+\DoxyCodeLine{116         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classSSAGES_1_1CollectiveVariable_a688fe338bc9668dae516a0850d7717af}\label{classSSAGES_1_1CollectiveVariable_a688fe338bc9668dae516a0850d7717af}} 
+\index{SSAGES::CollectiveVariable@{SSAGES::CollectiveVariable}!GetValue@{GetValue}}
+\index{GetValue@{GetValue}!SSAGES::CollectiveVariable@{SSAGES::CollectiveVariable}}
+\doxysubsubsection{\texorpdfstring{GetValue()}{GetValue()}}
+{\footnotesize\ttfamily double S\+S\+A\+G\+E\+S\+::\+Collective\+Variable\+::\+Get\+Value (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get current value of the CV. 
+
+\begin{DoxyReturn}{Returns}
+Current value of the CV.
+\end{DoxyReturn}
+Returns the current value of the CV which has been computed before via the call to \mbox{\hyperlink{classSSAGES_1_1CollectiveVariable_a8e52ad7a429c31ca274dc2767c156ba7}{Collective\+Variable\+::\+Evaluate()}}. 
+
+Definition at line 86 of file Collective\+Variable.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{87         \{}
+\DoxyCodeLine{88             \textcolor{keywordflow}{return} \mbox{\hyperlink{classSSAGES_1_1CollectiveVariable_a65b17f3e9b3c967ad42814c3eec88bb2}{val\_}};}
+\DoxyCodeLine{89         \}}
+
+\end{DoxyCode}
+
+
+References val\+\_\+.
+
+\mbox{\Hypertarget{classSSAGES_1_1CollectiveVariable_a6a49d915d1a8bdea3baf2aee5a985f32}\label{classSSAGES_1_1CollectiveVariable_a6a49d915d1a8bdea3baf2aee5a985f32}} 
+\index{SSAGES::CollectiveVariable@{SSAGES::CollectiveVariable}!Initialize@{Initialize}}
+\index{Initialize@{Initialize}!SSAGES::CollectiveVariable@{SSAGES::CollectiveVariable}}
+\doxysubsubsection{\texorpdfstring{Initialize()}{Initialize()}}
+{\footnotesize\ttfamily virtual void S\+S\+A\+G\+E\+S\+::\+Collective\+Variable\+::\+Initialize (\begin{DoxyParamCaption}\item[{const class \mbox{\hyperlink{classSSAGES_1_1Snapshot}{Snapshot}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Initialize CV. 
+
+Initialization of the CV. This is an optional method and is called during the pre-\/simulation phase of the hook. It is typically used to allocate/reserve memory. 
+
+Definition at line 69 of file Collective\+Variable.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{69 \{\}}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/michael/development/\+S\+S\+A\+G\+E\+S/src/\+C\+Vs/Collective\+Variable.\+h\item 
+/home/michael/development/\+S\+S\+A\+G\+E\+S/src/\+C\+Vs/Collective\+Variable.\+cpp\end{DoxyCompactItemize}

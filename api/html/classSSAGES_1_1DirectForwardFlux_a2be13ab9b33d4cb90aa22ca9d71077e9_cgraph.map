@@ -1,0 +1,14 @@
+<map id="SSAGES::DirectForwardFlux::CheckForInterfaceCrossings" name="SSAGES::DirectForwardFlux::CheckForInterfaceCrossings">
+<area shape="rect" id="node1" title="Function that checks if interfaces have been crossed (different for each FFS flavor)" alt="" coords="5,245,203,286"/>
+<area shape="rect" id="node2" href="$classSSAGES_1_1ForwardFlux.html#a28017e532afacbc0c2bee398a5aeabd1" title=" " alt="" coords="255,15,412,57"/>
+<area shape="rect" id="node6" href="$classSSAGES_1_1CVManager.html#ad2a31c91a0298b4e80ca5ba720c5eee3" title="Get CV iterator." alt="" coords="252,146,415,187"/>
+<area shape="rect" id="node7" href="$classSSAGES_1_1ForwardFlux.html#ad503e21a587cbac6536538de35d9e872" title="Function checks if configuration has crossed interface specified since the last check." alt="" coords="255,211,412,253"/>
+<area shape="rect" id="node8" href="$classSSAGES_1_1ForwardFlux.html#ae7c156e7bbb5e4d70c59c09587deb553" title="Function checks if configuration has returned to A." alt="" coords="255,277,412,318"/>
+<area shape="rect" id="node9" href="$classSSAGES_1_1EventListener.html#af9666daacfb047c1dd279ea339524d07" title="Check if current processor is master." alt="" coords="251,342,416,383"/>
+<area shape="rect" id="node10" href="$classSSAGES_1_1ForwardFlux.html#ac5227afa53bf05d387b480850ef4bb77" title="Pop the queue, do MPI so that all procs maintain the same queue." alt="" coords="255,407,412,449"/>
+<area shape="rect" id="node11" href="$classSSAGES_1_1ForwardFlux.html#a36b935ebdb93f80be3cd8f43684662f1" title="Method call post simulation." alt="" coords="255,473,412,514"/>
+<area shape="rect" id="node12" href="$classSSAGES_1_1ForwardFlux.html#a8f3da6706283040f7adf33399bdb2376" title="Write a file corresponding to FFSConfigID from current snapshot." alt="" coords="252,81,415,122"/>
+<area shape="rect" id="node3" href="$classSSAGES_1_1Snapshot.html#ac9cd613a5fd8dacbd6dfc839cf526d28" title="Access the atom IDs." alt="" coords="467,5,688,32"/>
+<area shape="rect" id="node4" href="$classSSAGES_1_1Snapshot.html#a91852084d69a0703a8fcc9b27dc50459" title="Access the particle positions." alt="" coords="466,56,689,83"/>
+<area shape="rect" id="node5" href="$classSSAGES_1_1Snapshot.html#adb14bcfae16bc7490320fd1890b36cff" title="Access the particle velocities." alt="" coords="464,107,691,133"/>
+</map>

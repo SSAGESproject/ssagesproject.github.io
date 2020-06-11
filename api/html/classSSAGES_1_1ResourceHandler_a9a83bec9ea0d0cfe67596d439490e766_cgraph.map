@@ -1,0 +1,6 @@
+<map id="SSAGES::ResourceHandler::ConfigureHook" name="SSAGES::ResourceHandler::ConfigureHook">
+<area shape="rect" id="node1" title="Configure the Hook from given resources." alt="" coords="5,49,192,90"/>
+<area shape="rect" id="node2" href="$classSSAGES_1_1Hook.html#ad86adfdc8e7e04d268306a7d61c6f20c" title="Add a listener to the hook." alt="" coords="250,5,443,32"/>
+<area shape="rect" id="node3" href="$classSSAGES_1_1Hook.html#a4611311693b1863e375c699594a5dbb9" title="Sets the current CV manager." alt="" coords="240,56,453,83"/>
+<area shape="rect" id="node4" href="$classSSAGES_1_1Hook.html#ae859e87854f2a59420a1703e244c3032" title="Sets the active snapshot." alt="" coords="247,107,446,133"/>
+</map>

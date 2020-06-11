@@ -1,0 +1,95 @@
+\hypertarget{classSSAGES_1_1IncludePlugin}{}\doxysection{S\+S\+A\+G\+ES\+::Include\+Plugin Class Reference}
+\label{classSSAGES_1_1IncludePlugin}\index{SSAGES::IncludePlugin@{SSAGES::IncludePlugin}}
+
+
+Class for \mbox{\hyperlink{namespaceJSON}{J\+S\+ON}} loader include plugin.  
+
+
+
+
+{\ttfamily \#include $<$J\+S\+O\+N\+Loader\+Plugin.\+h$>$}
+
+
+
+Inheritance diagram for S\+S\+A\+G\+ES\+::Include\+Plugin\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=227pt]{classSSAGES_1_1IncludePlugin__inherit__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{classSSAGES_1_1IncludePlugin_adeb6e7f9fafc99d700615b19e148cc26}{Apply\+Filter}} (std\+::string \&contents, const std\+::string \&path) override
+\begin{DoxyCompactList}\small\item\em Apply filter to string. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class for \mbox{\hyperlink{namespaceJSON}{J\+S\+ON}} loader include plugin. 
+
+Definition at line 57 of file J\+S\+O\+N\+Loader\+Plugin.\+h.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classSSAGES_1_1IncludePlugin_adeb6e7f9fafc99d700615b19e148cc26}\label{classSSAGES_1_1IncludePlugin_adeb6e7f9fafc99d700615b19e148cc26}} 
+\index{SSAGES::IncludePlugin@{SSAGES::IncludePlugin}!ApplyFilter@{ApplyFilter}}
+\index{ApplyFilter@{ApplyFilter}!SSAGES::IncludePlugin@{SSAGES::IncludePlugin}}
+\doxysubsubsection{\texorpdfstring{ApplyFilter()}{ApplyFilter()}}
+{\footnotesize\ttfamily virtual void S\+S\+A\+G\+E\+S\+::\+Include\+Plugin\+::\+Apply\+Filter (\begin{DoxyParamCaption}\item[{std\+::string \&}]{contents,  }\item[{const std\+::string \&}]{path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Apply filter to string. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em contents} & String whose contents will be modified. \\
+\hline
+{\em path} & Path for \mbox{\hyperlink{namespaceJSON}{J\+S\+ON}} path specification.\\
+\hline
+\end{DoxyParams}
+This filter replaces {\ttfamily @include(file.\+json)} with contents. 
+
+Implements \mbox{\hyperlink{classSSAGES_1_1JSONLoaderPlugin_a3a57040134ab8ce8deb07e35d8c7d6d4}{S\+S\+A\+G\+E\+S\+::\+J\+S\+O\+N\+Loader\+Plugin}}.
+
+
+
+Definition at line 68 of file J\+S\+O\+N\+Loader\+Plugin.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{69         \{}
+\DoxyCodeLine{70             std::smatch matches;}
+\DoxyCodeLine{71             \textcolor{keyword}{auto} pattern = std::regex(\textcolor{stringliteral}{"\(\backslash\)"@include\(\backslash\)\(\backslash\)((.*)\(\backslash\)\(\backslash\))\(\backslash\)""}, std::regex::ECMAScript);}
+\DoxyCodeLine{72             \textcolor{keywordflow}{while}(regex\_search(contents, matches, pattern))}
+\DoxyCodeLine{73             \{}
+\DoxyCodeLine{74                 \textcolor{keywordflow}{for}(\textcolor{keywordtype}{size\_t} i = 1; i < matches.size(); ++i)}
+\DoxyCodeLine{75                 \{}
+\DoxyCodeLine{76                     \textcolor{keyword}{auto} content = \mbox{\hyperlink{namespaceSSAGES_a47ee6e7c0b49477e70126f8976bf88f6}{GetFileContents}}((path + \textcolor{stringliteral}{"/"} + matches[i].str()).c\_str());}
+\DoxyCodeLine{77                     \textcolor{keyword}{auto} rpattern = std::regex(\textcolor{stringliteral}{"\(\backslash\)"@include\(\backslash\)\(\backslash\)("} +}
+\DoxyCodeLine{78                                                matches[i].str() +}
+\DoxyCodeLine{79                                                \textcolor{stringliteral}{"\(\backslash\)\(\backslash\))\(\backslash\)""}, std::regex::ECMAScript);}
+\DoxyCodeLine{80                     contents = regex\_replace(contents, rpattern, content);}
+\DoxyCodeLine{81                 \}}
+\DoxyCodeLine{82             \}}
+\DoxyCodeLine{83         \}}
+
+\end{DoxyCode}
+
+
+References S\+S\+A\+G\+E\+S\+::\+Get\+File\+Contents().
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classSSAGES_1_1IncludePlugin_adeb6e7f9fafc99d700615b19e148cc26_cgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/michael/development/\+S\+S\+A\+G\+E\+S/src/\+J\+S\+O\+N/J\+S\+O\+N\+Loader\+Plugin.\+h\end{DoxyCompactItemize}

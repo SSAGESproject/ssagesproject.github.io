@@ -1,0 +1,219 @@
+\hypertarget{classJson_1_1NumberRequirement}{}\doxysection{Json\+::Number\+Requirement Class Reference}
+\label{classJson_1_1NumberRequirement}\index{Json::NumberRequirement@{Json::NumberRequirement}}
+
+
+Requirements on a numeric value.  
+
+
+
+
+{\ttfamily \#include $<$Number\+Requirement.\+h$>$}
+
+
+
+Inheritance diagram for Json\+::Number\+Requirement\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=214pt]{classJson_1_1NumberRequirement__inherit__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classJson_1_1NumberRequirement_a56632082736c5e5ff6ec3f14d4989a37}\label{classJson_1_1NumberRequirement_a56632082736c5e5ff6ec3f14d4989a37}} 
+\mbox{\hyperlink{classJson_1_1NumberRequirement_a56632082736c5e5ff6ec3f14d4989a37}{Number\+Requirement}} ()
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classJson_1_1NumberRequirement_aa7069f72e3d96d4d5b6abd99841e58af}\label{classJson_1_1NumberRequirement_aa7069f72e3d96d4d5b6abd99841e58af}} 
+virtual void \mbox{\hyperlink{classJson_1_1NumberRequirement_aa7069f72e3d96d4d5b6abd99841e58af}{Reset}} () override
+\begin{DoxyCompactList}\small\item\em Reset \mbox{\hyperlink{classJson_1_1Requirement}{Requirement}}. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classJson_1_1NumberRequirement_a108f327034fc57462da8fdccf827ae1a}{Parse}} (Value json, const std\+::string \&path) override
+\begin{DoxyCompactList}\small\item\em Parse \mbox{\hyperlink{namespaceJSON}{J\+S\+ON}} value to set up \mbox{\hyperlink{classJson_1_1Requirement}{Requirement}}. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classJson_1_1NumberRequirement_a2aa3c400c2ab93e748070005800ad15c}{Validate}} (const Value \&json, const std\+::string \&path) override
+\begin{DoxyCompactList}\small\item\em Validate \mbox{\hyperlink{namespaceJSON}{J\+S\+ON}} value. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classJson_1_1NumberRequirement_abed8df0b1af656ede203b0e3d018cf6f}\label{classJson_1_1NumberRequirement_abed8df0b1af656ede203b0e3d018cf6f}} 
+std\+::string \mbox{\hyperlink{classJson_1_1NumberRequirement_abed8df0b1af656ede203b0e3d018cf6f}{path\+\_\+}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{namespaceJSON}{J\+S\+ON}} path. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classJson_1_1NumberRequirement_a9f2996f47e1ae2cf048aac2144cb0c88}\label{classJson_1_1NumberRequirement_a9f2996f47e1ae2cf048aac2144cb0c88}} 
+double \mbox{\hyperlink{classJson_1_1NumberRequirement_a9f2996f47e1ae2cf048aac2144cb0c88}{multiple\+Of\+\_\+}}
+\begin{DoxyCompactList}\small\item\em Base value for \char`\"{}multiple of\char`\"{} requirement. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classJson_1_1NumberRequirement_a3e1401ac1fb81a7f9d455d7cd7089a27}\label{classJson_1_1NumberRequirement_a3e1401ac1fb81a7f9d455d7cd7089a27}} 
+double \mbox{\hyperlink{classJson_1_1NumberRequirement_a3e1401ac1fb81a7f9d455d7cd7089a27}{min\+\_\+}}
+\begin{DoxyCompactList}\small\item\em Lower bound for range requirement. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classJson_1_1NumberRequirement_a26d8d6b76d092248b481b3998cf1b0a0}\label{classJson_1_1NumberRequirement_a26d8d6b76d092248b481b3998cf1b0a0}} 
+double \mbox{\hyperlink{classJson_1_1NumberRequirement_a26d8d6b76d092248b481b3998cf1b0a0}{max\+\_\+}}
+\begin{DoxyCompactList}\small\item\em Upper bound for range requirement. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classJson_1_1NumberRequirement_a553cf0fafa24b40fcf51ba106fb5d2c7}\label{classJson_1_1NumberRequirement_a553cf0fafa24b40fcf51ba106fb5d2c7}} 
+bool \mbox{\hyperlink{classJson_1_1NumberRequirement_a553cf0fafa24b40fcf51ba106fb5d2c7}{mult\+Set\+\_\+}}
+\begin{DoxyCompactList}\small\item\em If {\ttfamily True}, \char`\"{}\+Multiple of\char`\"{} requirement is active. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classJson_1_1NumberRequirement_a80237355dd7a1caa622d7e0d2a3223cb}\label{classJson_1_1NumberRequirement_a80237355dd7a1caa622d7e0d2a3223cb}} 
+bool \mbox{\hyperlink{classJson_1_1NumberRequirement_a80237355dd7a1caa622d7e0d2a3223cb}{min\+Set\+\_\+}}
+\begin{DoxyCompactList}\small\item\em If {\ttfamily True}, Lower bound for range requirement is active. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classJson_1_1NumberRequirement_a7430b876e3f12d3cfaf3a18b54a905b0}\label{classJson_1_1NumberRequirement_a7430b876e3f12d3cfaf3a18b54a905b0}} 
+bool \mbox{\hyperlink{classJson_1_1NumberRequirement_a7430b876e3f12d3cfaf3a18b54a905b0}{max\+Set\+\_\+}}
+\begin{DoxyCompactList}\small\item\em If {\ttfamily True}, Upper bound for range requirement is active. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classJson_1_1NumberRequirement_a3763738a6effeb821ed6e7007288d9e6}\label{classJson_1_1NumberRequirement_a3763738a6effeb821ed6e7007288d9e6}} 
+bool \mbox{\hyperlink{classJson_1_1NumberRequirement_a3763738a6effeb821ed6e7007288d9e6}{excl\+Min\+\_\+}}
+\begin{DoxyCompactList}\small\item\em If {\ttfamily True}, lower bound is exclusive. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classJson_1_1NumberRequirement_a2d89ae3e4a7a96ff6ebd7f991ed1d134}\label{classJson_1_1NumberRequirement_a2d89ae3e4a7a96ff6ebd7f991ed1d134}} 
+bool \mbox{\hyperlink{classJson_1_1NumberRequirement_a2d89ae3e4a7a96ff6ebd7f991ed1d134}{excl\+Max\+\_\+}}
+\begin{DoxyCompactList}\small\item\em If {\ttfamily True}, upper bound is exclusive. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Requirements on a numeric value. 
+
+The numbers are stored internally as {\ttfamily double}. 
+
+Definition at line 39 of file Number\+Requirement.\+h.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classJson_1_1NumberRequirement_a108f327034fc57462da8fdccf827ae1a}\label{classJson_1_1NumberRequirement_a108f327034fc57462da8fdccf827ae1a}} 
+\index{Json::NumberRequirement@{Json::NumberRequirement}!Parse@{Parse}}
+\index{Parse@{Parse}!Json::NumberRequirement@{Json::NumberRequirement}}
+\doxysubsubsection{\texorpdfstring{Parse()}{Parse()}}
+{\footnotesize\ttfamily virtual void Json\+::\+Number\+Requirement\+::\+Parse (\begin{DoxyParamCaption}\item[{Value}]{json,  }\item[{const std\+::string \&}]{path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Parse \mbox{\hyperlink{namespaceJSON}{J\+S\+ON}} value to set up \mbox{\hyperlink{classJson_1_1Requirement}{Requirement}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em json} & \mbox{\hyperlink{namespaceJSON}{J\+S\+ON}} input value. \\
+\hline
+{\em path} & Path for \mbox{\hyperlink{namespaceJSON}{J\+S\+ON}} path specification. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classJson_1_1Requirement_af13c20497e7ad6c332c57fa80a266e27}{Json\+::\+Requirement}}.
+
+
+
+Definition at line 77 of file Number\+Requirement.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{78         \{}
+\DoxyCodeLine{79             \mbox{\hyperlink{classJson_1_1NumberRequirement_aa7069f72e3d96d4d5b6abd99841e58af}{Reset}}();}
+\DoxyCodeLine{80             }
+\DoxyCodeLine{81             \mbox{\hyperlink{classJson_1_1NumberRequirement_abed8df0b1af656ede203b0e3d018cf6f}{path\_}} = path;}
+\DoxyCodeLine{82             \textcolor{keywordflow}{if}(json.isMember(\textcolor{stringliteral}{"multipleOf"}) \&\& json[\textcolor{stringliteral}{"multipleOf"}].isNumeric())}
+\DoxyCodeLine{83             \{}
+\DoxyCodeLine{84                 \mbox{\hyperlink{classJson_1_1NumberRequirement_a553cf0fafa24b40fcf51ba106fb5d2c7}{multSet\_}} = \textcolor{keyword}{true};}
+\DoxyCodeLine{85                 \mbox{\hyperlink{classJson_1_1NumberRequirement_a9f2996f47e1ae2cf048aac2144cb0c88}{multipleOf\_}} = json[\textcolor{stringliteral}{"multipleOf"}].asDouble();}
+\DoxyCodeLine{86             \}}
+\DoxyCodeLine{87 }
+\DoxyCodeLine{88             \textcolor{keywordflow}{if}(json.isMember(\textcolor{stringliteral}{"minimum"}) \&\& json[\textcolor{stringliteral}{"minimum"}].isNumeric())}
+\DoxyCodeLine{89             \{}
+\DoxyCodeLine{90                 \mbox{\hyperlink{classJson_1_1NumberRequirement_a80237355dd7a1caa622d7e0d2a3223cb}{minSet\_}} = \textcolor{keyword}{true};}
+\DoxyCodeLine{91                 \mbox{\hyperlink{classJson_1_1NumberRequirement_a3e1401ac1fb81a7f9d455d7cd7089a27}{min\_}} = json[\textcolor{stringliteral}{"minimum"}].asDouble();}
+\DoxyCodeLine{92             \}}
+\DoxyCodeLine{93 }
+\DoxyCodeLine{94             \textcolor{keywordflow}{if}(json.isMember(\textcolor{stringliteral}{"maximum"}) \&\& json[\textcolor{stringliteral}{"maximum"}].isNumeric())}
+\DoxyCodeLine{95             \{}
+\DoxyCodeLine{96                 \mbox{\hyperlink{classJson_1_1NumberRequirement_a7430b876e3f12d3cfaf3a18b54a905b0}{maxSet\_}} = \textcolor{keyword}{true};}
+\DoxyCodeLine{97                 \mbox{\hyperlink{classJson_1_1NumberRequirement_a26d8d6b76d092248b481b3998cf1b0a0}{max\_}} = json[\textcolor{stringliteral}{"maximum"}].asDouble();}
+\DoxyCodeLine{98             \}}
+\DoxyCodeLine{99 }
+\DoxyCodeLine{100             \textcolor{keywordflow}{if}(json.isMember(\textcolor{stringliteral}{"exclusiveMinimum"}) \&\& json[\textcolor{stringliteral}{"exclusiveMinimum"}].isBool())}
+\DoxyCodeLine{101             \{}
+\DoxyCodeLine{102                 \mbox{\hyperlink{classJson_1_1NumberRequirement_a3763738a6effeb821ed6e7007288d9e6}{exclMin\_}} = json[\textcolor{stringliteral}{"exclusiveMinimum"}].asBool();}
+\DoxyCodeLine{103             \}}
+\DoxyCodeLine{104 }
+\DoxyCodeLine{105             \textcolor{keywordflow}{if}(json.isMember(\textcolor{stringliteral}{"exclusiveMaximum"}) \&\& json[\textcolor{stringliteral}{"exclusiveMaximum"}].isBool())}
+\DoxyCodeLine{106             \{}
+\DoxyCodeLine{107                 \mbox{\hyperlink{classJson_1_1NumberRequirement_a2d89ae3e4a7a96ff6ebd7f991ed1d134}{exclMax\_}} = json[\textcolor{stringliteral}{"exclusiveMaximum"}].asBool();}
+\DoxyCodeLine{108             \}}
+\DoxyCodeLine{109         \}}
+
+\end{DoxyCode}
+
+
+References excl\+Max\+\_\+, excl\+Min\+\_\+, max\+\_\+, max\+Set\+\_\+, min\+\_\+, min\+Set\+\_\+, multiple\+Of\+\_\+, mult\+Set\+\_\+, path\+\_\+, and Reset().
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classJson_1_1NumberRequirement_a108f327034fc57462da8fdccf827ae1a_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classJson_1_1NumberRequirement_a2aa3c400c2ab93e748070005800ad15c}\label{classJson_1_1NumberRequirement_a2aa3c400c2ab93e748070005800ad15c}} 
+\index{Json::NumberRequirement@{Json::NumberRequirement}!Validate@{Validate}}
+\index{Validate@{Validate}!Json::NumberRequirement@{Json::NumberRequirement}}
+\doxysubsubsection{\texorpdfstring{Validate()}{Validate()}}
+{\footnotesize\ttfamily virtual void Json\+::\+Number\+Requirement\+::\+Validate (\begin{DoxyParamCaption}\item[{const Value \&}]{json,  }\item[{const std\+::string \&}]{path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Validate \mbox{\hyperlink{namespaceJSON}{J\+S\+ON}} value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em json} & \mbox{\hyperlink{namespaceJSON}{J\+S\+ON}} value to validate. \\
+\hline
+{\em path} & Path for \mbox{\hyperlink{namespaceJSON}{J\+S\+ON}} path specification.\\
+\hline
+\end{DoxyParams}
+Test that the \mbox{\hyperlink{namespaceJSON}{J\+S\+ON}} value meets the requirements set via \mbox{\hyperlink{classJson_1_1NumberRequirement_a108f327034fc57462da8fdccf827ae1a}{Number\+Requirement\+::\+Parse()}}. If the validation fails, an error is added to the list of error messages. 
+
+Implements \mbox{\hyperlink{classJson_1_1Requirement_aa97494b642414d00482745a0d5b2c2c3}{Json\+::\+Requirement}}.
+
+
+
+Definition at line 120 of file Number\+Requirement.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{121         \{}
+\DoxyCodeLine{122             \textcolor{keywordflow}{if}(!json.isNumeric())}
+\DoxyCodeLine{123             \{}
+\DoxyCodeLine{124                 \mbox{\hyperlink{classJson_1_1Requirement_adeb9efa6cf271d9cea0599ff2d458a08}{PushError}}(path + \textcolor{stringliteral}{": Must be of type \(\backslash\)"number\(\backslash\)"."});}
+\DoxyCodeLine{125                 \textcolor{keywordflow}{return};}
+\DoxyCodeLine{126             \}}
+\DoxyCodeLine{127 }
+\DoxyCodeLine{128             \textcolor{keywordflow}{if}(\mbox{\hyperlink{classJson_1_1NumberRequirement_a553cf0fafa24b40fcf51ba106fb5d2c7}{multSet\_}} \&\& fmod(json.asDouble(), \mbox{\hyperlink{classJson_1_1NumberRequirement_a9f2996f47e1ae2cf048aac2144cb0c88}{multipleOf\_}}) != 0)}
+\DoxyCodeLine{129                 \mbox{\hyperlink{classJson_1_1Requirement_adeb9efa6cf271d9cea0599ff2d458a08}{PushError}}(path + \textcolor{stringliteral}{": Value must be a multiple of "} + std::to\_string(\mbox{\hyperlink{classJson_1_1NumberRequirement_a9f2996f47e1ae2cf048aac2144cb0c88}{multipleOf\_}}));}
+\DoxyCodeLine{130 }
+\DoxyCodeLine{131             \textcolor{keywordflow}{if}(\mbox{\hyperlink{classJson_1_1NumberRequirement_a80237355dd7a1caa622d7e0d2a3223cb}{minSet\_}})}
+\DoxyCodeLine{132             \{}
+\DoxyCodeLine{133                 \textcolor{keywordflow}{if}(\mbox{\hyperlink{classJson_1_1NumberRequirement_a3763738a6effeb821ed6e7007288d9e6}{exclMin\_}} \&\& json.asDouble() <= \mbox{\hyperlink{classJson_1_1NumberRequirement_a3e1401ac1fb81a7f9d455d7cd7089a27}{min\_}})}
+\DoxyCodeLine{134                     \mbox{\hyperlink{classJson_1_1Requirement_adeb9efa6cf271d9cea0599ff2d458a08}{PushError}}(path + \textcolor{stringliteral}{": Value must be greater than "} + std::to\_string(\mbox{\hyperlink{classJson_1_1NumberRequirement_a3e1401ac1fb81a7f9d455d7cd7089a27}{min\_}}));}
+\DoxyCodeLine{135                 \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(json.asDouble() < \mbox{\hyperlink{classJson_1_1NumberRequirement_a3e1401ac1fb81a7f9d455d7cd7089a27}{min\_}})}
+\DoxyCodeLine{136                     \mbox{\hyperlink{classJson_1_1Requirement_adeb9efa6cf271d9cea0599ff2d458a08}{PushError}}(path + \textcolor{stringliteral}{": Value cannot be less than "} + std::to\_string(\mbox{\hyperlink{classJson_1_1NumberRequirement_a3e1401ac1fb81a7f9d455d7cd7089a27}{min\_}}));}
+\DoxyCodeLine{137             \}}
+\DoxyCodeLine{138 }
+\DoxyCodeLine{139             \textcolor{keywordflow}{if}(\mbox{\hyperlink{classJson_1_1NumberRequirement_a7430b876e3f12d3cfaf3a18b54a905b0}{maxSet\_}})}
+\DoxyCodeLine{140             \{}
+\DoxyCodeLine{141                 \textcolor{keywordflow}{if}(\mbox{\hyperlink{classJson_1_1NumberRequirement_a2d89ae3e4a7a96ff6ebd7f991ed1d134}{exclMax\_}} \&\& json.asDouble() >= \mbox{\hyperlink{classJson_1_1NumberRequirement_a26d8d6b76d092248b481b3998cf1b0a0}{max\_}})}
+\DoxyCodeLine{142                     \mbox{\hyperlink{classJson_1_1Requirement_adeb9efa6cf271d9cea0599ff2d458a08}{PushError}}(path + \textcolor{stringliteral}{": Value must be less than "} + std::to\_string(\mbox{\hyperlink{classJson_1_1NumberRequirement_a26d8d6b76d092248b481b3998cf1b0a0}{max\_}}));}
+\DoxyCodeLine{143                 \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(json.asDouble() > \mbox{\hyperlink{classJson_1_1NumberRequirement_a26d8d6b76d092248b481b3998cf1b0a0}{max\_}})}
+\DoxyCodeLine{144                     \mbox{\hyperlink{classJson_1_1Requirement_adeb9efa6cf271d9cea0599ff2d458a08}{PushError}}(path + \textcolor{stringliteral}{": Value cannot be greater than "} + std::to\_string(\mbox{\hyperlink{classJson_1_1NumberRequirement_a26d8d6b76d092248b481b3998cf1b0a0}{max\_}}));}
+\DoxyCodeLine{145             \}}
+\DoxyCodeLine{146         \}}
+
+\end{DoxyCode}
+
+
+References excl\+Max\+\_\+, excl\+Min\+\_\+, max\+\_\+, max\+Set\+\_\+, min\+\_\+, min\+Set\+\_\+, multiple\+Of\+\_\+, mult\+Set\+\_\+, and Json\+::\+Requirement\+::\+Push\+Error().
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classJson_1_1NumberRequirement_a2aa3c400c2ab93e748070005800ad15c_cgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/michael/development/\+S\+S\+A\+G\+E\+S/src/\+Validator/Number\+Requirement.\+h\end{DoxyCompactItemize}

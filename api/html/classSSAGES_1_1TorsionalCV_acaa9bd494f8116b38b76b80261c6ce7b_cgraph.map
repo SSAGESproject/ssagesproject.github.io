@@ -1,0 +1,4 @@
+<map id="SSAGES::TorsionalCV::GetDifference" name="SSAGES::TorsionalCV::GetDifference">
+<area shape="rect" id="node1" title="Get difference taking periodic boundary conditions into account." alt="" coords="5,5,163,47"/>
+<area shape="rect" id="node2" href="$classSSAGES_1_1TorsionalCV.html#a82eedc6924ce1739f445f9f0da9e288d" title="Return value taking periodic boundary conditions into account." alt="" coords="211,5,368,47"/>
+</map>

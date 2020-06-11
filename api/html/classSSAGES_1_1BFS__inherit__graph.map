@@ -1,0 +1,5 @@
+<map id="SSAGES::BFS" name="SSAGES::BFS">
+<area shape="rect" id="node1" title="Basis Function Sampling Algorithm." alt="" coords="33,155,143,181"/>
+<area shape="rect" id="node2" href="$classSSAGES_1_1Method.html" title="Interface for Method implementations." alt="" coords="24,80,152,107"/>
+<area shape="rect" id="node3" href="$classSSAGES_1_1EventListener.html" title="Base abstract class for listening in to events fired by &quot;Hook&quot;." alt="" coords="5,5,171,32"/>
+</map>

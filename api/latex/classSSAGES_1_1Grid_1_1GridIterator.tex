@@ -1,0 +1,791 @@
+\hypertarget{classSSAGES_1_1Grid_1_1GridIterator}{}\doxysection{S\+S\+A\+G\+ES\+::Grid$<$ T $>$\+::Grid\+Iterator$<$ R $>$ Class Template Reference}
+\label{classSSAGES_1_1Grid_1_1GridIterator}\index{SSAGES::Grid$<$ T $>$::GridIterator$<$ R $>$@{SSAGES::Grid$<$ T $>$::GridIterator$<$ R $>$}}
+
+
+Custom Iterator.  
+
+
+
+
+{\ttfamily \#include $<$Grid.\+h$>$}
+
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classSSAGES_1_1Grid_1_1GridIterator_ae1d6b0c7886a9abcdb9bc456ea9061dc}\label{classSSAGES_1_1Grid_1_1GridIterator_ae1d6b0c7886a9abcdb9bc456ea9061dc}} 
+typedef \mbox{\hyperlink{classSSAGES_1_1Grid_1_1GridIterator}{Grid\+Iterator}} \mbox{\hyperlink{classSSAGES_1_1Grid_1_1GridIterator_ae1d6b0c7886a9abcdb9bc456ea9061dc}{self\+\_\+type}}
+\begin{DoxyCompactList}\small\item\em Type name of the iterator. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classSSAGES_1_1Grid_1_1GridIterator_ae9322c732585d71fbfae0119b8b9cd7a}\label{classSSAGES_1_1Grid_1_1GridIterator_ae9322c732585d71fbfae0119b8b9cd7a}} 
+typedef int \mbox{\hyperlink{classSSAGES_1_1Grid_1_1GridIterator_ae9322c732585d71fbfae0119b8b9cd7a}{difference\+\_\+type}}
+\begin{DoxyCompactList}\small\item\em Difference type is an int. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classSSAGES_1_1Grid_1_1GridIterator_ab38f2ddbdf9f85c02fb9fde5f8e4c03c}\label{classSSAGES_1_1Grid_1_1GridIterator_ab38f2ddbdf9f85c02fb9fde5f8e4c03c}} 
+typedef R \mbox{\hyperlink{classSSAGES_1_1Grid_1_1GridIterator_ab38f2ddbdf9f85c02fb9fde5f8e4c03c}{value\+\_\+type}}
+\begin{DoxyCompactList}\small\item\em Either T or const T for iterator and const\+\_\+iterator, respectively. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classSSAGES_1_1Grid_1_1GridIterator_a4d62b6e3268feefee0d1e52acaf83dfa}\label{classSSAGES_1_1Grid_1_1GridIterator_a4d62b6e3268feefee0d1e52acaf83dfa}} 
+typedef R $\ast$ \mbox{\hyperlink{classSSAGES_1_1Grid_1_1GridIterator_a4d62b6e3268feefee0d1e52acaf83dfa}{pointer}}
+\begin{DoxyCompactList}\small\item\em Either T$\ast$ or T const$\ast$ for iterator and const\+\_\+iterator, respectively. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classSSAGES_1_1Grid_1_1GridIterator_adf211a897dc268656c25c32c15876c00}\label{classSSAGES_1_1Grid_1_1GridIterator_adf211a897dc268656c25c32c15876c00}} 
+typedef R \& \mbox{\hyperlink{classSSAGES_1_1Grid_1_1GridIterator_adf211a897dc268656c25c32c15876c00}{reference}}
+\begin{DoxyCompactList}\small\item\em Either T\& or T const\& for iterator and const\+\_\+iterator, respectively. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classSSAGES_1_1Grid_1_1GridIterator_a1fbb7978ee90290876a55e2f1416791a}\label{classSSAGES_1_1Grid_1_1GridIterator_a1fbb7978ee90290876a55e2f1416791a}} 
+typedef std\+::bidirectional\+\_\+iterator\+\_\+tag \mbox{\hyperlink{classSSAGES_1_1Grid_1_1GridIterator_a1fbb7978ee90290876a55e2f1416791a}{iterator\+\_\+category}}
+\begin{DoxyCompactList}\small\item\em Hist\+Iterator is a bidirectional iterator. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classSSAGES_1_1Grid_1_1GridIterator_a14943c309ccf3848e3676d48b19de324}\label{classSSAGES_1_1Grid_1_1GridIterator_a14943c309ccf3848e3676d48b19de324}} 
+\mbox{\hyperlink{classSSAGES_1_1Grid_1_1GridIterator_a14943c309ccf3848e3676d48b19de324}{Grid\+Iterator}} ()=default
+\begin{DoxyCompactList}\small\item\em Use default constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classSSAGES_1_1Grid_1_1GridIterator_ad33e60715335031665f3db28c8e9fc92}{Grid\+Iterator}} (const std\+::vector$<$ int $>$ \&\mbox{\hyperlink{classSSAGES_1_1Grid_1_1GridIterator_a9d36203d74c669af7b389a6447d03d7b}{indices}}, \mbox{\hyperlink{classSSAGES_1_1Grid}{Grid}}$<$ T $>$ $\ast$grid)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classSSAGES_1_1Grid_1_1GridIterator_a0d98cbda0b7a47fcbcc82b5742999fd7}{Grid\+Iterator}} (const std\+::vector$<$ int $>$ \&\mbox{\hyperlink{classSSAGES_1_1Grid_1_1GridIterator_a9d36203d74c669af7b389a6447d03d7b}{indices}}, const \mbox{\hyperlink{classSSAGES_1_1Grid}{Grid}}$<$ T $>$ $\ast$grid)
+\begin{DoxyCompactList}\small\item\em Const constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classSSAGES_1_1Grid_1_1GridIterator_a2c94ac34e1faeeffa1a48f43f63657e0}{Grid\+Iterator}} (const \mbox{\hyperlink{classSSAGES_1_1Grid_1_1GridIterator}{Grid\+Iterator}} \&other)
+\begin{DoxyCompactList}\small\item\em Copy constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classSSAGES_1_1Grid_1_1GridIterator_adf211a897dc268656c25c32c15876c00}{reference}} \mbox{\hyperlink{classSSAGES_1_1Grid_1_1GridIterator_ac055605bc0b3b2f69c470c1844f54b91}{operator$\ast$}} ()
+\begin{DoxyCompactList}\small\item\em Dereference operator. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classSSAGES_1_1Grid_1_1GridIterator_ae1d6b0c7886a9abcdb9bc456ea9061dc}{self\+\_\+type}} \& \mbox{\hyperlink{classSSAGES_1_1Grid_1_1GridIterator_ae6fe857108117e59a9ec6da5c2970bc6}{operator++}} ()
+\begin{DoxyCompactList}\small\item\em Pre-\/increment operator. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classSSAGES_1_1Grid_1_1GridIterator_ae1d6b0c7886a9abcdb9bc456ea9061dc}{self\+\_\+type}} \mbox{\hyperlink{classSSAGES_1_1Grid_1_1GridIterator_ae769110c70f47b681ae4de5675e356c3}{operator++}} (int)
+\begin{DoxyCompactList}\small\item\em Post-\/increment operator. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classSSAGES_1_1Grid_1_1GridIterator_ae1d6b0c7886a9abcdb9bc456ea9061dc}{self\+\_\+type}} \& \mbox{\hyperlink{classSSAGES_1_1Grid_1_1GridIterator_ac8bf16f212c08794eeb58837c749eabd}{operator+=}} (std\+::vector$<$ int $>$ shift)
+\begin{DoxyCompactList}\small\item\em Addition assignment operator. \end{DoxyCompactList}\item 
+const \mbox{\hyperlink{classSSAGES_1_1Grid_1_1GridIterator_ae1d6b0c7886a9abcdb9bc456ea9061dc}{self\+\_\+type}} \mbox{\hyperlink{classSSAGES_1_1Grid_1_1GridIterator_a76879a625d32aedae76ff9d1d9b3d426}{operator+}} (std\+::vector$<$ int $>$ shift)
+\begin{DoxyCompactList}\small\item\em Addition operator. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classSSAGES_1_1Grid_1_1GridIterator_ae1d6b0c7886a9abcdb9bc456ea9061dc}{self\+\_\+type}} \& \mbox{\hyperlink{classSSAGES_1_1Grid_1_1GridIterator_a1b7035cab687c2da1fd784973f4cf610}{operator-\/-\/}} ()
+\begin{DoxyCompactList}\small\item\em Pre-\/decrement operator. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classSSAGES_1_1Grid_1_1GridIterator_ae1d6b0c7886a9abcdb9bc456ea9061dc}{self\+\_\+type}} \mbox{\hyperlink{classSSAGES_1_1Grid_1_1GridIterator_ae2dc464544c3060d4f955f9dc9f946ee}{operator-\/-\/}} (int)
+\begin{DoxyCompactList}\small\item\em Post-\/decrement operator. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classSSAGES_1_1Grid_1_1GridIterator_ae1d6b0c7886a9abcdb9bc456ea9061dc}{self\+\_\+type}} \& \mbox{\hyperlink{classSSAGES_1_1Grid_1_1GridIterator_a9ad457e8a8e5fcb99f62d5e3d769fe06}{operator-\/=}} (std\+::vector$<$ int $>$ shift)
+\begin{DoxyCompactList}\small\item\em Subtraction assignment operator. \end{DoxyCompactList}\item 
+const \mbox{\hyperlink{classSSAGES_1_1Grid_1_1GridIterator_ae1d6b0c7886a9abcdb9bc456ea9061dc}{self\+\_\+type}} \mbox{\hyperlink{classSSAGES_1_1Grid_1_1GridIterator_a24aa362a053e3e4f4d66377893e1855b}{operator-\/}} (std\+::vector$<$ int $>$ shift)
+\begin{DoxyCompactList}\small\item\em Subtraction iterator. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classSSAGES_1_1Grid_1_1GridIterator_a0930d63d593e2703334dcd9bbcc8eefd}{operator==}} (const \mbox{\hyperlink{classSSAGES_1_1Grid_1_1GridIterator_ae1d6b0c7886a9abcdb9bc456ea9061dc}{self\+\_\+type}} \&rhs) const
+\begin{DoxyCompactList}\small\item\em Equality operator. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classSSAGES_1_1Grid_1_1GridIterator_a6016bc673105f9540d22843f082f7e36}{operator!=}} (const \mbox{\hyperlink{classSSAGES_1_1Grid_1_1GridIterator_ae1d6b0c7886a9abcdb9bc456ea9061dc}{self\+\_\+type}} \&rhs) const
+\begin{DoxyCompactList}\small\item\em Non-\/equality operator. \end{DoxyCompactList}\item 
+std\+::vector$<$ int $>$ \& \mbox{\hyperlink{classSSAGES_1_1Grid_1_1GridIterator_a9d36203d74c669af7b389a6447d03d7b}{indices}} ()
+\begin{DoxyCompactList}\small\item\em Access indices. \end{DoxyCompactList}\item 
+int \& \mbox{\hyperlink{classSSAGES_1_1Grid_1_1GridIterator_af450d3d72dfe1e6df274f9a9e6de2049}{index}} (size\+\_\+t d)
+\begin{DoxyCompactList}\small\item\em Access a specific index. \end{DoxyCompactList}\item 
+std\+::vector$<$ double $>$ \mbox{\hyperlink{classSSAGES_1_1Grid_1_1GridIterator_ac7050053f8da7e4075d847c5f1abd9be}{coordinates}} () const
+\begin{DoxyCompactList}\small\item\em Access coordinates. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classSSAGES_1_1Grid_1_1GridIterator_a9dfb3e0c11bd6d24cdeacce29ceef583}{coordinate}} (size\+\_\+t d) const
+\begin{DoxyCompactList}\small\item\em Access specific coordinate dimension. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classSSAGES_1_1Grid_1_1GridIterator_a7549a4e7a76d8b3242ecefaf18b923c2}\label{classSSAGES_1_1Grid_1_1GridIterator_a7549a4e7a76d8b3242ecefaf18b923c2}} 
+std\+::vector$<$ int $>$ \mbox{\hyperlink{classSSAGES_1_1Grid_1_1GridIterator_a7549a4e7a76d8b3242ecefaf18b923c2}{indices\+\_\+}}
+\begin{DoxyCompactList}\small\item\em Indices of current grid point. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classSSAGES_1_1Grid_1_1GridIterator_a5e1b7f823c27f3d1844156a100517e6f}\label{classSSAGES_1_1Grid_1_1GridIterator_a5e1b7f823c27f3d1844156a100517e6f}} 
+\mbox{\hyperlink{classSSAGES_1_1Grid}{Grid}}$<$ T $>$ $\ast$ \mbox{\hyperlink{classSSAGES_1_1Grid_1_1GridIterator_a5e1b7f823c27f3d1844156a100517e6f}{grid\+\_\+}}
+\begin{DoxyCompactList}\small\item\em Pointer to grid to iterate over. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$typename T$>$\newline
+template$<$typename R$>$\newline
+class S\+S\+A\+G\+E\+S\+::\+Grid$<$ T $>$\+::\+Grid\+Iterator$<$ R $>$}
+
+Custom Iterator. 
+
+This iterator is designed of travesing through a grid. The starting point is at grid index 0 for each dimension. The last valid grid point has the num\+\_\+points in each dimension, where num\+\_\+points is the number of grid points in the respective dimension.
+
+The iterator can be used as a standard iterator with operator$\ast$ accessing the grid point at which the iterator currently is.
+
+Additionally, the functions \mbox{\hyperlink{classSSAGES_1_1Grid_1_1GridIterator_a9d36203d74c669af7b389a6447d03d7b}{Grid\+Iterator\+::indices()}} and \mbox{\hyperlink{classSSAGES_1_1Grid_1_1GridIterator_ac7050053f8da7e4075d847c5f1abd9be}{Grid\+Iterator\+::coordinates()}} are provided. These functions return the indices of the current grid point and the center of the grid point interval in real space, respectively.
+
+The iterator can be moved to an arbitrary position. As \mbox{\hyperlink{classSSAGES_1_1Grid_1_1GridIterator_a9d36203d74c669af7b389a6447d03d7b}{indices()}} returns a reference (and not a const reference), it can be used to move the iterator. For example\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{HistIterator it = hist-\/>begin();}
+\DoxyCodeLine{it.indices() = \{1,1,1\};}
+\end{DoxyCode}
+
+
+moves the iterator to the grid point \mbox{[}1, 1, 1\mbox{]}.
+
+The iterator can be traversed in a standard fashion with the increment and decrement operators operator++ and operator-\/-\/. When the increment operator is invoked, the bin index for the lowest dimension is increased by 1. If it moves beyond the valid range in this dimension, the index is reset to 0 and the index of the next higher dimension is increased by 1. The decrement operator traveses the grid in the same fashion but opposite direction.
+
+Additionaly, the iterator can be shifted by adding or subtracting a vector of ints. The vector needs to have the same dimension as the histogram. 
+
+Definition at line 247 of file Grid.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classSSAGES_1_1Grid_1_1GridIterator_ad33e60715335031665f3db28c8e9fc92}\label{classSSAGES_1_1Grid_1_1GridIterator_ad33e60715335031665f3db28c8e9fc92}} 
+\index{SSAGES::Grid$<$ T $>$::GridIterator$<$ R $>$@{SSAGES::Grid$<$ T $>$::GridIterator$<$ R $>$}!GridIterator@{GridIterator}}
+\index{GridIterator@{GridIterator}!SSAGES::Grid$<$ T $>$::GridIterator$<$ R $>$@{SSAGES::Grid$<$ T $>$::GridIterator$<$ R $>$}}
+\doxysubsubsection{\texorpdfstring{GridIterator()}{GridIterator()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+template$<$typename R $>$ \\
+\mbox{\hyperlink{classSSAGES_1_1Grid}{S\+S\+A\+G\+E\+S\+::\+Grid}}$<$ T $>$\+::\mbox{\hyperlink{classSSAGES_1_1Grid_1_1GridIterator}{Grid\+Iterator}}$<$ R $>$\+::\mbox{\hyperlink{classSSAGES_1_1Grid_1_1GridIterator}{Grid\+Iterator}} (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ int $>$ \&}]{indices,  }\item[{\mbox{\hyperlink{classSSAGES_1_1Grid}{Grid}}$<$ T $>$ $\ast$}]{grid }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em indices} & Bin indices specifying the current position of the iterator. \\
+\hline
+{\em grid} & Pointer to the grid to iterate over. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 276 of file Grid.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{277             : \mbox{\hyperlink{classSSAGES_1_1Grid_1_1GridIterator_a7549a4e7a76d8b3242ecefaf18b923c2}{indices\_}}(\mbox{\hyperlink{classSSAGES_1_1Grid_1_1GridIterator_a9d36203d74c669af7b389a6447d03d7b}{indices}}), \mbox{\hyperlink{classSSAGES_1_1Grid_1_1GridIterator_a5e1b7f823c27f3d1844156a100517e6f}{grid\_}}(grid)}
+\DoxyCodeLine{278         \{}
+\DoxyCodeLine{279         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classSSAGES_1_1Grid_1_1GridIterator_a0d98cbda0b7a47fcbcc82b5742999fd7}\label{classSSAGES_1_1Grid_1_1GridIterator_a0d98cbda0b7a47fcbcc82b5742999fd7}} 
+\index{SSAGES::Grid$<$ T $>$::GridIterator$<$ R $>$@{SSAGES::Grid$<$ T $>$::GridIterator$<$ R $>$}!GridIterator@{GridIterator}}
+\index{GridIterator@{GridIterator}!SSAGES::Grid$<$ T $>$::GridIterator$<$ R $>$@{SSAGES::Grid$<$ T $>$::GridIterator$<$ R $>$}}
+\doxysubsubsection{\texorpdfstring{GridIterator()}{GridIterator()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+template$<$typename R $>$ \\
+\mbox{\hyperlink{classSSAGES_1_1Grid}{S\+S\+A\+G\+E\+S\+::\+Grid}}$<$ T $>$\+::\mbox{\hyperlink{classSSAGES_1_1Grid_1_1GridIterator}{Grid\+Iterator}}$<$ R $>$\+::\mbox{\hyperlink{classSSAGES_1_1Grid_1_1GridIterator}{Grid\+Iterator}} (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ int $>$ \&}]{indices,  }\item[{const \mbox{\hyperlink{classSSAGES_1_1Grid}{Grid}}$<$ T $>$ $\ast$}]{grid }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Const constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em indices} & Bin indices specifying the current position of the iterator. \\
+\hline
+{\em grid} & Pointer to the grid to iterate over. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 287 of file Grid.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{288             : \mbox{\hyperlink{classSSAGES_1_1Grid_1_1GridIterator_a7549a4e7a76d8b3242ecefaf18b923c2}{indices\_}}(\mbox{\hyperlink{classSSAGES_1_1Grid_1_1GridIterator_a9d36203d74c669af7b389a6447d03d7b}{indices}}), \mbox{\hyperlink{classSSAGES_1_1Grid_1_1GridIterator_a5e1b7f823c27f3d1844156a100517e6f}{grid\_}}(grid)}
+\DoxyCodeLine{289         \{}
+\DoxyCodeLine{290         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classSSAGES_1_1Grid_1_1GridIterator_a2c94ac34e1faeeffa1a48f43f63657e0}\label{classSSAGES_1_1Grid_1_1GridIterator_a2c94ac34e1faeeffa1a48f43f63657e0}} 
+\index{SSAGES::Grid$<$ T $>$::GridIterator$<$ R $>$@{SSAGES::Grid$<$ T $>$::GridIterator$<$ R $>$}!GridIterator@{GridIterator}}
+\index{GridIterator@{GridIterator}!SSAGES::Grid$<$ T $>$::GridIterator$<$ R $>$@{SSAGES::Grid$<$ T $>$::GridIterator$<$ R $>$}}
+\doxysubsubsection{\texorpdfstring{GridIterator()}{GridIterator()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+template$<$typename R $>$ \\
+\mbox{\hyperlink{classSSAGES_1_1Grid}{S\+S\+A\+G\+E\+S\+::\+Grid}}$<$ T $>$\+::\mbox{\hyperlink{classSSAGES_1_1Grid_1_1GridIterator}{Grid\+Iterator}}$<$ R $>$\+::\mbox{\hyperlink{classSSAGES_1_1Grid_1_1GridIterator}{Grid\+Iterator}} (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classSSAGES_1_1Grid_1_1GridIterator}{Grid\+Iterator}}$<$ R $>$ \&}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Copy constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & \mbox{\hyperlink{classSSAGES_1_1Grid_1_1GridIterator}{Grid\+Iterator}} to be copied. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 296 of file Grid.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{297             : \mbox{\hyperlink{classSSAGES_1_1Grid_1_1GridIterator_a7549a4e7a76d8b3242ecefaf18b923c2}{indices\_}}(other.indices\_), \mbox{\hyperlink{classSSAGES_1_1Grid_1_1GridIterator_a5e1b7f823c27f3d1844156a100517e6f}{grid\_}}(other.grid\_)}
+\DoxyCodeLine{298         \{}
+\DoxyCodeLine{299         \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classSSAGES_1_1Grid_1_1GridIterator_a9dfb3e0c11bd6d24cdeacce29ceef583}\label{classSSAGES_1_1Grid_1_1GridIterator_a9dfb3e0c11bd6d24cdeacce29ceef583}} 
+\index{SSAGES::Grid$<$ T $>$::GridIterator$<$ R $>$@{SSAGES::Grid$<$ T $>$::GridIterator$<$ R $>$}!coordinate@{coordinate}}
+\index{coordinate@{coordinate}!SSAGES::Grid$<$ T $>$::GridIterator$<$ R $>$@{SSAGES::Grid$<$ T $>$::GridIterator$<$ R $>$}}
+\doxysubsubsection{\texorpdfstring{coordinate()}{coordinate()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+template$<$typename R $>$ \\
+double \mbox{\hyperlink{classSSAGES_1_1Grid}{S\+S\+A\+G\+E\+S\+::\+Grid}}$<$ T $>$\+::\mbox{\hyperlink{classSSAGES_1_1Grid_1_1GridIterator}{Grid\+Iterator}}$<$ R $>$\+::coordinate (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{d }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Access specific coordinate dimension. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em d} & Dimension of the coordinate. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Center of the current grid point in the specified dimension. 
+\end{DoxyReturn}
+
+
+Definition at line 501 of file Grid.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{502         \{}
+\DoxyCodeLine{503             \textcolor{keywordflow}{return} \mbox{\hyperlink{classSSAGES_1_1Grid_1_1GridIterator_ac7050053f8da7e4075d847c5f1abd9be}{coordinates}}()[d];}
+\DoxyCodeLine{504         \}}
+
+\end{DoxyCode}
+
+
+References S\+S\+A\+G\+E\+S\+::\+Grid$<$ T $>$\+::\+Grid\+Iterator$<$ R $>$\+::coordinates().
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classSSAGES_1_1Grid_1_1GridIterator_a9dfb3e0c11bd6d24cdeacce29ceef583_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classSSAGES_1_1Grid_1_1GridIterator_ac7050053f8da7e4075d847c5f1abd9be}\label{classSSAGES_1_1Grid_1_1GridIterator_ac7050053f8da7e4075d847c5f1abd9be}} 
+\index{SSAGES::Grid$<$ T $>$::GridIterator$<$ R $>$@{SSAGES::Grid$<$ T $>$::GridIterator$<$ R $>$}!coordinates@{coordinates}}
+\index{coordinates@{coordinates}!SSAGES::Grid$<$ T $>$::GridIterator$<$ R $>$@{SSAGES::Grid$<$ T $>$::GridIterator$<$ R $>$}}
+\doxysubsubsection{\texorpdfstring{coordinates()}{coordinates()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+template$<$typename R $>$ \\
+std\+::vector$<$double$>$ \mbox{\hyperlink{classSSAGES_1_1Grid}{S\+S\+A\+G\+E\+S\+::\+Grid}}$<$ T $>$\+::\mbox{\hyperlink{classSSAGES_1_1Grid_1_1GridIterator}{Grid\+Iterator}}$<$ R $>$\+::coordinates (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Access coordinates. 
+
+\begin{DoxyReturn}{Returns}
+Center point of the current grid point. 
+\end{DoxyReturn}
+
+
+Definition at line 491 of file Grid.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{492         \{}
+\DoxyCodeLine{493             \textcolor{keywordflow}{return} \mbox{\hyperlink{classSSAGES_1_1Grid_1_1GridIterator_a5e1b7f823c27f3d1844156a100517e6f}{grid\_}}-\/>GetCoordinates(\mbox{\hyperlink{classSSAGES_1_1Grid_1_1GridIterator_a7549a4e7a76d8b3242ecefaf18b923c2}{indices\_}});}
+\DoxyCodeLine{494         \}}
+
+\end{DoxyCode}
+
+
+References S\+S\+A\+G\+E\+S\+::\+Grid$<$ T $>$\+::\+Grid\+Iterator$<$ R $>$\+::grid\+\_\+, and S\+S\+A\+G\+E\+S\+::\+Grid$<$ T $>$\+::\+Grid\+Iterator$<$ R $>$\+::indices\+\_\+.
+
+
+
+Referenced by S\+S\+A\+G\+E\+S\+::\+Grid$<$ T $>$\+::\+Grid\+Iterator$<$ R $>$\+::coordinate().
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classSSAGES_1_1Grid_1_1GridIterator_ac7050053f8da7e4075d847c5f1abd9be_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classSSAGES_1_1Grid_1_1GridIterator_af450d3d72dfe1e6df274f9a9e6de2049}\label{classSSAGES_1_1Grid_1_1GridIterator_af450d3d72dfe1e6df274f9a9e6de2049}} 
+\index{SSAGES::Grid$<$ T $>$::GridIterator$<$ R $>$@{SSAGES::Grid$<$ T $>$::GridIterator$<$ R $>$}!index@{index}}
+\index{index@{index}!SSAGES::Grid$<$ T $>$::GridIterator$<$ R $>$@{SSAGES::Grid$<$ T $>$::GridIterator$<$ R $>$}}
+\doxysubsubsection{\texorpdfstring{index()}{index()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+template$<$typename R $>$ \\
+int\& \mbox{\hyperlink{classSSAGES_1_1Grid}{S\+S\+A\+G\+E\+S\+::\+Grid}}$<$ T $>$\+::\mbox{\hyperlink{classSSAGES_1_1Grid_1_1GridIterator}{Grid\+Iterator}}$<$ R $>$\+::index (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{d }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Access a specific index. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em d} & Dimension of the index. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Index of the current grid point in the specified dimension. 
+\end{DoxyReturn}
+
+
+Definition at line 482 of file Grid.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{483         \{}
+\DoxyCodeLine{484             \textcolor{keywordflow}{return} \mbox{\hyperlink{classSSAGES_1_1Grid_1_1GridIterator_a9d36203d74c669af7b389a6447d03d7b}{indices}}()[d];}
+\DoxyCodeLine{485         \}}
+
+\end{DoxyCode}
+
+
+References S\+S\+A\+G\+E\+S\+::\+Grid$<$ T $>$\+::\+Grid\+Iterator$<$ R $>$\+::indices().
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classSSAGES_1_1Grid_1_1GridIterator_af450d3d72dfe1e6df274f9a9e6de2049_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classSSAGES_1_1Grid_1_1GridIterator_a9d36203d74c669af7b389a6447d03d7b}\label{classSSAGES_1_1Grid_1_1GridIterator_a9d36203d74c669af7b389a6447d03d7b}} 
+\index{SSAGES::Grid$<$ T $>$::GridIterator$<$ R $>$@{SSAGES::Grid$<$ T $>$::GridIterator$<$ R $>$}!indices@{indices}}
+\index{indices@{indices}!SSAGES::Grid$<$ T $>$::GridIterator$<$ R $>$@{SSAGES::Grid$<$ T $>$::GridIterator$<$ R $>$}}
+\doxysubsubsection{\texorpdfstring{indices()}{indices()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+template$<$typename R $>$ \\
+std\+::vector$<$int$>$\& \mbox{\hyperlink{classSSAGES_1_1Grid}{S\+S\+A\+G\+E\+S\+::\+Grid}}$<$ T $>$\+::\mbox{\hyperlink{classSSAGES_1_1Grid_1_1GridIterator}{Grid\+Iterator}}$<$ R $>$\+::indices (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Access indices. 
+
+\begin{DoxyReturn}{Returns}
+Indices of current grid point.
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+This function returns a reference and can be used to move the current grid point. 
+\end{DoxyNote}
+
+
+Definition at line 471 of file Grid.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{472         \{}
+\DoxyCodeLine{473             \textcolor{keywordflow}{return} \mbox{\hyperlink{classSSAGES_1_1Grid_1_1GridIterator_a7549a4e7a76d8b3242ecefaf18b923c2}{indices\_}};}
+\DoxyCodeLine{474         \}}
+
+\end{DoxyCode}
+
+
+References S\+S\+A\+G\+E\+S\+::\+Grid$<$ T $>$\+::\+Grid\+Iterator$<$ R $>$\+::indices\+\_\+.
+
+
+
+Referenced by S\+S\+A\+G\+E\+S\+::\+Grid$<$ T $>$\+::\+Grid\+Iterator$<$ R $>$\+::index().
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classSSAGES_1_1Grid_1_1GridIterator_a9d36203d74c669af7b389a6447d03d7b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classSSAGES_1_1Grid_1_1GridIterator_a6016bc673105f9540d22843f082f7e36}\label{classSSAGES_1_1Grid_1_1GridIterator_a6016bc673105f9540d22843f082f7e36}} 
+\index{SSAGES::Grid$<$ T $>$::GridIterator$<$ R $>$@{SSAGES::Grid$<$ T $>$::GridIterator$<$ R $>$}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!SSAGES::Grid$<$ T $>$::GridIterator$<$ R $>$@{SSAGES::Grid$<$ T $>$::GridIterator$<$ R $>$}}
+\doxysubsubsection{\texorpdfstring{operator"!=()}{operator!=()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+template$<$typename R $>$ \\
+bool \mbox{\hyperlink{classSSAGES_1_1Grid}{S\+S\+A\+G\+E\+S\+::\+Grid}}$<$ T $>$\+::\mbox{\hyperlink{classSSAGES_1_1Grid_1_1GridIterator}{Grid\+Iterator}}$<$ R $>$\+::operator!= (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classSSAGES_1_1Grid_1_1GridIterator_ae1d6b0c7886a9abcdb9bc456ea9061dc}{self\+\_\+type}} \&}]{rhs }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Non-\/equality operator. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em rhs} & Iterator to which this iterator is compared. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily False} if both iterators access the same grid point on the same grid. Else return {\ttfamily True}. 
+\end{DoxyReturn}
+
+
+Definition at line 459 of file Grid.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{460         \{}
+\DoxyCodeLine{461             \textcolor{keywordflow}{return} !( (*this) == rhs );}
+\DoxyCodeLine{462         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classSSAGES_1_1Grid_1_1GridIterator_ac055605bc0b3b2f69c470c1844f54b91}\label{classSSAGES_1_1Grid_1_1GridIterator_ac055605bc0b3b2f69c470c1844f54b91}} 
+\index{SSAGES::Grid$<$ T $>$::GridIterator$<$ R $>$@{SSAGES::Grid$<$ T $>$::GridIterator$<$ R $>$}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!SSAGES::Grid$<$ T $>$::GridIterator$<$ R $>$@{SSAGES::Grid$<$ T $>$::GridIterator$<$ R $>$}}
+\doxysubsubsection{\texorpdfstring{operator$\ast$()}{operator*()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+template$<$typename R $>$ \\
+\mbox{\hyperlink{classSSAGES_1_1Grid_1_1GridIterator_adf211a897dc268656c25c32c15876c00}{reference}} \mbox{\hyperlink{classSSAGES_1_1Grid}{S\+S\+A\+G\+E\+S\+::\+Grid}}$<$ T $>$\+::\mbox{\hyperlink{classSSAGES_1_1Grid_1_1GridIterator}{Grid\+Iterator}}$<$ R $>$\+::operator$\ast$ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Dereference operator. 
+
+\begin{DoxyReturn}{Returns}
+Reference to the value at the current grid position. 
+\end{DoxyReturn}
+
+
+Definition at line 305 of file Grid.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{305 \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{classSSAGES_1_1Grid_1_1GridIterator_a5e1b7f823c27f3d1844156a100517e6f}{grid\_}}-\/>at(\mbox{\hyperlink{classSSAGES_1_1Grid_1_1GridIterator_a7549a4e7a76d8b3242ecefaf18b923c2}{indices\_}}); \}}
+
+\end{DoxyCode}
+
+
+References S\+S\+A\+G\+E\+S\+::\+Grid$<$ T $>$\+::\+Grid\+Iterator$<$ R $>$\+::grid\+\_\+, and S\+S\+A\+G\+E\+S\+::\+Grid$<$ T $>$\+::\+Grid\+Iterator$<$ R $>$\+::indices\+\_\+.
+
+\mbox{\Hypertarget{classSSAGES_1_1Grid_1_1GridIterator_a76879a625d32aedae76ff9d1d9b3d426}\label{classSSAGES_1_1Grid_1_1GridIterator_a76879a625d32aedae76ff9d1d9b3d426}} 
+\index{SSAGES::Grid$<$ T $>$::GridIterator$<$ R $>$@{SSAGES::Grid$<$ T $>$::GridIterator$<$ R $>$}!operator+@{operator+}}
+\index{operator+@{operator+}!SSAGES::Grid$<$ T $>$::GridIterator$<$ R $>$@{SSAGES::Grid$<$ T $>$::GridIterator$<$ R $>$}}
+\doxysubsubsection{\texorpdfstring{operator+()}{operator+()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+template$<$typename R $>$ \\
+const \mbox{\hyperlink{classSSAGES_1_1Grid_1_1GridIterator_ae1d6b0c7886a9abcdb9bc456ea9061dc}{self\+\_\+type}} \mbox{\hyperlink{classSSAGES_1_1Grid}{S\+S\+A\+G\+E\+S\+::\+Grid}}$<$ T $>$\+::\mbox{\hyperlink{classSSAGES_1_1Grid_1_1GridIterator}{Grid\+Iterator}}$<$ R $>$\+::operator+ (\begin{DoxyParamCaption}\item[{std\+::vector$<$ int $>$}]{shift }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Addition operator. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em shift} & Amount of shift in each dimension. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Copy of iterator after shift.
+\end{DoxyReturn}
+Shift the iterator by a given vector. 
+
+Definition at line 377 of file Grid.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{378         \{}
+\DoxyCodeLine{379             \textcolor{keywordflow}{return} \mbox{\hyperlink{classSSAGES_1_1Grid_1_1GridIterator_a14943c309ccf3848e3676d48b19de324}{GridIterator}}(*\textcolor{keyword}{this}) += shift;}
+\DoxyCodeLine{380         \}}
+
+\end{DoxyCode}
+
+
+References S\+S\+A\+G\+E\+S\+::\+Grid$<$ T $>$\+::\+Grid\+Iterator$<$ R $>$\+::\+Grid\+Iterator().
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classSSAGES_1_1Grid_1_1GridIterator_a76879a625d32aedae76ff9d1d9b3d426_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classSSAGES_1_1Grid_1_1GridIterator_ae6fe857108117e59a9ec6da5c2970bc6}\label{classSSAGES_1_1Grid_1_1GridIterator_ae6fe857108117e59a9ec6da5c2970bc6}} 
+\index{SSAGES::Grid$<$ T $>$::GridIterator$<$ R $>$@{SSAGES::Grid$<$ T $>$::GridIterator$<$ R $>$}!operator++@{operator++}}
+\index{operator++@{operator++}!SSAGES::Grid$<$ T $>$::GridIterator$<$ R $>$@{SSAGES::Grid$<$ T $>$::GridIterator$<$ R $>$}}
+\doxysubsubsection{\texorpdfstring{operator++()}{operator++()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+template$<$typename R $>$ \\
+\mbox{\hyperlink{classSSAGES_1_1Grid_1_1GridIterator_ae1d6b0c7886a9abcdb9bc456ea9061dc}{self\+\_\+type}}\& \mbox{\hyperlink{classSSAGES_1_1Grid}{S\+S\+A\+G\+E\+S\+::\+Grid}}$<$ T $>$\+::\mbox{\hyperlink{classSSAGES_1_1Grid_1_1GridIterator}{Grid\+Iterator}}$<$ R $>$\+::operator++ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Pre-\/increment operator. 
+
+\begin{DoxyReturn}{Returns}
+Reference to iterator.
+\end{DoxyReturn}
+Increments the bin index of lowest dimension. If an index moves beyond the maximum value (num\+\_\+points-\/1), it is reset to 0 and the index of the next higher dimension is increased by 1. 
+
+Definition at line 315 of file Grid.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{316         \{}
+\DoxyCodeLine{317             \mbox{\hyperlink{classSSAGES_1_1Grid_1_1GridIterator_a7549a4e7a76d8b3242ecefaf18b923c2}{indices\_}}.at(0) += 1;}
+\DoxyCodeLine{318             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{size\_t} i = 0; i < \mbox{\hyperlink{classSSAGES_1_1Grid_1_1GridIterator_a5e1b7f823c27f3d1844156a100517e6f}{grid\_}}-\/>GetDimension() -\/ 1; ++i) \{}
+\DoxyCodeLine{319                 \textcolor{keywordflow}{if} (\mbox{\hyperlink{classSSAGES_1_1Grid_1_1GridIterator_a7549a4e7a76d8b3242ecefaf18b923c2}{indices\_}}.at(i) >= \mbox{\hyperlink{classSSAGES_1_1Grid_1_1GridIterator_a5e1b7f823c27f3d1844156a100517e6f}{grid\_}}-\/>numPoints\_[i]) \{}
+\DoxyCodeLine{320                     \mbox{\hyperlink{classSSAGES_1_1Grid_1_1GridIterator_a7549a4e7a76d8b3242ecefaf18b923c2}{indices\_}}.at(i) = 0;}
+\DoxyCodeLine{321                     \mbox{\hyperlink{classSSAGES_1_1Grid_1_1GridIterator_a7549a4e7a76d8b3242ecefaf18b923c2}{indices\_}}.at(i+1) += 1;}
+\DoxyCodeLine{322                 \}}
+\DoxyCodeLine{323             \}}
+\DoxyCodeLine{324 }
+\DoxyCodeLine{325             \textcolor{keywordflow}{return} *\textcolor{keyword}{this};}
+\DoxyCodeLine{326         \}}
+
+\end{DoxyCode}
+
+
+References S\+S\+A\+G\+E\+S\+::\+Grid$<$ T $>$\+::\+Grid\+Iterator$<$ R $>$\+::grid\+\_\+, and S\+S\+A\+G\+E\+S\+::\+Grid$<$ T $>$\+::\+Grid\+Iterator$<$ R $>$\+::indices\+\_\+.
+
+\mbox{\Hypertarget{classSSAGES_1_1Grid_1_1GridIterator_ae769110c70f47b681ae4de5675e356c3}\label{classSSAGES_1_1Grid_1_1GridIterator_ae769110c70f47b681ae4de5675e356c3}} 
+\index{SSAGES::Grid$<$ T $>$::GridIterator$<$ R $>$@{SSAGES::Grid$<$ T $>$::GridIterator$<$ R $>$}!operator++@{operator++}}
+\index{operator++@{operator++}!SSAGES::Grid$<$ T $>$::GridIterator$<$ R $>$@{SSAGES::Grid$<$ T $>$::GridIterator$<$ R $>$}}
+\doxysubsubsection{\texorpdfstring{operator++()}{operator++()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+template$<$typename R $>$ \\
+\mbox{\hyperlink{classSSAGES_1_1Grid_1_1GridIterator_ae1d6b0c7886a9abcdb9bc456ea9061dc}{self\+\_\+type}} \mbox{\hyperlink{classSSAGES_1_1Grid}{S\+S\+A\+G\+E\+S\+::\+Grid}}$<$ T $>$\+::\mbox{\hyperlink{classSSAGES_1_1Grid_1_1GridIterator}{Grid\+Iterator}}$<$ R $>$\+::operator++ (\begin{DoxyParamCaption}\item[{int}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Post-\/increment operator. 
+
+\begin{DoxyReturn}{Returns}
+Copy of iterator before incrementing. 
+\end{DoxyReturn}
+
+
+Definition at line 332 of file Grid.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{333         \{}
+\DoxyCodeLine{334             \mbox{\hyperlink{classSSAGES_1_1Grid_1_1GridIterator_a14943c309ccf3848e3676d48b19de324}{GridIterator}} it(*\textcolor{keyword}{this});}
+\DoxyCodeLine{335             ++(*this);}
+\DoxyCodeLine{336             \textcolor{keywordflow}{return} it;}
+\DoxyCodeLine{337         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classSSAGES_1_1Grid_1_1GridIterator_ac8bf16f212c08794eeb58837c749eabd}\label{classSSAGES_1_1Grid_1_1GridIterator_ac8bf16f212c08794eeb58837c749eabd}} 
+\index{SSAGES::Grid$<$ T $>$::GridIterator$<$ R $>$@{SSAGES::Grid$<$ T $>$::GridIterator$<$ R $>$}!operator+=@{operator+=}}
+\index{operator+=@{operator+=}!SSAGES::Grid$<$ T $>$::GridIterator$<$ R $>$@{SSAGES::Grid$<$ T $>$::GridIterator$<$ R $>$}}
+\doxysubsubsection{\texorpdfstring{operator+=()}{operator+=()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+template$<$typename R $>$ \\
+\mbox{\hyperlink{classSSAGES_1_1Grid_1_1GridIterator_ae1d6b0c7886a9abcdb9bc456ea9061dc}{self\+\_\+type}}\& \mbox{\hyperlink{classSSAGES_1_1Grid}{S\+S\+A\+G\+E\+S\+::\+Grid}}$<$ T $>$\+::\mbox{\hyperlink{classSSAGES_1_1Grid_1_1GridIterator}{Grid\+Iterator}}$<$ R $>$\+::operator+= (\begin{DoxyParamCaption}\item[{std\+::vector$<$ int $>$}]{shift }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Addition assignment operator. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em shift} & Vector of shifts in each dimension. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Reference to itself.
+\end{DoxyReturn}
+This operator shifts the current position of the iterator by the given amount in each dimension.
+
+Example\+:
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{keywordflow}{if} += \{1,1,1\};}
+\end{DoxyCode}
+
+
+In this example the current position of the iterator is shifted diagonally. 
+
+Definition at line 356 of file Grid.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{357         \{}
+\DoxyCodeLine{358             \textcolor{keywordflow}{if} (shift.size() != \mbox{\hyperlink{classSSAGES_1_1Grid_1_1GridIterator_a5e1b7f823c27f3d1844156a100517e6f}{grid\_}}-\/>GetDimension()) \{}
+\DoxyCodeLine{359                 \textcolor{keywordflow}{throw} std::invalid\_argument(\textcolor{stringliteral}{"Vector to shift iterator does not "}}
+\DoxyCodeLine{360                                             \textcolor{stringliteral}{"match grid dimension."});}
+\DoxyCodeLine{361             \}}
+\DoxyCodeLine{362 }
+\DoxyCodeLine{363             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{size\_t} i = 0; i < \mbox{\hyperlink{classSSAGES_1_1Grid_1_1GridIterator_a5e1b7f823c27f3d1844156a100517e6f}{grid\_}}-\/>GetDimension(); ++i) \{}
+\DoxyCodeLine{364                 \mbox{\hyperlink{classSSAGES_1_1Grid_1_1GridIterator_a7549a4e7a76d8b3242ecefaf18b923c2}{indices\_}}.at(i) += shift.at(i);}
+\DoxyCodeLine{365             \}}
+\DoxyCodeLine{366 }
+\DoxyCodeLine{367             \textcolor{keywordflow}{return} *\textcolor{keyword}{this};}
+\DoxyCodeLine{368         \}}
+
+\end{DoxyCode}
+
+
+References S\+S\+A\+G\+E\+S\+::\+Grid$<$ T $>$\+::\+Grid\+Iterator$<$ R $>$\+::grid\+\_\+, and S\+S\+A\+G\+E\+S\+::\+Grid$<$ T $>$\+::\+Grid\+Iterator$<$ R $>$\+::indices\+\_\+.
+
+\mbox{\Hypertarget{classSSAGES_1_1Grid_1_1GridIterator_a24aa362a053e3e4f4d66377893e1855b}\label{classSSAGES_1_1Grid_1_1GridIterator_a24aa362a053e3e4f4d66377893e1855b}} 
+\index{SSAGES::Grid$<$ T $>$::GridIterator$<$ R $>$@{SSAGES::Grid$<$ T $>$::GridIterator$<$ R $>$}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!SSAGES::Grid$<$ T $>$::GridIterator$<$ R $>$@{SSAGES::Grid$<$ T $>$::GridIterator$<$ R $>$}}
+\doxysubsubsection{\texorpdfstring{operator-\/()}{operator-()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+template$<$typename R $>$ \\
+const \mbox{\hyperlink{classSSAGES_1_1Grid_1_1GridIterator_ae1d6b0c7886a9abcdb9bc456ea9061dc}{self\+\_\+type}} \mbox{\hyperlink{classSSAGES_1_1Grid}{S\+S\+A\+G\+E\+S\+::\+Grid}}$<$ T $>$\+::\mbox{\hyperlink{classSSAGES_1_1Grid_1_1GridIterator}{Grid\+Iterator}}$<$ R $>$\+::operator-\/ (\begin{DoxyParamCaption}\item[{std\+::vector$<$ int $>$}]{shift }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Subtraction iterator. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em shift} & Vector to be subtracted from the current grid indices. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Copy of iterator after shift. 
+\end{DoxyReturn}
+
+
+Definition at line 437 of file Grid.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{438         \{}
+\DoxyCodeLine{439             \textcolor{keywordflow}{return} \mbox{\hyperlink{classSSAGES_1_1Grid_1_1GridIterator_a14943c309ccf3848e3676d48b19de324}{GridIterator}}(*\textcolor{keyword}{this}) -\/= shift;}
+\DoxyCodeLine{440         \}}
+
+\end{DoxyCode}
+
+
+References S\+S\+A\+G\+E\+S\+::\+Grid$<$ T $>$\+::\+Grid\+Iterator$<$ R $>$\+::\+Grid\+Iterator().
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classSSAGES_1_1Grid_1_1GridIterator_a24aa362a053e3e4f4d66377893e1855b_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classSSAGES_1_1Grid_1_1GridIterator_a1b7035cab687c2da1fd784973f4cf610}\label{classSSAGES_1_1Grid_1_1GridIterator_a1b7035cab687c2da1fd784973f4cf610}} 
+\index{SSAGES::Grid$<$ T $>$::GridIterator$<$ R $>$@{SSAGES::Grid$<$ T $>$::GridIterator$<$ R $>$}!operator-\/-\/@{operator-\/-\/}}
+\index{operator-\/-\/@{operator-\/-\/}!SSAGES::Grid$<$ T $>$::GridIterator$<$ R $>$@{SSAGES::Grid$<$ T $>$::GridIterator$<$ R $>$}}
+\doxysubsubsection{\texorpdfstring{operator-\/-\/()}{operator--()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+template$<$typename R $>$ \\
+\mbox{\hyperlink{classSSAGES_1_1Grid_1_1GridIterator_ae1d6b0c7886a9abcdb9bc456ea9061dc}{self\+\_\+type}}\& \mbox{\hyperlink{classSSAGES_1_1Grid}{S\+S\+A\+G\+E\+S\+::\+Grid}}$<$ T $>$\+::\mbox{\hyperlink{classSSAGES_1_1Grid_1_1GridIterator}{Grid\+Iterator}}$<$ R $>$\+::operator-\/-\/ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Pre-\/decrement operator. 
+
+\begin{DoxyReturn}{Returns}
+Reference to iterator after decrementing.
+\end{DoxyReturn}
+Traveses the histogram in the opposite direction to the increment operator. 
+
+Definition at line 389 of file Grid.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{390         \{}
+\DoxyCodeLine{391             \mbox{\hyperlink{classSSAGES_1_1Grid_1_1GridIterator_a7549a4e7a76d8b3242ecefaf18b923c2}{indices\_}}.at(0) -\/= 1;}
+\DoxyCodeLine{392             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{size\_t} i = 0; i < \mbox{\hyperlink{classSSAGES_1_1Grid_1_1GridIterator_a5e1b7f823c27f3d1844156a100517e6f}{grid\_}}-\/>GetDimension() -\/ 1; ++i) \{}
+\DoxyCodeLine{393                 \textcolor{keywordflow}{if} (\mbox{\hyperlink{classSSAGES_1_1Grid_1_1GridIterator_a7549a4e7a76d8b3242ecefaf18b923c2}{indices\_}}.at(i) < 0) \{}
+\DoxyCodeLine{394                     \mbox{\hyperlink{classSSAGES_1_1Grid_1_1GridIterator_a7549a4e7a76d8b3242ecefaf18b923c2}{indices\_}}.at(i) = \mbox{\hyperlink{classSSAGES_1_1Grid_1_1GridIterator_a5e1b7f823c27f3d1844156a100517e6f}{grid\_}}-\/>numPoints\_[i]-\/1;}
+\DoxyCodeLine{395                     \mbox{\hyperlink{classSSAGES_1_1Grid_1_1GridIterator_a7549a4e7a76d8b3242ecefaf18b923c2}{indices\_}}.at(i+1) -\/= 1;}
+\DoxyCodeLine{396                 \}}
+\DoxyCodeLine{397             \}}
+\DoxyCodeLine{398 }
+\DoxyCodeLine{399             \textcolor{keywordflow}{return} *\textcolor{keyword}{this};}
+\DoxyCodeLine{400         \}}
+
+\end{DoxyCode}
+
+
+References S\+S\+A\+G\+E\+S\+::\+Grid$<$ T $>$\+::\+Grid\+Iterator$<$ R $>$\+::grid\+\_\+, and S\+S\+A\+G\+E\+S\+::\+Grid$<$ T $>$\+::\+Grid\+Iterator$<$ R $>$\+::indices\+\_\+.
+
+\mbox{\Hypertarget{classSSAGES_1_1Grid_1_1GridIterator_ae2dc464544c3060d4f955f9dc9f946ee}\label{classSSAGES_1_1Grid_1_1GridIterator_ae2dc464544c3060d4f955f9dc9f946ee}} 
+\index{SSAGES::Grid$<$ T $>$::GridIterator$<$ R $>$@{SSAGES::Grid$<$ T $>$::GridIterator$<$ R $>$}!operator-\/-\/@{operator-\/-\/}}
+\index{operator-\/-\/@{operator-\/-\/}!SSAGES::Grid$<$ T $>$::GridIterator$<$ R $>$@{SSAGES::Grid$<$ T $>$::GridIterator$<$ R $>$}}
+\doxysubsubsection{\texorpdfstring{operator-\/-\/()}{operator--()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+template$<$typename R $>$ \\
+\mbox{\hyperlink{classSSAGES_1_1Grid_1_1GridIterator_ae1d6b0c7886a9abcdb9bc456ea9061dc}{self\+\_\+type}} \mbox{\hyperlink{classSSAGES_1_1Grid}{S\+S\+A\+G\+E\+S\+::\+Grid}}$<$ T $>$\+::\mbox{\hyperlink{classSSAGES_1_1Grid_1_1GridIterator}{Grid\+Iterator}}$<$ R $>$\+::operator-\/-\/ (\begin{DoxyParamCaption}\item[{int}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Post-\/decrement operator. 
+
+\begin{DoxyReturn}{Returns}
+Copy of iterator before decrementing. 
+\end{DoxyReturn}
+
+
+Definition at line 406 of file Grid.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{407         \{}
+\DoxyCodeLine{408             \mbox{\hyperlink{classSSAGES_1_1Grid_1_1GridIterator_a14943c309ccf3848e3676d48b19de324}{GridIterator}} it(*\textcolor{keyword}{this});}
+\DoxyCodeLine{409             -\/-\/(*this);}
+\DoxyCodeLine{410             \textcolor{keywordflow}{return} it;}
+\DoxyCodeLine{411         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classSSAGES_1_1Grid_1_1GridIterator_a9ad457e8a8e5fcb99f62d5e3d769fe06}\label{classSSAGES_1_1Grid_1_1GridIterator_a9ad457e8a8e5fcb99f62d5e3d769fe06}} 
+\index{SSAGES::Grid$<$ T $>$::GridIterator$<$ R $>$@{SSAGES::Grid$<$ T $>$::GridIterator$<$ R $>$}!operator-\/=@{operator-\/=}}
+\index{operator-\/=@{operator-\/=}!SSAGES::Grid$<$ T $>$::GridIterator$<$ R $>$@{SSAGES::Grid$<$ T $>$::GridIterator$<$ R $>$}}
+\doxysubsubsection{\texorpdfstring{operator-\/=()}{operator-=()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+template$<$typename R $>$ \\
+\mbox{\hyperlink{classSSAGES_1_1Grid_1_1GridIterator_ae1d6b0c7886a9abcdb9bc456ea9061dc}{self\+\_\+type}}\& \mbox{\hyperlink{classSSAGES_1_1Grid}{S\+S\+A\+G\+E\+S\+::\+Grid}}$<$ T $>$\+::\mbox{\hyperlink{classSSAGES_1_1Grid_1_1GridIterator}{Grid\+Iterator}}$<$ R $>$\+::operator-\/= (\begin{DoxyParamCaption}\item[{std\+::vector$<$ int $>$}]{shift }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Subtraction assignment operator. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em shift} & Vector to be subtracted from the current grid indices. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Reference to iterator. 
+\end{DoxyReturn}
+
+
+Definition at line 418 of file Grid.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{419         \{}
+\DoxyCodeLine{420             \textcolor{keywordflow}{if} (shift.size() != \mbox{\hyperlink{classSSAGES_1_1Grid_1_1GridIterator_a5e1b7f823c27f3d1844156a100517e6f}{grid\_}}-\/>GetDimension()) \{}
+\DoxyCodeLine{421                 \textcolor{keywordflow}{throw} std::invalid\_argument(\textcolor{stringliteral}{"Vector to shift iterator does not "}}
+\DoxyCodeLine{422                                             \textcolor{stringliteral}{"match histogram dimension."});}
+\DoxyCodeLine{423             \}}
+\DoxyCodeLine{424 }
+\DoxyCodeLine{425             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{size\_t} i = 0; i < \mbox{\hyperlink{classSSAGES_1_1Grid_1_1GridIterator_a5e1b7f823c27f3d1844156a100517e6f}{grid\_}}-\/>GetDimension(); ++i) \{}
+\DoxyCodeLine{426                 \mbox{\hyperlink{classSSAGES_1_1Grid_1_1GridIterator_a7549a4e7a76d8b3242ecefaf18b923c2}{indices\_}}.at(i) -\/= shift.at(i);}
+\DoxyCodeLine{427             \}}
+\DoxyCodeLine{428 }
+\DoxyCodeLine{429             \textcolor{keywordflow}{return} *\textcolor{keyword}{this};}
+\DoxyCodeLine{430         \}}
+
+\end{DoxyCode}
+
+
+References S\+S\+A\+G\+E\+S\+::\+Grid$<$ T $>$\+::\+Grid\+Iterator$<$ R $>$\+::grid\+\_\+, and S\+S\+A\+G\+E\+S\+::\+Grid$<$ T $>$\+::\+Grid\+Iterator$<$ R $>$\+::indices\+\_\+.
+
+\mbox{\Hypertarget{classSSAGES_1_1Grid_1_1GridIterator_a0930d63d593e2703334dcd9bbcc8eefd}\label{classSSAGES_1_1Grid_1_1GridIterator_a0930d63d593e2703334dcd9bbcc8eefd}} 
+\index{SSAGES::Grid$<$ T $>$::GridIterator$<$ R $>$@{SSAGES::Grid$<$ T $>$::GridIterator$<$ R $>$}!operator==@{operator==}}
+\index{operator==@{operator==}!SSAGES::Grid$<$ T $>$::GridIterator$<$ R $>$@{SSAGES::Grid$<$ T $>$::GridIterator$<$ R $>$}}
+\doxysubsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+template$<$typename R $>$ \\
+bool \mbox{\hyperlink{classSSAGES_1_1Grid}{S\+S\+A\+G\+E\+S\+::\+Grid}}$<$ T $>$\+::\mbox{\hyperlink{classSSAGES_1_1Grid_1_1GridIterator}{Grid\+Iterator}}$<$ R $>$\+::operator== (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classSSAGES_1_1Grid_1_1GridIterator_ae1d6b0c7886a9abcdb9bc456ea9061dc}{self\+\_\+type}} \&}]{rhs }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Equality operator. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em rhs} & Iterator to which this iterator is compared. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily True} if both iterators access the same grid point on the same grid. Else return {\ttfamily False}. 
+\end{DoxyReturn}
+
+
+Definition at line 448 of file Grid.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{449         \{}
+\DoxyCodeLine{450             \textcolor{keywordflow}{return} \mbox{\hyperlink{classSSAGES_1_1Grid_1_1GridIterator_a7549a4e7a76d8b3242ecefaf18b923c2}{indices\_}} == rhs.indices\_ \&\& \mbox{\hyperlink{classSSAGES_1_1Grid_1_1GridIterator_a5e1b7f823c27f3d1844156a100517e6f}{grid\_}} == rhs.grid\_;}
+\DoxyCodeLine{451         \}}
+
+\end{DoxyCode}
+
+
+References S\+S\+A\+G\+E\+S\+::\+Grid$<$ T $>$\+::\+Grid\+Iterator$<$ R $>$\+::grid\+\_\+, and S\+S\+A\+G\+E\+S\+::\+Grid$<$ T $>$\+::\+Grid\+Iterator$<$ R $>$\+::indices\+\_\+.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/michael/development/\+S\+S\+A\+G\+E\+S/src/\+Grids/Grid.\+h\end{DoxyCompactItemize}

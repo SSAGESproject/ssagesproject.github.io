@@ -1,0 +1,223 @@
+\hypertarget{classSSAGES_1_1GaussianPK}{}\doxysection{S\+S\+A\+G\+ES\+::Gaussian\+PK Class Reference}
+\label{classSSAGES_1_1GaussianPK}\index{SSAGES::GaussianPK@{SSAGES::GaussianPK}}
+
+
+Gaussian Function.  
+
+
+
+
+{\ttfamily \#include $<$Pairwise\+Kernel.\+h$>$}
+
+
+
+Inheritance diagram for S\+S\+A\+G\+ES\+::Gaussian\+PK\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=209pt]{classSSAGES_1_1GaussianPK__inherit__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classSSAGES_1_1GaussianPK_ae59d5abfa691a753217f5432482e2da5}{Gaussian\+PK}} (double mu, double sigma)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classSSAGES_1_1GaussianPK_a33e84e1db04cc6c9125fa56cf2c63f07}{Evaluate}} (double rij, double \&df) const
+\begin{DoxyCompactList}\small\item\em Evaluate the pairwise kernel function. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classSSAGES_1_1GaussianPK}{Gaussian\+PK}} $\ast$ \mbox{\hyperlink{classSSAGES_1_1GaussianPK_a6f2f35a0333bc7ba17c1999a2e38a2e1}{Build}} (const Json\+::\+Value \&json, const std\+::string \&path)
+\begin{DoxyCompactList}\small\item\em Build \mbox{\hyperlink{classSSAGES_1_1GaussianPK}{Gaussian\+PK}} from \mbox{\hyperlink{namespaceJSON}{J\+S\+ON}} value. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classSSAGES_1_1GaussianPK_a8908e97aa93c2acd105a5ae365e4e7f7}\label{classSSAGES_1_1GaussianPK_a8908e97aa93c2acd105a5ae365e4e7f7}} 
+double \mbox{\hyperlink{classSSAGES_1_1GaussianPK_a8908e97aa93c2acd105a5ae365e4e7f7}{mu\+\_\+}}
+\begin{DoxyCompactList}\small\item\em Center of Gaussian. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classSSAGES_1_1GaussianPK_a27c67f92d4aa15487424f5a876e0b202}\label{classSSAGES_1_1GaussianPK_a27c67f92d4aa15487424f5a876e0b202}} 
+double \mbox{\hyperlink{classSSAGES_1_1GaussianPK_a27c67f92d4aa15487424f5a876e0b202}{sigma\+\_\+}}
+\begin{DoxyCompactList}\small\item\em Width of Gaussian. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Gaussian Function. 
+
+A standard Gaussian function (also called a \char`\"{}bell curve\char`\"{}). 
+
+Definition at line 76 of file Pairwise\+Kernel.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classSSAGES_1_1GaussianPK_ae59d5abfa691a753217f5432482e2da5}\label{classSSAGES_1_1GaussianPK_ae59d5abfa691a753217f5432482e2da5}} 
+\index{SSAGES::GaussianPK@{SSAGES::GaussianPK}!GaussianPK@{GaussianPK}}
+\index{GaussianPK@{GaussianPK}!SSAGES::GaussianPK@{SSAGES::GaussianPK}}
+\doxysubsubsection{\texorpdfstring{GaussianPK()}{GaussianPK()}}
+{\footnotesize\ttfamily S\+S\+A\+G\+E\+S\+::\+Gaussian\+P\+K\+::\+Gaussian\+PK (\begin{DoxyParamCaption}\item[{double}]{mu,  }\item[{double}]{sigma }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mu} & Center of Gaussian. \\
+\hline
+{\em sigma} & Width of Gaussian.\\
+\hline
+\end{DoxyParams}
+Construct a \mbox{\hyperlink{classSSAGES_1_1GaussianPK}{Gaussian\+PK}}. 
+
+Definition at line 91 of file Pairwise\+Kernel.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{91                                             : }
+\DoxyCodeLine{92         \mbox{\hyperlink{classSSAGES_1_1GaussianPK_a8908e97aa93c2acd105a5ae365e4e7f7}{mu\_}}(mu), \mbox{\hyperlink{classSSAGES_1_1GaussianPK_a27c67f92d4aa15487424f5a876e0b202}{sigma\_}}(sigma) \{\}}
+
+\end{DoxyCode}
+
+
+Referenced by Build().
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classSSAGES_1_1GaussianPK_ae59d5abfa691a753217f5432482e2da5_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classSSAGES_1_1GaussianPK_a6f2f35a0333bc7ba17c1999a2e38a2e1}\label{classSSAGES_1_1GaussianPK_a6f2f35a0333bc7ba17c1999a2e38a2e1}} 
+\index{SSAGES::GaussianPK@{SSAGES::GaussianPK}!Build@{Build}}
+\index{Build@{Build}!SSAGES::GaussianPK@{SSAGES::GaussianPK}}
+\doxysubsubsection{\texorpdfstring{Build()}{Build()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classSSAGES_1_1GaussianPK}{Gaussian\+PK}} $\ast$ S\+S\+A\+G\+E\+S\+::\+Gaussian\+P\+K\+::\+Build (\begin{DoxyParamCaption}\item[{const Json\+::\+Value \&}]{json,  }\item[{const std\+::string \&}]{path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Build \mbox{\hyperlink{classSSAGES_1_1GaussianPK}{Gaussian\+PK}} from \mbox{\hyperlink{namespaceJSON}{J\+S\+ON}} value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em json} & \mbox{\hyperlink{namespaceJSON}{J\+S\+ON}} value node. \\
+\hline
+{\em path} & Path for \mbox{\hyperlink{namespaceJSON}{J\+S\+ON}} path specification.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pointer to new \mbox{\hyperlink{classSSAGES_1_1GaussianPK}{Gaussian\+PK}}.
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em json} & \mbox{\hyperlink{namespaceJSON}{J\+S\+ON}} value node.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pointer to new \mbox{\hyperlink{classSSAGES_1_1GaussianPK}{Gaussian\+PK}}. 
+\end{DoxyReturn}
+
+
+Definition at line 47 of file Pairwise\+Kernel.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{48     \{}
+\DoxyCodeLine{49         \mbox{\hyperlink{classJson_1_1ObjectRequirement}{Json::ObjectRequirement}} validator;}
+\DoxyCodeLine{50         Json::Value schema;}
+\DoxyCodeLine{51         Json::CharReaderBuilder rbuilder;}
+\DoxyCodeLine{52         Json::CharReader* reader = rbuilder.newCharReader();}
+\DoxyCodeLine{53 }
+\DoxyCodeLine{54         reader-\/>parse(JsonSchema::GaussianPK.c\_str(),}
+\DoxyCodeLine{55                       JsonSchema::GaussianPK.c\_str() + JsonSchema::GaussianPK.size(),}
+\DoxyCodeLine{56                       \&schema, \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{57         validator.\mbox{\hyperlink{classJson_1_1ObjectRequirement_a4ed02ae1d612a5efba1688fcdd2df092}{Parse}}(schema, path);}
+\DoxyCodeLine{58 }
+\DoxyCodeLine{59         \textcolor{comment}{// Validate inputs.}}
+\DoxyCodeLine{60         validator.\mbox{\hyperlink{classJson_1_1ObjectRequirement_a9ac3b920001a35bc70580035d8d802b7}{Validate}}(json, path);}
+\DoxyCodeLine{61         \textcolor{keywordflow}{if}(validator.\mbox{\hyperlink{classJson_1_1Requirement_adfaec336a9f051d6f6b9a6d7f1d97b75}{HasErrors}}())}
+\DoxyCodeLine{62             \textcolor{keywordflow}{throw} BuildException(validator.\mbox{\hyperlink{classJson_1_1Requirement_a60bc275c366eb59f192fa2e621268480}{GetErrors}}());}
+\DoxyCodeLine{63         }
+\DoxyCodeLine{64         \textcolor{keywordflow}{return} \textcolor{keyword}{new} \mbox{\hyperlink{classSSAGES_1_1GaussianPK_ae59d5abfa691a753217f5432482e2da5}{GaussianPK}}(}
+\DoxyCodeLine{65                     json[\textcolor{stringliteral}{"mu"}].asDouble(), }
+\DoxyCodeLine{66                     json[\textcolor{stringliteral}{"sigma"}].asDouble()}
+\DoxyCodeLine{67                 );}
+\DoxyCodeLine{68     \}}
+
+\end{DoxyCode}
+
+
+References Gaussian\+P\+K(), Json\+::\+Requirement\+::\+Get\+Errors(), Json\+::\+Requirement\+::\+Has\+Errors(), Json\+::\+Object\+Requirement\+::\+Parse(), and Json\+::\+Object\+Requirement\+::\+Validate().
+
+
+
+Referenced by S\+S\+A\+G\+E\+S\+::\+Pairwise\+Kernel\+::\+Build().
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classSSAGES_1_1GaussianPK_a6f2f35a0333bc7ba17c1999a2e38a2e1_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classSSAGES_1_1GaussianPK_a6f2f35a0333bc7ba17c1999a2e38a2e1_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classSSAGES_1_1GaussianPK_a33e84e1db04cc6c9125fa56cf2c63f07}\label{classSSAGES_1_1GaussianPK_a33e84e1db04cc6c9125fa56cf2c63f07}} 
+\index{SSAGES::GaussianPK@{SSAGES::GaussianPK}!Evaluate@{Evaluate}}
+\index{Evaluate@{Evaluate}!SSAGES::GaussianPK@{SSAGES::GaussianPK}}
+\doxysubsubsection{\texorpdfstring{Evaluate()}{Evaluate()}}
+{\footnotesize\ttfamily double S\+S\+A\+G\+E\+S\+::\+Gaussian\+P\+K\+::\+Evaluate (\begin{DoxyParamCaption}\item[{double}]{rij,  }\item[{double \&}]{df }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Evaluate the pairwise kernel function. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em rij} & distance between two atoms. \\
+\hline
+{\em df} & Reference to variable which will store the gradient.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+value of pairwise kernel function. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classSSAGES_1_1PairwiseKernel_a4c8fb122b9d895399a04f0df76d3a9d4}{S\+S\+A\+G\+E\+S\+::\+Pairwise\+Kernel}}.
+
+
+
+Definition at line 94 of file Pairwise\+Kernel.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{95         \{}
+\DoxyCodeLine{96             \textcolor{keyword}{const} \textcolor{keyword}{auto} dx = (rij -\/ \mbox{\hyperlink{classSSAGES_1_1GaussianPK_a8908e97aa93c2acd105a5ae365e4e7f7}{mu\_}})/\mbox{\hyperlink{classSSAGES_1_1GaussianPK_a27c67f92d4aa15487424f5a876e0b202}{sigma\_}};}
+\DoxyCodeLine{97             \textcolor{keyword}{const} \textcolor{keyword}{auto} f = exp( -\/ dx*dx/2.);}
+\DoxyCodeLine{98             \textcolor{keyword}{const} \textcolor{keyword}{auto} pre = -\/ dx/\mbox{\hyperlink{classSSAGES_1_1GaussianPK_a27c67f92d4aa15487424f5a876e0b202}{sigma\_}};}
+\DoxyCodeLine{99             }
+\DoxyCodeLine{100             df = pre * f;}
+\DoxyCodeLine{101             \textcolor{keywordflow}{return}  f;}
+\DoxyCodeLine{102         \}}
+
+\end{DoxyCode}
+
+
+References mu\+\_\+, and sigma\+\_\+.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/michael/development/\+S\+S\+A\+G\+E\+S/src/\+Utility/Pairwise\+Kernel.\+h\item 
+/home/michael/development/\+S\+S\+A\+G\+E\+S/src/\+Utility/Pairwise\+Kernel.\+cpp\end{DoxyCompactItemize}

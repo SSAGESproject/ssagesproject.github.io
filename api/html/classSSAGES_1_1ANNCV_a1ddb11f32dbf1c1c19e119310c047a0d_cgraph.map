@@ -1,0 +1,12 @@
+<map id="SSAGES::ANNCV::Evaluate" name="SSAGES::ANNCV::Evaluate">
+<area shape="rect" id="node1" title="Evaluate the CV." alt="" coords="5,159,197,186"/>
+<area shape="rect" id="node2" href="$classSSAGES_1_1Snapshot.html#ac600b5f3d3e240d2cc9965c06547e97e" title="Compute center of mass of a group of atoms based on index." alt="" coords="279,35,466,76"/>
+<area shape="rect" id="node6" href="$classSSAGES_1_1Snapshot.html#a4811c9435e56196d5525832345ef1680" title="Get communicator for walker." alt="" coords="245,101,500,127"/>
+<area shape="rect" id="node7" href="$classSSAGES_1_1Snapshot.html#a196a91c541c72bcb5147b9e60a44ea8b" title=" " alt="" coords="273,152,473,193"/>
+<area shape="rect" id="node9" href="$classSSAGES_1_1Snapshot.html#a103af07a012d55a9637f6203c7eba0af" title="Get number of atoms in this snapshot." alt="" coords="274,217,471,259"/>
+<area shape="rect" id="node10" href="$classSSAGES_1_1Snapshot.html#a91852084d69a0703a8fcc9b27dc50459" title="Access the particle positions." alt="" coords="261,283,484,310"/>
+<area shape="rect" id="node3" href="$classSSAGES_1_1Snapshot.html#ad6caa5b92433501fd4a62deef288340a" title="Apply minimum image to a vector." alt="" coords="548,5,783,47"/>
+<area shape="rect" id="node5" href="$classSSAGES_1_1Snapshot.html#a77cfe35b720393223aa5c7410b2dd3ad" title="Compute the total mass of a group of particles based on index." alt="" coords="561,71,770,98"/>
+<area shape="rect" id="node4" href="$namespaceSSAGES.html#a49bb77a1b5822888753c96c70780ab47" title="Quick helper function to round a double." alt="" coords="831,13,952,39"/>
+<area shape="rect" id="node8" href="$classSSAGES_1_1Snapshot.html#a7146597433bcfd256385db274330cd36" title="Gets the local atom index corresponding to an atom ID." alt="" coords="565,152,765,193"/>
+</map>

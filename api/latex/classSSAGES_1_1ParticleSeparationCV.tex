@@ -1,0 +1,384 @@
+\hypertarget{classSSAGES_1_1ParticleSeparationCV}{}\doxysection{S\+S\+A\+G\+ES\+::Particle\+Separation\+CV Class Reference}
+\label{classSSAGES_1_1ParticleSeparationCV}\index{SSAGES::ParticleSeparationCV@{SSAGES::ParticleSeparationCV}}
+
+
+Collective variable on the distance between two particles\textquotesingle{} centers of mass.  
+
+
+
+
+{\ttfamily \#include $<$Particle\+Separation\+C\+V.\+h$>$}
+
+
+
+Inheritance diagram for S\+S\+A\+G\+ES\+::Particle\+Separation\+CV\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=238pt]{classSSAGES_1_1ParticleSeparationCV__inherit__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classSSAGES_1_1ParticleSeparationCV_acca418a2a17dcb9ebc4e8afe0bb70f2e}{Particle\+Separation\+CV}} (const \mbox{\hyperlink{namespaceSSAGES_afbb26053e292f94ea83b1c441ce6df74}{Label}} \&group1, const \mbox{\hyperlink{namespaceSSAGES_afbb26053e292f94ea83b1c441ce6df74}{Label}} \&group2)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classSSAGES_1_1ParticleSeparationCV_a9596342c9a07cc68881bb115d5f15ada}{Particle\+Separation\+CV}} (const \mbox{\hyperlink{namespaceSSAGES_afbb26053e292f94ea83b1c441ce6df74}{Label}} \&group1, const \mbox{\hyperlink{namespaceSSAGES_afbb26053e292f94ea83b1c441ce6df74}{Label}} \&group2, bool dimx, bool dimy, bool dimz)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classSSAGES_1_1ParticleSeparationCV_a886af836f08cc4ed96ae742eb7eb6d7d}{Initialize}} (const \mbox{\hyperlink{classSSAGES_1_1Snapshot}{Snapshot}} \&snapshot) override
+\begin{DoxyCompactList}\small\item\em Initialize necessary variables. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classSSAGES_1_1ParticleSeparationCV_ae6452c47bf1d849e2af60c84209a9955}{Evaluate}} (const \mbox{\hyperlink{classSSAGES_1_1Snapshot}{Snapshot}} \&snapshot) override
+\begin{DoxyCompactList}\small\item\em Evaluate the CV. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classSSAGES_1_1ParticleSeparationCV}{Particle\+Separation\+CV}} $\ast$ \mbox{\hyperlink{classSSAGES_1_1ParticleSeparationCV_a1e8c2b87b91bdf8722e37feb109576fd}{Build}} (const Json\+::\+Value \&json, const std\+::string \&path)
+\begin{DoxyCompactList}\small\item\em Set up collective variable. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classSSAGES_1_1ParticleSeparationCV_a8707456bef8e851e8328813e48d7b8b6}\label{classSSAGES_1_1ParticleSeparationCV_a8707456bef8e851e8328813e48d7b8b6}} 
+\mbox{\hyperlink{namespaceSSAGES_afbb26053e292f94ea83b1c441ce6df74}{Label}} \mbox{\hyperlink{classSSAGES_1_1ParticleSeparationCV_a8707456bef8e851e8328813e48d7b8b6}{group1\+\_\+}}
+\begin{DoxyCompactList}\small\item\em Atom ID\textquotesingle{}s of group 1. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classSSAGES_1_1ParticleSeparationCV_a9509b436f0e02e3737c31751541baeb2}\label{classSSAGES_1_1ParticleSeparationCV_a9509b436f0e02e3737c31751541baeb2}} 
+\mbox{\hyperlink{namespaceSSAGES_afbb26053e292f94ea83b1c441ce6df74}{Label}} \mbox{\hyperlink{classSSAGES_1_1ParticleSeparationCV_a9509b436f0e02e3737c31751541baeb2}{group2\+\_\+}}
+\begin{DoxyCompactList}\small\item\em Atom ID\textquotesingle{}s of group 2. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classSSAGES_1_1ParticleSeparationCV_a13363bcb0b004946c5d0753ef54eab99}\label{classSSAGES_1_1ParticleSeparationCV_a13363bcb0b004946c5d0753ef54eab99}} 
+\mbox{\hyperlink{namespaceSSAGES_ab85a44d30d5f2621f266dc52203aacef}{Bool3}} \mbox{\hyperlink{classSSAGES_1_1ParticleSeparationCV_a13363bcb0b004946c5d0753ef54eab99}{dim\+\_\+}}
+\begin{DoxyCompactList}\small\item\em Each dimension determines if it is applied by the CV. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Collective variable on the distance between two particles\textquotesingle{} centers of mass. 
+
+Collective variable on two particle positions. This CV will return the distance between two specific atom groups of the simulation. 
+
+Definition at line 39 of file Particle\+Separation\+C\+V.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classSSAGES_1_1ParticleSeparationCV_acca418a2a17dcb9ebc4e8afe0bb70f2e}\label{classSSAGES_1_1ParticleSeparationCV_acca418a2a17dcb9ebc4e8afe0bb70f2e}} 
+\index{SSAGES::ParticleSeparationCV@{SSAGES::ParticleSeparationCV}!ParticleSeparationCV@{ParticleSeparationCV}}
+\index{ParticleSeparationCV@{ParticleSeparationCV}!SSAGES::ParticleSeparationCV@{SSAGES::ParticleSeparationCV}}
+\doxysubsubsection{\texorpdfstring{ParticleSeparationCV()}{ParticleSeparationCV()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily S\+S\+A\+G\+E\+S\+::\+Particle\+Separation\+C\+V\+::\+Particle\+Separation\+CV (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespaceSSAGES_afbb26053e292f94ea83b1c441ce6df74}{Label}} \&}]{group1,  }\item[{const \mbox{\hyperlink{namespaceSSAGES_afbb26053e292f94ea83b1c441ce6df74}{Label}} \&}]{group2 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em group1} & Vector of atom ID\textquotesingle{}s of the first particle. \\
+\hline
+{\em group2} & Vector of atom ID\textquotesingle{}s of the second particle.\\
+\hline
+\end{DoxyParams}
+Construct a paarticle separation CV.
+
+\begin{DoxyRefDesc}{Todo}
+\item[\mbox{\hyperlink{todo__todo000006}{Todo}}]bounds needs to be an input. \end{DoxyRefDesc}
+
+
+Definition at line 58 of file Particle\+Separation\+C\+V.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{58                                                                        :}
+\DoxyCodeLine{59         \mbox{\hyperlink{classSSAGES_1_1ParticleSeparationCV_a8707456bef8e851e8328813e48d7b8b6}{group1\_}}(group1), \mbox{\hyperlink{classSSAGES_1_1ParticleSeparationCV_a9509b436f0e02e3737c31751541baeb2}{group2\_}}(group2), \mbox{\hyperlink{classSSAGES_1_1ParticleSeparationCV_a13363bcb0b004946c5d0753ef54eab99}{dim\_}}\{\textcolor{keyword}{true}, \textcolor{keyword}{true}, \textcolor{keyword}{true}\}}
+\DoxyCodeLine{60         \{\}}
+
+\end{DoxyCode}
+
+
+Referenced by Build().
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classSSAGES_1_1ParticleSeparationCV_acca418a2a17dcb9ebc4e8afe0bb70f2e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classSSAGES_1_1ParticleSeparationCV_a9596342c9a07cc68881bb115d5f15ada}\label{classSSAGES_1_1ParticleSeparationCV_a9596342c9a07cc68881bb115d5f15ada}} 
+\index{SSAGES::ParticleSeparationCV@{SSAGES::ParticleSeparationCV}!ParticleSeparationCV@{ParticleSeparationCV}}
+\index{ParticleSeparationCV@{ParticleSeparationCV}!SSAGES::ParticleSeparationCV@{SSAGES::ParticleSeparationCV}}
+\doxysubsubsection{\texorpdfstring{ParticleSeparationCV()}{ParticleSeparationCV()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily S\+S\+A\+G\+E\+S\+::\+Particle\+Separation\+C\+V\+::\+Particle\+Separation\+CV (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespaceSSAGES_afbb26053e292f94ea83b1c441ce6df74}{Label}} \&}]{group1,  }\item[{const \mbox{\hyperlink{namespaceSSAGES_afbb26053e292f94ea83b1c441ce6df74}{Label}} \&}]{group2,  }\item[{bool}]{dimx,  }\item[{bool}]{dimy,  }\item[{bool}]{dimz }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em group1} & Vector of atom ID\textquotesingle{}s of the first particle. \\
+\hline
+{\em group2} & Vector of atom ID\textquotesingle{}s of the second particle. \\
+\hline
+{\em dimx} & If {\ttfamily True}, include x dimension. \\
+\hline
+{\em dimy} & If {\ttfamily True}, include y dimension. \\
+\hline
+{\em dimz} & If {\ttfamily True}, include z dimension.\\
+\hline
+\end{DoxyParams}
+Construct a particle separation CV.
+
+\begin{DoxyRefDesc}{Todo}
+\item[\mbox{\hyperlink{todo__todo000007}{Todo}}]Bounds needs to be an input. \end{DoxyRefDesc}
+
+
+Definition at line 74 of file Particle\+Separation\+C\+V.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{74                                                                                                         :}
+\DoxyCodeLine{75         \mbox{\hyperlink{classSSAGES_1_1ParticleSeparationCV_a8707456bef8e851e8328813e48d7b8b6}{group1\_}}(group1), \mbox{\hyperlink{classSSAGES_1_1ParticleSeparationCV_a9509b436f0e02e3737c31751541baeb2}{group2\_}}(group2), \mbox{\hyperlink{classSSAGES_1_1ParticleSeparationCV_a13363bcb0b004946c5d0753ef54eab99}{dim\_}}\{dimx, dimy, dimz\}}
+\DoxyCodeLine{76         \{\}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classSSAGES_1_1ParticleSeparationCV_a1e8c2b87b91bdf8722e37feb109576fd}\label{classSSAGES_1_1ParticleSeparationCV_a1e8c2b87b91bdf8722e37feb109576fd}} 
+\index{SSAGES::ParticleSeparationCV@{SSAGES::ParticleSeparationCV}!Build@{Build}}
+\index{Build@{Build}!SSAGES::ParticleSeparationCV@{SSAGES::ParticleSeparationCV}}
+\doxysubsubsection{\texorpdfstring{Build()}{Build()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classSSAGES_1_1ParticleSeparationCV}{Particle\+Separation\+CV}}$\ast$ S\+S\+A\+G\+E\+S\+::\+Particle\+Separation\+C\+V\+::\+Build (\begin{DoxyParamCaption}\item[{const Json\+::\+Value \&}]{json,  }\item[{const std\+::string \&}]{path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Set up collective variable. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em json} & \mbox{\hyperlink{namespaceJSON}{J\+S\+ON}} input value. \\
+\hline
+{\em path} & Path for \mbox{\hyperlink{namespaceJSON}{J\+S\+ON}} path specification. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pointer to the CV built by this function. {\ttfamily nullptr} in case of unknown error.
+\end{DoxyReturn}
+Builds a CV from a \mbox{\hyperlink{namespaceJSON}{J\+S\+ON}} node. Returns a pointer to the built cv. If an unknown error is encountered, this function will return a {\ttfamily nullptr}, but generally it will throw a \mbox{\hyperlink{classSSAGES_1_1BuildException}{Build\+Exception}} on failure. \begin{DoxyWarning}{Warning}
+Object lifetime is the caller\textquotesingle{}s responsibility. 
+\end{DoxyWarning}
+
+
+Definition at line 167 of file Particle\+Separation\+C\+V.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{168         \{}
+\DoxyCodeLine{169             \mbox{\hyperlink{classJson_1_1ObjectRequirement}{Json::ObjectRequirement}} validator;}
+\DoxyCodeLine{170             Json::Value schema;}
+\DoxyCodeLine{171             Json::CharReaderBuilder rbuilder;}
+\DoxyCodeLine{172             Json::CharReader* reader = rbuilder.newCharReader();}
+\DoxyCodeLine{173 }
+\DoxyCodeLine{174             reader-\/>parse(JsonSchema::ParticleSeparationCV.c\_str(),}
+\DoxyCodeLine{175                           JsonSchema::ParticleSeparationCV.c\_str() + JsonSchema::ParticleSeparationCV.size(),}
+\DoxyCodeLine{176                           \&schema, \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{177             validator.\mbox{\hyperlink{classJson_1_1ObjectRequirement_a4ed02ae1d612a5efba1688fcdd2df092}{Parse}}(schema, path);}
+\DoxyCodeLine{178 }
+\DoxyCodeLine{179             \textcolor{comment}{// Validate inputs.}}
+\DoxyCodeLine{180             validator.\mbox{\hyperlink{classJson_1_1ObjectRequirement_a9ac3b920001a35bc70580035d8d802b7}{Validate}}(json, path);}
+\DoxyCodeLine{181             \textcolor{keywordflow}{if}(validator.\mbox{\hyperlink{classJson_1_1Requirement_adfaec336a9f051d6f6b9a6d7f1d97b75}{HasErrors}}())}
+\DoxyCodeLine{182                 \textcolor{keywordflow}{throw} BuildException(validator.\mbox{\hyperlink{classJson_1_1Requirement_a60bc275c366eb59f192fa2e621268480}{GetErrors}}());}
+\DoxyCodeLine{183             }
+\DoxyCodeLine{184             std::vector<int> group1, group2;}
+\DoxyCodeLine{185             }
+\DoxyCodeLine{186             \textcolor{keywordflow}{for}(\textcolor{keyword}{auto}\& s : json[\textcolor{stringliteral}{"group1"}])}
+\DoxyCodeLine{187                 group1.push\_back(s.asInt());}
+\DoxyCodeLine{188 }
+\DoxyCodeLine{189             \textcolor{keywordflow}{for}(\textcolor{keyword}{auto}\& s : json[\textcolor{stringliteral}{"group2"}])}
+\DoxyCodeLine{190                 group2.push\_back(s.asInt());}
+\DoxyCodeLine{191 }
+\DoxyCodeLine{192             \mbox{\hyperlink{classSSAGES_1_1ParticleSeparationCV_acca418a2a17dcb9ebc4e8afe0bb70f2e}{ParticleSeparationCV}}* c;}
+\DoxyCodeLine{193             \textcolor{keywordflow}{if}(json.isMember(\textcolor{stringliteral}{"dimension"}))}
+\DoxyCodeLine{194             \{}
+\DoxyCodeLine{195                 \textcolor{keyword}{auto} fixx = json[\textcolor{stringliteral}{"dimension"}][0].asBool();}
+\DoxyCodeLine{196                 \textcolor{keyword}{auto} fixy = json[\textcolor{stringliteral}{"dimension"}][1].asBool();}
+\DoxyCodeLine{197                 \textcolor{keyword}{auto} fixz = json[\textcolor{stringliteral}{"dimension"}][2].asBool();}
+\DoxyCodeLine{198                 c = \textcolor{keyword}{new} \mbox{\hyperlink{classSSAGES_1_1ParticleSeparationCV_acca418a2a17dcb9ebc4e8afe0bb70f2e}{ParticleSeparationCV}}(group1, group2, fixx, fixy, fixz);}
+\DoxyCodeLine{199             \}}
+\DoxyCodeLine{200             \textcolor{keywordflow}{else}}
+\DoxyCodeLine{201                 c = \textcolor{keyword}{new} \mbox{\hyperlink{classSSAGES_1_1ParticleSeparationCV_acca418a2a17dcb9ebc4e8afe0bb70f2e}{ParticleSeparationCV}}(group1, group2);}
+\DoxyCodeLine{202             }
+\DoxyCodeLine{203             \textcolor{keywordflow}{return} c;}
+\DoxyCodeLine{204         \}}
+
+\end{DoxyCode}
+
+
+References Json\+::\+Requirement\+::\+Get\+Errors(), Json\+::\+Requirement\+::\+Has\+Errors(), Json\+::\+Object\+Requirement\+::\+Parse(), Particle\+Separation\+C\+V(), and Json\+::\+Object\+Requirement\+::\+Validate().
+
+
+
+Referenced by S\+S\+A\+G\+E\+S\+::\+Collective\+Variable\+::\+Build\+C\+V().
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classSSAGES_1_1ParticleSeparationCV_a1e8c2b87b91bdf8722e37feb109576fd_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classSSAGES_1_1ParticleSeparationCV_a1e8c2b87b91bdf8722e37feb109576fd_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classSSAGES_1_1ParticleSeparationCV_ae6452c47bf1d849e2af60c84209a9955}\label{classSSAGES_1_1ParticleSeparationCV_ae6452c47bf1d849e2af60c84209a9955}} 
+\index{SSAGES::ParticleSeparationCV@{SSAGES::ParticleSeparationCV}!Evaluate@{Evaluate}}
+\index{Evaluate@{Evaluate}!SSAGES::ParticleSeparationCV@{SSAGES::ParticleSeparationCV}}
+\doxysubsubsection{\texorpdfstring{Evaluate()}{Evaluate()}}
+{\footnotesize\ttfamily void S\+S\+A\+G\+E\+S\+::\+Particle\+Separation\+C\+V\+::\+Evaluate (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classSSAGES_1_1Snapshot}{Snapshot}} \&}]{snapshot }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}}
+
+
+
+Evaluate the CV. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em snapshot} & Current simulation snapshot. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 128 of file Particle\+Separation\+C\+V.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{129         \{}
+\DoxyCodeLine{130             \textcolor{comment}{// Get local atom indices.}}
+\DoxyCodeLine{131             std::vector<int> idx1, idx2;}
+\DoxyCodeLine{132             snapshot.GetLocalIndices(\mbox{\hyperlink{classSSAGES_1_1ParticleSeparationCV_a8707456bef8e851e8328813e48d7b8b6}{group1\_}}, \&idx1);}
+\DoxyCodeLine{133             snapshot.GetLocalIndices(\mbox{\hyperlink{classSSAGES_1_1ParticleSeparationCV_a9509b436f0e02e3737c31751541baeb2}{group2\_}}, \&idx2);}
+\DoxyCodeLine{134 }
+\DoxyCodeLine{135             \textcolor{comment}{// Get data from snapshot. }}
+\DoxyCodeLine{136             \textcolor{keyword}{auto} n = snapshot.GetNumAtoms();}
+\DoxyCodeLine{137             \textcolor{keyword}{const} \textcolor{keyword}{auto}\& masses = snapshot.GetMasses();}
+\DoxyCodeLine{138 }
+\DoxyCodeLine{139             \textcolor{comment}{// Initialize gradient.}}
+\DoxyCodeLine{140             std::fill(\mbox{\hyperlink{classSSAGES_1_1CollectiveVariable_a390202f6e541da879f1cfcde22c49489}{grad\_}}.begin(), \mbox{\hyperlink{classSSAGES_1_1CollectiveVariable_a390202f6e541da879f1cfcde22c49489}{grad\_}}.end(), \mbox{\hyperlink{namespaceSSAGES_a630084a0a5e185e89e21b3735f8f8b2e}{Vector3}}\{0,0,0\});}
+\DoxyCodeLine{141             \mbox{\hyperlink{classSSAGES_1_1CollectiveVariable_a390202f6e541da879f1cfcde22c49489}{grad\_}}.resize(n, \mbox{\hyperlink{namespaceSSAGES_a630084a0a5e185e89e21b3735f8f8b2e}{Vector3}}\{0,0,0\});}
+\DoxyCodeLine{142             \mbox{\hyperlink{classSSAGES_1_1CollectiveVariable_a3896192a76e97af8f41a39be9e220f13}{boxgrad\_}} = Matrix3::Zero();}
+\DoxyCodeLine{143 }
+\DoxyCodeLine{144             \textcolor{comment}{// Get centers of mass.}}
+\DoxyCodeLine{145             \textcolor{keyword}{auto} mtot1 = snapshot.TotalMass(idx1);}
+\DoxyCodeLine{146             \textcolor{keyword}{auto} mtot2 = snapshot.TotalMass(idx2);}
+\DoxyCodeLine{147             \mbox{\hyperlink{namespaceSSAGES_a630084a0a5e185e89e21b3735f8f8b2e}{Vector3}} com1 = snapshot.CenterOfMass(idx1);}
+\DoxyCodeLine{148             \mbox{\hyperlink{namespaceSSAGES_a630084a0a5e185e89e21b3735f8f8b2e}{Vector3}} com2 = snapshot.CenterOfMass(idx2);}
+\DoxyCodeLine{149 }
+\DoxyCodeLine{150             \textcolor{comment}{// Account for pbc. }}
+\DoxyCodeLine{151             \mbox{\hyperlink{namespaceSSAGES_a630084a0a5e185e89e21b3735f8f8b2e}{Vector3}} rij = snapshot.ApplyMinimumImage(com1 -\/ com2).cwiseProduct(\mbox{\hyperlink{classSSAGES_1_1ParticleSeparationCV_a13363bcb0b004946c5d0753ef54eab99}{dim\_}}.cast<\textcolor{keywordtype}{double}>());}
+\DoxyCodeLine{152 }
+\DoxyCodeLine{153             \textcolor{comment}{// Compute gradient.}}
+\DoxyCodeLine{154             \mbox{\hyperlink{classSSAGES_1_1CollectiveVariable_a65b17f3e9b3c967ad42814c3eec88bb2}{val\_}} = rij.norm();}
+\DoxyCodeLine{155 }
+\DoxyCodeLine{156             \textcolor{keywordflow}{for}(\textcolor{keyword}{auto}\& \textcolor{keywordtype}{id} : idx1)}
+\DoxyCodeLine{157             \{}
+\DoxyCodeLine{158                 \mbox{\hyperlink{classSSAGES_1_1CollectiveVariable_a390202f6e541da879f1cfcde22c49489}{grad\_}}[id] = rij/\mbox{\hyperlink{classSSAGES_1_1CollectiveVariable_a65b17f3e9b3c967ad42814c3eec88bb2}{val\_}}*masses[id]/mtot1;}
+\DoxyCodeLine{159                 \mbox{\hyperlink{classSSAGES_1_1CollectiveVariable_a3896192a76e97af8f41a39be9e220f13}{boxgrad\_}} += \mbox{\hyperlink{classSSAGES_1_1CollectiveVariable_a390202f6e541da879f1cfcde22c49489}{grad\_}}[id]*rij.transpose();}
+\DoxyCodeLine{160             \}}
+\DoxyCodeLine{161             }
+\DoxyCodeLine{162             \textcolor{keywordflow}{for}(\textcolor{keyword}{auto}\& \textcolor{keywordtype}{id} : idx2)}
+\DoxyCodeLine{163                 \mbox{\hyperlink{classSSAGES_1_1CollectiveVariable_a390202f6e541da879f1cfcde22c49489}{grad\_}}[id] = -\/rij/\mbox{\hyperlink{classSSAGES_1_1CollectiveVariable_a65b17f3e9b3c967ad42814c3eec88bb2}{val\_}}*masses[id]/mtot2;}
+\DoxyCodeLine{164         \}}
+
+\end{DoxyCode}
+
+
+References S\+S\+A\+G\+E\+S\+::\+Snapshot\+::\+Apply\+Minimum\+Image(), S\+S\+A\+G\+E\+S\+::\+Collective\+Variable\+::boxgrad\+\_\+, S\+S\+A\+G\+E\+S\+::\+Snapshot\+::\+Center\+Of\+Mass(), dim\+\_\+, S\+S\+A\+G\+E\+S\+::\+Snapshot\+::\+Get\+Local\+Indices(), S\+S\+A\+G\+E\+S\+::\+Snapshot\+::\+Get\+Masses(), S\+S\+A\+G\+E\+S\+::\+Snapshot\+::\+Get\+Num\+Atoms(), S\+S\+A\+G\+E\+S\+::\+Collective\+Variable\+::grad\+\_\+, group1\+\_\+, group2\+\_\+, S\+S\+A\+G\+E\+S\+::\+Snapshot\+::\+Total\+Mass(), and S\+S\+A\+G\+E\+S\+::\+Collective\+Variable\+::val\+\_\+.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classSSAGES_1_1ParticleSeparationCV_ae6452c47bf1d849e2af60c84209a9955_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classSSAGES_1_1ParticleSeparationCV_a886af836f08cc4ed96ae742eb7eb6d7d}\label{classSSAGES_1_1ParticleSeparationCV_a886af836f08cc4ed96ae742eb7eb6d7d}} 
+\index{SSAGES::ParticleSeparationCV@{SSAGES::ParticleSeparationCV}!Initialize@{Initialize}}
+\index{Initialize@{Initialize}!SSAGES::ParticleSeparationCV@{SSAGES::ParticleSeparationCV}}
+\doxysubsubsection{\texorpdfstring{Initialize()}{Initialize()}}
+{\footnotesize\ttfamily void S\+S\+A\+G\+E\+S\+::\+Particle\+Separation\+C\+V\+::\+Initialize (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classSSAGES_1_1Snapshot}{Snapshot}} \&}]{snapshot }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}}
+
+
+
+Initialize necessary variables. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em snapshot} & Current simulation snapshot. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 82 of file Particle\+Separation\+C\+V.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{83         \{}
+\DoxyCodeLine{84             \textcolor{keyword}{using} std::to\_string;}
+\DoxyCodeLine{85 }
+\DoxyCodeLine{86             \textcolor{keyword}{auto} n1 = \mbox{\hyperlink{classSSAGES_1_1ParticleSeparationCV_a8707456bef8e851e8328813e48d7b8b6}{group1\_}}.size(), n2 = \mbox{\hyperlink{classSSAGES_1_1ParticleSeparationCV_a9509b436f0e02e3737c31751541baeb2}{group2\_}}.size();}
+\DoxyCodeLine{87 }
+\DoxyCodeLine{88             \textcolor{comment}{// Make sure atom ID's are on at least one processor. }}
+\DoxyCodeLine{89             std::vector<int> found1(n1, 0), found2(n2, 0);}
+\DoxyCodeLine{90             \textcolor{keywordflow}{for}(\textcolor{keywordtype}{size\_t} i = 0; i < n1; ++i)}
+\DoxyCodeLine{91             \{}
+\DoxyCodeLine{92                 \textcolor{keywordflow}{if}(snapshot.GetLocalIndex(\mbox{\hyperlink{classSSAGES_1_1ParticleSeparationCV_a8707456bef8e851e8328813e48d7b8b6}{group1\_}}[i]) != -\/1)}
+\DoxyCodeLine{93                     found1[i] = 1;}
+\DoxyCodeLine{94             \}}
+\DoxyCodeLine{95             }
+\DoxyCodeLine{96             \textcolor{keywordflow}{for}(\textcolor{keywordtype}{size\_t} i = 0; i < n2; ++i)}
+\DoxyCodeLine{97             \{}
+\DoxyCodeLine{98                 \textcolor{keywordflow}{if}(snapshot.GetLocalIndex(\mbox{\hyperlink{classSSAGES_1_1ParticleSeparationCV_a9509b436f0e02e3737c31751541baeb2}{group2\_}}[i]) != -\/1)}
+\DoxyCodeLine{99                     found2[i] = 1;}
+\DoxyCodeLine{100             \}}
+\DoxyCodeLine{101 }
+\DoxyCodeLine{102             MPI\_Allreduce(MPI\_IN\_PLACE, found1.data(), n1, MPI\_INT, MPI\_SUM, snapshot.GetCommunicator());}
+\DoxyCodeLine{103             MPI\_Allreduce(MPI\_IN\_PLACE, found2.data(), n2, MPI\_INT, MPI\_SUM, snapshot.GetCommunicator());}
+\DoxyCodeLine{104     }
+\DoxyCodeLine{105             \textcolor{keywordtype}{unsigned} ntot1 = std::accumulate(found1.begin(), found1.end(), 0, std::plus<int>());}
+\DoxyCodeLine{106             \textcolor{keywordtype}{unsigned} ntot2 = std::accumulate(found2.begin(), found2.end(), 0, std::plus<int>());}
+\DoxyCodeLine{107             \textcolor{keywordflow}{if}(ntot1 != n1)}
+\DoxyCodeLine{108                 \textcolor{keywordflow}{throw} BuildException(\{}
+\DoxyCodeLine{109                     \textcolor{stringliteral}{"ParticleSeparationCV: Expected to find "} + }
+\DoxyCodeLine{110                     to\_string(n1) + }
+\DoxyCodeLine{111                     \textcolor{stringliteral}{" atoms in particle 1, but only found "} + }
+\DoxyCodeLine{112                     to\_string(ntot1) + \textcolor{stringliteral}{"."}}
+\DoxyCodeLine{113                 \});         }
+\DoxyCodeLine{114 }
+\DoxyCodeLine{115             \textcolor{keywordflow}{if}(ntot2 != n2)}
+\DoxyCodeLine{116                 \textcolor{keywordflow}{throw} BuildException(\{}
+\DoxyCodeLine{117                     \textcolor{stringliteral}{"ParticleSeparationCV: Expected to find "} + }
+\DoxyCodeLine{118                     to\_string(n2) + }
+\DoxyCodeLine{119                     \textcolor{stringliteral}{" atoms in particle 2, but only found "} + }
+\DoxyCodeLine{120                     to\_string(ntot2) + \textcolor{stringliteral}{"."}}
+\DoxyCodeLine{121                 \});         }
+\DoxyCodeLine{122         \}}
+
+\end{DoxyCode}
+
+
+References S\+S\+A\+G\+E\+S\+::\+Snapshot\+::\+Get\+Communicator(), S\+S\+A\+G\+E\+S\+::\+Snapshot\+::\+Get\+Local\+Index(), group1\+\_\+, and group2\+\_\+.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classSSAGES_1_1ParticleSeparationCV_a886af836f08cc4ed96ae742eb7eb6d7d_cgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/michael/development/\+S\+S\+A\+G\+E\+S/src/\+C\+Vs/Particle\+Separation\+C\+V.\+h\end{DoxyCompactItemize}

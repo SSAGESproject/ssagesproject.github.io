@@ -1,0 +1,21 @@
+<map id="SSAGES::Snapshot::GetPositions" name="SSAGES::Snapshot::GetPositions">
+<area shape="rect" id="node1" title="Access the particle positions." alt="" coords="761,477,984,503"/>
+<area shape="rect" id="node2" href="$classSSAGES_1_1ForwardFlux.html#a28017e532afacbc0c2bee398a5aeabd1" title=" " alt="" coords="523,5,681,47"/>
+<area shape="rect" id="node5" href="$classSSAGES_1_1AngleCV.html#afc7cddc3872aeeeeb098c69f1126b594" title="Evaluate the CV." alt="" coords="504,71,700,98"/>
+<area shape="rect" id="node6" href="$classSSAGES_1_1TorsionalCV.html#ae3e82fb11240eb780cfcc57b2b0112a5" title="Evaluate the CV." alt="" coords="523,123,681,164"/>
+<area shape="rect" id="node7" href="$classSSAGES_1_1PairwiseCV.html#a807d3a560a3a187c7648da5a282027df" title="Evaluate the CV." alt="" coords="525,188,679,229"/>
+<area shape="rect" id="node8" href="$classSSAGES_1_1GyrationTensorCV.html#ac613c1659bd00b335c3d6de3d8ff0ebc" title="Evaluate the CV." alt="" coords="505,253,699,295"/>
+<area shape="rect" id="node9" href="$classSSAGES_1_1RMSDCV.html#aff77158b643fec57c6d1649a78b0dd14" title="Evaluate the CV." alt="" coords="501,319,703,346"/>
+<area shape="rect" id="node10" href="$classSSAGES_1_1AlphaRMSDCV.html#a54a50be609eddb9448199bbfc21cc7e0" title="Evaluate the CV." alt="" coords="513,371,691,412"/>
+<area shape="rect" id="node11" href="$classSSAGES_1_1AntiBetaRMSDCV.html#a89bdea4dde8b704a0ca773e0a0f79b1f" title="Evaluate the CV." alt="" coords="505,436,699,477"/>
+<area shape="rect" id="node12" href="$classSSAGES_1_1ParallelBetaRMSDCV.html#a8ed7cf0c797dbf51f70e604d32546442" title="Evaluate the CV." alt="" coords="495,501,709,543"/>
+<area shape="rect" id="node13" href="$classSSAGES_1_1ANNCV.html#a1ddb11f32dbf1c1c19e119310c047a0d" title="Evaluate the CV." alt="" coords="506,567,698,594"/>
+<area shape="rect" id="node14" href="$classSSAGES_1_1MockCV.html#af1c87874ccf1d6bbef9fd4c90410e1f8" title="Initialize necessary variables." alt="" coords="506,618,698,645"/>
+<area shape="rect" id="node15" href="$classSSAGES_1_1FiniteTempString.html#a94561a14cc08999d4531db528fe3f2e8" title="Method call post integration." alt="" coords="510,669,694,711"/>
+<area shape="rect" id="node16" href="$classSSAGES_1_1Swarm.html#aae8fbacf2c51b84a5a333387116dda0d" title="Method call post integration." alt="" coords="491,735,713,762"/>
+<area shape="rect" id="node17" href="$classSSAGES_1_1ABF.html#a27d1b2f056d32066d7c62a037836948c" title="Method call prior to simulation initiation." alt="" coords="502,786,702,813"/>
+<area shape="rect" id="node18" href="$classSSAGES_1_1ForwardFlux.html#aaf21bde2adc1a021de4ebb47d10c05a7" title="Read a file corresponding to a FFSConfigID into current snapshot." alt="" coords="521,837,683,879"/>
+<area shape="rect" id="node19" href="$classSSAGES_1_1ForwardFlux.html#a8f3da6706283040f7adf33399bdb2376" title="Write a file corresponding to FFSConfigID from current snapshot." alt="" coords="521,903,683,944"/>
+<area shape="rect" id="node3" href="$classSSAGES_1_1DirectForwardFlux.html#a2be13ab9b33d4cb90aa22ca9d71077e9" title="Function that checks if interfaces have been crossed (different for each FFS flavor)" alt="" coords="245,455,443,496"/>
+<area shape="rect" id="node4" href="$classSSAGES_1_1DirectForwardFlux.html#a5491cd537f737524f5fc295236eefb85" title="Post&#45;integration hook." alt="" coords="5,455,197,496"/>
+</map>

@@ -1,0 +1,416 @@
+
+
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <title>Combined Force-Frequency Sampling &mdash; SSAGES 0.9.0 documentation</title>
+  
+
+  
+  
+  
+  
+
+  
+  <script type="text/javascript" src="_static/js/modernizr.min.js"></script>
+  
+    
+      <script type="text/javascript" id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+        <script src="_static/jquery.js"></script>
+        <script src="_static/underscore.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/language_data.js"></script>
+        <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    
+    <script type="text/javascript" src="_static/js/theme.js"></script>
+
+    
+
+  
+  <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Elastic Band" href="Elastic Band.html" />
+    <link rel="prev" title="Basis Function Sampling" href="Basis Function Sampling.html" /> 
+</head>
+
+<body class="wy-body-for-nav">
+
+   
+  <div class="wy-grid-for-nav">
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+          
+
+          
+            <a href="index.html" class="icon icon-home"> SSAGES
+          
+
+          
+          </a>
+
+          
+            
+            
+              <div class="version">
+                0.9.0
+              </div>
+            
+          
+
+          
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+
+          
+        </div>
+
+        <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+          
+            
+            
+              
+            
+            
+              <ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="Introduction.html">Introduction</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Getting Started.html">Getting Started</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Input Files.html">Input Files</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Engines.html">Engines</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Collective Variables.html">Collective Variables</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="Advanced Sampling Methods.html">Advanced Sampling Methods</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="Adaptive Biasing Force Algorithm.html">Adaptive Biasing Force Algorithm</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Artificial Neural Network Sampling.html">Artificial Neural Network Sampling</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Basis Function Sampling.html">Basis Function Sampling</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Combined Force-Frequency Sampling</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#introduction">Introduction</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#example-input">Example Input</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#options-parameters">Options &amp; Parameters</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#output">Output</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#developers">Developers</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="Elastic Band.html">Elastic Band</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Finite Temperature String.html">Finite Temperature String</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Forward-Flux.html">Forward-Flux</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Metadynamics.html">Metadynamics</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Swarm of Trajectories.html">Swarm of Trajectories</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Umbrella Sampling.html">Umbrella Sampling</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="Write your own Methods and CVs.html">Write Your Own CVs and Methods</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Contribute to SSAGES.html">Contribute to SSAGES</a></li>
+<li class="toctree-l1"><a class="reference internal" href="The SSAGES Cookbook.html">The SSAGES Cookbook</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Acknowledgements.html">Acknowledgments</a></li>
+<li class="toctree-l1"><a class="reference internal" href="zReferences.html">References</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Copyright and License.html">Copyright and License Information</a></li>
+</ul>
+
+            
+          
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" aria-label="top navigation">
+        
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">SSAGES</a>
+        
+      </nav>
+
+
+      <div class="wy-nav-content">
+        
+        <div class="rst-content">
+        
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div role="navigation" aria-label="breadcrumbs navigation">
+
+  <ul class="wy-breadcrumbs">
+    
+      <li><a href="index.html">Docs</a> &raquo;</li>
+        
+          <li><a href="Advanced Sampling Methods.html">Advanced Sampling Methods</a> &raquo;</li>
+        
+      <li>Combined Force-Frequency Sampling</li>
+    
+    
+      <li class="wy-breadcrumbs-aside">
+        
+            
+            <a href="_sources/Combined Force-Frequency Sampling.rst.txt" rel="nofollow"> View page source</a>
+          
+        
+      </li>
+    
+  </ul>
+
+  
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+            
+  <div class="section" id="combined-force-frequency-sampling">
+<span id="id1"></span><h1>Combined Force-Frequency Sampling<a class="headerlink" href="#combined-force-frequency-sampling" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="introduction">
+<h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h2>
+<p>Combined Force-Frequency (CFF) sampling is a free energy sampling method which uses
+artificial neural networks to generate an on-the-fly adaptive bias capable of rapidly
+resolving free energy landscapes. It is a recent method proposed in <a class="bibtex reference internal" href="zReferences.html#sevgen2020" id="id2">[20]</a>,
+and its extension and application to ab initio MD has been demonstrated in
+<a class="bibtex reference internal" href="zReferences.html#lee2020" id="id3">[14]</a>. The method’s main strength resides in its ability to learn both from the
+frequency of visits to distinct states and the generalized force estimates that arise in a
+system as it evolves in phase space. This is accomplished by introducing a
+self-integrating artificial neural network, which generates an estimate of the free energy
+directly from its derivatives.</p>
+<p>CFF algorithm proceeds in sweeps. Statistics are collected over a user specified interval
+(<code class="docutils literal notranslate"><span class="pre">sweep</span></code>), which is a very flexible choice. At the end of each sweep artificial neural
+networks are fit to the statistics to determine the optimal bias which is then applied in
+the subsequent sweep. This proceeds until the free energy landscape has converged.</p>
+</div>
+<div class="section" id="example-input">
+<h2>Example Input<a class="headerlink" href="#example-input" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;methods&quot;</span> <span class="o">:</span> <span class="p">[</span>
+    <span class="p">{</span>
+        <span class="s2">&quot;type&quot;</span> <span class="o">:</span> <span class="s2">&quot;CFF&quot;</span><span class="p">,</span>
+        <span class="s2">&quot;topology&quot;</span> <span class="o">:</span> <span class="p">[</span><span class="mi">12</span><span class="p">,</span><span class="mi">8</span><span class="p">],</span>
+        <span class="s2">&quot;nsweep&quot;</span> <span class="o">:</span> <span class="mi">10000</span><span class="p">,</span>
+        <span class="s2">&quot;temperature&quot;</span> <span class="o">:</span> <span class="mf">298.15</span><span class="p">,</span>
+        <span class="s2">&quot;grid&quot;</span> <span class="o">:</span> <span class="p">{</span>
+            <span class="s2">&quot;lower&quot;</span> <span class="o">:</span> <span class="p">[</span><span class="o">-</span><span class="mf">3.14159</span><span class="p">,</span><span class="o">-</span><span class="mf">3.14159</span><span class="p">],</span>
+            <span class="s2">&quot;upper&quot;</span> <span class="o">:</span> <span class="p">[</span><span class="mf">3.14159</span><span class="p">,</span><span class="mf">3.14159</span><span class="p">],</span>
+            <span class="s2">&quot;number_points&quot;</span> <span class="o">:</span> <span class="p">[</span><span class="mi">30</span><span class="p">,</span><span class="mi">30</span><span class="p">],</span>
+            <span class="s2">&quot;periodic&quot;</span> <span class="o">:</span> <span class="p">[</span><span class="kc">false</span><span class="p">,</span><span class="kc">false</span><span class="p">]</span>
+        <span class="p">},</span>
+        <span class="s2">&quot;lower_bounds&quot;</span> <span class="o">:</span> <span class="p">[</span><span class="o">-</span><span class="mi">5</span><span class="p">,</span><span class="o">-</span><span class="mi">5</span><span class="p">],</span>
+        <span class="s2">&quot;upper_bounds&quot;</span> <span class="o">:</span> <span class="p">[</span><span class="mi">5</span><span class="p">,</span><span class="mi">5</span><span class="p">],</span>
+        <span class="s2">&quot;lower_bound_restraints&quot;</span> <span class="o">:</span> <span class="p">[</span><span class="mf">0.0</span><span class="p">,</span><span class="mf">0.0</span><span class="p">],</span>
+        <span class="s2">&quot;upper_bound_restraints&quot;</span> <span class="o">:</span> <span class="p">[</span><span class="mf">0.0</span><span class="p">,</span><span class="mf">0.0</span><span class="p">],</span>
+        <span class="s2">&quot;timestep&quot;</span> <span class="o">:</span> <span class="mf">0.001</span><span class="p">,</span>
+        <span class="s2">&quot;unit_conversion&quot;</span> <span class="o">:</span> <span class="mi">1</span><span class="p">,</span>
+        <span class="s2">&quot;minimum_count&quot;</span> <span class="o">:</span> <span class="mi">3000</span><span class="p">,</span>
+        <span class="s2">&quot;overwrite_output&quot;</span><span class="o">:</span> <span class="kc">true</span>
+    <span class="p">}</span>
+<span class="p">]</span>
+</pre></div>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Be sure to follow correct JSON syntax for your input, with a comma after every line
+except the last within each bracket.</p>
+</div>
+</div>
+<div class="section" id="options-parameters">
+<h2>Options &amp; Parameters<a class="headerlink" href="#options-parameters" title="Permalink to this headline">¶</a></h2>
+<p><strong>Define CFF</strong></p>
+<p>In the methods block, define the CFF method through the syntax:</p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;type&quot;</span> <span class="o">:</span> <span class="s2">&quot;CFF&quot;</span><span class="p">,</span>
+</pre></div>
+</div>
+<p>To define neural network topology:</p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;topology&quot;</span> <span class="o">:</span> <span class="p">[</span><span class="mi">12</span><span class="p">,</span><span class="mi">8</span><span class="p">],</span>
+</pre></div>
+</div>
+<p>Array of integers (length: number of hidden layers). This array defines the architecture
+of the neural network. Like ANN Sampling, good heuristics is to use a network with a
+single hidden layer if you are biasing on one CV, and two hidden layers if you are biasing
+on two or more.</p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;temperature&quot;</span> <span class="o">:</span> <span class="mf">298.15</span><span class="p">,</span>
+</pre></div>
+</div>
+<p>The temperature of the simulation must be specified.</p>
+<p>To define the length of each sweep:</p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;nsweep&quot;</span> <span class="o">:</span> <span class="mi">10000</span><span class="p">,</span>
+</pre></div>
+</div>
+<p>Typical values range from 1,000 to 10,000 depending on the size of the system. The slower
+the system dynamics, the longer the sweep. This is not going to heavily affect convergence
+time, and the method is generally quite robust to choice of sweep length. The main
+consequence of this choice is that the neural network training time becomes relatively
+expensive if the system’s free energy is very cheap to evaluate.</p>
+<p><strong>Define the grid</strong></p>
+<p>To define the bounds:</p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;lower&quot;</span> <span class="o">:</span> <span class="p">[</span><span class="o">-</span><span class="mf">3.14159</span><span class="p">,</span><span class="o">-</span><span class="mf">3.14159</span><span class="p">],</span>
+<span class="s2">&quot;upper&quot;</span> <span class="o">:</span> <span class="p">[</span><span class="mf">3.14159</span><span class="p">,</span><span class="mf">3.14159</span><span class="p">],</span>
+</pre></div>
+</div>
+<p>These are arrays of doubles whose length is the number of CVs used. This defines the
+minimum and maximum values for the CVs for the range in which the method will be used in
+order.</p>
+<p>To define the number of CV bins used:</p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;number_points&quot;</span> <span class="o">:</span> <span class="p">[</span><span class="mi">30</span><span class="p">,</span><span class="mi">30</span><span class="p">],</span>
+</pre></div>
+</div>
+<p>This array of integers defines the number of histogram bins in each CV dimension in order.</p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;periodic&quot;</span> <span class="o">:</span> <span class="p">[</span><span class="kc">false</span><span class="p">,</span><span class="kc">false</span><span class="p">],</span>
+</pre></div>
+</div>
+<p>This array defines whether a given CV is periodic for restraint purposes. This is only
+used to apply minimum image convention to CV restraints. The value can be safely set to
+<code class="docutils literal notranslate"><span class="pre">false</span></code> <em>even for periodic CVs</em> if no restraints are being used.</p>
+<p><strong>Define the restraints</strong></p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;lower_bounds&quot;</span> <span class="o">:</span> <span class="p">[</span><span class="o">-</span><span class="mi">5</span><span class="p">,</span><span class="o">-</span><span class="mi">5</span><span class="p">],</span>
+<span class="s2">&quot;upper_bounds&quot;</span> <span class="o">:</span> <span class="p">[</span><span class="mi">5</span><span class="p">,</span><span class="mi">5</span><span class="p">],</span>
+</pre></div>
+</div>
+<p>These arrays define the minimum and maximum values for the CV restraints in order.</p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;lower_bound_restraints&quot;</span> <span class="o">:</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">],</span>
+<span class="s2">&quot;upper_bound_restraints&quot;</span> <span class="o">:</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span><span class="mi">0</span><span class="p">],</span>
+</pre></div>
+</div>
+<p>These arrays define the spring constant for the lower and upper bounds.</p>
+<p><strong>Define time and unit parameters</strong></p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;timestep&quot;</span> <span class="o">:</span> <span class="mf">0.001</span><span class="p">,</span>
+</pre></div>
+</div>
+<p>The timestep of the simulation. Units depend on the conversion factor that follows. This
+must be entered correctly, otherwise the generalized force estimate will be incorrect.</p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;unit_conversion&quot;</span> <span class="o">:</span> <span class="mi">1</span><span class="p">,</span>
+</pre></div>
+</div>
+<p>Defines the unit conversion from d(momentum)/d(time) to force for the simulation. For
+LAMMPS using units real, this is 2390.06 (gram.angstrom/mole.femtosecond^2 -&gt;
+kcal/mole.angstrom). For GROMACS, this is 1.</p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;minimum_count&quot;</span> <span class="o">:</span> <span class="mi">3000</span><span class="p">,</span>
+</pre></div>
+</div>
+<p>This is the number of hits required to a bin in the general histogram before the full
+biasing force is active. Below this value, the bias linearly decreases to zero at
+<code class="docutils literal notranslate"><span class="pre">hits</span> <span class="pre">=</span> <span class="pre">0</span></code>. Default value is <code class="docutils literal notranslate"><span class="pre">200</span></code>, but user should provide a reasonable value for
+their system.</p>
+<p><strong>Handle outputs (Optional)</strong></p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;overwrite_output&quot;</span> <span class="o">:</span> <span class="p">[</span><span class="kc">true</span><span class="p">],</span>
+</pre></div>
+</div>
+<p>If this is enabled, output files are overwritten at each sweep such.  Otherwise, output
+files are saved at each sweep. Default, <code class="docutils literal notranslate"><span class="pre">true</span></code>.</p>
+</div>
+<div class="section" id="output">
+<h2>Output<a class="headerlink" href="#output" title="Permalink to this headline">¶</a></h2>
+<p>There are six output files from this method: <code class="docutils literal notranslate"><span class="pre">CFF.out</span></code>, <code class="docutils literal notranslate"><span class="pre">F_out</span></code>, <code class="docutils literal notranslate"><span class="pre">netstate.net</span></code>,
+<code class="docutils literal notranslate"><span class="pre">netstate.net2</span></code>, <code class="docutils literal notranslate"><span class="pre">CFF.out_gamma</span></code>, and <code class="docutils literal notranslate"><span class="pre">traintime.out</span></code>.</p>
+<p>The main output of this method is stored in <code class="docutils literal notranslate"><span class="pre">CFF.out</span></code>. Each column corresponds
+respectively to the CVs, visit frequencies (histogram), bias based on frequency-based ANN,
+bias based on force-based ANN, average bias, and the average free energy estimate (which
+is the negative of the average bias with a constant shift). The format is as follows:</p>
+<p><code class="docutils literal notranslate"><span class="pre">cv1</span> <span class="pre">cv2</span> <span class="pre">...</span> <span class="pre">hist</span> <span class="pre">bias(freq_only)</span> <span class="pre">bias(force_only)</span> <span class="pre">bias(avg)</span> <span class="pre">free_energy(avg)</span></code></p>
+<p>A file called <code class="docutils literal notranslate"><span class="pre">CFF.out_gamma</span></code> outputs network complexity term <code class="docutils literal notranslate"><span class="pre">gamma</span></code> for each neural
+net and the ratio of gammas from both neural nets. (See <a class="bibtex reference internal" href="zReferences.html#sevgen2020" id="id4">[20]</a> for more
+information.) The format is as follows:</p>
+<p><code class="docutils literal notranslate"><span class="pre">sweep_iter</span> <span class="pre">gamma(freq_only)</span> <span class="pre">gamma(force_only)</span> <span class="pre">gamma_ratio</span></code></p>
+<p>File <code class="docutils literal notranslate"><span class="pre">traintime.out</span></code> contains CPU wall time (in seconds) taken for training of neural
+networks during each sweep.</p>
+<p>Files called <code class="docutils literal notranslate"><span class="pre">netstate.dat</span></code> and <code class="docutils literal notranslate"><span class="pre">netstate2.dat</span></code> contain the neural network parameters
+for each of the two neural networks used to apply biases during the sampling
+(<code class="docutils literal notranslate"><span class="pre">netstate.dat</span></code> stores frequency-based parameters, while <code class="docutils literal notranslate"><span class="pre">netstate2.dat</span></code> stores
+force-based ones). For more information about these files, see the ANN Sampling Method.</p>
+<p>A file called <code class="docutils literal notranslate"><span class="pre">F_out</span></code> contains the Generalized Force vector field, which is the same
+output file as the Adaptive Biasing Force method. Vectors defined on each point on a grid
+that goes from <code class="docutils literal notranslate"><span class="pre">CV_lower_bounds</span></code> to <code class="docutils literal notranslate"><span class="pre">CV_upper_bounds</span></code> of each CV in its dimension, with
+<code class="docutils literal notranslate"><span class="pre">CV_bins</span></code> of grid points in each dimension. The printout is in the following format: 2*N
+number of columns, where N is the number of CVs. First N columns are coordinates in CV
+space, the N+1 to 2N columns are components of the Generalized Force vectors. See the ABF
+Sampling Method for more information.</p>
+<p>An example of CFF (e.g., alanine dipeptide in water) is located in <code class="docutils literal notranslate"><span class="pre">Examples/User/CFF/ADP</span></code>.</p>
+</div>
+<div class="section" id="developers">
+<h2>Developers<a class="headerlink" href="#developers" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Elizabeth M.Y. Lee</p></li>
+<li><p>Emre Sevgen</p></li>
+<li><p>Boyuan Yu</p></li>
+</ul>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Please make sure to cite <a class="bibtex reference internal" href="zReferences.html#sevgen2020" id="id5">[20]</a> and <a class="bibtex reference internal" href="zReferences.html#lee2020" id="id6">[14]</a> if you use this
+method!</p>
+</div>
+</div>
+</div>
+
+
+           </div>
+           
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="Elastic Band.html" class="btn btn-neutral float-right" title="Elastic Band" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right"></span></a>
+      
+      
+        <a href="Basis Function Sampling.html" class="btn btn-neutral float-left" title="Basis Function Sampling" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>
+        &copy; Copyright 2018, the SSAGES Team
+      <span class="lastupdated">
+        Last updated on Jun 11, 2020.
+      </span>
+
+    </p>
+  </div>
+  Built with <a href="http://sphinx-doc.org/">Sphinx</a> using a <a href="https://github.com/rtfd/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>. 
+
+</footer>
+
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+  
+
+
+  <script type="text/javascript">
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>
+
+  
+  
+    
+   
+
+</body>
+</html>

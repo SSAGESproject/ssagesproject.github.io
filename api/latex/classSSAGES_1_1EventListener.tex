@@ -1,0 +1,287 @@
+\hypertarget{classSSAGES_1_1EventListener}{}\doxysection{S\+S\+A\+G\+ES\+::Event\+Listener Class Reference}
+\label{classSSAGES_1_1EventListener}\index{SSAGES::EventListener@{SSAGES::EventListener}}
+
+
+Base abstract class for listening in to events fired by \char`\"{}\+Hook\char`\"{}.  
+
+
+
+
+{\ttfamily \#include $<$Event\+Listener.\+h$>$}
+
+
+
+Inheritance diagram for S\+S\+A\+G\+ES\+::Event\+Listener\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classSSAGES_1_1EventListener__inherit__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classSSAGES_1_1EventListener_a4a4d51653806e0348e9d1c99890bb87b}{Event\+Listener}} (unsigned int frequency)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+unsigned int \mbox{\hyperlink{classSSAGES_1_1EventListener_a82dd6716f443cd24451e7355c2353614}{Get\+Frequency}} () const
+\begin{DoxyCompactList}\small\item\em Get frequency of event listener. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classSSAGES_1_1EventListener_aeb8eaa9c711bf03dddf7518f25b4df5e}{Pre\+Simulation}} (\mbox{\hyperlink{classSSAGES_1_1Snapshot}{Snapshot}} $\ast$snapshot, const class \mbox{\hyperlink{classSSAGES_1_1CVManager}{C\+V\+Manager}} \&cvmanager)=0
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classSSAGES_1_1Method}{Method}} call prior to simulation initiation. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classSSAGES_1_1EventListener_a57d91801a98139b2c0beb1d6246fa314}{Post\+Integration}} (\mbox{\hyperlink{classSSAGES_1_1Snapshot}{Snapshot}} $\ast$snapshot, const class \mbox{\hyperlink{classSSAGES_1_1CVManager}{C\+V\+Manager}} \&cvmanager)=0
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classSSAGES_1_1Method}{Method}} call post integration. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classSSAGES_1_1EventListener_a54abe889f75574dc70a7a40464a03aeb}{Post\+Simulation}} (\mbox{\hyperlink{classSSAGES_1_1Snapshot}{Snapshot}} $\ast$snapshot, const class \mbox{\hyperlink{classSSAGES_1_1CVManager}{C\+V\+Manager}} \&cvmanager)=0
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classSSAGES_1_1Method}{Method}} call post simulation. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classSSAGES_1_1EventListener_a7cadffb0e82186a12023dd5963c3c5b1}\label{classSSAGES_1_1EventListener_a7cadffb0e82186a12023dd5963c3c5b1}} 
+virtual \mbox{\hyperlink{classSSAGES_1_1EventListener_a7cadffb0e82186a12023dd5963c3c5b1}{$\sim$\+Event\+Listener}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static unsigned int \mbox{\hyperlink{classSSAGES_1_1EventListener_affe4b9179e312192ba364d44f0638874}{Get\+Walker\+ID}} (const M\+P\+I\+\_\+\+Comm \&world, const M\+P\+I\+\_\+\+Comm \&comm)
+\begin{DoxyCompactList}\small\item\em Get walker ID number of specified communicator. \end{DoxyCompactList}\item 
+static unsigned int \mbox{\hyperlink{classSSAGES_1_1EventListener_a917f9526b9adfa66166eafb5b9b34d54}{Get\+Num\+Walkers}} (const M\+P\+I\+\_\+\+Comm \&world, const M\+P\+I\+\_\+\+Comm \&comm)
+\begin{DoxyCompactList}\small\item\em Get total number of walkers in the simulation. \end{DoxyCompactList}\item 
+static bool \mbox{\hyperlink{classSSAGES_1_1EventListener_af9666daacfb047c1dd279ea339524d07}{Is\+Master\+Rank}} (const M\+P\+I\+\_\+\+Comm \&comm)
+\begin{DoxyCompactList}\small\item\em Check if current processor is master. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classSSAGES_1_1EventListener_aea9944bc4a1377537a935ecc782e9d52}\label{classSSAGES_1_1EventListener_aea9944bc4a1377537a935ecc782e9d52}} 
+unsigned int \mbox{\hyperlink{classSSAGES_1_1EventListener_aea9944bc4a1377537a935ecc782e9d52}{frequency\+\_\+}}
+\begin{DoxyCompactList}\small\item\em Frequency for listening. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Base abstract class for listening in to events fired by \char`\"{}\+Hook\char`\"{}. 
+
+Definition at line 35 of file Event\+Listener.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classSSAGES_1_1EventListener_a4a4d51653806e0348e9d1c99890bb87b}\label{classSSAGES_1_1EventListener_a4a4d51653806e0348e9d1c99890bb87b}} 
+\index{SSAGES::EventListener@{SSAGES::EventListener}!EventListener@{EventListener}}
+\index{EventListener@{EventListener}!SSAGES::EventListener@{SSAGES::EventListener}}
+\doxysubsubsection{\texorpdfstring{EventListener()}{EventListener()}}
+{\footnotesize\ttfamily S\+S\+A\+G\+E\+S\+::\+Event\+Listener\+::\+Event\+Listener (\begin{DoxyParamCaption}\item[{unsigned int}]{frequency }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em frequency} & Frequency for listening. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 45 of file Event\+Listener.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{45                                               :}
+\DoxyCodeLine{46         \mbox{\hyperlink{classSSAGES_1_1EventListener_aea9944bc4a1377537a935ecc782e9d52}{frequency\_}}(frequency)}
+\DoxyCodeLine{47         \{}
+\DoxyCodeLine{48         \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classSSAGES_1_1EventListener_a82dd6716f443cd24451e7355c2353614}\label{classSSAGES_1_1EventListener_a82dd6716f443cd24451e7355c2353614}} 
+\index{SSAGES::EventListener@{SSAGES::EventListener}!GetFrequency@{GetFrequency}}
+\index{GetFrequency@{GetFrequency}!SSAGES::EventListener@{SSAGES::EventListener}}
+\doxysubsubsection{\texorpdfstring{GetFrequency()}{GetFrequency()}}
+{\footnotesize\ttfamily unsigned int S\+S\+A\+G\+E\+S\+::\+Event\+Listener\+::\+Get\+Frequency (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Get frequency of event listener. 
+
+\begin{DoxyReturn}{Returns}
+Frequency of event listener. 
+\end{DoxyReturn}
+
+
+Definition at line 54 of file Event\+Listener.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{54 \{ \textcolor{keywordflow}{return} \mbox{\hyperlink{classSSAGES_1_1EventListener_aea9944bc4a1377537a935ecc782e9d52}{frequency\_}}; \}}
+
+\end{DoxyCode}
+
+
+References frequency\+\_\+.
+
+\mbox{\Hypertarget{classSSAGES_1_1EventListener_a917f9526b9adfa66166eafb5b9b34d54}\label{classSSAGES_1_1EventListener_a917f9526b9adfa66166eafb5b9b34d54}} 
+\index{SSAGES::EventListener@{SSAGES::EventListener}!GetNumWalkers@{GetNumWalkers}}
+\index{GetNumWalkers@{GetNumWalkers}!SSAGES::EventListener@{SSAGES::EventListener}}
+\doxysubsubsection{\texorpdfstring{GetNumWalkers()}{GetNumWalkers()}}
+{\footnotesize\ttfamily static unsigned int S\+S\+A\+G\+E\+S\+::\+Event\+Listener\+::\+Get\+Num\+Walkers (\begin{DoxyParamCaption}\item[{const M\+P\+I\+\_\+\+Comm \&}]{world,  }\item[{const M\+P\+I\+\_\+\+Comm \&}]{comm }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Get total number of walkers in the simulation. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em world} & M\+PI communicator for the whole simulation. \\
+\hline
+{\em comm} & M\+PI communicator for the local walker. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Total number of walkers in the simulation. 
+\end{DoxyReturn}
+
+
+Definition at line 100 of file Event\+Listener.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{101         \{}
+\DoxyCodeLine{102             \textcolor{keywordflow}{return} mxx::comm(world).size()/mxx::comm(comm).size();}
+\DoxyCodeLine{103         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classSSAGES_1_1EventListener_affe4b9179e312192ba364d44f0638874}\label{classSSAGES_1_1EventListener_affe4b9179e312192ba364d44f0638874}} 
+\index{SSAGES::EventListener@{SSAGES::EventListener}!GetWalkerID@{GetWalkerID}}
+\index{GetWalkerID@{GetWalkerID}!SSAGES::EventListener@{SSAGES::EventListener}}
+\doxysubsubsection{\texorpdfstring{GetWalkerID()}{GetWalkerID()}}
+{\footnotesize\ttfamily static unsigned int S\+S\+A\+G\+E\+S\+::\+Event\+Listener\+::\+Get\+Walker\+ID (\begin{DoxyParamCaption}\item[{const M\+P\+I\+\_\+\+Comm \&}]{world,  }\item[{const M\+P\+I\+\_\+\+Comm \&}]{comm }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Get walker ID number of specified communicator. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em world} & M\+PI communicator for the whole simulation. \\
+\hline
+{\em comm} & M\+PI communicator for the local walker. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Walker ID number. 
+\end{DoxyReturn}
+
+
+Definition at line 89 of file Event\+Listener.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{90         \{}
+\DoxyCodeLine{91             \textcolor{keywordflow}{return} mxx::comm(world).rank()/mxx::comm(comm).size();}
+\DoxyCodeLine{92         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classSSAGES_1_1EventListener_af9666daacfb047c1dd279ea339524d07}\label{classSSAGES_1_1EventListener_af9666daacfb047c1dd279ea339524d07}} 
+\index{SSAGES::EventListener@{SSAGES::EventListener}!IsMasterRank@{IsMasterRank}}
+\index{IsMasterRank@{IsMasterRank}!SSAGES::EventListener@{SSAGES::EventListener}}
+\doxysubsubsection{\texorpdfstring{IsMasterRank()}{IsMasterRank()}}
+{\footnotesize\ttfamily static bool S\+S\+A\+G\+E\+S\+::\+Event\+Listener\+::\+Is\+Master\+Rank (\begin{DoxyParamCaption}\item[{const M\+P\+I\+\_\+\+Comm \&}]{comm }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Check if current processor is master. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em comm} & M\+PI communicator to check. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Whether the current M\+PI rank is the first in the communicator. 
+\end{DoxyReturn}
+
+
+Definition at line 110 of file Event\+Listener.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{111         \{}
+\DoxyCodeLine{112             \textcolor{keywordflow}{return} mxx::comm(comm).rank() == 0;}
+\DoxyCodeLine{113         \}}
+
+\end{DoxyCode}
+
+
+Referenced by S\+S\+A\+G\+E\+S\+::\+Direct\+Forward\+Flux\+::\+Check\+For\+Interface\+Crossings(), S\+S\+A\+G\+E\+S\+::\+Direct\+Forward\+Flux\+::\+Initialize\+Queue(), S\+S\+A\+G\+E\+S\+::\+A\+N\+N\+::\+Post\+Integration(), and S\+S\+A\+G\+E\+S\+::\+A\+N\+N\+::\+Train\+Network().
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classSSAGES_1_1EventListener_af9666daacfb047c1dd279ea339524d07_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classSSAGES_1_1EventListener_a57d91801a98139b2c0beb1d6246fa314}\label{classSSAGES_1_1EventListener_a57d91801a98139b2c0beb1d6246fa314}} 
+\index{SSAGES::EventListener@{SSAGES::EventListener}!PostIntegration@{PostIntegration}}
+\index{PostIntegration@{PostIntegration}!SSAGES::EventListener@{SSAGES::EventListener}}
+\doxysubsubsection{\texorpdfstring{PostIntegration()}{PostIntegration()}}
+{\footnotesize\ttfamily virtual void S\+S\+A\+G\+E\+S\+::\+Event\+Listener\+::\+Post\+Integration (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classSSAGES_1_1Snapshot}{Snapshot}} $\ast$}]{snapshot,  }\item[{const class \mbox{\hyperlink{classSSAGES_1_1CVManager}{C\+V\+Manager}} \&}]{cvmanager }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+\mbox{\hyperlink{classSSAGES_1_1Method}{Method}} call post integration. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em snapshot} & Pointer to the simulation snapshot. \\
+\hline
+{\em cvmanager} & Collective variable manager.\\
+\hline
+\end{DoxyParams}
+This function will be called at the end of each integration step. 
+
+Implemented in \mbox{\hyperlink{classSSAGES_1_1ForwardFlux_ad001fc1bc419967f3c9679cac04820f2}{S\+S\+A\+G\+E\+S\+::\+Forward\+Flux}}, \mbox{\hyperlink{classSSAGES_1_1StringMethod_a5e02e69fbe65d3064f9fe76c36be6ab5}{S\+S\+A\+G\+E\+S\+::\+String\+Method}}, \mbox{\hyperlink{classSSAGES_1_1Method_af2f33dfaa758c5cd505477f4767fb339}{S\+S\+A\+G\+E\+S\+::\+Method}}, \mbox{\hyperlink{classSSAGES_1_1ABF_ad2007ce8bb539072a97d4d02d268c638}{S\+S\+A\+G\+E\+S\+::\+A\+BF}}, \mbox{\hyperlink{classSSAGES_1_1BFS_a6b4639e309cbaffa82113f2577c065c4}{S\+S\+A\+G\+E\+S\+::\+B\+FS}}, \mbox{\hyperlink{classSSAGES_1_1CFF_ab9f74c2ba9de08954e95678e0cb9ce46}{S\+S\+A\+G\+E\+S\+::\+C\+FF}}, \mbox{\hyperlink{classSSAGES_1_1Meta_a352edd1cebb4731d7b2e260fbb96d3bc}{S\+S\+A\+G\+E\+S\+::\+Meta}}, \mbox{\hyperlink{classSSAGES_1_1Umbrella_a034d7e5266790eeb7a9faaa4aa8520a3}{S\+S\+A\+G\+E\+S\+::\+Umbrella}}, \mbox{\hyperlink{classSSAGES_1_1ANN_ad63d276efae1a266eb5d556bdf896a98}{S\+S\+A\+G\+E\+S\+::\+A\+NN}}, \mbox{\hyperlink{classSSAGES_1_1Swarm_aae8fbacf2c51b84a5a333387116dda0d}{S\+S\+A\+G\+E\+S\+::\+Swarm}}, \mbox{\hyperlink{classSSAGES_1_1FiniteTempString_a94561a14cc08999d4531db528fe3f2e8}{S\+S\+A\+G\+E\+S\+::\+Finite\+Temp\+String}}, \mbox{\hyperlink{classSSAGES_1_1ElasticBand_a85177e2c02fa8f767eb98664636732da}{S\+S\+A\+G\+E\+S\+::\+Elastic\+Band}}, \mbox{\hyperlink{classSSAGES_1_1Logger_a9a00347c7d4a80e71b279327410c8f88}{S\+S\+A\+G\+E\+S\+::\+Logger}}, and \mbox{\hyperlink{classSSAGES_1_1DirectForwardFlux_a5491cd537f737524f5fc295236eefb85}{S\+S\+A\+G\+E\+S\+::\+Direct\+Forward\+Flux}}.
+
+\mbox{\Hypertarget{classSSAGES_1_1EventListener_a54abe889f75574dc70a7a40464a03aeb}\label{classSSAGES_1_1EventListener_a54abe889f75574dc70a7a40464a03aeb}} 
+\index{SSAGES::EventListener@{SSAGES::EventListener}!PostSimulation@{PostSimulation}}
+\index{PostSimulation@{PostSimulation}!SSAGES::EventListener@{SSAGES::EventListener}}
+\doxysubsubsection{\texorpdfstring{PostSimulation()}{PostSimulation()}}
+{\footnotesize\ttfamily virtual void S\+S\+A\+G\+E\+S\+::\+Event\+Listener\+::\+Post\+Simulation (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classSSAGES_1_1Snapshot}{Snapshot}} $\ast$}]{snapshot,  }\item[{const class \mbox{\hyperlink{classSSAGES_1_1CVManager}{C\+V\+Manager}} \&}]{cvmanager }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+\mbox{\hyperlink{classSSAGES_1_1Method}{Method}} call post simulation. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em snapshot} & Pointer to the simulation snapshot. \\
+\hline
+{\em cvmanager} & Collective variable manager.\\
+\hline
+\end{DoxyParams}
+This function will be called after the simulation has finished. 
+
+Implemented in \mbox{\hyperlink{classSSAGES_1_1Method_a7d18226669c88bc76b9b758f2d29e3c9}{S\+S\+A\+G\+E\+S\+::\+Method}}, \mbox{\hyperlink{classSSAGES_1_1ForwardFlux_a36b935ebdb93f80be3cd8f43684662f1}{S\+S\+A\+G\+E\+S\+::\+Forward\+Flux}}, \mbox{\hyperlink{classSSAGES_1_1ABF_a02fae49d009dcf405d82144a2d123faa}{S\+S\+A\+G\+E\+S\+::\+A\+BF}}, \mbox{\hyperlink{classSSAGES_1_1BFS_a0cbb6ae5b66ff83d556ca44087f40c06}{S\+S\+A\+G\+E\+S\+::\+B\+FS}}, \mbox{\hyperlink{classSSAGES_1_1CFF_ae5912cbccb7be5d75ce666eefd4d1789}{S\+S\+A\+G\+E\+S\+::\+C\+FF}}, \mbox{\hyperlink{classSSAGES_1_1StringMethod_aa112ed059f1fdbb647ee2b788699badf}{S\+S\+A\+G\+E\+S\+::\+String\+Method}}, \mbox{\hyperlink{classSSAGES_1_1Meta_a218346ad51e6991576baffde2e82f0e0}{S\+S\+A\+G\+E\+S\+::\+Meta}}, \mbox{\hyperlink{classSSAGES_1_1Umbrella_a2a4409838cca36d7d93686dceecf8d23}{S\+S\+A\+G\+E\+S\+::\+Umbrella}}, \mbox{\hyperlink{classSSAGES_1_1ANN_a187df3448f650a0bb3452bf7c1c12fe8}{S\+S\+A\+G\+E\+S\+::\+A\+NN}}, and \mbox{\hyperlink{classSSAGES_1_1Logger_af7de12cafe5d3111ff1f3e55ba614b5f}{S\+S\+A\+G\+E\+S\+::\+Logger}}.
+
+\mbox{\Hypertarget{classSSAGES_1_1EventListener_aeb8eaa9c711bf03dddf7518f25b4df5e}\label{classSSAGES_1_1EventListener_aeb8eaa9c711bf03dddf7518f25b4df5e}} 
+\index{SSAGES::EventListener@{SSAGES::EventListener}!PreSimulation@{PreSimulation}}
+\index{PreSimulation@{PreSimulation}!SSAGES::EventListener@{SSAGES::EventListener}}
+\doxysubsubsection{\texorpdfstring{PreSimulation()}{PreSimulation()}}
+{\footnotesize\ttfamily virtual void S\+S\+A\+G\+E\+S\+::\+Event\+Listener\+::\+Pre\+Simulation (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classSSAGES_1_1Snapshot}{Snapshot}} $\ast$}]{snapshot,  }\item[{const class \mbox{\hyperlink{classSSAGES_1_1CVManager}{C\+V\+Manager}} \&}]{cvmanager }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+\mbox{\hyperlink{classSSAGES_1_1Method}{Method}} call prior to simulation initiation. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em snapshot} & Pointer to the simulation snapshot. \\
+\hline
+{\em cvmanager} & Collective variable manager.\\
+\hline
+\end{DoxyParams}
+This function will be called before the simulation is started. 
+
+Implemented in \mbox{\hyperlink{classSSAGES_1_1Method_a7d840d2b5f6dbf9ec75a7909ccf13ef7}{S\+S\+A\+G\+E\+S\+::\+Method}}, \mbox{\hyperlink{classSSAGES_1_1ForwardFlux_a3faeed11a3923e06b286ee8c51c10e86}{S\+S\+A\+G\+E\+S\+::\+Forward\+Flux}}, \mbox{\hyperlink{classSSAGES_1_1ABF_a27d1b2f056d32066d7c62a037836948c}{S\+S\+A\+G\+E\+S\+::\+A\+BF}}, \mbox{\hyperlink{classSSAGES_1_1BFS_adabd5c246d1bfd9d0bd23cfbad5130df}{S\+S\+A\+G\+E\+S\+::\+B\+FS}}, \mbox{\hyperlink{classSSAGES_1_1CFF_ad51094624daa5d1a27a75e7c15dce24a}{S\+S\+A\+G\+E\+S\+::\+C\+FF}}, \mbox{\hyperlink{classSSAGES_1_1StringMethod_ab3a248ca3236ac6b068b3f97074e4218}{S\+S\+A\+G\+E\+S\+::\+String\+Method}}, \mbox{\hyperlink{classSSAGES_1_1Meta_a9a584ea39168a9fd57f5f7cf98102480}{S\+S\+A\+G\+E\+S\+::\+Meta}}, \mbox{\hyperlink{classSSAGES_1_1Umbrella_a63da6a639c5f7aa819c53e8bcc63e5e7}{S\+S\+A\+G\+E\+S\+::\+Umbrella}}, \mbox{\hyperlink{classSSAGES_1_1ANN_a86e2611b4516c8a465014919139aae19}{S\+S\+A\+G\+E\+S\+::\+A\+NN}}, and \mbox{\hyperlink{classSSAGES_1_1Logger_ab6b54172df89ab069ea5eb0d013e2a19}{S\+S\+A\+G\+E\+S\+::\+Logger}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/michael/development/\+S\+S\+A\+G\+E\+S/src/Event\+Listener.\+h\end{DoxyCompactItemize}

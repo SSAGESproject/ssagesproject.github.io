@@ -1,0 +1,423 @@
+\hypertarget{classSSAGES_1_1RMSDCV}{}\doxysection{S\+S\+A\+G\+ES\+::R\+M\+S\+D\+CV Class Reference}
+\label{classSSAGES_1_1RMSDCV}\index{SSAGES::RMSDCV@{SSAGES::RMSDCV}}
+
+
+Collective variable to calculate root mean square displacement.  
+
+
+
+
+{\ttfamily \#include $<$R\+M\+S\+D\+C\+V.\+h$>$}
+
+
+
+Inheritance diagram for S\+S\+A\+G\+ES\+::R\+M\+S\+D\+CV\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=223pt]{classSSAGES_1_1RMSDCV__inherit__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classSSAGES_1_1RMSDCV_abb46de7eb9e6c8cced1efb73d72636ec}{R\+M\+S\+D\+CV}} (const \mbox{\hyperlink{namespaceSSAGES_afbb26053e292f94ea83b1c441ce6df74}{Label}} \&atomids, std\+::string xyzfile, bool use\+\_\+range=false)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classSSAGES_1_1RMSDCV_a7e82843aa5d4eae3ada4ea26a7e6502a}{Initialize}} (const \mbox{\hyperlink{classSSAGES_1_1Snapshot}{Snapshot}} \&snapshot) override
+\begin{DoxyCompactList}\small\item\em Initialize necessary variables. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classSSAGES_1_1RMSDCV_aff77158b643fec57c6d1649a78b0dd14}{Evaluate}} (const \mbox{\hyperlink{classSSAGES_1_1Snapshot}{Snapshot}} \&snapshot) override
+\begin{DoxyCompactList}\small\item\em Evaluate the CV. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classSSAGES_1_1RMSDCV}{R\+M\+S\+D\+CV}} $\ast$ \mbox{\hyperlink{classSSAGES_1_1RMSDCV_ac74e72f38b333070f66d6ae383a860a1}{Build}} (const Json\+::\+Value \&json, const std\+::string \&path)
+\begin{DoxyCompactList}\small\item\em Set up collective variable. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classSSAGES_1_1RMSDCV_a8bc8d0a33881d309b76acdbd93d689c8}\label{classSSAGES_1_1RMSDCV_a8bc8d0a33881d309b76acdbd93d689c8}} 
+\mbox{\hyperlink{namespaceSSAGES_afbb26053e292f94ea83b1c441ce6df74}{Label}} \mbox{\hyperlink{classSSAGES_1_1RMSDCV_a8bc8d0a33881d309b76acdbd93d689c8}{atomids\+\_\+}}
+\begin{DoxyCompactList}\small\item\em I\+Ds of the atoms used for R\+M\+SD calculation. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classSSAGES_1_1RMSDCV_a34f0728712086c337f4a4239842d39af}\label{classSSAGES_1_1RMSDCV_a34f0728712086c337f4a4239842d39af}} 
+std\+::string \mbox{\hyperlink{classSSAGES_1_1RMSDCV_a34f0728712086c337f4a4239842d39af}{xyzfile\+\_\+}}
+\begin{DoxyCompactList}\small\item\em Name of model structure. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classSSAGES_1_1RMSDCV_acae069d44ecd23091cdf43e3ba9bfce1}\label{classSSAGES_1_1RMSDCV_acae069d44ecd23091cdf43e3ba9bfce1}} 
+std\+::vector$<$ \mbox{\hyperlink{namespaceSSAGES_a630084a0a5e185e89e21b3735f8f8b2e}{Vector3}} $>$ \mbox{\hyperlink{classSSAGES_1_1RMSDCV_acae069d44ecd23091cdf43e3ba9bfce1}{refcoord\+\_\+}}
+\begin{DoxyCompactList}\small\item\em Store reference structure coordinates. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classSSAGES_1_1RMSDCV_afb37312a2c477a231a1ef748171b87af}\label{classSSAGES_1_1RMSDCV_afb37312a2c477a231a1ef748171b87af}} 
+\mbox{\hyperlink{namespaceSSAGES_a630084a0a5e185e89e21b3735f8f8b2e}{Vector3}} \mbox{\hyperlink{classSSAGES_1_1RMSDCV_afb37312a2c477a231a1ef748171b87af}{C\+O\+Mref\+\_\+}}
+\begin{DoxyCompactList}\small\item\em Center of mass of reference. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Collective variable to calculate root mean square displacement. 
+
+R\+M\+SD calculation performed as reported in Coutsias, E. A., Seok, C., and Dill, K. A., \char`\"{}\+Using Quaternions to Calculate R\+M\+S\+D\char`\"{}, J. Comput. Chem. 25\+: 1849-\/1857, 2004 
+
+Definition at line 42 of file R\+M\+S\+D\+C\+V.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classSSAGES_1_1RMSDCV_abb46de7eb9e6c8cced1efb73d72636ec}\label{classSSAGES_1_1RMSDCV_abb46de7eb9e6c8cced1efb73d72636ec}} 
+\index{SSAGES::RMSDCV@{SSAGES::RMSDCV}!RMSDCV@{RMSDCV}}
+\index{RMSDCV@{RMSDCV}!SSAGES::RMSDCV@{SSAGES::RMSDCV}}
+\doxysubsubsection{\texorpdfstring{RMSDCV()}{RMSDCV()}}
+{\footnotesize\ttfamily S\+S\+A\+G\+E\+S\+::\+R\+M\+S\+D\+C\+V\+::\+R\+M\+S\+D\+CV (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespaceSSAGES_afbb26053e292f94ea83b1c441ce6df74}{Label}} \&}]{atomids,  }\item[{std\+::string}]{xyzfile,  }\item[{bool}]{use\+\_\+range = {\ttfamily false} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em atomids} & I\+Ds of the atoms defining R\+M\+SD. \\
+\hline
+{\em xyzfile} & String determining the reference file. \\
+\hline
+{\em use\+\_\+range} & If {\ttfamily True} Use range of atoms defined by the two atoms in atomids.\\
+\hline
+\end{DoxyParams}
+Construct a R\+M\+SD CV.
+
+\begin{DoxyRefDesc}{Todo}
+\item[\mbox{\hyperlink{todo__todo000008}{Todo}}]Bounds needs to be an input and periodic boundary conditions \end{DoxyRefDesc}
+
+
+Definition at line 68 of file R\+M\+S\+D\+C\+V.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{68                                                                                 :}
+\DoxyCodeLine{69         \mbox{\hyperlink{classSSAGES_1_1RMSDCV_a8bc8d0a33881d309b76acdbd93d689c8}{atomids\_}}(atomids), \mbox{\hyperlink{classSSAGES_1_1RMSDCV_a34f0728712086c337f4a4239842d39af}{xyzfile\_}}(xyzfile)}
+\DoxyCodeLine{70         \{}
+\DoxyCodeLine{71             \textcolor{keywordflow}{if}(use\_range)}
+\DoxyCodeLine{72             \{}
+\DoxyCodeLine{73                 \textcolor{keywordflow}{if}(atomids.size() != 2)}
+\DoxyCodeLine{74                 \{}
+\DoxyCodeLine{75                     \textcolor{keywordflow}{throw} BuildException(\{}
+\DoxyCodeLine{76                         \textcolor{stringliteral}{"RMSDCV: With use\_range, expected 2 atoms, but found "} +}
+\DoxyCodeLine{77                         std::to\_string(atomids.size()) + \textcolor{stringliteral}{"."}}
+\DoxyCodeLine{78                     \});}
+\DoxyCodeLine{79                 \}}
+\DoxyCodeLine{80 }
+\DoxyCodeLine{81                 \mbox{\hyperlink{classSSAGES_1_1RMSDCV_a8bc8d0a33881d309b76acdbd93d689c8}{atomids\_}}.clear();}
+\DoxyCodeLine{82                 \textcolor{keywordflow}{if}(atomids[0] >= atomids[1])}
+\DoxyCodeLine{83                 \{}
+\DoxyCodeLine{84                     \textcolor{keywordflow}{throw} BuildException(\{}
+\DoxyCodeLine{85                         \textcolor{stringliteral}{"RMSDCV: Atom range must be strictly increasing."}}
+\DoxyCodeLine{86                     \});}
+\DoxyCodeLine{87                 \}}
+\DoxyCodeLine{88                 \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i = atomids[0]; i <= atomids[1]; ++i)}
+\DoxyCodeLine{89                 \{}
+\DoxyCodeLine{90                     \mbox{\hyperlink{classSSAGES_1_1RMSDCV_a8bc8d0a33881d309b76acdbd93d689c8}{atomids\_}}.push\_back(i);}
+\DoxyCodeLine{91                 \}}
+\DoxyCodeLine{92             \}}
+\DoxyCodeLine{93         \}}
+
+\end{DoxyCode}
+
+
+References atomids\+\_\+.
+
+
+
+Referenced by Build().
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classSSAGES_1_1RMSDCV_abb46de7eb9e6c8cced1efb73d72636ec_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classSSAGES_1_1RMSDCV_ac74e72f38b333070f66d6ae383a860a1}\label{classSSAGES_1_1RMSDCV_ac74e72f38b333070f66d6ae383a860a1}} 
+\index{SSAGES::RMSDCV@{SSAGES::RMSDCV}!Build@{Build}}
+\index{Build@{Build}!SSAGES::RMSDCV@{SSAGES::RMSDCV}}
+\doxysubsubsection{\texorpdfstring{Build()}{Build()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classSSAGES_1_1RMSDCV}{R\+M\+S\+D\+CV}}$\ast$ S\+S\+A\+G\+E\+S\+::\+R\+M\+S\+D\+C\+V\+::\+Build (\begin{DoxyParamCaption}\item[{const Json\+::\+Value \&}]{json,  }\item[{const std\+::string \&}]{path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Set up collective variable. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em json} & \mbox{\hyperlink{namespaceJSON}{J\+S\+ON}} input value. \\
+\hline
+{\em path} & Path for \mbox{\hyperlink{namespaceJSON}{J\+S\+ON}} path specification. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pointer to the CV built by this function. {\ttfamily nullptr} in case of unknown error.
+\end{DoxyReturn}
+Builds a CV from a \mbox{\hyperlink{namespaceJSON}{J\+S\+ON}} node. Returns a pointer to the built cv. If an unknown error is encountered, this function will return a {\ttfamily nullptr}, but generally it will throw a \mbox{\hyperlink{classSSAGES_1_1BuildException}{Build\+Exception}} on failure. \begin{DoxyWarning}{Warning}
+Object lifetime is the caller\textquotesingle{}s responsibility. 
+\end{DoxyWarning}
+
+
+Definition at line 244 of file R\+M\+S\+D\+C\+V.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{245         \{}
+\DoxyCodeLine{246             \mbox{\hyperlink{classJson_1_1ObjectRequirement}{Json::ObjectRequirement}} validator;}
+\DoxyCodeLine{247             Json::Value schema;}
+\DoxyCodeLine{248             Json::CharReaderBuilder rbuilder;}
+\DoxyCodeLine{249             Json::CharReader* reader = rbuilder.newCharReader();}
+\DoxyCodeLine{250 }
+\DoxyCodeLine{251             reader-\/>parse(JsonSchema::RMSDCV.c\_str(),}
+\DoxyCodeLine{252                           JsonSchema::RMSDCV.c\_str() + JsonSchema::RMSDCV.size(),}
+\DoxyCodeLine{253                           \&schema, NULL);}
+\DoxyCodeLine{254             validator.\mbox{\hyperlink{classJson_1_1ObjectRequirement_a4ed02ae1d612a5efba1688fcdd2df092}{Parse}}(schema, path);}
+\DoxyCodeLine{255 }
+\DoxyCodeLine{256             \textcolor{comment}{//Validate inputs}}
+\DoxyCodeLine{257             validator.\mbox{\hyperlink{classJson_1_1ObjectRequirement_a9ac3b920001a35bc70580035d8d802b7}{Validate}}(json, path);}
+\DoxyCodeLine{258             \textcolor{keywordflow}{if}(validator.\mbox{\hyperlink{classJson_1_1Requirement_adfaec336a9f051d6f6b9a6d7f1d97b75}{HasErrors}}())}
+\DoxyCodeLine{259                     \textcolor{keywordflow}{throw} BuildException(validator.\mbox{\hyperlink{classJson_1_1Requirement_a60bc275c366eb59f192fa2e621268480}{GetErrors}}());}
+\DoxyCodeLine{260 }
+\DoxyCodeLine{261             std::vector<int> atom\_ids;}
+\DoxyCodeLine{262             \textcolor{keywordflow}{for}(\textcolor{keyword}{auto}\& s : json[\textcolor{stringliteral}{"atom\_ids"}])}
+\DoxyCodeLine{263                 atom\_ids.push\_back(s.asInt());}
+\DoxyCodeLine{264             \textcolor{keyword}{auto} reference = json[\textcolor{stringliteral}{"reference"}].asString();}
+\DoxyCodeLine{265             \textcolor{keyword}{auto} use\_range = json.get(\textcolor{stringliteral}{"use\_range"},\textcolor{keyword}{false}).asBool();}
+\DoxyCodeLine{266 }
+\DoxyCodeLine{267             \textcolor{keywordflow}{return} \textcolor{keyword}{new} \mbox{\hyperlink{classSSAGES_1_1RMSDCV_abb46de7eb9e6c8cced1efb73d72636ec}{RMSDCV}}(atom\_ids, reference, use\_range);}
+\DoxyCodeLine{268         \}}
+
+\end{DoxyCode}
+
+
+References Json\+::\+Requirement\+::\+Get\+Errors(), Json\+::\+Requirement\+::\+Has\+Errors(), Json\+::\+Object\+Requirement\+::\+Parse(), R\+M\+S\+D\+C\+V(), and Json\+::\+Object\+Requirement\+::\+Validate().
+
+
+
+Referenced by S\+S\+A\+G\+E\+S\+::\+Collective\+Variable\+::\+Build\+C\+V().
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classSSAGES_1_1RMSDCV_ac74e72f38b333070f66d6ae383a860a1_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classSSAGES_1_1RMSDCV_ac74e72f38b333070f66d6ae383a860a1_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classSSAGES_1_1RMSDCV_aff77158b643fec57c6d1649a78b0dd14}\label{classSSAGES_1_1RMSDCV_aff77158b643fec57c6d1649a78b0dd14}} 
+\index{SSAGES::RMSDCV@{SSAGES::RMSDCV}!Evaluate@{Evaluate}}
+\index{Evaluate@{Evaluate}!SSAGES::RMSDCV@{SSAGES::RMSDCV}}
+\doxysubsubsection{\texorpdfstring{Evaluate()}{Evaluate()}}
+{\footnotesize\ttfamily void S\+S\+A\+G\+E\+S\+::\+R\+M\+S\+D\+C\+V\+::\+Evaluate (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classSSAGES_1_1Snapshot}{Snapshot}} \&}]{snapshot }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}}
+
+
+
+Evaluate the CV. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em snapshot} & Current simulation snapshot. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 162 of file R\+M\+S\+D\+C\+V.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{163         \{}
+\DoxyCodeLine{164             \textcolor{comment}{// Get local atom indices.}}
+\DoxyCodeLine{165             \mbox{\hyperlink{namespaceSSAGES_afbb26053e292f94ea83b1c441ce6df74}{Label}} idx;}
+\DoxyCodeLine{166             snapshot.GetLocalIndices(\mbox{\hyperlink{classSSAGES_1_1RMSDCV_a8bc8d0a33881d309b76acdbd93d689c8}{atomids\_}}, \&idx);}
+\DoxyCodeLine{167 }
+\DoxyCodeLine{168             \textcolor{comment}{// Get data from snapshot.}}
+\DoxyCodeLine{169             \textcolor{keyword}{const} \textcolor{keyword}{auto}\& masses = snapshot.GetMasses();}
+\DoxyCodeLine{170             \textcolor{keyword}{const} \textcolor{keyword}{auto}\& pos = snapshot.GetPositions();}
+\DoxyCodeLine{171             \textcolor{keywordtype}{double} masstot = snapshot.TotalMass(idx);}
+\DoxyCodeLine{172 }
+\DoxyCodeLine{173             \textcolor{comment}{// Initialize gradient.}}
+\DoxyCodeLine{174             std::fill(\mbox{\hyperlink{classSSAGES_1_1CollectiveVariable_a390202f6e541da879f1cfcde22c49489}{grad\_}}.begin(), \mbox{\hyperlink{classSSAGES_1_1CollectiveVariable_a390202f6e541da879f1cfcde22c49489}{grad\_}}.end(), \mbox{\hyperlink{namespaceSSAGES_a630084a0a5e185e89e21b3735f8f8b2e}{Vector3}}\{0,0,0\});}
+\DoxyCodeLine{175             \mbox{\hyperlink{classSSAGES_1_1CollectiveVariable_a390202f6e541da879f1cfcde22c49489}{grad\_}}.resize(snapshot.GetNumAtoms(), \mbox{\hyperlink{namespaceSSAGES_a630084a0a5e185e89e21b3735f8f8b2e}{Vector3}}\{0,0,0\});}
+\DoxyCodeLine{176 }
+\DoxyCodeLine{177             \textcolor{comment}{// Calculate center of mass}}
+\DoxyCodeLine{178             \mbox{\hyperlink{namespaceSSAGES_a630084a0a5e185e89e21b3735f8f8b2e}{Vector3}} COM\_ = snapshot.CenterOfMass(idx);}
+\DoxyCodeLine{179 }
+\DoxyCodeLine{180             \textcolor{comment}{// Build correlation matrix}}
+\DoxyCodeLine{181             \mbox{\hyperlink{namespaceSSAGES_a306e635f4b20f86fbc726fbf9a5d11a8}{Matrix3}} R = Matrix3::Zero();}
+\DoxyCodeLine{182 }
+\DoxyCodeLine{183             \mbox{\hyperlink{namespaceSSAGES_a630084a0a5e185e89e21b3735f8f8b2e}{Vector3}} diff, diff\_ref;}
+\DoxyCodeLine{184             \textcolor{keywordtype}{double} part\_RMSD = 0;}
+\DoxyCodeLine{185 }
+\DoxyCodeLine{186             \textcolor{keywordflow}{for}(\textcolor{keyword}{auto}\& i : idx)}
+\DoxyCodeLine{187             \{}
+\DoxyCodeLine{188                 diff = snapshot.ApplyMinimumImage(pos[i] -\/ COM\_);}
+\DoxyCodeLine{189                 diff\_ref = \mbox{\hyperlink{classSSAGES_1_1RMSDCV_acae069d44ecd23091cdf43e3ba9bfce1}{refcoord\_}}[i] -\/ \mbox{\hyperlink{classSSAGES_1_1RMSDCV_afb37312a2c477a231a1ef748171b87af}{COMref\_}}; \textcolor{comment}{// Reference has no "box" or minimum image}}
+\DoxyCodeLine{190 }
+\DoxyCodeLine{191                 R.noalias() += masses[i]*diff*diff\_ref.transpose();}
+\DoxyCodeLine{192 }
+\DoxyCodeLine{193                 part\_RMSD += masses[i]*(diff.squaredNorm() + diff\_ref.squaredNorm());}
+\DoxyCodeLine{194             \}}
+\DoxyCodeLine{195             MPI\_Allreduce(MPI\_IN\_PLACE, R.data(), R.size(), MPI\_DOUBLE, MPI\_SUM, snapshot.GetCommunicator());}
+\DoxyCodeLine{196             MPI\_Allreduce(MPI\_IN\_PLACE, \&part\_RMSD, 1, MPI\_DOUBLE, MPI\_SUM, snapshot.GetCommunicator());}
+\DoxyCodeLine{197             R /= masstot;}
+\DoxyCodeLine{198             part\_RMSD /= masstot;}
+\DoxyCodeLine{199 }
+\DoxyCodeLine{200             Eigen::Matrix4d F;}
+\DoxyCodeLine{201             F(0,0) = R(0,0) + R(1,1) + R(2,2);}
+\DoxyCodeLine{202             F(1,0) = R(1,2) -\/ R(2,1);}
+\DoxyCodeLine{203             F(2,0) = R(2,0) -\/ R(0,2);}
+\DoxyCodeLine{204             F(3,0) = R(0,1) -\/ R(1,0);}
+\DoxyCodeLine{205 }
+\DoxyCodeLine{206             F(0,1) = F(1,0);}
+\DoxyCodeLine{207             F(1,1) = R(0,0) -\/ R(1,1) -\/ R(2,2);}
+\DoxyCodeLine{208             F(2,1) = R(0,1) + R(1,0);}
+\DoxyCodeLine{209             F(3,1) = R(0,2) + R(2,0);}
+\DoxyCodeLine{210 }
+\DoxyCodeLine{211             F(0,2) = F(2,0);}
+\DoxyCodeLine{212             F(1,2) = F(2,1);}
+\DoxyCodeLine{213             F(2,2) = -\/R(0,0) + R(1,1) -\/ R(2,2);}
+\DoxyCodeLine{214             F(3,2) = R(1,2) + R(2,1);}
+\DoxyCodeLine{215 }
+\DoxyCodeLine{216             F(0,3) = F(3,0);}
+\DoxyCodeLine{217             F(1,3) = F(3,1);}
+\DoxyCodeLine{218             F(2,3) = F(3,2);}
+\DoxyCodeLine{219             F(3,3) = -\/R(0,0) -\/ R(1,1) + R(2,2);}
+\DoxyCodeLine{220 }
+\DoxyCodeLine{221             \textcolor{comment}{//Find eigenvalues}}
+\DoxyCodeLine{222             Eigen::SelfAdjointEigenSolver<Eigen::Matrix4d> es(F);}
+\DoxyCodeLine{223             \textcolor{keyword}{auto} max\_lambda = es.eigenvalues().real()[3];}
+\DoxyCodeLine{224 }
+\DoxyCodeLine{225             \textcolor{comment}{// Calculate RMSD}}
+\DoxyCodeLine{226             \mbox{\hyperlink{classSSAGES_1_1CollectiveVariable_a65b17f3e9b3c967ad42814c3eec88bb2}{val\_}} = sqrt(part\_RMSD -\/ (2*max\_lambda));}
+\DoxyCodeLine{227 }
+\DoxyCodeLine{228             \textcolor{comment}{// If RMSD is zero, we have nothing to do.}}
+\DoxyCodeLine{229             \textcolor{keywordflow}{if}(\mbox{\hyperlink{classSSAGES_1_1CollectiveVariable_a65b17f3e9b3c967ad42814c3eec88bb2}{val\_}} == 0) \textcolor{keywordflow}{return};}
+\DoxyCodeLine{230 }
+\DoxyCodeLine{231             \textcolor{comment}{// Calculate gradient}}
+\DoxyCodeLine{232             \textcolor{keyword}{auto} ev = es.eigenvectors().real().col(3);}
+\DoxyCodeLine{233             \textcolor{keyword}{auto} q = Eigen::Quaterniond(ev(0),ev(1),ev(2),ev(3));}
+\DoxyCodeLine{234             \mbox{\hyperlink{namespaceSSAGES_a306e635f4b20f86fbc726fbf9a5d11a8}{Matrix3}} RotMatrix = q.toRotationMatrix();}
+\DoxyCodeLine{235 }
+\DoxyCodeLine{236             \textcolor{keywordflow}{for}(\textcolor{keyword}{auto}\& i : idx)}
+\DoxyCodeLine{237             \{}
+\DoxyCodeLine{238                 \textcolor{keyword}{auto} rotref = RotMatrix.transpose()*(\mbox{\hyperlink{classSSAGES_1_1RMSDCV_acae069d44ecd23091cdf43e3ba9bfce1}{refcoord\_}}[i] -\/ \mbox{\hyperlink{classSSAGES_1_1RMSDCV_afb37312a2c477a231a1ef748171b87af}{COMref\_}});}
+\DoxyCodeLine{239                 \mbox{\hyperlink{classSSAGES_1_1CollectiveVariable_a390202f6e541da879f1cfcde22c49489}{grad\_}}[i] = masses[i]/masstot*(1-\/masses[i]/masstot)*(snapshot.ApplyMinimumImage(pos[i] -\/ COM\_) -\/ rotref)/\mbox{\hyperlink{classSSAGES_1_1CollectiveVariable_a65b17f3e9b3c967ad42814c3eec88bb2}{val\_}};}
+\DoxyCodeLine{240             \}}
+\DoxyCodeLine{241         \}}
+
+\end{DoxyCode}
+
+
+References S\+S\+A\+G\+E\+S\+::\+Snapshot\+::\+Apply\+Minimum\+Image(), atomids\+\_\+, S\+S\+A\+G\+E\+S\+::\+Snapshot\+::\+Center\+Of\+Mass(), C\+O\+Mref\+\_\+, S\+S\+A\+G\+E\+S\+::\+Snapshot\+::\+Get\+Communicator(), S\+S\+A\+G\+E\+S\+::\+Snapshot\+::\+Get\+Local\+Indices(), S\+S\+A\+G\+E\+S\+::\+Snapshot\+::\+Get\+Masses(), S\+S\+A\+G\+E\+S\+::\+Snapshot\+::\+Get\+Num\+Atoms(), S\+S\+A\+G\+E\+S\+::\+Snapshot\+::\+Get\+Positions(), S\+S\+A\+G\+E\+S\+::\+Collective\+Variable\+::grad\+\_\+, refcoord\+\_\+, S\+S\+A\+G\+E\+S\+::\+Snapshot\+::\+Total\+Mass(), and S\+S\+A\+G\+E\+S\+::\+Collective\+Variable\+::val\+\_\+.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classSSAGES_1_1RMSDCV_aff77158b643fec57c6d1649a78b0dd14_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classSSAGES_1_1RMSDCV_a7e82843aa5d4eae3ada4ea26a7e6502a}\label{classSSAGES_1_1RMSDCV_a7e82843aa5d4eae3ada4ea26a7e6502a}} 
+\index{SSAGES::RMSDCV@{SSAGES::RMSDCV}!Initialize@{Initialize}}
+\index{Initialize@{Initialize}!SSAGES::RMSDCV@{SSAGES::RMSDCV}}
+\doxysubsubsection{\texorpdfstring{Initialize()}{Initialize()}}
+{\footnotesize\ttfamily void S\+S\+A\+G\+E\+S\+::\+R\+M\+S\+D\+C\+V\+::\+Initialize (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classSSAGES_1_1Snapshot}{Snapshot}} \&}]{snapshot }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}}
+
+
+
+Initialize necessary variables. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em snapshot} & Current simulation snapshot. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 99 of file R\+M\+S\+D\+C\+V.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{100         \{}
+\DoxyCodeLine{101             \textcolor{keyword}{const} \textcolor{keyword}{auto}\& masses = snapshot.GetMasses();}
+\DoxyCodeLine{102             \textcolor{keyword}{auto} n = \mbox{\hyperlink{classSSAGES_1_1RMSDCV_a8bc8d0a33881d309b76acdbd93d689c8}{atomids\_}}.size();}
+\DoxyCodeLine{103 }
+\DoxyCodeLine{104             \textcolor{comment}{// Make sure atom IDs are on at least one processor.}}
+\DoxyCodeLine{105             std::vector<int> found(n, 0);}
+\DoxyCodeLine{106             \textcolor{keywordflow}{for}(\textcolor{keywordtype}{size\_t} i = 0; i < n; ++i)}
+\DoxyCodeLine{107             \{}
+\DoxyCodeLine{108                 \textcolor{keywordflow}{if}(snapshot.GetLocalIndex(\mbox{\hyperlink{classSSAGES_1_1RMSDCV_a8bc8d0a33881d309b76acdbd93d689c8}{atomids\_}}[i]) != -\/1) found[i] = 1;}
+\DoxyCodeLine{109             \}}
+\DoxyCodeLine{110 }
+\DoxyCodeLine{111             MPI\_Allreduce(MPI\_IN\_PLACE, found.data(), n, MPI\_INT, MPI\_SUM, snapshot.GetCommunicator());}
+\DoxyCodeLine{112             \textcolor{keywordtype}{unsigned} ntot = std::accumulate(found.begin(), found.end(), 0, std::plus<int>());}
+\DoxyCodeLine{113             \textcolor{keywordflow}{if}(ntot != n)}
+\DoxyCodeLine{114             \{}
+\DoxyCodeLine{115                 \textcolor{keywordflow}{throw} BuildException(\{}
+\DoxyCodeLine{116                     \textcolor{stringliteral}{"RMSDCV: Expected to find "} + std::to\_string(n) +}
+\DoxyCodeLine{117                     \textcolor{stringliteral}{" atoms, but only found "} + std::to\_string(ntot) + \textcolor{stringliteral}{"."}}
+\DoxyCodeLine{118                 \});}
+\DoxyCodeLine{119             \}}
+\DoxyCodeLine{120 }
+\DoxyCodeLine{121             \mbox{\hyperlink{namespaceSSAGES_afbb26053e292f94ea83b1c441ce6df74}{Label}} idx;}
+\DoxyCodeLine{122             snapshot.GetLocalIndices(\mbox{\hyperlink{classSSAGES_1_1RMSDCV_a8bc8d0a33881d309b76acdbd93d689c8}{atomids\_}}, \&idx);}
+\DoxyCodeLine{123 }
+\DoxyCodeLine{124             std::vector<std::array<double,4>> xyzinfo = \mbox{\hyperlink{classSSAGES_1_1ReadFile_ad96b1c1dd8b4ff19020815f3058bb0a1}{ReadFile::ReadXYZ}}(\mbox{\hyperlink{classSSAGES_1_1RMSDCV_a34f0728712086c337f4a4239842d39af}{xyzfile\_}});}
+\DoxyCodeLine{125 }
+\DoxyCodeLine{126             \mbox{\hyperlink{classSSAGES_1_1RMSDCV_acae069d44ecd23091cdf43e3ba9bfce1}{refcoord\_}}.resize(snapshot.GetNumAtoms(), \mbox{\hyperlink{namespaceSSAGES_a630084a0a5e185e89e21b3735f8f8b2e}{Vector3}}\{0,0,0\});}
+\DoxyCodeLine{127 }
+\DoxyCodeLine{128             \textcolor{comment}{// Loop through atom positions}}
+\DoxyCodeLine{129             \textcolor{keywordflow}{for}(\textcolor{keywordtype}{size\_t} i = 0; i < xyzinfo.size(); ++i)}
+\DoxyCodeLine{130             \{}
+\DoxyCodeLine{131                 \textcolor{keywordtype}{int} \textcolor{keywordtype}{id} = snapshot.GetLocalIndex(xyzinfo[i][0]);}
+\DoxyCodeLine{132                 \textcolor{keywordflow}{if}(\textcolor{keywordtype}{id} == -\/1) \textcolor{keywordflow}{continue}; \textcolor{comment}{// Atom not found}}
+\DoxyCodeLine{133                 \textcolor{keywordflow}{for}(\textcolor{keywordtype}{size\_t} j = 0; j < \mbox{\hyperlink{classSSAGES_1_1RMSDCV_a8bc8d0a33881d309b76acdbd93d689c8}{atomids\_}}.size(); ++j)}
+\DoxyCodeLine{134                 \{}
+\DoxyCodeLine{135                     \textcolor{keywordflow}{if}(\mbox{\hyperlink{classSSAGES_1_1RMSDCV_a8bc8d0a33881d309b76acdbd93d689c8}{atomids\_}}[j] == xyzinfo[i][0])}
+\DoxyCodeLine{136                     \{}
+\DoxyCodeLine{137                         \mbox{\hyperlink{classSSAGES_1_1RMSDCV_acae069d44ecd23091cdf43e3ba9bfce1}{refcoord\_}}[id][0] = xyzinfo[i][1];}
+\DoxyCodeLine{138                         \mbox{\hyperlink{classSSAGES_1_1RMSDCV_acae069d44ecd23091cdf43e3ba9bfce1}{refcoord\_}}[id][1] = xyzinfo[i][2];}
+\DoxyCodeLine{139                         \mbox{\hyperlink{classSSAGES_1_1RMSDCV_acae069d44ecd23091cdf43e3ba9bfce1}{refcoord\_}}[id][2] = xyzinfo[i][3];}
+\DoxyCodeLine{140                     \}}
+\DoxyCodeLine{141                 \}}
+\DoxyCodeLine{142             \}}
+\DoxyCodeLine{143 }
+\DoxyCodeLine{144             \mbox{\hyperlink{namespaceSSAGES_a630084a0a5e185e89e21b3735f8f8b2e}{Vector3}} mass\_pos\_prod\_ref = Vector3::Zero();}
+\DoxyCodeLine{145             \textcolor{keywordtype}{double} total\_mass = 0;}
+\DoxyCodeLine{146 }
+\DoxyCodeLine{147             \textcolor{keywordflow}{for}(\textcolor{keyword}{auto}\& i : idx)}
+\DoxyCodeLine{148             \{}
+\DoxyCodeLine{149                 mass\_pos\_prod\_ref += masses[i]*\mbox{\hyperlink{classSSAGES_1_1RMSDCV_acae069d44ecd23091cdf43e3ba9bfce1}{refcoord\_}}[i];}
+\DoxyCodeLine{150                 total\_mass += masses[i];}
+\DoxyCodeLine{151             \}}
+\DoxyCodeLine{152             MPI\_Allreduce(MPI\_IN\_PLACE, mass\_pos\_prod\_ref.data(), mass\_pos\_prod\_ref.size(), MPI\_DOUBLE, MPI\_SUM, snapshot.GetCommunicator());}
+\DoxyCodeLine{153             MPI\_Allreduce(MPI\_IN\_PLACE, \&total\_mass, 1, MPI\_DOUBLE, MPI\_SUM, snapshot.GetCommunicator());}
+\DoxyCodeLine{154 }
+\DoxyCodeLine{155             \mbox{\hyperlink{classSSAGES_1_1RMSDCV_afb37312a2c477a231a1ef748171b87af}{COMref\_}} = mass\_pos\_prod\_ref/total\_mass;}
+\DoxyCodeLine{156         \}}
+
+\end{DoxyCode}
+
+
+References atomids\+\_\+, C\+O\+Mref\+\_\+, S\+S\+A\+G\+E\+S\+::\+Snapshot\+::\+Get\+Communicator(), S\+S\+A\+G\+E\+S\+::\+Snapshot\+::\+Get\+Local\+Index(), S\+S\+A\+G\+E\+S\+::\+Snapshot\+::\+Get\+Local\+Indices(), S\+S\+A\+G\+E\+S\+::\+Snapshot\+::\+Get\+Masses(), S\+S\+A\+G\+E\+S\+::\+Snapshot\+::\+Get\+Num\+Atoms(), S\+S\+A\+G\+E\+S\+::\+Read\+File\+::\+Read\+X\+Y\+Z(), refcoord\+\_\+, and xyzfile\+\_\+.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classSSAGES_1_1RMSDCV_a7e82843aa5d4eae3ada4ea26a7e6502a_cgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/michael/development/\+S\+S\+A\+G\+E\+S/src/\+C\+Vs/R\+M\+S\+D\+C\+V.\+h\end{DoxyCompactItemize}

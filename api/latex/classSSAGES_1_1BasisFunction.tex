@@ -1,0 +1,487 @@
+\hypertarget{classSSAGES_1_1BasisFunction}{}\doxysection{S\+S\+A\+G\+ES\+::Basis\+Function Class Reference}
+\label{classSSAGES_1_1BasisFunction}\index{SSAGES::BasisFunction@{SSAGES::BasisFunction}}
+
+
+Abstract class for all \mbox{\hyperlink{classSSAGES_1_1BasisFunction}{Basis\+Function}} inheritance.  
+
+
+
+
+{\ttfamily \#include $<$Basis.\+h$>$}
+
+
+
+Inheritance diagram for S\+S\+A\+G\+ES\+::Basis\+Function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classSSAGES_1_1BasisFunction__inherit__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classSSAGES_1_1BasisFunction_ae8360863efc413c047660e5bf1c5a342}{Basis\+Function}} (unsigned int poly\+Ord, unsigned int nbins, bool is\+Finite, bool zero\+Order, double bound\+Low, double bound\+Up)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+unsigned int \mbox{\hyperlink{classSSAGES_1_1BasisFunction_ab758b1c82c75cc2cacf844b70dabdfb9}{Get\+Order}} ()
+\begin{DoxyCompactList}\small\item\em Gets the order of the current polynomial. \end{DoxyCompactList}\item 
+unsigned int \mbox{\hyperlink{classSSAGES_1_1BasisFunction_a7163b00377cfa7194aa8cfeb81e1c937}{Get\+Bins}} ()
+\begin{DoxyCompactList}\small\item\em Gets the number of bins for the discretization. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classSSAGES_1_1BasisFunction_a6c28af6a553f0a17c977eef70da5cdaf}{Get\+Zero\+Order}} ()
+\begin{DoxyCompactList}\small\item\em Gets the flag for constant-\/order polynomials. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classSSAGES_1_1BasisFunction_afbaac723c85ca67a2eb96508070913ca}{Get\+Lower}} ()
+\begin{DoxyCompactList}\small\item\em Gets the lower bound on the CV. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classSSAGES_1_1BasisFunction_a0a4755e26da39ad356283131eec5966e}{Get\+Upper}} ()
+\begin{DoxyCompactList}\small\item\em Gets the upper bound on the CV. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classSSAGES_1_1BasisFunction_ab9ae1788e612971047fea3c28c739eff}{Get\+Range}} ()
+\begin{DoxyCompactList}\small\item\em Gets the magnitude of the range of bounds. \end{DoxyCompactList}\item 
+virtual double \mbox{\hyperlink{classSSAGES_1_1BasisFunction_a8a5a2db30d30ea50cc522162bf1a956e}{Get\+Norm}} (int order)
+\begin{DoxyCompactList}\small\item\em Gets the norm of the basis function. \end{DoxyCompactList}\item 
+virtual double \mbox{\hyperlink{classSSAGES_1_1BasisFunction_a7f08687dcc879ea034cf396af2f150db}{Evaluate}} (double val, int order)
+\begin{DoxyCompactList}\small\item\em Calculates the output of the basis function. \end{DoxyCompactList}\item 
+virtual double \mbox{\hyperlink{classSSAGES_1_1BasisFunction_a169fac181260d66f8a778eeae53aa3d4}{Eval\+Grad}} (double val, int order)
+\begin{DoxyCompactList}\small\item\em Calculates the gradient of the basis function. \end{DoxyCompactList}\item 
+virtual double \mbox{\hyperlink{classSSAGES_1_1BasisFunction_adfc544d25046fb83f1b40296d08b7b30}{Weight}} (double val)
+\begin{DoxyCompactList}\small\item\em Calculates the gradient of the basis function. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classSSAGES_1_1BasisFunction_a605db4ad24337ffecc6178d5a6c1a5c7}\label{classSSAGES_1_1BasisFunction_a605db4ad24337ffecc6178d5a6c1a5c7}} 
+virtual \mbox{\hyperlink{classSSAGES_1_1BasisFunction_a605db4ad24337ffecc6178d5a6c1a5c7}{$\sim$\+Basis\+Function}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classSSAGES_1_1BasisFunction}{Basis\+Function}} $\ast$ \mbox{\hyperlink{classSSAGES_1_1BasisFunction_a25b1e4f6b8655529bb4b68268dfdcdb5}{Build}} (const Json\+::\+Value \&json, const std\+::string \&path, unsigned int nbins)
+\begin{DoxyCompactList}\small\item\em Build \mbox{\hyperlink{classSSAGES_1_1BasisFunction}{Basis\+Function}} from \mbox{\hyperlink{namespaceJSON}{J\+S\+ON}} value. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classSSAGES_1_1BasisFunction_acb20c103d9ae654cdec5d414938fe161}\label{classSSAGES_1_1BasisFunction_acb20c103d9ae654cdec5d414938fe161}} 
+unsigned int \mbox{\hyperlink{classSSAGES_1_1BasisFunction_acb20c103d9ae654cdec5d414938fe161}{poly\+Ord\+\_\+}}
+\begin{DoxyCompactList}\small\item\em Order of the polynomial. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classSSAGES_1_1BasisFunction_a819f3db0d72098ba3d6fc4ea71ec8a8c}\label{classSSAGES_1_1BasisFunction_a819f3db0d72098ba3d6fc4ea71ec8a8c}} 
+unsigned int \mbox{\hyperlink{classSSAGES_1_1BasisFunction_a819f3db0d72098ba3d6fc4ea71ec8a8c}{nbins\+\_\+}}
+\begin{DoxyCompactList}\small\item\em Number of bins. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classSSAGES_1_1BasisFunction_ae8261749dce32333c8b55e7596c86e38}\label{classSSAGES_1_1BasisFunction_ae8261749dce32333c8b55e7596c86e38}} 
+bool \mbox{\hyperlink{classSSAGES_1_1BasisFunction_ae8261749dce32333c8b55e7596c86e38}{is\+Finite\+\_\+}}
+\begin{DoxyCompactList}\small\item\em Flag for finite-\/range polynomials. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classSSAGES_1_1BasisFunction_a38ef16cf98fa14f6899193b66ba54068}\label{classSSAGES_1_1BasisFunction_a38ef16cf98fa14f6899193b66ba54068}} 
+bool \mbox{\hyperlink{classSSAGES_1_1BasisFunction_a38ef16cf98fa14f6899193b66ba54068}{zero\+Order\+\_\+}}
+\begin{DoxyCompactList}\small\item\em Flag for constant-\/order polynomials. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classSSAGES_1_1BasisFunction_a62a9908f1df0c80cbe62a20edfa7e89a}\label{classSSAGES_1_1BasisFunction_a62a9908f1df0c80cbe62a20edfa7e89a}} 
+double \mbox{\hyperlink{classSSAGES_1_1BasisFunction_a62a9908f1df0c80cbe62a20edfa7e89a}{bound\+Low\+\_\+}}
+\begin{DoxyCompactList}\small\item\em Lower bound on CV. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classSSAGES_1_1BasisFunction_a6dccdfa3e1107fbc24c0212f7a67fa2e}\label{classSSAGES_1_1BasisFunction_a6dccdfa3e1107fbc24c0212f7a67fa2e}} 
+double \mbox{\hyperlink{classSSAGES_1_1BasisFunction_a6dccdfa3e1107fbc24c0212f7a67fa2e}{bound\+Up\+\_\+}}
+\begin{DoxyCompactList}\small\item\em Upper bound on CV. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Abstract class for all \mbox{\hyperlink{classSSAGES_1_1BasisFunction}{Basis\+Function}} inheritance. 
+
+Definition at line 61 of file Basis.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classSSAGES_1_1BasisFunction_ae8360863efc413c047660e5bf1c5a342}\label{classSSAGES_1_1BasisFunction_ae8360863efc413c047660e5bf1c5a342}} 
+\index{SSAGES::BasisFunction@{SSAGES::BasisFunction}!BasisFunction@{BasisFunction}}
+\index{BasisFunction@{BasisFunction}!SSAGES::BasisFunction@{SSAGES::BasisFunction}}
+\doxysubsubsection{\texorpdfstring{BasisFunction()}{BasisFunction()}}
+{\footnotesize\ttfamily S\+S\+A\+G\+E\+S\+::\+Basis\+Function\+::\+Basis\+Function (\begin{DoxyParamCaption}\item[{unsigned int}]{poly\+Ord,  }\item[{unsigned int}]{nbins,  }\item[{bool}]{is\+Finite,  }\item[{bool}]{zero\+Order,  }\item[{double}]{bound\+Low,  }\item[{double}]{bound\+Up }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em poly\+Ord} & Order of polynomial. \\
+\hline
+{\em nbins} & Number of bins. \\
+\hline
+{\em is\+Finite} & Flag for finite-\/range polynomials. \\
+\hline
+{\em zero\+Order} & Flag for constant-\/order polynomials. \\
+\hline
+{\em bound\+Low} & Lower bounds of restraint springs. \\
+\hline
+{\em bound\+Up} & Upper bounds of restraint springs.\\
+\hline
+\end{DoxyParams}
+Constructs an instance of the Basis function class, which can have multiple different inherited forms. 
+
+Definition at line 84 of file Basis.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{89                                       :}
+\DoxyCodeLine{90         \mbox{\hyperlink{classSSAGES_1_1BasisFunction_acb20c103d9ae654cdec5d414938fe161}{polyOrd\_}}(polyOrd), \mbox{\hyperlink{classSSAGES_1_1BasisFunction_a819f3db0d72098ba3d6fc4ea71ec8a8c}{nbins\_}}(nbins), \mbox{\hyperlink{classSSAGES_1_1BasisFunction_ae8261749dce32333c8b55e7596c86e38}{isFinite\_}}(isFinite), \mbox{\hyperlink{classSSAGES_1_1BasisFunction_a38ef16cf98fa14f6899193b66ba54068}{zeroOrder\_}}(zeroOrder),}
+\DoxyCodeLine{91         \mbox{\hyperlink{classSSAGES_1_1BasisFunction_a62a9908f1df0c80cbe62a20edfa7e89a}{boundLow\_}}(boundLow), \mbox{\hyperlink{classSSAGES_1_1BasisFunction_a6dccdfa3e1107fbc24c0212f7a67fa2e}{boundUp\_}}(boundUp)}
+\DoxyCodeLine{92         \{}
+\DoxyCodeLine{93         \}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classSSAGES_1_1BasisFunction_a25b1e4f6b8655529bb4b68268dfdcdb5}\label{classSSAGES_1_1BasisFunction_a25b1e4f6b8655529bb4b68268dfdcdb5}} 
+\index{SSAGES::BasisFunction@{SSAGES::BasisFunction}!Build@{Build}}
+\index{Build@{Build}!SSAGES::BasisFunction@{SSAGES::BasisFunction}}
+\doxysubsubsection{\texorpdfstring{Build()}{Build()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classSSAGES_1_1BasisFunction}{Basis\+Function}} $\ast$ S\+S\+A\+G\+E\+S\+::\+Basis\+Function\+::\+Build (\begin{DoxyParamCaption}\item[{const Json\+::\+Value \&}]{json,  }\item[{const std\+::string \&}]{path,  }\item[{unsigned int}]{nbins }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Build \mbox{\hyperlink{classSSAGES_1_1BasisFunction}{Basis\+Function}} from \mbox{\hyperlink{namespaceJSON}{J\+S\+ON}} value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em json} & \mbox{\hyperlink{namespaceJSON}{J\+S\+ON}} value node. \\
+\hline
+{\em path} & Path for \mbox{\hyperlink{namespaceJSON}{J\+S\+ON}} path specification. \\
+\hline
+{\em nbins} & Number of bins.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pointer to new \mbox{\hyperlink{classSSAGES_1_1BasisFunction}{Basis\+Function}}. 
+\end{DoxyReturn}
+
+
+Definition at line 9 of file Basis.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{10     \{}
+\DoxyCodeLine{11         \textcolor{keyword}{auto} type = json.get(\textcolor{stringliteral}{"type"},\textcolor{stringliteral}{"none"}).asString();}
+\DoxyCodeLine{12         \textcolor{keywordflow}{if}(type == \textcolor{stringliteral}{"Legendre"})}
+\DoxyCodeLine{13             \textcolor{keywordflow}{return} \mbox{\hyperlink{classSSAGES_1_1Legendre_a4ee7c2d19068e883e11b9440b52af5e8}{Legendre::Build}}(json, path, nbins);}
+\DoxyCodeLine{14         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (type == \textcolor{stringliteral}{"Chebyshev"})}
+\DoxyCodeLine{15             \textcolor{keywordflow}{return} \mbox{\hyperlink{classSSAGES_1_1Chebyshev_af559eb52a138ce6dae0cd53f9d9be6ff}{Chebyshev::Build}}(json, path, nbins);}
+\DoxyCodeLine{16         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (type == \textcolor{stringliteral}{"Fourier"})}
+\DoxyCodeLine{17             \textcolor{keywordflow}{return} \mbox{\hyperlink{classSSAGES_1_1Fourier_a70564d65be5f9a3fd2ce6ee37f814761}{Fourier::Build}}(json, path, nbins);}
+\DoxyCodeLine{18         \textcolor{keywordflow}{else}}
+\DoxyCodeLine{19             \textcolor{keywordflow}{throw} std::invalid\_argument(\textcolor{stringliteral}{"Invalid basis set type \(\backslash\)""} + type + \textcolor{stringliteral}{"\(\backslash\)"."});}
+\DoxyCodeLine{20     \}}
+
+\end{DoxyCode}
+
+
+References S\+S\+A\+G\+E\+S\+::\+Chebyshev\+::\+Build(), S\+S\+A\+G\+E\+S\+::\+Legendre\+::\+Build(), and S\+S\+A\+G\+E\+S\+::\+Fourier\+::\+Build().
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classSSAGES_1_1BasisFunction_a25b1e4f6b8655529bb4b68268dfdcdb5_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classSSAGES_1_1BasisFunction_a169fac181260d66f8a778eeae53aa3d4}\label{classSSAGES_1_1BasisFunction_a169fac181260d66f8a778eeae53aa3d4}} 
+\index{SSAGES::BasisFunction@{SSAGES::BasisFunction}!EvalGrad@{EvalGrad}}
+\index{EvalGrad@{EvalGrad}!SSAGES::BasisFunction@{SSAGES::BasisFunction}}
+\doxysubsubsection{\texorpdfstring{EvalGrad()}{EvalGrad()}}
+{\footnotesize\ttfamily virtual double S\+S\+A\+G\+E\+S\+::\+Basis\+Function\+::\+Eval\+Grad (\begin{DoxyParamCaption}\item[{double}]{val,  }\item[{int}]{order }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Calculates the gradient of the basis function. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em val} & Input value for function. \\
+\hline
+{\em order} & Order of the polynomial.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Gradient for function. 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{classSSAGES_1_1Fourier_a1b105ef4f48a9585a43b07a1159df8fc}{S\+S\+A\+G\+E\+S\+::\+Fourier}}, \mbox{\hyperlink{classSSAGES_1_1Legendre_a2db2cb3a4e2017c3e0d05c5a007ca609}{S\+S\+A\+G\+E\+S\+::\+Legendre}}, and \mbox{\hyperlink{classSSAGES_1_1Chebyshev_a2cfb23d7b3b57fc7c936bc0789888cc8}{S\+S\+A\+G\+E\+S\+::\+Chebyshev}}.
+
+
+
+Definition at line 169 of file Basis.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{169                                                        \{}
+\DoxyCodeLine{170             UNUSED(val);}
+\DoxyCodeLine{171             UNUSED(order);}
+\DoxyCodeLine{172             \textcolor{keywordflow}{return} 0;}
+\DoxyCodeLine{173         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classSSAGES_1_1BasisFunction_a7f08687dcc879ea034cf396af2f150db}\label{classSSAGES_1_1BasisFunction_a7f08687dcc879ea034cf396af2f150db}} 
+\index{SSAGES::BasisFunction@{SSAGES::BasisFunction}!Evaluate@{Evaluate}}
+\index{Evaluate@{Evaluate}!SSAGES::BasisFunction@{SSAGES::BasisFunction}}
+\doxysubsubsection{\texorpdfstring{Evaluate()}{Evaluate()}}
+{\footnotesize\ttfamily virtual double S\+S\+A\+G\+E\+S\+::\+Basis\+Function\+::\+Evaluate (\begin{DoxyParamCaption}\item[{double}]{val,  }\item[{int}]{order }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Calculates the output of the basis function. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em val} & Input value for function. \\
+\hline
+{\em order} & Order of the polynomial.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Output value for function. 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{classSSAGES_1_1Fourier_a562b70d8d19783cba34e88699efa3a30}{S\+S\+A\+G\+E\+S\+::\+Fourier}}, \mbox{\hyperlink{classSSAGES_1_1Legendre_af34442a205982686a214e9165d333a68}{S\+S\+A\+G\+E\+S\+::\+Legendre}}, and \mbox{\hyperlink{classSSAGES_1_1Chebyshev_abfdbf46d4bd29102be98b0a2be159de2}{S\+S\+A\+G\+E\+S\+::\+Chebyshev}}.
+
+
+
+Definition at line 156 of file Basis.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{156                                                        \{}
+\DoxyCodeLine{157             UNUSED(val);}
+\DoxyCodeLine{158             UNUSED(order);}
+\DoxyCodeLine{159             \textcolor{keywordflow}{return} 0;}
+\DoxyCodeLine{160         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classSSAGES_1_1BasisFunction_a7163b00377cfa7194aa8cfeb81e1c937}\label{classSSAGES_1_1BasisFunction_a7163b00377cfa7194aa8cfeb81e1c937}} 
+\index{SSAGES::BasisFunction@{SSAGES::BasisFunction}!GetBins@{GetBins}}
+\index{GetBins@{GetBins}!SSAGES::BasisFunction@{SSAGES::BasisFunction}}
+\doxysubsubsection{\texorpdfstring{GetBins()}{GetBins()}}
+{\footnotesize\ttfamily unsigned int S\+S\+A\+G\+E\+S\+::\+Basis\+Function\+::\+Get\+Bins (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets the number of bins for the discretization. 
+
+\begin{DoxyReturn}{Returns}
+Number of bins. 
+\end{DoxyReturn}
+
+
+Definition at line 105 of file Basis.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{105 \{\textcolor{keywordflow}{return} \mbox{\hyperlink{classSSAGES_1_1BasisFunction_a819f3db0d72098ba3d6fc4ea71ec8a8c}{nbins\_}};\}}
+
+\end{DoxyCode}
+
+
+References nbins\+\_\+.
+
+\mbox{\Hypertarget{classSSAGES_1_1BasisFunction_afbaac723c85ca67a2eb96508070913ca}\label{classSSAGES_1_1BasisFunction_afbaac723c85ca67a2eb96508070913ca}} 
+\index{SSAGES::BasisFunction@{SSAGES::BasisFunction}!GetLower@{GetLower}}
+\index{GetLower@{GetLower}!SSAGES::BasisFunction@{SSAGES::BasisFunction}}
+\doxysubsubsection{\texorpdfstring{GetLower()}{GetLower()}}
+{\footnotesize\ttfamily double S\+S\+A\+G\+E\+S\+::\+Basis\+Function\+::\+Get\+Lower (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets the lower bound on the CV. 
+
+\begin{DoxyReturn}{Returns}
+Lower bound on CV. 
+\end{DoxyReturn}
+
+
+Definition at line 117 of file Basis.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{117 \{\textcolor{keywordflow}{return} \mbox{\hyperlink{classSSAGES_1_1BasisFunction_a62a9908f1df0c80cbe62a20edfa7e89a}{boundLow\_}};\}}
+
+\end{DoxyCode}
+
+
+References bound\+Low\+\_\+.
+
+\mbox{\Hypertarget{classSSAGES_1_1BasisFunction_a8a5a2db30d30ea50cc522162bf1a956e}\label{classSSAGES_1_1BasisFunction_a8a5a2db30d30ea50cc522162bf1a956e}} 
+\index{SSAGES::BasisFunction@{SSAGES::BasisFunction}!GetNorm@{GetNorm}}
+\index{GetNorm@{GetNorm}!SSAGES::BasisFunction@{SSAGES::BasisFunction}}
+\doxysubsubsection{\texorpdfstring{GetNorm()}{GetNorm()}}
+{\footnotesize\ttfamily virtual double S\+S\+A\+G\+E\+S\+::\+Basis\+Function\+::\+Get\+Norm (\begin{DoxyParamCaption}\item[{int}]{order }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Gets the norm of the basis function. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em order} & Order of the polynomial.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Norm of a specific order of polynomial. 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{classSSAGES_1_1Fourier_a5a953c5d2abae11f08f12a9a23b23a22}{S\+S\+A\+G\+E\+S\+::\+Fourier}}, \mbox{\hyperlink{classSSAGES_1_1Chebyshev_a0148abd7f8ee599eccc2e98c6b65410b}{S\+S\+A\+G\+E\+S\+::\+Chebyshev}}, and \mbox{\hyperlink{classSSAGES_1_1Legendre_a637cd774d54a6e52d38eae288fbcdd7d}{S\+S\+A\+G\+E\+S\+::\+Legendre}}.
+
+
+
+Definition at line 144 of file Basis.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{144                                           \{}
+\DoxyCodeLine{145             UNUSED(order);}
+\DoxyCodeLine{146             \textcolor{keywordflow}{return} 0;}
+\DoxyCodeLine{147         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classSSAGES_1_1BasisFunction_ab758b1c82c75cc2cacf844b70dabdfb9}\label{classSSAGES_1_1BasisFunction_ab758b1c82c75cc2cacf844b70dabdfb9}} 
+\index{SSAGES::BasisFunction@{SSAGES::BasisFunction}!GetOrder@{GetOrder}}
+\index{GetOrder@{GetOrder}!SSAGES::BasisFunction@{SSAGES::BasisFunction}}
+\doxysubsubsection{\texorpdfstring{GetOrder()}{GetOrder()}}
+{\footnotesize\ttfamily unsigned int S\+S\+A\+G\+E\+S\+::\+Basis\+Function\+::\+Get\+Order (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets the order of the current polynomial. 
+
+\begin{DoxyReturn}{Returns}
+Order of current polynomial. 
+\end{DoxyReturn}
+
+
+Definition at line 99 of file Basis.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{99 \{\textcolor{keywordflow}{return} \mbox{\hyperlink{classSSAGES_1_1BasisFunction_acb20c103d9ae654cdec5d414938fe161}{polyOrd\_}};\}}
+
+\end{DoxyCode}
+
+
+References poly\+Ord\+\_\+.
+
+\mbox{\Hypertarget{classSSAGES_1_1BasisFunction_ab9ae1788e612971047fea3c28c739eff}\label{classSSAGES_1_1BasisFunction_ab9ae1788e612971047fea3c28c739eff}} 
+\index{SSAGES::BasisFunction@{SSAGES::BasisFunction}!GetRange@{GetRange}}
+\index{GetRange@{GetRange}!SSAGES::BasisFunction@{SSAGES::BasisFunction}}
+\doxysubsubsection{\texorpdfstring{GetRange()}{GetRange()}}
+{\footnotesize\ttfamily double S\+S\+A\+G\+E\+S\+::\+Basis\+Function\+::\+Get\+Range (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets the magnitude of the range of bounds. 
+
+\begin{DoxyReturn}{Returns}
+Magnitude of range of bounds on CV. 
+\end{DoxyReturn}
+
+
+Definition at line 129 of file Basis.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{130         \{}
+\DoxyCodeLine{131             \textcolor{keywordflow}{if}(\mbox{\hyperlink{classSSAGES_1_1BasisFunction_ae8261749dce32333c8b55e7596c86e38}{isFinite\_}}) }
+\DoxyCodeLine{132                 \textcolor{keywordflow}{return} \mbox{\hyperlink{classSSAGES_1_1BasisFunction_a6dccdfa3e1107fbc24c0212f7a67fa2e}{boundUp\_}} -\/ \mbox{\hyperlink{classSSAGES_1_1BasisFunction_a62a9908f1df0c80cbe62a20edfa7e89a}{boundLow\_}};}
+\DoxyCodeLine{133             \textcolor{comment}{// No infinitely bounded basis functions are included currently so this is going to return nothing for right now}}
+\DoxyCodeLine{134             \textcolor{keywordflow}{else}}
+\DoxyCodeLine{135                 \textcolor{keywordflow}{return} 0.0;}
+\DoxyCodeLine{136         \}}
+
+\end{DoxyCode}
+
+
+References bound\+Low\+\_\+, bound\+Up\+\_\+, and is\+Finite\+\_\+.
+
+\mbox{\Hypertarget{classSSAGES_1_1BasisFunction_a0a4755e26da39ad356283131eec5966e}\label{classSSAGES_1_1BasisFunction_a0a4755e26da39ad356283131eec5966e}} 
+\index{SSAGES::BasisFunction@{SSAGES::BasisFunction}!GetUpper@{GetUpper}}
+\index{GetUpper@{GetUpper}!SSAGES::BasisFunction@{SSAGES::BasisFunction}}
+\doxysubsubsection{\texorpdfstring{GetUpper()}{GetUpper()}}
+{\footnotesize\ttfamily double S\+S\+A\+G\+E\+S\+::\+Basis\+Function\+::\+Get\+Upper (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets the upper bound on the CV. 
+
+\begin{DoxyReturn}{Returns}
+Upper bound on CV. 
+\end{DoxyReturn}
+
+
+Definition at line 123 of file Basis.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{123 \{\textcolor{keywordflow}{return} \mbox{\hyperlink{classSSAGES_1_1BasisFunction_a6dccdfa3e1107fbc24c0212f7a67fa2e}{boundUp\_}};\}}
+
+\end{DoxyCode}
+
+
+References bound\+Up\+\_\+.
+
+\mbox{\Hypertarget{classSSAGES_1_1BasisFunction_a6c28af6a553f0a17c977eef70da5cdaf}\label{classSSAGES_1_1BasisFunction_a6c28af6a553f0a17c977eef70da5cdaf}} 
+\index{SSAGES::BasisFunction@{SSAGES::BasisFunction}!GetZeroOrder@{GetZeroOrder}}
+\index{GetZeroOrder@{GetZeroOrder}!SSAGES::BasisFunction@{SSAGES::BasisFunction}}
+\doxysubsubsection{\texorpdfstring{GetZeroOrder()}{GetZeroOrder()}}
+{\footnotesize\ttfamily bool S\+S\+A\+G\+E\+S\+::\+Basis\+Function\+::\+Get\+Zero\+Order (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets the flag for constant-\/order polynomials. 
+
+\begin{DoxyReturn}{Returns}
+Flag for constant-\/order polynomials. 
+\end{DoxyReturn}
+
+
+Definition at line 111 of file Basis.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{111 \{\textcolor{keywordflow}{return} \mbox{\hyperlink{classSSAGES_1_1BasisFunction_a38ef16cf98fa14f6899193b66ba54068}{zeroOrder\_}};\}}
+
+\end{DoxyCode}
+
+
+References zero\+Order\+\_\+.
+
+\mbox{\Hypertarget{classSSAGES_1_1BasisFunction_adfc544d25046fb83f1b40296d08b7b30}\label{classSSAGES_1_1BasisFunction_adfc544d25046fb83f1b40296d08b7b30}} 
+\index{SSAGES::BasisFunction@{SSAGES::BasisFunction}!Weight@{Weight}}
+\index{Weight@{Weight}!SSAGES::BasisFunction@{SSAGES::BasisFunction}}
+\doxysubsubsection{\texorpdfstring{Weight()}{Weight()}}
+{\footnotesize\ttfamily virtual double S\+S\+A\+G\+E\+S\+::\+Basis\+Function\+::\+Weight (\begin{DoxyParamCaption}\item[{double}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Calculates the gradient of the basis function. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em val} & Input value for function.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Gradient of function. 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{classSSAGES_1_1Chebyshev_a83f2a3dd09162f39c97bcddb0679407d}{S\+S\+A\+G\+E\+S\+::\+Chebyshev}}.
+
+
+
+Definition at line 181 of file Basis.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{181                                           \{}
+\DoxyCodeLine{182             UNUSED(val);}
+\DoxyCodeLine{183             \textcolor{keywordflow}{return} 1;}
+\DoxyCodeLine{184         \}}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/michael/development/\+S\+S\+A\+G\+E\+S/src/\+Utility/Basis.\+h\item 
+/home/michael/development/\+S\+S\+A\+G\+E\+S/src/\+Utility/Basis.\+cpp\end{DoxyCompactItemize}

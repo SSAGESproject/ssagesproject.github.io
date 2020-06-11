@@ -1,0 +1,435 @@
+\hypertarget{classSSAGES_1_1AntiBetaRMSDCV}{}\doxysection{S\+S\+A\+G\+ES\+::Anti\+Beta\+R\+M\+S\+D\+CV Class Reference}
+\label{classSSAGES_1_1AntiBetaRMSDCV}\index{SSAGES::AntiBetaRMSDCV@{SSAGES::AntiBetaRMSDCV}}
+
+
+Collective variable to measure antiparallel beta secondary structure.  
+
+
+
+
+{\ttfamily \#include $<$Anti\+Beta\+R\+M\+S\+D\+C\+V.\+h$>$}
+
+
+
+Inheritance diagram for S\+S\+A\+G\+ES\+::Anti\+Beta\+R\+M\+S\+D\+CV\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=226pt]{classSSAGES_1_1AntiBetaRMSDCV__inherit__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classSSAGES_1_1AntiBetaRMSDCV_af96db83beb2e9985a36894ca3ff172b9}{Anti\+Beta\+R\+M\+S\+D\+CV}} (std\+::vector$<$ int $>$ resids, std\+::string refpdb, double unitconv, int mode)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classSSAGES_1_1AntiBetaRMSDCV_a493dc72ec667b4c3631ff091904f05e1}{Initialize}} (const \mbox{\hyperlink{classSSAGES_1_1Snapshot}{Snapshot}} \&snapshot) override
+\begin{DoxyCompactList}\small\item\em Initialize necessary variables. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classSSAGES_1_1AntiBetaRMSDCV_a89bdea4dde8b704a0ca773e0a0f79b1f}{Evaluate}} (const \mbox{\hyperlink{classSSAGES_1_1Snapshot}{Snapshot}} \&snapshot) override
+\begin{DoxyCompactList}\small\item\em Evaluate the CV. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classSSAGES_1_1AntiBetaRMSDCV}{Anti\+Beta\+R\+M\+S\+D\+CV}} $\ast$ \mbox{\hyperlink{classSSAGES_1_1AntiBetaRMSDCV_a4153e7b2aa827ac6367ec6374f986370}{Build}} (const Json\+::\+Value \&json, const std\+::string \&path)
+\begin{DoxyCompactList}\small\item\em Set up collective variable. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classSSAGES_1_1AntiBetaRMSDCV_a39288b5c919293453651b69966fc8000}\label{classSSAGES_1_1AntiBetaRMSDCV_a39288b5c919293453651b69966fc8000}} 
+std\+::vector$<$ int $>$ \mbox{\hyperlink{classSSAGES_1_1AntiBetaRMSDCV_a39288b5c919293453651b69966fc8000}{resids\+\_\+}}
+\begin{DoxyCompactList}\small\item\em Residue I\+Ds for secondary structure calculation. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classSSAGES_1_1AntiBetaRMSDCV_a5e85f46f65f5b022846d6a021593ce93}\label{classSSAGES_1_1AntiBetaRMSDCV_a5e85f46f65f5b022846d6a021593ce93}} 
+std\+::vector$<$ std\+::vector$<$ std\+::string $>$ $>$ \mbox{\hyperlink{classSSAGES_1_1AntiBetaRMSDCV_a5e85f46f65f5b022846d6a021593ce93}{atomids\+\_\+}}
+\begin{DoxyCompactList}\small\item\em Atom I\+Ds and chain I\+Ds for secondary structure calculation\+: backbone of resids\+\_\+. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classSSAGES_1_1AntiBetaRMSDCV_a9d779e483acbbc3f6e39226cdc773531}\label{classSSAGES_1_1AntiBetaRMSDCV_a9d779e483acbbc3f6e39226cdc773531}} 
+std\+::vector$<$ int $>$ \mbox{\hyperlink{classSSAGES_1_1AntiBetaRMSDCV_a9d779e483acbbc3f6e39226cdc773531}{ids\+\_\+only\+\_\+}}
+\begin{DoxyCompactList}\small\item\em Atom I\+Ds only, for secondary structure calculation\+: backbone atoms of resids\+\_\+. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classSSAGES_1_1AntiBetaRMSDCV_a5e1fa25ce51d980e0eec7905f8658049}\label{classSSAGES_1_1AntiBetaRMSDCV_a5e1fa25ce51d980e0eec7905f8658049}} 
+std\+::string \mbox{\hyperlink{classSSAGES_1_1AntiBetaRMSDCV_a5e1fa25ce51d980e0eec7905f8658049}{refpdb\+\_\+}}
+\begin{DoxyCompactList}\small\item\em Name of pdb reference for system. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classSSAGES_1_1AntiBetaRMSDCV_a51ec8a4bfe02776bff6acda6eb12ca4a}\label{classSSAGES_1_1AntiBetaRMSDCV_a51ec8a4bfe02776bff6acda6eb12ca4a}} 
+double \mbox{\hyperlink{classSSAGES_1_1AntiBetaRMSDCV_a51ec8a4bfe02776bff6acda6eb12ca4a}{unitconv\+\_\+}}
+\begin{DoxyCompactList}\small\item\em Length unit conversion\+: convert 1 nm to your internal MD units (ex. if using angstroms use 10) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classSSAGES_1_1AntiBetaRMSDCV_a3fa5f9f58e564ec684ff60976f005c4c}\label{classSSAGES_1_1AntiBetaRMSDCV_a3fa5f9f58e564ec684ff60976f005c4c}} 
+int \mbox{\hyperlink{classSSAGES_1_1AntiBetaRMSDCV_a3fa5f9f58e564ec684ff60976f005c4c}{mode\+\_\+}}
+\begin{DoxyCompactList}\small\item\em Specify whether to calculate beta sheet character in intra or inter mode\+: 0 for either, 1 for inter, 2 for intra. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classSSAGES_1_1AntiBetaRMSDCV_a17738e585c72dbb82f6188634706c017}\label{classSSAGES_1_1AntiBetaRMSDCV_a17738e585c72dbb82f6188634706c017}} 
+std\+::vector$<$ double $>$ \mbox{\hyperlink{classSSAGES_1_1AntiBetaRMSDCV_a17738e585c72dbb82f6188634706c017}{refdists\+\_\+}}
+\begin{DoxyCompactList}\small\item\em Pairwise distance between backbone atoms for reference structure. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Collective variable to measure antiparallel beta secondary structure. 
+
+Following treatment in Pietrucci and Laio, "A Collective Variable for the Efficient Exploration of Protein Beta-\/\+Sheet Structures\+: Application to S\+H3 and G\+B1", J\+C\+TC, 2009, 5(9)\+: 2197-\/2201.
+
+Check 2 blocks of 3 consecutive protein residues for R\+M\+SD from reference \char`\"{}ideal\char`\"{} antiparallel beta sheet structure. 
+
+Definition at line 43 of file Anti\+Beta\+R\+M\+S\+D\+C\+V.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classSSAGES_1_1AntiBetaRMSDCV_af96db83beb2e9985a36894ca3ff172b9}\label{classSSAGES_1_1AntiBetaRMSDCV_af96db83beb2e9985a36894ca3ff172b9}} 
+\index{SSAGES::AntiBetaRMSDCV@{SSAGES::AntiBetaRMSDCV}!AntiBetaRMSDCV@{AntiBetaRMSDCV}}
+\index{AntiBetaRMSDCV@{AntiBetaRMSDCV}!SSAGES::AntiBetaRMSDCV@{SSAGES::AntiBetaRMSDCV}}
+\doxysubsubsection{\texorpdfstring{AntiBetaRMSDCV()}{AntiBetaRMSDCV()}}
+{\footnotesize\ttfamily S\+S\+A\+G\+E\+S\+::\+Anti\+Beta\+R\+M\+S\+D\+C\+V\+::\+Anti\+Beta\+R\+M\+S\+D\+CV (\begin{DoxyParamCaption}\item[{std\+::vector$<$ int $>$}]{resids,  }\item[{std\+::string}]{refpdb,  }\item[{double}]{unitconv,  }\item[{int}]{mode }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em resids} & I\+Ds of residues for calculating secondary structure \\
+\hline
+{\em refpdb} & String of pdb filename with atom and residue indices. \\
+\hline
+{\em unitconv} & Conversion for internal MD length unit\+: 1 nm is equal to unitconv internal units \\
+\hline
+{\em mode} & Specification for inter/intra mode for beta sheet character\\
+\hline
+\end{DoxyParams}
+Construct an Antibeta\+R\+M\+SD CV -- calculates anti-\/beta sheet character by summing pairwise R\+M\+SD to an ideal anti-\/beta sheet structure for all possible 6 residue segments. 
+
+Definition at line 80 of file Anti\+Beta\+R\+M\+S\+D\+C\+V.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{80                                                                                            :}
+\DoxyCodeLine{81         \mbox{\hyperlink{classSSAGES_1_1AntiBetaRMSDCV_a39288b5c919293453651b69966fc8000}{resids\_}}(resids), \mbox{\hyperlink{classSSAGES_1_1AntiBetaRMSDCV_a5e1fa25ce51d980e0eec7905f8658049}{refpdb\_}}(refpdb), \mbox{\hyperlink{classSSAGES_1_1AntiBetaRMSDCV_a51ec8a4bfe02776bff6acda6eb12ca4a}{unitconv\_}}(unitconv), \mbox{\hyperlink{classSSAGES_1_1AntiBetaRMSDCV_a3fa5f9f58e564ec684ff60976f005c4c}{mode\_}}(mode)}
+\DoxyCodeLine{82         \{}
+\DoxyCodeLine{83             \textcolor{keywordflow}{if}(\mbox{\hyperlink{classSSAGES_1_1AntiBetaRMSDCV_a39288b5c919293453651b69966fc8000}{resids\_}}.size() != 2 )\{}
+\DoxyCodeLine{84                 \textcolor{keywordflow}{throw} std::invalid\_argument(\textcolor{stringliteral}{"AntiBetaRMSDCV: Input must designate range of residues with 2 residue numbers."});}
+\DoxyCodeLine{85             \}}
+\DoxyCodeLine{86 }
+\DoxyCodeLine{87             \mbox{\hyperlink{classSSAGES_1_1AntiBetaRMSDCV_a39288b5c919293453651b69966fc8000}{resids\_}}.clear();}
+\DoxyCodeLine{88 }
+\DoxyCodeLine{89             \textcolor{keywordflow}{if}(resids[0] >= resids[1])\{}
+\DoxyCodeLine{90                 \textcolor{keywordflow}{throw} std::invalid\_argument(\textcolor{stringliteral}{"AntiBetaRMSDCV: Input must list lower residue index first: please reverse residue range."});}
+\DoxyCodeLine{91             \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(resids[1] -\/ resids[0] < 5)\{}
+\DoxyCodeLine{92                 \textcolor{keywordflow}{throw} std::invalid\_argument(\textcolor{stringliteral}{"AntiBetaRMSDCV: Residue range must span at least 6 residues for secondary structure calculation."});}
+\DoxyCodeLine{93             \}}
+\DoxyCodeLine{94 }
+\DoxyCodeLine{95             std::cout << \textcolor{stringliteral}{"AntiBetaRMSDCV: Calculating antiparallel beta sheet character from residue "} << resids[0] << \textcolor{stringliteral}{" to "} << resids[1]  << \textcolor{stringliteral}{"."} << std::endl;}
+\DoxyCodeLine{96 }
+\DoxyCodeLine{97             \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i = resids[0]; i <= resids[1]; i++)\{}
+\DoxyCodeLine{98                 \mbox{\hyperlink{classSSAGES_1_1AntiBetaRMSDCV_a39288b5c919293453651b69966fc8000}{resids\_}}.push\_back(i);}
+\DoxyCodeLine{99             \}}
+\DoxyCodeLine{100         \}}
+
+\end{DoxyCode}
+
+
+References resids\+\_\+.
+
+
+
+Referenced by Build().
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classSSAGES_1_1AntiBetaRMSDCV_af96db83beb2e9985a36894ca3ff172b9_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classSSAGES_1_1AntiBetaRMSDCV_a4153e7b2aa827ac6367ec6374f986370}\label{classSSAGES_1_1AntiBetaRMSDCV_a4153e7b2aa827ac6367ec6374f986370}} 
+\index{SSAGES::AntiBetaRMSDCV@{SSAGES::AntiBetaRMSDCV}!Build@{Build}}
+\index{Build@{Build}!SSAGES::AntiBetaRMSDCV@{SSAGES::AntiBetaRMSDCV}}
+\doxysubsubsection{\texorpdfstring{Build()}{Build()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classSSAGES_1_1AntiBetaRMSDCV}{Anti\+Beta\+R\+M\+S\+D\+CV}}$\ast$ S\+S\+A\+G\+E\+S\+::\+Anti\+Beta\+R\+M\+S\+D\+C\+V\+::\+Build (\begin{DoxyParamCaption}\item[{const Json\+::\+Value \&}]{json,  }\item[{const std\+::string \&}]{path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Set up collective variable. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em json} & \mbox{\hyperlink{namespaceJSON}{J\+S\+ON}} input value. \\
+\hline
+{\em path} & Path for \mbox{\hyperlink{namespaceJSON}{J\+S\+ON}} path specification. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pointer to the CV built by this function. {\ttfamily nullptr} in case of unknown error.
+\end{DoxyReturn}
+Builds a CV from a \mbox{\hyperlink{namespaceJSON}{J\+S\+ON}} node. Returns a pointer to the built cv. If an unknown error is encountered, this function will return a {\ttfamily nullptr}, but generally it will throw a \mbox{\hyperlink{classSSAGES_1_1BuildException}{Build\+Exception}} on failure. \begin{DoxyWarning}{Warning}
+Object lifetime is the caller\textquotesingle{}s responsibility. 
+\end{DoxyWarning}
+
+
+Definition at line 256 of file Anti\+Beta\+R\+M\+S\+D\+C\+V.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{257         \{}
+\DoxyCodeLine{258             \mbox{\hyperlink{classJson_1_1ObjectRequirement}{Json::ObjectRequirement}} validator;}
+\DoxyCodeLine{259             Json::Value schema;}
+\DoxyCodeLine{260             Json::CharReaderBuilder rbuilder;}
+\DoxyCodeLine{261             Json::CharReader* reader = rbuilder.newCharReader();}
+\DoxyCodeLine{262 }
+\DoxyCodeLine{263             reader-\/>parse(JsonSchema::AntiBetaRMSDCV.c\_str(),}
+\DoxyCodeLine{264                           JsonSchema::AntiBetaRMSDCV.c\_str() + JsonSchema::AntiBetaRMSDCV.size(),}
+\DoxyCodeLine{265                           \&schema, \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{266             validator.\mbox{\hyperlink{classJson_1_1ObjectRequirement_a4ed02ae1d612a5efba1688fcdd2df092}{Parse}}(schema, path);}
+\DoxyCodeLine{267 }
+\DoxyCodeLine{268             \textcolor{comment}{//Validate inputs}}
+\DoxyCodeLine{269             validator.\mbox{\hyperlink{classJson_1_1ObjectRequirement_a9ac3b920001a35bc70580035d8d802b7}{Validate}}(json, path);}
+\DoxyCodeLine{270             \textcolor{keywordflow}{if}(validator.\mbox{\hyperlink{classJson_1_1Requirement_adfaec336a9f051d6f6b9a6d7f1d97b75}{HasErrors}}())}
+\DoxyCodeLine{271                     \textcolor{keywordflow}{throw} BuildException(validator.\mbox{\hyperlink{classJson_1_1Requirement_a60bc275c366eb59f192fa2e621268480}{GetErrors}}());}
+\DoxyCodeLine{272 }
+\DoxyCodeLine{273             std::vector<int> resids;}
+\DoxyCodeLine{274             \textcolor{keywordflow}{for}(\textcolor{keyword}{auto}\& s : json[\textcolor{stringliteral}{"residue\_ids"}])}
+\DoxyCodeLine{275                 resids.push\_back(s.asInt());}
+\DoxyCodeLine{276             \textcolor{keyword}{auto} reference = json[\textcolor{stringliteral}{"reference"}].asString();}
+\DoxyCodeLine{277 }
+\DoxyCodeLine{278             \textcolor{keywordtype}{double} unitconv = json.get(\textcolor{stringliteral}{"length\_unit"}, 1).asDouble();}
+\DoxyCodeLine{279 }
+\DoxyCodeLine{280             \textcolor{keywordtype}{int} mode = json.get(\textcolor{stringliteral}{"mode"}, 0).asInt();}
+\DoxyCodeLine{281 }
+\DoxyCodeLine{282             \textcolor{keywordflow}{return} \textcolor{keyword}{new} \mbox{\hyperlink{classSSAGES_1_1AntiBetaRMSDCV_af96db83beb2e9985a36894ca3ff172b9}{AntiBetaRMSDCV}}(resids, reference, unitconv, mode);}
+\DoxyCodeLine{283         \}}
+
+\end{DoxyCode}
+
+
+References Anti\+Beta\+R\+M\+S\+D\+C\+V(), Json\+::\+Requirement\+::\+Get\+Errors(), Json\+::\+Requirement\+::\+Has\+Errors(), Json\+::\+Object\+Requirement\+::\+Parse(), and Json\+::\+Object\+Requirement\+::\+Validate().
+
+
+
+Referenced by S\+S\+A\+G\+E\+S\+::\+Collective\+Variable\+::\+Build\+C\+V().
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classSSAGES_1_1AntiBetaRMSDCV_a4153e7b2aa827ac6367ec6374f986370_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classSSAGES_1_1AntiBetaRMSDCV_a4153e7b2aa827ac6367ec6374f986370_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classSSAGES_1_1AntiBetaRMSDCV_a89bdea4dde8b704a0ca773e0a0f79b1f}\label{classSSAGES_1_1AntiBetaRMSDCV_a89bdea4dde8b704a0ca773e0a0f79b1f}} 
+\index{SSAGES::AntiBetaRMSDCV@{SSAGES::AntiBetaRMSDCV}!Evaluate@{Evaluate}}
+\index{Evaluate@{Evaluate}!SSAGES::AntiBetaRMSDCV@{SSAGES::AntiBetaRMSDCV}}
+\doxysubsubsection{\texorpdfstring{Evaluate()}{Evaluate()}}
+{\footnotesize\ttfamily void S\+S\+A\+G\+E\+S\+::\+Anti\+Beta\+R\+M\+S\+D\+C\+V\+::\+Evaluate (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classSSAGES_1_1Snapshot}{Snapshot}} \&}]{snapshot }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}}
+
+
+
+Evaluate the CV. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em snapshot} & Current simulation snapshot. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 174 of file Anti\+Beta\+R\+M\+S\+D\+C\+V.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{175         \{}
+\DoxyCodeLine{176             \textcolor{comment}{// need atom positions for all atoms}}
+\DoxyCodeLine{177             \textcolor{keyword}{const} \textcolor{keyword}{auto}\& pos = snapshot.GetPositions();}
+\DoxyCodeLine{178             \textcolor{keyword}{auto}\& comm = snapshot.GetCommunicator();}
+\DoxyCodeLine{179 }
+\DoxyCodeLine{180             \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} resgroups = \mbox{\hyperlink{classSSAGES_1_1AntiBetaRMSDCV_a39288b5c919293453651b69966fc8000}{resids\_}}.size() -\/ 2;}
+\DoxyCodeLine{181             \textcolor{keywordtype}{double} rmsd, dist\_norm, dxgrouprmsd;}
+\DoxyCodeLine{182             \textcolor{keywordtype}{int} localidx;}
+\DoxyCodeLine{183             \mbox{\hyperlink{namespaceSSAGES_a630084a0a5e185e89e21b3735f8f8b2e}{Vector3}} dist\_xyz, dist\_ref;}
+\DoxyCodeLine{184             std::vector<Vector3> refxyz;}
+\DoxyCodeLine{185             std::vector< std::vector< Vector3 > > deriv(30, std::vector<Vector3>(30, \mbox{\hyperlink{namespaceSSAGES_a630084a0a5e185e89e21b3735f8f8b2e}{Vector3}}\{0,0,0\}));}
+\DoxyCodeLine{186             std::fill(\mbox{\hyperlink{classSSAGES_1_1CollectiveVariable_a390202f6e541da879f1cfcde22c49489}{grad\_}}.begin(), \mbox{\hyperlink{classSSAGES_1_1CollectiveVariable_a390202f6e541da879f1cfcde22c49489}{grad\_}}.end(), \mbox{\hyperlink{namespaceSSAGES_a630084a0a5e185e89e21b3735f8f8b2e}{Vector3}}\{0,0,0\});}
+\DoxyCodeLine{187             \mbox{\hyperlink{classSSAGES_1_1CollectiveVariable_a390202f6e541da879f1cfcde22c49489}{grad\_}}.resize(snapshot.GetNumAtoms(), \mbox{\hyperlink{namespaceSSAGES_a630084a0a5e185e89e21b3735f8f8b2e}{Vector3}}\{0,0,0\});}
+\DoxyCodeLine{188             \mbox{\hyperlink{classSSAGES_1_1CollectiveVariable_a65b17f3e9b3c967ad42814c3eec88bb2}{val\_}} = 0.0;}
+\DoxyCodeLine{189 }
+\DoxyCodeLine{190             \textcolor{keywordflow}{for}(\textcolor{keywordtype}{size\_t} i = 0; i < resgroups -\/ 3; i++)\{}
+\DoxyCodeLine{191                 \textcolor{keywordflow}{for}(\textcolor{keywordtype}{size\_t} j = i + 3; j < resgroups; j++)\{}
+\DoxyCodeLine{192                     \textcolor{comment}{// mode: 0 for all, 1 for inter, 2 for intra}}
+\DoxyCodeLine{193                     \textcolor{keywordflow}{if}((\mbox{\hyperlink{classSSAGES_1_1AntiBetaRMSDCV_a3fa5f9f58e564ec684ff60976f005c4c}{mode\_}} == 0) || (\mbox{\hyperlink{classSSAGES_1_1AntiBetaRMSDCV_a3fa5f9f58e564ec684ff60976f005c4c}{mode\_}} == 1 \&\& \mbox{\hyperlink{classSSAGES_1_1AntiBetaRMSDCV_a5e85f46f65f5b022846d6a021593ce93}{atomids\_}}[1][5 * j] != \mbox{\hyperlink{classSSAGES_1_1AntiBetaRMSDCV_a5e85f46f65f5b022846d6a021593ce93}{atomids\_}}[1][5 * i]) || (\mbox{\hyperlink{classSSAGES_1_1AntiBetaRMSDCV_a3fa5f9f58e564ec684ff60976f005c4c}{mode\_}} == 2 \&\& \mbox{\hyperlink{classSSAGES_1_1AntiBetaRMSDCV_a5e85f46f65f5b022846d6a021593ce93}{atomids\_}}[1][5 * j] == \mbox{\hyperlink{classSSAGES_1_1AntiBetaRMSDCV_a5e85f46f65f5b022846d6a021593ce93}{atomids\_}}[1][5 * i]))\{}
+\DoxyCodeLine{194                         rmsd = 0.0;}
+\DoxyCodeLine{195                         std::fill(refxyz.begin(), refxyz.end(), \mbox{\hyperlink{namespaceSSAGES_a630084a0a5e185e89e21b3735f8f8b2e}{Vector3}}\{0,0,0\});}
+\DoxyCodeLine{196                         refxyz.resize(30, \mbox{\hyperlink{namespaceSSAGES_a630084a0a5e185e89e21b3735f8f8b2e}{Vector3}}\{0,0,0\});}
+\DoxyCodeLine{197 }
+\DoxyCodeLine{198                         \textcolor{keywordflow}{for}(\textcolor{keywordtype}{size\_t} k = 0; k < 15; k++)\{}
+\DoxyCodeLine{199                             localidx = snapshot.GetLocalIndex(\mbox{\hyperlink{classSSAGES_1_1AntiBetaRMSDCV_a9d779e483acbbc3f6e39226cdc773531}{ids\_only\_}}[5 * i + k]);}
+\DoxyCodeLine{200                             \textcolor{keywordflow}{if}(localidx != -\/1) refxyz[k] = pos[localidx];}
+\DoxyCodeLine{201                         \}}
+\DoxyCodeLine{202 }
+\DoxyCodeLine{203                         \textcolor{keywordflow}{for}(\textcolor{keywordtype}{size\_t} k = 0; k < 15; k++)\{}
+\DoxyCodeLine{204                             localidx = snapshot.GetLocalIndex(\mbox{\hyperlink{classSSAGES_1_1AntiBetaRMSDCV_a9d779e483acbbc3f6e39226cdc773531}{ids\_only\_}}[5 * j + k]);}
+\DoxyCodeLine{205                             \textcolor{keywordflow}{if}(localidx != -\/1) refxyz[k + 15] = pos[localidx];}
+\DoxyCodeLine{206                         \}}
+\DoxyCodeLine{207 }
+\DoxyCodeLine{208                         MPI\_Allreduce(MPI\_IN\_PLACE, refxyz.data(), 90, MPI\_DOUBLE, MPI\_SUM, comm);}
+\DoxyCodeLine{209 }
+\DoxyCodeLine{210                         \textcolor{comment}{// sum over all pairs to calculate CV}}
+\DoxyCodeLine{211                         \textcolor{keywordflow}{for}(\textcolor{keywordtype}{size\_t} k = 0; k < 29; k++)\{}
+\DoxyCodeLine{212                             \textcolor{keywordflow}{for}(\textcolor{keywordtype}{size\_t} h = k + 1; h < 30; h++)\{}
+\DoxyCodeLine{213                                 dist\_xyz = refxyz[k] -\/ refxyz[h];}
+\DoxyCodeLine{214                                 dist\_norm = dist\_xyz.norm() -\/ \mbox{\hyperlink{classSSAGES_1_1AntiBetaRMSDCV_a17738e585c72dbb82f6188634706c017}{refdists\_}}[29 * k + h];}
+\DoxyCodeLine{215                                 rmsd += dist\_norm * dist\_norm;}
+\DoxyCodeLine{216                                 deriv[k][h] = dist\_xyz * dist\_norm / dist\_xyz.norm();}
+\DoxyCodeLine{217                             \}}
+\DoxyCodeLine{218                         \}}
+\DoxyCodeLine{219 }
+\DoxyCodeLine{220                         rmsd = pow(rmsd / 435, 0.5) / 0.1;}
+\DoxyCodeLine{221                         \mbox{\hyperlink{classSSAGES_1_1CollectiveVariable_a65b17f3e9b3c967ad42814c3eec88bb2}{val\_}} += (1 -\/ pow(rmsd, 8.0)) / (1 -\/ pow(rmsd, 12.0));}
+\DoxyCodeLine{222 }
+\DoxyCodeLine{223                         dxgrouprmsd = pow(rmsd, 11.0) + pow(rmsd, 7.0);}
+\DoxyCodeLine{224                         dxgrouprmsd /= pow(rmsd, 8.0) + pow(rmsd, 4.0) + 1;}
+\DoxyCodeLine{225                         dxgrouprmsd /= pow(rmsd, 8.0) + pow(rmsd, 4.0) + 1;}
+\DoxyCodeLine{226                         dxgrouprmsd *= -\/40. / 435;}
+\DoxyCodeLine{227 }
+\DoxyCodeLine{228                         \textcolor{keywordflow}{for}(\textcolor{keywordtype}{size\_t} k = 0; k < 15; k++)\{}
+\DoxyCodeLine{229                             \textcolor{keywordflow}{for}(\textcolor{keywordtype}{size\_t} h = k + 1; h < 15; h++)\{}
+\DoxyCodeLine{230                                 localidx = snapshot.GetLocalIndex(\mbox{\hyperlink{classSSAGES_1_1AntiBetaRMSDCV_a9d779e483acbbc3f6e39226cdc773531}{ids\_only\_}}[5 * i + k]);}
+\DoxyCodeLine{231                                 \textcolor{keywordflow}{if}(localidx != -\/1) \mbox{\hyperlink{classSSAGES_1_1CollectiveVariable_a390202f6e541da879f1cfcde22c49489}{grad\_}}[localidx] += dxgrouprmsd * deriv[k][h];}
+\DoxyCodeLine{232                                 localidx = snapshot.GetLocalIndex(\mbox{\hyperlink{classSSAGES_1_1AntiBetaRMSDCV_a9d779e483acbbc3f6e39226cdc773531}{ids\_only\_}}[5 * i + h]);}
+\DoxyCodeLine{233                                 \textcolor{keywordflow}{if} (localidx != -\/1) \mbox{\hyperlink{classSSAGES_1_1CollectiveVariable_a390202f6e541da879f1cfcde22c49489}{grad\_}}[localidx] += dxgrouprmsd * deriv[k][h];}
+\DoxyCodeLine{234                             \}}
+\DoxyCodeLine{235                             \textcolor{keywordflow}{for}(\textcolor{keywordtype}{size\_t} h = 0; h < 15; h++)\{}
+\DoxyCodeLine{236                                 localidx = snapshot.GetLocalIndex(\mbox{\hyperlink{classSSAGES_1_1AntiBetaRMSDCV_a9d779e483acbbc3f6e39226cdc773531}{ids\_only\_}}[5 * i + k]);}
+\DoxyCodeLine{237                                 \textcolor{keywordflow}{if}(localidx != -\/1) \mbox{\hyperlink{classSSAGES_1_1CollectiveVariable_a390202f6e541da879f1cfcde22c49489}{grad\_}}[localidx] += dxgrouprmsd * deriv[k][h + 15];}
+\DoxyCodeLine{238                                 localidx = snapshot.GetLocalIndex(\mbox{\hyperlink{classSSAGES_1_1AntiBetaRMSDCV_a9d779e483acbbc3f6e39226cdc773531}{ids\_only\_}}[5 * j + h]);}
+\DoxyCodeLine{239                                 \textcolor{keywordflow}{if}(localidx != -\/1) \mbox{\hyperlink{classSSAGES_1_1CollectiveVariable_a390202f6e541da879f1cfcde22c49489}{grad\_}}[localidx] += dxgrouprmsd * deriv[k][h + 15];}
+\DoxyCodeLine{240                             \}}
+\DoxyCodeLine{241                         \}}
+\DoxyCodeLine{242                         \textcolor{keywordflow}{for}(\textcolor{keywordtype}{size\_t} k = 0; k < 14; k++)\{}
+\DoxyCodeLine{243                             \textcolor{keywordflow}{for}(\textcolor{keywordtype}{size\_t} h = k + 1; h < 15; h++)\{}
+\DoxyCodeLine{244                                 localidx = snapshot.GetLocalIndex(\mbox{\hyperlink{classSSAGES_1_1AntiBetaRMSDCV_a9d779e483acbbc3f6e39226cdc773531}{ids\_only\_}}[5 * j + k]);}
+\DoxyCodeLine{245                                 \textcolor{keywordflow}{if}(localidx != -\/1) \mbox{\hyperlink{classSSAGES_1_1CollectiveVariable_a390202f6e541da879f1cfcde22c49489}{grad\_}}[localidx] += dxgrouprmsd * deriv[k + 15][h + 15];}
+\DoxyCodeLine{246                                 localidx = snapshot.GetLocalIndex(\mbox{\hyperlink{classSSAGES_1_1AntiBetaRMSDCV_a9d779e483acbbc3f6e39226cdc773531}{ids\_only\_}}[5 * j + h]);}
+\DoxyCodeLine{247                                 \textcolor{keywordflow}{if}(localidx != -\/1) \mbox{\hyperlink{classSSAGES_1_1CollectiveVariable_a390202f6e541da879f1cfcde22c49489}{grad\_}}[localidx] += dxgrouprmsd * deriv[k + 15][h + 15];}
+\DoxyCodeLine{248                             \}}
+\DoxyCodeLine{249                         \}}
+\DoxyCodeLine{250                     \}}
+\DoxyCodeLine{251                 \}}
+\DoxyCodeLine{252             \}}
+\DoxyCodeLine{253         \}}
+
+\end{DoxyCode}
+
+
+References atomids\+\_\+, S\+S\+A\+G\+E\+S\+::\+Snapshot\+::\+Get\+Communicator(), S\+S\+A\+G\+E\+S\+::\+Snapshot\+::\+Get\+Local\+Index(), S\+S\+A\+G\+E\+S\+::\+Snapshot\+::\+Get\+Num\+Atoms(), S\+S\+A\+G\+E\+S\+::\+Snapshot\+::\+Get\+Positions(), S\+S\+A\+G\+E\+S\+::\+Collective\+Variable\+::grad\+\_\+, ids\+\_\+only\+\_\+, mode\+\_\+, refdists\+\_\+, resids\+\_\+, and S\+S\+A\+G\+E\+S\+::\+Collective\+Variable\+::val\+\_\+.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classSSAGES_1_1AntiBetaRMSDCV_a89bdea4dde8b704a0ca773e0a0f79b1f_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classSSAGES_1_1AntiBetaRMSDCV_a493dc72ec667b4c3631ff091904f05e1}\label{classSSAGES_1_1AntiBetaRMSDCV_a493dc72ec667b4c3631ff091904f05e1}} 
+\index{SSAGES::AntiBetaRMSDCV@{SSAGES::AntiBetaRMSDCV}!Initialize@{Initialize}}
+\index{Initialize@{Initialize}!SSAGES::AntiBetaRMSDCV@{SSAGES::AntiBetaRMSDCV}}
+\doxysubsubsection{\texorpdfstring{Initialize()}{Initialize()}}
+{\footnotesize\ttfamily void S\+S\+A\+G\+E\+S\+::\+Anti\+Beta\+R\+M\+S\+D\+C\+V\+::\+Initialize (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classSSAGES_1_1Snapshot}{Snapshot}} \&}]{snapshot }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}}
+
+
+
+Initialize necessary variables. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em snapshot} & Current simulation snapshot. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 106 of file Anti\+Beta\+R\+M\+S\+D\+C\+V.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{107         \{}
+\DoxyCodeLine{108             \mbox{\hyperlink{classSSAGES_1_1AntiBetaRMSDCV_a5e85f46f65f5b022846d6a021593ce93}{atomids\_}} = \mbox{\hyperlink{classSSAGES_1_1ReadBackbone_a2ac2a3c64129511572a47ec0913080ce}{ReadBackbone::GetPdbBackbone}}(\mbox{\hyperlink{classSSAGES_1_1AntiBetaRMSDCV_a5e1fa25ce51d980e0eec7905f8658049}{refpdb\_}}, \mbox{\hyperlink{classSSAGES_1_1AntiBetaRMSDCV_a39288b5c919293453651b69966fc8000}{resids\_}});}
+\DoxyCodeLine{109             \mbox{\hyperlink{classSSAGES_1_1AntiBetaRMSDCV_a9d779e483acbbc3f6e39226cdc773531}{ids\_only\_}}.resize(\mbox{\hyperlink{classSSAGES_1_1AntiBetaRMSDCV_a5e85f46f65f5b022846d6a021593ce93}{atomids\_}}[0].size());}
+\DoxyCodeLine{110 }
+\DoxyCodeLine{111             \textcolor{comment}{// check to find all necessary atoms}}
+\DoxyCodeLine{112             std::transform(\mbox{\hyperlink{classSSAGES_1_1AntiBetaRMSDCV_a5e85f46f65f5b022846d6a021593ce93}{atomids\_}}[0].begin(), \mbox{\hyperlink{classSSAGES_1_1AntiBetaRMSDCV_a5e85f46f65f5b022846d6a021593ce93}{atomids\_}}[0].end(), \mbox{\hyperlink{classSSAGES_1_1AntiBetaRMSDCV_a9d779e483acbbc3f6e39226cdc773531}{ids\_only\_}}.begin(), [](std::string val) \{return std::stoi(val);\});}
+\DoxyCodeLine{113             \textcolor{keyword}{using} std::to\_string;}
+\DoxyCodeLine{114             std::vector<int> found;}
+\DoxyCodeLine{115             snapshot.GetLocalIndices(\mbox{\hyperlink{classSSAGES_1_1AntiBetaRMSDCV_a9d779e483acbbc3f6e39226cdc773531}{ids\_only\_}}, \&found);}
+\DoxyCodeLine{116             \textcolor{keywordtype}{size\_t} nfound = found.size();}
+\DoxyCodeLine{117             MPI\_Allreduce(MPI\_IN\_PLACE, \&nfound, 1, MPI\_INT, MPI\_SUM, snapshot.GetCommunicator());}
+\DoxyCodeLine{118             \textcolor{keywordflow}{if}(nfound != \mbox{\hyperlink{classSSAGES_1_1AntiBetaRMSDCV_a39288b5c919293453651b69966fc8000}{resids\_}}.size() * 5)}
+\DoxyCodeLine{119                 \textcolor{keywordflow}{throw} BuildException(\{}
+\DoxyCodeLine{120                     \textcolor{stringliteral}{"AntiBetaRMSDCV: Expected to find "} +}
+\DoxyCodeLine{121                     to\_string(\mbox{\hyperlink{classSSAGES_1_1AntiBetaRMSDCV_a39288b5c919293453651b69966fc8000}{resids\_}}.size() * 5) +}
+\DoxyCodeLine{122                     \textcolor{stringliteral}{" atoms, but only found "} +}
+\DoxyCodeLine{123                     to\_string(nfound) + \textcolor{stringliteral}{"."}}
+\DoxyCodeLine{124                 \});}
+\DoxyCodeLine{125 }
+\DoxyCodeLine{126             \textcolor{comment}{// reference 'ideal' antiparallel beta sheet structure in nanometers}}
+\DoxyCodeLine{127             \textcolor{comment}{// Reference structure taken from values used in Plumed 2.2.0}}
+\DoxyCodeLine{128             std::vector<Vector3> refalpha;}
+\DoxyCodeLine{129             refalpha.push\_back(\mbox{\hyperlink{classSSAGES_1_1AntiBetaRMSDCV_a51ec8a4bfe02776bff6acda6eb12ca4a}{unitconv\_}} * \mbox{\hyperlink{namespaceSSAGES_a630084a0a5e185e89e21b3735f8f8b2e}{Vector3}}\{ .2263, -\/.3795,  .1722\}); \textcolor{comment}{// N    i}}
+\DoxyCodeLine{130             refalpha.push\_back(\mbox{\hyperlink{classSSAGES_1_1AntiBetaRMSDCV_a51ec8a4bfe02776bff6acda6eb12ca4a}{unitconv\_}} * \mbox{\hyperlink{namespaceSSAGES_a630084a0a5e185e89e21b3735f8f8b2e}{Vector3}}\{ .2493, -\/.2426,  .2263\}); \textcolor{comment}{// CA}}
+\DoxyCodeLine{131             refalpha.push\_back(\mbox{\hyperlink{classSSAGES_1_1AntiBetaRMSDCV_a51ec8a4bfe02776bff6acda6eb12ca4a}{unitconv\_}} * \mbox{\hyperlink{namespaceSSAGES_a630084a0a5e185e89e21b3735f8f8b2e}{Vector3}}\{ .3847, -\/.1838,  .1761\}); \textcolor{comment}{// CB}}
+\DoxyCodeLine{132             refalpha.push\_back(\mbox{\hyperlink{classSSAGES_1_1AntiBetaRMSDCV_a51ec8a4bfe02776bff6acda6eb12ca4a}{unitconv\_}} * \mbox{\hyperlink{namespaceSSAGES_a630084a0a5e185e89e21b3735f8f8b2e}{Vector3}}\{ .1301, -\/.1517,  .1921\}); \textcolor{comment}{// C}}
+\DoxyCodeLine{133             refalpha.push\_back(\mbox{\hyperlink{classSSAGES_1_1AntiBetaRMSDCV_a51ec8a4bfe02776bff6acda6eb12ca4a}{unitconv\_}} * \mbox{\hyperlink{namespaceSSAGES_a630084a0a5e185e89e21b3735f8f8b2e}{Vector3}}\{ .0852, -\/.1504,  .0739\}); \textcolor{comment}{// O}}
+\DoxyCodeLine{134             refalpha.push\_back(\mbox{\hyperlink{classSSAGES_1_1AntiBetaRMSDCV_a51ec8a4bfe02776bff6acda6eb12ca4a}{unitconv\_}} * \mbox{\hyperlink{namespaceSSAGES_a630084a0a5e185e89e21b3735f8f8b2e}{Vector3}}\{ .0818, -\/.0738,  .2917\}); \textcolor{comment}{// N    i+1}}
+\DoxyCodeLine{135             refalpha.push\_back(\mbox{\hyperlink{classSSAGES_1_1AntiBetaRMSDCV_a51ec8a4bfe02776bff6acda6eb12ca4a}{unitconv\_}} * \mbox{\hyperlink{namespaceSSAGES_a630084a0a5e185e89e21b3735f8f8b2e}{Vector3}}\{-\/.0299,  .0243,  .2748\}); \textcolor{comment}{// CA}}
+\DoxyCodeLine{136             refalpha.push\_back(\mbox{\hyperlink{classSSAGES_1_1AntiBetaRMSDCV_a51ec8a4bfe02776bff6acda6eb12ca4a}{unitconv\_}} * \mbox{\hyperlink{namespaceSSAGES_a630084a0a5e185e89e21b3735f8f8b2e}{Vector3}}\{-\/.1421, -\/.0076,  .3757\}); \textcolor{comment}{// CB}}
+\DoxyCodeLine{137             refalpha.push\_back(\mbox{\hyperlink{classSSAGES_1_1AntiBetaRMSDCV_a51ec8a4bfe02776bff6acda6eb12ca4a}{unitconv\_}} * \mbox{\hyperlink{namespaceSSAGES_a630084a0a5e185e89e21b3735f8f8b2e}{Vector3}}\{ .0273,  .1680,  .2854\}); \textcolor{comment}{// C}}
+\DoxyCodeLine{138             refalpha.push\_back(\mbox{\hyperlink{classSSAGES_1_1AntiBetaRMSDCV_a51ec8a4bfe02776bff6acda6eb12ca4a}{unitconv\_}} * \mbox{\hyperlink{namespaceSSAGES_a630084a0a5e185e89e21b3735f8f8b2e}{Vector3}}\{ .0902,  .1993,  .3888\}); \textcolor{comment}{// O}}
+\DoxyCodeLine{139             refalpha.push\_back(\mbox{\hyperlink{classSSAGES_1_1AntiBetaRMSDCV_a51ec8a4bfe02776bff6acda6eb12ca4a}{unitconv\_}} * \mbox{\hyperlink{namespaceSSAGES_a630084a0a5e185e89e21b3735f8f8b2e}{Vector3}}\{ .0119,  .2532,  .1813\}); \textcolor{comment}{// N    i+2}}
+\DoxyCodeLine{140             refalpha.push\_back(\mbox{\hyperlink{classSSAGES_1_1AntiBetaRMSDCV_a51ec8a4bfe02776bff6acda6eb12ca4a}{unitconv\_}} * \mbox{\hyperlink{namespaceSSAGES_a630084a0a5e185e89e21b3735f8f8b2e}{Vector3}}\{ .0683,  .3916,  .1680\}); \textcolor{comment}{// CA}}
+\DoxyCodeLine{141             refalpha.push\_back(\mbox{\hyperlink{classSSAGES_1_1AntiBetaRMSDCV_a51ec8a4bfe02776bff6acda6eb12ca4a}{unitconv\_}} * \mbox{\hyperlink{namespaceSSAGES_a630084a0a5e185e89e21b3735f8f8b2e}{Vector3}}\{ .1580,  .3940,  .0395\}); \textcolor{comment}{// CB}}
+\DoxyCodeLine{142             refalpha.push\_back(\mbox{\hyperlink{classSSAGES_1_1AntiBetaRMSDCV_a51ec8a4bfe02776bff6acda6eb12ca4a}{unitconv\_}} * \mbox{\hyperlink{namespaceSSAGES_a630084a0a5e185e89e21b3735f8f8b2e}{Vector3}}\{-\/.0394,  .5011,  .1630\}); \textcolor{comment}{// C}}
+\DoxyCodeLine{143             refalpha.push\_back(\mbox{\hyperlink{classSSAGES_1_1AntiBetaRMSDCV_a51ec8a4bfe02776bff6acda6eb12ca4a}{unitconv\_}} * \mbox{\hyperlink{namespaceSSAGES_a630084a0a5e185e89e21b3735f8f8b2e}{Vector3}}\{-\/.1459,  .4814,  .0982\}); \textcolor{comment}{// O}}
+\DoxyCodeLine{144             refalpha.push\_back(\mbox{\hyperlink{classSSAGES_1_1AntiBetaRMSDCV_a51ec8a4bfe02776bff6acda6eb12ca4a}{unitconv\_}} * \mbox{\hyperlink{namespaceSSAGES_a630084a0a5e185e89e21b3735f8f8b2e}{Vector3}}\{-\/.2962,  .3559, -\/.1359\}); \textcolor{comment}{// N    j -\/ 2}}
+\DoxyCodeLine{145             refalpha.push\_back(\mbox{\hyperlink{classSSAGES_1_1AntiBetaRMSDCV_a51ec8a4bfe02776bff6acda6eb12ca4a}{unitconv\_}} * \mbox{\hyperlink{namespaceSSAGES_a630084a0a5e185e89e21b3735f8f8b2e}{Vector3}}\{-\/.2439,  .2526, -\/.2287\}); \textcolor{comment}{// CA}}
+\DoxyCodeLine{146             refalpha.push\_back(\mbox{\hyperlink{classSSAGES_1_1AntiBetaRMSDCV_a51ec8a4bfe02776bff6acda6eb12ca4a}{unitconv\_}} * \mbox{\hyperlink{namespaceSSAGES_a630084a0a5e185e89e21b3735f8f8b2e}{Vector3}}\{-\/.1189,  .3006, -\/.3087\}); \textcolor{comment}{// CB}}
+\DoxyCodeLine{147             refalpha.push\_back(\mbox{\hyperlink{classSSAGES_1_1AntiBetaRMSDCV_a51ec8a4bfe02776bff6acda6eb12ca4a}{unitconv\_}} * \mbox{\hyperlink{namespaceSSAGES_a630084a0a5e185e89e21b3735f8f8b2e}{Vector3}}\{-\/.2081,  .1231, -\/.1520\}); \textcolor{comment}{// C}}
+\DoxyCodeLine{148             refalpha.push\_back(\mbox{\hyperlink{classSSAGES_1_1AntiBetaRMSDCV_a51ec8a4bfe02776bff6acda6eb12ca4a}{unitconv\_}} * \mbox{\hyperlink{namespaceSSAGES_a630084a0a5e185e89e21b3735f8f8b2e}{Vector3}}\{-\/.1524,  .1324, -\/.0409\}); \textcolor{comment}{// O}}
+\DoxyCodeLine{149             refalpha.push\_back(\mbox{\hyperlink{classSSAGES_1_1AntiBetaRMSDCV_a51ec8a4bfe02776bff6acda6eb12ca4a}{unitconv\_}} * \mbox{\hyperlink{namespaceSSAGES_a630084a0a5e185e89e21b3735f8f8b2e}{Vector3}}\{-\/.2326,  .0037, -\/.2095\}); \textcolor{comment}{// N    j -\/ 1}}
+\DoxyCodeLine{150             refalpha.push\_back(\mbox{\hyperlink{classSSAGES_1_1AntiBetaRMSDCV_a51ec8a4bfe02776bff6acda6eb12ca4a}{unitconv\_}} * \mbox{\hyperlink{namespaceSSAGES_a630084a0a5e185e89e21b3735f8f8b2e}{Vector3}}\{-\/.1858, -\/.1269, -\/.1554\}); \textcolor{comment}{// CA}}
+\DoxyCodeLine{151             refalpha.push\_back(\mbox{\hyperlink{classSSAGES_1_1AntiBetaRMSDCV_a51ec8a4bfe02776bff6acda6eb12ca4a}{unitconv\_}} * \mbox{\hyperlink{namespaceSSAGES_a630084a0a5e185e89e21b3735f8f8b2e}{Vector3}}\{-\/.3053, -\/.2199, -\/.1291\}); \textcolor{comment}{// CB}}
+\DoxyCodeLine{152             refalpha.push\_back(\mbox{\hyperlink{classSSAGES_1_1AntiBetaRMSDCV_a51ec8a4bfe02776bff6acda6eb12ca4a}{unitconv\_}} * \mbox{\hyperlink{namespaceSSAGES_a630084a0a5e185e89e21b3735f8f8b2e}{Vector3}}\{-\/.0869, -\/.1949, -\/.2512\}); \textcolor{comment}{// C}}
+\DoxyCodeLine{153             refalpha.push\_back(\mbox{\hyperlink{classSSAGES_1_1AntiBetaRMSDCV_a51ec8a4bfe02776bff6acda6eb12ca4a}{unitconv\_}} * \mbox{\hyperlink{namespaceSSAGES_a630084a0a5e185e89e21b3735f8f8b2e}{Vector3}}\{-\/.1255, -\/.2070, -\/.3710\}); \textcolor{comment}{// O}}
+\DoxyCodeLine{154             refalpha.push\_back(\mbox{\hyperlink{classSSAGES_1_1AntiBetaRMSDCV_a51ec8a4bfe02776bff6acda6eb12ca4a}{unitconv\_}} * \mbox{\hyperlink{namespaceSSAGES_a630084a0a5e185e89e21b3735f8f8b2e}{Vector3}}\{ .0326, -\/.2363, -\/.2072\}); \textcolor{comment}{// N    j}}
+\DoxyCodeLine{155             refalpha.push\_back(\mbox{\hyperlink{classSSAGES_1_1AntiBetaRMSDCV_a51ec8a4bfe02776bff6acda6eb12ca4a}{unitconv\_}} * \mbox{\hyperlink{namespaceSSAGES_a630084a0a5e185e89e21b3735f8f8b2e}{Vector3}}\{ .1405, -\/.2992, -\/.2872\}); \textcolor{comment}{// CA}}
+\DoxyCodeLine{156             refalpha.push\_back(\mbox{\hyperlink{classSSAGES_1_1AntiBetaRMSDCV_a51ec8a4bfe02776bff6acda6eb12ca4a}{unitconv\_}} * \mbox{\hyperlink{namespaceSSAGES_a630084a0a5e185e89e21b3735f8f8b2e}{Vector3}}\{ .2699, -\/.2129, -\/.2917\}); \textcolor{comment}{// CB}}
+\DoxyCodeLine{157             refalpha.push\_back(\mbox{\hyperlink{classSSAGES_1_1AntiBetaRMSDCV_a51ec8a4bfe02776bff6acda6eb12ca4a}{unitconv\_}} * \mbox{\hyperlink{namespaceSSAGES_a630084a0a5e185e89e21b3735f8f8b2e}{Vector3}}\{ .1745, -\/.4399, -\/.2330\}); \textcolor{comment}{// C}}
+\DoxyCodeLine{158             refalpha.push\_back(\mbox{\hyperlink{classSSAGES_1_1AntiBetaRMSDCV_a51ec8a4bfe02776bff6acda6eb12ca4a}{unitconv\_}} * \mbox{\hyperlink{namespaceSSAGES_a630084a0a5e185e89e21b3735f8f8b2e}{Vector3}}\{ .1899, -\/.4545, -\/.1102\}); \textcolor{comment}{// O}}
+\DoxyCodeLine{159 }
+\DoxyCodeLine{160             \textcolor{comment}{// calculate all necessary pairwise distances for reference structure}}
+\DoxyCodeLine{161             std::fill(\mbox{\hyperlink{classSSAGES_1_1AntiBetaRMSDCV_a17738e585c72dbb82f6188634706c017}{refdists\_}}.begin(), \mbox{\hyperlink{classSSAGES_1_1AntiBetaRMSDCV_a17738e585c72dbb82f6188634706c017}{refdists\_}}.end(), 0.0);}
+\DoxyCodeLine{162             \mbox{\hyperlink{classSSAGES_1_1AntiBetaRMSDCV_a17738e585c72dbb82f6188634706c017}{refdists\_}}.resize(900, 0.0);}
+\DoxyCodeLine{163             \textcolor{keywordflow}{for}(\textcolor{keywordtype}{size\_t} k = 0; k < 29; k++)\{}
+\DoxyCodeLine{164                 \textcolor{keywordflow}{for}(\textcolor{keywordtype}{size\_t} h = k + 1; h < 30; h++)\{}
+\DoxyCodeLine{165                     \mbox{\hyperlink{classSSAGES_1_1AntiBetaRMSDCV_a17738e585c72dbb82f6188634706c017}{refdists\_}}[29 * k + h] = (refalpha[k] -\/ refalpha[h]).norm();}
+\DoxyCodeLine{166                 \}}
+\DoxyCodeLine{167             \}}
+\DoxyCodeLine{168         \}}
+
+\end{DoxyCode}
+
+
+References atomids\+\_\+, S\+S\+A\+G\+E\+S\+::\+Snapshot\+::\+Get\+Communicator(), S\+S\+A\+G\+E\+S\+::\+Snapshot\+::\+Get\+Local\+Indices(), S\+S\+A\+G\+E\+S\+::\+Read\+Backbone\+::\+Get\+Pdb\+Backbone(), ids\+\_\+only\+\_\+, refdists\+\_\+, refpdb\+\_\+, resids\+\_\+, and unitconv\+\_\+.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classSSAGES_1_1AntiBetaRMSDCV_a493dc72ec667b4c3631ff091904f05e1_cgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/michael/development/\+S\+S\+A\+G\+E\+S/src/\+C\+Vs/Anti\+Beta\+R\+M\+S\+D\+C\+V.\+h\end{DoxyCompactItemize}

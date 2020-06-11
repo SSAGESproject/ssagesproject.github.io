@@ -1,0 +1,7 @@
+<map id="SSAGES::StringMethod::distance" name="SSAGES::StringMethod::distance">
+<area shape="rect" id="node1" title="Helper function for calculating distances." alt="" coords="535,27,697,69"/>
+<area shape="rect" id="node2" href="$classSSAGES_1_1Swarm.html#a0ee007f404408c59c7217cd8fb6b7c1c" title="Updates the positions of the string." alt="" coords="276,5,487,32"/>
+<area shape="rect" id="node4" href="$classSSAGES_1_1FiniteTempString.html#af68721c1b7953bc3d2d097ad9090f66c" title="Updates the string according to the FTS method." alt="" coords="289,57,473,98"/>
+<area shape="rect" id="node3" href="$classSSAGES_1_1Swarm.html#aae8fbacf2c51b84a5a333387116dda0d" title="Method call post integration." alt="" coords="5,5,228,32"/>
+<area shape="rect" id="node5" href="$classSSAGES_1_1FiniteTempString.html#a94561a14cc08999d4531db528fe3f2e8" title="Method call post integration." alt="" coords="25,57,209,98"/>
+</map>

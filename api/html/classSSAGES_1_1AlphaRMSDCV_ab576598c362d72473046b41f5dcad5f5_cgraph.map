@@ -1,0 +1,7 @@
+<map id="SSAGES::AlphaRMSDCV::Initialize" name="SSAGES::AlphaRMSDCV::Initialize">
+<area shape="rect" id="node1" title="Initialize necessary variables." alt="" coords="5,57,183,98"/>
+<area shape="rect" id="node2" href="$classSSAGES_1_1Snapshot.html#a4811c9435e56196d5525832345ef1680" title="Get communicator for walker." alt="" coords="231,5,485,32"/>
+<area shape="rect" id="node3" href="$classSSAGES_1_1Snapshot.html#a196a91c541c72bcb5147b9e60a44ea8b" title=" " alt="" coords="258,57,458,98"/>
+<area shape="rect" id="node5" href="$classSSAGES_1_1ReadBackbone.html#a2ac2a3c64129511572a47ec0913080ce" title="Read protein backbone atoms from reference PDB file." alt="" coords="271,122,445,163"/>
+<area shape="rect" id="node4" href="$classSSAGES_1_1Snapshot.html#a7146597433bcfd256385db274330cd36" title="Gets the local atom index corresponding to an atom ID." alt="" coords="533,57,733,98"/>
+</map>

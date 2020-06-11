@@ -1,0 +1,497 @@
+\hypertarget{classSSAGES_1_1TorsionalCV}{}\doxysection{S\+S\+A\+G\+ES\+::Torsional\+CV Class Reference}
+\label{classSSAGES_1_1TorsionalCV}\index{SSAGES::TorsionalCV@{SSAGES::TorsionalCV}}
+
+
+Collective variable on the torsion angles.  
+
+
+
+
+{\ttfamily \#include $<$Torsional\+C\+V.\+h$>$}
+
+
+
+Inheritance diagram for S\+S\+A\+G\+ES\+::Torsional\+CV\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=223pt]{classSSAGES_1_1TorsionalCV__inherit__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classSSAGES_1_1TorsionalCV_a28a96a296391278851ea282446d5ac48}{Torsional\+CV}} (int atomid1, int atomid2, int atomid3, int atomid4, bool periodic)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classSSAGES_1_1TorsionalCV_a4d33444e79408f7690d3c1e56359212b}{Initialize}} (const \mbox{\hyperlink{classSSAGES_1_1Snapshot}{Snapshot}} \&snapshot) override
+\begin{DoxyCompactList}\small\item\em Initialize necessary variables. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classSSAGES_1_1TorsionalCV_ae3e82fb11240eb780cfcc57b2b0112a5}{Evaluate}} (const \mbox{\hyperlink{classSSAGES_1_1Snapshot}{Snapshot}} \&snapshot) override
+\begin{DoxyCompactList}\small\item\em Evaluate the CV. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classSSAGES_1_1TorsionalCV_a82eedc6924ce1739f445f9f0da9e288d}{Get\+Periodic\+Value}} (double Location) const override
+\begin{DoxyCompactList}\small\item\em Return value taking periodic boundary conditions into account. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classSSAGES_1_1TorsionalCV_acaa9bd494f8116b38b76b80261c6ce7b}{Get\+Difference}} (const double Location) const override
+\begin{DoxyCompactList}\small\item\em Get difference taking periodic boundary conditions into account. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classSSAGES_1_1TorsionalCV_af442beb9f397716e4906b4fcf5a67edd}{Get\+Minimum\+Image}} (const double Location) const override
+\begin{DoxyCompactList}\small\item\em Returns the minimum image of a CV based on the input location. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classSSAGES_1_1TorsionalCV}{Torsional\+CV}} $\ast$ \mbox{\hyperlink{classSSAGES_1_1TorsionalCV_acfa27d84d60248c363d111a82f175749}{Build}} (const Json\+::\+Value \&json, const std\+::string \&path)
+\begin{DoxyCompactList}\small\item\em Set up collective variable. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classSSAGES_1_1TorsionalCV_a21f9dc3365cdbf318e8be75483873285}\label{classSSAGES_1_1TorsionalCV_a21f9dc3365cdbf318e8be75483873285}} 
+\mbox{\hyperlink{namespaceSSAGES_afbb26053e292f94ea83b1c441ce6df74}{Label}} \mbox{\hyperlink{classSSAGES_1_1TorsionalCV_a21f9dc3365cdbf318e8be75483873285}{atomids\+\_\+}}
+\begin{DoxyCompactList}\small\item\em Vector of 4 atom ID\textquotesingle{}s of interest. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classSSAGES_1_1TorsionalCV_a43ce3e5ede135ac9dd8c06a0b79eff98}\label{classSSAGES_1_1TorsionalCV_a43ce3e5ede135ac9dd8c06a0b79eff98}} 
+bool \mbox{\hyperlink{classSSAGES_1_1TorsionalCV_a43ce3e5ede135ac9dd8c06a0b79eff98}{periodic\+\_\+}}
+\begin{DoxyCompactList}\small\item\em If {\ttfamily True}, use periodic boundary conditions. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Collective variable on the torsion angles. 
+
+Collective variable on an proper dihedral. This will return the angle between two planes as defined in \cite{VANSCHAIK1993751}. Singularities are avoided as described in \cite{BLONDEL19961132}. 
+
+Definition at line 42 of file Torsional\+C\+V.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classSSAGES_1_1TorsionalCV_a28a96a296391278851ea282446d5ac48}\label{classSSAGES_1_1TorsionalCV_a28a96a296391278851ea282446d5ac48}} 
+\index{SSAGES::TorsionalCV@{SSAGES::TorsionalCV}!TorsionalCV@{TorsionalCV}}
+\index{TorsionalCV@{TorsionalCV}!SSAGES::TorsionalCV@{SSAGES::TorsionalCV}}
+\doxysubsubsection{\texorpdfstring{TorsionalCV()}{TorsionalCV()}}
+{\footnotesize\ttfamily S\+S\+A\+G\+E\+S\+::\+Torsional\+C\+V\+::\+Torsional\+CV (\begin{DoxyParamCaption}\item[{int}]{atomid1,  }\item[{int}]{atomid2,  }\item[{int}]{atomid3,  }\item[{int}]{atomid4,  }\item[{bool}]{periodic }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em atomid1} & ID of the first atom defining the dihedral angle. \\
+\hline
+{\em atomid2} & ID of the second atom defining the dihedral angle. \\
+\hline
+{\em atomid3} & ID of the third atom defining the dihedral angle. \\
+\hline
+{\em atomid4} & ID of the forth atom defining the dihedral angle. \\
+\hline
+{\em periodic} & If {\ttfamily True} consider periodic boundary conditions.\\
+\hline
+\end{DoxyParams}
+Construct an dihedral CV.
+
+\begin{DoxyRefDesc}{Todo}
+\item[\mbox{\hyperlink{todo__todo000009}{Todo}}]Bounds needs to be an input and periodic boundary conditions \end{DoxyRefDesc}
+
+
+Definition at line 64 of file Torsional\+C\+V.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{64                                                                                        : }
+\DoxyCodeLine{65         \mbox{\hyperlink{classSSAGES_1_1TorsionalCV_a21f9dc3365cdbf318e8be75483873285}{atomids\_}}(\{atomid1, atomid2, atomid3, atomid4\}), \mbox{\hyperlink{classSSAGES_1_1TorsionalCV_a43ce3e5ede135ac9dd8c06a0b79eff98}{periodic\_}}(periodic)}
+\DoxyCodeLine{66         \{}
+\DoxyCodeLine{67         \}}
+
+\end{DoxyCode}
+
+
+Referenced by Build().
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classSSAGES_1_1TorsionalCV_a28a96a296391278851ea282446d5ac48_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classSSAGES_1_1TorsionalCV_acfa27d84d60248c363d111a82f175749}\label{classSSAGES_1_1TorsionalCV_acfa27d84d60248c363d111a82f175749}} 
+\index{SSAGES::TorsionalCV@{SSAGES::TorsionalCV}!Build@{Build}}
+\index{Build@{Build}!SSAGES::TorsionalCV@{SSAGES::TorsionalCV}}
+\doxysubsubsection{\texorpdfstring{Build()}{Build()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classSSAGES_1_1TorsionalCV}{Torsional\+CV}}$\ast$ S\+S\+A\+G\+E\+S\+::\+Torsional\+C\+V\+::\+Build (\begin{DoxyParamCaption}\item[{const Json\+::\+Value \&}]{json,  }\item[{const std\+::string \&}]{path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Set up collective variable. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em json} & \mbox{\hyperlink{namespaceJSON}{J\+S\+ON}} input value. \\
+\hline
+{\em path} & Path for \mbox{\hyperlink{namespaceJSON}{J\+S\+ON}} path specification. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pointer to the CV built by this function. {\ttfamily nullptr} in case of unknown error.
+\end{DoxyReturn}
+Builds a CV from a \mbox{\hyperlink{namespaceJSON}{J\+S\+ON}} node. Returns a pointer to the built cv. If an unknown error is encountered, this function will return a {\ttfamily nullptr}, but generally it will throw a \mbox{\hyperlink{classSSAGES_1_1BuildException}{Build\+Exception}} on failure. \begin{DoxyWarning}{Warning}
+Object lifetime is the caller\textquotesingle{}s responsibility. 
+\end{DoxyWarning}
+
+
+Definition at line 229 of file Torsional\+C\+V.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{230         \{}
+\DoxyCodeLine{231             \mbox{\hyperlink{classJson_1_1ObjectRequirement}{Json::ObjectRequirement}} validator;}
+\DoxyCodeLine{232             Json::Value schema;}
+\DoxyCodeLine{233             Json::CharReaderBuilder rbuilder;}
+\DoxyCodeLine{234             Json::CharReader* reader = rbuilder.newCharReader();}
+\DoxyCodeLine{235 }
+\DoxyCodeLine{236             reader-\/>parse(JsonSchema::TorsionalCV.c\_str(),}
+\DoxyCodeLine{237                           JsonSchema::TorsionalCV.c\_str() + JsonSchema::TorsionalCV.size(),}
+\DoxyCodeLine{238                           \&schema, \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{239             validator.\mbox{\hyperlink{classJson_1_1ObjectRequirement_a4ed02ae1d612a5efba1688fcdd2df092}{Parse}}(schema, path);}
+\DoxyCodeLine{240 }
+\DoxyCodeLine{241             \textcolor{comment}{// Validate inputs.}}
+\DoxyCodeLine{242             validator.\mbox{\hyperlink{classJson_1_1ObjectRequirement_a9ac3b920001a35bc70580035d8d802b7}{Validate}}(json, path);}
+\DoxyCodeLine{243             \textcolor{keywordflow}{if}(validator.\mbox{\hyperlink{classJson_1_1Requirement_adfaec336a9f051d6f6b9a6d7f1d97b75}{HasErrors}}())}
+\DoxyCodeLine{244                 \textcolor{keywordflow}{throw} BuildException(validator.\mbox{\hyperlink{classJson_1_1Requirement_a60bc275c366eb59f192fa2e621268480}{GetErrors}}());}
+\DoxyCodeLine{245 }
+\DoxyCodeLine{246             std::vector<int> atomids;}
+\DoxyCodeLine{247             \textcolor{keywordflow}{for}(\textcolor{keyword}{auto}\& s : json[\textcolor{stringliteral}{"atom\_ids"}])}
+\DoxyCodeLine{248                 atomids.push\_back(s.asInt());}
+\DoxyCodeLine{249 }
+\DoxyCodeLine{250             \textcolor{keyword}{auto} periodic = json.get(\textcolor{stringliteral}{"periodic"}, \textcolor{keyword}{true}).asBool();}
+\DoxyCodeLine{251             \textcolor{keywordflow}{return} \textcolor{keyword}{new} \mbox{\hyperlink{classSSAGES_1_1TorsionalCV_a28a96a296391278851ea282446d5ac48}{TorsionalCV}}(atomids[0], atomids[1], atomids[2], atomids[3], periodic);}
+\DoxyCodeLine{252         \}}
+
+\end{DoxyCode}
+
+
+References Json\+::\+Requirement\+::\+Get\+Errors(), Json\+::\+Requirement\+::\+Has\+Errors(), Json\+::\+Object\+Requirement\+::\+Parse(), Torsional\+C\+V(), and Json\+::\+Object\+Requirement\+::\+Validate().
+
+
+
+Referenced by S\+S\+A\+G\+E\+S\+::\+Collective\+Variable\+::\+Build\+C\+V().
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classSSAGES_1_1TorsionalCV_acfa27d84d60248c363d111a82f175749_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classSSAGES_1_1TorsionalCV_acfa27d84d60248c363d111a82f175749_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classSSAGES_1_1TorsionalCV_ae3e82fb11240eb780cfcc57b2b0112a5}\label{classSSAGES_1_1TorsionalCV_ae3e82fb11240eb780cfcc57b2b0112a5}} 
+\index{SSAGES::TorsionalCV@{SSAGES::TorsionalCV}!Evaluate@{Evaluate}}
+\index{Evaluate@{Evaluate}!SSAGES::TorsionalCV@{SSAGES::TorsionalCV}}
+\doxysubsubsection{\texorpdfstring{Evaluate()}{Evaluate()}}
+{\footnotesize\ttfamily void S\+S\+A\+G\+E\+S\+::\+Torsional\+C\+V\+::\+Evaluate (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classSSAGES_1_1Snapshot}{Snapshot}} \&}]{snapshot }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}}
+
+
+
+Evaluate the CV. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em snapshot} & Current simulation snapshot. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 95 of file Torsional\+C\+V.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{96         \{}
+\DoxyCodeLine{97             \textcolor{comment}{// Get data from snapshot. }}
+\DoxyCodeLine{98             \textcolor{keyword}{auto} n = snapshot.GetNumAtoms();}
+\DoxyCodeLine{99             \textcolor{keyword}{const} \textcolor{keyword}{auto}\& pos = snapshot.GetPositions();}
+\DoxyCodeLine{100             \textcolor{keyword}{auto}\& comm = snapshot.GetCommunicator();}
+\DoxyCodeLine{101 }
+\DoxyCodeLine{102             \textcolor{comment}{// Initialize gradient.}}
+\DoxyCodeLine{103             std::fill(\mbox{\hyperlink{classSSAGES_1_1CollectiveVariable_a390202f6e541da879f1cfcde22c49489}{grad\_}}.begin(), \mbox{\hyperlink{classSSAGES_1_1CollectiveVariable_a390202f6e541da879f1cfcde22c49489}{grad\_}}.end(), \mbox{\hyperlink{namespaceSSAGES_a630084a0a5e185e89e21b3735f8f8b2e}{Vector3}}\{0,0,0\});}
+\DoxyCodeLine{104             \mbox{\hyperlink{classSSAGES_1_1CollectiveVariable_a390202f6e541da879f1cfcde22c49489}{grad\_}}.resize(n, \mbox{\hyperlink{namespaceSSAGES_a630084a0a5e185e89e21b3735f8f8b2e}{Vector3}}\{0,0,0\});}
+\DoxyCodeLine{105 }
+\DoxyCodeLine{106             \mbox{\hyperlink{namespaceSSAGES_a630084a0a5e185e89e21b3735f8f8b2e}{Vector3}} xi\{0, 0, 0\}, xj\{0, 0, 0\}, xk\{0, 0, 0\}, xl\{0, 0, 0\};}
+\DoxyCodeLine{107 }
+\DoxyCodeLine{108             \textcolor{keyword}{auto} iindex = snapshot.GetLocalIndex(\mbox{\hyperlink{classSSAGES_1_1TorsionalCV_a21f9dc3365cdbf318e8be75483873285}{atomids\_}}[0]);}
+\DoxyCodeLine{109             \textcolor{keyword}{auto} jindex = snapshot.GetLocalIndex(\mbox{\hyperlink{classSSAGES_1_1TorsionalCV_a21f9dc3365cdbf318e8be75483873285}{atomids\_}}[1]);}
+\DoxyCodeLine{110             \textcolor{keyword}{auto} kindex = snapshot.GetLocalIndex(\mbox{\hyperlink{classSSAGES_1_1TorsionalCV_a21f9dc3365cdbf318e8be75483873285}{atomids\_}}[2]);}
+\DoxyCodeLine{111             \textcolor{keyword}{auto} lindex = snapshot.GetLocalIndex(\mbox{\hyperlink{classSSAGES_1_1TorsionalCV_a21f9dc3365cdbf318e8be75483873285}{atomids\_}}[3]);}
+\DoxyCodeLine{112 }
+\DoxyCodeLine{113             \textcolor{keywordflow}{if}(iindex != -\/1) xi = pos[iindex];}
+\DoxyCodeLine{114             \textcolor{keywordflow}{if}(jindex != -\/1) xj = pos[jindex];}
+\DoxyCodeLine{115             \textcolor{keywordflow}{if}(kindex != -\/1) xk = pos[kindex];}
+\DoxyCodeLine{116             \textcolor{keywordflow}{if}(lindex != -\/1) xl = pos[lindex];}
+\DoxyCodeLine{117 }
+\DoxyCodeLine{118             \textcolor{comment}{// By performing a reduce, we actually collect all. This can }}
+\DoxyCodeLine{119             \textcolor{comment}{// be converted to a more intelligent allgater on rank then bcast. }}
+\DoxyCodeLine{120             MPI\_Allreduce(MPI\_IN\_PLACE, xi.data(), 3, MPI\_DOUBLE, MPI\_SUM, comm);}
+\DoxyCodeLine{121             MPI\_Allreduce(MPI\_IN\_PLACE, xj.data(), 3, MPI\_DOUBLE, MPI\_SUM, comm);}
+\DoxyCodeLine{122             MPI\_Allreduce(MPI\_IN\_PLACE, xk.data(), 3, MPI\_DOUBLE, MPI\_SUM, comm);}
+\DoxyCodeLine{123             MPI\_Allreduce(MPI\_IN\_PLACE, xl.data(), 3, MPI\_DOUBLE, MPI\_SUM, comm);}
+\DoxyCodeLine{124             }
+\DoxyCodeLine{125             \textcolor{comment}{//Calculate pertinent vectors}}
+\DoxyCodeLine{126             \textcolor{keyword}{auto} F = snapshot.ApplyMinimumImage(xi -\/ xj);}
+\DoxyCodeLine{127             \textcolor{keyword}{auto} G = snapshot.ApplyMinimumImage(xj -\/ xk);}
+\DoxyCodeLine{128             \textcolor{keyword}{auto} H = snapshot.ApplyMinimumImage(xl -\/ xk);}
+\DoxyCodeLine{129             \textcolor{keyword}{auto} A = F.cross(G);}
+\DoxyCodeLine{130             \textcolor{keyword}{auto} B = H.cross(G);}
+\DoxyCodeLine{131             }
+\DoxyCodeLine{132             \textcolor{keyword}{auto} y = B.cross(A).dot(G.normalized());}
+\DoxyCodeLine{133             \textcolor{keyword}{auto} x = A.dot(B);}
+\DoxyCodeLine{134 }
+\DoxyCodeLine{135             \mbox{\hyperlink{classSSAGES_1_1CollectiveVariable_a65b17f3e9b3c967ad42814c3eec88bb2}{val\_}} = atan2(y, x);}
+\DoxyCodeLine{136 }
+\DoxyCodeLine{137             \textcolor{keyword}{auto} Zed = F.dot(G.normalized())/A.dot(A); }
+\DoxyCodeLine{138             \textcolor{keyword}{auto} Ned = H.dot(G.normalized())/B.dot(B);}
+\DoxyCodeLine{139 }
+\DoxyCodeLine{140             \mbox{\hyperlink{namespaceSSAGES_a630084a0a5e185e89e21b3735f8f8b2e}{Vector3}} gradi\{0,0,0\}, gradl\{0,0,0\}; }
+\DoxyCodeLine{141             \textcolor{keywordflow}{if}(iindex != -\/1) gradi = -\/G.norm()*A/A.dot(A);}
+\DoxyCodeLine{142             \textcolor{keywordflow}{if}(lindex != -\/1) gradl = G.norm()*B/B.dot(B);}
+\DoxyCodeLine{143             MPI\_Allreduce(MPI\_IN\_PLACE, gradi.data(), 3, MPI\_DOUBLE, MPI\_SUM, comm);}
+\DoxyCodeLine{144             MPI\_Allreduce(MPI\_IN\_PLACE, gradl.data(), 3, MPI\_DOUBLE, MPI\_SUM, comm);}
+\DoxyCodeLine{145             \textcolor{keywordflow}{if}(iindex != -\/1) \mbox{\hyperlink{classSSAGES_1_1CollectiveVariable_a390202f6e541da879f1cfcde22c49489}{grad\_}}[iindex] = gradi;}
+\DoxyCodeLine{146             \textcolor{keywordflow}{if}(lindex != -\/1) \mbox{\hyperlink{classSSAGES_1_1CollectiveVariable_a390202f6e541da879f1cfcde22c49489}{grad\_}}[lindex] = gradl;}
+\DoxyCodeLine{147             \textcolor{keywordflow}{if}(jindex != -\/1) \mbox{\hyperlink{classSSAGES_1_1CollectiveVariable_a390202f6e541da879f1cfcde22c49489}{grad\_}}[jindex] = Zed*A -\/ Ned*B -\/ gradi;}
+\DoxyCodeLine{148             \textcolor{keywordflow}{if}(kindex != -\/1) \mbox{\hyperlink{classSSAGES_1_1CollectiveVariable_a390202f6e541da879f1cfcde22c49489}{grad\_}}[kindex] = Ned*B  -\/ Zed*A -\/ gradl;}
+\DoxyCodeLine{149         \}}
+
+\end{DoxyCode}
+
+
+References S\+S\+A\+G\+E\+S\+::\+Snapshot\+::\+Apply\+Minimum\+Image(), atomids\+\_\+, S\+S\+A\+G\+E\+S\+::\+Snapshot\+::\+Get\+Communicator(), S\+S\+A\+G\+E\+S\+::\+Snapshot\+::\+Get\+Local\+Index(), S\+S\+A\+G\+E\+S\+::\+Snapshot\+::\+Get\+Num\+Atoms(), S\+S\+A\+G\+E\+S\+::\+Snapshot\+::\+Get\+Positions(), S\+S\+A\+G\+E\+S\+::\+Collective\+Variable\+::grad\+\_\+, and S\+S\+A\+G\+E\+S\+::\+Collective\+Variable\+::val\+\_\+.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classSSAGES_1_1TorsionalCV_ae3e82fb11240eb780cfcc57b2b0112a5_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classSSAGES_1_1TorsionalCV_acaa9bd494f8116b38b76b80261c6ce7b}\label{classSSAGES_1_1TorsionalCV_acaa9bd494f8116b38b76b80261c6ce7b}} 
+\index{SSAGES::TorsionalCV@{SSAGES::TorsionalCV}!GetDifference@{GetDifference}}
+\index{GetDifference@{GetDifference}!SSAGES::TorsionalCV@{SSAGES::TorsionalCV}}
+\doxysubsubsection{\texorpdfstring{GetDifference()}{GetDifference()}}
+{\footnotesize\ttfamily double S\+S\+A\+G\+E\+S\+::\+Torsional\+C\+V\+::\+Get\+Difference (\begin{DoxyParamCaption}\item[{const double}]{Location }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Get difference taking periodic boundary conditions into account. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Location} & Input value \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Wrapped or unwrapped difference depending on whether periodic boundaries are used.
+\end{DoxyReturn}
+If periodic boundaries are used, this function calculates the difference and wraps the result into the range (-\/pi, pi). Otherwise, the simple difference is returned. 
+
+Reimplemented from \mbox{\hyperlink{classSSAGES_1_1CollectiveVariable_a01d3a711691c4354ea78a54ed2d5f838}{S\+S\+A\+G\+E\+S\+::\+Collective\+Variable}}.
+
+
+
+Definition at line 188 of file Torsional\+C\+V.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{189         \{}
+\DoxyCodeLine{190             \textcolor{keywordtype}{double} PeriodicDiff = \mbox{\hyperlink{classSSAGES_1_1CollectiveVariable_a65b17f3e9b3c967ad42814c3eec88bb2}{val\_}} -\/ Location;}
+\DoxyCodeLine{191 }
+\DoxyCodeLine{192             \textcolor{keywordflow}{if}(!\mbox{\hyperlink{classSSAGES_1_1TorsionalCV_a43ce3e5ede135ac9dd8c06a0b79eff98}{periodic\_}})}
+\DoxyCodeLine{193                 \textcolor{keywordflow}{return} PeriodicDiff;}
+\DoxyCodeLine{194 }
+\DoxyCodeLine{195             PeriodicDiff = \mbox{\hyperlink{classSSAGES_1_1TorsionalCV_a82eedc6924ce1739f445f9f0da9e288d}{GetPeriodicValue}}(PeriodicDiff);}
+\DoxyCodeLine{196 }
+\DoxyCodeLine{197             \textcolor{keywordflow}{if}(PeriodicDiff > M\_PI)}
+\DoxyCodeLine{198                 PeriodicDiff -\/= 2.0*M\_PI;}
+\DoxyCodeLine{199             \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(PeriodicDiff < -\/M\_PI)}
+\DoxyCodeLine{200                 PeriodicDiff += 2.0*M\_PI;}
+\DoxyCodeLine{201 }
+\DoxyCodeLine{202             \textcolor{keywordflow}{return} PeriodicDiff;}
+\DoxyCodeLine{203         \}}
+
+\end{DoxyCode}
+
+
+References Get\+Periodic\+Value(), periodic\+\_\+, and S\+S\+A\+G\+E\+S\+::\+Collective\+Variable\+::val\+\_\+.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classSSAGES_1_1TorsionalCV_acaa9bd494f8116b38b76b80261c6ce7b_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classSSAGES_1_1TorsionalCV_af442beb9f397716e4906b4fcf5a67edd}\label{classSSAGES_1_1TorsionalCV_af442beb9f397716e4906b4fcf5a67edd}} 
+\index{SSAGES::TorsionalCV@{SSAGES::TorsionalCV}!GetMinimumImage@{GetMinimumImage}}
+\index{GetMinimumImage@{GetMinimumImage}!SSAGES::TorsionalCV@{SSAGES::TorsionalCV}}
+\doxysubsubsection{\texorpdfstring{GetMinimumImage()}{GetMinimumImage()}}
+{\footnotesize\ttfamily double S\+S\+A\+G\+E\+S\+::\+Torsional\+C\+V\+::\+Get\+Minimum\+Image (\begin{DoxyParamCaption}\item[{const double}]{Location }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Returns the minimum image of a CV based on the input location. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Location} & Value against which the minimum image is calculated. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Minimum image of the CV
+\end{DoxyReturn}
+Takes the input location and applies the periodic boundary conditions to return a minimum image of the CV. 
+
+Reimplemented from \mbox{\hyperlink{classSSAGES_1_1CollectiveVariable_af47316467387f64ab226136b26d38b75}{S\+S\+A\+G\+E\+S\+::\+Collective\+Variable}}.
+
+
+
+Definition at line 213 of file Torsional\+C\+V.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{214         \{}
+\DoxyCodeLine{215             \textcolor{keywordtype}{double} PeriodicDiff = \mbox{\hyperlink{classSSAGES_1_1CollectiveVariable_a65b17f3e9b3c967ad42814c3eec88bb2}{val\_}} -\/ Location;}
+\DoxyCodeLine{216 }
+\DoxyCodeLine{217             \textcolor{keywordflow}{if}(!\mbox{\hyperlink{classSSAGES_1_1TorsionalCV_a43ce3e5ede135ac9dd8c06a0b79eff98}{periodic\_}})}
+\DoxyCodeLine{218                 \textcolor{keywordflow}{return} \mbox{\hyperlink{classSSAGES_1_1CollectiveVariable_a65b17f3e9b3c967ad42814c3eec88bb2}{val\_}};    }
+\DoxyCodeLine{219 }
+\DoxyCodeLine{220             \textcolor{keywordflow}{if}(PeriodicDiff > M\_PI)}
+\DoxyCodeLine{221                 \textcolor{keywordflow}{return} (\mbox{\hyperlink{classSSAGES_1_1CollectiveVariable_a65b17f3e9b3c967ad42814c3eec88bb2}{val\_}} -\/ 2.0*M\_PI);}
+\DoxyCodeLine{222             \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(PeriodicDiff < -\/M\_PI)}
+\DoxyCodeLine{223                 \textcolor{keywordflow}{return} (\mbox{\hyperlink{classSSAGES_1_1CollectiveVariable_a65b17f3e9b3c967ad42814c3eec88bb2}{val\_}} + 2.0*M\_PI);   }
+\DoxyCodeLine{224 }
+\DoxyCodeLine{225             \textcolor{keywordflow}{return} \mbox{\hyperlink{classSSAGES_1_1CollectiveVariable_a65b17f3e9b3c967ad42814c3eec88bb2}{val\_}};}
+\DoxyCodeLine{226         \}}
+
+\end{DoxyCode}
+
+
+References periodic\+\_\+, and S\+S\+A\+G\+E\+S\+::\+Collective\+Variable\+::val\+\_\+.
+
+\mbox{\Hypertarget{classSSAGES_1_1TorsionalCV_a82eedc6924ce1739f445f9f0da9e288d}\label{classSSAGES_1_1TorsionalCV_a82eedc6924ce1739f445f9f0da9e288d}} 
+\index{SSAGES::TorsionalCV@{SSAGES::TorsionalCV}!GetPeriodicValue@{GetPeriodicValue}}
+\index{GetPeriodicValue@{GetPeriodicValue}!SSAGES::TorsionalCV@{SSAGES::TorsionalCV}}
+\doxysubsubsection{\texorpdfstring{GetPeriodicValue()}{GetPeriodicValue()}}
+{\footnotesize\ttfamily double S\+S\+A\+G\+E\+S\+::\+Torsional\+C\+V\+::\+Get\+Periodic\+Value (\begin{DoxyParamCaption}\item[{double}]{Location }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Return value taking periodic boundary conditions into account. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em Location} & Input value. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Wrapped or unwrapped input value depending on whether periodic boundaries are used.
+\end{DoxyReturn}
+If periodic boundaries are used, this function wraps the input value into the range (-\/pi, pi). Otherwise the input value is returned unmodified. 
+
+Reimplemented from \mbox{\hyperlink{classSSAGES_1_1CollectiveVariable_a0b32627283cd44d97eebd6b40814f9d1}{S\+S\+A\+G\+E\+S\+::\+Collective\+Variable}}.
+
+
+
+Definition at line 161 of file Torsional\+C\+V.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{162         \{}
+\DoxyCodeLine{163             \textcolor{keywordflow}{if}(!\mbox{\hyperlink{classSSAGES_1_1TorsionalCV_a43ce3e5ede135ac9dd8c06a0b79eff98}{periodic\_}})}
+\DoxyCodeLine{164                 \textcolor{keywordflow}{return} Location;}
+\DoxyCodeLine{165 }
+\DoxyCodeLine{166             \textcolor{keywordtype}{int} n = (int)(Location/(2.0*M\_PI));}
+\DoxyCodeLine{167             \textcolor{keywordtype}{double} PeriodicLocation;}
+\DoxyCodeLine{168 }
+\DoxyCodeLine{169             PeriodicLocation = Location -\/ n*M\_PI;}
+\DoxyCodeLine{170             \textcolor{keywordflow}{if}(PeriodicLocation < -\/M\_PI)}
+\DoxyCodeLine{171                 PeriodicLocation += 2.0*M\_PI;}
+\DoxyCodeLine{172             \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (PeriodicLocation > M\_PI)}
+\DoxyCodeLine{173                 PeriodicLocation -\/= 2.0*M\_PI;}
+\DoxyCodeLine{174 }
+\DoxyCodeLine{175             \textcolor{keywordflow}{return} PeriodicLocation;}
+\DoxyCodeLine{176         \}}
+
+\end{DoxyCode}
+
+
+References periodic\+\_\+.
+
+
+
+Referenced by Get\+Difference().
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classSSAGES_1_1TorsionalCV_a82eedc6924ce1739f445f9f0da9e288d_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classSSAGES_1_1TorsionalCV_a4d33444e79408f7690d3c1e56359212b}\label{classSSAGES_1_1TorsionalCV_a4d33444e79408f7690d3c1e56359212b}} 
+\index{SSAGES::TorsionalCV@{SSAGES::TorsionalCV}!Initialize@{Initialize}}
+\index{Initialize@{Initialize}!SSAGES::TorsionalCV@{SSAGES::TorsionalCV}}
+\doxysubsubsection{\texorpdfstring{Initialize()}{Initialize()}}
+{\footnotesize\ttfamily void S\+S\+A\+G\+E\+S\+::\+Torsional\+C\+V\+::\+Initialize (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classSSAGES_1_1Snapshot}{Snapshot}} \&}]{snapshot }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}}
+
+
+
+Initialize necessary variables. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em snapshot} & Current simulation snapshot. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 73 of file Torsional\+C\+V.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{74         \{}
+\DoxyCodeLine{75             \textcolor{keyword}{using} std::to\_string;}
+\DoxyCodeLine{76             }
+\DoxyCodeLine{77             std::vector<int> found;}
+\DoxyCodeLine{78             snapshot.GetLocalIndices(\mbox{\hyperlink{classSSAGES_1_1TorsionalCV_a21f9dc3365cdbf318e8be75483873285}{atomids\_}}, \&found);}
+\DoxyCodeLine{79             \textcolor{keywordtype}{int} nfound = found.size();}
+\DoxyCodeLine{80             MPI\_Allreduce(MPI\_IN\_PLACE, \&nfound, 1, MPI\_INT, MPI\_SUM, snapshot.GetCommunicator());}
+\DoxyCodeLine{81             }
+\DoxyCodeLine{82             \textcolor{keywordflow}{if}(nfound != 4)}
+\DoxyCodeLine{83                 \textcolor{keywordflow}{throw} BuildException(\{}
+\DoxyCodeLine{84                     \textcolor{stringliteral}{"TorsionalCV: Expected to find "} + }
+\DoxyCodeLine{85                     to\_string(4) + }
+\DoxyCodeLine{86                     \textcolor{stringliteral}{" atoms, but only found "} + }
+\DoxyCodeLine{87                     to\_string(nfound) + \textcolor{stringliteral}{"."}}
+\DoxyCodeLine{88                 \});     }
+\DoxyCodeLine{89         \}}
+
+\end{DoxyCode}
+
+
+References atomids\+\_\+, S\+S\+A\+G\+E\+S\+::\+Snapshot\+::\+Get\+Communicator(), and S\+S\+A\+G\+E\+S\+::\+Snapshot\+::\+Get\+Local\+Indices().
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classSSAGES_1_1TorsionalCV_a4d33444e79408f7690d3c1e56359212b_cgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/michael/development/\+S\+S\+A\+G\+E\+S/src/\+C\+Vs/Torsional\+C\+V.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,437 @@
+\hypertarget{classSSAGES_1_1ParallelBetaRMSDCV}{}\doxysection{S\+S\+A\+G\+ES\+::Parallel\+Beta\+R\+M\+S\+D\+CV Class Reference}
+\label{classSSAGES_1_1ParallelBetaRMSDCV}\index{SSAGES::ParallelBetaRMSDCV@{SSAGES::ParallelBetaRMSDCV}}
+
+
+Collective variable to measure parallel beta sheet secondary structure.  
+
+
+
+
+{\ttfamily \#include $<$Parallel\+Beta\+R\+M\+S\+D\+C\+V.\+h$>$}
+
+
+
+Inheritance diagram for S\+S\+A\+G\+ES\+::Parallel\+Beta\+R\+M\+S\+D\+CV\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=241pt]{classSSAGES_1_1ParallelBetaRMSDCV__inherit__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classSSAGES_1_1ParallelBetaRMSDCV_a24ef880045794b0fae9f3ac5a2ca9be1}{Parallel\+Beta\+R\+M\+S\+D\+CV}} (std\+::vector$<$ int $>$ resids, std\+::string refpdb, double unitconv, int mode)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classSSAGES_1_1ParallelBetaRMSDCV_a373ce72beacf2c412d0b37601b4399d4}{Initialize}} (const \mbox{\hyperlink{classSSAGES_1_1Snapshot}{Snapshot}} \&snapshot) override
+\begin{DoxyCompactList}\small\item\em Initialize necessary variables. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classSSAGES_1_1ParallelBetaRMSDCV_a8ed7cf0c797dbf51f70e604d32546442}{Evaluate}} (const \mbox{\hyperlink{classSSAGES_1_1Snapshot}{Snapshot}} \&snapshot) override
+\begin{DoxyCompactList}\small\item\em Evaluate the CV. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classSSAGES_1_1ParallelBetaRMSDCV}{Parallel\+Beta\+R\+M\+S\+D\+CV}} $\ast$ \mbox{\hyperlink{classSSAGES_1_1ParallelBetaRMSDCV_ad4c42c1bddc74fc312517ad13526c5cc}{Build}} (const Json\+::\+Value \&json, const std\+::string \&path)
+\begin{DoxyCompactList}\small\item\em Set up collective variable. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classSSAGES_1_1ParallelBetaRMSDCV_afa39ad224c5e306ee1d7f25d35748d58}\label{classSSAGES_1_1ParallelBetaRMSDCV_afa39ad224c5e306ee1d7f25d35748d58}} 
+std\+::vector$<$ int $>$ \mbox{\hyperlink{classSSAGES_1_1ParallelBetaRMSDCV_afa39ad224c5e306ee1d7f25d35748d58}{resids\+\_\+}}
+\begin{DoxyCompactList}\small\item\em Residue I\+Ds for secondary structure calculation. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classSSAGES_1_1ParallelBetaRMSDCV_a0ef9236cc9909d75d4cdb3b9139dd071}\label{classSSAGES_1_1ParallelBetaRMSDCV_a0ef9236cc9909d75d4cdb3b9139dd071}} 
+std\+::vector$<$ std\+::vector$<$ std\+::string $>$ $>$ \mbox{\hyperlink{classSSAGES_1_1ParallelBetaRMSDCV_a0ef9236cc9909d75d4cdb3b9139dd071}{atomids\+\_\+}}
+\begin{DoxyCompactList}\small\item\em Atom I\+Ds for secondary structure calculation\+: backbone of resids\+\_\+. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classSSAGES_1_1ParallelBetaRMSDCV_a94708bae68e7227966a640e335cf22bb}\label{classSSAGES_1_1ParallelBetaRMSDCV_a94708bae68e7227966a640e335cf22bb}} 
+std\+::vector$<$ int $>$ \mbox{\hyperlink{classSSAGES_1_1ParallelBetaRMSDCV_a94708bae68e7227966a640e335cf22bb}{ids\+\_\+only\+\_\+}}
+\begin{DoxyCompactList}\small\item\em Atom I\+Ds only, for secondary structure calculation\+: backbone atoms of resids\+\_\+. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classSSAGES_1_1ParallelBetaRMSDCV_aa16598928684514987206eb1d749114e}\label{classSSAGES_1_1ParallelBetaRMSDCV_aa16598928684514987206eb1d749114e}} 
+std\+::string \mbox{\hyperlink{classSSAGES_1_1ParallelBetaRMSDCV_aa16598928684514987206eb1d749114e}{refpdb\+\_\+}}
+\begin{DoxyCompactList}\small\item\em Name of pdb reference for system. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classSSAGES_1_1ParallelBetaRMSDCV_ad203376aca50720339582b48c70caa23}\label{classSSAGES_1_1ParallelBetaRMSDCV_ad203376aca50720339582b48c70caa23}} 
+std\+::vector$<$ \mbox{\hyperlink{namespaceSSAGES_a630084a0a5e185e89e21b3735f8f8b2e}{Vector3}} $>$ \mbox{\hyperlink{classSSAGES_1_1ParallelBetaRMSDCV_ad203376aca50720339582b48c70caa23}{refalpha\+\_\+}}
+\begin{DoxyCompactList}\small\item\em Coordinates for reference structure. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classSSAGES_1_1ParallelBetaRMSDCV_ac8087d75530d47ddfbf25537a49ee37a}\label{classSSAGES_1_1ParallelBetaRMSDCV_ac8087d75530d47ddfbf25537a49ee37a}} 
+double \mbox{\hyperlink{classSSAGES_1_1ParallelBetaRMSDCV_ac8087d75530d47ddfbf25537a49ee37a}{unitconv\+\_\+}}
+\begin{DoxyCompactList}\small\item\em Length unit conversion\+: convert 1 nm to your internal MD units (ex. if using angstroms use 10) \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classSSAGES_1_1ParallelBetaRMSDCV_a25c414420629f79ca896221ca11dc378}\label{classSSAGES_1_1ParallelBetaRMSDCV_a25c414420629f79ca896221ca11dc378}} 
+int \mbox{\hyperlink{classSSAGES_1_1ParallelBetaRMSDCV_a25c414420629f79ca896221ca11dc378}{mode\+\_\+}}
+\begin{DoxyCompactList}\small\item\em Specify whether to calculate beta sheet character in intra or inter mode\+: 0 for either, 1 for inter, 2 for intra. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classSSAGES_1_1ParallelBetaRMSDCV_a4a482fce4b6f57fef730256c19206366}\label{classSSAGES_1_1ParallelBetaRMSDCV_a4a482fce4b6f57fef730256c19206366}} 
+std\+::vector$<$ double $>$ \mbox{\hyperlink{classSSAGES_1_1ParallelBetaRMSDCV_a4a482fce4b6f57fef730256c19206366}{refdists\+\_\+}}
+\begin{DoxyCompactList}\small\item\em Pairwise distance between backbone atoms for reference structure. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Collective variable to measure parallel beta sheet secondary structure. 
+
+Following treatment in Pietrucci and Laio, "A Collective Variable for the Efficient Exploration of Protein Beta-\/\+Sheet Structures\+: Application to S\+H3 and G\+B1", J\+C\+TC, 2009, 5(9)\+: 2197-\/2201.
+
+Check 2 blocks of 3 consecutive protein residues for R\+M\+SD from reference \char`\"{}ideal\char`\"{} parallel beta sheet structure. 
+
+Definition at line 43 of file Parallel\+Beta\+R\+M\+S\+D\+C\+V.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classSSAGES_1_1ParallelBetaRMSDCV_a24ef880045794b0fae9f3ac5a2ca9be1}\label{classSSAGES_1_1ParallelBetaRMSDCV_a24ef880045794b0fae9f3ac5a2ca9be1}} 
+\index{SSAGES::ParallelBetaRMSDCV@{SSAGES::ParallelBetaRMSDCV}!ParallelBetaRMSDCV@{ParallelBetaRMSDCV}}
+\index{ParallelBetaRMSDCV@{ParallelBetaRMSDCV}!SSAGES::ParallelBetaRMSDCV@{SSAGES::ParallelBetaRMSDCV}}
+\doxysubsubsection{\texorpdfstring{ParallelBetaRMSDCV()}{ParallelBetaRMSDCV()}}
+{\footnotesize\ttfamily S\+S\+A\+G\+E\+S\+::\+Parallel\+Beta\+R\+M\+S\+D\+C\+V\+::\+Parallel\+Beta\+R\+M\+S\+D\+CV (\begin{DoxyParamCaption}\item[{std\+::vector$<$ int $>$}]{resids,  }\item[{std\+::string}]{refpdb,  }\item[{double}]{unitconv,  }\item[{int}]{mode }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em resids} & I\+Ds of residues for calculating secondary structure \\
+\hline
+{\em refpdb} & String of pdb filename with atom and residue indices. \\
+\hline
+{\em unitconv} & Conversion for internal MD length unit\+: 1 nm is equal to unitconv internal units \\
+\hline
+{\em mode} & Specification for inter/intra mode for beta sheet character\\
+\hline
+\end{DoxyParams}
+Construct an Alpha\+R\+M\+SD CV -- calculates alpha helix character by summing pairwise R\+M\+SD to an ideal helix structure for all possible 6 residue segments. 
+
+Definition at line 85 of file Parallel\+Beta\+R\+M\+S\+D\+C\+V.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{85                                                                                                :}
+\DoxyCodeLine{86         \mbox{\hyperlink{classSSAGES_1_1ParallelBetaRMSDCV_afa39ad224c5e306ee1d7f25d35748d58}{resids\_}}(resids), \mbox{\hyperlink{classSSAGES_1_1ParallelBetaRMSDCV_aa16598928684514987206eb1d749114e}{refpdb\_}}(refpdb), \mbox{\hyperlink{classSSAGES_1_1ParallelBetaRMSDCV_ac8087d75530d47ddfbf25537a49ee37a}{unitconv\_}}(unitconv), \mbox{\hyperlink{classSSAGES_1_1ParallelBetaRMSDCV_a25c414420629f79ca896221ca11dc378}{mode\_}}(mode)}
+\DoxyCodeLine{87         \{}
+\DoxyCodeLine{88             \textcolor{keywordflow}{if}(\mbox{\hyperlink{classSSAGES_1_1ParallelBetaRMSDCV_afa39ad224c5e306ee1d7f25d35748d58}{resids\_}}.size() != 2 )\{}
+\DoxyCodeLine{89                 \textcolor{keywordflow}{throw} std::invalid\_argument(\textcolor{stringliteral}{"ParallelBetaRMSDCV: Input must designate range of residues with 2 residue numbers."});}
+\DoxyCodeLine{90             \}}
+\DoxyCodeLine{91 }
+\DoxyCodeLine{92             \mbox{\hyperlink{classSSAGES_1_1ParallelBetaRMSDCV_afa39ad224c5e306ee1d7f25d35748d58}{resids\_}}.clear();}
+\DoxyCodeLine{93 }
+\DoxyCodeLine{94             \textcolor{keywordflow}{if}(resids[0] >= resids[1])\{}
+\DoxyCodeLine{95                 \textcolor{keywordflow}{throw} std::invalid\_argument(\textcolor{stringliteral}{"ParallelBetaRMSDCV: Input must list lower residue index first: please reverse residue range."});}
+\DoxyCodeLine{96             \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(resids[1] -\/ resids[0] < 5) \{}
+\DoxyCodeLine{97                 \textcolor{keywordflow}{throw} std::invalid\_argument(\textcolor{stringliteral}{"ParallelBetaRMSDCV: Residue range must span at least 6 residues for secondary structure calculation."});}
+\DoxyCodeLine{98             \}}
+\DoxyCodeLine{99 }
+\DoxyCodeLine{100             std::cout << \textcolor{stringliteral}{"ParallelBetaRMSDCV: Calculating parallel beta sheet character from residue "} << resids[0] << \textcolor{stringliteral}{" to "} << resids[1]  << \textcolor{stringliteral}{"."} << std::endl;}
+\DoxyCodeLine{101 }
+\DoxyCodeLine{102             \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i = resids[0]; i <= resids[1]; i++)\{}
+\DoxyCodeLine{103                 \mbox{\hyperlink{classSSAGES_1_1ParallelBetaRMSDCV_afa39ad224c5e306ee1d7f25d35748d58}{resids\_}}.push\_back(i);}
+\DoxyCodeLine{104             \}}
+\DoxyCodeLine{105         \}}
+
+\end{DoxyCode}
+
+
+References resids\+\_\+.
+
+
+
+Referenced by Build().
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classSSAGES_1_1ParallelBetaRMSDCV_a24ef880045794b0fae9f3ac5a2ca9be1_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classSSAGES_1_1ParallelBetaRMSDCV_ad4c42c1bddc74fc312517ad13526c5cc}\label{classSSAGES_1_1ParallelBetaRMSDCV_ad4c42c1bddc74fc312517ad13526c5cc}} 
+\index{SSAGES::ParallelBetaRMSDCV@{SSAGES::ParallelBetaRMSDCV}!Build@{Build}}
+\index{Build@{Build}!SSAGES::ParallelBetaRMSDCV@{SSAGES::ParallelBetaRMSDCV}}
+\doxysubsubsection{\texorpdfstring{Build()}{Build()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classSSAGES_1_1ParallelBetaRMSDCV}{Parallel\+Beta\+R\+M\+S\+D\+CV}}$\ast$ S\+S\+A\+G\+E\+S\+::\+Parallel\+Beta\+R\+M\+S\+D\+C\+V\+::\+Build (\begin{DoxyParamCaption}\item[{const Json\+::\+Value \&}]{json,  }\item[{const std\+::string \&}]{path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Set up collective variable. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em json} & \mbox{\hyperlink{namespaceJSON}{J\+S\+ON}} input value. \\
+\hline
+{\em path} & Path for \mbox{\hyperlink{namespaceJSON}{J\+S\+ON}} path specification. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pointer to the CV built by this function. {\ttfamily nullptr} in case of unknown error.
+\end{DoxyReturn}
+Builds a CV from a \mbox{\hyperlink{namespaceJSON}{J\+S\+ON}} node. Returns a pointer to the built cv. If an unknown error is encountered, this function will return a {\ttfamily nullptr}, but generally it will throw a \mbox{\hyperlink{classSSAGES_1_1BuildException}{Build\+Exception}} on failure. \begin{DoxyWarning}{Warning}
+Object lifetime is the caller\textquotesingle{}s responsibility. 
+\end{DoxyWarning}
+
+
+Definition at line 260 of file Parallel\+Beta\+R\+M\+S\+D\+C\+V.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{261         \{}
+\DoxyCodeLine{262             \mbox{\hyperlink{classJson_1_1ObjectRequirement}{Json::ObjectRequirement}} validator;}
+\DoxyCodeLine{263             Json::Value schema;}
+\DoxyCodeLine{264             Json::CharReaderBuilder rbuilder;}
+\DoxyCodeLine{265             Json::CharReader* reader = rbuilder.newCharReader();}
+\DoxyCodeLine{266 }
+\DoxyCodeLine{267             reader-\/>parse(JsonSchema::ParallelBetaRMSDCV.c\_str(),}
+\DoxyCodeLine{268                           JsonSchema::ParallelBetaRMSDCV.c\_str() + JsonSchema::ParallelBetaRMSDCV.size(),}
+\DoxyCodeLine{269                           \&schema, \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{270             validator.\mbox{\hyperlink{classJson_1_1ObjectRequirement_a4ed02ae1d612a5efba1688fcdd2df092}{Parse}}(schema, path);}
+\DoxyCodeLine{271 }
+\DoxyCodeLine{272             \textcolor{comment}{//Validate inputs}}
+\DoxyCodeLine{273             validator.\mbox{\hyperlink{classJson_1_1ObjectRequirement_a9ac3b920001a35bc70580035d8d802b7}{Validate}}(json, path);}
+\DoxyCodeLine{274             \textcolor{keywordflow}{if}(validator.\mbox{\hyperlink{classJson_1_1Requirement_adfaec336a9f051d6f6b9a6d7f1d97b75}{HasErrors}}())}
+\DoxyCodeLine{275                     \textcolor{keywordflow}{throw} BuildException(validator.\mbox{\hyperlink{classJson_1_1Requirement_a60bc275c366eb59f192fa2e621268480}{GetErrors}}());}
+\DoxyCodeLine{276 }
+\DoxyCodeLine{277             std::vector<int> resids;}
+\DoxyCodeLine{278             \textcolor{keywordflow}{for}(\textcolor{keyword}{auto}\& s : json[\textcolor{stringliteral}{"residue\_ids"}])}
+\DoxyCodeLine{279                 resids.push\_back(s.asInt());}
+\DoxyCodeLine{280             \textcolor{keyword}{auto} reference = json[\textcolor{stringliteral}{"reference"}].asString();}
+\DoxyCodeLine{281 }
+\DoxyCodeLine{282             \textcolor{keywordtype}{double} unitconv = json.get(\textcolor{stringliteral}{"length\_unit"}, 1).asDouble();}
+\DoxyCodeLine{283 }
+\DoxyCodeLine{284             \textcolor{keywordtype}{int} mode = json.get(\textcolor{stringliteral}{"mode"}, 0).asInt();}
+\DoxyCodeLine{285 }
+\DoxyCodeLine{286             \textcolor{keywordflow}{return} \textcolor{keyword}{new} \mbox{\hyperlink{classSSAGES_1_1ParallelBetaRMSDCV_a24ef880045794b0fae9f3ac5a2ca9be1}{ParallelBetaRMSDCV}}(resids, reference, unitconv, mode);}
+\DoxyCodeLine{287         \}}
+
+\end{DoxyCode}
+
+
+References Json\+::\+Requirement\+::\+Get\+Errors(), Json\+::\+Requirement\+::\+Has\+Errors(), Parallel\+Beta\+R\+M\+S\+D\+C\+V(), Json\+::\+Object\+Requirement\+::\+Parse(), and Json\+::\+Object\+Requirement\+::\+Validate().
+
+
+
+Referenced by S\+S\+A\+G\+E\+S\+::\+Collective\+Variable\+::\+Build\+C\+V().
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classSSAGES_1_1ParallelBetaRMSDCV_ad4c42c1bddc74fc312517ad13526c5cc_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classSSAGES_1_1ParallelBetaRMSDCV_ad4c42c1bddc74fc312517ad13526c5cc_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classSSAGES_1_1ParallelBetaRMSDCV_a8ed7cf0c797dbf51f70e604d32546442}\label{classSSAGES_1_1ParallelBetaRMSDCV_a8ed7cf0c797dbf51f70e604d32546442}} 
+\index{SSAGES::ParallelBetaRMSDCV@{SSAGES::ParallelBetaRMSDCV}!Evaluate@{Evaluate}}
+\index{Evaluate@{Evaluate}!SSAGES::ParallelBetaRMSDCV@{SSAGES::ParallelBetaRMSDCV}}
+\doxysubsubsection{\texorpdfstring{Evaluate()}{Evaluate()}}
+{\footnotesize\ttfamily void S\+S\+A\+G\+E\+S\+::\+Parallel\+Beta\+R\+M\+S\+D\+C\+V\+::\+Evaluate (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classSSAGES_1_1Snapshot}{Snapshot}} \&}]{snapshot }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}}
+
+
+
+Evaluate the CV. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em snapshot} & Current simulation snapshot. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 179 of file Parallel\+Beta\+R\+M\+S\+D\+C\+V.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{180         \{}
+\DoxyCodeLine{181             \textcolor{comment}{// need atom positions for all atoms}}
+\DoxyCodeLine{182             \textcolor{keyword}{const} \textcolor{keyword}{auto}\& pos = snapshot.GetPositions();}
+\DoxyCodeLine{183             \textcolor{keyword}{auto}\& comm = snapshot.GetCommunicator();}
+\DoxyCodeLine{184 }
+\DoxyCodeLine{185             \textcolor{keywordtype}{unsigned} \textcolor{keywordtype}{int} resgroups = \mbox{\hyperlink{classSSAGES_1_1ParallelBetaRMSDCV_afa39ad224c5e306ee1d7f25d35748d58}{resids\_}}.size() -\/ 2;}
+\DoxyCodeLine{186             \textcolor{keywordtype}{double} rmsd, dist\_norm, dxgrouprmsd;}
+\DoxyCodeLine{187             \textcolor{keywordtype}{int} localidx;}
+\DoxyCodeLine{188             \mbox{\hyperlink{namespaceSSAGES_a630084a0a5e185e89e21b3735f8f8b2e}{Vector3}} dist\_xyz, dist\_ref;}
+\DoxyCodeLine{189             std::vector<Vector3> refxyz;}
+\DoxyCodeLine{190             std::vector< std::vector< Vector3 > > deriv(30, std::vector<Vector3>(30, \mbox{\hyperlink{namespaceSSAGES_a630084a0a5e185e89e21b3735f8f8b2e}{Vector3}}\{0,0,0\}));}
+\DoxyCodeLine{191             std::fill(\mbox{\hyperlink{classSSAGES_1_1CollectiveVariable_a390202f6e541da879f1cfcde22c49489}{grad\_}}.begin(), \mbox{\hyperlink{classSSAGES_1_1CollectiveVariable_a390202f6e541da879f1cfcde22c49489}{grad\_}}.end(), \mbox{\hyperlink{namespaceSSAGES_a630084a0a5e185e89e21b3735f8f8b2e}{Vector3}}\{0,0,0\});}
+\DoxyCodeLine{192             \mbox{\hyperlink{classSSAGES_1_1CollectiveVariable_a390202f6e541da879f1cfcde22c49489}{grad\_}}.resize(snapshot.GetNumAtoms(), \mbox{\hyperlink{namespaceSSAGES_a630084a0a5e185e89e21b3735f8f8b2e}{Vector3}}\{0,0,0\});}
+\DoxyCodeLine{193             \mbox{\hyperlink{classSSAGES_1_1CollectiveVariable_a65b17f3e9b3c967ad42814c3eec88bb2}{val\_}} = 0.0;}
+\DoxyCodeLine{194 }
+\DoxyCodeLine{195             \textcolor{keywordflow}{for}(\textcolor{keywordtype}{size\_t} i = 0; i < resgroups -\/ 3; i++)\{}
+\DoxyCodeLine{196                 \textcolor{keywordflow}{for}(\textcolor{keywordtype}{size\_t} j = i + 3; j < resgroups; j++)\{}
+\DoxyCodeLine{197                     \textcolor{comment}{// mode: 0 for all, 1 for inter, 2 for intra}}
+\DoxyCodeLine{198                     \textcolor{keywordflow}{if}((\mbox{\hyperlink{classSSAGES_1_1ParallelBetaRMSDCV_a25c414420629f79ca896221ca11dc378}{mode\_}} == 0) || (\mbox{\hyperlink{classSSAGES_1_1ParallelBetaRMSDCV_a25c414420629f79ca896221ca11dc378}{mode\_}} == 1 \&\& \mbox{\hyperlink{classSSAGES_1_1ParallelBetaRMSDCV_a0ef9236cc9909d75d4cdb3b9139dd071}{atomids\_}}[1][5 * j] != \mbox{\hyperlink{classSSAGES_1_1ParallelBetaRMSDCV_a0ef9236cc9909d75d4cdb3b9139dd071}{atomids\_}}[1][5 * i]) || (\mbox{\hyperlink{classSSAGES_1_1ParallelBetaRMSDCV_a25c414420629f79ca896221ca11dc378}{mode\_}} == 2 \&\& \mbox{\hyperlink{classSSAGES_1_1ParallelBetaRMSDCV_a0ef9236cc9909d75d4cdb3b9139dd071}{atomids\_}}[1][5 * j] == \mbox{\hyperlink{classSSAGES_1_1ParallelBetaRMSDCV_a0ef9236cc9909d75d4cdb3b9139dd071}{atomids\_}}[1][5 * i]))\{}
+\DoxyCodeLine{199                         rmsd = 0.0;}
+\DoxyCodeLine{200                         std::fill(refxyz.begin(), refxyz.end(), \mbox{\hyperlink{namespaceSSAGES_a630084a0a5e185e89e21b3735f8f8b2e}{Vector3}}\{0,0,0\});}
+\DoxyCodeLine{201                         refxyz.resize(30, \mbox{\hyperlink{namespaceSSAGES_a630084a0a5e185e89e21b3735f8f8b2e}{Vector3}}\{0,0,0\});}
+\DoxyCodeLine{202 }
+\DoxyCodeLine{203                         \textcolor{keywordflow}{for}(\textcolor{keywordtype}{size\_t} k = 0; k < 15; k++)\{}
+\DoxyCodeLine{204                             localidx = snapshot.GetLocalIndex(\mbox{\hyperlink{classSSAGES_1_1ParallelBetaRMSDCV_a94708bae68e7227966a640e335cf22bb}{ids\_only\_}}[5 * i + k]);}
+\DoxyCodeLine{205                             \textcolor{keywordflow}{if}(localidx != -\/1) refxyz[k] = pos[localidx];}
+\DoxyCodeLine{206                         \}}
+\DoxyCodeLine{207                         \textcolor{keywordflow}{for}(\textcolor{keywordtype}{size\_t} k = 0; k < 15; k++)\{}
+\DoxyCodeLine{208                             localidx = snapshot.GetLocalIndex(\mbox{\hyperlink{classSSAGES_1_1ParallelBetaRMSDCV_a94708bae68e7227966a640e335cf22bb}{ids\_only\_}}[5 * j + k]);}
+\DoxyCodeLine{209                             \textcolor{keywordflow}{if}(localidx != -\/1) refxyz[k + 15] = pos[localidx];}
+\DoxyCodeLine{210                         \}}
+\DoxyCodeLine{211 }
+\DoxyCodeLine{212                         MPI\_Allreduce(MPI\_IN\_PLACE, refxyz.data(), 90, MPI\_DOUBLE, MPI\_SUM, comm);}
+\DoxyCodeLine{213 }
+\DoxyCodeLine{214                         \textcolor{comment}{// sum over all pairs to calculate CV}}
+\DoxyCodeLine{215                         \textcolor{keywordflow}{for}(\textcolor{keywordtype}{size\_t} k = 0; k < 29; k++)\{}
+\DoxyCodeLine{216                             \textcolor{keywordflow}{for}(\textcolor{keywordtype}{size\_t} h = k + 1; h < 30; h++)\{}
+\DoxyCodeLine{217                                 dist\_xyz = refxyz[k] -\/ refxyz[h];}
+\DoxyCodeLine{218                                 dist\_norm = dist\_xyz.norm() -\/ \mbox{\hyperlink{classSSAGES_1_1ParallelBetaRMSDCV_a4a482fce4b6f57fef730256c19206366}{refdists\_}}[29 * k + h];}
+\DoxyCodeLine{219                                 rmsd += dist\_norm * dist\_norm;}
+\DoxyCodeLine{220                                 deriv[k][h] = dist\_xyz * dist\_norm / dist\_xyz.norm();}
+\DoxyCodeLine{221                             \}}
+\DoxyCodeLine{222                         \}}
+\DoxyCodeLine{223 }
+\DoxyCodeLine{224                         rmsd = pow(rmsd / 435, 0.5) / 0.1;}
+\DoxyCodeLine{225                         \mbox{\hyperlink{classSSAGES_1_1CollectiveVariable_a65b17f3e9b3c967ad42814c3eec88bb2}{val\_}} += (1 -\/ pow(rmsd, 8.0)) / (1 -\/ pow(rmsd, 12.0));}
+\DoxyCodeLine{226 }
+\DoxyCodeLine{227                         dxgrouprmsd = pow(rmsd, 11.0) + pow(rmsd, 7.0);}
+\DoxyCodeLine{228                         dxgrouprmsd /= pow(rmsd, 8.0) + pow(rmsd, 4.0) + 1;}
+\DoxyCodeLine{229                         dxgrouprmsd /= pow(rmsd, 8.0) + pow(rmsd, 4.0) + 1;}
+\DoxyCodeLine{230                         dxgrouprmsd *= -\/40. / 435;}
+\DoxyCodeLine{231 }
+\DoxyCodeLine{232                         \textcolor{keywordflow}{for}(\textcolor{keywordtype}{size\_t} k = 0; k < 15; k++)\{}
+\DoxyCodeLine{233                             \textcolor{keywordflow}{for}(\textcolor{keywordtype}{size\_t} h = k + 1; h < 15; h++)\{}
+\DoxyCodeLine{234                                 localidx = snapshot.GetLocalIndex(\mbox{\hyperlink{classSSAGES_1_1ParallelBetaRMSDCV_a94708bae68e7227966a640e335cf22bb}{ids\_only\_}}[5 * i + k]);}
+\DoxyCodeLine{235                                 \textcolor{keywordflow}{if}(localidx != -\/1) \mbox{\hyperlink{classSSAGES_1_1CollectiveVariable_a390202f6e541da879f1cfcde22c49489}{grad\_}}[localidx] += dxgrouprmsd * deriv[k][h];}
+\DoxyCodeLine{236                                 localidx = snapshot.GetLocalIndex(\mbox{\hyperlink{classSSAGES_1_1ParallelBetaRMSDCV_a94708bae68e7227966a640e335cf22bb}{ids\_only\_}}[5 * i + h]);}
+\DoxyCodeLine{237                                 \textcolor{keywordflow}{if}(localidx != -\/1) \mbox{\hyperlink{classSSAGES_1_1CollectiveVariable_a390202f6e541da879f1cfcde22c49489}{grad\_}}[localidx] += dxgrouprmsd * deriv[k][h];}
+\DoxyCodeLine{238                             \}}
+\DoxyCodeLine{239                             \textcolor{keywordflow}{for}(\textcolor{keywordtype}{size\_t} h = 0; h < 15; h++)\{}
+\DoxyCodeLine{240                                 localidx = snapshot.GetLocalIndex(\mbox{\hyperlink{classSSAGES_1_1ParallelBetaRMSDCV_a94708bae68e7227966a640e335cf22bb}{ids\_only\_}}[5 * i + k]);}
+\DoxyCodeLine{241                                 \textcolor{keywordflow}{if}(localidx != -\/1) \mbox{\hyperlink{classSSAGES_1_1CollectiveVariable_a390202f6e541da879f1cfcde22c49489}{grad\_}}[localidx] += dxgrouprmsd * deriv[k][h + 15];}
+\DoxyCodeLine{242                                 localidx = snapshot.GetLocalIndex(\mbox{\hyperlink{classSSAGES_1_1ParallelBetaRMSDCV_a94708bae68e7227966a640e335cf22bb}{ids\_only\_}}[5 * j + h]);}
+\DoxyCodeLine{243                                 \textcolor{keywordflow}{if}(localidx != -\/1) \mbox{\hyperlink{classSSAGES_1_1CollectiveVariable_a390202f6e541da879f1cfcde22c49489}{grad\_}}[localidx] += dxgrouprmsd * deriv[k][h + 15];}
+\DoxyCodeLine{244                             \}}
+\DoxyCodeLine{245                         \}}
+\DoxyCodeLine{246                         \textcolor{keywordflow}{for}(\textcolor{keywordtype}{size\_t} k = 0; k < 14; k++)\{}
+\DoxyCodeLine{247                             \textcolor{keywordflow}{for}(\textcolor{keywordtype}{size\_t} h = k + 1; h < 15; h++)\{}
+\DoxyCodeLine{248                                 localidx = snapshot.GetLocalIndex(\mbox{\hyperlink{classSSAGES_1_1ParallelBetaRMSDCV_a94708bae68e7227966a640e335cf22bb}{ids\_only\_}}[5 * j + k]);}
+\DoxyCodeLine{249                                 \textcolor{keywordflow}{if}(localidx != -\/1) \mbox{\hyperlink{classSSAGES_1_1CollectiveVariable_a390202f6e541da879f1cfcde22c49489}{grad\_}}[localidx] += dxgrouprmsd * deriv[k + 15][h + 15];}
+\DoxyCodeLine{250                                 localidx = snapshot.GetLocalIndex(\mbox{\hyperlink{classSSAGES_1_1ParallelBetaRMSDCV_a94708bae68e7227966a640e335cf22bb}{ids\_only\_}}[5 * j + h]);}
+\DoxyCodeLine{251                                 \textcolor{keywordflow}{if}(localidx != -\/1) \mbox{\hyperlink{classSSAGES_1_1CollectiveVariable_a390202f6e541da879f1cfcde22c49489}{grad\_}}[localidx] += dxgrouprmsd * deriv[k + 15][h + 15];}
+\DoxyCodeLine{252                             \}}
+\DoxyCodeLine{253                         \}}
+\DoxyCodeLine{254                     \}}
+\DoxyCodeLine{255                 \}}
+\DoxyCodeLine{256             \}}
+\DoxyCodeLine{257         \}}
+
+\end{DoxyCode}
+
+
+References atomids\+\_\+, S\+S\+A\+G\+E\+S\+::\+Snapshot\+::\+Get\+Communicator(), S\+S\+A\+G\+E\+S\+::\+Snapshot\+::\+Get\+Local\+Index(), S\+S\+A\+G\+E\+S\+::\+Snapshot\+::\+Get\+Num\+Atoms(), S\+S\+A\+G\+E\+S\+::\+Snapshot\+::\+Get\+Positions(), S\+S\+A\+G\+E\+S\+::\+Collective\+Variable\+::grad\+\_\+, ids\+\_\+only\+\_\+, mode\+\_\+, refdists\+\_\+, resids\+\_\+, and S\+S\+A\+G\+E\+S\+::\+Collective\+Variable\+::val\+\_\+.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classSSAGES_1_1ParallelBetaRMSDCV_a8ed7cf0c797dbf51f70e604d32546442_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classSSAGES_1_1ParallelBetaRMSDCV_a373ce72beacf2c412d0b37601b4399d4}\label{classSSAGES_1_1ParallelBetaRMSDCV_a373ce72beacf2c412d0b37601b4399d4}} 
+\index{SSAGES::ParallelBetaRMSDCV@{SSAGES::ParallelBetaRMSDCV}!Initialize@{Initialize}}
+\index{Initialize@{Initialize}!SSAGES::ParallelBetaRMSDCV@{SSAGES::ParallelBetaRMSDCV}}
+\doxysubsubsection{\texorpdfstring{Initialize()}{Initialize()}}
+{\footnotesize\ttfamily void S\+S\+A\+G\+E\+S\+::\+Parallel\+Beta\+R\+M\+S\+D\+C\+V\+::\+Initialize (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classSSAGES_1_1Snapshot}{Snapshot}} \&}]{snapshot }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}}
+
+
+
+Initialize necessary variables. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em snapshot} & Current simulation snapshot. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 111 of file Parallel\+Beta\+R\+M\+S\+D\+C\+V.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{112         \{}
+\DoxyCodeLine{113             \mbox{\hyperlink{classSSAGES_1_1ParallelBetaRMSDCV_a0ef9236cc9909d75d4cdb3b9139dd071}{atomids\_}} = \mbox{\hyperlink{classSSAGES_1_1ReadBackbone_a2ac2a3c64129511572a47ec0913080ce}{ReadBackbone::GetPdbBackbone}}(\mbox{\hyperlink{classSSAGES_1_1ParallelBetaRMSDCV_aa16598928684514987206eb1d749114e}{refpdb\_}}, \mbox{\hyperlink{classSSAGES_1_1ParallelBetaRMSDCV_afa39ad224c5e306ee1d7f25d35748d58}{resids\_}});}
+\DoxyCodeLine{114             \mbox{\hyperlink{classSSAGES_1_1ParallelBetaRMSDCV_a94708bae68e7227966a640e335cf22bb}{ids\_only\_}}.resize(\mbox{\hyperlink{classSSAGES_1_1ParallelBetaRMSDCV_a0ef9236cc9909d75d4cdb3b9139dd071}{atomids\_}}[0].size());}
+\DoxyCodeLine{115 }
+\DoxyCodeLine{116             \textcolor{comment}{// check to find all necessary atoms}}
+\DoxyCodeLine{117             std::transform(\mbox{\hyperlink{classSSAGES_1_1ParallelBetaRMSDCV_a0ef9236cc9909d75d4cdb3b9139dd071}{atomids\_}}[0].begin(), \mbox{\hyperlink{classSSAGES_1_1ParallelBetaRMSDCV_a0ef9236cc9909d75d4cdb3b9139dd071}{atomids\_}}[0].end(), \mbox{\hyperlink{classSSAGES_1_1ParallelBetaRMSDCV_a94708bae68e7227966a640e335cf22bb}{ids\_only\_}}.begin(), [](std::string val) \{return std::stoi(val);\});}
+\DoxyCodeLine{118             \textcolor{keyword}{using} std::to\_string;}
+\DoxyCodeLine{119             std::vector<int> found;}
+\DoxyCodeLine{120             snapshot.GetLocalIndices(\mbox{\hyperlink{classSSAGES_1_1ParallelBetaRMSDCV_a94708bae68e7227966a640e335cf22bb}{ids\_only\_}}, \&found);}
+\DoxyCodeLine{121             \textcolor{keywordtype}{size\_t} nfound = found.size();}
+\DoxyCodeLine{122             MPI\_Allreduce(MPI\_IN\_PLACE, \&nfound, 1, MPI\_INT, MPI\_SUM, snapshot.GetCommunicator());}
+\DoxyCodeLine{123             \textcolor{keywordflow}{if}(nfound != \mbox{\hyperlink{classSSAGES_1_1ParallelBetaRMSDCV_afa39ad224c5e306ee1d7f25d35748d58}{resids\_}}.size() * 5)}
+\DoxyCodeLine{124                 \textcolor{keywordflow}{throw} BuildException(\{}
+\DoxyCodeLine{125                     \textcolor{stringliteral}{"ParallelBetaRMSDCV: Expected to find "} +}
+\DoxyCodeLine{126                     to\_string(\mbox{\hyperlink{classSSAGES_1_1ParallelBetaRMSDCV_afa39ad224c5e306ee1d7f25d35748d58}{resids\_}}.size() * 5) +}
+\DoxyCodeLine{127                     \textcolor{stringliteral}{" atoms, but only found "} +}
+\DoxyCodeLine{128                     to\_string(nfound) + \textcolor{stringliteral}{"."}}
+\DoxyCodeLine{129                 \});}
+\DoxyCodeLine{130 }
+\DoxyCodeLine{131             \textcolor{comment}{// reference structure for parallel beta sheet, values in nanometers}}
+\DoxyCodeLine{132             \textcolor{comment}{// Reference structure taken from values used in Plumed 2.2.0}}
+\DoxyCodeLine{133             std::vector<Vector3> refalpha;}
+\DoxyCodeLine{134             refalpha.push\_back(\mbox{\hyperlink{classSSAGES_1_1ParallelBetaRMSDCV_ac8087d75530d47ddfbf25537a49ee37a}{unitconv\_}} * \mbox{\hyperlink{namespaceSSAGES_a630084a0a5e185e89e21b3735f8f8b2e}{Vector3}}\{-\/.1439, -\/.5122, -\/.1144\}); \textcolor{comment}{// N    residue i}}
+\DoxyCodeLine{135             refalpha.push\_back(\mbox{\hyperlink{classSSAGES_1_1ParallelBetaRMSDCV_ac8087d75530d47ddfbf25537a49ee37a}{unitconv\_}} * \mbox{\hyperlink{namespaceSSAGES_a630084a0a5e185e89e21b3735f8f8b2e}{Vector3}}\{-\/.0816, -\/.3803, -\/.1013\}); \textcolor{comment}{// CA}}
+\DoxyCodeLine{136             refalpha.push\_back(\mbox{\hyperlink{classSSAGES_1_1ParallelBetaRMSDCV_ac8087d75530d47ddfbf25537a49ee37a}{unitconv\_}} * \mbox{\hyperlink{namespaceSSAGES_a630084a0a5e185e89e21b3735f8f8b2e}{Vector3}}\{ .0099, -\/.3509, -\/.2206\}); \textcolor{comment}{// CB}}
+\DoxyCodeLine{137             refalpha.push\_back(\mbox{\hyperlink{classSSAGES_1_1ParallelBetaRMSDCV_ac8087d75530d47ddfbf25537a49ee37a}{unitconv\_}} * \mbox{\hyperlink{namespaceSSAGES_a630084a0a5e185e89e21b3735f8f8b2e}{Vector3}}\{-\/.1928, -\/.2770, -\/.0952\}); \textcolor{comment}{// C}}
+\DoxyCodeLine{138             refalpha.push\_back(\mbox{\hyperlink{classSSAGES_1_1ParallelBetaRMSDCV_ac8087d75530d47ddfbf25537a49ee37a}{unitconv\_}} * \mbox{\hyperlink{namespaceSSAGES_a630084a0a5e185e89e21b3735f8f8b2e}{Vector3}}\{-\/.2991, -\/.2970, -\/.1551\}); \textcolor{comment}{// O}}
+\DoxyCodeLine{139             refalpha.push\_back(\mbox{\hyperlink{classSSAGES_1_1ParallelBetaRMSDCV_ac8087d75530d47ddfbf25537a49ee37a}{unitconv\_}} * \mbox{\hyperlink{namespaceSSAGES_a630084a0a5e185e89e21b3735f8f8b2e}{Vector3}}\{-\/.1698, -\/.1687, -\/.0215\}); \textcolor{comment}{// N    residue i+1}}
+\DoxyCodeLine{140             refalpha.push\_back(\mbox{\hyperlink{classSSAGES_1_1ParallelBetaRMSDCV_ac8087d75530d47ddfbf25537a49ee37a}{unitconv\_}} * \mbox{\hyperlink{namespaceSSAGES_a630084a0a5e185e89e21b3735f8f8b2e}{Vector3}}\{-\/.2681, -\/.0613, -\/.0143\}); \textcolor{comment}{// CA}}
+\DoxyCodeLine{141             refalpha.push\_back(\mbox{\hyperlink{classSSAGES_1_1ParallelBetaRMSDCV_ac8087d75530d47ddfbf25537a49ee37a}{unitconv\_}} * \mbox{\hyperlink{namespaceSSAGES_a630084a0a5e185e89e21b3735f8f8b2e}{Vector3}}\{-\/.3323, -\/.0477,  .1267\}); \textcolor{comment}{// CB}}
+\DoxyCodeLine{142             refalpha.push\_back(\mbox{\hyperlink{classSSAGES_1_1ParallelBetaRMSDCV_ac8087d75530d47ddfbf25537a49ee37a}{unitconv\_}} * \mbox{\hyperlink{namespaceSSAGES_a630084a0a5e185e89e21b3735f8f8b2e}{Vector3}}\{-\/.1984,  .0681, -\/.0574\}); \textcolor{comment}{// C}}
+\DoxyCodeLine{143             refalpha.push\_back(\mbox{\hyperlink{classSSAGES_1_1ParallelBetaRMSDCV_ac8087d75530d47ddfbf25537a49ee37a}{unitconv\_}} * \mbox{\hyperlink{namespaceSSAGES_a630084a0a5e185e89e21b3735f8f8b2e}{Vector3}}\{-\/.0807,  .0921, -\/.0273\}); \textcolor{comment}{// O}}
+\DoxyCodeLine{144             refalpha.push\_back(\mbox{\hyperlink{classSSAGES_1_1ParallelBetaRMSDCV_ac8087d75530d47ddfbf25537a49ee37a}{unitconv\_}} * \mbox{\hyperlink{namespaceSSAGES_a630084a0a5e185e89e21b3735f8f8b2e}{Vector3}}\{-\/.2716,  .1492, -\/.1329\}); \textcolor{comment}{// N    residue i+2}}
+\DoxyCodeLine{145             refalpha.push\_back(\mbox{\hyperlink{classSSAGES_1_1ParallelBetaRMSDCV_ac8087d75530d47ddfbf25537a49ee37a}{unitconv\_}} * \mbox{\hyperlink{namespaceSSAGES_a630084a0a5e185e89e21b3735f8f8b2e}{Vector3}}\{-\/.2196,  .2731, -\/.1883\}); \textcolor{comment}{// CA}}
+\DoxyCodeLine{146             refalpha.push\_back(\mbox{\hyperlink{classSSAGES_1_1ParallelBetaRMSDCV_ac8087d75530d47ddfbf25537a49ee37a}{unitconv\_}} * \mbox{\hyperlink{namespaceSSAGES_a630084a0a5e185e89e21b3735f8f8b2e}{Vector3}}\{-\/.2263,  .2692, -\/.3418\}); \textcolor{comment}{// CB}}
+\DoxyCodeLine{147             refalpha.push\_back(\mbox{\hyperlink{classSSAGES_1_1ParallelBetaRMSDCV_ac8087d75530d47ddfbf25537a49ee37a}{unitconv\_}} * \mbox{\hyperlink{namespaceSSAGES_a630084a0a5e185e89e21b3735f8f8b2e}{Vector3}}\{-\/.2989,  .3949, -\/.1433\}); \textcolor{comment}{// C}}
+\DoxyCodeLine{148             refalpha.push\_back(\mbox{\hyperlink{classSSAGES_1_1ParallelBetaRMSDCV_ac8087d75530d47ddfbf25537a49ee37a}{unitconv\_}} * \mbox{\hyperlink{namespaceSSAGES_a630084a0a5e185e89e21b3735f8f8b2e}{Vector3}}\{-\/.4214,  .3989, -\/.1583\}); \textcolor{comment}{// O}}
+\DoxyCodeLine{149             refalpha.push\_back(\mbox{\hyperlink{classSSAGES_1_1ParallelBetaRMSDCV_ac8087d75530d47ddfbf25537a49ee37a}{unitconv\_}} * \mbox{\hyperlink{namespaceSSAGES_a630084a0a5e185e89e21b3735f8f8b2e}{Vector3}}\{ .2464, -\/.4352,  .2149\}); \textcolor{comment}{// N    residue h}}
+\DoxyCodeLine{150             refalpha.push\_back(\mbox{\hyperlink{classSSAGES_1_1ParallelBetaRMSDCV_ac8087d75530d47ddfbf25537a49ee37a}{unitconv\_}} * \mbox{\hyperlink{namespaceSSAGES_a630084a0a5e185e89e21b3735f8f8b2e}{Vector3}}\{ .3078, -\/.3170,  .1541\}); \textcolor{comment}{// CA}}
+\DoxyCodeLine{151             refalpha.push\_back(\mbox{\hyperlink{classSSAGES_1_1ParallelBetaRMSDCV_ac8087d75530d47ddfbf25537a49ee37a}{unitconv\_}} * \mbox{\hyperlink{namespaceSSAGES_a630084a0a5e185e89e21b3735f8f8b2e}{Vector3}}\{ .3398, -\/.3415,  .0060\}); \textcolor{comment}{// CB}}
+\DoxyCodeLine{152             refalpha.push\_back(\mbox{\hyperlink{classSSAGES_1_1ParallelBetaRMSDCV_ac8087d75530d47ddfbf25537a49ee37a}{unitconv\_}} * \mbox{\hyperlink{namespaceSSAGES_a630084a0a5e185e89e21b3735f8f8b2e}{Vector3}}\{ .2080, -\/.2021,  .1639\}); \textcolor{comment}{// C}}
+\DoxyCodeLine{153             refalpha.push\_back(\mbox{\hyperlink{classSSAGES_1_1ParallelBetaRMSDCV_ac8087d75530d47ddfbf25537a49ee37a}{unitconv\_}} * \mbox{\hyperlink{namespaceSSAGES_a630084a0a5e185e89e21b3735f8f8b2e}{Vector3}}\{ .0938, -\/.2178,  .1225\}); \textcolor{comment}{// O}}
+\DoxyCodeLine{154             refalpha.push\_back(\mbox{\hyperlink{classSSAGES_1_1ParallelBetaRMSDCV_ac8087d75530d47ddfbf25537a49ee37a}{unitconv\_}} * \mbox{\hyperlink{namespaceSSAGES_a630084a0a5e185e89e21b3735f8f8b2e}{Vector3}}\{ .2525, -\/.0886,  .2183\}); \textcolor{comment}{// N    residue h+1}}
+\DoxyCodeLine{155             refalpha.push\_back(\mbox{\hyperlink{classSSAGES_1_1ParallelBetaRMSDCV_ac8087d75530d47ddfbf25537a49ee37a}{unitconv\_}} * \mbox{\hyperlink{namespaceSSAGES_a630084a0a5e185e89e21b3735f8f8b2e}{Vector3}}\{ .1692,  .0303,  .2346\}); \textcolor{comment}{// CA}}
+\DoxyCodeLine{156             refalpha.push\_back(\mbox{\hyperlink{classSSAGES_1_1ParallelBetaRMSDCV_ac8087d75530d47ddfbf25537a49ee37a}{unitconv\_}} * \mbox{\hyperlink{namespaceSSAGES_a630084a0a5e185e89e21b3735f8f8b2e}{Vector3}}\{ .1541,  .0665,  .3842\}); \textcolor{comment}{// CB}}
+\DoxyCodeLine{157             refalpha.push\_back(\mbox{\hyperlink{classSSAGES_1_1ParallelBetaRMSDCV_ac8087d75530d47ddfbf25537a49ee37a}{unitconv\_}} * \mbox{\hyperlink{namespaceSSAGES_a630084a0a5e185e89e21b3735f8f8b2e}{Vector3}}\{ .2420,  .1410,  .1608\}); \textcolor{comment}{// C}}
+\DoxyCodeLine{158             refalpha.push\_back(\mbox{\hyperlink{classSSAGES_1_1ParallelBetaRMSDCV_ac8087d75530d47ddfbf25537a49ee37a}{unitconv\_}} * \mbox{\hyperlink{namespaceSSAGES_a630084a0a5e185e89e21b3735f8f8b2e}{Vector3}}\{ .3567,  .1733,  .1937\}); \textcolor{comment}{// O}}
+\DoxyCodeLine{159             refalpha.push\_back(\mbox{\hyperlink{classSSAGES_1_1ParallelBetaRMSDCV_ac8087d75530d47ddfbf25537a49ee37a}{unitconv\_}} * \mbox{\hyperlink{namespaceSSAGES_a630084a0a5e185e89e21b3735f8f8b2e}{Vector3}}\{ .1758,  .1976,  .0600\}); \textcolor{comment}{// N    residue h+2}}
+\DoxyCodeLine{160             refalpha.push\_back(\mbox{\hyperlink{classSSAGES_1_1ParallelBetaRMSDCV_ac8087d75530d47ddfbf25537a49ee37a}{unitconv\_}} * \mbox{\hyperlink{namespaceSSAGES_a630084a0a5e185e89e21b3735f8f8b2e}{Vector3}}\{ .2373,  .2987, -\/.0238\}); \textcolor{comment}{// CA}}
+\DoxyCodeLine{161             refalpha.push\_back(\mbox{\hyperlink{classSSAGES_1_1ParallelBetaRMSDCV_ac8087d75530d47ddfbf25537a49ee37a}{unitconv\_}} * \mbox{\hyperlink{namespaceSSAGES_a630084a0a5e185e89e21b3735f8f8b2e}{Vector3}}\{ .2367,  .2527, -\/.1720\}); \textcolor{comment}{// CB}}
+\DoxyCodeLine{162             refalpha.push\_back(\mbox{\hyperlink{classSSAGES_1_1ParallelBetaRMSDCV_ac8087d75530d47ddfbf25537a49ee37a}{unitconv\_}} * \mbox{\hyperlink{namespaceSSAGES_a630084a0a5e185e89e21b3735f8f8b2e}{Vector3}}\{ .1684,  .4331, -\/.0148\}); \textcolor{comment}{// C}}
+\DoxyCodeLine{163             refalpha.push\_back(\mbox{\hyperlink{classSSAGES_1_1ParallelBetaRMSDCV_ac8087d75530d47ddfbf25537a49ee37a}{unitconv\_}} * \mbox{\hyperlink{namespaceSSAGES_a630084a0a5e185e89e21b3735f8f8b2e}{Vector3}}\{ .0486,  .4430, -\/.0415\}); \textcolor{comment}{// O}}
+\DoxyCodeLine{164 }
+\DoxyCodeLine{165             \textcolor{comment}{// calculate all necessary pairwise distances for reference structure}}
+\DoxyCodeLine{166             std::fill(\mbox{\hyperlink{classSSAGES_1_1ParallelBetaRMSDCV_a4a482fce4b6f57fef730256c19206366}{refdists\_}}.begin(), \mbox{\hyperlink{classSSAGES_1_1ParallelBetaRMSDCV_a4a482fce4b6f57fef730256c19206366}{refdists\_}}.end(), 0.0);}
+\DoxyCodeLine{167             \mbox{\hyperlink{classSSAGES_1_1ParallelBetaRMSDCV_a4a482fce4b6f57fef730256c19206366}{refdists\_}}.resize(900, 0.0);}
+\DoxyCodeLine{168             \textcolor{keywordflow}{for}(\textcolor{keywordtype}{size\_t} k = 0; k < 29; k++)\{}
+\DoxyCodeLine{169                 \textcolor{keywordflow}{for}(\textcolor{keywordtype}{size\_t} h = k + 1; h < 30; h++)\{}
+\DoxyCodeLine{170                     \mbox{\hyperlink{classSSAGES_1_1ParallelBetaRMSDCV_a4a482fce4b6f57fef730256c19206366}{refdists\_}}[29 * k + h] = (refalpha[k] -\/ refalpha[h]).norm();}
+\DoxyCodeLine{171                 \}}
+\DoxyCodeLine{172             \}}
+\DoxyCodeLine{173         \}}
+
+\end{DoxyCode}
+
+
+References atomids\+\_\+, S\+S\+A\+G\+E\+S\+::\+Snapshot\+::\+Get\+Communicator(), S\+S\+A\+G\+E\+S\+::\+Snapshot\+::\+Get\+Local\+Indices(), S\+S\+A\+G\+E\+S\+::\+Read\+Backbone\+::\+Get\+Pdb\+Backbone(), ids\+\_\+only\+\_\+, refdists\+\_\+, refpdb\+\_\+, resids\+\_\+, and unitconv\+\_\+.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classSSAGES_1_1ParallelBetaRMSDCV_a373ce72beacf2c412d0b37601b4399d4_cgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/michael/development/\+S\+S\+A\+G\+E\+S/src/\+C\+Vs/Parallel\+Beta\+R\+M\+S\+D\+C\+V.\+h\end{DoxyCompactItemize}

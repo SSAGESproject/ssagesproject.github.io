@@ -1,0 +1,10 @@
+<map id="SSAGES::ElasticBand::ElasticBand" name="SSAGES::ElasticBand::ElasticBand">
+<area shape="rect" id="node2" href="$classSSAGES_1_1ElasticBand.html#a85177e2c02fa8f767eb98664636732da" title="Post&#45;integration hook. " alt="" coords="208,155,363,197"/>
+<area shape="rect" id="node3" href="$classSSAGES_1_1Snapshot.html#a2d195c04efbc7d7d1c3dd4ccd4b9a5bc" title="Access the per&#45;particle forces. " alt="" coords="411,5,620,32"/>
+<area shape="rect" id="node4" href="$classSSAGES_1_1CVManager.html#ad2a31c91a0298b4e80ca5ba720c5eee3" title="Get CV iterator. " alt="" coords="434,57,597,98"/>
+<area shape="rect" id="node5" href="$classSSAGES_1_1ElasticBand.html#a131b99117f7f7f3ff18419513a2c507b" title="Updates the nudged elastic band string. " alt="" coords="438,122,593,163"/>
+<area shape="rect" id="node7" href="$classSSAGES_1_1StringMethod.html#a98d6840cc33ad30c2e9a4311e57ea2de" title="Check if method reached one of the exit criteria. " alt="" coords="434,187,597,229"/>
+<area shape="rect" id="node8" href="$classSSAGES_1_1StringMethod.html#a538a83e6f944a2b37ae9cc6207c970f5" title="Update the world string over MPI. " alt="" coords="434,253,597,294"/>
+<area shape="rect" id="node9" href="$classSSAGES_1_1StringMethod.html#aaac8b878af3574e7da1c109e5d2bfaf0" title="Prints the CV positions to file. " alt="" coords="434,318,597,359"/>
+<area shape="rect" id="node6" href="$classSSAGES_1_1StringMethod.html#ab38df67b9a7bee7a68c4692f97fd828b" title="Gather neighbors over MPI. " alt="" coords="668,122,831,163"/>
+</map>

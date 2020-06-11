@@ -1,0 +1,5 @@
+<map id="SSAGES::GridBase::GetIndices" name="SSAGES::GridBase::GetIndices">
+<area shape="rect" id="node1" title="Return the Grid indices for a given point." alt="" coords="237,46,448,73"/>
+<area shape="rect" id="node2" href="$classSSAGES_1_1GridBase.html#a292e31519c756288f7ad7295ffac6077" title="Access Grid element pertaining to a specific point – read&#45;only." alt="" coords="5,5,189,47"/>
+<area shape="rect" id="node3" href="$classSSAGES_1_1GridBase.html#a79d7f8bcf88ffb70310d26bb3a6d16e3" title="Return linear interpolation on a coordinate." alt="" coords="5,71,189,112"/>
+</map>

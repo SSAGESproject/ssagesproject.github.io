@@ -1,0 +1,175 @@
+\hypertarget{classJson_1_1AnyOfRequirement}{}\doxysection{Json\+::Any\+Of\+Requirement Class Reference}
+\label{classJson_1_1AnyOfRequirement}\index{Json::AnyOfRequirement@{Json::AnyOfRequirement}}
+
+
+Requires that at least one of a list of Requirements hold.  
+
+
+
+
+{\ttfamily \#include $<$Any\+Of\+Requirement.\+h$>$}
+
+
+
+Inheritance diagram for Json\+::Any\+Of\+Requirement\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=207pt]{classJson_1_1AnyOfRequirement__inherit__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classJson_1_1AnyOfRequirement_afb33f19192a6dd304f471cc3d73d8351}\label{classJson_1_1AnyOfRequirement_afb33f19192a6dd304f471cc3d73d8351}} 
+\mbox{\hyperlink{classJson_1_1AnyOfRequirement_afb33f19192a6dd304f471cc3d73d8351}{Any\+Of\+Requirement}} ()
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classJson_1_1AnyOfRequirement_ad692806c31a53749b8f4e6a8a14808f5}\label{classJson_1_1AnyOfRequirement_ad692806c31a53749b8f4e6a8a14808f5}} 
+virtual void \mbox{\hyperlink{classJson_1_1AnyOfRequirement_ad692806c31a53749b8f4e6a8a14808f5}{Clear\+Errors}} () override
+\begin{DoxyCompactList}\small\item\em Clear list of error messages for all Requirements. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classJson_1_1AnyOfRequirement_a44b3f280d1e177f0906fea5398d60b2b}\label{classJson_1_1AnyOfRequirement_a44b3f280d1e177f0906fea5398d60b2b}} 
+virtual void \mbox{\hyperlink{classJson_1_1AnyOfRequirement_a44b3f280d1e177f0906fea5398d60b2b}{Clear\+Notices}} () override
+\begin{DoxyCompactList}\small\item\em Clear list of notices for all Requirements. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classJson_1_1AnyOfRequirement_aa24fd212e067c6e4686cddba9431bcad}\label{classJson_1_1AnyOfRequirement_aa24fd212e067c6e4686cddba9431bcad}} 
+virtual void \mbox{\hyperlink{classJson_1_1AnyOfRequirement_aa24fd212e067c6e4686cddba9431bcad}{Reset}} () override
+\begin{DoxyCompactList}\small\item\em Reset all Requirements. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classJson_1_1AnyOfRequirement_ad8af3d0201c0a4614ead6f2e9560ef80}{Parse}} (Value json, const std\+::string \&path) override
+\begin{DoxyCompactList}\small\item\em Parse \mbox{\hyperlink{namespaceJSON}{J\+S\+ON}} value and create list of Requirements. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classJson_1_1AnyOfRequirement_a3f52414023e6c2bdf13855c483431237}{Validate}} (const Value \&json, const std\+::string \&path) override
+\begin{DoxyCompactList}\small\item\em Validate that at least one \mbox{\hyperlink{classJson_1_1Requirement}{Requirement}} holds. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classJson_1_1AnyOfRequirement_a3c36f32cd89c1f3b9b31a7e6ec776c5f}\label{classJson_1_1AnyOfRequirement_a3c36f32cd89c1f3b9b31a7e6ec776c5f}} 
+\mbox{\hyperlink{namespaceJson_a8f2c96c750a51f5e11ca4f277c48305a}{Require\+List}} \mbox{\hyperlink{classJson_1_1AnyOfRequirement_a3c36f32cd89c1f3b9b31a7e6ec776c5f}{reqs\+\_\+}}
+\begin{DoxyCompactList}\small\item\em List of Requirements. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Requires that at least one of a list of Requirements hold. 
+
+Definition at line 37 of file Any\+Of\+Requirement.\+h.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classJson_1_1AnyOfRequirement_ad8af3d0201c0a4614ead6f2e9560ef80}\label{classJson_1_1AnyOfRequirement_ad8af3d0201c0a4614ead6f2e9560ef80}} 
+\index{Json::AnyOfRequirement@{Json::AnyOfRequirement}!Parse@{Parse}}
+\index{Parse@{Parse}!Json::AnyOfRequirement@{Json::AnyOfRequirement}}
+\doxysubsubsection{\texorpdfstring{Parse()}{Parse()}}
+{\footnotesize\ttfamily virtual void Json\+::\+Any\+Of\+Requirement\+::\+Parse (\begin{DoxyParamCaption}\item[{Value}]{json,  }\item[{const std\+::string \&}]{path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Parse \mbox{\hyperlink{namespaceJSON}{J\+S\+ON}} value and create list of Requirements. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em json} & \mbox{\hyperlink{namespaceJSON}{J\+S\+ON}} input value. \\
+\hline
+{\em path} & Path for \mbox{\hyperlink{namespaceJSON}{J\+S\+ON}} path specification.\\
+\hline
+\end{DoxyParams}
+This function parses the given \mbox{\hyperlink{namespaceJSON}{J\+S\+ON}} value and creates a new \mbox{\hyperlink{classJson_1_1Requirement}{Requirement}} for each value in the \char`\"{}any\+Of\char`\"{} branch. The new Requirements are appended to the list of Requirements. 
+
+Implements \mbox{\hyperlink{classJson_1_1Requirement_af13c20497e7ad6c332c57fa80a266e27}{Json\+::\+Requirement}}.
+
+
+
+Definition at line 81 of file Any\+Of\+Requirement.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{82         \{}
+\DoxyCodeLine{83             \mbox{\hyperlink{classJson_1_1AnyOfRequirement_aa24fd212e067c6e4686cddba9431bcad}{Reset}}();}
+\DoxyCodeLine{84             RequirementLoader loader;}
+\DoxyCodeLine{85 }
+\DoxyCodeLine{86             \textcolor{keyword}{auto}\& head = json.isMember(\textcolor{stringliteral}{"anyOf"}) ? json[\textcolor{stringliteral}{"anyOf"}] : json;}
+\DoxyCodeLine{87 }
+\DoxyCodeLine{88             \textcolor{keywordflow}{for}(\textcolor{keyword}{auto}\& val : head)}
+\DoxyCodeLine{89                 \textcolor{keywordflow}{if}(\textcolor{keyword}{auto} req = loader.LoadRequirement(val))}
+\DoxyCodeLine{90                 \{}
+\DoxyCodeLine{91                     \mbox{\hyperlink{classJson_1_1AnyOfRequirement_a3c36f32cd89c1f3b9b31a7e6ec776c5f}{reqs\_}}.push\_back(std::move(req));}
+\DoxyCodeLine{92                     \mbox{\hyperlink{classJson_1_1AnyOfRequirement_a3c36f32cd89c1f3b9b31a7e6ec776c5f}{reqs\_}}.back()-\/>Parse(val, path);}
+\DoxyCodeLine{93                 \}}
+\DoxyCodeLine{94 }
+\DoxyCodeLine{95         \}}
+
+\end{DoxyCode}
+
+
+References Json\+::\+Requirement\+Loader\+::\+Load\+Requirement(), reqs\+\_\+, and Reset().
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classJson_1_1AnyOfRequirement_ad8af3d0201c0a4614ead6f2e9560ef80_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classJson_1_1AnyOfRequirement_a3f52414023e6c2bdf13855c483431237}\label{classJson_1_1AnyOfRequirement_a3f52414023e6c2bdf13855c483431237}} 
+\index{Json::AnyOfRequirement@{Json::AnyOfRequirement}!Validate@{Validate}}
+\index{Validate@{Validate}!Json::AnyOfRequirement@{Json::AnyOfRequirement}}
+\doxysubsubsection{\texorpdfstring{Validate()}{Validate()}}
+{\footnotesize\ttfamily virtual void Json\+::\+Any\+Of\+Requirement\+::\+Validate (\begin{DoxyParamCaption}\item[{const Value \&}]{json,  }\item[{const std\+::string \&}]{path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Validate that at least one \mbox{\hyperlink{classJson_1_1Requirement}{Requirement}} holds. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em json} & \mbox{\hyperlink{namespaceJSON}{J\+S\+ON}} value to validate. \\
+\hline
+{\em path} & Path for \mbox{\hyperlink{namespaceJSON}{J\+S\+ON}} path specification. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classJson_1_1Requirement_aa97494b642414d00482745a0d5b2c2c3}{Json\+::\+Requirement}}.
+
+
+
+Definition at line 102 of file Any\+Of\+Requirement.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{103         \{}
+\DoxyCodeLine{104             \textcolor{keywordflow}{for}(\textcolor{keyword}{auto}\& r : \mbox{\hyperlink{classJson_1_1AnyOfRequirement_a3c36f32cd89c1f3b9b31a7e6ec776c5f}{reqs\_}})}
+\DoxyCodeLine{105             \{}
+\DoxyCodeLine{106                 r-\/>Validate(json, path);}
+\DoxyCodeLine{107                 \textcolor{keywordflow}{if}(!r-\/>HasErrors())}
+\DoxyCodeLine{108                     \textcolor{keywordflow}{return};}
+\DoxyCodeLine{109             \}}
+\DoxyCodeLine{110 }
+\DoxyCodeLine{111             \textcolor{comment}{// Collect errors.}}
+\DoxyCodeLine{112             \textcolor{keywordflow}{for}(\textcolor{keyword}{auto}\& r : \mbox{\hyperlink{classJson_1_1AnyOfRequirement_a3c36f32cd89c1f3b9b31a7e6ec776c5f}{reqs\_}})}
+\DoxyCodeLine{113             \{}
+\DoxyCodeLine{114                 \textcolor{keywordflow}{if}(r-\/>HasErrors())}
+\DoxyCodeLine{115                     \textcolor{keywordflow}{for}(\textcolor{keyword}{const} \textcolor{keyword}{auto}\& error : r-\/>GetErrors())}
+\DoxyCodeLine{116                         \mbox{\hyperlink{classJson_1_1Requirement_adeb9efa6cf271d9cea0599ff2d458a08}{PushError}}(error);}
+\DoxyCodeLine{117         }
+\DoxyCodeLine{118                 \textcolor{keywordflow}{if}(r-\/>HasNotices())}
+\DoxyCodeLine{119                     \textcolor{keywordflow}{for}(\textcolor{keyword}{const} \textcolor{keyword}{auto}\& notice : r-\/>GetNotices())}
+\DoxyCodeLine{120                         \mbox{\hyperlink{classJson_1_1Requirement_a00feadb29fa33f4f2cca7362f12aaed4}{PushNotice}}(notice);}
+\DoxyCodeLine{121             \}}
+\DoxyCodeLine{122         \}}
+
+\end{DoxyCode}
+
+
+References Json\+::\+Requirement\+::\+Push\+Error(), Json\+::\+Requirement\+::\+Push\+Notice(), and reqs\+\_\+.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=348pt]{classJson_1_1AnyOfRequirement_a3f52414023e6c2bdf13855c483431237_cgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/michael/development/\+S\+S\+A\+G\+E\+S/src/\+Validator/Any\+Of\+Requirement.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,517 @@
+\hypertarget{classSSAGES_1_1ResourceHandler}{}\doxysection{S\+S\+A\+G\+ES\+::Resource\+Handler Class Reference}
+\label{classSSAGES_1_1ResourceHandler}\index{SSAGES::ResourceHandler@{SSAGES::ResourceHandler}}
+
+
+Class that handles \mbox{\hyperlink{namespaceSSAGES}{S\+S\+A\+G\+ES}} resources for a simulation.  
+
+
+
+
+{\ttfamily \#include $<$Resource\+Handler.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classSSAGES_1_1ResourceHandler_a00d165a92008b0abaab0d23746149664}{Resource\+Handler}} (mxx\+::comm \&\&world, mxx\+::comm \&\&comm, size\+\_\+t walkerid, const std\+::vector$<$ class \mbox{\hyperlink{classSSAGES_1_1Method}{Method}} $\ast$ $>$ \&methods, class \mbox{\hyperlink{classSSAGES_1_1CVManager}{C\+V\+Manager}} $\ast$cvmanager)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classSSAGES_1_1ResourceHandler_ac0c1a4d70d793af095077fa21a41dede}{Get\+Input}} () const
+\begin{DoxyCompactList}\small\item\em Returns inputs of the walker for the current processor. \end{DoxyCompactList}\item 
+M\+P\+I\+\_\+\+Comm \mbox{\hyperlink{classSSAGES_1_1ResourceHandler_ad19f1a7f86c49a1131bfdeb16f376a32}{Get\+Local\+Comm}} () const
+\begin{DoxyCompactList}\small\item\em Returns local (walker-\/specific) M\+PI communicator. \end{DoxyCompactList}\item 
+M\+P\+I\+\_\+\+Comm \mbox{\hyperlink{classSSAGES_1_1ResourceHandler_ab3975c797d7a25d709a23e1a6741df70}{Get\+World\+Comm}} () const
+\begin{DoxyCompactList}\small\item\em Returns world (all processors) M\+PI communicator. \end{DoxyCompactList}\item 
+const mxx\+::comm \& \mbox{\hyperlink{classSSAGES_1_1ResourceHandler_af58168db0c5295b900e1db221e350c16}{Get\+Local\+Mxx\+Comm}} () const
+\begin{DoxyCompactList}\small\item\em Returns local (walker-\/specific) mxx communicator. \end{DoxyCompactList}\item 
+const mxx\+::comm \& \mbox{\hyperlink{classSSAGES_1_1ResourceHandler_aee14b7b574c21d76b15352e3d636a84e}{Get\+World\+Mxx\+Comm}} () const
+\begin{DoxyCompactList}\small\item\em Returns world (all processors) mxx communicator. \end{DoxyCompactList}\item 
+size\+\_\+t \mbox{\hyperlink{classSSAGES_1_1ResourceHandler_a0443debf765d23af548e970ab9c75a14}{Get\+Walker\+ID}} () const
+\begin{DoxyCompactList}\small\item\em Returns processor-\/specific walker ID. \end{DoxyCompactList}\item 
+size\+\_\+t \mbox{\hyperlink{classSSAGES_1_1ResourceHandler_a9ae29404970b38aa3e49da17c3bf85d3}{Get\+Num\+Walkers}} () const
+\begin{DoxyCompactList}\small\item\em Returns the total number of walkers across all processors. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classSSAGES_1_1ResourceHandler_a9a83bec9ea0d0cfe67596d439490e766}{Configure\+Hook}} (class \mbox{\hyperlink{classSSAGES_1_1Hook}{Hook}} $\ast$hook)
+\begin{DoxyCompactList}\small\item\em Configure the \mbox{\hyperlink{classSSAGES_1_1Hook}{Hook}} from given resources. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classSSAGES_1_1ResourceHandler_a48e4c2c297bc2c3e4fcb296ab70745b8}\label{classSSAGES_1_1ResourceHandler_a48e4c2c297bc2c3e4fcb296ab70745b8}} 
+\mbox{\hyperlink{classSSAGES_1_1ResourceHandler_a48e4c2c297bc2c3e4fcb296ab70745b8}{$\sim$\+Resource\+Handler}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classSSAGES_1_1ResourceHandler}{Resource\+Handler}} $\ast$ \mbox{\hyperlink{classSSAGES_1_1ResourceHandler_ac026ad9aa098fa1508a78b0b5a91e8a2}{Build}} (const Json\+::\+Value \&json, const M\+P\+I\+\_\+\+Comm \&world)
+\begin{DoxyCompactList}\small\item\em Build a new \mbox{\hyperlink{classSSAGES_1_1ResourceHandler}{Resource\+Handler}} from \mbox{\hyperlink{namespaceJSON}{J\+S\+ON}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classSSAGES_1_1ResourceHandler_aa3798e52016b29c70adf21b491657837}\label{classSSAGES_1_1ResourceHandler_aa3798e52016b29c70adf21b491657837}} 
+mxx\+::comm \mbox{\hyperlink{classSSAGES_1_1ResourceHandler_aa3798e52016b29c70adf21b491657837}{world\+\_\+}}
+\begin{DoxyCompactList}\small\item\em M\+PI communicator containing all processors. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classSSAGES_1_1ResourceHandler_a6751d2a4a906f906af46952ab367d9c4}\label{classSSAGES_1_1ResourceHandler_a6751d2a4a906f906af46952ab367d9c4}} 
+mxx\+::comm \mbox{\hyperlink{classSSAGES_1_1ResourceHandler_a6751d2a4a906f906af46952ab367d9c4}{comm\+\_\+}}
+\begin{DoxyCompactList}\small\item\em M\+PI communicator containing processors for specific walker. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classSSAGES_1_1ResourceHandler_a1906b7e1430e3447c7f6dad2bbbf32bd}\label{classSSAGES_1_1ResourceHandler_a1906b7e1430e3447c7f6dad2bbbf32bd}} 
+size\+\_\+t \mbox{\hyperlink{classSSAGES_1_1ResourceHandler_a1906b7e1430e3447c7f6dad2bbbf32bd}{walkerid\+\_\+}}
+\begin{DoxyCompactList}\small\item\em Walker ID for specific driver. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classSSAGES_1_1ResourceHandler_a5be6bd8ee45a532195bb9718e785fad0}\label{classSSAGES_1_1ResourceHandler_a5be6bd8ee45a532195bb9718e785fad0}} 
+size\+\_\+t \mbox{\hyperlink{classSSAGES_1_1ResourceHandler_a5be6bd8ee45a532195bb9718e785fad0}{nwalkers\+\_\+}}
+\begin{DoxyCompactList}\small\item\em Number of walkers. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classSSAGES_1_1ResourceHandler_a0c77bf97c5b91700c149bad9ea2934fa}\label{classSSAGES_1_1ResourceHandler_a0c77bf97c5b91700c149bad9ea2934fa}} 
+class \mbox{\hyperlink{classSSAGES_1_1Snapshot}{Snapshot}} $\ast$ \mbox{\hyperlink{classSSAGES_1_1ResourceHandler_a0c77bf97c5b91700c149bad9ea2934fa}{snapshot\+\_\+}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classSSAGES_1_1Snapshot}{Snapshot}} of system state (pointer). \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classSSAGES_1_1ResourceHandler_a66fa86ce1be0fe420fb10294c6507959}\label{classSSAGES_1_1ResourceHandler_a66fa86ce1be0fe420fb10294c6507959}} 
+std\+::vector$<$ class \mbox{\hyperlink{classSSAGES_1_1Method}{Method}} $\ast$ $>$ \mbox{\hyperlink{classSSAGES_1_1ResourceHandler_a66fa86ce1be0fe420fb10294c6507959}{methods\+\_\+}}
+\begin{DoxyCompactList}\small\item\em Vector of advanced sampling methods. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classSSAGES_1_1ResourceHandler_a97a765e87be295459564f2c6dba82832}\label{classSSAGES_1_1ResourceHandler_a97a765e87be295459564f2c6dba82832}} 
+class \mbox{\hyperlink{classSSAGES_1_1Logger}{Logger}} $\ast$ \mbox{\hyperlink{classSSAGES_1_1ResourceHandler_a97a765e87be295459564f2c6dba82832}{logger\+\_\+}}
+\begin{DoxyCompactList}\small\item\em CV logger. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classSSAGES_1_1ResourceHandler_a23d8d943b04503d2d521b6cb5749e3fb}\label{classSSAGES_1_1ResourceHandler_a23d8d943b04503d2d521b6cb5749e3fb}} 
+class \mbox{\hyperlink{classSSAGES_1_1CVManager}{C\+V\+Manager}} $\ast$ \mbox{\hyperlink{classSSAGES_1_1ResourceHandler_a23d8d943b04503d2d521b6cb5749e3fb}{cvmanager\+\_\+}}
+\begin{DoxyCompactList}\small\item\em Collective variable manager. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classSSAGES_1_1ResourceHandler_a65c7638fab96e7f3e092fe1448ee05dd}\label{classSSAGES_1_1ResourceHandler_a65c7638fab96e7f3e092fe1448ee05dd}} 
+class \mbox{\hyperlink{classSSAGES_1_1Hook}{Hook}} $\ast$ \mbox{\hyperlink{classSSAGES_1_1ResourceHandler_a65c7638fab96e7f3e092fe1448ee05dd}{hook\+\_\+}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classSSAGES_1_1Hook}{Hook}} pointer. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classSSAGES_1_1ResourceHandler_aae638234074496797d9f0bb28ebf3e80}\label{classSSAGES_1_1ResourceHandler_aae638234074496797d9f0bb28ebf3e80}} 
+std\+::vector$<$ std\+::string $>$ \mbox{\hyperlink{classSSAGES_1_1ResourceHandler_aae638234074496797d9f0bb28ebf3e80}{inputs\+\_\+}}
+\begin{DoxyCompactList}\small\item\em Input file vector. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class that handles \mbox{\hyperlink{namespaceSSAGES}{S\+S\+A\+G\+ES}} resources for a simulation. 
+
+\mbox{\hyperlink{classSSAGES_1_1ResourceHandler}{Resource\+Handler}} is responsible for intialzing the major components of a simulation including the engine, methods, and collective variables. It is also responsible for the lifetime of the objects it creates.
+
+Each simulation engine must implement a driver which calls this resource handler and passes it the appropriate hook. 
+
+Definition at line 44 of file Resource\+Handler.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classSSAGES_1_1ResourceHandler_a00d165a92008b0abaab0d23746149664}\label{classSSAGES_1_1ResourceHandler_a00d165a92008b0abaab0d23746149664}} 
+\index{SSAGES::ResourceHandler@{SSAGES::ResourceHandler}!ResourceHandler@{ResourceHandler}}
+\index{ResourceHandler@{ResourceHandler}!SSAGES::ResourceHandler@{SSAGES::ResourceHandler}}
+\doxysubsubsection{\texorpdfstring{ResourceHandler()}{ResourceHandler()}}
+{\footnotesize\ttfamily S\+S\+A\+G\+E\+S\+::\+Resource\+Handler\+::\+Resource\+Handler (\begin{DoxyParamCaption}\item[{mxx\+::comm \&\&}]{world,  }\item[{mxx\+::comm \&\&}]{comm,  }\item[{size\+\_\+t}]{walkerid,  }\item[{const std\+::vector$<$ class \mbox{\hyperlink{classSSAGES_1_1Method}{Method}} $\ast$ $>$ \&}]{methods,  }\item[{class \mbox{\hyperlink{classSSAGES_1_1CVManager}{C\+V\+Manager}} $\ast$}]{cvmanager }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em world} & M\+PI communicator containing all processors. \\
+\hline
+{\em comm} & M\+PI communicator containing walker-\/specific processors. \\
+\hline
+{\em walkerid} & ID of the walker for the current processor. \\
+\hline
+{\em methods} & Vector of pointers to methods. \\
+\hline
+{\em cvmanager} & Pointer to CV manager.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Note}
+\mbox{\hyperlink{classSSAGES_1_1ResourceHandler}{Resource\+Handler}} will be responsible for lifetime of methods and CV manager. 
+\end{DoxyNote}
+
+
+Definition at line 35 of file Resource\+Handler.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{37                                                                  :}
+\DoxyCodeLine{38     \mbox{\hyperlink{classSSAGES_1_1ResourceHandler_aa3798e52016b29c70adf21b491657837}{world\_}}(std::move(world)), \mbox{\hyperlink{classSSAGES_1_1ResourceHandler_a6751d2a4a906f906af46952ab367d9c4}{comm\_}}(std::move(comm)), \mbox{\hyperlink{classSSAGES_1_1ResourceHandler_a1906b7e1430e3447c7f6dad2bbbf32bd}{walkerid\_}}(walkerid), \mbox{\hyperlink{classSSAGES_1_1ResourceHandler_a5be6bd8ee45a532195bb9718e785fad0}{nwalkers\_}}(1),}
+\DoxyCodeLine{39     \mbox{\hyperlink{classSSAGES_1_1ResourceHandler_a66fa86ce1be0fe420fb10294c6507959}{methods\_}}(methods), \mbox{\hyperlink{classSSAGES_1_1ResourceHandler_a23d8d943b04503d2d521b6cb5749e3fb}{cvmanager\_}}(cvmanager), \mbox{\hyperlink{classSSAGES_1_1ResourceHandler_a65c7638fab96e7f3e092fe1448ee05dd}{hook\_}}(\textcolor{keyword}{nullptr}), \mbox{\hyperlink{classSSAGES_1_1ResourceHandler_aae638234074496797d9f0bb28ebf3e80}{inputs\_}}(0)}
+\DoxyCodeLine{40     \{}
+\DoxyCodeLine{41         \mbox{\hyperlink{classSSAGES_1_1ResourceHandler_a0c77bf97c5b91700c149bad9ea2934fa}{snapshot\_}} = \textcolor{keyword}{new} Snapshot(\mbox{\hyperlink{classSSAGES_1_1ResourceHandler_a6751d2a4a906f906af46952ab367d9c4}{comm\_}}, walkerid);}
+\DoxyCodeLine{42     \}}
+
+\end{DoxyCode}
+
+
+References comm\+\_\+, and snapshot\+\_\+.
+
+
+
+Referenced by Build().
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classSSAGES_1_1ResourceHandler_a00d165a92008b0abaab0d23746149664_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classSSAGES_1_1ResourceHandler_ac026ad9aa098fa1508a78b0b5a91e8a2}\label{classSSAGES_1_1ResourceHandler_ac026ad9aa098fa1508a78b0b5a91e8a2}} 
+\index{SSAGES::ResourceHandler@{SSAGES::ResourceHandler}!Build@{Build}}
+\index{Build@{Build}!SSAGES::ResourceHandler@{SSAGES::ResourceHandler}}
+\doxysubsubsection{\texorpdfstring{Build()}{Build()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classSSAGES_1_1ResourceHandler}{Resource\+Handler}} $\ast$ S\+S\+A\+G\+E\+S\+::\+Resource\+Handler\+::\+Build (\begin{DoxyParamCaption}\item[{const Json\+::\+Value \&}]{json,  }\item[{const M\+P\+I\+\_\+\+Comm \&}]{world }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Build a new \mbox{\hyperlink{classSSAGES_1_1ResourceHandler}{Resource\+Handler}} from \mbox{\hyperlink{namespaceJSON}{J\+S\+ON}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em json} & \mbox{\hyperlink{namespaceJSON}{J\+S\+ON}} root node containing driver (and children) specifications. \\
+\hline
+{\em world} & M\+PI communicator containing all processors. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pointer to newly created driver.
+\end{DoxyReturn}
+\begin{DoxyNote}{Note}
+Object lifetime is caller\textquotesingle{}s responsibility! 
+\end{DoxyNote}
+
+
+Definition at line 54 of file Resource\+Handler.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{55     \{}
+\DoxyCodeLine{56         \mbox{\hyperlink{classJson_1_1ObjectRequirement}{ObjectRequirement}} validator;}
+\DoxyCodeLine{57         Value schema;}
+\DoxyCodeLine{58         CharReaderBuilder rbuilder;}
+\DoxyCodeLine{59         CharReader* reader = rbuilder.newCharReader();}
+\DoxyCodeLine{60 }
+\DoxyCodeLine{61         \textcolor{comment}{// Parse and validate top level schema. This just}}
+\DoxyCodeLine{62         \textcolor{comment}{// makes sure the proper fields exist and the correct}}
+\DoxyCodeLine{63         \textcolor{comment}{// types are specified in the input files.}}
+\DoxyCodeLine{64         reader-\/>parse(JsonSchema::Simulation.c\_str(),}
+\DoxyCodeLine{65                       JsonSchema::Simulation.c\_str() + JsonSchema::Simulation.size(),}
+\DoxyCodeLine{66                       \&schema, \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{67         validator.\mbox{\hyperlink{classJson_1_1ObjectRequirement_a4ed02ae1d612a5efba1688fcdd2df092}{Parse}}(schema, \textcolor{stringliteral}{"\#"});}
+\DoxyCodeLine{68         validator.\mbox{\hyperlink{classJson_1_1ObjectRequirement_a9ac3b920001a35bc70580035d8d802b7}{Validate}}(json, \textcolor{stringliteral}{"\#"});}
+\DoxyCodeLine{69         \textcolor{keywordflow}{if}(validator.\mbox{\hyperlink{classJson_1_1Requirement_adfaec336a9f051d6f6b9a6d7f1d97b75}{HasErrors}}())}
+\DoxyCodeLine{70             \textcolor{keywordflow}{throw} BuildException(validator.\mbox{\hyperlink{classJson_1_1Requirement_a60bc275c366eb59f192fa2e621268480}{GetErrors}}());}
+\DoxyCodeLine{71 }
+\DoxyCodeLine{72         \textcolor{comment}{// Get number of desired walkers and create array of input files.}}
+\DoxyCodeLine{73         \textcolor{keyword}{auto} nwalkers = json.get(\textcolor{stringliteral}{"walkers"}, 1).asUInt();}
+\DoxyCodeLine{74         \textcolor{keywordflow}{if}(json[\textcolor{stringliteral}{"input"}].isArray() \&\& json[\textcolor{stringliteral}{"input"}].size() != nwalkers)}
+\DoxyCodeLine{75             \textcolor{keywordflow}{throw} BuildException(\{\textcolor{stringliteral}{"\#/input: Number of inputs do not match requested walkers."}\});}
+\DoxyCodeLine{76 }
+\DoxyCodeLine{77         std::vector<std::string> inputs;}
+\DoxyCodeLine{78         \textcolor{keywordflow}{for}(\textcolor{keywordtype}{size\_t} i = 0; i < nwalkers; ++i)}
+\DoxyCodeLine{79         \{}
+\DoxyCodeLine{80             \textcolor{keywordflow}{if}(json[\textcolor{stringliteral}{"input"}].isArray())}
+\DoxyCodeLine{81                 inputs.push\_back(json[\textcolor{stringliteral}{"input"}][\textcolor{keyword}{static\_cast<}\textcolor{keywordtype}{int}\textcolor{keyword}{>}(i)].asString());}
+\DoxyCodeLine{82             \textcolor{keywordflow}{else}}
+\DoxyCodeLine{83                 inputs.push\_back(json[\textcolor{stringliteral}{"input"}].asString());}
+\DoxyCodeLine{84         \}}
+\DoxyCodeLine{85 }
+\DoxyCodeLine{86         \textcolor{comment}{// Get basic MPI info and verify that the total number of}}
+\DoxyCodeLine{87         \textcolor{comment}{// cores are divisble by number of walkers.}}
+\DoxyCodeLine{88         \textcolor{keyword}{auto} wcomm = mxx::comm(world);}
+\DoxyCodeLine{89         \textcolor{keywordflow}{if}(wcomm.size() \% nwalkers != 0)}
+\DoxyCodeLine{90             \textcolor{keywordflow}{throw} BuildException(\{\textcolor{stringliteral}{"\#/walkers: Allocated processors not divisible by number of walkers."}\});}
+\DoxyCodeLine{91 }
+\DoxyCodeLine{92         \textcolor{comment}{// Split communicators.}}
+\DoxyCodeLine{93         \textcolor{keywordtype}{int} ppw = wcomm.size()/nwalkers;}
+\DoxyCodeLine{94         \textcolor{keywordtype}{int} walkerid = wcomm.rank()/ppw;}
+\DoxyCodeLine{95         \textcolor{keyword}{auto} comm = wcomm.split(walkerid);}
+\DoxyCodeLine{96 }
+\DoxyCodeLine{97         \textcolor{comment}{// Build collective variables.}}
+\DoxyCodeLine{98         \textcolor{keyword}{auto}* cvmanager = \textcolor{keyword}{new} CVManager();}
+\DoxyCodeLine{99         \textcolor{keywordtype}{int} icv = 0;}
+\DoxyCodeLine{100         \textcolor{keywordflow}{for}(\textcolor{keyword}{auto}\& cv : json[\textcolor{stringliteral}{"CVs"}])}
+\DoxyCodeLine{101         \{}
+\DoxyCodeLine{102             \textcolor{comment}{// Register name with CV manager, if it exists.}}
+\DoxyCodeLine{103             \textcolor{comment}{// Otherwise, register index as name to CV manager.}}
+\DoxyCodeLine{104             \textcolor{keywordflow}{if}(cv.isMember(\textcolor{stringliteral}{"name"}))}
+\DoxyCodeLine{105             \{}
+\DoxyCodeLine{106                 \mbox{\hyperlink{classSSAGES_1_1CVManager_a751ffa918ce893cb148d718dbeaa012d}{CVManager::AddCVtoMap}}(cv[\textcolor{stringliteral}{"name"}].asString(), icv);}
+\DoxyCodeLine{107             \}}
+\DoxyCodeLine{108             \textcolor{keywordflow}{else}}
+\DoxyCodeLine{109             \{}
+\DoxyCodeLine{110                 \mbox{\hyperlink{classSSAGES_1_1CVManager_a751ffa918ce893cb148d718dbeaa012d}{CVManager::AddCVtoMap}}(std::to\_string(icv), icv);}
+\DoxyCodeLine{111             \}}
+\DoxyCodeLine{112 }
+\DoxyCodeLine{113             \textcolor{comment}{// Build CV and add to manager.}}
+\DoxyCodeLine{114             cvmanager-\/>AddCV(\mbox{\hyperlink{classSSAGES_1_1CollectiveVariable_ab56eae0d888f3d5125566bfb9b5e21aa}{CollectiveVariable::BuildCV}}(cv, \textcolor{stringliteral}{"\#/CVs"}));}
+\DoxyCodeLine{115             ++icv;}
+\DoxyCodeLine{116         \}}
+\DoxyCodeLine{117 }
+\DoxyCodeLine{118         \textcolor{comment}{// Build methods.}}
+\DoxyCodeLine{119         std::vector<Method*> methods;}
+\DoxyCodeLine{120         \textcolor{keywordflow}{for}(\textcolor{keyword}{auto}\& m : json[\textcolor{stringliteral}{"methods"}])}
+\DoxyCodeLine{121         \{}
+\DoxyCodeLine{122             \textcolor{comment}{// Error will be thrown if lookup fails.}}
+\DoxyCodeLine{123             \textcolor{keywordflow}{for}(\textcolor{keyword}{auto}\& cv : m[\textcolor{stringliteral}{"cvs"}])}
+\DoxyCodeLine{124             \{}
+\DoxyCodeLine{125                 \mbox{\hyperlink{classSSAGES_1_1CVManager_abf13a95d327b6d62f2b423bf498fd78f}{CVManager::LookupCV}}(cv, \textcolor{stringliteral}{"\#/methods"});}
+\DoxyCodeLine{126             \}}
+\DoxyCodeLine{127             methods.push\_back(\mbox{\hyperlink{classSSAGES_1_1Method_a1464579bb8b15653ccd0ffa834e15e93}{Method::BuildMethod}}(m, world, comm, \textcolor{stringliteral}{"\#/methods"}));}
+\DoxyCodeLine{128         \}}
+\DoxyCodeLine{129 }
+\DoxyCodeLine{130         \textcolor{comment}{// Build logger.}}
+\DoxyCodeLine{131         Logger* l = \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{132         \textcolor{keywordflow}{if}(json.isMember(\textcolor{stringliteral}{"logger"}))}
+\DoxyCodeLine{133             l = \mbox{\hyperlink{classSSAGES_1_1Logger_aedc5a4c03ad023b895fb3247e67c9341}{Logger::Build}}(json[\textcolor{stringliteral}{"logger"}], world, comm, \textcolor{stringliteral}{"\#/logger"});}
+\DoxyCodeLine{134 }
+\DoxyCodeLine{135         \textcolor{keyword}{auto}* rh = \textcolor{keyword}{new} \mbox{\hyperlink{classSSAGES_1_1ResourceHandler_a00d165a92008b0abaab0d23746149664}{ResourceHandler}}(std::move(world), std::move(comm), walkerid, methods, cvmanager);}
+\DoxyCodeLine{136         rh-\/>inputs\_ = inputs;}
+\DoxyCodeLine{137         rh-\/>nwalkers\_ = nwalkers;}
+\DoxyCodeLine{138         rh-\/>logger\_ = l;}
+\DoxyCodeLine{139         \textcolor{keywordflow}{return} rh;}
+\DoxyCodeLine{140     \}}
+
+\end{DoxyCode}
+
+
+References S\+S\+A\+G\+E\+S\+::\+C\+V\+Manager\+::\+Add\+C\+Vto\+Map(), S\+S\+A\+G\+E\+S\+::\+Logger\+::\+Build(), S\+S\+A\+G\+E\+S\+::\+Collective\+Variable\+::\+Build\+C\+V(), S\+S\+A\+G\+E\+S\+::\+Method\+::\+Build\+Method(), Json\+::\+Requirement\+::\+Get\+Errors(), Json\+::\+Requirement\+::\+Has\+Errors(), S\+S\+A\+G\+E\+S\+::\+C\+V\+Manager\+::\+Lookup\+C\+V(), Json\+::\+Object\+Requirement\+::\+Parse(), Resource\+Handler(), and Json\+::\+Object\+Requirement\+::\+Validate().
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=550pt]{classSSAGES_1_1ResourceHandler_ac026ad9aa098fa1508a78b0b5a91e8a2_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classSSAGES_1_1ResourceHandler_a9a83bec9ea0d0cfe67596d439490e766}\label{classSSAGES_1_1ResourceHandler_a9a83bec9ea0d0cfe67596d439490e766}} 
+\index{SSAGES::ResourceHandler@{SSAGES::ResourceHandler}!ConfigureHook@{ConfigureHook}}
+\index{ConfigureHook@{ConfigureHook}!SSAGES::ResourceHandler@{SSAGES::ResourceHandler}}
+\doxysubsubsection{\texorpdfstring{ConfigureHook()}{ConfigureHook()}}
+{\footnotesize\ttfamily void S\+S\+A\+G\+E\+S\+::\+Resource\+Handler\+::\+Configure\+Hook (\begin{DoxyParamCaption}\item[{class \mbox{\hyperlink{classSSAGES_1_1Hook}{Hook}} $\ast$}]{hook }\end{DoxyParamCaption})}
+
+
+
+Configure the \mbox{\hyperlink{classSSAGES_1_1Hook}{Hook}} from given resources. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em hook} & Pointer to specified \mbox{\hyperlink{classSSAGES_1_1Hook}{Hook}}. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 44 of file Resource\+Handler.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{45     \{}
+\DoxyCodeLine{46         hook-\/>SetSnapshot(\mbox{\hyperlink{classSSAGES_1_1ResourceHandler_a0c77bf97c5b91700c149bad9ea2934fa}{snapshot\_}});}
+\DoxyCodeLine{47         hook-\/>SetCVManager(\mbox{\hyperlink{classSSAGES_1_1ResourceHandler_a23d8d943b04503d2d521b6cb5749e3fb}{cvmanager\_}});}
+\DoxyCodeLine{48         \textcolor{keywordflow}{for}(\textcolor{keyword}{auto}\& m : \mbox{\hyperlink{classSSAGES_1_1ResourceHandler_a66fa86ce1be0fe420fb10294c6507959}{methods\_}})}
+\DoxyCodeLine{49             hook-\/>AddListener(m);}
+\DoxyCodeLine{50         \textcolor{keywordflow}{if}(\mbox{\hyperlink{classSSAGES_1_1ResourceHandler_a97a765e87be295459564f2c6dba82832}{logger\_}} != \textcolor{keyword}{nullptr}) hook-\/>AddListener(\mbox{\hyperlink{classSSAGES_1_1ResourceHandler_a97a765e87be295459564f2c6dba82832}{logger\_}});}
+\DoxyCodeLine{51         \mbox{\hyperlink{classSSAGES_1_1ResourceHandler_a65c7638fab96e7f3e092fe1448ee05dd}{hook\_}} = hook;}
+\DoxyCodeLine{52     \}}
+
+\end{DoxyCode}
+
+
+References S\+S\+A\+G\+E\+S\+::\+Hook\+::\+Add\+Listener(), cvmanager\+\_\+, hook\+\_\+, logger\+\_\+, methods\+\_\+, S\+S\+A\+G\+E\+S\+::\+Hook\+::\+Set\+C\+V\+Manager(), S\+S\+A\+G\+E\+S\+::\+Hook\+::\+Set\+Snapshot(), and snapshot\+\_\+.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classSSAGES_1_1ResourceHandler_a9a83bec9ea0d0cfe67596d439490e766_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classSSAGES_1_1ResourceHandler_ac0c1a4d70d793af095077fa21a41dede}\label{classSSAGES_1_1ResourceHandler_ac0c1a4d70d793af095077fa21a41dede}} 
+\index{SSAGES::ResourceHandler@{SSAGES::ResourceHandler}!GetInput@{GetInput}}
+\index{GetInput@{GetInput}!SSAGES::ResourceHandler@{SSAGES::ResourceHandler}}
+\doxysubsubsection{\texorpdfstring{GetInput()}{GetInput()}}
+{\footnotesize\ttfamily std\+::string S\+S\+A\+G\+E\+S\+::\+Resource\+Handler\+::\+Get\+Input (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns inputs of the walker for the current processor. 
+
+\begin{DoxyReturn}{Returns}
+Walker inputs of current processor. 
+\end{DoxyReturn}
+
+
+Definition at line 95 of file Resource\+Handler.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{96         \{}
+\DoxyCodeLine{97             \textcolor{keywordflow}{return} \mbox{\hyperlink{classSSAGES_1_1ResourceHandler_aae638234074496797d9f0bb28ebf3e80}{inputs\_}}[\mbox{\hyperlink{classSSAGES_1_1ResourceHandler_a1906b7e1430e3447c7f6dad2bbbf32bd}{walkerid\_}}];}
+\DoxyCodeLine{98         \}}
+
+\end{DoxyCode}
+
+
+References inputs\+\_\+, and walkerid\+\_\+.
+
+\mbox{\Hypertarget{classSSAGES_1_1ResourceHandler_ad19f1a7f86c49a1131bfdeb16f376a32}\label{classSSAGES_1_1ResourceHandler_ad19f1a7f86c49a1131bfdeb16f376a32}} 
+\index{SSAGES::ResourceHandler@{SSAGES::ResourceHandler}!GetLocalComm@{GetLocalComm}}
+\index{GetLocalComm@{GetLocalComm}!SSAGES::ResourceHandler@{SSAGES::ResourceHandler}}
+\doxysubsubsection{\texorpdfstring{GetLocalComm()}{GetLocalComm()}}
+{\footnotesize\ttfamily M\+P\+I\+\_\+\+Comm S\+S\+A\+G\+E\+S\+::\+Resource\+Handler\+::\+Get\+Local\+Comm (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns local (walker-\/specific) M\+PI communicator. 
+
+\begin{DoxyReturn}{Returns}
+Walker-\/specific M\+PI communicator. 
+\end{DoxyReturn}
+
+
+Definition at line 104 of file Resource\+Handler.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{105         \{}
+\DoxyCodeLine{106             \textcolor{keywordflow}{return} \mbox{\hyperlink{classSSAGES_1_1ResourceHandler_a6751d2a4a906f906af46952ab367d9c4}{comm\_}};}
+\DoxyCodeLine{107         \}}
+
+\end{DoxyCode}
+
+
+References comm\+\_\+.
+
+\mbox{\Hypertarget{classSSAGES_1_1ResourceHandler_af58168db0c5295b900e1db221e350c16}\label{classSSAGES_1_1ResourceHandler_af58168db0c5295b900e1db221e350c16}} 
+\index{SSAGES::ResourceHandler@{SSAGES::ResourceHandler}!GetLocalMxxComm@{GetLocalMxxComm}}
+\index{GetLocalMxxComm@{GetLocalMxxComm}!SSAGES::ResourceHandler@{SSAGES::ResourceHandler}}
+\doxysubsubsection{\texorpdfstring{GetLocalMxxComm()}{GetLocalMxxComm()}}
+{\footnotesize\ttfamily const mxx\+::comm\& S\+S\+A\+G\+E\+S\+::\+Resource\+Handler\+::\+Get\+Local\+Mxx\+Comm (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns local (walker-\/specific) mxx communicator. 
+
+\begin{DoxyReturn}{Returns}
+Walker-\/specific mxx communicator. 
+\end{DoxyReturn}
+
+
+Definition at line 122 of file Resource\+Handler.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{123         \{}
+\DoxyCodeLine{124             \textcolor{keywordflow}{return} \mbox{\hyperlink{classSSAGES_1_1ResourceHandler_a6751d2a4a906f906af46952ab367d9c4}{comm\_}};}
+\DoxyCodeLine{125         \}}
+
+\end{DoxyCode}
+
+
+References comm\+\_\+.
+
+\mbox{\Hypertarget{classSSAGES_1_1ResourceHandler_a9ae29404970b38aa3e49da17c3bf85d3}\label{classSSAGES_1_1ResourceHandler_a9ae29404970b38aa3e49da17c3bf85d3}} 
+\index{SSAGES::ResourceHandler@{SSAGES::ResourceHandler}!GetNumWalkers@{GetNumWalkers}}
+\index{GetNumWalkers@{GetNumWalkers}!SSAGES::ResourceHandler@{SSAGES::ResourceHandler}}
+\doxysubsubsection{\texorpdfstring{GetNumWalkers()}{GetNumWalkers()}}
+{\footnotesize\ttfamily size\+\_\+t S\+S\+A\+G\+E\+S\+::\+Resource\+Handler\+::\+Get\+Num\+Walkers (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the total number of walkers across all processors. 
+
+\begin{DoxyReturn}{Returns}
+Total number of walkers. 
+\end{DoxyReturn}
+
+
+Definition at line 149 of file Resource\+Handler.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{150         \{}
+\DoxyCodeLine{151             \textcolor{keywordflow}{return} \mbox{\hyperlink{classSSAGES_1_1ResourceHandler_a5be6bd8ee45a532195bb9718e785fad0}{nwalkers\_}};}
+\DoxyCodeLine{152         \}}
+
+\end{DoxyCode}
+
+
+References nwalkers\+\_\+.
+
+\mbox{\Hypertarget{classSSAGES_1_1ResourceHandler_a0443debf765d23af548e970ab9c75a14}\label{classSSAGES_1_1ResourceHandler_a0443debf765d23af548e970ab9c75a14}} 
+\index{SSAGES::ResourceHandler@{SSAGES::ResourceHandler}!GetWalkerID@{GetWalkerID}}
+\index{GetWalkerID@{GetWalkerID}!SSAGES::ResourceHandler@{SSAGES::ResourceHandler}}
+\doxysubsubsection{\texorpdfstring{GetWalkerID()}{GetWalkerID()}}
+{\footnotesize\ttfamily size\+\_\+t S\+S\+A\+G\+E\+S\+::\+Resource\+Handler\+::\+Get\+Walker\+ID (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns processor-\/specific walker ID. 
+
+\begin{DoxyReturn}{Returns}
+Walker ID. 
+\end{DoxyReturn}
+
+
+Definition at line 140 of file Resource\+Handler.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{141         \{}
+\DoxyCodeLine{142             \textcolor{keywordflow}{return} \mbox{\hyperlink{classSSAGES_1_1ResourceHandler_a1906b7e1430e3447c7f6dad2bbbf32bd}{walkerid\_}};}
+\DoxyCodeLine{143         \}}
+
+\end{DoxyCode}
+
+
+References walkerid\+\_\+.
+
+\mbox{\Hypertarget{classSSAGES_1_1ResourceHandler_ab3975c797d7a25d709a23e1a6741df70}\label{classSSAGES_1_1ResourceHandler_ab3975c797d7a25d709a23e1a6741df70}} 
+\index{SSAGES::ResourceHandler@{SSAGES::ResourceHandler}!GetWorldComm@{GetWorldComm}}
+\index{GetWorldComm@{GetWorldComm}!SSAGES::ResourceHandler@{SSAGES::ResourceHandler}}
+\doxysubsubsection{\texorpdfstring{GetWorldComm()}{GetWorldComm()}}
+{\footnotesize\ttfamily M\+P\+I\+\_\+\+Comm S\+S\+A\+G\+E\+S\+::\+Resource\+Handler\+::\+Get\+World\+Comm (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns world (all processors) M\+PI communicator. 
+
+\begin{DoxyReturn}{Returns}
+Overall M\+PI communicator. 
+\end{DoxyReturn}
+
+
+Definition at line 113 of file Resource\+Handler.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{114         \{}
+\DoxyCodeLine{115             \textcolor{keywordflow}{return} \mbox{\hyperlink{classSSAGES_1_1ResourceHandler_aa3798e52016b29c70adf21b491657837}{world\_}};}
+\DoxyCodeLine{116         \}}
+
+\end{DoxyCode}
+
+
+References world\+\_\+.
+
+\mbox{\Hypertarget{classSSAGES_1_1ResourceHandler_aee14b7b574c21d76b15352e3d636a84e}\label{classSSAGES_1_1ResourceHandler_aee14b7b574c21d76b15352e3d636a84e}} 
+\index{SSAGES::ResourceHandler@{SSAGES::ResourceHandler}!GetWorldMxxComm@{GetWorldMxxComm}}
+\index{GetWorldMxxComm@{GetWorldMxxComm}!SSAGES::ResourceHandler@{SSAGES::ResourceHandler}}
+\doxysubsubsection{\texorpdfstring{GetWorldMxxComm()}{GetWorldMxxComm()}}
+{\footnotesize\ttfamily const mxx\+::comm\& S\+S\+A\+G\+E\+S\+::\+Resource\+Handler\+::\+Get\+World\+Mxx\+Comm (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns world (all processors) mxx communicator. 
+
+\begin{DoxyReturn}{Returns}
+Overall mxx communicator. 
+\end{DoxyReturn}
+
+
+Definition at line 131 of file Resource\+Handler.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{132         \{}
+\DoxyCodeLine{133             \textcolor{keywordflow}{return} \mbox{\hyperlink{classSSAGES_1_1ResourceHandler_aa3798e52016b29c70adf21b491657837}{world\_}};}
+\DoxyCodeLine{134         \}}
+
+\end{DoxyCode}
+
+
+References world\+\_\+.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/michael/development/\+S\+S\+A\+G\+E\+S/src/Resource\+Handler.\+h\item 
+/home/michael/development/\+S\+S\+A\+G\+E\+S/src/Resource\+Handler.\+cpp\end{DoxyCompactItemize}

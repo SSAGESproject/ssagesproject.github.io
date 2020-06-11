@@ -1,0 +1,91 @@
+\hypertarget{classJson_1_1NullRequirement}{}\doxysection{Json\+::Null\+Requirement Class Reference}
+\label{classJson_1_1NullRequirement}\index{Json::NullRequirement@{Json::NullRequirement}}
+
+
+Requires value to be of type Null.  
+
+
+
+
+{\ttfamily \#include $<$Null\+Requirement.\+h$>$}
+
+
+
+Inheritance diagram for Json\+::Null\+Requirement\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=196pt]{classJson_1_1NullRequirement__inherit__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classJson_1_1NullRequirement_ad2e1396d979484caa0bf10d61938faab}\label{classJson_1_1NullRequirement_ad2e1396d979484caa0bf10d61938faab}} 
+virtual void \mbox{\hyperlink{classJson_1_1NullRequirement_ad2e1396d979484caa0bf10d61938faab}{Reset}} ()
+\begin{DoxyCompactList}\small\item\em Reset this \mbox{\hyperlink{classJson_1_1Requirement}{Requirement}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classJson_1_1NullRequirement_ae25c2fcdbb5a2e579ab5b2b4fb32fdcd}\label{classJson_1_1NullRequirement_ae25c2fcdbb5a2e579ab5b2b4fb32fdcd}} 
+virtual void \mbox{\hyperlink{classJson_1_1NullRequirement_ae25c2fcdbb5a2e579ab5b2b4fb32fdcd}{Parse}} (Value, const std\+::string \&)
+\begin{DoxyCompactList}\small\item\em Parse \mbox{\hyperlink{namespaceJSON}{J\+S\+ON}} value to set up this \mbox{\hyperlink{classJson_1_1Requirement}{Requirement}}. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classJson_1_1NullRequirement_aaf8a9c586a2ca24614979d9ac2202c76}{Validate}} (const Value \&json, const std\+::string \&path)
+\begin{DoxyCompactList}\small\item\em Validate that \mbox{\hyperlink{namespaceJSON}{J\+S\+ON}} value is null. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Requires value to be of type Null. 
+
+Definition at line 36 of file Null\+Requirement.\+h.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classJson_1_1NullRequirement_aaf8a9c586a2ca24614979d9ac2202c76}\label{classJson_1_1NullRequirement_aaf8a9c586a2ca24614979d9ac2202c76}} 
+\index{Json::NullRequirement@{Json::NullRequirement}!Validate@{Validate}}
+\index{Validate@{Validate}!Json::NullRequirement@{Json::NullRequirement}}
+\doxysubsubsection{\texorpdfstring{Validate()}{Validate()}}
+{\footnotesize\ttfamily virtual void Json\+::\+Null\+Requirement\+::\+Validate (\begin{DoxyParamCaption}\item[{const Value \&}]{json,  }\item[{const std\+::string \&}]{path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Validate that \mbox{\hyperlink{namespaceJSON}{J\+S\+ON}} value is null. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em json} & \mbox{\hyperlink{namespaceJSON}{J\+S\+ON}} value to validate. \\
+\hline
+{\em path} & Path for \mbox{\hyperlink{namespaceJSON}{J\+S\+ON}} path specification. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classJson_1_1Requirement_aa97494b642414d00482745a0d5b2c2c3}{Json\+::\+Requirement}}.
+
+
+
+Definition at line 50 of file Null\+Requirement.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{51         \{}
+\DoxyCodeLine{52             \textcolor{keywordflow}{if}(!json.isNull())}
+\DoxyCodeLine{53                 \mbox{\hyperlink{classJson_1_1Requirement_adeb9efa6cf271d9cea0599ff2d458a08}{PushError}}(path + \textcolor{stringliteral}{": Must be a null value"});}
+\DoxyCodeLine{54         \}}
+
+\end{DoxyCode}
+
+
+References Json\+::\+Requirement\+::\+Push\+Error().
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=337pt]{classJson_1_1NullRequirement_aaf8a9c586a2ca24614979d9ac2202c76_cgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/michael/development/\+S\+S\+A\+G\+E\+S/src/\+Validator/Null\+Requirement.\+h\end{DoxyCompactItemize}

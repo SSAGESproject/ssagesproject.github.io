@@ -1,0 +1,158 @@
+\hypertarget{classSSAGES_1_1MockCV}{}\doxysection{S\+S\+A\+G\+ES\+::Mock\+CV Class Reference}
+\label{classSSAGES_1_1MockCV}\index{SSAGES::MockCV@{SSAGES::MockCV}}
+
+
+Mock collective variable for testing purposes.  
+
+
+
+
+{\ttfamily \#include $<$Mock\+C\+V.\+h$>$}
+
+
+
+Inheritance diagram for S\+S\+A\+G\+ES\+::Mock\+CV\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=223pt]{classSSAGES_1_1MockCV__inherit__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classSSAGES_1_1MockCV_a3a3d619a2a2a94ef36a168084708a00c}{Mock\+CV}} (double value, const \mbox{\hyperlink{namespaceSSAGES_a630084a0a5e185e89e21b3735f8f8b2e}{Vector3}} \&grad, double upper, double lower)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classSSAGES_1_1MockCV_af1c87874ccf1d6bbef9fd4c90410e1f8}{Initialize}} (const \mbox{\hyperlink{classSSAGES_1_1Snapshot}{Snapshot}} \&snapshot) override
+\begin{DoxyCompactList}\small\item\em Initialize necessary variables. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classSSAGES_1_1MockCV_a1f6b26035b22ed664333ea9b1c4854b2}{Evaluate}} (const \mbox{\hyperlink{classSSAGES_1_1Snapshot}{Snapshot}} \&snapshot) override
+\begin{DoxyCompactList}\small\item\em Evaluate the CV. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classSSAGES_1_1MockCV_a57425788c61870ca51e3b5d16c62e84e}\label{classSSAGES_1_1MockCV_a57425788c61870ca51e3b5d16c62e84e}} 
+\mbox{\hyperlink{namespaceSSAGES_a630084a0a5e185e89e21b3735f8f8b2e}{Vector3}} \mbox{\hyperlink{classSSAGES_1_1MockCV_a57425788c61870ca51e3b5d16c62e84e}{usergrad\+\_\+}}
+\begin{DoxyCompactList}\small\item\em User defined gradient vector. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Mock collective variable for testing purposes. 
+
+Definition at line 31 of file Mock\+C\+V.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classSSAGES_1_1MockCV_a3a3d619a2a2a94ef36a168084708a00c}\label{classSSAGES_1_1MockCV_a3a3d619a2a2a94ef36a168084708a00c}} 
+\index{SSAGES::MockCV@{SSAGES::MockCV}!MockCV@{MockCV}}
+\index{MockCV@{MockCV}!SSAGES::MockCV@{SSAGES::MockCV}}
+\doxysubsubsection{\texorpdfstring{MockCV()}{MockCV()}}
+{\footnotesize\ttfamily S\+S\+A\+G\+E\+S\+::\+Mock\+C\+V\+::\+Mock\+CV (\begin{DoxyParamCaption}\item[{double}]{value,  }\item[{const \mbox{\hyperlink{namespaceSSAGES_a630084a0a5e185e89e21b3735f8f8b2e}{Vector3}} \&}]{grad,  }\item[{double}]{upper,  }\item[{double}]{lower }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & Value the Mock CV will return. \\
+\hline
+{\em grad} & Gradient vector the Mock CV will return. \\
+\hline
+{\em upper} & Value for the upper bound of the CV. \\
+\hline
+{\em lower} & Value for the lower bound of the CV.\\
+\hline
+\end{DoxyParams}
+Construct a mock CV 
+
+Definition at line 48 of file Mock\+C\+V.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{48                                                                               :}
+\DoxyCodeLine{49         \mbox{\hyperlink{classSSAGES_1_1MockCV_a57425788c61870ca51e3b5d16c62e84e}{usergrad\_}}(grad)}
+\DoxyCodeLine{50         \{}
+\DoxyCodeLine{51             \mbox{\hyperlink{classSSAGES_1_1CollectiveVariable_a65b17f3e9b3c967ad42814c3eec88bb2}{val\_}} = value;}
+\DoxyCodeLine{52             \mbox{\hyperlink{classSSAGES_1_1CollectiveVariable_abc60e9b019d4b61354faf60a76d3530e}{bounds\_}} = \{\{upper, lower\}\};}
+\DoxyCodeLine{53         \}}
+
+\end{DoxyCode}
+
+
+References S\+S\+A\+G\+E\+S\+::\+Collective\+Variable\+::bounds\+\_\+, and S\+S\+A\+G\+E\+S\+::\+Collective\+Variable\+::val\+\_\+.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classSSAGES_1_1MockCV_a1f6b26035b22ed664333ea9b1c4854b2}\label{classSSAGES_1_1MockCV_a1f6b26035b22ed664333ea9b1c4854b2}} 
+\index{SSAGES::MockCV@{SSAGES::MockCV}!Evaluate@{Evaluate}}
+\index{Evaluate@{Evaluate}!SSAGES::MockCV@{SSAGES::MockCV}}
+\doxysubsubsection{\texorpdfstring{Evaluate()}{Evaluate()}}
+{\footnotesize\ttfamily void S\+S\+A\+G\+E\+S\+::\+Mock\+C\+V\+::\+Evaluate (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classSSAGES_1_1Snapshot}{Snapshot}} \&}]{snapshot }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}}
+
+
+
+Evaluate the CV. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em snapshot} & Current simulation snapshot. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 70 of file Mock\+C\+V.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{71         \{}
+\DoxyCodeLine{72 }
+\DoxyCodeLine{73         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classSSAGES_1_1MockCV_af1c87874ccf1d6bbef9fd4c90410e1f8}\label{classSSAGES_1_1MockCV_af1c87874ccf1d6bbef9fd4c90410e1f8}} 
+\index{SSAGES::MockCV@{SSAGES::MockCV}!Initialize@{Initialize}}
+\index{Initialize@{Initialize}!SSAGES::MockCV@{SSAGES::MockCV}}
+\doxysubsubsection{\texorpdfstring{Initialize()}{Initialize()}}
+{\footnotesize\ttfamily void S\+S\+A\+G\+E\+S\+::\+Mock\+C\+V\+::\+Initialize (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classSSAGES_1_1Snapshot}{Snapshot}} \&}]{snapshot }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}}
+
+
+
+Initialize necessary variables. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em snapshot} & Current simulation snapshot. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 59 of file Mock\+C\+V.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{60         \{}
+\DoxyCodeLine{61             \textcolor{comment}{// Initialize gradient}}
+\DoxyCodeLine{62             \textcolor{keyword}{auto} n = snapshot.GetPositions().size();}
+\DoxyCodeLine{63             \mbox{\hyperlink{classSSAGES_1_1CollectiveVariable_a390202f6e541da879f1cfcde22c49489}{grad\_}}.resize(n, \mbox{\hyperlink{classSSAGES_1_1MockCV_a57425788c61870ca51e3b5d16c62e84e}{usergrad\_}});}
+\DoxyCodeLine{64         \}}
+
+\end{DoxyCode}
+
+
+References S\+S\+A\+G\+E\+S\+::\+Snapshot\+::\+Get\+Positions(), S\+S\+A\+G\+E\+S\+::\+Collective\+Variable\+::grad\+\_\+, and usergrad\+\_\+.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classSSAGES_1_1MockCV_af1c87874ccf1d6bbef9fd4c90410e1f8_cgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/michael/development/\+S\+S\+A\+G\+E\+S/src/\+C\+Vs/Mock\+C\+V.\+h\end{DoxyCompactItemize}

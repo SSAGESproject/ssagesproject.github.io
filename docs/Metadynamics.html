@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Metadynamics &mdash; SSAGES 0.8.6 documentation</title>
+  <title>Metadynamics &mdash; SSAGES 0.9.0 documentation</title>
   
 
   
@@ -61,7 +61,7 @@
             
             
               <div class="version">
-                0.8.6
+                0.9.0
               </div>
             
           
@@ -95,6 +95,7 @@
 <li class="toctree-l2"><a class="reference internal" href="Adaptive Biasing Force Algorithm.html">Adaptive Biasing Force Algorithm</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Artificial Neural Network Sampling.html">Artificial Neural Network Sampling</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Basis Function Sampling.html">Basis Function Sampling</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Combined Force-Frequency Sampling.html">Combined Force-Frequency Sampling</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Elastic Band.html">Elastic Band</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Finite Temperature String.html">Finite Temperature String</a></li>
 <li class="toctree-l2"><a class="reference internal" href="Forward-Flux.html">Forward-Flux</a></li>
@@ -212,11 +213,11 @@ e^{-\frac{\left[\vec{\xi}-\vec{s}_i\right]^2}{2\sigma_i^2}}\;.\]</div>
 <p>Here, <span class="math notranslate nohighlight">\(n(t)\)</span> refers to the number of biases applied before time
 <span class="math notranslate nohighlight">\(t\)</span>. The time-dependent FES can be used to determine whether or
 not a simulation has reached a converged FES by computing block
-averages of the applied bias (see <a class="bibtex reference internal" href="zReferences.html#singh2012369" id="id2">[21]</a>).</p>
+averages of the applied bias (see <a class="bibtex reference internal" href="zReferences.html#singh2012369" id="id2">[23]</a>).</p>
 <p>Metadynamics can be applied to unbounded regions of CV space, or to
 bounded regions. For the case of bounded, non-periodic CVs, boundary
 corrections must be applied which alter the structure of the hills
-<span class="math notranslate nohighlight">\(g(\vec{\xi},\vec{s}_i)\)</span> (see <a class="bibtex reference internal" href="zReferences.html#mcgovern2013084102" id="id3">[15]</a>)</p>
+<span class="math notranslate nohighlight">\(g(\vec{\xi},\vec{s}_i)\)</span> (see <a class="bibtex reference internal" href="zReferences.html#mcgovern2013084102" id="id3">[16]</a>)</p>
 <p>Metadynamics exists in many flavors, in which <span class="math notranslate nohighlight">\(W_i\)</span> and
 <span class="math notranslate nohighlight">\(\sigma_i\)</span> are altered in a time- or trajectory- dependent
 fashion. These include Well-Tempered Metadynamics, Transition-Tempered
@@ -367,7 +368,7 @@ MatLab or python (Matplotlib and numpy required).</p></li>
     <p>
         &copy; Copyright 2018, the SSAGES Team
       <span class="lastupdated">
-        Last updated on May 27, 2020.
+        Last updated on Jun 11, 2020.
       </span>
 
     </p>

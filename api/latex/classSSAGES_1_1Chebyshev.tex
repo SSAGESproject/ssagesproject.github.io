@@ -1,0 +1,410 @@
+\hypertarget{classSSAGES_1_1Chebyshev}{}\doxysection{S\+S\+A\+G\+ES\+::Chebyshev Class Reference}
+\label{classSSAGES_1_1Chebyshev}\index{SSAGES::Chebyshev@{SSAGES::Chebyshev}}
+
+
+Defines the class of \mbox{\hyperlink{classSSAGES_1_1Chebyshev}{Chebyshev}} polynomials.  
+
+
+
+
+{\ttfamily \#include $<$Basis.\+h$>$}
+
+
+
+Inheritance diagram for S\+S\+A\+G\+ES\+::Chebyshev\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=206pt]{classSSAGES_1_1Chebyshev__inherit__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classSSAGES_1_1Chebyshev_a54e17285d28fca66595906e2701bf8bc}{Chebyshev}} (unsigned int poly\+Ord, double bound\+Low, double bound\+Up, unsigned int nbins)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classSSAGES_1_1Chebyshev_ac4714ca82a78904abe0721c1828ef47c}{Change\+Variable}} (double x)
+\begin{DoxyCompactList}\small\item\em Transforms variable from absolute value to \mbox{[}-\/1,1\mbox{]} between boundaries. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classSSAGES_1_1Chebyshev_abfdbf46d4bd29102be98b0a2be159de2}{Evaluate}} (double x, int n)
+\begin{DoxyCompactList}\small\item\em Calculates the output of the basis function. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classSSAGES_1_1Chebyshev_a2cfb23d7b3b57fc7c936bc0789888cc8}{Eval\+Grad}} (double x, int n)
+\begin{DoxyCompactList}\small\item\em Calculates the gradient of the basis function. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classSSAGES_1_1Chebyshev_a83f2a3dd09162f39c97bcddb0679407d}{Weight}} (double x)
+\begin{DoxyCompactList}\small\item\em Calculates the gradient of the basis function. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classSSAGES_1_1Chebyshev_a0148abd7f8ee599eccc2e98c6b65410b}{Get\+Norm}} (int)
+\begin{DoxyCompactList}\small\item\em Gets the norm of the basis function. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classSSAGES_1_1Chebyshev}{Chebyshev}} $\ast$ \mbox{\hyperlink{classSSAGES_1_1Chebyshev_af559eb52a138ce6dae0cd53f9d9be6ff}{Build}} (const Json\+::\+Value \&json, const std\+::string \&path, unsigned int nbins)
+\begin{DoxyCompactList}\small\item\em Build \mbox{\hyperlink{classSSAGES_1_1BasisFunction}{Basis\+Function}} from \mbox{\hyperlink{namespaceJSON}{J\+S\+ON}} value. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Defines the class of \mbox{\hyperlink{classSSAGES_1_1Chebyshev}{Chebyshev}} polynomials. 
+
+Definition at line 201 of file Basis.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classSSAGES_1_1Chebyshev_a54e17285d28fca66595906e2701bf8bc}\label{classSSAGES_1_1Chebyshev_a54e17285d28fca66595906e2701bf8bc}} 
+\index{SSAGES::Chebyshev@{SSAGES::Chebyshev}!Chebyshev@{Chebyshev}}
+\index{Chebyshev@{Chebyshev}!SSAGES::Chebyshev@{SSAGES::Chebyshev}}
+\doxysubsubsection{\texorpdfstring{Chebyshev()}{Chebyshev()}}
+{\footnotesize\ttfamily S\+S\+A\+G\+E\+S\+::\+Chebyshev\+::\+Chebyshev (\begin{DoxyParamCaption}\item[{unsigned int}]{poly\+Ord,  }\item[{double}]{bound\+Low,  }\item[{double}]{bound\+Up,  }\item[{unsigned int}]{nbins }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em poly\+Ord} & Order of \mbox{\hyperlink{classSSAGES_1_1Chebyshev}{Chebyshev}} polynomial. \\
+\hline
+{\em bound\+Low} & Lower bounds of restraint springs. \\
+\hline
+{\em bound\+Up} & Upper bounds of restraint springs. \\
+\hline
+{\em nbins} & Number of bins.\\
+\hline
+\end{DoxyParams}
+Constructs an instance of the \mbox{\hyperlink{classSSAGES_1_1Chebyshev}{Chebyshev}} function class. 
+
+Definition at line 215 of file Basis.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{215                                                                                              :}
+\DoxyCodeLine{216         \mbox{\hyperlink{classSSAGES_1_1BasisFunction_ae8360863efc413c047660e5bf1c5a342}{BasisFunction}}(polyOrd, nbins, \textcolor{keyword}{true}, \textcolor{keyword}{false}, boundLow, boundUp)}
+\DoxyCodeLine{217         \{}
+\DoxyCodeLine{218         \}}
+
+\end{DoxyCode}
+
+
+Referenced by Build().
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classSSAGES_1_1Chebyshev_a54e17285d28fca66595906e2701bf8bc_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classSSAGES_1_1Chebyshev_af559eb52a138ce6dae0cd53f9d9be6ff}\label{classSSAGES_1_1Chebyshev_af559eb52a138ce6dae0cd53f9d9be6ff}} 
+\index{SSAGES::Chebyshev@{SSAGES::Chebyshev}!Build@{Build}}
+\index{Build@{Build}!SSAGES::Chebyshev@{SSAGES::Chebyshev}}
+\doxysubsubsection{\texorpdfstring{Build()}{Build()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classSSAGES_1_1Chebyshev}{Chebyshev}} $\ast$ S\+S\+A\+G\+E\+S\+::\+Chebyshev\+::\+Build (\begin{DoxyParamCaption}\item[{const Json\+::\+Value \&}]{json,  }\item[{const std\+::string \&}]{path,  }\item[{unsigned int}]{nbins }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Build \mbox{\hyperlink{classSSAGES_1_1BasisFunction}{Basis\+Function}} from \mbox{\hyperlink{namespaceJSON}{J\+S\+ON}} value. 
+
+Build the \mbox{\hyperlink{classSSAGES_1_1Chebyshev}{Chebyshev}} polynomial 
+\begin{DoxyParams}{Parameters}
+{\em json} & \mbox{\hyperlink{namespaceJSON}{J\+S\+ON}} value node. \\
+\hline
+{\em path} & Path for \mbox{\hyperlink{namespaceJSON}{J\+S\+ON}} path specification. \\
+\hline
+{\em nbins} & Number of bins.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pointer to new \mbox{\hyperlink{classSSAGES_1_1BasisFunction}{Basis\+Function}}. 
+\end{DoxyReturn}
+
+
+Definition at line 22 of file Basis.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{25     \{}
+\DoxyCodeLine{26         \mbox{\hyperlink{classJson_1_1ObjectRequirement}{Json::ObjectRequirement}} validator;}
+\DoxyCodeLine{27         Json::Value schema;}
+\DoxyCodeLine{28         Json::CharReaderBuilder rbuilder;}
+\DoxyCodeLine{29         Json::CharReader* reader = rbuilder.newCharReader();}
+\DoxyCodeLine{30 }
+\DoxyCodeLine{31         reader-\/>parse(JsonSchema::ChebyshevBasis.c\_str(),}
+\DoxyCodeLine{32                       JsonSchema::ChebyshevBasis.c\_str() + JsonSchema::ChebyshevBasis.size(),}
+\DoxyCodeLine{33                       \&schema, \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{34         validator.\mbox{\hyperlink{classJson_1_1ObjectRequirement_a4ed02ae1d612a5efba1688fcdd2df092}{Parse}}(schema, path);}
+\DoxyCodeLine{35 }
+\DoxyCodeLine{36         \textcolor{comment}{//Validate Inputs}}
+\DoxyCodeLine{37         validator.\mbox{\hyperlink{classJson_1_1ObjectRequirement_a9ac3b920001a35bc70580035d8d802b7}{Validate}}(json, path);}
+\DoxyCodeLine{38         \textcolor{keywordflow}{if}(validator.\mbox{\hyperlink{classJson_1_1Requirement_adfaec336a9f051d6f6b9a6d7f1d97b75}{HasErrors}}())}
+\DoxyCodeLine{39             \textcolor{keywordflow}{throw} BuildException(validator.\mbox{\hyperlink{classJson_1_1Requirement_a60bc275c366eb59f192fa2e621268480}{GetErrors}}());}
+\DoxyCodeLine{40 }
+\DoxyCodeLine{41         \textcolor{keywordflow}{return} \textcolor{keyword}{new} \mbox{\hyperlink{classSSAGES_1_1Chebyshev_a54e17285d28fca66595906e2701bf8bc}{Chebyshev}}(}
+\DoxyCodeLine{42                 json[\textcolor{stringliteral}{"polynomial\_order"}].asInt(),}
+\DoxyCodeLine{43                 json[\textcolor{stringliteral}{"lower\_bound"}].asDouble(),}
+\DoxyCodeLine{44                 json[\textcolor{stringliteral}{"upper\_bound"}].asDouble(),}
+\DoxyCodeLine{45                 nbin}
+\DoxyCodeLine{46             );}
+\DoxyCodeLine{47     \}}
+
+\end{DoxyCode}
+
+
+References Chebyshev(), Json\+::\+Requirement\+::\+Get\+Errors(), Json\+::\+Requirement\+::\+Has\+Errors(), Json\+::\+Object\+Requirement\+::\+Parse(), and Json\+::\+Object\+Requirement\+::\+Validate().
+
+
+
+Referenced by S\+S\+A\+G\+E\+S\+::\+Basis\+Function\+::\+Build().
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classSSAGES_1_1Chebyshev_af559eb52a138ce6dae0cd53f9d9be6ff_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classSSAGES_1_1Chebyshev_af559eb52a138ce6dae0cd53f9d9be6ff_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classSSAGES_1_1Chebyshev_ac4714ca82a78904abe0721c1828ef47c}\label{classSSAGES_1_1Chebyshev_ac4714ca82a78904abe0721c1828ef47c}} 
+\index{SSAGES::Chebyshev@{SSAGES::Chebyshev}!ChangeVariable@{ChangeVariable}}
+\index{ChangeVariable@{ChangeVariable}!SSAGES::Chebyshev@{SSAGES::Chebyshev}}
+\doxysubsubsection{\texorpdfstring{ChangeVariable()}{ChangeVariable()}}
+{\footnotesize\ttfamily double S\+S\+A\+G\+E\+S\+::\+Chebyshev\+::\+Change\+Variable (\begin{DoxyParamCaption}\item[{double}]{x }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Transforms variable from absolute value to \mbox{[}-\/1,1\mbox{]} between boundaries. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x} & Variable to transform.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Relative value between lower (-\/1) and upper (1) bounds on CV. 
+\end{DoxyReturn}
+
+
+Definition at line 226 of file Basis.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{227         \{}
+\DoxyCodeLine{228             \textcolor{keywordflow}{return} (x-\/\mbox{\hyperlink{classSSAGES_1_1BasisFunction_a62a9908f1df0c80cbe62a20edfa7e89a}{boundLow\_}})*2.0/(\mbox{\hyperlink{classSSAGES_1_1BasisFunction_a6dccdfa3e1107fbc24c0212f7a67fa2e}{boundUp\_}} -\/ \mbox{\hyperlink{classSSAGES_1_1BasisFunction_a62a9908f1df0c80cbe62a20edfa7e89a}{boundLow\_}})-\/1.0;}
+\DoxyCodeLine{229         \}}
+
+\end{DoxyCode}
+
+
+References S\+S\+A\+G\+E\+S\+::\+Basis\+Function\+::bound\+Low\+\_\+, and S\+S\+A\+G\+E\+S\+::\+Basis\+Function\+::bound\+Up\+\_\+.
+
+
+
+Referenced by Eval\+Grad(), Evaluate(), and Weight().
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classSSAGES_1_1Chebyshev_ac4714ca82a78904abe0721c1828ef47c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classSSAGES_1_1Chebyshev_a2cfb23d7b3b57fc7c936bc0789888cc8}\label{classSSAGES_1_1Chebyshev_a2cfb23d7b3b57fc7c936bc0789888cc8}} 
+\index{SSAGES::Chebyshev@{SSAGES::Chebyshev}!EvalGrad@{EvalGrad}}
+\index{EvalGrad@{EvalGrad}!SSAGES::Chebyshev@{SSAGES::Chebyshev}}
+\doxysubsubsection{\texorpdfstring{EvalGrad()}{EvalGrad()}}
+{\footnotesize\ttfamily double S\+S\+A\+G\+E\+S\+::\+Chebyshev\+::\+Eval\+Grad (\begin{DoxyParamCaption}\item[{double}]{val,  }\item[{int}]{order }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Calculates the gradient of the basis function. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em val} & Input value for function. \\
+\hline
+{\em order} & Order of the polynomial.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Gradient for function. 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classSSAGES_1_1BasisFunction_a169fac181260d66f8a778eeae53aa3d4}{S\+S\+A\+G\+E\+S\+::\+Basis\+Function}}.
+
+
+
+Definition at line 239 of file Basis.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{240         \{}
+\DoxyCodeLine{241             \textcolor{keywordtype}{double} xMod = \mbox{\hyperlink{classSSAGES_1_1Chebyshev_ac4714ca82a78904abe0721c1828ef47c}{ChangeVariable}}(x);}
+\DoxyCodeLine{242             \textcolor{keywordflow}{return} n == 0 ? 0.0 :}
+\DoxyCodeLine{243                     n == 1 ? 1.0 :}
+\DoxyCodeLine{244                     2.0*(\mbox{\hyperlink{classSSAGES_1_1Chebyshev_abfdbf46d4bd29102be98b0a2be159de2}{Evaluate}}(x,n-\/1) + xMod * \mbox{\hyperlink{classSSAGES_1_1Chebyshev_a2cfb23d7b3b57fc7c936bc0789888cc8}{EvalGrad}}(x,n-\/1)) -\/ \mbox{\hyperlink{classSSAGES_1_1Chebyshev_a2cfb23d7b3b57fc7c936bc0789888cc8}{EvalGrad}}(x,n-\/2);}
+\DoxyCodeLine{245         \}}
+
+\end{DoxyCode}
+
+
+References Change\+Variable(), and Evaluate().
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classSSAGES_1_1Chebyshev_a2cfb23d7b3b57fc7c936bc0789888cc8_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classSSAGES_1_1Chebyshev_abfdbf46d4bd29102be98b0a2be159de2}\label{classSSAGES_1_1Chebyshev_abfdbf46d4bd29102be98b0a2be159de2}} 
+\index{SSAGES::Chebyshev@{SSAGES::Chebyshev}!Evaluate@{Evaluate}}
+\index{Evaluate@{Evaluate}!SSAGES::Chebyshev@{SSAGES::Chebyshev}}
+\doxysubsubsection{\texorpdfstring{Evaluate()}{Evaluate()}}
+{\footnotesize\ttfamily double S\+S\+A\+G\+E\+S\+::\+Chebyshev\+::\+Evaluate (\begin{DoxyParamCaption}\item[{double}]{val,  }\item[{int}]{order }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Calculates the output of the basis function. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em val} & Input value for function. \\
+\hline
+{\em order} & Order of the polynomial.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Output value for function. 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classSSAGES_1_1BasisFunction_a7f08687dcc879ea034cf396af2f150db}{S\+S\+A\+G\+E\+S\+::\+Basis\+Function}}.
+
+
+
+Definition at line 231 of file Basis.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{232         \{}
+\DoxyCodeLine{233             \textcolor{keywordtype}{double} xMod = \mbox{\hyperlink{classSSAGES_1_1Chebyshev_ac4714ca82a78904abe0721c1828ef47c}{ChangeVariable}}(x);}
+\DoxyCodeLine{234             \textcolor{keywordflow}{return} n == 0 ? 1.0 : }
+\DoxyCodeLine{235                     n == 1 ? xMod :}
+\DoxyCodeLine{236                     2.0*xMod*\mbox{\hyperlink{classSSAGES_1_1Chebyshev_abfdbf46d4bd29102be98b0a2be159de2}{Evaluate}}(x,n-\/1) -\/ \mbox{\hyperlink{classSSAGES_1_1Chebyshev_abfdbf46d4bd29102be98b0a2be159de2}{Evaluate}}(x,n-\/2);}
+\DoxyCodeLine{237         \}}
+
+\end{DoxyCode}
+
+
+References Change\+Variable().
+
+
+
+Referenced by Eval\+Grad().
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classSSAGES_1_1Chebyshev_abfdbf46d4bd29102be98b0a2be159de2_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classSSAGES_1_1Chebyshev_abfdbf46d4bd29102be98b0a2be159de2_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classSSAGES_1_1Chebyshev_a0148abd7f8ee599eccc2e98c6b65410b}\label{classSSAGES_1_1Chebyshev_a0148abd7f8ee599eccc2e98c6b65410b}} 
+\index{SSAGES::Chebyshev@{SSAGES::Chebyshev}!GetNorm@{GetNorm}}
+\index{GetNorm@{GetNorm}!SSAGES::Chebyshev@{SSAGES::Chebyshev}}
+\doxysubsubsection{\texorpdfstring{GetNorm()}{GetNorm()}}
+{\footnotesize\ttfamily double S\+S\+A\+G\+E\+S\+::\+Chebyshev\+::\+Get\+Norm (\begin{DoxyParamCaption}\item[{int}]{order }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Gets the norm of the basis function. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em order} & Order of the polynomial.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Norm of a specific order of polynomial. 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classSSAGES_1_1BasisFunction_a8a5a2db30d30ea50cc522162bf1a956e}{S\+S\+A\+G\+E\+S\+::\+Basis\+Function}}.
+
+
+
+Definition at line 253 of file Basis.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{254         \{}
+\DoxyCodeLine{255             \textcolor{keywordflow}{return} 2.0/M\_PI;}
+\DoxyCodeLine{256         \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classSSAGES_1_1Chebyshev_a83f2a3dd09162f39c97bcddb0679407d}\label{classSSAGES_1_1Chebyshev_a83f2a3dd09162f39c97bcddb0679407d}} 
+\index{SSAGES::Chebyshev@{SSAGES::Chebyshev}!Weight@{Weight}}
+\index{Weight@{Weight}!SSAGES::Chebyshev@{SSAGES::Chebyshev}}
+\doxysubsubsection{\texorpdfstring{Weight()}{Weight()}}
+{\footnotesize\ttfamily double S\+S\+A\+G\+E\+S\+::\+Chebyshev\+::\+Weight (\begin{DoxyParamCaption}\item[{double}]{val }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Calculates the gradient of the basis function. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em val} & Input value for function.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Gradient of function. 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classSSAGES_1_1BasisFunction_adfc544d25046fb83f1b40296d08b7b30}{S\+S\+A\+G\+E\+S\+::\+Basis\+Function}}.
+
+
+
+Definition at line 247 of file Basis.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{248         \{}
+\DoxyCodeLine{249             \textcolor{keywordtype}{double} xMod = \mbox{\hyperlink{classSSAGES_1_1Chebyshev_ac4714ca82a78904abe0721c1828ef47c}{ChangeVariable}}(x);}
+\DoxyCodeLine{250             \textcolor{keywordflow}{return} 1.0/sqrt(1.0-\/xMod*xMod);}
+\DoxyCodeLine{251         \}}
+
+\end{DoxyCode}
+
+
+References Change\+Variable().
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classSSAGES_1_1Chebyshev_a83f2a3dd09162f39c97bcddb0679407d_cgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/michael/development/\+S\+S\+A\+G\+E\+S/src/\+Utility/Basis.\+h\item 
+/home/michael/development/\+S\+S\+A\+G\+E\+S/src/\+Utility/Basis.\+cpp\end{DoxyCompactItemize}

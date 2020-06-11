@@ -1,0 +1,679 @@
+\hypertarget{classSSAGES_1_1Grid}{}\doxysection{S\+S\+A\+G\+ES\+::Grid$<$ T $>$ Class Template Reference}
+\label{classSSAGES_1_1Grid}\index{SSAGES::Grid$<$ T $>$@{SSAGES::Grid$<$ T $>$}}
+
+
+Basic \mbox{\hyperlink{classSSAGES_1_1Grid}{Grid}}.  
+
+
+
+
+{\ttfamily \#include $<$Grid.\+h$>$}
+
+
+
+Inheritance diagram for S\+S\+A\+G\+ES\+::Grid$<$ T $>$\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classSSAGES_1_1Grid__inherit__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classSSAGES_1_1Grid_1_1GridIterator}{Grid\+Iterator}}
+\begin{DoxyCompactList}\small\item\em Custom Iterator. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classSSAGES_1_1Grid_a7c8ea83ff2ad6a18ea2eee5f0d8b2e49}\label{classSSAGES_1_1Grid_a7c8ea83ff2ad6a18ea2eee5f0d8b2e49}} 
+typedef \mbox{\hyperlink{classSSAGES_1_1Grid_1_1GridIterator}{Grid\+Iterator}}$<$ T $>$ \mbox{\hyperlink{classSSAGES_1_1Grid_a7c8ea83ff2ad6a18ea2eee5f0d8b2e49}{iterator}}
+\begin{DoxyCompactList}\small\item\em Custom iterator over a grid. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classSSAGES_1_1Grid_a7578af30ef150ac1b301ac5031f8ca94}\label{classSSAGES_1_1Grid_a7578af30ef150ac1b301ac5031f8ca94}} 
+typedef \mbox{\hyperlink{classSSAGES_1_1Grid_1_1GridIterator}{Grid\+Iterator}}$<$ const T $>$ \mbox{\hyperlink{classSSAGES_1_1Grid_a7578af30ef150ac1b301ac5031f8ca94}{const\+\_\+iterator}}
+\begin{DoxyCompactList}\small\item\em Custom constant iterator over a grid. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classSSAGES_1_1Grid_ab055ac24af224ae06fd812ae795e1157}{Grid}} (std\+::vector$<$ int $>$ num\+Points, std\+::vector$<$ double $>$ lower, std\+::vector$<$ double $>$ upper, std\+::vector$<$ bool $>$ is\+Periodic)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classSSAGES_1_1Grid_a7c8ea83ff2ad6a18ea2eee5f0d8b2e49}{iterator}} \mbox{\hyperlink{classSSAGES_1_1Grid_a709374b3cadf320347604077a2e45e5b}{begin}} ()
+\begin{DoxyCompactList}\small\item\em Return iterator at first grid point. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classSSAGES_1_1Grid_a7c8ea83ff2ad6a18ea2eee5f0d8b2e49}{iterator}} \mbox{\hyperlink{classSSAGES_1_1Grid_ac4fcc9f0cd61476ce4fd880c768d9694}{end}} ()
+\begin{DoxyCompactList}\small\item\em Return iterator after last valid grid point. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classSSAGES_1_1Grid_a7578af30ef150ac1b301ac5031f8ca94}{const\+\_\+iterator}} \mbox{\hyperlink{classSSAGES_1_1Grid_a1f54929ded67bca5c25021fecd4242cb}{begin}} () const
+\begin{DoxyCompactList}\small\item\em Return const iterator at first grid point. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classSSAGES_1_1Grid_a7578af30ef150ac1b301ac5031f8ca94}{const\+\_\+iterator}} \mbox{\hyperlink{classSSAGES_1_1Grid_afc22c673744cb25aaa94ca13a1c244e9}{end}} () const
+\begin{DoxyCompactList}\small\item\em Return const iterator after last valid grid point. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classSSAGES_1_1Grid_ab79a2be84faa3a5b27d9bf092fa30cca}{Write\+To\+File}} (const std\+::string \&filename)
+\begin{DoxyCompactList}\small\item\em Write grid out to file. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classSSAGES_1_1Grid_a279c1e9005fdf4c6fc23358d51b75b86}{Load\+From\+File}} (const std\+::string \&filename)
+\begin{DoxyCompactList}\small\item\em Builds a grid from file. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classSSAGES_1_1Grid}{Grid}}$<$ T $>$ $\ast$ \mbox{\hyperlink{classSSAGES_1_1Grid_a24d2373042debae156618906637e819c}{Build\+Grid}} (const Json\+::\+Value \&json)
+\begin{DoxyCompactList}\small\item\em Set up the grid. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{classSSAGES_1_1Grid}{Grid}}$<$ T $>$ $\ast$ \mbox{\hyperlink{classSSAGES_1_1Grid_a9e933a2490b0d835c0578cbe7f012292}{Build\+Grid}} (const Json\+::\+Value \&json, const std\+::string \&path)
+\begin{DoxyCompactList}\small\item\em Set up the grid. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+size\+\_\+t \mbox{\hyperlink{classSSAGES_1_1Grid_ad60e455c3d5a58b3aa1581215988a03b}{map\+To1d}} (const std\+::vector$<$ int $>$ \&indices) const override
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{structSSAGES_1_1Map}{Map}} d-\/dimensional indices to 1-\/d data vector. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$typename T$>$\newline
+class S\+S\+A\+G\+E\+S\+::\+Grid$<$ T $>$}
+
+Basic \mbox{\hyperlink{classSSAGES_1_1Grid}{Grid}}. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & type of data to be stored in the grid.\\
+\hline
+\end{DoxyTemplParams}
+A \mbox{\hyperlink{classSSAGES_1_1Grid}{Grid}} is a method to store data in \mbox{\hyperlink{namespaceSSAGES}{S\+S\+A\+G\+ES}}. It is used to discretize a continuous number, typically a collective variable or a function, into {\ttfamily number\+\_\+points} grid points. At each grid point, an arbitrary type of data can be stored, specified via the template parameter {\ttfamily T}.
+
+The grid can be of arbitrary dimension. For each dimension, the lower bound, the upper bound and the number of grid points need to be specified. Furthermore, the grid can be defined as periodic or non-\/periodic in the respective dimension. By default, the grid is non-\/periodic. The grid points are indexed from 0 to number\+\_\+points-\/1 following the standard C/\+C++ convention.
+
+The grid spacing {\ttfamily Delta} is given by (upper -\/ lower)/number\+\_\+points. Thus, grid point {\ttfamily n} corresponds to the interval \mbox{[}lower + n$\ast$\+Delta, lower + (n+1)$\ast$\+Delta). Note that n follows the C/\+C++ convention, i.\+e. n = 0 for the first interval. The bin indices pertaining to a given point can be obtained via \mbox{\hyperlink{classSSAGES_1_1GridBase_a500069259f6fece46ab04eeb2783ac83}{Get\+Indices()}}. 
+
+Definition at line 58 of file Grid.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classSSAGES_1_1Grid_ab055ac24af224ae06fd812ae795e1157}\label{classSSAGES_1_1Grid_ab055ac24af224ae06fd812ae795e1157}} 
+\index{SSAGES::Grid$<$ T $>$@{SSAGES::Grid$<$ T $>$}!Grid@{Grid}}
+\index{Grid@{Grid}!SSAGES::Grid$<$ T $>$@{SSAGES::Grid$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{Grid()}{Grid()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{classSSAGES_1_1Grid}{S\+S\+A\+G\+E\+S\+::\+Grid}}$<$ T $>$\+::\mbox{\hyperlink{classSSAGES_1_1Grid}{Grid}} (\begin{DoxyParamCaption}\item[{std\+::vector$<$ int $>$}]{num\+Points,  }\item[{std\+::vector$<$ double $>$}]{lower,  }\item[{std\+::vector$<$ double $>$}]{upper,  }\item[{std\+::vector$<$ bool $>$}]{is\+Periodic }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em num\+Points} & Number of grid points in each dimension. \\
+\hline
+{\em lower} & Lower edges of the grid. \\
+\hline
+{\em upper} & Upper edges of the grid. \\
+\hline
+{\em is\+Periodic} & Bools specifying the periodicity in the respective dimension.\\
+\hline
+\end{DoxyParams}
+The dimension of the grid is determined by the size of the parameter vectors. 
+
+Definition at line 103 of file Grid.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{107       : GridBase<T>(numPoints, lower, upper, isPeriodic)}
+\DoxyCodeLine{108     \{}
+\DoxyCodeLine{109         \textcolor{keywordtype}{size\_t} data\_size = 1;}
+\DoxyCodeLine{110         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{size\_t} d = 0; d < GridBase<T>::GetDimension(); ++d) \{}
+\DoxyCodeLine{111             \textcolor{keywordtype}{size\_t} storage\_size = \mbox{\hyperlink{classSSAGES_1_1GridBase_a6694054acdb971864f491cab170ad8ed}{GridBase<T>::numPoints\_}}[d];}
+\DoxyCodeLine{112             data\_size *= storage\_size;}
+\DoxyCodeLine{113         \}}
+\DoxyCodeLine{114 }
+\DoxyCodeLine{115         \mbox{\hyperlink{classSSAGES_1_1GridBase_a9d6d80ceee94abc2ca70512f230fd2eb}{GridBase<T>::data\_}}.resize(data\_size);}
+\DoxyCodeLine{116     \}}
+
+\end{DoxyCode}
+
+
+Referenced by S\+S\+A\+G\+E\+S\+::\+Grid$<$ Eigen\+::\+Vector\+Xd $>$\+::\+Build\+Grid().
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=340pt]{classSSAGES_1_1Grid_ab055ac24af224ae06fd812ae795e1157_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classSSAGES_1_1Grid_a709374b3cadf320347604077a2e45e5b}\label{classSSAGES_1_1Grid_a709374b3cadf320347604077a2e45e5b}} 
+\index{SSAGES::Grid$<$ T $>$@{SSAGES::Grid$<$ T $>$}!begin@{begin}}
+\index{begin@{begin}!SSAGES::Grid$<$ T $>$@{SSAGES::Grid$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{begin()}{begin()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{classSSAGES_1_1Grid_a7c8ea83ff2ad6a18ea2eee5f0d8b2e49}{iterator}} \mbox{\hyperlink{classSSAGES_1_1Grid}{S\+S\+A\+G\+E\+S\+::\+Grid}}$<$ T $>$\+::begin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return iterator at first grid point. 
+
+\begin{DoxyReturn}{Returns}
+Iterator at first grid point.
+\end{DoxyReturn}
+The first grid point is defined as the grid point with index 0 in all dimensions. 
+
+Definition at line 527 of file Grid.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{528     \{}
+\DoxyCodeLine{529         std::vector<int> indices(\mbox{\hyperlink{classSSAGES_1_1GridBase_a72f98ef47da691b00823d612efbd46b8}{GridBase<T>::GetDimension}}(), 0);}
+\DoxyCodeLine{530 }
+\DoxyCodeLine{531         \textcolor{keywordflow}{return} \mbox{\hyperlink{classSSAGES_1_1Grid_a7c8ea83ff2ad6a18ea2eee5f0d8b2e49}{iterator}}(indices, \textcolor{keyword}{this});}
+\DoxyCodeLine{532     \}}
+
+\end{DoxyCode}
+
+
+Referenced by S\+S\+A\+G\+E\+S\+::\+A\+N\+N\+::\+A\+N\+N(), S\+S\+A\+G\+E\+S\+::\+C\+F\+F\+::\+C\+F\+F(), S\+S\+A\+G\+E\+S\+::\+A\+N\+N\+::\+Pre\+Simulation(), S\+S\+A\+G\+E\+S\+::\+B\+F\+S\+::\+Print\+Bias(), S\+S\+A\+G\+E\+S\+::\+B\+F\+S\+::\+Project\+Bias(), S\+S\+A\+G\+E\+S\+::\+Basis\+Evaluator\+::\+Update\+Bias(), S\+S\+A\+G\+E\+S\+::\+Basis\+Evaluator\+::\+Update\+Coeff(), and S\+S\+A\+G\+E\+S\+::\+Grid$<$ Eigen\+::\+Vector\+Xd $>$\+::\+Write\+To\+File().
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classSSAGES_1_1Grid_a709374b3cadf320347604077a2e45e5b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classSSAGES_1_1Grid_a1f54929ded67bca5c25021fecd4242cb}\label{classSSAGES_1_1Grid_a1f54929ded67bca5c25021fecd4242cb}} 
+\index{SSAGES::Grid$<$ T $>$@{SSAGES::Grid$<$ T $>$}!begin@{begin}}
+\index{begin@{begin}!SSAGES::Grid$<$ T $>$@{SSAGES::Grid$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{begin()}{begin()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{classSSAGES_1_1Grid_a7578af30ef150ac1b301ac5031f8ca94}{const\+\_\+iterator}} \mbox{\hyperlink{classSSAGES_1_1Grid}{S\+S\+A\+G\+E\+S\+::\+Grid}}$<$ T $>$\+::begin (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return const iterator at first grid point. 
+
+\begin{DoxyReturn}{Returns}
+Const iterator at first grid point.
+\end{DoxyReturn}
+The first grid point is defined as the grid point with index 0 in all dimensions. 
+
+Definition at line 558 of file Grid.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{559     \{}
+\DoxyCodeLine{560         std::vector<int> indices(\mbox{\hyperlink{classSSAGES_1_1GridBase_a72f98ef47da691b00823d612efbd46b8}{GridBase<T>::GetDimension}}(), 0);}
+\DoxyCodeLine{561 }
+\DoxyCodeLine{562         \textcolor{keywordflow}{return} \mbox{\hyperlink{classSSAGES_1_1Grid_a7c8ea83ff2ad6a18ea2eee5f0d8b2e49}{iterator}}(indices, \textcolor{keyword}{this});}
+\DoxyCodeLine{563     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classSSAGES_1_1Grid_a24d2373042debae156618906637e819c}\label{classSSAGES_1_1Grid_a24d2373042debae156618906637e819c}} 
+\index{SSAGES::Grid$<$ T $>$@{SSAGES::Grid$<$ T $>$}!BuildGrid@{BuildGrid}}
+\index{BuildGrid@{BuildGrid}!SSAGES::Grid$<$ T $>$@{SSAGES::Grid$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{BuildGrid()}{BuildGrid()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+static \mbox{\hyperlink{classSSAGES_1_1Grid}{Grid}}$<$T$>$$\ast$ \mbox{\hyperlink{classSSAGES_1_1Grid}{S\+S\+A\+G\+E\+S\+::\+Grid}}$<$ T $>$\+::Build\+Grid (\begin{DoxyParamCaption}\item[{const Json\+::\+Value \&}]{json }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Set up the grid. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em json} & \mbox{\hyperlink{namespaceJSON}{J\+S\+ON}} value containing all input information. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pointer to the newly built grid.
+\end{DoxyReturn}
+This function builds a grid from a \mbox{\hyperlink{namespaceJSON}{J\+S\+ON}} node. It will return a nullptr if an unknown error occured, but generally, it will throw a \mbox{\hyperlink{classSSAGES_1_1BuildException}{Build\+Exception}} of failure. 
+
+Definition at line 127 of file Grid.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{128     \{}
+\DoxyCodeLine{129         \textcolor{keywordflow}{return} \mbox{\hyperlink{classSSAGES_1_1Grid_a24d2373042debae156618906637e819c}{BuildGrid}}(json, \textcolor{stringliteral}{"\#/Grid"});}
+\DoxyCodeLine{130     \}}
+
+\end{DoxyCode}
+
+
+Referenced by S\+S\+A\+G\+E\+S\+::\+A\+N\+N\+::\+Build(), and S\+S\+A\+G\+E\+S\+::\+Grid$<$ Eigen\+::\+Vector\+Xd $>$\+::\+Build\+Grid().
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classSSAGES_1_1Grid_a24d2373042debae156618906637e819c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classSSAGES_1_1Grid_a9e933a2490b0d835c0578cbe7f012292}\label{classSSAGES_1_1Grid_a9e933a2490b0d835c0578cbe7f012292}} 
+\index{SSAGES::Grid$<$ T $>$@{SSAGES::Grid$<$ T $>$}!BuildGrid@{BuildGrid}}
+\index{BuildGrid@{BuildGrid}!SSAGES::Grid$<$ T $>$@{SSAGES::Grid$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{BuildGrid()}{BuildGrid()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+static \mbox{\hyperlink{classSSAGES_1_1Grid}{Grid}}$<$T$>$$\ast$ \mbox{\hyperlink{classSSAGES_1_1Grid}{S\+S\+A\+G\+E\+S\+::\+Grid}}$<$ T $>$\+::Build\+Grid (\begin{DoxyParamCaption}\item[{const Json\+::\+Value \&}]{json,  }\item[{const std\+::string \&}]{path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Set up the grid. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em json} & \mbox{\hyperlink{namespaceJSON}{J\+S\+ON}} Value containing all input information. \\
+\hline
+{\em path} & Path for \mbox{\hyperlink{namespaceJSON}{J\+S\+ON}} path specification. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pointer to the newly built grid.
+\end{DoxyReturn}
+This function builds a grid from a \mbox{\hyperlink{namespaceJSON}{J\+S\+ON}} node. It will return a nullptr if an unknown error occured, but generally, it will throw a \mbox{\hyperlink{classSSAGES_1_1BuildException}{Build\+Exception}} on failure. 
+
+Definition at line 142 of file Grid.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{143     \{}
+\DoxyCodeLine{144         \mbox{\hyperlink{classJson_1_1ObjectRequirement}{Json::ObjectRequirement}} validator;}
+\DoxyCodeLine{145         Json::Value schema;}
+\DoxyCodeLine{146         Json::CharReaderBuilder rbuilder;}
+\DoxyCodeLine{147         Json::CharReader* reader = rbuilder.newCharReader();}
+\DoxyCodeLine{148 }
+\DoxyCodeLine{149         reader-\/>parse(JsonSchema::grid.c\_str(),}
+\DoxyCodeLine{150                       JsonSchema::grid.c\_str() + JsonSchema::grid.\mbox{\hyperlink{classSSAGES_1_1GridBase_a4f8abb752ae6ec51ebcf24b599bf4896}{size}}(),}
+\DoxyCodeLine{151                       \&schema, \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{152         validator.\mbox{\hyperlink{classJson_1_1ObjectRequirement_a4ed02ae1d612a5efba1688fcdd2df092}{Parse}}(schema, path);}
+\DoxyCodeLine{153 }
+\DoxyCodeLine{154         \textcolor{comment}{// Validate inputs.}}
+\DoxyCodeLine{155         validator.\mbox{\hyperlink{classJson_1_1ObjectRequirement_a9ac3b920001a35bc70580035d8d802b7}{Validate}}(json, path);}
+\DoxyCodeLine{156         \textcolor{keywordflow}{if} (validator.\mbox{\hyperlink{classJson_1_1Requirement_adfaec336a9f051d6f6b9a6d7f1d97b75}{HasErrors}}()) \{}
+\DoxyCodeLine{157             \textcolor{keywordflow}{throw} BuildException(validator.\mbox{\hyperlink{classJson_1_1Requirement_a60bc275c366eb59f192fa2e621268480}{GetErrors}}());}
+\DoxyCodeLine{158         \}}
+\DoxyCodeLine{159 }
+\DoxyCodeLine{160         \textcolor{comment}{// Read in Lower Grid edges.}}
+\DoxyCodeLine{161         std::vector<double> lower;}
+\DoxyCodeLine{162         \textcolor{keywordflow}{for} (\textcolor{keyword}{auto} \&lv : json[\textcolor{stringliteral}{"lower"}]) \{}
+\DoxyCodeLine{163            lower.push\_back(lv.asDouble());}
+\DoxyCodeLine{164         \}}
+\DoxyCodeLine{165 }
+\DoxyCodeLine{166         \textcolor{keywordtype}{size\_t} dimension = lower.size();}
+\DoxyCodeLine{167 }
+\DoxyCodeLine{168         \textcolor{comment}{// Read in upper grid edges.}}
+\DoxyCodeLine{169         std::vector<double> upper;}
+\DoxyCodeLine{170         \textcolor{keywordflow}{for} (\textcolor{keyword}{auto} \&uv : json[\textcolor{stringliteral}{"upper"}]) \{}
+\DoxyCodeLine{171             upper.push\_back(uv.asDouble());}
+\DoxyCodeLine{172         \}}
+\DoxyCodeLine{173 }
+\DoxyCodeLine{174         \textcolor{keywordflow}{if} (upper.size() != dimension) \{}
+\DoxyCodeLine{175             \textcolor{keywordflow}{throw} BuildException(\{\textcolor{stringliteral}{"Number of upper values does not match "}}
+\DoxyCodeLine{176                                   \textcolor{stringliteral}{"number of lower values!"}\});}
+\DoxyCodeLine{177         \}}
+\DoxyCodeLine{178 }
+\DoxyCodeLine{179         \textcolor{comment}{// Read in number of points.}}
+\DoxyCodeLine{180         std::vector<int> number\_points;}
+\DoxyCodeLine{181         \textcolor{keywordflow}{for} (\textcolor{keyword}{auto} \&np : json[\textcolor{stringliteral}{"number\_points"}]) \{}
+\DoxyCodeLine{182             number\_points.push\_back(np.asInt());}
+\DoxyCodeLine{183         \}}
+\DoxyCodeLine{184 }
+\DoxyCodeLine{185         \textcolor{keywordflow}{if} (number\_points.size() != dimension) \{}
+\DoxyCodeLine{186             \textcolor{keywordflow}{throw} BuildException(\{\textcolor{stringliteral}{"Arrays \(\backslash\)"lower\(\backslash\)" and \(\backslash\)"number\_points\(\backslash\)" do "}}
+\DoxyCodeLine{187                                   \textcolor{stringliteral}{"not have the same size!"}\});}
+\DoxyCodeLine{188         \}}
+\DoxyCodeLine{189 }
+\DoxyCodeLine{190         \textcolor{comment}{// Read in periodicity.}}
+\DoxyCodeLine{191         std::vector<bool> isPeriodic;}
+\DoxyCodeLine{192         \textcolor{keywordflow}{for} (\textcolor{keyword}{auto} \&periodic : json[\textcolor{stringliteral}{"periodic"}]) \{}
+\DoxyCodeLine{193             isPeriodic.push\_back(periodic.asBool());}
+\DoxyCodeLine{194         \}}
+\DoxyCodeLine{195 }
+\DoxyCodeLine{196         \textcolor{keywordflow}{if} (isPeriodic.size() == 0) \{}
+\DoxyCodeLine{197             isPeriodic = std::vector<bool>(dimension, \textcolor{keyword}{false});}
+\DoxyCodeLine{198         \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if} (isPeriodic.size() != dimension) \{}
+\DoxyCodeLine{199             \textcolor{keywordflow}{throw} BuildException(\{\textcolor{stringliteral}{"Arrays \(\backslash\)"lower\(\backslash\)" and \(\backslash\)"periodic\(\backslash\)" do not "}}
+\DoxyCodeLine{200                                   \textcolor{stringliteral}{"have the same size!"}\});}
+\DoxyCodeLine{201         \}}
+\DoxyCodeLine{202 }
+\DoxyCodeLine{203         \textcolor{comment}{// Construct the grid.}}
+\DoxyCodeLine{204         Grid<T>* grid = \textcolor{keyword}{new} \mbox{\hyperlink{classSSAGES_1_1Grid_ab055ac24af224ae06fd812ae795e1157}{Grid}}(number\_points, lower, upper, isPeriodic);}
+\DoxyCodeLine{205 }
+\DoxyCodeLine{206         \textcolor{keywordflow}{return} grid;}
+\DoxyCodeLine{207     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classSSAGES_1_1Grid_ac4fcc9f0cd61476ce4fd880c768d9694}\label{classSSAGES_1_1Grid_ac4fcc9f0cd61476ce4fd880c768d9694}} 
+\index{SSAGES::Grid$<$ T $>$@{SSAGES::Grid$<$ T $>$}!end@{end}}
+\index{end@{end}!SSAGES::Grid$<$ T $>$@{SSAGES::Grid$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{end()}{end()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{classSSAGES_1_1Grid_a7c8ea83ff2ad6a18ea2eee5f0d8b2e49}{iterator}} \mbox{\hyperlink{classSSAGES_1_1Grid}{S\+S\+A\+G\+E\+S\+::\+Grid}}$<$ T $>$\+::end (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return iterator after last valid grid point. 
+
+\begin{DoxyReturn}{Returns}
+Iterator after last valid grid point.
+\end{DoxyReturn}
+The last valid grid point has index num\+\_\+points -\/ 1 in all dimensions. 
+
+Definition at line 540 of file Grid.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{541     \{}
+\DoxyCodeLine{542         std::vector<int> indices(\mbox{\hyperlink{classSSAGES_1_1GridBase_a72f98ef47da691b00823d612efbd46b8}{GridBase<T>::GetDimension}}());}
+\DoxyCodeLine{543         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{size\_t} i = 0; i < indices.size(); ++i) \{}
+\DoxyCodeLine{544             indices.at(i) = \mbox{\hyperlink{classSSAGES_1_1GridBase_a6694054acdb971864f491cab170ad8ed}{GridBase<T>::numPoints\_}}[i] -\/ 1;}
+\DoxyCodeLine{545         \}}
+\DoxyCodeLine{546 }
+\DoxyCodeLine{547         \mbox{\hyperlink{classSSAGES_1_1Grid_a7c8ea83ff2ad6a18ea2eee5f0d8b2e49}{iterator}} it(indices, \textcolor{keyword}{this});}
+\DoxyCodeLine{548         \textcolor{keywordflow}{return} ++it;}
+\DoxyCodeLine{549     \}}
+
+\end{DoxyCode}
+
+
+Referenced by S\+S\+A\+G\+E\+S\+::\+A\+N\+N\+::\+A\+N\+N(), S\+S\+A\+G\+E\+S\+::\+C\+F\+F\+::\+C\+F\+F(), S\+S\+A\+G\+E\+S\+::\+A\+N\+N\+::\+Pre\+Simulation(), S\+S\+A\+G\+E\+S\+::\+Basis\+Evaluator\+::\+Update\+Bias(), S\+S\+A\+G\+E\+S\+::\+Basis\+Evaluator\+::\+Update\+Coeff(), and S\+S\+A\+G\+E\+S\+::\+Grid$<$ Eigen\+::\+Vector\+Xd $>$\+::\+Write\+To\+File().
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classSSAGES_1_1Grid_ac4fcc9f0cd61476ce4fd880c768d9694_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classSSAGES_1_1Grid_afc22c673744cb25aaa94ca13a1c244e9}\label{classSSAGES_1_1Grid_afc22c673744cb25aaa94ca13a1c244e9}} 
+\index{SSAGES::Grid$<$ T $>$@{SSAGES::Grid$<$ T $>$}!end@{end}}
+\index{end@{end}!SSAGES::Grid$<$ T $>$@{SSAGES::Grid$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{end()}{end()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+\mbox{\hyperlink{classSSAGES_1_1Grid_a7578af30ef150ac1b301ac5031f8ca94}{const\+\_\+iterator}} \mbox{\hyperlink{classSSAGES_1_1Grid}{S\+S\+A\+G\+E\+S\+::\+Grid}}$<$ T $>$\+::end (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Return const iterator after last valid grid point. 
+
+\begin{DoxyReturn}{Returns}
+Const iterator after last valid grid point.
+\end{DoxyReturn}
+The last valid grid point has index num\+\_\+points -\/ 1 in all dimensions. 
+
+Definition at line 571 of file Grid.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{572     \{}
+\DoxyCodeLine{573         std::vector<int> indices(\mbox{\hyperlink{classSSAGES_1_1GridBase_a72f98ef47da691b00823d612efbd46b8}{GridBase<T>::GetDimension}}());}
+\DoxyCodeLine{574         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{size\_t} i = 0; i < indices.size(); ++i) \{}
+\DoxyCodeLine{575             indices.at(i) = \mbox{\hyperlink{classSSAGES_1_1GridBase_a6694054acdb971864f491cab170ad8ed}{GridBase<T>::numPoints\_}}[i] -\/ 1;}
+\DoxyCodeLine{576         \}}
+\DoxyCodeLine{577 }
+\DoxyCodeLine{578         \mbox{\hyperlink{classSSAGES_1_1Grid_a7c8ea83ff2ad6a18ea2eee5f0d8b2e49}{iterator}} it(indices, \textcolor{keyword}{this});}
+\DoxyCodeLine{579         \textcolor{keywordflow}{return} ++it;}
+\DoxyCodeLine{580     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classSSAGES_1_1Grid_a279c1e9005fdf4c6fc23358d51b75b86}\label{classSSAGES_1_1Grid_a279c1e9005fdf4c6fc23358d51b75b86}} 
+\index{SSAGES::Grid$<$ T $>$@{SSAGES::Grid$<$ T $>$}!LoadFromFile@{LoadFromFile}}
+\index{LoadFromFile@{LoadFromFile}!SSAGES::Grid$<$ T $>$@{SSAGES::Grid$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{LoadFromFile()}{LoadFromFile()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void \mbox{\hyperlink{classSSAGES_1_1Grid}{S\+S\+A\+G\+E\+S\+::\+Grid}}$<$ T $>$\+::Load\+From\+File (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{filename }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Builds a grid from file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & Filename containing grid data. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pointer to the newly built grid.
+\end{DoxyReturn}
+This function builds a grid from a text data file. 
+
+Definition at line 629 of file Grid.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{630     \{}
+\DoxyCodeLine{631         std::ifstream file(filename);}
+\DoxyCodeLine{632     \textcolor{keywordflow}{if} (!file)}
+\DoxyCodeLine{633         \textcolor{keywordflow}{throw} BuildException (\{\textcolor{stringliteral}{"Attempt to load grid "} + filename + \textcolor{stringliteral}{" unsuccessful."}\});}
+\DoxyCodeLine{634 }
+\DoxyCodeLine{635         std::string line, buff; }
+\DoxyCodeLine{636 }
+\DoxyCodeLine{637         \textcolor{comment}{// Skip type for now. }}
+\DoxyCodeLine{638         std::getline(file, line); }
+\DoxyCodeLine{639 }
+\DoxyCodeLine{640         \textcolor{comment}{// Get dimension.}}
+\DoxyCodeLine{641         \{}
+\DoxyCodeLine{642             \textcolor{keywordtype}{size\_t} dim = 0;}
+\DoxyCodeLine{643             std::getline(file, line);}
+\DoxyCodeLine{644             std::istringstream iss(line);}
+\DoxyCodeLine{645             iss >> buff >> buff >> dim; }
+\DoxyCodeLine{646             \textcolor{keywordflow}{if}(dim != \mbox{\hyperlink{classSSAGES_1_1GridBase_a6d18033eedc00af670876b5927ac9402}{GridBase<T>::dimension\_}})}
+\DoxyCodeLine{647                 \textcolor{keywordflow}{throw} std::invalid\_argument(filename + }
+\DoxyCodeLine{648                     \textcolor{stringliteral}{": Expected dimension "} + std::to\_string(\mbox{\hyperlink{classSSAGES_1_1GridBase_a6d18033eedc00af670876b5927ac9402}{GridBase<T>::dimension\_}}) + }
+\DoxyCodeLine{649                     \textcolor{stringliteral}{" but got "} + std::to\_string(dim) + \textcolor{stringliteral}{" instead."});}
+\DoxyCodeLine{650         \}}
+\DoxyCodeLine{651 }
+\DoxyCodeLine{652         \textcolor{comment}{// Get size. }}
+\DoxyCodeLine{653         \{}
+\DoxyCodeLine{654             std::getline(file, line); }
+\DoxyCodeLine{655             std::istringstream iss(line);}
+\DoxyCodeLine{656             \textcolor{keywordtype}{int} count = 0;}
+\DoxyCodeLine{657             \textcolor{keyword}{auto} counts = \mbox{\hyperlink{classSSAGES_1_1GridBase_a6694054acdb971864f491cab170ad8ed}{GridBase<T>::numPoints\_}};}
+\DoxyCodeLine{658             iss >> buff >> buff;}
+\DoxyCodeLine{659             \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i = 0; iss >> count; ++i)}
+\DoxyCodeLine{660             \{               }
+\DoxyCodeLine{661                 \textcolor{keywordflow}{if}((count) != counts[i])}
+\DoxyCodeLine{662                     \textcolor{keywordflow}{throw} std::invalid\_argument(filename + }
+\DoxyCodeLine{663                     \textcolor{stringliteral}{": Expected count "} + std::to\_string(counts[i]) + }
+\DoxyCodeLine{664                     \textcolor{stringliteral}{" on dimension "} + std::to\_string(i) + \textcolor{stringliteral}{" but got "} + }
+\DoxyCodeLine{665                     std::to\_string(count) + \textcolor{stringliteral}{" instead."});}
+\DoxyCodeLine{666             \}}
+\DoxyCodeLine{667         \}}
+\DoxyCodeLine{668 }
+\DoxyCodeLine{669         \textcolor{comment}{// Get lower bounds. }}
+\DoxyCodeLine{670         \{}
+\DoxyCodeLine{671             std::getline(file, line); }
+\DoxyCodeLine{672             std::istringstream iss(line);}
+\DoxyCodeLine{673             \textcolor{keywordtype}{double} lower = 0; }
+\DoxyCodeLine{674             \textcolor{keyword}{auto} lowers = \mbox{\hyperlink{classSSAGES_1_1GridBase_a261701541cd481c6c505635fa1d7bb5e}{GridBase<T>::edges\_}}.first; }
+\DoxyCodeLine{675             iss >> buff >> buff;}
+\DoxyCodeLine{676             \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i = 0; iss >> lower; ++i)}
+\DoxyCodeLine{677             \{}
+\DoxyCodeLine{678                 \textcolor{keywordtype}{double} spacing = 0;}
+\DoxyCodeLine{679                 \textcolor{keywordflow}{if}(\mbox{\hyperlink{classSSAGES_1_1GridBase_a17e207418e3a368d2c2bac790441d170}{GridBase<T>::isPeriodic\_}}[i])}
+\DoxyCodeLine{680                 \{}
+\DoxyCodeLine{681                     spacing = (\mbox{\hyperlink{classSSAGES_1_1GridBase_a261701541cd481c6c505635fa1d7bb5e}{GridBase<T>::edges\_}}.second[i] -\/ \mbox{\hyperlink{classSSAGES_1_1GridBase_a261701541cd481c6c505635fa1d7bb5e}{GridBase<T>::edges\_}}.first[i]) / (\mbox{\hyperlink{classSSAGES_1_1GridBase_a6694054acdb971864f491cab170ad8ed}{GridBase<T>::numPoints\_}}[i]);}
+\DoxyCodeLine{682                 \}               }
+\DoxyCodeLine{683                 \textcolor{keywordflow}{if}(std::abs(lower-\/spacing/2 -\/ lowers[i]) > 1e-\/8)}
+\DoxyCodeLine{684                     \textcolor{keywordflow}{throw} std::invalid\_argument(filename + }
+\DoxyCodeLine{685                     \textcolor{stringliteral}{": Expected lower "} + std::to\_string(lowers[i]+spacing/2) + }
+\DoxyCodeLine{686                     \textcolor{stringliteral}{" on dimension "} + std::to\_string(i) + \textcolor{stringliteral}{" but got "} + }
+\DoxyCodeLine{687                     std::to\_string(lower) + \textcolor{stringliteral}{" instead."});}
+\DoxyCodeLine{688             \}}
+\DoxyCodeLine{689         \}}
+\DoxyCodeLine{690 }
+\DoxyCodeLine{691         \textcolor{comment}{// Get upper bounds. }}
+\DoxyCodeLine{692         \{}
+\DoxyCodeLine{693             std::getline(file, line); }
+\DoxyCodeLine{694             std::istringstream iss(line);}
+\DoxyCodeLine{695             \textcolor{keywordtype}{double} upper = 0; }
+\DoxyCodeLine{696             \textcolor{keyword}{auto} uppers = \mbox{\hyperlink{classSSAGES_1_1GridBase_a261701541cd481c6c505635fa1d7bb5e}{GridBase<T>::edges\_}}.second; }
+\DoxyCodeLine{697             iss >> buff >> buff;}
+\DoxyCodeLine{698             \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i = 0; iss >> upper; ++i)}
+\DoxyCodeLine{699             \{}
+\DoxyCodeLine{700                 \textcolor{keywordtype}{double} spacing = 0;}
+\DoxyCodeLine{701                 \textcolor{keywordflow}{if}(\mbox{\hyperlink{classSSAGES_1_1GridBase_a17e207418e3a368d2c2bac790441d170}{GridBase<T>::isPeriodic\_}}[i])}
+\DoxyCodeLine{702                 \{}
+\DoxyCodeLine{703                     spacing = (\mbox{\hyperlink{classSSAGES_1_1GridBase_a261701541cd481c6c505635fa1d7bb5e}{GridBase<T>::edges\_}}.second[i] -\/ \mbox{\hyperlink{classSSAGES_1_1GridBase_a261701541cd481c6c505635fa1d7bb5e}{GridBase<T>::edges\_}}.first[i]) / (\mbox{\hyperlink{classSSAGES_1_1GridBase_a6694054acdb971864f491cab170ad8ed}{GridBase<T>::numPoints\_}}[i]);}
+\DoxyCodeLine{704                 \}}
+\DoxyCodeLine{705                 \textcolor{keywordflow}{if}(std::abs((upper+spacing/2) -\/ uppers[i]) > 1e-\/8)}
+\DoxyCodeLine{706                     \textcolor{keywordflow}{throw} std::invalid\_argument(filename + }
+\DoxyCodeLine{707                     \textcolor{stringliteral}{": Expected upper "} + std::to\_string(uppers[i]-\/spacing/2) + }
+\DoxyCodeLine{708                     \textcolor{stringliteral}{" on dimension "} + std::to\_string(i) + \textcolor{stringliteral}{" but got "} + }
+\DoxyCodeLine{709                     std::to\_string(upper) + \textcolor{stringliteral}{" instead."});}
+\DoxyCodeLine{710             \}}
+\DoxyCodeLine{711         \}}
+\DoxyCodeLine{712 }
+\DoxyCodeLine{713         \textcolor{comment}{// Get periodic. }}
+\DoxyCodeLine{714         \{}
+\DoxyCodeLine{715             std::getline(file, line); }
+\DoxyCodeLine{716             std::istringstream iss(line);}
+\DoxyCodeLine{717             \textcolor{keywordtype}{bool} periodic; }
+\DoxyCodeLine{718             \textcolor{keyword}{auto} periodics = \mbox{\hyperlink{classSSAGES_1_1GridBase_a17e207418e3a368d2c2bac790441d170}{GridBase<T>::isPeriodic\_}}; }
+\DoxyCodeLine{719             iss >> buff >> buff;}
+\DoxyCodeLine{720             \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i = 0; iss >> periodic; ++i)}
+\DoxyCodeLine{721             \{}
+\DoxyCodeLine{722                 \textcolor{keywordflow}{if}(periodic != periodics[i])}
+\DoxyCodeLine{723                     \textcolor{keywordflow}{throw} std::invalid\_argument(filename + }
+\DoxyCodeLine{724                     \textcolor{stringliteral}{": Expected periodic "} + std::to\_string(periodics[i]) + }
+\DoxyCodeLine{725                     \textcolor{stringliteral}{" on dimension "} + std::to\_string(i) + \textcolor{stringliteral}{" but got "} + }
+\DoxyCodeLine{726                     std::to\_string(periodic) + \textcolor{stringliteral}{" instead."});}
+\DoxyCodeLine{727             \}}
+\DoxyCodeLine{728         \}}
+\DoxyCodeLine{729 }
+\DoxyCodeLine{730         \textcolor{comment}{// Finally load data.}}
+\DoxyCodeLine{731         \textcolor{keywordflow}{for}(\textcolor{keyword}{auto}\& d : \mbox{\hyperlink{classSSAGES_1_1GridBase_a9d6d80ceee94abc2ca70512f230fd2eb}{GridBase<T>::data\_}})}
+\DoxyCodeLine{732         \{}
+\DoxyCodeLine{733             std::getline(file, line);}
+\DoxyCodeLine{734             std::istringstream iss(line);}
+\DoxyCodeLine{735             }
+\DoxyCodeLine{736             \textcolor{comment}{// Skip coordinates.}}
+\DoxyCodeLine{737             \textcolor{keywordflow}{for}(\textcolor{keywordtype}{size\_t} i = 0; i < GridBase<T>::dimension\_; ++i) }
+\DoxyCodeLine{738                 iss >> buff;}
+\DoxyCodeLine{739             }
+\DoxyCodeLine{740             iss >> d;}
+\DoxyCodeLine{741         \}}
+\DoxyCodeLine{742     \}}
+
+\end{DoxyCode}
+
+
+Referenced by S\+S\+A\+G\+E\+S\+::\+A\+B\+F\+::\+Build().
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classSSAGES_1_1Grid_a279c1e9005fdf4c6fc23358d51b75b86_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classSSAGES_1_1Grid_ad60e455c3d5a58b3aa1581215988a03b}\label{classSSAGES_1_1Grid_ad60e455c3d5a58b3aa1581215988a03b}} 
+\index{SSAGES::Grid$<$ T $>$@{SSAGES::Grid$<$ T $>$}!mapTo1d@{mapTo1d}}
+\index{mapTo1d@{mapTo1d}!SSAGES::Grid$<$ T $>$@{SSAGES::Grid$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{mapTo1d()}{mapTo1d()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+size\+\_\+t \mbox{\hyperlink{classSSAGES_1_1Grid}{S\+S\+A\+G\+E\+S\+::\+Grid}}$<$ T $>$\+::map\+To1d (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ int $>$ \&}]{indices }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [private]}, {\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{structSSAGES_1_1Map}{Map}} d-\/dimensional indices to 1-\/d data vector. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em indices} & Vector specifying the grid point. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Index of 1d data vector.
+\end{DoxyReturn}
+\mbox{\hyperlink{structSSAGES_1_1Map}{Map}} a set of indices to the index of the 1d data vector. Keep in mind, that the data includes underflow (index -\/1) and overflow (index num\+Points) bins in periodic dimension. 
+
+Implements \mbox{\hyperlink{classSSAGES_1_1GridBase_a1f7bae14a777239968ae9445d19af823}{S\+S\+A\+G\+E\+S\+::\+Grid\+Base$<$ T $>$}}.
+
+
+
+Definition at line 70 of file Grid.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{71     \{}
+\DoxyCodeLine{72         \textcolor{comment}{// Check if an index is out of bounds}}
+\DoxyCodeLine{73         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{size\_t} i = 0; i < GridBase<T>::GetDimension(); ++i) \{}
+\DoxyCodeLine{74             \textcolor{keywordtype}{int} index = indices.at(i);}
+\DoxyCodeLine{75             \textcolor{keywordtype}{int} numpoints = \mbox{\hyperlink{classSSAGES_1_1GridBase_a6694054acdb971864f491cab170ad8ed}{GridBase<T>::numPoints\_}}[i];}
+\DoxyCodeLine{76             \textcolor{keywordflow}{if} ( index < 0 || index >= numpoints )}
+\DoxyCodeLine{77             \{}
+\DoxyCodeLine{78                 \textcolor{keywordflow}{throw} std::out\_of\_range(\textcolor{stringliteral}{"Grid index out of range."});}
+\DoxyCodeLine{79             \}}
+\DoxyCodeLine{80         \}}
+\DoxyCodeLine{81 }
+\DoxyCodeLine{82         \textcolor{keywordtype}{size\_t} idx = 0;}
+\DoxyCodeLine{83         \textcolor{keywordtype}{size\_t} fac = 1;}
+\DoxyCodeLine{84         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{size\_t} i = 0; i < GridBase<T>::GetDimension(); ++i) \{}
+\DoxyCodeLine{85             idx += indices.at(i) * fac;}
+\DoxyCodeLine{86             fac *= \mbox{\hyperlink{classSSAGES_1_1GridBase_a6694054acdb971864f491cab170ad8ed}{GridBase<T>::numPoints\_}}[i];}
+\DoxyCodeLine{87         \}}
+\DoxyCodeLine{88         \textcolor{keywordflow}{return} idx;}
+\DoxyCodeLine{89     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classSSAGES_1_1Grid_ab79a2be84faa3a5b27d9bf092fa30cca}\label{classSSAGES_1_1Grid_ab79a2be84faa3a5b27d9bf092fa30cca}} 
+\index{SSAGES::Grid$<$ T $>$@{SSAGES::Grid$<$ T $>$}!WriteToFile@{WriteToFile}}
+\index{WriteToFile@{WriteToFile}!SSAGES::Grid$<$ T $>$@{SSAGES::Grid$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{WriteToFile()}{WriteToFile()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+void \mbox{\hyperlink{classSSAGES_1_1Grid}{S\+S\+A\+G\+E\+S\+::\+Grid}}$<$ T $>$\+::Write\+To\+File (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{filename }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Write grid out to file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & Name of the output file. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 586 of file Grid.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{587     \{}
+\DoxyCodeLine{588         std::ofstream output(filename.c\_str(), std::ofstream::out);}
+\DoxyCodeLine{589 }
+\DoxyCodeLine{590         \textcolor{comment}{// Print out header.}}
+\DoxyCodeLine{591         output << \textcolor{stringliteral}{"\#! type grid\(\backslash\)n"};}
+\DoxyCodeLine{592         output << \textcolor{stringliteral}{"\#! dim  "} << \mbox{\hyperlink{classSSAGES_1_1GridBase_a6d18033eedc00af670876b5927ac9402}{GridBase<T>::dimension\_}} << \textcolor{stringliteral}{"\(\backslash\)n"}; }
+\DoxyCodeLine{593         output << \textcolor{stringliteral}{"\#! count "}; }
+\DoxyCodeLine{594         \textcolor{keywordflow}{for}(\textcolor{keyword}{auto}\& c : this-\/>\mbox{\hyperlink{classSSAGES_1_1GridBase_ab56c5b7786560a9a35951f1c3a44b077}{GetNumPoints}}()) }
+\DoxyCodeLine{595             output << c << \textcolor{stringliteral}{" "}; }
+\DoxyCodeLine{596         output << \textcolor{stringliteral}{"\(\backslash\)n"};}
+\DoxyCodeLine{597         output << \textcolor{stringliteral}{"\#! lower "}; }
+\DoxyCodeLine{598         \textcolor{keywordflow}{for}(\textcolor{keyword}{auto}\& l : this-\/>\mbox{\hyperlink{classSSAGES_1_1GridBase_a2270a9233a9dc2d341e8ab88ce6655c9}{GetLower}}())}
+\DoxyCodeLine{599             output << l << \textcolor{stringliteral}{" "}; }
+\DoxyCodeLine{600         output << \textcolor{stringliteral}{"\(\backslash\)n"}; }
+\DoxyCodeLine{601         output << \textcolor{stringliteral}{"\#! upper "}; }
+\DoxyCodeLine{602         \textcolor{keywordflow}{for}(\textcolor{keyword}{auto}\& u : this-\/>\mbox{\hyperlink{classSSAGES_1_1GridBase_a875feace8fff4743b103147c4193eca0}{GetUpper}}())}
+\DoxyCodeLine{603             output << u << \textcolor{stringliteral}{" "}; }
+\DoxyCodeLine{604         output << \textcolor{stringliteral}{"\(\backslash\)n"}; }
+\DoxyCodeLine{605         output << \textcolor{stringliteral}{"\#! periodic "}; }
+\DoxyCodeLine{606         \textcolor{keywordflow}{for}(\textcolor{keyword}{auto} p : \mbox{\hyperlink{classSSAGES_1_1GridBase_a17e207418e3a368d2c2bac790441d170}{GridBase<T>::isPeriodic\_}})}
+\DoxyCodeLine{607             output << p << \textcolor{stringliteral}{" "}; }
+\DoxyCodeLine{608         output << \textcolor{stringliteral}{"\(\backslash\)n"};}
+\DoxyCodeLine{609 }
+\DoxyCodeLine{610         \textcolor{keywordflow}{for}(\textcolor{keyword}{auto} it = this-\/>\mbox{\hyperlink{classSSAGES_1_1Grid_a709374b3cadf320347604077a2e45e5b}{begin}}(); it != this-\/>\mbox{\hyperlink{classSSAGES_1_1Grid_ac4fcc9f0cd61476ce4fd880c768d9694}{end}}(); ++it)}
+\DoxyCodeLine{611         \{}
+\DoxyCodeLine{612             \textcolor{keyword}{auto} coords = it.coordinates(); }
+\DoxyCodeLine{613             \textcolor{keywordflow}{for}(\textcolor{keyword}{auto}\& c : coords)}
+\DoxyCodeLine{614                 output << std::setprecision(8) << std::fixed << c << \textcolor{stringliteral}{" "}; }
+\DoxyCodeLine{615             output.unsetf(std::ios\_base::fixed);}
+\DoxyCodeLine{616             output << std::setprecision(16) << *it << \textcolor{stringliteral}{"\(\backslash\)n"};}
+\DoxyCodeLine{617         \}}
+\DoxyCodeLine{618 }
+\DoxyCodeLine{619         output.close();}
+\DoxyCodeLine{620     \}}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/michael/development/\+S\+S\+A\+G\+E\+S/src/\+Grids/Grid.\+h\end{DoxyCompactItemize}

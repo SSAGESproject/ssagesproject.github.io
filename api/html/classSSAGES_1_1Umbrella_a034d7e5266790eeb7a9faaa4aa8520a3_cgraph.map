@@ -1,0 +1,7 @@
+<map id="SSAGES::Umbrella::PostIntegration" name="SSAGES::Umbrella::PostIntegration">
+<area shape="rect" id="node1" title="Method call post integration." alt="" coords="5,97,239,123"/>
+<area shape="rect" id="node2" href="$classSSAGES_1_1CVManager.html#ad2a31c91a0298b4e80ca5ba720c5eee3" title="Get CV iterator." alt="" coords="313,5,476,47"/>
+<area shape="rect" id="node3" href="$classSSAGES_1_1Snapshot.html#a2d195c04efbc7d7d1c3dd4ccd4b9a5bc" title="Access the per&#45;particle forces." alt="" coords="290,71,499,98"/>
+<area shape="rect" id="node4" href="$classSSAGES_1_1Snapshot.html#ab38cbf3c463820d1b8bbd733759bfa32" title="Get the current iteration." alt="" coords="287,122,503,149"/>
+<area shape="rect" id="node5" href="$classSSAGES_1_1Snapshot.html#a02b7418ade9d06c64d1c074a95783635" title="Get box virial." alt="" coords="295,173,494,199"/>
+</map>

@@ -1,0 +1,395 @@
+\hypertarget{classSSAGES_1_1FiniteTempString}{}\doxysection{S\+S\+A\+G\+ES\+::Finite\+Temp\+String Class Reference}
+\label{classSSAGES_1_1FiniteTempString}\index{SSAGES::FiniteTempString@{SSAGES::FiniteTempString}}
+
+
+Finite Temperature Spring \mbox{\hyperlink{classSSAGES_1_1Method}{Method}}.  
+
+
+
+
+{\ttfamily \#include $<$Finite\+Temp\+String.\+h$>$}
+
+
+
+Inheritance diagram for S\+S\+A\+G\+ES\+::Finite\+Temp\+String\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=218pt]{classSSAGES_1_1FiniteTempString__inherit__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classSSAGES_1_1FiniteTempString_ac2ab9214dc688b069337517596d67aa2}{Finite\+Temp\+String}} (const M\+P\+I\+\_\+\+Comm \&world, const M\+P\+I\+\_\+\+Comm \&comm, const std\+::vector$<$ double $>$ \&centers, unsigned int maxiterations, unsigned int blockiterations, double tau, const std\+::vector$<$ double $>$ cvspring, double kappa, unsigned int springiter, unsigned int frequency)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classSSAGES_1_1FiniteTempString_a94561a14cc08999d4531db528fe3f2e8}{Post\+Integration}} (\mbox{\hyperlink{classSSAGES_1_1Snapshot}{Snapshot}} $\ast$snapshot, const class \mbox{\hyperlink{classSSAGES_1_1CVManager}{C\+V\+Manager}} \&cvmanager) override
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classSSAGES_1_1Method}{Method}} call post integration. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classSSAGES_1_1FiniteTempString_a81151f016c40db1a12b52d95e4059f34}\label{classSSAGES_1_1FiniteTempString_a81151f016c40db1a12b52d95e4059f34}} 
+\mbox{\hyperlink{classSSAGES_1_1FiniteTempString_a81151f016c40db1a12b52d95e4059f34}{$\sim$\+Finite\+Temp\+String}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{classSSAGES_1_1FiniteTempString_a89fd48843ba1d185529d7bfe560ec3ab}{In\+Cell}} (const \mbox{\hyperlink{namespaceSSAGES_acddea47426ac0a643b048f870ddd2907}{C\+V\+List}} \&cvs) const
+\begin{DoxyCompactList}\small\item\em Checks if CV is in Voronoi cell. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classSSAGES_1_1FiniteTempString_af68721c1b7953bc3d2d097ad9090f66c}\label{classSSAGES_1_1FiniteTempString_af68721c1b7953bc3d2d097ad9090f66c}} 
+void \mbox{\hyperlink{classSSAGES_1_1FiniteTempString_af68721c1b7953bc3d2d097ad9090f66c}{String\+Update}} () override
+\begin{DoxyCompactList}\small\item\em Updates the string according to the F\+TS method. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classSSAGES_1_1FiniteTempString_adadd32c8a6e4b1037b4ad8dcf4e88c16}\label{classSSAGES_1_1FiniteTempString_adadd32c8a6e4b1037b4ad8dcf4e88c16}} 
+double \mbox{\hyperlink{classSSAGES_1_1FiniteTempString_adadd32c8a6e4b1037b4ad8dcf4e88c16}{kappa\+\_\+}}
+\begin{DoxyCompactList}\small\item\em String modification parameter. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classSSAGES_1_1FiniteTempString_a5b1e0e91fd48a4362500b50da1f46b27}\label{classSSAGES_1_1FiniteTempString_a5b1e0e91fd48a4362500b50da1f46b27}} 
+unsigned int \mbox{\hyperlink{classSSAGES_1_1FiniteTempString_a5b1e0e91fd48a4362500b50da1f46b27}{blockiterations\+\_\+}}
+\begin{DoxyCompactList}\small\item\em Number of steps to block average the CV\textquotesingle{}s postions over. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classSSAGES_1_1FiniteTempString_a728ab4311befb8a85560b31f6850db19}\label{classSSAGES_1_1FiniteTempString_a728ab4311befb8a85560b31f6850db19}} 
+double \mbox{\hyperlink{classSSAGES_1_1FiniteTempString_a728ab4311befb8a85560b31f6850db19}{tau\+\_\+}}
+\begin{DoxyCompactList}\small\item\em Time step of string change. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classSSAGES_1_1FiniteTempString_a09136d94ff58ebbf7a1e23b6cdb4cc10}\label{classSSAGES_1_1FiniteTempString_a09136d94ff58ebbf7a1e23b6cdb4cc10}} 
+unsigned int \mbox{\hyperlink{classSSAGES_1_1FiniteTempString_a09136d94ff58ebbf7a1e23b6cdb4cc10}{min\+\_\+num\+\_\+umbrella\+\_\+steps\+\_\+}}
+\begin{DoxyCompactList}\small\item\em Minimum number of steps to apply umbrella sampling. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classSSAGES_1_1FiniteTempString_abd54634ea639fbea32468a4e55693e3d}\label{classSSAGES_1_1FiniteTempString_abd54634ea639fbea32468a4e55693e3d}} 
+int \mbox{\hyperlink{classSSAGES_1_1FiniteTempString_abd54634ea639fbea32468a4e55693e3d}{run\+\_\+umbrella\+\_\+}}
+\begin{DoxyCompactList}\small\item\em Flag to run umbrella or not during post-\/integration. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classSSAGES_1_1FiniteTempString_aed5757522f4c2e60199f483a8067e4b9}\label{classSSAGES_1_1FiniteTempString_aed5757522f4c2e60199f483a8067e4b9}} 
+unsigned int \mbox{\hyperlink{classSSAGES_1_1FiniteTempString_aed5757522f4c2e60199f483a8067e4b9}{umbrella\+\_\+iter\+\_\+}}
+\begin{DoxyCompactList}\small\item\em Iterator that keeps track of umbrella iterations. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classSSAGES_1_1FiniteTempString_a83a94533675a08bc7d6b73a460af2aa7}\label{classSSAGES_1_1FiniteTempString_a83a94533675a08bc7d6b73a460af2aa7}} 
+std\+::vector$<$ double $>$ \mbox{\hyperlink{classSSAGES_1_1FiniteTempString_a83a94533675a08bc7d6b73a460af2aa7}{prev\+\_\+\+C\+Vs\+\_\+}}
+\begin{DoxyCompactList}\small\item\em Stores the last positions of the C\+Vs. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classSSAGES_1_1FiniteTempString_ab2e0e2e66d08ae46b06702613a43d1d9}\label{classSSAGES_1_1FiniteTempString_ab2e0e2e66d08ae46b06702613a43d1d9}} 
+bool \mbox{\hyperlink{classSSAGES_1_1FiniteTempString_ab2e0e2e66d08ae46b06702613a43d1d9}{reset\+\_\+for\+\_\+umbrella}}
+\begin{DoxyCompactList}\small\item\em Flag for whether a system was to run umbrella sampling before checking against other systems. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Finite Temperature Spring \mbox{\hyperlink{classSSAGES_1_1Method}{Method}}. 
+
+Implementation of a multi-\/walker finite string method with hard wall voronoi cells and running block averages. 
+
+Definition at line 35 of file Finite\+Temp\+String.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classSSAGES_1_1FiniteTempString_ac2ab9214dc688b069337517596d67aa2}\label{classSSAGES_1_1FiniteTempString_ac2ab9214dc688b069337517596d67aa2}} 
+\index{SSAGES::FiniteTempString@{SSAGES::FiniteTempString}!FiniteTempString@{FiniteTempString}}
+\index{FiniteTempString@{FiniteTempString}!SSAGES::FiniteTempString@{SSAGES::FiniteTempString}}
+\doxysubsubsection{\texorpdfstring{FiniteTempString()}{FiniteTempString()}}
+{\footnotesize\ttfamily S\+S\+A\+G\+E\+S\+::\+Finite\+Temp\+String\+::\+Finite\+Temp\+String (\begin{DoxyParamCaption}\item[{const M\+P\+I\+\_\+\+Comm \&}]{world,  }\item[{const M\+P\+I\+\_\+\+Comm \&}]{comm,  }\item[{const std\+::vector$<$ double $>$ \&}]{centers,  }\item[{unsigned int}]{maxiterations,  }\item[{unsigned int}]{blockiterations,  }\item[{double}]{tau,  }\item[{const std\+::vector$<$ double $>$}]{cvspring,  }\item[{double}]{kappa,  }\item[{unsigned int}]{springiter,  }\item[{unsigned int}]{frequency }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em world} & M\+PI global communicator. \\
+\hline
+{\em comm} & M\+PI local communicator. \\
+\hline
+{\em centers} & List of centers. \\
+\hline
+{\em maxiterations} & Maximum number of iterations. \\
+\hline
+{\em blockiterations} & Number of iterations per block averaging. \\
+\hline
+{\em tau} & Value of tau (default\+: 0.\+1). \\
+\hline
+{\em cvspring} & Spring constants for cvs. \\
+\hline
+{\em kappa} & Value of kappa (default\+: 0.\+1). \\
+\hline
+{\em springiter} & Minimum number of umbrella steps. \\
+\hline
+{\em frequency} & Frequency with which this method is invoked.\\
+\hline
+\end{DoxyParams}
+Constructs an instance of Finite String method. Store positions for starting trajectories
+
+Store velocities for starting trajectories
+
+Definition at line 90 of file Finite\+Temp\+String.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{99                                                  : }
+\DoxyCodeLine{100         \mbox{\hyperlink{classSSAGES_1_1StringMethod_a52e179be14386a48b0d6e84e1f100fb7}{StringMethod}}(world, comm, centers, maxiterations, cvspring, frequency),}
+\DoxyCodeLine{101         \mbox{\hyperlink{classSSAGES_1_1FiniteTempString_adadd32c8a6e4b1037b4ad8dcf4e88c16}{kappa\_}}(kappa), \mbox{\hyperlink{classSSAGES_1_1FiniteTempString_a5b1e0e91fd48a4362500b50da1f46b27}{blockiterations\_}}(blockiterations), \mbox{\hyperlink{classSSAGES_1_1FiniteTempString_a728ab4311befb8a85560b31f6850db19}{tau\_}}(tau), }
+\DoxyCodeLine{102         \mbox{\hyperlink{classSSAGES_1_1FiniteTempString_a09136d94ff58ebbf7a1e23b6cdb4cc10}{min\_num\_umbrella\_steps\_}}(springiter), \mbox{\hyperlink{classSSAGES_1_1FiniteTempString_abd54634ea639fbea32468a4e55693e3d}{run\_umbrella\_}}(\textcolor{keyword}{true}),}
+\DoxyCodeLine{103         \mbox{\hyperlink{classSSAGES_1_1FiniteTempString_aed5757522f4c2e60199f483a8067e4b9}{umbrella\_iter\_}}(1), \mbox{\hyperlink{classSSAGES_1_1FiniteTempString_ab2e0e2e66d08ae46b06702613a43d1d9}{reset\_for\_umbrella}}(\textcolor{keyword}{false})}
+\DoxyCodeLine{104         \{}
+\DoxyCodeLine{106             \mbox{\hyperlink{classSSAGES_1_1StringMethod_ad0f30a4bda9ab52fbf1a2fd6d82898e6}{prev\_positions\_}}.resize(1);}
+\DoxyCodeLine{107 }
+\DoxyCodeLine{109             \mbox{\hyperlink{classSSAGES_1_1StringMethod_a882f74a324641a449216d0edbc5fdb5d}{prev\_velocities\_}}.resize(1);}
+\DoxyCodeLine{110 }
+\DoxyCodeLine{111             \mbox{\hyperlink{classSSAGES_1_1StringMethod_ad3ff83869b7ef597d3641f0eb1649c82}{prev\_IDs\_}}.resize(1);}
+\DoxyCodeLine{112 }
+\DoxyCodeLine{113         \}}
+
+\end{DoxyCode}
+
+
+References S\+S\+A\+G\+E\+S\+::\+String\+Method\+::prev\+\_\+\+I\+Ds\+\_\+, S\+S\+A\+G\+E\+S\+::\+String\+Method\+::prev\+\_\+positions\+\_\+, and S\+S\+A\+G\+E\+S\+::\+String\+Method\+::prev\+\_\+velocities\+\_\+.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classSSAGES_1_1FiniteTempString_a89fd48843ba1d185529d7bfe560ec3ab}\label{classSSAGES_1_1FiniteTempString_a89fd48843ba1d185529d7bfe560ec3ab}} 
+\index{SSAGES::FiniteTempString@{SSAGES::FiniteTempString}!InCell@{InCell}}
+\index{InCell@{InCell}!SSAGES::FiniteTempString@{SSAGES::FiniteTempString}}
+\doxysubsubsection{\texorpdfstring{InCell()}{InCell()}}
+{\footnotesize\ttfamily bool S\+S\+A\+G\+E\+S\+::\+Finite\+Temp\+String\+::\+In\+Cell (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{namespaceSSAGES_acddea47426ac0a643b048f870ddd2907}{C\+V\+List}} \&}]{cvs }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [private]}}
+
+
+
+Checks if CV is in Voronoi cell. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cvs} & List of C\+Vs to check\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Boolean if all C\+Vs are in the Voronoi cell 
+\end{DoxyReturn}
+
+
+Definition at line 32 of file Finite\+Temp\+String.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{33     \{}
+\DoxyCodeLine{34         std::vector<double> dists (\mbox{\hyperlink{classSSAGES_1_1StringMethod_ade5506229ab6dad8209ca2853480b2ea}{numnodes\_}}, 0);}
+\DoxyCodeLine{35 }
+\DoxyCodeLine{36         \textcolor{comment}{// Record the difference between all cvs and all nodes}}
+\DoxyCodeLine{37         \textcolor{keywordflow}{for} (\textcolor{keywordtype}{int} i = 0; i < \mbox{\hyperlink{classSSAGES_1_1StringMethod_ade5506229ab6dad8209ca2853480b2ea}{numnodes\_}}; i++)}
+\DoxyCodeLine{38             \textcolor{keywordflow}{for}(\textcolor{keywordtype}{size\_t} j = 0; j < cvs.size(); j++)}
+\DoxyCodeLine{39                 dists[i]+= pow(cvs[j]-\/>GetDifference(\mbox{\hyperlink{classSSAGES_1_1StringMethod_a10a3e2fc3c55b98e32a9bd41c6da1b63}{worldstring\_}}[i][j]),2);}
+\DoxyCodeLine{40         }
+\DoxyCodeLine{41         \textcolor{keywordflow}{if}(std::min\_element(dists.begin(), dists.end()) -\/ dists.begin() == \mbox{\hyperlink{classSSAGES_1_1StringMethod_a2d6c46aa7c2c85975621add18a55a9e4}{mpiid\_}})}
+\DoxyCodeLine{42             \textcolor{keywordflow}{return} \textcolor{keyword}{true};}
+\DoxyCodeLine{43 }
+\DoxyCodeLine{44         \textcolor{keywordflow}{return} \textcolor{keyword}{false};}
+\DoxyCodeLine{45     \}}
+
+\end{DoxyCode}
+
+
+References S\+S\+A\+G\+E\+S\+::\+String\+Method\+::mpiid\+\_\+, S\+S\+A\+G\+E\+S\+::\+String\+Method\+::numnodes\+\_\+, and S\+S\+A\+G\+E\+S\+::\+String\+Method\+::worldstring\+\_\+.
+
+
+
+Referenced by Post\+Integration().
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classSSAGES_1_1FiniteTempString_a89fd48843ba1d185529d7bfe560ec3ab_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classSSAGES_1_1FiniteTempString_a94561a14cc08999d4531db528fe3f2e8}\label{classSSAGES_1_1FiniteTempString_a94561a14cc08999d4531db528fe3f2e8}} 
+\index{SSAGES::FiniteTempString@{SSAGES::FiniteTempString}!PostIntegration@{PostIntegration}}
+\index{PostIntegration@{PostIntegration}!SSAGES::FiniteTempString@{SSAGES::FiniteTempString}}
+\doxysubsubsection{\texorpdfstring{PostIntegration()}{PostIntegration()}}
+{\footnotesize\ttfamily void S\+S\+A\+G\+E\+S\+::\+Finite\+Temp\+String\+::\+Post\+Integration (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classSSAGES_1_1Snapshot}{Snapshot}} $\ast$}]{snapshot,  }\item[{const class \mbox{\hyperlink{classSSAGES_1_1CVManager}{C\+V\+Manager}} \&}]{cvmanager }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{classSSAGES_1_1Method}{Method}} call post integration. 
+
+Post-\/integration hook. 
+\begin{DoxyParams}{Parameters}
+{\em snapshot} & Pointer to the simulation snapshot. \\
+\hline
+{\em cvmanager} & Collective variable manager.\\
+\hline
+\end{DoxyParams}
+This function will be called after each integration step. 
+
+Implements \mbox{\hyperlink{classSSAGES_1_1StringMethod_a5e02e69fbe65d3064f9fe76c36be6ab5}{S\+S\+A\+G\+E\+S\+::\+String\+Method}}.
+
+
+
+Definition at line 48 of file Finite\+Temp\+String.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{49     \{}
+\DoxyCodeLine{50         \textcolor{keyword}{auto} cvs = cvmanager.GetCVs(\mbox{\hyperlink{classSSAGES_1_1Method_a24b0ac53b1fabcab0a5f3bd6cde26909}{cvmask\_}});}
+\DoxyCodeLine{51         \textcolor{keyword}{auto}\& forces = snapshot-\/>GetForces();}
+\DoxyCodeLine{52         \textcolor{keywordtype}{bool} insidecell;}
+\DoxyCodeLine{53 }
+\DoxyCodeLine{54         \textcolor{keywordflow}{if}(\mbox{\hyperlink{classSSAGES_1_1FiniteTempString_ab2e0e2e66d08ae46b06702613a43d1d9}{reset\_for\_umbrella}})}
+\DoxyCodeLine{55         \{}
+\DoxyCodeLine{56             \textcolor{comment}{//If the system was not going to run the umbrella anymore, reset its position}}
+\DoxyCodeLine{57             \textcolor{keywordflow}{for}(\textcolor{keyword}{auto}\& force : forces)}
+\DoxyCodeLine{58             \{}
+\DoxyCodeLine{59                 force.setZero();}
+\DoxyCodeLine{60             \}}
+\DoxyCodeLine{61             }
+\DoxyCodeLine{62             \textcolor{keyword}{auto}\& Pos = snapshot-\/>GetPositions();}
+\DoxyCodeLine{63 }
+\DoxyCodeLine{64             \textcolor{keywordflow}{for}(\textcolor{keywordtype}{size\_t} i = 0; i < \mbox{\hyperlink{classSSAGES_1_1StringMethod_ad3ff83869b7ef597d3641f0eb1649c82}{prev\_IDs\_}}[0].size(); i++)}
+\DoxyCodeLine{65             \{}
+\DoxyCodeLine{66                 \textcolor{keyword}{auto} localindex = snapshot-\/>GetLocalIndex(\mbox{\hyperlink{classSSAGES_1_1StringMethod_ad3ff83869b7ef597d3641f0eb1649c82}{prev\_IDs\_}}[0][i]);}
+\DoxyCodeLine{67                 \textcolor{keywordflow}{if}(localindex!= -\/1)}
+\DoxyCodeLine{68                 \{}
+\DoxyCodeLine{69                     Pos[localindex][0] = \mbox{\hyperlink{classSSAGES_1_1StringMethod_ad0f30a4bda9ab52fbf1a2fd6d82898e6}{prev\_positions\_}}[0][i*3];}
+\DoxyCodeLine{70                     Pos[localindex][1] = \mbox{\hyperlink{classSSAGES_1_1StringMethod_ad0f30a4bda9ab52fbf1a2fd6d82898e6}{prev\_positions\_}}[0][i*3 + 1];}
+\DoxyCodeLine{71                     Pos[localindex][2] = \mbox{\hyperlink{classSSAGES_1_1StringMethod_ad0f30a4bda9ab52fbf1a2fd6d82898e6}{prev\_positions\_}}[0][i*3 + 2];}
+\DoxyCodeLine{72                 \}}
+\DoxyCodeLine{73             \}                       }
+\DoxyCodeLine{74         \}}
+\DoxyCodeLine{75         \textcolor{keywordflow}{for}(\textcolor{keyword}{auto}\& cv : cvs)}
+\DoxyCodeLine{76         \{}
+\DoxyCodeLine{77             \textcolor{comment}{//Trigger a rebuild of the CVs since we reset the positions}}
+\DoxyCodeLine{78             cv-\/>Evaluate(*snapshot);}
+\DoxyCodeLine{79         \}}
+\DoxyCodeLine{80         insidecell = \mbox{\hyperlink{classSSAGES_1_1FiniteTempString_a89fd48843ba1d185529d7bfe560ec3ab}{InCell}}(cvs); }
+\DoxyCodeLine{81 }
+\DoxyCodeLine{82         MPI\_Allreduce(MPI\_IN\_PLACE, \&\mbox{\hyperlink{classSSAGES_1_1FiniteTempString_abd54634ea639fbea32468a4e55693e3d}{run\_umbrella\_}}, 1, MPI\_INT, MPI\_LOR, \mbox{\hyperlink{classSSAGES_1_1Method_a8471b11097a1018a9635bc578bf22f61}{world\_}}); \textcolor{comment}{//Compares all run\_umbrellas on all processors -\/ if any is true, all are set to true}}
+\DoxyCodeLine{83 }
+\DoxyCodeLine{84         \textcolor{keywordflow}{if}(\mbox{\hyperlink{classSSAGES_1_1FiniteTempString_abd54634ea639fbea32468a4e55693e3d}{run\_umbrella\_}})}
+\DoxyCodeLine{85         \{ }
+\DoxyCodeLine{86             \textcolor{keywordflow}{if}(\mbox{\hyperlink{classSSAGES_1_1FiniteTempString_aed5757522f4c2e60199f483a8067e4b9}{umbrella\_iter\_}} == \mbox{\hyperlink{classSSAGES_1_1FiniteTempString_a09136d94ff58ebbf7a1e23b6cdb4cc10}{min\_num\_umbrella\_steps\_}})}
+\DoxyCodeLine{87             \{}
+\DoxyCodeLine{88                 \textcolor{comment}{//After reaching the minimum umbrella sampling checkpoint, evaluate whether to keep going (per individual image)}}
+\DoxyCodeLine{89                 \textcolor{keywordflow}{if}(insidecell)}
+\DoxyCodeLine{90                 \{}
+\DoxyCodeLine{91                     \textcolor{comment}{//Stop umbrella sampling if inside cell}}
+\DoxyCodeLine{92                     \mbox{\hyperlink{classSSAGES_1_1FiniteTempString_abd54634ea639fbea32468a4e55693e3d}{run\_umbrella\_}} = \textcolor{keyword}{false};}
+\DoxyCodeLine{93                     \mbox{\hyperlink{classSSAGES_1_1FiniteTempString_ab2e0e2e66d08ae46b06702613a43d1d9}{reset\_for\_umbrella}} = \textcolor{keyword}{true};}
+\DoxyCodeLine{94 }
+\DoxyCodeLine{95                     \textcolor{comment}{//This node is done initializing; so store this snapshot}}
+\DoxyCodeLine{96                     \mbox{\hyperlink{classSSAGES_1_1StringMethod_ad0f30a4bda9ab52fbf1a2fd6d82898e6}{prev\_positions\_}}[0] = snapshot-\/>SerializePositions();}
+\DoxyCodeLine{97                     \mbox{\hyperlink{classSSAGES_1_1StringMethod_ad3ff83869b7ef597d3641f0eb1649c82}{prev\_IDs\_}}[0] = snapshot-\/>SerializeIDs();}
+\DoxyCodeLine{98                 \}}
+\DoxyCodeLine{99                 \mbox{\hyperlink{classSSAGES_1_1FiniteTempString_aed5757522f4c2e60199f483a8067e4b9}{umbrella\_iter\_}} = 1;   }
+\DoxyCodeLine{100             \}}
+\DoxyCodeLine{101             \textcolor{keywordflow}{else}}
+\DoxyCodeLine{102             \{}
+\DoxyCodeLine{103                 \textcolor{keywordflow}{if}(!\mbox{\hyperlink{classSSAGES_1_1FiniteTempString_ab2e0e2e66d08ae46b06702613a43d1d9}{reset\_for\_umbrella}})}
+\DoxyCodeLine{104                 \{}
+\DoxyCodeLine{105                     \textcolor{comment}{//If not at the minimum step checkpoint AND not a system which was already done, add restraining force}}
+\DoxyCodeLine{106                     \textcolor{keywordflow}{for}(\textcolor{keywordtype}{size\_t} i = 0; i < cvs.size(); i++)}
+\DoxyCodeLine{107                     \{}
+\DoxyCodeLine{108                         \textcolor{comment}{// Get current cv and gradient}}
+\DoxyCodeLine{109                         \textcolor{keyword}{auto}\& cv = cvs[i];}
+\DoxyCodeLine{110                         \textcolor{keyword}{auto}\& grad = cv-\/>GetGradient();}
+\DoxyCodeLine{111 }
+\DoxyCodeLine{112                         \textcolor{comment}{// Compute dV/dCV}}
+\DoxyCodeLine{113                         \textcolor{keyword}{auto} D = \mbox{\hyperlink{classSSAGES_1_1StringMethod_a51f68bc9e02055a96375617626240a79}{cvspring\_}}[i]*(cv-\/>GetDifference(\mbox{\hyperlink{classSSAGES_1_1StringMethod_a8f5e8ddc90a86dc363d3323c31f8e3b7}{centers\_}}[i]));}
+\DoxyCodeLine{114 }
+\DoxyCodeLine{115                         \textcolor{comment}{// Update forces}}
+\DoxyCodeLine{116                         \textcolor{keywordflow}{for}(\textcolor{keywordtype}{size\_t} j = 0; j < forces.size(); j++)}
+\DoxyCodeLine{117                                 forces[j] -\/= D*grad[j];}
+\DoxyCodeLine{118                     \}}
+\DoxyCodeLine{119                     \mbox{\hyperlink{classSSAGES_1_1FiniteTempString_aed5757522f4c2e60199f483a8067e4b9}{umbrella\_iter\_}}++; \textcolor{comment}{//Progress toward checkpoint }}
+\DoxyCodeLine{120                 \}}
+\DoxyCodeLine{121                 \textcolor{keywordflow}{else}}
+\DoxyCodeLine{122                 \{}
+\DoxyCodeLine{123                     \textcolor{comment}{//End umbrella sampling of this node if it was already initialized}}
+\DoxyCodeLine{124                     \mbox{\hyperlink{classSSAGES_1_1FiniteTempString_abd54634ea639fbea32468a4e55693e3d}{run\_umbrella\_}} = \textcolor{keyword}{false};}
+\DoxyCodeLine{125                 \}}
+\DoxyCodeLine{126             \}}
+\DoxyCodeLine{127             \textcolor{keywordflow}{return}; \textcolor{comment}{//Don't do any sampling after restraining}}
+\DoxyCodeLine{128         \}}
+\DoxyCodeLine{129         \textcolor{keywordflow}{else}}
+\DoxyCodeLine{130         \{}
+\DoxyCodeLine{131             \textcolor{comment}{//If run umbrella was false (only possible if every node was done) then set reset to false for next string method iteration (only proceed past umbrella sampling if no images require further umbrella sampling)}}
+\DoxyCodeLine{132             \mbox{\hyperlink{classSSAGES_1_1FiniteTempString_ab2e0e2e66d08ae46b06702613a43d1d9}{reset\_for\_umbrella}} = \textcolor{keyword}{false};}
+\DoxyCodeLine{133         \}}
+\DoxyCodeLine{134 }
+\DoxyCodeLine{135         \textcolor{keywordflow}{if}(!insidecell)}
+\DoxyCodeLine{136         \{}
+\DoxyCodeLine{137             \textcolor{comment}{//If last step took the system outside the Voronoi cell, reset the position and zero the force to reset the trajectory }}
+\DoxyCodeLine{138             \textcolor{keywordflow}{for}(\textcolor{keyword}{auto}\& force : forces)}
+\DoxyCodeLine{139                 force.setZero();}
+\DoxyCodeLine{140 }
+\DoxyCodeLine{141             \textcolor{keyword}{auto}\& Pos = snapshot-\/>GetPositions();}
+\DoxyCodeLine{142 }
+\DoxyCodeLine{143             \textcolor{keywordflow}{for}(\textcolor{keywordtype}{size\_t} i = 0; i < \mbox{\hyperlink{classSSAGES_1_1StringMethod_ad3ff83869b7ef597d3641f0eb1649c82}{prev\_IDs\_}}[0].size(); i++)}
+\DoxyCodeLine{144             \{}
+\DoxyCodeLine{145                 \textcolor{keyword}{auto} localindex = snapshot-\/>GetLocalIndex(\mbox{\hyperlink{classSSAGES_1_1StringMethod_ad3ff83869b7ef597d3641f0eb1649c82}{prev\_IDs\_}}[0][i]);}
+\DoxyCodeLine{146                 \textcolor{keywordflow}{if}(localindex!= -\/1)}
+\DoxyCodeLine{147                 \{}
+\DoxyCodeLine{148                     Pos[localindex][0] = \mbox{\hyperlink{classSSAGES_1_1StringMethod_ad0f30a4bda9ab52fbf1a2fd6d82898e6}{prev\_positions\_}}[0][i*3];}
+\DoxyCodeLine{149                     Pos[localindex][1] = \mbox{\hyperlink{classSSAGES_1_1StringMethod_ad0f30a4bda9ab52fbf1a2fd6d82898e6}{prev\_positions\_}}[0][i*3 + 1];}
+\DoxyCodeLine{150                     Pos[localindex][2] = \mbox{\hyperlink{classSSAGES_1_1StringMethod_ad0f30a4bda9ab52fbf1a2fd6d82898e6}{prev\_positions\_}}[0][i*3 + 2];}
+\DoxyCodeLine{151                 \}}
+\DoxyCodeLine{152             \} }
+\DoxyCodeLine{153             }
+\DoxyCodeLine{154             \textcolor{comment}{// Calculate running averages for each CV at each node based on previous CV}}
+\DoxyCodeLine{155             \textcolor{keywordflow}{for}(\textcolor{keywordtype}{size\_t} i = 0; i < \mbox{\hyperlink{classSSAGES_1_1StringMethod_af62b2619c59a5b505d46ee861b034744}{newcenters\_}}.size(); i++)}
+\DoxyCodeLine{156             \{}
+\DoxyCodeLine{157                 \mbox{\hyperlink{classSSAGES_1_1StringMethod_af62b2619c59a5b505d46ee861b034744}{newcenters\_}}[i] = \mbox{\hyperlink{classSSAGES_1_1StringMethod_af62b2619c59a5b505d46ee861b034744}{newcenters\_}}[i] * (\mbox{\hyperlink{classSSAGES_1_1StringMethod_a9aa61a19b2ad38d4890e53cb97176d58}{iteration\_}} * \mbox{\hyperlink{classSSAGES_1_1FiniteTempString_a5b1e0e91fd48a4362500b50da1f46b27}{blockiterations\_}} + \mbox{\hyperlink{classSSAGES_1_1StringMethod_ae1214f174d34de4481f639f7aab4b8c5}{iterator\_}} -\/ 1) + \mbox{\hyperlink{classSSAGES_1_1FiniteTempString_a83a94533675a08bc7d6b73a460af2aa7}{prev\_CVs\_}}[i];}
+\DoxyCodeLine{158                 \mbox{\hyperlink{classSSAGES_1_1StringMethod_af62b2619c59a5b505d46ee861b034744}{newcenters\_}}[i] /= (\mbox{\hyperlink{classSSAGES_1_1StringMethod_a9aa61a19b2ad38d4890e53cb97176d58}{iteration\_}} * \mbox{\hyperlink{classSSAGES_1_1FiniteTempString_a5b1e0e91fd48a4362500b50da1f46b27}{blockiterations\_}} + \mbox{\hyperlink{classSSAGES_1_1StringMethod_ae1214f174d34de4481f639f7aab4b8c5}{iterator\_}});}
+\DoxyCodeLine{159             \}}
+\DoxyCodeLine{160         \}}
+\DoxyCodeLine{161         \textcolor{keywordflow}{else}}
+\DoxyCodeLine{162         \{}
+\DoxyCodeLine{163             \textcolor{comment}{// Calculate running averages for each CV at each node }}
+\DoxyCodeLine{164             \textcolor{keywordflow}{for}(\textcolor{keywordtype}{size\_t} i = 0; i < \mbox{\hyperlink{classSSAGES_1_1StringMethod_af62b2619c59a5b505d46ee861b034744}{newcenters\_}}.size(); i++)}
+\DoxyCodeLine{165             \{}
+\DoxyCodeLine{166                 \mbox{\hyperlink{classSSAGES_1_1StringMethod_af62b2619c59a5b505d46ee861b034744}{newcenters\_}}[i] = \mbox{\hyperlink{classSSAGES_1_1StringMethod_af62b2619c59a5b505d46ee861b034744}{newcenters\_}}[i] * (\mbox{\hyperlink{classSSAGES_1_1StringMethod_a9aa61a19b2ad38d4890e53cb97176d58}{iteration\_}} * \mbox{\hyperlink{classSSAGES_1_1FiniteTempString_a5b1e0e91fd48a4362500b50da1f46b27}{blockiterations\_}} + \mbox{\hyperlink{classSSAGES_1_1StringMethod_ae1214f174d34de4481f639f7aab4b8c5}{iterator\_}} -\/ 1) + cvs[i]-\/>GetMinimumImage(\mbox{\hyperlink{classSSAGES_1_1StringMethod_a8f5e8ddc90a86dc363d3323c31f8e3b7}{centers\_}}[i]);}
+\DoxyCodeLine{167                 \mbox{\hyperlink{classSSAGES_1_1StringMethod_af62b2619c59a5b505d46ee861b034744}{newcenters\_}}[i] /= (\mbox{\hyperlink{classSSAGES_1_1StringMethod_a9aa61a19b2ad38d4890e53cb97176d58}{iteration\_}} * \mbox{\hyperlink{classSSAGES_1_1FiniteTempString_a5b1e0e91fd48a4362500b50da1f46b27}{blockiterations\_}} + \mbox{\hyperlink{classSSAGES_1_1StringMethod_ae1214f174d34de4481f639f7aab4b8c5}{iterator\_}});}
+\DoxyCodeLine{168             \}}
+\DoxyCodeLine{169             }
+\DoxyCodeLine{170             \textcolor{comment}{//Store info about this step in prev\_vectors}}
+\DoxyCodeLine{171             \mbox{\hyperlink{classSSAGES_1_1FiniteTempString_a83a94533675a08bc7d6b73a460af2aa7}{prev\_CVs\_}}.clear();}
+\DoxyCodeLine{172             \textcolor{keywordflow}{for}(\textcolor{keywordtype}{size\_t} i = 0; i < \mbox{\hyperlink{classSSAGES_1_1StringMethod_a8f5e8ddc90a86dc363d3323c31f8e3b7}{centers\_}}.size(); i++)}
+\DoxyCodeLine{173             \{}
+\DoxyCodeLine{174                 \mbox{\hyperlink{classSSAGES_1_1FiniteTempString_a83a94533675a08bc7d6b73a460af2aa7}{prev\_CVs\_}}.push\_back(cvs[i]-\/>GetMinimumImage(\mbox{\hyperlink{classSSAGES_1_1StringMethod_a8f5e8ddc90a86dc363d3323c31f8e3b7}{centers\_}}[i]));}
+\DoxyCodeLine{175             \}}
+\DoxyCodeLine{176             \mbox{\hyperlink{classSSAGES_1_1StringMethod_ad0f30a4bda9ab52fbf1a2fd6d82898e6}{prev\_positions\_}}[0] = snapshot-\/>SerializePositions();}
+\DoxyCodeLine{177             \mbox{\hyperlink{classSSAGES_1_1StringMethod_ad3ff83869b7ef597d3641f0eb1649c82}{prev\_IDs\_}}[0] = snapshot-\/>SerializeIDs();}
+\DoxyCodeLine{178         \}}
+\DoxyCodeLine{179 }
+\DoxyCodeLine{180         \textcolor{comment}{// Update the string, every blockiterations\_ string method iterations}}
+\DoxyCodeLine{181         \textcolor{keywordflow}{if}(\mbox{\hyperlink{classSSAGES_1_1StringMethod_ae1214f174d34de4481f639f7aab4b8c5}{iterator\_}} \% \mbox{\hyperlink{classSSAGES_1_1FiniteTempString_a5b1e0e91fd48a4362500b50da1f46b27}{blockiterations\_}} == 0)}
+\DoxyCodeLine{182         \{}
+\DoxyCodeLine{183             MPI\_Barrier(\mbox{\hyperlink{classSSAGES_1_1Method_a8471b11097a1018a9635bc578bf22f61}{world\_}});}
+\DoxyCodeLine{184             \mbox{\hyperlink{classSSAGES_1_1FiniteTempString_af68721c1b7953bc3d2d097ad9090f66c}{StringUpdate}}();}
+\DoxyCodeLine{185             \mbox{\hyperlink{classSSAGES_1_1StringMethod_a98d6840cc33ad30c2e9a4311e57ea2de}{CheckEnd}}(cvs);}
+\DoxyCodeLine{186             MPI\_Barrier(\mbox{\hyperlink{classSSAGES_1_1Method_a8471b11097a1018a9635bc578bf22f61}{world\_}});}
+\DoxyCodeLine{187             \mbox{\hyperlink{classSSAGES_1_1StringMethod_a538a83e6f944a2b37ae9cc6207c970f5}{UpdateWorldString}}(cvs); }
+\DoxyCodeLine{188             \mbox{\hyperlink{classSSAGES_1_1StringMethod_aaac8b878af3574e7da1c109e5d2bfaf0}{PrintString}}(cvs);}
+\DoxyCodeLine{189 }
+\DoxyCodeLine{190             \mbox{\hyperlink{classSSAGES_1_1StringMethod_ae1214f174d34de4481f639f7aab4b8c5}{iterator\_}} = 0; \textcolor{comment}{//Number of steps within current method iteration}}
+\DoxyCodeLine{191             \mbox{\hyperlink{classSSAGES_1_1StringMethod_a9aa61a19b2ad38d4890e53cb97176d58}{iteration\_}}++; \textcolor{comment}{//Increment string method iteration}}
+\DoxyCodeLine{192 }
+\DoxyCodeLine{193             \textcolor{keywordflow}{if}(!\mbox{\hyperlink{classSSAGES_1_1FiniteTempString_a89fd48843ba1d185529d7bfe560ec3ab}{InCell}}(cvs))}
+\DoxyCodeLine{194             \{}
+\DoxyCodeLine{195                 \mbox{\hyperlink{classSSAGES_1_1FiniteTempString_abd54634ea639fbea32468a4e55693e3d}{run\_umbrella\_}} = \textcolor{keyword}{true};}
+\DoxyCodeLine{196                 \mbox{\hyperlink{classSSAGES_1_1FiniteTempString_ab2e0e2e66d08ae46b06702613a43d1d9}{reset\_for\_umbrella}} = \textcolor{keyword}{false}; }
+\DoxyCodeLine{197             \}}
+\DoxyCodeLine{198             MPI\_Allreduce(MPI\_IN\_PLACE, \&\mbox{\hyperlink{classSSAGES_1_1FiniteTempString_abd54634ea639fbea32468a4e55693e3d}{run\_umbrella\_}}, 1, MPI\_INT, MPI\_LOR, \mbox{\hyperlink{classSSAGES_1_1Method_a8471b11097a1018a9635bc578bf22f61}{world\_}}); \textcolor{comment}{//Compares all run\_umbrellas on all processors -\/ if any is true, all are set to true   }}
+\DoxyCodeLine{199         \}}
+\DoxyCodeLine{200 }
+\DoxyCodeLine{201         \mbox{\hyperlink{classSSAGES_1_1StringMethod_ae1214f174d34de4481f639f7aab4b8c5}{iterator\_}}++; \textcolor{comment}{//Iterate number of steps within current method iteration }}
+\DoxyCodeLine{202     \}}
+
+\end{DoxyCode}
+
+
+References blockiterations\+\_\+, S\+S\+A\+G\+E\+S\+::\+String\+Method\+::centers\+\_\+, S\+S\+A\+G\+E\+S\+::\+String\+Method\+::\+Check\+End(), S\+S\+A\+G\+E\+S\+::\+Method\+::cvmask\+\_\+, S\+S\+A\+G\+E\+S\+::\+String\+Method\+::cvspring\+\_\+, S\+S\+A\+G\+E\+S\+::\+C\+V\+Manager\+::\+Get\+C\+Vs(), S\+S\+A\+G\+E\+S\+::\+Snapshot\+::\+Get\+Forces(), S\+S\+A\+G\+E\+S\+::\+Snapshot\+::\+Get\+Local\+Index(), S\+S\+A\+G\+E\+S\+::\+Snapshot\+::\+Get\+Positions(), In\+Cell(), S\+S\+A\+G\+E\+S\+::\+String\+Method\+::iteration\+\_\+, S\+S\+A\+G\+E\+S\+::\+String\+Method\+::iterator\+\_\+, min\+\_\+num\+\_\+umbrella\+\_\+steps\+\_\+, S\+S\+A\+G\+E\+S\+::\+String\+Method\+::newcenters\+\_\+, prev\+\_\+\+C\+Vs\+\_\+, S\+S\+A\+G\+E\+S\+::\+String\+Method\+::prev\+\_\+\+I\+Ds\+\_\+, S\+S\+A\+G\+E\+S\+::\+String\+Method\+::prev\+\_\+positions\+\_\+, S\+S\+A\+G\+E\+S\+::\+String\+Method\+::\+Print\+String(), reset\+\_\+for\+\_\+umbrella, run\+\_\+umbrella\+\_\+, S\+S\+A\+G\+E\+S\+::\+Snapshot\+::\+Serialize\+I\+Ds(), S\+S\+A\+G\+E\+S\+::\+Snapshot\+::\+Serialize\+Positions(), String\+Update(), umbrella\+\_\+iter\+\_\+, S\+S\+A\+G\+E\+S\+::\+String\+Method\+::\+Update\+World\+String(), and S\+S\+A\+G\+E\+S\+::\+Method\+::world\+\_\+.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classSSAGES_1_1FiniteTempString_a94561a14cc08999d4531db528fe3f2e8_cgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/michael/development/\+S\+S\+A\+G\+E\+S/src/\+Methods/Finite\+Temp\+String.\+h\item 
+/home/michael/development/\+S\+S\+A\+G\+E\+S/src/\+Methods/Finite\+Temp\+String.\+cpp\end{DoxyCompactItemize}

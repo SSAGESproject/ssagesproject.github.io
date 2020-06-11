@@ -1,0 +1,11 @@
+<map id="SSAGES::ParticleCoordinateCV::Evaluate" name="SSAGES::ParticleCoordinateCV::Evaluate">
+<area shape="rect" id="node1" title="Evaluate the CV." alt="" coords="5,123,197,164"/>
+<area shape="rect" id="node2" href="$classSSAGES_1_1Snapshot.html#ac600b5f3d3e240d2cc9965c06547e97e" title="Compute center of mass of a group of atoms based on index." alt="" coords="259,5,446,47"/>
+<area shape="rect" id="node5" href="$classSSAGES_1_1Snapshot.html#a77cfe35b720393223aa5c7410b2dd3ad" title="Compute the total mass of a group of particles based on index." alt="" coords="521,71,730,98"/>
+<area shape="rect" id="node6" href="$classSSAGES_1_1Snapshot.html#a196a91c541c72bcb5147b9e60a44ea8b" title=" " alt="" coords="253,123,453,164"/>
+<area shape="rect" id="node8" href="$classSSAGES_1_1Snapshot.html#abef8348e7811deeea88a7ff8f49a1af4" title="Const access to the particle masses." alt="" coords="245,189,460,215"/>
+<area shape="rect" id="node9" href="$classSSAGES_1_1Snapshot.html#a103af07a012d55a9637f6203c7eba0af" title="Get number of atoms in this snapshot." alt="" coords="254,240,451,281"/>
+<area shape="rect" id="node3" href="$classSSAGES_1_1Snapshot.html#ad6caa5b92433501fd4a62deef288340a" title="Apply minimum image to a vector." alt="" coords="508,5,743,47"/>
+<area shape="rect" id="node4" href="$namespaceSSAGES.html#a49bb77a1b5822888753c96c70780ab47" title="Quick helper function to round a double." alt="" coords="791,13,912,39"/>
+<area shape="rect" id="node7" href="$classSSAGES_1_1Snapshot.html#a7146597433bcfd256385db274330cd36" title="Gets the local atom index corresponding to an atom ID." alt="" coords="525,123,725,164"/>
+</map>

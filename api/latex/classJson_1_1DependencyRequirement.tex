@@ -1,0 +1,218 @@
+\hypertarget{classJson_1_1DependencyRequirement}{}\doxysection{Json\+::Dependency\+Requirement Class Reference}
+\label{classJson_1_1DependencyRequirement}\index{Json::DependencyRequirement@{Json::DependencyRequirement}}
+
+
+Requires dependencies to be met.  
+
+
+
+
+{\ttfamily \#include $<$Dependency\+Requirement.\+h$>$}
+
+
+
+Inheritance diagram for Json\+::Dependency\+Requirement\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=234pt]{classJson_1_1DependencyRequirement__inherit__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classJson_1_1DependencyRequirement_aa4135e949e6148720dc82a8af35d3543}\label{classJson_1_1DependencyRequirement_aa4135e949e6148720dc82a8af35d3543}} 
+\mbox{\hyperlink{classJson_1_1DependencyRequirement_aa4135e949e6148720dc82a8af35d3543}{Dependency\+Requirement}} ()
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classJson_1_1DependencyRequirement_a9223929e5de6ce0d1dba645c8192e219}{Reset}} () override
+\begin{DoxyCompactList}\small\item\em Reset \mbox{\hyperlink{classJson_1_1Requirement}{Requirement}}. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classJson_1_1DependencyRequirement_a0edebee2d7a4ad1f6cb10019a81aa873}{Parse}} (Value json, const std\+::string \&) override
+\begin{DoxyCompactList}\small\item\em Parse \mbox{\hyperlink{namespaceJSON}{J\+S\+ON}} input value. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classJson_1_1DependencyRequirement_a5aabaf577091672347feb644b685d122}{Validate}} (const Value \&json, const std\+::string \&path) override
+\begin{DoxyCompactList}\small\item\em Validate that \mbox{\hyperlink{classJson_1_1Requirement}{Requirement}} is met. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classJson_1_1DependencyRequirement_abb63a4f5a0a75d6981654d63ea1703ca}\label{classJson_1_1DependencyRequirement_abb63a4f5a0a75d6981654d63ea1703ca}} 
+\mbox{\hyperlink{classJson_1_1DependencyRequirement_abb63a4f5a0a75d6981654d63ea1703ca}{$\sim$\+Dependency\+Requirement}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classJson_1_1DependencyRequirement_ae910bde505b936d886607bb9a251b8d8}\label{classJson_1_1DependencyRequirement_ae910bde505b936d886607bb9a251b8d8}} 
+std\+::map$<$ std\+::string, std\+::vector$<$ std\+::string $>$ $>$ \mbox{\hyperlink{classJson_1_1DependencyRequirement_ae910bde505b936d886607bb9a251b8d8}{deps\+\_\+}}
+\begin{DoxyCompactList}\small\item\em Set of dependencies. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Requires dependencies to be met. 
+
+Definition at line 36 of file Dependency\+Requirement.\+h.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classJson_1_1DependencyRequirement_a0edebee2d7a4ad1f6cb10019a81aa873}\label{classJson_1_1DependencyRequirement_a0edebee2d7a4ad1f6cb10019a81aa873}} 
+\index{Json::DependencyRequirement@{Json::DependencyRequirement}!Parse@{Parse}}
+\index{Parse@{Parse}!Json::DependencyRequirement@{Json::DependencyRequirement}}
+\doxysubsubsection{\texorpdfstring{Parse()}{Parse()}}
+{\footnotesize\ttfamily virtual void Json\+::\+Dependency\+Requirement\+::\+Parse (\begin{DoxyParamCaption}\item[{Value}]{json,  }\item[{const std\+::string \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Parse \mbox{\hyperlink{namespaceJSON}{J\+S\+ON}} input value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em json} & \mbox{\hyperlink{namespaceJSON}{J\+S\+ON}} input value. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classJson_1_1Requirement_af13c20497e7ad6c332c57fa80a266e27}{Json\+::\+Requirement}}.
+
+
+
+Definition at line 61 of file Dependency\+Requirement.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{62         \{}
+\DoxyCodeLine{63             \mbox{\hyperlink{classJson_1_1DependencyRequirement_a9223929e5de6ce0d1dba645c8192e219}{Reset}}();}
+\DoxyCodeLine{64 }
+\DoxyCodeLine{65             \textcolor{keyword}{auto} names = json.getMemberNames();}
+\DoxyCodeLine{66             \textcolor{keywordtype}{int} i = 0;}
+\DoxyCodeLine{67             \textcolor{keywordflow}{for}(\textcolor{keyword}{auto}\& value : json)}
+\DoxyCodeLine{68             \{}
+\DoxyCodeLine{69                 \textcolor{keywordflow}{if}(value.isArray())}
+\DoxyCodeLine{70                 \{}
+\DoxyCodeLine{71                     \mbox{\hyperlink{classJson_1_1DependencyRequirement_ae910bde505b936d886607bb9a251b8d8}{deps\_}}[names[i]] = \{\};}
+\DoxyCodeLine{72                     \textcolor{keywordflow}{for}(\textcolor{keyword}{auto}\& dep : value)}
+\DoxyCodeLine{73                     \{}
+\DoxyCodeLine{74                         \mbox{\hyperlink{classJson_1_1DependencyRequirement_ae910bde505b936d886607bb9a251b8d8}{deps\_}}[names[i]].push\_back(dep.asString());}
+\DoxyCodeLine{75                     \}}
+\DoxyCodeLine{76                 \}}
+\DoxyCodeLine{77                 ++i;}
+\DoxyCodeLine{78             \}}
+\DoxyCodeLine{79         \}}
+
+\end{DoxyCode}
+
+
+References deps\+\_\+, and Reset().
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classJson_1_1DependencyRequirement_a0edebee2d7a4ad1f6cb10019a81aa873_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classJson_1_1DependencyRequirement_a9223929e5de6ce0d1dba645c8192e219}\label{classJson_1_1DependencyRequirement_a9223929e5de6ce0d1dba645c8192e219}} 
+\index{Json::DependencyRequirement@{Json::DependencyRequirement}!Reset@{Reset}}
+\index{Reset@{Reset}!Json::DependencyRequirement@{Json::DependencyRequirement}}
+\doxysubsubsection{\texorpdfstring{Reset()}{Reset()}}
+{\footnotesize\ttfamily virtual void Json\+::\+Dependency\+Requirement\+::\+Reset (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Reset \mbox{\hyperlink{classJson_1_1Requirement}{Requirement}}. 
+
+Clear set of dependencies. 
+
+Implements \mbox{\hyperlink{classJson_1_1Requirement_a34bda791587973d7e5b5c222936b2d4e}{Json\+::\+Requirement}}.
+
+
+
+Definition at line 50 of file Dependency\+Requirement.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{51         \{}
+\DoxyCodeLine{52             \mbox{\hyperlink{classJson_1_1DependencyRequirement_ae910bde505b936d886607bb9a251b8d8}{deps\_}}.clear();}
+\DoxyCodeLine{53             \mbox{\hyperlink{classJson_1_1Requirement_ace71ebbbcc885f0c4c391a3807c80f33}{ClearErrors}}();}
+\DoxyCodeLine{54             \mbox{\hyperlink{classJson_1_1Requirement_a8a8a4020e4955be56dcacf4727ae5bc3}{ClearNotices}}();}
+\DoxyCodeLine{55         \}}
+
+\end{DoxyCode}
+
+
+References Json\+::\+Requirement\+::\+Clear\+Errors(), Json\+::\+Requirement\+::\+Clear\+Notices(), and deps\+\_\+.
+
+
+
+Referenced by Parse().
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classJson_1_1DependencyRequirement_a9223929e5de6ce0d1dba645c8192e219_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classJson_1_1DependencyRequirement_a9223929e5de6ce0d1dba645c8192e219_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classJson_1_1DependencyRequirement_a5aabaf577091672347feb644b685d122}\label{classJson_1_1DependencyRequirement_a5aabaf577091672347feb644b685d122}} 
+\index{Json::DependencyRequirement@{Json::DependencyRequirement}!Validate@{Validate}}
+\index{Validate@{Validate}!Json::DependencyRequirement@{Json::DependencyRequirement}}
+\doxysubsubsection{\texorpdfstring{Validate()}{Validate()}}
+{\footnotesize\ttfamily virtual void Json\+::\+Dependency\+Requirement\+::\+Validate (\begin{DoxyParamCaption}\item[{const Value \&}]{json,  }\item[{const std\+::string \&}]{path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Validate that \mbox{\hyperlink{classJson_1_1Requirement}{Requirement}} is met. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em json} & \mbox{\hyperlink{namespaceJSON}{J\+S\+ON}} value to be validated. \\
+\hline
+{\em path} & Path for \mbox{\hyperlink{namespaceJSON}{J\+S\+ON}} path specification. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classJson_1_1Requirement_aa97494b642414d00482745a0d5b2c2c3}{Json\+::\+Requirement}}.
+
+
+
+Definition at line 86 of file Dependency\+Requirement.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{87         \{}
+\DoxyCodeLine{88             \textcolor{keywordflow}{if}(!json.isObject())}
+\DoxyCodeLine{89             \{}
+\DoxyCodeLine{90                 \mbox{\hyperlink{classJson_1_1Requirement_adeb9efa6cf271d9cea0599ff2d458a08}{PushError}}(path + \textcolor{stringliteral}{": Dependency specified for non-\/object"});}
+\DoxyCodeLine{91                 \textcolor{keywordflow}{return};}
+\DoxyCodeLine{92             \}}
+\DoxyCodeLine{93 }
+\DoxyCodeLine{94             \textcolor{keywordflow}{for}(\textcolor{keyword}{auto}\& dep : \mbox{\hyperlink{classJson_1_1DependencyRequirement_ae910bde505b936d886607bb9a251b8d8}{deps\_}})}
+\DoxyCodeLine{95             \{}
+\DoxyCodeLine{96                 \textcolor{keyword}{auto}\& name = dep.first;}
+\DoxyCodeLine{97                 \textcolor{keywordflow}{if}(json.isMember(name))}
+\DoxyCodeLine{98                     \textcolor{keywordflow}{for}(\textcolor{keyword}{const} \textcolor{keyword}{auto}\& val : dep.second)}
+\DoxyCodeLine{99                         \textcolor{keywordflow}{if}(!json.isMember(val))}
+\DoxyCodeLine{100                             \mbox{\hyperlink{classJson_1_1Requirement_adeb9efa6cf271d9cea0599ff2d458a08}{PushError}}(path + \textcolor{stringliteral}{": \(\backslash\)""} + name + \textcolor{stringliteral}{"\(\backslash\)" depends on \(\backslash\)""} + val + \textcolor{stringliteral}{"\(\backslash\)""});}
+\DoxyCodeLine{101             \}}
+\DoxyCodeLine{102         \}}
+
+\end{DoxyCode}
+
+
+References deps\+\_\+, and Json\+::\+Requirement\+::\+Push\+Error().
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classJson_1_1DependencyRequirement_a5aabaf577091672347feb644b685d122_cgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/michael/development/\+S\+S\+A\+G\+E\+S/src/\+Validator/Dependency\+Requirement.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,135 @@
+\hypertarget{classSSAGES_1_1ReadFile}{}\doxysection{S\+S\+A\+G\+ES\+::Read\+File Class Reference}
+\label{classSSAGES_1_1ReadFile}\index{SSAGES::ReadFile@{SSAGES::ReadFile}}
+
+
+Utility class to read file.  
+
+
+
+
+{\ttfamily \#include $<$Read\+File.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classSSAGES_1_1ReadFile_ac11b77176d4a5a8d05c567036c6b4d1f}\label{classSSAGES_1_1ReadFile_ac11b77176d4a5a8d05c567036c6b4d1f}} 
+\mbox{\hyperlink{classSSAGES_1_1ReadFile_ac11b77176d4a5a8d05c567036c6b4d1f}{Read\+File}} ()
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classSSAGES_1_1ReadFile_a6091bfcec90eaf081c1d16e139d561ba}\label{classSSAGES_1_1ReadFile_a6091bfcec90eaf081c1d16e139d561ba}} 
+\mbox{\hyperlink{classSSAGES_1_1ReadFile_a6091bfcec90eaf081c1d16e139d561ba}{$\sim$\+Read\+File}} ()
+\begin{DoxyCompactList}\small\item\em Deconstructor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static std\+::vector$<$ std\+::array$<$ double, 4 $>$ $>$ \mbox{\hyperlink{classSSAGES_1_1ReadFile_ad96b1c1dd8b4ff19020815f3058bb0a1}{Read\+X\+YZ}} (std\+::string File\+Name)
+\begin{DoxyCompactList}\small\item\em Read xyz file. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Utility class to read file. 
+
+Simple utility class to read in a trajectory file.
+
+Supported file types\+:
+
+
+\begin{DoxyItemize}
+\item xyz 
+\end{DoxyItemize}
+
+Definition at line 42 of file Read\+File.\+h.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classSSAGES_1_1ReadFile_ad96b1c1dd8b4ff19020815f3058bb0a1}\label{classSSAGES_1_1ReadFile_ad96b1c1dd8b4ff19020815f3058bb0a1}} 
+\index{SSAGES::ReadFile@{SSAGES::ReadFile}!ReadXYZ@{ReadXYZ}}
+\index{ReadXYZ@{ReadXYZ}!SSAGES::ReadFile@{SSAGES::ReadFile}}
+\doxysubsubsection{\texorpdfstring{ReadXYZ()}{ReadXYZ()}}
+{\footnotesize\ttfamily static std\+::vector$<$std\+::array$<$double,4$>$ $>$ S\+S\+A\+G\+E\+S\+::\+Read\+File\+::\+Read\+X\+YZ (\begin{DoxyParamCaption}\item[{std\+::string}]{File\+Name }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Read xyz file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em File\+Name} & Name of xyz file to read in. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Vector containing information stored in file.
+\end{DoxyReturn}
+Read in a xyz file. The information will be returned as a vector of 4-\/element arrays. Each array corresponds to one atom and stores the following information\+: atom-\/\+ID, x-\/coordinate, y-\/coordinate, z-\/coordinate. 
+
+Definition at line 66 of file Read\+File.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{67         \{}
+\DoxyCodeLine{68             std::vector<std::array<double,4>> refcoord;}
+\DoxyCodeLine{69             \textcolor{keywordtype}{int} numatoms = 0;}
+\DoxyCodeLine{70             std::string comments = \textcolor{stringliteral}{""};}
+\DoxyCodeLine{71             std::ifstream infile;}
+\DoxyCodeLine{72             infile.open(FileName, std::ios::in);}
+\DoxyCodeLine{73             \textcolor{keywordflow}{if}(!infile.is\_open())}
+\DoxyCodeLine{74             \{}
+\DoxyCodeLine{75                 \textcolor{keywordflow}{throw} std::runtime\_error(\textcolor{stringliteral}{"ReadFile.h: File "} + FileName + \textcolor{stringliteral}{" does not exist."});}
+\DoxyCodeLine{76             \}}
+\DoxyCodeLine{77 }
+\DoxyCodeLine{78             std::string line;}
+\DoxyCodeLine{79             std::getline(infile, line); \textcolor{comment}{// Get number of atoms}}
+\DoxyCodeLine{80 }
+\DoxyCodeLine{81             \textcolor{keywordflow}{try}}
+\DoxyCodeLine{82             \{}
+\DoxyCodeLine{83                 numatoms = std::stoi(line);}
+\DoxyCodeLine{84             \}}
+\DoxyCodeLine{85             \textcolor{keywordflow}{catch} (\textcolor{keyword}{const} std::invalid\_argument\&)}
+\DoxyCodeLine{86             \{}
+\DoxyCodeLine{87                 \textcolor{keywordflow}{throw} std::runtime\_error(\textcolor{stringliteral}{"ReadFile.h: Invalid number of atoms defined in File."});}
+\DoxyCodeLine{88             \}}
+\DoxyCodeLine{89             \textcolor{keywordflow}{if}(numatoms <= 0)}
+\DoxyCodeLine{90             \{}
+\DoxyCodeLine{91                 \textcolor{keywordflow}{throw} std::runtime\_error(\textcolor{stringliteral}{"ReadFile.h: Must be more than 0 atoms defined in File."});}
+\DoxyCodeLine{92             \}}
+\DoxyCodeLine{93 }
+\DoxyCodeLine{94             refcoord.resize(numatoms);}
+\DoxyCodeLine{95 }
+\DoxyCodeLine{96             std::getline(infile, comments); \textcolor{comment}{// Get comments}}
+\DoxyCodeLine{97 }
+\DoxyCodeLine{98             \textcolor{keywordtype}{int} i = 0;}
+\DoxyCodeLine{99             std::array<double,4> row;}
+\DoxyCodeLine{100             \textcolor{keywordflow}{while}(infile >> row[0] >> row[1] >> row[2] >> row[3])}
+\DoxyCodeLine{101             \{}
+\DoxyCodeLine{102                 \textcolor{keywordflow}{if}(i < numatoms) refcoord[i] = row;}
+\DoxyCodeLine{103                 i++;}
+\DoxyCodeLine{104             \}}
+\DoxyCodeLine{105             \textcolor{keywordflow}{if}(i != numatoms)}
+\DoxyCodeLine{106             \{}
+\DoxyCodeLine{107                 \textcolor{keywordflow}{throw} std::runtime\_error(}
+\DoxyCodeLine{108                     \textcolor{stringliteral}{"ReadFile: Header specified "} + std::to\_string(numatoms) +}
+\DoxyCodeLine{109                     \textcolor{stringliteral}{" atoms, but read in "} + std::to\_string(i) + \textcolor{stringliteral}{". "} +}
+\DoxyCodeLine{110                     \textcolor{stringliteral}{"Check the format of "} + FileName + \textcolor{stringliteral}{"."}}
+\DoxyCodeLine{111                 );}
+\DoxyCodeLine{112             \}}
+\DoxyCodeLine{113 }
+\DoxyCodeLine{114             \textcolor{keywordflow}{return} refcoord;}
+\DoxyCodeLine{115         \}}
+
+\end{DoxyCode}
+
+
+Referenced by S\+S\+A\+G\+E\+S\+::\+R\+M\+S\+D\+C\+V\+::\+Initialize().
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classSSAGES_1_1ReadFile_ad96b1c1dd8b4ff19020815f3058bb0a1_icgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/michael/development/\+S\+S\+A\+G\+E\+S/src/\+Utility/Read\+File.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,212 @@
+\hypertarget{classJson_1_1RequirementLoader}{}\doxysection{Json\+::Requirement\+Loader Class Reference}
+\label{classJson_1_1RequirementLoader}\index{Json::RequirementLoader@{Json::RequirementLoader}}
+
+
+Helper class to load \mbox{\hyperlink{classJson_1_1Requirement}{Requirement}}.  
+
+
+
+
+{\ttfamily \#include $<$Requirement\+Loader.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classJson_1_1Requirement}{Requirement}} $>$ \mbox{\hyperlink{classJson_1_1RequirementLoader_aeb1344919deda4bd8b8aa8a00cb50390}{Load\+Requirement}} (const Value \&json)
+\begin{DoxyCompactList}\small\item\em Load specific requirement. \end{DoxyCompactList}\item 
+std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classJson_1_1Requirement}{Requirement}} $>$ \mbox{\hyperlink{classJson_1_1RequirementLoader_a82857d029b7ebfeb315f5b1b32401291}{Load\+Extended}} (const Value \&json)
+\begin{DoxyCompactList}\small\item\em Extended \mbox{\hyperlink{classJson_1_1Requirement}{Requirement}} loader. \end{DoxyCompactList}\item 
+std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classJson_1_1Requirement}{Requirement}} $>$ \mbox{\hyperlink{classJson_1_1RequirementLoader_a2fc5e44a9b0efbf04102437243a1843f}{Load\+Requirement}} (const Value\+Type \&type)
+\begin{DoxyCompactList}\small\item\em Load \mbox{\hyperlink{classJson_1_1Requirement}{Requirement}} based on Value Type. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Helper class to load \mbox{\hyperlink{classJson_1_1Requirement}{Requirement}}. 
+
+Definition at line 38 of file Requirement\+Loader.\+h.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classJson_1_1RequirementLoader_a82857d029b7ebfeb315f5b1b32401291}\label{classJson_1_1RequirementLoader_a82857d029b7ebfeb315f5b1b32401291}} 
+\index{Json::RequirementLoader@{Json::RequirementLoader}!LoadExtended@{LoadExtended}}
+\index{LoadExtended@{LoadExtended}!Json::RequirementLoader@{Json::RequirementLoader}}
+\doxysubsubsection{\texorpdfstring{LoadExtended()}{LoadExtended()}}
+{\footnotesize\ttfamily std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classJson_1_1Requirement}{Requirement}} $>$ Json\+::\+Requirement\+Loader\+::\+Load\+Extended (\begin{DoxyParamCaption}\item[{const Value \&}]{json }\end{DoxyParamCaption})}
+
+
+
+Extended \mbox{\hyperlink{classJson_1_1Requirement}{Requirement}} loader. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em json} & \mbox{\hyperlink{namespaceJSON}{J\+S\+ON}} value specifying the type of \mbox{\hyperlink{classJson_1_1Requirement}{Requirement}}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Unique pointer to the \mbox{\hyperlink{classJson_1_1Requirement}{Requirement}}. 
+\end{DoxyReturn}
+
+
+Definition at line 77 of file Requirement\+Loader.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{78     \{}
+\DoxyCodeLine{79         std::unique\_ptr<Requirement> item = \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{80         \textcolor{keywordflow}{if}(json.isObject() \&\& json.isMember(\textcolor{stringliteral}{"allOf"}) \&\& json[\textcolor{stringliteral}{"allOf"}].isArray())}
+\DoxyCodeLine{81             item = std::unique\_ptr<Requirement>(\textcolor{keyword}{new} AllOfRequirement());}
+\DoxyCodeLine{82         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(json.isObject() \&\& json.isMember(\textcolor{stringliteral}{"anyOf"}) \&\& json[\textcolor{stringliteral}{"anyOf"}].isArray())}
+\DoxyCodeLine{83             item = std::unique\_ptr<Requirement>(\textcolor{keyword}{new} AnyOfRequirement());}
+\DoxyCodeLine{84         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(json.isObject() \&\& json.isMember(\textcolor{stringliteral}{"oneOf"}) \&\& json[\textcolor{stringliteral}{"oneOf"}].isArray())}
+\DoxyCodeLine{85             item = std::unique\_ptr<Requirement>(\textcolor{keyword}{new} OneOfRequirement());}
+\DoxyCodeLine{86 }
+\DoxyCodeLine{87         \textcolor{keywordflow}{return} item;}
+\DoxyCodeLine{88     \}}
+
+\end{DoxyCode}
+
+
+Referenced by Json\+::\+Object\+Requirement\+::\+Parse().
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classJson_1_1RequirementLoader_a82857d029b7ebfeb315f5b1b32401291_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classJson_1_1RequirementLoader_aeb1344919deda4bd8b8aa8a00cb50390}\label{classJson_1_1RequirementLoader_aeb1344919deda4bd8b8aa8a00cb50390}} 
+\index{Json::RequirementLoader@{Json::RequirementLoader}!LoadRequirement@{LoadRequirement}}
+\index{LoadRequirement@{LoadRequirement}!Json::RequirementLoader@{Json::RequirementLoader}}
+\doxysubsubsection{\texorpdfstring{LoadRequirement()}{LoadRequirement()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classJson_1_1Requirement}{Requirement}} $>$ Json\+::\+Requirement\+Loader\+::\+Load\+Requirement (\begin{DoxyParamCaption}\item[{const Value \&}]{json }\end{DoxyParamCaption})}
+
+
+
+Load specific requirement. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em json} & \mbox{\hyperlink{namespaceJSON}{J\+S\+ON}} value specifying the type of \mbox{\hyperlink{classJson_1_1Requirement}{Requirement}}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Unique pointer to the \mbox{\hyperlink{classJson_1_1Requirement}{Requirement}}. 
+\end{DoxyReturn}
+
+
+Definition at line 42 of file Requirement\+Loader.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{43     \{}
+\DoxyCodeLine{44         std::unique\_ptr<Requirement> item = \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{45         \textcolor{comment}{// Load up apitemriate requirement type.}}
+\DoxyCodeLine{46         \textcolor{keywordflow}{if}(json[\textcolor{stringliteral}{"type"}].asString() == \textcolor{stringliteral}{"string"})}
+\DoxyCodeLine{47             item = std::unique\_ptr<Requirement>(\textcolor{keyword}{new} StringRequirement());}
+\DoxyCodeLine{48         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(json[\textcolor{stringliteral}{"type"}].asString() == \textcolor{stringliteral}{"integer"})}
+\DoxyCodeLine{49             item = std::unique\_ptr<Requirement>(\textcolor{keyword}{new} IntegerRequirement());}
+\DoxyCodeLine{50         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(json[\textcolor{stringliteral}{"type"}].asString() == \textcolor{stringliteral}{"number"})}
+\DoxyCodeLine{51             item = std::unique\_ptr<Requirement>(\textcolor{keyword}{new} NumberRequirement());}
+\DoxyCodeLine{52         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(json[\textcolor{stringliteral}{"type"}].asString() == \textcolor{stringliteral}{"object"})}
+\DoxyCodeLine{53             item = std::unique\_ptr<Requirement>(\textcolor{keyword}{new} ObjectRequirement());}
+\DoxyCodeLine{54         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(json[\textcolor{stringliteral}{"type"}].asString() == \textcolor{stringliteral}{"array"})}
+\DoxyCodeLine{55             item = std::unique\_ptr<Requirement>(\textcolor{keyword}{new} ArrayRequirement());}
+\DoxyCodeLine{56         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(json[\textcolor{stringliteral}{"type"}].asString() == \textcolor{stringliteral}{"boolean"})}
+\DoxyCodeLine{57             item = std::unique\_ptr<Requirement>(\textcolor{keyword}{new} BooleanRequirement());}
+\DoxyCodeLine{58         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(json[\textcolor{stringliteral}{"type"}].asString() == \textcolor{stringliteral}{"null"})}
+\DoxyCodeLine{59             item = std::unique\_ptr<Requirement>(\textcolor{keyword}{new} NullRequirement());}
+\DoxyCodeLine{60         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(json[\textcolor{stringliteral}{"allOf"}].isArray())}
+\DoxyCodeLine{61             item = std::unique\_ptr<Requirement>(\textcolor{keyword}{new} AllOfRequirement());}
+\DoxyCodeLine{62         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(json[\textcolor{stringliteral}{"anyOf"}].isArray())}
+\DoxyCodeLine{63             item = std::unique\_ptr<Requirement>(\textcolor{keyword}{new} AnyOfRequirement());}
+\DoxyCodeLine{64         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(json[\textcolor{stringliteral}{"oneOf"}].isArray())}
+\DoxyCodeLine{65             item = std::unique\_ptr<Requirement>(\textcolor{keyword}{new} OneOfRequirement());}
+\DoxyCodeLine{66         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(json[\textcolor{stringliteral}{"enum"}].isArray())}
+\DoxyCodeLine{67             item = std::unique\_ptr<Requirement>(\textcolor{keyword}{new} EnumRequirement());}
+\DoxyCodeLine{68         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(json[\textcolor{stringliteral}{"not"}].isObject())}
+\DoxyCodeLine{69             item = std::unique\_ptr<Requirement>(\textcolor{keyword}{new} NotRequirement());}
+\DoxyCodeLine{70         \textcolor{comment}{// last resort.}}
+\DoxyCodeLine{71         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(json.isObject())}
+\DoxyCodeLine{72             item = std::unique\_ptr<Requirement>(\textcolor{keyword}{new} ObjectRequirement());}
+\DoxyCodeLine{73 }
+\DoxyCodeLine{74         \textcolor{keywordflow}{return} item;}
+\DoxyCodeLine{75     \}}
+
+\end{DoxyCode}
+
+
+Referenced by Json\+::\+One\+Of\+Requirement\+::\+Parse(), Json\+::\+Not\+Requirement\+::\+Parse(), Json\+::\+All\+Of\+Requirement\+::\+Parse(), Json\+::\+Any\+Of\+Requirement\+::\+Parse(), Json\+::\+Array\+Requirement\+::\+Parse(), and Json\+::\+Object\+Requirement\+::\+Parse().
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classJson_1_1RequirementLoader_aeb1344919deda4bd8b8aa8a00cb50390_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classJson_1_1RequirementLoader_a2fc5e44a9b0efbf04102437243a1843f}\label{classJson_1_1RequirementLoader_a2fc5e44a9b0efbf04102437243a1843f}} 
+\index{Json::RequirementLoader@{Json::RequirementLoader}!LoadRequirement@{LoadRequirement}}
+\index{LoadRequirement@{LoadRequirement}!Json::RequirementLoader@{Json::RequirementLoader}}
+\doxysubsubsection{\texorpdfstring{LoadRequirement()}{LoadRequirement()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classJson_1_1Requirement}{Requirement}} $>$ Json\+::\+Requirement\+Loader\+::\+Load\+Requirement (\begin{DoxyParamCaption}\item[{const Value\+Type \&}]{type }\end{DoxyParamCaption})}
+
+
+
+Load \mbox{\hyperlink{classJson_1_1Requirement}{Requirement}} based on Value Type. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em type} & Value Type specifying the \mbox{\hyperlink{classJson_1_1Requirement}{Requirement}}. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Unique pointer to the \mbox{\hyperlink{classJson_1_1Requirement}{Requirement}}.
+\end{DoxyReturn}
+Return a \mbox{\hyperlink{classJson_1_1Requirement}{Requirement}} based on the given Value Type. 
+
+Definition at line 90 of file Requirement\+Loader.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{91     \{}
+\DoxyCodeLine{92         std::unique\_ptr<Requirement> item = \textcolor{keyword}{nullptr}; }
+\DoxyCodeLine{93 }
+\DoxyCodeLine{94         \textcolor{keywordflow}{switch}(type)}
+\DoxyCodeLine{95         \{}
+\DoxyCodeLine{96             \textcolor{keywordflow}{case} nullValue:}
+\DoxyCodeLine{97                 item = std::unique\_ptr<Requirement>(\textcolor{keyword}{new} NullRequirement());}
+\DoxyCodeLine{98                 \textcolor{keywordflow}{break};}
+\DoxyCodeLine{99             \textcolor{keywordflow}{case} intValue:}
+\DoxyCodeLine{100                 item = std::unique\_ptr<Requirement>(\textcolor{keyword}{new} IntegerRequirement());}
+\DoxyCodeLine{101                 \textcolor{keywordflow}{break};}
+\DoxyCodeLine{102             \textcolor{keywordflow}{case} realValue:}
+\DoxyCodeLine{103                 item = std::unique\_ptr<Requirement>(\textcolor{keyword}{new} NumberRequirement());}
+\DoxyCodeLine{104                 \textcolor{keywordflow}{break};}
+\DoxyCodeLine{105             \textcolor{keywordflow}{case} stringValue:}
+\DoxyCodeLine{106                 item = std::unique\_ptr<Requirement>(\textcolor{keyword}{new} StringRequirement());}
+\DoxyCodeLine{107                 \textcolor{keywordflow}{break};}
+\DoxyCodeLine{108             \textcolor{keywordflow}{case} booleanValue:}
+\DoxyCodeLine{109                 item = std::unique\_ptr<Requirement>(\textcolor{keyword}{new} BooleanRequirement());}
+\DoxyCodeLine{110                 \textcolor{keywordflow}{break};}
+\DoxyCodeLine{111             \textcolor{keywordflow}{case} arrayValue:}
+\DoxyCodeLine{112                 item = std::unique\_ptr<Requirement>(\textcolor{keyword}{new} ArrayRequirement());}
+\DoxyCodeLine{113                 \textcolor{keywordflow}{break};}
+\DoxyCodeLine{114             \textcolor{keywordflow}{case} objectValue:}
+\DoxyCodeLine{115                 item = std::unique\_ptr<Requirement>(\textcolor{keyword}{new} ObjectRequirement());}
+\DoxyCodeLine{116                 \textcolor{keywordflow}{break};}
+\DoxyCodeLine{117             \textcolor{keywordflow}{default}:}
+\DoxyCodeLine{118                 item = \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{119         \}}
+\DoxyCodeLine{120 }
+\DoxyCodeLine{121         \textcolor{keywordflow}{return} item;}
+\DoxyCodeLine{122     \}}
+
+\end{DoxyCode}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/michael/development/\+S\+S\+A\+G\+E\+S/src/\+Validator/Requirement\+Loader.\+h\item 
+/home/michael/development/\+S\+S\+A\+G\+E\+S/src/\+Validator/Requirement\+Loader.\+cpp\end{DoxyCompactItemize}

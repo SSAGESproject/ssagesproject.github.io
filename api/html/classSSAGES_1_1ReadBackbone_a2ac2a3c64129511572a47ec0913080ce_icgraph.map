@@ -1,0 +1,6 @@
+<map id="SSAGES::ReadBackbone::GetPdbBackbone" name="SSAGES::ReadBackbone::GetPdbBackbone">
+<area shape="rect" id="node1" title="Read protein backbone atoms from reference PDB file." alt="" coords="268,71,443,112"/>
+<area shape="rect" id="node2" href="$classSSAGES_1_1AlphaRMSDCV.html#ab576598c362d72473046b41f5dcad5f5" title="Initialize necessary variables." alt="" coords="24,5,201,47"/>
+<area shape="rect" id="node3" href="$classSSAGES_1_1AntiBetaRMSDCV.html#a493dc72ec667b4c3631ff091904f05e1" title="Initialize necessary variables." alt="" coords="15,71,210,112"/>
+<area shape="rect" id="node4" href="$classSSAGES_1_1ParallelBetaRMSDCV.html#a373ce72beacf2c412d0b37601b4399d4" title="Initialize necessary variables." alt="" coords="5,136,220,177"/>
+</map>

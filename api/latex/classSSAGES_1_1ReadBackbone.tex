@@ -1,0 +1,156 @@
+\hypertarget{classSSAGES_1_1ReadBackbone}{}\doxysection{S\+S\+A\+G\+ES\+::Read\+Backbone Class Reference}
+\label{classSSAGES_1_1ReadBackbone}\index{SSAGES::ReadBackbone@{SSAGES::ReadBackbone}}
+
+
+Utility class to read protein backbone atoms from a reference file.  
+
+
+
+
+{\ttfamily \#include $<$Read\+Backbone.\+h$>$}
+
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static std\+::vector$<$ std\+::vector$<$ std\+::string $>$ $>$ \mbox{\hyperlink{classSSAGES_1_1ReadBackbone_a2ac2a3c64129511572a47ec0913080ce}{Get\+Pdb\+Backbone}} (std\+::string refpdb, std\+::vector$<$ int $>$ resids)
+\begin{DoxyCompactList}\small\item\em Read protein backbone atoms from reference P\+DB file. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Utility class to read protein backbone atoms from a reference file. 
+
+This utility class allows for the backbone atoms along a protein segment to be extracted from a reference file (most likely in a .pdb).
+
+Supported filetypes\+:
+\begin{DoxyItemize}
+\item P\+DB 
+\end{DoxyItemize}
+
+Definition at line 42 of file Read\+Backbone.\+h.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classSSAGES_1_1ReadBackbone_a2ac2a3c64129511572a47ec0913080ce}\label{classSSAGES_1_1ReadBackbone_a2ac2a3c64129511572a47ec0913080ce}} 
+\index{SSAGES::ReadBackbone@{SSAGES::ReadBackbone}!GetPdbBackbone@{GetPdbBackbone}}
+\index{GetPdbBackbone@{GetPdbBackbone}!SSAGES::ReadBackbone@{SSAGES::ReadBackbone}}
+\doxysubsubsection{\texorpdfstring{GetPdbBackbone()}{GetPdbBackbone()}}
+{\footnotesize\ttfamily static std\+::vector$<$ std\+::vector$<$ std\+::string$>$ $>$ S\+S\+A\+G\+E\+S\+::\+Read\+Backbone\+::\+Get\+Pdb\+Backbone (\begin{DoxyParamCaption}\item[{std\+::string}]{refpdb,  }\item[{std\+::vector$<$ int $>$}]{resids }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Read protein backbone atoms from reference P\+DB file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em refpdb} & Name of reference P\+DB file. \\
+\hline
+{\em resids} & Vector of residue numbers for which to find backbone atoms. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+atomids Vector of atom numbers corresponding to specified residues.
+\end{DoxyReturn}
+Extract backbone atom from a reference P\+DB file, corresponding to a sequence of protein residues of interest. Five backbone atoms are extracted for each residue in the order\+: N CA CB C O. For Glycine residues, H\+A1 is located in place of CB. 
+
+Definition at line 57 of file Read\+Backbone.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{58         \{}
+\DoxyCodeLine{59             \textcolor{comment}{//std::vector<int> atomids;}}
+\DoxyCodeLine{60             std::vector< std::vector< std::string > > atomids(2, std::vector<std::string> (0));}
+\DoxyCodeLine{61             \textcolor{comment}{//std::vector<int> atomnums;}}
+\DoxyCodeLine{62             std::vector<std::string> atomnums;}
+\DoxyCodeLine{63             std::vector<std::string> atomtypes;}
+\DoxyCodeLine{64             std::vector<std::string> resnames;}
+\DoxyCodeLine{65             std::vector<std::string> chains;}
+\DoxyCodeLine{66             std::vector<int> resnums;}
+\DoxyCodeLine{67             \textcolor{comment}{//std::vector<int> tempatoms(5);}}
+\DoxyCodeLine{68             std::vector<std::string> tempatoms(5);}
+\DoxyCodeLine{69             std::vector<std::string> backboneAtoms = \{\textcolor{stringliteral}{"N"}, \textcolor{stringliteral}{"CA"}, \textcolor{stringliteral}{"CB"}, \textcolor{stringliteral}{"C"}, \textcolor{stringliteral}{"O"}, \textcolor{stringliteral}{"OT1"}\};}
+\DoxyCodeLine{70             std::vector<std::string> glycineAtoms = \{\textcolor{stringliteral}{"N"}, \textcolor{stringliteral}{"CA"}, \textcolor{stringliteral}{"HA1"}, \textcolor{stringliteral}{"C"}, \textcolor{stringliteral}{"O"}, \textcolor{stringliteral}{"OT1"}\};}
+\DoxyCodeLine{71             std::string atomnum, resnum;}
+\DoxyCodeLine{72             std::string record, atomtype, resname, chain;}
+\DoxyCodeLine{73             std::ifstream pdbfile;}
+\DoxyCodeLine{74             pdbfile.open(refpdb, std::ios::in);}
+\DoxyCodeLine{75             std::string line;}
+\DoxyCodeLine{76 }
+\DoxyCodeLine{77             \textcolor{keywordflow}{while}(std::getline(pdbfile, line))\{}
+\DoxyCodeLine{78                 \textcolor{keywordflow}{if}(line.length() < 26) line.append(26 -\/ line.length(), \textcolor{charliteral}{' '});}
+\DoxyCodeLine{79                 record = line.substr(0, 6);}
+\DoxyCodeLine{80                 atomnum = line.substr(6, 5);}
+\DoxyCodeLine{81                 atomtype = line.substr(12, 4);}
+\DoxyCodeLine{82                 resname = line.substr(17, 3);}
+\DoxyCodeLine{83                 chain = line.substr(21, 1);}
+\DoxyCodeLine{84                 resnum = line.substr(22, 4);}
+\DoxyCodeLine{85                 record.erase( std::remove( record.begin(), record.end(), \textcolor{charliteral}{' '}), record.end());}
+\DoxyCodeLine{86                 \textcolor{keywordflow}{if}((record == \textcolor{stringliteral}{"ATOM"}) \&\& ((std::stoi(resnum) -\/ resids[0]) <= (resids.back() -\/ resids[0])))\{}
+\DoxyCodeLine{87                     atomtype.erase( std::remove( atomtype.begin(), atomtype.end(), \textcolor{charliteral}{' '}), atomtype.end());}
+\DoxyCodeLine{88                     resname.erase( std::remove( resname.begin(), resname.end(), \textcolor{charliteral}{' '}), resname.end());}
+\DoxyCodeLine{89                     \textcolor{keywordflow}{if}(resname == \textcolor{stringliteral}{"GLY"} \&\& std::find(glycineAtoms.begin(), glycineAtoms.end(), atomtype) != glycineAtoms.end())\{}
+\DoxyCodeLine{90                         \textcolor{comment}{//atomnums.push\_back(std::stoi(atomnum));}}
+\DoxyCodeLine{91                         atomnums.push\_back(atomnum);}
+\DoxyCodeLine{92                         atomtypes.push\_back(atomtype);}
+\DoxyCodeLine{93                         resnames.push\_back(resname);}
+\DoxyCodeLine{94                         chains.push\_back(chain);}
+\DoxyCodeLine{95                         resnums.push\_back(std::stoi(resnum));}
+\DoxyCodeLine{96                     \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(std::find(backboneAtoms.begin(), backboneAtoms.end(), atomtype) != backboneAtoms.end())\{}
+\DoxyCodeLine{97                         \textcolor{comment}{//atomnums.push\_back(std::stoi(atomnum));}}
+\DoxyCodeLine{98                         atomnums.push\_back(atomnum);}
+\DoxyCodeLine{99                         atomtypes.push\_back(atomtype);}
+\DoxyCodeLine{100                         resnames.push\_back(resname);}
+\DoxyCodeLine{101                         chains.push\_back(chain);}
+\DoxyCodeLine{102                         resnums.push\_back(std::stoi(resnum));}
+\DoxyCodeLine{103                     \}}
+\DoxyCodeLine{104                 \}}
+\DoxyCodeLine{105             \}}
+\DoxyCodeLine{106 }
+\DoxyCodeLine{107             \textcolor{comment}{// atoms in PDB not necessarily in N CA CB C O order, fix that:}}
+\DoxyCodeLine{108             \textcolor{keywordflow}{for}(\textcolor{keywordtype}{size\_t} i = 0; i < resids.size(); i++)\{}
+\DoxyCodeLine{109                 \textcolor{keywordflow}{for}(\textcolor{keywordtype}{size\_t} j = 5 * i; j < (5 * i + 5); j++)\{}
+\DoxyCodeLine{110                     \textcolor{keywordflow}{if}(atomtypes[j] == \textcolor{stringliteral}{"N"})\{}
+\DoxyCodeLine{111                         tempatoms[0] = atomnums[j]; }
+\DoxyCodeLine{112                         std::cout << \textcolor{stringliteral}{"N  -\/ Atom "} << tempatoms[0] << \textcolor{stringliteral}{" -\/ Chain "} << chains[j] << std::endl;}
+\DoxyCodeLine{113                     \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(atomtypes[j] == \textcolor{stringliteral}{"CA"})\{}
+\DoxyCodeLine{114                         tempatoms[1] = atomnums[j]; }
+\DoxyCodeLine{115                         std::cout << \textcolor{stringliteral}{"CA -\/ Atom "} << tempatoms[1] << \textcolor{stringliteral}{" -\/ Chain "} << chains[j] << std::endl;}
+\DoxyCodeLine{116                     \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(atomtypes[j] == \textcolor{stringliteral}{"C"})\{}
+\DoxyCodeLine{117                         tempatoms[3] = atomnums[j]; }
+\DoxyCodeLine{118                         std::cout << \textcolor{stringliteral}{"C  -\/ Atom "} << tempatoms[3] << \textcolor{stringliteral}{" -\/ Chain "} << chains[j] << std::endl;}
+\DoxyCodeLine{119                     \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(atomtypes[j] == \textcolor{stringliteral}{"O"})\{}
+\DoxyCodeLine{120                         tempatoms[4] = atomnums[j]; }
+\DoxyCodeLine{121                         std::cout << \textcolor{stringliteral}{"O  -\/ Atom "} << tempatoms[4] << \textcolor{stringliteral}{" -\/ Chain "} << chains[j] << std::endl;}
+\DoxyCodeLine{122                     \} \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(atomtypes[j] == \textcolor{stringliteral}{"OT1"})\{}
+\DoxyCodeLine{123                         tempatoms[4] = atomnums[j];}
+\DoxyCodeLine{124                         std::cout << \textcolor{stringliteral}{"OT1-\/ Atom "} << tempatoms[4] << \textcolor{stringliteral}{" -\/ Chain "} << chains[j] << std::endl;}
+\DoxyCodeLine{125                     \} \textcolor{keywordflow}{else}\{}
+\DoxyCodeLine{126                         tempatoms[2] = atomnums[j]; }
+\DoxyCodeLine{127                         std::cout << atomtypes[j] << \textcolor{stringliteral}{" -\/ Atom "} << tempatoms[2] << \textcolor{stringliteral}{" -\/ Chain "} << chains[j] << std::endl;}
+\DoxyCodeLine{128                     \}}
+\DoxyCodeLine{129                     atomids[1].push\_back(chains[j]);}
+\DoxyCodeLine{130                 \}}
+\DoxyCodeLine{131                 \textcolor{comment}{//atomids.insert(atomids.end(), tempatoms.begin(), tempatoms.end());}}
+\DoxyCodeLine{132                 atomids[0].insert(atomids[0].end(), tempatoms.begin(), tempatoms.end());}
+\DoxyCodeLine{133             \}}
+\DoxyCodeLine{134 }
+\DoxyCodeLine{135             \textcolor{keywordflow}{return} atomids;}
+\DoxyCodeLine{136         \}}
+
+\end{DoxyCode}
+
+
+Referenced by S\+S\+A\+G\+E\+S\+::\+Alpha\+R\+M\+S\+D\+C\+V\+::\+Initialize(), S\+S\+A\+G\+E\+S\+::\+Anti\+Beta\+R\+M\+S\+D\+C\+V\+::\+Initialize(), and S\+S\+A\+G\+E\+S\+::\+Parallel\+Beta\+R\+M\+S\+D\+C\+V\+::\+Initialize().
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classSSAGES_1_1ReadBackbone_a2ac2a3c64129511572a47ec0913080ce_icgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/michael/development/\+S\+S\+A\+G\+E\+S/src/\+Utility/Read\+Backbone.\+h\end{DoxyCompactItemize}

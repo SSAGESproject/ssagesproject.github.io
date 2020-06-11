@@ -1,0 +1,4 @@
+<map id="SSAGES::BoxVolumeCV" name="SSAGES::BoxVolumeCV">
+<area shape="rect" id="node1" title="Collective variable on the volume of a box." alt="" coords="15,80,186,107"/>
+<area shape="rect" id="node2" href="$classSSAGES_1_1CollectiveVariable.html" title="Abstract class for a collective variable." alt="" coords="5,5,196,32"/>
+</map>

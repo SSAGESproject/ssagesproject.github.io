@@ -1,0 +1,149 @@
+\hypertarget{classSSAGES_1_1PairwiseKernel}{}\doxysection{S\+S\+A\+G\+ES\+::Pairwise\+Kernel Class Reference}
+\label{classSSAGES_1_1PairwiseKernel}\index{SSAGES::PairwiseKernel@{SSAGES::PairwiseKernel}}
+
+
+Pairwise kernel base class.  
+
+
+
+
+{\ttfamily \#include $<$Pairwise\+Kernel.\+h$>$}
+
+
+
+Inheritance diagram for S\+S\+A\+G\+ES\+::Pairwise\+Kernel\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classSSAGES_1_1PairwiseKernel__inherit__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual double \mbox{\hyperlink{classSSAGES_1_1PairwiseKernel_a4c8fb122b9d895399a04f0df76d3a9d4}{Evaluate}} (double rij, double \&df) const =0
+\begin{DoxyCompactList}\small\item\em Evaluate the pairwise kernel function. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classSSAGES_1_1PairwiseKernel_a941269532adbfd6f21ab97744b421a19}\label{classSSAGES_1_1PairwiseKernel_a941269532adbfd6f21ab97744b421a19}} 
+virtual \mbox{\hyperlink{classSSAGES_1_1PairwiseKernel_a941269532adbfd6f21ab97744b421a19}{$\sim$\+Pairwise\+Kernel}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classSSAGES_1_1PairwiseKernel}{Pairwise\+Kernel}} $\ast$ \mbox{\hyperlink{classSSAGES_1_1PairwiseKernel_a86c0b897d04fe123892e6c2040bfb93c}{Build}} (const Json\+::\+Value \&json, const std\+::string \&path)
+\begin{DoxyCompactList}\small\item\em Build \mbox{\hyperlink{classSSAGES_1_1PairwiseKernel}{Pairwise\+Kernel}} from \mbox{\hyperlink{namespaceJSON}{J\+S\+ON}} value. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Pairwise kernel base class. 
+
+Pairwise functions are useful for a variety of collective variables. Several classes of these functions exist.
+
+Gaussian functions are useful for collective variables that focus on a certain value. Unlike a delta function, they interpolate provide a continuous function and gradient for biasing.
+
+Switching functions are useful for collective variables that are discrete in nature. They interpolate the discrete values and provide a continuous gradient for biasing. 
+
+Definition at line 44 of file Pairwise\+Kernel.\+h.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classSSAGES_1_1PairwiseKernel_a86c0b897d04fe123892e6c2040bfb93c}\label{classSSAGES_1_1PairwiseKernel_a86c0b897d04fe123892e6c2040bfb93c}} 
+\index{SSAGES::PairwiseKernel@{SSAGES::PairwiseKernel}!Build@{Build}}
+\index{Build@{Build}!SSAGES::PairwiseKernel@{SSAGES::PairwiseKernel}}
+\doxysubsubsection{\texorpdfstring{Build()}{Build()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classSSAGES_1_1PairwiseKernel}{Pairwise\+Kernel}} $\ast$ S\+S\+A\+G\+E\+S\+::\+Pairwise\+Kernel\+::\+Build (\begin{DoxyParamCaption}\item[{const Json\+::\+Value \&}]{json,  }\item[{const std\+::string \&}]{path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Build \mbox{\hyperlink{classSSAGES_1_1PairwiseKernel}{Pairwise\+Kernel}} from \mbox{\hyperlink{namespaceJSON}{J\+S\+ON}} value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em json} & \mbox{\hyperlink{namespaceJSON}{J\+S\+ON}} value node. \\
+\hline
+{\em path} & Path for \mbox{\hyperlink{namespaceJSON}{J\+S\+ON}} path specification.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pointer to new \mbox{\hyperlink{classSSAGES_1_1PairwiseKernel}{Pairwise\+Kernel}}. 
+\end{DoxyReturn}
+
+
+Definition at line 30 of file Pairwise\+Kernel.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{31     \{}
+\DoxyCodeLine{32         \textcolor{keyword}{auto} type = json.get(\textcolor{stringliteral}{"type"}, \textcolor{stringliteral}{"none"}).asString();}
+\DoxyCodeLine{33         \textcolor{keywordflow}{if}(type == \textcolor{stringliteral}{"gaussian"})}
+\DoxyCodeLine{34             \textcolor{keywordflow}{return} \mbox{\hyperlink{classSSAGES_1_1GaussianPK_a6f2f35a0333bc7ba17c1999a2e38a2e1}{GaussianPK::Build}}(json, path);}
+\DoxyCodeLine{35         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(type == \textcolor{stringliteral}{"rationalswitch"})}
+\DoxyCodeLine{36             \textcolor{keywordflow}{return} \mbox{\hyperlink{classSSAGES_1_1RationalSwitchPK_aaba99dea2481b50341bd1ab50c991c6c}{RationalSwitchPK::Build}}(json, path);}
+\DoxyCodeLine{37         \textcolor{keywordflow}{else}}
+\DoxyCodeLine{38             \textcolor{keywordflow}{throw} std::invalid\_argument(\textcolor{stringliteral}{"Invalid pairwise kernel type \(\backslash\)""} + type + \textcolor{stringliteral}{"\(\backslash\)"."});}
+\DoxyCodeLine{39     \}}
+
+\end{DoxyCode}
+
+
+References S\+S\+A\+G\+E\+S\+::\+Gaussian\+P\+K\+::\+Build(), and S\+S\+A\+G\+E\+S\+::\+Rational\+Switch\+P\+K\+::\+Build().
+
+
+
+Referenced by S\+S\+A\+G\+E\+S\+::\+Pairwise\+C\+V\+::\+Build().
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classSSAGES_1_1PairwiseKernel_a86c0b897d04fe123892e6c2040bfb93c_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classSSAGES_1_1PairwiseKernel_a86c0b897d04fe123892e6c2040bfb93c_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classSSAGES_1_1PairwiseKernel_a4c8fb122b9d895399a04f0df76d3a9d4}\label{classSSAGES_1_1PairwiseKernel_a4c8fb122b9d895399a04f0df76d3a9d4}} 
+\index{SSAGES::PairwiseKernel@{SSAGES::PairwiseKernel}!Evaluate@{Evaluate}}
+\index{Evaluate@{Evaluate}!SSAGES::PairwiseKernel@{SSAGES::PairwiseKernel}}
+\doxysubsubsection{\texorpdfstring{Evaluate()}{Evaluate()}}
+{\footnotesize\ttfamily virtual double S\+S\+A\+G\+E\+S\+::\+Pairwise\+Kernel\+::\+Evaluate (\begin{DoxyParamCaption}\item[{double}]{rij,  }\item[{double \&}]{df }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Evaluate the pairwise kernel function. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em rij} & distance between two atoms. \\
+\hline
+{\em df} & Reference to variable which will store the gradient.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+value of pairwise kernel function. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classSSAGES_1_1RationalSwitchPK_ae75076780bcc7d3d0e19c3fc2a69b9a7}{S\+S\+A\+G\+E\+S\+::\+Rational\+Switch\+PK}}, and \mbox{\hyperlink{classSSAGES_1_1GaussianPK_a33e84e1db04cc6c9125fa56cf2c63f07}{S\+S\+A\+G\+E\+S\+::\+Gaussian\+PK}}.
+
+
+
+Referenced by S\+S\+A\+G\+E\+S\+::\+Pairwise\+C\+V\+::\+Evaluate().
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classSSAGES_1_1PairwiseKernel_a4c8fb122b9d895399a04f0df76d3a9d4_icgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/michael/development/\+S\+S\+A\+G\+E\+S/src/\+Utility/Pairwise\+Kernel.\+h\item 
+/home/michael/development/\+S\+S\+A\+G\+E\+S/src/\+Utility/Pairwise\+Kernel.\+cpp\end{DoxyCompactItemize}

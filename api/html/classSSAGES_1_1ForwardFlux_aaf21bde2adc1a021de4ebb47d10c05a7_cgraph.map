@@ -1,0 +1,7 @@
+<map id="SSAGES::ForwardFlux::ReadFFSConfiguration" name="SSAGES::ForwardFlux::ReadFFSConfiguration">
+<area shape="rect" id="node1" title="Read a file corresponding to a FFSConfigID into current snapshot." alt="" coords="5,74,168,115"/>
+<area shape="rect" id="node2" href="$classSSAGES_1_1Snapshot.html#ac9cd613a5fd8dacbd6dfc839cf526d28" title="Access the atom IDs." alt="" coords="219,5,440,32"/>
+<area shape="rect" id="node3" href="$classSSAGES_1_1Snapshot.html#a2d195c04efbc7d7d1c3dd4ccd4b9a5bc" title="Access the per&#45;particle forces." alt="" coords="225,56,434,83"/>
+<area shape="rect" id="node4" href="$classSSAGES_1_1Snapshot.html#a91852084d69a0703a8fcc9b27dc50459" title="Access the particle positions." alt="" coords="218,107,441,133"/>
+<area shape="rect" id="node5" href="$classSSAGES_1_1Snapshot.html#adb14bcfae16bc7490320fd1890b36cff" title="Access the particle velocities." alt="" coords="216,157,443,184"/>
+</map>

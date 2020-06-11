@@ -1,0 +1,6 @@
+<map id="SSAGES::RouseModeCV::setMasses" name="SSAGES::RouseModeCV::setMasses">
+<area shape="rect" id="node1" title="Helper function to determine masses of each group." alt="" coords="5,35,180,76"/>
+<area shape="rect" id="node2" href="$classSSAGES_1_1Snapshot.html#a196a91c541c72bcb5147b9e60a44ea8b" title=" " alt="" coords="233,5,433,47"/>
+<area shape="rect" id="node4" href="$classSSAGES_1_1Snapshot.html#a77cfe35b720393223aa5c7410b2dd3ad" title="Compute the total mass of a group of particles based on index." alt="" coords="228,71,437,98"/>
+<area shape="rect" id="node3" href="$classSSAGES_1_1Snapshot.html#a7146597433bcfd256385db274330cd36" title="Gets the local atom index corresponding to an atom ID." alt="" coords="485,5,685,47"/>
+</map>

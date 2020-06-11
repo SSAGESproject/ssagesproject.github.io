@@ -1,0 +1,135 @@
+\hypertarget{classSSAGES_1_1JSONLoader}{}\doxysection{S\+S\+A\+G\+ES\+::J\+S\+O\+N\+Loader Class Reference}
+\label{classSSAGES_1_1JSONLoader}\index{SSAGES::JSONLoader@{SSAGES::JSONLoader}}
+
+
+Class for loading \mbox{\hyperlink{namespaceJSON}{J\+S\+ON}} content from files.  
+
+
+
+
+{\ttfamily \#include $<$J\+S\+O\+N\+Loader.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classSSAGES_1_1JSONLoader_a1faa70c95b22b220278b6765b2abd5f7}{J\+S\+O\+N\+Loader}} ()
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+Json\+::\+Value \mbox{\hyperlink{classSSAGES_1_1JSONLoader_a8f04f2c6fc77c96b66af26a3a5b92c8f}{Load\+File}} (const std\+::string \&filename, const mxx\+::comm \&world)
+\begin{DoxyCompactList}\small\item\em Load file and return \mbox{\hyperlink{namespaceJSON}{J\+S\+ON}} tree. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classSSAGES_1_1JSONLoader_a67c3a000640b95c8be0f61820c53f9dd}\label{classSSAGES_1_1JSONLoader_a67c3a000640b95c8be0f61820c53f9dd}} 
+std\+::vector$<$ std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classSSAGES_1_1JSONLoaderPlugin}{J\+S\+O\+N\+Loader\+Plugin}} $>$ $>$ \mbox{\hyperlink{classSSAGES_1_1JSONLoader_a67c3a000640b95c8be0f61820c53f9dd}{plugins\+\_\+}}
+\begin{DoxyCompactList}\small\item\em List of plugins. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class for loading \mbox{\hyperlink{namespaceJSON}{J\+S\+ON}} content from files. 
+
+Definition at line 41 of file J\+S\+O\+N\+Loader.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classSSAGES_1_1JSONLoader_a1faa70c95b22b220278b6765b2abd5f7}\label{classSSAGES_1_1JSONLoader_a1faa70c95b22b220278b6765b2abd5f7}} 
+\index{SSAGES::JSONLoader@{SSAGES::JSONLoader}!JSONLoader@{JSONLoader}}
+\index{JSONLoader@{JSONLoader}!SSAGES::JSONLoader@{SSAGES::JSONLoader}}
+\doxysubsubsection{\texorpdfstring{JSONLoader()}{JSONLoader()}}
+{\footnotesize\ttfamily S\+S\+A\+G\+E\+S\+::\+J\+S\+O\+N\+Loader\+::\+J\+S\+O\+N\+Loader (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructor. 
+
+The constructer automatically inserts the \mbox{\hyperlink{classSSAGES_1_1IncludePlugin}{Include\+Plugin}} into the list of plugins. 
+
+Definition at line 53 of file J\+S\+O\+N\+Loader.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{53                      : \mbox{\hyperlink{classSSAGES_1_1JSONLoader_a67c3a000640b95c8be0f61820c53f9dd}{plugins\_}}(0)}
+\DoxyCodeLine{54         \{}
+\DoxyCodeLine{55             \mbox{\hyperlink{classSSAGES_1_1JSONLoader_a67c3a000640b95c8be0f61820c53f9dd}{plugins\_}}.push\_back(std::unique\_ptr<JSONLoaderPlugin>(\textcolor{keyword}{new} IncludePlugin()));}
+\DoxyCodeLine{56         \}}
+
+\end{DoxyCode}
+
+
+References plugins\+\_\+.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classSSAGES_1_1JSONLoader_a8f04f2c6fc77c96b66af26a3a5b92c8f}\label{classSSAGES_1_1JSONLoader_a8f04f2c6fc77c96b66af26a3a5b92c8f}} 
+\index{SSAGES::JSONLoader@{SSAGES::JSONLoader}!LoadFile@{LoadFile}}
+\index{LoadFile@{LoadFile}!SSAGES::JSONLoader@{SSAGES::JSONLoader}}
+\doxysubsubsection{\texorpdfstring{LoadFile()}{LoadFile()}}
+{\footnotesize\ttfamily Json\+::\+Value S\+S\+A\+G\+E\+S\+::\+J\+S\+O\+N\+Loader\+::\+Load\+File (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{filename,  }\item[{const mxx\+::comm \&}]{world }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Load file and return \mbox{\hyperlink{namespaceJSON}{J\+S\+ON}} tree. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & Name of the \mbox{\hyperlink{namespaceJSON}{J\+S\+ON}} file to load. \\
+\hline
+{\em world} & M\+PI global communicator. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+\mbox{\hyperlink{namespaceJSON}{J\+S\+ON}} Value containing the contents of the file.
+\end{DoxyReturn}
+This function loads \mbox{\hyperlink{namespaceJSON}{J\+S\+ON}} content from a given file. For each plugin in {\ttfamily plugins\+\_\+} the filter defined with this plugin will be applied to the contents loaded from the file. 
+
+Definition at line 68 of file J\+S\+O\+N\+Loader.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{69         \{}
+\DoxyCodeLine{70             std::string contents, path;}
+\DoxyCodeLine{71             \textcolor{keywordflow}{if}(world.rank() == 0)}
+\DoxyCodeLine{72             \{}
+\DoxyCodeLine{73                 contents = \mbox{\hyperlink{namespaceSSAGES_a47ee6e7c0b49477e70126f8976bf88f6}{GetFileContents}}(filename);}
+\DoxyCodeLine{74                 path = \mbox{\hyperlink{namespaceSSAGES_a8f3679fdce893d23e1dbe8f046122781}{GetFilePath}}(filename);}
+\DoxyCodeLine{75             \}}
+\DoxyCodeLine{76             }
+\DoxyCodeLine{77             mxx::bcast(contents, 0, world);}
+\DoxyCodeLine{78             mxx::bcast(path, 0, world);}
+\DoxyCodeLine{79 }
+\DoxyCodeLine{80             \textcolor{keywordflow}{for}(\textcolor{keyword}{auto}\& plugin : \mbox{\hyperlink{classSSAGES_1_1JSONLoader_a67c3a000640b95c8be0f61820c53f9dd}{plugins\_}})}
+\DoxyCodeLine{81                 plugin-\/>ApplyFilter(contents, path);}
+\DoxyCodeLine{82 }
+\DoxyCodeLine{83             \textcolor{comment}{// Read JSON.}}
+\DoxyCodeLine{84             Json::Value root;}
+\DoxyCodeLine{85             std::string errors;}
+\DoxyCodeLine{86             Json::CharReaderBuilder rbuilder;}
+\DoxyCodeLine{87             Json::CharReader* reader = rbuilder.newCharReader();}
+\DoxyCodeLine{88             \textcolor{keywordflow}{if}(!reader-\/>parse(contents.c\_str(), contents.c\_str() + contents.size(), \&root, \&errors))}
+\DoxyCodeLine{89             \{}
+\DoxyCodeLine{90                 \textcolor{keywordflow}{throw} std::invalid\_argument(}
+\DoxyCodeLine{91                     filename + \textcolor{stringliteral}{": "} + errors}
+\DoxyCodeLine{92                 );}
+\DoxyCodeLine{93             \}}
+\DoxyCodeLine{94             \textcolor{keyword}{delete} reader;}
+\DoxyCodeLine{95             \textcolor{keywordflow}{return} root;}
+\DoxyCodeLine{96         \}}
+
+\end{DoxyCode}
+
+
+References S\+S\+A\+G\+E\+S\+::\+Get\+File\+Contents(), S\+S\+A\+G\+E\+S\+::\+Get\+File\+Path(), and plugins\+\_\+.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classSSAGES_1_1JSONLoader_a8f04f2c6fc77c96b66af26a3a5b92c8f_cgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/michael/development/\+S\+S\+A\+G\+E\+S/src/\+J\+S\+O\+N/J\+S\+O\+N\+Loader.\+h\end{DoxyCompactItemize}

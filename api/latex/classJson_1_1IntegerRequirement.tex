@@ -1,0 +1,219 @@
+\hypertarget{classJson_1_1IntegerRequirement}{}\doxysection{Json\+::Integer\+Requirement Class Reference}
+\label{classJson_1_1IntegerRequirement}\index{Json::IntegerRequirement@{Json::IntegerRequirement}}
+
+
+Requirements on Integer values.  
+
+
+
+
+{\ttfamily \#include $<$Integer\+Requirement.\+h$>$}
+
+
+
+Inheritance diagram for Json\+::Integer\+Requirement\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=209pt]{classJson_1_1IntegerRequirement__inherit__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classJson_1_1IntegerRequirement_a34993ac0efcd4305cd4ac3d2005e67de}\label{classJson_1_1IntegerRequirement_a34993ac0efcd4305cd4ac3d2005e67de}} 
+\mbox{\hyperlink{classJson_1_1IntegerRequirement_a34993ac0efcd4305cd4ac3d2005e67de}{Integer\+Requirement}} ()
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classJson_1_1IntegerRequirement_a35dedaa77aeaddd897d0f230d3801c98}\label{classJson_1_1IntegerRequirement_a35dedaa77aeaddd897d0f230d3801c98}} 
+virtual void \mbox{\hyperlink{classJson_1_1IntegerRequirement_a35dedaa77aeaddd897d0f230d3801c98}{Reset}} () override
+\begin{DoxyCompactList}\small\item\em Reset requirement. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classJson_1_1IntegerRequirement_aa8fcecf78844dd9fbabe1205d54b88c6}{Parse}} (Value json, const std\+::string \&path) override
+\begin{DoxyCompactList}\small\item\em Parse \mbox{\hyperlink{namespaceJSON}{J\+S\+ON}} value to set up \mbox{\hyperlink{classJson_1_1Requirement}{Requirement}}. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classJson_1_1IntegerRequirement_a1fe5546112f7457218fa555c574819e8}{Validate}} (const Value \&json, const std\+::string \&path) override
+\begin{DoxyCompactList}\small\item\em Validate \mbox{\hyperlink{namespaceJSON}{J\+S\+ON}} value. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classJson_1_1IntegerRequirement_af562ca100fe36993d0769573a6e8110f}\label{classJson_1_1IntegerRequirement_af562ca100fe36993d0769573a6e8110f}} 
+std\+::string \mbox{\hyperlink{classJson_1_1IntegerRequirement_af562ca100fe36993d0769573a6e8110f}{path\+\_\+}}
+\begin{DoxyCompactList}\small\item\em Path for \mbox{\hyperlink{namespaceJSON}{J\+S\+ON}} path specification. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classJson_1_1IntegerRequirement_af7b2dd53eb2851f1caad0d55b869d87f}\label{classJson_1_1IntegerRequirement_af7b2dd53eb2851f1caad0d55b869d87f}} 
+int \mbox{\hyperlink{classJson_1_1IntegerRequirement_af7b2dd53eb2851f1caad0d55b869d87f}{multiple\+Of\+\_\+}}
+\begin{DoxyCompactList}\small\item\em Multiple of requirement. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classJson_1_1IntegerRequirement_a3e1bdc78246654753071f77323aee0b7}\label{classJson_1_1IntegerRequirement_a3e1bdc78246654753071f77323aee0b7}} 
+int \mbox{\hyperlink{classJson_1_1IntegerRequirement_a3e1bdc78246654753071f77323aee0b7}{min\+\_\+}}
+\begin{DoxyCompactList}\small\item\em Lower bound for range requirement. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classJson_1_1IntegerRequirement_ac123a3690b87f9c358d18e382e57ceda}\label{classJson_1_1IntegerRequirement_ac123a3690b87f9c358d18e382e57ceda}} 
+int \mbox{\hyperlink{classJson_1_1IntegerRequirement_ac123a3690b87f9c358d18e382e57ceda}{max\+\_\+}}
+\begin{DoxyCompactList}\small\item\em Upper bound for range requirement. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classJson_1_1IntegerRequirement_a87d7d0435c45bebce4501a4df831d0c6}\label{classJson_1_1IntegerRequirement_a87d7d0435c45bebce4501a4df831d0c6}} 
+bool \mbox{\hyperlink{classJson_1_1IntegerRequirement_a87d7d0435c45bebce4501a4df831d0c6}{mult\+Set\+\_\+}}
+\begin{DoxyCompactList}\small\item\em If {\ttfamily True} multiple of is a requirement. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classJson_1_1IntegerRequirement_a881b671ecb285bfb1efe640693d3ec81}\label{classJson_1_1IntegerRequirement_a881b671ecb285bfb1efe640693d3ec81}} 
+bool \mbox{\hyperlink{classJson_1_1IntegerRequirement_a881b671ecb285bfb1efe640693d3ec81}{min\+Set\+\_\+}}
+\begin{DoxyCompactList}\small\item\em If {\ttfamily True} lower bound is an active requirement. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classJson_1_1IntegerRequirement_a1e77a5572f6769990343b1c54813b0d6}\label{classJson_1_1IntegerRequirement_a1e77a5572f6769990343b1c54813b0d6}} 
+bool \mbox{\hyperlink{classJson_1_1IntegerRequirement_a1e77a5572f6769990343b1c54813b0d6}{max\+Set\+\_\+}}
+\begin{DoxyCompactList}\small\item\em If {\ttfamily True} upper bound is an active requirement. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classJson_1_1IntegerRequirement_a00a6b9a8f6d65fc2b27a1302834b252d}\label{classJson_1_1IntegerRequirement_a00a6b9a8f6d65fc2b27a1302834b252d}} 
+bool \mbox{\hyperlink{classJson_1_1IntegerRequirement_a00a6b9a8f6d65fc2b27a1302834b252d}{excl\+Min\+\_\+}}
+\begin{DoxyCompactList}\small\item\em If {\ttfamily True} lower bound is exclusive. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classJson_1_1IntegerRequirement_a2da4f0bd343b04e4ffb99eaacc9a295a}\label{classJson_1_1IntegerRequirement_a2da4f0bd343b04e4ffb99eaacc9a295a}} 
+bool \mbox{\hyperlink{classJson_1_1IntegerRequirement_a2da4f0bd343b04e4ffb99eaacc9a295a}{excl\+Max\+\_\+}}
+\begin{DoxyCompactList}\small\item\em If {\ttfamily True} upper bound is exclusive. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Requirements on Integer values. 
+
+This class implements several types of integer requirements. 
+
+Definition at line 38 of file Integer\+Requirement.\+h.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classJson_1_1IntegerRequirement_aa8fcecf78844dd9fbabe1205d54b88c6}\label{classJson_1_1IntegerRequirement_aa8fcecf78844dd9fbabe1205d54b88c6}} 
+\index{Json::IntegerRequirement@{Json::IntegerRequirement}!Parse@{Parse}}
+\index{Parse@{Parse}!Json::IntegerRequirement@{Json::IntegerRequirement}}
+\doxysubsubsection{\texorpdfstring{Parse()}{Parse()}}
+{\footnotesize\ttfamily virtual void Json\+::\+Integer\+Requirement\+::\+Parse (\begin{DoxyParamCaption}\item[{Value}]{json,  }\item[{const std\+::string \&}]{path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Parse \mbox{\hyperlink{namespaceJSON}{J\+S\+ON}} value to set up \mbox{\hyperlink{classJson_1_1Requirement}{Requirement}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em json} & \mbox{\hyperlink{namespaceJSON}{J\+S\+ON}} input value. \\
+\hline
+{\em path} & Path for \mbox{\hyperlink{namespaceJSON}{J\+S\+ON}} path specification. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classJson_1_1Requirement_af13c20497e7ad6c332c57fa80a266e27}{Json\+::\+Requirement}}.
+
+
+
+Definition at line 75 of file Integer\+Requirement.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{76         \{}
+\DoxyCodeLine{77             \mbox{\hyperlink{classJson_1_1IntegerRequirement_a35dedaa77aeaddd897d0f230d3801c98}{Reset}}();}
+\DoxyCodeLine{78             }
+\DoxyCodeLine{79             \mbox{\hyperlink{classJson_1_1IntegerRequirement_af562ca100fe36993d0769573a6e8110f}{path\_}} = path;}
+\DoxyCodeLine{80             \textcolor{keywordflow}{if}(json.isMember(\textcolor{stringliteral}{"multipleOf"}) \&\& json[\textcolor{stringliteral}{"multipleOf"}].isInt())}
+\DoxyCodeLine{81             \{}
+\DoxyCodeLine{82                 \mbox{\hyperlink{classJson_1_1IntegerRequirement_a87d7d0435c45bebce4501a4df831d0c6}{multSet\_}} = \textcolor{keyword}{true};}
+\DoxyCodeLine{83                 \mbox{\hyperlink{classJson_1_1IntegerRequirement_af7b2dd53eb2851f1caad0d55b869d87f}{multipleOf\_}} = json[\textcolor{stringliteral}{"multipleOf"}].asInt();}
+\DoxyCodeLine{84             \}}
+\DoxyCodeLine{85 }
+\DoxyCodeLine{86             \textcolor{keywordflow}{if}(json.isMember(\textcolor{stringliteral}{"minimum"}) \&\& json[\textcolor{stringliteral}{"minimum"}].isInt())}
+\DoxyCodeLine{87             \{}
+\DoxyCodeLine{88                 \mbox{\hyperlink{classJson_1_1IntegerRequirement_a881b671ecb285bfb1efe640693d3ec81}{minSet\_}} = \textcolor{keyword}{true};}
+\DoxyCodeLine{89                 \mbox{\hyperlink{classJson_1_1IntegerRequirement_a3e1bdc78246654753071f77323aee0b7}{min\_}} = json[\textcolor{stringliteral}{"minimum"}].asInt();}
+\DoxyCodeLine{90             \}}
+\DoxyCodeLine{91 }
+\DoxyCodeLine{92             \textcolor{keywordflow}{if}(json.isMember(\textcolor{stringliteral}{"maximum"}) \&\& json[\textcolor{stringliteral}{"maximum"}].isInt())}
+\DoxyCodeLine{93             \{}
+\DoxyCodeLine{94                 \mbox{\hyperlink{classJson_1_1IntegerRequirement_a1e77a5572f6769990343b1c54813b0d6}{maxSet\_}} = \textcolor{keyword}{true};}
+\DoxyCodeLine{95                 \mbox{\hyperlink{classJson_1_1IntegerRequirement_ac123a3690b87f9c358d18e382e57ceda}{max\_}} = json[\textcolor{stringliteral}{"maximum"}].asInt();}
+\DoxyCodeLine{96             \}}
+\DoxyCodeLine{97 }
+\DoxyCodeLine{98             \textcolor{keywordflow}{if}(json.isMember(\textcolor{stringliteral}{"exclusiveMinimum"}) \&\& json[\textcolor{stringliteral}{"exclusiveMinimum"}].isBool())}
+\DoxyCodeLine{99             \{}
+\DoxyCodeLine{100                 \mbox{\hyperlink{classJson_1_1IntegerRequirement_a00a6b9a8f6d65fc2b27a1302834b252d}{exclMin\_}} = json[\textcolor{stringliteral}{"exclusiveMinimum"}].asBool();}
+\DoxyCodeLine{101             \}}
+\DoxyCodeLine{102 }
+\DoxyCodeLine{103             \textcolor{keywordflow}{if}(json.isMember(\textcolor{stringliteral}{"exclusiveMaximum"}) \&\& json[\textcolor{stringliteral}{"exclusiveMaximum"}].isBool())}
+\DoxyCodeLine{104             \{}
+\DoxyCodeLine{105                 \mbox{\hyperlink{classJson_1_1IntegerRequirement_a2da4f0bd343b04e4ffb99eaacc9a295a}{exclMax\_}} = json[\textcolor{stringliteral}{"exclusiveMaximum"}].asBool();}
+\DoxyCodeLine{106             \}}
+\DoxyCodeLine{107         \}}
+
+\end{DoxyCode}
+
+
+References excl\+Max\+\_\+, excl\+Min\+\_\+, max\+\_\+, max\+Set\+\_\+, min\+\_\+, min\+Set\+\_\+, multiple\+Of\+\_\+, mult\+Set\+\_\+, path\+\_\+, and Reset().
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classJson_1_1IntegerRequirement_aa8fcecf78844dd9fbabe1205d54b88c6_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classJson_1_1IntegerRequirement_a1fe5546112f7457218fa555c574819e8}\label{classJson_1_1IntegerRequirement_a1fe5546112f7457218fa555c574819e8}} 
+\index{Json::IntegerRequirement@{Json::IntegerRequirement}!Validate@{Validate}}
+\index{Validate@{Validate}!Json::IntegerRequirement@{Json::IntegerRequirement}}
+\doxysubsubsection{\texorpdfstring{Validate()}{Validate()}}
+{\footnotesize\ttfamily virtual void Json\+::\+Integer\+Requirement\+::\+Validate (\begin{DoxyParamCaption}\item[{const Value \&}]{json,  }\item[{const std\+::string \&}]{path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Validate \mbox{\hyperlink{namespaceJSON}{J\+S\+ON}} value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em json} & \mbox{\hyperlink{namespaceJSON}{J\+S\+ON}} value to be validated. \\
+\hline
+{\em path} & Path for \mbox{\hyperlink{namespaceJSON}{J\+S\+ON}} path specification.\\
+\hline
+\end{DoxyParams}
+Validates that the given \mbox{\hyperlink{namespaceJSON}{J\+S\+ON}} value is of type Integer and meets the requirements generated by \mbox{\hyperlink{classJson_1_1IntegerRequirement_aa8fcecf78844dd9fbabe1205d54b88c6}{Integer\+Requirement\+::\+Parse()}}. If the requirements are not met, an error is generated. 
+
+Implements \mbox{\hyperlink{classJson_1_1Requirement_aa97494b642414d00482745a0d5b2c2c3}{Json\+::\+Requirement}}.
+
+
+
+Definition at line 118 of file Integer\+Requirement.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{119         \{}
+\DoxyCodeLine{120             \textcolor{keywordflow}{if}(!json.isInt())}
+\DoxyCodeLine{121             \{}
+\DoxyCodeLine{122                 \mbox{\hyperlink{classJson_1_1Requirement_adeb9efa6cf271d9cea0599ff2d458a08}{PushError}}(path + \textcolor{stringliteral}{": Must be of type \(\backslash\)"integer\(\backslash\)"."});}
+\DoxyCodeLine{123                 \textcolor{keywordflow}{return};}
+\DoxyCodeLine{124             \}}
+\DoxyCodeLine{125 }
+\DoxyCodeLine{126             \textcolor{keywordflow}{if}(\mbox{\hyperlink{classJson_1_1IntegerRequirement_a87d7d0435c45bebce4501a4df831d0c6}{multSet\_}} \&\& (json.asInt() \% \mbox{\hyperlink{classJson_1_1IntegerRequirement_af7b2dd53eb2851f1caad0d55b869d87f}{multipleOf\_}} != 0))}
+\DoxyCodeLine{127                 \mbox{\hyperlink{classJson_1_1Requirement_adeb9efa6cf271d9cea0599ff2d458a08}{PushError}}(path + \textcolor{stringliteral}{": Value must be a multiple of "} + std::to\_string(\mbox{\hyperlink{classJson_1_1IntegerRequirement_af7b2dd53eb2851f1caad0d55b869d87f}{multipleOf\_}}));}
+\DoxyCodeLine{128 }
+\DoxyCodeLine{129             \textcolor{keywordflow}{if}(\mbox{\hyperlink{classJson_1_1IntegerRequirement_a881b671ecb285bfb1efe640693d3ec81}{minSet\_}})}
+\DoxyCodeLine{130             \{}
+\DoxyCodeLine{131                 \textcolor{keywordflow}{if}(\mbox{\hyperlink{classJson_1_1IntegerRequirement_a00a6b9a8f6d65fc2b27a1302834b252d}{exclMin\_}} \&\& json.asInt() <= \mbox{\hyperlink{classJson_1_1IntegerRequirement_a3e1bdc78246654753071f77323aee0b7}{min\_}})}
+\DoxyCodeLine{132                     \mbox{\hyperlink{classJson_1_1Requirement_adeb9efa6cf271d9cea0599ff2d458a08}{PushError}}(path + \textcolor{stringliteral}{": Value must be greater than "} + std::to\_string(\mbox{\hyperlink{classJson_1_1IntegerRequirement_a3e1bdc78246654753071f77323aee0b7}{min\_}}));}
+\DoxyCodeLine{133                 \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(json.asInt() < \mbox{\hyperlink{classJson_1_1IntegerRequirement_a3e1bdc78246654753071f77323aee0b7}{min\_}})}
+\DoxyCodeLine{134                     \mbox{\hyperlink{classJson_1_1Requirement_adeb9efa6cf271d9cea0599ff2d458a08}{PushError}}(path + \textcolor{stringliteral}{": Value cannot be less than "} + std::to\_string(\mbox{\hyperlink{classJson_1_1IntegerRequirement_a3e1bdc78246654753071f77323aee0b7}{min\_}}));}
+\DoxyCodeLine{135             \}}
+\DoxyCodeLine{136 }
+\DoxyCodeLine{137             \textcolor{keywordflow}{if}(\mbox{\hyperlink{classJson_1_1IntegerRequirement_a1e77a5572f6769990343b1c54813b0d6}{maxSet\_}})}
+\DoxyCodeLine{138             \{}
+\DoxyCodeLine{139                 \textcolor{keywordflow}{if}(\mbox{\hyperlink{classJson_1_1IntegerRequirement_a2da4f0bd343b04e4ffb99eaacc9a295a}{exclMax\_}} \&\& json.asInt() >= \mbox{\hyperlink{classJson_1_1IntegerRequirement_ac123a3690b87f9c358d18e382e57ceda}{max\_}})}
+\DoxyCodeLine{140                     \mbox{\hyperlink{classJson_1_1Requirement_adeb9efa6cf271d9cea0599ff2d458a08}{PushError}}(path + \textcolor{stringliteral}{": Value must be less than "} + std::to\_string(\mbox{\hyperlink{classJson_1_1IntegerRequirement_ac123a3690b87f9c358d18e382e57ceda}{max\_}}));}
+\DoxyCodeLine{141                 \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(json.asInt() > \mbox{\hyperlink{classJson_1_1IntegerRequirement_ac123a3690b87f9c358d18e382e57ceda}{max\_}})}
+\DoxyCodeLine{142                     \mbox{\hyperlink{classJson_1_1Requirement_adeb9efa6cf271d9cea0599ff2d458a08}{PushError}}(path + \textcolor{stringliteral}{": Value cannot be greater than "} + std::to\_string(\mbox{\hyperlink{classJson_1_1IntegerRequirement_ac123a3690b87f9c358d18e382e57ceda}{max\_}}));}
+\DoxyCodeLine{143             \}}
+\DoxyCodeLine{144         \}}
+
+\end{DoxyCode}
+
+
+References excl\+Max\+\_\+, excl\+Min\+\_\+, max\+\_\+, max\+Set\+\_\+, min\+\_\+, min\+Set\+\_\+, multiple\+Of\+\_\+, mult\+Set\+\_\+, and Json\+::\+Requirement\+::\+Push\+Error().
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classJson_1_1IntegerRequirement_a1fe5546112f7457218fa555c574819e8_cgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/michael/development/\+S\+S\+A\+G\+E\+S/src/\+Validator/Integer\+Requirement.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,61 @@
+\hypertarget{classSSAGES_1_1JSONLoaderPlugin}{}\doxysection{S\+S\+A\+G\+ES\+::J\+S\+O\+N\+Loader\+Plugin Class Reference}
+\label{classSSAGES_1_1JSONLoaderPlugin}\index{SSAGES::JSONLoaderPlugin@{SSAGES::JSONLoaderPlugin}}
+
+
+Abstract class for \mbox{\hyperlink{namespaceJSON}{J\+S\+ON}} loader plugins.  
+
+
+
+
+{\ttfamily \#include $<$J\+S\+O\+N\+Loader\+Plugin.\+h$>$}
+
+
+
+Inheritance diagram for S\+S\+A\+G\+ES\+::J\+S\+O\+N\+Loader\+Plugin\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=227pt]{classSSAGES_1_1JSONLoaderPlugin__inherit__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{classSSAGES_1_1JSONLoaderPlugin_a3a57040134ab8ce8deb07e35d8c7d6d4}{Apply\+Filter}} (std\+::string \&contents, const std\+::string \&path)=0
+\begin{DoxyCompactList}\small\item\em Apply filter to string. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Abstract class for \mbox{\hyperlink{namespaceJSON}{J\+S\+ON}} loader plugins. 
+
+Definition at line 37 of file J\+S\+O\+N\+Loader\+Plugin.\+h.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classSSAGES_1_1JSONLoaderPlugin_a3a57040134ab8ce8deb07e35d8c7d6d4}\label{classSSAGES_1_1JSONLoaderPlugin_a3a57040134ab8ce8deb07e35d8c7d6d4}} 
+\index{SSAGES::JSONLoaderPlugin@{SSAGES::JSONLoaderPlugin}!ApplyFilter@{ApplyFilter}}
+\index{ApplyFilter@{ApplyFilter}!SSAGES::JSONLoaderPlugin@{SSAGES::JSONLoaderPlugin}}
+\doxysubsubsection{\texorpdfstring{ApplyFilter()}{ApplyFilter()}}
+{\footnotesize\ttfamily virtual void S\+S\+A\+G\+E\+S\+::\+J\+S\+O\+N\+Loader\+Plugin\+::\+Apply\+Filter (\begin{DoxyParamCaption}\item[{std\+::string \&}]{contents,  }\item[{const std\+::string \&}]{path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Apply filter to string. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em contents} & String whose contents will be modified. \\
+\hline
+{\em path} & Path for \mbox{\hyperlink{namespaceJSON}{J\+S\+ON}} path specification.\\
+\hline
+\end{DoxyParams}
+This function will read in the contents string and apply custom filters to it. 
+
+Implemented in \mbox{\hyperlink{classSSAGES_1_1IncludePlugin_adeb6e7f9fafc99d700615b19e148cc26}{S\+S\+A\+G\+E\+S\+::\+Include\+Plugin}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/michael/development/\+S\+S\+A\+G\+E\+S/src/\+J\+S\+O\+N/J\+S\+O\+N\+Loader\+Plugin.\+h\end{DoxyCompactItemize}

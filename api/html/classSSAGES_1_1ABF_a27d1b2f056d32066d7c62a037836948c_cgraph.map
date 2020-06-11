@@ -1,0 +1,5 @@
+<map id="SSAGES::ABF::PreSimulation" name="SSAGES::ABF::PreSimulation">
+<area shape="rect" id="node1" title="Method call prior to simulation initiation." alt="" coords="5,42,205,69"/>
+<area shape="rect" id="node2" href="$classSSAGES_1_1CVManager.html#ad2a31c91a0298b4e80ca5ba720c5eee3" title="Get CV iterator." alt="" coords="283,5,446,47"/>
+<area shape="rect" id="node3" href="$classSSAGES_1_1Snapshot.html#a91852084d69a0703a8fcc9b27dc50459" title="Access the particle positions." alt="" coords="253,71,476,98"/>
+</map>

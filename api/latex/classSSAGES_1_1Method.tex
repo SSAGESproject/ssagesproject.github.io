@@ -1,0 +1,324 @@
+\hypertarget{classSSAGES_1_1Method}{}\doxysection{S\+S\+A\+G\+ES\+::Method Class Reference}
+\label{classSSAGES_1_1Method}\index{SSAGES::Method@{SSAGES::Method}}
+
+
+Interface for \mbox{\hyperlink{classSSAGES_1_1Method}{Method}} implementations.  
+
+
+
+
+{\ttfamily \#include $<$Method.\+h$>$}
+
+
+
+Inheritance diagram for S\+S\+A\+G\+ES\+::Method\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classSSAGES_1_1Method__inherit__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classSSAGES_1_1Method_ad751450ecd30e8ab40024c6f5e870d30}{Method}} (unsigned int frequency, const M\+P\+I\+\_\+\+Comm \&world, const M\+P\+I\+\_\+\+Comm \&comm)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classSSAGES_1_1Method_a7d840d2b5f6dbf9ec75a7909ccf13ef7}{Pre\+Simulation}} (\mbox{\hyperlink{classSSAGES_1_1Snapshot}{Snapshot}} $\ast$snapshot, const class \mbox{\hyperlink{classSSAGES_1_1CVManager}{C\+V\+Manager}} \&cvmanager) override=0
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classSSAGES_1_1Method}{Method}} call prior to simulation initiation. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classSSAGES_1_1Method_af2f33dfaa758c5cd505477f4767fb339}{Post\+Integration}} (\mbox{\hyperlink{classSSAGES_1_1Snapshot}{Snapshot}} $\ast$snapshot, const class \mbox{\hyperlink{classSSAGES_1_1CVManager}{C\+V\+Manager}} \&cvmanager) override=0
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classSSAGES_1_1Method}{Method}} call post integration. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classSSAGES_1_1Method_a7d18226669c88bc76b9b758f2d29e3c9}{Post\+Simulation}} (\mbox{\hyperlink{classSSAGES_1_1Snapshot}{Snapshot}} $\ast$snapshot, const class \mbox{\hyperlink{classSSAGES_1_1CVManager}{C\+V\+Manager}} \&cvmanager) override=0
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classSSAGES_1_1Method}{Method}} call post simulation. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classSSAGES_1_1Method_a701c90bfcddeb2099b78528fea850c07}{Set\+C\+V\+Mask}} (const std\+::vector$<$ unsigned int $>$ \&mask)
+\begin{DoxyCompactList}\small\item\em Sets the collective variable mask. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classSSAGES_1_1Method_a86b979a552970f63a8edf160387f6ff9}\label{classSSAGES_1_1Method_a86b979a552970f63a8edf160387f6ff9}} 
+virtual \mbox{\hyperlink{classSSAGES_1_1Method_a86b979a552970f63a8edf160387f6ff9}{$\sim$\+Method}} ()
+\begin{DoxyCompactList}\small\item\em Destructor. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classSSAGES_1_1Method}{Method}} $\ast$ \mbox{\hyperlink{classSSAGES_1_1Method_a1464579bb8b15653ccd0ffa834e15e93}{Build\+Method}} (const Json\+::\+Value \&json, const M\+P\+I\+\_\+\+Comm \&world, const M\+P\+I\+\_\+\+Comm \&comm, const std\+::string \&path)
+\begin{DoxyCompactList}\small\item\em Build a derived method from \mbox{\hyperlink{namespaceJSON}{J\+S\+ON}} node. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classSSAGES_1_1Method_a8471b11097a1018a9635bc578bf22f61}\label{classSSAGES_1_1Method_a8471b11097a1018a9635bc578bf22f61}} 
+mxx\+::comm \mbox{\hyperlink{classSSAGES_1_1Method_a8471b11097a1018a9635bc578bf22f61}{world\+\_\+}}
+\begin{DoxyCompactList}\small\item\em Global M\+PI communicator. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classSSAGES_1_1Method_a1118666d61dbf3bc7606e3b61aa3a460}\label{classSSAGES_1_1Method_a1118666d61dbf3bc7606e3b61aa3a460}} 
+mxx\+::comm \mbox{\hyperlink{classSSAGES_1_1Method_a1118666d61dbf3bc7606e3b61aa3a460}{comm\+\_\+}}
+\begin{DoxyCompactList}\small\item\em Local M\+PI communicator. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classSSAGES_1_1Method_a24b0ac53b1fabcab0a5f3bd6cde26909}\label{classSSAGES_1_1Method_a24b0ac53b1fabcab0a5f3bd6cde26909}} 
+std\+::vector$<$ unsigned int $>$ \mbox{\hyperlink{classSSAGES_1_1Method_a24b0ac53b1fabcab0a5f3bd6cde26909}{cvmask\+\_\+}}
+\begin{DoxyCompactList}\small\item\em Mask which identifies which C\+Vs to act on. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Interface for \mbox{\hyperlink{classSSAGES_1_1Method}{Method}} implementations. 
+
+The base method class from which advanced sampling routines derive. A method is allowed to manipulate a simulation at three points\+: before the simulation begins (usually initialization), after each integration step by the simulation engine, and after the integration steps are complete (usually cleanup). 
+
+Definition at line 43 of file Method.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classSSAGES_1_1Method_ad751450ecd30e8ab40024c6f5e870d30}\label{classSSAGES_1_1Method_ad751450ecd30e8ab40024c6f5e870d30}} 
+\index{SSAGES::Method@{SSAGES::Method}!Method@{Method}}
+\index{Method@{Method}!SSAGES::Method@{SSAGES::Method}}
+\doxysubsubsection{\texorpdfstring{Method()}{Method()}}
+{\footnotesize\ttfamily S\+S\+A\+G\+E\+S\+::\+Method\+::\+Method (\begin{DoxyParamCaption}\item[{unsigned int}]{frequency,  }\item[{const M\+P\+I\+\_\+\+Comm \&}]{world,  }\item[{const M\+P\+I\+\_\+\+Comm \&}]{comm }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em frequency} & Frequency of sampling. \\
+\hline
+{\em world} & Global M\+PI communicator. \\
+\hline
+{\em comm} & M\+PI communicator of walker.\\
+\hline
+\end{DoxyParams}
+Frequency of sampling must be specified by all methods. 
+
+Definition at line 61 of file Method.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{61                                                                                     :}
+\DoxyCodeLine{62         \mbox{\hyperlink{classSSAGES_1_1EventListener_a4a4d51653806e0348e9d1c99890bb87b}{EventListener}}(frequency), \mbox{\hyperlink{classSSAGES_1_1Method_a8471b11097a1018a9635bc578bf22f61}{world\_}}(world), \mbox{\hyperlink{classSSAGES_1_1Method_a1118666d61dbf3bc7606e3b61aa3a460}{comm\_}}(comm), \mbox{\hyperlink{classSSAGES_1_1Method_a24b0ac53b1fabcab0a5f3bd6cde26909}{cvmask\_}}()}
+\DoxyCodeLine{63         \{\}}
+
+\end{DoxyCode}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classSSAGES_1_1Method_a1464579bb8b15653ccd0ffa834e15e93}\label{classSSAGES_1_1Method_a1464579bb8b15653ccd0ffa834e15e93}} 
+\index{SSAGES::Method@{SSAGES::Method}!BuildMethod@{BuildMethod}}
+\index{BuildMethod@{BuildMethod}!SSAGES::Method@{SSAGES::Method}}
+\doxysubsubsection{\texorpdfstring{BuildMethod()}{BuildMethod()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classSSAGES_1_1Method}{Method}} $\ast$ S\+S\+A\+G\+E\+S\+::\+Method\+::\+Build\+Method (\begin{DoxyParamCaption}\item[{const Json\+::\+Value \&}]{json,  }\item[{const M\+P\+I\+\_\+\+Comm \&}]{world,  }\item[{const M\+P\+I\+\_\+\+Comm \&}]{comm,  }\item[{const std\+::string \&}]{path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Build a derived method from \mbox{\hyperlink{namespaceJSON}{J\+S\+ON}} node. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em json} & \mbox{\hyperlink{namespaceJSON}{J\+S\+ON}} Value containing all input information. \\
+\hline
+{\em world} & M\+PI global communicator. \\
+\hline
+{\em comm} & M\+PI local communicator. \\
+\hline
+{\em path} & Path for \mbox{\hyperlink{namespaceJSON}{J\+S\+ON}} path specification. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pointer to the \mbox{\hyperlink{classSSAGES_1_1Method}{Method}} built. nullptr if an unknown error occurred.
+\end{DoxyReturn}
+This function builds a registered method from a \mbox{\hyperlink{namespaceJSON}{J\+S\+ON}} node. The difference between this function and \char`\"{}\+Build\char`\"{} is that this automatically determines the appropriate derived type based on the \mbox{\hyperlink{namespaceJSON}{J\+S\+ON}} node information.
+
+\begin{DoxyNote}{Note}
+Object lifetime is the caller\textquotesingle{}s responsibility. 
+\end{DoxyNote}
+
+
+Definition at line 40 of file Method.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{44     \{}
+\DoxyCodeLine{45         \mbox{\hyperlink{classJson_1_1ObjectRequirement}{ObjectRequirement}} validator;}
+\DoxyCodeLine{46         Value schema;}
+\DoxyCodeLine{47         CharReaderBuilder rbuilder;}
+\DoxyCodeLine{48         CharReader* reader = rbuilder.newCharReader();}
+\DoxyCodeLine{49 }
+\DoxyCodeLine{50         reader-\/>parse(JsonSchema::Method.c\_str(),}
+\DoxyCodeLine{51                       JsonSchema::Method.c\_str() + JsonSchema::Method.size(),}
+\DoxyCodeLine{52                       \&schema, \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{53         validator.\mbox{\hyperlink{classJson_1_1ObjectRequirement_a4ed02ae1d612a5efba1688fcdd2df092}{Parse}}(schema, path);}
+\DoxyCodeLine{54         validator.\mbox{\hyperlink{classJson_1_1ObjectRequirement_a9ac3b920001a35bc70580035d8d802b7}{Validate}}(json, path);}
+\DoxyCodeLine{55         \textcolor{keywordflow}{if}(validator.\mbox{\hyperlink{classJson_1_1Requirement_adfaec336a9f051d6f6b9a6d7f1d97b75}{HasErrors}}())}
+\DoxyCodeLine{56             \textcolor{keywordflow}{throw} BuildException(validator.\mbox{\hyperlink{classJson_1_1Requirement_a60bc275c366eb59f192fa2e621268480}{GetErrors}}());}
+\DoxyCodeLine{57 }
+\DoxyCodeLine{58         \mbox{\hyperlink{classSSAGES_1_1Method_ad751450ecd30e8ab40024c6f5e870d30}{Method}}* method = \textcolor{keyword}{nullptr};}
+\DoxyCodeLine{59 }
+\DoxyCodeLine{60         \textcolor{keywordflow}{if}(json[\textcolor{stringliteral}{"type"}] == \textcolor{stringliteral}{"ABF"})}
+\DoxyCodeLine{61             method = \mbox{\hyperlink{classSSAGES_1_1ABF_aa131b026ddb40941889c8bde7840ac6a}{ABF::Build}}(json, world, comm, path);}
+\DoxyCodeLine{62         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(json[\textcolor{stringliteral}{"type"}] == \textcolor{stringliteral}{"ANN"})}
+\DoxyCodeLine{63             method = \mbox{\hyperlink{classSSAGES_1_1ANN_a44c8469ee6fc94c4c2be239684a9bf14}{ANN::Build}}(json, world, comm, path);}
+\DoxyCodeLine{64         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(json[\textcolor{stringliteral}{"type"}] == \textcolor{stringliteral}{"BFSMethod"})}
+\DoxyCodeLine{65             method = \mbox{\hyperlink{classSSAGES_1_1BFS_aae30a5592035f756e0290fd2b044cf5e}{BFS::Build}}(json, world, comm, path);}
+\DoxyCodeLine{66         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(json[\textcolor{stringliteral}{"type"}] == \textcolor{stringliteral}{"CFF"})}
+\DoxyCodeLine{67             method = \mbox{\hyperlink{classSSAGES_1_1CFF_a6ef7a9444289638816b44c2acee1bd68}{CFF::Build}}(json, world, comm, path);}
+\DoxyCodeLine{68         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(json[\textcolor{stringliteral}{"type"}] == \textcolor{stringliteral}{"ForwardFlux"})}
+\DoxyCodeLine{69             method = \mbox{\hyperlink{classSSAGES_1_1ForwardFlux_a2fa0e637c261108c34cd14d7e8855cab}{ForwardFlux::Build}}(json, world, comm, path);}
+\DoxyCodeLine{70         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(json[\textcolor{stringliteral}{"type"}] == \textcolor{stringliteral}{"Metadynamics"})}
+\DoxyCodeLine{71             method = \mbox{\hyperlink{classSSAGES_1_1Meta_a51bd46425cf7d5aad4205ea17e2ac3e9}{Meta::Build}}(json, world, comm, path);}
+\DoxyCodeLine{72         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(json[\textcolor{stringliteral}{"type"}] == \textcolor{stringliteral}{"Umbrella"})}
+\DoxyCodeLine{73             method = \mbox{\hyperlink{classSSAGES_1_1Umbrella_a0f8f31f884c4f2fb1551897e25401eb1}{Umbrella::Build}}(json, world, comm, path);}
+\DoxyCodeLine{74         \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(json[\textcolor{stringliteral}{"type"}] == \textcolor{stringliteral}{"String"})}
+\DoxyCodeLine{75             method = \mbox{\hyperlink{classSSAGES_1_1StringMethod_a78c2c3093a4341556b281314d5b7008b}{StringMethod::Build}}(json, world, comm, path);}
+\DoxyCodeLine{76         \textcolor{keywordflow}{else}}
+\DoxyCodeLine{77             \textcolor{keywordflow}{throw} std::invalid\_argument(path + \textcolor{stringliteral}{": Unknown method type specified."});}
+\DoxyCodeLine{78 }
+\DoxyCodeLine{79         \textcolor{comment}{// Load cv mask.}}
+\DoxyCodeLine{80         std::vector<unsigned int> cvmask;}
+\DoxyCodeLine{81         \textcolor{keywordflow}{for}(\textcolor{keyword}{auto}\& cv : json[\textcolor{stringliteral}{"cvs"}])}
+\DoxyCodeLine{82         \{}
+\DoxyCodeLine{83             cvmask.push\_back(\mbox{\hyperlink{classSSAGES_1_1CVManager_abf13a95d327b6d62f2b423bf498fd78f}{CVManager::LookupCV}}(cv, path));}
+\DoxyCodeLine{84         \}}
+\DoxyCodeLine{85 }
+\DoxyCodeLine{86         method-\/>SetCVMask(cvmask);}
+\DoxyCodeLine{87         \textcolor{keywordflow}{return} method;}
+\DoxyCodeLine{88     \}}
+
+\end{DoxyCode}
+
+
+References Json\+::\+Requirement\+::\+Get\+Errors(), Json\+::\+Requirement\+::\+Has\+Errors(), Json\+::\+Object\+Requirement\+::\+Parse(), Set\+C\+V\+Mask(), and Json\+::\+Object\+Requirement\+::\+Validate().
+
+
+
+Referenced by S\+S\+A\+G\+E\+S\+::\+Resource\+Handler\+::\+Build().
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classSSAGES_1_1Method_a1464579bb8b15653ccd0ffa834e15e93_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classSSAGES_1_1Method_a1464579bb8b15653ccd0ffa834e15e93_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classSSAGES_1_1Method_af2f33dfaa758c5cd505477f4767fb339}\label{classSSAGES_1_1Method_af2f33dfaa758c5cd505477f4767fb339}} 
+\index{SSAGES::Method@{SSAGES::Method}!PostIntegration@{PostIntegration}}
+\index{PostIntegration@{PostIntegration}!SSAGES::Method@{SSAGES::Method}}
+\doxysubsubsection{\texorpdfstring{PostIntegration()}{PostIntegration()}}
+{\footnotesize\ttfamily virtual void S\+S\+A\+G\+E\+S\+::\+Method\+::\+Post\+Integration (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classSSAGES_1_1Snapshot}{Snapshot}} $\ast$}]{snapshot,  }\item[{const class \mbox{\hyperlink{classSSAGES_1_1CVManager}{C\+V\+Manager}} \&}]{cvmanager }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [pure virtual]}}
+
+
+
+\mbox{\hyperlink{classSSAGES_1_1Method}{Method}} call post integration. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em snapshot} & Pointer to the simulation snapshot. \\
+\hline
+{\em cvmanager} & Collective variable manager.\\
+\hline
+\end{DoxyParams}
+This function will be called after each integration step. 
+
+Implements \mbox{\hyperlink{classSSAGES_1_1EventListener_a57d91801a98139b2c0beb1d6246fa314}{S\+S\+A\+G\+E\+S\+::\+Event\+Listener}}.
+
+
+
+Implemented in \mbox{\hyperlink{classSSAGES_1_1ForwardFlux_ad001fc1bc419967f3c9679cac04820f2}{S\+S\+A\+G\+E\+S\+::\+Forward\+Flux}}, \mbox{\hyperlink{classSSAGES_1_1StringMethod_a5e02e69fbe65d3064f9fe76c36be6ab5}{S\+S\+A\+G\+E\+S\+::\+String\+Method}}, \mbox{\hyperlink{classSSAGES_1_1ABF_ad2007ce8bb539072a97d4d02d268c638}{S\+S\+A\+G\+E\+S\+::\+A\+BF}}, \mbox{\hyperlink{classSSAGES_1_1BFS_a6b4639e309cbaffa82113f2577c065c4}{S\+S\+A\+G\+E\+S\+::\+B\+FS}}, \mbox{\hyperlink{classSSAGES_1_1CFF_ab9f74c2ba9de08954e95678e0cb9ce46}{S\+S\+A\+G\+E\+S\+::\+C\+FF}}, \mbox{\hyperlink{classSSAGES_1_1Meta_a352edd1cebb4731d7b2e260fbb96d3bc}{S\+S\+A\+G\+E\+S\+::\+Meta}}, \mbox{\hyperlink{classSSAGES_1_1Umbrella_a034d7e5266790eeb7a9faaa4aa8520a3}{S\+S\+A\+G\+E\+S\+::\+Umbrella}}, \mbox{\hyperlink{classSSAGES_1_1ANN_ad63d276efae1a266eb5d556bdf896a98}{S\+S\+A\+G\+E\+S\+::\+A\+NN}}, \mbox{\hyperlink{classSSAGES_1_1Swarm_aae8fbacf2c51b84a5a333387116dda0d}{S\+S\+A\+G\+E\+S\+::\+Swarm}}, \mbox{\hyperlink{classSSAGES_1_1FiniteTempString_a94561a14cc08999d4531db528fe3f2e8}{S\+S\+A\+G\+E\+S\+::\+Finite\+Temp\+String}}, \mbox{\hyperlink{classSSAGES_1_1ElasticBand_a85177e2c02fa8f767eb98664636732da}{S\+S\+A\+G\+E\+S\+::\+Elastic\+Band}}, and \mbox{\hyperlink{classSSAGES_1_1DirectForwardFlux_a5491cd537f737524f5fc295236eefb85}{S\+S\+A\+G\+E\+S\+::\+Direct\+Forward\+Flux}}.
+
+\mbox{\Hypertarget{classSSAGES_1_1Method_a7d18226669c88bc76b9b758f2d29e3c9}\label{classSSAGES_1_1Method_a7d18226669c88bc76b9b758f2d29e3c9}} 
+\index{SSAGES::Method@{SSAGES::Method}!PostSimulation@{PostSimulation}}
+\index{PostSimulation@{PostSimulation}!SSAGES::Method@{SSAGES::Method}}
+\doxysubsubsection{\texorpdfstring{PostSimulation()}{PostSimulation()}}
+{\footnotesize\ttfamily virtual void S\+S\+A\+G\+E\+S\+::\+Method\+::\+Post\+Simulation (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classSSAGES_1_1Snapshot}{Snapshot}} $\ast$}]{snapshot,  }\item[{const class \mbox{\hyperlink{classSSAGES_1_1CVManager}{C\+V\+Manager}} \&}]{cvmanager }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [pure virtual]}}
+
+
+
+\mbox{\hyperlink{classSSAGES_1_1Method}{Method}} call post simulation. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em snapshot} & Pointer to the simulation snapshot. \\
+\hline
+{\em cvmanager} & Collective variable manager.\\
+\hline
+\end{DoxyParams}
+This function will be called after the end of the simulation run. 
+
+Implements \mbox{\hyperlink{classSSAGES_1_1EventListener_a54abe889f75574dc70a7a40464a03aeb}{S\+S\+A\+G\+E\+S\+::\+Event\+Listener}}.
+
+
+
+Implemented in \mbox{\hyperlink{classSSAGES_1_1ForwardFlux_a36b935ebdb93f80be3cd8f43684662f1}{S\+S\+A\+G\+E\+S\+::\+Forward\+Flux}}, \mbox{\hyperlink{classSSAGES_1_1ABF_a02fae49d009dcf405d82144a2d123faa}{S\+S\+A\+G\+E\+S\+::\+A\+BF}}, \mbox{\hyperlink{classSSAGES_1_1BFS_a0cbb6ae5b66ff83d556ca44087f40c06}{S\+S\+A\+G\+E\+S\+::\+B\+FS}}, \mbox{\hyperlink{classSSAGES_1_1CFF_ae5912cbccb7be5d75ce666eefd4d1789}{S\+S\+A\+G\+E\+S\+::\+C\+FF}}, \mbox{\hyperlink{classSSAGES_1_1StringMethod_aa112ed059f1fdbb647ee2b788699badf}{S\+S\+A\+G\+E\+S\+::\+String\+Method}}, \mbox{\hyperlink{classSSAGES_1_1Meta_a218346ad51e6991576baffde2e82f0e0}{S\+S\+A\+G\+E\+S\+::\+Meta}}, \mbox{\hyperlink{classSSAGES_1_1Umbrella_a2a4409838cca36d7d93686dceecf8d23}{S\+S\+A\+G\+E\+S\+::\+Umbrella}}, and \mbox{\hyperlink{classSSAGES_1_1ANN_a187df3448f650a0bb3452bf7c1c12fe8}{S\+S\+A\+G\+E\+S\+::\+A\+NN}}.
+
+\mbox{\Hypertarget{classSSAGES_1_1Method_a7d840d2b5f6dbf9ec75a7909ccf13ef7}\label{classSSAGES_1_1Method_a7d840d2b5f6dbf9ec75a7909ccf13ef7}} 
+\index{SSAGES::Method@{SSAGES::Method}!PreSimulation@{PreSimulation}}
+\index{PreSimulation@{PreSimulation}!SSAGES::Method@{SSAGES::Method}}
+\doxysubsubsection{\texorpdfstring{PreSimulation()}{PreSimulation()}}
+{\footnotesize\ttfamily virtual void S\+S\+A\+G\+E\+S\+::\+Method\+::\+Pre\+Simulation (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classSSAGES_1_1Snapshot}{Snapshot}} $\ast$}]{snapshot,  }\item[{const class \mbox{\hyperlink{classSSAGES_1_1CVManager}{C\+V\+Manager}} \&}]{cvmanager }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [pure virtual]}}
+
+
+
+\mbox{\hyperlink{classSSAGES_1_1Method}{Method}} call prior to simulation initiation. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em snapshot} & Pointer to the simulation snapshot. \\
+\hline
+{\em cvmanager} & Collective variable manager.\\
+\hline
+\end{DoxyParams}
+This function will be called before the simulation is started. 
+
+Implements \mbox{\hyperlink{classSSAGES_1_1EventListener_aeb8eaa9c711bf03dddf7518f25b4df5e}{S\+S\+A\+G\+E\+S\+::\+Event\+Listener}}.
+
+
+
+Implemented in \mbox{\hyperlink{classSSAGES_1_1ForwardFlux_a3faeed11a3923e06b286ee8c51c10e86}{S\+S\+A\+G\+E\+S\+::\+Forward\+Flux}}, \mbox{\hyperlink{classSSAGES_1_1ABF_a27d1b2f056d32066d7c62a037836948c}{S\+S\+A\+G\+E\+S\+::\+A\+BF}}, \mbox{\hyperlink{classSSAGES_1_1BFS_adabd5c246d1bfd9d0bd23cfbad5130df}{S\+S\+A\+G\+E\+S\+::\+B\+FS}}, \mbox{\hyperlink{classSSAGES_1_1CFF_ad51094624daa5d1a27a75e7c15dce24a}{S\+S\+A\+G\+E\+S\+::\+C\+FF}}, \mbox{\hyperlink{classSSAGES_1_1StringMethod_ab3a248ca3236ac6b068b3f97074e4218}{S\+S\+A\+G\+E\+S\+::\+String\+Method}}, \mbox{\hyperlink{classSSAGES_1_1Meta_a9a584ea39168a9fd57f5f7cf98102480}{S\+S\+A\+G\+E\+S\+::\+Meta}}, \mbox{\hyperlink{classSSAGES_1_1Umbrella_a63da6a639c5f7aa819c53e8bcc63e5e7}{S\+S\+A\+G\+E\+S\+::\+Umbrella}}, and \mbox{\hyperlink{classSSAGES_1_1ANN_a86e2611b4516c8a465014919139aae19}{S\+S\+A\+G\+E\+S\+::\+A\+NN}}.
+
+\mbox{\Hypertarget{classSSAGES_1_1Method_a701c90bfcddeb2099b78528fea850c07}\label{classSSAGES_1_1Method_a701c90bfcddeb2099b78528fea850c07}} 
+\index{SSAGES::Method@{SSAGES::Method}!SetCVMask@{SetCVMask}}
+\index{SetCVMask@{SetCVMask}!SSAGES::Method@{SSAGES::Method}}
+\doxysubsubsection{\texorpdfstring{SetCVMask()}{SetCVMask()}}
+{\footnotesize\ttfamily void S\+S\+A\+G\+E\+S\+::\+Method\+::\+Set\+C\+V\+Mask (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ unsigned int $>$ \&}]{mask }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Sets the collective variable mask. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em mask} & Vector mask which contains the indices of which CV to include in the container.\\
+\hline
+\end{DoxyParams}
+This function sets the \mbox{\hyperlink{classSSAGES_1_1Snapshot}{Snapshot}}\textquotesingle{}s CV mask. 
+
+Definition at line 99 of file Method.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{100         \{}
+\DoxyCodeLine{101             \mbox{\hyperlink{classSSAGES_1_1Method_a24b0ac53b1fabcab0a5f3bd6cde26909}{cvmask\_}} = mask;}
+\DoxyCodeLine{102         \}}
+
+\end{DoxyCode}
+
+
+References cvmask\+\_\+.
+
+
+
+Referenced by Build\+Method().
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classSSAGES_1_1Method_a701c90bfcddeb2099b78528fea850c07_icgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/michael/development/\+S\+S\+A\+G\+E\+S/src/\+Methods/Method.\+h\item 
+/home/michael/development/\+S\+S\+A\+G\+E\+S/src/\+Methods/Method.\+cpp\end{DoxyCompactItemize}

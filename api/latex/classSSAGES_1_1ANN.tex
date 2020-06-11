@@ -1,0 +1,869 @@
+\hypertarget{classSSAGES_1_1ANN}{}\doxysection{S\+S\+A\+G\+ES\+::A\+NN Class Reference}
+\label{classSSAGES_1_1ANN}\index{SSAGES::ANN@{SSAGES::ANN}}
+
+
+Artificial Neural Network \mbox{\hyperlink{classSSAGES_1_1Method}{Method}}.  
+
+
+
+
+{\ttfamily \#include $<$A\+N\+N.\+h$>$}
+
+
+
+Inheritance diagram for S\+S\+A\+G\+ES\+::A\+NN\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=204pt]{classSSAGES_1_1ANN__inherit__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classSSAGES_1_1ANN_a95d94629470f17e50215ff378d7ecd91}{A\+NN}} (const M\+P\+I\+\_\+\+Comm \&world, const M\+P\+I\+\_\+\+Comm \&comm, const Eigen\+::\+Vector\+Xi \&topol, \mbox{\hyperlink{classSSAGES_1_1Grid}{Grid}}$<$ Eigen\+::\+Vector\+Xd $>$ $\ast$fgrid, \mbox{\hyperlink{classSSAGES_1_1Grid}{Grid}}$<$ unsigned int $>$ $\ast$hgrid, \mbox{\hyperlink{classSSAGES_1_1Grid}{Grid}}$<$ double $>$ $\ast$ugrid, const std\+::vector$<$ double $>$ \&lowerb, const std\+::vector$<$ double $>$ \&upperb, const std\+::vector$<$ double $>$ \&lowerk, const std\+::vector$<$ double $>$ \&upperk, double temperature, double weight, unsigned int nsweep)
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classSSAGES_1_1ANN_a86e2611b4516c8a465014919139aae19}{Pre\+Simulation}} (\mbox{\hyperlink{classSSAGES_1_1Snapshot}{Snapshot}} $\ast$snapshot, const class \mbox{\hyperlink{classSSAGES_1_1CVManager}{C\+V\+Manager}} \&cvmanager) override
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classSSAGES_1_1Method}{Method}} call prior to simulation initiation. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classSSAGES_1_1ANN_ad63d276efae1a266eb5d556bdf896a98}{Post\+Integration}} (\mbox{\hyperlink{classSSAGES_1_1Snapshot}{Snapshot}} $\ast$snapshot, const class \mbox{\hyperlink{classSSAGES_1_1CVManager}{C\+V\+Manager}} \&cvmanager) override
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classSSAGES_1_1Method}{Method}} call post integration. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classSSAGES_1_1ANN_a187df3448f650a0bb3452bf7c1c12fe8}{Post\+Simulation}} (\mbox{\hyperlink{classSSAGES_1_1Snapshot}{Snapshot}} $\ast$snapshot, const class \mbox{\hyperlink{classSSAGES_1_1CVManager}{C\+V\+Manager}} \&cvmanager) override
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classSSAGES_1_1Method}{Method}} call post simulation. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classSSAGES_1_1ANN_ab39aaad92da34d5d11a10287feee53b3}{Set\+Prev\+Weight}} (double h)
+\begin{DoxyCompactList}\small\item\em Set previous history weight. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classSSAGES_1_1ANN_a45bb57007aa90bf3fc04a875b190145e}{Set\+Output}} (const std\+::string \&outfile)
+\begin{DoxyCompactList}\small\item\em Set name of output file. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classSSAGES_1_1ANN_af48fa9793d0b1df77f0f2681072e76d2}{Set\+Output\+Overwrite}} (bool overwrite)
+\begin{DoxyCompactList}\small\item\em Set overwrite flag on output file. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classSSAGES_1_1ANN_a2f33ebd17115c4a8f4ed3739931f85e5}{Set\+Converge\+Iters}} (unsigned int citers)
+\begin{DoxyCompactList}\small\item\em Set number of iterations after which we turn on full weight. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classSSAGES_1_1ANN_a30e6d7784fff0ac842e67001f28bc784}{Set\+Max\+Iters}} (unsigned int iters)
+\begin{DoxyCompactList}\small\item\em Set maximum number of training iterations per sweep. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classSSAGES_1_1ANN_a05554b5f5f718f20d772fabf814e3e4c}{Set\+Min\+Loss}} (double loss)
+\begin{DoxyCompactList}\small\item\em Set minimum loss function value (should be zero for production). \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classSSAGES_1_1ANN_ab136bbdda45ca2672145e545f25c64f9}\label{classSSAGES_1_1ANN_ab136bbdda45ca2672145e545f25c64f9}} 
+void \mbox{\hyperlink{classSSAGES_1_1ANN_ab136bbdda45ca2672145e545f25c64f9}{Read\+Bias}} (const std\+::string \&, const std\+::string \&)
+\begin{DoxyCompactList}\small\item\em Load network state and bias from file. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \mbox{\hyperlink{classSSAGES_1_1ANN}{A\+NN}} $\ast$ \mbox{\hyperlink{classSSAGES_1_1ANN_a44c8469ee6fc94c4c2be239684a9bf14}{Build}} (const Json\+::\+Value \&json, const M\+P\+I\+\_\+\+Comm \&world, const M\+P\+I\+\_\+\+Comm \&comm, const std\+::string \&path)
+\begin{DoxyCompactList}\small\item\em Build a derived method from \mbox{\hyperlink{namespaceJSON}{J\+S\+ON}} node. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classSSAGES_1_1ANN_a7091cb356fa05bc0b21a4e37144fb0b7}\label{classSSAGES_1_1ANN_a7091cb356fa05bc0b21a4e37144fb0b7}} 
+void \mbox{\hyperlink{classSSAGES_1_1ANN_a7091cb356fa05bc0b21a4e37144fb0b7}{Train\+Network}} ()
+\begin{DoxyCompactList}\small\item\em Trains the neural network. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classSSAGES_1_1ANN_acfdfae96fc9c752323828e2c222ef006}\label{classSSAGES_1_1ANN_acfdfae96fc9c752323828e2c222ef006}} 
+void \mbox{\hyperlink{classSSAGES_1_1ANN_acfdfae96fc9c752323828e2c222ef006}{Write\+Bias}} ()
+\begin{DoxyCompactList}\small\item\em Writes out the bias to file. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classSSAGES_1_1ANN_acde42146cf0a2e50851da4fe74b7d14f}\label{classSSAGES_1_1ANN_acde42146cf0a2e50851da4fe74b7d14f}} 
+Eigen\+::\+Vector\+Xi \mbox{\hyperlink{classSSAGES_1_1ANN_acde42146cf0a2e50851da4fe74b7d14f}{topol\+\_\+}}
+\begin{DoxyCompactList}\small\item\em Neural network topology. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classSSAGES_1_1ANN_ac85a0999687739a805c0782e7421f2b1}\label{classSSAGES_1_1ANN_ac85a0999687739a805c0782e7421f2b1}} 
+unsigned int \mbox{\hyperlink{classSSAGES_1_1ANN_ac85a0999687739a805c0782e7421f2b1}{citers\+\_\+}}
+\begin{DoxyCompactList}\small\item\em Number of iterations after which we turn on full weight. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classSSAGES_1_1ANN_a8df5bc974f48135e0add44d77b91182a}\label{classSSAGES_1_1ANN_a8df5bc974f48135e0add44d77b91182a}} 
+nnet\+::neural\+\_\+net \mbox{\hyperlink{classSSAGES_1_1ANN_a8df5bc974f48135e0add44d77b91182a}{net\+\_\+}}
+\begin{DoxyCompactList}\small\item\em Neural network. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classSSAGES_1_1ANN_a8b12b03e1b6585461b83264c9adf6e30}\label{classSSAGES_1_1ANN_a8b12b03e1b6585461b83264c9adf6e30}} 
+\mbox{\hyperlink{classSSAGES_1_1Grid}{Grid}}$<$ Eigen\+::\+Vector\+Xd $>$ $\ast$ \mbox{\hyperlink{classSSAGES_1_1ANN_a8b12b03e1b6585461b83264c9adf6e30}{fgrid\+\_\+}}
+\begin{DoxyCompactList}\small\item\em Force grid. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classSSAGES_1_1ANN_a1ec3000737e404aedce966587dc538ba}\label{classSSAGES_1_1ANN_a1ec3000737e404aedce966587dc538ba}} 
+\mbox{\hyperlink{classSSAGES_1_1Grid}{Grid}}$<$ unsigned int $>$ $\ast$ \mbox{\hyperlink{classSSAGES_1_1ANN_a1ec3000737e404aedce966587dc538ba}{hgrid\+\_\+}}
+\begin{DoxyCompactList}\small\item\em Histogram grid. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classSSAGES_1_1ANN_ae925218647bd62eccf8d2983a87baad8}\label{classSSAGES_1_1ANN_ae925218647bd62eccf8d2983a87baad8}} 
+\mbox{\hyperlink{classSSAGES_1_1Grid}{Grid}}$<$ double $>$ $\ast$ \mbox{\hyperlink{classSSAGES_1_1ANN_ae925218647bd62eccf8d2983a87baad8}{ugrid\+\_\+}}
+\begin{DoxyCompactList}\small\item\em Unbiased histogram grid. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classSSAGES_1_1ANN_ad799d7e14579192477a450338f1cf330}\label{classSSAGES_1_1ANN_ad799d7e14579192477a450338f1cf330}} 
+std\+::string \mbox{\hyperlink{classSSAGES_1_1ANN_ad799d7e14579192477a450338f1cf330}{outfile\+\_\+}}
+\begin{DoxyCompactList}\small\item\em Output filename. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classSSAGES_1_1ANN_a6e5bc5f5f6a8e2cf2be0f715099eb266}\label{classSSAGES_1_1ANN_a6e5bc5f5f6a8e2cf2be0f715099eb266}} 
+bool \mbox{\hyperlink{classSSAGES_1_1ANN_a6e5bc5f5f6a8e2cf2be0f715099eb266}{preloaded\+\_\+}}
+\begin{DoxyCompactList}\small\item\em Is the network preloaded? \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classSSAGES_1_1ANN_ae928d6e1f11b3a9aca40c7a473d4df91}\label{classSSAGES_1_1ANN_ae928d6e1f11b3a9aca40c7a473d4df91}} 
+bool \mbox{\hyperlink{classSSAGES_1_1ANN_ae928d6e1f11b3a9aca40c7a473d4df91}{overwrite\+\_\+}}
+\begin{DoxyCompactList}\small\item\em Overwrite outputs? \end{DoxyCompactList}\end{DoxyCompactItemize}
+\textbf{ }\par
+\begin{DoxyCompactItemize}
+\item 
+unsigned int \mbox{\hyperlink{classSSAGES_1_1ANN_a87307160193744fa3c445c8271c8678b}{sweep\+\_\+}}
+\item 
+\mbox{\Hypertarget{classSSAGES_1_1ANN_a73f6776ff6c4656c5f910f113d558119}\label{classSSAGES_1_1ANN_a73f6776ff6c4656c5f910f113d558119}} 
+unsigned int {\bfseries nsweep\+\_\+}
+\end{DoxyCompactItemize}
+
+\textbf{ }\par
+\begin{DoxyCompactItemize}
+\item 
+double \mbox{\hyperlink{classSSAGES_1_1ANN_aa46e3420f46726cfa7766eaba5d53246}{pweight\+\_\+}}
+\item 
+\mbox{\Hypertarget{classSSAGES_1_1ANN_abd7f3ff61f4e254881b3e26ea0ffab7a}\label{classSSAGES_1_1ANN_abd7f3ff61f4e254881b3e26ea0ffab7a}} 
+double {\bfseries weight\+\_\+}
+\end{DoxyCompactItemize}
+
+\textbf{ }\par
+\begin{DoxyCompactItemize}
+\item 
+double \mbox{\hyperlink{classSSAGES_1_1ANN_a1ef25a7766497d57498b194eb3d31b42}{temp\+\_\+}}
+\item 
+\mbox{\Hypertarget{classSSAGES_1_1ANN_a29c406c4356896c11df23a003e38defb}\label{classSSAGES_1_1ANN_a29c406c4356896c11df23a003e38defb}} 
+double {\bfseries kbt\+\_\+}
+\end{DoxyCompactItemize}
+
+\textbf{ }\par
+\begin{DoxyCompactItemize}
+\item 
+Eigen\+::\+Matrix\+Xd \mbox{\hyperlink{classSSAGES_1_1ANN_a5649c47eadcb28453c506587f83260f0}{hist\+\_\+}}
+\item 
+\mbox{\Hypertarget{classSSAGES_1_1ANN_aaeaa3b34c92b1b85166e8bee495363a3}\label{classSSAGES_1_1ANN_aaeaa3b34c92b1b85166e8bee495363a3}} 
+Eigen\+::\+Matrix\+Xd {\bfseries bias\+\_\+}
+\item 
+\mbox{\Hypertarget{classSSAGES_1_1ANN_a4b56cf6b17dbcd6c85b15ec84e973d35}\label{classSSAGES_1_1ANN_a4b56cf6b17dbcd6c85b15ec84e973d35}} 
+Eigen\+::\+Matrix\+Xd {\bfseries rbias\+\_\+}
+\end{DoxyCompactItemize}
+
+\textbf{ }\par
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ double $>$ \mbox{\hyperlink{classSSAGES_1_1ANN_a022a5d90efc1c7d77f243bc6a30c2757}{lowerb\+\_\+}}
+\item 
+\mbox{\Hypertarget{classSSAGES_1_1ANN_a9d66a5b43d97785dc138558a7e6d5f8a}\label{classSSAGES_1_1ANN_a9d66a5b43d97785dc138558a7e6d5f8a}} 
+std\+::vector$<$ double $>$ {\bfseries upperb\+\_\+}
+\end{DoxyCompactItemize}
+
+\textbf{ }\par
+\begin{DoxyCompactItemize}
+\item 
+std\+::vector$<$ double $>$ \mbox{\hyperlink{classSSAGES_1_1ANN_a2d8da6902233c66212aecfe108aa08f7}{lowerk\+\_\+}}
+\item 
+\mbox{\Hypertarget{classSSAGES_1_1ANN_ab2dff49ae14467657ed47781a7afc2c5}\label{classSSAGES_1_1ANN_ab2dff49ae14467657ed47781a7afc2c5}} 
+std\+::vector$<$ double $>$ {\bfseries upperk\+\_\+}
+\end{DoxyCompactItemize}
+
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Artificial Neural Network \mbox{\hyperlink{classSSAGES_1_1Method}{Method}}. 
+
+Implementation of the Artificial Neural Network \mbox{\hyperlink{classSSAGES_1_1Method}{Method}} based on \cite{SIDKY2018104111} 
+
+Definition at line 35 of file A\+N\+N.\+h.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classSSAGES_1_1ANN_a95d94629470f17e50215ff378d7ecd91}\label{classSSAGES_1_1ANN_a95d94629470f17e50215ff378d7ecd91}} 
+\index{SSAGES::ANN@{SSAGES::ANN}!ANN@{ANN}}
+\index{ANN@{ANN}!SSAGES::ANN@{SSAGES::ANN}}
+\doxysubsubsection{\texorpdfstring{ANN()}{ANN()}}
+{\footnotesize\ttfamily S\+S\+A\+G\+E\+S\+::\+A\+N\+N\+::\+A\+NN (\begin{DoxyParamCaption}\item[{const M\+P\+I\+\_\+\+Comm \&}]{world,  }\item[{const M\+P\+I\+\_\+\+Comm \&}]{comm,  }\item[{const Eigen\+::\+Vector\+Xi \&}]{topol,  }\item[{\mbox{\hyperlink{classSSAGES_1_1Grid}{Grid}}$<$ Eigen\+::\+Vector\+Xd $>$ $\ast$}]{fgrid,  }\item[{\mbox{\hyperlink{classSSAGES_1_1Grid}{Grid}}$<$ unsigned int $>$ $\ast$}]{hgrid,  }\item[{\mbox{\hyperlink{classSSAGES_1_1Grid}{Grid}}$<$ double $>$ $\ast$}]{ugrid,  }\item[{const std\+::vector$<$ double $>$ \&}]{lowerb,  }\item[{const std\+::vector$<$ double $>$ \&}]{upperb,  }\item[{const std\+::vector$<$ double $>$ \&}]{lowerk,  }\item[{const std\+::vector$<$ double $>$ \&}]{upperk,  }\item[{double}]{temperature,  }\item[{double}]{weight,  }\item[{unsigned int}]{nsweep }\end{DoxyParamCaption})}
+
+
+
+Constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em world} & M\+PI global communicator. \\
+\hline
+{\em comm} & M\+PI local communicator. \\
+\hline
+{\em topol} & Topology of network. \\
+\hline
+{\em fgrid} & \mbox{\hyperlink{classSSAGES_1_1Grid}{Grid}} containing biasing forces. \\
+\hline
+{\em hgrid} & \mbox{\hyperlink{classSSAGES_1_1Grid}{Grid}} containing histogram. \\
+\hline
+{\em ugrid} & \mbox{\hyperlink{classSSAGES_1_1Grid}{Grid}} containing unbiased histogram. \\
+\hline
+{\em lowerb} & Lower bounds for C\+Vs. \\
+\hline
+{\em upperb} & Upper bounds for C\+Vs. \\
+\hline
+{\em lowerk} & Lower bound restraints for C\+Vs. \\
+\hline
+{\em upperk} & Upper bound restraints for C\+Vs. \\
+\hline
+{\em temperature} & Temperature of the simulation. \\
+\hline
+{\em weight} & Relative weight of the statistics in sweep. \\
+\hline
+{\em nsweep} & Number of iterations in the sweep.\\
+\hline
+\end{DoxyParams}
+Constructs an instance of Artificial Neural Network method. 
+
+Definition at line 34 of file A\+N\+N.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{46                                   :}
+\DoxyCodeLine{47     \mbox{\hyperlink{classSSAGES_1_1Method_ad751450ecd30e8ab40024c6f5e870d30}{Method}}(1, world, comm), \mbox{\hyperlink{classSSAGES_1_1ANN_acde42146cf0a2e50851da4fe74b7d14f}{topol\_}}(topol), \mbox{\hyperlink{classSSAGES_1_1ANN_a87307160193744fa3c445c8271c8678b}{sweep\_}}(0), nsweep\_(nsweep),}
+\DoxyCodeLine{48     \mbox{\hyperlink{classSSAGES_1_1ANN_ac85a0999687739a805c0782e7421f2b1}{citers\_}}(0), \mbox{\hyperlink{classSSAGES_1_1ANN_a8df5bc974f48135e0add44d77b91182a}{net\_}}(topol), \mbox{\hyperlink{classSSAGES_1_1ANN_aa46e3420f46726cfa7766eaba5d53246}{pweight\_}}(1.), weight\_(weight), \mbox{\hyperlink{classSSAGES_1_1ANN_a1ef25a7766497d57498b194eb3d31b42}{temp\_}}(temperature),}
+\DoxyCodeLine{49     kbt\_(0), \mbox{\hyperlink{classSSAGES_1_1ANN_a8b12b03e1b6585461b83264c9adf6e30}{fgrid\_}}(fgrid), \mbox{\hyperlink{classSSAGES_1_1ANN_a1ec3000737e404aedce966587dc538ba}{hgrid\_}}(hgrid), \mbox{\hyperlink{classSSAGES_1_1ANN_ae925218647bd62eccf8d2983a87baad8}{ugrid\_}}(ugrid), \mbox{\hyperlink{classSSAGES_1_1ANN_a5649c47eadcb28453c506587f83260f0}{hist\_}}(), bias\_(),}
+\DoxyCodeLine{50     \mbox{\hyperlink{classSSAGES_1_1ANN_a022a5d90efc1c7d77f243bc6a30c2757}{lowerb\_}}(lowerb), upperb\_(upperb), \mbox{\hyperlink{classSSAGES_1_1ANN_a2d8da6902233c66212aecfe108aa08f7}{lowerk\_}}(lowerk), upperk\_(upperk),}
+\DoxyCodeLine{51     \mbox{\hyperlink{classSSAGES_1_1ANN_ad799d7e14579192477a450338f1cf330}{outfile\_}}(\textcolor{stringliteral}{"ann.out"}), \mbox{\hyperlink{classSSAGES_1_1ANN_a6e5bc5f5f6a8e2cf2be0f715099eb266}{preloaded\_}}(\textcolor{keyword}{false}), \mbox{\hyperlink{classSSAGES_1_1ANN_ae928d6e1f11b3a9aca40c7a473d4df91}{overwrite\_}}(\textcolor{keyword}{true})}
+\DoxyCodeLine{52     \{}
+\DoxyCodeLine{53         \textcolor{comment}{// Create histogram grid matrix.}}
+\DoxyCodeLine{54         \mbox{\hyperlink{classSSAGES_1_1ANN_a5649c47eadcb28453c506587f83260f0}{hist\_}}.resize(\mbox{\hyperlink{classSSAGES_1_1ANN_a1ec3000737e404aedce966587dc538ba}{hgrid\_}}-\/>\mbox{\hyperlink{classSSAGES_1_1GridBase_a4f8abb752ae6ec51ebcf24b599bf4896}{size}}(), \mbox{\hyperlink{classSSAGES_1_1ANN_a1ec3000737e404aedce966587dc538ba}{hgrid\_}}-\/>\mbox{\hyperlink{classSSAGES_1_1GridBase_a72f98ef47da691b00823d612efbd46b8}{GetDimension}}());}
+\DoxyCodeLine{55 }
+\DoxyCodeLine{56         \textcolor{comment}{// Fill it up.}}
+\DoxyCodeLine{57         \textcolor{keywordtype}{size\_t} i = 0;}
+\DoxyCodeLine{58         \textcolor{keywordflow}{for}(\textcolor{keyword}{auto} it = \mbox{\hyperlink{classSSAGES_1_1ANN_a1ec3000737e404aedce966587dc538ba}{hgrid\_}}-\/>\mbox{\hyperlink{classSSAGES_1_1Grid_a709374b3cadf320347604077a2e45e5b}{begin}}(); it != \mbox{\hyperlink{classSSAGES_1_1ANN_a1ec3000737e404aedce966587dc538ba}{hgrid\_}}-\/>\mbox{\hyperlink{classSSAGES_1_1Grid_ac4fcc9f0cd61476ce4fd880c768d9694}{end}}(); ++it)}
+\DoxyCodeLine{59         \{}
+\DoxyCodeLine{60             \textcolor{keyword}{auto} coord = it.coordinates();}
+\DoxyCodeLine{61             \textcolor{keywordflow}{for}(\textcolor{keywordtype}{size\_t} j = 0; j < coord.size(); ++j)}
+\DoxyCodeLine{62                 \mbox{\hyperlink{classSSAGES_1_1ANN_a5649c47eadcb28453c506587f83260f0}{hist\_}}(i, j) = coord[j];}
+\DoxyCodeLine{63             ++i;}
+\DoxyCodeLine{64         \}}
+\DoxyCodeLine{65 }
+\DoxyCodeLine{66         \textcolor{comment}{// Initialize restraint reweight vector.}}
+\DoxyCodeLine{67         rbias\_.resize(\mbox{\hyperlink{classSSAGES_1_1ANN_a1ec3000737e404aedce966587dc538ba}{hgrid\_}}-\/>\mbox{\hyperlink{classSSAGES_1_1GridBase_a4f8abb752ae6ec51ebcf24b599bf4896}{size}}(), \mbox{\hyperlink{classSSAGES_1_1ANN_a1ec3000737e404aedce966587dc538ba}{hgrid\_}}-\/>\mbox{\hyperlink{classSSAGES_1_1GridBase_a72f98ef47da691b00823d612efbd46b8}{GetDimension}}());}
+\DoxyCodeLine{68         rbias\_.fill(0);}
+\DoxyCodeLine{69 }
+\DoxyCodeLine{70         \textcolor{comment}{// Initialize FES vector.}}
+\DoxyCodeLine{71         bias\_.resize(\mbox{\hyperlink{classSSAGES_1_1ANN_a1ec3000737e404aedce966587dc538ba}{hgrid\_}}-\/>\mbox{\hyperlink{classSSAGES_1_1GridBase_a4f8abb752ae6ec51ebcf24b599bf4896}{size}}(), 1);}
+\DoxyCodeLine{72         \mbox{\hyperlink{classSSAGES_1_1ANN_a8df5bc974f48135e0add44d77b91182a}{net\_}}.forward\_pass(\mbox{\hyperlink{classSSAGES_1_1ANN_a5649c47eadcb28453c506587f83260f0}{hist\_}});}
+\DoxyCodeLine{73         bias\_.array() = \mbox{\hyperlink{classSSAGES_1_1ANN_a8df5bc974f48135e0add44d77b91182a}{net\_}}.get\_activation().col(0).array();}
+\DoxyCodeLine{74     \}}
+
+\end{DoxyCode}
+
+
+References S\+S\+A\+G\+E\+S\+::\+Grid$<$ T $>$\+::begin(), S\+S\+A\+G\+E\+S\+::\+Grid$<$ T $>$\+::end(), S\+S\+A\+G\+E\+S\+::\+Grid\+Base$<$ T $>$\+::\+Get\+Dimension(), hgrid\+\_\+, hist\+\_\+, net\+\_\+, and S\+S\+A\+G\+E\+S\+::\+Grid\+Base$<$ T $>$\+::size().
+
+
+
+Referenced by Build().
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classSSAGES_1_1ANN_a95d94629470f17e50215ff378d7ecd91_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=342pt]{classSSAGES_1_1ANN_a95d94629470f17e50215ff378d7ecd91_icgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classSSAGES_1_1ANN_a44c8469ee6fc94c4c2be239684a9bf14}\label{classSSAGES_1_1ANN_a44c8469ee6fc94c4c2be239684a9bf14}} 
+\index{SSAGES::ANN@{SSAGES::ANN}!Build@{Build}}
+\index{Build@{Build}!SSAGES::ANN@{SSAGES::ANN}}
+\doxysubsubsection{\texorpdfstring{Build()}{Build()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classSSAGES_1_1ANN}{A\+NN}} $\ast$ S\+S\+A\+G\+E\+S\+::\+A\+N\+N\+::\+Build (\begin{DoxyParamCaption}\item[{const Json\+::\+Value \&}]{json,  }\item[{const M\+P\+I\+\_\+\+Comm \&}]{world,  }\item[{const M\+P\+I\+\_\+\+Comm \&}]{comm,  }\item[{const std\+::string \&}]{path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+Build a derived method from \mbox{\hyperlink{namespaceJSON}{J\+S\+ON}} node. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em json} & \mbox{\hyperlink{namespaceJSON}{J\+S\+ON}} Value containing all input information. \\
+\hline
+{\em world} & M\+PI global communicator. \\
+\hline
+{\em comm} & M\+PI local communicator. \\
+\hline
+{\em path} & Path for \mbox{\hyperlink{namespaceJSON}{J\+S\+ON}} path specification. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pointer to the \mbox{\hyperlink{classSSAGES_1_1Method}{Method}} built. nullptr if an unknown error occurred.
+\end{DoxyReturn}
+This function builds a registered method from a \mbox{\hyperlink{namespaceJSON}{J\+S\+ON}} node. The difference between this function and \char`\"{}\+Build\char`\"{} is that this automatically determines the appropriate derived type based on the \mbox{\hyperlink{namespaceJSON}{J\+S\+ON}} node information.
+
+\begin{DoxyNote}{Note}
+Object lifetime is the caller\textquotesingle{}s responsibility. 
+\end{DoxyNote}
+
+
+Definition at line 287 of file A\+N\+N.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{292     \{}
+\DoxyCodeLine{293         \mbox{\hyperlink{classJson_1_1ObjectRequirement}{ObjectRequirement}} validator;}
+\DoxyCodeLine{294         Value schema;}
+\DoxyCodeLine{295         CharReaderBuilder rbuilder;}
+\DoxyCodeLine{296         CharReader* reader = rbuilder.newCharReader();}
+\DoxyCodeLine{297 }
+\DoxyCodeLine{298         reader-\/>parse(JsonSchema::ANNMethod.c\_str(),}
+\DoxyCodeLine{299                       JsonSchema::ANNMethod.c\_str() + JsonSchema::ANNMethod.size(),}
+\DoxyCodeLine{300                       \&schema, \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{301         validator.\mbox{\hyperlink{classJson_1_1ObjectRequirement_a4ed02ae1d612a5efba1688fcdd2df092}{Parse}}(schema, path);}
+\DoxyCodeLine{302 }
+\DoxyCodeLine{303         \textcolor{comment}{// Validate inputs.}}
+\DoxyCodeLine{304         validator.\mbox{\hyperlink{classJson_1_1ObjectRequirement_a9ac3b920001a35bc70580035d8d802b7}{Validate}}(json, path);}
+\DoxyCodeLine{305         \textcolor{keywordflow}{if}(validator.\mbox{\hyperlink{classJson_1_1Requirement_adfaec336a9f051d6f6b9a6d7f1d97b75}{HasErrors}}())}
+\DoxyCodeLine{306             \textcolor{keywordflow}{throw} BuildException(validator.\mbox{\hyperlink{classJson_1_1Requirement_a60bc275c366eb59f192fa2e621268480}{GetErrors}}());}
+\DoxyCodeLine{307         }
+\DoxyCodeLine{308         \textcolor{comment}{// Grid. }}
+\DoxyCodeLine{309         \textcolor{keyword}{auto}* fgrid = \mbox{\hyperlink{classSSAGES_1_1Grid_a24d2373042debae156618906637e819c}{Grid<VectorXd>::BuildGrid}}(json.get(\textcolor{stringliteral}{"grid"}, Json::Value()));}
+\DoxyCodeLine{310         \textcolor{keyword}{auto}* hgrid = \mbox{\hyperlink{classSSAGES_1_1Grid_a24d2373042debae156618906637e819c}{Grid<unsigned int>::BuildGrid}}(json.get(\textcolor{stringliteral}{"grid"}, Json::Value()));}
+\DoxyCodeLine{311         \textcolor{keyword}{auto}* ugrid = \mbox{\hyperlink{classSSAGES_1_1Grid_a24d2373042debae156618906637e819c}{Grid<double>::BuildGrid}}(json.get(\textcolor{stringliteral}{"grid"}, Json::Value()));}
+\DoxyCodeLine{312 }
+\DoxyCodeLine{313         \textcolor{comment}{// Topology. }}
+\DoxyCodeLine{314         \textcolor{keyword}{auto} nlayers = json[\textcolor{stringliteral}{"topology"}].size() + 2;}
+\DoxyCodeLine{315         VectorXi topol(nlayers);}
+\DoxyCodeLine{316         topol[0] = fgrid-\/>GetDimension();}
+\DoxyCodeLine{317         topol[nlayers-\/1] = 1;}
+\DoxyCodeLine{318         \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i = 0; i < static\_cast<int>(json[\textcolor{stringliteral}{"topology"}].size()); ++i)}
+\DoxyCodeLine{319             topol[i+1] = json[\textcolor{stringliteral}{"topology"}][i].asInt();}
+\DoxyCodeLine{320         }
+\DoxyCodeLine{321         \textcolor{keyword}{auto} weight = json.get(\textcolor{stringliteral}{"weight"}, 1.).asDouble();}
+\DoxyCodeLine{322         \textcolor{keyword}{auto} temp = json[\textcolor{stringliteral}{"temperature"}].asDouble();}
+\DoxyCodeLine{323         \textcolor{keyword}{auto} nsweep = json[\textcolor{stringliteral}{"nsweep"}].asUInt();}
+\DoxyCodeLine{324 }
+\DoxyCodeLine{325         \textcolor{comment}{// Assume all vectors are the same size. }}
+\DoxyCodeLine{326         std::vector<double> lowerb, upperb, lowerk, upperk;}
+\DoxyCodeLine{327         \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i = 0; i < static\_cast<int>(json[\textcolor{stringliteral}{"lower\_bound\_restraints"}].size()); ++i)}
+\DoxyCodeLine{328         \{}
+\DoxyCodeLine{329             lowerk.push\_back(json[\textcolor{stringliteral}{"lower\_bound\_restraints"}][i].asDouble());}
+\DoxyCodeLine{330             upperk.push\_back(json[\textcolor{stringliteral}{"upper\_bound\_restraints"}][i].asDouble());}
+\DoxyCodeLine{331             lowerb.push\_back(json[\textcolor{stringliteral}{"lower\_bounds"}][i].asDouble());}
+\DoxyCodeLine{332             upperb.push\_back(json[\textcolor{stringliteral}{"upper\_bounds"}][i].asDouble());}
+\DoxyCodeLine{333         \}}
+\DoxyCodeLine{334 }
+\DoxyCodeLine{335         \textcolor{keyword}{auto}* m = \textcolor{keyword}{new} \mbox{\hyperlink{classSSAGES_1_1ANN_a95d94629470f17e50215ff378d7ecd91}{ANN}}(world, comm, topol, fgrid, hgrid, ugrid, lowerb, upperb, lowerk, upperk, temp, weight, nsweep);}
+\DoxyCodeLine{336 }
+\DoxyCodeLine{337         \textcolor{comment}{// Set optional params.}}
+\DoxyCodeLine{338         m-\/>SetPrevWeight(json.get(\textcolor{stringliteral}{"prev\_weight"}, 1).asDouble());}
+\DoxyCodeLine{339         m-\/>SetOutput(json.get(\textcolor{stringliteral}{"output\_file"}, \textcolor{stringliteral}{"ann.out"}).asString());}
+\DoxyCodeLine{340         m-\/>SetOutputOverwrite( json.get(\textcolor{stringliteral}{"overwrite\_output"}, \textcolor{keyword}{true}).asBool());}
+\DoxyCodeLine{341         m-\/>SetConvergeIters(json.get(\textcolor{stringliteral}{"converge\_iters"}, 0).asUInt());}
+\DoxyCodeLine{342         m-\/>SetMaxIters(json.get(\textcolor{stringliteral}{"max\_iters"}, 1000).asUInt());}
+\DoxyCodeLine{343         m-\/>SetMinLoss(json.get(\textcolor{stringliteral}{"min\_loss"}, 0).asDouble());}
+\DoxyCodeLine{344 }
+\DoxyCodeLine{345         \textcolor{keywordflow}{if}(json.isMember(\textcolor{stringliteral}{"net\_state"}) \&\& json.isMember(\textcolor{stringliteral}{"load\_bias"}))}
+\DoxyCodeLine{346             m-\/>ReadBias(json[\textcolor{stringliteral}{"net\_state"}].asString(), json[\textcolor{stringliteral}{"load\_bias"}].asString());}
+\DoxyCodeLine{347 }
+\DoxyCodeLine{348         \textcolor{keywordflow}{return} m;}
+\DoxyCodeLine{349     \}}
+
+\end{DoxyCode}
+
+
+References A\+N\+N(), S\+S\+A\+G\+E\+S\+::\+Grid$<$ T $>$\+::\+Build\+Grid(), Json\+::\+Requirement\+::\+Get\+Errors(), Json\+::\+Requirement\+::\+Has\+Errors(), Json\+::\+Object\+Requirement\+::\+Parse(), and Json\+::\+Object\+Requirement\+::\+Validate().
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classSSAGES_1_1ANN_a44c8469ee6fc94c4c2be239684a9bf14_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classSSAGES_1_1ANN_ad63d276efae1a266eb5d556bdf896a98}\label{classSSAGES_1_1ANN_ad63d276efae1a266eb5d556bdf896a98}} 
+\index{SSAGES::ANN@{SSAGES::ANN}!PostIntegration@{PostIntegration}}
+\index{PostIntegration@{PostIntegration}!SSAGES::ANN@{SSAGES::ANN}}
+\doxysubsubsection{\texorpdfstring{PostIntegration()}{PostIntegration()}}
+{\footnotesize\ttfamily void S\+S\+A\+G\+E\+S\+::\+A\+N\+N\+::\+Post\+Integration (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classSSAGES_1_1Snapshot}{Snapshot}} $\ast$}]{snapshot,  }\item[{const class \mbox{\hyperlink{classSSAGES_1_1CVManager}{C\+V\+Manager}} \&}]{cvmanager }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{classSSAGES_1_1Method}{Method}} call post integration. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em snapshot} & Pointer to the simulation snapshot. \\
+\hline
+{\em cvmanager} & Collective variable manager.\\
+\hline
+\end{DoxyParams}
+This function will be called after each integration step. 
+
+Implements \mbox{\hyperlink{classSSAGES_1_1Method_af2f33dfaa758c5cd505477f4767fb339}{S\+S\+A\+G\+E\+S\+::\+Method}}.
+
+
+
+Definition at line 113 of file A\+N\+N.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{114     \{}
+\DoxyCodeLine{115         \textcolor{keywordflow}{if}(snapshot-\/>GetIteration() \&\& snapshot-\/>GetIteration() \% nsweep\_ == 0)}
+\DoxyCodeLine{116         \{}
+\DoxyCodeLine{117             \textcolor{comment}{// Switch to full blast.}}
+\DoxyCodeLine{118             \textcolor{keywordflow}{if}(\mbox{\hyperlink{classSSAGES_1_1ANN_ac85a0999687739a805c0782e7421f2b1}{citers\_}} \&\& snapshot-\/>GetIteration() > \mbox{\hyperlink{classSSAGES_1_1ANN_ac85a0999687739a805c0782e7421f2b1}{citers\_}})}
+\DoxyCodeLine{119                 \mbox{\hyperlink{classSSAGES_1_1ANN_aa46e3420f46726cfa7766eaba5d53246}{pweight\_}} = 1.0;}
+\DoxyCodeLine{120             }
+\DoxyCodeLine{121             \mbox{\hyperlink{classSSAGES_1_1ANN_a7091cb356fa05bc0b21a4e37144fb0b7}{TrainNetwork}}();}
+\DoxyCodeLine{122             \textcolor{keywordflow}{if}(\mbox{\hyperlink{classSSAGES_1_1EventListener_af9666daacfb047c1dd279ea339524d07}{IsMasterRank}}(\mbox{\hyperlink{classSSAGES_1_1Method_a8471b11097a1018a9635bc578bf22f61}{world\_}}))}
+\DoxyCodeLine{123                 \mbox{\hyperlink{classSSAGES_1_1ANN_acfdfae96fc9c752323828e2c222ef006}{WriteBias}}();}
+\DoxyCodeLine{124         \}}
+\DoxyCodeLine{125 }
+\DoxyCodeLine{126         \textcolor{comment}{// Get CV vals.}}
+\DoxyCodeLine{127         \textcolor{keyword}{auto} cvs = cvmanager.GetCVs(\mbox{\hyperlink{classSSAGES_1_1Method_a24b0ac53b1fabcab0a5f3bd6cde26909}{cvmask\_}});}
+\DoxyCodeLine{128         \textcolor{keyword}{auto} n = cvs.size();}
+\DoxyCodeLine{129 }
+\DoxyCodeLine{130         \textcolor{comment}{// Determine if we are in bounds.}}
+\DoxyCodeLine{131         RowVectorXd vec(n);}
+\DoxyCodeLine{132         std::vector<double> val(n);}
+\DoxyCodeLine{133         \textcolor{keywordtype}{bool} inbounds = \textcolor{keyword}{true};}
+\DoxyCodeLine{134         \textcolor{keywordflow}{for}(\textcolor{keywordtype}{size\_t} i = 0; i < n; ++i)}
+\DoxyCodeLine{135         \{}
+\DoxyCodeLine{136             val[i] = cvs[i]-\/>GetValue();}
+\DoxyCodeLine{137             vec[i] = cvs[i]-\/>GetValue();}
+\DoxyCodeLine{138             \textcolor{keywordflow}{if}(val[i] < \mbox{\hyperlink{classSSAGES_1_1ANN_a1ec3000737e404aedce966587dc538ba}{hgrid\_}}-\/>\mbox{\hyperlink{classSSAGES_1_1GridBase_a2270a9233a9dc2d341e8ab88ce6655c9}{GetLower}}(i) || val[i] > \mbox{\hyperlink{classSSAGES_1_1ANN_a1ec3000737e404aedce966587dc538ba}{hgrid\_}}-\/>\mbox{\hyperlink{classSSAGES_1_1GridBase_a875feace8fff4743b103147c4193eca0}{GetUpper}}(i))}
+\DoxyCodeLine{139                 inbounds = \textcolor{keyword}{false};}
+\DoxyCodeLine{140         \}}
+\DoxyCodeLine{141 }
+\DoxyCodeLine{142         \textcolor{comment}{// If in bounds, bias. }}
+\DoxyCodeLine{143         VectorXd derivatives = VectorXd::Zero(n);}
+\DoxyCodeLine{144         \textcolor{keywordflow}{if}(inbounds)}
+\DoxyCodeLine{145         \{}
+\DoxyCodeLine{146             \textcolor{comment}{// Record histogram hit and get gradient. }}
+\DoxyCodeLine{147             \textcolor{comment}{// Only record hits on master processes since we will }}
+\DoxyCodeLine{148             \textcolor{comment}{// reduce later. }}
+\DoxyCodeLine{149             \textcolor{keywordflow}{if}(\mbox{\hyperlink{classSSAGES_1_1EventListener_af9666daacfb047c1dd279ea339524d07}{IsMasterRank}}(\mbox{\hyperlink{classSSAGES_1_1Method_a1118666d61dbf3bc7606e3b61aa3a460}{comm\_}}))}
+\DoxyCodeLine{150                 \mbox{\hyperlink{classSSAGES_1_1ANN_a1ec3000737e404aedce966587dc538ba}{hgrid\_}}-\/>\mbox{\hyperlink{classSSAGES_1_1GridBase_a7da01557a9b85498c2acd975c152403a}{at}}(val) += 1;}
+\DoxyCodeLine{151             \textcolor{comment}{//derivatives = (*fgrid\_)[val];}}
+\DoxyCodeLine{152             \mbox{\hyperlink{classSSAGES_1_1ANN_a8df5bc974f48135e0add44d77b91182a}{net\_}}.forward\_pass(vec);}
+\DoxyCodeLine{153             derivatives = \mbox{\hyperlink{classSSAGES_1_1ANN_a8df5bc974f48135e0add44d77b91182a}{net\_}}.get\_gradient(0);}
+\DoxyCodeLine{154         \}}
+\DoxyCodeLine{155         \textcolor{keywordflow}{else}}
+\DoxyCodeLine{156         \{}
+\DoxyCodeLine{157             \textcolor{keywordflow}{if}(\mbox{\hyperlink{classSSAGES_1_1EventListener_af9666daacfb047c1dd279ea339524d07}{IsMasterRank}}(\mbox{\hyperlink{classSSAGES_1_1Method_a1118666d61dbf3bc7606e3b61aa3a460}{comm\_}}))}
+\DoxyCodeLine{158             \{}
+\DoxyCodeLine{159                 std::cerr << \textcolor{stringliteral}{"ANN ("} << snapshot-\/>GetIteration() << \textcolor{stringliteral}{"): out of bounds ( "};}
+\DoxyCodeLine{160                 \textcolor{keywordflow}{for}(\textcolor{keyword}{auto}\& v : val)}
+\DoxyCodeLine{161                     std::cerr << v << \textcolor{stringliteral}{" "}; }
+\DoxyCodeLine{162                 std::cerr << \textcolor{stringliteral}{")"} << std::endl;}
+\DoxyCodeLine{163             \}}
+\DoxyCodeLine{164         \}}
+\DoxyCodeLine{165 }
+\DoxyCodeLine{166         \textcolor{comment}{// Restraints.}}
+\DoxyCodeLine{167         \textcolor{keywordflow}{for}(\textcolor{keywordtype}{size\_t} i = 0; i < n; ++i)}
+\DoxyCodeLine{168         \{}
+\DoxyCodeLine{169             \textcolor{keyword}{auto} cval = cvs[i]-\/>GetValue();}
+\DoxyCodeLine{170             \textcolor{keywordflow}{if}(cval < \mbox{\hyperlink{classSSAGES_1_1ANN_a022a5d90efc1c7d77f243bc6a30c2757}{lowerb\_}}[i])}
+\DoxyCodeLine{171                 derivatives[i] += \mbox{\hyperlink{classSSAGES_1_1ANN_a2d8da6902233c66212aecfe108aa08f7}{lowerk\_}}[i]*cvs[i]-\/>GetDifference(\mbox{\hyperlink{classSSAGES_1_1ANN_a022a5d90efc1c7d77f243bc6a30c2757}{lowerb\_}}[i]);}
+\DoxyCodeLine{172             \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(cval > upperb\_[i])}
+\DoxyCodeLine{173                 derivatives[i] += upperk\_[i]*cvs[i]-\/>GetDifference(upperb\_[i]);}
+\DoxyCodeLine{174         \}}
+\DoxyCodeLine{175 }
+\DoxyCodeLine{176         \textcolor{comment}{// Apply bias to atoms. }}
+\DoxyCodeLine{177         \textcolor{keyword}{auto}\& forces = snapshot-\/>GetForces(); }
+\DoxyCodeLine{178         \textcolor{keyword}{auto}\& virial = snapshot-\/>GetVirial();}
+\DoxyCodeLine{179 }
+\DoxyCodeLine{180         \textcolor{keywordflow}{for}(\textcolor{keywordtype}{size\_t} i = 0; i < cvs.size(); ++i)}
+\DoxyCodeLine{181         \{}
+\DoxyCodeLine{182             \textcolor{keyword}{auto}\& grad = cvs[i]-\/>GetGradient();}
+\DoxyCodeLine{183             \textcolor{keyword}{auto}\& boxgrad = cvs[i]-\/>GetBoxGradient();}
+\DoxyCodeLine{184             }
+\DoxyCodeLine{185             \textcolor{comment}{// Update the forces in snapshot by adding in the force bias from each}}
+\DoxyCodeLine{186             \textcolor{comment}{// CV to each atom based on the gradient of the CV.}}
+\DoxyCodeLine{187             \textcolor{keywordflow}{for} (\textcolor{keywordtype}{size\_t} j = 0; j < forces.size(); ++j)}
+\DoxyCodeLine{188                 forces[j] -\/= derivatives[i]*grad[j];}
+\DoxyCodeLine{189             }
+\DoxyCodeLine{190             virial += derivatives[i]*boxgrad;}
+\DoxyCodeLine{191         \}}
+\DoxyCodeLine{192     \}}
+
+\end{DoxyCode}
+
+
+References S\+S\+A\+G\+E\+S\+::\+Grid\+Base$<$ T $>$\+::at(), citers\+\_\+, S\+S\+A\+G\+E\+S\+::\+Method\+::comm\+\_\+, S\+S\+A\+G\+E\+S\+::\+Method\+::cvmask\+\_\+, S\+S\+A\+G\+E\+S\+::\+C\+V\+Manager\+::\+Get\+C\+Vs(), S\+S\+A\+G\+E\+S\+::\+Snapshot\+::\+Get\+Forces(), S\+S\+A\+G\+E\+S\+::\+Snapshot\+::\+Get\+Iteration(), S\+S\+A\+G\+E\+S\+::\+Grid\+Base$<$ T $>$\+::\+Get\+Lower(), S\+S\+A\+G\+E\+S\+::\+Grid\+Base$<$ T $>$\+::\+Get\+Upper(), S\+S\+A\+G\+E\+S\+::\+Snapshot\+::\+Get\+Virial(), hgrid\+\_\+, S\+S\+A\+G\+E\+S\+::\+Event\+Listener\+::\+Is\+Master\+Rank(), lowerb\+\_\+, lowerk\+\_\+, net\+\_\+, pweight\+\_\+, Train\+Network(), S\+S\+A\+G\+E\+S\+::\+Method\+::world\+\_\+, and Write\+Bias().
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classSSAGES_1_1ANN_ad63d276efae1a266eb5d556bdf896a98_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classSSAGES_1_1ANN_a187df3448f650a0bb3452bf7c1c12fe8}\label{classSSAGES_1_1ANN_a187df3448f650a0bb3452bf7c1c12fe8}} 
+\index{SSAGES::ANN@{SSAGES::ANN}!PostSimulation@{PostSimulation}}
+\index{PostSimulation@{PostSimulation}!SSAGES::ANN@{SSAGES::ANN}}
+\doxysubsubsection{\texorpdfstring{PostSimulation()}{PostSimulation()}}
+{\footnotesize\ttfamily void S\+S\+A\+G\+E\+S\+::\+A\+N\+N\+::\+Post\+Simulation (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classSSAGES_1_1Snapshot}{Snapshot}} $\ast$}]{snapshot,  }\item[{const class \mbox{\hyperlink{classSSAGES_1_1CVManager}{C\+V\+Manager}} \&}]{cvmanager }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{classSSAGES_1_1Method}{Method}} call post simulation. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em snapshot} & Pointer to the simulation snapshot. \\
+\hline
+{\em cvmanager} & Collective variable manager.\\
+\hline
+\end{DoxyParams}
+This function will be called after the end of the simulation run. 
+
+Implements \mbox{\hyperlink{classSSAGES_1_1Method_a7d18226669c88bc76b9b758f2d29e3c9}{S\+S\+A\+G\+E\+S\+::\+Method}}.
+
+
+
+Definition at line 194 of file A\+N\+N.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{195     \{}
+\DoxyCodeLine{196     \}}
+
+\end{DoxyCode}
+\mbox{\Hypertarget{classSSAGES_1_1ANN_a86e2611b4516c8a465014919139aae19}\label{classSSAGES_1_1ANN_a86e2611b4516c8a465014919139aae19}} 
+\index{SSAGES::ANN@{SSAGES::ANN}!PreSimulation@{PreSimulation}}
+\index{PreSimulation@{PreSimulation}!SSAGES::ANN@{SSAGES::ANN}}
+\doxysubsubsection{\texorpdfstring{PreSimulation()}{PreSimulation()}}
+{\footnotesize\ttfamily void S\+S\+A\+G\+E\+S\+::\+A\+N\+N\+::\+Pre\+Simulation (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classSSAGES_1_1Snapshot}{Snapshot}} $\ast$}]{snapshot,  }\item[{const class \mbox{\hyperlink{classSSAGES_1_1CVManager}{C\+V\+Manager}} \&}]{cvmanager }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+\mbox{\hyperlink{classSSAGES_1_1Method}{Method}} call prior to simulation initiation. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em snapshot} & Pointer to the simulation snapshot. \\
+\hline
+{\em cvmanager} & Collective variable manager.\\
+\hline
+\end{DoxyParams}
+This function will be called before the simulation is started. 
+
+Implements \mbox{\hyperlink{classSSAGES_1_1Method_a7d840d2b5f6dbf9ec75a7909ccf13ef7}{S\+S\+A\+G\+E\+S\+::\+Method}}.
+
+
+
+Definition at line 76 of file A\+N\+N.\+cpp.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{77     \{}
+\DoxyCodeLine{78         \textcolor{keyword}{auto} ndim = \mbox{\hyperlink{classSSAGES_1_1ANN_a1ec3000737e404aedce966587dc538ba}{hgrid\_}}-\/>\mbox{\hyperlink{classSSAGES_1_1GridBase_a72f98ef47da691b00823d612efbd46b8}{GetDimension}}();}
+\DoxyCodeLine{79         kbt\_ = snapshot-\/>GetKb()*\mbox{\hyperlink{classSSAGES_1_1ANN_a1ef25a7766497d57498b194eb3d31b42}{temp\_}};}
+\DoxyCodeLine{80         }
+\DoxyCodeLine{81         \textcolor{comment}{// Zero out forces and histogram. }}
+\DoxyCodeLine{82         VectorXd vec = VectorXd::Zero(ndim);}
+\DoxyCodeLine{83         std::fill(\mbox{\hyperlink{classSSAGES_1_1ANN_a1ec3000737e404aedce966587dc538ba}{hgrid\_}}-\/>\mbox{\hyperlink{classSSAGES_1_1Grid_a709374b3cadf320347604077a2e45e5b}{begin}}(), \mbox{\hyperlink{classSSAGES_1_1ANN_a1ec3000737e404aedce966587dc538ba}{hgrid\_}}-\/>\mbox{\hyperlink{classSSAGES_1_1Grid_ac4fcc9f0cd61476ce4fd880c768d9694}{end}}(), 0);}
+\DoxyCodeLine{84 }
+\DoxyCodeLine{85         \textcolor{keywordflow}{if}(\mbox{\hyperlink{classSSAGES_1_1ANN_a6e5bc5f5f6a8e2cf2be0f715099eb266}{preloaded\_}})}
+\DoxyCodeLine{86         \{}
+\DoxyCodeLine{87             \mbox{\hyperlink{classSSAGES_1_1ANN_a8df5bc974f48135e0add44d77b91182a}{net\_}}.forward\_pass(\mbox{\hyperlink{classSSAGES_1_1ANN_a5649c47eadcb28453c506587f83260f0}{hist\_}});}
+\DoxyCodeLine{88             bias\_.array() = \mbox{\hyperlink{classSSAGES_1_1ANN_a8df5bc974f48135e0add44d77b91182a}{net\_}}.get\_activation().col(0).array();}
+\DoxyCodeLine{89             \mbox{\hyperlink{classSSAGES_1_1ANN_a7091cb356fa05bc0b21a4e37144fb0b7}{TrainNetwork}}();}
+\DoxyCodeLine{90         \}}
+\DoxyCodeLine{91         \textcolor{keywordflow}{else}}
+\DoxyCodeLine{92             std::fill(\mbox{\hyperlink{classSSAGES_1_1ANN_ae925218647bd62eccf8d2983a87baad8}{ugrid\_}}-\/>\mbox{\hyperlink{classSSAGES_1_1Grid_a709374b3cadf320347604077a2e45e5b}{begin}}(), \mbox{\hyperlink{classSSAGES_1_1ANN_ae925218647bd62eccf8d2983a87baad8}{ugrid\_}}-\/>\mbox{\hyperlink{classSSAGES_1_1Grid_ac4fcc9f0cd61476ce4fd880c768d9694}{end}}(), 1.0);}
+\DoxyCodeLine{93 }
+\DoxyCodeLine{94         \textcolor{comment}{// Fill in the reweighting matrix for restraints.}}
+\DoxyCodeLine{95         \textcolor{keyword}{auto} cvs = cvmanager.GetCVs(\mbox{\hyperlink{classSSAGES_1_1Method_a24b0ac53b1fabcab0a5f3bd6cde26909}{cvmask\_}});}
+\DoxyCodeLine{96         \textcolor{keyword}{auto} ncvs = cvs.size();}
+\DoxyCodeLine{97 }
+\DoxyCodeLine{98         \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i = 0; i < \mbox{\hyperlink{classSSAGES_1_1ANN_a5649c47eadcb28453c506587f83260f0}{hist\_}}.rows(); ++i)}
+\DoxyCodeLine{99         \{}
+\DoxyCodeLine{100             \textcolor{keyword}{auto} cval = \mbox{\hyperlink{classSSAGES_1_1ANN_a5649c47eadcb28453c506587f83260f0}{hist\_}}.row(i);}
+\DoxyCodeLine{101             \textcolor{keywordflow}{for}(\textcolor{keywordtype}{size\_t} j = 0; j < ncvs; ++j)}
+\DoxyCodeLine{102             \{}
+\DoxyCodeLine{103                 \textcolor{keywordflow}{if}(cval[j] < \mbox{\hyperlink{classSSAGES_1_1ANN_a022a5d90efc1c7d77f243bc6a30c2757}{lowerb\_}}[j])}
+\DoxyCodeLine{104                     rbias\_(i,j) = \mbox{\hyperlink{classSSAGES_1_1ANN_a2d8da6902233c66212aecfe108aa08f7}{lowerk\_}}[j]*(cval[j] -\/ \mbox{\hyperlink{classSSAGES_1_1ANN_a022a5d90efc1c7d77f243bc6a30c2757}{lowerb\_}}[j])*(cval[j] -\/ \mbox{\hyperlink{classSSAGES_1_1ANN_a022a5d90efc1c7d77f243bc6a30c2757}{lowerb\_}}[j]);}
+\DoxyCodeLine{105                 \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(cval[j] > upperb\_[j])}
+\DoxyCodeLine{106                     rbias\_(i,j) = upperk\_[j]*(cval[j] -\/ upperb\_[j])*(cval[j] -\/ upperb\_[j]);}
+\DoxyCodeLine{107             \}}
+\DoxyCodeLine{108         \}}
+\DoxyCodeLine{109 }
+\DoxyCodeLine{110         std::fill(\mbox{\hyperlink{classSSAGES_1_1ANN_a8b12b03e1b6585461b83264c9adf6e30}{fgrid\_}}-\/>\mbox{\hyperlink{classSSAGES_1_1Grid_a709374b3cadf320347604077a2e45e5b}{begin}}(), \mbox{\hyperlink{classSSAGES_1_1ANN_a8b12b03e1b6585461b83264c9adf6e30}{fgrid\_}}-\/>\mbox{\hyperlink{classSSAGES_1_1Grid_ac4fcc9f0cd61476ce4fd880c768d9694}{end}}(), vec);}
+\DoxyCodeLine{111     \}}
+
+\end{DoxyCode}
+
+
+References S\+S\+A\+G\+E\+S\+::\+Grid$<$ T $>$\+::begin(), S\+S\+A\+G\+E\+S\+::\+Method\+::cvmask\+\_\+, S\+S\+A\+G\+E\+S\+::\+Grid$<$ T $>$\+::end(), fgrid\+\_\+, S\+S\+A\+G\+E\+S\+::\+C\+V\+Manager\+::\+Get\+C\+Vs(), S\+S\+A\+G\+E\+S\+::\+Grid\+Base$<$ T $>$\+::\+Get\+Dimension(), S\+S\+A\+G\+E\+S\+::\+Snapshot\+::\+Get\+Kb(), hgrid\+\_\+, hist\+\_\+, lowerb\+\_\+, lowerk\+\_\+, net\+\_\+, preloaded\+\_\+, temp\+\_\+, Train\+Network(), and ugrid\+\_\+.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classSSAGES_1_1ANN_a86e2611b4516c8a465014919139aae19_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classSSAGES_1_1ANN_a2f33ebd17115c4a8f4ed3739931f85e5}\label{classSSAGES_1_1ANN_a2f33ebd17115c4a8f4ed3739931f85e5}} 
+\index{SSAGES::ANN@{SSAGES::ANN}!SetConvergeIters@{SetConvergeIters}}
+\index{SetConvergeIters@{SetConvergeIters}!SSAGES::ANN@{SSAGES::ANN}}
+\doxysubsubsection{\texorpdfstring{SetConvergeIters()}{SetConvergeIters()}}
+{\footnotesize\ttfamily void S\+S\+A\+G\+E\+S\+::\+A\+N\+N\+::\+Set\+Converge\+Iters (\begin{DoxyParamCaption}\item[{unsigned int}]{citers }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set number of iterations after which we turn on full weight. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em citers} & Number of iterations before full weight \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 175 of file A\+N\+N.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{176         \{}
+\DoxyCodeLine{177             \mbox{\hyperlink{classSSAGES_1_1ANN_ac85a0999687739a805c0782e7421f2b1}{citers\_}} = citers;}
+\DoxyCodeLine{178         \}}
+
+\end{DoxyCode}
+
+
+References citers\+\_\+.
+
+\mbox{\Hypertarget{classSSAGES_1_1ANN_a30e6d7784fff0ac842e67001f28bc784}\label{classSSAGES_1_1ANN_a30e6d7784fff0ac842e67001f28bc784}} 
+\index{SSAGES::ANN@{SSAGES::ANN}!SetMaxIters@{SetMaxIters}}
+\index{SetMaxIters@{SetMaxIters}!SSAGES::ANN@{SSAGES::ANN}}
+\doxysubsubsection{\texorpdfstring{SetMaxIters()}{SetMaxIters()}}
+{\footnotesize\ttfamily void S\+S\+A\+G\+E\+S\+::\+A\+N\+N\+::\+Set\+Max\+Iters (\begin{DoxyParamCaption}\item[{unsigned int}]{iters }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set maximum number of training iterations per sweep. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em iters} & Maximum iterations per sweep \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 184 of file A\+N\+N.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{185         \{}
+\DoxyCodeLine{186             \textcolor{keyword}{auto} params = \mbox{\hyperlink{classSSAGES_1_1ANN_a8df5bc974f48135e0add44d77b91182a}{net\_}}.get\_train\_params();}
+\DoxyCodeLine{187             params.max\_iter = iters;}
+\DoxyCodeLine{188             \mbox{\hyperlink{classSSAGES_1_1ANN_a8df5bc974f48135e0add44d77b91182a}{net\_}}.set\_train\_params(params);}
+\DoxyCodeLine{189         \}}
+
+\end{DoxyCode}
+
+
+References net\+\_\+.
+
+\mbox{\Hypertarget{classSSAGES_1_1ANN_a05554b5f5f718f20d772fabf814e3e4c}\label{classSSAGES_1_1ANN_a05554b5f5f718f20d772fabf814e3e4c}} 
+\index{SSAGES::ANN@{SSAGES::ANN}!SetMinLoss@{SetMinLoss}}
+\index{SetMinLoss@{SetMinLoss}!SSAGES::ANN@{SSAGES::ANN}}
+\doxysubsubsection{\texorpdfstring{SetMinLoss()}{SetMinLoss()}}
+{\footnotesize\ttfamily void S\+S\+A\+G\+E\+S\+::\+A\+N\+N\+::\+Set\+Min\+Loss (\begin{DoxyParamCaption}\item[{double}]{loss }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set minimum loss function value (should be zero for production). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em loss} & Minimum loss function value \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 195 of file A\+N\+N.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{196         \{}
+\DoxyCodeLine{197             \textcolor{keyword}{auto} params = \mbox{\hyperlink{classSSAGES_1_1ANN_a8df5bc974f48135e0add44d77b91182a}{net\_}}.get\_train\_params();}
+\DoxyCodeLine{198             params.min\_loss = loss; }
+\DoxyCodeLine{199             \mbox{\hyperlink{classSSAGES_1_1ANN_a8df5bc974f48135e0add44d77b91182a}{net\_}}.set\_train\_params(params);}
+\DoxyCodeLine{200         \}}
+
+\end{DoxyCode}
+
+
+References net\+\_\+.
+
+\mbox{\Hypertarget{classSSAGES_1_1ANN_a45bb57007aa90bf3fc04a875b190145e}\label{classSSAGES_1_1ANN_a45bb57007aa90bf3fc04a875b190145e}} 
+\index{SSAGES::ANN@{SSAGES::ANN}!SetOutput@{SetOutput}}
+\index{SetOutput@{SetOutput}!SSAGES::ANN@{SSAGES::ANN}}
+\doxysubsubsection{\texorpdfstring{SetOutput()}{SetOutput()}}
+{\footnotesize\ttfamily void S\+S\+A\+G\+E\+S\+::\+A\+N\+N\+::\+Set\+Output (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{outfile }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set name of output file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em outfile} & Output file \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 157 of file A\+N\+N.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{158         \{}
+\DoxyCodeLine{159             \mbox{\hyperlink{classSSAGES_1_1ANN_ad799d7e14579192477a450338f1cf330}{outfile\_}} = outfile;}
+\DoxyCodeLine{160         \}}
+
+\end{DoxyCode}
+
+
+References outfile\+\_\+.
+
+\mbox{\Hypertarget{classSSAGES_1_1ANN_af48fa9793d0b1df77f0f2681072e76d2}\label{classSSAGES_1_1ANN_af48fa9793d0b1df77f0f2681072e76d2}} 
+\index{SSAGES::ANN@{SSAGES::ANN}!SetOutputOverwrite@{SetOutputOverwrite}}
+\index{SetOutputOverwrite@{SetOutputOverwrite}!SSAGES::ANN@{SSAGES::ANN}}
+\doxysubsubsection{\texorpdfstring{SetOutputOverwrite()}{SetOutputOverwrite()}}
+{\footnotesize\ttfamily void S\+S\+A\+G\+E\+S\+::\+A\+N\+N\+::\+Set\+Output\+Overwrite (\begin{DoxyParamCaption}\item[{bool}]{overwrite }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set overwrite flag on output file. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em overwrite} & Boolean if output file should be overwritten \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 166 of file A\+N\+N.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{167         \{}
+\DoxyCodeLine{168             \mbox{\hyperlink{classSSAGES_1_1ANN_ae928d6e1f11b3a9aca40c7a473d4df91}{overwrite\_}} = overwrite;}
+\DoxyCodeLine{169         \}}
+
+\end{DoxyCode}
+
+
+References overwrite\+\_\+.
+
+\mbox{\Hypertarget{classSSAGES_1_1ANN_ab39aaad92da34d5d11a10287feee53b3}\label{classSSAGES_1_1ANN_ab39aaad92da34d5d11a10287feee53b3}} 
+\index{SSAGES::ANN@{SSAGES::ANN}!SetPrevWeight@{SetPrevWeight}}
+\index{SetPrevWeight@{SetPrevWeight}!SSAGES::ANN@{SSAGES::ANN}}
+\doxysubsubsection{\texorpdfstring{SetPrevWeight()}{SetPrevWeight()}}
+{\footnotesize\ttfamily void S\+S\+A\+G\+E\+S\+::\+A\+N\+N\+::\+Set\+Prev\+Weight (\begin{DoxyParamCaption}\item[{double}]{h }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Set previous history weight. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em h} & History weight \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 148 of file A\+N\+N.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{149         \{}
+\DoxyCodeLine{150             \mbox{\hyperlink{classSSAGES_1_1ANN_aa46e3420f46726cfa7766eaba5d53246}{pweight\_}} = h;}
+\DoxyCodeLine{151         \}}
+
+\end{DoxyCode}
+
+
+References pweight\+\_\+.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classSSAGES_1_1ANN_a5649c47eadcb28453c506587f83260f0}\label{classSSAGES_1_1ANN_a5649c47eadcb28453c506587f83260f0}} 
+\index{SSAGES::ANN@{SSAGES::ANN}!hist\_@{hist\_}}
+\index{hist\_@{hist\_}!SSAGES::ANN@{SSAGES::ANN}}
+\doxysubsubsection{\texorpdfstring{hist\_}{hist\_}}
+{\footnotesize\ttfamily Eigen\+::\+Matrix\+Xd S\+S\+A\+G\+E\+S\+::\+A\+N\+N\+::hist\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+Eigen matrices of grids. 
+
+Definition at line 73 of file A\+N\+N.\+h.
+
+
+
+Referenced by A\+N\+N(), Pre\+Simulation(), Read\+Bias(), Train\+Network(), and Write\+Bias().
+
+\mbox{\Hypertarget{classSSAGES_1_1ANN_a022a5d90efc1c7d77f243bc6a30c2757}\label{classSSAGES_1_1ANN_a022a5d90efc1c7d77f243bc6a30c2757}} 
+\index{SSAGES::ANN@{SSAGES::ANN}!lowerb\_@{lowerb\_}}
+\index{lowerb\_@{lowerb\_}!SSAGES::ANN@{SSAGES::ANN}}
+\doxysubsubsection{\texorpdfstring{lowerb\_}{lowerb\_}}
+{\footnotesize\ttfamily std\+::vector$<$double$>$ S\+S\+A\+G\+E\+S\+::\+A\+N\+N\+::lowerb\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+Bounds 
+
+Definition at line 78 of file A\+N\+N.\+h.
+
+
+
+Referenced by Post\+Integration(), and Pre\+Simulation().
+
+\mbox{\Hypertarget{classSSAGES_1_1ANN_a2d8da6902233c66212aecfe108aa08f7}\label{classSSAGES_1_1ANN_a2d8da6902233c66212aecfe108aa08f7}} 
+\index{SSAGES::ANN@{SSAGES::ANN}!lowerk\_@{lowerk\_}}
+\index{lowerk\_@{lowerk\_}!SSAGES::ANN@{SSAGES::ANN}}
+\doxysubsubsection{\texorpdfstring{lowerk\_}{lowerk\_}}
+{\footnotesize\ttfamily std\+::vector$<$double$>$ S\+S\+A\+G\+E\+S\+::\+A\+N\+N\+::lowerk\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+Bound restraints. 
+
+Definition at line 83 of file A\+N\+N.\+h.
+
+
+
+Referenced by Post\+Integration(), and Pre\+Simulation().
+
+\mbox{\Hypertarget{classSSAGES_1_1ANN_aa46e3420f46726cfa7766eaba5d53246}\label{classSSAGES_1_1ANN_aa46e3420f46726cfa7766eaba5d53246}} 
+\index{SSAGES::ANN@{SSAGES::ANN}!pweight\_@{pweight\_}}
+\index{pweight\_@{pweight\_}!SSAGES::ANN@{SSAGES::ANN}}
+\doxysubsubsection{\texorpdfstring{pweight\_}{pweight\_}}
+{\footnotesize\ttfamily double S\+S\+A\+G\+E\+S\+::\+A\+N\+N\+::pweight\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+Previous and current histogram weight. 
+
+Definition at line 54 of file A\+N\+N.\+h.
+
+
+
+Referenced by Post\+Integration(), Set\+Prev\+Weight(), and Train\+Network().
+
+\mbox{\Hypertarget{classSSAGES_1_1ANN_a87307160193744fa3c445c8271c8678b}\label{classSSAGES_1_1ANN_a87307160193744fa3c445c8271c8678b}} 
+\index{SSAGES::ANN@{SSAGES::ANN}!sweep\_@{sweep\_}}
+\index{sweep\_@{sweep\_}!SSAGES::ANN@{SSAGES::ANN}}
+\doxysubsubsection{\texorpdfstring{sweep\_}{sweep\_}}
+{\footnotesize\ttfamily unsigned int S\+S\+A\+G\+E\+S\+::\+A\+N\+N\+::sweep\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+Number of iterations per sweep. 
+
+Definition at line 43 of file A\+N\+N.\+h.
+
+
+
+Referenced by Train\+Network(), and Write\+Bias().
+
+\mbox{\Hypertarget{classSSAGES_1_1ANN_a1ef25a7766497d57498b194eb3d31b42}\label{classSSAGES_1_1ANN_a1ef25a7766497d57498b194eb3d31b42}} 
+\index{SSAGES::ANN@{SSAGES::ANN}!temp\_@{temp\_}}
+\index{temp\_@{temp\_}!SSAGES::ANN@{SSAGES::ANN}}
+\doxysubsubsection{\texorpdfstring{temp\_}{temp\_}}
+{\footnotesize\ttfamily double S\+S\+A\+G\+E\+S\+::\+A\+N\+N\+::temp\+\_\+\hspace{0.3cm}{\ttfamily [private]}}
+
+System temperature and energy units. 
+
+Definition at line 59 of file A\+N\+N.\+h.
+
+
+
+Referenced by Pre\+Simulation().
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/home/michael/development/\+S\+S\+A\+G\+E\+S/src/\+Methods/A\+N\+N.\+h\item 
+/home/michael/development/\+S\+S\+A\+G\+E\+S/src/\+Methods/A\+N\+N.\+cpp\end{DoxyCompactItemize}

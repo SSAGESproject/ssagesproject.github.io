@@ -1,0 +1,13 @@
+<map id="SSAGES::Hook::Hook" name="SSAGES::Hook::Hook">
+<area shape="rect" id="node2" href="$classSSAGES_1_1Hook.html#ad86adfdc8e7e04d268306a7d61c6f20c" title="Add a listener to the hook. " alt="" coords="233,5,426,32"/>
+<area shape="rect" id="node3" href="$classSSAGES_1_1Hook.html#a84d70866b9ccfec3af0069339c426f6a" title="Notify observers of changes in the simulation. " alt="" coords="220,56,439,83"/>
+<area shape="rect" id="node4" href="$classSSAGES_1_1Hook.html#af1bef00460b9a64ac92d7f9cef57648d" title="Post&#45;integration hook. " alt="" coords="208,157,451,184"/>
+<area shape="rect" id="node10" href="$classSSAGES_1_1Hook.html#afc19d218cb7913a8822609a9511fd08e" title="Pre&#45;simulation hook. " alt="" coords="211,107,447,133"/>
+<area shape="rect" id="node11" href="$classSSAGES_1_1Hook.html#a4611311693b1863e375c699594a5dbb9" title="Sets the current CV manager. " alt="" coords="223,208,436,235"/>
+<area shape="rect" id="node12" href="$classSSAGES_1_1Hook.html#ae859e87854f2a59420a1703e244c3032" title="Sets the active snapshot. " alt="" coords="230,259,429,285"/>
+<area shape="rect" id="node5" href="$classSSAGES_1_1Snapshot.html#a1bc1d505100ddaebd9a7650c55d35001" title="Set the &quot;changed&quot; flag of the Snapshot. " alt="" coords="511,99,711,125"/>
+<area shape="rect" id="node6" href="$classSSAGES_1_1CVManager.html#ad2a31c91a0298b4e80ca5ba720c5eee3" title="Get CV iterator. " alt="" coords="529,150,692,191"/>
+<area shape="rect" id="node7" href="$classSSAGES_1_1Snapshot.html#ab38cbf3c463820d1b8bbd733759bfa32" title="Get the current iteration. " alt="" coords="503,267,719,293"/>
+<area shape="rect" id="node8" href="$classSSAGES_1_1Snapshot.html#a10c9c038f0caa4a6e6832f96a8a647d5" title="Query if Snapshot was modified. " alt="" coords="499,216,723,243"/>
+<area shape="rect" id="node9" href="$classSSAGES_1_1Hook.html#a3f2e8e7df9355515237c7548f679a893" title="Synchronization to the simulation engine. " alt="" coords="506,48,715,75"/>
+</map>

@@ -1,0 +1,308 @@
+\hypertarget{classJson_1_1ArrayRequirement}{}\doxysection{Json\+::Array\+Requirement Class Reference}
+\label{classJson_1_1ArrayRequirement}\index{Json::ArrayRequirement@{Json::ArrayRequirement}}
+
+
+Array of Requirements.  
+
+
+
+
+{\ttfamily \#include $<$Array\+Requirement.\+h$>$}
+
+
+
+Inheritance diagram for Json\+::Array\+Requirement\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=202pt]{classJson_1_1ArrayRequirement__inherit__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classJson_1_1ArrayRequirement_aeb0a79980020e57c35bcc2c79412fbb7}\label{classJson_1_1ArrayRequirement_aeb0a79980020e57c35bcc2c79412fbb7}} 
+\mbox{\hyperlink{classJson_1_1ArrayRequirement_aeb0a79980020e57c35bcc2c79412fbb7}{Array\+Requirement}} ()
+\begin{DoxyCompactList}\small\item\em Constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classJson_1_1ArrayRequirement_adf1760617605e56a2406c3e47ee7c0bc}\label{classJson_1_1ArrayRequirement_adf1760617605e56a2406c3e47ee7c0bc}} 
+virtual void \mbox{\hyperlink{classJson_1_1ArrayRequirement_adf1760617605e56a2406c3e47ee7c0bc}{Clear\+Errors}} () override
+\begin{DoxyCompactList}\small\item\em Clear list of error messages for all Requirements. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classJson_1_1ArrayRequirement_a94276fdb7c9382bc75f974cb88858d83}\label{classJson_1_1ArrayRequirement_a94276fdb7c9382bc75f974cb88858d83}} 
+virtual void \mbox{\hyperlink{classJson_1_1ArrayRequirement_a94276fdb7c9382bc75f974cb88858d83}{Clear\+Notices}} () override
+\begin{DoxyCompactList}\small\item\em Clear notices for all Requirements. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classJson_1_1ArrayRequirement_a85750912e3853550a035a23a92f9875b}\label{classJson_1_1ArrayRequirement_a85750912e3853550a035a23a92f9875b}} 
+virtual void \mbox{\hyperlink{classJson_1_1ArrayRequirement_a85750912e3853550a035a23a92f9875b}{Reset}} () override
+\begin{DoxyCompactList}\small\item\em Reset array. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classJson_1_1ArrayRequirement_a216670b8136ad8d4ce0b428b669244f9}{Parse}} (Value json, const std\+::string \&path) override
+\begin{DoxyCompactList}\small\item\em Parse \mbox{\hyperlink{namespaceJSON}{J\+S\+ON}} value and fill array. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classJson_1_1ArrayRequirement_a6e334ac9cf70844544828d9dfa7246cb}{Validate}} (const Value \&json, const std\+::string \&path) override
+\begin{DoxyCompactList}\small\item\em Validate json value. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$class T $>$ }\\bool \mbox{\hyperlink{classJson_1_1ArrayRequirement_a0e9cc07af4276f975231533fecbfc3d2}{Is\+Unique}} (T X)
+\begin{DoxyCompactList}\small\item\em Test if set is unique. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Private Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classJson_1_1ArrayRequirement_a8a9f59b546d1e559d78d36302fa7b2b7}\label{classJson_1_1ArrayRequirement_a8a9f59b546d1e559d78d36302fa7b2b7}} 
+\mbox{\hyperlink{namespaceJson_a8f2c96c750a51f5e11ca4f277c48305a}{Require\+List}} \mbox{\hyperlink{classJson_1_1ArrayRequirement_a8a9f59b546d1e559d78d36302fa7b2b7}{items\+\_\+}}
+\begin{DoxyCompactList}\small\item\em List of Requirements. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classJson_1_1ArrayRequirement_ad2d0ffb7adf44c52e3da89628ed19875}\label{classJson_1_1ArrayRequirement_ad2d0ffb7adf44c52e3da89628ed19875}} 
+std\+::unique\+\_\+ptr$<$ \mbox{\hyperlink{classJson_1_1Requirement}{Requirement}} $>$ \mbox{\hyperlink{classJson_1_1ArrayRequirement_ad2d0ffb7adf44c52e3da89628ed19875}{item\+\_\+}}
+\begin{DoxyCompactList}\small\item\em Single \mbox{\hyperlink{classJson_1_1Requirement}{Requirement}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classJson_1_1ArrayRequirement_a5af182c1cbb1b83c5216591840d4a86e}\label{classJson_1_1ArrayRequirement_a5af182c1cbb1b83c5216591840d4a86e}} 
+bool \mbox{\hyperlink{classJson_1_1ArrayRequirement_a5af182c1cbb1b83c5216591840d4a86e}{add\+Items\+\_\+}}
+\begin{DoxyCompactList}\small\item\em {\ttfamily True} if items can be added. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classJson_1_1ArrayRequirement_a2973aab4be2a34cd484c76498bb3afc6}\label{classJson_1_1ArrayRequirement_a2973aab4be2a34cd484c76498bb3afc6}} 
+bool \mbox{\hyperlink{classJson_1_1ArrayRequirement_a2973aab4be2a34cd484c76498bb3afc6}{set\+Min\+\_\+}}
+\begin{DoxyCompactList}\small\item\em {\ttfamily True} if minimum has been set. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classJson_1_1ArrayRequirement_a107985fafcddc6e8dcb71fabd35381f2}\label{classJson_1_1ArrayRequirement_a107985fafcddc6e8dcb71fabd35381f2}} 
+bool \mbox{\hyperlink{classJson_1_1ArrayRequirement_a107985fafcddc6e8dcb71fabd35381f2}{set\+Max\+\_\+}}
+\begin{DoxyCompactList}\small\item\em {\ttfamily True} if maximum has been set. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classJson_1_1ArrayRequirement_ac5f4339154fc5f1f3dc655a891330d36}\label{classJson_1_1ArrayRequirement_ac5f4339154fc5f1f3dc655a891330d36}} 
+bool \mbox{\hyperlink{classJson_1_1ArrayRequirement_ac5f4339154fc5f1f3dc655a891330d36}{unique\+\_\+}}
+\begin{DoxyCompactList}\small\item\em {\ttfamily True} if all Requirements are unique. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classJson_1_1ArrayRequirement_a890d1f772200e64913cdbe8449c9441e}\label{classJson_1_1ArrayRequirement_a890d1f772200e64913cdbe8449c9441e}} 
+int \mbox{\hyperlink{classJson_1_1ArrayRequirement_a890d1f772200e64913cdbe8449c9441e}{min\+\_\+}}
+\begin{DoxyCompactList}\small\item\em Minimum value. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classJson_1_1ArrayRequirement_aed522ba9c5dae843bc782d494662e514}\label{classJson_1_1ArrayRequirement_aed522ba9c5dae843bc782d494662e514}} 
+int \mbox{\hyperlink{classJson_1_1ArrayRequirement_aed522ba9c5dae843bc782d494662e514}{max\+\_\+}}
+\begin{DoxyCompactList}\small\item\em Maximum value. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Array of Requirements. 
+
+Definition at line 43 of file Array\+Requirement.\+h.
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classJson_1_1ArrayRequirement_a0e9cc07af4276f975231533fecbfc3d2}\label{classJson_1_1ArrayRequirement_a0e9cc07af4276f975231533fecbfc3d2}} 
+\index{Json::ArrayRequirement@{Json::ArrayRequirement}!IsUnique@{IsUnique}}
+\index{IsUnique@{IsUnique}!Json::ArrayRequirement@{Json::ArrayRequirement}}
+\doxysubsubsection{\texorpdfstring{IsUnique()}{IsUnique()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+bool Json\+::\+Array\+Requirement\+::\+Is\+Unique (\begin{DoxyParamCaption}\item[{T}]{X }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [private]}}
+
+
+
+Test if set is unique. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & Container class. \\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyParams}{Parameters}
+{\em X} & Container containing Requirements. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+True if no element in the container is duplicate. 
+\end{DoxyReturn}
+
+
+Definition at line 64 of file Array\+Requirement.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{65         \{}
+\DoxyCodeLine{66           std::set<T> Y(X.begin(), X.end());}
+\DoxyCodeLine{67           \textcolor{keywordflow}{return} X.size() == Y.size();}
+\DoxyCodeLine{68         \}}
+
+\end{DoxyCode}
+
+
+Referenced by Validate().
+
+Here is the caller graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classJson_1_1ArrayRequirement_a0e9cc07af4276f975231533fecbfc3d2_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classJson_1_1ArrayRequirement_a216670b8136ad8d4ce0b428b669244f9}\label{classJson_1_1ArrayRequirement_a216670b8136ad8d4ce0b428b669244f9}} 
+\index{Json::ArrayRequirement@{Json::ArrayRequirement}!Parse@{Parse}}
+\index{Parse@{Parse}!Json::ArrayRequirement@{Json::ArrayRequirement}}
+\doxysubsubsection{\texorpdfstring{Parse()}{Parse()}}
+{\footnotesize\ttfamily virtual void Json\+::\+Array\+Requirement\+::\+Parse (\begin{DoxyParamCaption}\item[{Value}]{json,  }\item[{const std\+::string \&}]{path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Parse \mbox{\hyperlink{namespaceJSON}{J\+S\+ON}} value and fill array. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em json} & \mbox{\hyperlink{namespaceJSON}{J\+S\+ON}} input value. \\
+\hline
+{\em path} & Path for \mbox{\hyperlink{namespaceJSON}{J\+S\+ON}} path specification.\\
+\hline
+\end{DoxyParams}
+This function parses the \mbox{\hyperlink{namespaceJSON}{J\+S\+ON}} input value and creates new Requirements for all values in the \char`\"{}items\char`\"{} branch. 
+
+Implements \mbox{\hyperlink{classJson_1_1Requirement_af13c20497e7ad6c332c57fa80a266e27}{Json\+::\+Requirement}}.
+
+
+
+Definition at line 125 of file Array\+Requirement.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{126         \{}
+\DoxyCodeLine{127             \mbox{\hyperlink{classJson_1_1ArrayRequirement_a85750912e3853550a035a23a92f9875b}{Reset}}();}
+\DoxyCodeLine{128             RequirementLoader loader;}
+\DoxyCodeLine{129             }
+\DoxyCodeLine{130             \textcolor{keywordflow}{if}(json.isMember(\textcolor{stringliteral}{"items"}) \&\& json[\textcolor{stringliteral}{"items"}].isObject())}
+\DoxyCodeLine{131             \{}
+\DoxyCodeLine{132                 \textcolor{keywordflow}{if}((\mbox{\hyperlink{classJson_1_1ArrayRequirement_ad2d0ffb7adf44c52e3da89628ed19875}{item\_}} = loader.LoadRequirement(json[\textcolor{stringliteral}{"items"}])))}
+\DoxyCodeLine{133                     \mbox{\hyperlink{classJson_1_1ArrayRequirement_ad2d0ffb7adf44c52e3da89628ed19875}{item\_}}-\/>Parse(json[\textcolor{stringliteral}{"items"}], path);             }
+\DoxyCodeLine{134             \}}
+\DoxyCodeLine{135             \textcolor{keywordflow}{else} \textcolor{keywordflow}{if}(json.isMember(\textcolor{stringliteral}{"items"}) \&\& json[\textcolor{stringliteral}{"items"}].isArray())}
+\DoxyCodeLine{136             \{}
+\DoxyCodeLine{137                 \textcolor{keywordflow}{for}(\textcolor{keyword}{auto}\& item : json[\textcolor{stringliteral}{"items"}])}
+\DoxyCodeLine{138                 \{           }
+\DoxyCodeLine{139                     \textcolor{keywordflow}{if}(\textcolor{keyword}{auto} iptr = loader.LoadRequirement(item))}
+\DoxyCodeLine{140                     \{}
+\DoxyCodeLine{141                         \mbox{\hyperlink{classJson_1_1ArrayRequirement_a8a9f59b546d1e559d78d36302fa7b2b7}{items\_}}.push\_back(std::move(iptr));}
+\DoxyCodeLine{142                         \mbox{\hyperlink{classJson_1_1ArrayRequirement_a8a9f59b546d1e559d78d36302fa7b2b7}{items\_}}.back()-\/>Parse(item, path);}
+\DoxyCodeLine{143                     \}}
+\DoxyCodeLine{144                 \}}
+\DoxyCodeLine{145             \}}
+\DoxyCodeLine{146 }
+\DoxyCodeLine{147             \textcolor{keywordflow}{if}(json.isMember(\textcolor{stringliteral}{"additionalItems"}) \&\& json[\textcolor{stringliteral}{"additionalItems"}].isBool())}
+\DoxyCodeLine{148                 \mbox{\hyperlink{classJson_1_1ArrayRequirement_a5af182c1cbb1b83c5216591840d4a86e}{addItems\_}} = json[\textcolor{stringliteral}{"additionalItems"}].asBool();}
+\DoxyCodeLine{149 }
+\DoxyCodeLine{150             \textcolor{keywordflow}{if}(json.isMember(\textcolor{stringliteral}{"minItems"}) \&\& json[\textcolor{stringliteral}{"minItems"}].isInt())}
+\DoxyCodeLine{151             \{}
+\DoxyCodeLine{152                 \mbox{\hyperlink{classJson_1_1ArrayRequirement_a2973aab4be2a34cd484c76498bb3afc6}{setMin\_}} = \textcolor{keyword}{true};}
+\DoxyCodeLine{153                 \mbox{\hyperlink{classJson_1_1ArrayRequirement_a890d1f772200e64913cdbe8449c9441e}{min\_}} = json[\textcolor{stringliteral}{"minItems"}].asInt();}
+\DoxyCodeLine{154             \}}
+\DoxyCodeLine{155 }
+\DoxyCodeLine{156             \textcolor{keywordflow}{if}(json.isMember(\textcolor{stringliteral}{"maxItems"}) \&\& json[\textcolor{stringliteral}{"maxItems"}].isInt())}
+\DoxyCodeLine{157             \{}
+\DoxyCodeLine{158                 \mbox{\hyperlink{classJson_1_1ArrayRequirement_a107985fafcddc6e8dcb71fabd35381f2}{setMax\_}} = \textcolor{keyword}{true};}
+\DoxyCodeLine{159                 \mbox{\hyperlink{classJson_1_1ArrayRequirement_aed522ba9c5dae843bc782d494662e514}{max\_}} = json[\textcolor{stringliteral}{"maxItems"}].asInt();}
+\DoxyCodeLine{160             \}}
+\DoxyCodeLine{161 }
+\DoxyCodeLine{162             \textcolor{keywordflow}{if}(json.isMember(\textcolor{stringliteral}{"uniqueItems"}) \&\& json[\textcolor{stringliteral}{"uniqueItems"}].isBool())}
+\DoxyCodeLine{163                 \mbox{\hyperlink{classJson_1_1ArrayRequirement_ac5f4339154fc5f1f3dc655a891330d36}{unique\_}} = json[\textcolor{stringliteral}{"uniqueItems"}].asBool();}
+\DoxyCodeLine{164         \}}
+
+\end{DoxyCode}
+
+
+References add\+Items\+\_\+, item\+\_\+, items\+\_\+, Json\+::\+Requirement\+Loader\+::\+Load\+Requirement(), max\+\_\+, min\+\_\+, Reset(), set\+Max\+\_\+, set\+Min\+\_\+, and unique\+\_\+.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classJson_1_1ArrayRequirement_a216670b8136ad8d4ce0b428b669244f9_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classJson_1_1ArrayRequirement_a6e334ac9cf70844544828d9dfa7246cb}\label{classJson_1_1ArrayRequirement_a6e334ac9cf70844544828d9dfa7246cb}} 
+\index{Json::ArrayRequirement@{Json::ArrayRequirement}!Validate@{Validate}}
+\index{Validate@{Validate}!Json::ArrayRequirement@{Json::ArrayRequirement}}
+\doxysubsubsection{\texorpdfstring{Validate()}{Validate()}}
+{\footnotesize\ttfamily virtual void Json\+::\+Array\+Requirement\+::\+Validate (\begin{DoxyParamCaption}\item[{const Value \&}]{json,  }\item[{const std\+::string \&}]{path }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Validate json value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em json} & \mbox{\hyperlink{namespaceJSON}{J\+S\+ON}} value to be validated. \\
+\hline
+{\em path} & Path for \mbox{\hyperlink{namespaceJSON}{J\+S\+ON}} path specification. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classJson_1_1Requirement_aa97494b642414d00482745a0d5b2c2c3}{Json\+::\+Requirement}}.
+
+
+
+Definition at line 171 of file Array\+Requirement.\+h.
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{172         \{}
+\DoxyCodeLine{173             \textcolor{keywordflow}{if}(!json.isArray())}
+\DoxyCodeLine{174             \{}
+\DoxyCodeLine{175                 \mbox{\hyperlink{classJson_1_1Requirement_adeb9efa6cf271d9cea0599ff2d458a08}{PushError}}(path + \textcolor{stringliteral}{": Must be of type \(\backslash\)"array\(\backslash\)""});}
+\DoxyCodeLine{176                 \textcolor{keywordflow}{return};}
+\DoxyCodeLine{177             \}}
+\DoxyCodeLine{178 }
+\DoxyCodeLine{179             \textcolor{keywordflow}{if}(\mbox{\hyperlink{classJson_1_1ArrayRequirement_ad2d0ffb7adf44c52e3da89628ed19875}{item\_}} != \textcolor{keyword}{nullptr})}
+\DoxyCodeLine{180             \{}
+\DoxyCodeLine{181                 \textcolor{keywordtype}{int} i = 0;}
+\DoxyCodeLine{182                 \textcolor{keywordflow}{for}(\textcolor{keyword}{const} \textcolor{keyword}{auto}\& item : json)}
+\DoxyCodeLine{183                 \{}
+\DoxyCodeLine{184                     \mbox{\hyperlink{classJson_1_1ArrayRequirement_ad2d0ffb7adf44c52e3da89628ed19875}{item\_}}-\/>Validate(item, path + \textcolor{stringliteral}{"/"} + std::to\_string(i));}
+\DoxyCodeLine{185                     ++i;}
+\DoxyCodeLine{186                 \}}
+\DoxyCodeLine{187 }
+\DoxyCodeLine{188                 \textcolor{comment}{// Merge errors.}}
+\DoxyCodeLine{189                 \textcolor{keywordflow}{for}(\textcolor{keyword}{const} \textcolor{keyword}{auto}\& error : \mbox{\hyperlink{classJson_1_1ArrayRequirement_ad2d0ffb7adf44c52e3da89628ed19875}{item\_}}-\/>GetErrors())}
+\DoxyCodeLine{190                     \mbox{\hyperlink{classJson_1_1Requirement_adeb9efa6cf271d9cea0599ff2d458a08}{PushError}}(error);}
+\DoxyCodeLine{191 }
+\DoxyCodeLine{192                 \textcolor{keywordflow}{for}(\textcolor{keyword}{const} \textcolor{keyword}{auto}\& notice : \mbox{\hyperlink{classJson_1_1ArrayRequirement_ad2d0ffb7adf44c52e3da89628ed19875}{item\_}}-\/>GetNotices())}
+\DoxyCodeLine{193                     \mbox{\hyperlink{classJson_1_1Requirement_a00feadb29fa33f4f2cca7362f12aaed4}{PushNotice}}(notice);}
+\DoxyCodeLine{194             \}}
+\DoxyCodeLine{195 }
+\DoxyCodeLine{196             \textcolor{keywordflow}{if}(\mbox{\hyperlink{classJson_1_1ArrayRequirement_a8a9f59b546d1e559d78d36302fa7b2b7}{items\_}}.size() != 0)}
+\DoxyCodeLine{197             \{}
+\DoxyCodeLine{198                 }
+\DoxyCodeLine{199                 \textcolor{keywordflow}{if}(!\mbox{\hyperlink{classJson_1_1ArrayRequirement_a5af182c1cbb1b83c5216591840d4a86e}{addItems\_}} \&\& json.size() >  \mbox{\hyperlink{classJson_1_1ArrayRequirement_a8a9f59b546d1e559d78d36302fa7b2b7}{items\_}}.size())}
+\DoxyCodeLine{200                     \mbox{\hyperlink{classJson_1_1Requirement_adeb9efa6cf271d9cea0599ff2d458a08}{PushError}}(path + \textcolor{stringliteral}{": There cannot be any additional items in the array"});}
+\DoxyCodeLine{201 }
+\DoxyCodeLine{202                 \textcolor{keywordtype}{int} iv = std::min((\textcolor{keywordtype}{int})\mbox{\hyperlink{classJson_1_1ArrayRequirement_a8a9f59b546d1e559d78d36302fa7b2b7}{items\_}}.size(), (\textcolor{keywordtype}{int})json.size());}
+\DoxyCodeLine{203                 \textcolor{keywordflow}{for}(\textcolor{keywordtype}{int} i = 0; i < iv; ++i)}
+\DoxyCodeLine{204                 \{}
+\DoxyCodeLine{205                     \mbox{\hyperlink{classJson_1_1ArrayRequirement_a8a9f59b546d1e559d78d36302fa7b2b7}{items\_}}[i]-\/>Validate(json[i], path);}
+\DoxyCodeLine{206 }
+\DoxyCodeLine{207                     \textcolor{comment}{// Merge errors.}}
+\DoxyCodeLine{208                     \textcolor{keywordflow}{for}(\textcolor{keyword}{const} \textcolor{keyword}{auto}\& error : \mbox{\hyperlink{classJson_1_1ArrayRequirement_a8a9f59b546d1e559d78d36302fa7b2b7}{items\_}}[i]-\/>\mbox{\hyperlink{classJson_1_1Requirement_a60bc275c366eb59f192fa2e621268480}{GetErrors}}())}
+\DoxyCodeLine{209                         \mbox{\hyperlink{classJson_1_1Requirement_adeb9efa6cf271d9cea0599ff2d458a08}{PushError}}(error);}
+\DoxyCodeLine{210 }
+\DoxyCodeLine{211                     \textcolor{keywordflow}{for}(\textcolor{keyword}{const} \textcolor{keyword}{auto}\& notice : \mbox{\hyperlink{classJson_1_1ArrayRequirement_a8a9f59b546d1e559d78d36302fa7b2b7}{items\_}}[i]-\/>\mbox{\hyperlink{classJson_1_1Requirement_a46a0056414100386541cd1cb899e0030}{GetNotices}}())}
+\DoxyCodeLine{212                         \mbox{\hyperlink{classJson_1_1Requirement_a00feadb29fa33f4f2cca7362f12aaed4}{PushNotice}}(notice);}
+\DoxyCodeLine{213                 \}                   }
+\DoxyCodeLine{214             \}}
+\DoxyCodeLine{215 }
+\DoxyCodeLine{216             \textcolor{keywordflow}{if}(\mbox{\hyperlink{classJson_1_1ArrayRequirement_a2973aab4be2a34cd484c76498bb3afc6}{setMin\_}} \&\& (\textcolor{keywordtype}{int})json.size() < \mbox{\hyperlink{classJson_1_1ArrayRequirement_a890d1f772200e64913cdbe8449c9441e}{min\_}})}
+\DoxyCodeLine{217                 \mbox{\hyperlink{classJson_1_1Requirement_adeb9efa6cf271d9cea0599ff2d458a08}{PushError}}(path + \textcolor{stringliteral}{": There must be at least "} + std::to\_string(\mbox{\hyperlink{classJson_1_1ArrayRequirement_a890d1f772200e64913cdbe8449c9441e}{min\_}}) + \textcolor{stringliteral}{" elements in the array"});}
+\DoxyCodeLine{218                 }
+\DoxyCodeLine{219             \textcolor{keywordflow}{if}(\mbox{\hyperlink{classJson_1_1ArrayRequirement_a107985fafcddc6e8dcb71fabd35381f2}{setMax\_}} \&\& (\textcolor{keywordtype}{int})json.size() > \mbox{\hyperlink{classJson_1_1ArrayRequirement_aed522ba9c5dae843bc782d494662e514}{max\_}})}
+\DoxyCodeLine{220                 \mbox{\hyperlink{classJson_1_1Requirement_adeb9efa6cf271d9cea0599ff2d458a08}{PushError}}(path + \textcolor{stringliteral}{": There must be no more than "} + std::to\_string(\mbox{\hyperlink{classJson_1_1ArrayRequirement_aed522ba9c5dae843bc782d494662e514}{max\_}}) + \textcolor{stringliteral}{" elements in the array"});}
+\DoxyCodeLine{221 }
+\DoxyCodeLine{222             \textcolor{keywordflow}{if}(\mbox{\hyperlink{classJson_1_1ArrayRequirement_ac5f4339154fc5f1f3dc655a891330d36}{unique\_}} \&\& !\mbox{\hyperlink{classJson_1_1ArrayRequirement_a0e9cc07af4276f975231533fecbfc3d2}{IsUnique}}(json))}
+\DoxyCodeLine{223                 \mbox{\hyperlink{classJson_1_1Requirement_adeb9efa6cf271d9cea0599ff2d458a08}{PushError}}(path + \textcolor{stringliteral}{": Entries must be unique"});}
+\DoxyCodeLine{224 }
+\DoxyCodeLine{225 }
+\DoxyCodeLine{226         \}}
+
+\end{DoxyCode}
+
+
+References add\+Items\+\_\+, Json\+::\+Requirement\+::\+Get\+Errors(), Json\+::\+Requirement\+::\+Get\+Notices(), Is\+Unique(), item\+\_\+, items\+\_\+, max\+\_\+, min\+\_\+, Json\+::\+Requirement\+::\+Push\+Error(), Json\+::\+Requirement\+::\+Push\+Notice(), set\+Max\+\_\+, set\+Min\+\_\+, and unique\+\_\+.
+
+Here is the call graph for this function\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classJson_1_1ArrayRequirement_a6e334ac9cf70844544828d9dfa7246cb_cgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+/home/michael/development/\+S\+S\+A\+G\+E\+S/src/\+Validator/Array\+Requirement.\+h\end{DoxyCompactItemize}
