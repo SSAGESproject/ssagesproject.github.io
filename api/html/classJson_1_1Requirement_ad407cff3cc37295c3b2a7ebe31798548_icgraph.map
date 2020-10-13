@@ -22,8 +22,8 @@
 <area shape="rect" id="node23" href="$classSSAGES_1_1ANNCV.html#a8173b4f597f6eba50295c5eeb508dec1" title="Set up collective variable." alt="" coords="743,1130,914,1156"/>
 <area shape="rect" id="node24" href="$classSSAGES_1_1RMSDCV.html#ac74e72f38b333070f66d6ae383a860a1" title="Set up collective variable." alt="" coords="485,1179,667,1206"/>
 <area shape="rect" id="node25" href="$classSSAGES_1_1GyrationTensorCV.html#a68cd7731a77e1a4e4ba2835a6fe65467" title="Set up collective variable." alt="" coords="732,108,925,149"/>
-<area shape="rect" id="node26" href="$classSSAGES_1_1AntiBetaRMSDCV.html#a4153e7b2aa827ac6367ec6374f986370" title="Set up collective variable." alt="" coords="479,282,673,324"/>
-<area shape="rect" id="node27" href="$classSSAGES_1_1Chebyshev.html#af559eb52a138ce6dae0cd53f9d9be6ff" title="Build BasisFunction from JSON value." alt="" coords="1000,1282,1159,1324"/>
+<area shape="rect" id="node26" href="$classSSAGES_1_1Chebyshev.html#af559eb52a138ce6dae0cd53f9d9be6ff" title="Build BasisFunction from JSON value." alt="" coords="1000,1282,1159,1324"/>
+<area shape="rect" id="node28" href="$classSSAGES_1_1AntiBetaRMSDCV.html#a4153e7b2aa827ac6367ec6374f986370" title="Set up collective variable." alt="" coords="479,282,673,324"/>
 <area shape="rect" id="node29" href="$classSSAGES_1_1ABF.html#aa131b026ddb40941889c8bde7840ac6a" title="Build a derived method from JSON node." alt="" coords="1005,1231,1153,1258"/>
 <area shape="rect" id="node30" href="$classSSAGES_1_1ParallelBetaRMSDCV.html#ad4c42c1bddc74fc312517ad13526c5cc" title="Set up collective variable." alt="" coords="721,490,936,532"/>
 <area shape="rect" id="node31" href="$classSSAGES_1_1CFF.html#a6ef7a9444289638816b44c2acee1bd68" title="Build a derived method from JSON node." alt="" coords="1005,1348,1153,1375"/>
@@ -34,5 +34,5 @@
 <area shape="rect" id="node36" href="$classSSAGES_1_1Method.html#a1464579bb8b15653ccd0ffa834e15e93" title="Build a derived method from JSON node." alt="" coords="725,1544,933,1571"/>
 <area shape="rect" id="node4" href="$classSSAGES_1_1CollectiveVariable.html#ab56eae0d888f3d5125566bfb9b5e21aa" title="Set up collective variable." alt="" coords="240,650,431,692"/>
 <area shape="rect" id="node7" href="$classSSAGES_1_1PairwiseKernel.html#a86c0b897d04fe123892e6c2040bfb93c" title="Build PairwiseKernel from JSON value." alt="" coords="743,338,915,380"/>
-<area shape="rect" id="node28" href="$classSSAGES_1_1BasisFunction.html#a25b1e4f6b8655529bb4b68268dfdcdb5" title="Build BasisFunction from JSON value." alt="" coords="745,1392,913,1433"/>
+<area shape="rect" id="node27" href="$classSSAGES_1_1BasisFunction.html#a25b1e4f6b8655529bb4b68268dfdcdb5" title="Build BasisFunction from JSON value." alt="" coords="745,1392,913,1433"/>
 </map>

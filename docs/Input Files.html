@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Input Files &mdash; SSAGES 0.9.0 documentation</title>
+  <title>Input Files &mdash; SSAGES 0.9.2 documentation</title>
   
 
   
@@ -61,7 +61,7 @@
             
             
               <div class="version">
-                0.9.0
+                0.9.2
               </div>
             
           
@@ -186,7 +186,7 @@ particular methods or collective variables can be found in their respective
 locations in this manual.</p>
 <div class="section" id="json">
 <h2>JSON<a class="headerlink" href="#json" title="Permalink to this headline">¶</a></h2>
-<p>SSAGES is run using input files written in the <a class="reference external" href="http://json.org">JSON</a> file format. JSON is a
+<p>SSAGES is run using input files written in the <a class="reference external" href="https://www.json.org/json-en.html">JSON</a> file format. JSON is a
 lightweight text format which is easy for humans to read and write and for
 machines to parse and generate. Almost every programming language offers some
 level of native JSON support, making it particularly convenient to script or
@@ -389,6 +389,16 @@ as the simulation proceeds.</p>
 <span class="p">}</span>
 </pre></div>
 </div>
+<p>If your simulation is using multiple walkers, you must define an array of
+<code class="docutils literal notranslate"><span class="pre">&quot;output_file&quot;</span></code> that has the same number of filenames as number of walkers.
+For instance, with two walkers, use the syntax below.</p>
+<div class="highlight-javascript notranslate"><div class="highlight"><pre><span></span><span class="s2">&quot;logger&quot;</span><span class="o">:</span> <span class="p">{</span>
+        <span class="s2">&quot;frequency&quot;</span><span class="o">:</span> <span class="mi">100</span><span class="p">,</span>
+        <span class="s2">&quot;output_file&quot;</span><span class="o">:</span> <span class="p">[</span><span class="s2">&quot;cvs_w0.dat&quot;</span><span class="p">,</span><span class="s2">&quot;cvs_w1.dat&quot;</span><span class="p">],</span>
+        <span class="s2">&quot;cvs&quot;</span><span class="o">:</span> <span class="p">[</span><span class="mi">0</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span>
+<span class="p">}</span>
+</pre></div>
+</div>
 <p>The logger is useful in tracking the evolution of the CVs over the course of an
 advanced sampling calculation. Logging CVs can allow for post-simulation
 reweighting, or indicate if there are sampling problems in the system being
@@ -471,7 +481,7 @@ selectively log individual CVs as well.</p>
     <p>
         &copy; Copyright 2018, the SSAGES Team
       <span class="lastupdated">
-        Last updated on Jun 11, 2020.
+        Last updated on Oct 13, 2020.
       </span>
 
     </p>

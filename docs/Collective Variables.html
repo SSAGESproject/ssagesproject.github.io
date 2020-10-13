@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Collective Variables &mdash; SSAGES 0.9.0 documentation</title>
+  <title>Collective Variables &mdash; SSAGES 0.9.2 documentation</title>
   
 
   
@@ -61,7 +61,7 @@
             
             
               <div class="version">
-                0.9.0
+                0.9.2
               </div>
             
           
@@ -451,11 +451,20 @@ this and simply reference a CV by its numerical index.</p>
 <h2>Gyration Tensor<a class="headerlink" href="#gyration-tensor" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="id10">
 <h3>Description<a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h3>
-<p>This CV calculates quantities derived from the <em>mass-weighted*</em> gyration tensor defined as,</p>
+<p>This CV calculates quantities derived from the symmetric <em>mass-weighted</em>
+gyration tensor of a group of <span class="math notranslate nohighlight">\(N\)</span> atoms defined as,</p>
 <div class="math notranslate nohighlight">
-\[S_{mn} = \frac{1}{N}\sum_{i=1}^{N}{r_m^i r_n^i}\]</div>
-<p>where <span class="math notranslate nohighlight">\(r_m\)</span> is the coordinate of the <span class="math notranslate nohighlight">\(m^{\mathrm{th}}\)</span> atom in the interial
-frame. The eigenvalues of the radius of gyration tensor are particularly useful as collective variables which quantify the conformation of a molecule (such as a long polymer) or the shape of a given assembly of molecules. With eigenvalues of <span class="math notranslate nohighlight">\(\lambda_x^2, \lambda_y^2, \lambda_z^2\)</span> defined in the frame of the principal axes of inertia, the following quantities may be computed:</p>
+\[\mathbf{S} = \frac{1}{\sum_{i=1}^{N}{m_i}}\sum_{i=1}^{N}{m_i \left( \mathbf{r}_i - \mathbf{r}_\mathrm{COM}\right) \otimes \left( \mathbf{r}_i - \mathbf{r}_\mathrm{COM}\right)}\]</div>
+<p>where <span class="math notranslate nohighlight">\(m_i\)</span> is the mass and <span class="math notranslate nohighlight">\(\mathbf{r}_i\)</span> is the vector of
+coordinates of the <span class="math notranslate nohighlight">\(i^{\mathrm{th}}\)</span> atom, <span class="math notranslate nohighlight">\(\mathbf{r}_\mathrm{COM}\)</span>
+is the vector of the center of mass of all <span class="math notranslate nohighlight">\(N\)</span> atoms in the group, and
+<span class="math notranslate nohighlight">\(\otimes\)</span> is the outer, or tensor, product.</p>
+<p>The eigenvalues of the radius of gyration tensor are particularly useful as
+collective variables which quantify the conformation of a molecule (such as a
+long polymer) or the shape of a given assembly of molecules. With eigenvalues
+of <span class="math notranslate nohighlight">\(\lambda_x^2,~\lambda_y^2,~\lambda_z^2\)</span> (in increasing order)
+defined in the frame of the principal axes of inertia,
+the following quantities may be computed:</p>
 <div class="section" id="radius-of-gyration-squared">
 <h4>Radius of Gyration (Squared)<a class="headerlink" href="#radius-of-gyration-squared" title="Permalink to this headline">¶</a></h4>
 <div class="math notranslate nohighlight">
@@ -1129,7 +1138,7 @@ A value of 1 selects for the intra mode; a value of 2 selects for inter mode.</p
     <p>
         &copy; Copyright 2018, the SSAGES Team
       <span class="lastupdated">
-        Last updated on Jun 11, 2020.
+        Last updated on Oct 13, 2020.
       </span>
 
     </p>

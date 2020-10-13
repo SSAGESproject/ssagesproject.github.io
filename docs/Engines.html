@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Engines &mdash; SSAGES 0.9.0 documentation</title>
+  <title>Engines &mdash; SSAGES 0.9.2 documentation</title>
   
 
   
@@ -61,7 +61,7 @@
             
             
               <div class="version">
-                0.9.0
+                0.9.2
               </div>
             
           
@@ -234,7 +234,7 @@ vary between supported engines.</p>
 <td><p>no</p></td>
 </tr>
 <tr class="row-even"><td><p><a class="reference internal" href="#hoomd-blue">HOOMD-blue</a></p></td>
-<td><p>2.4 or newer</p></td>
+<td><p>2.4.0 or newer</p></td>
 <td><p>yes</p></td>
 <td><p>no</p></td>
 </tr>
@@ -397,7 +397,7 @@ and barostat to use, number and length of time steps, integrator, saving
 frequency, and many more (<code class="docutils literal notranslate"><span class="pre">.mdp</span></code> file)</p></li>
 </ol>
 <p>For example, one can convert a protein <code class="docutils literal notranslate"><span class="pre">.pdb</span></code> file from an
-<a class="reference external" href="http://www.rcsb.org/">online database</a> using GROMACS tools to generate
+<a class="reference external" href="https://www.rcsb.org/">online database</a> using GROMACS tools to generate
 a <code class="docutils literal notranslate"><span class="pre">.gro</span></code> and a <code class="docutils literal notranslate"><span class="pre">.top</span></code> file. To generate an input file, use the preprocessor
 <code class="docutils literal notranslate"><span class="pre">gmx_mpi</span> <span class="pre">grompp</span></code> command:</p>
 <div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>gmx_mpi grompp -f npt.mdp -p topol.top -c conf.gro -o input.tpr
@@ -636,32 +636,51 @@ on how you have compiled Qbox and SSAGES.</p>
 <h2>HOOMD-blue<a class="headerlink" href="#hoomd-blue" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="id10">
 <h3>Building<a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h3>
-<p>HOOMD-blue supports SSAGES on the current <code class="docutils literal notranslate"><span class="pre">master</span></code> branch as of 2018-08-01,
-and will be supported in releases v2.4.0 and later. HOOMD-blue must be built
-with <strong>MPI support enabled</strong>, using the HOOMD CMake flag <code class="docutils literal notranslate"><span class="pre">-DMPI_ENABLED=ON</span></code>.
-If building HOOMD from source, there are two ways to create a valid
-installation, which contains the <code class="docutils literal notranslate"><span class="pre">include</span></code> files needed by SSAGES.</p>
-<ol class="arabic simple">
-<li><p>HOOMD can be installed with <code class="docutils literal notranslate"><span class="pre">make</span> <span class="pre">install</span></code> to the location specified by
-the HOOMD CMake flag <code class="docutils literal notranslate"><span class="pre">-DCMAKE_INSTALL_PREFIX</span></code>.</p></li>
-<li><p>HOOMD can be built using <code class="docutils literal notranslate"><span class="pre">make</span></code> (without installation) using the HOOMD
-CMake flag <code class="docutils literal notranslate"><span class="pre">-DCOPY_HEADERS=ON</span></code>.</p></li>
-</ol>
-<p>For more information on HOOMD CMake flags, see <a class="reference external" href="https://hoomd-blue.readthedocs.io/en/stable/compiling.html">the HOOMD documentation</a>.
-After installing HOOMD, specify the SSAGES CMake flag <code class="docutils literal notranslate"><span class="pre">-DHOOMD_ROOT=/path/to/hoomd_installation/hoomd</span></code>, pointing to the <code class="docutils literal notranslate"><span class="pre">hoomd</span></code> directory within the HOOMD-blue installation prefix.
+<p>HOOMD-blue supports SSAGES in releases v2.4.0 and later. HOOMD-blue must be built
+with <strong>MPI support enabled</strong>, using the HOOMD CMake flag <code class="docutils literal notranslate"><span class="pre">-DENABLE_MPI=ON</span></code>.
+It is recommended to use a Python virtual environment with HOOMD-blue, as
+described in <a class="reference external" href="https://hoomd-blue.readthedocs.io/en/stable/installation.html#compile-hoomd-blue">the HOOMD compilation instructions</a>.
+With the virtual environment active, building HOOMD-blue and SSAGES from source
+can use Python to appropriately set relevant CMake variables.
 For example (using 8 <code class="docutils literal notranslate"><span class="pre">make</span></code> job slots),</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span> /path/to/hoomd
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span> /path/to/HOOMD
 mkdir build
 <span class="nb">cd</span> build/
-cmake ../ -DENABLE_MPI<span class="o">=</span>on -DCMAKE_INSTALL_PREFIX<span class="o">=</span>/path/to/hoomd_installation
+python3 -m venv /path/to/new/virtual/environment --system-site-packages
+<span class="nb">source</span> /path/to/new/virtual/environment/bin/activate
+cmake .. -DCMAKE_INSTALL_PREFIX<span class="o">=</span><span class="k">$(</span>python3 -c <span class="s2">&quot;import site; print(site.getsitepackages()[0])&quot;</span><span class="k">)</span> -DENABLE_MPI<span class="o">=</span>ON
 make install -j <span class="m">8</span>
 
 <span class="nb">cd</span> /path/to/SSAGES
 mkdir build
 <span class="nb">cd</span> build/
-<span class="c1"># Note that this path adds a suffix .../hoomd</span>
-cmake ../ -DHOOMD_ROOT<span class="o">=</span>/path/to/hoomd_installation/hoomd
+cmake .. -DHOOMD<span class="o">=</span>ON
 make -j <span class="m">8</span>
+</pre></div>
+</div>
+<p>Alternatively, HOOMD can be built using <code class="docutils literal notranslate"><span class="pre">make</span></code> (without installation) using
+the HOOMD CMake flag <code class="docutils literal notranslate"><span class="pre">-DCOPY_HEADERS=ON</span></code>.
+For more information on HOOMD CMake flags, see <a class="reference external" href="https://hoomd-blue.readthedocs.io/en/stable/installation.html">the HOOMD documentation</a>.
+In this case, you must specify the SSAGES CMake flag
+<code class="docutils literal notranslate"><span class="pre">-DHOOMD_ROOT=/path/to/hoomd_installation/hoomd</span></code>,
+pointing to the <code class="docutils literal notranslate"><span class="pre">hoomd</span></code> directory within the HOOMD-blue installation prefix.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">cd</span> /path/to/HOOMD
+mkdir build
+<span class="nb">cd</span> build/
+cmake .. -DCOPY_HEADERS<span class="o">=</span>ON -DENABLE_MPI<span class="o">=</span>ON
+make -j <span class="m">8</span>
+
+<span class="nb">cd</span> /path/to/SSAGES
+mkdir build
+<span class="nb">cd</span> build/
+cmake .. -DHOOMD_ROOT<span class="o">=</span>/path/to/HOOMD/build/hoomd
+make -j <span class="m">8</span>
+</pre></div>
+</div>
+<p>It may be necessary to put the HOOMD build directory in your <code class="docutils literal notranslate"><span class="pre">PYTHONPATH</span></code>,
+so that your Python interpreter can find the <code class="docutils literal notranslate"><span class="pre">hoomd</span></code> module. Set this
+variable with the following command.</p>
+<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span><span class="nb">export</span> <span class="nv">PYTHONPATH</span><span class="o">=</span><span class="s2">&quot;</span><span class="si">${</span><span class="nv">PYTHONPATH</span><span class="si">}</span><span class="s2">:/path/to/hoomd/build&quot;</span>
 </pre></div>
 </div>
 </div>
@@ -676,7 +695,7 @@ types, interactions, integrators, log outputs and so forth. However, the
 simulation user script should <em>not</em> call <code class="docutils literal notranslate"><span class="pre">hoomd.run(steps)</span></code> as this will
 be called within SSAGES.</p>
 <p>To set
-<a class="reference external" href="http://hoomd-blue.readthedocs.io/en/stable/command-line-options.html">HOOMD-blue command-line options</a>,
+<a class="reference external" href="https://hoomd-blue.readthedocs.io/en/v2.5.0/command-line-options.html">HOOMD-blue command-line options</a>,
 use the SSAGES JSON input file. Set the key <code class="docutils literal notranslate"><span class="pre">&quot;args&quot;</span></code> with a string of command
 line options that will be passed to <code class="docutils literal notranslate"><span class="pre">hoomd.context.initialize()</span></code>.</p>
 </div>
@@ -705,7 +724,7 @@ line options that will be passed to <code class="docutils literal notranslate"><
     <p>
         &copy; Copyright 2018, the SSAGES Team
       <span class="lastupdated">
-        Last updated on Jun 11, 2020.
+        Last updated on Oct 13, 2020.
       </span>
 
     </p>

@@ -4,7 +4,7 @@ var searchData=
   ['walkerid_5f_566',['walkerid_',['../classSSAGES_1_1ResourceHandler.html#a1906b7e1430e3447c7f6dad2bbbf32bd',1,'SSAGES::ResourceHandler']]],
   ['wdotp1_5f_567',['wdotp1_',['../classSSAGES_1_1ABF.html#a7c882e37a3676cb3e33776621929c3b7',1,'SSAGES::ABF::wdotp1_()'],['../classSSAGES_1_1CFF.html#af4472f7ce0b907d88bff353deb2d9a00',1,'SSAGES::CFF::wdotp1_()']]],
   ['wdotp2_5f_568',['wdotp2_',['../classSSAGES_1_1ABF.html#a1a0082f17ab10382191cbf39046e7052',1,'SSAGES::ABF::wdotp2_()'],['../classSSAGES_1_1CFF.html#aa39ac519b1d4c33a22f98ff75ce8da02',1,'SSAGES::CFF::wdotp2_()']]],
-  ['weight_569',['Weight',['../classSSAGES_1_1BasisFunction.html#adfc544d25046fb83f1b40296d08b7b30',1,'SSAGES::BasisFunction::Weight()'],['../classSSAGES_1_1Chebyshev.html#a83f2a3dd09162f39c97bcddb0679407d',1,'SSAGES::Chebyshev::Weight()']]],
+  ['weight_569',['Weight',['../classSSAGES_1_1BasisFunction.html#aa9f3eac429d5205da6e35b087cab4403',1,'SSAGES::BasisFunction::Weight()'],['../classSSAGES_1_1Chebyshev.html#a83f2a3dd09162f39c97bcddb0679407d',1,'SSAGES::Chebyshev::Weight()']]],
   ['weight_5f_570',['weight_',['../classSSAGES_1_1BFS.html#a0790f5dfa981809fb3f2aa468fd26326',1,'SSAGES::BFS']]],
   ['what_571',['what',['../classSSAGES_1_1BuildException.html#a80d04a701235c9b75d53c6a00792942e',1,'SSAGES::BuildException']]],
   ['wid_5f_572',['wid_',['../classSSAGES_1_1Snapshot.html#aa7448e983d92932a723bcbf9a466c21e',1,'SSAGES::Snapshot']]],
