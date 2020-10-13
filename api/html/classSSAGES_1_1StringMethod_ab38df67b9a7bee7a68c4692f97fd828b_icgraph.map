@@ -1,9 +1,0 @@
-<map id="SSAGES::StringMethod::GatherNeighbors" name="SSAGES::StringMethod::GatherNeighbors">
-<area shape="rect" id="node1" title="Gather neighbors over MPI." alt="" coords="535,64,697,105"/>
-<area shape="rect" id="node2" href="$classSSAGES_1_1ElasticBand.html#a131b99117f7f7f3ff18419513a2c507b" title="Updates the nudged elastic band string." alt="" coords="304,5,459,47"/>
-<area shape="rect" id="node4" href="$classSSAGES_1_1Swarm.html#a0ee007f404408c59c7217cd8fb6b7c1c" title="Updates the positions of the string." alt="" coords="276,71,487,98"/>
-<area shape="rect" id="node6" href="$classSSAGES_1_1FiniteTempString.html#af68721c1b7953bc3d2d097ad9090f66c" title="Updates the string according to the FTS method." alt="" coords="289,123,473,164"/>
-<area shape="rect" id="node3" href="$classSSAGES_1_1ElasticBand.html#a85177e2c02fa8f767eb98664636732da" title="Post&#45;integration hook." alt="" coords="39,5,194,47"/>
-<area shape="rect" id="node5" href="$classSSAGES_1_1Swarm.html#aae8fbacf2c51b84a5a333387116dda0d" title="Method call post integration." alt="" coords="5,71,228,98"/>
-<area shape="rect" id="node7" href="$classSSAGES_1_1FiniteTempString.html#a94561a14cc08999d4531db528fe3f2e8" title="Method call post integration." alt="" coords="25,123,209,164"/>
-</map>

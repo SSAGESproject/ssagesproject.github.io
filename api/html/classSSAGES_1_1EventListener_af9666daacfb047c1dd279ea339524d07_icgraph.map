@@ -1,9 +1,0 @@
-<map id="SSAGES::EventListener::IsMasterRank" name="SSAGES::EventListener::IsMasterRank">
-<area shape="rect" id="node1" title="Check if current processor is master." alt="" coords="512,100,677,141"/>
-<area shape="rect" id="node2" href="$classSSAGES_1_1DirectForwardFlux.html#a2be13ab9b33d4cb90aa22ca9d71077e9" title="Function that checks if interfaces have been crossed (different for each FFS flavor)" alt="" coords="265,5,463,47"/>
-<area shape="rect" id="node4" href="$classSSAGES_1_1DirectForwardFlux.html#af14a27e7176c4cd6fca5479dfef17358" title="Initialize the Queue." alt="" coords="268,71,460,112"/>
-<area shape="rect" id="node5" href="$classSSAGES_1_1ANN.html#ad63d276efae1a266eb5d556bdf896a98" title="Method call post integration." alt="" coords="5,137,216,163"/>
-<area shape="rect" id="node6" href="$classSSAGES_1_1ANN.html#a7091cb356fa05bc0b21a4e37144fb0b7" title="Trains the neural network." alt="" coords="264,187,464,214"/>
-<area shape="rect" id="node3" href="$classSSAGES_1_1DirectForwardFlux.html#a5491cd537f737524f5fc295236eefb85" title="Post&#45;integration hook." alt="" coords="15,39,207,80"/>
-<area shape="rect" id="node7" href="$classSSAGES_1_1ANN.html#a86e2611b4516c8a465014919139aae19" title="Method call prior to simulation initiation." alt="" coords="9,187,212,214"/>
-</map>

@@ -1,9 +1,0 @@
-<map id="SSAGES::Snapshot::GetAtomIDs" name="SSAGES::Snapshot::GetAtomIDs">
-<area shape="rect" id="node1" title="Access the atom IDs." alt="" coords="701,111,923,138"/>
-<area shape="rect" id="node2" href="$classSSAGES_1_1ForwardFlux.html#a28017e532afacbc0c2bee398a5aeabd1" title=" " alt="" coords="493,5,651,47"/>
-<area shape="rect" id="node5" href="$classSSAGES_1_1PairwiseCV.html#a807d3a560a3a187c7648da5a282027df" title="Evaluate the CV." alt="" coords="495,71,649,112"/>
-<area shape="rect" id="node6" href="$classSSAGES_1_1ForwardFlux.html#aaf21bde2adc1a021de4ebb47d10c05a7" title="Read a file corresponding to a FFSConfigID into current snapshot." alt="" coords="491,136,653,177"/>
-<area shape="rect" id="node7" href="$classSSAGES_1_1ForwardFlux.html#a8f3da6706283040f7adf33399bdb2376" title="Write a file corresponding to FFSConfigID from current snapshot." alt="" coords="491,201,653,243"/>
-<area shape="rect" id="node3" href="$classSSAGES_1_1DirectForwardFlux.html#a2be13ab9b33d4cb90aa22ca9d71077e9" title="Function that checks if interfaces have been crossed (different for each FFS flavor)" alt="" coords="245,104,443,145"/>
-<area shape="rect" id="node4" href="$classSSAGES_1_1DirectForwardFlux.html#a5491cd537f737524f5fc295236eefb85" title="Post&#45;integration hook." alt="" coords="5,104,197,145"/>
-</map>

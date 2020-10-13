@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['ssages_685',['SSAGES',['../namespaceSSAGES.html',1,'']]]
+  ['ssages_694',['SSAGES',['../namespaceSSAGES.html',1,'']]]
 ];

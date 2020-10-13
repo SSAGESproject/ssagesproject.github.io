@@ -1,4 +1,0 @@
-<map id="SSAGES::Chebyshev::Evaluate" name="SSAGES::Chebyshev::Evaluate">
-<area shape="rect" id="node1" title="Calculates the output of the basis function." alt="" coords="5,5,164,47"/>
-<area shape="rect" id="node2" href="$classSSAGES_1_1Chebyshev.html#ac4714ca82a78904abe0721c1828ef47c" title="Transforms variable from absolute value to [&#45;1,1] between boundaries." alt="" coords="212,5,371,47"/>
-</map>

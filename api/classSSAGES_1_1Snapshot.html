@@ -29,7 +29,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SSAGES
-   &#160;<span id="projectnumber">0.8.6</span>
+   &#160;<span id="projectnumber">0.9.2</span>
    </div>
    <div id="projectbrief">Software Suite for Advanced General Ensemble Simulations</div>
   </td>
@@ -213,10 +213,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a77cfe35b720393223aa5c7410b2dd3ad"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSSAGES_1_1Snapshot.html#a77cfe35b720393223aa5c7410b2dd3ad">TotalMass</a> (const <a class="el" href="namespaceSSAGES.html#afbb26053e292f94ea83b1c441ce6df74">Label</a> &amp;indices) const</td></tr>
 <tr class="memdesc:a77cfe35b720393223aa5c7410b2dd3ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute the total mass of a group of particles based on index.  <a href="classSSAGES_1_1Snapshot.html#a77cfe35b720393223aa5c7410b2dd3ad">More...</a><br /></td></tr>
 <tr class="separator:a77cfe35b720393223aa5c7410b2dd3ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8195dc7a8a536999f63e20b4cb86639b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceSSAGES.html#a630084a0a5e185e89e21b3735f8f8b2e">Vector3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSSAGES_1_1Snapshot.html#a8195dc7a8a536999f63e20b4cb86639b">CenterOfMass</a> (const <a class="el" href="namespaceSSAGES.html#afbb26053e292f94ea83b1c441ce6df74">Label</a> &amp;indices) const</td></tr>
-<tr class="separator:a8195dc7a8a536999f63e20b4cb86639b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a37cd55705201e0a40adc75b646a6e864"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceSSAGES.html#a630084a0a5e185e89e21b3735f8f8b2e">Vector3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSSAGES_1_1Snapshot.html#a37cd55705201e0a40adc75b646a6e864">CenterOfMass</a> (const <a class="el" href="namespaceSSAGES.html#afbb26053e292f94ea83b1c441ce6df74">Label</a> &amp;indices, double mtot) const</td></tr>
-<tr class="separator:a37cd55705201e0a40adc75b646a6e864"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac600b5f3d3e240d2cc9965c06547e97e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespaceSSAGES.html#a630084a0a5e185e89e21b3735f8f8b2e">Vector3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSSAGES_1_1Snapshot.html#ac600b5f3d3e240d2cc9965c06547e97e">CenterOfMass</a> (const <a class="el" href="namespaceSSAGES.html#afbb26053e292f94ea83b1c441ce6df74">Label</a> &amp;indices, bool mass_weight=true) const</td></tr>
+<tr class="memdesc:ac600b5f3d3e240d2cc9965c06547e97e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compute center of mass of a group of atoms based on index.  <a href="classSSAGES_1_1Snapshot.html#ac600b5f3d3e240d2cc9965c06547e97e">More...</a><br /></td></tr>
+<tr class="separator:ac600b5f3d3e240d2cc9965c06547e97e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac9cd613a5fd8dacbd6dfc839cf526d28"><td class="memItemLeft" align="right" valign="top">const <a class="el" href="namespaceSSAGES.html#afbb26053e292f94ea83b1c441ce6df74">Label</a> &amp;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classSSAGES_1_1Snapshot.html#ac9cd613a5fd8dacbd6dfc839cf526d28">GetAtomIDs</a> () const</td></tr>
 <tr class="memdesc:ac9cd613a5fd8dacbd6dfc839cf526d28"><td class="mdescLeft">&#160;</td><td class="mdescRight">Access the atom IDs.  <a href="classSSAGES_1_1Snapshot.html#ac9cd613a5fd8dacbd6dfc839cf526d28">More...</a><br /></td></tr>
 <tr class="separator:ac9cd613a5fd8dacbd6dfc839cf526d28"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -526,7 +525,7 @@ Here is the call graph for this function:</div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="Snapshot_8h_source.html#l00058">H_</a>, <a class="el" href="Snapshot_8h_source.html#l00059">Hinv_</a>, <a class="el" href="Snapshot_8h_source.html#l00065">isperiodic_</a>, and <a class="el" href="Snapshot_8h_source.html#l00035">SSAGES::roundf()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="Snapshot_8h_source.html#l00455">CenterOfMass()</a>, <a class="el" href="AngleCV_8h_source.html#l00085">SSAGES::AngleCV::Evaluate()</a>, <a class="el" href="TorsionalCV_8h_source.html#l00095">SSAGES::TorsionalCV::Evaluate()</a>, <a class="el" href="PairwiseCV_8h_source.html#l00112">SSAGES::PairwiseCV::Evaluate()</a>, <a class="el" href="ParticlePositionCV_8h_source.html#l00116">SSAGES::ParticlePositionCV::Evaluate()</a>, <a class="el" href="RouseModeCV_8h_source.html#l00121">SSAGES::RouseModeCV::Evaluate()</a>, <a class="el" href="ParticleSeparationCV_8h_source.html#l00128">SSAGES::ParticleSeparationCV::Evaluate()</a>, <a class="el" href="GyrationTensorCV_8h_source.html#l00128">SSAGES::GyrationTensorCV::Evaluate()</a>, and <a class="el" href="RMSDCV_8h_source.html#l00162">SSAGES::RMSDCV::Evaluate()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="Snapshot_8h_source.html#l00442">CenterOfMass()</a>, <a class="el" href="AngleCV_8h_source.html#l00085">SSAGES::AngleCV::Evaluate()</a>, <a class="el" href="TorsionalCV_8h_source.html#l00095">SSAGES::TorsionalCV::Evaluate()</a>, <a class="el" href="PairwiseCV_8h_source.html#l00112">SSAGES::PairwiseCV::Evaluate()</a>, <a class="el" href="ParticlePositionCV_8h_source.html#l00116">SSAGES::ParticlePositionCV::Evaluate()</a>, <a class="el" href="RouseModeCV_8h_source.html#l00121">SSAGES::RouseModeCV::Evaluate()</a>, <a class="el" href="ParticleSeparationCV_8h_source.html#l00128">SSAGES::ParticleSeparationCV::Evaluate()</a>, <a class="el" href="GyrationTensorCV_8h_source.html#l00128">SSAGES::GyrationTensorCV::Evaluate()</a>, and <a class="el" href="RMSDCV_8h_source.html#l00162">SSAGES::RMSDCV::Evaluate()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -541,92 +540,25 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classSSAGES_1_1Snapshot_ad6caa5b92433501fd4a62deef288340a_icgraph.png" border="0" usemap="#classSSAGES_1_1Snapshot_ad6caa5b92433501fd4a62deef288340a_icgraph" alt=""/></div>
 <map name="classSSAGES_1_1Snapshot_ad6caa5b92433501fd4a62deef288340a_icgraph" id="classSSAGES_1_1Snapshot_ad6caa5b92433501fd4a62deef288340a_icgraph">
-<area shape="rect" title="Apply minimum image to a vector." alt="" coords="256,253,491,295"/>
-<area shape="rect" href="classSSAGES_1_1Snapshot.html#a37cd55705201e0a40adc75b646a6e864" title=" " alt="" coords="13,5,200,47"/>
-<area shape="rect" href="classSSAGES_1_1AngleCV.html#afc7cddc3872aeeeeb098c69f1126b594" title="Evaluate the CV." alt="" coords="9,71,205,98"/>
-<area shape="rect" href="classSSAGES_1_1TorsionalCV.html#ae3e82fb11240eb780cfcc57b2b0112a5" title="Evaluate the CV." alt="" coords="28,123,185,164"/>
-<area shape="rect" href="classSSAGES_1_1PairwiseCV.html#a807d3a560a3a187c7648da5a282027df" title="Evaluate the CV." alt="" coords="29,188,184,229"/>
-<area shape="rect" href="classSSAGES_1_1ParticlePositionCV.html#aa2ee9b7b3ca3133183e2d5f511251e29" title="Evaluate the CV." alt="" coords="19,253,195,295"/>
-<area shape="rect" href="classSSAGES_1_1RouseModeCV.html#a1468b1aabf81ceb2ef3feb3b8fc79d0d" title="Evaluate the CV." alt="" coords="19,319,194,360"/>
-<area shape="rect" href="classSSAGES_1_1GyrationTensorCV.html#ac613c1659bd00b335c3d6de3d8ff0ebc" title="Evaluate the CV." alt="" coords="10,384,203,425"/>
-<area shape="rect" href="classSSAGES_1_1ParticleSeparationCV.html#ae6452c47bf1d849e2af60c84209a9955" title="Evaluate the CV." alt="" coords="11,449,202,491"/>
-<area shape="rect" href="classSSAGES_1_1RMSDCV.html#aff77158b643fec57c6d1649a78b0dd14" title="Evaluate the CV." alt="" coords="5,515,208,542"/>
+<area shape="rect" title="Apply minimum image to a vector." alt="" coords="500,303,735,344"/>
+<area shape="rect" href="classSSAGES_1_1Snapshot.html#ac600b5f3d3e240d2cc9965c06547e97e" title="Compute center of mass of a group of atoms based on index." alt="" coords="261,191,447,232"/>
+<area shape="rect" href="classSSAGES_1_1ParticlePositionCV.html#aa2ee9b7b3ca3133183e2d5f511251e29" title="Evaluate the CV." alt="" coords="19,5,195,47"/>
+<area shape="rect" href="classSSAGES_1_1RouseModeCV.html#a1468b1aabf81ceb2ef3feb3b8fc79d0d" title="Evaluate the CV." alt="" coords="19,71,194,112"/>
+<area shape="rect" href="classSSAGES_1_1GyrationTensorCV.html#ac613c1659bd00b335c3d6de3d8ff0ebc" title="Evaluate the CV." alt="" coords="10,253,203,295"/>
+<area shape="rect" href="classSSAGES_1_1ParticleSeparationCV.html#ae6452c47bf1d849e2af60c84209a9955" title="Evaluate the CV." alt="" coords="11,319,202,360"/>
+<area shape="rect" href="classSSAGES_1_1RMSDCV.html#aff77158b643fec57c6d1649a78b0dd14" title="Evaluate the CV." alt="" coords="5,385,208,411"/>
+<area shape="rect" href="classSSAGES_1_1AngleCV.html#afc7cddc3872aeeeeb098c69f1126b594" title="Evaluate the CV." alt="" coords="256,411,452,438"/>
+<area shape="rect" href="classSSAGES_1_1TorsionalCV.html#ae3e82fb11240eb780cfcc57b2b0112a5" title="Evaluate the CV." alt="" coords="275,463,433,504"/>
+<area shape="rect" href="classSSAGES_1_1PairwiseCV.html#a807d3a560a3a187c7648da5a282027df" title="Evaluate the CV." alt="" coords="277,528,431,569"/>
+<area shape="rect" href="classSSAGES_1_1ParticleCoordinateCV.html#afff49e8eb1571fe3527712be50da001e" title="Evaluate the CV." alt="" coords="11,188,203,229"/>
+<area shape="rect" href="classSSAGES_1_1ANNCV.html#a1ddb11f32dbf1c1c19e119310c047a0d" title="Evaluate the CV." alt="" coords="11,137,203,163"/>
 </map>
 </div>
 
 </div>
 </div>
-<a id="a8195dc7a8a536999f63e20b4cb86639b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8195dc7a8a536999f63e20b4cb86639b">&#9670;&nbsp;</a></span>CenterOfMass() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="namespaceSSAGES.html#a630084a0a5e185e89e21b3735f8f8b2e">Vector3</a> SSAGES::Snapshot::CenterOfMass </td>
-          <td>(</td>
-          <td class="paramtype">const <a class="el" href="namespaceSSAGES.html#afbb26053e292f94ea83b1c441ce6df74">Label</a> &amp;&#160;</td>
-          <td class="paramname"><em>indices</em></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<p>Compute center of mass of a group of atoms based on idex with provided Total mass.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">indices</td><td>IDs of particles of interest. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Vector3 Center of mass of particles. </dd></dl>
-
-<p class="definition">Definition at line <a class="el" href="Snapshot_8h_source.html#l00438">438</a> of file <a class="el" href="Snapshot_8h_source.html">Snapshot.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00439"></a><span class="lineno">  439</span>&#160;        {</div>
-<div class="line"><a name="l00440"></a><span class="lineno">  440</span>&#160;            <span class="comment">// Get total mass.</span></div>
-<div class="line"><a name="l00441"></a><span class="lineno">  441</span>&#160;            <span class="keyword">auto</span> mtot = <a class="code" href="classSSAGES_1_1Snapshot.html#a77cfe35b720393223aa5c7410b2dd3ad">TotalMass</a>(indices);</div>
-<div class="line"><a name="l00442"></a><span class="lineno">  442</span>&#160; </div>
-<div class="line"><a name="l00443"></a><span class="lineno">  443</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="classSSAGES_1_1Snapshot.html#a8195dc7a8a536999f63e20b4cb86639b">CenterOfMass</a>(indices, mtot);         </div>
-<div class="line"><a name="l00444"></a><span class="lineno">  444</span>&#160;        }</div>
-</div><!-- fragment -->
-<p class="reference">References <a class="el" href="Snapshot_8h_source.html#l00423">TotalMass()</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="ParticleCoordinateCV_8h_source.html#l00097">SSAGES::ParticleCoordinateCV::Evaluate()</a>, <a class="el" href="ParticlePositionCV_8h_source.html#l00116">SSAGES::ParticlePositionCV::Evaluate()</a>, <a class="el" href="RouseModeCV_8h_source.html#l00121">SSAGES::RouseModeCV::Evaluate()</a>, <a class="el" href="ParticleSeparationCV_8h_source.html#l00128">SSAGES::ParticleSeparationCV::Evaluate()</a>, <a class="el" href="GyrationTensorCV_8h_source.html#l00128">SSAGES::GyrationTensorCV::Evaluate()</a>, and <a class="el" href="RMSDCV_8h_source.html#l00162">SSAGES::RMSDCV::Evaluate()</a>.</p>
-<div class="dynheader">
-Here is the call graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classSSAGES_1_1Snapshot_a8195dc7a8a536999f63e20b4cb86639b_cgraph.png" border="0" usemap="#classSSAGES_1_1Snapshot_a8195dc7a8a536999f63e20b4cb86639b_cgraph" alt=""/></div>
-<map name="classSSAGES_1_1Snapshot_a8195dc7a8a536999f63e20b4cb86639b_cgraph" id="classSSAGES_1_1Snapshot_a8195dc7a8a536999f63e20b4cb86639b_cgraph">
-<area shape="rect" title=" " alt="" coords="5,5,192,47"/>
-<area shape="rect" href="classSSAGES_1_1Snapshot.html#a77cfe35b720393223aa5c7410b2dd3ad" title="Compute the total mass of a group of particles based on index." alt="" coords="240,13,449,39"/>
-</map>
-</div>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><img src="classSSAGES_1_1Snapshot_a8195dc7a8a536999f63e20b4cb86639b_icgraph.png" border="0" usemap="#classSSAGES_1_1Snapshot_a8195dc7a8a536999f63e20b4cb86639b_icgraph" alt=""/></div>
-<map name="classSSAGES_1_1Snapshot_a8195dc7a8a536999f63e20b4cb86639b_icgraph" id="classSSAGES_1_1Snapshot_a8195dc7a8a536999f63e20b4cb86639b_icgraph">
-<area shape="rect" title=" " alt="" coords="256,169,443,211"/>
-<area shape="rect" href="classSSAGES_1_1ParticleCoordinateCV.html#afff49e8eb1571fe3527712be50da001e" title="Evaluate the CV." alt="" coords="11,5,203,47"/>
-<area shape="rect" href="classSSAGES_1_1ParticlePositionCV.html#aa2ee9b7b3ca3133183e2d5f511251e29" title="Evaluate the CV." alt="" coords="19,71,195,112"/>
-<area shape="rect" href="classSSAGES_1_1RouseModeCV.html#a1468b1aabf81ceb2ef3feb3b8fc79d0d" title="Evaluate the CV." alt="" coords="19,136,194,177"/>
-<area shape="rect" href="classSSAGES_1_1ParticleSeparationCV.html#ae6452c47bf1d849e2af60c84209a9955" title="Evaluate the CV." alt="" coords="11,201,202,243"/>
-<area shape="rect" href="classSSAGES_1_1GyrationTensorCV.html#ac613c1659bd00b335c3d6de3d8ff0ebc" title="Evaluate the CV." alt="" coords="10,267,203,308"/>
-<area shape="rect" href="classSSAGES_1_1RMSDCV.html#aff77158b643fec57c6d1649a78b0dd14" title="Evaluate the CV." alt="" coords="5,333,208,359"/>
-</map>
-</div>
-
-</div>
-</div>
-<a id="a37cd55705201e0a40adc75b646a6e864"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a37cd55705201e0a40adc75b646a6e864">&#9670;&nbsp;</a></span>CenterOfMass() <span class="overload">[2/2]</span></h2>
+<a id="ac600b5f3d3e240d2cc9965c06547e97e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac600b5f3d3e240d2cc9965c06547e97e">&#9670;&nbsp;</a></span>CenterOfMass()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -643,8 +575,8 @@ Here is the caller graph for this function:</div>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">double&#160;</td>
-          <td class="paramname"><em>mtot</em>&#160;</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>mass_weight</em> = <code>true</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -658,80 +590,106 @@ Here is the caller graph for this function:</div>
   </tr>
 </table>
 </div><div class="memdoc">
-<p>Compute center of mass of a group of atoms based on idex with provided Total mass.</p>
+
+<p>Compute center of mass of a group of atoms based on index. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">indices</td><td>IDs of particles of interest. </td></tr>
-    <tr><td class="paramname">mtot</td><td>Total mass of particle group. </td></tr>
+    <tr><td class="paramname">mass_weight</td><td>Mass-weighting for COM calculation. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Vector3 Center of mass of particles. </dd></dl>
-<dl class="section note"><dt>Note</dt><dd>Each processor passes in the local indices of the atoms of interest and this function will collect the data and compute the center of mass. </dd></dl>
+<dl class="section note"><dt>Note</dt><dd>Each processor passes in the local indices of the atoms of interest and this function will collect the data and compute the center of mass. </dd>
+<dd>
+Default behavior is to use a mass-weighted average. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="Snapshot_8h_source.html#l00455">455</a> of file <a class="el" href="Snapshot_8h_source.html">Snapshot.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00456"></a><span class="lineno">  456</span>&#160;        {</div>
-<div class="line"><a name="l00457"></a><span class="lineno">  457</span>&#160;            <span class="comment">// Store coorinates and masses in vectors to gather. </span></div>
-<div class="line"><a name="l00458"></a><span class="lineno">  458</span>&#160;            std::vector&lt;double&gt; pos, mass, gpos, gmass;</div>
-<div class="line"><a name="l00459"></a><span class="lineno">  459</span>&#160;            std::vector&lt;int&gt; pcounts(<a class="code" href="classSSAGES_1_1Snapshot.html#a318172ccddbc82d73d5c2fdd327f92c6">comm_</a>.size(), 0), mcounts(<a class="code" href="classSSAGES_1_1Snapshot.html#a318172ccddbc82d73d5c2fdd327f92c6">comm_</a>.size(), 0); </div>
-<div class="line"><a name="l00460"></a><span class="lineno">  460</span>&#160;            std::vector&lt;int&gt; pdispls(<a class="code" href="classSSAGES_1_1Snapshot.html#a318172ccddbc82d73d5c2fdd327f92c6">comm_</a>.size()+1, 0), mdispls(<a class="code" href="classSSAGES_1_1Snapshot.html#a318172ccddbc82d73d5c2fdd327f92c6">comm_</a>.size()+1, 0);</div>
-<div class="line"><a name="l00461"></a><span class="lineno">  461</span>&#160; </div>
-<div class="line"><a name="l00462"></a><span class="lineno">  462</span>&#160;            pcounts[<a class="code" href="classSSAGES_1_1Snapshot.html#a318172ccddbc82d73d5c2fdd327f92c6">comm_</a>.rank()] = 3*indices.size();</div>
-<div class="line"><a name="l00463"></a><span class="lineno">  463</span>&#160;            mcounts[<a class="code" href="classSSAGES_1_1Snapshot.html#a318172ccddbc82d73d5c2fdd327f92c6">comm_</a>.rank()] = indices.size();</div>
-<div class="line"><a name="l00464"></a><span class="lineno">  464</span>&#160; </div>
-<div class="line"><a name="l00465"></a><span class="lineno">  465</span>&#160;            <span class="comment">// Reduce counts.</span></div>
-<div class="line"><a name="l00466"></a><span class="lineno">  466</span>&#160;            MPI_Allreduce(MPI_IN_PLACE, pcounts.data(), pcounts.size(), MPI_INT, MPI_SUM, <a class="code" href="classSSAGES_1_1Snapshot.html#a318172ccddbc82d73d5c2fdd327f92c6">comm_</a>);</div>
-<div class="line"><a name="l00467"></a><span class="lineno">  467</span>&#160;            MPI_Allreduce(MPI_IN_PLACE, mcounts.data(), mcounts.size(), MPI_INT, MPI_SUM, <a class="code" href="classSSAGES_1_1Snapshot.html#a318172ccddbc82d73d5c2fdd327f92c6">comm_</a>);</div>
-<div class="line"><a name="l00468"></a><span class="lineno">  468</span>&#160; </div>
-<div class="line"><a name="l00469"></a><span class="lineno">  469</span>&#160;            <span class="comment">// Compute displacements.</span></div>
-<div class="line"><a name="l00470"></a><span class="lineno">  470</span>&#160;            std::partial_sum(pcounts.begin(), pcounts.end(), pdispls.begin() + 1);</div>
-<div class="line"><a name="l00471"></a><span class="lineno">  471</span>&#160;            std::partial_sum(mcounts.begin(), mcounts.end(), mdispls.begin() + 1);</div>
-<div class="line"><a name="l00472"></a><span class="lineno">  472</span>&#160;            </div>
-<div class="line"><a name="l00473"></a><span class="lineno">  473</span>&#160;            <span class="comment">// Fill up mass and position vectors.</span></div>
-<div class="line"><a name="l00474"></a><span class="lineno">  474</span>&#160;            <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; idx : indices)</div>
-<div class="line"><a name="l00475"></a><span class="lineno">  475</span>&#160;            {</div>
-<div class="line"><a name="l00476"></a><span class="lineno">  476</span>&#160;                <span class="keyword">auto</span>&amp; p = <a class="code" href="classSSAGES_1_1Snapshot.html#a47cac5746857da7ddf86353658a231cc">positions_</a>[idx];</div>
-<div class="line"><a name="l00477"></a><span class="lineno">  477</span>&#160;                pos.push_back(p[0]);</div>
-<div class="line"><a name="l00478"></a><span class="lineno">  478</span>&#160;                pos.push_back(p[1]);</div>
-<div class="line"><a name="l00479"></a><span class="lineno">  479</span>&#160;                pos.push_back(p[2]);</div>
-<div class="line"><a name="l00480"></a><span class="lineno">  480</span>&#160;                mass.push_back(<a class="code" href="classSSAGES_1_1Snapshot.html#a02d6d1d1a25a651f34ec2679c1690f90">masses_</a>[idx]);</div>
+<p class="definition">Definition at line <a class="el" href="Snapshot_8h_source.html#l00442">442</a> of file <a class="el" href="Snapshot_8h_source.html">Snapshot.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00443"></a><span class="lineno">  443</span>&#160;        {</div>
+<div class="line"><a name="l00444"></a><span class="lineno">  444</span>&#160;            <span class="comment">// Store coordinates and masses in vectors to gather.</span></div>
+<div class="line"><a name="l00445"></a><span class="lineno">  445</span>&#160;            std::vector&lt;double&gt; pos, mass, gpos, gmass;</div>
+<div class="line"><a name="l00446"></a><span class="lineno">  446</span>&#160;            std::vector&lt;int&gt; pcounts(<a class="code" href="classSSAGES_1_1Snapshot.html#a318172ccddbc82d73d5c2fdd327f92c6">comm_</a>.size(), 0), mcounts(<a class="code" href="classSSAGES_1_1Snapshot.html#a318172ccddbc82d73d5c2fdd327f92c6">comm_</a>.size(), 0); </div>
+<div class="line"><a name="l00447"></a><span class="lineno">  447</span>&#160;            std::vector&lt;int&gt; pdispls(<a class="code" href="classSSAGES_1_1Snapshot.html#a318172ccddbc82d73d5c2fdd327f92c6">comm_</a>.size()+1, 0), mdispls(<a class="code" href="classSSAGES_1_1Snapshot.html#a318172ccddbc82d73d5c2fdd327f92c6">comm_</a>.size()+1, 0);</div>
+<div class="line"><a name="l00448"></a><span class="lineno">  448</span>&#160; </div>
+<div class="line"><a name="l00449"></a><span class="lineno">  449</span>&#160;            <span class="comment">// Calculate total mass</span></div>
+<div class="line"><a name="l00450"></a><span class="lineno">  450</span>&#160;            <span class="keywordtype">double</span> mtot = mass_weight ? <a class="code" href="classSSAGES_1_1Snapshot.html#a77cfe35b720393223aa5c7410b2dd3ad">TotalMass</a>(indices) : indices.size();</div>
+<div class="line"><a name="l00451"></a><span class="lineno">  451</span>&#160; </div>
+<div class="line"><a name="l00452"></a><span class="lineno">  452</span>&#160;            pcounts[<a class="code" href="classSSAGES_1_1Snapshot.html#a318172ccddbc82d73d5c2fdd327f92c6">comm_</a>.rank()] = 3*indices.size();</div>
+<div class="line"><a name="l00453"></a><span class="lineno">  453</span>&#160;            mcounts[<a class="code" href="classSSAGES_1_1Snapshot.html#a318172ccddbc82d73d5c2fdd327f92c6">comm_</a>.rank()] = indices.size();</div>
+<div class="line"><a name="l00454"></a><span class="lineno">  454</span>&#160; </div>
+<div class="line"><a name="l00455"></a><span class="lineno">  455</span>&#160;            <span class="comment">// Reduce counts.</span></div>
+<div class="line"><a name="l00456"></a><span class="lineno">  456</span>&#160;            MPI_Allreduce(MPI_IN_PLACE, pcounts.data(), pcounts.size(), MPI_INT, MPI_SUM, <a class="code" href="classSSAGES_1_1Snapshot.html#a318172ccddbc82d73d5c2fdd327f92c6">comm_</a>);</div>
+<div class="line"><a name="l00457"></a><span class="lineno">  457</span>&#160;            MPI_Allreduce(MPI_IN_PLACE, mcounts.data(), mcounts.size(), MPI_INT, MPI_SUM, <a class="code" href="classSSAGES_1_1Snapshot.html#a318172ccddbc82d73d5c2fdd327f92c6">comm_</a>);</div>
+<div class="line"><a name="l00458"></a><span class="lineno">  458</span>&#160; </div>
+<div class="line"><a name="l00459"></a><span class="lineno">  459</span>&#160;            <span class="comment">// Compute displacements.</span></div>
+<div class="line"><a name="l00460"></a><span class="lineno">  460</span>&#160;            std::partial_sum(pcounts.begin(), pcounts.end(), pdispls.begin() + 1);</div>
+<div class="line"><a name="l00461"></a><span class="lineno">  461</span>&#160;            std::partial_sum(mcounts.begin(), mcounts.end(), mdispls.begin() + 1);</div>
+<div class="line"><a name="l00462"></a><span class="lineno">  462</span>&#160;            </div>
+<div class="line"><a name="l00463"></a><span class="lineno">  463</span>&#160;            <span class="comment">// Fill up mass and position vectors.</span></div>
+<div class="line"><a name="l00464"></a><span class="lineno">  464</span>&#160;            <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; idx : indices)</div>
+<div class="line"><a name="l00465"></a><span class="lineno">  465</span>&#160;            {</div>
+<div class="line"><a name="l00466"></a><span class="lineno">  466</span>&#160;                <span class="keyword">auto</span>&amp; p = <a class="code" href="classSSAGES_1_1Snapshot.html#a47cac5746857da7ddf86353658a231cc">positions_</a>[idx];</div>
+<div class="line"><a name="l00467"></a><span class="lineno">  467</span>&#160;                pos.push_back(p[0]);</div>
+<div class="line"><a name="l00468"></a><span class="lineno">  468</span>&#160;                pos.push_back(p[1]);</div>
+<div class="line"><a name="l00469"></a><span class="lineno">  469</span>&#160;                pos.push_back(p[2]);</div>
+<div class="line"><a name="l00470"></a><span class="lineno">  470</span>&#160;                mass.push_back(<a class="code" href="classSSAGES_1_1Snapshot.html#a02d6d1d1a25a651f34ec2679c1690f90">masses_</a>[idx]);</div>
+<div class="line"><a name="l00471"></a><span class="lineno">  471</span>&#160;            }</div>
+<div class="line"><a name="l00472"></a><span class="lineno">  472</span>&#160; </div>
+<div class="line"><a name="l00473"></a><span class="lineno">  473</span>&#160;            <span class="comment">// Re-size receiving vectors. </span></div>
+<div class="line"><a name="l00474"></a><span class="lineno">  474</span>&#160;            gpos.resize(pdispls.back(), 0);</div>
+<div class="line"><a name="l00475"></a><span class="lineno">  475</span>&#160;            gmass.resize(mdispls.back(), 1.0); <span class="comment">// fictitious mass of 1</span></div>
+<div class="line"><a name="l00476"></a><span class="lineno">  476</span>&#160; </div>
+<div class="line"><a name="l00477"></a><span class="lineno">  477</span>&#160;            <span class="comment">// All-gather data.</span></div>
+<div class="line"><a name="l00478"></a><span class="lineno">  478</span>&#160;            MPI_Allgatherv(pos.data(), pos.size(), MPI_DOUBLE, gpos.data(), pcounts.data(), pdispls.data(), MPI_DOUBLE, <a class="code" href="classSSAGES_1_1Snapshot.html#a318172ccddbc82d73d5c2fdd327f92c6">comm_</a>);</div>
+<div class="line"><a name="l00479"></a><span class="lineno">  479</span>&#160;            <span class="keywordflow">if</span>(mass_weight) { <span class="comment">// overwrite gmass with true mass values</span></div>
+<div class="line"><a name="l00480"></a><span class="lineno">  480</span>&#160;                MPI_Allgatherv(mass.data(), mass.size(), MPI_DOUBLE, gmass.data(), mcounts.data(), mdispls.data(), MPI_DOUBLE, <a class="code" href="classSSAGES_1_1Snapshot.html#a318172ccddbc82d73d5c2fdd327f92c6">comm_</a>);</div>
 <div class="line"><a name="l00481"></a><span class="lineno">  481</span>&#160;            }</div>
 <div class="line"><a name="l00482"></a><span class="lineno">  482</span>&#160; </div>
-<div class="line"><a name="l00483"></a><span class="lineno">  483</span>&#160;            <span class="comment">// Re-size receiving vectors. </span></div>
-<div class="line"><a name="l00484"></a><span class="lineno">  484</span>&#160;            gpos.resize(pdispls.back(), 0);</div>
-<div class="line"><a name="l00485"></a><span class="lineno">  485</span>&#160;            gmass.resize(mdispls.back(), 0);</div>
-<div class="line"><a name="l00486"></a><span class="lineno">  486</span>&#160; </div>
-<div class="line"><a name="l00487"></a><span class="lineno">  487</span>&#160;            <span class="comment">// All-gather data.</span></div>
-<div class="line"><a name="l00488"></a><span class="lineno">  488</span>&#160;            MPI_Allgatherv(pos.data(), pos.size(), MPI_DOUBLE, gpos.data(), pcounts.data(), pdispls.data(), MPI_DOUBLE, <a class="code" href="classSSAGES_1_1Snapshot.html#a318172ccddbc82d73d5c2fdd327f92c6">comm_</a>);</div>
-<div class="line"><a name="l00489"></a><span class="lineno">  489</span>&#160;            MPI_Allgatherv(mass.data(), mass.size(), MPI_DOUBLE, gmass.data(), mcounts.data(), mdispls.data(), MPI_DOUBLE, <a class="code" href="classSSAGES_1_1Snapshot.html#a318172ccddbc82d73d5c2fdd327f92c6">comm_</a>);</div>
-<div class="line"><a name="l00490"></a><span class="lineno">  490</span>&#160; </div>
-<div class="line"><a name="l00491"></a><span class="lineno">  491</span>&#160;            <span class="comment">// Loop through atoms and compute mass weighted sum. </span></div>
-<div class="line"><a name="l00492"></a><span class="lineno">  492</span>&#160;            <span class="comment">// We march linearly through list and find nearest image</span></div>
-<div class="line"><a name="l00493"></a><span class="lineno">  493</span>&#160;            <span class="comment">// to each successive particle to properly unwrap object.</span></div>
-<div class="line"><a name="l00494"></a><span class="lineno">  494</span>&#160;            <a class="code" href="namespaceSSAGES.html#a630084a0a5e185e89e21b3735f8f8b2e">Vector3</a> ppos = {gpos[0], gpos[1], gpos[2]}; <span class="comment">// Previous unwrapped position.</span></div>
-<div class="line"><a name="l00495"></a><span class="lineno">  495</span>&#160;            <a class="code" href="namespaceSSAGES.html#a630084a0a5e185e89e21b3735f8f8b2e">Vector3</a> cpos = ppos;</div>
-<div class="line"><a name="l00496"></a><span class="lineno">  496</span>&#160;            <a class="code" href="namespaceSSAGES.html#a630084a0a5e185e89e21b3735f8f8b2e">Vector3</a> xcm = gmass[0]*cpos;</div>
+<div class="line"><a name="l00483"></a><span class="lineno">  483</span>&#160;            <span class="comment">// Loop through atoms and compute mass weighted sum.</span></div>
+<div class="line"><a name="l00484"></a><span class="lineno">  484</span>&#160;            <span class="comment">// We march linearly through list and find nearest image</span></div>
+<div class="line"><a name="l00485"></a><span class="lineno">  485</span>&#160;            <span class="comment">// to each successive particle to properly unwrap object.</span></div>
+<div class="line"><a name="l00486"></a><span class="lineno">  486</span>&#160;            <a class="code" href="namespaceSSAGES.html#a630084a0a5e185e89e21b3735f8f8b2e">Vector3</a> ppos = {gpos[0], gpos[1], gpos[2]}; <span class="comment">// Previous unwrapped position.</span></div>
+<div class="line"><a name="l00487"></a><span class="lineno">  487</span>&#160;            <a class="code" href="namespaceSSAGES.html#a630084a0a5e185e89e21b3735f8f8b2e">Vector3</a> cpos = ppos;</div>
+<div class="line"><a name="l00488"></a><span class="lineno">  488</span>&#160;            <a class="code" href="namespaceSSAGES.html#a630084a0a5e185e89e21b3735f8f8b2e">Vector3</a> xcm = gmass[0]*cpos;</div>
+<div class="line"><a name="l00489"></a><span class="lineno">  489</span>&#160; </div>
+<div class="line"><a name="l00490"></a><span class="lineno">  490</span>&#160;            <span class="keywordflow">for</span>(<span class="keywordtype">size_t</span> i = 1, j = 3; i &lt; gmass.size(); ++i, j += 3)</div>
+<div class="line"><a name="l00491"></a><span class="lineno">  491</span>&#160;            {</div>
+<div class="line"><a name="l00492"></a><span class="lineno">  492</span>&#160;                cpos = {gpos[j], gpos[j+1], gpos[j+2]};</div>
+<div class="line"><a name="l00493"></a><span class="lineno">  493</span>&#160;                cpos = <a class="code" href="classSSAGES_1_1Snapshot.html#ad6caa5b92433501fd4a62deef288340a">ApplyMinimumImage</a>(cpos - ppos) + ppos;</div>
+<div class="line"><a name="l00494"></a><span class="lineno">  494</span>&#160;                xcm += gmass[i]*cpos;</div>
+<div class="line"><a name="l00495"></a><span class="lineno">  495</span>&#160;                ppos = cpos;</div>
+<div class="line"><a name="l00496"></a><span class="lineno">  496</span>&#160;            }</div>
 <div class="line"><a name="l00497"></a><span class="lineno">  497</span>&#160; </div>
-<div class="line"><a name="l00498"></a><span class="lineno">  498</span>&#160;            <span class="keywordflow">for</span>(<span class="keywordtype">size_t</span> i = 1, j = 3; i &lt; gmass.size(); ++i, j += 3)</div>
-<div class="line"><a name="l00499"></a><span class="lineno">  499</span>&#160;            {</div>
-<div class="line"><a name="l00500"></a><span class="lineno">  500</span>&#160;                cpos = {gpos[j], gpos[j+1], gpos[j+2]};</div>
-<div class="line"><a name="l00501"></a><span class="lineno">  501</span>&#160;                cpos = <a class="code" href="classSSAGES_1_1Snapshot.html#ad6caa5b92433501fd4a62deef288340a">ApplyMinimumImage</a>(cpos - ppos) + ppos;</div>
-<div class="line"><a name="l00502"></a><span class="lineno">  502</span>&#160;                xcm += gmass[i]*cpos;</div>
-<div class="line"><a name="l00503"></a><span class="lineno">  503</span>&#160;                ppos = cpos;</div>
-<div class="line"><a name="l00504"></a><span class="lineno">  504</span>&#160;            }</div>
-<div class="line"><a name="l00505"></a><span class="lineno">  505</span>&#160; </div>
-<div class="line"><a name="l00506"></a><span class="lineno">  506</span>&#160;            <span class="keywordflow">return</span> xcm/mtot;</div>
-<div class="line"><a name="l00507"></a><span class="lineno">  507</span>&#160;        }</div>
+<div class="line"><a name="l00498"></a><span class="lineno">  498</span>&#160;            <span class="keywordflow">return</span> xcm/mtot;</div>
+<div class="line"><a name="l00499"></a><span class="lineno">  499</span>&#160;        }</div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="Snapshot_8h_source.html#l00390">ApplyMinimumImage()</a>, <a class="el" href="Snapshot_8h_source.html#l00051">comm_</a>, <a class="el" href="Snapshot_8h_source.html#l00070">masses_</a>, and <a class="el" href="Snapshot_8h_source.html#l00067">positions_</a>.</p>
+<p class="reference">References <a class="el" href="Snapshot_8h_source.html#l00390">ApplyMinimumImage()</a>, <a class="el" href="Snapshot_8h_source.html#l00051">comm_</a>, <a class="el" href="Snapshot_8h_source.html#l00070">masses_</a>, <a class="el" href="Snapshot_8h_source.html#l00067">positions_</a>, and <a class="el" href="Snapshot_8h_source.html#l00423">TotalMass()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="ParticleCoordinateCV_8h_source.html#l00097">SSAGES::ParticleCoordinateCV::Evaluate()</a>, <a class="el" href="ParticlePositionCV_8h_source.html#l00116">SSAGES::ParticlePositionCV::Evaluate()</a>, <a class="el" href="RouseModeCV_8h_source.html#l00121">SSAGES::RouseModeCV::Evaluate()</a>, <a class="el" href="ParticleSeparationCV_8h_source.html#l00128">SSAGES::ParticleSeparationCV::Evaluate()</a>, <a class="el" href="GyrationTensorCV_8h_source.html#l00128">SSAGES::GyrationTensorCV::Evaluate()</a>, <a class="el" href="RMSDCV_8h_source.html#l00162">SSAGES::RMSDCV::Evaluate()</a>, and <a class="el" href="ANNCV_8h_source.html#l00194">SSAGES::ANNCV::Evaluate()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><img src="classSSAGES_1_1Snapshot_a37cd55705201e0a40adc75b646a6e864_cgraph.png" border="0" usemap="#classSSAGES_1_1Snapshot_a37cd55705201e0a40adc75b646a6e864_cgraph" alt=""/></div>
-<map name="classSSAGES_1_1Snapshot_a37cd55705201e0a40adc75b646a6e864_cgraph" id="classSSAGES_1_1Snapshot_a37cd55705201e0a40adc75b646a6e864_cgraph">
-<area shape="rect" title=" " alt="" coords="5,5,192,47"/>
+<div class="center"><img src="classSSAGES_1_1Snapshot_ac600b5f3d3e240d2cc9965c06547e97e_cgraph.png" border="0" usemap="#classSSAGES_1_1Snapshot_ac600b5f3d3e240d2cc9965c06547e97e_cgraph" alt=""/></div>
+<map name="classSSAGES_1_1Snapshot_ac600b5f3d3e240d2cc9965c06547e97e_cgraph" id="classSSAGES_1_1Snapshot_ac600b5f3d3e240d2cc9965c06547e97e_cgraph">
+<area shape="rect" title="Compute center of mass of a group of atoms based on index." alt="" coords="5,35,192,76"/>
 <area shape="rect" href="classSSAGES_1_1Snapshot.html#ad6caa5b92433501fd4a62deef288340a" title="Apply minimum image to a vector." alt="" coords="240,5,475,47"/>
+<area shape="rect" href="classSSAGES_1_1Snapshot.html#a77cfe35b720393223aa5c7410b2dd3ad" title="Compute the total mass of a group of particles based on index." alt="" coords="253,71,462,98"/>
 <area shape="rect" href="namespaceSSAGES.html#a49bb77a1b5822888753c96c70780ab47" title="Quick helper function to round a double." alt="" coords="523,13,644,39"/>
+</map>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><img src="classSSAGES_1_1Snapshot_ac600b5f3d3e240d2cc9965c06547e97e_icgraph.png" border="0" usemap="#classSSAGES_1_1Snapshot_ac600b5f3d3e240d2cc9965c06547e97e_icgraph" alt=""/></div>
+<map name="classSSAGES_1_1Snapshot_ac600b5f3d3e240d2cc9965c06547e97e_icgraph" id="classSSAGES_1_1Snapshot_ac600b5f3d3e240d2cc9965c06547e97e_icgraph">
+<area shape="rect" title="Compute center of mass of a group of atoms based on index." alt="" coords="256,201,443,243"/>
+<area shape="rect" href="classSSAGES_1_1ParticleCoordinateCV.html#afff49e8eb1571fe3527712be50da001e" title="Evaluate the CV." alt="" coords="11,5,203,47"/>
+<area shape="rect" href="classSSAGES_1_1ParticlePositionCV.html#aa2ee9b7b3ca3133183e2d5f511251e29" title="Evaluate the CV." alt="" coords="19,71,195,112"/>
+<area shape="rect" href="classSSAGES_1_1RouseModeCV.html#a1468b1aabf81ceb2ef3feb3b8fc79d0d" title="Evaluate the CV." alt="" coords="19,136,194,177"/>
+<area shape="rect" href="classSSAGES_1_1GyrationTensorCV.html#ac613c1659bd00b335c3d6de3d8ff0ebc" title="Evaluate the CV." alt="" coords="10,201,203,243"/>
+<area shape="rect" href="classSSAGES_1_1ParticleSeparationCV.html#ae6452c47bf1d849e2af60c84209a9955" title="Evaluate the CV." alt="" coords="11,267,202,308"/>
+<area shape="rect" href="classSSAGES_1_1RMSDCV.html#aff77158b643fec57c6d1649a78b0dd14" title="Evaluate the CV." alt="" coords="5,333,208,359"/>
+<area shape="rect" href="classSSAGES_1_1ANNCV.html#a1ddb11f32dbf1c1c19e119310c047a0d" title="Evaluate the CV." alt="" coords="11,383,203,410"/>
 </map>
 </div>
 
@@ -769,8 +727,8 @@ Here is the call graph for this function:</div>
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="Snapshot_8h_source.html#l00604">604</a> of file <a class="el" href="Snapshot_8h_source.html">Snapshot.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00604"></a><span class="lineno">  604</span>&#160;{ <a class="code" href="classSSAGES_1_1Snapshot.html#a91ac7438ff262d245db15b5c0b2525a0">changed_</a> = state; }</div>
+<p class="definition">Definition at line <a class="el" href="Snapshot_8h_source.html#l00596">596</a> of file <a class="el" href="Snapshot_8h_source.html">Snapshot.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00596"></a><span class="lineno">  596</span>&#160;{ <a class="code" href="classSSAGES_1_1Snapshot.html#a91ac7438ff262d245db15b5c0b2525a0">changed_</a> = state; }</div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="Snapshot_8h_source.html#l00083">changed_</a>.</p>
 
@@ -815,11 +773,11 @@ Here is the caller graph for this function:</div>
 <p>Access the atom IDs. </p>
 <dl class="section return"><dt>Returns</dt><dd>List of atom IDs </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="Snapshot_8h_source.html#l00516">516</a> of file <a class="el" href="Snapshot_8h_source.html">Snapshot.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00517"></a><span class="lineno">  517</span>&#160;        {</div>
-<div class="line"><a name="l00518"></a><span class="lineno">  518</span>&#160;            <a class="code" href="classSSAGES_1_1Snapshot.html#a91ac7438ff262d245db15b5c0b2525a0">changed_</a> = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00519"></a><span class="lineno">  519</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="classSSAGES_1_1Snapshot.html#a1af5f16699a18b86e37f665e2747530e">atomids_</a>;</div>
-<div class="line"><a name="l00520"></a><span class="lineno">  520</span>&#160;        }</div>
+<p class="definition">Definition at line <a class="el" href="Snapshot_8h_source.html#l00508">508</a> of file <a class="el" href="Snapshot_8h_source.html">Snapshot.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00509"></a><span class="lineno">  509</span>&#160;        {</div>
+<div class="line"><a name="l00510"></a><span class="lineno">  510</span>&#160;            <a class="code" href="classSSAGES_1_1Snapshot.html#a91ac7438ff262d245db15b5c0b2525a0">changed_</a> = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00511"></a><span class="lineno">  511</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="classSSAGES_1_1Snapshot.html#a1af5f16699a18b86e37f665e2747530e">atomids_</a>;</div>
+<div class="line"><a name="l00512"></a><span class="lineno">  512</span>&#160;        }</div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="Snapshot_8h_source.html#l00072">atomids_</a>, and <a class="el" href="Snapshot_8h_source.html#l00083">changed_</a>.</p>
 
@@ -851,8 +809,8 @@ Here is the caller graph for this function:</div>
 <p>Access the atom IDs. </p>
 <dl class="section return"><dt>Returns</dt><dd>List of atom IDs </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="Snapshot_8h_source.html#l00513">513</a> of file <a class="el" href="Snapshot_8h_source.html">Snapshot.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00513"></a><span class="lineno">  513</span>&#160;{ <span class="keywordflow">return</span> <a class="code" href="classSSAGES_1_1Snapshot.html#a1af5f16699a18b86e37f665e2747530e">atomids_</a>; }</div>
+<p class="definition">Definition at line <a class="el" href="Snapshot_8h_source.html#l00505">505</a> of file <a class="el" href="Snapshot_8h_source.html">Snapshot.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00505"></a><span class="lineno">  505</span>&#160;{ <span class="keywordflow">return</span> <a class="code" href="classSSAGES_1_1Snapshot.html#a1af5f16699a18b86e37f665e2747530e">atomids_</a>; }</div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="Snapshot_8h_source.html#l00072">atomids_</a>.</p>
 
@@ -900,11 +858,11 @@ Here is the caller graph for this function:</div>
 <p>Access the atom types. </p>
 <dl class="section return"><dt>Returns</dt><dd>List of atom types </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="Snapshot_8h_source.html#l00575">575</a> of file <a class="el" href="Snapshot_8h_source.html">Snapshot.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00576"></a><span class="lineno">  576</span>&#160;        {</div>
-<div class="line"><a name="l00577"></a><span class="lineno">  577</span>&#160;            <a class="code" href="classSSAGES_1_1Snapshot.html#a91ac7438ff262d245db15b5c0b2525a0">changed_</a> = <span class="keyword">true</span>; </div>
-<div class="line"><a name="l00578"></a><span class="lineno">  578</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="classSSAGES_1_1Snapshot.html#a68cbc87f68e883a91b864ee64796e5f9">types_</a>; </div>
-<div class="line"><a name="l00579"></a><span class="lineno">  579</span>&#160;        }</div>
+<p class="definition">Definition at line <a class="el" href="Snapshot_8h_source.html#l00567">567</a> of file <a class="el" href="Snapshot_8h_source.html">Snapshot.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00568"></a><span class="lineno">  568</span>&#160;        {</div>
+<div class="line"><a name="l00569"></a><span class="lineno">  569</span>&#160;            <a class="code" href="classSSAGES_1_1Snapshot.html#a91ac7438ff262d245db15b5c0b2525a0">changed_</a> = <span class="keyword">true</span>; </div>
+<div class="line"><a name="l00570"></a><span class="lineno">  570</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="classSSAGES_1_1Snapshot.html#a68cbc87f68e883a91b864ee64796e5f9">types_</a>; </div>
+<div class="line"><a name="l00571"></a><span class="lineno">  571</span>&#160;        }</div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="Snapshot_8h_source.html#l00083">changed_</a>, and <a class="el" href="Snapshot_8h_source.html#l00073">types_</a>.</p>
 
@@ -936,8 +894,8 @@ Here is the caller graph for this function:</div>
 <p>Access the atom types. </p>
 <dl class="section return"><dt>Returns</dt><dd>List of atom types </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="Snapshot_8h_source.html#l00572">572</a> of file <a class="el" href="Snapshot_8h_source.html">Snapshot.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00572"></a><span class="lineno">  572</span>&#160;{ <span class="keywordflow">return</span> <a class="code" href="classSSAGES_1_1Snapshot.html#a68cbc87f68e883a91b864ee64796e5f9">types_</a>; }</div>
+<p class="definition">Definition at line <a class="el" href="Snapshot_8h_source.html#l00564">564</a> of file <a class="el" href="Snapshot_8h_source.html">Snapshot.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00564"></a><span class="lineno">  564</span>&#160;{ <span class="keywordflow">return</span> <a class="code" href="classSSAGES_1_1Snapshot.html#a68cbc87f68e883a91b864ee64796e5f9">types_</a>; }</div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="Snapshot_8h_source.html#l00073">types_</a>.</p>
 
@@ -969,11 +927,11 @@ Here is the caller graph for this function:</div>
 <p>Access the atom charges. </p>
 <dl class="section return"><dt>Returns</dt><dd>List of atom charges </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="Snapshot_8h_source.html#l00562">562</a> of file <a class="el" href="Snapshot_8h_source.html">Snapshot.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00563"></a><span class="lineno">  563</span>&#160;        {</div>
-<div class="line"><a name="l00564"></a><span class="lineno">  564</span>&#160;            <a class="code" href="classSSAGES_1_1Snapshot.html#a91ac7438ff262d245db15b5c0b2525a0">changed_</a> = <span class="keyword">true</span>;</div>
-<div class="line"><a name="l00565"></a><span class="lineno">  565</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="classSSAGES_1_1Snapshot.html#a75d1591cfe674d8058ab07c566addf53">charges_</a>;</div>
-<div class="line"><a name="l00566"></a><span class="lineno">  566</span>&#160;        }</div>
+<p class="definition">Definition at line <a class="el" href="Snapshot_8h_source.html#l00554">554</a> of file <a class="el" href="Snapshot_8h_source.html">Snapshot.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00555"></a><span class="lineno">  555</span>&#160;        {</div>
+<div class="line"><a name="l00556"></a><span class="lineno">  556</span>&#160;            <a class="code" href="classSSAGES_1_1Snapshot.html#a91ac7438ff262d245db15b5c0b2525a0">changed_</a> = <span class="keyword">true</span>;</div>
+<div class="line"><a name="l00557"></a><span class="lineno">  557</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="classSSAGES_1_1Snapshot.html#a75d1591cfe674d8058ab07c566addf53">charges_</a>;</div>
+<div class="line"><a name="l00558"></a><span class="lineno">  558</span>&#160;        }</div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="Snapshot_8h_source.html#l00083">changed_</a>, and <a class="el" href="Snapshot_8h_source.html#l00071">charges_</a>.</p>
 
@@ -1005,8 +963,8 @@ Here is the caller graph for this function:</div>
 <p>Access the atom charges. </p>
 <dl class="section return"><dt>Returns</dt><dd>List of atom charges </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="Snapshot_8h_source.html#l00559">559</a> of file <a class="el" href="Snapshot_8h_source.html">Snapshot.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00559"></a><span class="lineno">  559</span>&#160;{ <span class="keywordflow">return</span> <a class="code" href="classSSAGES_1_1Snapshot.html#a75d1591cfe674d8058ab07c566addf53">charges_</a>; }</div>
+<p class="definition">Definition at line <a class="el" href="Snapshot_8h_source.html#l00551">551</a> of file <a class="el" href="Snapshot_8h_source.html">Snapshot.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00551"></a><span class="lineno">  551</span>&#160;{ <span class="keywordflow">return</span> <a class="code" href="classSSAGES_1_1Snapshot.html#a75d1591cfe674d8058ab07c566addf53">charges_</a>; }</div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="Snapshot_8h_source.html#l00071">charges_</a>.</p>
 
@@ -1046,13 +1004,13 @@ Here is the caller graph for this function:</div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="Snapshot_8h_source.html#l00051">comm_</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="BoxVolumeCV_8h_source.html#l00052">SSAGES::BoxVolumeCV::Evaluate()</a>, <a class="el" href="AngleCV_8h_source.html#l00085">SSAGES::AngleCV::Evaluate()</a>, <a class="el" href="TorsionalCV_8h_source.html#l00095">SSAGES::TorsionalCV::Evaluate()</a>, <a class="el" href="PairwiseCV_8h_source.html#l00112">SSAGES::PairwiseCV::Evaluate()</a>, <a class="el" href="GyrationTensorCV_8h_source.html#l00128">SSAGES::GyrationTensorCV::Evaluate()</a>, <a class="el" href="RMSDCV_8h_source.html#l00162">SSAGES::RMSDCV::Evaluate()</a>, <a class="el" href="AlphaRMSDCV_8h_source.html#l00171">SSAGES::AlphaRMSDCV::Evaluate()</a>, <a class="el" href="AntiBetaRMSDCV_8h_source.html#l00174">SSAGES::AntiBetaRMSDCV::Evaluate()</a>, <a class="el" href="ParallelBetaRMSDCV_8h_source.html#l00179">SSAGES::ParallelBetaRMSDCV::Evaluate()</a>, <a class="el" href="AngleCV_8h_source.html#l00063">SSAGES::AngleCV::Initialize()</a>, <a class="el" href="PairwiseCV_8h_source.html#l00066">SSAGES::PairwiseCV::Initialize()</a>, <a class="el" href="ParticleCoordinateCV_8h_source.html#l00068">SSAGES::ParticleCoordinateCV::Initialize()</a>, <a class="el" href="TorsionalCV_8h_source.html#l00073">SSAGES::TorsionalCV::Initialize()</a>, <a class="el" href="RouseModeCV_8h_source.html#l00080">SSAGES::RouseModeCV::Initialize()</a>, <a class="el" href="ParticleSeparationCV_8h_source.html#l00082">SSAGES::ParticleSeparationCV::Initialize()</a>, <a class="el" href="ParticlePositionCV_8h_source.html#l00087">SSAGES::ParticlePositionCV::Initialize()</a>, <a class="el" href="RMSDCV_8h_source.html#l00099">SSAGES::RMSDCV::Initialize()</a>, <a class="el" href="GyrationTensorCV_8h_source.html#l00099">SSAGES::GyrationTensorCV::Initialize()</a>, <a class="el" href="AlphaRMSDCV_8h_source.html#l00103">SSAGES::AlphaRMSDCV::Initialize()</a>, <a class="el" href="AntiBetaRMSDCV_8h_source.html#l00106">SSAGES::AntiBetaRMSDCV::Initialize()</a>, and <a class="el" href="ParallelBetaRMSDCV_8h_source.html#l00111">SSAGES::ParallelBetaRMSDCV::Initialize()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="BoxVolumeCV_8h_source.html#l00052">SSAGES::BoxVolumeCV::Evaluate()</a>, <a class="el" href="AngleCV_8h_source.html#l00085">SSAGES::AngleCV::Evaluate()</a>, <a class="el" href="TorsionalCV_8h_source.html#l00095">SSAGES::TorsionalCV::Evaluate()</a>, <a class="el" href="PairwiseCV_8h_source.html#l00112">SSAGES::PairwiseCV::Evaluate()</a>, <a class="el" href="GyrationTensorCV_8h_source.html#l00128">SSAGES::GyrationTensorCV::Evaluate()</a>, <a class="el" href="RMSDCV_8h_source.html#l00162">SSAGES::RMSDCV::Evaluate()</a>, <a class="el" href="AlphaRMSDCV_8h_source.html#l00171">SSAGES::AlphaRMSDCV::Evaluate()</a>, <a class="el" href="AntiBetaRMSDCV_8h_source.html#l00174">SSAGES::AntiBetaRMSDCV::Evaluate()</a>, <a class="el" href="ParallelBetaRMSDCV_8h_source.html#l00179">SSAGES::ParallelBetaRMSDCV::Evaluate()</a>, <a class="el" href="ANNCV_8h_source.html#l00194">SSAGES::ANNCV::Evaluate()</a>, <a class="el" href="AngleCV_8h_source.html#l00063">SSAGES::AngleCV::Initialize()</a>, <a class="el" href="PairwiseCV_8h_source.html#l00066">SSAGES::PairwiseCV::Initialize()</a>, <a class="el" href="ParticleCoordinateCV_8h_source.html#l00068">SSAGES::ParticleCoordinateCV::Initialize()</a>, <a class="el" href="TorsionalCV_8h_source.html#l00073">SSAGES::TorsionalCV::Initialize()</a>, <a class="el" href="RouseModeCV_8h_source.html#l00080">SSAGES::RouseModeCV::Initialize()</a>, <a class="el" href="ParticleSeparationCV_8h_source.html#l00082">SSAGES::ParticleSeparationCV::Initialize()</a>, <a class="el" href="ParticlePositionCV_8h_source.html#l00087">SSAGES::ParticlePositionCV::Initialize()</a>, <a class="el" href="RMSDCV_8h_source.html#l00099">SSAGES::RMSDCV::Initialize()</a>, <a class="el" href="GyrationTensorCV_8h_source.html#l00099">SSAGES::GyrationTensorCV::Initialize()</a>, <a class="el" href="AlphaRMSDCV_8h_source.html#l00103">SSAGES::AlphaRMSDCV::Initialize()</a>, <a class="el" href="AntiBetaRMSDCV_8h_source.html#l00106">SSAGES::AntiBetaRMSDCV::Initialize()</a>, <a class="el" href="ParallelBetaRMSDCV_8h_source.html#l00111">SSAGES::ParallelBetaRMSDCV::Initialize()</a>, and <a class="el" href="ANNCV_8h_source.html#l00128">SSAGES::ANNCV::Initialize()</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classSSAGES_1_1Snapshot_a4811c9435e56196d5525832345ef1680_icgraph.png" border="0" usemap="#classSSAGES_1_1Snapshot_a4811c9435e56196d5525832345ef1680_icgraph" alt=""/></div>
 <map name="classSSAGES_1_1Snapshot_a4811c9435e56196d5525832345ef1680_icgraph" id="classSSAGES_1_1Snapshot_a4811c9435e56196d5525832345ef1680_icgraph">
-<area shape="rect" title="Get communicator for walker." alt="" coords="268,626,523,653"/>
+<area shape="rect" title="Get communicator for walker." alt="" coords="268,677,523,703"/>
 <area shape="rect" href="classSSAGES_1_1BoxVolumeCV.html#a52f2b0c68a755e8b239fc40dbc2a7100" title="Evaluate the CV." alt="" coords="27,5,198,47"/>
 <area shape="rect" href="classSSAGES_1_1AngleCV.html#afc7cddc3872aeeeeb098c69f1126b594" title="Evaluate the CV." alt="" coords="15,71,211,98"/>
 <area shape="rect" href="classSSAGES_1_1TorsionalCV.html#ae3e82fb11240eb780cfcc57b2b0112a5" title="Evaluate the CV." alt="" coords="34,123,191,164"/>
@@ -1062,18 +1020,20 @@ Here is the caller graph for this function:</div>
 <area shape="rect" href="classSSAGES_1_1AlphaRMSDCV.html#a54a50be609eddb9448199bbfc21cc7e0" title="Evaluate the CV." alt="" coords="24,371,201,412"/>
 <area shape="rect" href="classSSAGES_1_1AntiBetaRMSDCV.html#a89bdea4dde8b704a0ca773e0a0f79b1f" title="Evaluate the CV." alt="" coords="15,436,210,477"/>
 <area shape="rect" href="classSSAGES_1_1ParallelBetaRMSDCV.html#a8ed7cf0c797dbf51f70e604d32546442" title="Evaluate the CV." alt="" coords="5,501,220,543"/>
-<area shape="rect" href="classSSAGES_1_1AngleCV.html#a6e2a96d605cbf6f664e57dc312d219f2" title="Initialize necessary variables." alt="" coords="16,567,209,594"/>
-<area shape="rect" href="classSSAGES_1_1PairwiseCV.html#a1399e3e75014393502c1dd0ff91b2c95" title="Initialize necessary variables." alt="" coords="35,619,190,660"/>
-<area shape="rect" href="classSSAGES_1_1ParticleCoordinateCV.html#a1fe779096ebd6aeed9912f34bc57bccd" title="Initialize necessary variables." alt="" coords="17,684,209,725"/>
-<area shape="rect" href="classSSAGES_1_1TorsionalCV.html#a4d33444e79408f7690d3c1e56359212b" title="Initialize necessary variables." alt="" coords="34,749,191,791"/>
-<area shape="rect" href="classSSAGES_1_1RouseModeCV.html#a851e533301a1464b5d69c711c6499ba1" title="Initialize necessary variables." alt="" coords="25,815,200,856"/>
-<area shape="rect" href="classSSAGES_1_1ParticleSeparationCV.html#a886af836f08cc4ed96ae742eb7eb6d7d" title="Initialize necessary variables." alt="" coords="17,880,208,921"/>
-<area shape="rect" href="classSSAGES_1_1ParticlePositionCV.html#a2adbc9cbb13190b92a869087ebefd470" title="Initialize necessary variables." alt="" coords="25,945,201,987"/>
-<area shape="rect" href="classSSAGES_1_1RMSDCV.html#a7e82843aa5d4eae3ada4ea26a7e6502a" title="Initialize necessary variables." alt="" coords="13,1011,213,1038"/>
-<area shape="rect" href="classSSAGES_1_1GyrationTensorCV.html#ad45ea81cf07cb3a95da83feb0ee1f3ba" title="Initialize necessary variables." alt="" coords="16,1063,209,1104"/>
-<area shape="rect" href="classSSAGES_1_1AlphaRMSDCV.html#ab576598c362d72473046b41f5dcad5f5" title="Initialize necessary variables." alt="" coords="24,1128,201,1169"/>
-<area shape="rect" href="classSSAGES_1_1AntiBetaRMSDCV.html#a493dc72ec667b4c3631ff091904f05e1" title="Initialize necessary variables." alt="" coords="15,1193,210,1235"/>
-<area shape="rect" href="classSSAGES_1_1ParallelBetaRMSDCV.html#a373ce72beacf2c412d0b37601b4399d4" title="Initialize necessary variables." alt="" coords="5,1259,220,1300"/>
+<area shape="rect" href="classSSAGES_1_1ANNCV.html#a1ddb11f32dbf1c1c19e119310c047a0d" title="Evaluate the CV." alt="" coords="17,567,209,594"/>
+<area shape="rect" href="classSSAGES_1_1AngleCV.html#a6e2a96d605cbf6f664e57dc312d219f2" title="Initialize necessary variables." alt="" coords="16,618,209,645"/>
+<area shape="rect" href="classSSAGES_1_1PairwiseCV.html#a1399e3e75014393502c1dd0ff91b2c95" title="Initialize necessary variables." alt="" coords="35,669,190,711"/>
+<area shape="rect" href="classSSAGES_1_1ParticleCoordinateCV.html#a1fe779096ebd6aeed9912f34bc57bccd" title="Initialize necessary variables." alt="" coords="17,735,209,776"/>
+<area shape="rect" href="classSSAGES_1_1TorsionalCV.html#a4d33444e79408f7690d3c1e56359212b" title="Initialize necessary variables." alt="" coords="34,800,191,841"/>
+<area shape="rect" href="classSSAGES_1_1RouseModeCV.html#a851e533301a1464b5d69c711c6499ba1" title="Initialize necessary variables." alt="" coords="25,865,200,907"/>
+<area shape="rect" href="classSSAGES_1_1ParticleSeparationCV.html#a886af836f08cc4ed96ae742eb7eb6d7d" title="Initialize necessary variables." alt="" coords="17,931,208,972"/>
+<area shape="rect" href="classSSAGES_1_1ParticlePositionCV.html#a2adbc9cbb13190b92a869087ebefd470" title="Initialize necessary variables." alt="" coords="25,996,201,1037"/>
+<area shape="rect" href="classSSAGES_1_1RMSDCV.html#a7e82843aa5d4eae3ada4ea26a7e6502a" title="Initialize necessary variables." alt="" coords="13,1062,213,1089"/>
+<area shape="rect" href="classSSAGES_1_1GyrationTensorCV.html#ad45ea81cf07cb3a95da83feb0ee1f3ba" title="Initialize necessary variables." alt="" coords="16,1113,209,1155"/>
+<area shape="rect" href="classSSAGES_1_1AlphaRMSDCV.html#ab576598c362d72473046b41f5dcad5f5" title="Initialize necessary variables." alt="" coords="24,1179,201,1220"/>
+<area shape="rect" href="classSSAGES_1_1AntiBetaRMSDCV.html#a493dc72ec667b4c3631ff091904f05e1" title="Initialize necessary variables." alt="" coords="15,1244,210,1285"/>
+<area shape="rect" href="classSSAGES_1_1ParallelBetaRMSDCV.html#a373ce72beacf2c412d0b37601b4399d4" title="Initialize necessary variables." alt="" coords="5,1309,220,1351"/>
+<area shape="rect" href="classSSAGES_1_1ANNCV.html#a0a00620dd01926d57136d1c28420a7d4" title="Initialize necessary variables." alt="" coords="18,1375,207,1402"/>
 </map>
 </div>
 
@@ -1212,22 +1172,23 @@ Here is the caller graph for this function:</div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="Snapshot_8h_source.html#l00069">forces_</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ElasticBand_8cpp_source.html#l00030">SSAGES::ElasticBand::PostIntegration()</a>, <a class="el" href="FiniteTempString_8cpp_source.html#l00048">SSAGES::FiniteTempString::PostIntegration()</a>, <a class="el" href="Swarm_8cpp_source.html#l00070">SSAGES::Swarm::PostIntegration()</a>, <a class="el" href="ANN_8cpp_source.html#l00113">SSAGES::ANN::PostIntegration()</a>, <a class="el" href="Umbrella_8cpp_source.html#l00057">SSAGES::Umbrella::PostIntegration()</a>, <a class="el" href="Meta_8cpp_source.html#l00100">SSAGES::Meta::PostIntegration()</a>, <a class="el" href="BasisFunc_8cpp_source.html#l00081">SSAGES::BFS::PostIntegration()</a>, <a class="el" href="ABF_8cpp_source.html#l00072">SSAGES::ABF::PostIntegration()</a>, and <a class="el" href="ForwardFlux_8cpp_source.html#l00297">SSAGES::ForwardFlux::ReadFFSConfiguration()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ElasticBand_8cpp_source.html#l00030">SSAGES::ElasticBand::PostIntegration()</a>, <a class="el" href="FiniteTempString_8cpp_source.html#l00048">SSAGES::FiniteTempString::PostIntegration()</a>, <a class="el" href="Swarm_8cpp_source.html#l00070">SSAGES::Swarm::PostIntegration()</a>, <a class="el" href="ANN_8cpp_source.html#l00113">SSAGES::ANN::PostIntegration()</a>, <a class="el" href="Umbrella_8cpp_source.html#l00057">SSAGES::Umbrella::PostIntegration()</a>, <a class="el" href="Meta_8cpp_source.html#l00100">SSAGES::Meta::PostIntegration()</a>, <a class="el" href="CFF_8cpp_source.html#l00079">SSAGES::CFF::PostIntegration()</a>, <a class="el" href="BasisFunc_8cpp_source.html#l00081">SSAGES::BFS::PostIntegration()</a>, <a class="el" href="ABF_8cpp_source.html#l00072">SSAGES::ABF::PostIntegration()</a>, and <a class="el" href="ForwardFlux_8cpp_source.html#l00297">SSAGES::ForwardFlux::ReadFFSConfiguration()</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classSSAGES_1_1Snapshot_a2d195c04efbc7d7d1c3dd4ccd4b9a5bc_icgraph.png" border="0" usemap="#classSSAGES_1_1Snapshot_a2d195c04efbc7d7d1c3dd4ccd4b9a5bc_icgraph" alt=""/></div>
 <map name="classSSAGES_1_1Snapshot_a2d195c04efbc7d7d1c3dd4ccd4b9a5bc_icgraph" id="classSSAGES_1_1Snapshot_a2d195c04efbc7d7d1c3dd4ccd4b9a5bc_icgraph">
-<area shape="rect" title="Access the per&#45;particle forces." alt="" coords="287,238,496,265"/>
+<area shape="rect" title="Access the per&#45;particle forces." alt="" coords="287,263,496,290"/>
 <area shape="rect" href="classSSAGES_1_1ElasticBand.html#a85177e2c02fa8f767eb98664636732da" title="Post&#45;integration hook." alt="" coords="45,5,199,47"/>
 <area shape="rect" href="classSSAGES_1_1FiniteTempString.html#a94561a14cc08999d4531db528fe3f2e8" title="Method call post integration." alt="" coords="30,71,214,112"/>
 <area shape="rect" href="classSSAGES_1_1Swarm.html#aae8fbacf2c51b84a5a333387116dda0d" title="Method call post integration." alt="" coords="11,137,233,163"/>
 <area shape="rect" href="classSSAGES_1_1ANN.html#ad63d276efae1a266eb5d556bdf896a98" title="Method call post integration." alt="" coords="17,187,227,214"/>
 <area shape="rect" href="classSSAGES_1_1Umbrella.html#a034d7e5266790eeb7a9faaa4aa8520a3" title="Method call post integration." alt="" coords="5,238,239,265"/>
 <area shape="rect" href="classSSAGES_1_1Meta.html#a352edd1cebb4731d7b2e260fbb96d3bc" title="Method call post integration." alt="" coords="17,289,227,315"/>
-<area shape="rect" href="classSSAGES_1_1BFS.html#a6b4639e309cbaffa82113f2577c065c4" title="Method call post integration." alt="" coords="19,339,225,366"/>
-<area shape="rect" href="classSSAGES_1_1ABF.html#ad2007ce8bb539072a97d4d02d268c638" title="Method call post integration." alt="" coords="19,390,225,417"/>
-<area shape="rect" href="classSSAGES_1_1ForwardFlux.html#aaf21bde2adc1a021de4ebb47d10c05a7" title="Read a file corresponding to a FFSConfigID into current snapshot." alt="" coords="41,441,203,483"/>
+<area shape="rect" href="classSSAGES_1_1CFF.html#ab9f74c2ba9de08954e95678e0cb9ce46" title="Method call post integration." alt="" coords="19,339,225,366"/>
+<area shape="rect" href="classSSAGES_1_1BFS.html#a6b4639e309cbaffa82113f2577c065c4" title="Method call post integration." alt="" coords="19,390,225,417"/>
+<area shape="rect" href="classSSAGES_1_1ABF.html#ad2007ce8bb539072a97d4d02d268c638" title="Method call post integration." alt="" coords="19,441,225,467"/>
+<area shape="rect" href="classSSAGES_1_1ForwardFlux.html#aaf21bde2adc1a021de4ebb47d10c05a7" title="Read a file corresponding to a FFSConfigID into current snapshot." alt="" coords="41,492,203,533"/>
 </map>
 </div>
 
@@ -1297,19 +1258,20 @@ Here is the caller graph for this function:</div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="Snapshot_8h_source.html#l00075">iteration_</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="Logger_8cpp_source.html#l00055">SSAGES::Logger::PostIntegration()</a>, <a class="el" href="ANN_8cpp_source.html#l00113">SSAGES::ANN::PostIntegration()</a>, <a class="el" href="Umbrella_8cpp_source.html#l00057">SSAGES::Umbrella::PostIntegration()</a>, <a class="el" href="Meta_8cpp_source.html#l00100">SSAGES::Meta::PostIntegration()</a>, <a class="el" href="BasisFunc_8cpp_source.html#l00081">SSAGES::BFS::PostIntegration()</a>, and <a class="el" href="Hook_8cpp_source.html#l00050">SSAGES::Hook::PostIntegrationHook()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="Logger_8cpp_source.html#l00055">SSAGES::Logger::PostIntegration()</a>, <a class="el" href="ANN_8cpp_source.html#l00113">SSAGES::ANN::PostIntegration()</a>, <a class="el" href="Umbrella_8cpp_source.html#l00057">SSAGES::Umbrella::PostIntegration()</a>, <a class="el" href="Meta_8cpp_source.html#l00100">SSAGES::Meta::PostIntegration()</a>, <a class="el" href="CFF_8cpp_source.html#l00079">SSAGES::CFF::PostIntegration()</a>, <a class="el" href="BasisFunc_8cpp_source.html#l00081">SSAGES::BFS::PostIntegration()</a>, and <a class="el" href="Hook_8cpp_source.html#l00050">SSAGES::Hook::PostIntegrationHook()</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classSSAGES_1_1Snapshot_ab38cbf3c463820d1b8bbd733759bfa32_icgraph.png" border="0" usemap="#classSSAGES_1_1Snapshot_ab38cbf3c463820d1b8bbd733759bfa32_icgraph" alt=""/></div>
 <map name="classSSAGES_1_1Snapshot_ab38cbf3c463820d1b8bbd733759bfa32_icgraph" id="classSSAGES_1_1Snapshot_ab38cbf3c463820d1b8bbd733759bfa32_icgraph">
-<area shape="rect" title="Get the current iteration." alt="" coords="296,132,512,159"/>
+<area shape="rect" title="Get the current iteration." alt="" coords="296,157,512,184"/>
 <area shape="rect" href="classSSAGES_1_1Logger.html#a9a00347c7d4a80e71b279327410c8f88" title="Logger call post integration." alt="" coords="17,5,237,32"/>
 <area shape="rect" href="classSSAGES_1_1ANN.html#ad63d276efae1a266eb5d556bdf896a98" title="Method call post integration." alt="" coords="21,56,232,83"/>
 <area shape="rect" href="classSSAGES_1_1Umbrella.html#a034d7e5266790eeb7a9faaa4aa8520a3" title="Method call post integration." alt="" coords="10,107,243,133"/>
 <area shape="rect" href="classSSAGES_1_1Meta.html#a352edd1cebb4731d7b2e260fbb96d3bc" title="Method call post integration." alt="" coords="21,157,232,184"/>
-<area shape="rect" href="classSSAGES_1_1BFS.html#a6b4639e309cbaffa82113f2577c065c4" title="Method call post integration." alt="" coords="23,208,230,235"/>
-<area shape="rect" href="classSSAGES_1_1Hook.html#af1bef00460b9a64ac92d7f9cef57648d" title="Post&#45;integration hook." alt="" coords="5,259,248,285"/>
+<area shape="rect" href="classSSAGES_1_1CFF.html#ab9f74c2ba9de08954e95678e0cb9ce46" title="Method call post integration." alt="" coords="23,208,230,235"/>
+<area shape="rect" href="classSSAGES_1_1BFS.html#a6b4639e309cbaffa82113f2577c065c4" title="Method call post integration." alt="" coords="23,259,230,285"/>
+<area shape="rect" href="classSSAGES_1_1Hook.html#af1bef00460b9a64ac92d7f9cef57648d" title="Post&#45;integration hook." alt="" coords="5,309,248,336"/>
 </map>
 </div>
 
@@ -1346,15 +1308,16 @@ Here is the caller graph for this function:</div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="Snapshot_8h_source.html#l00079">kb_</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="BasisFunc_8cpp_source.html#l00081">SSAGES::BFS::PostIntegration()</a>, and <a class="el" href="ANN_8cpp_source.html#l00076">SSAGES::ANN::PreSimulation()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="BasisFunc_8cpp_source.html#l00081">SSAGES::BFS::PostIntegration()</a>, <a class="el" href="ANN_8cpp_source.html#l00076">SSAGES::ANN::PreSimulation()</a>, and <a class="el" href="CFF_8cpp_source.html#l00041">SSAGES::CFF::PreSimulation()</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classSSAGES_1_1Snapshot_a00e9e35fb3f541b61a39acb142470a61_icgraph.png" border="0" usemap="#classSSAGES_1_1Snapshot_a00e9e35fb3f541b61a39acb142470a61_icgraph" alt=""/></div>
 <map name="classSSAGES_1_1Snapshot_a00e9e35fb3f541b61a39acb142470a61_icgraph" id="classSSAGES_1_1Snapshot_a00e9e35fb3f541b61a39acb142470a61_icgraph">
-<area shape="rect" title="Get system Kb." alt="" coords="260,31,445,57"/>
+<area shape="rect" title="Get system Kb." alt="" coords="260,56,445,83"/>
 <area shape="rect" href="classSSAGES_1_1BFS.html#a6b4639e309cbaffa82113f2577c065c4" title="Method call post integration." alt="" coords="5,5,212,32"/>
 <area shape="rect" href="classSSAGES_1_1ANN.html#a86e2611b4516c8a465014919139aae19" title="Method call prior to simulation initiation." alt="" coords="7,56,210,83"/>
+<area shape="rect" href="classSSAGES_1_1CFF.html#ad51094624daa5d1a27a75e7c15dce24a" title="Method call prior to simulation initiation." alt="" coords="9,107,209,133"/>
 </map>
 </div>
 
@@ -1393,53 +1356,55 @@ Here is the caller graph for this function:</div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Local atom index or -1 if not found. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="Snapshot_8h_source.html#l00527">527</a> of file <a class="el" href="Snapshot_8h_source.html">Snapshot.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00528"></a><span class="lineno">  528</span>&#160;        {</div>
-<div class="line"><a name="l00529"></a><span class="lineno">  529</span>&#160; </div>
-<div class="line"><a name="l00530"></a><span class="lineno">  530</span>&#160;            <span class="keyword">auto</span> s = std::find(<a class="code" href="classSSAGES_1_1Snapshot.html#a1af5f16699a18b86e37f665e2747530e">atomids_</a>.begin(), <a class="code" href="classSSAGES_1_1Snapshot.html#a1af5f16699a18b86e37f665e2747530e">atomids_</a>.end(), <span class="keywordtype">id</span>);</div>
-<div class="line"><a name="l00531"></a><span class="lineno">  531</span>&#160;            <span class="keywordflow">if</span>(s == <a class="code" href="classSSAGES_1_1Snapshot.html#a1af5f16699a18b86e37f665e2747530e">atomids_</a>.end())</div>
-<div class="line"><a name="l00532"></a><span class="lineno">  532</span>&#160;                <span class="keywordflow">return</span> -1;</div>
-<div class="line"><a name="l00533"></a><span class="lineno">  533</span>&#160;            <span class="keywordflow">else</span></div>
-<div class="line"><a name="l00534"></a><span class="lineno">  534</span>&#160;                <span class="keywordflow">return</span> s - <a class="code" href="classSSAGES_1_1Snapshot.html#a1af5f16699a18b86e37f665e2747530e">atomids_</a>.begin();</div>
-<div class="line"><a name="l00535"></a><span class="lineno">  535</span>&#160;        }</div>
+<p class="definition">Definition at line <a class="el" href="Snapshot_8h_source.html#l00519">519</a> of file <a class="el" href="Snapshot_8h_source.html">Snapshot.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00520"></a><span class="lineno">  520</span>&#160;        {</div>
+<div class="line"><a name="l00521"></a><span class="lineno">  521</span>&#160; </div>
+<div class="line"><a name="l00522"></a><span class="lineno">  522</span>&#160;            <span class="keyword">auto</span> s = std::find(<a class="code" href="classSSAGES_1_1Snapshot.html#a1af5f16699a18b86e37f665e2747530e">atomids_</a>.begin(), <a class="code" href="classSSAGES_1_1Snapshot.html#a1af5f16699a18b86e37f665e2747530e">atomids_</a>.end(), <span class="keywordtype">id</span>);</div>
+<div class="line"><a name="l00523"></a><span class="lineno">  523</span>&#160;            <span class="keywordflow">if</span>(s == <a class="code" href="classSSAGES_1_1Snapshot.html#a1af5f16699a18b86e37f665e2747530e">atomids_</a>.end())</div>
+<div class="line"><a name="l00524"></a><span class="lineno">  524</span>&#160;                <span class="keywordflow">return</span> -1;</div>
+<div class="line"><a name="l00525"></a><span class="lineno">  525</span>&#160;            <span class="keywordflow">else</span></div>
+<div class="line"><a name="l00526"></a><span class="lineno">  526</span>&#160;                <span class="keywordflow">return</span> s - <a class="code" href="classSSAGES_1_1Snapshot.html#a1af5f16699a18b86e37f665e2747530e">atomids_</a>.begin();</div>
+<div class="line"><a name="l00527"></a><span class="lineno">  527</span>&#160;        }</div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="Snapshot_8h_source.html#l00072">atomids_</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="AngleCV_8h_source.html#l00085">SSAGES::AngleCV::Evaluate()</a>, <a class="el" href="TorsionalCV_8h_source.html#l00095">SSAGES::TorsionalCV::Evaluate()</a>, <a class="el" href="PairwiseCV_8h_source.html#l00112">SSAGES::PairwiseCV::Evaluate()</a>, <a class="el" href="AlphaRMSDCV_8h_source.html#l00171">SSAGES::AlphaRMSDCV::Evaluate()</a>, <a class="el" href="AntiBetaRMSDCV_8h_source.html#l00174">SSAGES::AntiBetaRMSDCV::Evaluate()</a>, <a class="el" href="ParallelBetaRMSDCV_8h_source.html#l00179">SSAGES::ParallelBetaRMSDCV::Evaluate()</a>, <a class="el" href="Snapshot_8h_source.html#l00545">GetLocalIndices()</a>, <a class="el" href="PairwiseCV_8h_source.html#l00066">SSAGES::PairwiseCV::Initialize()</a>, <a class="el" href="ParticleCoordinateCV_8h_source.html#l00068">SSAGES::ParticleCoordinateCV::Initialize()</a>, <a class="el" href="RouseModeCV_8h_source.html#l00080">SSAGES::RouseModeCV::Initialize()</a>, <a class="el" href="ParticleSeparationCV_8h_source.html#l00082">SSAGES::ParticleSeparationCV::Initialize()</a>, <a class="el" href="ParticlePositionCV_8h_source.html#l00087">SSAGES::ParticlePositionCV::Initialize()</a>, <a class="el" href="RMSDCV_8h_source.html#l00099">SSAGES::RMSDCV::Initialize()</a>, <a class="el" href="GyrationTensorCV_8h_source.html#l00099">SSAGES::GyrationTensorCV::Initialize()</a>, <a class="el" href="FiniteTempString_8cpp_source.html#l00048">SSAGES::FiniteTempString::PostIntegration()</a>, and <a class="el" href="Swarm_8cpp_source.html#l00070">SSAGES::Swarm::PostIntegration()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="AngleCV_8h_source.html#l00085">SSAGES::AngleCV::Evaluate()</a>, <a class="el" href="TorsionalCV_8h_source.html#l00095">SSAGES::TorsionalCV::Evaluate()</a>, <a class="el" href="PairwiseCV_8h_source.html#l00112">SSAGES::PairwiseCV::Evaluate()</a>, <a class="el" href="AlphaRMSDCV_8h_source.html#l00171">SSAGES::AlphaRMSDCV::Evaluate()</a>, <a class="el" href="AntiBetaRMSDCV_8h_source.html#l00174">SSAGES::AntiBetaRMSDCV::Evaluate()</a>, <a class="el" href="ParallelBetaRMSDCV_8h_source.html#l00179">SSAGES::ParallelBetaRMSDCV::Evaluate()</a>, <a class="el" href="Snapshot_8h_source.html#l00537">GetLocalIndices()</a>, <a class="el" href="PairwiseCV_8h_source.html#l00066">SSAGES::PairwiseCV::Initialize()</a>, <a class="el" href="ParticleCoordinateCV_8h_source.html#l00068">SSAGES::ParticleCoordinateCV::Initialize()</a>, <a class="el" href="RouseModeCV_8h_source.html#l00080">SSAGES::RouseModeCV::Initialize()</a>, <a class="el" href="ParticleSeparationCV_8h_source.html#l00082">SSAGES::ParticleSeparationCV::Initialize()</a>, <a class="el" href="ParticlePositionCV_8h_source.html#l00087">SSAGES::ParticlePositionCV::Initialize()</a>, <a class="el" href="RMSDCV_8h_source.html#l00099">SSAGES::RMSDCV::Initialize()</a>, <a class="el" href="GyrationTensorCV_8h_source.html#l00099">SSAGES::GyrationTensorCV::Initialize()</a>, <a class="el" href="FiniteTempString_8cpp_source.html#l00048">SSAGES::FiniteTempString::PostIntegration()</a>, and <a class="el" href="Swarm_8cpp_source.html#l00070">SSAGES::Swarm::PostIntegration()</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classSSAGES_1_1Snapshot_a7146597433bcfd256385db274330cd36_icgraph.png" border="0" usemap="#classSSAGES_1_1Snapshot_a7146597433bcfd256385db274330cd36_icgraph" alt=""/></div>
 <map name="classSSAGES_1_1Snapshot_a7146597433bcfd256385db274330cd36_icgraph" id="classSSAGES_1_1Snapshot_a7146597433bcfd256385db274330cd36_icgraph">
-<area shape="rect" title="Gets the local atom index corresponding to an atom ID." alt="" coords="761,617,961,659"/>
-<area shape="rect" href="classSSAGES_1_1AngleCV.html#afc7cddc3872aeeeeb098c69f1126b594" title="Evaluate the CV." alt="" coords="504,169,700,195"/>
-<area shape="rect" href="classSSAGES_1_1TorsionalCV.html#ae3e82fb11240eb780cfcc57b2b0112a5" title="Evaluate the CV." alt="" coords="523,220,681,261"/>
+<area shape="rect" title="Gets the local atom index corresponding to an atom ID." alt="" coords="761,668,961,709"/>
+<area shape="rect" href="classSSAGES_1_1AngleCV.html#afc7cddc3872aeeeeb098c69f1126b594" title="Evaluate the CV." alt="" coords="504,219,700,246"/>
+<area shape="rect" href="classSSAGES_1_1TorsionalCV.html#ae3e82fb11240eb780cfcc57b2b0112a5" title="Evaluate the CV." alt="" coords="523,271,681,312"/>
 <area shape="rect" href="classSSAGES_1_1PairwiseCV.html#a807d3a560a3a187c7648da5a282027df" title="Evaluate the CV." alt="" coords="258,5,413,47"/>
-<area shape="rect" href="classSSAGES_1_1AlphaRMSDCV.html#a54a50be609eddb9448199bbfc21cc7e0" title="Evaluate the CV." alt="" coords="513,337,691,379"/>
-<area shape="rect" href="classSSAGES_1_1AntiBetaRMSDCV.html#a89bdea4dde8b704a0ca773e0a0f79b1f" title="Evaluate the CV." alt="" coords="505,403,699,444"/>
-<area shape="rect" href="classSSAGES_1_1ParallelBetaRMSDCV.html#a8ed7cf0c797dbf51f70e604d32546442" title="Evaluate the CV." alt="" coords="495,468,709,509"/>
-<area shape="rect" href="classSSAGES_1_1Snapshot.html#a196a91c541c72bcb5147b9e60a44ea8b" title=" " alt="" coords="502,533,702,575"/>
-<area shape="rect" href="classSSAGES_1_1RMSDCV.html#a7e82843aa5d4eae3ada4ea26a7e6502a" title="Initialize necessary variables." alt="" coords="235,827,435,854"/>
-<area shape="rect" href="classSSAGES_1_1RouseModeCV.html#a851e533301a1464b5d69c711c6499ba1" title="Initialize necessary variables." alt="" coords="5,816,180,857"/>
-<area shape="rect" href="classSSAGES_1_1PairwiseCV.html#a1399e3e75014393502c1dd0ff91b2c95" title="Initialize necessary variables." alt="" coords="525,701,679,743"/>
-<area shape="rect" href="classSSAGES_1_1ParticleCoordinateCV.html#a1fe779096ebd6aeed9912f34bc57bccd" title="Initialize necessary variables." alt="" coords="506,767,698,808"/>
-<area shape="rect" href="classSSAGES_1_1ParticleSeparationCV.html#a886af836f08cc4ed96ae742eb7eb6d7d" title="Initialize necessary variables." alt="" coords="507,832,697,873"/>
-<area shape="rect" href="classSSAGES_1_1ParticlePositionCV.html#a2adbc9cbb13190b92a869087ebefd470" title="Initialize necessary variables." alt="" coords="514,897,690,939"/>
-<area shape="rect" href="classSSAGES_1_1GyrationTensorCV.html#ad45ea81cf07cb3a95da83feb0ee1f3ba" title="Initialize necessary variables." alt="" coords="505,963,699,1004"/>
-<area shape="rect" href="classSSAGES_1_1FiniteTempString.html#a94561a14cc08999d4531db528fe3f2e8" title="Method call post integration." alt="" coords="510,1028,694,1069"/>
-<area shape="rect" href="classSSAGES_1_1Swarm.html#aae8fbacf2c51b84a5a333387116dda0d" title="Method call post integration." alt="" coords="491,1094,713,1121"/>
+<area shape="rect" href="classSSAGES_1_1AlphaRMSDCV.html#a54a50be609eddb9448199bbfc21cc7e0" title="Evaluate the CV." alt="" coords="513,388,691,429"/>
+<area shape="rect" href="classSSAGES_1_1AntiBetaRMSDCV.html#a89bdea4dde8b704a0ca773e0a0f79b1f" title="Evaluate the CV." alt="" coords="505,453,699,495"/>
+<area shape="rect" href="classSSAGES_1_1ParallelBetaRMSDCV.html#a8ed7cf0c797dbf51f70e604d32546442" title="Evaluate the CV." alt="" coords="495,519,709,560"/>
+<area shape="rect" href="classSSAGES_1_1Snapshot.html#a196a91c541c72bcb5147b9e60a44ea8b" title=" " alt="" coords="502,584,702,625"/>
+<area shape="rect" href="classSSAGES_1_1RMSDCV.html#a7e82843aa5d4eae3ada4ea26a7e6502a" title="Initialize necessary variables." alt="" coords="235,930,435,957"/>
+<area shape="rect" href="classSSAGES_1_1RouseModeCV.html#a851e533301a1464b5d69c711c6499ba1" title="Initialize necessary variables." alt="" coords="5,919,180,960"/>
+<area shape="rect" href="classSSAGES_1_1PairwiseCV.html#a1399e3e75014393502c1dd0ff91b2c95" title="Initialize necessary variables." alt="" coords="525,752,679,793"/>
+<area shape="rect" href="classSSAGES_1_1ParticleCoordinateCV.html#a1fe779096ebd6aeed9912f34bc57bccd" title="Initialize necessary variables." alt="" coords="506,817,698,859"/>
+<area shape="rect" href="classSSAGES_1_1ParticleSeparationCV.html#a886af836f08cc4ed96ae742eb7eb6d7d" title="Initialize necessary variables." alt="" coords="507,883,697,924"/>
+<area shape="rect" href="classSSAGES_1_1ParticlePositionCV.html#a2adbc9cbb13190b92a869087ebefd470" title="Initialize necessary variables." alt="" coords="514,948,690,989"/>
+<area shape="rect" href="classSSAGES_1_1GyrationTensorCV.html#ad45ea81cf07cb3a95da83feb0ee1f3ba" title="Initialize necessary variables." alt="" coords="505,1013,699,1055"/>
+<area shape="rect" href="classSSAGES_1_1FiniteTempString.html#a94561a14cc08999d4531db528fe3f2e8" title="Method call post integration." alt="" coords="510,1079,694,1120"/>
+<area shape="rect" href="classSSAGES_1_1Swarm.html#aae8fbacf2c51b84a5a333387116dda0d" title="Method call post integration." alt="" coords="491,1145,713,1171"/>
 <area shape="rect" href="classSSAGES_1_1ParticleCoordinateCV.html#afff49e8eb1571fe3527712be50da001e" title="Evaluate the CV." alt="" coords="239,71,431,112"/>
 <area shape="rect" href="classSSAGES_1_1ParticlePositionCV.html#aa2ee9b7b3ca3133183e2d5f511251e29" title="Evaluate the CV." alt="" coords="247,136,423,177"/>
 <area shape="rect" href="classSSAGES_1_1RouseModeCV.html#a1468b1aabf81ceb2ef3feb3b8fc79d0d" title="Evaluate the CV." alt="" coords="248,201,423,243"/>
-<area shape="rect" href="classSSAGES_1_1GyrationTensorCV.html#ac613c1659bd00b335c3d6de3d8ff0ebc" title="Evaluate the CV." alt="" coords="239,267,432,308"/>
-<area shape="rect" href="classSSAGES_1_1ParticleSeparationCV.html#ae6452c47bf1d849e2af60c84209a9955" title="Evaluate the CV." alt="" coords="240,332,431,373"/>
+<area shape="rect" href="classSSAGES_1_1ParticleSeparationCV.html#ae6452c47bf1d849e2af60c84209a9955" title="Evaluate the CV." alt="" coords="240,267,431,308"/>
+<area shape="rect" href="classSSAGES_1_1GyrationTensorCV.html#ac613c1659bd00b335c3d6de3d8ff0ebc" title="Evaluate the CV." alt="" coords="239,332,432,373"/>
 <area shape="rect" href="classSSAGES_1_1RMSDCV.html#aff77158b643fec57c6d1649a78b0dd14" title="Evaluate the CV." alt="" coords="234,398,437,425"/>
-<area shape="rect" href="classSSAGES_1_1AngleCV.html#a6e2a96d605cbf6f664e57dc312d219f2" title="Initialize necessary variables." alt="" coords="239,449,432,475"/>
-<area shape="rect" href="classSSAGES_1_1TorsionalCV.html#a4d33444e79408f7690d3c1e56359212b" title="Initialize necessary variables." alt="" coords="257,500,414,541"/>
-<area shape="rect" href="classSSAGES_1_1AlphaRMSDCV.html#ab576598c362d72473046b41f5dcad5f5" title="Initialize necessary variables." alt="" coords="247,565,424,607"/>
-<area shape="rect" href="classSSAGES_1_1AntiBetaRMSDCV.html#a493dc72ec667b4c3631ff091904f05e1" title="Initialize necessary variables." alt="" coords="238,631,433,672"/>
-<area shape="rect" href="classSSAGES_1_1ParallelBetaRMSDCV.html#a373ce72beacf2c412d0b37601b4399d4" title="Initialize necessary variables." alt="" coords="228,696,443,737"/>
-<area shape="rect" href="classSSAGES_1_1RouseModeCV.html#a5842a8b7e54d435af5465aea2c85e924" title="Helper function to determine masses of each group." alt="" coords="248,761,423,803"/>
+<area shape="rect" href="classSSAGES_1_1ANNCV.html#a1ddb11f32dbf1c1c19e119310c047a0d" title="Evaluate the CV." alt="" coords="239,449,431,475"/>
+<area shape="rect" href="classSSAGES_1_1AngleCV.html#a6e2a96d605cbf6f664e57dc312d219f2" title="Initialize necessary variables." alt="" coords="239,499,432,526"/>
+<area shape="rect" href="classSSAGES_1_1TorsionalCV.html#a4d33444e79408f7690d3c1e56359212b" title="Initialize necessary variables." alt="" coords="257,551,414,592"/>
+<area shape="rect" href="classSSAGES_1_1AlphaRMSDCV.html#ab576598c362d72473046b41f5dcad5f5" title="Initialize necessary variables." alt="" coords="247,616,424,657"/>
+<area shape="rect" href="classSSAGES_1_1AntiBetaRMSDCV.html#a493dc72ec667b4c3631ff091904f05e1" title="Initialize necessary variables." alt="" coords="238,681,433,723"/>
+<area shape="rect" href="classSSAGES_1_1ParallelBetaRMSDCV.html#a373ce72beacf2c412d0b37601b4399d4" title="Initialize necessary variables." alt="" coords="228,747,443,788"/>
+<area shape="rect" href="classSSAGES_1_1ANNCV.html#a0a00620dd01926d57136d1c28420a7d4" title="Initialize necessary variables." alt="" coords="241,813,430,839"/>
+<area shape="rect" href="classSSAGES_1_1RouseModeCV.html#a5842a8b7e54d435af5465aea2c85e924" title="Helper function to determine masses of each group." alt="" coords="248,864,423,905"/>
 </map>
 </div>
 
@@ -1488,19 +1453,19 @@ Here is the caller graph for this function:</div>
 </dl>
 <dl class="section note"><dt>Note</dt><dd>If atom does not exist on processor, it will be ignored. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="Snapshot_8h_source.html#l00545">545</a> of file <a class="el" href="Snapshot_8h_source.html">Snapshot.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00546"></a><span class="lineno">  546</span>&#160;        {</div>
-<div class="line"><a name="l00547"></a><span class="lineno">  547</span>&#160;            <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; <span class="keywordtype">id</span> : ids)</div>
-<div class="line"><a name="l00548"></a><span class="lineno">  548</span>&#160;            {</div>
-<div class="line"><a name="l00549"></a><span class="lineno">  549</span>&#160;                <span class="keyword">auto</span> idx = <a class="code" href="classSSAGES_1_1Snapshot.html#a7146597433bcfd256385db274330cd36">GetLocalIndex</a>(<span class="keywordtype">id</span>);</div>
-<div class="line"><a name="l00550"></a><span class="lineno">  550</span>&#160;                <span class="keywordflow">if</span>(idx != -1)</div>
-<div class="line"><a name="l00551"></a><span class="lineno">  551</span>&#160;                    indices-&gt;push_back(idx);</div>
-<div class="line"><a name="l00552"></a><span class="lineno">  552</span>&#160;            }</div>
-<div class="line"><a name="l00553"></a><span class="lineno">  553</span>&#160;        }</div>
+<p class="definition">Definition at line <a class="el" href="Snapshot_8h_source.html#l00537">537</a> of file <a class="el" href="Snapshot_8h_source.html">Snapshot.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00538"></a><span class="lineno">  538</span>&#160;        {</div>
+<div class="line"><a name="l00539"></a><span class="lineno">  539</span>&#160;            <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; <span class="keywordtype">id</span> : ids)</div>
+<div class="line"><a name="l00540"></a><span class="lineno">  540</span>&#160;            {</div>
+<div class="line"><a name="l00541"></a><span class="lineno">  541</span>&#160;                <span class="keyword">auto</span> idx = <a class="code" href="classSSAGES_1_1Snapshot.html#a7146597433bcfd256385db274330cd36">GetLocalIndex</a>(<span class="keywordtype">id</span>);</div>
+<div class="line"><a name="l00542"></a><span class="lineno">  542</span>&#160;                <span class="keywordflow">if</span>(idx != -1)</div>
+<div class="line"><a name="l00543"></a><span class="lineno">  543</span>&#160;                    indices-&gt;push_back(idx);</div>
+<div class="line"><a name="l00544"></a><span class="lineno">  544</span>&#160;            }</div>
+<div class="line"><a name="l00545"></a><span class="lineno">  545</span>&#160;        }</div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="Snapshot_8h_source.html#l00527">GetLocalIndex()</a>.</p>
+<p class="reference">References <a class="el" href="Snapshot_8h_source.html#l00519">GetLocalIndex()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ParticleCoordinateCV_8h_source.html#l00097">SSAGES::ParticleCoordinateCV::Evaluate()</a>, <a class="el" href="PairwiseCV_8h_source.html#l00112">SSAGES::PairwiseCV::Evaluate()</a>, <a class="el" href="ParticlePositionCV_8h_source.html#l00116">SSAGES::ParticlePositionCV::Evaluate()</a>, <a class="el" href="RouseModeCV_8h_source.html#l00121">SSAGES::RouseModeCV::Evaluate()</a>, <a class="el" href="GyrationTensorCV_8h_source.html#l00128">SSAGES::GyrationTensorCV::Evaluate()</a>, <a class="el" href="ParticleSeparationCV_8h_source.html#l00128">SSAGES::ParticleSeparationCV::Evaluate()</a>, <a class="el" href="RMSDCV_8h_source.html#l00162">SSAGES::RMSDCV::Evaluate()</a>, <a class="el" href="AngleCV_8h_source.html#l00063">SSAGES::AngleCV::Initialize()</a>, <a class="el" href="TorsionalCV_8h_source.html#l00073">SSAGES::TorsionalCV::Initialize()</a>, <a class="el" href="RMSDCV_8h_source.html#l00099">SSAGES::RMSDCV::Initialize()</a>, <a class="el" href="AlphaRMSDCV_8h_source.html#l00103">SSAGES::AlphaRMSDCV::Initialize()</a>, <a class="el" href="AntiBetaRMSDCV_8h_source.html#l00106">SSAGES::AntiBetaRMSDCV::Initialize()</a>, <a class="el" href="ParallelBetaRMSDCV_8h_source.html#l00111">SSAGES::ParallelBetaRMSDCV::Initialize()</a>, and <a class="el" href="RouseModeCV_8h_source.html#l00065">SSAGES::RouseModeCV::setMasses()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ParticleCoordinateCV_8h_source.html#l00097">SSAGES::ParticleCoordinateCV::Evaluate()</a>, <a class="el" href="PairwiseCV_8h_source.html#l00112">SSAGES::PairwiseCV::Evaluate()</a>, <a class="el" href="ParticlePositionCV_8h_source.html#l00116">SSAGES::ParticlePositionCV::Evaluate()</a>, <a class="el" href="RouseModeCV_8h_source.html#l00121">SSAGES::RouseModeCV::Evaluate()</a>, <a class="el" href="ParticleSeparationCV_8h_source.html#l00128">SSAGES::ParticleSeparationCV::Evaluate()</a>, <a class="el" href="GyrationTensorCV_8h_source.html#l00128">SSAGES::GyrationTensorCV::Evaluate()</a>, <a class="el" href="RMSDCV_8h_source.html#l00162">SSAGES::RMSDCV::Evaluate()</a>, <a class="el" href="ANNCV_8h_source.html#l00194">SSAGES::ANNCV::Evaluate()</a>, <a class="el" href="AngleCV_8h_source.html#l00063">SSAGES::AngleCV::Initialize()</a>, <a class="el" href="TorsionalCV_8h_source.html#l00073">SSAGES::TorsionalCV::Initialize()</a>, <a class="el" href="RMSDCV_8h_source.html#l00099">SSAGES::RMSDCV::Initialize()</a>, <a class="el" href="AlphaRMSDCV_8h_source.html#l00103">SSAGES::AlphaRMSDCV::Initialize()</a>, <a class="el" href="AntiBetaRMSDCV_8h_source.html#l00106">SSAGES::AntiBetaRMSDCV::Initialize()</a>, <a class="el" href="ParallelBetaRMSDCV_8h_source.html#l00111">SSAGES::ParallelBetaRMSDCV::Initialize()</a>, <a class="el" href="ANNCV_8h_source.html#l00128">SSAGES::ANNCV::Initialize()</a>, and <a class="el" href="RouseModeCV_8h_source.html#l00065">SSAGES::RouseModeCV::setMasses()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -1515,22 +1480,24 @@ Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classSSAGES_1_1Snapshot_a196a91c541c72bcb5147b9e60a44ea8b_icgraph.png" border="0" usemap="#classSSAGES_1_1Snapshot_a196a91c541c72bcb5147b9e60a44ea8b_icgraph" alt=""/></div>
 <map name="classSSAGES_1_1Snapshot_a196a91c541c72bcb5147b9e60a44ea8b_icgraph" id="classSSAGES_1_1Snapshot_a196a91c541c72bcb5147b9e60a44ea8b_icgraph">
-<area shape="rect" title=" " alt="" coords="491,416,691,457"/>
+<area shape="rect" title=" " alt="" coords="491,467,691,508"/>
 <area shape="rect" href="classSSAGES_1_1ParticleCoordinateCV.html#afff49e8eb1571fe3527712be50da001e" title="Evaluate the CV." alt="" coords="239,5,431,47"/>
 <area shape="rect" href="classSSAGES_1_1PairwiseCV.html#a807d3a560a3a187c7648da5a282027df" title="Evaluate the CV." alt="" coords="258,71,413,112"/>
 <area shape="rect" href="classSSAGES_1_1ParticlePositionCV.html#aa2ee9b7b3ca3133183e2d5f511251e29" title="Evaluate the CV." alt="" coords="247,136,423,177"/>
 <area shape="rect" href="classSSAGES_1_1RouseModeCV.html#a1468b1aabf81ceb2ef3feb3b8fc79d0d" title="Evaluate the CV." alt="" coords="248,201,423,243"/>
-<area shape="rect" href="classSSAGES_1_1GyrationTensorCV.html#ac613c1659bd00b335c3d6de3d8ff0ebc" title="Evaluate the CV." alt="" coords="239,267,432,308"/>
-<area shape="rect" href="classSSAGES_1_1ParticleSeparationCV.html#ae6452c47bf1d849e2af60c84209a9955" title="Evaluate the CV." alt="" coords="240,332,431,373"/>
+<area shape="rect" href="classSSAGES_1_1ParticleSeparationCV.html#ae6452c47bf1d849e2af60c84209a9955" title="Evaluate the CV." alt="" coords="240,267,431,308"/>
+<area shape="rect" href="classSSAGES_1_1GyrationTensorCV.html#ac613c1659bd00b335c3d6de3d8ff0ebc" title="Evaluate the CV." alt="" coords="239,332,432,373"/>
 <area shape="rect" href="classSSAGES_1_1RMSDCV.html#aff77158b643fec57c6d1649a78b0dd14" title="Evaluate the CV." alt="" coords="234,398,437,425"/>
-<area shape="rect" href="classSSAGES_1_1AngleCV.html#a6e2a96d605cbf6f664e57dc312d219f2" title="Initialize necessary variables." alt="" coords="239,449,432,475"/>
-<area shape="rect" href="classSSAGES_1_1TorsionalCV.html#a4d33444e79408f7690d3c1e56359212b" title="Initialize necessary variables." alt="" coords="257,500,414,541"/>
-<area shape="rect" href="classSSAGES_1_1RMSDCV.html#a7e82843aa5d4eae3ada4ea26a7e6502a" title="Initialize necessary variables." alt="" coords="235,566,435,593"/>
-<area shape="rect" href="classSSAGES_1_1AlphaRMSDCV.html#ab576598c362d72473046b41f5dcad5f5" title="Initialize necessary variables." alt="" coords="247,617,424,659"/>
-<area shape="rect" href="classSSAGES_1_1AntiBetaRMSDCV.html#a493dc72ec667b4c3631ff091904f05e1" title="Initialize necessary variables." alt="" coords="238,683,433,724"/>
-<area shape="rect" href="classSSAGES_1_1ParallelBetaRMSDCV.html#a373ce72beacf2c412d0b37601b4399d4" title="Initialize necessary variables." alt="" coords="228,748,443,789"/>
-<area shape="rect" href="classSSAGES_1_1RouseModeCV.html#a5842a8b7e54d435af5465aea2c85e924" title="Helper function to determine masses of each group." alt="" coords="248,813,423,855"/>
-<area shape="rect" href="classSSAGES_1_1RouseModeCV.html#a851e533301a1464b5d69c711c6499ba1" title="Initialize necessary variables." alt="" coords="5,813,180,855"/>
+<area shape="rect" href="classSSAGES_1_1ANNCV.html#a1ddb11f32dbf1c1c19e119310c047a0d" title="Evaluate the CV." alt="" coords="239,449,431,475"/>
+<area shape="rect" href="classSSAGES_1_1AngleCV.html#a6e2a96d605cbf6f664e57dc312d219f2" title="Initialize necessary variables." alt="" coords="239,499,432,526"/>
+<area shape="rect" href="classSSAGES_1_1TorsionalCV.html#a4d33444e79408f7690d3c1e56359212b" title="Initialize necessary variables." alt="" coords="257,551,414,592"/>
+<area shape="rect" href="classSSAGES_1_1RMSDCV.html#a7e82843aa5d4eae3ada4ea26a7e6502a" title="Initialize necessary variables." alt="" coords="235,617,435,643"/>
+<area shape="rect" href="classSSAGES_1_1AlphaRMSDCV.html#ab576598c362d72473046b41f5dcad5f5" title="Initialize necessary variables." alt="" coords="247,668,424,709"/>
+<area shape="rect" href="classSSAGES_1_1AntiBetaRMSDCV.html#a493dc72ec667b4c3631ff091904f05e1" title="Initialize necessary variables." alt="" coords="238,733,433,775"/>
+<area shape="rect" href="classSSAGES_1_1ParallelBetaRMSDCV.html#a373ce72beacf2c412d0b37601b4399d4" title="Initialize necessary variables." alt="" coords="228,799,443,840"/>
+<area shape="rect" href="classSSAGES_1_1ANNCV.html#a0a00620dd01926d57136d1c28420a7d4" title="Initialize necessary variables." alt="" coords="241,865,430,891"/>
+<area shape="rect" href="classSSAGES_1_1RouseModeCV.html#a5842a8b7e54d435af5465aea2c85e924" title="Helper function to determine masses of each group." alt="" coords="248,916,423,957"/>
+<area shape="rect" href="classSSAGES_1_1RouseModeCV.html#a851e533301a1464b5d69c711c6499ba1" title="Initialize necessary variables." alt="" coords="5,916,180,957"/>
 </map>
 </div>
 
@@ -1605,13 +1572,13 @@ Here is the caller graph for this function:</div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="Snapshot_8h_source.html#l00070">masses_</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ParticleCoordinateCV_8h_source.html#l00097">SSAGES::ParticleCoordinateCV::Evaluate()</a>, <a class="el" href="ParticlePositionCV_8h_source.html#l00116">SSAGES::ParticlePositionCV::Evaluate()</a>, <a class="el" href="RouseModeCV_8h_source.html#l00121">SSAGES::RouseModeCV::Evaluate()</a>, <a class="el" href="GyrationTensorCV_8h_source.html#l00128">SSAGES::GyrationTensorCV::Evaluate()</a>, <a class="el" href="ParticleSeparationCV_8h_source.html#l00128">SSAGES::ParticleSeparationCV::Evaluate()</a>, <a class="el" href="RMSDCV_8h_source.html#l00162">SSAGES::RMSDCV::Evaluate()</a>, <a class="el" href="RMSDCV_8h_source.html#l00099">SSAGES::RMSDCV::Initialize()</a>, and <a class="el" href="ABF_8cpp_source.html#l00072">SSAGES::ABF::PostIntegration()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ParticleCoordinateCV_8h_source.html#l00097">SSAGES::ParticleCoordinateCV::Evaluate()</a>, <a class="el" href="ParticlePositionCV_8h_source.html#l00116">SSAGES::ParticlePositionCV::Evaluate()</a>, <a class="el" href="RouseModeCV_8h_source.html#l00121">SSAGES::RouseModeCV::Evaluate()</a>, <a class="el" href="GyrationTensorCV_8h_source.html#l00128">SSAGES::GyrationTensorCV::Evaluate()</a>, <a class="el" href="ParticleSeparationCV_8h_source.html#l00128">SSAGES::ParticleSeparationCV::Evaluate()</a>, <a class="el" href="RMSDCV_8h_source.html#l00162">SSAGES::RMSDCV::Evaluate()</a>, <a class="el" href="RMSDCV_8h_source.html#l00099">SSAGES::RMSDCV::Initialize()</a>, <a class="el" href="CFF_8cpp_source.html#l00079">SSAGES::CFF::PostIntegration()</a>, and <a class="el" href="ABF_8cpp_source.html#l00072">SSAGES::ABF::PostIntegration()</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classSSAGES_1_1Snapshot_abef8348e7811deeea88a7ff8f49a1af4_icgraph.png" border="0" usemap="#classSSAGES_1_1Snapshot_abef8348e7811deeea88a7ff8f49a1af4_icgraph" alt=""/></div>
 <map name="classSSAGES_1_1Snapshot_abef8348e7811deeea88a7ff8f49a1af4_icgraph" id="classSSAGES_1_1Snapshot_abef8348e7811deeea88a7ff8f49a1af4_icgraph">
-<area shape="rect" title="Const access to the particle masses." alt="" coords="260,242,475,269"/>
+<area shape="rect" title="Const access to the particle masses." alt="" coords="260,274,475,301"/>
 <area shape="rect" href="classSSAGES_1_1ParticleCoordinateCV.html#afff49e8eb1571fe3527712be50da001e" title="Evaluate the CV." alt="" coords="13,5,205,47"/>
 <area shape="rect" href="classSSAGES_1_1ParticlePositionCV.html#aa2ee9b7b3ca3133183e2d5f511251e29" title="Evaluate the CV." alt="" coords="21,71,197,112"/>
 <area shape="rect" href="classSSAGES_1_1RouseModeCV.html#a1468b1aabf81ceb2ef3feb3b8fc79d0d" title="Evaluate the CV." alt="" coords="21,136,196,177"/>
@@ -1619,7 +1586,8 @@ Here is the caller graph for this function:</div>
 <area shape="rect" href="classSSAGES_1_1ParticleSeparationCV.html#ae6452c47bf1d849e2af60c84209a9955" title="Evaluate the CV." alt="" coords="13,267,204,308"/>
 <area shape="rect" href="classSSAGES_1_1RMSDCV.html#aff77158b643fec57c6d1649a78b0dd14" title="Evaluate the CV." alt="" coords="7,333,210,359"/>
 <area shape="rect" href="classSSAGES_1_1RMSDCV.html#a7e82843aa5d4eae3ada4ea26a7e6502a" title="Initialize necessary variables." alt="" coords="9,383,209,410"/>
-<area shape="rect" href="classSSAGES_1_1ABF.html#ad2007ce8bb539072a97d4d02d268c638" title="Method call post integration." alt="" coords="5,434,212,461"/>
+<area shape="rect" href="classSSAGES_1_1CFF.html#ab9f74c2ba9de08954e95678e0cb9ce46" title="Method call post integration." alt="" coords="5,434,212,461"/>
+<area shape="rect" href="classSSAGES_1_1ABF.html#ad2007ce8bb539072a97d4d02d268c638" title="Method call post integration." alt="" coords="5,485,212,511"/>
 </map>
 </div>
 
@@ -1656,13 +1624,13 @@ Here is the caller graph for this function:</div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="Snapshot_8h_source.html#l00054">nlocal_</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ABF_8cpp_source.html#l00176">SSAGES::ABF::CalcBiasForce()</a>, <a class="el" href="BoxVolumeCV_8h_source.html#l00052">SSAGES::BoxVolumeCV::Evaluate()</a>, <a class="el" href="AngleCV_8h_source.html#l00085">SSAGES::AngleCV::Evaluate()</a>, <a class="el" href="TorsionalCV_8h_source.html#l00095">SSAGES::TorsionalCV::Evaluate()</a>, <a class="el" href="ParticleCoordinateCV_8h_source.html#l00097">SSAGES::ParticleCoordinateCV::Evaluate()</a>, <a class="el" href="PairwiseCV_8h_source.html#l00112">SSAGES::PairwiseCV::Evaluate()</a>, <a class="el" href="ParticlePositionCV_8h_source.html#l00116">SSAGES::ParticlePositionCV::Evaluate()</a>, <a class="el" href="RouseModeCV_8h_source.html#l00121">SSAGES::RouseModeCV::Evaluate()</a>, <a class="el" href="GyrationTensorCV_8h_source.html#l00128">SSAGES::GyrationTensorCV::Evaluate()</a>, <a class="el" href="ParticleSeparationCV_8h_source.html#l00128">SSAGES::ParticleSeparationCV::Evaluate()</a>, <a class="el" href="RMSDCV_8h_source.html#l00162">SSAGES::RMSDCV::Evaluate()</a>, <a class="el" href="AlphaRMSDCV_8h_source.html#l00171">SSAGES::AlphaRMSDCV::Evaluate()</a>, <a class="el" href="AntiBetaRMSDCV_8h_source.html#l00174">SSAGES::AntiBetaRMSDCV::Evaluate()</a>, <a class="el" href="ParallelBetaRMSDCV_8h_source.html#l00179">SSAGES::ParallelBetaRMSDCV::Evaluate()</a>, <a class="el" href="RMSDCV_8h_source.html#l00099">SSAGES::RMSDCV::Initialize()</a>, and <a class="el" href="ABF_8cpp_source.html#l00072">SSAGES::ABF::PostIntegration()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ABF_8cpp_source.html#l00176">SSAGES::ABF::CalcBiasForce()</a>, <a class="el" href="BoxVolumeCV_8h_source.html#l00052">SSAGES::BoxVolumeCV::Evaluate()</a>, <a class="el" href="AngleCV_8h_source.html#l00085">SSAGES::AngleCV::Evaluate()</a>, <a class="el" href="TorsionalCV_8h_source.html#l00095">SSAGES::TorsionalCV::Evaluate()</a>, <a class="el" href="ParticleCoordinateCV_8h_source.html#l00097">SSAGES::ParticleCoordinateCV::Evaluate()</a>, <a class="el" href="PairwiseCV_8h_source.html#l00112">SSAGES::PairwiseCV::Evaluate()</a>, <a class="el" href="ParticlePositionCV_8h_source.html#l00116">SSAGES::ParticlePositionCV::Evaluate()</a>, <a class="el" href="RouseModeCV_8h_source.html#l00121">SSAGES::RouseModeCV::Evaluate()</a>, <a class="el" href="ParticleSeparationCV_8h_source.html#l00128">SSAGES::ParticleSeparationCV::Evaluate()</a>, <a class="el" href="GyrationTensorCV_8h_source.html#l00128">SSAGES::GyrationTensorCV::Evaluate()</a>, <a class="el" href="RMSDCV_8h_source.html#l00162">SSAGES::RMSDCV::Evaluate()</a>, <a class="el" href="AlphaRMSDCV_8h_source.html#l00171">SSAGES::AlphaRMSDCV::Evaluate()</a>, <a class="el" href="AntiBetaRMSDCV_8h_source.html#l00174">SSAGES::AntiBetaRMSDCV::Evaluate()</a>, <a class="el" href="ParallelBetaRMSDCV_8h_source.html#l00179">SSAGES::ParallelBetaRMSDCV::Evaluate()</a>, <a class="el" href="ANNCV_8h_source.html#l00194">SSAGES::ANNCV::Evaluate()</a>, <a class="el" href="RMSDCV_8h_source.html#l00099">SSAGES::RMSDCV::Initialize()</a>, <a class="el" href="CFF_8cpp_source.html#l00079">SSAGES::CFF::PostIntegration()</a>, and <a class="el" href="ABF_8cpp_source.html#l00072">SSAGES::ABF::PostIntegration()</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classSSAGES_1_1Snapshot_a103af07a012d55a9637f6203c7eba0af_icgraph.png" border="0" usemap="#classSSAGES_1_1Snapshot_a103af07a012d55a9637f6203c7eba0af_icgraph" alt=""/></div>
 <map name="classSSAGES_1_1Snapshot_a103af07a012d55a9637f6203c7eba0af_icgraph" id="classSSAGES_1_1Snapshot_a103af07a012d55a9637f6203c7eba0af_icgraph">
-<area shape="rect" title="Get number of atoms in this snapshot." alt="" coords="268,469,465,510"/>
+<area shape="rect" title="Get number of atoms in this snapshot." alt="" coords="268,534,465,575"/>
 <area shape="rect" href="classSSAGES_1_1ABF.html#aa2200677359f582d73f095c42ec5ad83" title="Computes the bias force." alt="" coords="10,5,215,32"/>
 <area shape="rect" href="classSSAGES_1_1BoxVolumeCV.html#a52f2b0c68a755e8b239fc40dbc2a7100" title="Evaluate the CV." alt="" coords="27,57,198,98"/>
 <area shape="rect" href="classSSAGES_1_1AngleCV.html#afc7cddc3872aeeeeb098c69f1126b594" title="Evaluate the CV." alt="" coords="15,123,211,149"/>
@@ -1671,14 +1639,16 @@ Here is the caller graph for this function:</div>
 <area shape="rect" href="classSSAGES_1_1PairwiseCV.html#a807d3a560a3a187c7648da5a282027df" title="Evaluate the CV." alt="" coords="35,305,190,346"/>
 <area shape="rect" href="classSSAGES_1_1ParticlePositionCV.html#aa2ee9b7b3ca3133183e2d5f511251e29" title="Evaluate the CV." alt="" coords="25,370,201,411"/>
 <area shape="rect" href="classSSAGES_1_1RouseModeCV.html#a1468b1aabf81ceb2ef3feb3b8fc79d0d" title="Evaluate the CV." alt="" coords="25,435,200,477"/>
-<area shape="rect" href="classSSAGES_1_1GyrationTensorCV.html#ac613c1659bd00b335c3d6de3d8ff0ebc" title="Evaluate the CV." alt="" coords="16,501,209,542"/>
-<area shape="rect" href="classSSAGES_1_1ParticleSeparationCV.html#ae6452c47bf1d849e2af60c84209a9955" title="Evaluate the CV." alt="" coords="17,566,208,607"/>
+<area shape="rect" href="classSSAGES_1_1ParticleSeparationCV.html#ae6452c47bf1d849e2af60c84209a9955" title="Evaluate the CV." alt="" coords="17,501,208,542"/>
+<area shape="rect" href="classSSAGES_1_1GyrationTensorCV.html#ac613c1659bd00b335c3d6de3d8ff0ebc" title="Evaluate the CV." alt="" coords="16,566,209,607"/>
 <area shape="rect" href="classSSAGES_1_1RMSDCV.html#aff77158b643fec57c6d1649a78b0dd14" title="Evaluate the CV." alt="" coords="11,632,214,659"/>
 <area shape="rect" href="classSSAGES_1_1AlphaRMSDCV.html#a54a50be609eddb9448199bbfc21cc7e0" title="Evaluate the CV." alt="" coords="24,683,201,725"/>
 <area shape="rect" href="classSSAGES_1_1AntiBetaRMSDCV.html#a89bdea4dde8b704a0ca773e0a0f79b1f" title="Evaluate the CV." alt="" coords="15,749,210,790"/>
 <area shape="rect" href="classSSAGES_1_1ParallelBetaRMSDCV.html#a8ed7cf0c797dbf51f70e604d32546442" title="Evaluate the CV." alt="" coords="5,814,220,855"/>
-<area shape="rect" href="classSSAGES_1_1RMSDCV.html#a7e82843aa5d4eae3ada4ea26a7e6502a" title="Initialize necessary variables." alt="" coords="13,880,213,907"/>
-<area shape="rect" href="classSSAGES_1_1ABF.html#ad2007ce8bb539072a97d4d02d268c638" title="Method call post integration." alt="" coords="9,931,216,957"/>
+<area shape="rect" href="classSSAGES_1_1ANNCV.html#a1ddb11f32dbf1c1c19e119310c047a0d" title="Evaluate the CV." alt="" coords="17,880,209,907"/>
+<area shape="rect" href="classSSAGES_1_1RMSDCV.html#a7e82843aa5d4eae3ada4ea26a7e6502a" title="Initialize necessary variables." alt="" coords="13,931,213,957"/>
+<area shape="rect" href="classSSAGES_1_1CFF.html#ab9f74c2ba9de08954e95678e0cb9ce46" title="Method call post integration." alt="" coords="9,981,216,1008"/>
+<area shape="rect" href="classSSAGES_1_1ABF.html#ad2007ce8bb539072a97d4d02d268c638" title="Method call post integration." alt="" coords="9,1032,216,1059"/>
 </map>
 </div>
 
@@ -1784,13 +1754,13 @@ Here is the caller graph for this function:</div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="Snapshot_8h_source.html#l00067">positions_</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ForwardFlux_8cpp_source.html#l00279">SSAGES::ForwardFlux::AppendTrajectoryFile()</a>, <a class="el" href="AngleCV_8h_source.html#l00085">SSAGES::AngleCV::Evaluate()</a>, <a class="el" href="TorsionalCV_8h_source.html#l00095">SSAGES::TorsionalCV::Evaluate()</a>, <a class="el" href="PairwiseCV_8h_source.html#l00112">SSAGES::PairwiseCV::Evaluate()</a>, <a class="el" href="GyrationTensorCV_8h_source.html#l00128">SSAGES::GyrationTensorCV::Evaluate()</a>, <a class="el" href="RMSDCV_8h_source.html#l00162">SSAGES::RMSDCV::Evaluate()</a>, <a class="el" href="AlphaRMSDCV_8h_source.html#l00171">SSAGES::AlphaRMSDCV::Evaluate()</a>, <a class="el" href="AntiBetaRMSDCV_8h_source.html#l00174">SSAGES::AntiBetaRMSDCV::Evaluate()</a>, <a class="el" href="ParallelBetaRMSDCV_8h_source.html#l00179">SSAGES::ParallelBetaRMSDCV::Evaluate()</a>, <a class="el" href="MockCV_8h_source.html#l00059">SSAGES::MockCV::Initialize()</a>, <a class="el" href="FiniteTempString_8cpp_source.html#l00048">SSAGES::FiniteTempString::PostIntegration()</a>, <a class="el" href="Swarm_8cpp_source.html#l00070">SSAGES::Swarm::PostIntegration()</a>, <a class="el" href="ABF_8cpp_source.html#l00039">SSAGES::ABF::PreSimulation()</a>, <a class="el" href="ForwardFlux_8cpp_source.html#l00297">SSAGES::ForwardFlux::ReadFFSConfiguration()</a>, and <a class="el" href="ForwardFlux_8cpp_source.html#l00231">SSAGES::ForwardFlux::WriteFFSConfiguration()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ForwardFlux_8cpp_source.html#l00279">SSAGES::ForwardFlux::AppendTrajectoryFile()</a>, <a class="el" href="AngleCV_8h_source.html#l00085">SSAGES::AngleCV::Evaluate()</a>, <a class="el" href="TorsionalCV_8h_source.html#l00095">SSAGES::TorsionalCV::Evaluate()</a>, <a class="el" href="PairwiseCV_8h_source.html#l00112">SSAGES::PairwiseCV::Evaluate()</a>, <a class="el" href="GyrationTensorCV_8h_source.html#l00128">SSAGES::GyrationTensorCV::Evaluate()</a>, <a class="el" href="RMSDCV_8h_source.html#l00162">SSAGES::RMSDCV::Evaluate()</a>, <a class="el" href="AlphaRMSDCV_8h_source.html#l00171">SSAGES::AlphaRMSDCV::Evaluate()</a>, <a class="el" href="AntiBetaRMSDCV_8h_source.html#l00174">SSAGES::AntiBetaRMSDCV::Evaluate()</a>, <a class="el" href="ParallelBetaRMSDCV_8h_source.html#l00179">SSAGES::ParallelBetaRMSDCV::Evaluate()</a>, <a class="el" href="ANNCV_8h_source.html#l00194">SSAGES::ANNCV::Evaluate()</a>, <a class="el" href="MockCV_8h_source.html#l00059">SSAGES::MockCV::Initialize()</a>, <a class="el" href="FiniteTempString_8cpp_source.html#l00048">SSAGES::FiniteTempString::PostIntegration()</a>, <a class="el" href="Swarm_8cpp_source.html#l00070">SSAGES::Swarm::PostIntegration()</a>, <a class="el" href="ABF_8cpp_source.html#l00039">SSAGES::ABF::PreSimulation()</a>, <a class="el" href="ForwardFlux_8cpp_source.html#l00297">SSAGES::ForwardFlux::ReadFFSConfiguration()</a>, and <a class="el" href="ForwardFlux_8cpp_source.html#l00231">SSAGES::ForwardFlux::WriteFFSConfiguration()</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classSSAGES_1_1Snapshot_a91852084d69a0703a8fcc9b27dc50459_icgraph.png" border="0" usemap="#classSSAGES_1_1Snapshot_a91852084d69a0703a8fcc9b27dc50459_icgraph" alt=""/></div>
 <map name="classSSAGES_1_1Snapshot_a91852084d69a0703a8fcc9b27dc50459_icgraph" id="classSSAGES_1_1Snapshot_a91852084d69a0703a8fcc9b27dc50459_icgraph">
-<area shape="rect" title="Access the particle positions." alt="" coords="761,443,984,470"/>
+<area shape="rect" title="Access the particle positions." alt="" coords="761,477,984,503"/>
 <area shape="rect" href="classSSAGES_1_1ForwardFlux.html#a28017e532afacbc0c2bee398a5aeabd1" title=" " alt="" coords="523,5,681,47"/>
 <area shape="rect" href="classSSAGES_1_1AngleCV.html#afc7cddc3872aeeeeb098c69f1126b594" title="Evaluate the CV." alt="" coords="504,71,700,98"/>
 <area shape="rect" href="classSSAGES_1_1TorsionalCV.html#ae3e82fb11240eb780cfcc57b2b0112a5" title="Evaluate the CV." alt="" coords="523,123,681,164"/>
@@ -1800,14 +1770,15 @@ Here is the caller graph for this function:</div>
 <area shape="rect" href="classSSAGES_1_1AlphaRMSDCV.html#a54a50be609eddb9448199bbfc21cc7e0" title="Evaluate the CV." alt="" coords="513,371,691,412"/>
 <area shape="rect" href="classSSAGES_1_1AntiBetaRMSDCV.html#a89bdea4dde8b704a0ca773e0a0f79b1f" title="Evaluate the CV." alt="" coords="505,436,699,477"/>
 <area shape="rect" href="classSSAGES_1_1ParallelBetaRMSDCV.html#a8ed7cf0c797dbf51f70e604d32546442" title="Evaluate the CV." alt="" coords="495,501,709,543"/>
-<area shape="rect" href="classSSAGES_1_1MockCV.html#af1c87874ccf1d6bbef9fd4c90410e1f8" title="Initialize necessary variables." alt="" coords="506,567,698,594"/>
-<area shape="rect" href="classSSAGES_1_1FiniteTempString.html#a94561a14cc08999d4531db528fe3f2e8" title="Method call post integration." alt="" coords="510,619,694,660"/>
-<area shape="rect" href="classSSAGES_1_1Swarm.html#aae8fbacf2c51b84a5a333387116dda0d" title="Method call post integration." alt="" coords="491,685,713,711"/>
-<area shape="rect" href="classSSAGES_1_1ABF.html#a27d1b2f056d32066d7c62a037836948c" title="Method call prior to simulation initiation." alt="" coords="502,735,702,762"/>
-<area shape="rect" href="classSSAGES_1_1ForwardFlux.html#aaf21bde2adc1a021de4ebb47d10c05a7" title="Read a file corresponding to a FFSConfigID into current snapshot." alt="" coords="521,787,683,828"/>
-<area shape="rect" href="classSSAGES_1_1ForwardFlux.html#a8f3da6706283040f7adf33399bdb2376" title="Write a file corresponding to FFSConfigID from current snapshot." alt="" coords="521,852,683,893"/>
-<area shape="rect" href="classSSAGES_1_1DirectForwardFlux.html#a2be13ab9b33d4cb90aa22ca9d71077e9" title="Function that checks if interfaces have been crossed (different for each FFS flavor)" alt="" coords="245,429,443,471"/>
-<area shape="rect" href="classSSAGES_1_1DirectForwardFlux.html#a5491cd537f737524f5fc295236eefb85" title="Post&#45;integration hook." alt="" coords="5,429,197,471"/>
+<area shape="rect" href="classSSAGES_1_1ANNCV.html#a1ddb11f32dbf1c1c19e119310c047a0d" title="Evaluate the CV." alt="" coords="506,567,698,594"/>
+<area shape="rect" href="classSSAGES_1_1MockCV.html#af1c87874ccf1d6bbef9fd4c90410e1f8" title="Initialize necessary variables." alt="" coords="506,618,698,645"/>
+<area shape="rect" href="classSSAGES_1_1FiniteTempString.html#a94561a14cc08999d4531db528fe3f2e8" title="Method call post integration." alt="" coords="510,669,694,711"/>
+<area shape="rect" href="classSSAGES_1_1Swarm.html#aae8fbacf2c51b84a5a333387116dda0d" title="Method call post integration." alt="" coords="491,735,713,762"/>
+<area shape="rect" href="classSSAGES_1_1ABF.html#a27d1b2f056d32066d7c62a037836948c" title="Method call prior to simulation initiation." alt="" coords="502,786,702,813"/>
+<area shape="rect" href="classSSAGES_1_1ForwardFlux.html#aaf21bde2adc1a021de4ebb47d10c05a7" title="Read a file corresponding to a FFSConfigID into current snapshot." alt="" coords="521,837,683,879"/>
+<area shape="rect" href="classSSAGES_1_1ForwardFlux.html#a8f3da6706283040f7adf33399bdb2376" title="Write a file corresponding to FFSConfigID from current snapshot." alt="" coords="521,903,683,944"/>
+<area shape="rect" href="classSSAGES_1_1DirectForwardFlux.html#a2be13ab9b33d4cb90aa22ca9d71077e9" title="Function that checks if interfaces have been crossed (different for each FFS flavor)" alt="" coords="245,455,443,496"/>
+<area shape="rect" href="classSSAGES_1_1DirectForwardFlux.html#a5491cd537f737524f5fc295236eefb85" title="Post&#45;integration hook." alt="" coords="5,455,197,496"/>
 </map>
 </div>
 
@@ -1872,11 +1843,11 @@ Here is the caller graph for this function:</div>
 <p>Access the snapshot ID. </p>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="classSSAGES_1_1Snapshot.html" title="Class containing a snapshot of the current simulation in time.">Snapshot</a> ID </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="Snapshot_8h_source.html#l00588">588</a> of file <a class="el" href="Snapshot_8h_source.html">Snapshot.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00589"></a><span class="lineno">  589</span>&#160;        {</div>
-<div class="line"><a name="l00590"></a><span class="lineno">  590</span>&#160;            <a class="code" href="classSSAGES_1_1Snapshot.html#a91ac7438ff262d245db15b5c0b2525a0">changed_</a> = <span class="keyword">true</span>; </div>
-<div class="line"><a name="l00591"></a><span class="lineno">  591</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="classSSAGES_1_1Snapshot.html#ab42561f83db5cba3dd0c828ece8fc686">ID_</a>; </div>
-<div class="line"><a name="l00592"></a><span class="lineno">  592</span>&#160;        }</div>
+<p class="definition">Definition at line <a class="el" href="Snapshot_8h_source.html#l00580">580</a> of file <a class="el" href="Snapshot_8h_source.html">Snapshot.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00581"></a><span class="lineno">  581</span>&#160;        {</div>
+<div class="line"><a name="l00582"></a><span class="lineno">  582</span>&#160;            <a class="code" href="classSSAGES_1_1Snapshot.html#a91ac7438ff262d245db15b5c0b2525a0">changed_</a> = <span class="keyword">true</span>; </div>
+<div class="line"><a name="l00583"></a><span class="lineno">  583</span>&#160;            <span class="keywordflow">return</span> <a class="code" href="classSSAGES_1_1Snapshot.html#ab42561f83db5cba3dd0c828ece8fc686">ID_</a>; </div>
+<div class="line"><a name="l00584"></a><span class="lineno">  584</span>&#160;        }</div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="Snapshot_8h_source.html#l00083">changed_</a>, and <a class="el" href="Snapshot_8h_source.html#l00056">ID_</a>.</p>
 
@@ -1908,8 +1879,8 @@ Here is the caller graph for this function:</div>
 <p>Access the snapshot ID. </p>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="classSSAGES_1_1Snapshot.html" title="Class containing a snapshot of the current simulation in time.">Snapshot</a> ID </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="Snapshot_8h_source.html#l00585">585</a> of file <a class="el" href="Snapshot_8h_source.html">Snapshot.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00585"></a><span class="lineno">  585</span>&#160;{ <span class="keywordflow">return</span> <a class="code" href="classSSAGES_1_1Snapshot.html#ab42561f83db5cba3dd0c828ece8fc686">ID_</a>; }</div>
+<p class="definition">Definition at line <a class="el" href="Snapshot_8h_source.html#l00577">577</a> of file <a class="el" href="Snapshot_8h_source.html">Snapshot.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00577"></a><span class="lineno">  577</span>&#160;{ <span class="keywordflow">return</span> <a class="code" href="classSSAGES_1_1Snapshot.html#ab42561f83db5cba3dd0c828ece8fc686">ID_</a>; }</div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="Snapshot_8h_source.html#l00056">ID_</a>.</p>
 
@@ -2059,20 +2030,21 @@ Here is the caller graph for this function:</div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="Snapshot_8h_source.html#l00068">velocities_</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ForwardFlux_8cpp_source.html#l00279">SSAGES::ForwardFlux::AppendTrajectoryFile()</a>, <a class="el" href="Swarm_8cpp_source.html#l00070">SSAGES::Swarm::PostIntegration()</a>, <a class="el" href="ABF_8cpp_source.html#l00072">SSAGES::ABF::PostIntegration()</a>, <a class="el" href="ForwardFlux_8cpp_source.html#l00297">SSAGES::ForwardFlux::ReadFFSConfiguration()</a>, and <a class="el" href="ForwardFlux_8cpp_source.html#l00231">SSAGES::ForwardFlux::WriteFFSConfiguration()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ForwardFlux_8cpp_source.html#l00279">SSAGES::ForwardFlux::AppendTrajectoryFile()</a>, <a class="el" href="Swarm_8cpp_source.html#l00070">SSAGES::Swarm::PostIntegration()</a>, <a class="el" href="CFF_8cpp_source.html#l00079">SSAGES::CFF::PostIntegration()</a>, <a class="el" href="ABF_8cpp_source.html#l00072">SSAGES::ABF::PostIntegration()</a>, <a class="el" href="ForwardFlux_8cpp_source.html#l00297">SSAGES::ForwardFlux::ReadFFSConfiguration()</a>, and <a class="el" href="ForwardFlux_8cpp_source.html#l00231">SSAGES::ForwardFlux::WriteFFSConfiguration()</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classSSAGES_1_1Snapshot_adb14bcfae16bc7490320fd1890b36cff_icgraph.png" border="0" usemap="#classSSAGES_1_1Snapshot_adb14bcfae16bc7490320fd1890b36cff_icgraph" alt=""/></div>
 <map name="classSSAGES_1_1Snapshot_adb14bcfae16bc7490320fd1890b36cff_icgraph" id="classSSAGES_1_1Snapshot_adb14bcfae16bc7490320fd1890b36cff_icgraph">
-<area shape="rect" title="Access the particle velocities." alt="" coords="761,122,988,149"/>
+<area shape="rect" title="Access the particle velocities." alt="" coords="761,147,988,174"/>
 <area shape="rect" href="classSSAGES_1_1ForwardFlux.html#a28017e532afacbc0c2bee398a5aeabd1" title=" " alt="" coords="523,5,681,47"/>
 <area shape="rect" href="classSSAGES_1_1Swarm.html#aae8fbacf2c51b84a5a333387116dda0d" title="Method call post integration." alt="" coords="491,71,713,98"/>
-<area shape="rect" href="classSSAGES_1_1ABF.html#ad2007ce8bb539072a97d4d02d268c638" title="Method call post integration." alt="" coords="499,122,705,149"/>
-<area shape="rect" href="classSSAGES_1_1ForwardFlux.html#aaf21bde2adc1a021de4ebb47d10c05a7" title="Read a file corresponding to a FFSConfigID into current snapshot." alt="" coords="521,173,683,215"/>
-<area shape="rect" href="classSSAGES_1_1ForwardFlux.html#a8f3da6706283040f7adf33399bdb2376" title="Write a file corresponding to FFSConfigID from current snapshot." alt="" coords="521,239,683,280"/>
-<area shape="rect" href="classSSAGES_1_1DirectForwardFlux.html#a2be13ab9b33d4cb90aa22ca9d71077e9" title="Function that checks if interfaces have been crossed (different for each FFS flavor)" alt="" coords="245,123,443,164"/>
-<area shape="rect" href="classSSAGES_1_1DirectForwardFlux.html#a5491cd537f737524f5fc295236eefb85" title="Post&#45;integration hook." alt="" coords="5,123,197,164"/>
+<area shape="rect" href="classSSAGES_1_1CFF.html#ab9f74c2ba9de08954e95678e0cb9ce46" title="Method call post integration." alt="" coords="499,122,705,149"/>
+<area shape="rect" href="classSSAGES_1_1ABF.html#ad2007ce8bb539072a97d4d02d268c638" title="Method call post integration." alt="" coords="499,173,705,199"/>
+<area shape="rect" href="classSSAGES_1_1ForwardFlux.html#aaf21bde2adc1a021de4ebb47d10c05a7" title="Read a file corresponding to a FFSConfigID into current snapshot." alt="" coords="521,224,683,265"/>
+<area shape="rect" href="classSSAGES_1_1ForwardFlux.html#a8f3da6706283040f7adf33399bdb2376" title="Write a file corresponding to FFSConfigID from current snapshot." alt="" coords="521,289,683,331"/>
+<area shape="rect" href="classSSAGES_1_1DirectForwardFlux.html#a2be13ab9b33d4cb90aa22ca9d71077e9" title="Function that checks if interfaces have been crossed (different for each FFS flavor)" alt="" coords="245,148,443,189"/>
+<area shape="rect" href="classSSAGES_1_1DirectForwardFlux.html#a5491cd537f737524f5fc295236eefb85" title="Post&#45;integration hook." alt="" coords="5,148,197,189"/>
 </map>
 </div>
 
@@ -2142,17 +2114,18 @@ Here is the caller graph for this function:</div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="Snapshot_8h_source.html#l00061">virial_</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="ANN_8cpp_source.html#l00113">SSAGES::ANN::PostIntegration()</a>, <a class="el" href="Umbrella_8cpp_source.html#l00057">SSAGES::Umbrella::PostIntegration()</a>, <a class="el" href="Meta_8cpp_source.html#l00100">SSAGES::Meta::PostIntegration()</a>, and <a class="el" href="BasisFunc_8cpp_source.html#l00081">SSAGES::BFS::PostIntegration()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="ANN_8cpp_source.html#l00113">SSAGES::ANN::PostIntegration()</a>, <a class="el" href="Umbrella_8cpp_source.html#l00057">SSAGES::Umbrella::PostIntegration()</a>, <a class="el" href="Meta_8cpp_source.html#l00100">SSAGES::Meta::PostIntegration()</a>, <a class="el" href="CFF_8cpp_source.html#l00079">SSAGES::CFF::PostIntegration()</a>, and <a class="el" href="BasisFunc_8cpp_source.html#l00081">SSAGES::BFS::PostIntegration()</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classSSAGES_1_1Snapshot_a02b7418ade9d06c64d1c074a95783635_icgraph.png" border="0" usemap="#classSSAGES_1_1Snapshot_a02b7418ade9d06c64d1c074a95783635_icgraph" alt=""/></div>
 <map name="classSSAGES_1_1Snapshot_a02b7418ade9d06c64d1c074a95783635_icgraph" id="classSSAGES_1_1Snapshot_a02b7418ade9d06c64d1c074a95783635_icgraph">
-<area shape="rect" title="Get box virial." alt="" coords="287,81,485,108"/>
+<area shape="rect" title="Get box virial." alt="" coords="287,107,485,133"/>
 <area shape="rect" href="classSSAGES_1_1ANN.html#ad63d276efae1a266eb5d556bdf896a98" title="Method call post integration." alt="" coords="17,5,227,32"/>
 <area shape="rect" href="classSSAGES_1_1Umbrella.html#a034d7e5266790eeb7a9faaa4aa8520a3" title="Method call post integration." alt="" coords="5,56,239,83"/>
 <area shape="rect" href="classSSAGES_1_1Meta.html#a352edd1cebb4731d7b2e260fbb96d3bc" title="Method call post integration." alt="" coords="17,107,227,133"/>
-<area shape="rect" href="classSSAGES_1_1BFS.html#a6b4639e309cbaffa82113f2577c065c4" title="Method call post integration." alt="" coords="19,157,225,184"/>
+<area shape="rect" href="classSSAGES_1_1CFF.html#ab9f74c2ba9de08954e95678e0cb9ce46" title="Method call post integration." alt="" coords="19,157,225,184"/>
+<area shape="rect" href="classSSAGES_1_1BFS.html#a6b4639e309cbaffa82113f2577c065c4" title="Method call post integration." alt="" coords="19,208,225,235"/>
 </map>
 </div>
 
@@ -2273,8 +2246,8 @@ Here is the caller graph for this function:</div>
 <p>Query if <a class="el" href="classSSAGES_1_1Snapshot.html" title="Class containing a snapshot of the current simulation in time.">Snapshot</a> was modified. </p>
 <dl class="section return"><dt>Returns</dt><dd><code>True</code> if <a class="el" href="classSSAGES_1_1Snapshot.html" title="Class containing a snapshot of the current simulation in time.">Snapshot</a> was modified, else return <code>False</code> </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="Snapshot_8h_source.html#l00598">598</a> of file <a class="el" href="Snapshot_8h_source.html">Snapshot.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00598"></a><span class="lineno">  598</span>&#160;{ <span class="keywordflow">return</span> <a class="code" href="classSSAGES_1_1Snapshot.html#a91ac7438ff262d245db15b5c0b2525a0">changed_</a>; }</div>
+<p class="definition">Definition at line <a class="el" href="Snapshot_8h_source.html#l00590">590</a> of file <a class="el" href="Snapshot_8h_source.html">Snapshot.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00590"></a><span class="lineno">  590</span>&#160;{ <span class="keywordflow">return</span> <a class="code" href="classSSAGES_1_1Snapshot.html#a91ac7438ff262d245db15b5c0b2525a0">changed_</a>; }</div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="Snapshot_8h_source.html#l00083">changed_</a>.</p>
 
@@ -2394,27 +2367,27 @@ Here is the caller graph for this function:</div>
 <p>Return the serialized IDs across all local cores. </p>
 <dl class="section return"><dt>Returns</dt><dd>IDs across all local cores. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="Snapshot_8h_source.html#l00681">681</a> of file <a class="el" href="Snapshot_8h_source.html">Snapshot.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00682"></a><span class="lineno">  682</span>&#160;        {</div>
-<div class="line"><a name="l00683"></a><span class="lineno">  683</span>&#160;            std::vector&lt;int&gt; mcounts(<a class="code" href="classSSAGES_1_1Snapshot.html#a318172ccddbc82d73d5c2fdd327f92c6">comm_</a>.size(), 0); </div>
-<div class="line"><a name="l00684"></a><span class="lineno">  684</span>&#160;            std::vector&lt;int&gt; mdispls(<a class="code" href="classSSAGES_1_1Snapshot.html#a318172ccddbc82d73d5c2fdd327f92c6">comm_</a>.size()+1, 0);</div>
+<p class="definition">Definition at line <a class="el" href="Snapshot_8h_source.html#l00673">673</a> of file <a class="el" href="Snapshot_8h_source.html">Snapshot.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00674"></a><span class="lineno">  674</span>&#160;        {</div>
+<div class="line"><a name="l00675"></a><span class="lineno">  675</span>&#160;            std::vector&lt;int&gt; mcounts(<a class="code" href="classSSAGES_1_1Snapshot.html#a318172ccddbc82d73d5c2fdd327f92c6">comm_</a>.size(), 0); </div>
+<div class="line"><a name="l00676"></a><span class="lineno">  676</span>&#160;            std::vector&lt;int&gt; mdispls(<a class="code" href="classSSAGES_1_1Snapshot.html#a318172ccddbc82d73d5c2fdd327f92c6">comm_</a>.size()+1, 0);</div>
+<div class="line"><a name="l00677"></a><span class="lineno">  677</span>&#160; </div>
+<div class="line"><a name="l00678"></a><span class="lineno">  678</span>&#160;            mcounts[<a class="code" href="classSSAGES_1_1Snapshot.html#a318172ccddbc82d73d5c2fdd327f92c6">comm_</a>.rank()] = <a class="code" href="classSSAGES_1_1Snapshot.html#a0f4ff8ae2a1db5546a1a4d538ed91db7">nlocal_</a>;</div>
+<div class="line"><a name="l00679"></a><span class="lineno">  679</span>&#160; </div>
+<div class="line"><a name="l00680"></a><span class="lineno">  680</span>&#160;            <span class="comment">// Reduce counts.</span></div>
+<div class="line"><a name="l00681"></a><span class="lineno">  681</span>&#160;            MPI_Allreduce(MPI_IN_PLACE, mcounts.data(), mcounts.size(), MPI_INT, MPI_SUM, <a class="code" href="classSSAGES_1_1Snapshot.html#a318172ccddbc82d73d5c2fdd327f92c6">comm_</a>);</div>
+<div class="line"><a name="l00682"></a><span class="lineno">  682</span>&#160; </div>
+<div class="line"><a name="l00683"></a><span class="lineno">  683</span>&#160;            <span class="comment">// Compute displacements.</span></div>
+<div class="line"><a name="l00684"></a><span class="lineno">  684</span>&#160;            std::partial_sum(mcounts.begin(), mcounts.end(), mdispls.begin() + 1);</div>
 <div class="line"><a name="l00685"></a><span class="lineno">  685</span>&#160; </div>
-<div class="line"><a name="l00686"></a><span class="lineno">  686</span>&#160;            mcounts[<a class="code" href="classSSAGES_1_1Snapshot.html#a318172ccddbc82d73d5c2fdd327f92c6">comm_</a>.rank()] = <a class="code" href="classSSAGES_1_1Snapshot.html#a0f4ff8ae2a1db5546a1a4d538ed91db7">nlocal_</a>;</div>
-<div class="line"><a name="l00687"></a><span class="lineno">  687</span>&#160; </div>
-<div class="line"><a name="l00688"></a><span class="lineno">  688</span>&#160;            <span class="comment">// Reduce counts.</span></div>
-<div class="line"><a name="l00689"></a><span class="lineno">  689</span>&#160;            MPI_Allreduce(MPI_IN_PLACE, mcounts.data(), mcounts.size(), MPI_INT, MPI_SUM, <a class="code" href="classSSAGES_1_1Snapshot.html#a318172ccddbc82d73d5c2fdd327f92c6">comm_</a>);</div>
-<div class="line"><a name="l00690"></a><span class="lineno">  690</span>&#160; </div>
-<div class="line"><a name="l00691"></a><span class="lineno">  691</span>&#160;            <span class="comment">// Compute displacements.</span></div>
-<div class="line"><a name="l00692"></a><span class="lineno">  692</span>&#160;            std::partial_sum(mcounts.begin(), mcounts.end(), mdispls.begin() + 1);</div>
-<div class="line"><a name="l00693"></a><span class="lineno">  693</span>&#160; </div>
-<div class="line"><a name="l00694"></a><span class="lineno">  694</span>&#160;            <span class="comment">// Re-size receiving vectors.</span></div>
-<div class="line"><a name="l00695"></a><span class="lineno">  695</span>&#160;            std::vector&lt;int&gt; IDs;</div>
-<div class="line"><a name="l00696"></a><span class="lineno">  696</span>&#160;            IDs.resize(mdispls.back(), 0);</div>
-<div class="line"><a name="l00697"></a><span class="lineno">  697</span>&#160; </div>
-<div class="line"><a name="l00698"></a><span class="lineno">  698</span>&#160;            <span class="comment">// All-gather data.</span></div>
-<div class="line"><a name="l00699"></a><span class="lineno">  699</span>&#160;            MPI_Allgatherv(<a class="code" href="classSSAGES_1_1Snapshot.html#a1af5f16699a18b86e37f665e2747530e">atomids_</a>.data(), <a class="code" href="classSSAGES_1_1Snapshot.html#a1af5f16699a18b86e37f665e2747530e">atomids_</a>.size(), MPI_INT, IDs.data(), mcounts.data(), mdispls.data(), MPI_INT, <a class="code" href="classSSAGES_1_1Snapshot.html#a318172ccddbc82d73d5c2fdd327f92c6">comm_</a>);</div>
-<div class="line"><a name="l00700"></a><span class="lineno">  700</span>&#160;            <span class="keywordflow">return</span> IDs;</div>
-<div class="line"><a name="l00701"></a><span class="lineno">  701</span>&#160;        }</div>
+<div class="line"><a name="l00686"></a><span class="lineno">  686</span>&#160;            <span class="comment">// Re-size receiving vectors.</span></div>
+<div class="line"><a name="l00687"></a><span class="lineno">  687</span>&#160;            std::vector&lt;int&gt; IDs;</div>
+<div class="line"><a name="l00688"></a><span class="lineno">  688</span>&#160;            IDs.resize(mdispls.back(), 0);</div>
+<div class="line"><a name="l00689"></a><span class="lineno">  689</span>&#160; </div>
+<div class="line"><a name="l00690"></a><span class="lineno">  690</span>&#160;            <span class="comment">// All-gather data.</span></div>
+<div class="line"><a name="l00691"></a><span class="lineno">  691</span>&#160;            MPI_Allgatherv(<a class="code" href="classSSAGES_1_1Snapshot.html#a1af5f16699a18b86e37f665e2747530e">atomids_</a>.data(), <a class="code" href="classSSAGES_1_1Snapshot.html#a1af5f16699a18b86e37f665e2747530e">atomids_</a>.size(), MPI_INT, IDs.data(), mcounts.data(), mdispls.data(), MPI_INT, <a class="code" href="classSSAGES_1_1Snapshot.html#a318172ccddbc82d73d5c2fdd327f92c6">comm_</a>);</div>
+<div class="line"><a name="l00692"></a><span class="lineno">  692</span>&#160;            <span class="keywordflow">return</span> IDs;</div>
+<div class="line"><a name="l00693"></a><span class="lineno">  693</span>&#160;        }</div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="Snapshot_8h_source.html#l00072">atomids_</a>, <a class="el" href="Snapshot_8h_source.html#l00051">comm_</a>, and <a class="el" href="Snapshot_8h_source.html#l00054">nlocal_</a>.</p>
 
@@ -2458,37 +2431,37 @@ Here is the caller graph for this function:</div>
 <p>Return the serialized positions across all local cores. </p>
 <dl class="section return"><dt>Returns</dt><dd>Positions across all local cores. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="Snapshot_8h_source.html#l00610">610</a> of file <a class="el" href="Snapshot_8h_source.html">Snapshot.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00611"></a><span class="lineno">  611</span>&#160;        {</div>
+<p class="definition">Definition at line <a class="el" href="Snapshot_8h_source.html#l00602">602</a> of file <a class="el" href="Snapshot_8h_source.html">Snapshot.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00603"></a><span class="lineno">  603</span>&#160;        {</div>
+<div class="line"><a name="l00604"></a><span class="lineno">  604</span>&#160; </div>
+<div class="line"><a name="l00605"></a><span class="lineno">  605</span>&#160;            std::vector&lt;int&gt; pcounts(<a class="code" href="classSSAGES_1_1Snapshot.html#a318172ccddbc82d73d5c2fdd327f92c6">comm_</a>.size(), 0); </div>
+<div class="line"><a name="l00606"></a><span class="lineno">  606</span>&#160;            std::vector&lt;int&gt; pdispls(<a class="code" href="classSSAGES_1_1Snapshot.html#a318172ccddbc82d73d5c2fdd327f92c6">comm_</a>.size()+1, 0);</div>
+<div class="line"><a name="l00607"></a><span class="lineno">  607</span>&#160; </div>
+<div class="line"><a name="l00608"></a><span class="lineno">  608</span>&#160;            pcounts[<a class="code" href="classSSAGES_1_1Snapshot.html#a318172ccddbc82d73d5c2fdd327f92c6">comm_</a>.rank()] = 3*<a class="code" href="classSSAGES_1_1Snapshot.html#a0f4ff8ae2a1db5546a1a4d538ed91db7">nlocal_</a>;</div>
+<div class="line"><a name="l00609"></a><span class="lineno">  609</span>&#160; </div>
+<div class="line"><a name="l00610"></a><span class="lineno">  610</span>&#160;            <span class="comment">// Reduce counts.</span></div>
+<div class="line"><a name="l00611"></a><span class="lineno">  611</span>&#160;            MPI_Allreduce(MPI_IN_PLACE, pcounts.data(), pcounts.size(), MPI_INT, MPI_SUM, <a class="code" href="classSSAGES_1_1Snapshot.html#a318172ccddbc82d73d5c2fdd327f92c6">comm_</a>);</div>
 <div class="line"><a name="l00612"></a><span class="lineno">  612</span>&#160; </div>
-<div class="line"><a name="l00613"></a><span class="lineno">  613</span>&#160;            std::vector&lt;int&gt; pcounts(<a class="code" href="classSSAGES_1_1Snapshot.html#a318172ccddbc82d73d5c2fdd327f92c6">comm_</a>.size(), 0); </div>
-<div class="line"><a name="l00614"></a><span class="lineno">  614</span>&#160;            std::vector&lt;int&gt; pdispls(<a class="code" href="classSSAGES_1_1Snapshot.html#a318172ccddbc82d73d5c2fdd327f92c6">comm_</a>.size()+1, 0);</div>
+<div class="line"><a name="l00613"></a><span class="lineno">  613</span>&#160;            <span class="comment">// Compute displacements.</span></div>
+<div class="line"><a name="l00614"></a><span class="lineno">  614</span>&#160;            std::partial_sum(pcounts.begin(), pcounts.end(), pdispls.begin() + 1);</div>
 <div class="line"><a name="l00615"></a><span class="lineno">  615</span>&#160; </div>
-<div class="line"><a name="l00616"></a><span class="lineno">  616</span>&#160;            pcounts[<a class="code" href="classSSAGES_1_1Snapshot.html#a318172ccddbc82d73d5c2fdd327f92c6">comm_</a>.rank()] = 3*<a class="code" href="classSSAGES_1_1Snapshot.html#a0f4ff8ae2a1db5546a1a4d538ed91db7">nlocal_</a>;</div>
-<div class="line"><a name="l00617"></a><span class="lineno">  617</span>&#160; </div>
-<div class="line"><a name="l00618"></a><span class="lineno">  618</span>&#160;            <span class="comment">// Reduce counts.</span></div>
-<div class="line"><a name="l00619"></a><span class="lineno">  619</span>&#160;            MPI_Allreduce(MPI_IN_PLACE, pcounts.data(), pcounts.size(), MPI_INT, MPI_SUM, <a class="code" href="classSSAGES_1_1Snapshot.html#a318172ccddbc82d73d5c2fdd327f92c6">comm_</a>);</div>
-<div class="line"><a name="l00620"></a><span class="lineno">  620</span>&#160; </div>
-<div class="line"><a name="l00621"></a><span class="lineno">  621</span>&#160;            <span class="comment">// Compute displacements.</span></div>
-<div class="line"><a name="l00622"></a><span class="lineno">  622</span>&#160;            std::partial_sum(pcounts.begin(), pcounts.end(), pdispls.begin() + 1);</div>
-<div class="line"><a name="l00623"></a><span class="lineno">  623</span>&#160; </div>
-<div class="line"><a name="l00624"></a><span class="lineno">  624</span>&#160;            <span class="comment">// Re-size receiving vectors.</span></div>
-<div class="line"><a name="l00625"></a><span class="lineno">  625</span>&#160;            std::vector&lt;double&gt; positions;</div>
-<div class="line"><a name="l00626"></a><span class="lineno">  626</span>&#160;            positions.resize(pdispls.back(), 0);</div>
-<div class="line"><a name="l00627"></a><span class="lineno">  627</span>&#160; </div>
-<div class="line"><a name="l00628"></a><span class="lineno">  628</span>&#160;            std::vector&lt;double&gt; ptemp;</div>
-<div class="line"><a name="l00629"></a><span class="lineno">  629</span>&#160;            </div>
-<div class="line"><a name="l00630"></a><span class="lineno">  630</span>&#160;            <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; p : <a class="code" href="classSSAGES_1_1Snapshot.html#a47cac5746857da7ddf86353658a231cc">positions_</a>)</div>
-<div class="line"><a name="l00631"></a><span class="lineno">  631</span>&#160;            {</div>
-<div class="line"><a name="l00632"></a><span class="lineno">  632</span>&#160;                ptemp.push_back(p[0]);</div>
-<div class="line"><a name="l00633"></a><span class="lineno">  633</span>&#160;                ptemp.push_back(p[1]);</div>
-<div class="line"><a name="l00634"></a><span class="lineno">  634</span>&#160;                ptemp.push_back(p[2]);</div>
-<div class="line"><a name="l00635"></a><span class="lineno">  635</span>&#160;            }</div>
-<div class="line"><a name="l00636"></a><span class="lineno">  636</span>&#160; </div>
-<div class="line"><a name="l00637"></a><span class="lineno">  637</span>&#160;            <span class="comment">// All-gather data.</span></div>
-<div class="line"><a name="l00638"></a><span class="lineno">  638</span>&#160;            MPI_Allgatherv(ptemp.data(), ptemp.size(), MPI_DOUBLE, positions.data(), pcounts.data(), pdispls.data(), MPI_DOUBLE, <a class="code" href="classSSAGES_1_1Snapshot.html#a318172ccddbc82d73d5c2fdd327f92c6">comm_</a>);</div>
-<div class="line"><a name="l00639"></a><span class="lineno">  639</span>&#160;            <span class="keywordflow">return</span> positions;</div>
-<div class="line"><a name="l00640"></a><span class="lineno">  640</span>&#160;        }</div>
+<div class="line"><a name="l00616"></a><span class="lineno">  616</span>&#160;            <span class="comment">// Re-size receiving vectors.</span></div>
+<div class="line"><a name="l00617"></a><span class="lineno">  617</span>&#160;            std::vector&lt;double&gt; positions;</div>
+<div class="line"><a name="l00618"></a><span class="lineno">  618</span>&#160;            positions.resize(pdispls.back(), 0);</div>
+<div class="line"><a name="l00619"></a><span class="lineno">  619</span>&#160; </div>
+<div class="line"><a name="l00620"></a><span class="lineno">  620</span>&#160;            std::vector&lt;double&gt; ptemp;</div>
+<div class="line"><a name="l00621"></a><span class="lineno">  621</span>&#160;            </div>
+<div class="line"><a name="l00622"></a><span class="lineno">  622</span>&#160;            <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; p : <a class="code" href="classSSAGES_1_1Snapshot.html#a47cac5746857da7ddf86353658a231cc">positions_</a>)</div>
+<div class="line"><a name="l00623"></a><span class="lineno">  623</span>&#160;            {</div>
+<div class="line"><a name="l00624"></a><span class="lineno">  624</span>&#160;                ptemp.push_back(p[0]);</div>
+<div class="line"><a name="l00625"></a><span class="lineno">  625</span>&#160;                ptemp.push_back(p[1]);</div>
+<div class="line"><a name="l00626"></a><span class="lineno">  626</span>&#160;                ptemp.push_back(p[2]);</div>
+<div class="line"><a name="l00627"></a><span class="lineno">  627</span>&#160;            }</div>
+<div class="line"><a name="l00628"></a><span class="lineno">  628</span>&#160; </div>
+<div class="line"><a name="l00629"></a><span class="lineno">  629</span>&#160;            <span class="comment">// All-gather data.</span></div>
+<div class="line"><a name="l00630"></a><span class="lineno">  630</span>&#160;            MPI_Allgatherv(ptemp.data(), ptemp.size(), MPI_DOUBLE, positions.data(), pcounts.data(), pdispls.data(), MPI_DOUBLE, <a class="code" href="classSSAGES_1_1Snapshot.html#a318172ccddbc82d73d5c2fdd327f92c6">comm_</a>);</div>
+<div class="line"><a name="l00631"></a><span class="lineno">  631</span>&#160;            <span class="keywordflow">return</span> positions;</div>
+<div class="line"><a name="l00632"></a><span class="lineno">  632</span>&#160;        }</div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="Snapshot_8h_source.html#l00051">comm_</a>, <a class="el" href="Snapshot_8h_source.html#l00054">nlocal_</a>, and <a class="el" href="Snapshot_8h_source.html#l00067">positions_</a>.</p>
 
@@ -2532,36 +2505,36 @@ Here is the caller graph for this function:</div>
 <p>Return the serialized velocities across all local cores. </p>
 <dl class="section return"><dt>Returns</dt><dd>Velocities across all local cores. </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="Snapshot_8h_source.html#l00646">646</a> of file <a class="el" href="Snapshot_8h_source.html">Snapshot.h</a>.</p>
-<div class="fragment"><div class="line"><a name="l00647"></a><span class="lineno">  647</span>&#160;        {</div>
-<div class="line"><a name="l00648"></a><span class="lineno">  648</span>&#160;            std::vector&lt;int&gt; vcounts(<a class="code" href="classSSAGES_1_1Snapshot.html#a318172ccddbc82d73d5c2fdd327f92c6">comm_</a>.size(), 0); </div>
-<div class="line"><a name="l00649"></a><span class="lineno">  649</span>&#160;            std::vector&lt;int&gt; vdispls(<a class="code" href="classSSAGES_1_1Snapshot.html#a318172ccddbc82d73d5c2fdd327f92c6">comm_</a>.size()+1, 0);</div>
+<p class="definition">Definition at line <a class="el" href="Snapshot_8h_source.html#l00638">638</a> of file <a class="el" href="Snapshot_8h_source.html">Snapshot.h</a>.</p>
+<div class="fragment"><div class="line"><a name="l00639"></a><span class="lineno">  639</span>&#160;        {</div>
+<div class="line"><a name="l00640"></a><span class="lineno">  640</span>&#160;            std::vector&lt;int&gt; vcounts(<a class="code" href="classSSAGES_1_1Snapshot.html#a318172ccddbc82d73d5c2fdd327f92c6">comm_</a>.size(), 0); </div>
+<div class="line"><a name="l00641"></a><span class="lineno">  641</span>&#160;            std::vector&lt;int&gt; vdispls(<a class="code" href="classSSAGES_1_1Snapshot.html#a318172ccddbc82d73d5c2fdd327f92c6">comm_</a>.size()+1, 0);</div>
+<div class="line"><a name="l00642"></a><span class="lineno">  642</span>&#160; </div>
+<div class="line"><a name="l00643"></a><span class="lineno">  643</span>&#160;            vcounts[<a class="code" href="classSSAGES_1_1Snapshot.html#a318172ccddbc82d73d5c2fdd327f92c6">comm_</a>.rank()] = 3*<a class="code" href="classSSAGES_1_1Snapshot.html#a0f4ff8ae2a1db5546a1a4d538ed91db7">nlocal_</a>;</div>
+<div class="line"><a name="l00644"></a><span class="lineno">  644</span>&#160; </div>
+<div class="line"><a name="l00645"></a><span class="lineno">  645</span>&#160;            <span class="comment">// Reduce counts.</span></div>
+<div class="line"><a name="l00646"></a><span class="lineno">  646</span>&#160;            MPI_Allreduce(MPI_IN_PLACE, vcounts.data(), vcounts.size(), MPI_INT, MPI_SUM, <a class="code" href="classSSAGES_1_1Snapshot.html#a318172ccddbc82d73d5c2fdd327f92c6">comm_</a>);</div>
+<div class="line"><a name="l00647"></a><span class="lineno">  647</span>&#160; </div>
+<div class="line"><a name="l00648"></a><span class="lineno">  648</span>&#160;            <span class="comment">// Compute displacements.</span></div>
+<div class="line"><a name="l00649"></a><span class="lineno">  649</span>&#160;            std::partial_sum(vcounts.begin(), vcounts.end(), vdispls.begin() + 1);</div>
 <div class="line"><a name="l00650"></a><span class="lineno">  650</span>&#160; </div>
-<div class="line"><a name="l00651"></a><span class="lineno">  651</span>&#160;            vcounts[<a class="code" href="classSSAGES_1_1Snapshot.html#a318172ccddbc82d73d5c2fdd327f92c6">comm_</a>.rank()] = 3*<a class="code" href="classSSAGES_1_1Snapshot.html#a0f4ff8ae2a1db5546a1a4d538ed91db7">nlocal_</a>;</div>
-<div class="line"><a name="l00652"></a><span class="lineno">  652</span>&#160; </div>
-<div class="line"><a name="l00653"></a><span class="lineno">  653</span>&#160;            <span class="comment">// Reduce counts.</span></div>
-<div class="line"><a name="l00654"></a><span class="lineno">  654</span>&#160;            MPI_Allreduce(MPI_IN_PLACE, vcounts.data(), vcounts.size(), MPI_INT, MPI_SUM, <a class="code" href="classSSAGES_1_1Snapshot.html#a318172ccddbc82d73d5c2fdd327f92c6">comm_</a>);</div>
-<div class="line"><a name="l00655"></a><span class="lineno">  655</span>&#160; </div>
-<div class="line"><a name="l00656"></a><span class="lineno">  656</span>&#160;            <span class="comment">// Compute displacements.</span></div>
-<div class="line"><a name="l00657"></a><span class="lineno">  657</span>&#160;            std::partial_sum(vcounts.begin(), vcounts.end(), vdispls.begin() + 1);</div>
-<div class="line"><a name="l00658"></a><span class="lineno">  658</span>&#160; </div>
-<div class="line"><a name="l00659"></a><span class="lineno">  659</span>&#160;            <span class="comment">// Re-size receiving vectors.</span></div>
-<div class="line"><a name="l00660"></a><span class="lineno">  660</span>&#160;            std::vector&lt;double&gt; velocities;</div>
-<div class="line"><a name="l00661"></a><span class="lineno">  661</span>&#160;            velocities.resize(vdispls.back(), 0);</div>
-<div class="line"><a name="l00662"></a><span class="lineno">  662</span>&#160; </div>
-<div class="line"><a name="l00663"></a><span class="lineno">  663</span>&#160;            std::vector&lt;double&gt; vtemp;</div>
-<div class="line"><a name="l00664"></a><span class="lineno">  664</span>&#160;            </div>
-<div class="line"><a name="l00665"></a><span class="lineno">  665</span>&#160;            <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; v : <a class="code" href="classSSAGES_1_1Snapshot.html#a4b5eba5f7e1c1d34f31c86f6b74f72fe">velocities_</a>)</div>
-<div class="line"><a name="l00666"></a><span class="lineno">  666</span>&#160;            {</div>
-<div class="line"><a name="l00667"></a><span class="lineno">  667</span>&#160;                vtemp.push_back(v[0]);</div>
-<div class="line"><a name="l00668"></a><span class="lineno">  668</span>&#160;                vtemp.push_back(v[1]);</div>
-<div class="line"><a name="l00669"></a><span class="lineno">  669</span>&#160;                vtemp.push_back(v[2]);</div>
-<div class="line"><a name="l00670"></a><span class="lineno">  670</span>&#160;            }</div>
-<div class="line"><a name="l00671"></a><span class="lineno">  671</span>&#160; </div>
-<div class="line"><a name="l00672"></a><span class="lineno">  672</span>&#160;            <span class="comment">// All-gather data.</span></div>
-<div class="line"><a name="l00673"></a><span class="lineno">  673</span>&#160;            MPI_Allgatherv(vtemp.data(), vtemp.size(), MPI_DOUBLE, velocities.data(), vcounts.data(), vdispls.data(), MPI_DOUBLE, <a class="code" href="classSSAGES_1_1Snapshot.html#a318172ccddbc82d73d5c2fdd327f92c6">comm_</a>);</div>
-<div class="line"><a name="l00674"></a><span class="lineno">  674</span>&#160;            <span class="keywordflow">return</span> velocities;</div>
-<div class="line"><a name="l00675"></a><span class="lineno">  675</span>&#160;        }</div>
+<div class="line"><a name="l00651"></a><span class="lineno">  651</span>&#160;            <span class="comment">// Re-size receiving vectors.</span></div>
+<div class="line"><a name="l00652"></a><span class="lineno">  652</span>&#160;            std::vector&lt;double&gt; velocities;</div>
+<div class="line"><a name="l00653"></a><span class="lineno">  653</span>&#160;            velocities.resize(vdispls.back(), 0);</div>
+<div class="line"><a name="l00654"></a><span class="lineno">  654</span>&#160; </div>
+<div class="line"><a name="l00655"></a><span class="lineno">  655</span>&#160;            std::vector&lt;double&gt; vtemp;</div>
+<div class="line"><a name="l00656"></a><span class="lineno">  656</span>&#160;            </div>
+<div class="line"><a name="l00657"></a><span class="lineno">  657</span>&#160;            <span class="keywordflow">for</span>(<span class="keyword">auto</span>&amp; v : <a class="code" href="classSSAGES_1_1Snapshot.html#a4b5eba5f7e1c1d34f31c86f6b74f72fe">velocities_</a>)</div>
+<div class="line"><a name="l00658"></a><span class="lineno">  658</span>&#160;            {</div>
+<div class="line"><a name="l00659"></a><span class="lineno">  659</span>&#160;                vtemp.push_back(v[0]);</div>
+<div class="line"><a name="l00660"></a><span class="lineno">  660</span>&#160;                vtemp.push_back(v[1]);</div>
+<div class="line"><a name="l00661"></a><span class="lineno">  661</span>&#160;                vtemp.push_back(v[2]);</div>
+<div class="line"><a name="l00662"></a><span class="lineno">  662</span>&#160;            }</div>
+<div class="line"><a name="l00663"></a><span class="lineno">  663</span>&#160; </div>
+<div class="line"><a name="l00664"></a><span class="lineno">  664</span>&#160;            <span class="comment">// All-gather data.</span></div>
+<div class="line"><a name="l00665"></a><span class="lineno">  665</span>&#160;            MPI_Allgatherv(vtemp.data(), vtemp.size(), MPI_DOUBLE, velocities.data(), vcounts.data(), vdispls.data(), MPI_DOUBLE, <a class="code" href="classSSAGES_1_1Snapshot.html#a318172ccddbc82d73d5c2fdd327f92c6">comm_</a>);</div>
+<div class="line"><a name="l00666"></a><span class="lineno">  666</span>&#160;            <span class="keywordflow">return</span> velocities;</div>
+<div class="line"><a name="l00667"></a><span class="lineno">  667</span>&#160;        }</div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="Snapshot_8h_source.html#l00051">comm_</a>, <a class="el" href="Snapshot_8h_source.html#l00054">nlocal_</a>, and <a class="el" href="Snapshot_8h_source.html#l00068">velocities_</a>.</p>
 
@@ -3125,22 +3098,23 @@ Here is the caller graph for this function:</div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="Snapshot_8h_source.html#l00051">comm_</a>, and <a class="el" href="Snapshot_8h_source.html#l00070">masses_</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="Snapshot_8h_source.html#l00438">CenterOfMass()</a>, <a class="el" href="ParticleCoordinateCV_8h_source.html#l00097">SSAGES::ParticleCoordinateCV::Evaluate()</a>, <a class="el" href="ParticlePositionCV_8h_source.html#l00116">SSAGES::ParticlePositionCV::Evaluate()</a>, <a class="el" href="GyrationTensorCV_8h_source.html#l00128">SSAGES::GyrationTensorCV::Evaluate()</a>, <a class="el" href="ParticleSeparationCV_8h_source.html#l00128">SSAGES::ParticleSeparationCV::Evaluate()</a>, <a class="el" href="RMSDCV_8h_source.html#l00162">SSAGES::RMSDCV::Evaluate()</a>, and <a class="el" href="RouseModeCV_8h_source.html#l00065">SSAGES::RouseModeCV::setMasses()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="Snapshot_8h_source.html#l00442">CenterOfMass()</a>, <a class="el" href="ParticleCoordinateCV_8h_source.html#l00097">SSAGES::ParticleCoordinateCV::Evaluate()</a>, <a class="el" href="ParticlePositionCV_8h_source.html#l00116">SSAGES::ParticlePositionCV::Evaluate()</a>, <a class="el" href="GyrationTensorCV_8h_source.html#l00128">SSAGES::GyrationTensorCV::Evaluate()</a>, <a class="el" href="ParticleSeparationCV_8h_source.html#l00128">SSAGES::ParticleSeparationCV::Evaluate()</a>, <a class="el" href="RMSDCV_8h_source.html#l00162">SSAGES::RMSDCV::Evaluate()</a>, and <a class="el" href="RouseModeCV_8h_source.html#l00065">SSAGES::RouseModeCV::setMasses()</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classSSAGES_1_1Snapshot_a77cfe35b720393223aa5c7410b2dd3ad_icgraph.png" border="0" usemap="#classSSAGES_1_1Snapshot_a77cfe35b720393223aa5c7410b2dd3ad_icgraph" alt=""/></div>
 <map name="classSSAGES_1_1Snapshot_a77cfe35b720393223aa5c7410b2dd3ad_icgraph" id="classSSAGES_1_1Snapshot_a77cfe35b720393223aa5c7410b2dd3ad_icgraph">
-<area shape="rect" title="Compute the total mass of a group of particles based on index." alt="" coords="491,213,700,239"/>
-<area shape="rect" href="classSSAGES_1_1Snapshot.html#a8195dc7a8a536999f63e20b4cb86639b" title=" " alt="" coords="256,147,443,188"/>
+<area shape="rect" title="Compute the total mass of a group of particles based on index." alt="" coords="491,261,700,287"/>
+<area shape="rect" href="classSSAGES_1_1Snapshot.html#ac600b5f3d3e240d2cc9965c06547e97e" title="Compute center of mass of a group of atoms based on index." alt="" coords="256,195,443,236"/>
 <area shape="rect" href="classSSAGES_1_1ParticleCoordinateCV.html#afff49e8eb1571fe3527712be50da001e" title="Evaluate the CV." alt="" coords="11,5,203,47"/>
 <area shape="rect" href="classSSAGES_1_1ParticlePositionCV.html#aa2ee9b7b3ca3133183e2d5f511251e29" title="Evaluate the CV." alt="" coords="19,71,195,112"/>
-<area shape="rect" href="classSSAGES_1_1ParticleSeparationCV.html#ae6452c47bf1d849e2af60c84209a9955" title="Evaluate the CV." alt="" coords="11,201,202,243"/>
-<area shape="rect" href="classSSAGES_1_1GyrationTensorCV.html#ac613c1659bd00b335c3d6de3d8ff0ebc" title="Evaluate the CV." alt="" coords="10,267,203,308"/>
-<area shape="rect" href="classSSAGES_1_1RMSDCV.html#aff77158b643fec57c6d1649a78b0dd14" title="Evaluate the CV." alt="" coords="5,333,208,359"/>
-<area shape="rect" href="classSSAGES_1_1RouseModeCV.html#a5842a8b7e54d435af5465aea2c85e924" title="Helper function to determine masses of each group." alt="" coords="262,380,437,421"/>
+<area shape="rect" href="classSSAGES_1_1ParticleSeparationCV.html#ae6452c47bf1d849e2af60c84209a9955" title="Evaluate the CV." alt="" coords="11,253,202,295"/>
+<area shape="rect" href="classSSAGES_1_1GyrationTensorCV.html#ac613c1659bd00b335c3d6de3d8ff0ebc" title="Evaluate the CV." alt="" coords="10,319,203,360"/>
+<area shape="rect" href="classSSAGES_1_1RMSDCV.html#aff77158b643fec57c6d1649a78b0dd14" title="Evaluate the CV." alt="" coords="5,385,208,411"/>
+<area shape="rect" href="classSSAGES_1_1RouseModeCV.html#a5842a8b7e54d435af5465aea2c85e924" title="Helper function to determine masses of each group." alt="" coords="262,432,437,473"/>
 <area shape="rect" href="classSSAGES_1_1RouseModeCV.html#a1468b1aabf81ceb2ef3feb3b8fc79d0d" title="Evaluate the CV." alt="" coords="19,136,194,177"/>
-<area shape="rect" href="classSSAGES_1_1RouseModeCV.html#a851e533301a1464b5d69c711c6499ba1" title="Initialize necessary variables." alt="" coords="19,384,194,425"/>
+<area shape="rect" href="classSSAGES_1_1ANNCV.html#a1ddb11f32dbf1c1c19e119310c047a0d" title="Evaluate the CV." alt="" coords="11,202,203,229"/>
+<area shape="rect" href="classSSAGES_1_1RouseModeCV.html#a851e533301a1464b5d69c711c6499ba1" title="Initialize necessary variables." alt="" coords="19,436,194,477"/>
 </map>
 </div>
 
@@ -3155,11 +3129,10 @@ Here is the caller graph for this function:</div>
 <div class="ttc" id="aclassSSAGES_1_1Snapshot_html_a77cfe35b720393223aa5c7410b2dd3ad"><div class="ttname"><a href="classSSAGES_1_1Snapshot.html#a77cfe35b720393223aa5c7410b2dd3ad">SSAGES::Snapshot::TotalMass</a></div><div class="ttdeci">double TotalMass(const Label &amp;indices) const</div><div class="ttdoc">Compute the total mass of a group of particles based on index.</div><div class="ttdef"><b>Definition:</b> <a href="Snapshot_8h_source.html#l00423">Snapshot.h:423</a></div></div>
 <div class="ttc" id="anamespaceSSAGES_html_a630084a0a5e185e89e21b3735f8f8b2e"><div class="ttname"><a href="namespaceSSAGES.html#a630084a0a5e185e89e21b3735f8f8b2e">SSAGES::Vector3</a></div><div class="ttdeci">Eigen::Vector3d Vector3</div><div class="ttdoc">Three-dimensional vector.</div><div class="ttdef"><b>Definition:</b> <a href="types_8h_source.html#l00033">types.h:33</a></div></div>
 <div class="ttc" id="aclassSSAGES_1_1Snapshot_html_a0f4ff8ae2a1db5546a1a4d538ed91db7"><div class="ttname"><a href="classSSAGES_1_1Snapshot.html#a0f4ff8ae2a1db5546a1a4d538ed91db7">SSAGES::Snapshot::nlocal_</a></div><div class="ttdeci">unsigned int nlocal_</div><div class="ttdoc">Number of atoms located on this snapshot.</div><div class="ttdef"><b>Definition:</b> <a href="Snapshot_8h_source.html#l00054">Snapshot.h:54</a></div></div>
-<div class="ttc" id="aclassSSAGES_1_1Snapshot_html_a8195dc7a8a536999f63e20b4cb86639b"><div class="ttname"><a href="classSSAGES_1_1Snapshot.html#a8195dc7a8a536999f63e20b4cb86639b">SSAGES::Snapshot::CenterOfMass</a></div><div class="ttdeci">Vector3 CenterOfMass(const Label &amp;indices) const</div><div class="ttdef"><b>Definition:</b> <a href="Snapshot_8h_source.html#l00438">Snapshot.h:438</a></div></div>
 <div class="ttc" id="aclassSSAGES_1_1Snapshot_html_aa7448e983d92932a723bcbf9a466c21e"><div class="ttname"><a href="classSSAGES_1_1Snapshot.html#aa7448e983d92932a723bcbf9a466c21e">SSAGES::Snapshot::wid_</a></div><div class="ttdeci">unsigned int wid_</div><div class="ttdoc">Walker ID.</div><div class="ttdef"><b>Definition:</b> <a href="Snapshot_8h_source.html#l00053">Snapshot.h:53</a></div></div>
 <div class="ttc" id="aclassSSAGES_1_1Snapshot_html_ab42561f83db5cba3dd0c828ece8fc686"><div class="ttname"><a href="classSSAGES_1_1Snapshot.html#ab42561f83db5cba3dd0c828ece8fc686">SSAGES::Snapshot::ID_</a></div><div class="ttdeci">std::string ID_</div><div class="ttdoc">ID string.</div><div class="ttdef"><b>Definition:</b> <a href="Snapshot_8h_source.html#l00056">Snapshot.h:56</a></div></div>
 <div class="ttc" id="aclassSSAGES_1_1Snapshot_html_a47cac5746857da7ddf86353658a231cc"><div class="ttname"><a href="classSSAGES_1_1Snapshot.html#a47cac5746857da7ddf86353658a231cc">SSAGES::Snapshot::positions_</a></div><div class="ttdeci">std::vector&lt; Vector3 &gt; positions_</div><div class="ttdoc">Positions.</div><div class="ttdef"><b>Definition:</b> <a href="Snapshot_8h_source.html#l00067">Snapshot.h:67</a></div></div>
-<div class="ttc" id="aclassSSAGES_1_1Snapshot_html_a7146597433bcfd256385db274330cd36"><div class="ttname"><a href="classSSAGES_1_1Snapshot.html#a7146597433bcfd256385db274330cd36">SSAGES::Snapshot::GetLocalIndex</a></div><div class="ttdeci">int GetLocalIndex(int id) const</div><div class="ttdoc">Gets the local atom index corresponding to an atom ID.</div><div class="ttdef"><b>Definition:</b> <a href="Snapshot_8h_source.html#l00527">Snapshot.h:527</a></div></div>
+<div class="ttc" id="aclassSSAGES_1_1Snapshot_html_a7146597433bcfd256385db274330cd36"><div class="ttname"><a href="classSSAGES_1_1Snapshot.html#a7146597433bcfd256385db274330cd36">SSAGES::Snapshot::GetLocalIndex</a></div><div class="ttdeci">int GetLocalIndex(int id) const</div><div class="ttdoc">Gets the local atom index corresponding to an atom ID.</div><div class="ttdef"><b>Definition:</b> <a href="Snapshot_8h_source.html#l00519">Snapshot.h:519</a></div></div>
 <div class="ttc" id="aclassSSAGES_1_1Snapshot_html_afe9e48b0d57a5de77414454b70c08fa7"><div class="ttname"><a href="classSSAGES_1_1Snapshot.html#afe9e48b0d57a5de77414454b70c08fa7">SSAGES::Snapshot::iteration_</a></div><div class="ttdeci">size_t iteration_</div><div class="ttdoc">Iteration of Simulation.</div><div class="ttdef"><b>Definition:</b> <a href="Snapshot_8h_source.html#l00075">Snapshot.h:75</a></div></div>
 <div class="ttc" id="aclassSSAGES_1_1Snapshot_html_a93791415988f0c22d1101ba560f093cb"><div class="ttname"><a href="classSSAGES_1_1Snapshot.html#a93791415988f0c22d1101ba560f093cb">SSAGES::Snapshot::H_</a></div><div class="ttdeci">Matrix3 H_</div><div class="ttdoc">Parrinello-Rahman box H-matrix.</div><div class="ttdef"><b>Definition:</b> <a href="Snapshot_8h_source.html#l00058">Snapshot.h:58</a></div></div>
 <div class="ttc" id="aclassSSAGES_1_1Snapshot_html_a1af5f16699a18b86e37f665e2747530e"><div class="ttname"><a href="classSSAGES_1_1Snapshot.html#a1af5f16699a18b86e37f665e2747530e">SSAGES::Snapshot::atomids_</a></div><div class="ttdeci">Label atomids_</div><div class="ttdoc">List of Atom IDs.</div><div class="ttdef"><b>Definition:</b> <a href="Snapshot_8h_source.html#l00072">Snapshot.h:72</a></div></div>
@@ -3182,7 +3155,7 @@ Here is the caller graph for this function:</div>
 <div class="ttc" id="aclassSSAGES_1_1Snapshot_html_a880c06e53ce3de9af5c941e0645f4e1a"><div class="ttname"><a href="classSSAGES_1_1Snapshot.html#a880c06e53ce3de9af5c941e0645f4e1a">SSAGES::Snapshot::targetiter_</a></div><div class="ttdeci">size_t targetiter_</div><div class="ttdoc">Iteration target of simulation.</div><div class="ttdef"><b>Definition:</b> <a href="Snapshot_8h_source.html#l00076">Snapshot.h:76</a></div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed May 27 2020 11:14:08 for SSAGES by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Oct 13 2020 12:02:27 for SSAGES by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.18
 </small></address>

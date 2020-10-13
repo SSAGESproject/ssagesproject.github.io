@@ -1,5 +1,0 @@
-<map id="SSAGES::ParticlePositionCV::Initialize" name="SSAGES::ParticlePositionCV::Initialize">
-<area shape="rect" id="node1" title="Initialize necessary variables." alt="" coords="5,27,181,69"/>
-<area shape="rect" id="node2" href="$classSSAGES_1_1Snapshot.html#a4811c9435e56196d5525832345ef1680" title="Get communicator for walker." alt="" coords="229,5,484,32"/>
-<area shape="rect" id="node3" href="$classSSAGES_1_1Snapshot.html#a7146597433bcfd256385db274330cd36" title="Gets the local atom index corresponding to an atom ID." alt="" coords="257,57,457,98"/>
-</map>

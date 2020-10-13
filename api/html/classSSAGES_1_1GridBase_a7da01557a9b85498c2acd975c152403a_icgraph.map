@@ -1,9 +1,0 @@
-<map id="SSAGES::GridBase::at" name="SSAGES::GridBase::at">
-<area shape="rect" id="node1" title="Access Grid element read&#45;only." alt="" coords="264,177,423,203"/>
-<area shape="rect" id="node2" href="$classSSAGES_1_1GridBase.html#ad21859fa5ac9cc99bfae63862e322d20" title="Access Grid element read/write." alt="" coords="19,5,203,47"/>
-<area shape="rect" id="node3" href="$classSSAGES_1_1GridBase.html#a32ae57c8d754f4b41fcbe13b3e1dcc75" title="Return center point of 1d&#45;grid." alt="" coords="17,71,205,112"/>
-<area shape="rect" id="node4" href="$classSSAGES_1_1GridBase.html#a79d7f8bcf88ffb70310d26bb3a6d16e3" title="Return linear interpolation on a coordinate." alt="" coords="19,136,203,177"/>
-<area shape="rect" id="node5" href="$classSSAGES_1_1GridBase.html#abcba5e154763f818c447a994eab8a809" title="Access Grid element per [] read&#45;only." alt="" coords="19,201,203,243"/>
-<area shape="rect" id="node6" href="$classSSAGES_1_1ANN.html#ad63d276efae1a266eb5d556bdf896a98" title="Method call post integration." alt="" coords="5,267,216,294"/>
-<area shape="rect" id="node7" href="$classSSAGES_1_1GridBase.html#ab52bfd510cd1dffb2d91f516c9266c4b" title="Sync the grid." alt="" coords="19,319,203,360"/>
-</map>

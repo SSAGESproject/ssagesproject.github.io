@@ -1,5 +1,0 @@
-<map id="SSAGES::Snapshot::GetWalkerID" name="SSAGES::Snapshot::GetWalkerID">
-<area shape="rect" id="node1" title="Get walker ID." alt="" coords="253,42,477,69"/>
-<area shape="rect" id="node2" href="$classSSAGES_1_1StringMethod.html#ab3a248ca3236ac6b068b3f97074e4218" title="Method call prior to simulation initiation." alt="" coords="24,5,187,47"/>
-<area shape="rect" id="node3" href="$classSSAGES_1_1BFS.html#adabd5c246d1bfd9d0bd23cfbad5130df" title="Method call prior to simulation initiation." alt="" coords="5,71,205,98"/>
-</map>

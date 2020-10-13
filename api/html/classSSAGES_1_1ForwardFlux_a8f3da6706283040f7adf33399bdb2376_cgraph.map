@@ -1,6 +1,0 @@
-<map id="SSAGES::ForwardFlux::WriteFFSConfiguration" name="SSAGES::ForwardFlux::WriteFFSConfiguration">
-<area shape="rect" id="node1" title="Write a file corresponding to FFSConfigID from current snapshot." alt="" coords="5,49,168,90"/>
-<area shape="rect" id="node2" href="$classSSAGES_1_1Snapshot.html#ac9cd613a5fd8dacbd6dfc839cf526d28" title="Access the atom IDs." alt="" coords="219,5,440,32"/>
-<area shape="rect" id="node3" href="$classSSAGES_1_1Snapshot.html#a91852084d69a0703a8fcc9b27dc50459" title="Access the particle positions." alt="" coords="218,56,441,83"/>
-<area shape="rect" id="node4" href="$classSSAGES_1_1Snapshot.html#adb14bcfae16bc7490320fd1890b36cff" title="Access the particle velocities." alt="" coords="216,107,443,133"/>
-</map>

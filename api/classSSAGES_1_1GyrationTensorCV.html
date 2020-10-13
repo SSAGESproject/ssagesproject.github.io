@@ -29,7 +29,7 @@
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
    <div id="projectname">SSAGES
-   &#160;<span id="projectnumber">0.8.6</span>
+   &#160;<span id="projectnumber">0.9.2</span>
    </div>
    <div id="projectbrief">Software Suite for Advanced General Ensemble Simulations</div>
   </td>
@@ -438,7 +438,7 @@ Here is the caller graph for this function:</div>
 </div><!-- fragment -->
 <p class="reference">References <a class="el" href="Requirement_8h_source.html#l00092">Json::Requirement::GetErrors()</a>, <a class="el" href="GyrationTensorCV_8h_source.html#l00074">GyrationTensorCV()</a>, <a class="el" href="Requirement_8h_source.html#l00086">Json::Requirement::HasErrors()</a>, <a class="el" href="ObjectRequirement_8h_source.html#l00142">Json::ObjectRequirement::Parse()</a>, and <a class="el" href="ObjectRequirement_8h_source.html#l00239">Json::ObjectRequirement::Validate()</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="CollectiveVariable_8cpp_source.html#l00042">SSAGES::CollectiveVariable::BuildCV()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="CollectiveVariable_8cpp_source.html#l00043">SSAGES::CollectiveVariable::BuildCV()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -528,7 +528,7 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;            </div>
 <div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160;            <span class="comment">// Compute total and center of mass.</span></div>
 <div class="line"><a name="l00146"></a><span class="lineno">  146</span>&#160;            <span class="keyword">auto</span> masstot = snapshot.TotalMass(idx);</div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;            <a class="code" href="namespaceSSAGES.html#a630084a0a5e185e89e21b3735f8f8b2e">Vector3</a> com = snapshot.CenterOfMass(idx, masstot);</div>
+<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;            <a class="code" href="namespaceSSAGES.html#a630084a0a5e185e89e21b3735f8f8b2e">Vector3</a> com = snapshot.CenterOfMass(idx);</div>
 <div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160; </div>
 <div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160;            <span class="comment">// Gyration tensor and temporary vector to store positions in inertial frame. </span></div>
 <div class="line"><a name="l00150"></a><span class="lineno">  150</span>&#160;            <a class="code" href="namespaceSSAGES.html#a306e635f4b20f86fbc726fbf9a5d11a8">Matrix3</a> S = Matrix3::Zero();</div>
@@ -626,23 +626,23 @@ Here is the caller graph for this function:</div>
 <div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;            }</div>
 <div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160;        }</div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="Snapshot_8h_source.html#l00390">SSAGES::Snapshot::ApplyMinimumImage()</a>, <a class="el" href="GyrationTensorCV_8h_source.html#l00059">atomids_</a>, <a class="el" href="Snapshot_8h_source.html#l00438">SSAGES::Snapshot::CenterOfMass()</a>, <a class="el" href="GyrationTensorCV_8h_source.html#l00060">component_</a>, <a class="el" href="GyrationTensorCV_8h_source.html#l00063">dim_</a>, <a class="el" href="Snapshot_8h_source.html#l00186">SSAGES::Snapshot::GetCommunicator()</a>, <a class="el" href="Snapshot_8h_source.html#l00545">SSAGES::Snapshot::GetLocalIndices()</a>, <a class="el" href="Snapshot_8h_source.html#l00367">SSAGES::Snapshot::GetMasses()</a>, <a class="el" href="Snapshot_8h_source.html#l00202">SSAGES::Snapshot::GetNumAtoms()</a>, <a class="el" href="Snapshot_8h_source.html#l00325">SSAGES::Snapshot::GetPositions()</a>, <a class="el" href="CollectiveVariable_8h_source.html#l00044">SSAGES::CollectiveVariable::grad_</a>, <a class="el" href="Snapshot_8h_source.html#l00423">SSAGES::Snapshot::TotalMass()</a>, and <a class="el" href="CollectiveVariable_8h_source.html#l00050">SSAGES::CollectiveVariable::val_</a>.</p>
+<p class="reference">References <a class="el" href="Snapshot_8h_source.html#l00390">SSAGES::Snapshot::ApplyMinimumImage()</a>, <a class="el" href="GyrationTensorCV_8h_source.html#l00059">atomids_</a>, <a class="el" href="Snapshot_8h_source.html#l00442">SSAGES::Snapshot::CenterOfMass()</a>, <a class="el" href="GyrationTensorCV_8h_source.html#l00060">component_</a>, <a class="el" href="GyrationTensorCV_8h_source.html#l00063">dim_</a>, <a class="el" href="Snapshot_8h_source.html#l00186">SSAGES::Snapshot::GetCommunicator()</a>, <a class="el" href="Snapshot_8h_source.html#l00537">SSAGES::Snapshot::GetLocalIndices()</a>, <a class="el" href="Snapshot_8h_source.html#l00367">SSAGES::Snapshot::GetMasses()</a>, <a class="el" href="Snapshot_8h_source.html#l00202">SSAGES::Snapshot::GetNumAtoms()</a>, <a class="el" href="Snapshot_8h_source.html#l00325">SSAGES::Snapshot::GetPositions()</a>, <a class="el" href="CollectiveVariable_8h_source.html#l00044">SSAGES::CollectiveVariable::grad_</a>, <a class="el" href="Snapshot_8h_source.html#l00423">SSAGES::Snapshot::TotalMass()</a>, and <a class="el" href="CollectiveVariable_8h_source.html#l00050">SSAGES::CollectiveVariable::val_</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><img src="classSSAGES_1_1GyrationTensorCV_ac613c1659bd00b335c3d6de3d8ff0ebc_cgraph.png" border="0" usemap="#classSSAGES_1_1GyrationTensorCV_ac613c1659bd00b335c3d6de3d8ff0ebc_cgraph" alt=""/></div>
 <map name="classSSAGES_1_1GyrationTensorCV_ac613c1659bd00b335c3d6de3d8ff0ebc_cgraph" id="classSSAGES_1_1GyrationTensorCV_ac613c1659bd00b335c3d6de3d8ff0ebc_cgraph">
-<area shape="rect" title="Evaluate the CV." alt="" coords="5,209,199,251"/>
-<area shape="rect" href="classSSAGES_1_1Snapshot.html#ad6caa5b92433501fd4a62deef288340a" title="Apply minimum image to a vector." alt="" coords="257,5,491,47"/>
-<area shape="rect" href="classSSAGES_1_1Snapshot.html#a8195dc7a8a536999f63e20b4cb86639b" title=" " alt="" coords="281,71,467,112"/>
-<area shape="rect" href="classSSAGES_1_1Snapshot.html#a77cfe35b720393223aa5c7410b2dd3ad" title="Compute the total mass of a group of particles based on index." alt="" coords="549,107,759,134"/>
-<area shape="rect" href="classSSAGES_1_1Snapshot.html#a4811c9435e56196d5525832345ef1680" title="Get communicator for walker." alt="" coords="247,187,501,214"/>
-<area shape="rect" href="classSSAGES_1_1Snapshot.html#a196a91c541c72bcb5147b9e60a44ea8b" title=" " alt="" coords="274,239,474,280"/>
-<area shape="rect" href="classSSAGES_1_1Snapshot.html#abef8348e7811deeea88a7ff8f49a1af4" title="Const access to the particle masses." alt="" coords="267,305,481,331"/>
-<area shape="rect" href="classSSAGES_1_1Snapshot.html#a103af07a012d55a9637f6203c7eba0af" title="Get number of atoms in this snapshot." alt="" coords="275,356,473,397"/>
-<area shape="rect" href="classSSAGES_1_1Snapshot.html#a91852084d69a0703a8fcc9b27dc50459" title="Access the particle positions." alt="" coords="263,422,485,449"/>
-<area shape="rect" href="namespaceSSAGES.html#a49bb77a1b5822888753c96c70780ab47" title="Quick helper function to round a double." alt="" coords="593,13,715,39"/>
-<area shape="rect" href="classSSAGES_1_1Snapshot.html#a7146597433bcfd256385db274330cd36" title="Gets the local atom index corresponding to an atom ID." alt="" coords="554,239,754,280"/>
+<area shape="rect" title="Evaluate the CV." alt="" coords="5,196,199,237"/>
+<area shape="rect" href="classSSAGES_1_1Snapshot.html#ad6caa5b92433501fd4a62deef288340a" title="Apply minimum image to a vector." alt="" coords="549,13,784,55"/>
+<area shape="rect" href="classSSAGES_1_1Snapshot.html#ac600b5f3d3e240d2cc9965c06547e97e" title="Compute center of mass of a group of atoms based on index." alt="" coords="281,57,467,99"/>
+<area shape="rect" href="classSSAGES_1_1Snapshot.html#a77cfe35b720393223aa5c7410b2dd3ad" title="Compute the total mass of a group of particles based on index." alt="" coords="562,109,771,135"/>
+<area shape="rect" href="classSSAGES_1_1Snapshot.html#a4811c9435e56196d5525832345ef1680" title="Get communicator for walker." alt="" coords="247,174,501,201"/>
+<area shape="rect" href="classSSAGES_1_1Snapshot.html#a196a91c541c72bcb5147b9e60a44ea8b" title=" " alt="" coords="274,225,474,267"/>
+<area shape="rect" href="classSSAGES_1_1Snapshot.html#abef8348e7811deeea88a7ff8f49a1af4" title="Const access to the particle masses." alt="" coords="267,291,481,318"/>
+<area shape="rect" href="classSSAGES_1_1Snapshot.html#a103af07a012d55a9637f6203c7eba0af" title="Get number of atoms in this snapshot." alt="" coords="275,343,473,384"/>
+<area shape="rect" href="classSSAGES_1_1Snapshot.html#a91852084d69a0703a8fcc9b27dc50459" title="Access the particle positions." alt="" coords="263,409,485,435"/>
+<area shape="rect" href="namespaceSSAGES.html#a49bb77a1b5822888753c96c70780ab47" title="Quick helper function to round a double." alt="" coords="832,21,953,47"/>
+<area shape="rect" href="classSSAGES_1_1Snapshot.html#a7146597433bcfd256385db274330cd36" title="Gets the local atom index corresponding to an atom ID." alt="" coords="567,225,767,267"/>
 </map>
 </div>
 
@@ -705,7 +705,7 @@ Here is the call graph for this function:</div>
 <div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;                });     </div>
 <div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;        }       </div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="GyrationTensorCV_8h_source.html#l00059">atomids_</a>, <a class="el" href="Snapshot_8h_source.html#l00186">SSAGES::Snapshot::GetCommunicator()</a>, and <a class="el" href="Snapshot_8h_source.html#l00527">SSAGES::Snapshot::GetLocalIndex()</a>.</p>
+<p class="reference">References <a class="el" href="GyrationTensorCV_8h_source.html#l00059">atomids_</a>, <a class="el" href="Snapshot_8h_source.html#l00186">SSAGES::Snapshot::GetCommunicator()</a>, and <a class="el" href="Snapshot_8h_source.html#l00519">SSAGES::Snapshot::GetLocalIndex()</a>.</p>
 <div class="dynheader">
 Here is the call graph for this function:</div>
 <div class="dyncontent">
@@ -739,7 +739,7 @@ Here is the call graph for this function:</div>
 <div class="ttc" id="aclassJson_1_1Requirement_html_adfaec336a9f051d6f6b9a6d7f1d97b75"><div class="ttname"><a href="classJson_1_1Requirement.html#adfaec336a9f051d6f6b9a6d7f1d97b75">Json::Requirement::HasErrors</a></div><div class="ttdeci">bool HasErrors()</div><div class="ttdoc">Check if errors have occured.</div><div class="ttdef"><b>Definition:</b> <a href="Requirement_8h_source.html#l00086">Requirement.h:86</a></div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
-Generated on Wed May 27 2020 11:14:08 for SSAGES by &#160;<a href="http://www.doxygen.org/index.html">
+Generated on Tue Oct 13 2020 12:02:25 for SSAGES by &#160;<a href="http://www.doxygen.org/index.html">
 <img class="footer" src="doxygen.png" alt="doxygen"/>
 </a> 1.8.18
 </small></address>

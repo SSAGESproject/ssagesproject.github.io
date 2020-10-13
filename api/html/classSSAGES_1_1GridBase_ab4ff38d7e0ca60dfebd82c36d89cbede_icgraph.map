@@ -1,8 +1,0 @@
-<map id="SSAGES::GridBase::GetPeriodic" name="SSAGES::GridBase::GetPeriodic">
-<area shape="rect" id="node1" title="Return the periodicity of the Grid." alt="" coords="237,143,452,170"/>
-<area shape="rect" id="node2" href="$classSSAGES_1_1GridBase.html#a500069259f6fece46ab04eeb2783ac83" title="Return the Grid indices for a given point." alt="" coords="5,5,189,47"/>
-<area shape="rect" id="node3" href="$classSSAGES_1_1GridBase.html#a2270a9233a9dc2d341e8ab88ce6655c9" title="Return the lower edges of the Grid." alt="" coords="5,71,189,112"/>
-<area shape="rect" id="node4" href="$classSSAGES_1_1GridBase.html#a62279891bd995322850162c39479098a" title="Get the periodicity in a specific dimension." alt="" coords="5,136,189,177"/>
-<area shape="rect" id="node5" href="$classSSAGES_1_1GridBase.html#a875feace8fff4743b103147c4193eca0" title="Return the upper edges of the Grid." alt="" coords="5,201,189,243"/>
-<area shape="rect" id="node6" href="$classSSAGES_1_1GridBase.html#ada5a15258acbb2c9ed192c0fa9763979" title="Wrap the index around periodic boundaries." alt="" coords="5,267,189,308"/>
-</map>

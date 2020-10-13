@@ -1,6 +1,0 @@
-<map id="SSAGES::ParticleSeparationCV::ParticleSeparationCV" name="SSAGES::ParticleSeparationCV::ParticleSeparationCV">
-<area shape="rect" id="node1" title="Constructor." alt="" coords="717,5,908,47"/>
-<area shape="rect" id="node2" href="$classSSAGES_1_1ParticleSeparationCV.html#a1e8c2b87b91bdf8722e37feb109576fd" title="Set up collective variable." alt="" coords="479,5,669,47"/>
-<area shape="rect" id="node3" href="$classSSAGES_1_1CollectiveVariable.html#ab56eae0d888f3d5125566bfb9b5e21aa" title="Set up collective variable." alt="" coords="240,5,431,47"/>
-<area shape="rect" id="node4" href="$classSSAGES_1_1ResourceHandler.html#ac026ad9aa098fa1508a78b0b5a91e8a2" title="Build a new ResourceHandler from JSON." alt="" coords="5,5,192,47"/>
-</map>

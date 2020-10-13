@@ -1,4 +1,0 @@
-<map id="Json::NotRequirement" name="Json::NotRequirement">
-<area shape="rect" id="node1" title="Requires a given Requirement to fail." alt="" coords="5,80,159,107"/>
-<area shape="rect" id="node2" href="$classJson_1_1Requirement.html" title="Requirements on input files." alt="" coords="16,5,148,32"/>
-</map>

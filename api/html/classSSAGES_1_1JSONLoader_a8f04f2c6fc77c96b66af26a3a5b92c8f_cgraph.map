@@ -1,5 +1,0 @@
-<map id="SSAGES::JSONLoader::LoadFile" name="SSAGES::JSONLoader::LoadFile">
-<area shape="rect" id="node1" title="Load file and return JSON tree." alt="" coords="5,23,165,65"/>
-<area shape="rect" id="node2" href="$namespaceSSAGES.html#a47ee6e7c0b49477e70126f8976bf88f6" title="Read contents from a file." alt="" coords="213,5,393,32"/>
-<area shape="rect" id="node3" href="$namespaceSSAGES.html#a8f3679fdce893d23e1dbe8f046122781" title="Gets file path from filename." alt="" coords="226,56,381,83"/>
-</map>

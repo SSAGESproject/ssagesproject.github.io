@@ -1,5 +1,0 @@
-<map id="SSAGES::BasisEvaluator::BasisEvaluator" name="SSAGES::BasisEvaluator::BasisEvaluator">
-<area shape="rect" id="node1" title="Constructor." alt="" coords="5,39,179,80"/>
-<area shape="rect" id="node2" href="$classSSAGES_1_1BasisEvaluator.html#ab77ec65105e7885b53be39f29dee7d99" title="Creates lookup table for basis functions." alt="" coords="227,5,400,47"/>
-<area shape="rect" id="node3" href="$classSSAGES_1_1BasisEvaluator.html#af48c0e905d578ca0f80434b60aa6d84b" title="Initializes coefficient lookup vector." alt="" coords="227,71,400,112"/>
-</map>

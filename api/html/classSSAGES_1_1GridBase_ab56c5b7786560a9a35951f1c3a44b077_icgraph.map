@@ -1,7 +1,0 @@
-<map id="SSAGES::GridBase::GetNumPoints" name="SSAGES::GridBase::GetNumPoints">
-<area shape="rect" id="node1" title="Get the number of points for all dimensions." alt="" coords="227,90,423,131"/>
-<area shape="rect" id="node2" href="$classSSAGES_1_1BFS.html#aae30a5592035f756e0290fd2b044cf5e" title="Build a derived method from JSON node." alt="" coords="18,5,166,32"/>
-<area shape="rect" id="node3" href="$classSSAGES_1_1BasisEvaluator.html#ad017032c44a0840f05c7ac4d7fedd5cd" title="Outputs the basis projection at a specific coordinate." alt="" coords="5,57,179,98"/>
-<area shape="rect" id="node4" href="$classSSAGES_1_1BasisEvaluator.html#ad02d4d3e5e2e0af87a8e4a9d759a64a0" title=" " alt="" coords="5,122,179,163"/>
-<area shape="rect" id="node5" href="$classSSAGES_1_1Grid.html#ab79a2be84faa3a5b27d9bf092fa30cca" title="Write grid out to file." alt="" coords="7,187,177,229"/>
-</map>

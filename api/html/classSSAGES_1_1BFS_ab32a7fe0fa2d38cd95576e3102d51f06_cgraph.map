@@ -1,4 +1,0 @@
-<map id="SSAGES::BFS::PrintBias" name="SSAGES::BFS::PrintBias">
-<area shape="rect" id="node1" title="Prints the current bias to a defined file from the JSON." alt="" coords="5,5,177,32"/>
-<area shape="rect" id="node2" href="$classSSAGES_1_1Grid.html#a709374b3cadf320347604077a2e45e5b" title="Return iterator at first grid point." alt="" coords="225,5,373,32"/>
-</map>

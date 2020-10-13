@@ -1,5 +1,0 @@
-<map id="SSAGES::ForwardFlux::PostSimulation" name="SSAGES::ForwardFlux::PostSimulation">
-<area shape="rect" id="node1" title="Method call post simulation." alt="" coords="491,5,648,47"/>
-<area shape="rect" id="node2" href="$classSSAGES_1_1DirectForwardFlux.html#a2be13ab9b33d4cb90aa22ca9d71077e9" title="Function that checks if interfaces have been crossed (different for each FFS flavor)" alt="" coords="245,5,443,47"/>
-<area shape="rect" id="node3" href="$classSSAGES_1_1DirectForwardFlux.html#a5491cd537f737524f5fc295236eefb85" title="Post&#45;integration hook." alt="" coords="5,5,197,47"/>
-</map>

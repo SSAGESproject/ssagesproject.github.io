@@ -1,47 +1,51 @@
 <map id="SSAGES::CollectiveVariable::BuildCV" name="SSAGES::CollectiveVariable::BuildCV">
-<area shape="rect" id="node1" title="Set up collective variable." alt="" coords="5,956,196,997"/>
-<area shape="rect" id="node2" href="$classSSAGES_1_1BoxVolumeCV.html#a75675bb4e1bdcb198b7201ed0ea6cc24" title="Set up collective variable." alt="" coords="689,638,859,680"/>
-<area shape="rect" id="node20" href="$classSSAGES_1_1AngleCV.html#abb07c513c9eb73a0b4b44f2eb602096d" title="Set up collective variable." alt="" coords="687,1040,861,1067"/>
-<area shape="rect" id="node22" href="$classSSAGES_1_1ParticlePositionCV.html#aba39d6128e00ab299f41c12b46c45b8b" title="Set up collective variable." alt="" coords="686,880,862,921"/>
-<area shape="rect" id="node24" href="$classSSAGES_1_1ParticleSeparationCV.html#a1e8c2b87b91bdf8722e37feb109576fd" title="Set up collective variable." alt="" coords="679,1092,869,1133"/>
-<area shape="rect" id="node26" href="$classSSAGES_1_1ParticleCoordinateCV.html#ad21a72b2fe3e34c16c985fb13de32d58" title="Set up collective variable." alt="" coords="678,1157,870,1198"/>
-<area shape="rect" id="node27" href="$classSSAGES_1_1RouseModeCV.html#a369dd6839f82c595844881f3db88a956" title="Set up collective variable." alt="" coords="687,365,861,406"/>
-<area shape="rect" id="node29" href="$classSSAGES_1_1PairwiseCV.html#ad07080b9c899d5a31f233a2103994931" title="Set up collective variable." alt="" coords="244,1153,399,1194"/>
-<area shape="rect" id="node36" href="$classSSAGES_1_1TorsionalCV.html#acfa27d84d60248c363d111a82f175749" title="Set up collective variable." alt="" coords="695,785,853,826"/>
-<area shape="rect" id="node38" href="$classSSAGES_1_1AlphaRMSDCV.html#a927dbccb0136c844a5b1cc8b2e74ecbd" title="Set up collective variable." alt="" coords="685,1673,863,1714"/>
-<area shape="rect" id="node40" href="$classSSAGES_1_1GyrationTensorCV.html#a68cd7731a77e1a4e4ba2835a6fe65467" title="Set up collective variable." alt="" coords="677,2098,871,2140"/>
-<area shape="rect" id="node42" href="$classSSAGES_1_1AntiBetaRMSDCV.html#a4153e7b2aa827ac6367ec6374f986370" title="Set up collective variable." alt="" coords="677,2008,871,2049"/>
-<area shape="rect" id="node44" href="$classSSAGES_1_1ParallelBetaRMSDCV.html#ad4c42c1bddc74fc312517ad13526c5cc" title="Set up collective variable." alt="" coords="667,201,881,242"/>
-<area shape="rect" id="node3" href="$classSSAGES_1_1BoxVolumeCV.html#a7ee65e561d37693a782f8b61b0005ba8" title="Constructor." alt="" coords="951,478,1122,520"/>
-<area shape="rect" id="node4" href="$classJson_1_1Requirement.html#a60bc275c366eb59f192fa2e621268480" title="Get list of error messages." alt="" coords="1207,1446,1347,1488"/>
-<area shape="rect" id="node5" href="$classJson_1_1Requirement.html#adfaec336a9f051d6f6b9a6d7f1d97b75" title="Check if errors have occured." alt="" coords="1207,1040,1347,1081"/>
-<area shape="rect" id="node6" href="$classJson_1_1ObjectRequirement.html#a4ed02ae1d612a5efba1688fcdd2df092" title="Parse JSON value to generate Requirement(s)." alt="" coords="951,880,1122,921"/>
-<area shape="rect" id="node14" href="$classJson_1_1ObjectRequirement.html#a9ac3b920001a35bc70580035d8d802b7" title="Validate JSON value." alt="" coords="951,1266,1122,1308"/>
-<area shape="rect" id="node7" href="$classJson_1_1RequirementLoader.html#a82857d029b7ebfeb315f5b1b32401291" title="Extended Requirement loader." alt="" coords="1192,945,1363,986"/>
-<area shape="rect" id="node8" href="$classJson_1_1RequirementLoader.html#aeb1344919deda4bd8b8aa8a00cb50390" title="Load specific requirement." alt="" coords="1192,814,1363,856"/>
-<area shape="rect" id="node9" href="$classJson_1_1ObjectRequirement.html#a4f2e76636df4f7b153aaac02a1b05e4f" title="Reset Requirement." alt="" coords="1192,880,1363,921"/>
-<area shape="rect" id="node10" href="$classJson_1_1ObjectRequirement.html#aa8181c37cbe67db098bc2b82cdea71ef" title="Clear errors on all Requirements." alt="" coords="1411,848,1581,889"/>
-<area shape="rect" id="node12" href="$classJson_1_1ObjectRequirement.html#a4fc797684496f4f0381d1388877c133d" title="Clear notices on all Requirements." alt="" coords="1411,913,1581,954"/>
-<area shape="rect" id="node11" href="$classJson_1_1Requirement.html#ace71ebbbcc885f0c4c391a3807c80f33" title="Clear list of error messages." alt="" coords="1629,848,1769,889"/>
-<area shape="rect" id="node13" href="$classJson_1_1Requirement.html#a8a8a4020e4955be56dcacf4727ae5bc3" title="Clear list of notice messages." alt="" coords="1629,913,1769,954"/>
-<area shape="rect" id="node15" href="$classJson_1_1Requirement.html#a46a0056414100386541cd1cb899e0030" title="Get list of notices." alt="" coords="1207,1316,1347,1357"/>
-<area shape="rect" id="node16" href="$classJson_1_1Requirement.html#ad407cff3cc37295c3b2a7ebe31798548" title="Check if notices have been queued." alt="" coords="1207,1381,1347,1422"/>
-<area shape="rect" id="node17" href="$classJson_1_1Requirement.html#adeb9efa6cf271d9cea0599ff2d458a08" title="Add error to list of error messages." alt="" coords="1207,1120,1347,1161"/>
-<area shape="rect" id="node18" href="$classJson_1_1Requirement.html#a00feadb29fa33f4f2cca7362f12aaed4" title="Add message to list of notices." alt="" coords="1207,1185,1347,1226"/>
-<area shape="rect" id="node19" href="$classJson_1_1Requirement.html#aa97494b642414d00482745a0d5b2c2c3" title="Validate that JSON value meets requirements." alt="" coords="1207,1250,1347,1292"/>
-<area shape="rect" id="node21" href="$classSSAGES_1_1AngleCV.html#a34ffc931d859a502a8f8c5f61561c896" title="Constructor." alt="" coords="938,996,1135,1023"/>
-<area shape="rect" id="node23" href="$classSSAGES_1_1ParticlePositionCV.html#a39b2186e88bf022a8daacc377ee2c7d4" title="Constructor." alt="" coords="949,814,1125,856"/>
-<area shape="rect" id="node25" href="$classSSAGES_1_1ParticleSeparationCV.html#acca418a2a17dcb9ebc4e8afe0bb70f2e" title="Constructor." alt="" coords="941,1098,1132,1140"/>
-<area shape="rect" id="node28" href="$classSSAGES_1_1RouseModeCV.html#ad62878654ee690c5ef822fea8339ef88" title="Basic Constructor for Rouse Mode CV." alt="" coords="949,310,1124,352"/>
-<area shape="rect" id="node30" href="$classSSAGES_1_1PairwiseKernel.html#a86c0b897d04fe123892e6c2040bfb93c" title="Build PairwiseKernel from JSON value." alt="" coords="447,1274,619,1316"/>
-<area shape="rect" id="node35" href="$classSSAGES_1_1PairwiseCV.html#a77ae0e65a307c1ed5a9d62a484594620" title="Constructor." alt="" coords="455,1153,610,1194"/>
-<area shape="rect" id="node31" href="$classSSAGES_1_1GaussianPK.html#a6f2f35a0333bc7ba17c1999a2e38a2e1" title="Build GaussianPK from JSON value." alt="" coords="695,1274,853,1316"/>
-<area shape="rect" id="node33" href="$classSSAGES_1_1RationalSwitchPK.html#aaba99dea2481b50341bd1ab50c991c6c" title="Build RationalSwitchPK from JSON value." alt="" coords="679,1429,869,1470"/>
-<area shape="rect" id="node32" href="$classSSAGES_1_1GaussianPK.html#ae59d5abfa691a753217f5432482e2da5" title="Constructor." alt="" coords="957,1536,1116,1577"/>
-<area shape="rect" id="node34" href="$classSSAGES_1_1RationalSwitchPK.html#a0d0a3ffa78f7d10c1b6c99ef27276f9e" title="Constructor." alt="" coords="941,1704,1132,1745"/>
-<area shape="rect" id="node37" href="$classSSAGES_1_1TorsionalCV.html#a28a96a296391278851ea282446d5ac48" title="Constructor." alt="" coords="958,646,1115,688"/>
-<area shape="rect" id="node39" href="$classSSAGES_1_1AlphaRMSDCV.html#a85a0ad9aaa232668fe3f8430d3c868f3" title="Constructor." alt="" coords="948,1872,1125,1913"/>
-<area shape="rect" id="node41" href="$classSSAGES_1_1GyrationTensorCV.html#a54a008fdec13d9fc23b9adfb41172717" title="Constructor." alt="" coords="940,2258,1133,2300"/>
-<area shape="rect" id="node43" href="$classSSAGES_1_1AntiBetaRMSDCV.html#af96db83beb2e9985a36894ca3ff172b9" title="Constructor." alt="" coords="939,2040,1134,2081"/>
-<area shape="rect" id="node45" href="$classSSAGES_1_1ParallelBetaRMSDCV.html#a24ef880045794b0fae9f3ac5a2ca9be1" title="Constructor." alt="" coords="929,92,1144,133"/>
+<area shape="rect" id="node1" title="Set up collective variable." alt="" coords="5,1112,196,1154"/>
+<area shape="rect" id="node2" href="$classSSAGES_1_1BoxVolumeCV.html#a75675bb4e1bdcb198b7201ed0ea6cc24" title="Set up collective variable." alt="" coords="689,2432,859,2474"/>
+<area shape="rect" id="node20" href="$classSSAGES_1_1AngleCV.html#abb07c513c9eb73a0b4b44f2eb602096d" title="Set up collective variable." alt="" coords="687,405,861,432"/>
+<area shape="rect" id="node22" href="$classSSAGES_1_1ParticlePositionCV.html#aba39d6128e00ab299f41c12b46c45b8b" title="Set up collective variable." alt="" coords="686,1664,862,1706"/>
+<area shape="rect" id="node24" href="$classSSAGES_1_1ParticleSeparationCV.html#a1e8c2b87b91bdf8722e37feb109576fd" title="Set up collective variable." alt="" coords="679,228,869,270"/>
+<area shape="rect" id="node26" href="$classSSAGES_1_1ParticleCoordinateCV.html#ad21a72b2fe3e34c16c985fb13de32d58" title="Set up collective variable." alt="" coords="678,1500,870,1542"/>
+<area shape="rect" id="node27" href="$classSSAGES_1_1RouseModeCV.html#a369dd6839f82c595844881f3db88a956" title="Set up collective variable." alt="" coords="687,891,861,932"/>
+<area shape="rect" id="node29" href="$classSSAGES_1_1PairwiseCV.html#ad07080b9c899d5a31f233a2103994931" title="Set up collective variable." alt="" coords="244,1475,399,1516"/>
+<area shape="rect" id="node36" href="$classSSAGES_1_1TorsionalCV.html#acfa27d84d60248c363d111a82f175749" title="Set up collective variable." alt="" coords="695,1146,853,1187"/>
+<area shape="rect" id="node38" href="$classSSAGES_1_1AlphaRMSDCV.html#a927dbccb0136c844a5b1cc8b2e74ecbd" title="Set up collective variable." alt="" coords="685,1250,863,1291"/>
+<area shape="rect" id="node40" href="$classSSAGES_1_1ANNCV.html#a8173b4f597f6eba50295c5eeb508dec1" title="Set up collective variable." alt="" coords="689,1449,859,1476"/>
+<area shape="rect" id="node42" href="$classSSAGES_1_1RMSDCV.html#ac74e72f38b333070f66d6ae383a860a1" title="Set up collective variable." alt="" coords="683,1074,865,1101"/>
+<area shape="rect" id="node44" href="$classSSAGES_1_1GyrationTensorCV.html#a68cd7731a77e1a4e4ba2835a6fe65467" title="Set up collective variable." alt="" coords="677,2154,871,2195"/>
+<area shape="rect" id="node46" href="$classSSAGES_1_1AntiBetaRMSDCV.html#a4153e7b2aa827ac6367ec6374f986370" title="Set up collective variable." alt="" coords="677,583,871,624"/>
+<area shape="rect" id="node48" href="$classSSAGES_1_1ParallelBetaRMSDCV.html#ad4c42c1bddc74fc312517ad13526c5cc" title="Set up collective variable." alt="" coords="667,742,881,783"/>
+<area shape="rect" id="node3" href="$classSSAGES_1_1BoxVolumeCV.html#a7ee65e561d37693a782f8b61b0005ba8" title="Constructor." alt="" coords="951,2462,1122,2503"/>
+<area shape="rect" id="node4" href="$classJson_1_1Requirement.html#a60bc275c366eb59f192fa2e621268480" title="Get list of error messages." alt="" coords="1207,1075,1347,1116"/>
+<area shape="rect" id="node5" href="$classJson_1_1Requirement.html#adfaec336a9f051d6f6b9a6d7f1d97b75" title="Check if errors have occured." alt="" coords="1207,1479,1347,1520"/>
+<area shape="rect" id="node6" href="$classJson_1_1ObjectRequirement.html#a4ed02ae1d612a5efba1688fcdd2df092" title="Parse JSON value to generate Requirement(s)." alt="" coords="951,1622,1122,1663"/>
+<area shape="rect" id="node14" href="$classJson_1_1ObjectRequirement.html#a9ac3b920001a35bc70580035d8d802b7" title="Validate JSON value." alt="" coords="951,1302,1122,1343"/>
+<area shape="rect" id="node7" href="$classJson_1_1RequirementLoader.html#a82857d029b7ebfeb315f5b1b32401291" title="Extended Requirement loader." alt="" coords="1192,1556,1363,1598"/>
+<area shape="rect" id="node8" href="$classJson_1_1RequirementLoader.html#aeb1344919deda4bd8b8aa8a00cb50390" title="Load specific requirement." alt="" coords="1192,1622,1363,1663"/>
+<area shape="rect" id="node9" href="$classJson_1_1ObjectRequirement.html#a4f2e76636df4f7b153aaac02a1b05e4f" title="Reset Requirement." alt="" coords="1192,1687,1363,1728"/>
+<area shape="rect" id="node10" href="$classJson_1_1ObjectRequirement.html#aa8181c37cbe67db098bc2b82cdea71ef" title="Clear errors on all Requirements." alt="" coords="1411,1654,1581,1695"/>
+<area shape="rect" id="node12" href="$classJson_1_1ObjectRequirement.html#a4fc797684496f4f0381d1388877c133d" title="Clear notices on all Requirements." alt="" coords="1411,1719,1581,1760"/>
+<area shape="rect" id="node11" href="$classJson_1_1Requirement.html#ace71ebbbcc885f0c4c391a3807c80f33" title="Clear list of error messages." alt="" coords="1629,1654,1769,1695"/>
+<area shape="rect" id="node13" href="$classJson_1_1Requirement.html#a8a8a4020e4955be56dcacf4727ae5bc3" title="Clear list of notice messages." alt="" coords="1629,1719,1769,1760"/>
+<area shape="rect" id="node15" href="$classJson_1_1Requirement.html#a46a0056414100386541cd1cb899e0030" title="Get list of notices." alt="" coords="1207,1152,1347,1194"/>
+<area shape="rect" id="node16" href="$classJson_1_1Requirement.html#ad407cff3cc37295c3b2a7ebe31798548" title="Check if notices have been queued." alt="" coords="1207,1218,1347,1259"/>
+<area shape="rect" id="node17" href="$classJson_1_1Requirement.html#adeb9efa6cf271d9cea0599ff2d458a08" title="Add error to list of error messages." alt="" coords="1207,1283,1347,1324"/>
+<area shape="rect" id="node18" href="$classJson_1_1Requirement.html#a00feadb29fa33f4f2cca7362f12aaed4" title="Add message to list of notices." alt="" coords="1207,1348,1347,1390"/>
+<area shape="rect" id="node19" href="$classJson_1_1Requirement.html#aa97494b642414d00482745a0d5b2c2c3" title="Validate that JSON value meets requirements." alt="" coords="1207,1414,1347,1455"/>
+<area shape="rect" id="node21" href="$classSSAGES_1_1AngleCV.html#a34ffc931d859a502a8f8c5f61561c896" title="Constructor." alt="" coords="938,258,1135,285"/>
+<area shape="rect" id="node23" href="$classSSAGES_1_1ParticlePositionCV.html#a39b2186e88bf022a8daacc377ee2c7d4" title="Constructor." alt="" coords="949,1790,1125,1831"/>
+<area shape="rect" id="node25" href="$classSSAGES_1_1ParticleSeparationCV.html#acca418a2a17dcb9ebc4e8afe0bb70f2e" title="Constructor." alt="" coords="941,91,1132,132"/>
+<area shape="rect" id="node28" href="$classSSAGES_1_1RouseModeCV.html#ad62878654ee690c5ef822fea8339ef88" title="Basic Constructor for Rouse Mode CV." alt="" coords="949,747,1124,788"/>
+<area shape="rect" id="node30" href="$classSSAGES_1_1PairwiseKernel.html#a86c0b897d04fe123892e6c2040bfb93c" title="Build PairwiseKernel from JSON value." alt="" coords="447,1848,619,1890"/>
+<area shape="rect" id="node35" href="$classSSAGES_1_1PairwiseCV.html#a77ae0e65a307c1ed5a9d62a484594620" title="Constructor." alt="" coords="455,1475,610,1516"/>
+<area shape="rect" id="node31" href="$classSSAGES_1_1GaussianPK.html#a6f2f35a0333bc7ba17c1999a2e38a2e1" title="Build GaussianPK from JSON value." alt="" coords="695,1848,853,1890"/>
+<area shape="rect" id="node33" href="$classSSAGES_1_1RationalSwitchPK.html#aaba99dea2481b50341bd1ab50c991c6c" title="Build RationalSwitchPK from JSON value." alt="" coords="679,1990,869,2031"/>
+<area shape="rect" id="node32" href="$classSSAGES_1_1GaussianPK.html#ae59d5abfa691a753217f5432482e2da5" title="Constructor." alt="" coords="957,1958,1116,1999"/>
+<area shape="rect" id="node34" href="$classSSAGES_1_1RationalSwitchPK.html#a0d0a3ffa78f7d10c1b6c99ef27276f9e" title="Constructor." alt="" coords="941,2126,1132,2167"/>
+<area shape="rect" id="node37" href="$classSSAGES_1_1TorsionalCV.html#a28a96a296391278851ea282446d5ac48" title="Constructor." alt="" coords="958,1016,1115,1058"/>
+<area shape="rect" id="node39" href="$classSSAGES_1_1AlphaRMSDCV.html#a85a0ad9aaa232668fe3f8430d3c868f3" title="Constructor." alt="" coords="948,1134,1125,1175"/>
+<area shape="rect" id="node41" href="$classSSAGES_1_1ANNCV.html#ac2a9803e346a8da16cc785becaa3b291" title="Constructor." alt="" coords="942,1520,1131,1546"/>
+<area shape="rect" id="node43" href="$classSSAGES_1_1RMSDCV.html#abb46de7eb9e6c8cced1efb73d72636ec" title="Constructor." alt="" coords="931,914,1142,941"/>
+<area shape="rect" id="node45" href="$classSSAGES_1_1GyrationTensorCV.html#a54a008fdec13d9fc23b9adfb41172717" title="Constructor." alt="" coords="940,2344,1133,2386"/>
+<area shape="rect" id="node47" href="$classSSAGES_1_1AntiBetaRMSDCV.html#af96db83beb2e9985a36894ca3ff172b9" title="Constructor." alt="" coords="939,411,1134,452"/>
+<area shape="rect" id="node49" href="$classSSAGES_1_1ParallelBetaRMSDCV.html#a24ef880045794b0fae9f3ac5a2ca9be1" title="Constructor." alt="" coords="929,579,1144,620"/>
 </map>

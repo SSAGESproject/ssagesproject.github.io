@@ -1,5 +1,0 @@
-<map id="SSAGES::gaussianDerv" name="SSAGES::gaussianDerv">
-<area shape="rect" id="node1" title="Evaluate Gaussian derivative. Helper function." alt="" coords="261,31,427,57"/>
-<area shape="rect" id="node2" href="$classSSAGES_1_1Meta.html#afc8e23308641672a8e0363e2d40b19c2" title="Adds a new hill." alt="" coords="27,5,191,32"/>
-<area shape="rect" id="node3" href="$classSSAGES_1_1Meta.html#a9cd073ee3c04a98e5131e96ffcb11df8" title="Computes the bias force." alt="" coords="5,56,213,83"/>
-</map>

@@ -1,4 +1,0 @@
-<map id="SSAGES::BFS::SetBasis" name="SSAGES::BFS::SetBasis">
-<area shape="rect" id="node1" title="Set the values for the basis." alt="" coords="5,13,177,39"/>
-<area shape="rect" id="node2" href="$classSSAGES_1_1BasisEvaluator.html#a17469fad6d29661c670c2b4ce4877570" title="Set the coefficient array in the event of a restart run." alt="" coords="225,5,399,47"/>
-</map>

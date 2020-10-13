@@ -1,8 +1,0 @@
-<map id="SSAGES::GaussianPK::GaussianPK" name="SSAGES::GaussianPK::GaussianPK">
-<area shape="rect" id="node1" title="Constructor." alt="" coords="1108,5,1267,47"/>
-<area shape="rect" id="node2" href="$classSSAGES_1_1GaussianPK.html#a6f2f35a0333bc7ba17c1999a2e38a2e1" title="Build GaussianPK from JSON value." alt="" coords="901,5,1060,47"/>
-<area shape="rect" id="node3" href="$classSSAGES_1_1PairwiseKernel.html#a86c0b897d04fe123892e6c2040bfb93c" title="Build PairwiseKernel from JSON value." alt="" coords="681,5,853,47"/>
-<area shape="rect" id="node4" href="$classSSAGES_1_1PairwiseCV.html#ad07080b9c899d5a31f233a2103994931" title="Set up collective variable." alt="" coords="479,5,633,47"/>
-<area shape="rect" id="node5" href="$classSSAGES_1_1CollectiveVariable.html#ab56eae0d888f3d5125566bfb9b5e21aa" title="Set up collective variable." alt="" coords="240,5,431,47"/>
-<area shape="rect" id="node6" href="$classSSAGES_1_1ResourceHandler.html#ac026ad9aa098fa1508a78b0b5a91e8a2" title="Build a new ResourceHandler from JSON." alt="" coords="5,5,192,47"/>
-</map>

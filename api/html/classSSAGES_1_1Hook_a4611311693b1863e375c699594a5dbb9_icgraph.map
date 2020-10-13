@@ -1,4 +1,0 @@
-<map id="SSAGES::Hook::SetCVManager" name="SSAGES::Hook::SetCVManager">
-<area shape="rect" id="node1" title="Sets the current CV manager." alt="" coords="240,13,453,39"/>
-<area shape="rect" id="node2" href="$classSSAGES_1_1ResourceHandler.html#a9a83bec9ea0d0cfe67596d439490e766" title="Configure the Hook from given resources." alt="" coords="5,5,192,47"/>
-</map>
