@@ -1,4 +1,6 @@
 <map id="SSAGES::GridBase::wrapIndices" name="SSAGES::GridBase::wrapIndices">
-<area shape="rect" id="node1" title="Wrap the index around periodic boundaries." alt="" coords="237,13,455,39"/>
-<area shape="rect" id="node2" href="$classSSAGES_1_1GridBase.html#a500069259f6fece46ab04eeb2783ac83" title="Return the Grid indices for a given point." alt="" coords="5,5,189,47"/>
+<area shape="rect" id="node1" title="Wrap the index around periodic boundaries." alt="" coords="512,31,729,57"/>
+<area shape="rect" id="node2" href="$classSSAGES_1_1GridBase.html#a500069259f6fece46ab04eeb2783ac83" title="Return the Grid indices for a given point." alt="" coords="253,31,464,57"/>
+<area shape="rect" id="node3" href="$classSSAGES_1_1GridBase.html#a292e31519c756288f7ad7295ffac6077" title="Access Grid element pertaining to a specific point – read&#45;only." alt="" coords="26,5,185,32"/>
+<area shape="rect" id="node4" href="$classSSAGES_1_1GridBase.html#a79d7f8bcf88ffb70310d26bb3a6d16e3" title="Return linear interpolation on a coordinate." alt="" coords="5,56,205,83"/>
 </map>

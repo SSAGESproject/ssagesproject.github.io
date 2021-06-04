@@ -2,7 +2,7 @@
 <area shape="rect" id="node1" title="Evaluate the CV." alt="" coords="5,137,196,179"/>
 <area shape="rect" id="node2" href="$classSSAGES_1_1Snapshot.html#ad6caa5b92433501fd4a62deef288340a" title="Apply minimum image to a vector." alt="" coords="507,5,741,47"/>
 <area shape="rect" id="node4" href="$classSSAGES_1_1Snapshot.html#ac600b5f3d3e240d2cc9965c06547e97e" title="Compute center of mass of a group of atoms based on index." alt="" coords="258,49,445,91"/>
-<area shape="rect" id="node5" href="$classSSAGES_1_1Snapshot.html#a77cfe35b720393223aa5c7410b2dd3ad" title="Compute the total mass of a group of particles based on index." alt="" coords="519,86,729,113"/>
+<area shape="rect" id="node5" href="$classSSAGES_1_1Snapshot.html#a77cfe35b720393223aa5c7410b2dd3ad" title="Compute the total mass of a group of particles based on index." alt="" coords="520,86,728,113"/>
 <area shape="rect" id="node6" href="$classSSAGES_1_1Snapshot.html#a196a91c541c72bcb5147b9e60a44ea8b" title=" " alt="" coords="251,167,451,208"/>
 <area shape="rect" id="node8" href="$classSSAGES_1_1Snapshot.html#abef8348e7811deeea88a7ff8f49a1af4" title="Const access to the particle masses." alt="" coords="244,233,459,259"/>
 <area shape="rect" id="node9" href="$classSSAGES_1_1Snapshot.html#a103af07a012d55a9637f6203c7eba0af" title="Get number of atoms in this snapshot." alt="" coords="253,284,450,325"/>

@@ -1,0 +1,4 @@
+<map id="SSAGES::GridBase::GetNumPoints" name="SSAGES::GridBase::GetNumPoints">
+<area shape="rect" id="node1" title="Get the number of points for a specific dimension." alt="" coords="5,5,201,47"/>
+<area shape="rect" id="node2" href="$classSSAGES_1_1GridBase.html#a72f98ef47da691b00823d612efbd46b8" title="Get the dimension." alt="" coords="249,13,480,39"/>
+</map>

@@ -1,4 +1,4 @@
 <map id="SSAGES::Snapshot::GetTargetIterations" name="SSAGES::Snapshot::GetTargetIterations">
-<area shape="rect" id="node1" title="Get target iterations." alt="" coords="256,5,463,47"/>
+<area shape="rect" id="node1" title="Get target iterations." alt="" coords="256,5,461,47"/>
 <area shape="rect" id="node2" href="$classSSAGES_1_1Meta.html#a9a584ea39168a9fd57f5f7cf98102480" title="Method call prior to simulation initiation." alt="" coords="5,13,208,39"/>
 </map>

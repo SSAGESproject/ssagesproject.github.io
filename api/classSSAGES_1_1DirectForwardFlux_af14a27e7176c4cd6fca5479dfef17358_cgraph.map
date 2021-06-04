@@ -1,0 +1,5 @@
+<map id="SSAGES::DirectForwardFlux::InitializeQueue" name="SSAGES::DirectForwardFlux::InitializeQueue">
+<area shape="rect" id="node1" title="Initialize the Queue." alt="" coords="5,39,197,80"/>
+<area shape="rect" id="node2" href="$classSSAGES_1_1EventListener.html#af9666daacfb047c1dd279ea339524d07" title="Check if current processor is master." alt="" coords="245,5,411,47"/>
+<area shape="rect" id="node3" href="$classSSAGES_1_1ForwardFlux.html#ac5227afa53bf05d387b480850ef4bb77" title="Pop the queue, do MPI so that all procs maintain the same queue." alt="" coords="249,71,407,112"/>
+</map>

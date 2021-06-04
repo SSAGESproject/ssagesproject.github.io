@@ -1,13 +1,15 @@
 <map id="SSAGES::ANN::PreSimulation" name="SSAGES::ANN::PreSimulation">
 <area shape="rect" id="node1" title="Method call prior to simulation initiation." alt="" coords="5,144,208,171"/>
-<area shape="rect" id="node2" href="$classSSAGES_1_1Grid.html#a709374b3cadf320347604077a2e45e5b" title="Return iterator at first grid point." alt="" coords="297,5,445,32"/>
-<area shape="rect" id="node3" href="$classSSAGES_1_1Grid.html#ac4fcc9f0cd61476ce4fd880c768d9694" title="Return iterator after last valid grid point." alt="" coords="302,56,441,83"/>
-<area shape="rect" id="node4" href="$classSSAGES_1_1CVManager.html#ad2a31c91a0298b4e80ca5ba720c5eee3" title="Get CV iterator." alt="" coords="290,107,453,149"/>
-<area shape="rect" id="node5" href="$classSSAGES_1_1GridBase.html#a72f98ef47da691b00823d612efbd46b8" title="Get the dimension." alt="" coords="256,173,487,200"/>
-<area shape="rect" id="node6" href="$classSSAGES_1_1Snapshot.html#a00e9e35fb3f541b61a39acb142470a61" title="Get system Kb." alt="" coords="279,224,464,251"/>
-<area shape="rect" id="node7" href="$classSSAGES_1_1ANN.html#a7091cb356fa05bc0b21a4e37144fb0b7" title="Trains the neural network." alt="" coords="271,275,471,301"/>
-<area shape="rect" id="node8" href="$classSSAGES_1_1GridBase.html#a52e519b13f9b53c0767957d86015b0a1" title="Get pointer to the internal data storage vector." alt="" coords="548,187,720,213"/>
-<area shape="rect" id="node9" href="$classSSAGES_1_1EventListener.html#af9666daacfb047c1dd279ea339524d07" title="Check if current processor is master." alt="" coords="551,238,717,279"/>
-<area shape="rect" id="node10" href="$classSSAGES_1_1GridBase.html#a4f8abb752ae6ec51ebcf24b599bf4896" title="Get the size of the internal storage vector." alt="" coords="549,304,719,331"/>
-<area shape="rect" id="node11" href="$classSSAGES_1_1GridBase.html#ab52bfd510cd1dffb2d91f516c9266c4b" title="Sync the grid." alt="" coords="535,355,733,381"/>
+<area shape="rect" id="node2" href="$classSSAGES_1_1Grid.html#a709374b3cadf320347604077a2e45e5b" title="Return iterator at first grid point." alt="" coords="282,5,430,32"/>
+<area shape="rect" id="node3" href="$classSSAGES_1_1Grid.html#ac4fcc9f0cd61476ce4fd880c768d9694" title="Return iterator after last valid grid point." alt="" coords="287,56,425,83"/>
+<area shape="rect" id="node4" href="$classSSAGES_1_1CVManager.html#ad2a31c91a0298b4e80ca5ba720c5eee3" title="Get CV iterator." alt="" coords="275,107,437,149"/>
+<area shape="rect" id="node5" href="$classSSAGES_1_1GridBase.html#a72f98ef47da691b00823d612efbd46b8" title="Get the dimension." alt="" coords="957,341,1188,368"/>
+<area shape="rect" id="node6" href="$classSSAGES_1_1Snapshot.html#a00e9e35fb3f541b61a39acb142470a61" title="Get system Kb." alt="" coords="263,224,449,251"/>
+<area shape="rect" id="node7" href="$classSSAGES_1_1ANN.html#a7091cb356fa05bc0b21a4e37144fb0b7" title="Trains the neural network." alt="" coords="256,283,456,309"/>
+<area shape="rect" id="node8" href="$classSSAGES_1_1GridBase.html#a52e519b13f9b53c0767957d86015b0a1" title="Get pointer to the internal data storage vector." alt="" coords="517,224,689,251"/>
+<area shape="rect" id="node9" href="$classSSAGES_1_1EventListener.html#af9666daacfb047c1dd279ea339524d07" title="Check if current processor is master." alt="" coords="521,275,686,317"/>
+<area shape="rect" id="node10" href="$classSSAGES_1_1GridBase.html#a4f8abb752ae6ec51ebcf24b599bf4896" title="Get the size of the internal storage vector." alt="" coords="518,341,689,368"/>
+<area shape="rect" id="node11" href="$classSSAGES_1_1GridBase.html#ab52bfd510cd1dffb2d91f516c9266c4b" title="Sync the grid." alt="" coords="504,392,703,419"/>
+<area shape="rect" id="node12" href="$classSSAGES_1_1GridBase.html#a7da01557a9b85498c2acd975c152403a" title="Access Grid element read&#45;only." alt="" coords="751,392,909,419"/>
+<area shape="rect" id="node13" href="$classSSAGES_1_1GridBase.html#a1f7bae14a777239968ae9445d19af823" title="This function needs to be implemented by child classes." alt="" coords="973,392,1173,419"/>
 </map>

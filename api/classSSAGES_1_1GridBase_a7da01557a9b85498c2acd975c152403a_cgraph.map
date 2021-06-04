@@ -1,0 +1,5 @@
+<map id="SSAGES::GridBase::at" name="SSAGES::GridBase::at">
+<area shape="rect" id="node1" title="Access Grid element read&#45;only." alt="" coords="5,31,164,57"/>
+<area shape="rect" id="node2" href="$classSSAGES_1_1GridBase.html#a72f98ef47da691b00823d612efbd46b8" title="Get the dimension." alt="" coords="212,5,443,32"/>
+<area shape="rect" id="node3" href="$classSSAGES_1_1GridBase.html#a1f7bae14a777239968ae9445d19af823" title="This function needs to be implemented by child classes." alt="" coords="227,56,427,83"/>
+</map>

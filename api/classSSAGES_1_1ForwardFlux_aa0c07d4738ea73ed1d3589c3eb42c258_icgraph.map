@@ -1,0 +1,4 @@
+<map id="SSAGES::ForwardFlux::CheckInitialStructure" name="SSAGES::ForwardFlux::CheckInitialStructure">
+<area shape="rect" id="node1" title="Function that checks the initial structure that user provides." alt="" coords="245,5,403,47"/>
+<area shape="rect" id="node2" href="$classSSAGES_1_1DirectForwardFlux.html#a5491cd537f737524f5fc295236eefb85" title="Post&#45;integration hook." alt="" coords="5,5,197,47"/>
+</map>

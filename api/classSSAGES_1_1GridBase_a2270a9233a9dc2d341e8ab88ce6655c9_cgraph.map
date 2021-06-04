@@ -1,0 +1,4 @@
+<map id="SSAGES::GridBase::GetLower" name="SSAGES::GridBase::GetLower">
+<area shape="rect" id="node1" title="Return the lower edges of the Grid." alt="" coords="5,5,208,32"/>
+<area shape="rect" id="node2" href="$classSSAGES_1_1GridBase.html#ab4ff38d7e0ca60dfebd82c36d89cbede" title="Return the periodicity of the Grid." alt="" coords="256,5,471,32"/>
+</map>

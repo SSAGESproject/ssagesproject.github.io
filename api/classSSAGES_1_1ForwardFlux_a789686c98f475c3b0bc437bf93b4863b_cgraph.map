@@ -1,0 +1,6 @@
+<map id="SSAGES::ForwardFlux::AppendTrajectoryFile" name="SSAGES::ForwardFlux::AppendTrajectoryFile">
+<area shape="rect" id="node1" title=" " alt="" coords="5,49,163,90"/>
+<area shape="rect" id="node2" href="$classSSAGES_1_1Snapshot.html#ac9cd613a5fd8dacbd6dfc839cf526d28" title="Access the atom IDs." alt="" coords="213,5,435,32"/>
+<area shape="rect" id="node3" href="$classSSAGES_1_1Snapshot.html#a91852084d69a0703a8fcc9b27dc50459" title="Access the particle positions." alt="" coords="213,56,435,83"/>
+<area shape="rect" id="node4" href="$classSSAGES_1_1Snapshot.html#adb14bcfae16bc7490320fd1890b36cff" title="Access the particle velocities." alt="" coords="211,107,437,133"/>
+</map>

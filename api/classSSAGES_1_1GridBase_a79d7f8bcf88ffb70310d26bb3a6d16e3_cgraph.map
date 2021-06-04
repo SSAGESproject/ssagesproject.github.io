@@ -1,0 +1,9 @@
+<map id="SSAGES::GridBase::GetIndex" name="SSAGES::GridBase::GetIndex">
+<area shape="rect" id="node1" title="Return linear interpolation on a coordinate." alt="" coords="5,81,205,108"/>
+<area shape="rect" id="node2" href="$classSSAGES_1_1GridBase.html#a7da01557a9b85498c2acd975c152403a" title="Access Grid element read&#45;only." alt="" coords="279,56,438,83"/>
+<area shape="rect" id="node5" href="$classSSAGES_1_1GridBase.html#a500069259f6fece46ab04eeb2783ac83" title="Return the Grid indices for a given point." alt="" coords="253,107,464,133"/>
+<area shape="rect" id="node3" href="$classSSAGES_1_1GridBase.html#a72f98ef47da691b00823d612efbd46b8" title="Get the dimension." alt="" coords="512,5,743,32"/>
+<area shape="rect" id="node4" href="$classSSAGES_1_1GridBase.html#a1f7bae14a777239968ae9445d19af823" title="This function needs to be implemented by child classes." alt="" coords="527,56,727,83"/>
+<area shape="rect" id="node6" href="$classSSAGES_1_1GridBase.html#ab4ff38d7e0ca60dfebd82c36d89cbede" title="Return the periodicity of the Grid." alt="" coords="791,132,1005,159"/>
+<area shape="rect" id="node7" href="$classSSAGES_1_1GridBase.html#ada5a15258acbb2c9ed192c0fa9763979" title="Wrap the index around periodic boundaries." alt="" coords="519,157,736,184"/>
+</map>

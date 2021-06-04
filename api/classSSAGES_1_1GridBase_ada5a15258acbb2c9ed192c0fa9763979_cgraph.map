@@ -1,0 +1,4 @@
+<map id="SSAGES::GridBase::wrapIndices" name="SSAGES::GridBase::wrapIndices">
+<area shape="rect" id="node1" title="Wrap the index around periodic boundaries." alt="" coords="5,5,223,32"/>
+<area shape="rect" id="node2" href="$classSSAGES_1_1GridBase.html#ab4ff38d7e0ca60dfebd82c36d89cbede" title="Return the periodicity of the Grid." alt="" coords="271,5,485,32"/>
+</map>

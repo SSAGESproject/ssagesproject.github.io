@@ -1,0 +1,4 @@
+<map id="SSAGES::ANNCV::back_prop" name="SSAGES::ANNCV::back_prop">
+<area shape="rect" id="node1" title="Backpropagation through network to calculate gradient." alt="" coords="244,5,444,32"/>
+<area shape="rect" id="node2" href="$classSSAGES_1_1ANNCV.html#a1ddb11f32dbf1c1c19e119310c047a0d" title="Evaluate the CV." alt="" coords="5,5,196,32"/>
+</map>

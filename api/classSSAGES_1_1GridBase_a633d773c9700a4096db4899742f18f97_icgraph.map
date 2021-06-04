@@ -1,4 +1,4 @@
 <map id="SSAGES::GridBase::GetCoordinates" name="SSAGES::GridBase::GetCoordinates">
-<area shape="rect" id="node1" title="! Return the distance to adjacent grid center points from given coordinates" alt="" coords="241,13,480,39"/>
-<area shape="rect" id="node2" href="$classSSAGES_1_1GridBase.html#a32ae57c8d754f4b41fcbe13b3e1dcc75" title="Return center point of 1d&#45;grid." alt="" coords="5,5,193,47"/>
+<area shape="rect" id="node1" title="! Return the distance to adjacent grid center points from given coordinates" alt="" coords="284,5,523,32"/>
+<area shape="rect" id="node2" href="$classSSAGES_1_1GridBase.html#a32ae57c8d754f4b41fcbe13b3e1dcc75" title="Return center point of 1d&#45;grid." alt="" coords="5,5,236,32"/>
 </map>

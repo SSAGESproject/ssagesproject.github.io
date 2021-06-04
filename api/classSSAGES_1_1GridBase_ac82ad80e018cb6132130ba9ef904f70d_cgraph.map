@@ -1,0 +1,5 @@
+<map id="SSAGES::GridBase::GetLower" name="SSAGES::GridBase::GetLower">
+<area shape="rect" id="node1" title="Get the lower edge for a specific dimension." alt="" coords="5,31,208,57"/>
+<area shape="rect" id="node2" href="$classSSAGES_1_1GridBase.html#a72f98ef47da691b00823d612efbd46b8" title="Get the dimension." alt="" coords="256,5,487,32"/>
+<area shape="rect" id="node3" href="$classSSAGES_1_1GridBase.html#ab4ff38d7e0ca60dfebd82c36d89cbede" title="Return the periodicity of the Grid." alt="" coords="264,56,479,83"/>
+</map>

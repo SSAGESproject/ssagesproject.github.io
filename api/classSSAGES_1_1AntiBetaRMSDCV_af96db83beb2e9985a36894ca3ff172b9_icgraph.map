@@ -1,6 +1,6 @@
 <map id="SSAGES::AntiBetaRMSDCV::AntiBetaRMSDCV" name="SSAGES::AntiBetaRMSDCV::AntiBetaRMSDCV">
-<area shape="rect" id="node1" title="Constructor." alt="" coords="721,5,916,47"/>
-<area shape="rect" id="node2" href="$classSSAGES_1_1AntiBetaRMSDCV.html#a4153e7b2aa827ac6367ec6374f986370" title="Set up collective variable." alt="" coords="479,5,673,47"/>
-<area shape="rect" id="node3" href="$classSSAGES_1_1CollectiveVariable.html#ab56eae0d888f3d5125566bfb9b5e21aa" title="Set up collective variable." alt="" coords="240,5,431,47"/>
+<area shape="rect" id="node1" title="Constructor." alt="" coords="720,5,915,47"/>
+<area shape="rect" id="node2" href="$classSSAGES_1_1AntiBetaRMSDCV.html#a4153e7b2aa827ac6367ec6374f986370" title="Set up collective variable." alt="" coords="477,5,672,47"/>
+<area shape="rect" id="node3" href="$classSSAGES_1_1CollectiveVariable.html#ab56eae0d888f3d5125566bfb9b5e21aa" title="Set up collective variable." alt="" coords="240,5,429,47"/>
 <area shape="rect" id="node4" href="$classSSAGES_1_1ResourceHandler.html#ac026ad9aa098fa1508a78b0b5a91e8a2" title="Build a new ResourceHandler from JSON." alt="" coords="5,5,192,47"/>
 </map>

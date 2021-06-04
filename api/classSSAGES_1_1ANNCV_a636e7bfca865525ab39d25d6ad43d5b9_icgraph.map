@@ -1,0 +1,4 @@
+<map id="SSAGES::ANNCV::forward_prop" name="SSAGES::ANNCV::forward_prop">
+<area shape="rect" id="node1" title="Propagate data forward through network." alt="" coords="244,5,459,32"/>
+<area shape="rect" id="node2" href="$classSSAGES_1_1ANNCV.html#a1ddb11f32dbf1c1c19e119310c047a0d" title="Evaluate the CV." alt="" coords="5,5,196,32"/>
+</map>

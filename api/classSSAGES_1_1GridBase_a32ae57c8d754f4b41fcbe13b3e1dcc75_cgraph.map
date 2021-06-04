@@ -1,0 +1,7 @@
+<map id="SSAGES::GridBase::GetCoordinate" name="SSAGES::GridBase::GetCoordinate">
+<area shape="rect" id="node1" title="Return center point of 1d&#45;grid." alt="" coords="5,56,236,83"/>
+<area shape="rect" id="node2" href="$classSSAGES_1_1GridBase.html#a7da01557a9b85498c2acd975c152403a" title="Access Grid element read&#45;only." alt="" coords="324,31,483,57"/>
+<area shape="rect" id="node5" href="$classSSAGES_1_1GridBase.html#a633d773c9700a4096db4899742f18f97" title="! Return the distance to adjacent grid center points from given coordinates" alt="" coords="284,81,523,108"/>
+<area shape="rect" id="node3" href="$classSSAGES_1_1GridBase.html#a72f98ef47da691b00823d612efbd46b8" title="Get the dimension." alt="" coords="571,5,801,32"/>
+<area shape="rect" id="node4" href="$classSSAGES_1_1GridBase.html#a1f7bae14a777239968ae9445d19af823" title="This function needs to be implemented by child classes." alt="" coords="586,56,786,83"/>
+</map>

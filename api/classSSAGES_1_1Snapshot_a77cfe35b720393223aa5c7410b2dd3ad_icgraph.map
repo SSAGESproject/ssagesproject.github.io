@@ -1,13 +1,13 @@
 <map id="SSAGES::Snapshot::TotalMass" name="SSAGES::Snapshot::TotalMass">
-<area shape="rect" id="node1" title="Compute the total mass of a group of particles based on index." alt="" coords="491,261,700,287"/>
-<area shape="rect" id="node2" href="$classSSAGES_1_1Snapshot.html#ac600b5f3d3e240d2cc9965c06547e97e" title="Compute center of mass of a group of atoms based on index." alt="" coords="256,195,443,236"/>
-<area shape="rect" id="node3" href="$classSSAGES_1_1ParticleCoordinateCV.html#afff49e8eb1571fe3527712be50da001e" title="Evaluate the CV." alt="" coords="11,5,203,47"/>
-<area shape="rect" id="node4" href="$classSSAGES_1_1ParticlePositionCV.html#aa2ee9b7b3ca3133183e2d5f511251e29" title="Evaluate the CV." alt="" coords="19,71,195,112"/>
-<area shape="rect" id="node6" href="$classSSAGES_1_1ParticleSeparationCV.html#ae6452c47bf1d849e2af60c84209a9955" title="Evaluate the CV." alt="" coords="11,253,202,295"/>
-<area shape="rect" id="node7" href="$classSSAGES_1_1GyrationTensorCV.html#ac613c1659bd00b335c3d6de3d8ff0ebc" title="Evaluate the CV." alt="" coords="10,319,203,360"/>
+<area shape="rect" id="node1" title="Compute the total mass of a group of particles based on index." alt="" coords="491,261,699,287"/>
+<area shape="rect" id="node2" href="$classSSAGES_1_1Snapshot.html#ac600b5f3d3e240d2cc9965c06547e97e" title="Compute center of mass of a group of atoms based on index." alt="" coords="256,192,443,233"/>
+<area shape="rect" id="node4" href="$classSSAGES_1_1GyrationTensorCV.html#ac613c1659bd00b335c3d6de3d8ff0ebc" title="Evaluate the CV." alt="" coords="11,5,203,47"/>
+<area shape="rect" id="node5" href="$classSSAGES_1_1ParticleCoordinateCV.html#afff49e8eb1571fe3527712be50da001e" title="Evaluate the CV." alt="" coords="11,71,203,112"/>
+<area shape="rect" id="node6" href="$classSSAGES_1_1ParticlePositionCV.html#aa2ee9b7b3ca3133183e2d5f511251e29" title="Evaluate the CV." alt="" coords="19,253,195,295"/>
+<area shape="rect" id="node7" href="$classSSAGES_1_1ParticleSeparationCV.html#ae6452c47bf1d849e2af60c84209a9955" title="Evaluate the CV." alt="" coords="11,319,202,360"/>
 <area shape="rect" id="node8" href="$classSSAGES_1_1RMSDCV.html#aff77158b643fec57c6d1649a78b0dd14" title="Evaluate the CV." alt="" coords="5,385,208,411"/>
 <area shape="rect" id="node10" href="$classSSAGES_1_1RouseModeCV.html#a5842a8b7e54d435af5465aea2c85e924" title="Helper function to determine masses of each group." alt="" coords="262,432,437,473"/>
-<area shape="rect" id="node5" href="$classSSAGES_1_1RouseModeCV.html#a1468b1aabf81ceb2ef3feb3b8fc79d0d" title="Evaluate the CV." alt="" coords="19,136,194,177"/>
-<area shape="rect" id="node9" href="$classSSAGES_1_1ANNCV.html#a1ddb11f32dbf1c1c19e119310c047a0d" title="Evaluate the CV." alt="" coords="11,202,203,229"/>
+<area shape="rect" id="node3" href="$classSSAGES_1_1ANNCV.html#a1ddb11f32dbf1c1c19e119310c047a0d" title="Evaluate the CV." alt="" coords="11,137,202,163"/>
+<area shape="rect" id="node9" href="$classSSAGES_1_1RouseModeCV.html#a1468b1aabf81ceb2ef3feb3b8fc79d0d" title="Evaluate the CV." alt="" coords="19,188,194,229"/>
 <area shape="rect" id="node11" href="$classSSAGES_1_1RouseModeCV.html#a851e533301a1464b5d69c711c6499ba1" title="Initialize necessary variables." alt="" coords="19,436,194,477"/>
 </map>

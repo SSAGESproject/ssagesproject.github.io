@@ -1,0 +1,4 @@
+<map id="SSAGES::DirectForwardFlux::InitializeQueue" name="SSAGES::DirectForwardFlux::InitializeQueue">
+<area shape="rect" id="node1" title="Initialize the Queue." alt="" coords="245,5,437,47"/>
+<area shape="rect" id="node2" href="$classSSAGES_1_1DirectForwardFlux.html#a5491cd537f737524f5fc295236eefb85" title="Post&#45;integration hook." alt="" coords="5,5,197,47"/>
+</map>

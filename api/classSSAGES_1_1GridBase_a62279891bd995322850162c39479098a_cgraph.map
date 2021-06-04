@@ -1,0 +1,5 @@
+<map id="SSAGES::GridBase::GetPeriodic" name="SSAGES::GridBase::GetPeriodic">
+<area shape="rect" id="node1" title="Get the periodicity in a specific dimension." alt="" coords="5,31,220,57"/>
+<area shape="rect" id="node2" href="$classSSAGES_1_1GridBase.html#a72f98ef47da691b00823d612efbd46b8" title="Get the dimension." alt="" coords="268,5,499,32"/>
+<area shape="rect" id="node3" href="$classSSAGES_1_1GridBase.html#ab4ff38d7e0ca60dfebd82c36d89cbede" title="Return the periodicity of the Grid." alt="" coords="276,56,491,83"/>
+</map>

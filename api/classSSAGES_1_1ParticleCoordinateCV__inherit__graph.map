@@ -1,4 +1,4 @@
 <map id="SSAGES::ParticleCoordinateCV" name="SSAGES::ParticleCoordinateCV">
 <area shape="rect" id="node1" title="Collective variable on a particle coordinate." alt="" coords="5,80,216,107"/>
-<area shape="rect" id="node2" href="$classSSAGES_1_1CollectiveVariable.html" title="Abstract class for a collective variable." alt="" coords="15,5,206,32"/>
+<area shape="rect" id="node2" href="$classSSAGES_1_1CollectiveVariable.html" title="Abstract class for a collective variable." alt="" coords="16,5,205,32"/>
 </map>

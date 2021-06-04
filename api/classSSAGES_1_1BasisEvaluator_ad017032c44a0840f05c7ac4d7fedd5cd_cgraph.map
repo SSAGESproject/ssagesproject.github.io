@@ -3,6 +3,7 @@
 <area shape="rect" id="node2" href="$classSSAGES_1_1Grid.html#a709374b3cadf320347604077a2e45e5b" title="Return iterator at first grid point." alt="" coords="254,5,402,32"/>
 <area shape="rect" id="node3" href="$classSSAGES_1_1Grid.html#ac4fcc9f0cd61476ce4fd880c768d9694" title="Return iterator after last valid grid point." alt="" coords="259,56,397,83"/>
 <area shape="rect" id="node4" href="$classSSAGES_1_1GridBase.html#a2270a9233a9dc2d341e8ab88ce6655c9" title="Return the lower edges of the Grid." alt="" coords="227,107,429,133"/>
-<area shape="rect" id="node5" href="$classSSAGES_1_1GridBase.html#ab56c5b7786560a9a35951f1c3a44b077" title="Get the number of points for all dimensions." alt="" coords="230,158,426,199"/>
-<area shape="rect" id="node6" href="$classSSAGES_1_1GridBase.html#a875feace8fff4743b103147c4193eca0" title="Return the upper edges of the Grid." alt="" coords="227,224,429,251"/>
+<area shape="rect" id="node6" href="$classSSAGES_1_1GridBase.html#ab56c5b7786560a9a35951f1c3a44b077" title="Get the number of points for all dimensions." alt="" coords="230,158,426,199"/>
+<area shape="rect" id="node7" href="$classSSAGES_1_1GridBase.html#a875feace8fff4743b103147c4193eca0" title="Return the upper edges of the Grid." alt="" coords="227,224,429,251"/>
+<area shape="rect" id="node5" href="$classSSAGES_1_1GridBase.html#ab4ff38d7e0ca60dfebd82c36d89cbede" title="Return the periodicity of the Grid." alt="" coords="477,165,692,192"/>
 </map>

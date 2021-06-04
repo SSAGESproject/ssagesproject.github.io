@@ -1,4 +1,4 @@
 <map id="SSAGES::PairwiseCV" name="SSAGES::PairwiseCV">
-<area shape="rect" id="node1" title="Generalized collective variable based on pairwise properties of atoms." alt="" coords="23,80,178,107"/>
-<area shape="rect" id="node2" href="$classSSAGES_1_1CollectiveVariable.html" title="Abstract class for a collective variable." alt="" coords="5,5,196,32"/>
+<area shape="rect" id="node1" title="Generalized collective variable based on pairwise properties of atoms." alt="" coords="23,80,177,107"/>
+<area shape="rect" id="node2" href="$classSSAGES_1_1CollectiveVariable.html" title="Abstract class for a collective variable." alt="" coords="5,5,195,32"/>
 </map>

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['dimension_1275',['Dimension',['../namespaceSSAGES.html#abea9456e00cb5995a3a8291ca21612ff',1,'SSAGES']]]
+  ['dimension_1290',['Dimension',['../namespaceSSAGES.html#abea9456e00cb5995a3a8291ca21612ff',1,'SSAGES']]]
 ];

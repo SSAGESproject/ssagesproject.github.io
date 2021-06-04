@@ -1,9 +1,9 @@
 <map id="SSAGES::AngleCV::Evaluate" name="SSAGES::AngleCV::Evaluate">
-<area shape="rect" id="node1" title="Evaluate the CV." alt="" coords="5,130,201,157"/>
-<area shape="rect" id="node2" href="$classSSAGES_1_1Snapshot.html#ad6caa5b92433501fd4a62deef288340a" title="Apply minimum image to a vector." alt="" coords="259,5,494,47"/>
-<area shape="rect" id="node4" href="$classSSAGES_1_1Snapshot.html#a4811c9435e56196d5525832345ef1680" title="Get communicator for walker." alt="" coords="249,71,504,98"/>
-<area shape="rect" id="node5" href="$classSSAGES_1_1Snapshot.html#a7146597433bcfd256385db274330cd36" title="Gets the local atom index corresponding to an atom ID." alt="" coords="277,123,477,164"/>
-<area shape="rect" id="node6" href="$classSSAGES_1_1Snapshot.html#a103af07a012d55a9637f6203c7eba0af" title="Get number of atoms in this snapshot." alt="" coords="278,188,475,229"/>
-<area shape="rect" id="node7" href="$classSSAGES_1_1Snapshot.html#a91852084d69a0703a8fcc9b27dc50459" title="Access the particle positions." alt="" coords="265,254,488,281"/>
-<area shape="rect" id="node3" href="$namespaceSSAGES.html#a49bb77a1b5822888753c96c70780ab47" title="Quick helper function to round a double." alt="" coords="552,13,673,39"/>
+<area shape="rect" id="node1" title="Evaluate the CV." alt="" coords="5,130,200,157"/>
+<area shape="rect" id="node2" href="$classSSAGES_1_1Snapshot.html#ad6caa5b92433501fd4a62deef288340a" title="Apply minimum image to a vector." alt="" coords="258,5,493,47"/>
+<area shape="rect" id="node4" href="$classSSAGES_1_1Snapshot.html#a4811c9435e56196d5525832345ef1680" title="Get communicator for walker." alt="" coords="248,71,503,98"/>
+<area shape="rect" id="node5" href="$classSSAGES_1_1Snapshot.html#a7146597433bcfd256385db274330cd36" title="Gets the local atom index corresponding to an atom ID." alt="" coords="275,123,475,164"/>
+<area shape="rect" id="node6" href="$classSSAGES_1_1Snapshot.html#a103af07a012d55a9637f6203c7eba0af" title="Get number of atoms in this snapshot." alt="" coords="277,188,474,229"/>
+<area shape="rect" id="node7" href="$classSSAGES_1_1Snapshot.html#a91852084d69a0703a8fcc9b27dc50459" title="Access the particle positions." alt="" coords="264,254,487,281"/>
+<area shape="rect" id="node3" href="$namespaceSSAGES.html#a49bb77a1b5822888753c96c70780ab47" title="Quick helper function to round a double." alt="" coords="551,13,672,39"/>
 </map>
